@@ -1,0 +1,5 @@
+
+TOPLEVEL_LANG = oc
+
+SUBDIRS = $(AUTODIRS)
+
