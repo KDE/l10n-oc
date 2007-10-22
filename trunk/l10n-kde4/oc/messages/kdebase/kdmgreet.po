@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: kdmconfig.cpp:144
 msgid "[fix kdmrc]"
@@ -146,7 +146,6 @@ msgid "Sw&itch User"
 msgstr ""
 
 #: kgdialog.cpp:72
-#| msgid "abort all sessions"
 msgid "Abort S&ession"
 msgstr ""
 
@@ -164,6 +163,12 @@ msgstr ""
 
 #: kgdialog.cpp:88
 msgid "&Shutdown..."
+msgstr ""
+
+#: kgdialog.cpp:231
+#, kde-format
+msgctxt "session (location)"
+msgid "%1 (%2)"
 msgstr ""
 
 #: kgverify.cpp:176
@@ -221,7 +226,9 @@ msgstr ""
 #: kgverify.cpp:501
 #, kde-format
 msgid "Your account expires tomorrow."
-msgstr ""
+msgid_plural "Your account expires in %1 days."
+msgstr[0] ""
+msgstr[1] ""
 
 #: kgverify.cpp:503
 msgid "Your account expires today."
@@ -230,7 +237,9 @@ msgstr ""
 #: kgverify.cpp:509
 #, kde-format
 msgid "Your password expires tomorrow."
-msgstr ""
+msgid_plural "Your password expires in %1 days."
+msgstr[0] ""
+msgstr[1] ""
 
 #: kgverify.cpp:511
 msgid "Your password expires today."
@@ -248,7 +257,9 @@ msgstr ""
 #: kgverify.cpp:1004
 #, kde-format
 msgid "Automatic login in 1 second ..."
-msgstr ""
+msgid_plural "Automatic login in %1 seconds ..."
+msgstr[0] ""
+msgstr[1] ""
 
 #: kgverify.cpp:1014
 msgid "Warning: Caps Lock is on"
@@ -323,6 +334,12 @@ msgstr ""
 msgid "&Restart Computer"
 msgstr ""
 
+#: kdmshutdown.cpp:515
+#, kde-format
+msgctxt "current option in boot loader"
+msgid "%1 (current)"
+msgstr ""
+
 #: kdmshutdown.cpp:621
 msgid "Turn Off Computer"
 msgstr ""
@@ -337,7 +354,6 @@ msgstr ""
 
 #: kdmshutdown.cpp:628
 #, kde-format
-#| msgid "<br>(Next boot: %1)"
 msgid "<br/>(Next boot: %1)"
 msgstr ""
 
@@ -494,6 +510,12 @@ msgstr "Mot de _pas :"
 msgid "_Login"
 msgstr ""
 
+#: themer/kdmlabel.cpp:274
+#, no-c-format
+msgctxt "date format"
+msgid "%a %d %B"
+msgstr ""
+
 #: themer/kdmthemer.cpp:67
 #, kde-format
 msgid "Cannot open theme file %1"
@@ -512,9 +534,22 @@ msgstr ""
 #: utils.cpp:92
 #, kde-format
 msgid "%2: TTY login"
-msgstr ""
+msgid_plural "%2: %1 TTY logins"
+msgstr[0] ""
+msgstr[1] ""
 
 #: utils.cpp:103
 msgid "Unused"
 msgstr ""
 
+#: utils.cpp:105
+#, kde-format
+msgctxt "user: session type"
+msgid "%1: %2"
+msgstr ""
+
+#: utils.cpp:107
+#, kde-format
+msgctxt "... host"
+msgid "X login on %1"
+msgstr ""

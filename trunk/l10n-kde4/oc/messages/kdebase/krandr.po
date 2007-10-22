@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: krandrmodule.cpp:56
 msgid ""
@@ -58,7 +58,6 @@ msgstr ""
 
 #: krandrtray.cpp:210
 #, kde-format
-#| msgid "Screen Size"
 msgid "%1 - Screen Size"
 msgstr ""
 
@@ -74,6 +73,12 @@ msgstr ""
 msgid "Unify Outputs"
 msgstr ""
 
+#: krandrtray.cpp:363 legacyrandrconfig.cpp:268 legacyrandrscreen.cpp:245
+#: outputconfig.cpp:108
+#, kde-format
+msgid "%1 Hz"
+msgstr ""
+
 #: krandrtray.cpp:456
 msgid "Configure Display"
 msgstr ""
@@ -81,7 +86,9 @@ msgstr ""
 #: ktimerdialog.cpp:167
 #, kde-format
 msgid "1 second remaining:"
-msgstr ""
+msgid_plural "%1 seconds remaining:"
+msgstr[0] ""
+msgstr[1] ""
 
 #: legacyrandrconfig.cpp:125
 #, kde-format
@@ -103,6 +110,12 @@ msgid ""
 "Resolution: %1 x %2\n"
 "Orientation: %3\n"
 "Refresh rate: %4"
+msgstr ""
+
+#: legacyrandrscreen.cpp:235 legacyrandrscreen.cpp:240
+#, kde-format
+msgctxt "Refresh rate in Hertz (Hz)"
+msgid "%1 Hz"
 msgstr ""
 
 #: main.cpp:33
@@ -226,11 +239,6 @@ msgid "&Return to Previous Configuration"
 msgstr ""
 
 #: randr.cpp:139
-#| msgid ""
-#| "Your screen orientation, size and refresh rate have been changed to the "
-#| "requested settings. Please indicate whether you wish to keep this "
-#| "configuration. In 15 seconds the display will revert to your previous "
-#| "settings."
 msgid ""
 "Your screen configuration has been changed to the requested settings. Please "
 "indicate whether you wish to keep this configuration. In 15 seconds the "
@@ -245,7 +253,6 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 13
 #: rc.cpp:3
-#| msgid "Screen resize & rotate"
 msgid "Screen Resize and Rotate Settings"
 msgstr ""
 
@@ -260,7 +267,6 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 24
 #: rc.cpp:9
-#| msgid "Settings for screen:"
 msgid "Settings for Screen:"
 msgstr ""
 
@@ -275,7 +281,6 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 45
 #: rc.cpp:15
-#| msgid "Screen Size"
 msgid "Screen Size:"
 msgstr ""
 
@@ -290,7 +295,6 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 66
 #: rc.cpp:21
-#| msgid "Refresh Rate"
 msgid "Refresh Rate:"
 msgstr ""
 
@@ -355,7 +359,6 @@ msgstr "Talha :"
 #. i18n: tag string
 #. i18n: file outputconfigbase.ui line 47
 #: rc.cpp:51
-#| msgid "Refresh Rate"
 msgid "Refresh:"
 msgstr ""
 
@@ -368,7 +371,15 @@ msgstr "Orientacion :"
 #. i18n: tag string
 #. i18n: file randrconfigbase.ui line 13
 #: rc.cpp:57
-#| msgid "Screen resize & rotate"
 msgid "Screen Resize and Rotate Configuration"
 msgstr ""
 
+#: rc.cpp:58
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: rc.cpp:59
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
