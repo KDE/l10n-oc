@@ -1,0 +1,750 @@
+# translation of krdc.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: krdc\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdenetwork/doc/krdc/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 714748\n"
+"POT-Creation-Date: 2007-09-21 07:05+0000\n"
+"PO-Revision-Date: 2007-10-24 11:14+0200\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Tag: title
+#: index.docbook:21
+#, no-c-format
+msgid "The &krdc; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:24
+#, no-c-format
+msgid "&Brad.Hards; &Brad.Hards.mail;"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:28
+#, no-c-format
+msgid "<firstname>Urs</firstname> <surname>Wolfer</surname>"
+msgstr ""
+
+#. Tag: email
+#: index.docbook:32
+#, no-c-format
+msgid "uwolfer @ kde.org"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:35
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\">"
+"<firstname></firstname><surname></surname>"
+"<affiliation><address><email>yannig@marchegay.org</email></address>"
+"</affiliation><contrib></contrib></othercredit>"
+
+#. Tag: para
+#: index.docbook:48
+#, no-c-format
+msgid ""
+"&krdc; is a client application that allows you to view or even control the "
+"desktop session on another machine that is running a compatible server. VNC and "
+"RDP is supported."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:56
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:57
+#, no-c-format
+msgid "kdenetwork"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:58
+#, no-c-format
+msgid "krfb"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:59
+#, no-c-format
+msgid "<keyword>VNC</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:60
+#, no-c-format
+msgid "<keyword>RFB</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:61
+#, no-c-format
+msgid "krdc"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:62
+#, no-c-format
+msgid "Desktop Sharing"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:63
+#, no-c-format
+msgid "Remote Control"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:64
+#, no-c-format
+msgid "Remote Assistance"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:65
+#, no-c-format
+msgid "Remote Desktop"
+msgstr "Burèu distant"
+
+#. Tag: keyword
+#: index.docbook:66
+#, no-c-format
+msgid "<keyword>RDP</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:67
+#, no-c-format
+msgid "Remote Administration"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:73
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduccion"
+
+#. Tag: para
+#: index.docbook:75
+#, no-c-format
+msgid ""
+"&krdc; is a client application that allows you to view or even control the "
+"desktop session on another machine that is running a compatible server."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:81
+#, no-c-format
+msgid ""
+"You would typically use &krdc; with the &kde; VNC server, which is &krfb;, "
+"since it closely matches the special features of &krdc;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:86
+#, no-c-format
+msgid ""
+"Please report any problems or feature requests to the &kde; mailing lists or "
+"file a bug at <ulink url=\"http://bugs.kde.org\">http://bugs.kde.org</ulink>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:94
+#, no-c-format
+msgid "The Remote Frame Buffer protocol"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:96
+#, no-c-format
+msgid ""
+"This chapter provides a brief description of the Remote Frame Buffer protocol "
+"used by &krdc; and by other compatible systems. If you are already familiar "
+"with Remote Frame Buffer, you can safely skip this chapter."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"The high level implementation of a system using the Remote Frame Buffer "
+"protocol is known as Virtual Network Computer, or more often just as <acronym>"
+"VNC</acronym>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"Remote Frame Buffer (or <acronym>RFB</acronym> for short) is a simple protocol "
+"for remote access to graphical user interfaces. It works at the frame-buffer "
+"level, which roughly corresponds to the rendered screen image, which means that "
+"it can be applied to all windowing systems (including X11, &MacOS; and "
+"&Microsoft; &Windows;). Remote Frame Buffer applications exist for many "
+"platforms, and can often be free re-distributed."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:119
+#, no-c-format
+msgid ""
+"In the Remote Frame Buffer protocol, the application that runs on the machine "
+"where the user sits (containing the display, keyboard and pointer) is called "
+"the client. The application that runs on the machine where the framebuffer is "
+"located (which is running the windowing system and applications that the user "
+"is remotely controlling) is called the server. &krdc; is the &kde; client for "
+"the Remote Frame Buffer protocol. &krfb; is the &kde; server for the Remote "
+"Frame Buffer protocol."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:130
+#, no-c-format
+msgid ""
+"It takes a reasonable amount of network traffic to send an image of the "
+"framebuffer, so Remote Frame Buffer works best over high bandwidth links, such "
+"as a local area network. It is still possible to use &krdc; over other links, "
+"but performance is unlikely to be as good."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:140
+#, no-c-format
+msgid "Using &krdc;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:142
+#, no-c-format
+msgid ""
+"It is very easy to use &krdc; - it has a simple interface, as shown in the "
+"screenshot below."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:149
+#, no-c-format
+msgid "Here's a screenshot of &krdc;"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:155
+#, no-c-format
+msgid "&krdc; main window"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:161
+#, no-c-format
+msgid "Connecting &krdc; to compatible servers"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:163
+#, no-c-format
+msgid ""
+"&krdc; is a client, and it needs to be used with compatible servers. There are "
+"different ways to connect to those servers:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Directly typing the server name (or IP address) into the <guilabel>"
+"Address:</guilabel> input."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:174
+#, no-c-format
+msgid ""
+"By using an invitation that you received. &krfb; uses invitations, and can send "
+"them by email."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:179
+#, no-c-format
+msgid "Let's look at each of these in turn."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:183
+#, no-c-format
+msgid "Server name entry"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:184
+#, no-c-format
+msgid ""
+"If you know the host name (or IP address) of the server you want to connect to, "
+"you can enter it directly into the <guilabel>Addresss:</guilabel> input."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:189
+#, no-c-format
+msgid ""
+"If you want to connect to a machine named megan, which is running a <acronym>"
+"VNC</acronym> server on screen 1 (5901), you can enter <userinput>"
+"megan:1</userinput> and choose VNC as the protocol in the <guilabel>"
+"Address: </guilabel> input."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:198
+#, no-c-format
+msgid "<screeninfo>Entering a hostname into &krdc;</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:204
+#, no-c-format
+msgid "<phrase>Entering a hostname into &krdc;</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:210
+#, no-c-format
+msgid ""
+"Similary, if you are using a <acronym>RDP</acronym> server on that machine, you "
+"can enter <userinput>megan</userinput>. Choose RDP as the protocol. RDP does "
+"not need the screen number to be specified. If the server runs the RDP server "
+"not on the default port, you may specify it in the following way: <userinput>"
+"megan:3910</userinput>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:220
+#, no-c-format
+msgid "Using an invitation"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:221
+#, no-c-format
+msgid ""
+"Within the &krfb; server application, it is possible to send invitations over "
+"email (and in other ways, although email is the most useful). If you receive "
+"this type of email invitation, you can just click on the link provided in the "
+"mail. This will start &krdc; if it is not already running, and connect to the "
+"server specified in the invitation."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:234
+#, no-c-format
+msgid "What happens when you connect"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:236
+#, no-c-format
+msgid ""
+"No matter how you select the server to connect to, the next thing that happens "
+"is that &krdc; asks you about the network connection to the server, as shown "
+"below:"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:244
+#, no-c-format
+msgid "<screeninfo>&krdc; connection speed selection</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:250
+#, no-c-format
+msgid "<phrase>&krdc; connection speed selection</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:256
+#, no-c-format
+msgid "There are three speed settings for the VNC protocol:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:261
+#, no-c-format
+msgid ""
+"High Quality (LAN, direct connection), which is the default, and you should "
+"evaluate how well this setting performs before selecting a lower performance "
+"option that uses less bandwidth."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:265
+#, no-c-format
+msgid "Medium Quality (DSL, Cable, fast Internet)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:267
+#, no-c-format
+msgid "Low Quality (Modem, ISDN, slow Internet)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:271
+#, no-c-format
+msgid ""
+"If you always operate over the same link type, you can deselect the checkbox "
+"labelled <guilabel>Show this dialog again for this host</guilabel>"
+", which means that you won't be asked about the connection type again for this "
+"host, providing you identify it in the same way. For example, if a host has two "
+"names, and deselect the checkbox when connecting using one name, you won't get "
+"asked if you connect using that name, although you will be asked if you use the "
+"other name, or the IP address."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:282
+#, no-c-format
+msgid ""
+"You select the appropriate speed setting, and select the <guibutton>"
+"Connect</guibutton> to proceed."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:287
+#, no-c-format
+msgid "You can see the connection status in the icon in the tab."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:291
+#, no-c-format
+msgid ""
+"Depending on the configuration of the server, you may (and almost certainly "
+"will) need to provide a password to authenticate to the server. &krdc; will "
+"provide a password dialog similar to that shown below."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:298
+#, no-c-format
+msgid ""
+"&krdc; has the ability to save the password for for further connections to the "
+"same host. It uses KWallet for doing this. You need to check the <guibutton>"
+"Remember password (KWallet)</guibutton> checkbox if you like to use this "
+"feature."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:307
+#, no-c-format
+msgid "<screeninfo>&krdc; password entry</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:313
+#, no-c-format
+msgid "<phrase>&krdc; password entry</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:319
+#, no-c-format
+msgid ""
+"After authentication, you will be connected to the remote server, and can begin "
+"using &krdc; to observe or control the remote desktop."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:326
+#, no-c-format
+msgid "Controlling the remote desktop connection"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:328
+#, no-c-format
+msgid ""
+"Having connected to the remote server, you would normally use the keyboard and "
+"mouse to control the windowing system and applications on that remote machine."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:334
+#, no-c-format
+msgid ""
+"You can view the remote desktop either as a full screen, or as a window on the "
+"local desktop. You can change between these modes using icons shown below."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:342
+#, no-c-format
+msgid "<screeninfo>&krdc; full screen mode selection</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:348
+#, no-c-format
+msgid "<phrase>&krdc; full screen mode selection</phrase>"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:356
+#, no-c-format
+msgid "<screeninfo>&krdc; window mode selection</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:362
+#, no-c-format
+msgid "<phrase>&krdc; window mode selection</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"Full screen mode is normally better when you are helping a remote user, because "
+"you can see all of what they can see. Window mode is most useful when you are "
+"working both remotely and locally - perhaps referring to some local "
+"documentation and then using those instructions on the remote machine."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:376
+#, no-c-format
+msgid "Using window mode"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:378
+#, no-c-format
+msgid ""
+"In window mode, you can terminate the connection by closing the window, by "
+"clicking on the logout button."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:385
+#, no-c-format
+msgid "Using full screen mode"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:387
+#, no-c-format
+msgid ""
+"In full screen mode, you can change the appearance of the toolbar. The "
+"transparency of the toolbar can be changed with scrollwheel."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:396
+#, no-c-format
+msgid "Bookmarks"
+msgstr "Favorits"
+
+#. Tag: para
+#: index.docbook:398
+#, no-c-format
+msgid ""
+"&krdc; has the ability to manage bookmarks. If you need to connect often to the "
+"same remote desktop, you can add an entry for this conection to the bookmark "
+"list. You can do so with a click on <guibutton>Bookmarks -> "
+"Add Bookmark</guibutton>."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:406
+#, no-c-format
+msgid "<screeninfo>&krdc; bookmarks menu</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:412
+#, no-c-format
+msgid "<phrase>&krdc; bookmarks menu</phrase>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:419
+#, no-c-format
+msgid "History Bookmarks"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:421
+#, no-c-format
+msgid ""
+"&krdc; saves last used remote desktop connections. You can access these special "
+"bookmarks at <guibutton>Bookmarks -> History</guibutton>"
+". Of couse you can also delete a bookmark of this list if you don't need it "
+"anymore in the list. Just click <guibutton>Delete</guibutton> "
+"which appears after a click with the right mouse button on the bookmark you "
+"would like to delete."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:433
+#, no-c-format
+msgid "Managing &krdc; configuration"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:434
+#, no-c-format
+msgid ""
+"Using <guibutton>Settings -> Configure KRDC...</guibutton>"
+", you can open a dialog to modify the behaviour of &krdc;. Selecting that "
+"button brings up a window as shown below:"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:442
+#, no-c-format
+msgid "&krdc; preferences - Host Profiles tab"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:448
+#, no-c-format
+msgid "&krdc; preferences - <guilabel>Host Profiles</guilabel> tab"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:456
+#, no-c-format
+msgid "&krdc; preferences - <guilabel>VNC Defaults</guilabel> tab"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:462
+#, no-c-format
+msgid "&krdc; preferences - <guilabel>VNC Defaults</guilabel> profiles tab"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:471
+#, no-c-format
+msgid "&krdc; preferences - <guilabel>RDP Defaults</guilabel> tab"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:477
+#, no-c-format
+msgid "&krdc; preferences - <guilabel>RDP Defaults</guilabel> profiles tab"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:490
+#, no-c-format
+msgid "Questions and Answers"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:490
+#, no-c-format
+msgid "&reporting.bugs; &updating.documentation;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:509
+#, no-c-format
+msgid "Why does RDP support not work?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:512
+#, no-c-format
+msgid ""
+"RDP support in &krdc; depends on rdesktop. Make sure that you have installed "
+"this runtime dependency."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:528
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:530
+#, no-c-format
+msgid "&krdc;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:533
+#, no-c-format
+msgid ""
+"The &krdc; project has been started by Tim Jansen <email>tim@tjansen.de</email>"
+". As a Google Summer of Code 2007 project, Urs Wolfer <email>"
+"uwolfer @ kde.org</email> has completely rewritten &krdc;. Thanks to Google for "
+"making this possible, and thanks to the great mentor of this Summer of Code "
+"project, &Brad.Hards; &Brad.Hards.mail;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:540
+#, no-c-format
+msgid ""
+"Documentation Copyright &copy; 2003 &Brad.Hards; &Brad.Hards.mail; "
+"Documentation Copyright &copy; 2007 Urs Wolfer <email>uwolfer @ kde.org</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:545
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Yannig Marchegay (Kokoyaya)"
+"<email>yannig@marchegay.org</email></para>"
+
+#. Tag: chapter
+#: index.docbook:545
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:554
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:557
+#, no-c-format
+msgid "How to obtain &krdc;"
+msgstr ""
+
+#. Tag: sect1
+#: index.docbook:557
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:568
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr ""
+
+#. Tag: sect1
+#: index.docbook:568
+#, no-c-format
+msgid "&install.compile.documentation;"
+msgstr ""
+

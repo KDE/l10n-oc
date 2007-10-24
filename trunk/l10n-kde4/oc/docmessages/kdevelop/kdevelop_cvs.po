@@ -1,0 +1,207 @@
+# translation of kdevelop_cvs.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdevelop_cvs\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdevelop/doc/kdevelop/cvs.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 680280\n"
+"POT-Creation-Date: 2007-06-26 07:02+0000\n"
+"PO-Revision-Date: 2007-10-24 11:14+0200\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Tag: title
+#: cvs.docbook:2
+#, no-c-format
+msgid "Using &CVS;"
+msgstr ""
+
+#. Tag: primary
+#: cvs.docbook:3
+#, no-c-format
+msgid "<primary>CVS</primary>"
+msgstr ""
+
+#. Tag: primary
+#: cvs.docbook:4
+#, no-c-format
+msgid "revision control"
+msgstr ""
+
+#. Tag: title
+#: cvs.docbook:7
+#, no-c-format
+msgid "&CVS; Basics"
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:9
+#, no-c-format
+msgid ""
+"&CVS; is the revision control system which many open source projects - "
+"including &kde; &mdash; are using. It stores all sources codes in a central "
+"place, called the <emphasis>repository</emphasis>. From the repository, "
+"developers can check out a current version of the project or snapshots of it at "
+"arbitrary points of time. In contrast to some other revision control systems, "
+"it is not necessary to <emphasis>lock</emphasis> files one wants to work on. So "
+"development can be highly parallelized."
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:19
+#, no-c-format
+msgid ""
+"Whenever a developer has finished a task, he <emphasis>commits</emphasis> "
+"his code (accompanied by a log message). &CVS; takes the job to merge the "
+"changes made by several developers. It can of course happen that developers "
+"work on the same piece of code, resulting in a conflicting set of changes (in "
+"practice this occurs seldom, and is often a sign of a lack of communication). "
+"In this case &CVS; rejects a commit; only after all conflicts are resolved, a "
+"file can be committed."
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:29
+#, no-c-format
+msgid ""
+"So far, this has been a description of the basic features of &CVS; one usually "
+"has to cope with. But &CVS; can provide a lot more: One can maintain several "
+"branches of a project (&eg; &kde; 1.1.2 and &kde; 2 were branches in &kde;'s "
+"development tree), merge changes from one branch to another, ask for "
+"differences between revisions, the revision history of files &etc;"
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:37
+#, no-c-format
+msgid ""
+"&CVS; is implemented as a client-server system. As a user, all communication "
+"with the repository goes through the command line program &cvs;. A higher level "
+"user interface is available through frontends like &cervisia; (<ulink "
+"url=\"http://cervisia.sf.net\"></ulink>) or <application>TkCVS</application> "
+"(<ulink url=\"http://tkcvs.sf.net\"></ulink>). In &kdevelop;, only a small part "
+"of the &cvs; functionality which is important for your daily work can be used "
+"directly."
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:44
+#, no-c-format
+msgid ""
+"Basic knowledge of &CVS; usage is assumed. In particular, you should know how "
+"to checkout a given project from the repository. We recommend the book <quote>"
+"Open Source Development With &CVS;</quote> by Karl Fogel which is freely "
+"distributed (except for the non-technical chapters). See <ulink "
+"url=\"http://cvsbook.red-bean.com/cvsbook.html\"></ulink>."
+msgstr ""
+
+#. Tag: title
+#: cvs.docbook:57
+#, no-c-format
+msgid "&CVS; Commands in &kdevelop;"
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:59
+#, no-c-format
+msgid "In the file views, the following context menu items are available:"
+msgstr ""
+
+#. Tag: term
+#: cvs.docbook:65
+#, no-c-format
+msgid "Add to Repository"
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:67
+#, no-c-format
+msgid ""
+"Prepares the marked file for addition to the repository. The file is "
+"transferred to the repository when you commit it (or the containing directory) "
+"the next time."
+msgstr ""
+
+#. Tag: term
+#: cvs.docbook:75
+#, no-c-format
+msgid "Remove from Repository"
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:77
+#, no-c-format
+msgid ""
+"Prepares a file for removal from the repository. This also deletes the file on "
+"the local file system, so use this feature with care!"
+msgstr ""
+
+#. Tag: term
+#: cvs.docbook:85
+#, no-c-format
+msgid "Update"
+msgstr "Actualizar"
+
+#. Tag: para
+#: cvs.docbook:87
+#, no-c-format
+msgid ""
+"Runs <command>cvs update</command> to merge any changes from other users into "
+"your working directory. When you use this menu item over a directory, the "
+"update normally happens recursively, except if you have disabled this in the "
+"configuration file <filename>.cvsrc</filename>."
+msgstr ""
+
+#. Tag: term
+#: cvs.docbook:97
+#, no-c-format
+msgid "Commit"
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:99
+#, no-c-format
+msgid ""
+"Runs <command>cvs commit</command> to upload any locally made changes to the "
+"repository. Note that you should update before doing this. Otherwise, when "
+"another user has committed his own changes before, &CVS; may give you an error "
+"message."
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:109
+#, no-c-format
+msgid ""
+"All these commands are invoked as subprocesses by &kdevelop; without any "
+"further command line options or environment variables. This may be a problem "
+"when the connection with the &CVS; server goes through a &ssh; connection and "
+"requires that you enter your password each time you commit or update. This is "
+"for instance necessary when your project is hosted on <filename>"
+"sourceforge.net</filename>. Workarounds for this problem are described on the "
+"&CVS;/SSH FAQ which you can find in the SourceForge documentation."
+msgstr ""
+
+#. Tag: title
+#: cvs.docbook:125
+#, no-c-format
+msgid "Behind the Scenes"
+msgstr ""
+
+#. Tag: title
+#: cvs.docbook:128
+#, no-c-format
+msgid "What &CVS; Records in the Working Directory"
+msgstr ""
+
+#. Tag: para
+#: cvs.docbook:130
+#, no-c-format
+msgid "(... to be written ...)"
+msgstr ""
+
