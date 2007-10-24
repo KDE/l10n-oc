@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-14 05:38+0200\n"
+"POT-Creation-Date: 2007-10-24 06:11+0200\n"
 "PO-Revision-Date: 2007-10-23 23:32+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 91
-#: keyinfodialog.cpp:233 rc.cpp:636
+#: keyinfodialog.cpp:233 rc.cpp:604
 msgid "Key ID:"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgstr "Nom"
 #. i18n: file groupedit.ui line 150
 #. i18n: tag string
 #. i18n: file keyexport.ui line 34
-#: keylistview.cpp:236 rc.cpp:303 rc.cpp:315 rc.cpp:321
+#: keylistview.cpp:236 rc.cpp:284 rc.cpp:296 rc.cpp:302
 #: selectpublickeydialog.cpp:149 selectsecretkey.cpp:38
 msgid "Email"
 msgstr "Adreça electronica"
@@ -193,7 +193,7 @@ msgstr ""
 #. i18n: file groupedit.ui line 68
 #. i18n: tag string
 #. i18n: file groupedit.ui line 155
-#: keylistview.cpp:241 rc.cpp:306 rc.cpp:318
+#: keylistview.cpp:241 rc.cpp:287 rc.cpp:299
 msgid "Id"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 32
-#: keylistview.cpp:350 kgpginterface.cpp:3069 rc.cpp:345
+#: keylistview.cpp:350 kgpginterface.cpp:3069 rc.cpp:326
 msgid "Import"
 msgstr "Importar"
 
@@ -221,7 +221,7 @@ msgstr "Prèst"
 msgid "Loading Keys..."
 msgstr ""
 
-#: keylistview.cpp:598 keysmanager.cpp:1751
+#: keylistview.cpp:598 keysmanager.cpp:1750
 #, kde-format
 msgid "%1 key"
 msgid_plural "%1 keys"
@@ -362,7 +362,7 @@ msgid_plural "<qt><b>%1 keys imported:</b><br/></qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: keyservers.cpp:211 kgpginterface.cpp:2326
+#: keyservers.cpp:211 kgpginterface.cpp:2324
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -374,7 +374,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 140
-#: keyservers.cpp:274 kgpgview.cpp:392 rc.cpp:371
+#: keyservers.cpp:274 kgpgview.cpp:392 rc.cpp:352
 msgid "&Import"
 msgstr ""
 
@@ -387,16 +387,16 @@ msgstr "Connexion al servidor..."
 msgid "Found %1 matching keys"
 msgstr ""
 
-#: keyservers.cpp:446
+#: keyservers.cpp:445
 msgid "You must choose a key."
 msgstr ""
 
-#: keyservers.cpp:532
+#: keyservers.cpp:531
 #, kde-format
 msgid "ID %1, %2 bit %3 key, created %4 revoked"
 msgstr ""
 
-#: keyservers.cpp:538
+#: keyservers.cpp:537
 #, kde-format
 msgid "ID %1, %2 bit %3 key, created %4"
 msgstr ""
@@ -405,7 +405,7 @@ msgstr ""
 msgid "Key Management"
 msgstr ""
 
-#: keysmanager.cpp:144 kgpg.cpp:973
+#: keysmanager.cpp:144 kgpg.cpp:927
 msgid "&Key Server Dialog"
 msgstr ""
 
@@ -421,7 +421,7 @@ msgstr ""
 msgid "&Open Editor"
 msgstr ""
 
-#: keysmanager.cpp:165 selectpublickeydialog.cpp:225
+#: keysmanager.cpp:165 selectpublickeydialog.cpp:207
 msgid "&Go to Default Key"
 msgstr ""
 
@@ -546,10 +546,10 @@ msgid "&Photo ID's"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 260
+#. i18n: file conf_misc.ui line 181
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 299
-#: keysmanager.cpp:315 rc.cpp:183 rc.cpp:197
+#. i18n: file conf_misc.ui line 220
+#: keysmanager.cpp:315 rc.cpp:164 rc.cpp:178
 msgid "Disable"
 msgstr "Desactivar"
 
@@ -630,7 +630,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 13
-#: keysmanager.cpp:578 rc.cpp:615
+#: keysmanager.cpp:578 rc.cpp:583
 msgid "New Key Pair Created"
 msgstr ""
 
@@ -702,65 +702,66 @@ msgstr ""
 msgid "Group member"
 msgstr ""
 
-#: keysmanager.cpp:1297
+#: keysmanager.cpp:1296
 #, kde-format
-msgid "<qt>Sorry, the key <b>%1</b> is not valid for encryption or not trusted.</qt>"
+msgid ""
+"<qt>Sorry, the key <b>%1</b> is not valid for encryption or not trusted.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1406
+#: keysmanager.cpp:1405
 msgid "Create Revocation Certificate"
 msgstr ""
 
-#: keysmanager.cpp:1412
+#: keysmanager.cpp:1411
 msgid "ID: "
 msgstr ""
 
-#: keysmanager.cpp:1458
+#: keysmanager.cpp:1457
 msgid ""
 "<qt>Secret keys <b>should not</b> be saved in an unsafe place.<br/>If "
 "someone else can access this file, encryption with this key will be "
 "compromised!<br/>Continue key export?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1471
+#: keysmanager.cpp:1470
 msgid "Export PRIVATE KEY As"
 msgstr ""
 
-#: keysmanager.cpp:1484
+#: keysmanager.cpp:1483
 #, kde-format
 msgid ""
 "<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2 .<br/"
 "><b>Do not</b> leave it in an insecure place.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1487
+#: keysmanager.cpp:1486
 msgid ""
 "Your secret key could not be exported.\n"
 "Check the key."
 msgstr ""
 
-#: keysmanager.cpp:1527
+#: keysmanager.cpp:1526
 msgid "Public Key Export"
 msgstr ""
 
-#: keysmanager.cpp:1544 kgpgeditor.cpp:466
+#: keysmanager.cpp:1543 kgpgeditor.cpp:466
 msgid "Save File"
 msgstr "Enregistrar lo fichièr"
 
-#: keysmanager.cpp:1589
+#: keysmanager.cpp:1588
 #, kde-format
 msgid "<qt>The public key was successfully exported to<br/>%2</qt>"
 msgid_plural "<qt>The %1 public keys were successfully exported to<br/>%2</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:1593
+#: keysmanager.cpp:1592
 msgid ""
 "Your public key could not be exported\n"
 "Check the key."
 msgstr ""
 
-#: keysmanager.cpp:1684
+#: keysmanager.cpp:1683
 msgid ""
 "This key is an orphaned secret key (secret key without public key.) It is "
 "currently not usable.\n"
@@ -768,65 +769,65 @@ msgid ""
 "Would you like to regenerate the public key?"
 msgstr ""
 
-#: keysmanager.cpp:1685
+#: keysmanager.cpp:1684
 msgid "Generate"
 msgstr "Générer"
 
-#: keysmanager.cpp:1685
+#: keysmanager.cpp:1684
 msgid "Do Not Generate"
 msgstr ""
 
-#: keysmanager.cpp:1721
+#: keysmanager.cpp:1720
 #, kde-format
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1721 keysmanager.cpp:2250
+#: keysmanager.cpp:1720 keysmanager.cpp:2249
 msgid "Delete"
 msgstr "Suprimir"
 
-#: keysmanager.cpp:1795
+#: keysmanager.cpp:1794
 msgid ""
 "<qt>You cannot create a group containing signatures, subkeys or other groups."
 "</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1799
+#: keysmanager.cpp:1798
 msgid "Create New Group"
 msgstr ""
 
-#: keysmanager.cpp:1799
+#: keysmanager.cpp:1798
 msgid "Enter new group name:"
 msgstr ""
 
-#: keysmanager.cpp:1805
+#: keysmanager.cpp:1804
 msgid ""
 "Following keys are not valid or not trusted and will not be added to the "
 "group:"
 msgstr ""
 
-#: keysmanager.cpp:1821
+#: keysmanager.cpp:1820
 #, kde-format
 msgid ""
 "<qt>No valid or trusted key was selected. The group <b>%1</b> will not be "
 "created.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1852
+#: keysmanager.cpp:1851
 msgid ""
 "Following keys are in the group but are not valid or not in your keyring. "
 "They will be removed from the group."
 msgstr ""
 
-#: keysmanager.cpp:1862
+#: keysmanager.cpp:1861
 msgid "Group Properties"
 msgstr "Propietats del grop"
 
-#: keysmanager.cpp:1932
+#: keysmanager.cpp:1931
 msgid "You can only sign primary keys. Please check your selection."
 msgstr ""
 
-#: keysmanager.cpp:1947
+#: keysmanager.cpp:1946
 #, kde-format
 msgid ""
 "<qt>You are about to sign key:<br /><br />%1<br />ID: %2<br />Fingerprint: "
@@ -835,88 +836,88 @@ msgid ""
 "your communications</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1964
+#: keysmanager.cpp:1963
 msgid ""
 "<qt>You are about to sign the following keys in one pass.<br/><b>If you have "
 "not carefully checked all fingerprints, the security of your communications "
 "may be compromised.</b></qt>"
 msgstr ""
 
-#: keysmanager.cpp:2008
+#: keysmanager.cpp:2007
 #, kde-format
 msgid "<qt>Bad passphrase, key <b>%1 (%2)</b> not signed.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2011
+#: keysmanager.cpp:2010
 #, kde-format
 msgid "<qt>The key <b>%1 (%2)</b> is already signed.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2052
+#: keysmanager.cpp:2051
 msgid "All signatures for this key are already in your keyring"
 msgid_plural "All signatures for this keys are already in your keyring"
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:2159
+#: keysmanager.cpp:2158
 msgid "Edit key manually to delete a self-signature."
 msgstr ""
 
-#: keysmanager.cpp:2163
+#: keysmanager.cpp:2162
 #, kde-format
 msgid ""
 "<qt>Are you sure you want to delete signature<br /><b>%1</b><br />from user "
 "id <b>%2</b><br />of key: <b>%3</b>?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2185
+#: keysmanager.cpp:2184
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr ""
 
-#: keysmanager.cpp:2226
+#: keysmanager.cpp:2225
 #, kde-format
 msgid "<qt>Cannot open file <b>%1</b> for printing...</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2248
+#: keysmanager.cpp:2247
 #, kde-format
 msgid ""
 "<p>Delete <b>secret</b> key pair <b>%1</b>?</p>Deleting this key pair means "
 "you will never be able to decrypt files encrypted with this key again."
 msgstr ""
 
-#: keysmanager.cpp:2273
+#: keysmanager.cpp:2272
 #, kde-format
 msgid "Can not delete key <b>%1</b> while it is edited in terminal."
 msgstr ""
 
-#: keysmanager.cpp:2273
+#: keysmanager.cpp:2272
 msgid "Delete key"
 msgstr ""
 
-#: keysmanager.cpp:2309
+#: keysmanager.cpp:2308
 #, kde-format
 msgid ""
 "<qt>The following are secret key pairs:<br/><b>%1</b>They will not be "
 "deleted.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2317
+#: keysmanager.cpp:2316
 #, kde-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:2386
+#: keysmanager.cpp:2385
 msgid "Key Import"
 msgstr ""
 
-#: keysmanager.cpp:2393
+#: keysmanager.cpp:2392
 msgid "Open File"
 msgstr "Dubrir fichièr"
 
-#: keysmanager.cpp:2405 keysmanager.cpp:2418
+#: keysmanager.cpp:2404 keysmanager.cpp:2417
 msgid "Importing..."
 msgstr "Importacion..."
 
@@ -940,7 +941,7 @@ msgstr ""
 msgid "KGpg - encryption tool"
 msgstr ""
 
-#: kgpg.cpp:152 kgpg.cpp:197 kgpg.cpp:898
+#: kgpg.cpp:152 kgpg.cpp:197 kgpg.cpp:852
 msgid "Clipboard is empty."
 msgstr ""
 
@@ -972,7 +973,7 @@ msgstr ""
 msgid "Bzip2"
 msgstr ""
 
-#: kgpg.cpp:301 kgpg.cpp:518 kgpgeditor.cpp:488 kgpglibrary.cpp:117
+#: kgpg.cpp:301 kgpg.cpp:490 kgpgeditor.cpp:488 kgpglibrary.cpp:116
 msgid "File Already Exists"
 msgstr ""
 
@@ -980,7 +981,7 @@ msgstr ""
 msgid "Processing folder compression and encryption"
 msgstr ""
 
-#: kgpg.cpp:311 kgpglibrary.cpp:237 kgpglibrary.cpp:275
+#: kgpg.cpp:311 kgpglibrary.cpp:233 kgpglibrary.cpp:245
 msgid "Please wait..."
 msgstr ""
 
@@ -988,115 +989,93 @@ msgstr ""
 msgid "Unable to create temporary file"
 msgstr ""
 
-#: kgpg.cpp:394
-msgid "Shred Files"
-msgstr ""
-
-#: kgpg.cpp:403 kgpgoptions.cpp:97
-msgid ""
-"<qt><p>You must be aware that <b>shredding is not secure</b> on all file "
-"systems, and that parts of the file may have been saved in a temporary file "
-"or in the spooler of your printer if you previously opened it in an editor "
-"or tried to print it. Only works on files (not on folders).</p></qt>"
-msgstr ""
-
-#: kgpg.cpp:402
-#, kde-format
-msgid "Do you really want to <a href=\"whatsthis:%1\">shred</a> these files?"
-msgstr ""
-
-#: kgpg.cpp:551
+#: kgpg.cpp:523
 msgid "Unable to read temporary archive file"
 msgstr ""
 
-#: kgpg.cpp:557
+#: kgpg.cpp:529
 msgid "Extract to: "
 msgstr ""
 
-#: kgpg.cpp:649
-msgid "<p>The dropped text is a public key.<br />Do you want to import it ?</p>"
+#: kgpg.cpp:621
+msgid ""
+"<p>The dropped text is a public key.<br />Do you want to import it ?</p>"
 msgstr ""
 
-#: kgpg.cpp:670
+#: kgpg.cpp:642
 msgid "No encrypted text found."
 msgstr ""
 
-#: kgpg.cpp:705
+#: kgpg.cpp:677
 msgid ""
 "<qt>You have not set a path to your GnuPG config file.<br />This may cause "
 "some surprising results in KGpg's execution.<br />Would you like to start "
 "KGpg's Wizard to fix this problem?</qt>"
 msgstr ""
 
-#: kgpg.cpp:705
+#: kgpg.cpp:677
 msgid "Start Wizard"
 msgstr ""
 
-#: kgpg.cpp:705
+#: kgpg.cpp:677
 msgid "Do Not Start"
 msgstr ""
 
-#: kgpg.cpp:743
+#: kgpg.cpp:715
 msgid ""
 "<qt><b>The GnuPG configuration file was not found</b>. Please make sure you "
 "have GnuPG installed. Should KGpg try to create a config file ?</qt>"
 msgstr ""
 
-#: kgpg.cpp:743
+#: kgpg.cpp:715
 msgid "Create Config"
 msgstr ""
 
-#: kgpg.cpp:743
+#: kgpg.cpp:715
 msgid "Do Not Create"
 msgstr ""
 
-#: kgpg.cpp:756
+#: kgpg.cpp:728
 msgid ""
 "<qt><b>The GnuPG configuration file was not found</b>. Please make sure you "
 "have GnuPG installed and give the path to the config file.</qt>"
 msgstr ""
 
-#: kgpg.cpp:764
+#: kgpg.cpp:736
 msgid ""
 "Your GnuPG version seems to be older than 1.2.0. Photo Id's and Key Groups "
 "will not work properly. Please consider upgrading GnuPG (http://gnupg.org)."
 msgstr ""
 
-#: kgpg.cpp:799
+#: kgpg.cpp:771
 msgid "Step Three: Select your Default Private Key"
 msgstr ""
 
-#. i18n: tag string
-#. i18n: file conf_misc.ui line 91
-#: kgpg.cpp:845 rc.cpp:148
-msgid "Shredder"
-msgstr ""
-
-#: kgpg.cpp:926
+#: kgpg.cpp:880
 msgid "Encrypted following text:"
 msgstr ""
 
-#: kgpg.cpp:954
+#: kgpg.cpp:908
 msgid "E&ditor"
 msgstr ""
 
-#: kgpg.cpp:958
+#: kgpg.cpp:912
 msgid "Ke&y Manager"
 msgstr ""
 
-#: kgpg.cpp:962
+#: kgpg.cpp:916
 msgid "&Encrypt Clipboard"
 msgstr ""
 
-#: kgpg.cpp:965
+#: kgpg.cpp:919
 msgid "&Decrypt Clipboard"
 msgstr ""
 
-#: kgpg.cpp:968
+#: kgpg.cpp:922
 msgid "&Sign/Verify Clipboard"
 msgstr ""
 
-#: kgpg.cpp:1095
+#: kgpg.cpp:1048
 #, kde-format
 msgid ""
 "<qt>The use of <b>GnuPG Agent</b> is enabled in GnuPG's configuration file (%"
@@ -1105,26 +1084,22 @@ msgid ""
 "KGpg settings, or fix the agent.</qt>"
 msgstr ""
 
-#: kgpg.cpp:1142
+#: kgpg.cpp:1095
 msgid ""
 "Unable to perform requested operation.\n"
 "Please select only one folder, or several files, but do not mix files and "
 "folders."
 msgstr ""
 
-#: kgpg.cpp:1161
-msgid "Cannot shred folder."
-msgstr ""
-
-#: kgpg.cpp:1169
+#: kgpg.cpp:1114
 msgid "Cannot decrypt and show folder."
 msgstr ""
 
-#: kgpg.cpp:1177
+#: kgpg.cpp:1122
 msgid "Cannot sign folder."
 msgstr ""
 
-#: kgpg.cpp:1185
+#: kgpg.cpp:1130
 msgid "Cannot verify folder."
 msgstr ""
 
@@ -1206,8 +1181,8 @@ msgid "Decrypt File To"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 214
-#: kgpgeditor.cpp:468 rc.cpp:169
+#. i18n: file conf_misc.ui line 135
+#: kgpgeditor.cpp:468 rc.cpp:150
 msgid "Editor"
 msgstr "Editor"
 
@@ -1223,195 +1198,195 @@ msgstr ""
 msgid " or "
 msgstr " o "
 
-#: kgpginterface.cpp:971
+#: kgpginterface.cpp:969
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr ""
 
-#: kgpginterface.cpp:1059 kgpginterface.cpp:1216 kgpginterface.cpp:1810
-#: kgpginterface.cpp:2662 kgpginterface.cpp:2976
+#: kgpginterface.cpp:1057 kgpginterface.cpp:1214 kgpginterface.cpp:1808
+#: kgpginterface.cpp:2660 kgpginterface.cpp:2976
 msgid "[No user id found]"
 msgstr ""
 
-#: kgpginterface.cpp:1063 kgpginterface.cpp:2667
+#: kgpginterface.cpp:1061 kgpginterface.cpp:2665
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr ""
 
-#: kgpginterface.cpp:1065 kgpginterface.cpp:1220 kgpginterface.cpp:1558
-#: kgpginterface.cpp:1701 kgpginterface.cpp:1817 kgpginterface.cpp:2064
-#: kgpginterface.cpp:2154 kgpginterface.cpp:2407 kgpginterface.cpp:2669
+#: kgpginterface.cpp:1063 kgpginterface.cpp:1218 kgpginterface.cpp:1556
+#: kgpginterface.cpp:1699 kgpginterface.cpp:1815 kgpginterface.cpp:2062
+#: kgpginterface.cpp:2152 kgpginterface.cpp:2405 kgpginterface.cpp:2667
 #, kde-format
 msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr ""
 
-#: kgpginterface.cpp:1066 kgpginterface.cpp:1221 kgpginterface.cpp:1559
-#: kgpginterface.cpp:1702 kgpginterface.cpp:2065 kgpginterface.cpp:2155
-#: kgpginterface.cpp:2408 kgpginterface.cpp:2670 kgpginterface.cpp:2981
+#: kgpginterface.cpp:1064 kgpginterface.cpp:1219 kgpginterface.cpp:1557
+#: kgpginterface.cpp:1700 kgpginterface.cpp:2063 kgpginterface.cpp:2153
+#: kgpginterface.cpp:2406 kgpginterface.cpp:2668 kgpginterface.cpp:2981
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr ""
 
-#: kgpginterface.cpp:1137
+#: kgpginterface.cpp:1135
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr ""
 
-#: kgpginterface.cpp:1317 kgpginterface.cpp:3039
+#: kgpginterface.cpp:1315 kgpginterface.cpp:3039
 #, kde-format
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2</qt>"
 msgstr ""
 
-#: kgpginterface.cpp:1322
+#: kgpginterface.cpp:1320
 #, kde-format
 msgid ""
 "<qt><b>Bad signature</b> from:<br />%1<br />Key ID: %2<br /><br /><b>Text is "
 "corrupted.</b></qt>"
 msgstr ""
 
-#: kgpginterface.cpp:1332 kgpginterface.cpp:1354 kgpginterface.cpp:3036
+#: kgpginterface.cpp:1330 kgpginterface.cpp:1352 kgpginterface.cpp:3036
 #: kgpginterface.cpp:3063
 msgid "No signature found."
 msgstr ""
 
-#: kgpginterface.cpp:1335 kgpginterface.cpp:3051
+#: kgpginterface.cpp:1333 kgpginterface.cpp:3051
 msgid "The signature is valid, but the key is untrusted"
 msgstr ""
 
-#: kgpginterface.cpp:1338 kgpginterface.cpp:3054
+#: kgpginterface.cpp:1336 kgpginterface.cpp:3054
 msgid "The signature is valid, and the key is ultimately trusted"
 msgstr ""
 
-#: kgpginterface.cpp:1428
+#: kgpginterface.cpp:1426
 msgid "Enter passphrase for your file (symmetrical encryption):"
 msgstr ""
 
-#: kgpginterface.cpp:1602
+#: kgpginterface.cpp:1600
 #, kde-format
 msgid ""
 "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br />Do you want to try "
 "signing the key in console mode?</qt>"
 msgstr ""
 
-#: kgpginterface.cpp:1745
+#: kgpginterface.cpp:1743
 msgid ""
 "<qt><b>Changing expiration failed.</b><br />Do you want to try changing the "
 "key expiration in console mode?</qt>"
 msgstr ""
 
-#: kgpginterface.cpp:1818
+#: kgpginterface.cpp:1816
 #, kde-format
 msgid "Enter old passphrase for <b>%1</b>"
 msgstr ""
 
-#: kgpginterface.cpp:1831
+#: kgpginterface.cpp:1829
 #, kde-format
 msgid ""
 "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
 "all your encrypted files and messages will be inaccessible<br /></qt>"
 msgstr ""
 
-#: kgpginterface.cpp:2050
+#: kgpginterface.cpp:2048
 msgid "This image is very large. Use it anyway?"
 msgstr ""
 
-#: kgpginterface.cpp:2050
+#: kgpginterface.cpp:2048
 msgid "Use Anyway"
 msgstr ""
 
-#: kgpginterface.cpp:2050
+#: kgpginterface.cpp:2048
 msgid "Do Not Use"
 msgstr ""
 
-#: kgpginterface.cpp:2284
+#: kgpginterface.cpp:2282
 #, kde-format
 msgid "<qt>%1 key processed.</qt>"
 msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2287
+#: kgpginterface.cpp:2285
 #, kde-format
 msgid "<qt>One key without ID.</qt>"
 msgid_plural "<qt>%1 keys without ID.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2289
+#: kgpginterface.cpp:2287
 #, kde-format
 msgid "<qt><b>One key imported:</b></qt>"
 msgid_plural "<qt><b>%1 keys imported:</b></qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2291
+#: kgpginterface.cpp:2289
 #, kde-format
 msgid "<qt>One RSA key imported.</qt>"
 msgid_plural "<qt>%1 RSA keys imported.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2293
+#: kgpginterface.cpp:2291
 #, kde-format
 msgid "<qt>One key unchanged.</qt>"
 msgid_plural "<qt>%1 keys unchanged.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2295
+#: kgpginterface.cpp:2293
 #, kde-format
 msgid "<qt>One user ID imported.</qt>"
 msgid_plural "<qt>%1 user IDs imported.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2297
+#: kgpginterface.cpp:2295
 #, kde-format
 msgid "<qt>One subkey imported.</qt>"
 msgid_plural "<qt>%1 subkeys imported.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2299
+#: kgpginterface.cpp:2297
 #, kde-format
 msgid "<qt>One signature imported.</qt>"
 msgid_plural "<qt>%1 signatures imported.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2302
+#: kgpginterface.cpp:2300
 #, kde-format
 msgid "<qt>One revocation certificate imported.</qt>"
 msgid_plural "<qt>%1 revocation certificates imported.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2307
+#: kgpginterface.cpp:2305
 #, kde-format
 msgid "<qt>One secret key processed.</qt>"
 msgid_plural "<qt>%1 secret keys processed.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2313
+#: kgpginterface.cpp:2311
 #, kde-format
 msgid "<qt><b>One secret key imported.</b></qt>"
 msgid_plural "<qt><b>%1 secret keys imported.</b></qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2315
+#: kgpginterface.cpp:2313
 #, kde-format
 msgid "<qt>One secret key unchanged.</qt>"
 msgid_plural "<qt>%1 secret keys unchanged.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2317
+#: kgpginterface.cpp:2315
 #, kde-format
 msgid "<qt>One secret key not imported.</qt>"
 msgid_plural "<qt>%1 secret keys not imported.</qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kgpginterface.cpp:2320
+#: kgpginterface.cpp:2318
 msgid ""
 "<qt><br /><b>You have imported a secret key.</b> <br />Please note that "
 "imported secret keys are not trusted by default.<br />To fully use this "
@@ -1419,7 +1394,7 @@ msgid ""
 "on it) and set its trust to Full or Ultimate.</qt>"
 msgstr ""
 
-#: kgpginterface.cpp:2559
+#: kgpginterface.cpp:2557
 #, kde-format
 msgid ""
 "<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
@@ -1541,70 +1516,56 @@ msgstr ""
 msgid "Email address not valid"
 msgstr ""
 
-#: kgpglibrary.cpp:102
+#: kgpglibrary.cpp:101
 msgid "You have not chosen an encryption key."
 msgstr ""
 
-#: kgpglibrary.cpp:129
+#: kgpglibrary.cpp:128
 #, kde-format
 msgid "<p><b>%1 Files left.</b><br /><b>Encrypting </b>%2</p>"
 msgstr ""
 
-#: kgpglibrary.cpp:131
+#: kgpglibrary.cpp:130
 #, kde-format
 msgid "<b>Encrypting </b>%1"
 msgstr ""
 
-#: kgpglibrary.cpp:169
+#: kgpglibrary.cpp:165
 msgid "<p><b>Process halted</b>.<br />Not all files were encrypted.</p>"
 msgstr ""
 
-#: kgpglibrary.cpp:208
+#: kgpglibrary.cpp:204
 #, kde-format
-msgid "<p>The file <b>%1</b> is a public key.<br />Do you want to import it ?</p>"
+msgid ""
+"<p>The file <b>%1</b> is a public key.<br />Do you want to import it ?</p>"
 msgstr ""
 
-#: kgpglibrary.cpp:224
+#: kgpglibrary.cpp:220
 #, kde-format
 msgid ""
 "<p>The file <b>%1</b> is a private key block. Please use KGpg key manager to "
 "import it.</p>"
 msgstr ""
 
-#: kgpglibrary.cpp:229 kgpgview.cpp:313 kgpgview.cpp:354
+#: kgpglibrary.cpp:225 kgpgview.cpp:313 kgpgview.cpp:354
 msgid "Decryption failed."
 msgstr ""
 
-#: kgpglibrary.cpp:234
+#: kgpglibrary.cpp:230
 #, kde-format
 msgid "Decrypting %1"
 msgstr ""
 
-#: kgpglibrary.cpp:237
+#: kgpglibrary.cpp:233
 msgid "Processing decryption"
 msgstr ""
 
-#: kgpglibrary.cpp:251
-#, kde-format
-msgid "Shredding %1 file"
-msgid_plural "Shredding %1 files"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kgpglibrary.cpp:267
-msgid "KGpg Error"
-msgstr ""
-
-#: kgpglibrary.cpp:267
-msgid "Process halted, not all files were shredded."
-msgstr ""
-
-#: kgpglibrary.cpp:275
+#: kgpglibrary.cpp:245
 #, kde-format
 msgid "Processing encryption (%1)"
 msgstr ""
 
-#: kgpglibrary.cpp:285
+#: kgpglibrary.cpp:255
 msgid ""
 "The image must be a JPEG file. Remember that the image is stored within your "
 "public key.If you use a very large picture, your key will become very large "
@@ -1641,41 +1602,41 @@ msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
 msgstr ""
 
 #: kgpgoptions.cpp:59 kgpgoptions.cpp:71 kgpgoptions.cpp:73
-#: kgpgoptions.cpp:213 kgpgoptions.cpp:229 kgpgoptions.cpp:236
+#: kgpgoptions.cpp:209 kgpgoptions.cpp:225 kgpgoptions.cpp:232
 msgid "(Default)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 16
-#: kgpgoptions.cpp:102 rc.cpp:19
+#: kgpgoptions.cpp:99 rc.cpp:19
 msgid "Encryption"
 msgstr ""
 
-#: kgpgoptions.cpp:103
+#: kgpgoptions.cpp:100
 msgid "Decryption"
 msgstr ""
 
-#: kgpgoptions.cpp:104
+#: kgpgoptions.cpp:101
 msgid "Appearance"
 msgstr "Aparéncia"
 
-#: kgpgoptions.cpp:105
+#: kgpgoptions.cpp:102
 msgid "GnuPG Settings"
 msgstr ""
 
-#: kgpgoptions.cpp:106
+#: kgpgoptions.cpp:103
 msgid "Key Servers"
 msgstr ""
 
-#: kgpgoptions.cpp:107
+#: kgpgoptions.cpp:104
 msgid "Misc"
 msgstr ""
 
-#: kgpgoptions.cpp:132
+#: kgpgoptions.cpp:128
 msgid "New GnuPG Home Location"
 msgstr ""
 
-#: kgpgoptions.cpp:145
+#: kgpgoptions.cpp:141
 msgid ""
 "No configuration file was found in the selected location.\n"
 "Do you want to create it now ?\n"
@@ -1683,50 +1644,50 @@ msgid ""
 "Without configuration file, neither KGpg nor Gnupg will work properly."
 msgstr ""
 
-#: kgpgoptions.cpp:145
+#: kgpgoptions.cpp:141
 msgid "No Configuration File Found"
 msgstr ""
 
-#: kgpgoptions.cpp:145
+#: kgpgoptions.cpp:141
 msgid "Create"
 msgstr "Crear"
 
-#: kgpgoptions.cpp:145
+#: kgpgoptions.cpp:141
 msgid "Ignore"
 msgstr "Ignorar"
 
-#: kgpgoptions.cpp:161
+#: kgpgoptions.cpp:157
 msgid ""
 "Cannot create configuration file. Please check if destination media is "
 "mounted and if you have write access."
 msgstr ""
 
-#: kgpgoptions.cpp:185
+#: kgpgoptions.cpp:181
 msgid "Key server URLs may not contain whitespace."
 msgstr ""
 
-#: kgpgoptions.cpp:193
+#: kgpgoptions.cpp:189
 msgid "Add New Key Server"
 msgstr ""
 
-#: kgpgoptions.cpp:193 kgpgoptions.cpp:225
+#: kgpgoptions.cpp:189 kgpgoptions.cpp:221
 msgid "Server URL:"
 msgstr ""
 
-#: kgpgoptions.cpp:225
+#: kgpgoptions.cpp:221
 msgid "Edit Key Server"
 msgstr ""
 
-#: kgpgoptions.cpp:419 kgpgoptions.cpp:420
+#: kgpgoptions.cpp:415 kgpgoptions.cpp:416
 msgctxt "no key available"
 msgid "none"
 msgstr "pas cap"
 
-#: kgpgoptions.cpp:453
+#: kgpgoptions.cpp:449
 msgid "Decrypt File"
 msgstr ""
 
-#: kgpgoptions.cpp:471
+#: kgpgoptions.cpp:467
 msgid "Sign File"
 msgstr ""
 
@@ -1864,7 +1825,7 @@ msgstr ""
 #. i18n: file adduid.ui line 29
 #. i18n: tag string
 #. i18n: file newkey.ui line 67
-#: rc.cpp:6 rc.cpp:630
+#: rc.cpp:6 rc.cpp:598
 msgid "Email:"
 msgstr "Adreça electronica :"
 
@@ -1958,34 +1919,14 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 75
-#: rc.cpp:50 selectpublickeydialog.cpp:187
-msgid "Shred source file"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf_encryption.ui line 79
-#: rc.cpp:53
-msgid ""
-"<qt><b>Shred source file:</b><br />\n"
-"<p>Checking this option will shred (overwrite several times before erasing) "
-"the files you have encrypted. This way, it is almost impossible that the "
-"source file is recovered. But <b>you must be aware that this is not "
-"absolutely secure</b> on all file systems, and that parts of the file may "
-"have been saved in a temporary file or in the spooler of your printer if you "
-"previously opened it in an editor or tried to print it. Only works on files "
-"(not on folders).</p></qt>"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf_encryption.ui line 102
-#: rc.cpp:57
+#. i18n: file conf_encryption.ui line 91
+#: rc.cpp:50
 msgid "Custom encryption command:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 106
-#: rc.cpp:60
+#. i18n: file conf_encryption.ui line 95
+#: rc.cpp:53
 msgid ""
 "<qt><b>Custom encryption command:</b><br />\n"
 "<p>When activated, an entry field will be shown in the key selection dialog, "
@@ -1994,14 +1935,14 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 150
-#: rc.cpp:64
+#. i18n: file conf_encryption.ui line 139
+#: rc.cpp:57
 msgid "Always encrypt with:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 154
-#: rc.cpp:67
+#. i18n: file conf_encryption.ui line 143
+#: rc.cpp:60
 msgid ""
 "<qt><b>Always encrypt with:</b><br />\n"
 "<p>This ensures all files/messages will also be encrypted with the chosen "
@@ -2010,14 +1951,14 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 161
-#: rc.cpp:71
+#. i18n: file conf_encryption.ui line 150
+#: rc.cpp:64
 msgid "Encrypt files with:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 165
-#: rc.cpp:74
+#. i18n: file conf_encryption.ui line 154
+#: rc.cpp:67
 msgid ""
 "<qt><b>Encrypt files with:</b><br />\n"
 "<p>Checking this option and selecting a key will force any file encryption "
@@ -2026,14 +1967,14 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 172
-#: rc.cpp:78 selectpublickeydialog.cpp:169
+#. i18n: file conf_encryption.ui line 161
+#: rc.cpp:71 selectpublickeydialog.cpp:169
 msgid "Allow encryption with untrusted keys"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_encryption.ui line 176
-#: rc.cpp:81
+#. i18n: file conf_encryption.ui line 165
+#: rc.cpp:74
 msgid ""
 "<qt><b>Allow encryption with untrusted keys:</b><br />\n"
 "<p>When importing a public key, the key is usually marked as untrusted and "
@@ -2044,7 +1985,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 15
-#: rc.cpp:85
+#: rc.cpp:78
 msgid ""
 "<qt><b>Global Settings:</b><br />\n"
 "<p></p>\n"
@@ -2053,19 +1994,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 21
-#: rc.cpp:90
+#: rc.cpp:83
 msgid "GnuPG Home"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 29
-#: rc.cpp:93
+#: rc.cpp:86
 msgid "Home location:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 35
-#: rc.cpp:96
+#: rc.cpp:89
 msgid ""
 "<b>Home Location</b><p>This is the directory where GnuPG stores its "
 "configuration and the keyrings. If you have not changed it this is usually "
@@ -2074,13 +2015,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 42
-#: rc.cpp:99
+#: rc.cpp:92
 msgid "Configuration file:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 48
-#: rc.cpp:102
+#: rc.cpp:95
 msgid ""
 "<b>Configuration File</b><p>This is the name of the configuration file in "
 "the directory specified above. The default is <em>gnupg.conf</em> while "
@@ -2089,25 +2030,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 95
-#: rc.cpp:105
+#: rc.cpp:98
 msgid "Change..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 107
-#: rc.cpp:108
+#: rc.cpp:101
 msgid "GnuPG Binary"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 113
-#: rc.cpp:111
+#: rc.cpp:104
 msgid "Program path:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 119
-#: rc.cpp:114
+#: rc.cpp:107
 msgid ""
 "<b>Program path</b><p>This is the program that will be called for all GnuPG "
 "operations. The default of <em>gpg</em> will work on most systems.</p>"
@@ -2115,13 +2056,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 156
-#: rc.cpp:117
+#: rc.cpp:110
 msgid "Use GnuPG agent"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_gpg.ui line 159
-#: rc.cpp:120
+#: rc.cpp:113
 msgid ""
 "<b>Use GnuPG agent</b><p>The GnuPG agent stores the passwords for your "
 "secret keys in memory for a limited amount of time. If you use your secret "
@@ -2131,13 +2072,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_misc.ui line 32
-#: rc.cpp:123
+#: rc.cpp:116
 msgid "Global Settings"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_misc.ui line 41
-#: rc.cpp:126
+#: rc.cpp:119
 msgid ""
 "<qt><b>Start KGpg automatically at KDE startup:</b><br />\n"
 "<p>If checked KGpg will start automatically each time that KDE starts up.</"
@@ -2146,13 +2087,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_misc.ui line 44
-#: rc.cpp:130
+#: rc.cpp:123
 msgid "Start KGpg automatically at login"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_misc.ui line 61
-#: rc.cpp:133
+#: rc.cpp:126
 msgid ""
 "<qt><b>Use mouse selection instead of clipboard:</b><br />\n"
 "<p>If checked, clipboard operations in KGpg will use the selection "
@@ -2163,13 +2104,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_misc.ui line 64
-#: rc.cpp:137
+#: rc.cpp:130
 msgid "Use mouse selection instead of clipboard"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_misc.ui line 78
-#: rc.cpp:140
+#: rc.cpp:133
 msgid ""
 "<qt><b>Display warning before creating temporary files:</b><br />\n"
 "<p></p></qt>"
@@ -2177,60 +2118,39 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_misc.ui line 82
-#: rc.cpp:144
+#: rc.cpp:137
 msgid ""
 "Display warning before creating temporary files\n"
 "(only occurs on remote files operations)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 99
-#: rc.cpp:151
-msgid ""
-"KGpg allows you to create a shredder on your desktop. It will shred "
-"(overwrite several times before erasing) the files you drop on it, making it "
-"almost impossible to recover the original file."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf_misc.ui line 128
-#: rc.cpp:154
-msgid "shredInfo"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf_misc.ui line 158
-#: rc.cpp:157
-msgid "Install Shredder"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf_misc.ui line 184
-#: rc.cpp:160
+#. i18n: file conf_misc.ui line 105
+#: rc.cpp:141
 msgid "Applet && Menus"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 192
-#: rc.cpp:163
+#. i18n: file conf_misc.ui line 113
+#: rc.cpp:144
 msgid "Left mouse click opens (restart KGpg to apply):"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 209
-#: rc.cpp:166
+#. i18n: file conf_misc.ui line 130
+#: rc.cpp:147
 msgid "Key Manager"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 224
-#: rc.cpp:172
+#. i18n: file conf_misc.ui line 145
+#: rc.cpp:153
 msgid "Konqueror Service Menus"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 240
-#: rc.cpp:175
+#. i18n: file conf_misc.ui line 161
+#: rc.cpp:156
 msgid ""
 "<qt><b>Sign file service menu:</b><br />\n"
 "<p></p>\n"
@@ -2238,22 +2158,22 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 243
-#: rc.cpp:180
+#. i18n: file conf_misc.ui line 164
+#: rc.cpp:161
 msgid "Sign file service menu:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 265
+#. i18n: file conf_misc.ui line 186
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 304
-#: rc.cpp:186 rc.cpp:200
+#. i18n: file conf_misc.ui line 225
+#: rc.cpp:167 rc.cpp:181
 msgid "Enable with All Files"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 285
-#: rc.cpp:189
+#. i18n: file conf_misc.ui line 206
+#: rc.cpp:170
 msgid ""
 "<qt><b>Decrypt file service menu:</b><br />\n"
 "<p></p>\n"
@@ -2261,40 +2181,40 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 288
-#: rc.cpp:194
+#. i18n: file conf_misc.ui line 209
+#: rc.cpp:175
 msgid "Decrypt file service menu:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 309
-#: rc.cpp:203
+#. i18n: file conf_misc.ui line 230
+#: rc.cpp:184
 msgid "Enable with Encrypted Files"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 322
-#: rc.cpp:206
+#. i18n: file conf_misc.ui line 243
+#: rc.cpp:187
 msgid "System Tray Applet"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 329
-#: rc.cpp:209
+#. i18n: file conf_misc.ui line 250
+#: rc.cpp:190
 msgid ""
 "<qt><b>Show system tray icon:</b><br />\n"
 "<p>If checked KGpg will minimize to an icon in the system tray.</p></qt>"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 332
-#: rc.cpp:213
+#. i18n: file conf_misc.ui line 253
+#: rc.cpp:194
 msgid "Show system tray icon"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 346
-#: rc.cpp:216
+#. i18n: file conf_misc.ui line 267
+#: rc.cpp:197
 msgid ""
 "<qt><b>Event on unencrypted file drop:</b><br />\n"
 "<p></p>\n"
@@ -2302,34 +2222,34 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 349
-#: rc.cpp:221
+#. i18n: file conf_misc.ui line 270
+#: rc.cpp:202
 msgid "Event on unencrypted file drop:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 360
-#: rc.cpp:224
+#. i18n: file conf_misc.ui line 281
+#: rc.cpp:205
 msgid "Encrypt"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 365
-#: rc.cpp:227
+#. i18n: file conf_misc.ui line 286
+#: rc.cpp:208
 msgid "Sign"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 370
+#. i18n: file conf_misc.ui line 291
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 408
-#: rc.cpp:230 rc.cpp:247
+#. i18n: file conf_misc.ui line 329
+#: rc.cpp:211 rc.cpp:228
 msgid "Ask"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 384
-#: rc.cpp:233
+#. i18n: file conf_misc.ui line 305
+#: rc.cpp:214
 msgid ""
 "<qt><b>Event on encrypted file drop:</b><br />\n"
 "<p></p>\n"
@@ -2337,26 +2257,26 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 387
-#: rc.cpp:238
+#. i18n: file conf_misc.ui line 308
+#: rc.cpp:219
 msgid "Event on encrypted file drop:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 398
-#: rc.cpp:241
+#. i18n: file conf_misc.ui line 319
+#: rc.cpp:222
 msgid "Decrypt & Save"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf_misc.ui line 403
-#: rc.cpp:244
+#. i18n: file conf_misc.ui line 324
+#: rc.cpp:225
 msgid "Decrypt & Open in Editor"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_servers.ui line 25
-#: rc.cpp:250
+#: rc.cpp:231
 msgid ""
 "<b>INFORMATION</b>:\n"
 "Only the default server will be stored in GnuPG's configuration file,\n"
@@ -2365,91 +2285,91 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_servers.ui line 35
-#: rc.cpp:255
+#: rc.cpp:236
 msgid "Honor HTTP proxy when available"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_servers.ui line 46
-#: rc.cpp:258
+#: rc.cpp:239
 msgid "&Set as Default"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_servers.ui line 53
-#: rc.cpp:261
+#: rc.cpp:242
 msgid "&Add..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_servers.ui line 60
-#: rc.cpp:264
+#: rc.cpp:245
 msgid "&Delete"
 msgstr "&Suprimir"
 
 #. i18n: tag string
 #. i18n: file conf_servers.ui line 67
-#: rc.cpp:267
+#: rc.cpp:248
 msgid "&Edit"
 msgstr "&Edicion"
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 32
-#: rc.cpp:270
+#: rc.cpp:251
 msgid "Key Colors"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 42
-#: rc.cpp:273
+#: rc.cpp:254
 msgid "Ultimately trusted keys:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 52
-#: rc.cpp:276
+#: rc.cpp:257
 msgid "Trusted keys:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 62
-#: rc.cpp:279
+#: rc.cpp:260
 msgid "Marginally trusted keys:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 72
-#: rc.cpp:282
+#: rc.cpp:263
 msgid "Expired keys:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 82
-#: rc.cpp:285
+#: rc.cpp:266
 msgid "Revoked keys:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 92
-#: rc.cpp:288
+#: rc.cpp:269
 msgid "Unknown keys:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 102
-#: rc.cpp:291
+#: rc.cpp:272
 msgid "Disabled keys:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_ui2.ui line 225
-#: rc.cpp:294
+#: rc.cpp:275
 msgid "Editor Font"
 msgstr "Poliça del editor"
 
 #. i18n: tag string
 #. i18n: file groupedit.ui line 22
-#: rc.cpp:297
+#: rc.cpp:278
 msgid "Available Trusted Keys"
 msgstr ""
 
@@ -2457,13 +2377,13 @@ msgstr ""
 #. i18n: file groupedit.ui line 58
 #. i18n: tag string
 #. i18n: file groupedit.ui line 145
-#: rc.cpp:300 rc.cpp:312
+#: rc.cpp:281 rc.cpp:293
 msgid "Name"
 msgstr "Nom"
 
 #. i18n: tag string
 #. i18n: file groupedit.ui line 84
-#: rc.cpp:309
+#: rc.cpp:290
 msgid "Keys in the Group"
 msgstr ""
 
@@ -2471,13 +2391,13 @@ msgstr ""
 #. i18n: file keyexport.ui line 41
 #. i18n: tag string
 #. i18n: file sourceselect.ui line 34
-#: rc.cpp:324 rc.cpp:670
+#: rc.cpp:305 rc.cpp:638
 msgid "Clipboard"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyexport.ui line 48
-#: rc.cpp:327
+#: rc.cpp:308
 msgid "Key server"
 msgstr ""
 
@@ -2485,37 +2405,37 @@ msgstr ""
 #. i18n: file keyexport.ui line 58
 #. i18n: tag string
 #. i18n: file sourceselect.ui line 43
-#: rc.cpp:330 rc.cpp:673
+#: rc.cpp:311 rc.cpp:641
 msgid "File:"
 msgstr "Fichièr :"
 
 #. i18n: tag string
 #. i18n: file keyexport.ui line 78
-#: rc.cpp:333
+#: rc.cpp:314
 msgid "Export settings"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyexport.ui line 84
-#: rc.cpp:336
+#: rc.cpp:317
 msgid "Export everything"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyexport.ui line 94
-#: rc.cpp:339
+#: rc.cpp:320
 msgid "Do not export attributes (photo ids)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyexport.ui line 101
-#: rc.cpp:342
+#: rc.cpp:323
 msgid "Clean key"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 38
-#: rc.cpp:348
+#: rc.cpp:329
 msgid ""
 "<qt><b>Key Server:</b><br /> <p>A Key Server is a centralized repository of "
 "PGP/GnuPG keys connected to the Internet which can be conveniently accessed "
@@ -2531,13 +2451,13 @@ msgstr ""
 #. i18n: file keyserver.ui line 41
 #. i18n: tag string
 #. i18n: file keyserver.ui line 172
-#: rc.cpp:351 rc.cpp:377
+#: rc.cpp:332 rc.cpp:358
 msgid "Key server:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 52
-#: rc.cpp:354
+#: rc.cpp:335
 msgid ""
 "<b>Key Server Drop Down Dialog:</b>\n"
 "Allows the user to select the Key Server which will be used to import PGP/"
@@ -2546,7 +2466,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 60
-#: rc.cpp:358
+#: rc.cpp:339
 msgid ""
 "<qt><b>Text to search or ID of the key to import:</b><br />\n"
 "<p>There are multiple ways to search for a key, you can use a text or "
@@ -2559,7 +2479,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 69
-#: rc.cpp:362
+#: rc.cpp:343
 msgid "Text to search or ID of the key to import:"
 msgstr ""
 
@@ -2567,25 +2487,25 @@ msgstr ""
 #. i18n: file keyserver.ui line 87
 #. i18n: tag string
 #. i18n: file keyserver.ui line 217
-#: rc.cpp:365 rc.cpp:390
+#: rc.cpp:346 rc.cpp:371
 msgid "Honor HTTP proxy:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 130
-#: rc.cpp:368
+#: rc.cpp:349
 msgid "&Search"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 166
-#: rc.cpp:374
+#: rc.cpp:355
 msgid "Export"
 msgstr "Exportar"
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 186
-#: rc.cpp:380
+#: rc.cpp:361
 msgid ""
 "<qt><b>Key to be exported:</b><br />\n"
 "<p>This allows the user to specify the key from the drop down list that will "
@@ -2594,19 +2514,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 189
-#: rc.cpp:384
+#: rc.cpp:365
 msgid "Key to be exported:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 202
-#: rc.cpp:387
+#: rc.cpp:368
 msgid "Export attributes (photo id)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 261
-#: rc.cpp:393
+#: rc.cpp:374
 msgid ""
 "<qt><b>Export:</b><br />\n"
 "<p>Pushing this button will export the specified key to the specified server."
@@ -2615,13 +2535,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 264
-#: rc.cpp:397
+#: rc.cpp:378
 msgid "&Export"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file keysmanager.rc line 6
-#: rc.cpp:400
+#: rc.cpp:381
 msgid "&Keys"
 msgstr ""
 
@@ -2629,359 +2549,353 @@ msgstr ""
 #. i18n: file keysmanager.rc line 23
 #. i18n: tag text
 #. i18n: file kgpg.rc line 13
-#: rc.cpp:403 rc.cpp:535
+#: rc.cpp:384 rc.cpp:513
 msgid "&View"
 msgstr "&Visualizacion"
 
 #. i18n: tag text
 #. i18n: file keysmanager.rc line 27
-#: rc.cpp:406
+#: rc.cpp:387
 msgid "&Show Details"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file keysmanager.rc line 38
-#: rc.cpp:409
+#: rc.cpp:390
 msgid "&Groups"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 12
-#: rc.cpp:412
+#: rc.cpp:393
 msgid "Custom decryption command."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 18
-#: rc.cpp:415
+#: rc.cpp:396
 msgid "Custom encryption options"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 21
-#: rc.cpp:418
+#: rc.cpp:399
 msgid "Allow custom encryption options"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 25
-#: rc.cpp:421
+#: rc.cpp:402
 msgid "File encryption key."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 28
-#: rc.cpp:424
+#: rc.cpp:405
 msgid "Encrypt files"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 32
-#: rc.cpp:427
+#: rc.cpp:408
 msgid "Use ASCII armored encryption."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 36
-#: rc.cpp:430
+#: rc.cpp:411
 msgid "Allow encryption with untrusted keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 40
-#: rc.cpp:433
+#: rc.cpp:414
 msgid "Hide the user ID."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 44
-#: rc.cpp:436
-msgid "Shred the source file after encryption."
-msgstr ""
-
-#. i18n: tag label
-#. i18n: file kgpg.kcfg line 48
-#: rc.cpp:439
+#: rc.cpp:417
 msgid "Enable PGP 6 compatibility."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 52
-#: rc.cpp:442
+#. i18n: file kgpg.kcfg line 48
+#: rc.cpp:420
 msgid "Use *.pgp extension for encrypted files."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 59
-#: rc.cpp:445
+#. i18n: file kgpg.kcfg line 55
+#: rc.cpp:423
 msgid "The path of the gpg configuration file."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 62
-#: rc.cpp:448
+#. i18n: file kgpg.kcfg line 58
+#: rc.cpp:426
 msgid "The path of the gpg binary used by KGpg."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 66
-#: rc.cpp:451
+#. i18n: file kgpg.kcfg line 62
+#: rc.cpp:429
 msgid "GPG groups"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 81
-#: rc.cpp:454
+#. i18n: file kgpg.kcfg line 77
+#: rc.cpp:432
 msgid "Is the first time the application runs."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 85
-#: rc.cpp:457
+#. i18n: file kgpg.kcfg line 81
+#: rc.cpp:435
 msgid "The size of the editor window."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 88
-#: rc.cpp:460
+#. i18n: file kgpg.kcfg line 84
+#: rc.cpp:438
 msgid "Show the trust value in key manager."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 92
-#: rc.cpp:463
+#. i18n: file kgpg.kcfg line 88
+#: rc.cpp:441
 msgid "Show the expiration value in key manager."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 96
-#: rc.cpp:466
+#. i18n: file kgpg.kcfg line 92
+#: rc.cpp:444
 msgid "Show the size value in key manager."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 100
-#: rc.cpp:469
+#. i18n: file kgpg.kcfg line 96
+#: rc.cpp:447
 msgid "Show the creation value in key manager."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 104
-#: rc.cpp:472
+#. i18n: file kgpg.kcfg line 100
+#: rc.cpp:450
 msgid "Show only secret keys in key manager."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 108
-#: rc.cpp:475
+#. i18n: file kgpg.kcfg line 104
+#: rc.cpp:453
 msgid "Hide revoked and disabled keys in key manager."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 115
-#: rc.cpp:478
+#. i18n: file kgpg.kcfg line 111
+#: rc.cpp:456
 msgid "Use the mouse selection instead of the clipboard."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 119
+#. i18n: file kgpg.kcfg line 115
 #. i18n: tag string
-#. i18n: file kgpgwizard.ui line 288
-#: rc.cpp:481 rc.cpp:606
+#. i18n: file kgpgwizard.ui line 206
+#: rc.cpp:459 rc.cpp:574
 msgid "Start KGpg automatically at KDE startup."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 123
-#: rc.cpp:484
+#. i18n: file kgpg.kcfg line 119
+#: rc.cpp:462
 msgid ""
 "Display a warning before creating temporary files during remote file "
 "operations."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 127
-#: rc.cpp:487
+#. i18n: file kgpg.kcfg line 123
+#: rc.cpp:465
 msgid "Choose default left-click behavior"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 134
-#: rc.cpp:490
+#. i18n: file kgpg.kcfg line 130
+#: rc.cpp:468
 msgid "Handle encrypted drops"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 142
-#: rc.cpp:493
+#. i18n: file kgpg.kcfg line 138
+#: rc.cpp:471
 msgid "Handle unencrypted drops"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 150
-#: rc.cpp:496
+#. i18n: file kgpg.kcfg line 146
+#: rc.cpp:474
 msgid "Show the \"sign file\" service menu."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 158
-#: rc.cpp:499
+#. i18n: file kgpg.kcfg line 154
+#: rc.cpp:477
 msgid "Show the \"decrypt file\" service menu."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 167
-#: rc.cpp:502
+#. i18n: file kgpg.kcfg line 163
+#: rc.cpp:480
 msgid "Show the systray icon"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 174
-#: rc.cpp:505
+#. i18n: file kgpg.kcfg line 170
+#: rc.cpp:483
 msgid "Show tip of the day."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 181
-#: rc.cpp:508
+#. i18n: file kgpg.kcfg line 177
+#: rc.cpp:486
 msgid "Color used for trusted keys."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 185
-#: rc.cpp:511
+#. i18n: file kgpg.kcfg line 181
+#: rc.cpp:489
 msgid "Color used for revoked keys."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 189
-#: rc.cpp:514
+#. i18n: file kgpg.kcfg line 185
+#: rc.cpp:492
 msgid "Color used for unknown keys."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 193
-#: rc.cpp:517
+#. i18n: file kgpg.kcfg line 189
+#: rc.cpp:495
 msgid "Color used for untrusted keys."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 197
-#: rc.cpp:520
+#. i18n: file kgpg.kcfg line 193
+#: rc.cpp:498
 msgid "Color used for ulitmately trusted keys."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 201
-#: rc.cpp:523
+#. i18n: file kgpg.kcfg line 197
+#: rc.cpp:501
 msgid "Color used for marginally trusted keys."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 205
-#: rc.cpp:526
+#. i18n: file kgpg.kcfg line 201
+#: rc.cpp:504
 msgid "Color used for expired keys."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 212
-#: rc.cpp:529
+#. i18n: file kgpg.kcfg line 208
+#: rc.cpp:507
 msgid "Font"
 msgstr "Poliça"
 
 #. i18n: tag label
-#. i18n: file kgpg.kcfg line 219
-#: rc.cpp:532
+#. i18n: file kgpg.kcfg line 215
+#: rc.cpp:510
 msgid "Use HTTP proxy when available."
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file kgpg.rc line 18
-#: rc.cpp:538
+#: rc.cpp:516
 msgid "Si&gnature"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file kgpg.rc line 25
-#: rc.cpp:541
+#: rc.cpp:519
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 18
-#: rc.cpp:544
+#: rc.cpp:522
 msgid "Create revocation certificate for"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 28
-#: rc.cpp:547
+#: rc.cpp:525
 msgid "key id"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 45
-#: rc.cpp:550
+#: rc.cpp:528
 msgid "Reason for revocation:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 56
-#: rc.cpp:553
+#: rc.cpp:531
 msgid "No Reason"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 61
-#: rc.cpp:556
+#: rc.cpp:534
 msgid "Key Has Been Compromised"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 66
-#: rc.cpp:559
+#: rc.cpp:537
 msgid "Key is Superseded"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 71
-#: rc.cpp:562
+#: rc.cpp:540
 msgid "Key is No Longer Used"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 81
-#: rc.cpp:565
+#: rc.cpp:543
 msgid "Description:"
 msgstr "Descripcion :"
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 96
-#: rc.cpp:568
+#: rc.cpp:546
 msgid "Save certificate:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 111
-#: rc.cpp:571
+#: rc.cpp:549
 msgid "Print certificate"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 121
-#: rc.cpp:574
+#: rc.cpp:552
 msgid "Import into keyring"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 13
-#: rc.cpp:577
+#: rc.cpp:555
 msgid "KGpg Wizard"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 57
-#: rc.cpp:580
+#: rc.cpp:558
 msgid ""
 "<h1>Welcome to the KGpg Wizard</h1>\n"
 "This wizard will first setup some basic configuration options required for "
@@ -2991,13 +2905,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 86
-#: rc.cpp:584
+#: rc.cpp:562
 msgid "You have GnuPG version:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 108
-#: rc.cpp:587
+#: rc.cpp:565
 msgid ""
 "Unless you want to try some unusual settings, just click on the \"next\" "
 "button."
@@ -3005,46 +2919,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 121
-#: rc.cpp:590
+#: rc.cpp:568
 msgid "KGpg needs to know where your GnuPG configuration file is stored."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 153
-#: rc.cpp:593
+#: rc.cpp:571
 msgid "<br>Path to your GnuPG options file:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kgpgwizard.ui line 206
-#: rc.cpp:596
-msgid "Install shredder on my desktop"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file kgpgwizard.ui line 263
-#: rc.cpp:600
-#, no-c-format
-msgid ""
-"<qt>This will install a shredder icon on your desktop.<br>\n"
-"The shredder securely deletes files (overwriting them 35 times) dropped on "
-"to it.\n"
-"Remember that if you download a file or open one in an editor, parts of the "
-"file may be saved in a temporary location. Shredding will not erase these "
-"temporary files.\n"
-"<br><b>Shredding may not be 100% secure if you use a journaling file system."
-"</b></qt>"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file kgpgwizard.ui line 316
-#: rc.cpp:609
+#. i18n: file kgpgwizard.ui line 234
+#: rc.cpp:577
 msgid "Your default key:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kgpgwizard.ui line 335
-#: rc.cpp:612
+#. i18n: file kgpgwizard.ui line 253
+#: rc.cpp:580
 msgid ""
 "KGpg will now launch the key generation dialog to create your own key pair "
 "for encryption and decryption."
@@ -3052,49 +2945,49 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 19
-#: rc.cpp:618
+#: rc.cpp:586
 msgid "New Key Created"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 25
-#: rc.cpp:621
+#: rc.cpp:589
 msgid "You have successfully created the following key:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 37
-#: rc.cpp:624
+#: rc.cpp:592
 msgid "Name:"
 msgstr "Nom :"
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 53
-#: rc.cpp:627
+#: rc.cpp:595
 msgid "textLabel7"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 77
-#: rc.cpp:633
+#: rc.cpp:601
 msgid "textLabel8"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 101
-#: rc.cpp:639
+#: rc.cpp:607
 msgid "textLabel10"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 115
-#: rc.cpp:642
+#: rc.cpp:610
 msgid "Fingerprint:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 136
-#: rc.cpp:645
+#: rc.cpp:613
 msgid ""
 "<qt><b>Set as your default key:</b><br />\n"
 "<p>Checking this option sets the newly created key pair as the default key "
@@ -3103,19 +2996,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 139
-#: rc.cpp:649
+#: rc.cpp:617
 msgid "Set as your default key"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 151
-#: rc.cpp:652
+#: rc.cpp:620
 msgid "Revocation Certificate"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 157
-#: rc.cpp:655
+#: rc.cpp:623
 msgid ""
 "It is recommended to save or print a revocation certificate in case your key "
 "is compromised."
@@ -3123,34 +3016,34 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 169
-#: rc.cpp:658
+#: rc.cpp:626
 msgid "Save as:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 185
-#: rc.cpp:661
+#: rc.cpp:629
 msgid "Print"
 msgstr "Estampar"
 
 #. i18n: tag string
 #. i18n: file searchres.ui line 33
-#: rc.cpp:664
+#: rc.cpp:632
 msgid "Keys"
 msgstr "Claus"
 
 #. i18n: tag string
 #. i18n: file searchres.ui line 43
-#: rc.cpp:667
+#: rc.cpp:635
 msgid "Key to import:"
 msgstr ""
 
-#: rc.cpp:674
+#: rc.cpp:642
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:675
+#: rc.cpp:643
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
@@ -3177,7 +3070,8 @@ msgid "ID"
 msgstr "ID"
 
 #: selectpublickeydialog.cpp:152
-msgid "<b>Public keys list</b>: select the key that will be used for encryption."
+msgid ""
+"<b>Public keys list</b>: select the key that will be used for encryption."
 msgstr ""
 
 #: selectpublickeydialog.cpp:166
@@ -3202,43 +3096,21 @@ msgid ""
 "available secret keys are tried."
 msgstr ""
 
-#: selectpublickeydialog.cpp:188
-msgid ""
-"<b>Shred source file</b>: permanently remove source file. No recovery will "
-"be possible"
-msgstr ""
-
-#: selectpublickeydialog.cpp:192
-msgid ""
-"<qt><b>Shred source file:</b><br /><p>Checking this option will shred "
-"(overwrite several times before erasing) the files you have encrypted. This "
-"way, it is almost impossible that the source file is recovered.</p><p><b>But "
-"you must be aware that this is not secure</b> on all file systems, and that "
-"parts of the file may have been saved in a temporary file or in the spooler "
-"of your printer if you previously opened it in an editor or tried to print "
-"it. Only works on files (not on folders).</p></qt>"
-msgstr ""
-
-#: selectpublickeydialog.cpp:194
-#, kde-format
-msgid "<a href=\"whatsthis:%1\">Read this before using shredding</a>"
-msgstr ""
-
-#: selectpublickeydialog.cpp:199
+#: selectpublickeydialog.cpp:181
 msgid "Symmetrical encryption"
 msgstr ""
 
-#: selectpublickeydialog.cpp:200
+#: selectpublickeydialog.cpp:182
 msgid ""
 "<b>Symmetrical encryption</b>: encryption does not use keys. You just need "
 "to give a password to encrypt/decrypt the file"
 msgstr ""
 
-#: selectpublickeydialog.cpp:214
+#: selectpublickeydialog.cpp:196
 msgid "Custom option:"
 msgstr ""
 
-#: selectpublickeydialog.cpp:218
+#: selectpublickeydialog.cpp:200
 msgid ""
 "<b>Custom option</b>: for experienced users only, allows you to enter a gpg "
 "command line option, like: '--armor'"
@@ -3357,4 +3229,3 @@ msgid ""
 "<p>You can reach your default key by pressing &quot;Ctrl+Home&quot; in the "
 "key manager.</p>\n"
 msgstr ""
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete-plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-17 05:41+0200\n"
+"POT-Creation-Date: 2007-10-22 05:43+0200\n"
 "PO-Revision-Date: 2007-10-23 23:30+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -32,75 +32,93 @@ msgid "Select public key for %1"
 msgstr ""
 
 #: cryptography/cryptographypreferences.cpp:43
-#: cryptography/cryptographypreferences.cpp:44
-msgid "Select the key you want to use to sign and encrypt messages"
+msgid "Private Key: "
 msgstr ""
 
 #: cryptography/cryptographypreferences.cpp:45
+#: cryptography/cryptographypreferences.cpp:46
+msgid "Select the key you want to use to sign and encrypt messages"
+msgstr ""
+
+#: cryptography/cryptographypreferences.cpp:47
 msgid "The private key used for decryption and signing"
 msgstr ""
 
-#: cryptography/cryptographypreferences.cpp:46
+#: cryptography/cryptographypreferences.cpp:48
 msgid ""
 "See and change the private key used for signing and encrypting messages "
 "using the Cryptography plugin"
 msgstr ""
 
-#: cryptography/cryptographypreferences.cpp:48
+#: cryptography/cryptographypreferences.cpp:50
 msgid ""
-"Before you can send encrypted messages to someone,\t\t\tyou must select "
-"their public key by right-clicking on their name in your contact list,\t\t"
-"\tand choose \"Select Public Key\".\n"
+"Before you can send encrypted messages to someone, you must select their "
+"public key by right-clicking on their name in your contact list, and choose "
+"\"Select Public Key\".\n"
 "\n"
-"\t\t\tBefore you can sign messages, you must select a signing key.\n"
+" Before you can sign messages, you must select a private key.\n"
 "\n"
-"\t\t\tAll messages become plain text when used with this plugin."
+" All messages become plain text when sent with this plugin."
 msgstr ""
 
-#: cryptography/exportkeys.cpp:43
+#: cryptography/exportkeys.cpp:40
 msgid "Export Public Keys"
 msgstr ""
 
-#: cryptography/exportkeys.cpp:45
+#: cryptography/exportkeys.cpp:42
 msgid "Export"
 msgstr "Exportar"
 
-#: cryptography/exportkeys.cpp:45
+#: cryptography/exportkeys.cpp:42
 msgid "Export checked keys to address book"
 msgstr ""
 
-#: cryptography/exportkeys.cpp:76
+#: cryptography/exportkeys.cpp:75
 msgid "<No meta-contacts with keys to export>"
 msgstr ""
 
-#: cryptography/cryptographyplugin.cpp:84
+#: cryptography/cryptographyplugin.cpp:86
 msgid "&Select Public Key..."
 msgstr ""
 
-#: cryptography/cryptographyplugin.cpp:90
+#: cryptography/cryptographyplugin.cpp:92
 msgid "&Export Public Keys To Address Book..."
 msgstr ""
 
-#: cryptography/cryptographyplugin.cpp:346
+#: cryptography/cryptographyplugin.cpp:339
+#: cryptography/cryptographyguiclient.cpp:163
 msgid ""
-"This protocol may not work with messages that\t\t\t\t\t\tare encrypted. This "
-"is because encrypted messages are very long, and\t\t\t\t\t\t\t\tthe server "
-"or peer may reject them due to their\t\t\t\t\t\t\t\tlength. To avoid being "
-"signed off or your account\t\t\t\t\t\t\t\tbeing warned or temporarily "
-"suspended, turn off\t\t\t\t\t\t\t\tencryption."
+"This protocol may not work with messages that are encrypted. This is because "
+"encrypted messages are very long, and the server or peer may reject them due "
+"to their length. To avoid being signed off or your account being warned or "
+"temporarily suspended, turn off encryption."
 msgstr ""
 
-#: cryptography/cryptographyplugin.cpp:352
-#: cryptography/cryptographyguiclient.cpp:172
+#: cryptography/cryptographyplugin.cpp:340
+#: cryptography/cryptographyguiclient.cpp:164
 msgid "Cryptography Unsupported Protocol"
 msgstr ""
 
-#: cryptography/cryptographyplugin.cpp:393
+#: cryptography/cryptographyplugin.cpp:376
+#, kde-format
+msgid ""
+"Cryptography plugin has found an encryption key for %1 (%2) in your KDE "
+"address book. Do you want to use key %3 as this contact's public key? "
+msgstr ""
+
+#: cryptography/cryptographyplugin.cpp:377
 msgid "Public Key Found"
 msgstr ""
 
-#: cryptography/cryptographyplugin.cpp:404
+#: cryptography/cryptographyplugin.cpp:388
 msgid "Public Keys Found"
+msgstr ""
+
+#: cryptography/cryptographyplugin.cpp:391
+#, kde-format
+msgid ""
+"Cryptography plugin has found multiple encryption keys for %1 (%2) in your "
+"KDE address book. To use one of these keys, select it and choose OK."
 msgstr ""
 
 #: cryptography/cryptographyguiclient.cpp:55
@@ -119,25 +137,17 @@ msgstr ""
 msgid "Export Contacts' Keys to Address Book"
 msgstr ""
 
-#: cryptography/cryptographyguiclient.cpp:112
+#: cryptography/cryptographyguiclient.cpp:108
 msgid ""
-"You have not selected a private key for yourself, so signing is not possible."
-"Please select a private key in the Cryptography preferences dialog"
+"You have not selected a private key for yourself, so signing is not "
+"possible. Please select a private key in the Cryptography preferences dialog"
 msgstr ""
 
-#: cryptography/cryptographyguiclient.cpp:114
+#: cryptography/cryptographyguiclient.cpp:109
 msgid "No Private Key"
 msgstr ""
 
 #: cryptography/cryptographyguiclient.cpp:171
-msgid ""
-"This protocol may not work with messages that are encrypted. This is because "
-"encrypted messages are very long, and the server or peer may reject them due "
-"to their length. To avoid being signed off or your account being warned or "
-"temporarily suspended, turn off encryption."
-msgstr ""
-
-#: cryptography/cryptographyguiclient.cpp:181
 #, kde-format
 msgid ""
 "To send encrypted messages to %2, you still need to select a public key for "
@@ -149,7 +159,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: cryptography/cryptographyguiclient.cpp:183
+#: cryptography/cryptographyguiclient.cpp:173
 msgid "Missing public key"
 msgid_plural "Missing public keys"
 msgstr[0] ""
@@ -157,27 +167,52 @@ msgstr[1] ""
 
 #. i18n: tag text
 #. i18n: file ./cryptography/cryptographychatui.rc line 5
-#: rc.cpp:3 rc.cpp:3
+#: rc.cpp:3
 msgid "&Tools"
 msgstr "&Espleches"
 
 #. i18n: tag text
 #. i18n: file ./cryptography/cryptographychatui.rc line 11
-#: rc.cpp:6 rc.cpp:6
+#: rc.cpp:6
 msgid "Cryptography Toolbar"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./cryptography/exportkeysbase.ui line 17
-#: rc.cpp:9 rc.cpp:9
+#: rc.cpp:9
 msgid ""
 "Cryptography plugin will export keys for the chosen meta-contacts. If no "
 "address book entry has been linked to each meta-contact, one will be created."
 msgstr ""
 
+#. i18n: tag string
+#. i18n: file ./cryptography/exportkeysbase.ui line 27
+#: rc.cpp:12
+msgid "Select Keys to Export"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./cryptography/exportkeysbase.ui line 30
+#: rc.cpp:15
+msgid ""
+"Check the box next to the name and key of each user that you want to export "
+"to the address book."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./cryptography/kabckeyselectorbase.ui line 27
+#: rc.cpp:18
+msgid "Select Keys to Use"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./cryptography/kabckeyselectorbase.ui line 30
+#: rc.cpp:21
+msgid "Select the key you want to use for to encrypt to the metacontact"
+msgstr ""
+
 #. i18n: tag text
 #. i18n: file ./cryptography/cryptographyui.rc line 5
-#: rc.cpp:12 rc.cpp:12
+#: rc.cpp:24
 msgid "&Edit"
 msgstr "&Edicion"
-
