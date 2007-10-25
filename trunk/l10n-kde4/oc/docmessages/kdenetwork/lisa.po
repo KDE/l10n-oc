@@ -5,8 +5,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lisa\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"X-KDE-DocBook-SVN-URL: trunk/KDE/kdenetwork/doc/lisa/index.docbook\n"
-"X-KDE-DocBook-SVN-Changed-Revision: 532373\n"
 "POT-Creation-Date: 2006-11-04 05:11+0000\n"
 "PO-Revision-Date: 2007-10-24 11:14+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
@@ -14,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdenetwork/doc/lisa/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 532373\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: title
@@ -39,10 +39,9 @@ msgstr ""
 #, no-c-format
 msgid "ROLES_OF_TRANSLATORS"
 msgstr ""
-"<othercredit role=\"translator\">"
-"<firstname></firstname><surname></surname>"
-"<affiliation><address><email>yannig@marchegay.org</email></address>"
-"</affiliation><contrib></contrib></othercredit>"
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
 
 #. Tag: holder
 #: index.docbook:32
@@ -54,18 +53,18 @@ msgstr ""
 #: index.docbook:39
 #, no-c-format
 msgid ""
-"&lisa; is intended to provide a kind of <quote>network neighborhood</quote>"
-", but only relying on the TCP/IP protocol stack, no <acronym>SMB</acronym> "
-"or anything else required."
+"&lisa; is intended to provide a kind of <quote>network neighborhood</quote>, "
+"but only relying on the TCP/IP protocol stack, no <acronym>SMB</acronym> or "
+"anything else required."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:43
 #, no-c-format
 msgid ""
-"This is the handbook to both the <acronym>LAN</acronym> "
-"Information Server (&lisa;) and the Restricted <acronym>LAN</acronym> "
-"Information Server (&reslisa;)"
+"This is the handbook to both the <acronym>LAN</acronym> Information Server "
+"(&lisa;) and the Restricted <acronym>LAN</acronym> Information Server "
+"(&reslisa;)"
 msgstr ""
 
 #. Tag: keyword
@@ -108,8 +107,8 @@ msgstr "Introduccion"
 #: index.docbook:62
 #, no-c-format
 msgid ""
-"&lisa; is intended to provide a kind of <quote>network neighborhood</quote>"
-", but only relying on the TCP/IP protocol stack, no smb or whatever."
+"&lisa; is intended to provide a kind of <quote>network neighborhood</quote>, "
+"but only relying on the TCP/IP protocol stack, no smb or whatever."
 msgstr ""
 
 #. Tag: para
@@ -121,7 +120,8 @@ msgstr ""
 #. Tag: para
 #: index.docbook:68
 #, no-c-format
-msgid "The list of running hosts is provided via <acronym>TCP</acronym> port 7741."
+msgid ""
+"The list of running hosts is provided via <acronym>TCP</acronym> port 7741."
 msgstr ""
 
 #. Tag: para
@@ -135,18 +135,18 @@ msgstr ""
 #, no-c-format
 msgid ""
 "You give &lisa; a range of <acronym>IP</acronym> addresses, then &lisa; will "
-"send <acronym>ICMP</acronym> echo requests to all given <acronym>IP</acronym> "
-"addresses, and wait for the answers."
+"send <acronym>ICMP</acronym> echo requests to all given <acronym>IP</"
+"acronym> addresses, and wait for the answers."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:80
 #, no-c-format
 msgid ""
-"You can tell &lisa; to execute <command>nmblookup</command> <option>\"*</option>"
-". The command line tool <command>nmblookup</command> "
-"must be installed from the Samba package. <command>nmblookup</command> <option>"
-"\"*\"</option> sends a broadcast to the attached networks, and all hosts "
+"You can tell &lisa; to execute <command>nmblookup</command> <option>\"*</"
+"option>. The command line tool <command>nmblookup</command> must be "
+"installed from the Samba package. <command>nmblookup</command> <option>\"*"
+"\"</option> sends a broadcast to the attached networks, and all hosts "
 "running <acronym>SMB</acronym> services will answer this broadcast."
 msgstr ""
 
@@ -169,19 +169,20 @@ msgstr ""
 #, no-c-format
 msgid ""
 "In the most simple case this could be your network address/subnetmask, then "
-"&lisa; would check every possible host of your network to see if it is running."
+"&lisa; would check every possible host of your network to see if it is "
+"running."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:102
 #, no-c-format
 msgid ""
-"The hosts are checked using <acronym>ICMP</acronym> echo requests. To be able "
-"to send and receive <acronym>ICMP</acronym> echo requests and replies the "
-"program has to open a so-called <quote>raw socket</quote>"
-". Therefore it needs <systemitem class=\"username\">root</systemitem> "
-"privileges. This socket is opened right after the start of the program, after "
-"successfully opening the socket root privileges are dropped immediately (see "
+"The hosts are checked using <acronym>ICMP</acronym> echo requests. To be "
+"able to send and receive <acronym>ICMP</acronym> echo requests and replies "
+"the program has to open a so-called <quote>raw socket</quote>. Therefore it "
+"needs <systemitem class=\"username\">root</systemitem> privileges. This "
+"socket is opened right after the start of the program, after successfully "
+"opening the socket root privileges are dropped immediately (see "
 "<filename>main.cpp</filename> and <filename>strictmain.cpp</filename>)."
 msgstr ""
 
@@ -189,9 +190,9 @@ msgstr ""
 #: index.docbook:112
 #, no-c-format
 msgid ""
-"If you configure &lisa; so that it also uses <command>nmblookup</command>"
-", it will <literal>popen(\"nmblookup \\\"*\\\"\")</literal> "
-"and then parse the results."
+"If you configure &lisa; so that it also uses <command>nmblookup</command>, "
+"it will <literal>popen(\"nmblookup \\\"*\\\"\")</literal> and then parse the "
+"results."
 msgstr ""
 
 #. Tag: para
@@ -199,9 +200,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Since the <acronym>ICMP</acronym> requests and the broadcasts can cause some "
-"network traffic if there are more than one such server running in one network, "
-"the servers cooperate with each other. Before they start pinging (or <command>"
-"nmblookup</command>), they send a broadcast on port 7741."
+"network traffic if there are more than one such server running in one "
+"network, the servers cooperate with each other. Before they start pinging "
+"(or <command>nmblookup</command>), they send a broadcast on port 7741."
 msgstr ""
 
 #. Tag: para
@@ -209,8 +210,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If somebody answers this broadcast, they will retrieve the complete list of "
-"running hosts via <acronym>TCP</acronym> port 7741 from this host and will not "
-"start to ping (or <command>nmblookup</command>)."
+"running hosts via <acronym>TCP</acronym> port 7741 from this host and will "
+"not start to ping (or <command>nmblookup</command>)."
 msgstr ""
 
 #. Tag: para
@@ -219,18 +220,18 @@ msgstr ""
 msgid ""
 "If nobody answers, the host which sent the broadcast will start pinging the "
 "hosts (or <command>nmblookup</command>) and then open a socket which listens "
-"for the mentioned broadcasts. If the host received an answer to his broadcast, "
-"it won't have the socket for listening to the broadcasts open. So usually "
-"exactly one of the servers will have this socket open and only this one will "
-"actually ping (or <command>nmblookup</command>) the hosts."
+"for the mentioned broadcasts. If the host received an answer to his "
+"broadcast, it won't have the socket for listening to the broadcasts open. So "
+"usually exactly one of the servers will have this socket open and only this "
+"one will actually ping (or <command>nmblookup</command>) the hosts."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:135
 #, no-c-format
 msgid ""
-"In other words, the servers are lazy, they work like <quote>"
-"I will only do something if nobody else can do it for me</quote>."
+"In other words, the servers are lazy, they work like <quote>I will only do "
+"something if nobody else can do it for me</quote>."
 msgstr ""
 
 #. Tag: para
@@ -246,22 +247,22 @@ msgid ""
 "Let's say you configured &lisa; to update every 10 minutes. Now you don't "
 "access your server very often. If nobody accesses the server for the last "
 "update period, the server will update (either itself or from the one which "
-"actually does the work) and then double its update period, &ie; the next update "
-"will happen after 20 minutes."
+"actually does the work) and then double its update period, &ie; the next "
+"update will happen after 20 minutes."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:146
 #, no-c-format
 msgid ""
-"This will happen 4 times, so if nobody accesses the server with update period "
-"10 minutes for a long time, its update interval will increase up to 160 "
-"minutes, almost three hours. If then somebody accesses the data from the "
+"This will happen 4 times, so if nobody accesses the server with update "
+"period 10 minutes for a long time, its update interval will increase up to "
+"160 minutes, almost three hours. If then somebody accesses the data from the "
 "server, he will get an old list ( up to 160 minutes old). With accessing the "
-"server will reset its update interval to its initial value, &ie; 10 minutes and "
-"immediately start updating if the last update is more than these 10 minutes "
-"over. This means if you get a very old list, you can try some seconds later "
-"again and you should get a current version."
+"server will reset its update interval to its initial value, &ie; 10 minutes "
+"and immediately start updating if the last update is more than these 10 "
+"minutes over. This means if you get a very old list, you can try some "
+"seconds later again and you should get a current version."
 msgstr ""
 
 #. Tag: para
@@ -269,20 +270,21 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This will have fast effect for the servers, which don't ping (or nmblookup) "
-"theirselves, since only one user usually accesses them, and it will have less "
-"effect for the server which does the pinging (or <command>nmblookup</command>"
-"), since this server is accessed from all other servers in the network."
+"theirselves, since only one user usually accesses them, and it will have "
+"less effect for the server which does the pinging (or <command>nmblookup</"
+"command>), since this server is accessed from all other servers in the "
+"network."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:162
 #, no-c-format
 msgid ""
-"This way it is possible that many hosts in a network run this server, but the "
-"net load will remain low. For the user it is not necessary to know wether there "
-"is a server (&ie; a name server or fileserver or whatever) in the network which "
-"also runs &lisa;. He can always run &lisa; locally and &lisa; will detect if "
-"there is one, transparently to the user."
+"This way it is possible that many hosts in a network run this server, but "
+"the net load will remain low. For the user it is not necessary to know "
+"wether there is a server (&ie; a name server or fileserver or whatever) in "
+"the network which also runs &lisa;. He can always run &lisa; locally and "
+"&lisa; will detect if there is one, transparently to the user."
 msgstr ""
 
 #. Tag: para
@@ -290,8 +292,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "The first client for &lisa; is an ioslave for &kde; 2, so the user can enter "
-"there <userinput>lan://localhost/</userinput> or <userinput>lan:/</userinput>"
-", which will both contact &lisa; on the own system."
+"there <userinput>lan://localhost/</userinput> or <userinput>lan:/</"
+"userinput>, which will both contact &lisa; on the own system."
 msgstr ""
 
 #. Tag: para
@@ -300,37 +302,38 @@ msgstr ""
 msgid ""
 "If there is a machine which runs all the time and the user knows that this "
 "machine also runs &lisa;, he can use his &lisa; client directly with this "
-"server (would be with the mentioned ioslave <userinput>"
-"lan://the_server_name/</userinput>)."
+"server (would be with the mentioned ioslave <userinput>lan://the_server_name/"
+"</userinput>)."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:179
 #, no-c-format
 msgid ""
-"If you don't want that your &lisa; takes part in the broadcasting, but always "
-"does the pinging itself, make it use another port with the command line option "
-"<option>--port</option> or <option>-p</option>. This is not recommended!"
+"If you don't want that your &lisa; takes part in the broadcasting, but "
+"always does the pinging itself, make it use another port with the command "
+"line option <option>--port</option> or <option>-p</option>. This is not "
+"recommended!"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:184
 #, no-c-format
 msgid ""
-"If you send <command>SIGHUP</command> to &lisa;, it will reread its configfile. "
-"If you send <command>SIGUSR1</command> to &lisa;, it will print some status "
-"information to stdout."
+"If you send <command>SIGHUP</command> to &lisa;, it will reread its "
+"configfile. If you send <command>SIGUSR1</command> to &lisa;, it will print "
+"some status information to stdout."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:188
 #, no-c-format
 msgid ""
-"The data provided over the socket has a simple format: <computeroutput>"
-"&lt;decimal ip address in network byte order&gt;&lt;one space 0x20&gt;&lt;full "
-"name of the host&gt;&lt;a terminating '\\0'&gt;&lt;newline "
-"'\\n'&lt;</computeroutput> and the last line <computeroutput>"
-"0 succeeded&lt;'\\n'&gt;</computeroutput>"
+"The data provided over the socket has a simple format: <computeroutput>&lt;"
+"decimal ip address in network byte order&gt;&lt;one space 0x20&gt;&lt;full "
+"name of the host&gt;&lt;a terminating '\\0'&gt;&lt;newline '\\n'&lt;</"
+"computeroutput> and the last line <computeroutput>0 succeeded&lt;'\\n'&gt;</"
+"computeroutput>"
 msgstr ""
 
 #. Tag: para
@@ -374,17 +377,17 @@ msgstr ""
 #: index.docbook:212
 #, no-c-format
 msgid ""
-"If you hav very strict security rules in your network or you don't want to have "
-"another port open or whatever, you can use &reslisa;."
+"If you hav very strict security rules in your network or you don't want to "
+"have another port open or whatever, you can use &reslisa;."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:216
 #, no-c-format
 msgid ""
-"With &reslisa; you cannot ping whole networks and address ranges, you can give "
-"&reslisa; up to currently 64 hosts by their names in its config file. These "
-"will be pinged. You are still able to use <command>nmblookup</command>."
+"With &reslisa; you cannot ping whole networks and address ranges, you can "
+"give &reslisa; up to currently 64 hosts by their names in its config file. "
+"These will be pinged. You are still able to use <command>nmblookup</command>."
 msgstr ""
 
 #. Tag: para
@@ -392,9 +395,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "&reslisa; will also only provide the information over a unix domain socket, "
-"&ie; not over the network. The name of the socket is <filename>"
-"/tmp/resLisa-YourLoginname</filename> so &reslisa; can be safely run by more "
-"users on one machine."
+"&ie; not over the network. The name of the socket is <filename>/tmp/resLisa-"
+"YourLoginname</filename> so &reslisa; can be safely run by more users on one "
+"machine."
 msgstr ""
 
 #. Tag: para
@@ -402,20 +405,20 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Since it should also not produce a security risk of any kind it is safe to "
-"install &reslisa; setuid <systemitem class=\"username\">root</systemitem>"
-". <systemitem class=\"username\">root</systemitem> privileges will be dropped "
-"right after startup (see <filename>strictmain.cpp</filename>"
-"), they are only needed to create a raw socket for sending the <acronym>"
-"ICMP</acronym> echo requests."
+"install &reslisa; setuid <systemitem class=\"username\">root</systemitem>. "
+"<systemitem class=\"username\">root</systemitem> privileges will be dropped "
+"right after startup (see <filename>strictmain.cpp</filename>), they are only "
+"needed to create a raw socket for sending the <acronym>ICMP</acronym> echo "
+"requests."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:234
 #, no-c-format
 msgid ""
-"It will also not send or receive broadcasts. The first client for this is also "
-"an ioslave for &kde; 2 (<userinput>rlan:/</userinput> "
-"in &konqueror; for example.)"
+"It will also not send or receive broadcasts. The first client for this is "
+"also an ioslave for &kde; 2 (<userinput>rlan:/</userinput> in &konqueror; "
+"for example.)"
 msgstr ""
 
 #. Tag: title
@@ -434,21 +437,20 @@ msgstr ""
 #: index.docbook:245
 #, no-c-format
 msgid ""
-"PingAddresses = "
-"192.168.100.0/255.255.255.0;192.168.100.10-192.168.199.19;192.168.200.1;192-192."
-"168-168.100-199.0-9;\n"
+"PingAddresses = 192.168.100.0/255.255.255.0;192.168.100.10-"
+"192.168.199.19;192.168.200.1;192-192.168-168.100-199.0-9;\n"
 "PingNames = bb_mail;\n"
 "AllowedAddresses = 192.168.0.0/255.255.0.0\n"
 "BroadcastNetwork = 192.168.100.0/255.255.255.0\n"
 "SearchUsingNmblookup = 1                #also try nmblookup\n"
 "FirstWait = 30                          #30 hundredth seconds\n"
 "SecondWait = -1                         #only one try\n"
-"#SecondWait = 60                         #try twice, and the second time wait "
-"0.6 seconds\n"
+"#SecondWait = 60                         #try twice, and the second time "
+"wait 0.6 seconds\n"
 "UpdatePeriod = 300                      #update after 300 secs\n"
 "DeliverUnnamedHosts = 0                 #don't publish hosts without name\n"
-"MaxPingsAtOnce = 256                    #send up to 256 ICMP echo requests at "
-"once"
+"MaxPingsAtOnce = 256                    #send up to 256 ICMP echo requests "
+"at once"
 msgstr ""
 
 #. Tag: option
@@ -467,8 +469,8 @@ msgstr ""
 #: index.docbook:252
 #, no-c-format
 msgid ""
-"Here you say which addresses will be pinged. You can specify multiple ranges, "
-"they are divided by semicolons."
+"Here you say which addresses will be pinged. You can specify multiple "
+"ranges, they are divided by semicolons."
 msgstr ""
 
 #. Tag: para
@@ -487,8 +489,8 @@ msgstr ""
 #: index.docbook:261
 #, no-c-format
 msgid ""
-"192.168.100.0/255.255.255.0, &ie; an <acronym>IP</acronym> "
-"address and the assigned network mask."
+"192.168.100.0/255.255.255.0, &ie; an <acronym>IP</acronym> address and the "
+"assigned network mask."
 msgstr ""
 
 #. Tag: para
@@ -496,12 +498,12 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This doesn't have to be the network address and netmask of your machine. For "
-"example, if you have 10.0.0.0/255.0.0.0 as your own address, you could specify "
-"10.1.2.0/255.255.255.0 if you are only interested in these addresses. The "
-"combination <acronym>IP</acronym> address-network mask must be divided by a "
-"slash <quote>/</quote> and the address does not have to be a real network "
-"address, it can also be a host address of the desired network, &ie; "
-"10.12.34.67/255.0.0.0 is the same as 10.0.0.0/255.0.0.0 ."
+"example, if you have 10.0.0.0/255.0.0.0 as your own address, you could "
+"specify 10.1.2.0/255.255.255.0 if you are only interested in these "
+"addresses. The combination <acronym>IP</acronym> address-network mask must "
+"be divided by a slash <quote>/</quote> and the address does not have to be a "
+"real network address, it can also be a host address of the desired network, "
+"&ie; 10.12.34.67/255.0.0.0 is the same as 10.0.0.0/255.0.0.0 ."
 msgstr ""
 
 #. Tag: term
@@ -520,8 +522,8 @@ msgstr ""
 #: index.docbook:280
 #, no-c-format
 msgid ""
-"An <acronym>IP</acronym>-address where pinging will start and an <acronym>"
-"IP</acronym>-address where pinging will end."
+"An <acronym>IP</acronym>-address where pinging will start and an "
+"<acronym>IP</acronym>-address where pinging will end."
 msgstr ""
 
 #. Tag: para
@@ -534,16 +536,16 @@ msgstr ""
 #: index.docbook:285
 #, no-c-format
 msgid ""
-"In this example this would produce 199-100+1=100, 100*256=25.600, "
-"25.600+(19-10+1)=25.590 addresses"
+"In this example this would produce 199-100+1=100, 100*256=25.600, 25.600+(19-"
+"10+1)=25.590 addresses"
 msgstr ""
 
 #. Tag: term
 #: index.docbook:291
 #, no-c-format
 msgid ""
-"An <acronym>IP</acronym> address, as represented by ranges of each of the four "
-"decimal numbers"
+"An <acronym>IP</acronym> address, as represented by ranges of each of the "
+"four decimal numbers"
 msgstr ""
 
 #. Tag: para
@@ -551,8 +553,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "An <acronym>IP</acronym> address can be represented by its four decimal "
-"numbers, and you can specify ranges four each of these four numbers: "
-"192-192.169-171.100-199.0-9"
+"numbers, and you can specify ranges four each of these four numbers: 192-"
+"192.169-171.100-199.0-9"
 msgstr ""
 
 #. Tag: para
@@ -560,8 +562,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "In this example all <acronym>IP</acronym> addresses with first number 192, "
-"second number from 168 to 168, third number from 100 up to 199 and last number "
-"from 0 up to 9 will be pinged. This would give 1*1*100*10=1.000 addresses."
+"second number from 168 to 168, third number from 100 up to 199 and last "
+"number from 0 up to 9 will be pinged. This would give 1*1*100*10=1.000 "
+"addresses."
 msgstr ""
 
 #. Tag: para
@@ -617,9 +620,10 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This is also very important. &lisa; will only ping addresses, accept clients "
-"and answer broadcasts from addresses, which are covered by the addresses given "
-"in this line. You can add up to 32 network addresses/network masks or single "
-"addresses. Divide them by ; and don't put empty space between the addresses!"
+"and answer broadcasts from addresses, which are covered by the addresses "
+"given in this line. You can add up to 32 network addresses/network masks or "
+"single addresses. Divide them by ; and don't put empty space between the "
+"addresses!"
 msgstr ""
 
 #. Tag: para
@@ -632,8 +636,8 @@ msgstr ""
 #: index.docbook:344
 #, no-c-format
 msgid ""
-"A complete network and a single address are valid. Always make this as strict "
-"as possible, usually your network address/subnetmask is a good choice."
+"A complete network and a single address are valid. Always make this as "
+"strict as possible, usually your network address/subnetmask is a good choice."
 msgstr ""
 
 #. Tag: option
@@ -647,8 +651,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This entry contains exactly one network address/subnet mask. To this network "
-"broadcasts will be sent. Usually this should be your own network "
-"address/subnetmask, for example: 192.168.0.0/255.255.0.0"
+"broadcasts will be sent. Usually this should be your own network address/"
+"subnetmask, for example: 192.168.0.0/255.255.0.0"
 msgstr ""
 
 #. Tag: option
@@ -661,23 +665,23 @@ msgstr ""
 #: index.docbook:362
 #, no-c-format
 msgid ""
-"Here you can give <parameter>0</parameter> or <parameter>1</parameter>"
-". <parameter>1</parameter> means that &lisa; will execute <command>"
-"nmblookup</command> <option>\"*\"</option> and parse the output from this "
-"command. This produces less network traffic than the pinging, but you will only "
-"get hosts which have a <acronym>SMB</acronym> service running (&Windows; "
-"machines or machines running samba)."
+"Here you can give <parameter>0</parameter> or <parameter>1</parameter>. "
+"<parameter>1</parameter> means that &lisa; will execute <command>nmblookup</"
+"command> <option>\"*\"</option> and parse the output from this command. This "
+"produces less network traffic than the pinging, but you will only get hosts "
+"which have a <acronym>SMB</acronym> service running (&Windows; machines or "
+"machines running samba)."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:370
 #, no-c-format
 msgid ""
-"If you enable this option and also give <acronym>IP</acronym> "
-"addresses to ping, then <command>nmblookup</command> "
-"will be executed first and then the pinging will start. Then only addresses "
-"will be pinged, which were not already delivered from <command>"
-"nmblookup</command>. This should slightly decrease the network load."
+"If you enable this option and also give <acronym>IP</acronym> addresses to "
+"ping, then <command>nmblookup</command> will be executed first and then the "
+"pinging will start. Then only addresses will be pinged, which were not "
+"already delivered from <command>nmblookup</command>. This should slightly "
+"decrease the network load."
 msgstr ""
 
 #. Tag: option
@@ -690,11 +694,11 @@ msgstr ""
 #: index.docbook:382
 #, no-c-format
 msgid ""
-"If &lisa; pings, &ie; if it sends the <acronym>ICMP</acronym> "
-"echo requests, it sends a bunch of requests at once, and the it will wait for "
-"the number of hundredth seconds you specify here. Usually values from 5 to 50 "
-"should be good, the maximum is 99 (gives 0.99 seconds, a very long time). Try "
-"to make this value as small as possible while still finding all running hosts."
+"If &lisa; pings, &ie; if it sends the <acronym>ICMP</acronym> echo requests, "
+"it sends a bunch of requests at once, and the it will wait for the number of "
+"hundredth seconds you specify here. Usually values from 5 to 50 should be "
+"good, the maximum is 99 (gives 0.99 seconds, a very long time). Try to make "
+"this value as small as possible while still finding all running hosts."
 msgstr ""
 
 #. Tag: option
@@ -707,23 +711,23 @@ msgstr ""
 #: index.docbook:394
 #, no-c-format
 msgid ""
-"After &lisa; has sent the echo requests the first time, it can be possible that "
-"some hosts were not found. To improve the results, &lisa; can ping a second "
-"time. This time it will only ping hosts, from which it didn't receive answers. "
-"If you have good results with pinging only once, you can disable the second "
-"time with setting SecondWait to <userinput>-1</userinput>."
+"After &lisa; has sent the echo requests the first time, it can be possible "
+"that some hosts were not found. To improve the results, &lisa; can ping a "
+"second time. This time it will only ping hosts, from which it didn't receive "
+"answers. If you have good results with pinging only once, you can disable "
+"the second time with setting SecondWait to <userinput>-1</userinput>."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:401
 #, no-c-format
 msgid ""
-"Otherwise it might be a good idea to make this value a little bit bigger than "
-"the value for <option>FirstWait</option>, since the hosts which were not found "
-"on the first try, are probably slower or further away so they might take some "
-"milliseconds longer to answer. Usually values from 5 to 50 should be good or -1 "
-"to disable the second scan. The maximum is 99 (gives 0.99 seconds, a very long "
-"time)."
+"Otherwise it might be a good idea to make this value a little bit bigger "
+"than the value for <option>FirstWait</option>, since the hosts which were "
+"not found on the first try, are probably slower or further away so they "
+"might take some milliseconds longer to answer. Usually values from 5 to 50 "
+"should be good or -1 to disable the second scan. The maximum is 99 (gives "
+"0.99 seconds, a very long time)."
 msgstr ""
 
 #. Tag: option
@@ -737,8 +741,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This is the interval after which &lisa; will update. After this time &lisa; "
-"will again ping or <command>nmblookup</command> or get the list of hosts from "
-"the &lisa; server which actually does the pinging."
+"will again ping or <command>nmblookup</command> or get the list of hosts "
+"from the &lisa; server which actually does the pinging."
 msgstr ""
 
 #. Tag: para
@@ -754,9 +758,10 @@ msgstr ""
 #: index.docbook:423
 #, no-c-format
 msgid ""
-"Keep in mind that the update period is doubled if nobody accesses the server, "
-"up to 4 times, so the interval will become 16 times the value given here and "
-"will be reseted to the value given here if somebody accesses the server."
+"Keep in mind that the update period is doubled if nobody accesses the "
+"server, up to 4 times, so the interval will become 16 times the value given "
+"here and will be reseted to the value given here if somebody accesses the "
+"server."
 msgstr ""
 
 #. Tag: option
@@ -770,8 +775,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If an answer to an echo request from an IP address was received, were &lisa; "
-"could not determine a name, it will be only delivered over the port if you set "
-"this to 1."
+"could not determine a name, it will be only delivered over the port if you "
+"set this to 1."
 msgstr ""
 
 #. Tag: para
@@ -794,11 +799,11 @@ msgstr ""
 #: index.docbook:447
 #, no-c-format
 msgid ""
-"When sending the pings (echo requests), &lisa; sends a bunch of these at once "
-"and then waits for the answers. By default there are 256 pings sent at once, "
-"usually you should not need the change this value. If you make it much bigger, "
-"the internal receive buffers for the answers to the echo requests may become to "
-"small, if you make it to small, the updating will be slower."
+"When sending the pings (echo requests), &lisa; sends a bunch of these at "
+"once and then waits for the answers. By default there are 256 pings sent at "
+"once, usually you should not need the change this value. If you make it much "
+"bigger, the internal receive buffers for the answers to the echo requests "
+"may become to small, if you make it to small, the updating will be slower."
 msgstr ""
 
 #. Tag: title
@@ -830,11 +835,11 @@ msgid ""
 "BroadcastNetwork = 192.168.100.0/255.255.255.0\n"
 "SearchUsingNmblookup = 0                         #don't use nmblookup\n"
 "FirstWait = 20                                   #20 hundredth seconds\n"
-"SecondWait = 30                                  #30 hundredth seconds on the "
-"seconds try\n"
+"SecondWait = 30                                  #30 hundredth seconds on "
+"the seconds try\n"
 "UpdatePeriod = 300                               #update after 300 secs\n"
-"DeliverUnnamedHosts = 0                          #don't publish hosts without "
-"name"
+"DeliverUnnamedHosts = 0                          #don't publish hosts "
+"without name"
 msgstr ""
 
 #. Tag: title
@@ -847,8 +852,8 @@ msgstr ""
 #: index.docbook:473
 #, no-c-format
 msgid ""
-"You are only interested in hosts running <acronym>SMB</acronym> "
-"services and you don't have routers in your network:"
+"You are only interested in hosts running <acronym>SMB</acronym> services and "
+"you don't have routers in your network:"
 msgstr ""
 
 #. Tag: screen
@@ -885,12 +890,12 @@ msgid ""
 "SearchUsingNmblookup = 1                #also try nmblookup\n"
 "FirstWait = 30                          #30 hundredth seconds\n"
 "SecondWait = -1                         #only one try\n"
-"#SecondWait = 60                         #try twice, and the second time wait "
-"0.6 seconds\n"
+"#SecondWait = 60                         #try twice, and the second time "
+"wait 0.6 seconds\n"
 "UpdatePeriod = 300                      #update after 300 secs\n"
 "DeliverUnnamedHosts = 0                 #don't publish hosts without name\n"
-"MaxPingsAtOnce = 256                    #send up to 256 ICMP echo requests at "
-"once"
+"MaxPingsAtOnce = 256                    #send up to 256 ICMP echo requests "
+"at once"
 msgstr ""
 
 #. Tag: title
@@ -916,12 +921,12 @@ msgid ""
 "SearchUsingNmblookup = 1                # use nmblookup\n"
 "FirstWait = 30                          #30 hundredth seconds\n"
 "SecondWait = -1                         #only one try\n"
-"#SecondWait = 60                         #try twice, and the second time wait "
-"0.6 seconds\n"
+"#SecondWait = 60                         #try twice, and the second time "
+"wait 0.6 seconds\n"
 "UpdatePeriod = 300                      #update after 300 secs\n"
 "DeliverUnnamedHosts = 1                 #also publish hosts without name\n"
-"MaxPingsAtOnce = 256                    #send up to 256 ICMP echo requests at "
-"once"
+"MaxPingsAtOnce = 256                    #send up to 256 ICMP echo requests "
+"at once"
 msgstr ""
 
 #. Tag: title
@@ -970,8 +975,8 @@ msgstr ""
 #: index.docbook:525
 #, no-c-format
 msgid ""
-"Search at first for <filename>$<envar>HOME</envar>/.lisarc</filename>"
-", then for <filename>/etc/lisarc</filename>. This is the default behavior."
+"Search at first for <filename>$<envar>HOME</envar>/.lisarc</filename>, then "
+"for <filename>/etc/lisarc</filename>. This is the default behavior."
 msgstr ""
 
 #. Tag: term
@@ -984,9 +989,9 @@ msgstr ""
 #: index.docbook:534
 #, no-c-format
 msgid ""
-"Search first for "
-"<filename>$<envar>HOME</envar>/.kde/share/config/lisarc</filename>"
-", then for <filename>$<envar>KDEDIR</envar>/share/config/lisarc</filename>."
+"Search first for <filename>$<envar>HOME</envar>/.kde/share/config/lisarc</"
+"filename>, then for <filename>$<envar>KDEDIR</envar>/share/config/lisarc</"
+"filename>."
 msgstr ""
 
 #. Tag: term
@@ -1007,7 +1012,8 @@ msgstr ""
 #. Tag: term
 #: index.docbook:551
 #, no-c-format
-msgid "<option>-c</option>, <option>--config=</option><parameter>FILE</parameter>"
+msgid ""
+"<option>-c</option>, <option>--config=</option><parameter>FILE</parameter>"
 msgstr ""
 
 #. Tag: para
@@ -1019,16 +1025,17 @@ msgstr ""
 #. Tag: term
 #: index.docbook:560
 #, no-c-format
-msgid "<option>-p</option>, <option>--port</option> <parameter>PORTNR</parameter>"
+msgid ""
+"<option>-p</option>, <option>--port</option> <parameter>PORTNR</parameter>"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:563
 #, no-c-format
 msgid ""
-"Start the server on this portnumber. If you use this, &lisa; won't be able to "
-"cooperate with other &lisa;'s on the network. This option is not available for "
-"&reslisa;"
+"Start the server on this portnumber. If you use this, &lisa; won't be able "
+"to cooperate with other &lisa;'s on the network. This option is not "
+"available for &reslisa;"
 msgstr ""
 
 #. Tag: para
@@ -1036,18 +1043,18 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If you send the Hangup-Signal to &lisa; or &reslisa;, it will reread its "
-"configuration file (<userinput><command>killall</command> <option>"
-"-HUP lisa</option></userinput>)."
+"configuration file (<userinput><command>killall</command> <option>-HUP lisa</"
+"option></userinput>)."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:575
 #, no-c-format
 msgid ""
-"If you send the User1-Signal to &lisa; or &reslisa;, it will print some status "
-"information to the standard output (<userinput><command>killall</command> "
-"<option>-USR1 lisa</option></userinput>). You won't see anything if the console "
-"from which &lisa;/&reslisa; was started has terminated."
+"If you send the User1-Signal to &lisa; or &reslisa;, it will print some "
+"status information to the standard output (<userinput><command>killall</"
+"command> <option>-USR1 lisa</option></userinput>). You won't see anything if "
+"the console from which &lisa;/&reslisa; was started has terminated."
 msgstr ""
 
 #. Tag: title
@@ -1073,8 +1080,7 @@ msgstr ""
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
-"<para>Yannig Marchegay (Kokoyaya)"
-"<email>yannig@marchegay.org</email></para>"
+"<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
 #: index.docbook:593
@@ -1092,8 +1098,8 @@ msgstr ""
 #: index.docbook:603
 #, no-c-format
 msgid ""
-"&lisa; and &reslisa; need a libstdc++ (it uses only the string-class from it), "
-"it <emphasis>does not</emphasis> need either &Qt; nor &kde;."
+"&lisa; and &reslisa; need a libstdc++ (it uses only the string-class from "
+"it), it <emphasis>does not</emphasis> need either &Qt; nor &kde;."
 msgstr ""
 
 #. Tag: title
@@ -1106,9 +1112,9 @@ msgstr ""
 #: index.docbook:612
 #, no-c-format
 msgid ""
-"Both &reslisa; and &lisa; open a so called <quote>raw socket</quote> "
-"to send and receive <acronym>ICMP</acronym> echo requests (pings). To do this, "
-"they need <systemitem class=\"username\">root</systemitem> privileges."
+"Both &reslisa; and &lisa; open a so called <quote>raw socket</quote> to send "
+"and receive <acronym>ICMP</acronym> echo requests (pings). To do this, they "
+"need <systemitem class=\"username\">root</systemitem> privileges."
 msgstr ""
 
 #. Tag: para
@@ -1116,26 +1122,26 @@ msgstr ""
 #, no-c-format
 msgid ""
 "&lisa; offers a service on <acronym>TCP</acronym> port 7741, and should be "
-"installed by <systemitem class=\"username\">root</systemitem> "
-"and started when the system comes up. It depends greatly on your &OS; how to "
-"achieve this."
+"installed by <systemitem class=\"username\">root</systemitem> and started "
+"when the system comes up. It depends greatly on your &OS; how to achieve "
+"this."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:623
 #, no-c-format
 msgid ""
-"&reslisa; is intended to be started per user, it doesn't offer anything to the "
-"network. It needs to be installed setuid <systemitem class=\"username\">"
-"root</systemitem>."
+"&reslisa; is intended to be started per user, it doesn't offer anything to "
+"the network. It needs to be installed setuid <systemitem class=\"username"
+"\">root</systemitem>."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:627
 #, no-c-format
 msgid ""
-"If you use the <userinput>rlan</userinput> ioslave from &kde; 2, &reslisa; can "
-"be started automatically."
+"If you use the <userinput>rlan</userinput> ioslave from &kde; 2, &reslisa; "
+"can be started automatically."
 msgstr ""
 
 #. Tag: para
@@ -1143,16 +1149,15 @@ msgstr ""
 #, no-c-format
 msgid ""
 "&lisa; reads the file <filename>lisarc</filename>, &reslisa; reads the file "
-"<filename>reslisarc</filename>. If you want to be able to configure both from "
-"&kcontrol;, you have to start them using the command line switch <option>"
-"-K</option>."
+"<filename>reslisarc</filename>. If you want to be able to configure both "
+"from &kcontrol;, you have to start them using the command line switch "
+"<option>-K</option>."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:635
 #, no-c-format
 msgid ""
-"For more information where they look for configuration files read the chapter "
-"on <xref linkend=\"command-line-options\"/>."
+"For more information where they look for configuration files read the "
+"chapter on <xref linkend=\"command-line-options\"/>."
 msgstr ""
-

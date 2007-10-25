@@ -5,8 +5,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lilo-config\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"X-KDE-DocBook-SVN-URL: trunk/KDE/kdeadmin/doc/lilo-config/index.docbook\n"
-"X-KDE-DocBook-SVN-Changed-Revision: 643007\n"
 "POT-Creation-Date: 2007-03-20 04:58+0000\n"
 "PO-Revision-Date: 2007-10-24 11:18+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
@@ -14,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdeadmin/doc/lilo-config/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 643007\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: title
@@ -31,13 +31,11 @@ msgstr ""
 #. Tag: trans_comment
 #: index.docbook:20
 #, no-c-format
-
 msgid "ROLES_OF_TRANSLATORS"
 msgstr ""
-"<othercredit role=\"translator\">"
-"<firstname></firstname><surname></surname>"
-"<affiliation><address><email>yannig@marchegay.org</email></address>"
-"</affiliation><contrib></contrib></othercredit>"
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
 
 #. Tag: holder
 #: index.docbook:25
@@ -48,18 +46,16 @@ msgstr ""
 #. Tag: trans_comment
 #: index.docbook:27
 #, no-c-format
-
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
-"<para>Yannig Marchegay (Kokoyaya)"
-"<email>yannig@marchegay.org</email></para>"
+"<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: para
 #: index.docbook:32
 #, no-c-format
 msgid ""
-"&liloconfig; is an application specificly designed to configure &lilo; the boot "
-"manager."
+"&liloconfig; is an application specificly designed to configure &lilo; the "
+"boot manager."
 msgstr ""
 
 #. Tag: keyword
@@ -112,25 +108,27 @@ msgstr ""
 #, no-c-format
 msgid ""
 "In order to organize all of these options, this module is divided into three "
-"sections: <link linkend=\"lilo-general\"><guilabel>General Options</guilabel>"
-"</link>, <link linkend=\"lilo-OS\"><guilabel>Operating Systems</guilabel></link>"
-", and <link linkend=\"lilo-expert\"><guilabel>Expert</guilabel></link>"
+"sections: <link linkend=\"lilo-general\"><guilabel>General Options</"
+"guilabel></link>, <link linkend=\"lilo-OS\"><guilabel>Operating Systems</"
+"guilabel></link>, and <link linkend=\"lilo-expert\"><guilabel>Expert</"
+"guilabel></link>"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:53
 #, no-c-format
-msgid "You can switch between the sections using the tabs at the top of the window."
+msgid ""
+"You can switch between the sections using the tabs at the top of the window."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:56
 #, no-c-format
 msgid ""
-"If you are not currently logged in as a superuser, you will need to click the "
-"<guibutton>Administrator Mode</guibutton> Button. You will then be asked for a "
-"superuser password. Entering a correct password will allow you to modify the "
-"settings of this module."
+"If you are not currently logged in as a superuser, you will need to click "
+"the <guibutton>Administrator Mode</guibutton> Button. You will then be asked "
+"for a superuser password. Entering a correct password will allow you to "
+"modify the settings of this module."
 msgstr ""
 
 #. Tag: title
@@ -159,9 +157,9 @@ msgstr ""
 msgid ""
 "Select the drive or partition where you would like to install the Lilo boot "
 "loader. Unless you intend to use other boot managers in addition to &lilo;, "
-"this should be the MBR (master boot record) of your boot drive. In this case, "
-"you should probably select /dev/hda if your drive is IDE, and /dev/sda if your "
-"boot drive is SCSI."
+"this should be the MBR (master boot record) of your boot drive. In this "
+"case, you should probably select /dev/hda if your drive is IDE, and /dev/sda "
+"if your boot drive is SCSI."
 msgstr ""
 
 #. Tag: guilabel
@@ -188,8 +186,8 @@ msgstr ""
 msgid ""
 "Linear mode tells the boot loader the location of the kernels in linear "
 "addressing rather than sector/head/cylinder. Linear mode is required by some "
-"SCSI drives, and shouldn't hurt unless you are planning to create a boot disk "
-"to be used with other computers. See lilo man file for more details."
+"SCSI drives, and shouldn't hurt unless you are planning to create a boot "
+"disk to be used with other computers. See lilo man file for more details."
 msgstr ""
 
 #. Tag: guilabel
@@ -202,9 +200,9 @@ msgstr ""
 #: index.docbook:87
 #, no-c-format
 msgid ""
-"The compact mode trys to merge read requests for adjacent sectors in to single "
-"read request. This reduces load time and keeps boot map smaller, but will not "
-"work on all systems."
+"The compact mode trys to merge read requests for adjacent sectors in to "
+"single read request. This reduces load time and keeps boot map smaller, but "
+"will not work on all systems."
 msgstr ""
 
 #. Tag: guilabel
@@ -217,8 +215,8 @@ msgstr ""
 #: index.docbook:91
 #, no-c-format
 msgid ""
-"Automatic recording of boot command lines as defaults for following boots. This "
-"way, lilo \"locks\" on a choice until manually overridden."
+"Automatic recording of boot command lines as defaults for following boots. "
+"This way, lilo \"locks\" on a choice until manually overridden."
 msgstr ""
 
 #. Tag: guilabel
@@ -231,10 +229,10 @@ msgstr ""
 #: index.docbook:95
 #, no-c-format
 msgid ""
-"A password is required only if any parameters changed (i.e. the user can boot "
-"linux, but not linux single or linux init=/bin/sh). This sets a default for all "
-"&Linux; kernels you want to boot. If you need a per-kernel setting, go to "
-"Operating Systems tab, and select details."
+"A password is required only if any parameters changed (i.e. the user can "
+"boot linux, but not linux single or linux init=/bin/sh). This sets a default "
+"for all &Linux; kernels you want to boot. If you need a per-kernel setting, "
+"go to Operating Systems tab, and select details."
 msgstr ""
 
 #. Tag: guilabel
@@ -247,8 +245,8 @@ msgstr ""
 #: index.docbook:99
 #, no-c-format
 msgid ""
-"Enter the password for bootup (if any) here. If restricted (above) is checked, "
-"the password is required for additional parameters only."
+"Enter the password for bootup (if any) here. If restricted (above) is "
+"checked, the password is required for additional parameters only."
 msgstr ""
 
 #. Tag: para
@@ -256,8 +254,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "The password is stored in clear text in /etc/lilo.conf. You'll want to make "
-"sure nobody untrusted can read this file. Also, you probably don't want to use "
-"your normal/root password here."
+"sure nobody untrusted can read this file. Also, you probably don't want to "
+"use your normal/root password here."
 msgstr ""
 
 #. Tag: guilabel
@@ -272,9 +270,9 @@ msgstr ""
 msgid ""
 "You can select the default graphics mode here. If you intend to use a VGA "
 "graphics mode, you must compile the kernel with support for frame buffer "
-"devices. The ask setting brings up a prompt at boot time. This sets a default "
-"for all &Linux; kernels you want to boot. If you need a per-kernel setting, go "
-"to Operating Systems tab, and select details."
+"devices. The ask setting brings up a prompt at boot time. This sets a "
+"default for all &Linux; kernels you want to boot. If you need a per-kernel "
+"setting, go to Operating Systems tab, and select details."
 msgstr ""
 
 #. Tag: guilabel
@@ -302,10 +300,10 @@ msgstr ""
 #: index.docbook:115
 #, no-c-format
 msgid ""
-"Some of the things that can be done here are: settings like <guilabel>"
-"General Options</guilabel> for specific kernels/OSes, set default OS to boot, "
-"probe for available kernels, you can also edit root file system, ramdisk "
-"settings, extra parameters, etc..."
+"Some of the things that can be done here are: settings like "
+"<guilabel>General Options</guilabel> for specific kernels/OSes, set default "
+"OS to boot, probe for available kernels, you can also edit root file system, "
+"ramdisk settings, extra parameters, etc..."
 msgstr ""
 
 #. Tag: term
@@ -332,15 +330,14 @@ msgstr ""
 #: index.docbook:124
 #, no-c-format
 msgid ""
-"Enter the filename of the kernel you would like to boot. Pushing the <guibutton>"
-"Select...</guibutton> will bring up &kde; standard fileselector to help you "
-"find the kernel."
+"Enter the filename of the kernel you would like to boot. Pushing the "
+"<guibutton>Select...</guibutton> will bring up &kde; standard fileselector "
+"to help you find the kernel."
 msgstr ""
 
 #. Tag: guilabel
 #: index.docbook:127
 #, no-c-format
-
 msgid "Label:"
 msgstr "Etiqueta :"
 
@@ -360,9 +357,9 @@ msgstr ""
 #: index.docbook:132
 #, no-c-format
 msgid ""
-"Enter the root file system for the kernel you would like to boot. Pushing the "
-"<guibutton>Select...</guibutton> will bring up &kde; standard file selector to "
-"help you find the root file system."
+"Enter the root file system for the kernel you would like to boot. Pushing "
+"the <guibutton>Select...</guibutton> will bring up &kde; standard file "
+"selector to help you find the root file system."
 msgstr ""
 
 #. Tag: title
@@ -375,8 +372,8 @@ msgstr ""
 #: index.docbook:135
 #, no-c-format
 msgid ""
-"In this case, the root file system means the partition that will be mounted as "
-"/ at boot time."
+"In this case, the root file system means the partition that will be mounted "
+"as / at boot time."
 msgstr ""
 
 #. Tag: guilabel
@@ -423,7 +420,6 @@ msgstr ""
 #. Tag: guibutton
 #: index.docbook:152
 #, no-c-format
-
 msgid "Details"
 msgstr "Detalhs"
 
@@ -442,7 +438,8 @@ msgstr ""
 #. Tag: para
 #: index.docbook:157
 #, no-c-format
-msgid "Automaticly generate a (hopefully) reasonable lilo.conf for your system."
+msgid ""
+"Automaticly generate a (hopefully) reasonable lilo.conf for your system."
 msgstr ""
 
 #. Tag: guibutton
@@ -512,4 +509,3 @@ msgid ""
 "Do <emphasis>not</emphasis> edit this file so unless you know what you are "
 "doing!"
 msgstr ""
-

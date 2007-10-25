@@ -5,8 +5,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_advanced\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"X-KDE-DocBook-SVN-URL: trunk/KDE/kdesdk/doc/kate/advanced.docbook\n"
-"X-KDE-DocBook-SVN-Changed-Revision: 618440\n"
 "POT-Creation-Date: 2007-03-20 04:52+0000\n"
 "PO-Revision-Date: 2007-10-24 11:14+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
@@ -14,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdesdk/doc/kate/advanced.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 618440\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: author
@@ -33,10 +33,9 @@ msgstr ""
 #, no-c-format
 msgid "ROLES_OF_TRANSLATORS"
 msgstr ""
-"<othercredit role=\"translator\">"
-"<firstname></firstname><surname></surname>"
-"<affiliation><address><email>yannig@marchegay.org</email></address>"
-"</affiliation><contrib></contrib></othercredit>"
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
 
 #. Tag: title
 #: advanced.docbook:9
@@ -54,18 +53,19 @@ msgstr ""
 #: advanced.docbook:15
 #, no-c-format
 msgid ""
-"The Comment and Uncomment commands, available from the <guimenu>Tools</guimenu> "
-"menu allow you to add or remove comment markers to the selection, or the "
-"current line if no text is selected, if comments are supported by the format of "
-"the text you are editing."
+"The Comment and Uncomment commands, available from the <guimenu>Tools</"
+"guimenu> menu allow you to add or remove comment markers to the selection, "
+"or the current line if no text is selected, if comments are supported by the "
+"format of the text you are editing."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:21
 #, no-c-format
 msgid ""
-"The rules for how commenting is done are defined in the syntax definitions, so "
-"if syntax highlighting is not used, commenting/uncommenting is not possible."
+"The rules for how commenting is done are defined in the syntax definitions, "
+"so if syntax highlighting is not used, commenting/uncommenting is not "
+"possible."
 msgstr ""
 
 #. Tag: para
@@ -73,8 +73,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Some formats define single line comment markers, some multiline markers and "
-"some both. If multiline markers are not available, commenting out a selection "
-"that does not fully include its last line is not possible."
+"some both. If multiline markers are not available, commenting out a "
+"selection that does not fully include its last line is not possible."
 msgstr ""
 
 #. Tag: para
@@ -90,8 +90,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "When removing comment markers, no uncommented text should be selected. When "
-"removing multiline comment markers from a selection, any whitespace outside the "
-"comment markers is ignored."
+"removing multiline comment markers from a selection, any whitespace outside "
+"the comment markers is ignored."
 msgstr ""
 
 #. Tag: primary
@@ -104,10 +104,10 @@ msgstr ""
 #: advanced.docbook:38
 #, no-c-format
 msgid ""
-"To place comment markers, use the <menuchoice><guimenu>Tools</guimenu>"
-"<guimenuitem>Comment</guimenuitem></menuchoice> menu item or the related "
-"keyboard shortcut sequence, default is <keycombo action=\"simul\">&Ctrl;<keycap>"
-"D</keycap></keycombo>."
+"To place comment markers, use the <menuchoice><guimenu>Tools</"
+"guimenu><guimenuitem>Comment</guimenuitem></menuchoice> menu item or the "
+"related keyboard shortcut sequence, default is <keycombo action=\"simul"
+"\">&Ctrl;<keycap>D</keycap></keycombo>."
 msgstr ""
 
 #. Tag: primary
@@ -120,10 +120,10 @@ msgstr ""
 #: advanced.docbook:44
 #, no-c-format
 msgid ""
-"To remove comment markers, use the <menuchoice><guimenu>Tools</guimenu>"
-"<guimenuitem>Uncomment</guimenuitem></menuchoice> menu item or the related "
-"keyboard shortcut, default is <keycombo action=\"simul\">&Ctrl;&Shift;<keycap>"
-"D</keycap></keycombo>."
+"To remove comment markers, use the <menuchoice><guimenu>Tools</"
+"guimenu><guimenuitem>Uncomment</guimenuitem></menuchoice> menu item or the "
+"related keyboard shortcut, default is <keycombo action=\"simul\">&Ctrl;"
+"&Shift;<keycap>D</keycap></keycombo>."
 msgstr ""
 
 #. Tag: title
@@ -136,13 +136,14 @@ msgstr ""
 #: advanced.docbook:55
 #, no-c-format
 msgid ""
-"Kate's editor component has an internal command line, allowing you to perform "
-"various actions from a minimal GUI. The command line is a text entry in the "
-"bottom of the editor area, to show it select <menuchoice><guimenu>View</guimenu>"
-"<guimenuitem>Switch to Command Line</guimenuitem></menuchoice> "
-"or use the shortcut (default is <keycombo action=\"simul\"><keycap>F7</keycap>"
-"</keycombo>). The editor provides a set of commands as documented below, and "
-"additional commands can be provided by plugins."
+"Kate's editor component has an internal command line, allowing you to "
+"perform various actions from a minimal GUI. The command line is a text entry "
+"in the bottom of the editor area, to show it select "
+"<menuchoice><guimenu>View</guimenu><guimenuitem>Switch to Command Line</"
+"guimenuitem></menuchoice> or use the shortcut (default is <keycombo action="
+"\"simul\"><keycap>F7</keycap></keycombo>). The editor provides a set of "
+"commands as documented below, and additional commands can be provided by "
+"plugins."
 msgstr ""
 
 #. Tag: para
@@ -151,19 +152,19 @@ msgstr ""
 msgid ""
 "To execute a command, type the comand then press the return key. The command "
 "line will indicate wether it succeded and possibly display a message. If you "
-"entered the command line by pressing <keycap>F7</keycap> "
-"it will automatically hide after a few seconds. To clear the message and enter "
-"a new command, press <keycap>F7</keycap> again."
+"entered the command line by pressing <keycap>F7</keycap> it will "
+"automatically hide after a few seconds. To clear the message and enter a new "
+"command, press <keycap>F7</keycap> again."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:70
 #, no-c-format
 msgid ""
-"The command line has a built-in help system, issue the command <command>"
-"help</command> to get started. To see a list of all available commands issue "
-"<command>help list</command>, to view help for a specific command, do <command>"
-"help <replaceable>command</replaceable></command>."
+"The command line has a built-in help system, issue the command "
+"<command>help</command> to get started. To see a list of all available "
+"commands issue <command>help list</command>, to view help for a specific "
+"command, do <command>help <replaceable>command</replaceable></command>."
 msgstr ""
 
 #. Tag: para
@@ -171,9 +172,10 @@ msgstr ""
 #, no-c-format
 msgid ""
 "The command line has a built in history, so you can reuse commands already "
-"typed. To navigate the history, use the <keycap>Up</keycap> and <keycap>"
-"Down</keycap> keys. When showing historical commands, the argument part of the "
-"command will be selected, allowing you to easily overwrite the arguments."
+"typed. To navigate the history, use the <keycap>Up</keycap> and "
+"<keycap>Down</keycap> keys. When showing historical commands, the argument "
+"part of the command will be selected, allowing you to easily overwrite the "
+"arguments."
 msgstr ""
 
 #. Tag: title
@@ -193,8 +195,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "These commands are provided by the editor component, and allows you to "
-"configure the active document and view only. This is handy if you want to use a "
-"setting different from the default settings, for example for indentation."
+"configure the active document and view only. This is handy if you want to "
+"use a setting different from the default settings, for example for "
+"indentation."
 msgstr ""
 
 #. Tag: title
@@ -214,9 +217,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This is used with commands that turns things on or off. Legal values are "
-"<userinput>on</userinput>, <userinput>off</userinput>, <userinput>"
-"true</userinput>, <userinput>false</userinput>, <userinput>1</userinput> "
-"or <userinput>0</userinput>"
+"<userinput>on</userinput>, <userinput>off</userinput>, <userinput>true</"
+"userinput>, <userinput>false</userinput>, <userinput>1</userinput> or "
+"<userinput>0</userinput>"
 msgstr ""
 
 #. Tag: term
@@ -265,8 +268,8 @@ msgstr ""
 #: advanced.docbook:124
 #, no-c-format
 msgid ""
-"Sets the indentation width to the number <userinput>width</userinput>"
-". Used only if you are indenting with spaces."
+"Sets the indentation width to the number <userinput>width</userinput>. Used "
+"only if you are indenting with spaces."
 msgstr ""
 
 #. Tag: cmdsynopsis
@@ -279,8 +282,8 @@ msgstr ""
 #: advanced.docbook:131
 #, no-c-format
 msgid ""
-"Sets the line width for hard wrapping to <userinput>width</userinput>"
-". This is used if you are having your text wrapped automatically."
+"Sets the line width for hard wrapping to <userinput>width</userinput>. This "
+"is used if you are having your text wrapped automatically."
 msgstr ""
 
 #. Tag: cmdsynopsis
@@ -340,7 +343,9 @@ msgstr ""
 #. Tag: para
 #: advanced.docbook:160
 #, no-c-format
-msgid "If enabled, trailing whitespace are removed whenever the cursor leaves a line."
+msgid ""
+"If enabled, trailing whitespace are removed whenever the cursor leaves a "
+"line."
 msgstr ""
 
 #. Tag: cmdsynopsis
@@ -367,8 +372,8 @@ msgstr ""
 #: advanced.docbook:172
 #, no-c-format
 msgid ""
-"If enabled, the editor will indent with <option>indent-width</option> "
-"spaces for each indentation level, rather than with one TAB character."
+"If enabled, the editor will indent with <option>indent-width</option> spaces "
+"for each indentation level, rather than with one TAB character."
 msgstr ""
 
 #. Tag: cmdsynopsis
@@ -382,9 +387,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If enabled, kate will use a mix of TAB and spaces for indentation. Each "
-"indentation level will be <option>indent-width</option> "
-"wide, and more indentation levels will be optimized to use as many TAB "
-"characters as possible."
+"indentation level will be <option>indent-width</option> wide, and more "
+"indentation levels will be optimized to use as many TAB characters as "
+"possible."
 msgstr ""
 
 #. Tag: para
@@ -392,8 +397,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "When executed, this command will additionally set space indentation enabled, "
-"and if the indent width is unspecified it will be set to half of the <option>"
-"tab-width</option> for the document at the time of execution."
+"and if the indent width is unspecified it will be set to half of the "
+"<option>tab-width</option> for the document at the time of execution."
 msgstr ""
 
 #. Tag: cmdsynopsis
@@ -425,7 +430,8 @@ msgstr ""
 #. Tag: cmdsynopsis
 #: advanced.docbook:203
 #, no-c-format
-msgid "<command>set-remove-trailing-space-save</command><arg>BOOLEAN enable</arg>"
+msgid ""
+"<command>set-remove-trailing-space-save</command><arg>BOOLEAN enable</arg>"
 msgstr ""
 
 #. Tag: para
@@ -446,9 +452,9 @@ msgstr ""
 #: advanced.docbook:210
 #, no-c-format
 msgid ""
-"Sets the autoindentation mode to <userinput>name</userinput>. If <userinput>"
-"name</userinput> is not known, the mode is set to 'none'. Valid modes are "
-"'cstyle', 'csands', 'xml', 'python', 'varindent' and 'none'."
+"Sets the autoindentation mode to <userinput>name</userinput>. If "
+"<userinput>name</userinput> is not known, the mode is set to 'none'. Valid "
+"modes are 'cstyle', 'csands', 'xml', 'python', 'varindent' and 'none'."
 msgstr ""
 
 #. Tag: cmdsynopsis
@@ -462,9 +468,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Sets the syntax highlighting system for the document. The argument must be a "
-"valid highlight name, as seen in the <menuchoice><guimenu>Tools</guimenu>"
-"<guisubmenu>Highlighting</guisubmenu></menuchoice> menu. This command provides "
-"an autocompletion list for its argument."
+"valid highlight name, as seen in the <menuchoice><guimenu>Tools</"
+"guimenu><guisubmenu>Highlighting</guisubmenu></menuchoice> menu. This "
+"command provides an autocompletion list for its argument."
 msgstr ""
 
 #. Tag: title
@@ -527,9 +533,9 @@ msgstr ""
 #: advanced.docbook:253
 #, no-c-format
 msgid ""
-"Inserts comment markers to make the selection or selected lines or current line "
-"a comment according to the text format as defined by the syntax highlight "
-"definition for the document."
+"Inserts comment markers to make the selection or selected lines or current "
+"line a comment according to the text format as defined by the syntax "
+"highlight definition for the document."
 msgstr ""
 
 #. Tag: command
@@ -543,8 +549,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Removes comment markers from the selection or selected lines or current line "
-"according to the text format as defined by the syntax highlight definition for "
-"the document."
+"according to the text format as defined by the syntax highlight definition "
+"for the document."
 msgstr ""
 
 #. Tag: command
@@ -569,23 +575,24 @@ msgstr ""
 #: advanced.docbook:272
 #, no-c-format
 msgid ""
-"Replaces text matching <userinput>pattern</userinput> with <userinput>"
-"replacement</userinput>. If you want to include whitespace in the <userinput>"
-"pattern</userinput>, you must quote both the <userinput>pattern</userinput> "
-"and <userinput>replacement</userinput> with single or double quotes. If the "
-"arguments are unquoted, the first word is used as <userinput>pattern</userinput> "
-"and the rest for <userinput>replacement</userinput>. If <userinput>"
-"replacement</userinput> is empty, each occurrence of <userinput>"
-"pattern</userinput> is removed."
+"Replaces text matching <userinput>pattern</userinput> with "
+"<userinput>replacement</userinput>. If you want to include whitespace in the "
+"<userinput>pattern</userinput>, you must quote both the <userinput>pattern</"
+"userinput> and <userinput>replacement</userinput> with single or double "
+"quotes. If the arguments are unquoted, the first word is used as "
+"<userinput>pattern</userinput> and the rest for <userinput>replacement</"
+"userinput>. If <userinput>replacement</userinput> is empty, each occurrence "
+"of <userinput>pattern</userinput> is removed."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:280
 #, no-c-format
 msgid ""
-"You can set flags to configure the search by adding a colon, followed by one or "
-"more letters each representing a configuration, giving the form <userinput>"
-"replace:options pattern replacement</userinput>. Available options are:"
+"You can set flags to configure the search by adding a colon, followed by one "
+"or more letters each representing a configuration, giving the form "
+"<userinput>replace:options pattern replacement</userinput>. Available "
+"options are:"
 msgstr ""
 
 #. Tag: userinput
@@ -684,9 +691,9 @@ msgstr ""
 #: advanced.docbook:332
 #, no-c-format
 msgid ""
-"Inserts a date/time string as defined by the specified <userinput>"
-"format</userinput>, or the format <quote>yyyy-MM-dd hh:mm:ss</quote> "
-"if none is specified. The following translations are done when interpreting "
+"Inserts a date/time string as defined by the specified <userinput>format</"
+"userinput>, or the format <quote>yyyy-MM-dd hh:mm:ss</quote> if none is "
+"specified. The following translations are done when interpreting "
 "<userinput>format</userinput>:"
 msgstr ""
 
@@ -929,9 +936,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This command allows you to insert literal characters by their numerical "
-"identifier, in decimal, octal or hexadecimal form. To use it launch the Editing "
-"Command dialog and type <userinput>char: [number]</userinput> "
-"in the entry box, then hit <guibutton>OK</guibutton>."
+"identifier, in decimal, octal or hexadecimal form. To use it launch the "
+"Editing Command dialog and type <userinput>char: [number]</userinput> in the "
+"entry box, then hit <guibutton>OK</guibutton>."
 msgstr ""
 
 #. Tag: title
@@ -986,31 +993,31 @@ msgstr ""
 #: advanced.docbook:396
 #, no-c-format
 msgid ""
-"This command does a sed-like search/replace operation on the current line, or "
-"on the whole file (<command>%s///</command>)."
+"This command does a sed-like search/replace operation on the current line, "
+"or on the whole file (<command>%s///</command>)."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:399
 #, no-c-format
 msgid ""
-"In short, the text is searched for text matching the <emphasis>"
-"search pattern</emphasis>, the regular expression between the first and the "
-"second slash, and when a match is found, the matching part of the text is "
-"replaced with the expression between the middle and last part of the string. "
-"Parentheses in the search pattern create <emphasis>back references</emphasis>"
-", that is the command remembers which part of the match matched in the "
-"parentheses; these strings can be reused in the replace pattern, referred to as "
-"<userinput>\\1</userinput> for the first set of parentheses, <userinput>"
-"\\2</userinput> for the second and so on."
+"In short, the text is searched for text matching the <emphasis>search "
+"pattern</emphasis>, the regular expression between the first and the second "
+"slash, and when a match is found, the matching part of the text is replaced "
+"with the expression between the middle and last part of the string. "
+"Parentheses in the search pattern create <emphasis>back references</"
+"emphasis>, that is the command remembers which part of the match matched in "
+"the parentheses; these strings can be reused in the replace pattern, "
+"referred to as <userinput>\\1</userinput> for the first set of parentheses, "
+"<userinput>\\2</userinput> for the second and so on."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:410
 #, no-c-format
 msgid ""
-"To search for a literal <literal>(</literal> or <literal>)</literal>"
-", you need to <emphasis>escape</emphasis> it using a backslash character: "
+"To search for a literal <literal>(</literal> or <literal>)</literal>, you "
+"need to <emphasis>escape</emphasis> it using a backslash character: "
 "<userinput>\\(\\)</userinput>"
 msgstr ""
 
@@ -1019,8 +1026,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If you put an <userinput>i</userinput> at the end of the expression, the "
-"matching will be case insensitive. If you put a <userinput>g</userinput> "
-"at the end, all occurrences of the pattern will be replaced, otherwise only the "
+"matching will be case insensitive. If you put a <userinput>g</userinput> at "
+"the end, all occurrences of the pattern will be replaced, otherwise only the "
 "first occurrence is replaced."
 msgstr ""
 
@@ -1034,19 +1041,20 @@ msgstr ""
 #: advanced.docbook:423
 #, no-c-format
 msgid ""
-"Your friendly compiler just stopped, telling you that the class <classname>"
-"myClass</classname> mentioned in line 3902 in your source file is not defined."
+"Your friendly compiler just stopped, telling you that the class "
+"<classname>myClass</classname> mentioned in line 3902 in your source file is "
+"not defined."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:427
 #, no-c-format
 msgid ""
-"&quot;Buckle!&quot; you think, it is of course <classname>MyClass</classname>"
-". You go to line 3902, and instead of trying to find the word in the text, you "
-"launch the Editing Command Dialog, enter <userinput>"
-"s/myclass/MyClass/i</userinput>, hit the <guibutton>OK</guibutton> "
-"button, save the file and compile &ndash; successfully without the error."
+"&quot;Buckle!&quot; you think, it is of course <classname>MyClass</"
+"classname>. You go to line 3902, and instead of trying to find the word in "
+"the text, you launch the Editing Command Dialog, enter <userinput>s/myclass/"
+"MyClass/i</userinput>, hit the <guibutton>OK</guibutton> button, save the "
+"file and compile &ndash; successfully without the error."
 msgstr ""
 
 #. Tag: title
@@ -1059,18 +1067,18 @@ msgstr ""
 #: advanced.docbook:439
 #, no-c-format
 msgid ""
-"Imagine that you have a file, in which you mention a <quote>Miss Jensen</quote> "
-"several times, when someone comes in and tells you that she just got married to "
-"<quote>Mr Jones</quote>. You want, of course, to replace each and every "
-"occurrence of <quote>Miss Jensen</quote> with <quote>Ms Jones</quote>."
+"Imagine that you have a file, in which you mention a <quote>Miss Jensen</"
+"quote> several times, when someone comes in and tells you that she just got "
+"married to <quote>Mr Jones</quote>. You want, of course, to replace each and "
+"every occurrence of <quote>Miss Jensen</quote> with <quote>Ms Jones</quote>."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:445
 #, no-c-format
 msgid ""
-"Enter the command line and issue the command <userinput>"
-"%s/Miss Jensen/Ms Jones/</userinput> and hit return, you are done."
+"Enter the command line and issue the command <userinput>%s/Miss Jensen/Ms "
+"Jones/</userinput> and hit return, you are done."
 msgstr ""
 
 #. Tag: title
@@ -1083,9 +1091,9 @@ msgstr ""
 #: advanced.docbook:454
 #, no-c-format
 msgid ""
-"This example makes use of <emphasis>back references</emphasis> "
-"as well as a <emphasis>character class</emphasis> (if you do not know what that "
-"is, please refer to the related documentation mentioned below)."
+"This example makes use of <emphasis>back references</emphasis> as well as a "
+"<emphasis>character class</emphasis> (if you do not know what that is, "
+"please refer to the related documentation mentioned below)."
 msgstr ""
 
 #. Tag: para
@@ -1098,29 +1106,29 @@ msgstr ""
 #: advanced.docbook:461
 #, no-c-format
 msgid ""
-"void MyClass::DoStringOps( String      &amp;foo, String &amp;bar String *p, int "
-" &amp;a, int &amp;b )"
+"void MyClass::DoStringOps( String      &amp;foo, String &amp;bar String *p, "
+"int  &amp;a, int &amp;b )"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:463
 #, no-c-format
 msgid ""
-"Now you realize that this is not nice code, and decide that you want to use the "
-"<constant>const</constant> keyword for all <quote>address of</quote> "
-"arguments, those characterized by the &amp; operator in front of the argument "
-"name. You would also like to simplify the white space, so that there is only 1 "
-"whitespace character between each word."
+"Now you realize that this is not nice code, and decide that you want to use "
+"the <constant>const</constant> keyword for all <quote>address of</quote> "
+"arguments, those characterized by the &amp; operator in front of the "
+"argument name. You would also like to simplify the white space, so that "
+"there is only 1 whitespace character between each word."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:470
 #, no-c-format
 msgid ""
-"Launch the Editing Command Dialog, and enter: <userinput>"
-"s/\\s+(\\w+)\\s+(&amp;)/ const \\1 \\2/g</userinput> and hit the <guibutton>"
-"OK</guibutton> button. The <userinput>g</userinput> at the end of the "
-"expression makes the regular expression recompile for each match to save the "
+"Launch the Editing Command Dialog, and enter: <userinput>s/\\s+(\\w+)\\s"
+"+(&amp;)/ const \\1 \\2/g</userinput> and hit the <guibutton>OK</guibutton> "
+"button. The <userinput>g</userinput> at the end of the expression makes the "
+"regular expression recompile for each match to save the "
 "<emphasis>backreferences</emphasis>."
 msgstr ""
 
@@ -1128,8 +1136,9 @@ msgstr ""
 #: advanced.docbook:475
 #, no-c-format
 msgid ""
-"Output: <computeroutput>void MyClass::DoStringOps( const String &amp;foo, const "
-"String &amp;bar String *p, const int &amp;a, const int &amp;b )</computeroutput>"
+"Output: <computeroutput>void MyClass::DoStringOps( const String &amp;foo, "
+"const String &amp;bar String *p, const int &amp;a, const int &amp;b )</"
+"computeroutput>"
 msgstr ""
 
 #. Tag: para
@@ -1138,12 +1147,12 @@ msgstr ""
 msgid ""
 "Mission completed! Now, what happened? Well, we looked for some white space "
 "(<literal>\\s+</literal>) followed by one or more alphabetic characters "
-"(<literal>\\w+</literal>) followed by some more whitespace (<literal>"
-"\\s+</literal>) followed by an ampersand, and in the process saved the "
-"alphabetic chunk and the ampersand for reuse in the replace operation. Then we "
-"replaced the matching part of our line with one whitespace followed by <quote>"
-"const</quote> followed by one whitespace followed by our saved alphabetical "
-"chunk (<literal>\\1</literal>) followed by one whitespace followed by our saved "
+"(<literal>\\w+</literal>) followed by some more whitespace (<literal>\\s+</"
+"literal>) followed by an ampersand, and in the process saved the alphabetic "
+"chunk and the ampersand for reuse in the replace operation. Then we replaced "
+"the matching part of our line with one whitespace followed by <quote>const</"
+"quote> followed by one whitespace followed by our saved alphabetical chunk "
+"(<literal>\\1</literal>) followed by one whitespace followed by our saved "
 "ampersand (<literal>\\2</literal>)"
 msgstr ""
 
@@ -1151,9 +1160,9 @@ msgstr ""
 #: advanced.docbook:490
 #, no-c-format
 msgid ""
-"Now in some cases the alphabetical chunk was <quote>String</quote>"
-", in some <quote>int</quote>, so using the character class <literal>"
-"\\w</literal> and the <literal>+</literal> quantifier proved a valuable asset."
+"Now in some cases the alphabetical chunk was <quote>String</quote>, in some "
+"<quote>int</quote>, so using the character class <literal>\\w</literal> and "
+"the <literal>+</literal> quantifier proved a valuable asset."
 msgstr ""
 
 #. Tag: title
@@ -1184,19 +1193,19 @@ msgstr ""
 #: advanced.docbook:517
 #, no-c-format
 msgid ""
-"This command navigates to the first occurrence of <userinput>pattern</userinput> "
-"according to the configuration. Following occurrences can be found using "
-"<menuchoice><guimenu>Edit</guimenu><guimenuitem>Find Next</guimenuitem>"
-"</menuchoice> (the default shortcut is <keycap>F3</keycap>)."
+"This command navigates to the first occurrence of <userinput>pattern</"
+"userinput> according to the configuration. Following occurrences can be "
+"found using <menuchoice><guimenu>Edit</guimenu><guimenuitem>Find Next</"
+"guimenuitem></menuchoice> (the default shortcut is <keycap>F3</keycap>)."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:522
 #, no-c-format
 msgid ""
-"The find command can be configured by appending a colon followed by one or more "
-"options, the form is <userinput>find:options pattern</userinput>"
-". The following options are supported:"
+"The find command can be configured by appending a colon followed by one or "
+"more options, the form is <userinput>find:options pattern</userinput>. The "
+"following options are supported:"
 msgstr ""
 
 #. Tag: cmdsynopsis
@@ -1209,10 +1218,10 @@ msgstr ""
 #: advanced.docbook:571
 #, no-c-format
 msgid ""
-"This command provides <quote>as-you-type</quote> searching. You can configure "
-"the behavior of the search by appending a colon followed by one or more "
-"options, like this: <userinput>ifind:options pattern</userinput>"
-". Allowed options are"
+"This command provides <quote>as-you-type</quote> searching. You can "
+"configure the behavior of the search by appending a colon followed by one or "
+"more options, like this: <userinput>ifind:options pattern</userinput>. "
+"Allowed options are"
 msgstr ""
 
 #. Tag: para
@@ -1234,31 +1243,31 @@ msgid ""
 "Code folding allows you to hide parts of a document in the editor, making it "
 "easier to overview large documents. In &kate; the foldable regions are "
 "calculated using rules defined in the syntax highlight definitions, and "
-"therefore it is only available in some formats - typically program source code, "
-"XML markup and similar. Most highlight definitions supporting code folding also "
-"lets you manually define foldable regions, typically using the <userinput>"
-"BEGIN</userinput> and <userinput>END</userinput> keywords."
+"therefore it is only available in some formats - typically program source "
+"code, XML markup and similar. Most highlight definitions supporting code "
+"folding also lets you manually define foldable regions, typically using the "
+"<userinput>BEGIN</userinput> and <userinput>END</userinput> keywords."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:620
 #, no-c-format
 msgid ""
-"To use the code folding feature, activate the folding markers using <menuchoice>"
-"<guimenu>View</guimenu><guimenuitem>Show Folding Markers</guimenuitem>"
-"</menuchoice> menu item if they are not already visible. The Folding Markers "
-"Pane in the left side of the screen displays a graphical view of the foldable "
-"regions, with +/- signs to indicate the possible operation on a given region: a "
-"- means that the region is expanded, clicking the - will collapse the region "
-"and a + will be displayed instead."
+"To use the code folding feature, activate the folding markers using "
+"<menuchoice><guimenu>View</guimenu><guimenuitem>Show Folding Markers</"
+"guimenuitem></menuchoice> menu item if they are not already visible. The "
+"Folding Markers Pane in the left side of the screen displays a graphical "
+"view of the foldable regions, with +/- signs to indicate the possible "
+"operation on a given region: a - means that the region is expanded, clicking "
+"the - will collapse the region and a + will be displayed instead."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:628
 #, no-c-format
 msgid ""
-"Four commands are provided to manipulate the state of folding regions, see the "
-"<link linkend=\"view-code-folding\">menu documentation</link>."
+"Four commands are provided to manipulate the state of folding regions, see "
+"the <link linkend=\"view-code-folding\">menu documentation</link>."
 msgstr ""
 
 #. Tag: para
@@ -1266,9 +1275,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If you do not want to use the code folding feature, you can disable the "
-"<guilabel>Show folding markers (if available)</guilabel> "
-"option in the <link linkend=\"config-dialog-editor-appearance\">"
-"Appearance page of the editor configuration</link>"
+"<guilabel>Show folding markers (if available)</guilabel> option in the <link "
+"linkend=\"config-dialog-editor-appearance\">Appearance page of the editor "
+"configuration</link>"
 msgstr ""
 
 #. Tag: title
@@ -1287,24 +1296,24 @@ msgstr "Introduccion"
 #: advanced.docbook:647
 #, no-c-format
 msgid ""
-"Starting with version 2.5, the &kate; editor component supports scripting with "
-"ECMA script, also known as JavaScript."
+"Starting with version 2.5, the &kate; editor component supports scripting "
+"with ECMA script, also known as JavaScript."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:650
 #, no-c-format
 msgid ""
-"Scripts can be used through <link "
-"linkend=\"advanced-editing-tools-commandline\">the built-in command line</link> "
-"only. The requirement is that the script is placed in a folder where &kate; can "
-"find it, along with an optional .desktop file that defines the related "
-"properties. The valid folder are named <filename>katepart/scripts</filename> "
-"in the &kde; data folders. You can find the data folders by running the command "
-"<command>kde4-config <option>--path</option> <parameter>data</parameter>"
-"</command> You will usually have at least a system and a personal data folder. "
-"Of course scripts in the system data folder are available to all users on the "
-"system, while those in the personal folder are only available for you."
+"Scripts can be used through <link linkend=\"advanced-editing-tools-"
+"commandline\">the built-in command line</link> only. The requirement is that "
+"the script is placed in a folder where &kate; can find it, along with an "
+"optional .desktop file that defines the related properties. The valid folder "
+"are named <filename>katepart/scripts</filename> in the &kde; data folders. "
+"You can find the data folders by running the command <command>kde4-config "
+"<option>--path</option> <parameter>data</parameter></command> You will "
+"usually have at least a system and a personal data folder. Of course scripts "
+"in the system data folder are available to all users on the system, while "
+"those in the personal folder are only available for you."
 msgstr ""
 
 #. Tag: para
@@ -1320,16 +1329,16 @@ msgstr ""
 #, no-c-format
 msgid ""
 "We know that many of you will be disappointed because you can't add your "
-"scripts to the menu or assign shortcuts to them. Sorry, sometime in the future "
-"that will likely be possible."
+"scripts to the menu or assign shortcuts to them. Sorry, sometime in the "
+"future that will likely be possible."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:666
 #, no-c-format
 msgid ""
-"It is also not possible to pass any arguments to your scripts yet. Be patient, "
-"and that may be added in the bright future ;)"
+"It is also not possible to pass any arguments to your scripts yet. Be "
+"patient, and that may be added in the bright future ;)"
 msgstr ""
 
 #. Tag: title
@@ -1344,25 +1353,25 @@ msgstr ""
 msgid ""
 "Here is listed the complete set of functions and properties available in the "
 "<type>document</type> and <type>view</type> objects. In addition you can of "
-"course use all the standard objects such as <type>Math</type>, <type>"
-"String</type> <type>Regex</type> and so forth."
+"course use all the standard objects such as <type>Math</type>, <type>String</"
+"type> <type>Regex</type> and so forth."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:681
 #, no-c-format
 msgid ""
-"When a script is run, the <classname>document</classname> "
-"object is the current document, and the <classname>view</classname> "
-"object is the current view."
+"When a script is run, the <classname>document</classname> object is the "
+"current document, and the <classname>view</classname> object is the current "
+"view."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:685
 #, no-c-format
 msgid ""
-"The types of arguments are of course not used in JavaScript at this time, they "
-"are there solely to indicate what sort of value the funcitons expect."
+"The types of arguments are of course not used in JavaScript at this time, "
+"they are there solely to indicate what sort of value the funcitons expect."
 msgstr ""
 
 #. Tag: title
@@ -1374,7 +1383,8 @@ msgstr ""
 #. Tag: function
 #: advanced.docbook:692
 #, no-c-format
-msgid "debug( <parameter><replaceable>string</replaceable></parameter>) [function]"
+msgid ""
+"debug( <parameter><replaceable>string</replaceable></parameter>) [function]"
 msgstr ""
 
 #. Tag: title
@@ -1393,9 +1403,9 @@ msgstr ""
 #: advanced.docbook:700
 #, no-c-format
 msgid ""
-"Outputs the string to <acronym>STDERR</acronym> using <function>"
-"kDebug()</function>. A dedicated output area is used for the output, which will "
-"be prefixed <computeroutput>Kate (KJS Scripts):</computeroutput>"
+"Outputs the string to <acronym>STDERR</acronym> using <function>kDebug()</"
+"function>. A dedicated output area is used for the output, which will be "
+"prefixed <computeroutput>Kate (KJS Scripts):</computeroutput>"
 msgstr ""
 
 #. Tag: title
@@ -1408,12 +1418,17 @@ msgstr ""
 #: advanced.docbook:712
 #, no-c-format
 msgid ""
-"document.attribute( <parameter><replaceable>line</replaceable> </parameter>"
-", <parameter><replaceable>column</replaceable></parameter> ); [function]"
+"document.attribute( <parameter><replaceable>line</replaceable> </parameter>, "
+"<parameter><replaceable>column</replaceable></parameter> ); [function]"
 msgstr ""
 
 #. Tag: title
-#: advanced.docbook:717 advanced.docbook:736 advanced.docbook:752 advanced.docbook:778 advanced.docbook:793 advanced.docbook:808 advanced.docbook:866 advanced.docbook:882 advanced.docbook:920 advanced.docbook:933 advanced.docbook:955 advanced.docbook:983 advanced.docbook:996 advanced.docbook:1107 advanced.docbook:1126 advanced.docbook:1145
+#: advanced.docbook:717 advanced.docbook:736 advanced.docbook:752
+#: advanced.docbook:778 advanced.docbook:793 advanced.docbook:808
+#: advanced.docbook:866 advanced.docbook:882 advanced.docbook:920
+#: advanced.docbook:933 advanced.docbook:955 advanced.docbook:983
+#: advanced.docbook:996 advanced.docbook:1107 advanced.docbook:1126
+#: advanced.docbook:1145
 #, no-c-format
 msgid "Parameters"
 msgstr "Paramètres"
@@ -1422,35 +1437,35 @@ msgstr "Paramètres"
 #: advanced.docbook:718
 #, no-c-format
 msgid ""
-"<parameter>uint line</parameter> The line of the position for which to find the "
-"attribute."
+"<parameter>uint line</parameter> The line of the position for which to find "
+"the attribute."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:720
 #, no-c-format
 msgid ""
-"<parameter>uint column</parameter> The column of the position for which to find "
-"the attribute."
+"<parameter>uint column</parameter> The column of the position for which to "
+"find the attribute."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:723
 #, no-c-format
 msgid ""
-"Returns the numeric ID of the attribute for the document position [<parameter>"
-"line</parameter>,<parameter>column</parameter>]. The attribute represents the "
-"visual appearance or style of the text, and is also used to calculate the "
-"syntax highlight for a specific part of the text in mixed formats like HTML or "
-"PHP."
+"Returns the numeric ID of the attribute for the document position "
+"[<parameter>line</parameter>,<parameter>column</parameter>]. The attribute "
+"represents the visual appearance or style of the text, and is also used to "
+"calculate the syntax highlight for a specific part of the text in mixed "
+"formats like HTML or PHP."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:732
 #, no-c-format
 msgid ""
-"document.canBreakAt( <parameter>Char c</parameter>, <parameter>"
-"uint attribute</parameter> ); [function]"
+"document.canBreakAt( <parameter>Char c</parameter>, <parameter>uint "
+"attribute</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
@@ -1463,41 +1478,41 @@ msgstr ""
 #: advanced.docbook:738
 #, no-c-format
 msgid ""
-"<parameter>attribute</parameter> The attribute at the position of <parameter>"
-"c</parameter>."
+"<parameter>attribute</parameter> The attribute at the position of "
+"<parameter>c</parameter>."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:741
 #, no-c-format
 msgid ""
-"Returns whether it is allowed to break the line at a character c with attribute "
-"attribute. The result is decided by querying the highlight owning attribute for "
-"which characters allow breaking the line."
+"Returns whether it is allowed to break the line at a character c with "
+"attribute attribute. The result is decided by querying the highlight owning "
+"attribute for which characters allow breaking the line."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:748
 #, no-c-format
 msgid ""
-"document.canComment( <parameter>uint start_attribute</parameter>, <parameter>"
-"uint end_attribute</parameter> ); [function]"
+"document.canComment( <parameter>uint start_attribute</parameter>, "
+"<parameter>uint end_attribute</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:753
 #, no-c-format
 msgid ""
-"<parameter>start_attribute</parameter> The attribute at the start of the range "
-"to turn into a comment."
+"<parameter>start_attribute</parameter> The attribute at the start of the "
+"range to turn into a comment."
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:755
 #, no-c-format
 msgid ""
-"<parameter>end_attribute</parameter> The attribute at end of the range to turn "
-"into a comment."
+"<parameter>end_attribute</parameter> The attribute at end of the range to "
+"turn into a comment."
 msgstr ""
 
 #. Tag: para
@@ -1518,8 +1533,8 @@ msgstr ""
 #: advanced.docbook:763
 #, no-c-format
 msgid ""
-"if ( document.canComment( document.attribute(1,0), document.attribute(5,0) ) ) "
-"{\n"
+"if ( document.canComment( document.attribute(1,0), document.attribute"
+"(5,0) ) ) {\n"
 "    // 1,0 and 5,0 belongs to the same syntax highlighting system\n"
 "}"
 msgstr ""
@@ -1539,15 +1554,16 @@ msgstr ""
 #. Tag: function
 #: advanced.docbook:774
 #, no-c-format
-msgid "document.commentStart( <parameter>uint attribute</parameter> ); [function]"
+msgid ""
+"document.commentStart( <parameter>uint attribute</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:779
 #, no-c-format
 msgid ""
-"<parameter>attribute</parameter> The attribute of the text for which to get the "
-"commentStart string."
+"<parameter>attribute</parameter> The attribute of the text for which to get "
+"the commentStart string."
 msgstr ""
 
 #. Tag: para
@@ -1555,22 +1571,23 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Returns the string required to start a multiline comment for a text with "
-"attribute, or an empty string if multiline comments are not supported for that "
-"text."
+"attribute, or an empty string if multiline comments are not supported for "
+"that text."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:789
 #, no-c-format
-msgid "document.commentMarker( <parameter>uint attribute</parameter> ); [function]"
+msgid ""
+"document.commentMarker( <parameter>uint attribute</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:794
 #, no-c-format
 msgid ""
-"<parameter>attribute</parameter> The attribute of the text for which to get the "
-"commentMarker string"
+"<parameter>attribute</parameter> The attribute of the text for which to get "
+"the commentMarker string"
 msgstr ""
 
 #. Tag: para
@@ -1578,22 +1595,23 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Returns the string used to mark the rest of the line as a comment for a text "
-"with attribute or an empty string if single line comments are not supported for "
-"that text."
+"with attribute or an empty string if single line comments are not supported "
+"for that text."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:804
 #, no-c-format
-msgid "document.commentEnd( <parameter>uint attribute</parameter> ); [function]"
+msgid ""
+"document.commentEnd( <parameter>uint attribute</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:809
 #, no-c-format
 msgid ""
-"<parameter>attribute</parameter> The attribute of the text for which to get the "
-"commentEnd string"
+"<parameter>attribute</parameter> The attribute of the text for which to get "
+"the commentEnd string"
 msgstr ""
 
 #. Tag: para
@@ -1601,8 +1619,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Returns the string required to end a multiline comment for a text with "
-"attribute, or an empty string if multiline comments are not supported for that "
-"text."
+"attribute, or an empty string if multiline comments are not supported for "
+"that text."
 msgstr ""
 
 #. Tag: function
@@ -1642,9 +1660,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "The name of the document's highlight mode, such as JavaScript or C++. If no "
-"syntax highlight mode is set for the document, the value is None. Notice that "
-"you need to use the English name in cases where it differs from the translated "
-"one."
+"syntax highlight mode is set for the document, the value is None. Notice "
+"that you need to use the English name in cases where it differs from the "
+"translated one."
 msgstr ""
 
 #. Tag: function
@@ -1657,8 +1675,8 @@ msgstr ""
 #: advanced.docbook:846
 #, no-c-format
 msgid ""
-"The name of the document indent mode, such as <literal>normal</literal> "
-"or <literal>cstyle</literal>. Remember that if no indent mode is set, the value "
+"The name of the document indent mode, such as <literal>normal</literal> or "
+"<literal>cstyle</literal>. Remember that if no indent mode is set, the value "
 "is <literal>none</literal>."
 msgstr ""
 
@@ -1672,16 +1690,16 @@ msgstr ""
 #: advanced.docbook:856
 #, no-c-format
 msgid ""
-"The indentation width set for the document. This is used if space indenting is "
-"enabled."
+"The indentation width set for the document. This is used if space indenting "
+"is enabled."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:862
 #, no-c-format
 msgid ""
-"document.insertLine( <parameter>uint line</parameter>, <parameter>"
-"string text</parameter> ); [function]"
+"document.insertLine( <parameter>uint line</parameter>, <parameter>string "
+"text</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
@@ -1700,16 +1718,16 @@ msgstr ""
 #: advanced.docbook:871
 #, no-c-format
 msgid ""
-"Inserts a new line with the text <parameter>text</parameter> "
-"at the line <parameter>line</parameter>."
+"Inserts a new line with the text <parameter>text</parameter> at the line "
+"<parameter>line</parameter>."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:877
 #, no-c-format
 msgid ""
-"document.insertText( <parameter>uint line</parameter>, <parameter>"
-"uint column</parameter>, <parameter>string text</parameter> ); [function]"
+"document.insertText( <parameter>uint line</parameter>, <parameter>uint "
+"column</parameter>, <parameter>string text</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
@@ -1734,8 +1752,8 @@ msgstr ""
 #: advanced.docbook:888
 #, no-c-format
 msgid ""
-"Inserts the text <parameter>text</parameter> in line <parameter>line</parameter> "
-"and column <parameter>column</parameter>."
+"Inserts the text <parameter>text</parameter> in line <parameter>line</"
+"parameter> and column <parameter>column</parameter>."
 msgstr ""
 
 #. Tag: term
@@ -1772,9 +1790,9 @@ msgstr ""
 #: advanced.docbook:910
 #, no-c-format
 msgid ""
-"A boolean telling whether the mixed-indent setting is enabled for the document. "
-"If so, indentation is optimized to contain a mix of tab characters and spaces "
-"like used by the Emacs editor."
+"A boolean telling whether the mixed-indent setting is enabled for the "
+"document. If so, indentation is optimized to contain a mix of tab characters "
+"and spaces like used by the Emacs editor."
 msgstr ""
 
 #. Tag: term
@@ -1799,9 +1817,9 @@ msgstr ""
 #: advanced.docbook:928
 #, no-c-format
 msgid ""
-"document.removeText( <parameter>uint startLine</parameter>, <parameter>"
-"uint startColumn</parameter>, <parameter>uint endLine</parameter>, <parameter>"
-"uint endColumn</parameter> ); [function]"
+"document.removeText( <parameter>uint startLine</parameter>, <parameter>uint "
+"startColumn</parameter>, <parameter>uint endLine</parameter>, "
+"<parameter>uint endColumn</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
@@ -1832,9 +1850,9 @@ msgstr ""
 #: advanced.docbook:943
 #, no-c-format
 msgid ""
-"Removes the text range from line <parameter>startLine</parameter> "
-"and column <parameter>startColumn</parameter> up to line <parameter>"
-"endLine</parameter> and column <parameter>endColumn</parameter>."
+"Removes the text range from line <parameter>startLine</parameter> and column "
+"<parameter>startColumn</parameter> up to line <parameter>endLine</parameter> "
+"and column <parameter>endColumn</parameter>."
 msgstr ""
 
 #. Tag: function
@@ -1865,9 +1883,9 @@ msgstr ""
 #: advanced.docbook:965
 #, no-c-format
 msgid ""
-"A boolean telling whether space-indent is enabled for the document. If so, the "
-"document is indented with indentWidth spaces per level, otherwise indentation "
-"is one tab character per level."
+"A boolean telling whether space-indent is enabled for the document. If so, "
+"the document is indented with indentWidth spaces per level, otherwise "
+"indentation is one tab character per level."
 msgstr ""
 
 #. Tag: function
@@ -1906,9 +1924,9 @@ msgstr ""
 #: advanced.docbook:991
 #, no-c-format
 msgid ""
-"document.textRange( <parameter>uint startLine</parameter>, <parameter>"
-"uint startColumn</parameter>, <parameter>uint endLine</parameter>, <parameter>"
-"uint endColumn</parameter> ); [function]"
+"document.textRange( <parameter>uint startLine</parameter>, <parameter>uint "
+"startColumn</parameter>, <parameter>uint endLine</parameter>, "
+"<parameter>uint endColumn</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
@@ -1983,8 +2001,8 @@ msgstr ""
 #: advanced.docbook:1047
 #, no-c-format
 msgid ""
-"Returns <constant>true</constant> if the view contains selected text, otherwise "
-"<constant>false</constant>."
+"Returns <constant>true</constant> if the view contains selected text, "
+"otherwise <constant>false</constant>."
 msgstr ""
 
 #. Tag: function
@@ -2077,8 +2095,8 @@ msgstr ""
 #: advanced.docbook:1103
 #, no-c-format
 msgid ""
-"view.setCursorPosition( <parameter>uint line</parameter>, <parameter>"
-"uint column</parameter> ); [function]"
+"view.setCursorPosition( <parameter>uint line</parameter>, <parameter>uint "
+"column</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
@@ -2097,47 +2115,47 @@ msgstr ""
 #: advanced.docbook:1113
 #, no-c-format
 msgid ""
-"Sets the input cursor position in the view to [<parameter>line</parameter>"
-", <parameter>col</parameter>]. This sets the cursor position by visual means, "
+"Sets the input cursor position in the view to [<parameter>line</parameter>, "
+"<parameter>col</parameter>]. This sets the cursor position by visual means, "
 "that is the a TAB character counts up to <replaceable>tabwidth</replaceable> "
-"depending on the position inside the line. The cursor position is made visible. "
-"Both line and column are zero-based."
+"depending on the position inside the line. The cursor position is made "
+"visible. Both line and column are zero-based."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:1122
 #, no-c-format
 msgid ""
-"view.setCursorPositionReal( <parameter>uint line</parameter>, <parameter>"
-"uint column</parameter> ); [function]"
+"view.setCursorPositionReal( <parameter>uint line</parameter>, "
+"<parameter>uint column</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:1132
 #, no-c-format
 msgid ""
-"Sets the input cursor position to [<parameter>line</parameter>, <parameter>"
-"col</parameter>]. This sets the string position, that is a TAB character counts "
-"for 1. The cursor position is made visible. Both line and column are "
-"zero-based."
+"Sets the input cursor position to [<parameter>line</parameter>, "
+"<parameter>col</parameter>]. This sets the string position, that is a TAB "
+"character counts for 1. The cursor position is made visible. Both line and "
+"column are zero-based."
 msgstr ""
 
 #. Tag: function
 #: advanced.docbook:1140
 #, no-c-format
 msgid ""
-"view.setSelection( <parameter>uint startLine</parameter>, <parameter>"
-"uint startColumn</parameter>, <parameter>uint endLine</parameter>, <parameter>"
-"uint endColumn</parameter> ); [function]"
+"view.setSelection( <parameter>uint startLine</parameter>, <parameter>uint "
+"startColumn</parameter>, <parameter>uint endLine</parameter>, "
+"<parameter>uint endColumn</parameter> ); [function]"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:1151
 #, no-c-format
 msgid ""
-"Sets a selection from line <parameter>startLine</parameter> "
-"and column <parameter>startColumn</parameter> up to line <parameter>"
-"endLine</parameter> and column <parameter>endColumn</parameter>."
+"Sets a selection from line <parameter>startLine</parameter> and column "
+"<parameter>startColumn</parameter> up to line <parameter>endLine</parameter> "
+"and column <parameter>endColumn</parameter>."
 msgstr ""
 
 #. Tag: title
@@ -2150,9 +2168,9 @@ msgstr ""
 #: advanced.docbook:1162
 #, no-c-format
 msgid ""
-"As an example we will create a small script that uppercases the selection. It "
-"is obvious that we first need to check whether a selection exists, if so we get "
-"the text, change the case and then replace it with the new one. An "
+"As an example we will create a small script that uppercases the selection. "
+"It is obvious that we first need to check whether a selection exists, if so "
+"we get the text, change the case and then replace it with the new one. An "
 "implementation could look like this:"
 msgstr ""
 
@@ -2181,10 +2199,10 @@ msgstr ""
 msgid ""
 "To group this action together so that they will be reverted by a single "
 "activation of <guimenuitem>Undo</guimenuitem> we encapsulate the lines "
-"<programlisting>view.removeSelectedText()</programlisting> and <programlisting>"
-"document.insertText()</programlisting> with a <programlisting>"
-"document.editBegin()</programlisting> and <programlisting>"
-"document.editEnd()</programlisting>."
+"<programlisting>view.removeSelectedText()</programlisting> and "
+"<programlisting>document.insertText()</programlisting> with a "
+"<programlisting>document.editBegin()</programlisting> and "
+"<programlisting>document.editEnd()</programlisting>."
 msgstr ""
 
 #. Tag: title
@@ -2209,18 +2227,19 @@ msgid ""
 "Name=Kate Part JavaScript Uppercase\n"
 "Comment=Script to uppercase the selection\n"
 "X-Kate-Command=uppercase-selection\n"
-"X-Kate-Help=&lt;p&gt;Usage: "
-"&lt;code&gt;uppercase-selection&lt;/code&gt;&lt;/p&gt;"
+"X-Kate-Help=&lt;p&gt;Usage: &lt;code&gt;uppercase-selection&lt;/code&gt;&lt;/"
+"p&gt;"
 msgstr ""
 
 #. Tag: para
 #: advanced.docbook:1185
 #, no-c-format
 msgid ""
-"As you can see you can define the Encoding, set a Name, a Comment, a help text "
-"using X-Kate-Help and the command line name via X-Kate-Command. The entries "
-"Name, Comment and X-Kate-Help are automatically translated into other languages "
-"by the KDE translation teams, if the files are in KDE's SVN repository."
+"As you can see you can define the Encoding, set a Name, a Comment, a help "
+"text using X-Kate-Help and the command line name via X-Kate-Command. The "
+"entries Name, Comment and X-Kate-Help are automatically translated into "
+"other languages by the KDE translation teams, if the files are in KDE's SVN "
+"repository."
 msgstr ""
 
 #. Tag: title
@@ -2233,11 +2252,11 @@ msgstr ""
 #: advanced.docbook:1195
 #, no-c-format
 msgid ""
-"&kate; will search the script folders (see <link "
-"linkend=\"advanced-editing-tools-scripting-introduction\">above</link>"
-") for <filename>*.js</filename> files. For every file it checks whether there "
-"is a corresponding <filename>.desktop</filename> file, like for uppercase.js it "
-"would look for uppercase.desktop."
+"&kate; will search the script folders (see <link linkend=\"advanced-editing-"
+"tools-scripting-introduction\">above</link>) for <filename>*.js</filename> "
+"files. For every file it checks whether there is a corresponding <filename>."
+"desktop</filename> file, like for uppercase.js it would look for uppercase."
+"desktop."
 msgstr ""
 
 #. Tag: para
@@ -2245,11 +2264,11 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If a <filename>.desktop</filename> file can not be found the script will be "
-"registered in katepart's command line with the filename without the ending .js, "
-"so in our example this would be <literal>uppercase</literal>"
-". If the command-name is fine and you don't need the extra features a <filename>"
-".desktop</filename> file provides you do not need a <filename>"
-".desktop</filename> file at all."
+"registered in katepart's command line with the filename without the ending ."
+"js, so in our example this would be <literal>uppercase</literal>. If the "
+"command-name is fine and you don't need the extra features a <filename>."
+"desktop</filename> file provides you do not need a <filename>.desktop</"
+"filename> file at all."
 msgstr ""
 
 #. Tag: para
@@ -2257,7 +2276,6 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If a <filename>.desktop</filename> file exists katepart will read the name "
-"under which the script will be registered from the .desktop-entry "
-"X-Kate-Command, for example X-Kate-Command=uppercase-selection."
+"under which the script will be registered from the .desktop-entry X-Kate-"
+"Command, for example X-Kate-Command=uppercase-selection."
 msgstr ""
-

@@ -5,8 +5,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kommander_widgets\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"X-KDE-DocBook-SVN-URL: trunk/KDE/kdewebdev/doc/kommander/widgets.docbook\n"
-"X-KDE-DocBook-SVN-Changed-Revision: 329383\n"
 "POT-Creation-Date: 2005-12-16 18:33+0000\n"
 "PO-Revision-Date: 2007-10-24 11:14+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
@@ -14,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdewebdev/doc/kommander/widgets.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 329383\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: title
@@ -33,19 +33,18 @@ msgstr ""
 #, no-c-format
 msgid "ROLES_OF_TRANSLATORS"
 msgstr ""
-"<othercredit role=\"translator\">"
-"<firstname></firstname><surname></surname>"
-"<affiliation><address><email>yannig@marchegay.org</email></address>"
-"</affiliation><contrib></contrib></othercredit>"
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
 
 #. Tag: para
 #: widgets.docbook:22
 #, no-c-format
 msgid ""
-"The building blocks of a &kommander; dialog are the widgets. They are like any "
-"other widget in the &Qt; and &kde; libraries except they have some extra "
-"functionality that allows them to have a <quote>text association</quote>"
-". Text is associated with a state of the widget or its populate slot. The "
+"The building blocks of a &kommander; dialog are the widgets. They are like "
+"any other widget in the &Qt; and &kde; libraries except they have some extra "
+"functionality that allows them to have a <quote>text association</quote>. "
+"Text is associated with a state of the widget or its populate slot. The "
 "number of states depends on the widget. If a widget only has one state, that "
 "state is called default."
 msgstr ""
@@ -60,9 +59,9 @@ msgstr ""
 #: widgets.docbook:28
 #, no-c-format
 msgid ""
-"The dialog has two special states for &kommander; text. They are Initiate and "
-"Destroy. These are run when the dialog is initialized and when it is destroyed. "
-"These protect against what is know as <quote>race</quote> "
+"The dialog has two special states for &kommander; text. They are Initiate "
+"and Destroy. These are run when the dialog is initialized and when it is "
+"destroyed. These protect against what is know as <quote>race</quote> "
 "problems on open and mean that you do not require any special procedures on "
 "close to manage housekeeping."
 msgstr ""
@@ -80,11 +79,11 @@ msgid ""
 "A container to organize buttons into a group. An optional title can be set "
 "using the title property. The frame can be adjusted with the lineWidth "
 "property. The button group can be set to exclusive by setting the exclusive "
-"property to true. This means when one toggle button is clicked all other toggle "
-"buttons will be set to off with the exception of radio buttons that are always "
-"mutual exclusive even if the group is non-exclusive. Radio buttons can be set "
-"to non-exclusive using the radioButtonExclusive property. (I am not so sure "
-"that this property actually works.)"
+"property to true. This means when one toggle button is clicked all other "
+"toggle buttons will be set to off with the exception of radio buttons that "
+"are always mutual exclusive even if the group is non-exclusive. Radio "
+"buttons can be set to non-exclusive using the radioButtonExclusive property. "
+"(I am not so sure that this property actually works.)"
 msgstr ""
 
 #. Tag: para
@@ -112,9 +111,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "A button that can be checked on and off. It can also be semi-checked if the "
-"tristate property is set to true. The label associated with the CheckBox is set "
-"in the text property. Setting the checked property will have the CheckBox "
-"initially checked."
+"tristate property is set to true. The label associated with the CheckBox is "
+"set in the text property. Setting the checked property will have the "
+"CheckBox initially checked."
 msgstr ""
 
 #. Tag: para
@@ -139,11 +138,11 @@ msgstr ""
 #: widgets.docbook:78
 #, no-c-format
 msgid ""
-"A button that when clicked, executes its text association and then closes the "
-"dialog. The label on the button is set with the text property. Output from the "
-"text association (how to say that) will be echoed to stdout if the writeStdout "
-"property is set to true. The button can be the default action for the dialog if "
-"the default property is set to true."
+"A button that when clicked, executes its text association and then closes "
+"the dialog. The label on the button is set with the text property. Output "
+"from the text association (how to say that) will be echoed to stdout if the "
+"writeStdout property is set to true. The button can be the default action "
+"for the dialog if the default property is set to true."
 msgstr ""
 
 #. Tag: para
@@ -169,9 +168,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "ComboBox is a selection widget that combines a button and a pop-up menu. It "
-"shows the user's current choice from a list of options in minimal space. Items "
-"are added to the list using the edit window. If the editable property is set to "
-"true the user can enter arbitrary strings."
+"shows the user's current choice from a list of options in minimal space. "
+"Items are added to the list using the edit window. If the editable property "
+"is set to true the user can enter arbitrary strings."
 msgstr ""
 
 #. Tag: para
@@ -197,10 +196,10 @@ msgstr ""
 #, no-c-format
 msgid ""
 "A button that when clicked executes its text association. The label on the "
-"button is set with the text property. Output from the text association (how to "
-"say that) will be echoed to stdout if the writeStdout property is set to true. "
-"The button can be the default action for the dialog if the default property is "
-"set to true."
+"button is set with the text property. Output from the text association (how "
+"to say that) will be echoed to stdout if the writeStdout property is set to "
+"true. The button can be the default action for the dialog if the default "
+"property is set to true."
 msgstr ""
 
 #. Tag: para
@@ -226,15 +225,15 @@ msgstr ""
 #, no-c-format
 msgid ""
 "The FileChooser widget combines a LineEdit with a button when clicked will "
-"present the user with dialog for the selection of files/folders. The "
-"file/folder selected is stored in the LineEdit. The type of the FileChooser is "
+"present the user with dialog for the selection of files/folders. The file/"
+"folder selected is stored in the LineEdit. The type of the FileChooser is "
 "set with the selectionType property. Available types are Open, Save, and "
-"Directory. Multiple files/folders can be selected if the selectionOpenMutliple "
-"property is set to true. A caption for the FileChooser can be set with the "
-"selectionCaption property. This is display as the window title of the dialog. "
-"If a caption isn't specified, the type of selection will be display in the "
-"title. The files displayed in the dialog can be limited using the "
-"selectionFilter property."
+"Directory. Multiple files/folders can be selected if the "
+"selectionOpenMutliple property is set to true. A caption for the FileChooser "
+"can be set with the selectionCaption property. This is display as the window "
+"title of the dialog. If a caption isn't specified, the type of selection "
+"will be display in the title. The files displayed in the dialog can be "
+"limited using the selectionFilter property."
 msgstr ""
 
 #. Tag: para
@@ -275,8 +274,8 @@ msgstr ""
 #: widgets.docbook:164
 #, no-c-format
 msgid ""
-"The widget text for GroupBox is the text associations of each of the widgets it "
-"contains combined. They will be in the order they appear inside of the "
+"The widget text for GroupBox is the text associations of each of the widgets "
+"it contains combined. They will be in the order they appear inside of the "
 "GroupBox."
 msgstr ""
 
@@ -292,9 +291,9 @@ msgstr ""
 msgid ""
 "A LineEdit widget is a one line text editor. It allows the user to enter and "
 "modify a single line of text. Initial text for the editor can be set in the "
-"text property. The widget can be set to read-only with the readOnly property. "
-"There are 3 modes for the widget, Normal, NoEcho, and Password. The mode is set "
-"with the echoMode property."
+"text property. The widget can be set to read-only with the readOnly "
+"property. There are 3 modes for the widget, Normal, NoEcho, and Password. "
+"The mode is set with the echoMode property."
 msgstr ""
 
 #. Tag: para
@@ -319,9 +318,9 @@ msgstr ""
 #: widgets.docbook:198
 #, no-c-format
 msgid ""
-"A ListBox widget provides a list of selectable items. Normally one or no items "
-"are selected. This behavior can be changed with the selectionMode property. "
-"Items are added to the ListBox using the edit window."
+"A ListBox widget provides a list of selectable items. Normally one or no "
+"items are selected. This behavior can be changed with the selectionMode "
+"property. Items are added to the ListBox using the edit window."
 msgstr ""
 
 #. Tag: para
@@ -348,8 +347,8 @@ msgstr ""
 #: widgets.docbook:218
 #, no-c-format
 msgid ""
-"This widget is now &kommander; enabled. It is functionally the same as the tree "
-"widget so please reference that."
+"This widget is now &kommander; enabled. It is functionally the same as the "
+"tree widget so please reference that."
 msgstr ""
 
 #. Tag: term
@@ -362,12 +361,12 @@ msgstr ""
 #: widgets.docbook:232
 #, no-c-format
 msgid ""
-"A simple widget that contains an image or text label. The pixmap to display is "
-"set in the pixmap property. The text is set in the text property. Only one of "
-"these properties can be set at the same time (I think, I can't get the editor "
-"to set both at the same time). If scaledContents is set to true the image will "
-"be scaled to fit the size of the widget. The format of the text can be set with "
-"the textFormat property."
+"A simple widget that contains an image or text label. The pixmap to display "
+"is set in the pixmap property. The text is set in the text property. Only "
+"one of these properties can be set at the same time (I think, I can't get "
+"the editor to set both at the same time). If scaledContents is set to true "
+"the image will be scaled to fit the size of the widget. The format of the "
+"text can be set with the textFormat property."
 msgstr ""
 
 #. Tag: para
@@ -388,11 +387,12 @@ msgstr ""
 #: widgets.docbook:249
 #, no-c-format
 msgid ""
-"A button that can be checked or unchecked, usually used in the ButtonGroup to "
-"make an exclusive choice. A label associated with the button can be set in the "
-"text property. A button can be initialized to checked by setting the checked "
-"property to true. If all RadioButtons in a ButtonGroup have the checked "
-"property set to true, then the last button will be the one that is checked."
+"A button that can be checked or unchecked, usually used in the ButtonGroup "
+"to make an exclusive choice. A label associated with the button can be set "
+"in the text property. A button can be initialized to checked by setting the "
+"checked property to true. If all RadioButtons in a ButtonGroup have the "
+"checked property set to true, then the last button will be the one that is "
+"checked."
 msgstr ""
 
 #. Tag: para
@@ -416,7 +416,8 @@ msgstr ""
 #. Tag: para
 #: widgets.docbook:269
 #, no-c-format
-msgid "This widgets provides a text editor that allows for simple text formatting."
+msgid ""
+"This widgets provides a text editor that allows for simple text formatting."
 msgstr ""
 
 #. Tag: para
@@ -429,8 +430,8 @@ msgstr ""
 #: widgets.docbook:275
 #, no-c-format
 msgid ""
-"The widget text for RichTextEditor is the text contained in the editor in rich "
-"text format. Selected text can be returned with @selectedWidgetText."
+"The widget text for RichTextEditor is the text contained in the editor in "
+"rich text format. Selected text can be returned with @selectedWidgetText."
 msgstr ""
 
 #. Tag: term
@@ -443,9 +444,9 @@ msgstr ""
 #: widgets.docbook:289
 #, no-c-format
 msgid ""
-"A widget that allows the user to change a integer value by either press up and "
-"down arrows or entering a value into the box. Minimum and maximum values for "
-"the widget can be set with the minValue and maxValue properties. The "
+"A widget that allows the user to change a integer value by either press up "
+"and down arrows or entering a value into the box. Minimum and maximum values "
+"for the widget can be set with the minValue and maxValue properties. The "
 "specialValueText property is used to set a text value that will be displayed "
 "instead of the minimum value."
 msgstr ""
@@ -472,10 +473,11 @@ msgstr ""
 #: widgets.docbook:309
 #, no-c-format
 msgid ""
-"A button that runs another &kommander; dialog when pressed. The dialog to run "
-"is set in the kmdrFile property. If the default property is set to true, the "
-"dialog will be run if enter is pressed while the dialog has focus. I think that "
-"you can also use it as a container. I need to play with this some more."
+"A button that runs another &kommander; dialog when pressed. The dialog to "
+"run is set in the kmdrFile property. If the default property is set to true, "
+"the dialog will be run if enter is pressed while the dialog has focus. I "
+"think that you can also use it as a container. I need to play with this some "
+"more."
 msgstr ""
 
 #. Tag: para
@@ -496,9 +498,9 @@ msgstr ""
 #: widgets.docbook:318
 #, no-c-format
 msgid ""
-"This was meant to contain the dialog, which is deprectaed with the new project "
-"concept. Should we leave it with <function>@dialog()</function> "
-"in its &kommander; text or get rid of it? As it is it is not right."
+"This was meant to contain the dialog, which is deprectaed with the new "
+"project concept. Should we leave it with <function>@dialog()</function> in "
+"its &kommander; text or get rid of it? As it is it is not right."
 msgstr ""
 
 #. Tag: term
@@ -537,8 +539,8 @@ msgstr ""
 msgid ""
 "A simple widget that contains a piece of text. This widget lets you set a "
 "pixmap too. OK, the editor says that they are both QLabels. Why do we have 2 "
-"widgets that look to be the same thing, but different names? - Scheduled to be "
-"fixed in A7."
+"widgets that look to be the same thing, but different names? - Scheduled to "
+"be fixed in A7."
 msgstr ""
 
 #. Tag: para
@@ -559,10 +561,10 @@ msgstr ""
 #: widgets.docbook:375
 #, no-c-format
 msgid ""
-"A widget that provides a list in the form of a tree structure. This widget is "
-"now fully enabled to add or remove items as of Alpha 6. You can add child items "
-"and multi-column data. The current limitation is that you cannot modify "
-"columns. To add a child node use <quote>/</quote> as a separator. To add column "
-"data use the escaped tab <quote>\\t</quote> character between columns."
+"A widget that provides a list in the form of a tree structure. This widget "
+"is now fully enabled to add or remove items as of Alpha 6. You can add child "
+"items and multi-column data. The current limitation is that you cannot "
+"modify columns. To add a child node use <quote>/</quote> as a separator. To "
+"add column data use the escaped tab <quote>\\t</quote> character between "
+"columns."
 msgstr ""
-

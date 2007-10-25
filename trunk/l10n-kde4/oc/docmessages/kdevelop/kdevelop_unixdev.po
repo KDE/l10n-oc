@@ -5,8 +5,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop_unixdev\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"X-KDE-DocBook-SVN-URL: trunk/KDE/kdevelop/doc/kdevelop/unixdev.docbook\n"
-"X-KDE-DocBook-SVN-Changed-Revision: 424338\n"
 "POT-Creation-Date: 2005-12-16 18:38+0000\n"
 "PO-Revision-Date: 2007-10-24 11:14+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
@@ -14,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdevelop/doc/kdevelop/unixdev.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 424338\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: author
@@ -59,7 +59,8 @@ msgid "<primary>history</primary>"
 msgstr ""
 
 #. Tag: primary
-#: unixdev.docbook:21 unixdev.docbook:62 unixdev.docbook:78 unixdev.docbook:91 unixdev.docbook:116 unixdev.docbook:139
+#: unixdev.docbook:21 unixdev.docbook:62 unixdev.docbook:78 unixdev.docbook:91
+#: unixdev.docbook:116 unixdev.docbook:139
 #, no-c-format
 msgid "scripting languages"
 msgstr ""
@@ -100,42 +101,42 @@ msgstr ""
 msgid ""
 "From the beginning, &UNIX; has maintained two very different development "
 "paradigms. One is the world of <emphasis>system and application programming "
-"languages</emphasis>, where some source code is translated to machine code by a "
-"translation program, usually a <emphasis>compiler</emphasis> or an <emphasis>"
-"interpreter</emphasis>. The programming language C is an example. &UNIX; was "
-"the first operating system kernel to be written in such a high level language "
-"instead of tightly machine-oriented assembler which was common before that "
-"time. (In fact, the C language once even was invented to write the &UNIX; "
-"kernel and associated programs on a DEC PDP-11 computer.)"
+"languages</emphasis>, where some source code is translated to machine code "
+"by a translation program, usually a <emphasis>compiler</emphasis> or an "
+"<emphasis>interpreter</emphasis>. The programming language C is an example. "
+"&UNIX; was the first operating system kernel to be written in such a high "
+"level language instead of tightly machine-oriented assembler which was "
+"common before that time. (In fact, the C language once even was invented to "
+"write the &UNIX; kernel and associated programs on a DEC PDP-11 computer.)"
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:38
 #, no-c-format
 msgid ""
-"The other paradigm is the world of <emphasis>scripting languages</emphasis>"
-". This world evolved with the invention of the &UNIX; shell which was the "
-"user's interface to the operating system&mdash;and at the same time a very high "
-"level programming language. A shell script is built from a set of small utility "
-"programs like &eg; <command>grep</command>, <command>sed</command>, or <command>"
-"find</command>. Each such utility is designed for some tightly defined job. The "
-"trick is that any such utility can be connected to another one via a simple "
-"transport mechanism, called a <emphasis>pipe</emphasis>"
-", which directs the output of the foregoing utility into the input of the next "
-"processed one. This makes for a very powerful and highly flexible programming "
-"tool."
+"The other paradigm is the world of <emphasis>scripting languages</emphasis>. "
+"This world evolved with the invention of the &UNIX; shell which was the "
+"user's interface to the operating system&mdash;and at the same time a very "
+"high level programming language. A shell script is built from a set of small "
+"utility programs like &eg; <command>grep</command>, <command>sed</command>, "
+"or <command>find</command>. Each such utility is designed for some tightly "
+"defined job. The trick is that any such utility can be connected to another "
+"one via a simple transport mechanism, called a <emphasis>pipe</emphasis>, "
+"which directs the output of the foregoing utility into the input of the next "
+"processed one. This makes for a very powerful and highly flexible "
+"programming tool."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:41
 #, no-c-format
 msgid ""
-"As time has gone by, both worlds have evolved. While C is still used mainly as "
-"a system programming language, C++ as a variant of C enriched by "
-"object-oriented and generic extensions has found its place for the development "
-"of complex applications in the 1990's. There are numerous other programming "
-"languages, even older ones keep their place&mdash;FORTRAN77 and Ada &eg; still "
-"have their stronghold in numerical applications."
+"As time has gone by, both worlds have evolved. While C is still used mainly "
+"as a system programming language, C++ as a variant of C enriched by object-"
+"oriented and generic extensions has found its place for the development of "
+"complex applications in the 1990's. There are numerous other programming "
+"languages, even older ones keep their place&mdash;FORTRAN77 and Ada &eg; "
+"still have their stronghold in numerical applications."
 msgstr ""
 
 #. Tag: title
@@ -149,9 +150,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "In the scripting area, there has been a shift away from the shell, which "
-"suffers from portability concerns, to languages which unify all commonly needed "
-"functionality in their standard libraries, while still being able to interface "
-"to the outside through pipes when necessary."
+"suffers from portability concerns, to languages which unify all commonly "
+"needed functionality in their standard libraries, while still being able to "
+"interface to the outside through pipes when necessary."
 msgstr ""
 
 #. Tag: para
@@ -159,8 +160,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "All these scripting languages have in common that they are widely portable "
-"between &UNIX; variants, Microsoft &Windows;, &MacOS; or even VMS. Also, they "
-"all have implementations that are freely distributable."
+"between &UNIX; variants, Microsoft &Windows;, &MacOS; or even VMS. Also, "
+"they all have implementations that are freely distributable."
 msgstr ""
 
 #. Tag: title
@@ -185,21 +186,22 @@ msgstr ""
 #: unixdev.docbook:65
 #, no-c-format
 msgid ""
-"<ulink url=\"http://www.perl.com\">&perl;</ulink> has become popular as a text "
-"processing and system administration language. In the beginning of the World "
-"Wide Web, CGI scripts written in &perl; were a widely used method to create "
-"dynamic web pages from databases. Today, this method has been replaced mostly "
-"by the <command>mod_perl</command> plugin for the &apache; web server. Among "
-"&perl;'s strengths are its built-in support for advanced regular expression "
-"matching and its rich archive of freely distributed modules."
+"<ulink url=\"http://www.perl.com\">&perl;</ulink> has become popular as a "
+"text processing and system administration language. In the beginning of the "
+"World Wide Web, CGI scripts written in &perl; were a widely used method to "
+"create dynamic web pages from databases. Today, this method has been "
+"replaced mostly by the <command>mod_perl</command> plugin for the &apache; "
+"web server. Among &perl;'s strengths are its built-in support for advanced "
+"regular expression matching and its rich archive of freely distributed "
+"modules."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:68
 #, no-c-format
 msgid ""
-"For more information see the <ulink url=\"http://cpan.org\">"
-"Comprehensive Perl Archive Network (<acronym>CPAN</acronym>)</ulink> website."
+"For more information see the <ulink url=\"http://cpan.org\">Comprehensive "
+"Perl Archive Network (<acronym>CPAN</acronym>)</ulink> website."
 msgstr ""
 
 #. Tag: title
@@ -224,12 +226,12 @@ msgstr ""
 #: unixdev.docbook:81
 #, no-c-format
 msgid ""
-"<ulink url=\"http://www.python.org\">&python;</ulink> "
-"shines by the elegance of its class system and the ease and flexibility with "
-"which external libraries can be wrapped in a way that they appear like standard "
-"&python; classes and functions. In contrast to &perl;, &python; has a clear and "
-"concise embedding &API;, which makes it the language of choice for making C and "
-"C++ programs scriptable."
+"<ulink url=\"http://www.python.org\">&python;</ulink> shines by the elegance "
+"of its class system and the ease and flexibility with which external "
+"libraries can be wrapped in a way that they appear like standard &python; "
+"classes and functions. In contrast to &perl;, &python; has a clear and "
+"concise embedding &API;, which makes it the language of choice for making C "
+"and C++ programs scriptable."
 msgstr ""
 
 #. Tag: title
@@ -269,9 +271,10 @@ msgstr ""
 #: unixdev.docbook:104
 #, no-c-format
 msgid ""
-"Higher-level &UNIX; applications usually miss the speed and flexibility of the "
-"traditional character-oriented shell scripting mechanisms. This is especially "
-"true in the world of graphical user interfaces (&GUI;) such as &eg; &kde;."
+"Higher-level &UNIX; applications usually miss the speed and flexibility of "
+"the traditional character-oriented shell scripting mechanisms. This is "
+"especially true in the world of graphical user interfaces (&GUI;) such as "
+"&eg; &kde;."
 msgstr ""
 
 #. Tag: para
@@ -279,9 +282,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "There have been attempts to provide similar mechanisms which will work on a "
-"higher application level, most notably <link linkend=\"unixdev-corba\">"
-"CORBA</link> and, in the &kde; environment, <link linkend=\"unixdev-dcop\">"
-"&DCOP;</link>."
+"higher application level, most notably <link linkend=\"unixdev-corba"
+"\">CORBA</link> and, in the &kde; environment, <link linkend=\"unixdev-dcop"
+"\">&DCOP;</link>."
 msgstr ""
 
 #. Tag: title
@@ -313,11 +316,10 @@ msgstr ""
 #, no-c-format
 msgid ""
 "<ulink url=\"http://www.omg.org/gettingstarted/corbafaq.htm\">CORBA</ulink> "
-"(<emphasis>Common Object Request Broker Architecture</emphasis>"
-") is an attempt to let computer applications work together over networks. It "
-"was devised by the private, vendor independent <ulink "
-"url=\"http://www.omg.org\">OMG</ulink> (Object Management Group) standards "
-"comittee."
+"(<emphasis>Common Object Request Broker Architecture</emphasis>) is an "
+"attempt to let computer applications work together over networks. It was "
+"devised by the private, vendor independent <ulink url=\"http://www.omg.org"
+"\">OMG</ulink> (Object Management Group) standards comittee."
 msgstr ""
 
 #. Tag: para
@@ -333,9 +335,10 @@ msgstr ""
 #: unixdev.docbook:128
 #, no-c-format
 msgid ""
-"The main drawback of CORBA is its rather low speed. While this may be tolerable "
-"in networks, it is a real hindrance for inter-application communications in a "
-"non-networked environment such as &kde; running on a single computer."
+"The main drawback of CORBA is its rather low speed. While this may be "
+"tolerable in networks, it is a real hindrance for inter-application "
+"communications in a non-networked environment such as &kde; running on a "
+"single computer."
 msgstr ""
 
 #. Tag: title
@@ -360,19 +363,19 @@ msgstr ""
 #: unixdev.docbook:145
 #, no-c-format
 msgid ""
-"Another evolution on &UNIX;-like scripting is the <ulink "
-"url=\"http://developer.kde.org/documentation/library/kdeqt/dcop.html\">"
-"<emphasis>DCOP</emphasis></ulink> protocol which was devised for communication "
-"between &kde; applications to overcome the limitations of CORBA."
+"Another evolution on &UNIX;-like scripting is the <ulink url=\"http://"
+"developer.kde.org/documentation/library/kdeqt/dcop.html\"><emphasis>DCOP</"
+"emphasis></ulink> protocol which was devised for communication between &kde; "
+"applications to overcome the limitations of CORBA."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:148
 #, no-c-format
 msgid ""
-"&DCOP; stands for <emphasis>Desktop Communication Protocol</emphasis> "
-"and is implemented as a simple IPC/RPC mechanism built to operate over sockets. "
-"In effect this provides facilities similar to the traditional &UNIX; pipe "
+"&DCOP; stands for <emphasis>Desktop Communication Protocol</emphasis> and is "
+"implemented as a simple IPC/RPC mechanism built to operate over sockets. In "
+"effect this provides facilities similar to the traditional &UNIX; pipe "
 "mechanism."
 msgstr ""
 
@@ -380,11 +383,11 @@ msgstr ""
 #: unixdev.docbook:151
 #, no-c-format
 msgid ""
-"Traditional shell scripting is based on fairly small tool programs which were "
-"designed to work on a strictly textual basis. &DCOP; allows elaborate graphical "
-"programs to communicate with each other in a quite similar way. This enables "
-"&eg; a &kde; program to send messages to another &kde; program, or receive data "
-"from it for its own purposes."
+"Traditional shell scripting is based on fairly small tool programs which "
+"were designed to work on a strictly textual basis. &DCOP; allows elaborate "
+"graphical programs to communicate with each other in a quite similar way. "
+"This enables &eg; a &kde; program to send messages to another &kde; program, "
+"or receive data from it for its own purposes."
 msgstr ""
 
 #. Tag: para
@@ -392,22 +395,21 @@ msgstr ""
 #, no-c-format
 msgid ""
 "There are drawbacks, however. To use &DCOP; a program must be designed to "
-"contain a special &DCOP; interface. And the &DCOP; communication process runs "
-"somewhat slowly (although a lot faster than CORBA). But it returns much of the "
-"power and flexibility of &UNIX; scripting to high-level programs which are "
-"based on a graphical user interface."
+"contain a special &DCOP; interface. And the &DCOP; communication process "
+"runs somewhat slowly (although a lot faster than CORBA). But it returns much "
+"of the power and flexibility of &UNIX; scripting to high-level programs "
+"which are based on a graphical user interface."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:157
 #, no-c-format
 msgid ""
-"For more information, see the <ulink "
-"url=\"http://developer.kde.org/documentation/library/kdeqt/dcop.html\">"
-"DCOP: Desktop COmmunications Protocol</ulink> paper or <ulink "
-"url=\"developer.kde.org/documentation/library/cvs-api/dcop/html/index.html\">"
-"The &DCOP; Desktop Communication Protocol library</ulink> "
-"&API; reference of the &kde; dcop library."
+"For more information, see the <ulink url=\"http://developer.kde.org/"
+"documentation/library/kdeqt/dcop.html\">DCOP: Desktop COmmunications "
+"Protocol</ulink> paper or <ulink url=\"developer.kde.org/documentation/"
+"library/cvs-api/dcop/html/index.html\">The &DCOP; Desktop Communication "
+"Protocol library</ulink> &API; reference of the &kde; dcop library."
 msgstr ""
 
 #. Tag: title
@@ -443,16 +445,16 @@ msgstr ""
 #: unixdev.docbook:178
 #, no-c-format
 msgid ""
-"a translating program, usually a <emphasis>compiler</emphasis> "
-"to turn the source code into object files,"
+"a translating program, usually a <emphasis>compiler</emphasis> to turn the "
+"source code into object files,"
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:181
 #, no-c-format
 msgid ""
-"a <emphasis>librarian</emphasis> which collects object files into libraries to "
-"reuse them easily without the need to recompile,"
+"a <emphasis>librarian</emphasis> which collects object files into libraries "
+"to reuse them easily without the need to recompile,"
 msgstr ""
 
 #. Tag: para
@@ -467,16 +469,17 @@ msgstr ""
 #: unixdev.docbook:187
 #, no-c-format
 msgid ""
-"a <emphasis>make system</emphasis> which provides some means to manage all this "
-"stuff and&mdash;not to forget"
+"a <emphasis>make system</emphasis> which provides some means to manage all "
+"this stuff and&mdash;not to forget"
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:190
 #, no-c-format
 msgid ""
-"a <emphasis>debugger</emphasis> to (hopefully) find all errors in the program "
-"and possibly some other diagnostic tools to get everything running smoothly."
+"a <emphasis>debugger</emphasis> to (hopefully) find all errors in the "
+"program and possibly some other diagnostic tools to get everything running "
+"smoothly."
 msgstr ""
 
 #. Tag: para
@@ -484,20 +487,21 @@ msgstr ""
 #, no-c-format
 msgid ""
 "When you have a large project consisting of possibly hundreds of source code "
-"files, the process of compiling may become quite laborsome. You do not want to "
-"recompile all files each time you have changed only some of them. Instead, you "
-"only want to compile those files which are affected by the changes. In general, "
-"it is not always easily obvious which of the files have to be recompiled."
+"files, the process of compiling may become quite laborsome. You do not want "
+"to recompile all files each time you have changed only some of them. "
+"Instead, you only want to compile those files which are affected by the "
+"changes. In general, it is not always easily obvious which of the files have "
+"to be recompiled."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:199
 #, no-c-format
 msgid ""
-"When you &eg; change a function prototype in a header file, you need to compile "
-"every file which includes this header file. If your project contains many such "
-"files you may easily miss one or two of them if you have to do the job "
-"manually. Thus some means of automization is necessary."
+"When you &eg; change a function prototype in a header file, you need to "
+"compile every file which includes this header file. If your project contains "
+"many such files you may easily miss one or two of them if you have to do the "
+"job manually. Thus some means of automization is necessary."
 msgstr ""
 
 #. Tag: title
@@ -552,10 +556,10 @@ msgstr ""
 #: unixdev.docbook:221
 #, no-c-format
 msgid ""
-"A tool which takes care of recompilations is <command>make</command>"
-". It keeps track of all work using a set of <emphasis>rules</emphasis> "
-"which describe what to do in case some piece of information (usually a source "
-"or object code file) was changed. All rules belonging to a certain project are "
+"A tool which takes care of recompilations is <command>make</command>. It "
+"keeps track of all work using a set of <emphasis>rules</emphasis> which "
+"describe what to do in case some piece of information (usually a source or "
+"object code file) was changed. All rules belonging to a certain project are "
 "stored in a so-called <filename>Makefile</filename> which is processed by "
 "<command>make</command> any time you want to update your work."
 msgstr ""
@@ -576,18 +580,18 @@ msgstr ""
 #: unixdev.docbook:230
 #, no-c-format
 msgid ""
-"a set of <emphasis>dependencies</emphasis>, basically the names of those files "
-"the target depends on (&eg; the name of a source file, where then the target "
-"will be the name of the object file to be built) and"
+"a set of <emphasis>dependencies</emphasis>, basically the names of those "
+"files the target depends on (&eg; the name of a source file, where then the "
+"target will be the name of the object file to be built) and"
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:233
 #, no-c-format
 msgid ""
-"the <emphasis>commands</emphasis> which are to be executed to <quote>"
-"make</quote> the target (&ie; to compile it or to link other object files "
-"together to build an executable progam file)."
+"the <emphasis>commands</emphasis> which are to be executed to <quote>make</"
+"quote> the target (&ie; to compile it or to link other object files together "
+"to build an executable progam file)."
 msgstr ""
 
 #. Tag: para
@@ -595,40 +599,39 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Basically the <command>make</command> command will read the rules one after "
-"another, check each file in the dependency list of a given target and make this "
-"target anew if any one of these files has changed, using the commands listed in "
-"that rule."
+"another, check each file in the dependency list of a given target and make "
+"this target anew if any one of these files has changed, using the commands "
+"listed in that rule."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:241
 #, no-c-format
 msgid ""
-"There are several additional possibilities to control such a make process, and "
-"a <filename>Makefile</filename> can thus grow very complex. We cannot go into "
-"the details here. However, we recommend that you make yourself accustomed to "
-"the syntax of <command>make</command>. Even if you do not normally use it "
-"directly, an understanding of the fundamentals of the build system can be "
-"useful. See the <ulink url=\"info://make/Top\"> <quote>GNU Make Manual</quote>"
-"</ulink> for more information."
+"There are several additional possibilities to control such a make process, "
+"and a <filename>Makefile</filename> can thus grow very complex. We cannot go "
+"into the details here. However, we recommend that you make yourself "
+"accustomed to the syntax of <command>make</command>. Even if you do not "
+"normally use it directly, an understanding of the fundamentals of the build "
+"system can be useful. See the <ulink url=\"info://make/Top\"> <quote>GNU "
+"Make Manual</quote></ulink> for more information."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:243
 #, no-c-format
 msgid ""
-"For more &kdevelop; specific detail see the <link "
-"linkend=\"project-management\">Building and Project Management</link> "
-"chapter of this manual."
+"For more &kdevelop; specific detail see the <link linkend=\"project-"
+"management\">Building and Project Management</link> chapter of this manual."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:246
 #, no-c-format
 msgid ""
-"There are several tutorials available, see the <link "
-"linkend=\"automake-references\">references</link> in the Building and project "
-"management chapter."
+"There are several tutorials available, see the <link linkend=\"automake-"
+"references\">references</link> in the Building and project management "
+"chapter."
 msgstr ""
 
 #. Tag: title
@@ -665,11 +668,11 @@ msgstr ""
 #: unixdev.docbook:266
 #, no-c-format
 msgid ""
-"Application developers become even more encumbered by having not only to create "
-"program libraries and logic, but also to provide an easy to use custom built "
-"user interface that is both intuitive and functional. Most programmers receive "
-"little to no training in &GUI; development, and as a result user interfaces "
-"often are poorly designed."
+"Application developers become even more encumbered by having not only to "
+"create program libraries and logic, but also to provide an easy to use "
+"custom built user interface that is both intuitive and functional. Most "
+"programmers receive little to no training in &GUI; development, and as a "
+"result user interfaces often are poorly designed."
 msgstr ""
 
 #. Tag: para
@@ -677,8 +680,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "During the years some common design principles have evolved. It is strongly "
-"advised to adhere to them. This way your user interfaces will retain a common "
-"look and feel that the users of your application will gratefully appreciate."
+"advised to adhere to them. This way your user interfaces will retain a "
+"common look and feel that the users of your application will gratefully "
+"appreciate."
 msgstr ""
 
 #. Tag: para
@@ -686,10 +690,9 @@ msgstr ""
 #, no-c-format
 msgid ""
 "For &kde; &GUI; development there is a style guide available. It is found in "
-"the <ulink "
-"url=\"http://developer.kde.org/documentation/standards/kde/style/basics/index.ht"
-"ml\">&kde; User Interface Guidelines</ulink> on the &kde; Developer's Corner "
-"page."
+"the <ulink url=\"http://developer.kde.org/documentation/standards/kde/style/"
+"basics/index.html\">&kde; User Interface Guidelines</ulink> on the &kde; "
+"Developer's Corner page."
 msgstr ""
 
 #. Tag: para
@@ -744,8 +747,8 @@ msgstr ""
 #: unixdev.docbook:300
 #, no-c-format
 msgid ""
-"Much repetitive work has to be done when designing, compiling, and debugging a "
-"program. A lot of such work can be saved through the use of templates and "
+"Much repetitive work has to be done when designing, compiling, and debugging "
+"a program. A lot of such work can be saved through the use of templates and "
 "scripts. And another lot by keeping these tools easily available and able to "
 "communicate with each other under a common &GUI;."
 msgstr ""
@@ -755,8 +758,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "For example&mdash;would it not be convenient if a debugger were able to open "
-"the source file in question in an editor and place the cursor directly at the "
-"position of that bug just found?"
+"the source file in question in an editor and place the cursor directly at "
+"the position of that bug just found?"
 msgstr ""
 
 #. Tag: para
@@ -773,8 +776,8 @@ msgstr ""
 #: unixdev.docbook:309
 #, no-c-format
 msgid ""
-"For the &kde; platform &kdevelop; is such an &IDE;. It provides a wide range of "
-"tools which ease program development and maintenance, even for different "
+"For the &kde; platform &kdevelop; is such an &IDE;. It provides a wide range "
+"of tools which ease program development and maintenance, even for different "
 "programming languages and across platforms."
 msgstr ""
 
@@ -806,25 +809,25 @@ msgstr ""
 #: unixdev.docbook:326
 #, no-c-format
 msgid ""
-"Manages all <emphasis>development tools</emphasis> needed for C++ programming, "
-"such as compiler, linker, debugger and build system."
+"Manages all <emphasis>development tools</emphasis> needed for C++ "
+"programming, such as compiler, linker, debugger and build system."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:329
 #, no-c-format
 msgid ""
-"Provides an <emphasis>&appwizard;</emphasis> which generates complete, "
-"ready-to-go sample applications."
+"Provides an <emphasis>&appwizard;</emphasis> which generates complete, ready-"
+"to-go sample applications."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:332
 #, no-c-format
 msgid ""
-"Allows the user to select an <emphasis>integrated editor</emphasis> "
-"based on the &kde; programmer's editor &kwrite;, Trolltec's <application>"
-"QEditor</application>, or others."
+"Allows the user to select an <emphasis>integrated editor</emphasis> based on "
+"the &kde; programmer's editor &kwrite;, Trolltec's <application>QEditor</"
+"application>, or others."
 msgstr ""
 
 #. Tag: para
@@ -839,41 +842,42 @@ msgstr ""
 #: unixdev.docbook:338
 #, no-c-format
 msgid ""
-"<emphasis>File management</emphasis> for sources, headers, documentation &etc; "
-"to be included in the project."
+"<emphasis>File management</emphasis> for sources, headers, documentation "
+"&etc; to be included in the project."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:341
 #, no-c-format
 msgid ""
-"Assistance in <emphasis>creating application user manuals</emphasis> "
-"written with &kde; tools."
+"Assistance in <emphasis>creating application user manuals</emphasis> written "
+"with &kde; tools."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:344
 #, no-c-format
 msgid ""
-"Automatic &HTML; based <emphasis>&API; documentation</emphasis> "
-"for a project's classes with cross-references to the used libraries."
+"Automatic &HTML; based <emphasis>&API; documentation</emphasis> for a "
+"project's classes with cross-references to the used libraries."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:347
 #, no-c-format
 msgid ""
-"<emphasis>Internationalization support</emphasis>, allowing translators to add "
-"their target language to a project easily, including support for &kbabel;."
+"<emphasis>Internationalization support</emphasis>, allowing translators to "
+"add their target language to a project easily, including support for "
+"&kbabel;."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:350
 #, no-c-format
 msgid ""
-"Support for managing a project via one of several <emphasis>"
-"versioning systems</emphasis> (&eg; &CVS;) by providing an easy-to-use frontend "
-"for the most needed functions."
+"Support for managing a project via one of several <emphasis>versioning "
+"systems</emphasis> (&eg; &CVS;) by providing an easy-to-use frontend for the "
+"most needed functions."
 msgstr ""
 
 #. Tag: para
@@ -906,9 +910,9 @@ msgstr ""
 #: unixdev.docbook:365
 #, no-c-format
 msgid ""
-"<emphasis>Templates for creating various projects</emphasis> "
-"(&kcontrol; modules, &kicker; (panel) applets, KIOSlaves, &konqueror; plugins "
-"and desktop styles)."
+"<emphasis>Templates for creating various projects</emphasis> (&kcontrol; "
+"modules, &kicker; (panel) applets, KIOSlaves, &konqueror; plugins and "
+"desktop styles)."
 msgstr ""
 
 #. Tag: para
@@ -916,8 +920,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Four <emphasis>navigation tree views</emphasis> for easily switching between "
-"source files, header files, classes and documentation, obviating the need for "
-"an external file manager."
+"source files, header files, classes and documentation, obviating the need "
+"for an external file manager."
 msgstr ""
 
 #. Tag: para
@@ -932,16 +936,15 @@ msgstr ""
 #: unixdev.docbook:374
 #, no-c-format
 msgid ""
-"Support for <emphasis>Qt/Embedded projects</emphasis> "
-"(such as the Zaurus and iPAQ)."
+"Support for <emphasis>Qt/Embedded projects</emphasis> (such as the Zaurus "
+"and iPAQ)."
 msgstr ""
 
 #. Tag: para
 #: unixdev.docbook:377
 #, no-c-format
 msgid ""
-"<emphasis>Inclusion of any other program</emphasis> you need for development by "
-"adding it to the <guimenuitem>Tools</guimenuitem> menu according to your "
+"<emphasis>Inclusion of any other program</emphasis> you need for development "
+"by adding it to the <guimenuitem>Tools</guimenuitem> menu according to your "
 "individual needs."
 msgstr ""
-

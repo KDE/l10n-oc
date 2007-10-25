@@ -5,8 +5,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysv\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"X-KDE-DocBook-SVN-URL: trunk/KDE/kdeadmin/doc/ksysv/index.docbook\n"
-"X-KDE-DocBook-SVN-Changed-Revision: 643009\n"
 "POT-Creation-Date: 2007-03-20 04:58+0000\n"
 "PO-Revision-Date: 2007-10-24 11:16+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
@@ -14,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdeadmin/doc/ksysv/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 643009\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: title
@@ -39,10 +39,9 @@ msgstr "putzer@kde.org"
 #, no-c-format
 msgid "ROLES_OF_TRANSLATORS"
 msgstr ""
-"<othercredit role=\"translator\">"
-"<firstname></firstname><surname></surname>"
-"<affiliation><address><email>yannig@marchegay.org</email></address>"
-"</affiliation><contrib></contrib></othercredit>"
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
 
 #. Tag: holder
 #: index.docbook:31
@@ -111,18 +110,18 @@ msgstr ""
 #: index.docbook:64
 #, no-c-format
 msgid ""
-"The following explanation is <quote>borrowed</quote> from <application>"
-"tksysv</application> (an inspiration for &ksysv;):"
+"The following explanation is <quote>borrowed</quote> from "
+"<application>tksysv</application> (an inspiration for &ksysv;):"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:69
 #, no-c-format
 msgid ""
-"System V init is fast becoming the standard in the &Linux; world to control the "
-"startup of software at boot time. This is because it is arguably easier to use "
-"and more powerful and flexible than the traditional <acronym>BSD</acronym> "
-"init."
+"System V init is fast becoming the standard in the &Linux; world to control "
+"the startup of software at boot time. This is because it is arguably easier "
+"to use and more powerful and flexible than the traditional <acronym>BSD</"
+"acronym> init."
 msgstr ""
 
 #. Tag: para
@@ -136,11 +135,11 @@ msgstr ""
 #, no-c-format
 msgid ""
 "The init binary is located in <filename class=\"directory\">/sbin</filename> "
-"and not <filename class=\"directory\">/etc</filename>"
-". This is important as one might try and upgrade a machine to System V init "
-"without re-installing and reformatting. The &Linux; kernel looks in <filename "
-"class=\"directory\">/etc</filename> for its init first, so you must make sure "
-"and delete your old init from there if any."
+"and not <filename class=\"directory\">/etc</filename>. This is important as "
+"one might try and upgrade a machine to System V init without re-installing "
+"and reformatting. The &Linux; kernel looks in <filename class=\"directory\">/"
+"etc</filename> for its init first, so you must make sure and delete your old "
+"init from there if any."
 msgstr ""
 
 #. Tag: para
@@ -149,10 +148,10 @@ msgstr ""
 msgid ""
 "SysV init also differs from <acronym>BSD</acronym> init in that the config "
 "files are in a subfolder of <filename class=\"directory\">/etc</filename> "
-"instead of residing directly in <filename class=\"directory\">/etc</filename>"
-". This folder is called <filename class=\"directory\">rc.d</filename>"
-". In there you will find <filename>rc.sysinit</filename> "
-"and the following folders:"
+"instead of residing directly in <filename class=\"directory\">/etc</"
+"filename>. This folder is called <filename class=\"directory\">rc.d</"
+"filename>. In there you will find <filename>rc.sysinit</filename> and the "
+"following folders:"
 msgstr ""
 
 #. Tag: filename
@@ -208,23 +207,23 @@ msgstr ""
 #, no-c-format
 msgid ""
 "<filename class=\"directory\">init.d</filename> contains a bunch of scripts. "
-"Basically, you need one script for each service you may need to start at boot "
-"time or when entering another runlevel. Services include things like "
+"Basically, you need one script for each service you may need to start at "
+"boot time or when entering another runlevel. Services include things like "
 "networking, <acronym>NFS</acronym>, &Sendmail;, httpd,&etc; Services do not "
-"include things like <command>setserial</command> that must only be run once and "
-"then exited. Things like that should go in the file <filename>"
-"rc.local</filename>."
+"include things like <command>setserial</command> that must only be run once "
+"and then exited. Things like that should go in the file <filename>rc.local</"
+"filename>."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:150
 #, no-c-format
 msgid ""
-"<filename>rc.local</filename> should be in <filename class=\"directory\">"
-"/etc/rc.d</filename> if you want one. Most systems include one even though it "
-"doesn't do much. You can also include an <filename>rc.serial</filename> "
-"in <filename class=\"directory\">/etc/rc.d</filename> "
-"if you need to do serial port specific things at boot time."
+"<filename>rc.local</filename> should be in <filename class=\"directory\">/"
+"etc/rc.d</filename> if you want one. Most systems include one even though it "
+"doesn't do much. You can also include an <filename>rc.serial</filename> in "
+"<filename class=\"directory\">/etc/rc.d</filename> if you need to do serial "
+"port specific things at boot time."
 msgstr ""
 
 #. Tag: para
@@ -236,7 +235,8 @@ msgstr ""
 #. Tag: para
 #: index.docbook:163
 #, no-c-format
-msgid "The kernel looks in several places for init and runs the first one it finds."
+msgid ""
+"The kernel looks in several places for init and runs the first one it finds."
 msgstr ""
 
 #. Tag: para
@@ -249,8 +249,8 @@ msgstr ""
 #: index.docbook:174
 #, no-c-format
 msgid ""
-"<filename>rc.sysinit</filename> does a bunch of necessary things and then runs "
-"<filename>rc.serial</filename> (if it exists)"
+"<filename>rc.sysinit</filename> does a bunch of necessary things and then "
+"runs <filename>rc.serial</filename> (if it exists)"
 msgstr ""
 
 #. Tag: para
@@ -269,8 +269,8 @@ msgstr ""
 #: index.docbook:192
 #, no-c-format
 msgid ""
-"The default runlevel is decided in <filename>/etc/inittab</filename>"
-". You should have a line close to the top like:"
+"The default runlevel is decided in <filename>/etc/inittab</filename>. You "
+"should have a line close to the top like:"
 msgstr ""
 
 #. Tag: screen
@@ -283,34 +283,36 @@ msgstr ""
 #: index.docbook:200
 #, no-c-format
 msgid ""
-"From this, you'd look in the second column and see that the default runlevel is "
-"3, as should be the case for most systems. If you want to change it, you can "
-"edit <filename>/etc/inittab</filename> by hand and change the 3. Be very "
-"careful when you are messing with the inittab. If you do mess up, you can get "
-"in to fix it by rebooting and doing:"
+"From this, you'd look in the second column and see that the default runlevel "
+"is 3, as should be the case for most systems. If you want to change it, you "
+"can edit <filename>/etc/inittab</filename> by hand and change the 3. Be very "
+"careful when you are messing with the inittab. If you do mess up, you can "
+"get in to fix it by rebooting and doing:"
 msgstr ""
 
 #. Tag: screen
 #: index.docbook:208
 #, no-c-format
-msgid "<computeroutput>LILO boot:</computeroutput> <userinput>linux single</userinput>"
+msgid ""
+"<computeroutput>LILO boot:</computeroutput> <userinput>linux single</"
+"userinput>"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:210
 #, no-c-format
 msgid ""
-"This <emphasis>should</emphasis> allow you to boot into single user mode so you "
-"can fix it."
+"This <emphasis>should</emphasis> allow you to boot into single user mode so "
+"you can fix it."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:214
 #, no-c-format
 msgid ""
-"Now, how does it run all the right scripts? If you do an <userinput><command>"
-"ls</command> <option>-l</option></userinput> on <filename class=\"directory\">"
-"rc3.d</filename>, you might see something like:"
+"Now, how does it run all the right scripts? If you do an "
+"<userinput><command>ls</command> <option>-l</option></userinput> on "
+"<filename class=\"directory\">rc3.d</filename>, you might see something like:"
 msgstr ""
 
 #. Tag: screen
@@ -334,48 +336,49 @@ msgstr ""
 #, no-c-format
 msgid ""
 "What you'll notice is that there are no real files in the folder. Everything "
-"there is a link to one of the scripts in the <filename class=\"directory\">"
-"init.d</filename> folder."
+"there is a link to one of the scripts in the <filename class=\"directory"
+"\">init.d</filename> folder."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:230
 #, no-c-format
 msgid ""
-"The links also have an <literal>S</literal> and a number at the beginning. The "
-"<literal>S</literal> means to start this particular script and a <literal>"
-"K</literal> would mean to stop it. The number is just there for ordering "
-"purposes. Init will start all the services based on the order they appear. You "
-"can duplicate numbers, but it will only confuse you somewhat. You just need to "
-"use a two digit number only, along with an uppercase <literal>S</literal> "
-"or <literal>K</literal> to start or stop the services you need to."
+"The links also have an <literal>S</literal> and a number at the beginning. "
+"The <literal>S</literal> means to start this particular script and a "
+"<literal>K</literal> would mean to stop it. The number is just there for "
+"ordering purposes. Init will start all the services based on the order they "
+"appear. You can duplicate numbers, but it will only confuse you somewhat. "
+"You just need to use a two digit number only, along with an uppercase "
+"<literal>S</literal> or <literal>K</literal> to start or stop the services "
+"you need to."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:241
 #, no-c-format
 msgid ""
-"How does it start and stop services? Simple. Each of the scripts is written to "
-"accept an argument which can be <option>start</option> and <option>stop</option>"
-". You can execute those scripts by hand in fact with a command like:"
+"How does it start and stop services? Simple. Each of the scripts is written "
+"to accept an argument which can be <option>start</option> and <option>stop</"
+"option>. You can execute those scripts by hand in fact with a command like:"
 msgstr ""
 
 #. Tag: screen
 #: index.docbook:248
 #, no-c-format
 msgid ""
-"<userinput><command>/etc/rc.d/init.d/httpd.init</command> <option>stop</option>"
-"</userinput>"
+"<userinput><command>/etc/rc.d/init.d/httpd.init</command> <option>stop</"
+"option></userinput>"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:250
 #, no-c-format
 msgid ""
-"To stop the httpd server. Init just reads the name and if it has a <literal>"
-"K</literal>, it calls the script with the <option>stop</option> "
-"argument. If it has an <option>S</option> it calls the script with a <option>"
-"start</option> argument."
+"To stop the httpd server. Init just reads the name and if it has a "
+"<literal>K</literal>, it calls the script with the <option>stop</option> "
+"argument. If it has an <option>S</option> it calls the script with a "
+"<option>start</option> argument."
 msgstr ""
 
 #. Tag: title
@@ -390,8 +393,8 @@ msgstr ""
 msgid ""
 "Some people want an easy way to setup machines to be multi-purpose. I could "
 "have a <quote>server</quote> runlevel that just runs httpd, &Sendmail;, "
-"networking, &etc; Then I could have a <quote>user</quote> "
-"runlevel that runs &kdm;, networking, &etc;"
+"networking, &etc; Then I could have a <quote>user</quote> runlevel that runs "
+"&kdm;, networking, &etc;"
 msgstr ""
 
 #. Tag: title
@@ -411,7 +414,6 @@ msgstr ""
 #. Tag: title
 #: index.docbook:280
 #, no-c-format
-
 msgid "Mouse"
 msgstr "Mirga"
 
@@ -419,19 +421,19 @@ msgstr "Mirga"
 #: index.docbook:282
 #, no-c-format
 msgid ""
-"Using &ksysv; with a mouse or other pointing device is easy: just drag an entry "
-"from the <guilabel> Available Services</guilabel> area onto one of the six "
-"runlevels to start (or resp. stop) it in that runlevel."
+"Using &ksysv; with a mouse or other pointing device is easy: just drag an "
+"entry from the <guilabel> Available Services</guilabel> area onto one of the "
+"six runlevels to start (or resp. stop) it in that runlevel."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:288
 #, no-c-format
 msgid ""
-"You can also move scripts between runlevels, or change the position in a given "
-"runlevel, by dragging it around. Doing so removes the entry from its original "
-"runlevel (or position). This doesn't happen when you drag an entry from the "
-"<guilabel>Available Services</guilabel> area."
+"You can also move scripts between runlevels, or change the position in a "
+"given runlevel, by dragging it around. Doing so removes the entry from its "
+"original runlevel (or position). This doesn't happen when you drag an entry "
+"from the <guilabel>Available Services</guilabel> area."
 msgstr ""
 
 #. Tag: para
@@ -439,18 +441,18 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Entries are moved when you drag them to a new area. To copy a service to a "
-"different runlevel, you have to select <guimenuitem>Copy</guimenuitem> "
-"from the <guimenu>Edit</guimenu> or context menu and <guimenuitem>"
-"Paste</guimenuitem> it in the target runlevel."
+"different runlevel, you have to select <guimenuitem>Copy</guimenuitem> from "
+"the <guimenu>Edit</guimenu> or context menu and <guimenuitem>Paste</"
+"guimenuitem> it in the target runlevel."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:304
 #, no-c-format
 msgid ""
-"The <quote>sorting number</quote> of an entry sometimes cannot be calculated. "
-"In such a case you have to edit the sorting numbers of surrounding entries "
-"before re-trying to insert the service."
+"The <quote>sorting number</quote> of an entry sometimes cannot be "
+"calculated. In such a case you have to edit the sorting numbers of "
+"surrounding entries before re-trying to insert the service."
 msgstr ""
 
 #. Tag: para
@@ -463,8 +465,8 @@ msgstr ""
 #: index.docbook:316
 #, no-c-format
 msgid ""
-"You can delete entries by dragging them onto the <guiicon>Trash Can</guiicon> "
-"area (symbolized by an icon depicting a garbage bin)."
+"You can delete entries by dragging them onto the <guiicon>Trash Can</"
+"guiicon> area (symbolized by an icon depicting a garbage bin)."
 msgstr ""
 
 #. Tag: para
@@ -478,7 +480,6 @@ msgstr ""
 #. Tag: title
 #: index.docbook:331
 #, no-c-format
-
 msgid "Keyboard"
 msgstr "Clavièr"
 
@@ -487,30 +488,31 @@ msgstr "Clavièr"
 #, no-c-format
 msgid ""
 "You can use the <keycap>Tab</keycap> key to switch focus between different "
-"panels (<guilabel>Available Services</guilabel>, <guilabel>"
-"Runlevel 1 Start</guilabel>, <guilabel>Runlevel 1 Stop</guilabel>"
-", &etc;) and the cursor keys to move the selection up and down."
+"panels (<guilabel>Available Services</guilabel>, <guilabel>Runlevel 1 Start</"
+"guilabel>, <guilabel>Runlevel 1 Stop</guilabel>, &etc;) and the cursor keys "
+"to move the selection up and down."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:341
 #, no-c-format
 msgid ""
-"To move an entry to a different runlevel, <guimenuitem>Cut</guimenuitem> "
-"it to the clipboard (using <keycombo action=\"simul\">&Ctrl; <keycap>X</keycap>"
-"</keycombo> and <guimenuitem>Paste</guimenuitem> it in the target runlevel "
-"(with <keycombo action=\"simul\">&Ctrl; <keycap>V</keycap></keycombo>)."
+"To move an entry to a different runlevel, <guimenuitem>Cut</guimenuitem> it "
+"to the clipboard (using <keycombo action=\"simul\">&Ctrl; <keycap>X</"
+"keycap></keycombo> and <guimenuitem>Paste</guimenuitem> it in the target "
+"runlevel (with <keycombo action=\"simul\">&Ctrl; <keycap>V</keycap></"
+"keycombo>)."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:349
 #, no-c-format
 msgid ""
-"To manually change an entries sorting number or name, press <keycap>"
-"Enter</keycap> to open the properties dialog. Use the <keycap>Tab</keycap> "
-"key to switch between different fields. Close the dialog by pressing <keycap>"
-"Enter</keycap> to accept the modifications, or press <keycap>Esc</keycap> "
-"to cancel any changes."
+"To manually change an entries sorting number or name, press <keycap>Enter</"
+"keycap> to open the properties dialog. Use the <keycap>Tab</keycap> key to "
+"switch between different fields. Close the dialog by pressing <keycap>Enter</"
+"keycap> to accept the modifications, or press <keycap>Esc</keycap> to cancel "
+"any changes."
 msgstr ""
 
 #. Tag: title
@@ -535,28 +537,30 @@ msgstr ""
 #: index.docbook:369
 #, no-c-format
 msgid ""
-"Because of the danger of data loss, all menu entries under <guimenu>"
-"File</guimenu> ask for confirmation before doing their work."
+"Because of the danger of data loss, all menu entries under <guimenu>File</"
+"guimenu> ask for confirmation before doing their work."
 msgstr ""
 
 #. Tag: menuchoice
 #: index.docbook:377
 #, no-c-format
-msgid "<guimenu>File</guimenu> <guimenuitem>Revert Configuration...</guimenuitem>"
+msgid ""
+"<guimenu>File</guimenu> <guimenuitem>Revert Configuration...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:383
 #, no-c-format
-msgid "Forget any changes you have made, and revert to the last saved configuration."
+msgid ""
+"Forget any changes you have made, and revert to the last saved configuration."
 msgstr ""
 
 #. Tag: menuchoice
 #: index.docbook:391
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>O</keycap></keycombo> "
-"</shortcut> <guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>O</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -569,9 +573,9 @@ msgstr ""
 #: index.docbook:408
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>S</keycap></keycombo> "
-"</shortcut> <guimenu>File</guimenu> <guimenuitem>Save "
-"Configuration</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>S</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Save Configuration</"
+"guimenuitem>"
 msgstr ""
 
 #. Tag: para
@@ -598,8 +602,8 @@ msgstr ""
 #: index.docbook:440
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>L</keycap></keycombo> "
-"</shortcut> <guimenu>File</guimenu> <guimenuitem>Save Log...</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>L</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Save Log...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -612,8 +616,8 @@ msgstr ""
 #: index.docbook:458
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>P</keycap></keycombo> "
-"</shortcut> <guimenu>File</guimenu> <guimenuitem>Print Log...</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>P</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Print Log...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -626,8 +630,8 @@ msgstr ""
 #: index.docbook:475
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Q</keycap></keycombo> "
-"</shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
 msgstr ""
 
 #. Tag: para
@@ -646,8 +650,8 @@ msgstr ""
 #: index.docbook:499
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Z</keycap></keycombo> "
-"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Z</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -660,9 +664,9 @@ msgstr ""
 #: index.docbook:516
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Shift</keycap> <keycap>"
-"Z</keycap></keycombo> </shortcut> <guimenu>Edit</guimenu> <guimenuitem>"
-"Redo</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Shift</keycap> "
+"<keycap>Z</keycap></keycombo> </shortcut> <guimenu>Edit</guimenu> "
+"<guimenuitem>Redo</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -675,8 +679,8 @@ msgstr ""
 #: index.docbook:534
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>X</keycap></keycombo> "
-"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>X</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -689,24 +693,24 @@ msgstr ""
 #: index.docbook:551
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>C</keycap></keycombo> "
-"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
 msgstr ""
 
 #. Tag: action
 #: index.docbook:561
 #, no-c-format
 msgid ""
-"Copy the selected entry to the clipboard, without removing it from its original "
-"position."
+"Copy the selected entry to the clipboard, without removing it from its "
+"original position."
 msgstr ""
 
 #. Tag: menuchoice
 #: index.docbook:569
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>V</keycap></keycombo> "
-"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>V</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -838,7 +842,9 @@ msgstr ""
 #. Tag: menuchoice
 #: index.docbook:729
 #, no-c-format
-msgid "<guimenu>Settings</guimenu> <guimenuitem>Configure Key bindings...</guimenuitem>"
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Key bindings...</"
+"guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -850,7 +856,8 @@ msgstr ""
 #. Tag: menuchoice
 #: index.docbook:743
 #, no-c-format
-msgid "<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
@@ -863,8 +870,8 @@ msgstr ""
 #: index.docbook:757
 #, no-c-format
 msgid ""
-"<guimenu>Settings</guimenu> <guimenuitem>Configure SysV-Init "
-"Editor...</guimenuitem>"
+"<guimenu>Settings</guimenu> <guimenuitem>Configure SysV-Init Editor...</"
+"guimenuitem>"
 msgstr ""
 
 #. Tag: para
@@ -888,7 +895,6 @@ msgstr ""
 #. Tag: title
 #: index.docbook:784
 #, no-c-format
-
 msgid "Configuration"
 msgstr "Configuracion"
 
@@ -896,11 +902,11 @@ msgstr "Configuracion"
 #: index.docbook:786
 #, no-c-format
 msgid ""
-"All options are saved in <filename>$<envar>KDEHOME</envar>"
-"/share/config/ksysvrc</filename>. Defaults are taken from the global file "
-"(<filename>$<envar>KDEDIR</envar>/share/config/ksysvrc</filename>"
-"), if available, or else generated within &ksysv;. Changes to the defaults are "
-"stored in your local <filename>ksysvrc</filename>."
+"All options are saved in <filename>$<envar>KDEHOME</envar>/share/config/"
+"ksysvrc</filename>. Defaults are taken from the global file (<filename>"
+"$<envar>KDEDIR</envar>/share/config/ksysvrc</filename>), if available, or "
+"else generated within &ksysv;. Changes to the defaults are stored in your "
+"local <filename>ksysvrc</filename>."
 msgstr ""
 
 #. Tag: title
@@ -930,14 +936,12 @@ msgstr ""
 #. Tag: segtitle
 #: index.docbook:807 index.docbook:831 index.docbook:854 index.docbook:876
 #, no-c-format
-
 msgid "Default"
 msgstr "Defaut"
 
 #. Tag: segtitle
 #: index.docbook:808 index.docbook:832 index.docbook:855 index.docbook:877
 #, no-c-format
-
 msgid "Description"
 msgstr "Descripcion"
 
@@ -986,7 +990,6 @@ msgstr ""
 #. Tag: seg
 #: index.docbook:834
 #, no-c-format
-
 msgid "Changed"
 msgstr "Modificat"
 
@@ -1011,7 +1014,6 @@ msgstr ""
 #. Tag: seg
 #: index.docbook:841
 #, no-c-format
-
 msgid "blue"
 msgstr "blau"
 
@@ -1030,7 +1032,6 @@ msgstr ""
 #. Tag: seg
 #: index.docbook:857
 #, no-c-format
-
 msgid "Width"
 msgstr "Largor"
 
@@ -1043,7 +1044,6 @@ msgstr ""
 #. Tag: seg
 #: index.docbook:863
 #, no-c-format
-
 msgid "Height"
 msgstr "Nautor"
 
@@ -1116,7 +1116,8 @@ msgstr ""
 #. Tag: seg
 #: index.docbook:899
 #, no-c-format
-msgid "100 - PanningFactor = percentage of window reserved for the logfile display"
+msgid ""
+"100 - PanningFactor = percentage of window reserved for the logfile display"
 msgstr ""
 
 #. Tag: title
@@ -1129,8 +1130,8 @@ msgstr ""
 #: index.docbook:916
 #, no-c-format
 msgid ""
-"I played around with the default runlevel, and now my machine reboots all the "
-"time. What can I do?"
+"I played around with the default runlevel, and now my machine reboots all "
+"the time. What can I do?"
 msgstr ""
 
 #. Tag: para
@@ -1139,8 +1140,8 @@ msgstr ""
 msgid ""
 "Enter <userinput>linux single</userinput> at the <acronym>LILO</acronym> "
 "prompt, and press <keycap>Enter</keycap> to boot into single user mode. Edit "
-"the file <filename>/etc/inittab</filename> and change to the default runlevel "
-"to something sane. <literal>3</literal> should normally be safe."
+"the file <filename>/etc/inittab</filename> and change to the default "
+"runlevel to something sane. <literal>3</literal> should normally be safe."
 msgstr ""
 
 #. Tag: para
@@ -1159,8 +1160,8 @@ msgstr ""
 #: index.docbook:947
 #, no-c-format
 msgid ""
-"I scheduled some services to be run in runlevel X using &ksysv;, so why aren't "
-"they working?"
+"I scheduled some services to be run in runlevel X using &ksysv;, so why "
+"aren't they working?"
 msgstr ""
 
 #. Tag: para
@@ -1168,8 +1169,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If you're using &SuSE; or Delix (DLD) distributions, you also have to edit a "
-"distribution specific file in <filename class=\"directory\">/etc</filename>"
-". Please have a look at the manual of your distribution for details."
+"distribution specific file in <filename class=\"directory\">/etc</filename>. "
+"Please have a look at the manual of your distribution for details."
 msgstr ""
 
 #. Tag: para
@@ -1178,19 +1179,19 @@ msgstr ""
 msgid ""
 "The approach to starting services used by the above mentioned distributions "
 "makes configuration of services easy for the proprietary configuration tools "
-"these distributions provide, but it is unfortunately non-standard. The &ksysv; "
-"authors plan to write a generic extension for this approach some time in the "
-"future, but don't hold your breath."
+"these distributions provide, but it is unfortunately non-standard. The "
+"&ksysv; authors plan to write a generic extension for this approach some "
+"time in the future, but don't hold your breath."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:971
 #, no-c-format
 msgid ""
-"If you're using a different distribution, please check you have all the config "
-"files needed by the service, and whether they are in the correct locations. "
-"Some daemons for example <application>Apache</application>, (<acronym>"
-"aka</acronym> <command>httpd</command>) just die silently if their "
+"If you're using a different distribution, please check you have all the "
+"config files needed by the service, and whether they are in the correct "
+"locations. Some daemons for example <application>Apache</application>, "
+"(<acronym>aka</acronym> <command>httpd</command>) just die silently if their "
 "configuration files are missing or misconfigured."
 msgstr ""
 
@@ -1205,8 +1206,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "These vary by distribution, so this is an incomplete list of the most common "
-"&Linux; distributions. If you have additional distributions, please email the "
-"author and have the information added to this manual."
+"&Linux; distributions. If you have additional distributions, please email "
+"the author and have the information added to this manual."
 msgstr ""
 
 #. Tag: term
@@ -1338,11 +1339,9 @@ msgstr ""
 #. Tag: trans_comment
 #: index.docbook:1087
 #, no-c-format
-
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
-"<para>Yannig Marchegay (Kokoyaya)"
-"<email>yannig@marchegay.org</email></para>"
+"<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
 #: index.docbook:1087
@@ -1355,4 +1354,3 @@ msgstr ""
 #, no-c-format
 msgid "Installation"
 msgstr ""
-

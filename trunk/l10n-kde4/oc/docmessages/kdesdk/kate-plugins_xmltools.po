@@ -5,8 +5,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate-plugins_xmltools\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"X-KDE-DocBook-SVN-URL: trunk/KDE/kdesdk/doc/kate-plugins/xmltools.docbook\n"
-"X-KDE-DocBook-SVN-Changed-Revision: 543378\n"
 "POT-Creation-Date: 2007-03-20 04:52+0000\n"
 "PO-Revision-Date: 2007-10-24 11:14+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
@@ -14,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdesdk/doc/kate-plugins/xmltools.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 543378\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: title
@@ -43,7 +43,8 @@ msgstr ""
 #. Tag: para
 #: xmltools.docbook:19
 #, no-c-format
-msgid "This plugin supports writing &XML; files by listing allowed tags and more."
+msgid ""
+"This plugin supports writing &XML; files by listing allowed tags and more."
 msgstr ""
 
 #. Tag: keyword
@@ -74,25 +75,26 @@ msgstr "Introduccion"
 #: xmltools.docbook:32
 #, no-c-format
 msgid ""
-"This plugin gives hints about what is allowed at a certain position in an &XML; "
-"file, according to the file's DTD. It will list possible elements, attributes, "
-"attribute values or entities, depending on the cursor position (&eg; all "
-"entities are listed if the character on the left of the cursor is <quote>"
-"&amp;</quote>). It's also possible to close the nearest open tag on the left."
+"This plugin gives hints about what is allowed at a certain position in an "
+"&XML; file, according to the file's DTD. It will list possible elements, "
+"attributes, attribute values or entities, depending on the cursor position "
+"(&eg; all entities are listed if the character on the left of the cursor is "
+"<quote>&amp;</quote>). It's also possible to close the nearest open tag on "
+"the left."
 msgstr ""
 
 #. Tag: para
 #: xmltools.docbook:39
 #, no-c-format
 msgid ""
-"The <acronym>DTD</acronym> must exist in &XML; format, as produced by the Perl "
-"program <command>dtdparse</command>. We will call a DTD in this format <quote>"
-"meta DTD</quote>. Some meta DTDs are supplied. They are installed in <filename "
-"class=\"directory\">$KDEDIR/share/apps/katexmltools/</filename>"
-", which is also the default folder when you choose <guimenuitem>"
-"Assign Meta DTD...</guimenuitem>. To produce your own meta DTDs, get <command>"
-"dtdparse</command> from <ulink url=\"http://dtdparse.sourceforge.net\">"
-"http://dtdparse.sourceforge.net</ulink>."
+"The <acronym>DTD</acronym> must exist in &XML; format, as produced by the "
+"Perl program <command>dtdparse</command>. We will call a DTD in this format "
+"<quote>meta DTD</quote>. Some meta DTDs are supplied. They are installed in "
+"<filename class=\"directory\">$KDEDIR/share/apps/katexmltools/</filename>, "
+"which is also the default folder when you choose <guimenuitem>Assign Meta "
+"DTD...</guimenuitem>. To produce your own meta DTDs, get <command>dtdparse</"
+"command> from <ulink url=\"http://dtdparse.sourceforge.net\">http://dtdparse."
+"sourceforge.net</ulink>."
 msgstr ""
 
 #. Tag: title
@@ -105,16 +107,16 @@ msgstr ""
 #: xmltools.docbook:51
 #, no-c-format
 msgid ""
-"Start &kate; and open the configuration dialog under <menuchoice><guimenu>"
-"Settings</guimenu> <guimenuitem>Configure &kate;...</guimenuitem></menuchoice>"
-". Then select <guilabel>Kate XML Completion</guilabel> "
-"which will appear in the <guilabel>Application</guilabel>/<guilabel>"
-"Plugins</guilabel> section and close the dialog. After that, select <menuchoice>"
-"<guimenu>XML</guimenu><guimenuitem>Assign Meta DTD...</guimenuitem></menuchoice>"
-". If your document contains no <quote>DOCTYPE</quote> "
-"or the doctype is unknown, you'll have to select a meta DTD from the file "
-"system. Otherwise the meta DTD that matches the current document's DOCTYPE will "
-"be loaded automatically."
+"Start &kate; and open the configuration dialog under "
+"<menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure &kate;...</"
+"guimenuitem></menuchoice>. Then select <guilabel>Kate XML Completion</"
+"guilabel> which will appear in the <guilabel>Application</guilabel>/"
+"<guilabel>Plugins</guilabel> section and close the dialog. After that, "
+"select <menuchoice><guimenu>XML</guimenu><guimenuitem>Assign Meta DTD...</"
+"guimenuitem></menuchoice>. If your document contains no <quote>DOCTYPE</"
+"quote> or the doctype is unknown, you'll have to select a meta DTD from the "
+"file system. Otherwise the meta DTD that matches the current document's "
+"DOCTYPE will be loaded automatically."
 msgstr ""
 
 #. Tag: para
@@ -133,8 +135,8 @@ msgstr ""
 #: xmltools.docbook:66
 #, no-c-format
 msgid ""
-"This will trigger a list of possible elements unless the cursor is inside a tag "
-"already. Note that you currently cannot use this to insert the top level "
+"This will trigger a list of possible elements unless the cursor is inside a "
+"tag already. Note that you currently cannot use this to insert the top level "
 "element (&eg; <quote>&lt;html&gt;</quote>)."
 msgstr ""
 
@@ -162,8 +164,8 @@ msgstr ""
 #: xmltools.docbook:79
 #, no-c-format
 msgid ""
-"This key will trigger a list of possible attributes for the current element if "
-"you are inside a tag."
+"This key will trigger a list of possible attributes for the current element "
+"if you are inside a tag."
 msgstr ""
 
 #. Tag: term
@@ -188,10 +190,10 @@ msgstr ""
 #: xmltools.docbook:95
 #, no-c-format
 msgid ""
-"You can test all functions and limitations by loading <filename>"
-"$KDEDIR/share/apps/katexmltools/testcases.xml</filename> "
-"into &kate; and following the instructions. Note that working with more than "
-"one view per document is not yet correctly supported by this plugin."
+"You can test all functions and limitations by loading <filename>$KDEDIR/"
+"share/apps/katexmltools/testcases.xml</filename> into &kate; and following "
+"the instructions. Note that working with more than one view per document is "
+"not yet correctly supported by this plugin."
 msgstr ""
 
 #. Tag: title
@@ -204,21 +206,22 @@ msgstr ""
 #: xmltools.docbook:110
 #, no-c-format
 msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Return</keycap></keycombo> "
-"</shortcut> <guimenu>XML</guimenu> <guimenuitem>Insert Element...</guimenuitem>"
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Return</keycap></"
+"keycombo> </shortcut> <guimenu>XML</guimenu> <guimenuitem>Insert Element...</"
+"guimenuitem>"
 msgstr ""
 
 #. Tag: para
 #: xmltools.docbook:118
 #, no-c-format
 msgid ""
-"This will open a dialog that lets you insert an &XML; element. The &lt;, &gt; "
-"characters and the closing tag will be inserted automatically. If you have "
-"selected text when this menu item is selected, the selected text will be "
-"surrounded by the opening and the closing tag. The dialog also offers "
-"completion of all elements that may be inserted at the current cursor position "
-"if you have assigned a meta DTD by using <guimenuitem>"
-"Assign Meta DTD...</guimenuitem>."
+"This will open a dialog that lets you insert an &XML; element. The &lt;, "
+"&gt; characters and the closing tag will be inserted automatically. If you "
+"have selected text when this menu item is selected, the selected text will "
+"be surrounded by the opening and the closing tag. The dialog also offers "
+"completion of all elements that may be inserted at the current cursor "
+"position if you have assigned a meta DTD by using <guimenuitem>Assign Meta "
+"DTD...</guimenuitem>."
 msgstr ""
 
 #. Tag: menuchoice
@@ -233,9 +236,10 @@ msgstr ""
 #: xmltools.docbook:138
 #, no-c-format
 msgid ""
-"This will search your text for a tag that is not yet closed and will close it "
-"by inserting the corresponding closing tag. The search starts at the cursor "
-"position and goes left. If it cannot find an open tag nothing will happen."
+"This will search your text for a tag that is not yet closed and will close "
+"it by inserting the corresponding closing tag. The search starts at the "
+"cursor position and goes left. If it cannot find an open tag nothing will "
+"happen."
 msgstr ""
 
 #. Tag: menuchoice
@@ -248,9 +252,9 @@ msgstr ""
 #: xmltools.docbook:151
 #, no-c-format
 msgid ""
-"This will tell the plugin which meta DTD to use for the current document. Note "
-"that this assignment will not be saved. You will have to repeat it when you "
-"start &kate; the next time."
+"This will tell the plugin which meta DTD to use for the current document. "
+"Note that this assignment will not be saved. You will have to repeat it when "
+"you start &kate; the next time."
 msgstr ""
 
 #. Tag: title
@@ -263,8 +267,8 @@ msgstr ""
 #: xmltools.docbook:162
 #, no-c-format
 msgid ""
-"&kate; Plugin <quote>XML Completion</quote> copyright 2001,2002 &Daniel.Naber; "
-"&Daniel.Naber.mail;."
+"&kate; Plugin <quote>XML Completion</quote> copyright 2001,2002 &Daniel."
+"Naber; &Daniel.Naber.mail;."
 msgstr ""
 
 #. Tag: para
@@ -278,12 +282,10 @@ msgstr ""
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
-"<para>Yannig Marchegay (Kokoyaya)"
-"<email>yannig@marchegay.org</email></para>"
+"<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: sect1
 #: xmltools.docbook:171
 #, no-c-format
 msgid "&underGPL;"
 msgstr ""
-
