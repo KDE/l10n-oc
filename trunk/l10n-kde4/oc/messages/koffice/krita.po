@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-02 05:49+0100\n"
+"POT-Creation-Date: 2007-11-03 05:51+0100\n"
 "PO-Revision-Date: 2007-10-23 23:32+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1631,7 +1631,7 @@ msgstr "Drecha:"
 
 #. i18n: tag string
 #. i18n: file ./ui/wdgautogradient.ui line 319
-#: rc.cpp:371 plugins/tools/defaulttools/kis_tool_gradient.cc:342
+#: rc.cpp:371 plugins/tools/defaulttools/kis_tool_gradient.cc:346
 msgid "Linear"
 msgstr ""
 
@@ -2272,7 +2272,7 @@ msgstr "Cercle"
 
 #. i18n: tag string
 #. i18n: file ./ui/wdgautobrush.ui line 273
-#: rc.cpp:695 plugins/tools/defaulttools/kis_tool_gradient.cc:345
+#: rc.cpp:695 plugins/tools/defaulttools/kis_tool_gradient.cc:349
 msgid "Square"
 msgstr "Carrat"
 
@@ -3235,7 +3235,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./plugins/filters/wavefilter/wdgwaveoptions.ui line 197
 #: rc.cpp:1303 rc.cpp:2446 rc.cpp:2515 rc.cpp:2536
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:332
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:336
 msgid "Shape:"
 msgstr ""
 
@@ -4540,7 +4540,7 @@ msgstr ""
 #: rc.cpp:2053 ui/kis_dlg_preferences.cc:460 ui/kis_dlg_preferences.cc:461
 #: ui/kis_dlg_preferences.cc:462 ui/kis_dlg_preferences.cc:463
 #: ui/kis_dlg_preferences.cc:464 ui/kis_dlg_preferences.cc:465
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:352
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:356
 msgid "None"
 msgstr "Pas cap"
 
@@ -6042,17 +6042,17 @@ msgstr ""
 msgid "Palette name:"
 msgstr ""
 
-#: ui/kis_filter_handler.cc:143
+#: ui/kis_filter_handler.cc:150
 #, kde-format
 msgid ""
 "The %1 filter will convert your %2 data to 16-bit L*a*b* and vice versa. "
 msgstr ""
 
-#: ui/kis_filter_handler.cc:146 ui/kis_filter_handler.cc:155
+#: ui/kis_filter_handler.cc:153 ui/kis_filter_handler.cc:162
 msgid "Filter Will Convert Your Layer Data"
 msgstr ""
 
-#: ui/kis_filter_handler.cc:153
+#: ui/kis_filter_handler.cc:160
 #, kde-format
 msgid "The %1 filter will convert your %2 data to 16-bit RGBA and vice versa. "
 msgstr ""
@@ -6663,43 +6663,43 @@ msgstr ""
 msgid "Draw a gradient."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:333
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:337
 msgid "Repeat:"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:335
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:339
 msgid "Reverse"
 msgstr "mètres"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:343
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:347
 msgid "Bi-Linear"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:344
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:348
 msgid "Radial"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:346
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
 msgid "Conical"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:347
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:351
 msgid "Conical Symmetric"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:353
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:357
 msgid "Forwards"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:354
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:358
 msgid "Alternating"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:362
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:366
 msgid "Anti-alias threshold:"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:373
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:377
 msgid "Preview opacity:"
 msgstr ""
 
@@ -7582,11 +7582,7 @@ msgstr ""
 msgid "Brightness / Contrast"
 msgstr ""
 
-#: plugins/filters/colorsfilters/kis_perchannel_filter.h:73
-msgid "&Color Adjustment curves..."
-msgstr ""
-
-#: plugins/filters/colorsfilters/kis_perchannel_filter.h:83
+#: plugins/filters/colorsfilters/kis_perchannel_filter.h:82
 msgid "Color Adjustment"
 msgstr ""
 
@@ -7602,11 +7598,15 @@ msgstr ""
 msgid "&Auto Contrast"
 msgstr ""
 
-#: plugins/filters/colorsfilters/colorsfilters.cc:243
+#: plugins/filters/colorsfilters/colorsfilters.cc:238
 msgid "&Desaturate"
 msgstr ""
 
-#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cc:146
+#: plugins/filters/colorsfilters/kis_perchannel_filter.cc:190
+msgid "&Color Adjustment curves..."
+msgstr ""
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cc:163
 msgid "&Brightness/Contrast curve..."
 msgstr ""
 
@@ -7614,7 +7614,7 @@ msgstr ""
 msgid "Maximize Channel"
 msgstr ""
 
-#: plugins/filters/colors/kis_minmax_filters.h:56
+#: plugins/filters/colors/kis_minmax_filters.h:52
 msgid "Minimize Channel"
 msgstr ""
 
@@ -7622,15 +7622,15 @@ msgstr ""
 msgid "Color to Alpha"
 msgstr ""
 
-#: plugins/filters/colors/kis_minmax_filters.cc:72
+#: plugins/filters/colors/kis_minmax_filters.cc:75
 msgid "M&aximize Channel"
 msgstr ""
 
-#: plugins/filters/colors/kis_minmax_filters.cc:126
+#: plugins/filters/colors/kis_minmax_filters.cc:133
 msgid "M&inimize Channel"
 msgstr ""
 
-#: plugins/filters/colors/kis_color_to_alpha.cc:34
+#: plugins/filters/colors/kis_color_to_alpha.cc:37
 msgid "&Color to Alpha..."
 msgstr ""
 
