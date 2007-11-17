@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-13 06:05+0100\n"
+"POT-Creation-Date: 2007-11-17 06:02+0100\n"
 "PO-Revision-Date: 2007-10-23 23:30+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -284,10 +284,10 @@ msgstr ""
 msgid "Cannot load the torrent file : %1"
 msgstr ""
 
-#: ktorrent/importdialog.cpp:258 libktorrent/util/fileops.cpp:300
-#: libktorrent/util/fileops.cpp:329 libktorrent/util/fileops.cpp:388
-#: libktorrent/diskio/cachefile.cpp:91 plugins/ipfilter/convertthread.cpp:98
-#: plugins/ipfilter/convertthread.cpp:137
+#: ktorrent/importdialog.cpp:258 libktorrent/diskio/cachefile.cpp:91
+#: plugins/ipfilter/convertthread.cpp:98
+#: plugins/ipfilter/convertthread.cpp:137 libbtcore/util/fileops.cpp:300
+#: libbtcore/util/fileops.cpp:329 libbtcore/util/fileops.cpp:388
 #, kde-format
 msgid "Cannot open %1 : %2"
 msgstr ""
@@ -4242,76 +4242,6 @@ msgstr "Òc"
 msgid "Unknown client"
 msgstr ""
 
-#: libktorrent/util/log.cpp:114
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr ""
-
-#: libktorrent/util/file.cpp:84
-#, kde-format
-msgid "Cannot write to %1 : %2"
-msgstr ""
-
-#: libktorrent/util/file.cpp:98
-#, kde-format
-msgid "Cannot read from %1"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:72
-#, kde-format
-msgid "Cannot create directory %1: %2"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:86
-#, kde-format
-msgid "Cannot symlink %1 to %2: %3"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:103
-#, kde-format
-msgid "Cannot move %1 to %2: %3"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:119 libktorrent/util/fileops.cpp:135
-#, kde-format
-msgid "Cannot copy %1 to %2: %3"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:218
-#, kde-format
-msgid "Cannot delete %1: %2"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:237
-#, kde-format
-msgid "Cannot create %1: %2"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:256
-#, kde-format
-msgid "Cannot calculate the filesize of %1: %2"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:272
-#, kde-format
-msgid "Cannot calculate the filesize : %1"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:350 libktorrent/util/fileops.cpp:356
-#: libktorrent/util/fileops.cpp:359 libktorrent/util/fileops.cpp:374
-#, kde-format
-msgid "Cannot expand file : %1"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:376
-msgid "Cannot expand file"
-msgstr ""
-
-#: libktorrent/util/fileops.cpp:409
-#, kde-format
-msgid "Cannot seek in file : %1"
-msgstr ""
-
 #: libktorrent/util/mmapfile.cpp:166
 msgid "Cannot write beyond end of the mmap buffer!"
 msgstr ""
@@ -4344,28 +4274,6 @@ msgstr ""
 #: libktorrent/migrate/migrate.cpp:45
 #, kde-format
 msgid "The directory %1 does not exist"
-msgstr ""
-
-#: libktorrent/bcodec/bdecoder.cpp:61
-#, kde-format
-msgid "Illegal token: %1"
-msgstr ""
-
-#: libktorrent/bcodec/bdecoder.cpp:82
-msgid "Decode error"
-msgstr ""
-
-#: libktorrent/bcodec/bdecoder.cpp:143 libktorrent/bcodec/bdecoder.cpp:188
-msgid "Unexpected end of input"
-msgstr ""
-
-#: libktorrent/bcodec/bdecoder.cpp:163 libktorrent/bcodec/bdecoder.cpp:197
-#, kde-format
-msgid "Cannot convert %1 to an int"
-msgstr ""
-
-#: libktorrent/bcodec/bdecoder.cpp:202
-msgid "Torrent is incomplete!"
 msgstr ""
 
 #: libktorrent/diskio/singlefilecache.cpp:91
@@ -5078,4 +4986,96 @@ msgstr ""
 #: plugins/bwscheduler/scheduleeditor.cpp:167
 msgid ""
 "This item conflicts with another item in the schedule, we cannot change it !"
+msgstr ""
+
+#: libbtcore/util/log.cpp:114
+#, kde-format
+msgid "Cannot open log file %1 : %2"
+msgstr ""
+
+#: libbtcore/util/file.cpp:84
+#, kde-format
+msgid "Cannot write to %1 : %2"
+msgstr ""
+
+#: libbtcore/util/file.cpp:98
+#, kde-format
+msgid "Cannot read from %1"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:72
+#, kde-format
+msgid "Cannot create directory %1: %2"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:86
+#, kde-format
+msgid "Cannot symlink %1 to %2: %3"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:103
+#, kde-format
+msgid "Cannot move %1 to %2: %3"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:119 libbtcore/util/fileops.cpp:135
+#, kde-format
+msgid "Cannot copy %1 to %2: %3"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:218
+#, kde-format
+msgid "Cannot delete %1: %2"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:237
+#, kde-format
+msgid "Cannot create %1: %2"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:256
+#, kde-format
+msgid "Cannot calculate the filesize of %1: %2"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:272
+#, kde-format
+msgid "Cannot calculate the filesize : %1"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:350 libbtcore/util/fileops.cpp:356
+#: libbtcore/util/fileops.cpp:359 libbtcore/util/fileops.cpp:374
+#, kde-format
+msgid "Cannot expand file : %1"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:376
+msgid "Cannot expand file"
+msgstr ""
+
+#: libbtcore/util/fileops.cpp:409
+#, kde-format
+msgid "Cannot seek in file : %1"
+msgstr ""
+
+#: libbtcore/bcodec/bdecoder.cpp:61
+#, kde-format
+msgid "Illegal token: %1"
+msgstr ""
+
+#: libbtcore/bcodec/bdecoder.cpp:82
+msgid "Decode error"
+msgstr ""
+
+#: libbtcore/bcodec/bdecoder.cpp:143 libbtcore/bcodec/bdecoder.cpp:188
+msgid "Unexpected end of input"
+msgstr ""
+
+#: libbtcore/bcodec/bdecoder.cpp:163 libbtcore/bcodec/bdecoder.cpp:197
+#, kde-format
+msgid "Cannot convert %1 to an int"
+msgstr ""
+
+#: libbtcore/bcodec/bdecoder.cpp:202
+msgid "Torrent is incomplete!"
 msgstr ""
