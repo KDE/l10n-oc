@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-19 05:58+0100\n"
+"POT-Creation-Date: 2007-11-25 06:03+0100\n"
 "PO-Revision-Date: 2007-11-21 13:50+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ktorrent/viewmenu.cpp:37 ktorrent/gui.cpp:368
+#: ktorrent/viewmenu.cpp:37 ktorrent/gui.cpp:369
 msgid "Start"
 msgstr "Aviar"
 
-#: ktorrent/viewmenu.cpp:38 ktorrent/gui.cpp:372
+#: ktorrent/viewmenu.cpp:38 ktorrent/gui.cpp:373
 msgid "Stop"
 msgstr "Arrêter"
 
-#: ktorrent/viewmenu.cpp:39 ktorrent/view.cpp:255
+#: ktorrent/viewmenu.cpp:39 ktorrent/view.cpp:237
 msgid "Remove Torrent"
 msgstr ""
 
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Remove Torrent and Data"
 msgstr ""
 
-#: ktorrent/viewmenu.cpp:41 ktorrent/gui.cpp:396
+#: ktorrent/viewmenu.cpp:41 ktorrent/gui.cpp:397
 msgid "Enqueue/Dequeue"
 msgstr ""
 
@@ -102,13 +102,13 @@ msgstr ""
 msgid "Add to Group"
 msgstr ""
 
-#: ktorrent/viewmenu.cpp:61 ktorrent/gui.cpp:404
+#: ktorrent/viewmenu.cpp:61 ktorrent/gui.cpp:405
 msgid "Check Data"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/speedlimitsdlg.ui line 13
-#: ktorrent/viewmenu.cpp:62 ktorrent/gui.cpp:412 rc.cpp:497
+#: ktorrent/viewmenu.cpp:62 ktorrent/gui.cpp:413 rc.cpp:497
 msgid "Speed Limits"
 msgstr ""
 
@@ -584,6 +584,80 @@ msgstr ""
 msgid "Creating %1..."
 msgstr ""
 
+#: ktorrent/viewmodel.cpp:226 plugins/infowidget/fileview.cpp:159
+#: plugins/infowidget/iwfiletreeitem.cpp:96
+#, no-c-format, kde-format
+msgid "%1 %"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:351 ktorrent/view.cpp:69
+msgid "Name"
+msgstr "Nom"
+
+#: ktorrent/viewmodel.cpp:352 ktorrent/view.cpp:70
+#: plugins/infowidget/infowidgetplugin.cpp:79
+msgid "Status"
+msgstr "Estatut"
+
+#: ktorrent/viewmodel.cpp:353 ktorrent/view.cpp:71
+#: plugins/infowidget/peerview.cpp:186
+msgid "Downloaded"
+msgstr "Descargat"
+
+#. i18n: tag string
+#. i18n: file ./ktorrent/fileselectdlg.ui line 106
+#: ktorrent/viewmodel.cpp:354 ktorrent/view.cpp:72 rc.cpp:42
+#: plugins/infowidget/fileview.cpp:55
+msgid "Size"
+msgstr "Talha"
+
+#: ktorrent/viewmodel.cpp:355 ktorrent/view.cpp:73
+#: plugins/infowidget/peerview.cpp:187
+msgid "Uploaded"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 271
+#: ktorrent/viewmodel.cpp:356 ktorrent/view.cpp:74 rc.cpp:946
+#: plugins/infowidget/peerview.cpp:177
+msgid "Down Speed"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:357 ktorrent/view.cpp:75
+#: plugins/infowidget/peerview.cpp:178
+msgid "Up Speed"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:358 ktorrent/view.cpp:76
+msgid "Time Left"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:359 ktorrent/view.cpp:77
+msgid "Seeders"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:360 ktorrent/view.cpp:78
+msgid "Leechers"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:362 ktorrent/view.cpp:79
+#: plugins/infowidget/fileview.cpp:55
+#, no-c-format
+msgid "% Complete"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:363 ktorrent/view.cpp:80
+msgid "Share Ratio"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:364 ktorrent/view.cpp:81
+msgid "Time Downloaded"
+msgstr ""
+
+#: ktorrent/viewmodel.cpp:365 ktorrent/view.cpp:82
+msgid "Time Seeded"
+msgstr ""
+
 #: ktorrent/core.cpp:102
 #, kde-format
 msgid ""
@@ -598,49 +672,49 @@ msgid ""
 "already in use by another program."
 msgstr ""
 
-#: ktorrent/core.cpp:723
+#: ktorrent/core.cpp:733
 #, kde-format
 msgid "Cannot create torrent: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:816
+#: ktorrent/core.cpp:826
 #, kde-format
 msgid ""
 "Several data files of the torrent \"%1\" are missing. \n"
 "Do you want to recreate them, or do you want to not download them?"
 msgstr ""
 
-#: ktorrent/core.cpp:825 ktorrent/core.cpp:837 ktorrent/core.cpp:850
+#: ktorrent/core.cpp:835 ktorrent/core.cpp:847 ktorrent/core.cpp:860
 msgid "Data files are missing"
 msgstr ""
 
-#: ktorrent/core.cpp:836
+#: ktorrent/core.cpp:846
 #, kde-format
 msgid "Cannot deselect missing files: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:849
+#: ktorrent/core.cpp:859
 #, kde-format
 msgid "Cannot recreate missing files: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:862
+#: ktorrent/core.cpp:872
 #, kde-format
 msgid ""
 "The file where the data is saved of the torrent \"%1\" is missing. \n"
 "Do you want to recreate it?"
 msgstr ""
 
-#: ktorrent/core.cpp:869 ktorrent/core.cpp:880
+#: ktorrent/core.cpp:879 ktorrent/core.cpp:890
 msgid "Data file is missing"
 msgstr ""
 
-#: ktorrent/core.cpp:879
+#: ktorrent/core.cpp:889
 #, kde-format
 msgid "Cannot recreate data file: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:946
+#: ktorrent/core.cpp:956
 msgid "Checking Data Integrity"
 msgstr ""
 
@@ -695,25 +769,19 @@ msgstr ""
 msgid "%1 short!"
 msgstr ""
 
-#: ktorrent/viewitem.cpp:195 plugins/infowidget/fileview.cpp:159
-#: plugins/infowidget/iwfiletreeitem.cpp:96
-#, kde-format
-msgid "%1 %"
-msgstr ""
-
 #: ktorrent/gui.cpp:77
 msgid "Groups"
 msgstr "Grops"
 
-#: ktorrent/gui.cpp:234
+#: ktorrent/gui.cpp:235
 msgid "Torrent Files"
 msgstr ""
 
-#: ktorrent/gui.cpp:234
+#: ktorrent/gui.cpp:235
 msgid "All Files"
 msgstr "Totes los fichièrs"
 
-#: ktorrent/gui.cpp:235
+#: ktorrent/gui.cpp:236
 msgid "Open Location"
 msgstr "Dobrir un emplaçament"
 
@@ -729,32 +797,32 @@ msgstr "Dobrir un emplaçament"
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 267
 #. i18n: tag string
 #. i18n: file ./ktorrent/ipfilterwidget.ui line 65
-#: ktorrent/gui.cpp:376 rc.cpp:269 rc.cpp:296 rc.cpp:548
+#: ktorrent/gui.cpp:377 rc.cpp:269 rc.cpp:296 rc.cpp:548
 msgid "Remove"
 msgstr "Suprimir"
 
-#: ktorrent/gui.cpp:380
+#: ktorrent/gui.cpp:381
 msgid "Start All"
 msgstr ""
 
-#: ktorrent/gui.cpp:384
+#: ktorrent/gui.cpp:385
 msgid "Stop All"
 msgstr ""
 
-#: ktorrent/gui.cpp:388
+#: ktorrent/gui.cpp:389
 msgid "Paste Torrent URL"
 msgstr ""
 
-#: ktorrent/gui.cpp:392
+#: ktorrent/gui.cpp:393
 msgid "Open Queue Manager..."
 msgstr ""
 
-#: ktorrent/gui.cpp:400 plugins/ipfilter/ipfilterplugin.cpp:46
+#: ktorrent/gui.cpp:401 plugins/ipfilter/ipfilterplugin.cpp:46
 #: plugins/ipfilter/ipblockingprefpage.cpp:93
 msgid "IP Filter"
 msgstr ""
 
-#: ktorrent/gui.cpp:408
+#: ktorrent/gui.cpp:409
 msgid "Import Torrent"
 msgstr ""
 
@@ -913,91 +981,30 @@ msgstr ""
 msgid "%1 KB/s"
 msgstr ""
 
-#: ktorrent/view.cpp:56
-msgid "Name"
-msgstr "Nom"
-
-#: ktorrent/view.cpp:57 plugins/infowidget/infowidgetplugin.cpp:79
-msgid "Status"
-msgstr "Estatut"
-
-#: ktorrent/view.cpp:58 plugins/infowidget/peerview.cpp:186
-msgid "Downloaded"
-msgstr "Descargat"
-
-#. i18n: tag string
-#. i18n: file ./ktorrent/fileselectdlg.ui line 106
-#: ktorrent/view.cpp:59 rc.cpp:42 plugins/infowidget/fileview.cpp:55
-msgid "Size"
-msgstr "Talha"
-
-#: ktorrent/view.cpp:60 plugins/infowidget/peerview.cpp:187
-msgid "Uploaded"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 271
-#: ktorrent/view.cpp:61 rc.cpp:946 plugins/infowidget/peerview.cpp:177
-msgid "Down Speed"
-msgstr ""
-
-#: ktorrent/view.cpp:62 plugins/infowidget/peerview.cpp:178
-msgid "Up Speed"
-msgstr ""
-
-#: ktorrent/view.cpp:63
-msgid "Time Left"
-msgstr ""
-
-#: ktorrent/view.cpp:64
-msgid "Seeders"
-msgstr ""
-
-#: ktorrent/view.cpp:65
-msgid "Leechers"
-msgstr ""
-
-#: ktorrent/view.cpp:67 plugins/infowidget/fileview.cpp:55
-#, no-c-format
-msgid "% Complete"
-msgstr ""
-
-#: ktorrent/view.cpp:68
-msgid "Share Ratio"
-msgstr ""
-
-#: ktorrent/view.cpp:69
-msgid "Time Downloaded"
-msgstr ""
-
-#: ktorrent/view.cpp:70
-msgid "Time Seeded"
-msgstr ""
-
-#: ktorrent/view.cpp:89
+#: ktorrent/view.cpp:66
 msgid "Columns"
 msgstr "Colomnas"
 
-#: ktorrent/view.cpp:229
+#: ktorrent/view.cpp:210
 #, kde-format
 msgid ""
 "The torrent <b>%1</b> has not finished downloading, do you want to delete "
 "the incomplete data, too?"
 msgstr ""
 
-#: ktorrent/view.cpp:234
+#: ktorrent/view.cpp:215
 msgid "Remove Download"
 msgstr ""
 
-#: ktorrent/view.cpp:235
+#: ktorrent/view.cpp:216
 msgid "Delete Data"
 msgstr ""
 
-#: ktorrent/view.cpp:236
+#: ktorrent/view.cpp:217
 msgid "Keep Data"
 msgstr ""
 
-#: ktorrent/view.cpp:254
+#: ktorrent/view.cpp:236
 msgid ""
 "You will lose all the downloaded data. Are you sure you want to do this?"
 msgstr ""
