@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-08 06:02+0100\n"
+"POT-Creation-Date: 2007-12-09 06:03+0100\n"
 "PO-Revision-Date: 2007-11-21 13:50+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Scrape"
 msgstr ""
 
-#: ktorrent/viewmenu.cpp:52 plugins/infowidget/fileview.cpp:55
+#: ktorrent/viewmenu.cpp:52 plugins/infowidget/iwfiletreemodel.cpp:70
 msgid "Preview"
 msgstr "Ulhada"
 
@@ -602,77 +602,76 @@ msgstr ""
 msgid "Creating %1..."
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:226 plugins/infowidget/fileview.cpp:159
-#: plugins/infowidget/iwfiletreeitem.cpp:96
+#: ktorrent/viewmodel.cpp:201 plugins/infowidget/iwfiletreemodel.cpp:122
+#: plugins/infowidget/iwfiletreemodel.cpp:146
 #, no-c-format, kde-format
 msgid "%1 %"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:352 ktorrent/queuemanagermodel.cpp:90
+#: ktorrent/viewmodel.cpp:327 ktorrent/queuemanagermodel.cpp:90
 #: ktorrent/view.cpp:70
 msgid "Name"
 msgstr "Nom"
 
-#: ktorrent/viewmodel.cpp:353 ktorrent/queuemanagermodel.cpp:91
-#: ktorrent/view.cpp:71 plugins/infowidget/infowidgetplugin.cpp:79
+#: ktorrent/viewmodel.cpp:328 ktorrent/queuemanagermodel.cpp:91
+#: ktorrent/view.cpp:71 plugins/infowidget/infowidgetplugin.cpp:82
 msgid "Status"
 msgstr "Estatut"
 
-#: ktorrent/viewmodel.cpp:354 ktorrent/view.cpp:72
+#: ktorrent/viewmodel.cpp:329 ktorrent/view.cpp:72
 #: plugins/infowidget/peerview.cpp:191
 msgid "Downloaded"
 msgstr "Descargat"
 
-#: ktorrent/viewmodel.cpp:355 ktorrent/view.cpp:73
-#: libktcore/torrent/torrentfiletreemodel.cpp:210
-#: plugins/infowidget/fileview.cpp:55
+#: ktorrent/viewmodel.cpp:330 ktorrent/view.cpp:73
+#: libktcore/torrent/torrentfiletreemodel.cpp:234
 msgid "Size"
 msgstr "Talha"
 
-#: ktorrent/viewmodel.cpp:356 ktorrent/view.cpp:74
+#: ktorrent/viewmodel.cpp:331 ktorrent/view.cpp:74
 #: plugins/infowidget/peerview.cpp:192
 msgid "Uploaded"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 271
-#: ktorrent/viewmodel.cpp:357 ktorrent/view.cpp:75 rc.cpp:924
+#: ktorrent/viewmodel.cpp:332 ktorrent/view.cpp:75 rc.cpp:924
 #: plugins/infowidget/peerview.cpp:182
 msgid "Down Speed"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:358 ktorrent/view.cpp:76
+#: ktorrent/viewmodel.cpp:333 ktorrent/view.cpp:76
 #: plugins/infowidget/peerview.cpp:183
 msgid "Up Speed"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:359 ktorrent/view.cpp:77
+#: ktorrent/viewmodel.cpp:334 ktorrent/view.cpp:77
 msgid "Time Left"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:360 ktorrent/view.cpp:78
+#: ktorrent/viewmodel.cpp:335 ktorrent/view.cpp:78
 msgid "Seeders"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:361 ktorrent/view.cpp:79
+#: ktorrent/viewmodel.cpp:336 ktorrent/view.cpp:79
 msgid "Leechers"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:363 ktorrent/view.cpp:80
-#: plugins/infowidget/fileview.cpp:55
+#: ktorrent/viewmodel.cpp:338 ktorrent/view.cpp:80
+#: plugins/infowidget/iwfiletreemodel.cpp:71
 #, no-c-format
 msgid "% Complete"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:364 ktorrent/view.cpp:81
+#: ktorrent/viewmodel.cpp:339 ktorrent/view.cpp:81
 msgid "Share Ratio"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:365 ktorrent/view.cpp:82
+#: ktorrent/viewmodel.cpp:340 ktorrent/view.cpp:82
 msgid "Time Downloaded"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:366 ktorrent/view.cpp:83
+#: ktorrent/viewmodel.cpp:341 ktorrent/view.cpp:83
 msgid "Time Seeded"
 msgstr ""
 
@@ -763,26 +762,26 @@ msgstr "A_vançat"
 msgid "All interfaces"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:136
+#: ktorrent/fileselectdlg.cpp:134
 msgid ""
 "You have deselected the following existing files. You will lose all data in "
 "these files, are you sure you want to do this ?"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:140
+#: ktorrent/fileselectdlg.cpp:138
 msgid "Yes, delete the files"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:141
+#: ktorrent/fileselectdlg.cpp:139
 msgid "No, keep the files"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:224 libktcore/groups/groupmanager.h:58
+#: ktorrent/fileselectdlg.cpp:222 libktcore/groups/groupmanager.h:58
 #: libktcore/groups/allgroup.cpp:26
 msgid "All Torrents"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:260
+#: ktorrent/fileselectdlg.cpp:258
 #, kde-format
 msgid "%1 short!"
 msgstr ""
@@ -989,7 +988,7 @@ msgstr ""
 msgid "Unlimited"
 msgstr ""
 
-#: ktorrent/queuemanagermodel.cpp:92
+#: ktorrent/queuemanagermodel.cpp:92 plugins/infowidget/iwfiletreemodel.cpp:69
 #, fuzzy
 #| msgid "Port"
 msgid "Priority"
@@ -1021,7 +1020,7 @@ msgid "Upload Limit"
 msgstr ""
 
 #: ktorrent/speedlimitsmodel.cpp:129 ktorrent/speedlimitsmodel.cpp:134
-#: libbtcore/util/functions.cpp:270
+#: libbtcore/util/functions.cpp:271
 #, kde-format
 msgid "%1 KB/s"
 msgstr ""
@@ -1057,42 +1056,6 @@ msgstr ""
 #: ktorrent/view.cpp:357
 msgid "Select a directory to move the data to."
 msgstr ""
-
-#: libktcore/interfaces/filetreeitem.cpp:79
-#: plugins/infowidget/iwfiletreediritem.cpp:147
-#: plugins/infowidget/iwfiletreeitem.cpp:121
-msgid "Yes, First"
-msgstr ""
-
-#: libktcore/interfaces/filetreeitem.cpp:82
-#: plugins/infowidget/iwfiletreediritem.cpp:151
-#: plugins/infowidget/iwfiletreeitem.cpp:124
-msgid "Yes, Last"
-msgstr ""
-
-#: libktcore/interfaces/filetreeitem.cpp:86
-#: libktcore/interfaces/filetreediritem.cpp:152
-#: plugins/infowidget/iwfiletreediritem.cpp:155
-#: plugins/infowidget/iwfiletreediritem.cpp:167
-#: plugins/infowidget/fileview.cpp:179 plugins/infowidget/peerview.cpp:145
-#: plugins/infowidget/peerview.cpp:148
-#: plugins/infowidget/iwfiletreeitem.cpp:80
-#: plugins/infowidget/iwfiletreeitem.cpp:112
-#: plugins/infowidget/iwfiletreeitem.cpp:128
-#: plugins/infowidget/iwfiletreeitem.cpp:143
-msgid "No"
-msgstr "Non"
-
-#: libktcore/interfaces/filetreeitem.cpp:91
-#: libktcore/interfaces/filetreediritem.cpp:44
-#: libktcore/interfaces/filetreediritem.cpp:58
-#: libktcore/interfaces/filetreediritem.cpp:152
-#: plugins/infowidget/iwfiletreediritem.cpp:159
-#: plugins/infowidget/iwfiletreediritem.cpp:172
-#: plugins/infowidget/peerview.cpp:145 plugins/infowidget/peerview.cpp:148
-#: plugins/infowidget/iwfiletreeitem.cpp:133
-msgid "Yes"
-msgstr "Òc"
 
 #: libktcore/util/mmapfile.cpp:166
 msgid "Cannot write beyond end of the mmap buffer!"
@@ -1156,8 +1119,7 @@ msgstr ""
 msgid "Active downloads"
 msgstr ""
 
-#: libktcore/torrent/torrentfiletreemodel.cpp:209
-#: plugins/infowidget/fileview.cpp:55
+#: libktcore/torrent/torrentfiletreemodel.cpp:233
 msgid "File"
 msgstr "Fichièr"
 
@@ -1802,7 +1764,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 138
-#: rc.cpp:262 plugins/infowidget/infowidgetplugin.cpp:222
+#: rc.cpp:262 plugins/infowidget/infowidgetplugin.cpp:231
 msgid "Trackers"
 msgstr ""
 
@@ -2193,7 +2155,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/missingfilesdlg.ui line 65
-#: rc.cpp:490 plugins/infowidget/fileview.cpp:65
+#: rc.cpp:490 plugins/infowidget/fileview.cpp:61
 msgid "Do Not Download"
 msgstr ""
 
@@ -2986,7 +2948,7 @@ msgstr ""
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 13
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 210
-#: rc.cpp:894 rc.cpp:993 plugins/infowidget/infowidgetplugin.cpp:202
+#: rc.cpp:894 rc.cpp:993 plugins/infowidget/infowidgetplugin.cpp:211
 msgid "Chunks"
 msgstr ""
 
@@ -3317,7 +3279,7 @@ msgstr "Velocitat"
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 338
 #: rc.cpp:1066 rc.cpp:1096 rc.cpp:1135 rc.cpp:1138
-#: plugins/infowidget/fileview.cpp:55 plugins/search/htmlpart.cpp:166
+#: plugins/search/htmlpart.cpp:166
 msgid "Download"
 msgstr "Descargar"
 
@@ -3334,7 +3296,7 @@ msgstr "Descargar"
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 453
 #: rc.cpp:1069 rc.cpp:1102 rc.cpp:1147
-#: plugins/infowidget/infowidgetplugin.cpp:182
+#: plugins/infowidget/infowidgetplugin.cpp:191
 msgid "Peers"
 msgstr ""
 
@@ -4346,43 +4308,31 @@ msgstr ""
 msgid "Allow to control ktorrent through browser"
 msgstr ""
 
-#: plugins/infowidget/fileview.cpp:59
+#: plugins/infowidget/fileview.cpp:55
 msgid "Open"
 msgstr "Dobrir"
 
-#: plugins/infowidget/fileview.cpp:61
+#: plugins/infowidget/fileview.cpp:57
 msgid "Download first"
 msgstr ""
 
-#: plugins/infowidget/fileview.cpp:62
+#: plugins/infowidget/fileview.cpp:58
 msgid "Download normally"
 msgstr ""
 
-#: plugins/infowidget/fileview.cpp:63
+#: plugins/infowidget/fileview.cpp:59
 msgid "Download last"
 msgstr ""
 
-#: plugins/infowidget/fileview.cpp:66
+#: plugins/infowidget/fileview.cpp:62
 msgid "Delete File(s)"
 msgstr ""
 
-#: plugins/infowidget/fileview.cpp:174
-#: plugins/infowidget/iwfiletreeitem.cpp:72
-#: plugins/infowidget/iwfiletreeitem.cpp:104
-msgid "Available"
-msgstr "Disponible"
-
-#: plugins/infowidget/fileview.cpp:176
-#: plugins/infowidget/iwfiletreeitem.cpp:76
-#: plugins/infowidget/iwfiletreeitem.cpp:108
-msgid "Pending"
-msgstr ""
-
-#: plugins/infowidget/fileview.cpp:298
+#: plugins/infowidget/fileview.cpp:224
 msgid "You will lose all data in this file, are you sure you want to do this ?"
 msgstr ""
 
-#: plugins/infowidget/fileview.cpp:299
+#: plugins/infowidget/fileview.cpp:225
 msgid ""
 "You will lose all data in these files, are you sure you want to do this ?"
 msgstr ""
@@ -4398,7 +4348,7 @@ msgid ""
 "downloaded, how many seeders and leechers ..."
 msgstr ""
 
-#: plugins/infowidget/infowidgetplugin.cpp:80
+#: plugins/infowidget/infowidgetplugin.cpp:83
 msgid "Files"
 msgstr "Fichièrs"
 
@@ -4413,6 +4363,16 @@ msgstr ""
 #: plugins/infowidget/trackerview.cpp:208
 msgid "You cannot add trackers to a private torrent"
 msgstr ""
+
+#: plugins/infowidget/peerview.cpp:145 plugins/infowidget/peerview.cpp:148
+msgid "Yes"
+msgstr "Òc"
+
+#: plugins/infowidget/peerview.cpp:145 plugins/infowidget/peerview.cpp:148
+#: plugins/infowidget/iwfiletreemodel.cpp:117
+#: plugins/infowidget/iwfiletreemodel.cpp:141
+msgid "No"
+msgstr "Non"
 
 #: plugins/infowidget/peerview.cpp:179
 msgid "IP Address"
@@ -4470,6 +4430,30 @@ msgid ""
 "<img src=\"available_color\">&nbsp; - Downloaded Chunks<br><img src="
 "\"unavailable_color\">&nbsp; - Chunks to Download<br><img src="
 "\"excluded_color\">&nbsp; - Excluded Chunks"
+msgstr ""
+
+#: plugins/infowidget/iwfiletreemodel.cpp:80
+#, fuzzy
+#| msgid "Files"
+msgid "First"
+msgstr "Fichièrs"
+
+#: plugins/infowidget/iwfiletreemodel.cpp:81
+msgid "Last"
+msgstr ""
+
+#: plugins/infowidget/iwfiletreemodel.cpp:86
+msgid "Normal"
+msgstr ""
+
+#: plugins/infowidget/iwfiletreemodel.cpp:112
+#: plugins/infowidget/iwfiletreemodel.cpp:136
+msgid "Available"
+msgstr "Disponible"
+
+#: plugins/infowidget/iwfiletreemodel.cpp:114
+#: plugins/infowidget/iwfiletreemodel.cpp:138
+msgid "Pending"
 msgstr ""
 
 #: plugins/ipfilter/ipfilterplugin.cpp:43
@@ -4567,7 +4551,7 @@ msgstr ""
 msgid "torrent files"
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:285
+#: plugins/search/searchwidget.cpp:286
 msgid "Search finished"
 msgstr ""
 
@@ -4707,27 +4691,27 @@ msgstr ""
 msgid "Unknown client"
 msgstr ""
 
-#: libbtcore/util/functions.cpp:258
+#: libbtcore/util/functions.cpp:259
 #, kde-format
 msgid "%1 GB"
 msgstr "%1 Go"
 
-#: libbtcore/util/functions.cpp:260
+#: libbtcore/util/functions.cpp:261
 #, kde-format
 msgid "%1 MB"
 msgstr "%1 Mo"
 
-#: libbtcore/util/functions.cpp:262
+#: libbtcore/util/functions.cpp:263
 #, kde-format
 msgid "%1 KB"
 msgstr ""
 
-#: libbtcore/util/functions.cpp:264
+#: libbtcore/util/functions.cpp:265
 #, kde-format
 msgid "%1 B"
 msgstr "%1 o"
 
-#: libbtcore/util/functions.cpp:281
+#: libbtcore/util/functions.cpp:282
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
