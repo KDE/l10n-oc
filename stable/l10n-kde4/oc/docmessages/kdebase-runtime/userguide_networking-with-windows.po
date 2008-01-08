@@ -1,0 +1,180 @@
+# translation of userguide_networking-with-windows.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: userguide_networking-with-windows\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2007-08-31 07:04+0000\n"
+"PO-Revision-Date: 2008-01-01 00:39+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdebase/doc/userguide/networking-with-"
+"windows.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 509863\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: author
+#: networking-with-windows.docbook:4
+#, no-c-format
+msgid "<firstname>Gardner</firstname> <surname>Bell</surname>"
+msgstr "<firstname>Gardner</firstname> <surname>Bell</surname>"
+
+#. Tag: title
+#: networking-with-windows.docbook:12
+#, no-c-format
+msgid "Networking With Windows"
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:14
+#, no-c-format
+msgid ""
+"This section is borrowed and modified from Alexander Neundorf's README file "
+"on LISa."
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:17
+#, no-c-format
+msgid ""
+"&kde; features two powerful servers called the Lan Information Server "
+"(<application>LISa</application>) and Restricted Lan Information Server "
+"(<application>resLISa</application>) which are used to identify CIFS and "
+"other servers on your local network providing a function similar to "
+"<quote>Network Neighbourhood</quote> in &Microsoft; &Windows;."
+msgstr ""
+
+#. Tag: title
+#: networking-with-windows.docbook:25
+#, no-c-format
+msgid "How It Works"
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:27
+#, no-c-format
+msgid ""
+"&lisa; only depends on the TCP/IP stack so samba configuration is not "
+"required to make it work but the <ulink url=\"http://www.samba.org\">samba</"
+"ulink> package is a dependency. To find hosts on your local network you set "
+"a range of IP-Addresses in your configuration file that &lisa; will check. "
+"When you start the &lisa; daemon it will send a <ulink url=\"http://www.ietf."
+"org/rfc/rfc792.txt\">ICMP</ulink>, echo request message to all the IP "
+"addresses given in the configuration file and await a response."
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:36
+#, no-c-format
+msgid ""
+"The &lisa; daemon requires root privileges to open the socket, but once the "
+"socket has been established root privileges are immediately dropped."
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:40
+#, no-c-format
+msgid ""
+"You can also execute &lisa; using <command>nmblookup <option>\"*\"</option></"
+"command>.<note><para>If you do not have the <command>nmblookup</command> "
+"program it can be found at <ulink url=\"http://www.samba.org\">http://www."
+"samba.org</ulink> or through packages provided by your distribution</para></"
+"note>. The samba command <command>nmblookup <option>\"*\"</option></command> "
+"will send a broadcast message to the attached network and any host that is "
+"running the smb-services will send a reply stating that it is accepting "
+"connections."
+msgstr ""
+
+#. Tag: application
+#: networking-with-windows.docbook:52
+#, no-c-format
+msgid "resLISa"
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:54
+#, no-c-format
+msgid ""
+"If your company network has very strict guidelines governing what ports can "
+"and cannot be opened you will have to use &reslisa; to communicate with "
+"other hosts on your network. Because &reslisa; cannot ping entire networks "
+"or address ranges you will have to add each host by name to your "
+"confiuration file. Currently you are able to add up to 64 hosts, and these "
+"addresses are pingable."
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:61
+#, no-c-format
+msgid ""
+"&reslisa; will only provide the information over a &UNIX; domain socket, "
+"&ie; not over the network. The name of the socket is <filename>/tmp/resLISa-"
+"<replaceable>YourLoginName</replaceable></filename>, so &reslisa; can be "
+"safely run on the same machine by more than one user."
+msgstr ""
+
+#. Tag: title
+#: networking-with-windows.docbook:69
+#, no-c-format
+msgid "Configuration"
+msgstr "Configuracion"
+
+#. Tag: para
+#: networking-with-windows.docbook:71
+#, no-c-format
+msgid ""
+"At startup &lisa; first parses the configuration file in the users home "
+"directory under <filename>$<envar>HOME</envar>/.lisarc</filename>. If this "
+"file does not exist &lisa; will then look for a system wide confiuration "
+"located at <filename>/etc/lisarc</filename>. Now for a sample example "
+"configuration file:"
+msgstr ""
+
+#. Tag: programlisting
+#: networking-with-windows.docbook:77
+#, no-c-format
+msgid ""
+"PingAddresses = 192.168.100.0/255.255.255.0;192.168.100.10-"
+"192.168.199.19;192.168.200.1;\n"
+"PingNames = my_host1;my_host2    #Hosts by name (required for "
+"<application>resLISa</application>)\n"
+"AllowedAddresses = 192.168.0.0/255.255.0.0\n"
+"BroadcastNetwork = 192.168.100.0/255.255.255.0\n"
+"SearchUsingNmblookup = 1         #also try nmblookup\n"
+"FirstWait = 30                   #30 one-hundredth's of a second\n"
+"SecondWait = -1                  #Only try once\n"
+"#SecondWait = 60                 #Try twice and wait 0.6 seconds\n"
+"UpdatePeriod = 300               #Update every 300 sec's\n"
+"DeliverUnnamedHosts = 0          #Don't publish unnamed hosts\n"
+"MaxPingsAtOnce = 256             #Send up to 256 ICMP echo requests at once"
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:79
+#, no-c-format
+msgid ""
+"&lisa; can also be configured graphically in the "
+"<menuchoice><guimenuitem>&kcontrolcenter;</guimenuitem><guisubmenu>Internet "
+"&amp; Network</guisubmenu><guimenuitem>Local Network Browsing</guimenuitem> "
+"</menuchoice> item in the &kmenu;. However, to use this option &lisa; must "
+"be started with the <option>-K</option> command line switch."
+msgstr ""
+
+#. Tag: title
+#: networking-with-windows.docbook:89
+#, no-c-format
+msgid "Related Information"
+msgstr ""
+
+#. Tag: para
+#: networking-with-windows.docbook:90
+#, no-c-format
+msgid ""
+"For a full list of command line switches and further examples see the entire "
+"&lisa; manual by entering <userinput>help:/lisa</userinput> in &konqueror;."
+msgstr ""

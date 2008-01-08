@@ -1,0 +1,1718 @@
+# translation of kugar_template-elements.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kugar_template-elements\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2006-10-18 04:13+0000\n"
+"PO-Revision-Date: 2008-01-01 00:40+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/koffice/doc/kugar/template-elements.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 596350\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: author
+#: template-elements.docbook:9
+#, no-c-format
+msgid "<firstname>Alexander</firstname> <surname>Dymo</surname>"
+msgstr ""
+
+#. Tag: email
+#: template-elements.docbook:13
+#, no-c-format
+msgid "cloudtemple@mksat.net"
+msgstr ""
+
+#. Tag: author
+#: template-elements.docbook:16
+#, no-c-format
+msgid "<firstname>Phil</firstname> <surname>Thompson</surname>"
+msgstr ""
+
+#. Tag: email
+#: template-elements.docbook:20
+#, no-c-format
+msgid "phil@river-bank.demon.co.uk"
+msgstr ""
+
+#. Tag: trans_comment
+#: template-elements.docbook:23
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
+
+#. Tag: title
+#: template-elements.docbook:26
+#, no-c-format
+msgid "<sgmltag class=\"element\">KugarTemplate</sgmltag> template elements"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:33
+#, no-c-format
+msgid "Section bands"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:34
+#, no-c-format
+msgid "Section elements"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:39
+#, no-c-format
+msgid "ReportHeader"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:40 template-elements.docbook:301
+#, no-c-format
+msgid "Line"
+msgstr "Linha"
+
+#. Tag: sgmltag
+#: template-elements.docbook:43
+#, no-c-format
+msgid "PageHeader"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:44 template-elements.docbook:424
+#, no-c-format
+msgid "Label"
+msgstr "Etiqueta"
+
+#. Tag: sgmltag
+#: template-elements.docbook:47
+#, no-c-format
+msgid "DetailHeader"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:48 template-elements.docbook:771
+#: template-elements.docbook:787 template-elements.docbook:1368
+#, no-c-format
+msgid "Field"
+msgstr "Zòna"
+
+#. Tag: sgmltag
+#: template-elements.docbook:51
+#, no-c-format
+msgid "Detail"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:52 template-elements.docbook:1309
+#, no-c-format
+msgid "CalculatedField"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:55
+#, no-c-format
+msgid "DetailFooter"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:56 template-elements.docbook:1888
+#, no-c-format
+msgid "Special"
+msgstr "Especial"
+
+#. Tag: sgmltag
+#: template-elements.docbook:59
+#, no-c-format
+msgid "PageFooter"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:60
+#, no-c-format
+msgid "Page Footer"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:63
+#, no-c-format
+msgid "ReportFooter"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:64
+#, no-c-format
+msgid "Report Footer"
+msgstr ""
+
+#. Tag: title
+#: template-elements.docbook:72
+#, no-c-format
+msgid ""
+"<sgmltag class=\"element\">ReportHeader</sgmltag> and <sgmltag class="
+"\"element\">ReportFooter</sgmltag> sections"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:75
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">ReportHeader</sgmltag> and <sgmltag class="
+"\"element\">ReportFooter</sgmltag> elements define report sections that are "
+"usually printed at the beginning and end of the report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:81
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT ReportHeader (<link linkend=\"line-element\">Line</link>*, "
+"<link linkend=\"label-element\">Label</link>*, <link linkend=\"special-"
+"element\">Special</link>*)&gt;\n"
+"&lt;!ATTLIST ReportHeader\n"
+"     Height          CDATA #REQUIRED\n"
+"     PrintFrequency  CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:83
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT ReportFooter (<link linkend=\"line-element\">Line</link>*, "
+"<link linkend=\"label-element\">Label</link>*, <link linkend=\"special-"
+"element\">Special</link>*, <link linkend=\"calculated-field-element"
+"\">CalculatedField</link>*)&gt;\n"
+"&lt;!ATTLIST ReportFooter\n"
+"     Height         CDATA #REQUIRED\n"
+"     PrintFrequency CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: term
+#: template-elements.docbook:88 template-elements.docbook:157
+#: template-elements.docbook:227 template-elements.docbook:270
+#: template-elements.docbook:312 template-elements.docbook:435
+#: template-elements.docbook:782 template-elements.docbook:1320
+#: template-elements.docbook:1899
+#, no-c-format
+msgid "Attributes"
+msgstr "Atributs"
+
+#. Tag: sgmltag
+#: template-elements.docbook:93 template-elements.docbook:162
+#: template-elements.docbook:232 template-elements.docbook:275
+#: template-elements.docbook:476 template-elements.docbook:833
+#: template-elements.docbook:1414 template-elements.docbook:1970
+#, no-c-format
+msgid "Height"
+msgstr "Nautor"
+
+#. Tag: para
+#: template-elements.docbook:95 template-elements.docbook:164
+#: template-elements.docbook:234 template-elements.docbook:277
+#, no-c-format
+msgid ""
+"Sets the height of the report section. If you don't want this section, set "
+"this value to <sgmltag class=\"attvalue\">0</sgmltag>."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:102 template-elements.docbook:171
+#, no-c-format
+msgid "PrintFrequency"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:104 template-elements.docbook:173
+#, no-c-format
+msgid "Set the print frequency of the section."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:112 template-elements.docbook:181
+#: template-elements.docbook:382 template-elements.docbook:534
+#: template-elements.docbook:603 template-elements.docbook:646
+#: template-elements.docbook:677 template-elements.docbook:711
+#: template-elements.docbook:745 template-elements.docbook:891
+#: template-elements.docbook:960 template-elements.docbook:1003
+#: template-elements.docbook:1034 template-elements.docbook:1068
+#: template-elements.docbook:1102 template-elements.docbook:1135
+#: template-elements.docbook:1180 template-elements.docbook:1283
+#: template-elements.docbook:1335 template-elements.docbook:1472
+#: template-elements.docbook:1541 template-elements.docbook:1584
+#: template-elements.docbook:1615 template-elements.docbook:1649
+#: template-elements.docbook:1683 template-elements.docbook:1713
+#: template-elements.docbook:1758 template-elements.docbook:1861
+#: template-elements.docbook:1914 template-elements.docbook:2029
+#: template-elements.docbook:2098 template-elements.docbook:2141
+#: template-elements.docbook:2172 template-elements.docbook:2206
+#: template-elements.docbook:2240 template-elements.docbook:2273
+#, no-c-format
+msgid "Value"
+msgstr "Valor"
+
+#. Tag: entry
+#: template-elements.docbook:113 template-elements.docbook:182
+#, no-c-format
+msgid "Print Frequency"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:118 template-elements.docbook:187
+#: template-elements.docbook:389 template-elements.docbook:540
+#: template-elements.docbook:652 template-elements.docbook:683
+#: template-elements.docbook:717 template-elements.docbook:751
+#: template-elements.docbook:897 template-elements.docbook:1009
+#: template-elements.docbook:1040 template-elements.docbook:1074
+#: template-elements.docbook:1108 template-elements.docbook:1141
+#: template-elements.docbook:1186 template-elements.docbook:1289
+#: template-elements.docbook:1341 template-elements.docbook:1478
+#: template-elements.docbook:1590 template-elements.docbook:1621
+#: template-elements.docbook:1655 template-elements.docbook:1689
+#: template-elements.docbook:1719 template-elements.docbook:1764
+#: template-elements.docbook:1867 template-elements.docbook:1920
+#: template-elements.docbook:2035 template-elements.docbook:2147
+#: template-elements.docbook:2178 template-elements.docbook:2212
+#: template-elements.docbook:2246 template-elements.docbook:2279
+#, no-c-format
+msgid "<sgmltag>0</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:119 template-elements.docbook:188
+#, no-c-format
+msgid "First Page"
+msgstr "Primièra pagina"
+
+#. Tag: sgmltag
+#: template-elements.docbook:122 template-elements.docbook:191
+#: template-elements.docbook:393 template-elements.docbook:544
+#: template-elements.docbook:656 template-elements.docbook:687
+#: template-elements.docbook:721 template-elements.docbook:755
+#: template-elements.docbook:901 template-elements.docbook:1013
+#: template-elements.docbook:1044 template-elements.docbook:1078
+#: template-elements.docbook:1112 template-elements.docbook:1145
+#: template-elements.docbook:1190 template-elements.docbook:1293
+#: template-elements.docbook:1345 template-elements.docbook:1482
+#: template-elements.docbook:1594 template-elements.docbook:1625
+#: template-elements.docbook:1659 template-elements.docbook:1693
+#: template-elements.docbook:1723 template-elements.docbook:1768
+#: template-elements.docbook:1871 template-elements.docbook:1924
+#: template-elements.docbook:2039 template-elements.docbook:2151
+#: template-elements.docbook:2182 template-elements.docbook:2216
+#: template-elements.docbook:2250 template-elements.docbook:2283
+#, no-c-format
+msgid "<sgmltag>1</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:123 template-elements.docbook:192
+#, no-c-format
+msgid "Every Page"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:126 template-elements.docbook:195
+#: template-elements.docbook:397 template-elements.docbook:548
+#: template-elements.docbook:691 template-elements.docbook:725
+#: template-elements.docbook:905 template-elements.docbook:1048
+#: template-elements.docbook:1082 template-elements.docbook:1149
+#: template-elements.docbook:1194 template-elements.docbook:1349
+#: template-elements.docbook:1486 template-elements.docbook:1629
+#: template-elements.docbook:1663 template-elements.docbook:1727
+#: template-elements.docbook:1772 template-elements.docbook:2043
+#: template-elements.docbook:2186 template-elements.docbook:2220
+#: template-elements.docbook:2287
+#, no-c-format
+msgid "<sgmltag>2</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:127 template-elements.docbook:196
+#, no-c-format
+msgid "Last Page"
+msgstr ""
+
+#. Tag: title
+#: template-elements.docbook:141
+#, no-c-format
+msgid ""
+"<sgmltag class=\"element\">PageHeader</sgmltag> and <sgmltag class=\"element"
+"\">PageFooter</sgmltag> sections"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:144
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">PageHeader</sgmltag> and <sgmltag class="
+"\"element\">PageFooter</sgmltag> elements define report sections that are "
+"usually printed on every page of the report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:150
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT PageHeader (<link linkend=\"line-element\">Line</link>*, <link "
+"linkend=\"label-element\">Label</link>*, <link linkend=\"special-element"
+"\">Special</link>*)&gt;\n"
+"&lt;!ATTLIST PageHeader\n"
+"     Height          CDATA #REQUIRED\n"
+"     PrintFrequency  CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:152
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT PageFooter (<link linkend=\"line-element\">Line</link>*, <link "
+"linkend=\"label-element\">Label</link>*, <link linkend=\"special-element"
+"\">Special</link>*)&gt;\n"
+"&lt;!ATTLIST PageFooter\n"
+"     Height          CDATA #REQUIRED\n"
+"     PrintFrequency  CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: title
+#: template-elements.docbook:211
+#, no-c-format
+msgid ""
+"<sgmltag class=\"element\">DetailHeader</sgmltag> and <sgmltag class="
+"\"element\">DetailFooter</sgmltag> sections"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:214
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">DetailHeader</sgmltag> and <sgmltag class="
+"\"element\">DetailFooter</sgmltag> elements define report sections that are "
+"printed before and after details of a given level and below on the report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:220
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT DetailHeader (<link linkend=\"line-element\">Line</link>*, "
+"<link linkend=\"label-element\">Label</link>*, <link linkend=\"special-"
+"element\">Special</link>*)&gt;\n"
+"&lt;!ATTLIST DetailHeader\n"
+"     Height          CDATA #REQUIRED\n"
+"     Level           CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:222
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT DetailFooter (<link linkend=\"line-element\">Line</link>*, "
+"<link linkend=\"label-element\">Label</link>*, <link linkend=\"special-"
+"element\">Special</link>*)&gt;\n"
+"&lt;!ATTLIST DetailFooter\n"
+"     Height          CDATA #REQUIRED\n"
+"     Level           CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:241 template-elements.docbook:283
+#, no-c-format
+msgid "Level"
+msgstr "Nivèl"
+
+#. Tag: para
+#: template-elements.docbook:243
+#, no-c-format
+msgid ""
+"Set the hierarchy level of the section. Sections with higher levels will be "
+"printed before sections with lower ones. Level can be any number beginning "
+"from 0."
+msgstr ""
+
+#. Tag: title
+#: template-elements.docbook:258
+#, no-c-format
+msgid "<sgmltag class=\"element\">Detail</sgmltag> section"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:260
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">Detail</sgmltag> element defines the report "
+"section that contains the report data. The report can have multiple details, "
+"which are accessed by the detail's Level attribute."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:266
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT Detail (<link linkend=\"line-element\">Line</link>*, <link "
+"linkend=\"label-element\">Label</link>*, <link linkend=\"special-element"
+"\">Special</link>*, <link linkend=\"field-element\">Field</link>*)&gt;\n"
+"&lt;!ATTLIST Detail\n"
+"     Height  CDATA   #REQUIRED\n"
+"     Level   CDATA   #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:285
+#, no-c-format
+msgid ""
+"Set the hierarchy level of the section. Sections with higher levels will be "
+"printed before sections with lower ones. Level can be any number beginning "
+"from 0. This is an attribute of a <sgmltag class=\"attribute\">row</sgmltag> "
+"element in a data file."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:303
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">Line</sgmltag> element defines a report "
+"object used to draw lines on a report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:308
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT Line EMPTY&gt;\n"
+"&lt;!ATTLIST Line\n"
+"     X1     CDATA #REQUIRED\n"
+"     Y1     CDATA #REQUIRED\n"
+"     X2     CDATA #REQUIRED\n"
+"     Y2     CDATA #REQUIRED\n"
+"     Width  CDATA #REQUIRED\n"
+"     Color  CDATA #REQUIRED\n"
+"     Style  CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:317
+#, no-c-format
+msgid "<sgmltag>X1</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:319
+#, no-c-format
+msgid ""
+"Sets the starting x coordinate (relative to the section's upper left corner) "
+"for the line."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:326
+#, no-c-format
+msgid "<sgmltag>Y1</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:328
+#, no-c-format
+msgid ""
+"Sets the starting y coordinate (relative to the section's upper left corner) "
+"for the line."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:335
+#, no-c-format
+msgid "<sgmltag>X2</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:337
+#, no-c-format
+msgid ""
+"Sets the ending x coordinate (relative to the section's upper left corner) "
+"for the line."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:344
+#, no-c-format
+msgid "<sgmltag>Y2</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:346
+#, no-c-format
+msgid ""
+"Sets the ending y coordinate (relative to the section's upper left corner) "
+"for the line."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:353 template-elements.docbook:467
+#: template-elements.docbook:824 template-elements.docbook:1405
+#: template-elements.docbook:1961
+#, no-c-format
+msgid "Width"
+msgstr "Largor"
+
+#. Tag: para
+#: template-elements.docbook:355
+#, no-c-format
+msgid "Sets the width of the line."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:362
+#, no-c-format
+msgid "Color"
+msgstr "Color"
+
+#. Tag: para
+#: template-elements.docbook:364
+#, no-c-format
+msgid ""
+"Sets the color of the line. The color is defined as an RGB (Red Green Blue) "
+"value (r,g,b). r, g and b must be in the range 0..255."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:372
+#, no-c-format
+msgid "Style"
+msgstr "Estil"
+
+#. Tag: para
+#: template-elements.docbook:374
+#, no-c-format
+msgid "Sets the drawing style for the line."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:383
+#, no-c-format
+msgid "Line Style"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:390
+#, no-c-format
+msgid "No Pen"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:394 template-elements.docbook:545
+#: template-elements.docbook:902 template-elements.docbook:1483
+#: template-elements.docbook:2040
+#, no-c-format
+msgid "Solid"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:398 template-elements.docbook:549
+#: template-elements.docbook:906 template-elements.docbook:1487
+#: template-elements.docbook:2044
+#, no-c-format
+msgid "Dash"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:401 template-elements.docbook:552
+#: template-elements.docbook:909 template-elements.docbook:1153
+#: template-elements.docbook:1198 template-elements.docbook:1353
+#: template-elements.docbook:1490 template-elements.docbook:1731
+#: template-elements.docbook:1776 template-elements.docbook:2047
+#: template-elements.docbook:2291
+#, no-c-format
+msgid "<sgmltag>3</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:402 template-elements.docbook:553
+#: template-elements.docbook:910 template-elements.docbook:1491
+#: template-elements.docbook:2048
+#, no-c-format
+msgid "<entry>Dot</entry>"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:405 template-elements.docbook:556
+#: template-elements.docbook:913 template-elements.docbook:1157
+#: template-elements.docbook:1202 template-elements.docbook:1357
+#: template-elements.docbook:1494 template-elements.docbook:1735
+#: template-elements.docbook:1780 template-elements.docbook:2051
+#: template-elements.docbook:2295
+#, no-c-format
+msgid "<sgmltag>4</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:406 template-elements.docbook:557
+#: template-elements.docbook:914 template-elements.docbook:1495
+#: template-elements.docbook:2052
+#, no-c-format
+msgid "Dash Dot"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:409 template-elements.docbook:560
+#: template-elements.docbook:917 template-elements.docbook:1206
+#: template-elements.docbook:1498 template-elements.docbook:1784
+#: template-elements.docbook:2055 template-elements.docbook:2299
+#, no-c-format
+msgid "<sgmltag>5</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:410 template-elements.docbook:561
+#: template-elements.docbook:918 template-elements.docbook:1499
+#: template-elements.docbook:2056
+#, no-c-format
+msgid "Dash Dot Dot"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:426
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">Label</sgmltag> element defines a report "
+"object used to draw fixed text on a report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:431
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT Label EMPTY&gt;\n"
+" &lt;!ATTLIST Label\n"
+"     Text            CDATA #REQUIRED\n"
+"     X               CDATA #REQUIRED\n"
+"     Y               CDATA #REQUIRED\n"
+"     Width           CDATA #REQUIRED\n"
+"     Height          CDATA #REQUIRED\n"
+"     BackgroundColor CDATA #REQUIRED\n"
+"     ForegroundColor CDATA #REQUIRED\n"
+"     BorderColor     CDATA #REQUIRED\n"
+"     BorderWidth     CDATA #REQUIRED\n"
+"     BorderStyle     CDATA #REQUIRED\n"
+"     FontFamily      CDATA #REQUIRED\n"
+"     FontSize        CDATA #REQUIRED\n"
+"     FontWeight      CDATA #REQUIRED\n"
+"     FontItalic      CDATA #REQUIRED\n"
+"     HAlignment      CDATA #REQUIRED\n"
+"     VAlignment      CDATA #REQUIRED\n"
+"     WordWrap        CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:440 template-elements.docbook:797
+#: template-elements.docbook:1378 template-elements.docbook:1934
+#, no-c-format
+msgid "Text"
+msgstr "Tèxt"
+
+#. Tag: para
+#: template-elements.docbook:442
+#, no-c-format
+msgid "Sets the label's text."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:449 template-elements.docbook:806
+#: template-elements.docbook:1387 template-elements.docbook:1943
+#, no-c-format
+msgid "<sgmltag>X</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:451
+#, no-c-format
+msgid ""
+"Sets the x coordinate (relative to the section's upper left corner) for "
+"positioning the label."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:458 template-elements.docbook:815
+#: template-elements.docbook:1396 template-elements.docbook:1952
+#, no-c-format
+msgid "<sgmltag>Y</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:460
+#, no-c-format
+msgid ""
+"Sets the y coordinate (relative to the section's upper left corner) for "
+"positioning the label."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:469
+#, no-c-format
+msgid "Sets the width of the label."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:478
+#, no-c-format
+msgid "Sets the height of the label."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:485 template-elements.docbook:842
+#: template-elements.docbook:1423 template-elements.docbook:1979
+#, no-c-format
+msgid "BackgroundColor"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:487
+#, no-c-format
+msgid ""
+"Sets the background color of the label. The color is defined as an RGB (Red "
+"Green Blue) value (r,g,b). r, g and b must be in the range 0..255."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:495 template-elements.docbook:852
+#: template-elements.docbook:1433 template-elements.docbook:1989
+#, no-c-format
+msgid "ForegroundColor"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:497
+#, no-c-format
+msgid ""
+"Sets the foreground color of the label. The color is defined as an RGB (Red "
+"Green Blue) value (r,g,b). r, g and b must be in the range 0..255."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:505 template-elements.docbook:862
+#: template-elements.docbook:1443 template-elements.docbook:2000
+#, no-c-format
+msgid "BorderColor"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:507
+#, no-c-format
+msgid ""
+"Sets the border color of the label. The color is defined as an RGB (Red "
+"Green Blue) value (r,g,b). r, g and b must be in the range 0..255."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:515 template-elements.docbook:872
+#: template-elements.docbook:1453 template-elements.docbook:2010
+#, no-c-format
+msgid "BorderWidth"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:517
+#, no-c-format
+msgid "Sets the border width for the label."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:524 template-elements.docbook:881
+#: template-elements.docbook:1462 template-elements.docbook:2019
+#, no-c-format
+msgid "BorderStyle"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:526
+#, no-c-format
+msgid "Sets the border style for the label."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:535 template-elements.docbook:892
+#: template-elements.docbook:1473 template-elements.docbook:2030
+#, no-c-format
+msgid "Border Style"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:541 template-elements.docbook:898
+#: template-elements.docbook:1479 template-elements.docbook:2036
+#, no-c-format
+msgid "None"
+msgstr "Pas cap"
+
+#. Tag: sgmltag
+#: template-elements.docbook:570 template-elements.docbook:927
+#: template-elements.docbook:1508 template-elements.docbook:2065
+#, no-c-format
+msgid "FontFamily"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:572
+#, no-c-format
+msgid "Sets the font family for the label's text."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:584 template-elements.docbook:941
+#: template-elements.docbook:1522 template-elements.docbook:2079
+#, no-c-format
+msgid "FontSize"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:586
+#, no-c-format
+msgid "Sets the font size for the label's text."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:593 template-elements.docbook:950
+#: template-elements.docbook:1531 template-elements.docbook:2088
+#, no-c-format
+msgid "FontWeight"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:595
+#, no-c-format
+msgid "Sets the font weight for the label's text."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:604 template-elements.docbook:961
+#: template-elements.docbook:1542 template-elements.docbook:2099
+#, no-c-format
+msgid "Font Weight"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:609 template-elements.docbook:966
+#: template-elements.docbook:1547 template-elements.docbook:2104
+#, no-c-format
+msgid "<sgmltag>25</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:610 template-elements.docbook:967
+#: template-elements.docbook:1548 template-elements.docbook:2105
+#, no-c-format
+msgid "Light"
+msgstr "Clar"
+
+#. Tag: sgmltag
+#: template-elements.docbook:613 template-elements.docbook:970
+#: template-elements.docbook:1551 template-elements.docbook:2108
+#, no-c-format
+msgid "<sgmltag>50</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:614 template-elements.docbook:971
+#: template-elements.docbook:1552 template-elements.docbook:2109
+#, no-c-format
+msgid "Normal"
+msgstr "Normal"
+
+#. Tag: sgmltag
+#: template-elements.docbook:617 template-elements.docbook:974
+#: template-elements.docbook:1555 template-elements.docbook:2112
+#, no-c-format
+msgid "<sgmltag>63</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:618 template-elements.docbook:975
+#: template-elements.docbook:1556 template-elements.docbook:2113
+#, no-c-format
+msgid "Demi Bold"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:621 template-elements.docbook:978
+#: template-elements.docbook:1559 template-elements.docbook:2116
+#, no-c-format
+msgid "<sgmltag>75</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:622 template-elements.docbook:979
+#: template-elements.docbook:1560 template-elements.docbook:2117
+#, no-c-format
+msgid "Bold"
+msgstr "Gras"
+
+#. Tag: sgmltag
+#: template-elements.docbook:625 template-elements.docbook:982
+#: template-elements.docbook:1563 template-elements.docbook:2120
+#, no-c-format
+msgid "<sgmltag>87</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:626 template-elements.docbook:983
+#: template-elements.docbook:1564 template-elements.docbook:2121
+#, no-c-format
+msgid "Black"
+msgstr "Negre"
+
+#. Tag: sgmltag
+#: template-elements.docbook:636 template-elements.docbook:993
+#: template-elements.docbook:1574 template-elements.docbook:2131
+#, no-c-format
+msgid "FontItalic"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:638
+#, no-c-format
+msgid "Sets the font italic flag for the label's text."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:647 template-elements.docbook:1004
+#: template-elements.docbook:1585 template-elements.docbook:2142
+#, no-c-format
+msgid "Italic"
+msgstr "Italic"
+
+#. Tag: entry
+#: template-elements.docbook:653 template-elements.docbook:752
+#: template-elements.docbook:1010 template-elements.docbook:1109
+#: template-elements.docbook:1290 template-elements.docbook:1591
+#: template-elements.docbook:1690 template-elements.docbook:1868
+#: template-elements.docbook:2148 template-elements.docbook:2247
+#, no-c-format
+msgid "False"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:657 template-elements.docbook:756
+#: template-elements.docbook:1014 template-elements.docbook:1113
+#: template-elements.docbook:1294 template-elements.docbook:1595
+#: template-elements.docbook:1694 template-elements.docbook:1872
+#: template-elements.docbook:2152 template-elements.docbook:2251
+#, no-c-format
+msgid "True"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:667 template-elements.docbook:1024
+#: template-elements.docbook:1605 template-elements.docbook:2162
+#, no-c-format
+msgid "HAlignment"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:669
+#, no-c-format
+msgid "Sets the label's horizontal text alignment."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:678 template-elements.docbook:1035
+#: template-elements.docbook:1616 template-elements.docbook:2173
+#, no-c-format
+msgid "Horizontal Alignment"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:684 template-elements.docbook:1041
+#: template-elements.docbook:1622 template-elements.docbook:2179
+#, no-c-format
+msgid "Left"
+msgstr "Esquèrra"
+
+#. Tag: entry
+#: template-elements.docbook:688 template-elements.docbook:1045
+#: template-elements.docbook:1626 template-elements.docbook:2183
+#, no-c-format
+msgid "Center"
+msgstr "Centre"
+
+#. Tag: entry
+#: template-elements.docbook:692 template-elements.docbook:1049
+#: template-elements.docbook:1630 template-elements.docbook:2187
+#, no-c-format
+msgid "Right"
+msgstr "Drecha"
+
+#. Tag: sgmltag
+#: template-elements.docbook:701 template-elements.docbook:1058
+#: template-elements.docbook:1639 template-elements.docbook:2196
+#, no-c-format
+msgid "VAlignment"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:703
+#, no-c-format
+msgid "Sets the label's vertical text alignment."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:712 template-elements.docbook:1069
+#: template-elements.docbook:1650 template-elements.docbook:2207
+#, no-c-format
+msgid "Vertical Alignment"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:718 template-elements.docbook:1075
+#: template-elements.docbook:1656 template-elements.docbook:2213
+#, no-c-format
+msgid "<entry>Top</entry>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:722 template-elements.docbook:1079
+#: template-elements.docbook:1660 template-elements.docbook:2217
+#, no-c-format
+msgid "Middle"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:726 template-elements.docbook:1083
+#: template-elements.docbook:1664 template-elements.docbook:2221
+#, no-c-format
+msgid "Bottom"
+msgstr "Inferior"
+
+#. Tag: sgmltag
+#: template-elements.docbook:735 template-elements.docbook:1092
+#: template-elements.docbook:1673 template-elements.docbook:2230
+#, no-c-format
+msgid "WordWrap"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:737
+#, no-c-format
+msgid "Sets the word wrap flag for the label's text."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:746 template-elements.docbook:1103
+#: template-elements.docbook:1684 template-elements.docbook:2241
+#, no-c-format
+msgid "Word Wrap"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:773
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">Field</sgmltag> element defines a report "
+"object used to draw data on a report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:778
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT Field EMPTY&gt;\n"
+"&lt;!ATTLIST Field\n"
+"     Field           CDATA #REQUIRED\n"
+"     Text            CDATA #REQUIRED\n"
+"     X               CDATA #REQUIRED\n"
+"     Y               CDATA #REQUIRED\n"
+"     Width           CDATA #REQUIRED\n"
+"     Height          CDATA #REQUIRED\n"
+"     BackgroundColor CDATA #REQUIRED\n"
+"     ForegroundColor CDATA #REQUIRED\n"
+"     BorderColor     CDATA #REQUIRED\n"
+"     BorderWidth     CDATA #REQUIRED\n"
+"     BorderStyle     CDATA #REQUIRED\n"
+"     FontFamily      CDATA #REQUIRED\n"
+"     FontSize        CDATA #REQUIRED\n"
+"     FontWeight      CDATA #REQUIRED\n"
+"     FontItalic      CDATA #REQUIRED\n"
+"     HAlignment      CDATA #REQUIRED\n"
+"     VAlignment      CDATA #REQUIRED\n"
+"     WordWrap        CDATA #REQUIRED\n"
+"     DataType        CDATA #REQUIRED\n"
+"     DateFormat      CDATA #REQUIRED\n"
+"     Precision       CDATA #REQUIRED\n"
+"     Currency        CDATA #REQUIRED\n"
+"     NegValueColor   CDATA #REQUIRED\n"
+"     CommaSeparator  CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:789 template-elements.docbook:1370
+#, no-c-format
+msgid ""
+"Sets the data field for the object. This is an attribute of a <sgmltag class="
+"\"attribute\">row</sgmltag> element in a data file."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:799 template-elements.docbook:1380
+#: template-elements.docbook:1936
+#, no-c-format
+msgid "Not used."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:808 template-elements.docbook:1389
+#: template-elements.docbook:1945
+#, no-c-format
+msgid ""
+"Sets the x coordinate (relative to the section's upper left corner) for "
+"positioning the field."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:817 template-elements.docbook:1398
+#: template-elements.docbook:1954
+#, no-c-format
+msgid ""
+"Sets the y coordinate (relative to the section's upper left corner) for "
+"positioning the field."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:826 template-elements.docbook:1407
+#: template-elements.docbook:1963
+#, no-c-format
+msgid "Sets the width of the field."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:835 template-elements.docbook:1416
+#: template-elements.docbook:1972
+#, no-c-format
+msgid "Sets the height of the field."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:844 template-elements.docbook:1425
+#: template-elements.docbook:1981
+#, no-c-format
+msgid ""
+"Sets the background color of the field. The color is defined as an RGB (Red "
+"Green Blue) value (r,g,b). r, g and b must be in the range 0..255."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:854 template-elements.docbook:1435
+#: template-elements.docbook:1991
+#, no-c-format
+msgid ""
+"Sets the foreground color of the field. The color is defined as an RGB (Red "
+"Green Blue) value (r,g,b). r, g and b must be in the range 0..255."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:864 template-elements.docbook:1445
+#: template-elements.docbook:2002
+#, no-c-format
+msgid ""
+"Sets the border color of the field. The color is defined as an RGB (Red "
+"Green Blue) value (r,g,b). r, g and b must be in the range 0..255."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:874 template-elements.docbook:1455
+#: template-elements.docbook:2012
+#, no-c-format
+msgid "Sets the border width for the field."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:883 template-elements.docbook:1464
+#: template-elements.docbook:2021
+#, no-c-format
+msgid "Sets the border style for the field."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:929 template-elements.docbook:1510
+#: template-elements.docbook:2067
+#, no-c-format
+msgid "Sets the font family for the field's text."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:943 template-elements.docbook:1524
+#: template-elements.docbook:2081
+#, no-c-format
+msgid "Sets the font size for the field's text."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:952 template-elements.docbook:1533
+#: template-elements.docbook:2090
+#, no-c-format
+msgid "Sets the font weight for the field's text."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:995 template-elements.docbook:1576
+#: template-elements.docbook:2133
+#, no-c-format
+msgid "Sets the font italic flag for the field's text."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1026 template-elements.docbook:1607
+#: template-elements.docbook:2164
+#, no-c-format
+msgid "Sets the field's horizontal text alignment."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1060
+#, no-c-format
+msgid "Sets the field's vertical text alignment"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1094 template-elements.docbook:1675
+#: template-elements.docbook:2232
+#, no-c-format
+msgid "Sets the word wrap flag for the field's text."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1125 template-elements.docbook:1703
+#, no-c-format
+msgid "DataType"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1127 template-elements.docbook:1705
+#, no-c-format
+msgid "Sets the field's data type."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1136 template-elements.docbook:1714
+#, no-c-format
+msgid "Data Type"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1142 template-elements.docbook:1720
+#, no-c-format
+msgid "String"
+msgstr "Cadena"
+
+#. Tag: entry
+#: template-elements.docbook:1146 template-elements.docbook:1724
+#, no-c-format
+msgid "Integer"
+msgstr "Entièr"
+
+#. Tag: entry
+#: template-elements.docbook:1150 template-elements.docbook:1728
+#, no-c-format
+msgid "Float"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1154 template-elements.docbook:1732
+#, no-c-format
+msgid "Date"
+msgstr "Data"
+
+#. Tag: entry
+#: template-elements.docbook:1158 template-elements.docbook:1736
+#, no-c-format
+msgid "<entry>Currency</entry>"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1167 template-elements.docbook:1745
+#: template-elements.docbook:2260
+#, no-c-format
+msgid "DateFormat"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1169 template-elements.docbook:1747
+#: template-elements.docbook:2262
+#, no-c-format
+msgid ""
+"Sets the field's date format. For this to work, the format of the date from "
+"the data document must be in the format mm/dd/yyyy or mm-dd-yyyy, otherwise "
+"the original date format is used. If the data type is other than date, set "
+"this to <sgmltag class=\"attvalue\">0</sgmltag>."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1181 template-elements.docbook:1759
+#: template-elements.docbook:2274
+#, no-c-format
+msgid "Date Format"
+msgstr "Format de data"
+
+#. Tag: entry
+#: template-elements.docbook:1187 template-elements.docbook:1765
+#: template-elements.docbook:2280
+#, no-c-format
+msgid "m/d/yy"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1191 template-elements.docbook:1769
+#: template-elements.docbook:2284
+#, no-c-format
+msgid "m-d-yy"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1195 template-elements.docbook:1773
+#: template-elements.docbook:2288
+#, no-c-format
+msgid "mm/dd/yy"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1199 template-elements.docbook:1777
+#: template-elements.docbook:2292
+#, no-c-format
+msgid "mm-dd-yy"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1203 template-elements.docbook:1781
+#: template-elements.docbook:2296
+#, no-c-format
+msgid "m/d/yyyy"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1207 template-elements.docbook:1785
+#: template-elements.docbook:2300
+#, no-c-format
+msgid "m-d-yyyy"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1210 template-elements.docbook:1788
+#: template-elements.docbook:2303
+#, no-c-format
+msgid "<sgmltag>6</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1211 template-elements.docbook:1789
+#: template-elements.docbook:2304
+#, no-c-format
+msgid "mm/dd/yyyy"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1214 template-elements.docbook:1792
+#: template-elements.docbook:2307
+#, no-c-format
+msgid "<sgmltag>7</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1215 template-elements.docbook:1793
+#: template-elements.docbook:2308
+#, no-c-format
+msgid "mm-dd-yyyy"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1218 template-elements.docbook:1796
+#: template-elements.docbook:2311
+#, no-c-format
+msgid "<sgmltag>8</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1219 template-elements.docbook:1797
+#: template-elements.docbook:2312
+#, no-c-format
+msgid "yyyy/m/d"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1222 template-elements.docbook:1800
+#: template-elements.docbook:2315
+#, no-c-format
+msgid "<sgmltag>9</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1223 template-elements.docbook:1801
+#: template-elements.docbook:2316
+#, no-c-format
+msgid "yyyy-m-d"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1226 template-elements.docbook:1804
+#: template-elements.docbook:2319
+#, no-c-format
+msgid "<sgmltag>10</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1227 template-elements.docbook:1805
+#: template-elements.docbook:2320
+#, no-c-format
+msgid "dd.mm.yy"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1230 template-elements.docbook:1808
+#: template-elements.docbook:2323
+#, no-c-format
+msgid "<sgmltag>11</sgmltag>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1231 template-elements.docbook:1809
+#: template-elements.docbook:2324
+#, no-c-format
+msgid "dd.mm.yyyy"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1240 template-elements.docbook:1818
+#: template-elements.docbook:2333
+#, no-c-format
+msgid "Precision"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1242 template-elements.docbook:1820
+#: template-elements.docbook:2335
+#, no-c-format
+msgid ""
+"Sets the field's numeric precision. If the data type is other than a numeric "
+"type, set this to 0."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1250 template-elements.docbook:1828
+#, no-c-format
+msgid "<sgmltag>Currency</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1252
+#, no-c-format
+msgid ""
+"Sets the field's currency symbol If the data type is other than currency, "
+"set this to <sgmltag class=\"attvalue\">36</sgmltag> ($). The value is a "
+"number representing a Unicode character."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1261 template-elements.docbook:1839
+#, no-c-format
+msgid "NegValueColor"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1263 template-elements.docbook:1841
+#, no-c-format
+msgid ""
+"Sets the color for negative numeric values. The color is defined as an RGB "
+"(Red Green Blue) value (r,g,b). r, g and b must be in the range 0..255. If "
+"data is other than a numeric type, set to 255,0,0."
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1272 template-elements.docbook:1850
+#, no-c-format
+msgid "CommaSeparator"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1274 template-elements.docbook:1852
+#, no-c-format
+msgid ""
+"Sets whether commas are used in numeric fields. If the data type is other "
+"than a numeric type, set this to <sgmltag class=\"attvalue\">0</sgmltag>."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1284 template-elements.docbook:1862
+#, no-c-format
+msgid "Comma Separator"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1311
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">CalculatedField</sgmltag> element defines a "
+"report object used to draw calculated values on a report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:1316
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT CalculatedField EMPTY&gt;\n"
+"&lt;!ATTLIST CalculatedField\n"
+"     CalculationType CDATA #REQUIRED\n"
+"     Field           CDATA #REQUIRED\n"
+"     Text            CDATA #REQUIRED\n"
+"     X               CDATA #REQUIRED\n"
+"     Y               CDATA #REQUIRED\n"
+"     Width           CDATA #REQUIRED\n"
+"     Height          CDATA #REQUIRED\n"
+"     BackgroundColor CDATA #REQUIRED\n"
+"     ForegroundColor CDATA #REQUIRED\n"
+"     BorderColor     CDATA #REQUIRED\n"
+"     BorderWidth     CDATA #REQUIRED\n"
+"     BorderStyle     CDATA #REQUIRED\n"
+"     FontFamily      CDATA #REQUIRED\n"
+"     FontSize        CDATA #REQUIRED\n"
+"     FontWeight      CDATA #REQUIRED\n"
+"     FontItalic      CDATA #REQUIRED\n"
+"     HAlignment      CDATA #REQUIRED\n"
+"     VAlignment      CDATA #REQUIRED\n"
+"     WordWrap        CDATA #REQUIRED\n"
+"     DataType        CDATA #REQUIRED\n"
+"     DateFormat      CDATA #REQUIRED\n"
+"     Precision       CDATA #REQUIRED\n"
+"     Currency        CDATA #REQUIRED\n"
+"     NegValueColor   CDATA #REQUIRED\n"
+"     CommaSeparator  CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1325
+#, no-c-format
+msgid "CalculationType"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1327
+#, no-c-format
+msgid "Sets the calculation type for the field."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1336
+#, no-c-format
+msgid "Calculation"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1342
+#, no-c-format
+msgid "Count"
+msgstr "Contar"
+
+#. Tag: entry
+#: template-elements.docbook:1346
+#, no-c-format
+msgid "<entry>Sum</entry>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1350
+#, no-c-format
+msgid "Average"
+msgstr "Mejana"
+
+#. Tag: entry
+#: template-elements.docbook:1354
+#, no-c-format
+msgid "Variance"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1358
+#, no-c-format
+msgid "Std Deviation"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1641 template-elements.docbook:2198
+#, no-c-format
+msgid "Sets the field's vertical text alignment."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1830
+#, no-c-format
+msgid ""
+"Sets the field's currency symbol. If the data type is other than currency, "
+"set this to <sgmltag class=\"attvalue\">36</sgmltag> ($). The value is a "
+"number representing an unicode character."
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1890
+#, no-c-format
+msgid ""
+"The <sgmltag class=\"element\">Special</sgmltag> element defines a report "
+"object used to draw page numbers and the current date on a report."
+msgstr ""
+
+#. Tag: synopsis
+#: template-elements.docbook:1895
+#, no-c-format
+msgid ""
+"&lt;!ELEMENT Special EMPTY&gt;\n"
+"&lt;!ATTLIST Special\n"
+"     Type            CDATA #REQUIRED\n"
+"     Text            CDATA #REQUIRED\n"
+"     X               CDATA #REQUIRED\n"
+"     Y               CDATA #REQUIRED\n"
+"     Width           CDATA #REQUIRED\n"
+"     Height          CDATA #REQUIRED\n"
+"     BackgroundColor CDATA #REQUIRED\n"
+"     ForegroundColor CDATA #REQUIRED\n"
+"     BorderColor     CDATA #REQUIRED\n"
+"     BorderWidth     CDATA #REQUIRED\n"
+"     BorderStyle     CDATA #REQUIRED\n"
+"     FontFamily      CDATA #REQUIRED\n"
+"     FontSize        CDATA #REQUIRED\n"
+"     FontWeight      CDATA #REQUIRED\n"
+"     FontItalic      CDATA #REQUIRED\n"
+"     HAlignment      CDATA #REQUIRED\n"
+"     VAlignment      CDATA #REQUIRED\n"
+"     WordWrap        CDATA #REQUIRED\n"
+"     DateFormat      CDATA #REQUIRED&gt;"
+msgstr ""
+
+#. Tag: sgmltag
+#: template-elements.docbook:1904
+#, no-c-format
+msgid "<sgmltag>Type</sgmltag>"
+msgstr ""
+
+#. Tag: para
+#: template-elements.docbook:1906
+#, no-c-format
+msgid "Sets the type of special object."
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1915
+#, no-c-format
+msgid "<entry>Type</entry>"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1921
+#, no-c-format
+msgid "Current Date"
+msgstr ""
+
+#. Tag: entry
+#: template-elements.docbook:1925
+#, no-c-format
+msgid "Page Number"
+msgstr ""

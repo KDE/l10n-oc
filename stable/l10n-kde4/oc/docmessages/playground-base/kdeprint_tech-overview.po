@@ -1,0 +1,437 @@
+# translation of kdeprint_tech-overview.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeprint_tech-overview\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2007-12-22 18:47+0000\n"
+"PO-Revision-Date: 2008-01-01 00:41+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdebase/doc/kdeprint/tech-overview.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 248893\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: title
+#: tech-overview.docbook:2
+#, no-c-format
+msgid "Technical Overview"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:4
+#, no-c-format
+msgid ""
+"This chapter aims to give a technical overview of &kdeprint; which non-"
+"programmers can comprehend."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:7
+#, no-c-format
+msgid ""
+"&kdeprint; is a new and revolutionary tool to give easy access to printing "
+"services for both &kde; users and &kde; developers."
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:11
+#, no-c-format
+msgid "A Brief Description of &kdeprint;"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:13
+#, no-c-format
+msgid ""
+"You can access the functions of &kdeprint; in different ways: through the "
+"Printing Manger in the &kcontrol;, through the <command>kprinter</command> "
+"command or through the dialog that pops up if you want to print."
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:19
+#, no-c-format
+msgid "What it is <emphasis>not</emphasis>"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:21
+#, no-c-format
+msgid ""
+"&kdeprint; is <emphasis>not</emphasis> a replacement for the printing "
+"subsystem itself. &kdeprint; does <emphasis>not</emphasis> therefore give "
+"provision for spooling, and it does <emphasis>not</emphasis> do the basic "
+"processing of &PostScript; or other print data."
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:30
+#, no-c-format
+msgid "What it <emphasis>is</emphasis>"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:31
+#, no-c-format
+msgid ""
+"&kdeprint; is an intermediate layer between the spooling and the data "
+"processing print subsystem (as installed), and the application that seeks to "
+"print. &kdeprint; provides a common interface for &kde; developers and &kde; "
+"users, to various supported print subsystems. At the same time, it is "
+"customizable, and highly configurable."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:37
+#, no-c-format
+msgid ""
+"&kdeprint; is easy to use for both &kde; developers and end-users. "
+"Developers can port their applications, with minimal changes, to use "
+"&kdeprint; instead of the old &Qt; print <quote>system</quote>. Users can "
+"easily choose and configure their print subsystem."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:42
+#, no-c-format
+msgid ""
+"For a reference to new &kde; users: &Qt; is the basic library and graphical "
+"toolkit, which is used by all &kde; applications; &Qt; is developed by "
+"TrollTech, a Norwegian software company."
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:51
+#, no-c-format
+msgid "&kdeprint; -- Different Usage for Different People"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:53
+#, no-c-format
+msgid "&kdeprint; has different faces for different people."
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:56
+#, no-c-format
+msgid "What users and administrators can do with &kdeprint;"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:58
+#, no-c-format
+msgid ""
+"&kdeprint; allows users and/or administrators, depending on their rights, "
+"access to printing subsystems (&CUPS;, <acronym>LPD</acronym>, "
+"<acronym>RLPR</acronym>, <application>LPRng</application>, <application>PDQ</"
+"application> &etc;) through a &kde; graphical user interface (&GUI;). Using "
+"&kdeprint;, they can print, administer jobs, printers and the printing "
+"daemon, all in a comfortable manner."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:65
+#, no-c-format
+msgid ""
+"Experienced users will like the capability to plug any working filter for "
+"the print data between the output of their application and the input, into "
+"the chosen print subsystem. Some examples for this already ship with "
+"<quote>plain vanilla</quote> &kdeprint;. Read on."
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:75
+#, no-c-format
+msgid "What &kde; developers can do with it..."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:77
+#, no-c-format
+msgid ""
+"If a &kde; developer needs printing access for his application, he does not "
+"code the printing functions from scratch. Before &kde; 2.2 this service was "
+"provided by the <classname>QPrinter</classname> class, a library function of "
+"the &Qt; Toolkit. The <classname>QPrinter</classname> class relied on the "
+"out-moded <quote>Line Printer Daemon</quote> (<acronym>LPD</acronym>). The "
+"&kdeprint; library bases itself firmly on the more modern Common &UNIX; "
+"Printing System (&CUPS;), while at the same time keeping backward "
+"compatibility with <acronym>LPD</acronym> and other legacy, or less "
+"elaborate, print systems. It also <quote>leaves the door open</quote> for "
+"any new development that might occur."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:89
+#, no-c-format
+msgid ""
+"For &kde; developers to use the new &kdeprint; class in their applications, "
+"they require only minimal changes to their code: for every call of "
+"<classname>QPrinter</classname>, they just need to change this to "
+"<classname>KPrinter</classname>. Replacing one (!) letter in a few spots, "
+"and automatically they are done; their application can then use all of the "
+"features of the new &kdeprint; library."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:96
+#, no-c-format
+msgid ""
+"More ambitious developers, or ones with special requirements, can do more: "
+"despite &kdeprint;'s feature-rich framework, they are still able to "
+"customize the print dialog of their application by creating an additional "
+"<quote>Tab</quote>, where their extensions to the standard &kdeprint; will "
+"feel right at home."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:103
+#, no-c-format
+msgid ""
+"This last mentioned feature has not been used widely inside &kde; so far, as "
+"developers are not yet fully aware of &kdeprint;'s power. Expect more of "
+"this in the near future. One example I discovered is the &kcron; "
+"application. It lets you edit the crontab through a &GUI;. The developers "
+"have implemented a printing feature that lets you (or <systemitem class="
+"\"username\">root</systemitem>) choose if you want to print the whole of "
+"crontab (for all users) or just the part that is marked. You can see the "
+"effects on &kdeprint; in the following screenshots."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:113
+#, no-c-format
+msgid "This shot shows a sample from the &kcron; utility."
+msgstr ""
+
+#. Tag: screeninfo
+#: tech-overview.docbook:115
+#, no-c-format
+msgid ""
+"&kcron; utility: a small sample of a system's cronjobs as shown through the "
+"&kde; <acronym>GUI</acronym>&GUI;."
+msgstr ""
+
+#. Tag: phrase
+#: tech-overview.docbook:122
+#, no-c-format
+msgid ""
+"The &kcron; developers let you choose to print the whole of the cron table "
+"or just the marked part of it."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:128
+#, no-c-format
+msgid ""
+"The dialog to configure &kcron;'s printing options: the additional tab "
+"titled <guilabel>Cron Options</guilabel> is from inside &kcron;, not "
+"&kdeprint;; it is a special extension added by the &kcron; developers for "
+"printing purposes, not originating from, but executed by &kdeprint;. "
+"Developers of other applications are free to implement their own goodies, if "
+"they feel need for it."
+msgstr ""
+
+#. Tag: screeninfo
+#: tech-overview.docbook:137
+#, no-c-format
+msgid "<screeninfo>&kcron;'s addition to the &kdeprint; dialog.</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: tech-overview.docbook:143
+#, no-c-format
+msgid "<phrase>&kcron;'s addition to the &kdeprint; dialog.</phrase>"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:145
+#, no-c-format
+msgid "<para>&kcron;'s addition to the &kdeprint; dialog.</para>"
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:153
+#, no-c-format
+msgid "What &kdeprint; offers to everybody..."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:155
+#, no-c-format
+msgid ""
+"&kdeprint;'s easy-to-use interface for all supported print subsystems of "
+"course does not eliminate basic traditional weaknesses of some of those "
+"systems. But it smooths some rough edges. Different users may use different "
+"printing systems on the same box. A user is free to even switch <quote>on "
+"the fly</quote>, from the print dialog, the print subsystem to be used for "
+"the next job. (This is possible if different systems are installed in a way "
+"that they don't <quote>get in each other's way</quote>.)"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:164
+#, no-c-format
+msgid ""
+"Most &UNIX; users are used to <acronym>LPD</acronym> printing. <acronym>LPD</"
+"acronym> provides only basic printing functions, is very inflexible and does "
+"not utilize the many options of more modern print systems like &CUPS;. While "
+"also working remotely over any distance (like every TCP/IP based protocol), "
+"<acronym>LPD</acronym> lacks bi-directional communication, authentication, "
+"access control and encryption support."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:172
+#, no-c-format
+msgid "&kdeprint; can use &CUPS; to support:"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:176
+#, no-c-format
+msgid "Querying the <acronym>LAN</acronym> for available printers,"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:179
+#, no-c-format
+msgid "Basic, Digest, and Certificate Authentication,"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:182
+#, no-c-format
+msgid ""
+"Access Control based on <acronym>IP</acronym> addresses, net addresses, "
+"netmasks, host- and domain names,"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:186
+#, no-c-format
+msgid ""
+"and 128-Bit TLS or SSL3 encryption of print data, to prevent eavesdropping, "
+"or at least make it much more difficult."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:191
+#, no-c-format
+msgid ""
+"This makes &kdeprint; a much more robust and reliable solution than using "
+"the venerable <acronym>LPD</acronym>."
+msgstr ""
+
+#. Tag: title
+#: tech-overview.docbook:196
+#, no-c-format
+msgid "How to access &kdeprint;"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:198
+#, no-c-format
+msgid "You get access to &kdeprint;, or parts of it, in four different ways:"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:202
+#, no-c-format
+msgid ""
+"through your applications: if you call the printing dialog (either "
+"<menuchoice><guilabel>File</guilabel> <guilabel>Print...</guilabel></"
+"menuchoice>) or the button with the little printer icon on it; this opens "
+"the printing dialog."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:208
+#, no-c-format
+msgid ""
+"through the typed command <command>kprinter</command> in a "
+"<application>terminal</application> or a &konsole; window or from the "
+"<guilabel>Run Command...</guilabel> mini-<acronym>CLI</acronym> window: this "
+"also opens the printing dialog."
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:213
+#, no-c-format
+msgid ""
+"from the <inlinemediaobject><imageobject> <imagedata fileref=\"kcontrol-icon."
+"png\" format=\"PNG\"/></imageobject> </inlinemediaobject> button, starting "
+"&kcontrol;, and then go to <menuchoice><guilabel>System</"
+"guilabel><guilabel>Printing Manager</guilabel></menuchoice>. This opens the "
+"&kdeprint; administration which is part of the &kcontrolcenter; and also "
+"lets you switch to other parts of the &kcontrol;"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:221
+#, no-c-format
+msgid ""
+"from a command line (&konsole; or mini-<acronym>CLI</acronym>) type "
+"<userinput> <command>kcmshell</command> <option>printmgr</option></"
+"userinput>. This opens just the &kdeprint; part of &kcontrol; to change your "
+"settings"
+msgstr ""
+
+#. Tag: screeninfo
+#: tech-overview.docbook:228
+#, no-c-format
+msgid ""
+"&kprinter; dialog to be started from <guilabel>Run Command...</guilabel> "
+"window"
+msgstr ""
+
+#. Tag: phrase
+#: tech-overview.docbook:234
+#, no-c-format
+msgid ""
+"<phrase>Starting the &kprinter; dialog from a <guilabel>Run Command...</"
+"guilabel> window.</phrase>"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:236
+#, no-c-format
+msgid ""
+"<para>Starting the &kprinter; dialog from a <guilabel>Run Command...</"
+"guilabel> window.</para>"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:241
+#, no-c-format
+msgid ""
+"Here is a &kivio; drawing of the &kprinter; dialog as it pops up after being "
+"started... You can always add a new printer by clicking on the small "
+"<guiicon>Wizard</guiicon> button (marked red/yellow in this drawing)."
+msgstr ""
+
+#. Tag: screeninfo
+#: tech-overview.docbook:248
+#, no-c-format
+msgid ""
+"<screeninfo>&kprinter; dialog started (&kivio; draft drawing)</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: tech-overview.docbook:255
+#, no-c-format
+msgid "<phrase>&kprinter; dialog started (&kivio; draft drawing)</phrase>"
+msgstr ""
+
+#. Tag: para
+#: tech-overview.docbook:256
+#, no-c-format
+msgid "<para>&kprinter; dialog started (&kivio; draft drawing)</para>"
+msgstr ""
