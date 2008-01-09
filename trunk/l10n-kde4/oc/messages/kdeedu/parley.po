@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-28 06:14+0100\n"
+"POT-Creation-Date: 2008-01-09 07:19+0100\n"
 "PO-Revision-Date: 2008-01-01 00:42+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,63 +17,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: parley.cpp:268
-msgid "Do you really want to delete the selected entry?"
-msgstr ""
-
-#: parley.cpp:275
-msgid "Do you really want to delete the selected entries?"
-msgstr ""
-
-#: parley.cpp:350
-#, kde-format
-msgid "1 entry with the same content was found and removed."
-msgid_plural "%1 entries with the same content were found and removed."
-msgstr[0] ""
-msgstr[1] ""
-
-#: parley.cpp:353
-msgid "Remove Duplicates"
-msgstr ""
-
-#: parley.cpp:508
-#, kde-format
-msgid "Comment: %1"
-msgstr "Comentari&nbsp;: %1"
-
-#: parley.cpp:511
-#, kde-format
-msgid "Pronunciation: %1"
-msgstr ""
-
-#: parley.cpp:515
-#, kde-format
-msgid " (%1)"
-msgstr ""
-
-#: parley.cpp:518
-#, kde-format
-msgid "Type: %1"
-msgstr ""
-
-#: parley.cpp:556
+#: parley.cpp:405
 #, kde-format
 msgctxt "@title:window document properties"
 msgid "Properties for %1"
 msgstr ""
 
-#: docprop-dialogs/UsageOptPage.cpp:42
-msgid "Usage Labels"
+#: parley.cpp:453
+msgid ""
+"Vocabulary is modified.\n"
+"\n"
+"Save file before exit?\n"
 msgstr ""
 
-#: docprop-dialogs/UsageOptPage.cpp:83 docprop-dialogs/UsageOptPage.cpp:111
-msgctxt "usage (area) of an expression"
-msgid "Usage Description"
+#: parley.cpp:493
+msgid "Lessons"
 msgstr ""
 
-#: docprop-dialogs/UsageOptPage.cpp:83 docprop-dialogs/UsageOptPage.cpp:111
-msgid "Enter usage description:"
+#: parley.cpp:505
+msgid ""
+"Right click to add, delete, or rename lessons. \n"
+"With the checkboxes you can select which lessons you want to practice. \n"
+"Only checked lessons [x] will be asked in the tests!"
 msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./configure-practice/thresholdoptions.ui line 151
+#: parley.cpp:520 rc.cpp:583
+msgid "Word Types"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./configure-practice/configurepracticewidget.ui line 65
+#: parley.cpp:556 rc.cpp:646
+msgid "Conjugation"
+msgstr ""
+
+#: parley.cpp:570
+msgid "Declination"
+msgstr ""
+
+#: parley.cpp:581
+msgid "Comparison forms"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./configure-practice/configurepracticewidget.ui line 38
+#: parley.cpp:596 practice/MCQueryDlg.cpp:43 rc.cpp:637
+msgid "Multiple Choice"
+msgstr ""
+
+#: parley.cpp:608
+msgid "Pronunciation IPA symbols?"
+msgstr ""
+
+#: parley.cpp:617
+#, fuzzy
+#| msgid "Image:"
+msgid "Image"
+msgstr "Imatge :"
+
+#: parley.cpp:628
+#, fuzzy
+#| msgid "Second"
+msgid "Sound"
+msgstr "Segonda"
 
 #: docprop-dialogs/TypeOptPage.cpp:36
 msgid "Type Descriptions"
@@ -118,15 +126,15 @@ msgstr ""
 msgid "%1 is not a special type."
 msgstr ""
 
-#: docprop-dialogs/TenseOptPage.cpp:42
+#: docprop-dialogs/TenseOptPage.cpp:43
 msgid "Tense Descriptions"
 msgstr ""
 
-#: docprop-dialogs/TenseOptPage.cpp:78 docprop-dialogs/TenseOptPage.cpp:101
+#: docprop-dialogs/TenseOptPage.cpp:79 docprop-dialogs/TenseOptPage.cpp:102
 msgid "Tense Description"
 msgstr ""
 
-#: docprop-dialogs/TenseOptPage.cpp:78 docprop-dialogs/TenseOptPage.cpp:101
+#: docprop-dialogs/TenseOptPage.cpp:79 docprop-dialogs/TenseOptPage.cpp:102
 msgid "Enter tense description:"
 msgstr ""
 
@@ -142,7 +150,8 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 72
-#: kvttablemodel.cpp:167 rc.cpp:1268 kvtlessonmodel.cpp:127
+#: kvttablemodel.cpp:180 rc.cpp:1313 kvtlessonmodel.cpp:49
+#: vocabulary/lessonmodel.cpp:343 vocabulary/containermodel.cpp:381
 msgid "Lesson"
 msgstr ""
 
@@ -323,25 +332,15 @@ msgctxt "Edit language properties"
 msgid "Properties for %1"
 msgstr ""
 
-#: language-dialogs/grammardialog.cpp:35
+#: language-dialogs/grammardialog.cpp:33
 msgid "Grammar Properties"
 msgstr ""
 
-#: language-dialogs/grammardialog.cpp:43
-msgctxt "word types"
-msgid "Types"
-msgstr "Tipes"
-
 #. i18n: tag string
 #. i18n: file ./configure-practice/conjugationoptionswidget.ui line 23
-#: language-dialogs/grammardialog.cpp:46 rc.cpp:613
+#: language-dialogs/grammardialog.cpp:44 rc.cpp:619
 msgid "Tenses"
 msgstr ""
-
-#: language-dialogs/grammardialog.cpp:49
-msgctxt "usage (area) of an expression"
-msgid "Usage"
-msgstr "Utilizacion"
 
 #: language-dialogs/editlanguagedialogpage.cpp:84
 msgid "No icon"
@@ -349,6 +348,19 @@ msgstr ""
 
 #: language-dialogs/editlanguagedialogpage.cpp:94
 msgid "without name"
+msgstr ""
+
+#: practice/practicedialog.cpp:68
+#, kde-format
+msgctxt "@popupmessage"
+msgid ""
+"Either the language set up is incorrect or no spellchecker was installed for "
+"%1 (%2)."
+msgstr ""
+
+#: practice/practicedialog.cpp:68
+msgctxt "@title of a popup"
+msgid "No Spell Checker Available"
 msgstr ""
 
 #: practice/practicesummarydialog.cpp:28
@@ -359,44 +371,44 @@ msgstr ""
 msgid "Comparison Training"
 msgstr ""
 
-#: practice/testentrymanager.cpp:139
+#: practice/testentrymanager.cpp:141
 msgid ""
 "<p>The lessons you selected for the practice contain no vocabulary.</"
 "p><p>Hint: To select a lesson set a checkmark next to it in the lesson "
 "column on the left.</p><p>Would you like to include all lessons?</p>"
 msgstr ""
 
-#: practice/testentrymanager.cpp:139
+#: practice/testentrymanager.cpp:141
 msgid "No Entries in Selected Lessons"
 msgstr ""
 
-#: practice/testentrymanager.cpp:211
+#: practice/testentrymanager.cpp:214
 msgid ""
 "You selected to practice the genders of nouns, but no appropriate nouns "
 "could be found. Use \"Edit Entry\" and select Noun as word type and the "
 "gender."
 msgstr ""
 
-#: practice/testentrymanager.cpp:212 practice/testentrymanager.cpp:218
-#: practice/testentrymanager.cpp:222
+#: practice/testentrymanager.cpp:215 practice/testentrymanager.cpp:221
+#: practice/testentrymanager.cpp:225
 msgid "No valid word type found"
 msgstr ""
 
-#: practice/testentrymanager.cpp:217
+#: practice/testentrymanager.cpp:220
 msgid ""
 "You selected to practice comparison forms, but no adjectives or adverbs "
 "containing comparison forms could be found. Use \"Edit Entry\" and select "
 "Adverb or Adjective as word type and enter the comparison forms."
 msgstr ""
 
-#: practice/testentrymanager.cpp:222
+#: practice/testentrymanager.cpp:225
 msgid ""
 "You selected to practice conjugations, but no vocabulary containing "
 "conjugations in the tenses you selected could be found. Use \"Edit Entry\" "
 "and select Verb as word type and enter the conjugation forms."
 msgstr ""
 
-#: practice/testentrymanager.cpp:228
+#: practice/testentrymanager.cpp:231
 msgid ""
 "<p>The lessons you selected for the practice contain no entries when the "
 "threshold settings are respected.</p><p>Hint: To configure the thresholds "
@@ -404,18 +416,18 @@ msgid ""
 "you like to ignore the threshold setting?</p>"
 msgstr ""
 
-#: practice/testentrymanager.cpp:228
+#: practice/testentrymanager.cpp:231
 msgid "No Entries with Current Threshold Settings"
 msgstr ""
 
-#: practice/testentrymanager.cpp:559
+#: practice/testentrymanager.cpp:538
 msgid ""
 "The test dialog was not answered several times in a row.\n"
 "It is assumed that there is currently nobody in front of the screen, and for "
 "that reason the practice is stopped."
 msgstr ""
 
-#: practice/testentrymanager.cpp:563
+#: practice/testentrymanager.cpp:542
 msgid "Stopping Test"
 msgstr ""
 
@@ -428,77 +440,71 @@ msgstr ""
 msgid "Current tense is: %1"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:47
+#: practice/writtenpracticedialog.cpp:48
 msgid "Written Practice"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:175
+#: practice/writtenpracticedialog.cpp:176
 msgid "<font color=\"#188C18\">You are right!</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:178
+#: practice/writtenpracticedialog.cpp:179
 msgid "<font color=\"#222978\">Watch your capitalization!</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:181
+#: practice/writtenpracticedialog.cpp:182
 msgid ""
 "<font color=\"#8C1818\">I think you made a spelling mistake. But the word is "
 "right.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:184
+#: practice/writtenpracticedialog.cpp:185
 msgid "<font color=\"#8C1818\">You made a mistake.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:187
+#: practice/writtenpracticedialog.cpp:188
 msgid "<font color=\"#222978\">Your accentuation was wrong.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:190
+#: practice/writtenpracticedialog.cpp:191
 msgid "<font color=\"#222978\">The article is wrong.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:193
+#: practice/writtenpracticedialog.cpp:194
 msgid "<font color=\"#222978\">The article is missing.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:196
+#: practice/writtenpracticedialog.cpp:197
 msgid "<font color=\"#8C1818\">Watch out! This is a false friend!</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:199
+#: practice/writtenpracticedialog.cpp:200
 msgid "<font color=\"#8C1818\">Great, you entered a synonym.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:202
+#: practice/writtenpracticedialog.cpp:203
 msgid "<font color=\"#8C8C18\">Please enter something for me to check.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:205
+#: practice/writtenpracticedialog.cpp:206
 msgid ""
 "<font color=\"#8C1818\">I know that word, but are you sure it's the right "
 "one here?</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:209
+#: practice/writtenpracticedialog.cpp:210
 msgid "There is a mistake."
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:235
+#: practice/writtenpracticedialog.cpp:236
 msgid "The answer was wrong."
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:494 practice/MCQueryDlg.cpp:213
+#: practice/writtenpracticedialog.cpp:495 practice/MCQueryDlg.cpp:214
 msgid "Well done, you knew the correct answer."
 msgstr ""
 
-#. i18n: tag string
-#. i18n: file ./configure-practice/configurepracticewidget.ui line 38
-#: practice/MCQueryDlg.cpp:42 rc.cpp:631 entry-dialogs/EntryDlg.cpp:65
-msgid "Multiple Choice"
-msgstr ""
-
-#: practice/MCQueryDlg.cpp:226
+#: practice/MCQueryDlg.cpp:227
 msgid "Your answer was wrong."
 msgstr ""
 
@@ -524,7 +530,8 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 86
-#: practice/SimpleQueryDlg.cpp:115 rc.cpp:649
+#: practice/SimpleQueryDlg.cpp:115 rc.cpp:655
+#: vocabulary/vocabularymodel.cpp:292
 msgid "Paraphrase"
 msgstr ""
 
@@ -596,23 +603,35 @@ msgid "&Lesson"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file parleyui.rc line 38
+#. i18n: file parleyui.rc line 35
 #: rc.cpp:6
 msgid "&Practice"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file parleyui.rc line 52
+#. i18n: file parleyui.rc line 43
 #: rc.cpp:9
+msgid "Tools"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file parleyui.rc line 58
+#: rc.cpp:12
+msgid "&Help"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file parleyui.rc line 64
+#: rc.cpp:15
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
-#: rc.cpp:10
+#: rc.cpp:16
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:11
+#: rc.cpp:17
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
@@ -630,10 +649,6 @@ msgstr "yannig@marchegay.org"
 #. i18n: tag string
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 92
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 25
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 19
-#. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 20
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 26
@@ -642,38 +657,37 @@ msgstr "yannig@marchegay.org"
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 19
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 22
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 25
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 22
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 14
-#: rc.cpp:14 rc.cpp:32 rc.cpp:95 rc.cpp:153 rc.cpp:466 rc.cpp:469 rc.cpp:770
-#: rc.cpp:803 rc.cpp:827 rc.cpp:869 rc.cpp:896 rc.cpp:905 rc.cpp:971
-#: rc.cpp:1238 rc.cpp:1256
+#: rc.cpp:20 rc.cpp:38 rc.cpp:101 rc.cpp:159 rc.cpp:472 rc.cpp:475 rc.cpp:803
+#: rc.cpp:845 rc.cpp:872 rc.cpp:881 rc.cpp:956 rc.cpp:1283 rc.cpp:1301
 msgid "-"
 msgstr "-"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 49
-#: rc.cpp:17
+#: rc.cpp:23
 msgid "Type for Practice"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 91
-#: rc.cpp:20
+#: rc.cpp:26
 msgid "&New word type"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 98
-#: rc.cpp:23
+#: rc.cpp:29
 msgid "&Add subtype"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 111
-#: rc.cpp:26
+#: rc.cpp:32
 msgid "&Rename"
 msgstr ""
 
@@ -681,55 +695,55 @@ msgstr ""
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 124
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 93
-#: rc.cpp:29 rc.cpp:162
+#: rc.cpp:35 rc.cpp:168
 msgid "&Delete"
 msgstr "&Suprimir"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 25
-#: rc.cpp:35
+#: rc.cpp:41
 msgid "Language Elements"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 37
-#: rc.cpp:38
+#: rc.cpp:44
 msgid "Articles"
 msgstr "Articles"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 61
-#: rc.cpp:41
+#: rc.cpp:47
 msgid "&Male:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 71
-#: rc.cpp:44
+#: rc.cpp:50
 msgid "&Female:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 97
-#: rc.cpp:47
+#: rc.cpp:53
 msgid "Definite"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 170
-#: rc.cpp:50
+#: rc.cpp:56
 msgid "&Neutral:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 180
-#: rc.cpp:53
+#: rc.cpp:59
 msgid "Indefinite"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 196
-#: rc.cpp:56
+#: rc.cpp:62
 msgid "Personal Pronouns"
 msgstr ""
 
@@ -739,7 +753,9 @@ msgstr ""
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 136
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 92
-#: rc.cpp:59 rc.cpp:193 rc.cpp:917
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 93
+#: rc.cpp:65 rc.cpp:199 rc.cpp:893 rc.cpp:968
 msgid "Singular"
 msgstr ""
 
@@ -749,61 +765,63 @@ msgstr ""
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 210
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 166
-#: rc.cpp:62 rc.cpp:211 rc.cpp:935
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 241
+#: rc.cpp:68 rc.cpp:217 rc.cpp:911 rc.cpp:1004
 msgid "Plural"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 232
-#: rc.cpp:65
+#: rc.cpp:71
 msgid "&1. Person:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 265
-#: rc.cpp:68
+#: rc.cpp:74
 msgid "&2. Person:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 298
-#: rc.cpp:71
+#: rc.cpp:77
 msgid "3. Person:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 305
-#: rc.cpp:74
+#: rc.cpp:80
 msgid "M&ale:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 338
-#: rc.cpp:77
+#: rc.cpp:83
 msgid "F&emale:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 371
-#: rc.cpp:80
+#: rc.cpp:86
 msgid "Neu&ter:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 410
-#: rc.cpp:83
+#: rc.cpp:89
 msgid "Male/female have different conjugations"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 417
-#: rc.cpp:86
+#: rc.cpp:92
 msgid "A neutral conjugation form exists"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 424
-#: rc.cpp:89
+#: rc.cpp:95
 msgid "Dual conjugations"
 msgstr ""
 
@@ -813,31 +831,33 @@ msgstr ""
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 301
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 240
-#: rc.cpp:92 rc.cpp:229 rc.cpp:953
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 167
+#: rc.cpp:98 rc.cpp:235 rc.cpp:929 rc.cpp:986
 msgid "Dual"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 40
-#: rc.cpp:98
+#: rc.cpp:104
 msgid "General Document Properties"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 64
-#: rc.cpp:101
+#: rc.cpp:107
 msgid "&Title:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 80
-#: rc.cpp:104
+#: rc.cpp:110
 msgid "A title for your document."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 87
-#: rc.cpp:107
+#: rc.cpp:113
 msgid "&Authors:"
 msgstr ""
 
@@ -845,33 +865,31 @@ msgstr ""
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 97
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 327
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 106
-#: rc.cpp:110 rc.cpp:532 rc.cpp:785
+#: rc.cpp:116 rc.cpp:538
 msgid "&Comment:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 107
-#: rc.cpp:113
+#: rc.cpp:119
 msgid "&License:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 123
-#: rc.cpp:116
+#: rc.cpp:122
 msgid "Any additional information."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 136
-#: rc.cpp:119
+#: rc.cpp:125
 msgid "Cat&egory"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 146
-#: rc.cpp:122
+#: rc.cpp:128
 msgid "A general category into which your document belongs."
 msgstr ""
 
@@ -879,49 +897,49 @@ msgstr ""
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 153
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 125
-#: rc.cpp:125 rc.cpp:658
+#: rc.cpp:131 rc.cpp:664
 msgid "Languages"
 msgstr "Lengas"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 158
-#: rc.cpp:128
+#: rc.cpp:134
 msgid "Music"
 msgstr "Musica"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 163
-#: rc.cpp:131
+#: rc.cpp:137
 msgid "Geography"
 msgstr "Geografia"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 168
-#: rc.cpp:134
+#: rc.cpp:140
 msgid "Anatomy"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 173
-#: rc.cpp:137
+#: rc.cpp:143
 msgid "History"
 msgstr "Istoric"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 178
-#: rc.cpp:140
+#: rc.cpp:146
 msgid "Test Preparation"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 192
-#: rc.cpp:143
+#: rc.cpp:149
 msgid "Your name. You can also add an email address as contact information."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 206
-#: rc.cpp:146
+#: rc.cpp:152
 msgid ""
 "The license under which your document will be.\n"
 "If you consider contributing your file to KDE in the future, an appropriate "
@@ -930,73 +948,73 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 213
-#: rc.cpp:150
+#: rc.cpp:156
 msgid "GPLv2 (GNU General Public License version 2)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 63
-#: rc.cpp:156
+#: rc.cpp:162
 msgid "&New..."
 msgstr "&Novèl..."
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 78
-#: rc.cpp:159
+#: rc.cpp:165
 msgid "&Modify..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 124
-#: rc.cpp:165
+#: rc.cpp:171
 msgid "&Clean Up"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 16
-#: rc.cpp:168
+#: rc.cpp:174
 msgid "Language:"
 msgstr "Lenga :"
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 26
-#: rc.cpp:171
+#: rc.cpp:177
 msgid "Name:"
 msgstr "Nom :"
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 39
-#: rc.cpp:174
+#: rc.cpp:180
 msgid "Flag:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 49
-#: rc.cpp:177
+#: rc.cpp:183
 msgid "Keyboard layout:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 46
-#: rc.cpp:180
+#: rc.cpp:186
 msgid "Verb:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 62
-#: rc.cpp:183
+#: rc.cpp:189
 msgid "verb name"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 99
-#: rc.cpp:186
+#: rc.cpp:192
 msgid "Enter the correct conjugation forms."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 123
-#: rc.cpp:190
+#: rc.cpp:196
 #, no-c-format, kde-format
 msgid "Current tense is %1."
 msgstr ""
@@ -1013,7 +1031,14 @@ msgstr ""
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 172
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 246
-#: rc.cpp:196 rc.cpp:214 rc.cpp:232 rc.cpp:920 rc.cpp:938 rc.cpp:956
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 99
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 173
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 247
+#: rc.cpp:202 rc.cpp:220 rc.cpp:238 rc.cpp:896 rc.cpp:914 rc.cpp:932
+#: rc.cpp:971 rc.cpp:989 rc.cpp:1007
 msgid "First"
 msgstr "Primièr"
 
@@ -1029,7 +1054,14 @@ msgstr "Primièr"
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 185
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 259
-#: rc.cpp:199 rc.cpp:217 rc.cpp:235 rc.cpp:923 rc.cpp:941 rc.cpp:959
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 112
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 186
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 260
+#: rc.cpp:205 rc.cpp:223 rc.cpp:241 rc.cpp:899 rc.cpp:917 rc.cpp:935
+#: rc.cpp:974 rc.cpp:992 rc.cpp:1010
 msgid "Second"
 msgstr "Segonda"
 
@@ -1045,7 +1077,14 @@ msgstr "Segonda"
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 198
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 272
-#: rc.cpp:202 rc.cpp:220 rc.cpp:238 rc.cpp:926 rc.cpp:944 rc.cpp:962
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 125
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 199
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 273
+#: rc.cpp:208 rc.cpp:226 rc.cpp:244 rc.cpp:902 rc.cpp:920 rc.cpp:938
+#: rc.cpp:977 rc.cpp:995 rc.cpp:1013
 msgid "Third Male"
 msgstr ""
 
@@ -1061,7 +1100,14 @@ msgstr ""
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 211
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 285
-#: rc.cpp:205 rc.cpp:223 rc.cpp:241 rc.cpp:929 rc.cpp:947 rc.cpp:965
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 138
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 212
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 286
+#: rc.cpp:211 rc.cpp:229 rc.cpp:247 rc.cpp:905 rc.cpp:923 rc.cpp:941
+#: rc.cpp:980 rc.cpp:998 rc.cpp:1016
 msgid "Third Female"
 msgstr ""
 
@@ -1077,7 +1123,14 @@ msgstr ""
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 224
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 298
-#: rc.cpp:208 rc.cpp:226 rc.cpp:244 rc.cpp:932 rc.cpp:950 rc.cpp:968
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 151
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 225
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 299
+#: rc.cpp:214 rc.cpp:232 rc.cpp:250 rc.cpp:908 rc.cpp:926 rc.cpp:944
+#: rc.cpp:983 rc.cpp:1001 rc.cpp:1019
 msgid "Third Neutral"
 msgstr ""
 
@@ -1095,8 +1148,8 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 300
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 192
-#: rc.cpp:247 rc.cpp:295 rc.cpp:322 rc.cpp:370 rc.cpp:403 rc.cpp:490
-#: rc.cpp:511
+#: rc.cpp:253 rc.cpp:301 rc.cpp:328 rc.cpp:376 rc.cpp:409 rc.cpp:496
+#: rc.cpp:517
 msgid "Show &Solution"
 msgstr ""
 
@@ -1112,7 +1165,7 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 274
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 261
-#: rc.cpp:250 rc.cpp:292 rc.cpp:367 rc.cpp:406 rc.cpp:484 rc.cpp:520
+#: rc.cpp:256 rc.cpp:298 rc.cpp:373 rc.cpp:412 rc.cpp:490 rc.cpp:526
 msgid "Skip (I &Know It)"
 msgstr ""
 
@@ -1128,7 +1181,7 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 287
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 274
-#: rc.cpp:253 rc.cpp:298 rc.cpp:373 rc.cpp:409 rc.cpp:487 rc.cpp:523
+#: rc.cpp:259 rc.cpp:304 rc.cpp:379 rc.cpp:415 rc.cpp:493 rc.cpp:529
 msgid "Skip (Do &Not Know)"
 msgstr ""
 
@@ -1140,7 +1193,7 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 326
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 220
-#: rc.cpp:256 rc.cpp:289 rc.cpp:496 rc.cpp:514
+#: rc.cpp:262 rc.cpp:295 rc.cpp:502 rc.cpp:520
 msgid "&Verify"
 msgstr ""
 
@@ -1158,8 +1211,8 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 162
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 426
-#: rc.cpp:259 rc.cpp:301 rc.cpp:328 rc.cpp:355 rc.cpp:412 rc.cpp:472
-#: rc.cpp:538
+#: rc.cpp:265 rc.cpp:307 rc.cpp:334 rc.cpp:361 rc.cpp:418 rc.cpp:478
+#: rc.cpp:544
 msgid "Progress"
 msgstr "Avançament"
 
@@ -1177,8 +1230,8 @@ msgstr "Avançament"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 205
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 450
-#: rc.cpp:262 rc.cpp:304 rc.cpp:331 rc.cpp:358 rc.cpp:415 rc.cpp:475
-#: rc.cpp:541
+#: rc.cpp:268 rc.cpp:310 rc.cpp:337 rc.cpp:364 rc.cpp:421 rc.cpp:481
+#: rc.cpp:547
 msgid "Count:"
 msgstr ""
 
@@ -1196,8 +1249,8 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 218
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 460
-#: rc.cpp:265 rc.cpp:307 rc.cpp:334 rc.cpp:361 rc.cpp:418 rc.cpp:478
-#: rc.cpp:544
+#: rc.cpp:271 rc.cpp:313 rc.cpp:340 rc.cpp:367 rc.cpp:424 rc.cpp:484
+#: rc.cpp:550
 msgid "Time:"
 msgstr "Títol:"
 
@@ -1215,8 +1268,8 @@ msgstr "Títol:"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 228
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 473
-#: rc.cpp:268 rc.cpp:310 rc.cpp:337 rc.cpp:364 rc.cpp:421 rc.cpp:481
-#: rc.cpp:547
+#: rc.cpp:274 rc.cpp:316 rc.cpp:343 rc.cpp:370 rc.cpp:427 rc.cpp:487
+#: rc.cpp:553
 msgid "Cycle:"
 msgstr ""
 
@@ -1234,8 +1287,8 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 350
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 517
-#: rc.cpp:271 rc.cpp:313 rc.cpp:340 rc.cpp:376 rc.cpp:424 rc.cpp:499
-#: rc.cpp:553
+#: rc.cpp:277 rc.cpp:319 rc.cpp:346 rc.cpp:382 rc.cpp:430 rc.cpp:505
+#: rc.cpp:559
 msgid "&Stop Practice"
 msgstr ""
 
@@ -1251,20 +1304,19 @@ msgstr ""
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 357
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 510
-#: rc.cpp:274 rc.cpp:316 rc.cpp:379 rc.cpp:427 rc.cpp:502 rc.cpp:550
-#: kva_init.cpp:231
+#: rc.cpp:280 rc.cpp:322 rc.cpp:385 rc.cpp:433 rc.cpp:508 rc.cpp:556
 msgid "&Edit Entry..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 46
-#: rc.cpp:277
+#: rc.cpp:283
 msgid "Fill in the missing comparison expressions:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 55
-#: rc.cpp:280
+#: rc.cpp:286
 msgctxt ""
 "Comparison form of adjective - the normal form of the adjective (good)"
 msgid "&Absolute"
@@ -1272,87 +1324,87 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 75
-#: rc.cpp:283
+#: rc.cpp:289
 msgctxt "comparison form of adjectives - comparison form (better)"
 msgid "&Comparative"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 95
-#: rc.cpp:286
+#: rc.cpp:292
 msgctxt "comparison of adjectives - (best)"
 msgid "&Superlative"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/mixedletterpracticedialog.ui line 55
-#: rc.cpp:319
+#: rc.cpp:325
 msgid "Can you order the letters?"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/mixedletterpracticedialog.ui line 92
-#: rc.cpp:325
+#: rc.cpp:331
 msgid "Verify"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 46
-#: rc.cpp:343
+#: rc.cpp:349
 msgid "Select the correct article for this noun:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 93
-#: rc.cpp:346
+#: rc.cpp:352
 msgid "&male"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 100
-#: rc.cpp:349
+#: rc.cpp:355
 msgid "&female"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 107
-#: rc.cpp:352
+#: rc.cpp:358
 msgid "&neutral"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 46
-#: rc.cpp:382
+#: rc.cpp:388
 msgid "Select the correct translation:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 103
-#: rc.cpp:385
+#: rc.cpp:391
 msgid "1"
 msgstr "1"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 127
-#: rc.cpp:388
+#: rc.cpp:394
 msgid "2"
 msgstr "2"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 151
-#: rc.cpp:391
+#: rc.cpp:397
 msgid "3"
 msgstr "3"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 175
-#: rc.cpp:394
+#: rc.cpp:400
 msgid "4"
 msgstr "4"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 199
-#: rc.cpp:397
+#: rc.cpp:403
 msgid "5"
 msgstr "5"
 
@@ -1360,49 +1412,49 @@ msgstr "5"
 #. i18n: file ./practice/MCQueryDlgForm.ui line 230
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 233
-#: rc.cpp:400 rc.cpp:517
+#: rc.cpp:406 rc.cpp:523
 msgid "&Continue"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 16
-#: rc.cpp:430
+#: rc.cpp:436
 msgid "General"
 msgstr "General"
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 22
-#: rc.cpp:433
+#: rc.cpp:439
 msgid "Total:"
 msgstr "Total :"
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 42
-#: rc.cpp:436
+#: rc.cpp:442
 msgid "Answered correctly (first attempt):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 66
-#: rc.cpp:439
+#: rc.cpp:445
 msgid "Wrong answer:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 90
-#: rc.cpp:442
+#: rc.cpp:448
 msgid "Not answered:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 114
-#: rc.cpp:445
+#: rc.cpp:451
 msgid "Skipped:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 138
-#: rc.cpp:448
+#: rc.cpp:454
 msgid "Postponed:"
 msgstr ""
 
@@ -1410,13 +1462,13 @@ msgstr ""
 #. i18n: file ./practice/showsolutionwidget.ui line 31
 #. i18n: tag string
 #. i18n: file ./practice/showsolutionwidget.ui line 78
-#: rc.cpp:451 rc.cpp:457
+#: rc.cpp:457 rc.cpp:463
 msgid "TextLabel"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/showsolutionwidget.ui line 53
-#: rc.cpp:454
+#: rc.cpp:460
 msgid " - "
 msgstr ""
 
@@ -1424,7 +1476,7 @@ msgstr ""
 #. i18n: file ./practice/showsolutionwidget.ui line 109
 #. i18n: tag string
 #. i18n: file ./practice/showsolutionwidget.ui line 162
-#: rc.cpp:460 rc.cpp:463
+#: rc.cpp:466 rc.cpp:469
 msgctxt "Listen to the vocabulary entry (sound)"
 msgid "Play"
 msgstr "Legir"
@@ -1433,19 +1485,19 @@ msgstr "Legir"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 313
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 173
-#: rc.cpp:493 rc.cpp:508
+#: rc.cpp:499 rc.cpp:514
 msgid "Show &More"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 102
-#: rc.cpp:505
+#: rc.cpp:511
 msgid "Enter the correct translation:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 301
-#: rc.cpp:526
+#: rc.cpp:532
 msgid "Hints"
 msgstr ""
 
@@ -1453,69 +1505,63 @@ msgstr ""
 #. i18n: file ./practice/writtenpracticedialog.ui line 307
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 116
-#: rc.cpp:529 rc.cpp:836
+#: rc.cpp:535 rc.cpp:812
 msgid "&False friend:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 347
-#: rc.cpp:535
+#: rc.cpp:541
 msgid "T&ype:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 16
-#: rc.cpp:556
+#: rc.cpp:562
 msgid "Only practice vocabulary that fulfills the following conditions:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 25
-#: rc.cpp:559
+#: rc.cpp:565
 msgid "At least"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 32
-#: rc.cpp:562
+#: rc.cpp:568
 msgid "At most"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 42
-#: rc.cpp:565
+#: rc.cpp:571
 msgid "Grade"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 49
-#: rc.cpp:568
+#: rc.cpp:574
 msgid "Times practiced"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 73
-#: rc.cpp:571
+#: rc.cpp:577
 msgid "Answered wrong"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 143
-#: rc.cpp:574
+#: rc.cpp:580
 msgid "Enable word type selection"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./configure-practice/thresholdoptions.ui line 151
-#: rc.cpp:577
-msgid "Word Types"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 40
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 389
-#: rc.cpp:580 rc.cpp:1136
+#: rc.cpp:586 rc.cpp:1181
 msgid "Level &2:"
 msgstr ""
 
@@ -1523,7 +1569,7 @@ msgstr ""
 #. i18n: file ./configure-practice/blockoptions.ui line 53
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 341
-#: rc.cpp:583 rc.cpp:1127
+#: rc.cpp:589 rc.cpp:1172
 msgid "Level &5:"
 msgstr ""
 
@@ -1531,19 +1577,19 @@ msgstr ""
 #. i18n: file ./configure-practice/blockoptions.ui line 63
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 325
-#: rc.cpp:586 rc.cpp:1124
+#: rc.cpp:592 rc.cpp:1169
 msgid "Level &6:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 79
-#: rc.cpp:589
+#: rc.cpp:595
 msgid "E&xpiring"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 95
-#: rc.cpp:592
+#: rc.cpp:598
 msgid "Bl&ocking"
 msgstr ""
 
@@ -1551,7 +1597,7 @@ msgstr ""
 #. i18n: file ./configure-practice/blockoptions.ui line 118
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 357
-#: rc.cpp:595 rc.cpp:1130
+#: rc.cpp:601 rc.cpp:1175
 msgid "Level &4:"
 msgstr ""
 
@@ -1559,7 +1605,7 @@ msgstr ""
 #. i18n: file ./configure-practice/blockoptions.ui line 128
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 309
-#: rc.cpp:598 rc.cpp:1121
+#: rc.cpp:604 rc.cpp:1166
 msgid "Level &7:"
 msgstr ""
 
@@ -1567,7 +1613,7 @@ msgstr ""
 #. i18n: file ./configure-practice/blockoptions.ui line 150
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 405
-#: rc.cpp:601 rc.cpp:1139
+#: rc.cpp:607 rc.cpp:1184
 msgid "Level &1:"
 msgstr ""
 
@@ -1575,121 +1621,115 @@ msgstr ""
 #. i18n: file ./configure-practice/blockoptions.ui line 192
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 373
-#: rc.cpp:604 rc.cpp:1133
+#: rc.cpp:610 rc.cpp:1178
 msgid "Level &3:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 218
-#: rc.cpp:607
+#: rc.cpp:613
 msgid "Do not practice vocabulary that has been asked within:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 228
-#: rc.cpp:610
+#: rc.cpp:616
 msgid "Vocabulary drops one grade after this much time:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/comparisonoptionswidget.ui line 16
-#: rc.cpp:616
+#: rc.cpp:622
 msgid "Include Adjectives"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/comparisonoptionswidget.ui line 23
-#: rc.cpp:619
+#: rc.cpp:625
 msgid "Include Adverbs"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 18
-#: rc.cpp:622
+#: rc.cpp:628
 msgid "Type of Test"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 24
-#: rc.cpp:625
+#: rc.cpp:631
 msgid "Mixed Letters"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 31
-#: rc.cpp:628
+#: rc.cpp:634
 msgid "Article Training"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 45
-#: rc.cpp:634 entry-dialogs/EntryDlg.cpp:77
+#: rc.cpp:640
 msgid "Comparison"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 55
-#: rc.cpp:637
+#: rc.cpp:643
 msgid "Written"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./configure-practice/configurepracticewidget.ui line 65
-#: rc.cpp:640 entry-dialogs/EntryDlg.cpp:71
-msgid "Conjugation"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 72
-#: rc.cpp:643
+#: rc.cpp:649
 msgid "Example Sentences"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 79
-#: rc.cpp:646
+#: rc.cpp:652 vocabulary/vocabularymodel.cpp:284
 msgid "Synonym"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 93
-#: rc.cpp:652
+#: rc.cpp:658 vocabulary/vocabularymodel.cpp:286
 msgid "Antonym"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 116
-#: rc.cpp:655
+#: rc.cpp:661
 msgid "Options"
 msgstr "Opcions"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 133
-#: rc.cpp:661
+#: rc.cpp:667
 msgid "From"
 msgstr "De"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 140
-#: rc.cpp:664
+#: rc.cpp:670
 msgid "To"
 msgstr "A"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/writtenpracticeoptionswidget.ui line 16
-#: rc.cpp:667
+#: rc.cpp:673
 msgid "Ignore accent mistakes"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/writtenpracticeoptionswidget.ui line 23
-#: rc.cpp:670
+#: rc.cpp:676
 msgid "Ignore capitalization mistakes"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 16
-#: rc.cpp:673
+#: rc.cpp:679
 msgid "General Options"
 msgstr "Opcions generalas"
 
@@ -1697,7 +1737,7 @@ msgstr "Opcions generalas"
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 22
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 25
-#: rc.cpp:676 rc.cpp:679
+#: rc.cpp:682 rc.cpp:685
 msgid ""
 "By checking this, you will use the Leitner method of learning which requires "
 "you to answer correctly to each question 3 times in a row. "
@@ -1705,19 +1745,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 28
-#: rc.cpp:682
+#: rc.cpp:688
 msgid "&Require 3 consecutive correct answers to count as right"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 40
-#: rc.cpp:685
+#: rc.cpp:691
 msgid "Enable the Show More button on the Random Query screen"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 43
-#: rc.cpp:688
+#: rc.cpp:694
 msgid ""
 "When this is checked, you will be able to use a Show More button which allow "
 "you to get the next letter in your answer in the query. If this is "
@@ -1727,25 +1767,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 46
-#: rc.cpp:691
+#: rc.cpp:697
 msgid "Enable S&how More button"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 53
-#: rc.cpp:694
+#: rc.cpp:700
 msgid "Enable Sound"
 msgstr "Activar lo son"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 63
-#: rc.cpp:697
+#: rc.cpp:703
 msgid "Enable the I Know It button on the Random Query screen"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 66
-#: rc.cpp:700
+#: rc.cpp:706
 msgid ""
 "If this is checked, the I Know button will be available. It allows you to "
 "tell the query that you know the result without writing it or having it "
@@ -1755,31 +1795,31 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 69
-#: rc.cpp:703
+#: rc.cpp:709
 msgid "Enable Skip (I Know it) &button"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 76
-#: rc.cpp:706
+#: rc.cpp:712
 msgid "Enable Images"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 83
-#: rc.cpp:709
+#: rc.cpp:715
 msgid "Accept synonyms as correct"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 93
-#: rc.cpp:712
+#: rc.cpp:718
 msgid "S&wap direction randomly"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 100
-#: rc.cpp:715
+#: rc.cpp:721
 msgid ""
 "When practicing new words will be chosen loosely in lesson order if this is "
 "selected, otherwise at total random."
@@ -1787,7 +1827,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 103
-#: rc.cpp:718
+#: rc.cpp:724
 msgid "&Practice in lesson order"
 msgstr ""
 
@@ -1795,7 +1835,7 @@ msgstr ""
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 114
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 127
-#: rc.cpp:721 rc.cpp:727
+#: rc.cpp:727 rc.cpp:733
 msgid ""
 "The number of vocabulary that will show up repeatedly until it is answered "
 "correctly."
@@ -1803,7 +1843,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 117
-#: rc.cpp:724
+#: rc.cpp:730
 msgid "&Active entries during practice:"
 msgstr ""
 
@@ -1811,19 +1851,19 @@ msgstr ""
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 163
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 173
-#: rc.cpp:730 rc.cpp:736
+#: rc.cpp:736 rc.cpp:742
 msgid "After the answer was given the solution will be shown for this long"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 166
-#: rc.cpp:733
+#: rc.cpp:739
 msgid "&Show solution after answering:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 176
-#: rc.cpp:739
+#: rc.cpp:745
 msgid "unlimited"
 msgstr ""
 
@@ -1831,14 +1871,14 @@ msgstr ""
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 179
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 284
-#: rc.cpp:742 rc.cpp:767
+#: rc.cpp:748 rc.cpp:773
 msgctxt "Seconds (suffix)"
 msgid "s"
 msgstr "s"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 213
-#: rc.cpp:746
+#: rc.cpp:752
 msgid ""
 "If a time limit is set, an answer has to be given in the set time, when "
 "practicing."
@@ -1846,325 +1886,292 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 216
-#: rc.cpp:749
+#: rc.cpp:755
 msgid "&Time Limit in Tests"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 249
-#: rc.cpp:752
+#: rc.cpp:758
 msgid "&Show solution"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 256
-#: rc.cpp:755
+#: rc.cpp:761
 msgid "&Continue after timeout"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 268
-#: rc.cpp:758
+#: rc.cpp:764
 msgid "Limit:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 278
-#: rc.cpp:761
+#: rc.cpp:767
 msgid "Set the maximum time allowed per answer."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 281
-#: rc.cpp:764
+#: rc.cpp:770
 msgid "Set here the maximum time you want to allow per answer."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 55
-#: rc.cpp:773
-msgid "Additional Properties"
-msgstr ""
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/audiowidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/imagechooserwidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/multiplechoicewidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/wordtypewidget.ui line 13
+#: rc.cpp:776 rc.cpp:947 rc.cpp:1022 rc.cpp:1025 rc.cpp:1034
+#, fuzzy
+#| msgid "From"
+msgid "Form"
+msgstr "De"
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 63
-#: rc.cpp:776
-msgid "S&ynonym:"
-msgstr ""
-
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 27
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 80
-#: rc.cpp:779
-msgid "Ant&onym:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 93
-#: rc.cpp:782
-msgid "E&xample:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 119
-#: rc.cpp:788
-msgid "&Paraphrase:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 152
-#: rc.cpp:791
-msgid "Audio:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 162
-#: rc.cpp:794
-msgid "Play"
-msgstr "Legir"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 169
-#: rc.cpp:797
-msgid "Image:"
-msgstr "Imatge :"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 191
-#: rc.cpp:800
-msgid "No Image"
-msgstr "Pas cap d'imatge"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 56
-#: rc.cpp:806
-msgid "Comparison of Adjectives"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 96
-#: rc.cpp:809
-msgid "The superlative (fastest)"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 99
-#: rc.cpp:812
-msgid "&3. Superlative:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 125
-#: rc.cpp:815
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 56
+#: rc.cpp:779 rc.cpp:785
 msgid "The comparative is used to compare nouns or verbs (faster)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 128
-#: rc.cpp:818
-msgid "&2. Comparative:"
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 30
+#: rc.cpp:782
+msgid "Absolute:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 144
-#: rc.cpp:821
-msgid "The base form of the adjective or adverb (fast)"
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 59
+#: rc.cpp:788
+msgid "Comparative:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 147
-#: rc.cpp:824
-msgid "&1. Absolute:"
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 85
+#: rc.cpp:791
+msgid "The superlative (fastest)"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 88
+#: rc.cpp:794
+msgid "Superlative:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 110
+#: rc.cpp:797
+#, fuzzy
+#| msgctxt "state of a row"
+#| msgid "Active"
+msgid "Adjective"
+msgstr "Actiu"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 117
+#: rc.cpp:800
+msgid "Adverb"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 26
-#: rc.cpp:830
+#: rc.cpp:806
 msgid "Properties From Original"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 96
-#: rc.cpp:833
+#: rc.cpp:809
 msgid "&Grade:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 128
-#: rc.cpp:839
+#: rc.cpp:815
 msgid "Practice &Counts"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 172
-#: rc.cpp:842
+#: rc.cpp:818
 msgid "&Wrong:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 182
-#: rc.cpp:845
+#: rc.cpp:821
 msgid "Tot&al:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 195
-#: rc.cpp:848
+#: rc.cpp:824
 msgid "&Last Practiced"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 219
-#: rc.cpp:851
+#: rc.cpp:827
 msgid "&Never"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 226
-#: rc.cpp:854
+#: rc.cpp:830
 msgid "T&oday"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 242
-#: rc.cpp:857
+#: rc.cpp:833
 msgid "The date this expression was last practiced"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 245
-#: rc.cpp:860
+#: rc.cpp:836
 msgid "Not Practiced Yet"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 265
-#: rc.cpp:863
+#: rc.cpp:839
 msgid "dd.MM.yyyy"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 296
-#: rc.cpp:866
+#: rc.cpp:842
 msgid "&Reset Grades"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 59
-#: rc.cpp:872
+#: rc.cpp:848
 msgid "Common Properties"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 91
-#: rc.cpp:875
+#: rc.cpp:851
 msgid "&Pronunciation:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 101
-#: rc.cpp:878
+#: rc.cpp:854
 msgid "&Lesson:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 129
-#: rc.cpp:881
+#: rc.cpp:857
 msgid "Invokes dialog page with characters from phonetic alphabet"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 142
-#: rc.cpp:884
+#: rc.cpp:860
 msgid "&Expression:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 160
-#: rc.cpp:887
+#: rc.cpp:863
 msgid "T&ype"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 227
-#: rc.cpp:890
+#: rc.cpp:866
 msgid "&Subtype:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 265
-#: rc.cpp:893
+#: rc.cpp:869
 msgid "Invokes input dialog for word types"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 388
-#: rc.cpp:899
+#: rc.cpp:875
 msgid "Invokes input dialog for usage labels"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 414
-#: rc.cpp:902
+#: rc.cpp:878
 msgid "Acti&ve"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 25
-#: rc.cpp:908
+#: rc.cpp:884
 msgid "Conjugation of Verbs"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 57
-#: rc.cpp:911
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 52
+#: rc.cpp:887 rc.cpp:962
 msgid "&Tense:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 73
-#: rc.cpp:914
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 68
+#: rc.cpp:890 rc.cpp:965
 msgid "Ne&xt"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 47
-#: rc.cpp:974
-msgid "Suggestions for Multiple Choice"
+#. i18n: file ./entry-dialogs/audiowidget.ui line 21
+#: rc.cpp:950
+msgid "Play"
+msgstr "Legir"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/audiowidget.ui line 28
+#: rc.cpp:953
+#, fuzzy
+#| msgid "Second"
+msgid "Record"
+msgstr "Segonda"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 31
+#: rc.cpp:959
+msgid "Turn the selected word into a verb."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 67
-#: rc.cpp:977
-msgid "&1:"
+#. i18n: file ./entry-dialogs/multiplechoicewidget.ui line 24
+#: rc.cpp:1028
+msgid "Add"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 85
-#: rc.cpp:980
-msgid "&2:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 103
-#: rc.cpp:983
-msgid "&3:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 181
-#: rc.cpp:986
-msgid "&4:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 199
-#: rc.cpp:989
-msgid "&5:"
+#. i18n: file ./entry-dialogs/multiplechoicewidget.ui line 31
+#: rc.cpp:1031
+msgid "Remove"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 16
-#: rc.cpp:992
+#: rc.cpp:1037
 msgid "Please select a language:"
 msgstr ""
 
@@ -2172,7 +2179,7 @@ msgstr ""
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 26
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 41
-#: rc.cpp:995 rc.cpp:1244
+#: rc.cpp:1040 rc.cpp:1289
 msgid "Title:"
 msgstr "Títol:"
 
@@ -2180,7 +2187,7 @@ msgstr "Títol:"
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 36
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 79
-#: rc.cpp:998 rc.cpp:1016
+#: rc.cpp:1043 rc.cpp:1061
 msgid ""
 "This does not have to be a language. Anything goes: Definition, Chinese "
 "simplified or anything else you want to learn."
@@ -2188,37 +2195,37 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 16
-#: rc.cpp:1001
+#: rc.cpp:1046
 msgid "So far your document contains:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 26
-#: rc.cpp:1004
+#: rc.cpp:1049
 msgid "To change the first selection go back one page."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 52
-#: rc.cpp:1007
+#: rc.cpp:1052
 msgid "Please select a second language (can be the same as before):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 62
-#: rc.cpp:1010
+#: rc.cpp:1055
 msgid "The language of the second column of vocabulary."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 69
-#: rc.cpp:1013
+#: rc.cpp:1058
 msgid "Second title:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 70
-#: rc.cpp:1019
+#: rc.cpp:1064
 msgid ""
 "Specify which font to use for displaying pronunciations using phonetic "
 "symbols."
@@ -2226,205 +2233,205 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 77
-#: rc.cpp:1022
+#: rc.cpp:1067
 msgid "&IPA font:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 87
-#: rc.cpp:1025
+#: rc.cpp:1070
 msgid "&Table font:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 97
-#: rc.cpp:1028
+#: rc.cpp:1073
 msgid "Specify which font to use for editing of the main table."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 112
-#: rc.cpp:1031
+#: rc.cpp:1076
 msgid "Grade Colors"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 142
-#: rc.cpp:1034
+#: rc.cpp:1079
 msgid "&N"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 155
-#: rc.cpp:1037
+#: rc.cpp:1082
 msgid "Color for the grade 1"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 158
-#: rc.cpp:1040
+#: rc.cpp:1085
 msgid "Click here to change the color for grade 1."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 161
-#: rc.cpp:1043
+#: rc.cpp:1088
 msgid "&1"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 164
-#: rc.cpp:1046
+#: rc.cpp:1091
 msgid "Alt+1"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 177
-#: rc.cpp:1049
+#: rc.cpp:1094
 msgid "Color for the grade 2"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 180
-#: rc.cpp:1052
+#: rc.cpp:1097
 msgid "Click here to change the color for grade 2."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 183
-#: rc.cpp:1055
+#: rc.cpp:1100
 msgid "&2"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 186
-#: rc.cpp:1058
+#: rc.cpp:1103
 msgid "Alt+2"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 199
-#: rc.cpp:1061
+#: rc.cpp:1106
 msgid "Color for the grade 3"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 202
-#: rc.cpp:1064
+#: rc.cpp:1109
 msgid "Click here to change the color for grade 3."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 205
-#: rc.cpp:1067
+#: rc.cpp:1112
 msgid "&3"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 208
-#: rc.cpp:1070
+#: rc.cpp:1115
 msgid "Alt+3"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 221
-#: rc.cpp:1073
+#: rc.cpp:1118
 msgid "Color for the grade 4"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 224
-#: rc.cpp:1076
+#: rc.cpp:1121
 msgid "Click here to change the color for grade 4."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 227
-#: rc.cpp:1079
+#: rc.cpp:1124
 msgid "&4"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 230
-#: rc.cpp:1082
+#: rc.cpp:1127
 msgid "Alt+4"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 243
-#: rc.cpp:1085
+#: rc.cpp:1130
 msgid "Color for the grade 5"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 246
-#: rc.cpp:1088
+#: rc.cpp:1133
 msgid "Click here to change the color for grade 5."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 249
-#: rc.cpp:1091
+#: rc.cpp:1136
 msgid "&5"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 252
-#: rc.cpp:1094
+#: rc.cpp:1139
 msgid "Alt+5"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 265
-#: rc.cpp:1097
+#: rc.cpp:1142
 msgid "Color for the grade 6"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 268
-#: rc.cpp:1100
+#: rc.cpp:1145
 msgid "Click here to change the color for grade 6."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 271
-#: rc.cpp:1103
+#: rc.cpp:1148
 msgid "&6"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 274
-#: rc.cpp:1106
+#: rc.cpp:1151
 msgid "Alt+6"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 287
-#: rc.cpp:1109
+#: rc.cpp:1154
 msgid "Color for the grade 7"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 290
-#: rc.cpp:1112
+#: rc.cpp:1157
 msgid "Click here to change the color for grade 7."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 293
-#: rc.cpp:1115
+#: rc.cpp:1160
 msgid "&7"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 296
-#: rc.cpp:1118
+#: rc.cpp:1163
 msgid "Alt+7"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 421
-#: rc.cpp:1142
+#: rc.cpp:1187
 msgid "Not &practiced:"
 msgstr ""
 
@@ -2432,7 +2439,7 @@ msgstr ""
 #. i18n: file ./settings/viewoptionsbase.ui line 431
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 434
-#: rc.cpp:1145 rc.cpp:1148
+#: rc.cpp:1190 rc.cpp:1193
 msgid ""
 "If it is unchecked, you will just have black on white for the grades; if it "
 "is checked, the colors below will be chosen."
@@ -2440,25 +2447,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 437
-#: rc.cpp:1151
+#: rc.cpp:1196
 msgid "&Use colors"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 447
-#: rc.cpp:1154
+#: rc.cpp:1199
 msgid "Column Resizing"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 453
-#: rc.cpp:1157
+#: rc.cpp:1202
 msgid "Automatically resize the columns"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 456
-#: rc.cpp:1160
+#: rc.cpp:1205
 msgid ""
 "Parley makes each column the same width except the leftmost with the lesson "
 "names, which is half the size of the others. The second column, which "
@@ -2467,49 +2474,49 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 459
-#: rc.cpp:1163
+#: rc.cpp:1208
 msgid "A&utomatic"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 466
-#: rc.cpp:1166
+#: rc.cpp:1211
 msgid "The columns resize using the same factor that the window is resized to."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 469
-#: rc.cpp:1169
+#: rc.cpp:1214
 msgid "If this is checked, the columns resize by the same amount as the window"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 472
-#: rc.cpp:1172
+#: rc.cpp:1217
 msgid "P&ercentage"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 479
-#: rc.cpp:1175
+#: rc.cpp:1220
 msgid "There is no resizing of the columns"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 482
-#: rc.cpp:1178
+#: rc.cpp:1223
 msgid "When checked, the columns are not resized"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 485
-#: rc.cpp:1181
+#: rc.cpp:1226
 msgid "&Fixed"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 17
-#: rc.cpp:1184
+#: rc.cpp:1229
 msgid "Open/Save"
 msgstr ""
 
@@ -2517,7 +2524,7 @@ msgstr ""
 #. i18n: file ./settings/generaloptionsbase.ui line 23
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 38
-#: rc.cpp:1187 rc.cpp:1196
+#: rc.cpp:1232 rc.cpp:1241
 msgid "Allow automatic saving of your work"
 msgstr ""
 
@@ -2525,37 +2532,37 @@ msgstr ""
 #. i18n: file ./settings/generaloptionsbase.ui line 26
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 41
-#: rc.cpp:1190 rc.cpp:1199
+#: rc.cpp:1235 rc.cpp:1244
 msgid "Your work will be automatically saved if you check this option"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 29
-#: rc.cpp:1193
+#: rc.cpp:1238
 msgid "&Save vocabularies automatically on close and quit"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 44
-#: rc.cpp:1202
+#: rc.cpp:1247
 msgid "&Create a backup every"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 54
-#: rc.cpp:1205
+#: rc.cpp:1250
 msgid "minutes"
 msgstr "minutas"
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 81
-#: rc.cpp:1208
+#: rc.cpp:1253
 msgid "Sep&arator for text file import/export (CSV):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 97
-#: rc.cpp:1211
+#: rc.cpp:1256
 msgid ""
 "Choose which separator you want to use to separate your data when importing "
 "and exporting text."
@@ -2563,7 +2570,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 100
-#: rc.cpp:1214
+#: rc.cpp:1259
 msgid ""
 "Choose the separator to use to divide the parts of an expression when "
 "importing or exporting data as text."
@@ -2571,19 +2578,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 128
-#: rc.cpp:1217
+#: rc.cpp:1262
 msgid "Editing"
 msgstr "Modificacion"
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 152
-#: rc.cpp:1220
+#: rc.cpp:1265
 msgid "Your changes will be applied automatically."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 155
-#: rc.cpp:1223
+#: rc.cpp:1268
 msgid ""
 "If checked, you will not be asked if you really want this change; it will be "
 "applied automatically."
@@ -2591,19 +2598,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 158
-#: rc.cpp:1226
+#: rc.cpp:1271
 msgid "Appl&y changes without asking"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 165
-#: rc.cpp:1229
+#: rc.cpp:1274
 msgid "If checked, the entry dialog will popup repeatedly"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 168
-#: rc.cpp:1232
+#: rc.cpp:1277
 msgid ""
 "If this feature is activated, you will repeatedly be prompted with the entry "
 "dialog. After entering the first original you have to enter the "
@@ -2613,201 +2620,56 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 171
-#: rc.cpp:1235
+#: rc.cpp:1280
 msgid "Smart a&ppending"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 34
-#: rc.cpp:1241
+#: rc.cpp:1286
 msgid "Filename:"
 msgstr "Nom de fichièr :"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 48
-#: rc.cpp:1247
+#: rc.cpp:1292
 msgid "Entries:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 55
-#: rc.cpp:1250
+#: rc.cpp:1295
 msgid "Author:"
 msgstr "Autor :"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 62
-#: rc.cpp:1253
+#: rc.cpp:1298
 msgid "Lessons:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 57
-#: rc.cpp:1259
+#: rc.cpp:1304
 msgid "Grade FROM"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 62
-#: rc.cpp:1262
+#: rc.cpp:1307
 msgid "Grade TO"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 67
-#: rc.cpp:1265
+#: rc.cpp:1310
 msgid "Entries"
 msgstr "Intradas"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 77
-#: rc.cpp:1271
+#: rc.cpp:1316
 msgid "Reset"
-msgstr ""
-
-#: kva_io.cpp:85
-msgid ""
-"Vocabulary is modified.\n"
-"\n"
-"Save file before exit?\n"
-msgstr ""
-
-#: kva_io.cpp:135
-msgid "Open Vocabulary Document"
-msgstr ""
-
-#: kva_io.cpp:189
-msgid "Open Example Vocabulary Document"
-msgstr ""
-
-#: kva_io.cpp:259
-msgid "Untitled"
-msgstr "Sens nom"
-
-#: kva_io.cpp:264 kva_io.cpp:306
-#, kde-format
-msgctxt "@info:status saving a file"
-msgid "Saving %1"
-msgstr ""
-
-#: kva_io.cpp:276 kva_io.cpp:321
-#, kde-format
-msgid "Writing file \"%1\" resulted in an error: %2"
-msgstr ""
-
-#: kva_io.cpp:276 kva_io.cpp:321
-msgid "Save File"
-msgstr "Enregistrar lo fichièr"
-
-#: kva_io.cpp:295
-msgid "Save Vocabulary As"
-msgstr ""
-
-#: kva_io.cpp:300
-#, kde-format
-msgid ""
-"<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
-msgstr ""
-
-#: kva_io.cpp:460
-msgctxt "context in which vocabulary entry is used"
-msgid "abbreviation"
-msgstr ""
-
-#: kva_io.cpp:461
-msgctxt "context in which vocabulary entry is used"
-msgid "anatomy"
-msgstr ""
-
-#: kva_io.cpp:462
-msgctxt "context in which vocabulary entry is used"
-msgid "biology"
-msgstr ""
-
-#: kva_io.cpp:463
-msgctxt "context in which vocabulary entry is used"
-msgid "figuratively"
-msgstr ""
-
-#: kva_io.cpp:464
-msgctxt "context in which vocabulary entry is used"
-msgid "geology"
-msgstr ""
-
-#: kva_io.cpp:465
-msgctxt "context in which vocabulary entry is used"
-msgid "historical"
-msgstr ""
-
-#: kva_io.cpp:466
-msgctxt "context in which vocabulary entry is used"
-msgid "informal"
-msgstr ""
-
-#: kva_io.cpp:467
-msgctxt "context in which vocabulary entry is used"
-msgid "ironic"
-msgstr ""
-
-#: kva_io.cpp:468
-msgctxt "context in which vocabulary entry is used"
-msgid "literary"
-msgstr ""
-
-#: kva_io.cpp:469
-msgctxt "context in which vocabulary entry is used"
-msgid "mythology"
-msgstr ""
-
-#: kva_io.cpp:470
-msgctxt "context in which vocabulary entry is used"
-msgid "proper name"
-msgstr ""
-
-#: kva_io.cpp:471
-msgctxt "context in which vocabulary entry is used"
-msgid "pharmacy"
-msgstr ""
-
-#: kva_io.cpp:472
-msgctxt "context in which vocabulary entry is used"
-msgid "philosophy"
-msgstr ""
-
-#: kva_io.cpp:473
-msgctxt "context in which vocabulary entry is used"
-msgid "physics"
-msgstr ""
-
-#: kva_io.cpp:474
-msgctxt "context in which vocabulary entry is used"
-msgid "physiology"
-msgstr ""
-
-#: kva_io.cpp:475
-msgctxt "context in which vocabulary entry is used"
-msgid "rhetoric"
-msgstr ""
-
-#: kva_io.cpp:476
-msgctxt "context in which vocabulary entry is used"
-msgid "zoology"
-msgstr ""
-
-#: kva_io.cpp:491
-msgid "Welcome"
-msgstr "Planvengut"
-
-#: kva_io.cpp:492
-msgid "GPL (GNU General Public License)"
-msgstr ""
-
-#: kva_io.cpp:493
-msgid "Example document"
-msgstr ""
-
-#: kva_io.cpp:501
-msgid "A Second Language"
 msgstr ""
 
 #: configure-practice/blockoptions.cpp:43
@@ -2961,7 +2823,7 @@ msgctxt "@title:window"
 msgid "Configure Practice"
 msgstr ""
 
-#: configure-practice/configurepracticedialog.cpp:36 kva_init.cpp:328
+#: configure-practice/configurepracticedialog.cpp:36 kva_init.cpp:289
 msgid "Start Practice..."
 msgstr ""
 
@@ -3006,86 +2868,26 @@ msgctxt "Configure advanced settings for practicing vocabulary."
 msgid "Advanced Practice Settings"
 msgstr ""
 
-#: entry-dialogs/EntryDlg.cpp:45
-msgid "&Reset"
+#: entry-dialogs/comparisonwidget.cpp:86
+msgid "Could not determine word type of adjectives"
 msgstr ""
 
-#: entry-dialogs/EntryDlg.cpp:53
-msgctxt "edit general vocabulary properties that are common to all word types"
-msgid "Common"
+#: entry-dialogs/comparisonwidget.cpp:105
+msgid "Could not determine word type of adverbs"
 msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:54
-msgid "General properties of the word"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:59
-msgctxt "edit additional properties like image, synonym, etc."
-msgid "Additional"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:60
-msgid "Additional properties"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:66
-msgid "Predetermined multiple choice suggestions"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:72
-msgid "Conjugation of the selected verb"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:78
-msgid "Comparison forms of the selected adjective or adverb"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:100 entry-dialogs/EntryDlg.cpp:110
-#, kde-format
-msgid ""
-"Grades from \n"
-"%1 to %2"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:214
-#, kde-format
-msgid "Edit General Properties"
-msgid_plural "Edit General Properties for %1 Files"
-msgstr[0] ""
-msgstr[1] ""
-
-#: entry-dialogs/EntryDlg.cpp:217
-#, kde-format
-msgctxt "@title:window Editing one entry, %1 the word, %2 the language"
-msgid "\"%1\" (%2)"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:221
-#, kde-format
-msgctxt "@title:window Editing %1 entries, %2 the language"
-msgid "Edit One Word (%2)"
-msgid_plural "Edit %1 words (%2)"
-msgstr[0] ""
-msgstr[1] ""
-
-#: entry-dialogs/EntryDlg.cpp:288
-msgid ""
-"The entry dialog contains unsaved changes.\n"
-"Do you want to apply or discard your changes?"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:290
-msgid "Unsaved Changes"
-msgstr ""
-
-#: entry-dialogs/additionaleditpage.cpp:95
-msgctxt "@label image preview is empty"
-msgid "No Image"
-msgstr "Pas cap d'imatge"
 
 #: entry-dialogs/FromToEntryPage.cpp:125
 #, kde-format
 msgid "Grades from %1 to %2"
+msgstr ""
+
+#: entry-dialogs/conjugationwidget.cpp:125
+#, kde-format
+msgid "\"%1\" is a verb"
+msgstr ""
+
+#: entry-dialogs/conjugationwidget.cpp:163
+msgid "Could not determine word type of verbs"
 msgstr ""
 
 #: entry-dialogs/PhoneticEntryPage.cpp:182
@@ -3101,17 +2903,39 @@ msgctxt "Describing the sound of the character"
 msgid "Sound: "
 msgstr ""
 
+#: entry-dialogs/imagechooserwidget.cpp:49
+msgctxt "@label image preview is empty"
+msgid "No Preview"
+msgstr ""
+
+#: entry-dialogs/imagechooserwidget.cpp:60
+msgctxt "@label image preview is empty"
+msgid "No Image"
+msgstr "Pas cap d'imatge"
+
+#: entry-dialogs/wordtypewidget.cpp:55
+msgid "No word type set"
+msgstr ""
+
+#: entry-dialogs/wordtypewidget.cpp:66
+msgid "No sub types defined"
+msgstr ""
+
+#: entry-dialogs/wordtypewidget.cpp:69
+msgid "No secondary word type set"
+msgstr ""
+
 #: entry-dialogs/CommonEntryPage.cpp:73
 msgctxt "Usage (area) of an Expression"
 msgid "&Usage Labels"
 msgstr ""
 
-#: entry-dialogs/CommonEntryPage.cpp:240
+#: entry-dialogs/CommonEntryPage.cpp:195
 msgctxt "usage (area) of an expression"
 msgid "Edit User-Defined Usage Labels"
 msgstr ""
 
-#: entry-dialogs/CommonEntryPage.cpp:260
+#: entry-dialogs/CommonEntryPage.cpp:215
 msgid "Edit User Defined Types"
 msgstr ""
 
@@ -3152,6 +2976,59 @@ msgstr ""
 
 #: newdocument-wizard/secondidentifierlanguagepage.cpp:46
 msgid "Please select the second column data:"
+msgstr ""
+
+#: parleydocument.cpp:84
+msgid "Open Vocabulary Document"
+msgstr ""
+
+#: parleydocument.cpp:121
+msgid "Open Example Vocabulary Document"
+msgstr ""
+
+#: parleydocument.cpp:133
+msgid "Untitled"
+msgstr "Sens nom"
+
+#: parleydocument.cpp:146 parleydocument.cpp:185
+#, kde-format
+msgid "Writing file \"%1\" resulted in an error: %2"
+msgstr ""
+
+#: parleydocument.cpp:146 parleydocument.cpp:185
+msgid "Save File"
+msgstr "Enregistrar lo fichièr"
+
+#: parleydocument.cpp:160
+msgid "Save Vocabulary As"
+msgstr ""
+
+#: parleydocument.cpp:165
+#, kde-format
+msgid ""
+"<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
+msgstr ""
+
+#: parleydocument.cpp:171
+#, kde-format
+msgctxt "@info:status saving a file"
+msgid "Saving %1"
+msgstr ""
+
+#: parleydocument.cpp:281
+msgid "Welcome"
+msgstr "Planvengut"
+
+#: parleydocument.cpp:282
+msgid "GPL (GNU General Public License)"
+msgstr ""
+
+#: parleydocument.cpp:283
+msgid "Example document"
+msgstr ""
+
+#: parleydocument.cpp:291
+msgid "A Second Language"
 msgstr ""
 
 #: kvttabledelegate.cpp:113
@@ -3226,242 +3103,207 @@ msgctxt "CSV separator"
 msgid " :: "
 msgstr ""
 
-#: kva_init.cpp:98
+#: kva_init.cpp:63
 msgid "Creates a new blank vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:103
+#: kva_init.cpp:68
 msgid "Opens an existing vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:110
+#: kva_init.cpp:75
 msgid "Open &Example..."
 msgstr ""
 
-#: kva_init.cpp:112
+#: kva_init.cpp:77
 msgid "Open an example vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:116
+#: kva_init.cpp:81
 msgid "Vocabularies..."
 msgstr ""
 
-#: kva_init.cpp:118
+#: kva_init.cpp:83
 msgid "Downloads new vocabularies"
 msgstr ""
 
-#: kva_init.cpp:126
+#: kva_init.cpp:92
 msgid "&Merge..."
 msgstr ""
 
-#: kva_init.cpp:128
+#: kva_init.cpp:94
 msgid "Merge an existing vocabulary document with the current one"
 msgstr ""
 
-#: kva_init.cpp:134
+#: kva_init.cpp:100
 msgid "Save the active vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:140
+#: kva_init.cpp:106
 msgid "Save the active vocabulary document with a different name"
 msgstr ""
 
-#: kva_init.cpp:145
+#: kva_init.cpp:111
 msgid "Print the active vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:151
+#: kva_init.cpp:117
 msgid "&Properties..."
 msgstr ""
 
-#: kva_init.cpp:154
+#: kva_init.cpp:120
 msgid "Edit document properties"
 msgstr ""
 
-#: kva_init.cpp:160
+#: kva_init.cpp:126
 msgid "Quit Parley"
 msgstr ""
 
-#: kva_init.cpp:167 kva_init.cpp:172
+#: kva_init.cpp:133 kva_init.cpp:138
 msgid "Copy"
 msgstr "Copiar"
 
-#: kva_init.cpp:177
+#: kva_init.cpp:143
 msgid "Paste"
 msgstr "Pegar"
 
-#: kva_init.cpp:185
+#: kva_init.cpp:151
 msgid "&Languages..."
 msgstr ""
 
-#: kva_init.cpp:191
+#: kva_init.cpp:157
 msgid "&Grammar..."
 msgstr ""
 
-#: kva_init.cpp:192
+#: kva_init.cpp:158
 msgid "Edit language properties (types, tenses and usages)."
 msgstr ""
 
-#: kva_init.cpp:199
+#: kva_init.cpp:165
 msgid "Select all rows"
 msgstr ""
 
-#: kva_init.cpp:204
+#: kva_init.cpp:170
 msgid "Deselect all rows"
 msgstr ""
 
-#: kva_init.cpp:211
+#: kva_init.cpp:177
 msgid "&Add New Entry"
 msgstr ""
 
-#: kva_init.cpp:214
+#: kva_init.cpp:180
 msgid "Append a new row to the vocabulary"
 msgstr ""
 
-#: kva_init.cpp:221
+#: kva_init.cpp:188
 msgid "&Delete Entry"
 msgstr ""
 
-#: kva_init.cpp:224
+#: kva_init.cpp:191
 msgid "Delete the selected rows"
 msgstr ""
 
-#: kva_init.cpp:234
-msgid "Edit the entries in the selected rows"
-msgstr ""
-
-#: kva_init.cpp:253
+#: kva_init.cpp:211
 msgid "New Lesson"
 msgstr ""
 
-#: kva_init.cpp:255
+#: kva_init.cpp:213
 msgid "Add a new lesson to your document"
 msgstr ""
 
-#: kva_init.cpp:262
+#: kva_init.cpp:220
 msgid "Rename Lesson"
 msgstr ""
 
-#: kva_init.cpp:264
+#: kva_init.cpp:222
 msgid "Rename the selected lesson"
 msgstr ""
 
-#: kva_init.cpp:271
+#: kva_init.cpp:229
 msgid "Delete Lesson"
 msgstr ""
 
-#: kva_init.cpp:273
+#: kva_init.cpp:231
 msgid "Delete the selected lesson."
 msgstr ""
 
-#: kva_init.cpp:280
-msgid "Select All Lessons"
-msgstr ""
-
-#: kva_init.cpp:282
-msgid "Select all lessons for the test."
-msgstr ""
-
-#: kva_init.cpp:289
-msgid "Deselect All Lessons"
-msgstr ""
-
-#: kva_init.cpp:291
-msgid "Remove all lessons from the test."
-msgstr ""
-
-#: kva_init.cpp:298
+#: kva_init.cpp:238
 msgid "Split Lesson into Smaller Lessons"
 msgstr ""
 
-#: kva_init.cpp:300
+#: kva_init.cpp:240
 msgid "Make multiple smaller lessons out of one big lesson."
 msgstr ""
 
-#: kva_init.cpp:310
+#: kva_init.cpp:271
 msgid "Remove &Duplicates"
 msgstr ""
 
-#: kva_init.cpp:312
+#: kva_init.cpp:273
 msgid "Remove duplicate entries from the vocabulary"
 msgstr ""
 
-#: kva_init.cpp:319
+#: kva_init.cpp:280
 msgid "Configure Practice..."
 msgstr ""
 
-#: kva_init.cpp:321
+#: kva_init.cpp:282
 msgid "Set up and start a test"
 msgstr ""
 
-#: kva_init.cpp:330
+#: kva_init.cpp:291
 msgid "Start a test with the last settings"
 msgstr ""
 
-#: kva_init.cpp:339
+#: kva_init.cpp:300
 msgid "&Statistics..."
 msgstr ""
 
-#: kva_init.cpp:341
+#: kva_init.cpp:302
 msgid "Show and reset statistics for the current vocabulary"
 msgstr ""
 
-#: kva_init.cpp:349
+#: kva_init.cpp:310
 msgid "Show the configuration dialog"
 msgstr ""
 
-#: kva_init.cpp:355
+#: kva_init.cpp:316
 msgid "Toggle display of the toolbars"
 msgstr ""
 
-#: kva_init.cpp:360
+#: kva_init.cpp:321
 msgid "Show Se&arch"
 msgstr ""
 
-#: kva_init.cpp:362
+#: kva_init.cpp:323
 msgid "Toggle display of the search bar"
 msgstr ""
 
-#: kva_init.cpp:368
+#: kva_init.cpp:330
 msgid "Show Lesson Column"
 msgstr ""
 
-#: kva_init.cpp:374
+#: kva_init.cpp:336
 msgid "Show Active Entry Column"
 msgstr ""
 
-#: kva_init.cpp:382
+#: kva_init.cpp:341
+msgid "Vocabulary Columns"
+msgstr ""
+
+#: kva_init.cpp:342
+msgid "Toggle display of individual vocabulary columns"
+msgstr ""
+
+#: kva_init.cpp:352
 msgid "Restore Native Order"
 msgstr ""
 
-#: kva_init.cpp:468
-msgid ""
-"Right click to add, delete, or rename lessons. \n"
-"With the checkboxes you can select which lessons you want to practice. \n"
-"Only checked lessons [x] will be asked in the tests!"
-msgstr ""
-
-#: kva_init.cpp:474
-msgid "Edit current lesson"
-msgstr ""
-
-#: kva_init.cpp:475
-msgid "Edit lessons in test"
-msgstr ""
-
-#: kva_init.cpp:476
-msgid "Edit all lessons"
-msgstr ""
-
-#: kva_init.cpp:477
-msgid "Select which lessons should be displayed for editing to the right."
-msgstr ""
-
-#: kva_init.cpp:535
+#: kva_init.cpp:404
 msgid "Enter search terms here"
 msgstr ""
 
-#: kva_init.cpp:537
+#: kva_init.cpp:406
 msgid ""
 "Enter space-separated search terms to find words.\n"
 "\n"
@@ -3470,23 +3312,61 @@ msgid ""
 "Enter type:verb to search for verbs."
 msgstr ""
 
-#: kva_init.cpp:539
+#: kva_init.cpp:408
 msgid "S&earch:"
 msgstr ""
 
-#: kvtlessonmodel.cpp:231
+#: kvtlessonmodel.cpp:153
 #, kde-format
 msgid "Lesson %1"
+msgstr ""
+
+#: vocabulary/vocabularymodel.cpp:280
+#, fuzzy
+#| msgid "Introduction"
+msgid "Pronunciation"
+msgstr "Introduccion"
+
+#: vocabulary/vocabularymodel.cpp:282
+msgid "Word Type"
+msgstr ""
+
+#: vocabulary/vocabularymodel.cpp:288
+msgid "Example"
+msgstr ""
+
+#: vocabulary/vocabularymodel.cpp:290
+#, fuzzy
+#| msgid "Comment: %1"
+msgid "Comment"
+msgstr "Comentari&nbsp;: %1"
+
+#: vocabulary/containerview.cpp:93
+#, kde-format
+msgid "There is %1 word left in this lesson. Do you want to delete them?"
+msgid_plural ""
+"There are %1 words left in this lesson. Do you want to delete them?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vocabulary/containerview.cpp:108 kvtlessonview.cpp:132
+msgid "Entries per Lesson"
+msgstr ""
+
+#: vocabulary/containerview.cpp:108
+msgid ""
+"The lesson will be split into smaller lessons. How many entries in each "
+"lesson do you want?"
+msgstr ""
+
+#: vocabulary/lessonmodel.cpp:351 vocabulary/containermodel.cpp:389
+msgid "Number of entries in this lesson."
 msgstr ""
 
 #: kvtlessonview.cpp:100
 msgid ""
 "There are vocabularies left in this lesson. Do you want to delete them? You "
 "will lose your entries! You have been warned!"
-msgstr ""
-
-#: kvtlessonview.cpp:132
-msgid "Entries per Lesson"
 msgstr ""
 
 #: kvtlessonview.cpp:132
@@ -3514,3 +3394,14 @@ msgid ""
 "td><td>%10</td></tr><tr><td>%11</td><td>%12</td></tr><tr><td>%13</td><td>%"
 "14</td></tr><tr><td>%15</td><td>%16</td></tr></table></html>"
 msgstr ""
+
+#~ msgctxt "word types"
+#~ msgid "Types"
+#~ msgstr "Tipes"
+
+#~ msgctxt "usage (area) of an expression"
+#~ msgid "Usage"
+#~ msgstr "Utilizacion"
+
+#~ msgid "No Image"
+#~ msgstr "Pas cap d'imatge"
