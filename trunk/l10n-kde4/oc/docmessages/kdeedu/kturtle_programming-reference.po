@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kturtle_programming-reference\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-15 08:03+0000\n"
+"POT-Creation-Date: 2008-01-09 07:15+0000\n"
 "PO-Revision-Date: 2008-01-01 00:39+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -53,7 +53,7 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:12 programming-reference.docbook:91
+#: programming-reference.docbook:12 programming-reference.docbook:92
 #, no-c-format
 msgid "Commands"
 msgstr "Comandas"
@@ -175,9 +175,8 @@ msgid ""
 "When using the &turtlelang; programming language you create new things. If "
 "you write a program you will often need <link linkend=\"containers"
 "\">containers</link> and in some cases you need <link linkend=\"learn"
-"\">learn</link> to create new commands. When making a <link linkend="
-"\"containers\">container</link> or a new command with <link linkend=\"learn"
-"\">learn</link> you will have to specify a name."
+"\">learn</link> to create new commands. When making a new command with <link "
+"linkend=\"learn\">learn</link> you will have to specify a name."
 msgstr ""
 
 #. Tag: para
@@ -185,21 +184,37 @@ msgstr ""
 #, no-c-format
 msgid ""
 "You can choose any name, as long as it does not already have a meaning. For "
-"instance you cannot name a container <link linkend=\"forward\">forward</"
-"link>, since that name is already used for a command, and thus has a "
-"meaning. <screen>\n"
-"# here forward is used as a container, but it already has a meaning\n"
-"# so this will produce an error:\n"
-"$forward = 20\n"
+"instance you cannot name a function <link linkend=\"forward\">forward</"
+"link>, since that name is already used for an internal command. <screen>\n"
+"# here forward is used as a new command, \n"
+"# but it already has a meaning so \n"
+"# this will produce an error:\n"
+"learn forward {\n"
+"  print \"this is invalid\"\n"
+"}\n"
 "\n"
 "# this works:\n"
-"forward 20\n"
+"learn myforward {\n"
+"  print \"this is ok\"\n"
+"}\n"
 "</screen> Names can contain only letters, numbers and underscores (_). Yet "
-"they have to start with a letter."
+"they have to start with a letter. Container names have to start with the "
+"container prefix ($)."
+msgstr ""
+
+#. Tag: screen
+#: programming-reference.docbook:44
+#, no-c-format
+msgid ""
+"# here forward is used as a container, \n"
+"# starting with the $ prefix, so it does\n"
+"# not conflict with the forward command\n"
+"$forward = 20\n"
+"print $forward"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:45
+#: programming-reference.docbook:46
 #, no-c-format
 msgid ""
 "Containers are <glossterm>highlighted</glossterm> with bolded purple in the "
@@ -207,7 +222,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:46
+#: programming-reference.docbook:47
 #, no-c-format
 msgid ""
 "Please read the documentation on <link linkend=\"containers\">containers</"
@@ -216,13 +231,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:52
+#: programming-reference.docbook:53
 #, no-c-format
 msgid "Assignments"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:53
+#: programming-reference.docbook:54
 #, no-c-format
 msgid ""
 "Assignment are done with the <userinput>=</userinput> symbol. In programming "
@@ -233,7 +248,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:54
+#: programming-reference.docbook:55
 #, no-c-format
 msgid ""
 "Assignments are generally use for two reasons, (1) to add content <link "
@@ -242,7 +257,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:55
+#: programming-reference.docbook:56
 #, no-c-format
 msgid ""
 "$x = 10\n"
@@ -254,7 +269,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:57
+#: programming-reference.docbook:58
 #, no-c-format
 msgid ""
 "For more examples see the section that explains <link linkend=\"containers"
@@ -262,13 +277,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:61
+#: programming-reference.docbook:62
 #, no-c-format
 msgid "Math Symbols"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:62
+#: programming-reference.docbook:63
 #, no-c-format
 msgid ""
 "&kturtle; supports all basic math symbols: add (<userinput>+</userinput>), "
@@ -278,7 +293,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:63
+#: programming-reference.docbook:64
 #, no-c-format
 msgid ""
 "For a complete explanation and more examples see the <link linkend=\"math"
@@ -286,20 +301,20 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:67 programming-reference.docbook:457
+#: programming-reference.docbook:68 programming-reference.docbook:458
 #, no-c-format
 msgid "Questions"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:68
+#: programming-reference.docbook:69
 #, no-c-format
 msgid ""
 "We can ask simple questions on which the answer will be 'true' or 'false'."
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:69
+#: programming-reference.docbook:70
 #, no-c-format
 msgid ""
 "Using questions is extensively explained in the <link linkend=\"questions"
@@ -307,13 +322,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:73
+#: programming-reference.docbook:74
 #, no-c-format
 msgid "Question Glue-Words"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:74
+#: programming-reference.docbook:75
 #, no-c-format
 msgid ""
 "Questions can be glued together with so called 'question glue'. The glue "
@@ -322,7 +337,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:75
+#: programming-reference.docbook:76
 #, no-c-format
 msgid ""
 "Using question-glue is explained in the <link linkend=\"question-glue"
@@ -330,13 +345,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:80
+#: programming-reference.docbook:81
 #, no-c-format
 msgid "Comments"
 msgstr "Comentaris"
 
 #. Tag: para
-#: programming-reference.docbook:81
+#: programming-reference.docbook:82
 #, no-c-format
 msgid ""
 "Comments are lines that start with a <userinput>#</userinput>. For example: "
@@ -353,7 +368,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:84
+#: programming-reference.docbook:85
 #, no-c-format
 msgid ""
 "Commented lines are <glossterm>highlighted</glossterm> with light grey in "
@@ -361,7 +376,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:92
+#: programming-reference.docbook:93
 #, no-c-format
 msgid ""
 "Using commands you tell the turtle or &kturtle; to do something. Some "
@@ -373,37 +388,37 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:95
+#: programming-reference.docbook:96
 #, no-c-format
 msgid "Moving the turtle"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:96
+#: programming-reference.docbook:97
 #, no-c-format
 msgid "There are several commands to move the turtle over the screen."
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:99
+#: programming-reference.docbook:100
 #, no-c-format
 msgid "forward (fw)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:102
+#: programming-reference.docbook:103
 #, no-c-format
 msgid "forward"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:103
+#: programming-reference.docbook:104
 #, no-c-format
 msgid "forward X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:103
+#: programming-reference.docbook:104
 #, no-c-format
 msgid ""
 "<userinput>forward</userinput> moves the turtle forward by the amount of X "
@@ -413,25 +428,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:109
+#: programming-reference.docbook:110
 #, no-c-format
 msgid "backward (bw)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:112
+#: programming-reference.docbook:113
 #, no-c-format
 msgid "backward"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:113
+#: programming-reference.docbook:114
 #, no-c-format
 msgid "backward X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:113
+#: programming-reference.docbook:114
 #, no-c-format
 msgid ""
 "<userinput>backward</userinput> moves the turtle backward by the amount of X "
@@ -441,25 +456,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:119
+#: programming-reference.docbook:120
 #, no-c-format
 msgid "turnleft (tl)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:122
+#: programming-reference.docbook:123
 #, no-c-format
 msgid "turnleft"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:123
+#: programming-reference.docbook:124
 #, no-c-format
 msgid "turnleft X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:123
+#: programming-reference.docbook:124
 #, no-c-format
 msgid ""
 "<userinput>turnleft</userinput> commands the turtle to turn an amount of X "
@@ -468,25 +483,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:129
+#: programming-reference.docbook:130
 #, no-c-format
 msgid "turnright (tr)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:132
+#: programming-reference.docbook:133
 #, no-c-format
 msgid "turnright"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:133
+#: programming-reference.docbook:134
 #, no-c-format
 msgid "turnright X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:133
+#: programming-reference.docbook:134
 #, no-c-format
 msgid ""
 "<userinput>turnright</userinput>the turtle to turn an amount of X degrees to "
@@ -495,25 +510,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:139
+#: programming-reference.docbook:140
 #, no-c-format
 msgid "direction (dir)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:142
+#: programming-reference.docbook:143
 #, no-c-format
 msgid "direction"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:143
+#: programming-reference.docbook:144
 #, no-c-format
 msgid "direction X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:143
+#: programming-reference.docbook:144
 #, no-c-format
 msgid ""
 "<userinput>direction</userinput> set the turtle's direction to an amount of "
@@ -523,50 +538,50 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:149
+#: programming-reference.docbook:150
 #, no-c-format
 msgid "<title>center</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:152
+#: programming-reference.docbook:153
 #, no-c-format
 msgid "<term>center</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:153
+#: programming-reference.docbook:154
 #, no-c-format
 msgid "<screen>center</screen>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:153
+#: programming-reference.docbook:154
 #, no-c-format
 msgid ""
 "<userinput>center</userinput> moves the turtle to the center on the canvas."
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:159
+#: programming-reference.docbook:160
 #, no-c-format
 msgid "<title>go</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:162
+#: programming-reference.docbook:163
 #, no-c-format
 msgid "<term>go</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:163
+#: programming-reference.docbook:164
 #, no-c-format
 msgid "go X,Y"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:163
+#: programming-reference.docbook:164
 #, no-c-format
 msgid ""
 "<userinput>go</userinput> commands the turtle to go to a certain place on "
@@ -577,25 +592,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:169
+#: programming-reference.docbook:170
 #, no-c-format
 msgid "<title>gox</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:172
+#: programming-reference.docbook:173
 #, no-c-format
 msgid "<term>gox</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:173
+#: programming-reference.docbook:174
 #, no-c-format
 msgid "gox X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:173
+#: programming-reference.docbook:174
 #, no-c-format
 msgid ""
 "<userinput>gox</userinput> using this command the turtle will move to X "
@@ -604,25 +619,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:179
+#: programming-reference.docbook:180
 #, no-c-format
 msgid "<title>goy</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:182
+#: programming-reference.docbook:183
 #, no-c-format
 msgid "<term>goy</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:183
+#: programming-reference.docbook:184
 #, no-c-format
 msgid "goy Y"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:183
+#: programming-reference.docbook:184
 #, no-c-format
 msgid ""
 "<userinput>gox</userinput> using this command the turtle will move to Y "
@@ -631,13 +646,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:191
+#: programming-reference.docbook:192
 #, no-c-format
 msgid "The turtle has a pen"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:192
+#: programming-reference.docbook:193
 #, no-c-format
 msgid ""
 "The turtle has a pen that draws a line when the turtle moves. There are a "
@@ -645,25 +660,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:194
+#: programming-reference.docbook:195
 #, no-c-format
 msgid "penup (pu)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:197
+#: programming-reference.docbook:198
 #, no-c-format
 msgid "<term>penup</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:198
+#: programming-reference.docbook:199
 #, no-c-format
 msgid "<screen>penup</screen>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:198
+#: programming-reference.docbook:199
 #, no-c-format
 msgid ""
 "<userinput>penup</userinput> lifts the pen from the canvas. When the pen is "
@@ -673,25 +688,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:204
+#: programming-reference.docbook:205
 #, no-c-format
 msgid "pendown (pd)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:207
+#: programming-reference.docbook:208
 #, no-c-format
 msgid "<term>pendown</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:208
+#: programming-reference.docbook:209
 #, no-c-format
 msgid "<screen>pendown</screen>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:208
+#: programming-reference.docbook:209
 #, no-c-format
 msgid ""
 "<userinput>pendown</userinput> presses the pen down on the canvas. When the "
@@ -701,25 +716,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:214
+#: programming-reference.docbook:215
 #, no-c-format
 msgid "penwidth (pw)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:217
+#: programming-reference.docbook:218
 #, no-c-format
 msgid "penwidth"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:218
+#: programming-reference.docbook:219
 #, no-c-format
 msgid "penwidth X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:218
+#: programming-reference.docbook:219
 #, no-c-format
 msgid ""
 "<userinput>penwidth</userinput> sets the width of the pen (the line width) "
@@ -729,25 +744,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:224
+#: programming-reference.docbook:225
 #, no-c-format
 msgid "pencolor (pc)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:227
+#: programming-reference.docbook:228
 #, no-c-format
 msgid "pencolor"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:228
+#: programming-reference.docbook:229
 #, no-c-format
 msgid "pencolor R,G,B"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:228
+#: programming-reference.docbook:229
 #, no-c-format
 msgid ""
 "<userinput>pencolor</userinput> sets the color of the pen. "
@@ -757,38 +772,38 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:281
+#: programming-reference.docbook:282
 #, no-c-format
 msgid "Commands to clean up"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:282
+#: programming-reference.docbook:283
 #, no-c-format
 msgid ""
 "There are two commands to clean up the canvas after you have made a mess."
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:284
+#: programming-reference.docbook:285
 #, no-c-format
 msgid "<title>clear</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:287
+#: programming-reference.docbook:288
 #, no-c-format
 msgid "<term>clear</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:288
+#: programming-reference.docbook:289
 #, no-c-format
 msgid "<screen>clear</screen>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:288
+#: programming-reference.docbook:289
 #, no-c-format
 msgid ""
 "With <userinput>clear</userinput> you can clean all drawings from the "
@@ -797,25 +812,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:294
+#: programming-reference.docbook:295
 #, no-c-format
 msgid "<title>reset</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:297
+#: programming-reference.docbook:298
 #, no-c-format
 msgid "<term>reset</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:298
+#: programming-reference.docbook:299
 #, no-c-format
 msgid "<screen>reset</screen>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:298
+#: programming-reference.docbook:299
 #, no-c-format
 msgid ""
 "<userinput>reset</userinput> cleans much more thoroughly than the "
@@ -826,13 +841,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:306
+#: programming-reference.docbook:307
 #, no-c-format
 msgid "The turtle is a sprite"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:307
+#: programming-reference.docbook:308
 #, no-c-format
 msgid ""
 "First a brief explanation of what sprites are: sprites are small pictures "
@@ -842,14 +857,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:308
+#: programming-reference.docbook:309
 #, no-c-format
 msgid ""
 "Next you will find a full overview on all commands to work with sprites."
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:309
+#: programming-reference.docbook:310
 #, no-c-format
 msgid ""
 "[The current version of &kturtle; does not yet support the use of sprites "
@@ -858,25 +873,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:311
+#: programming-reference.docbook:312
 #, no-c-format
 msgid "<title>show</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:314
+#: programming-reference.docbook:315
 #, no-c-format
 msgid "show (ss)"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:315
+#: programming-reference.docbook:316
 #, no-c-format
 msgid "<screen>show</screen>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:315
+#: programming-reference.docbook:316
 #, no-c-format
 msgid ""
 "<userinput>show</userinput> makes the turtle visible again after it has been "
@@ -885,25 +900,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:321
+#: programming-reference.docbook:322
 #, no-c-format
 msgid "hide (sh)"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:324
+#: programming-reference.docbook:325
 #, no-c-format
 msgid "<term>hide</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:325
+#: programming-reference.docbook:326
 #, no-c-format
 msgid "<screen>hide</screen>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:325
+#: programming-reference.docbook:326
 #, no-c-format
 msgid ""
 "<userinput>hide</userinput> hides the turtle. This can be used if the turtle "
@@ -912,13 +927,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:333
+#: programming-reference.docbook:334
 #, no-c-format
 msgid "Can the turtles write?"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:334
+#: programming-reference.docbook:335
 #, no-c-format
 msgid ""
 "The answer is: <quote>yes</quote>. The turtle can write: it writes just "
@@ -926,25 +941,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:336
+#: programming-reference.docbook:337
 #, no-c-format
 msgid "<title>print</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:339
+#: programming-reference.docbook:340
 #, no-c-format
 msgid "<term>print</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:340
+#: programming-reference.docbook:341
 #, no-c-format
 msgid "print X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:340
+#: programming-reference.docbook:341
 #, no-c-format
 msgid ""
 "The <userinput>print</userinput> command is used to command the turtle to "
@@ -954,7 +969,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:342
+#: programming-reference.docbook:343
 #, no-c-format
 msgid ""
 "$year = 2003\n"
@@ -964,25 +979,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:348
+#: programming-reference.docbook:349
 #, no-c-format
 msgid "<title>fontsize</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:351
+#: programming-reference.docbook:352
 #, no-c-format
 msgid "<term>fontsize</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:352
+#: programming-reference.docbook:353
 #, no-c-format
 msgid "fontsize X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:352
+#: programming-reference.docbook:353
 #, no-c-format
 msgid ""
 "<userinput>fontsize</userinput> sets the size of the font that is used by "
@@ -992,13 +1007,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:360
+#: programming-reference.docbook:361
 #, no-c-format
 msgid "A command that rolls dice for you"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:361
+#: programming-reference.docbook:362
 #, no-c-format
 msgid ""
 "There is one command that rolls dice for you, it is called "
@@ -1007,19 +1022,19 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:364
+#: programming-reference.docbook:365
 #, no-c-format
 msgid "random"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:365
+#: programming-reference.docbook:366
 #, no-c-format
 msgid "random X,Y"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:365
+#: programming-reference.docbook:366
 #, no-c-format
 msgid ""
 "<userinput>random</userinput> is a command that takes input and gives "
@@ -1037,13 +1052,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:374
+#: programming-reference.docbook:375
 #, no-c-format
 msgid "Input and feedback though dialogs"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:375
+#: programming-reference.docbook:376
 #, no-c-format
 msgid ""
 "A dialog is a small pop-up window that provides some feedback or asks for "
@@ -1052,25 +1067,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:377
+#: programming-reference.docbook:378
 #, no-c-format
 msgid "<title>message</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:380
+#: programming-reference.docbook:381
 #, no-c-format
 msgid "<term>message</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:381
+#: programming-reference.docbook:382
 #, no-c-format
 msgid "message X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:381
+#: programming-reference.docbook:382
 #, no-c-format
 msgid ""
 "The <userinput>message</userinput> command takes a <link linkend=\"string"
@@ -1079,7 +1094,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:383
+#: programming-reference.docbook:384
 #, no-c-format
 msgid ""
 "message \"Cies started the KTurtle project in 2003 and still enjoys working "
@@ -1087,25 +1102,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:389
+#: programming-reference.docbook:390
 #, no-c-format
 msgid "<title>ask</title>"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:392
+#: programming-reference.docbook:393
 #, no-c-format
 msgid "<term>ask</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:393
+#: programming-reference.docbook:394
 #, no-c-format
 msgid "ask X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:393
+#: programming-reference.docbook:394
 #, no-c-format
 msgid ""
 "<userinput>ask</userinput> takes a <link linkend=\"string\">string</link> as "
@@ -1123,13 +1138,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:407
+#: programming-reference.docbook:408
 #, no-c-format
 msgid "Containers"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:408
+#: programming-reference.docbook:409
 #, no-c-format
 msgid ""
 "Containers are letters or words that can be used by the programmer to store "
@@ -1140,7 +1155,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:410
+#: programming-reference.docbook:411
 #, no-c-format
 msgid ""
 "Containers that are not used contain nothing. An example: <screen>\n"
@@ -1150,13 +1165,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:416
+#: programming-reference.docbook:417
 #, no-c-format
 msgid "Variables: number containers"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:417
+#: programming-reference.docbook:418
 #, no-c-format
 msgid ""
 "Let us start with an example: <screen>\n"
@@ -1169,7 +1184,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:420
+#: programming-reference.docbook:421
 #, no-c-format
 msgid ""
 "Note that if we wanted to print an <quote>x</quote> that we should have "
@@ -1177,13 +1192,13 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:421
+#: programming-reference.docbook:422
 #, no-c-format
 msgid "print \"x\""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:423
+#: programming-reference.docbook:424
 #, no-c-format
 msgid ""
 "That was easy, now a bit harder example: <screen>\n"
@@ -1210,13 +1225,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:429
+#: programming-reference.docbook:430
 #, no-c-format
 msgid "Containers that contain text (strings)"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:430
+#: programming-reference.docbook:431
 #, no-c-format
 msgid ""
 "In programming code the regular text is usually started and ended with "
@@ -1227,7 +1242,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:433
+#: programming-reference.docbook:434
 #, no-c-format
 msgid ""
 "Strings can also be stored in <link linkend=\"containers\">containers</link> "
@@ -1247,7 +1262,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:437
+#: programming-reference.docbook:438
 #, no-c-format
 msgid ""
 "This program ask you to enter your name. When you, for instance, enter the "
@@ -1257,13 +1272,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:442
+#: programming-reference.docbook:443
 #, no-c-format
 msgid "Can the Turtle do math?"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:443
+#: programming-reference.docbook:444
 #, no-c-format
 msgid ""
 "Yes, &kturtle; will do your math. You can add (+), substract (-), multiply "
@@ -1280,7 +1295,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:446
+#: programming-reference.docbook:447
 #, no-c-format
 msgid ""
 "If you just want a simple calculation to be done you can do something like "
@@ -1288,13 +1303,13 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:447
+#: programming-reference.docbook:448
 #, no-c-format
 msgid "print 2004-12"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:448
+#: programming-reference.docbook:449
 #, no-c-format
 msgid ""
 "Now an example with parentheses: <screen>\n"
@@ -1305,13 +1320,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:454
+#: programming-reference.docbook:455
 #, no-c-format
 msgid "Asking questions, getting answers..."
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:455
+#: programming-reference.docbook:456
 #, no-c-format
 msgid ""
 "<link linkend=\"if\"><userinput>if</userinput></link> and <link linkend="
@@ -1322,7 +1337,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:458
+#: programming-reference.docbook:459
 #, no-c-format
 msgid ""
 "A simple example of a question: <screen>\n"
@@ -1341,31 +1356,31 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:462
+#: programming-reference.docbook:463
 #, no-c-format
 msgid "Here are all possible questions:"
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:465
+#: programming-reference.docbook:466
 #, no-c-format
 msgid "Types of questions"
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:469
+#: programming-reference.docbook:470
 #, no-c-format
 msgid "a == b"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:470
+#: programming-reference.docbook:471
 #, no-c-format
 msgid "equals"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:471
+#: programming-reference.docbook:472
 #, no-c-format
 msgid ""
 "answer is <quote>true</quote> if <userinput>a</userinput> equals "
@@ -1373,19 +1388,19 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:474
+#: programming-reference.docbook:475
 #, no-c-format
 msgid "a != b"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:475
+#: programming-reference.docbook:476
 #, no-c-format
 msgid "not-equals"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:476
+#: programming-reference.docbook:477
 #, no-c-format
 msgid ""
 "answer is <quote>true</quote> if <userinput>a</userinput> does not equal "
@@ -1393,19 +1408,19 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:479
+#: programming-reference.docbook:480
 #, no-c-format
 msgid "a &gt; b"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:480
+#: programming-reference.docbook:481
 #, no-c-format
 msgid "greater than"
 msgstr "mai grand que"
 
 #. Tag: entry
-#: programming-reference.docbook:481
+#: programming-reference.docbook:482
 #, no-c-format
 msgid ""
 "answer is <quote>true</quote> if <userinput>a</userinput> is greater than "
@@ -1413,19 +1428,19 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:484
+#: programming-reference.docbook:485
 #, no-c-format
 msgid "a &lt; b"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:485
+#: programming-reference.docbook:486
 #, no-c-format
 msgid "smaller than"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:486
+#: programming-reference.docbook:487
 #, no-c-format
 msgid ""
 "answer is <quote>true</quote> if <userinput>a</userinput> is smaller than "
@@ -1433,19 +1448,19 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:489
+#: programming-reference.docbook:490
 #, no-c-format
 msgid "a &gt;= b"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:490
+#: programming-reference.docbook:491
 #, no-c-format
 msgid "greater than or equals"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:491
+#: programming-reference.docbook:492
 #, no-c-format
 msgid ""
 "answer is <quote>true</quote> if <userinput>a</userinput> is greater than or "
@@ -1453,19 +1468,19 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:494
+#: programming-reference.docbook:495
 #, no-c-format
 msgid "a &lt;= b"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:495
+#: programming-reference.docbook:496
 #, no-c-format
 msgid "smaller than or equals"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:496
+#: programming-reference.docbook:497
 #, no-c-format
 msgid ""
 "answer is <quote>true</quote> if <userinput>a</userinput> is smaller than or "
@@ -1473,13 +1488,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:505
+#: programming-reference.docbook:506
 #, no-c-format
 msgid "Question Glue"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:506
+#: programming-reference.docbook:507
 #, no-c-format
 msgid ""
 "Question glue-words enable us to glue questions into one big question. "
@@ -1499,50 +1514,50 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:511
+#: programming-reference.docbook:512
 #, no-c-format
 msgid ""
 "Here is a schematic overview; a more detailed explanation follows below:"
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:514
+#: programming-reference.docbook:515
 #, no-c-format
 msgid "Question glue-words"
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:518
+#: programming-reference.docbook:519
 #, no-c-format
 msgid "<userinput>and</userinput>"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:519
+#: programming-reference.docbook:520
 #, no-c-format
 msgid "Both sides need to be 'true' in order to answer 'true'"
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:522
+#: programming-reference.docbook:523
 #, no-c-format
 msgid "<userinput>or</userinput>"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:523
+#: programming-reference.docbook:524
 #, no-c-format
 msgid "If one of the sides is 'true' the answer is 'true'"
 msgstr ""
 
 #. Tag: userinput
-#: programming-reference.docbook:526
+#: programming-reference.docbook:527
 #, no-c-format
 msgid "<userinput>not</userinput>"
 msgstr ""
 
 #. Tag: entry
-#: programming-reference.docbook:527
+#: programming-reference.docbook:528
 #, no-c-format
 msgid ""
 "Special case: only works on one question! Changes 'true' into 'false' and "
@@ -1550,13 +1565,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:535
+#: programming-reference.docbook:536
 #, no-c-format
 msgid "<title>and</title>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:536
+#: programming-reference.docbook:537
 #, no-c-format
 msgid ""
 "When two questions are glued together with <userinput>and</userinput>, both "
@@ -1572,13 +1587,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:542
+#: programming-reference.docbook:543
 #, no-c-format
 msgid "<title>or</title>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:543
+#: programming-reference.docbook:544
 #, no-c-format
 msgid ""
 "If one of the two questions that are glued together with <userinput>or</"
@@ -1593,13 +1608,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:549
+#: programming-reference.docbook:550
 #, no-c-format
 msgid "<title>not</title>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:550
+#: programming-reference.docbook:551
 #, no-c-format
 msgid ""
 "<userinput>not</userinput> is a special question glue-word because it only "
@@ -1621,13 +1636,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:560
+#: programming-reference.docbook:561
 #, no-c-format
 msgid "Controlling execution"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:561
+#: programming-reference.docbook:562
 #, no-c-format
 msgid ""
 "The execution controllers enable you &mdash; as their name implies &mdash; "
@@ -1635,7 +1650,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:562
+#: programming-reference.docbook:563
 #, no-c-format
 msgid ""
 "Execution controlling commands are <glossterm>highlighted</glossterm> with "
@@ -1645,13 +1660,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:565
+#: programming-reference.docbook:566
 #, no-c-format
 msgid "Have the turtle wait"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:566
+#: programming-reference.docbook:567
 #, no-c-format
 msgid ""
 "If you have done some programming in &kturtle; you have might noticed that "
@@ -1660,19 +1675,19 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:569
+#: programming-reference.docbook:570
 #, no-c-format
 msgid "wait"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:570
+#: programming-reference.docbook:571
 #, no-c-format
 msgid "wait X"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:570
+#: programming-reference.docbook:571
 #, no-c-format
 msgid ""
 "<userinput>wait</userinput> makes the turtle wait for X seconds. <screen>\n"
@@ -1686,25 +1701,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:580
+#: programming-reference.docbook:581
 #, no-c-format
 msgid "Execute \"if\""
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:583
+#: programming-reference.docbook:584
 #, no-c-format
 msgid "<term>if</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:584
+#: programming-reference.docbook:585
 #, no-c-format
 msgid "if <link linkend=\"questions\">question</link> { ... }"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:584
+#: programming-reference.docbook:585
 #, no-c-format
 msgid ""
 "The code that is placed between the brackets will only be executed "
@@ -1724,25 +1739,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:593
+#: programming-reference.docbook:594
 #, no-c-format
 msgid "The \"while\" loop"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:596
+#: programming-reference.docbook:597
 #, no-c-format
 msgid "while"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:597
+#: programming-reference.docbook:598
 #, no-c-format
 msgid "while <link linkend=\"questions\">question</link> { ... }"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:597
+#: programming-reference.docbook:598
 #, no-c-format
 msgid ""
 "The execution controller <userinput>while</userinput> is a lot like <link "
@@ -1767,25 +1782,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:606
+#: programming-reference.docbook:607
 #, no-c-format
 msgid "If not, in other words: \"else\""
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:609
+#: programming-reference.docbook:610
 #, no-c-format
 msgid "else"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:610
+#: programming-reference.docbook:611
 #, no-c-format
 msgid "if question { ... } else { ... }"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:610
+#: programming-reference.docbook:611
 #, no-c-format
 msgid ""
 "<userinput>else</userinput> can be used in addition to the execution "
@@ -1810,19 +1825,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:619
+#: programming-reference.docbook:620
 #, no-c-format
 msgid "The \"for\" loop, a counting loop"
 msgstr ""
 
 #. Tag: term
-#: programming-reference.docbook:622
+#: programming-reference.docbook:623
 #, no-c-format
 msgid "<term>for</term>"
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:623
+#: programming-reference.docbook:624
 #, no-c-format
 msgid ""
 "for <userinput>start point</userinput> to <userinput>end point</userinput> "
@@ -1830,7 +1845,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:623
+#: programming-reference.docbook:624
 #, no-c-format
 msgid ""
 "The <userinput>for</userinput> loop is a <quote>counting loop</quote>, &ie; "
@@ -1847,13 +1862,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: programming-reference.docbook:635
+#: programming-reference.docbook:636
 #, no-c-format
 msgid "Create your own commands with <quote>learn</quote>"
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:636
+#: programming-reference.docbook:637
 #, no-c-format
 msgid ""
 "<userinput>learn</userinput> is a very special command, because it is used "
@@ -1876,7 +1891,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:639
+#: programming-reference.docbook:640
 #, no-c-format
 msgid ""
 "learn circle $X {\n"
@@ -1894,7 +1909,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:641
+#: programming-reference.docbook:642
 #, no-c-format
 msgid ""
 "In the next example, a command with a return value is created. <screen>\n"
@@ -1915,7 +1930,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: programming-reference.docbook:645
+#: programming-reference.docbook:646
 #, no-c-format
 msgid ""
 "Commands can have more than one <glossterm linkend=\"input-output\">input</"
@@ -1923,7 +1938,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: programming-reference.docbook:646
+#: programming-reference.docbook:647
 #, no-c-format
 msgid ""
 "learn box $X, $Y {\n"
