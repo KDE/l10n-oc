@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kblogger\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-17 08:04+0100\n"
+"POT-Creation-Date: 2008-01-19 09:02+0100\n"
 "PO-Revision-Date: 2008-01-12 15:04+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -78,39 +78,39 @@ msgstr ""
 msgid "KBlogger backend error"
 msgstr ""
 
-#: backendjob.cpp:69
+#: backendjob.cpp:71
 msgid "Listing recent posts"
 msgstr ""
 
-#: backendjob.cpp:74
+#: backendjob.cpp:76
 msgid "Fetch Post"
 msgstr ""
 
-#: backendjob.cpp:79
+#: backendjob.cpp:81
 msgid "modifying Post"
 msgstr ""
 
-#: backendjob.cpp:84
+#: backendjob.cpp:86
 msgid "Creating Post"
 msgstr ""
 
-#: backendjob.cpp:89
+#: backendjob.cpp:91
 msgid "Removing Post"
 msgstr ""
 
-#: backendjob.cpp:94
+#: backendjob.cpp:96
 msgid "Fetching Categories"
 msgstr ""
 
-#: backendjob.cpp:99
+#: backendjob.cpp:101
 msgid "Creating Media"
 msgstr ""
 
-#: backendjob.cpp:198 backendjob.cpp:221 backendjob.cpp:222 backendjob.cpp:239
+#: backendjob.cpp:200 backendjob.cpp:223 backendjob.cpp:224 backendjob.cpp:241
 msgid "This post cannot be uploaded. Upload its media first"
 msgstr ""
 
-#: backendjob.cpp:368 composer.cpp:341
+#: backendjob.cpp:359 composer.cpp:343
 #, kde-format
 msgid "Untitled post of %1"
 msgstr ""
@@ -126,50 +126,67 @@ msgstr[1] ""
 msgid "Select a blog"
 msgstr ""
 
-#: composer.cpp:226
+#: bloghash.cpp:37
+msgid ""
+"We have detected a Blogspot.com site. Blogspot uses GData API nowadays and "
+"you still cannot upload files to Blogspot.com itself. This means that you "
+"cannot use the media management to upload files."
+msgstr ""
+
+#: bloghash.cpp:60
+msgid "We have detected your Wordpress.com site."
+msgstr ""
+
+#: bloghash.cpp:83
+msgid "We have detected your LiveJournal.com site."
+msgstr ""
+
+#: bloghash.cpp:106
+msgid "We have detected your personal Drupal installation."
+msgstr ""
+
+#: bloghash.cpp:129
+msgid "We have detected your personal Wordpress installation."
+msgstr ""
+
+#: bloghash.cpp:152
+msgid ""
+"You may have tried to autoconfigure the XML-RPC gateway. For autoconfigure "
+"to work correctly you need to insert the URL to your blog's homepage and not "
+"the XML-RPC gateway. This might also happen if you autoconfigure twice. "
+"Otherwise this is your personal undetectable XML-RPC installation. We assume "
+"Blogger API 1.0 for now. If you are confident that your server supports more "
+"than that, chose Wordpress as type."
+msgstr ""
+
+#: composer.cpp:228
 #, kde-format
 msgid "Loaded %1 categories..."
 msgstr ""
 
-#: composer.cpp:235
+#: composer.cpp:237
 msgid "Fetching List of Categories..."
 msgstr ""
 
-#: composer.cpp:329
+#: composer.cpp:331
 msgid "Please select a blog first"
 msgstr ""
 
-#: composer.cpp:335
+#: composer.cpp:337
 msgid "Please fill the Title field."
 msgstr ""
 
-#: composer.cpp:347
+#: composer.cpp:349
 msgid "Post enqueued in the Local Draft."
 msgstr ""
 
-#: composer.cpp:402
+#: composer.cpp:404
 #, kde-format
 msgid "Retrieved %1 categories from your blog..."
 msgstr ""
 
-#: composer.cpp:459
-msgid "Categories are not supported in Blogger API 1.0."
-msgstr ""
-
-#: composer.cpp:476
-msgid "You are using MetaWeblog API"
-msgstr ""
-
-#: composer.cpp:493
-msgid "You are using MovableType API"
-msgstr ""
-
-#: composer.cpp:510
-msgid "You are using MT for Wordpress API"
-msgstr ""
-
-#: composer.cpp:522
-msgid "You are using GData API"
+#: composer.cpp:468
+msgid "Categories are not supported on this blog."
 msgstr ""
 
 #: composereditor.cpp:123
@@ -477,25 +494,20 @@ msgstr ""
 msgid "How many entries would you like to update?"
 msgstr ""
 
-#: profileconfigdialog.cpp:137
+#: profileconfigdialog.cpp:134
 msgid "You need to set the username, password and url of your blog."
 msgstr ""
 
-#: profileconfigdialog.cpp:242
-msgid "Please wait..."
-msgstr ""
-
-#: profileconfigdialog.cpp:284
+#: profileconfigdialog.cpp:257
 msgid "Fetching the blog's id timed out. Are you online?"
 msgstr ""
 
-#: profileconfigdialog.cpp:296
+#: profileconfigdialog.cpp:269
 msgid "Autoconfiguration timed out. Are you online?"
 msgstr ""
 
-#: profileconfigdialog.cpp:373
-#, kde-format
-msgid "Impossible to get the API: %1"
+#: profileconfigdialog.cpp:348
+msgid "Impossible to get the API. Check your settings, especially the url."
 msgstr ""
 
 #: profilelist.cpp:89
