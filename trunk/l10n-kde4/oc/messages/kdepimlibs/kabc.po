@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kabc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-20 08:58+0100\n"
+"POT-Creation-Date: 2008-01-23 09:00+0100\n"
 "PO-Revision-Date: 2008-01-12 13:48+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -55,18 +55,24 @@ msgid "Preferred"
 msgstr ""
 
 #: address.cpp:498
+msgctxt "Address is in home country"
 msgid "Domestic"
 msgstr ""
 
 #: address.cpp:501
+#, fuzzy
+#| msgid "International"
+msgctxt "Address is not in home country"
 msgid "International"
 msgstr "Internacional"
 
 #: address.cpp:504
+msgctxt "Address for delivering letters"
 msgid "Postal"
 msgstr ""
 
 #: address.cpp:507
+msgctxt "Address for delivering packages"
 msgid "Parcel"
 msgstr ""
 
@@ -84,7 +90,10 @@ msgstr "Professional"
 msgid "Preferred Address"
 msgstr ""
 
-#: address.cpp:519 phonenumber.cpp:231
+#: address.cpp:519
+#, fuzzy
+#| msgid "Other"
+msgctxt "another type of address"
 msgid "Other"
 msgstr "Autre"
 
@@ -94,26 +103,38 @@ msgid "Unable to load resource '%1'"
 msgstr ""
 
 #: addresseedialog.cpp:108
+msgctxt "@title:window"
 msgid "Select Addressee"
 msgstr ""
 
-#: addresseedialog.cpp:122 addresseedialog.cpp:154
-#: distributionlistdialog.cpp:230 distributionlistdialog.cpp:245
+#: addresseedialog.cpp:122 addresseedialog.cpp:156
+#: distributionlistdialog.cpp:230 distributionlistdialog.cpp:246
+#, fuzzy
+#| msgid "Name"
+msgctxt "@title:column addressee name"
 msgid "Name"
 msgstr "Nom"
 
-#: addresseedialog.cpp:122 addresseedialog.cpp:154
-#: distributionlistdialog.cpp:245
+#: addresseedialog.cpp:123 addresseedialog.cpp:157
+#, fuzzy
+#| msgid "Email"
+msgctxt "@title:column addressee email"
 msgid "Email"
 msgstr "Adreça electronica"
 
-#: addresseedialog.cpp:145
+#: addresseedialog.cpp:147
+#, fuzzy
+#| msgid "Selected"
+msgctxt "@title:group selected addressees"
 msgid "Selected"
 msgstr "Seleccionat"
 
-#: addresseedialog.cpp:160
+#: addresseedialog.cpp:164
+#, fuzzy
+#| msgid "Selected"
+msgctxt "@action:button unselect addressee"
 msgid "Unselect"
-msgstr ""
+msgstr "Seleccionat"
 
 #: addresseehelper.cpp:70
 msgid "Dr."
@@ -172,10 +193,16 @@ msgid "Email Addresses"
 msgstr ""
 
 #: distributionlistdialog.cpp:131 emailselectdialog.cpp:108
+#, fuzzy
+#| msgid "Yes"
+msgctxt "this the preferred email address"
 msgid "Yes"
 msgstr "Òc"
 
-#: distributionlistdialog.cpp:134 emailselectdialog.cpp:111
+#: distributionlistdialog.cpp:134
+#, fuzzy
+#| msgid "No"
+msgctxt "this is not the preferred email address"
 msgid "No"
 msgstr "Non"
 
@@ -195,55 +222,71 @@ msgstr ""
 msgid "Available addresses:"
 msgstr ""
 
-#: distributionlistdialog.cpp:230
+#: distributionlistdialog.cpp:231
+msgctxt "@title:column addressee preferred email"
 msgid "Preferred Email"
 msgstr ""
 
-#: distributionlistdialog.cpp:238
+#: distributionlistdialog.cpp:239
 msgid "Add Entry"
 msgstr ""
 
-#: distributionlistdialog.cpp:245
+#: distributionlistdialog.cpp:247
+#, fuzzy
+#| msgid "Email"
+msgctxt "@title:column addressee preferred email"
+msgid "Email"
+msgstr "Adreça electronica"
+
+#: distributionlistdialog.cpp:248
+msgctxt "@title:column use preferred email"
 msgid "Use Preferred"
 msgstr ""
 
-#: distributionlistdialog.cpp:251
+#: distributionlistdialog.cpp:254
 msgid "Change Email..."
 msgstr ""
 
-#: distributionlistdialog.cpp:255
+#: distributionlistdialog.cpp:258
 msgid "Remove Entry"
 msgstr ""
 
-#: distributionlistdialog.cpp:286
+#: distributionlistdialog.cpp:289
 msgid "New Distribution List"
 msgstr ""
 
-#: distributionlistdialog.cpp:287
+#: distributionlistdialog.cpp:290
 msgid "Please enter &name:"
 msgstr ""
 
-#: distributionlistdialog.cpp:306
+#: distributionlistdialog.cpp:309
 msgid "Distribution List"
 msgstr ""
 
-#: distributionlistdialog.cpp:307
+#: distributionlistdialog.cpp:310
 msgid "Please change &name:"
 msgstr ""
 
-#: distributionlistdialog.cpp:328
+#: distributionlistdialog.cpp:331
 #, kde-format
 msgid "Delete distribution list '%1'?"
 msgstr ""
 
-#: distributionlistdialog.cpp:413
+#: distributionlistdialog.cpp:416
 msgid "Selected addressees:"
 msgstr ""
 
-#: distributionlistdialog.cpp:415
+#: distributionlistdialog.cpp:418
 #, kde-format
 msgid "Selected addresses in '%1':"
 msgstr ""
+
+#: emailselectdialog.cpp:111
+#, fuzzy
+#| msgid "No"
+msgctxt "this is not preferred email address"
+msgid "No"
+msgstr "Non"
 
 #: formatfactory.cpp:85 formatfactory.cpp:155
 msgid "vCard"
@@ -258,18 +301,26 @@ msgid "No description available."
 msgstr "Pas cap de descripcion disponibla."
 
 #: key.cpp:214
+msgctxt "X.509 public key"
 msgid "X509"
 msgstr ""
 
 #: key.cpp:217
+msgctxt "Pretty Good Privacy key"
 msgid "PGP"
 msgstr ""
 
 #: key.cpp:220
+#, fuzzy
+#| msgid "Custom"
+msgctxt "A custom key"
 msgid "Custom"
 msgstr "Personalisat"
 
-#: key.cpp:223 secrecy.cpp:120
+#: key.cpp:223
+#, fuzzy
+#| msgid "Unknown type"
+msgctxt "another type of encryption key"
 msgid "Unknown type"
 msgstr "Tipe desconegut"
 
@@ -340,6 +391,9 @@ msgid "Mobile"
 msgstr ""
 
 #: phonenumber.cpp:204
+#, fuzzy
+#| msgid "Video"
+msgctxt "Video phone"
 msgid "Video"
 msgstr "Vidèo"
 
@@ -376,6 +430,13 @@ msgstr "Fax personal"
 msgid "Work Fax"
 msgstr ""
 
+#: phonenumber.cpp:231
+#, fuzzy
+#| msgid "Other"
+msgctxt "another type of phone"
+msgid "Other"
+msgstr "Autre"
+
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -397,16 +458,32 @@ msgid "Saving resource '%1' failed."
 msgstr ""
 
 #: secrecy.cpp:111
+#, fuzzy
+#| msgid "Public"
+msgctxt "access is for everyone"
 msgid "Public"
 msgstr "Public"
 
 #: secrecy.cpp:114
+#, fuzzy
+#| msgid "Private"
+msgctxt "access is by owner only"
 msgid "Private"
 msgstr "Privat"
 
 #: secrecy.cpp:117
+#, fuzzy
+#| msgid "Confidential"
+msgctxt "access is by owner and a controlled group"
 msgid "Confidential"
 msgstr "Confidencial"
+
+#: secrecy.cpp:120
+#, fuzzy
+#| msgid "Unknown type"
+msgctxt "unknown secrecy type"
+msgid "Unknown type"
+msgstr "Tipe desconegut"
 
 #: stdaddressbook.cpp:168
 #, kde-format
