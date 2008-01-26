@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaider\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-25 09:38+0100\n"
+"POT-Creation-Date: 2008-01-26 09:50+0100\n"
 "PO-Revision-Date: 2008-01-12 13:49+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -23,7 +23,7 @@ msgctxt "@info:status message entry"
 msgid "Current: %1"
 msgstr ""
 
-#: kaider.cpp:156 kaider.cpp:602
+#: kaider.cpp:156 kaider.cpp:649
 #, kde-format
 msgctxt "@info:status message entries"
 msgid "Total: %1"
@@ -175,92 +175,107 @@ msgstr "Marcapagina seguent"
 
 #: kaider.cpp:365
 msgctxt "@action:inmenu"
-msgid "Open merge source"
+msgid "Open file for sync/merge"
 msgstr ""
 
-#: kaider.cpp:366
+#: kaider.cpp:366 kaider.cpp:401
 msgctxt "@info:statustip"
-msgid "Open catalog to be merged into the current one"
+msgid ""
+"Open catalog to be merged into the current one / replicate base file changes "
+"to"
 msgstr ""
 
-#: kaider.cpp:369
+#: kaider.cpp:371 kaider.cpp:406
 msgctxt "@action:inmenu"
 msgid "Previous different"
 msgstr ""
 
-#: kaider.cpp:370
+#: kaider.cpp:372 kaider.cpp:407
 msgctxt "@info:statustip"
 msgid ""
-"Previous entry which is translated differently in the files being merged"
+"Previous entry which is translated differently in the file being merged, "
+"including empty translations in merge source"
 msgstr ""
 
-#: kaider.cpp:375
+#: kaider.cpp:379 kaider.cpp:413
 msgctxt "@action:inmenu"
 msgid "Next different"
 msgstr ""
 
-#: kaider.cpp:376
+#: kaider.cpp:380 kaider.cpp:414
 msgctxt "@info:statustip"
-msgid "Next entry which is translated differently in the files being merged"
+msgid ""
+"Next entry which is translated differently in the file being merged, "
+"including empty translations in merge source"
 msgstr ""
 
-#: kaider.cpp:381
+#: kaider.cpp:387 kaider.cpp:420
 msgctxt "@action:inmenu"
 msgid "Copy from merging source"
 msgstr ""
 
-#: kaider.cpp:386
+#: kaider.cpp:392 kaider.cpp:424
 msgctxt "@action:inmenu"
 msgid "Copy all new translations"
 msgstr ""
 
-#: kaider.cpp:387
+#: kaider.cpp:393
+msgctxt "@info:statustip"
+msgid "This changes only empty entries in base file"
+msgstr ""
+
+#: kaider.cpp:400
+msgctxt "@action:inmenu"
+msgid "Open file for secondary sync"
+msgstr ""
+
+#: kaider.cpp:425
 msgctxt "@info:statustip"
 msgid "This changes only empty entries"
 msgstr ""
 
-#: kaider.cpp:463
+#: kaider.cpp:510
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Insert WebQuery result # %1"
 msgstr ""
 
-#: kaider.cpp:506
+#: kaider.cpp:553
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Insert # %1 term translation"
 msgstr ""
 
-#: kaider.cpp:517
+#: kaider.cpp:564
 msgctxt "@action:inmenu"
 msgid "Define new term"
 msgstr ""
 
-#: kaider.cpp:542
+#: kaider.cpp:589
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Insert TM suggestion # %1"
 msgstr ""
 
-#: kaider.cpp:558 kaider.cpp:692
+#: kaider.cpp:605 kaider.cpp:741
 msgctxt "@info"
 msgid ""
 "The document contains unsaved changes.\n"
 "Do you want to save your changes or discard them?"
 msgstr ""
 
-#: kaider.cpp:559 kaider.cpp:693 glossary/glossarywindow.cpp:433
+#: kaider.cpp:606 kaider.cpp:742 glossary/glossarywindow.cpp:433
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Alèrta"
 
-#: kaider.cpp:659 mergemode/mergeview.cpp:203
+#: kaider.cpp:708 mergemode/mergeview.cpp:207
 #, kde-format
 msgctxt "@info"
 msgid "Error opening the file <filename>%1</filename>"
 msgstr ""
 
-#: kaider.cpp:677
+#: kaider.cpp:726
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -268,33 +283,33 @@ msgid ""
 "Do you want to save to another file or cancel?"
 msgstr ""
 
-#: kaider.cpp:679
+#: kaider.cpp:728
 msgctxt "@title"
 msgid "Error"
 msgstr "Error"
 
-#: kaider.cpp:720
+#: kaider.cpp:769
 msgctxt "@title"
 msgid "Jump to Entry"
 msgstr ""
 
-#: kaider.cpp:721
+#: kaider.cpp:770
 msgctxt "@label:spinbox"
 msgid "Enter entry number:"
 msgstr ""
 
-#: kaider.cpp:783
+#: kaider.cpp:832
 #, kde-format
 msgctxt "@info:status"
 msgid "Current: %1"
 msgstr ""
 
-#: kaider.cpp:792
+#: kaider.cpp:841
 msgctxt "@info:status"
 msgid "Fuzzy"
 msgstr "Aproximat"
 
-#: kaider.cpp:794
+#: kaider.cpp:843
 msgctxt "@info:status"
 msgid "Untranslated"
 msgstr "Pas revirat"
@@ -445,7 +460,7 @@ msgstr ""
 #. i18n: file kaider_findextension.ui line 42
 #. i18n: tag string
 #. i18n: file ./kaider_findextension.ui line 42
-#: rc.cpp:3 rc.cpp:287
+#: rc.cpp:3 rc.cpp:293
 msgid "Ignore accelerator marks"
 msgstr ""
 
@@ -453,7 +468,7 @@ msgstr ""
 #. i18n: file kaider_findextension.ui line 45
 #. i18n: tag string
 #. i18n: file ./kaider_findextension.ui line 45
-#: rc.cpp:6 rc.cpp:290
+#: rc.cpp:6 rc.cpp:296
 msgctxt "@option:check"
 msgid "Ignore accelerator marks"
 msgstr ""
@@ -462,7 +477,7 @@ msgstr ""
 #. i18n: file kaider_findextension.ui line 52
 #. i18n: tag string
 #. i18n: file ./kaider_findextension.ui line 52
-#: rc.cpp:9 rc.cpp:293
+#: rc.cpp:9 rc.cpp:299
 msgid "Skip tags"
 msgstr ""
 
@@ -470,7 +485,7 @@ msgstr ""
 #. i18n: file kaider_findextension.ui line 55
 #. i18n: tag string
 #. i18n: file ./kaider_findextension.ui line 55
-#: rc.cpp:12 rc.cpp:296
+#: rc.cpp:12 rc.cpp:302
 msgctxt "@option:check"
 msgid "Skip tags"
 msgstr ""
@@ -481,7 +496,7 @@ msgstr ""
 #. i18n: file ./lokalizeui.rc line 4
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 5
-#: rc.cpp:15 rc.cpp:254 rc.cpp:350
+#: rc.cpp:15 rc.cpp:257 rc.cpp:359
 msgid "&Edit"
 msgstr "&Edicion"
 
@@ -491,7 +506,7 @@ msgstr "&Edicion"
 #. i18n: file ./lokalizeui.rc line 10
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 11
-#: rc.cpp:18 rc.cpp:257 rc.cpp:353
+#: rc.cpp:18 rc.cpp:260 rc.cpp:362
 msgid "Glossary"
 msgstr "Glossari"
 
@@ -501,7 +516,7 @@ msgstr "Glossari"
 #. i18n: file ./lokalizeui.rc line 35
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 14
-#: rc.cpp:21 rc.cpp:260 rc.cpp:356
+#: rc.cpp:21 rc.cpp:263 rc.cpp:365
 msgid "WebQuery"
 msgstr ""
 
@@ -511,7 +526,7 @@ msgstr ""
 #. i18n: file ./lokalizeui.rc line 52
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 17
-#: rc.cpp:24 rc.cpp:263 rc.cpp:359
+#: rc.cpp:24 rc.cpp:266 rc.cpp:368
 msgid "Translation Memory"
 msgstr ""
 
@@ -521,7 +536,7 @@ msgstr ""
 #. i18n: file ./lokalizeui.rc line 70
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 21
-#: rc.cpp:27 rc.cpp:266 rc.cpp:362
+#: rc.cpp:27 rc.cpp:269 rc.cpp:371
 msgid "&Go"
 msgstr "&Anar"
 
@@ -531,7 +546,7 @@ msgstr "&Anar"
 #. i18n: file ./lokalizeui.rc line 83
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 35
-#: rc.cpp:30 rc.cpp:269 rc.cpp:365
+#: rc.cpp:30 rc.cpp:272 rc.cpp:374
 msgid "Project"
 msgstr "Projècte"
 
@@ -539,134 +554,140 @@ msgstr "Projècte"
 #. i18n: file lokalizeui.rc line 92
 #. i18n: tag text
 #. i18n: file ./lokalizeui.rc line 92
-#. i18n: tag text
-#. i18n: file ./project/projectmanagerui.rc line 45
-#: rc.cpp:33 rc.cpp:272 rc.cpp:368
-msgid "Merge"
-msgstr "Fusionar"
+#: rc.cpp:33 rc.cpp:275
+msgid "Sync"
+msgstr ""
 
 #. i18n: tag text
 #. i18n: file lokalizeui.rc line 101
 #. i18n: tag text
 #. i18n: file ./lokalizeui.rc line 101
+#: rc.cpp:36 rc.cpp:278
+msgid "Secondary sync source"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file lokalizeui.rc line 112
+#. i18n: tag text
+#. i18n: file ./lokalizeui.rc line 112
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 54
-#: rc.cpp:36 rc.cpp:275 rc.cpp:371
+#: rc.cpp:39 rc.cpp:281 rc.cpp:380
 msgid "Bookmarks"
 msgstr "Favorits"
 
 #. i18n: tag text
-#. i18n: file lokalizeui.rc line 105
+#. i18n: file lokalizeui.rc line 116
 #. i18n: tag text
-#. i18n: file ./lokalizeui.rc line 105
+#. i18n: file ./lokalizeui.rc line 116
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 72
-#: rc.cpp:39 rc.cpp:278 rc.cpp:380
+#: rc.cpp:42 rc.cpp:284 rc.cpp:389
 msgid "&Tools"
 msgstr "&Espleches"
 
 #. i18n: tag text
-#. i18n: file lokalizeui.rc line 114
+#. i18n: file lokalizeui.rc line 125
 #. i18n: tag text
-#. i18n: file ./lokalizeui.rc line 114
+#. i18n: file ./lokalizeui.rc line 125
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 59
-#: rc.cpp:42 rc.cpp:281 rc.cpp:374
+#: rc.cpp:45 rc.cpp:287 rc.cpp:383
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file lokalizeui.rc line 115
+#. i18n: file lokalizeui.rc line 126
 #. i18n: tag text
-#. i18n: file ./lokalizeui.rc line 115
+#. i18n: file ./lokalizeui.rc line 126
 #. i18n: tag text
 #. i18n: file ./project/projectmanagerui.rc line 60
-#: rc.cpp:45 rc.cpp:284 rc.cpp:377
+#: rc.cpp:48 rc.cpp:290 rc.cpp:386
 msgid "Toolviews"
 msgstr ""
 
-#: rc.cpp:46
+#: rc.cpp:49
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:47
+#: rc.cpp:50
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/dbparams.ui line 19
-#: rc.cpp:50
+#: rc.cpp:53
 msgid "Name:"
 msgstr "Nom :"
 
 #. i18n: tag string
 #. i18n: file ./tm/dbparams.ui line 26
-#: rc.cpp:53
+#: rc.cpp:56
 msgid "Markup regex:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/dbparams.ui line 39
-#: rc.cpp:56
+#: rc.cpp:59
 msgid "Accelerator:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/queryoptions.ui line 21
-#: rc.cpp:59
+#: rc.cpp:62
 msgctxt "@option:radio"
 msgid "Substring"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/queryoptions.ui line 31
-#: rc.cpp:62
+#: rc.cpp:65
 msgid "Space is AND operator"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/queryoptions.ui line 34
-#: rc.cpp:65
+#: rc.cpp:68
 msgctxt "@option:radio"
 msgid "Google-like"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/queryoptions.ui line 44
-#: rc.cpp:68
+#: rc.cpp:71
 msgid "Shell globs (* and ?)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/queryoptions.ui line 47
-#: rc.cpp:71
+#: rc.cpp:74
 msgctxt "@option:radio"
 msgid "Wildcard"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./tm/managedatabases.ui line 18
-#: rc.cpp:74
+#: rc.cpp:77
 msgid "Create"
 msgstr "Crear"
 
 #. i18n: tag string
 #. i18n: file ./tm/managedatabases.ui line 25
-#: rc.cpp:77
+#: rc.cpp:80
 msgid "Add data"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_misc.ui line 47
-#: rc.cpp:80
+#: rc.cpp:83
 msgid "If checked, get translation memory suggestions "
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_misc.ui line 50
-#: rc.cpp:83
+#: rc.cpp:86
 msgid ""
 "If this is checked, the program will fetch translation memories as soon as "
 "you open a file."
@@ -674,55 +695,55 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_misc.ui line 53
-#: rc.cpp:86
+#: rc.cpp:89
 msgid "Prefetch translation memory suggestions on file open"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_misc.ui line 60
-#: rc.cpp:89
+#: rc.cpp:92
 msgid "Max number of suggestions:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_misc.ui line 67
-#: rc.cpp:92
+#: rc.cpp:95
 msgid "Set the maximum number of suggestions"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_misc.ui line 70
-#: rc.cpp:95
+#: rc.cpp:98
 msgid "You can change the maximum number of suggestions, default is 10."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 36
-#: rc.cpp:98
+#: rc.cpp:101
 msgid "Editor font:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 43
-#: rc.cpp:101
+#: rc.cpp:104
 msgid "Change the font for the editor"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 46
-#: rc.cpp:104
+#: rc.cpp:107
 msgid "Choose a new font for the area where you write the translated message."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 53
-#: rc.cpp:107
+#: rc.cpp:110
 msgid "Display LEDS for message status"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 56
-#: rc.cpp:110
+#: rc.cpp:113
 msgid ""
 "If checked, LEDS will be shown to display the message status: Fuzzy, "
 "Untranslated or Error. If unchecked, no LEDs will be displayed."
@@ -730,58 +751,58 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 59
-#: rc.cpp:113
+#: rc.cpp:116
 msgid "LEDs to indicate Fuzzy, Untranslated and Error status"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 68
-#: rc.cpp:116
+#: rc.cpp:119
 msgid "Text colors for the changes in the message."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 71
-#: rc.cpp:119
+#: rc.cpp:122
 msgid "String Matching"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 77
-#: rc.cpp:122
+#: rc.cpp:125
 msgctxt "@label:chooser"
 msgid "Text added in the newer string:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 84
-#: rc.cpp:125
+#: rc.cpp:128
 msgid "Change the color for the new text added"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 87
-#: rc.cpp:128
+#: rc.cpp:131
 msgid ""
 "You can set another color for viewing the text that was added to the string."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 97
-#: rc.cpp:131
+#: rc.cpp:134
 msgctxt "@label:chooser"
 msgid "Text removed in the newer string:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 104
-#: rc.cpp:134
+#: rc.cpp:137
 msgid "Change the color for the text removed"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_font.ui line 107
-#: rc.cpp:137
+#: rc.cpp:140
 msgid ""
 "You can set another color for viewing the text that was removed from the "
 "string."
@@ -789,31 +810,31 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./prefs/lokalize.kcfg line 14
-#: rc.cpp:140
+#: rc.cpp:143
 msgid "Translator's name"
 msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file ./prefs/lokalize.kcfg line 15
-#: rc.cpp:143
+#: rc.cpp:146
 msgid "Translator's name in English"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./prefs/lokalize.kcfg line 21
-#: rc.cpp:146
+#: rc.cpp:149
 msgid "Localized name"
 msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file ./prefs/lokalize.kcfg line 22
-#: rc.cpp:149
+#: rc.cpp:152
 msgid "Translator's name in target language"
 msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file ./prefs/lokalize.kcfg line 28
-#: rc.cpp:152
+#: rc.cpp:155
 msgid "Translator's email"
 msgstr ""
 
@@ -821,7 +842,7 @@ msgstr ""
 #. i18n: file ./prefs/lokalize.kcfg line 34
 #. i18n: tag whatsthis
 #. i18n: file ./prefs/lokalize.kcfg line 35
-#: rc.cpp:155 rc.cpp:158
+#: rc.cpp:158 rc.cpp:161
 msgid "Default language code for new projects"
 msgstr ""
 
@@ -829,7 +850,7 @@ msgstr ""
 #. i18n: file ./prefs/lokalize.kcfg line 41
 #. i18n: tag whatsthis
 #. i18n: file ./prefs/lokalize.kcfg line 42
-#: rc.cpp:161 rc.cpp:164
+#: rc.cpp:164 rc.cpp:167
 msgid "Default mailing list for new projects"
 msgstr ""
 
@@ -841,7 +862,7 @@ msgstr ""
 #. i18n: file ./prefs/lokalize.kcfg line 79
 #. i18n: tag label
 #. i18n: file ./prefs/lokalize.kcfg line 84
-#: rc.cpp:167 rc.cpp:171 rc.cpp:178 rc.cpp:182
+#: rc.cpp:170 rc.cpp:174 rc.cpp:181 rc.cpp:185
 msgid ""
 "\n"
 "        "
@@ -849,13 +870,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./prefs/lokalize.kcfg line 69
-#: rc.cpp:175
+#: rc.cpp:178
 msgid "Font for Messages"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 13
-#: rc.cpp:186
+#: rc.cpp:189
 msgid ""
 "Fill in your identity and information about your translation team. This "
 "information is used when updating the header of a file."
@@ -863,28 +884,28 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 37
-#: rc.cpp:189
+#: rc.cpp:192
 msgctxt "@label:chooser"
 msgid "Default Language:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 47
-#: rc.cpp:192
+#: rc.cpp:195
 msgctxt "@label:textbox"
 msgid "Email:"
 msgstr "Adreça electronica :"
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 60
-#: rc.cpp:195
+#: rc.cpp:198
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "Nom :"
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 73
-#: rc.cpp:198
+#: rc.cpp:201
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
@@ -893,95 +914,95 @@ msgstr "Yannig Marchegay (Kokoyaya)"
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 76
-#: rc.cpp:201
+#: rc.cpp:204
 msgid "Please enter here your name and surname written in English"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 83
-#: rc.cpp:204
+#: rc.cpp:207
 msgctxt "@label:textbox"
 msgid "Default Mailing List:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 93
-#: rc.cpp:207
+#: rc.cpp:210
 msgid "The email of your team mailing list"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 96
-#: rc.cpp:210
+#: rc.cpp:213
 msgid "Write the email of your translating team mailing list"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 103
-#: rc.cpp:213
+#: rc.cpp:216
 msgid "Language you translate to"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 106
-#: rc.cpp:216
+#: rc.cpp:219
 msgid "Set the default language you are going to translate to"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 126
-#: rc.cpp:219
+#: rc.cpp:222
 msgid "Write your email"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 129
-#: rc.cpp:222
+#: rc.cpp:225
 msgid ""
 "Write your email here so it will appear in the po file header with your name"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 143
-#: rc.cpp:225
+#: rc.cpp:228
 msgid "Your name in your own language"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 146
-#: rc.cpp:228
+#: rc.cpp:231
 msgid ""
 "Write your name and surname in your language with your language alphabet."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./prefs/prefs_identity.ui line 153
-#: rc.cpp:231
+#: rc.cpp:234
 msgctxt "@label:textbox"
 msgid "Localized Name:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./glossary/termedit.ui line 16
-#: rc.cpp:234
+#: rc.cpp:237
 msgid "English synonyms (one per line):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./glossary/termedit.ui line 33
-#: rc.cpp:237
+#: rc.cpp:240
 msgid "Corresponding target language synonyms:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./glossary/termedit.ui line 50
-#: rc.cpp:240
+#: rc.cpp:243
 msgid "Subject field:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./glossary/termedit.ui line 57
-#: rc.cpp:243
+#: rc.cpp:246
 msgctxt "@info:tooltip"
 msgid ""
 "When adding new item, press enter after you've typed its name for changes to "
@@ -990,13 +1011,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./glossary/termedit.ui line 67
-#: rc.cpp:246
+#: rc.cpp:249
 msgid "English definition:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./glossary/termedit.ui line 86
-#: rc.cpp:249
+#: rc.cpp:252
 msgid ""
 "Note: one glossary entry corresponds exactly to one term, not word/word "
 "sequence.\n"
@@ -1007,38 +1028,38 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./webquery/querycontrol.ui line 8
-#: rc.cpp:299
+#: rc.cpp:305
 msgid "Query"
 msgstr "Consulta"
 
 #. i18n: tag string
 #. i18n: file ./webquery/querycontrol.ui line 15
-#: rc.cpp:302
+#: rc.cpp:308
 msgid "Autoquery"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./webquery/querycontrol.ui line 22
-#: rc.cpp:305
+#: rc.cpp:311
 msgid "Prefetch for the next untranslated"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./webquery/querycontrol.ui line 25
-#: rc.cpp:308
+#: rc.cpp:314
 msgid "Prefetch"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./project/prefs_regexps.ui line 16
-#: rc.cpp:311
+#: rc.cpp:317
 msgctxt "@label:textbox"
 msgid "Accelerator:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./project/prefs_regexps.ui line 23
-#: rc.cpp:314
+#: rc.cpp:320
 msgctxt "@label:textbox"
 msgid "Markup:"
 msgstr ""
@@ -1047,69 +1068,82 @@ msgstr ""
 #. i18n: file ./project/projectbase.kcfg line 15
 #. i18n: tag label
 #. i18n: file ./project/projectbase.kcfg line 21
-#: rc.cpp:317 rc.cpp:320
+#: rc.cpp:323 rc.cpp:326
 msgid "Language"
 msgstr "Lenga"
 
 #. i18n: tag label
 #. i18n: file ./project/projectbase.kcfg line 27
-#: rc.cpp:323
+#: rc.cpp:329
 msgid "The base directory for PO files (translations)"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./project/projectbase.kcfg line 33
-#: rc.cpp:326
+#: rc.cpp:332
 msgid "The base directory for POT files (templates to be translated)"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file ./project/projectbase.kcfg line 39
-#: rc.cpp:329
+#. i18n: file ./project/projectbase.kcfg line 41
+#: rc.cpp:335
 msgid "Project's glossary"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./project/prefs_projectmain.ui line 16
-#: rc.cpp:332
+#: rc.cpp:338
 msgctxt "@label:textbox"
 msgid "Language:"
 msgstr "Lenga :"
 
 #. i18n: tag string
-#. i18n: file ./project/prefs_projectmain.ui line 81
-#: rc.cpp:335
+#. i18n: file ./project/prefs_projectmain.ui line 97
+#: rc.cpp:341
 msgctxt "@label:textbox"
 msgid "PO directory:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./project/prefs_projectmain.ui line 91
-#: rc.cpp:338
+#. i18n: file ./project/prefs_projectmain.ui line 107
+#: rc.cpp:344
 msgctxt "@label:textbox"
 msgid "Template directory:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./project/prefs_projectmain.ui line 101
-#: rc.cpp:341
+#. i18n: file ./project/prefs_projectmain.ui line 117
+#: rc.cpp:347
+msgctxt "@label:textbox"
+msgid "Branch directory:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./project/prefs_projectmain.ui line 127
+#: rc.cpp:350
 msgctxt "@label:textbox"
 msgid "Glossary:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./project/prefs_projectmain.ui line 124
-#: rc.cpp:344
+#. i18n: file ./project/prefs_projectmain.ui line 150
+#: rc.cpp:353
 msgctxt "@label:textbox"
 msgid "ID:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./project/prefs_projectmain.ui line 134
-#: rc.cpp:347
+#. i18n: file ./project/prefs_projectmain.ui line 160
+#: rc.cpp:356
 msgctxt "@label:textbox"
 msgid "Mailing list:"
 msgstr ""
+
+#. i18n: tag text
+#. i18n: file ./project/projectmanagerui.rc line 45
+#: rc.cpp:377
+msgid "Merge"
+msgstr "Fusionar"
 
 #: catalog/cmd.cpp:50
 msgctxt "@item Undo action item"
@@ -1205,31 +1239,31 @@ msgid ""
 "Do you want to save your changes or discard them?"
 msgstr ""
 
-#: mergemode/mergeview.cpp:50
-msgctxt "@title:window"
-msgid "Merge Diff"
-msgstr ""
-
-#: mergemode/mergeview.cpp:54
-#, fuzzy
-#| msgid "Merge"
+#: mergemode/mergeview.cpp:50 mergemode/mergeview.cpp:55
 msgctxt ""
 "@title:window that displays difference between current file and 'merge "
 "source'"
-msgid "Merge Diff"
-msgstr "Fusionar"
-
-#: mergemode/mergeview.cpp:61
-msgctxt "@info:tooltip"
-msgid "Drop file to be merged into the current one here"
+msgid "Primary Sync"
 msgstr ""
 
-#: mergemode/mergeview.cpp:245
+#: mergemode/mergeview.cpp:50 mergemode/mergeview.cpp:56
+msgctxt ""
+"@title:window that displays difference between current file and 'merge "
+"source'"
+msgid "Secondary Sync"
+msgstr ""
+
+#: mergemode/mergeview.cpp:64
+msgctxt "@info:tooltip"
+msgid "Drop file to be merged into / synced with the current one here"
+msgstr ""
+
+#: mergemode/mergeview.cpp:249
 msgctxt "@item Undo action item"
 msgid "Accept change in translation"
 msgstr ""
 
-#: mergemode/mergeview.cpp:317
+#: mergemode/mergeview.cpp:321
 msgctxt "@item Undo action item"
 msgid "Accept all new translations"
 msgstr ""
@@ -1254,53 +1288,53 @@ msgctxt "@title:tab"
 msgid "Spellcheck"
 msgstr ""
 
-#: prefs/prefs.cpp:212
+#: prefs/prefs.cpp:218
 msgctxt "@title:tab"
 msgid "General"
 msgstr "General"
 
-#: prefs/prefs.cpp:219
+#: prefs/prefs.cpp:225
 msgctxt "@title:tab"
 msgid "Syntax"
 msgstr ""
 
-#: prefs/prefs.cpp:228
+#: prefs/prefs.cpp:234
 msgctxt "@label"
 msgid "Web Query Scripts"
 msgstr ""
 
-#: prefs/prefs.cpp:244
+#: prefs/prefs.cpp:250
 msgctxt "@title:tab"
 msgid "Web Query"
 msgstr ""
 
-#: project/project.cpp:261
+#: project/project.cpp:267
 msgctxt "@title"
 msgid "Scanning complete"
 msgstr ""
 
-#: project/project.cpp:262
+#: project/project.cpp:268
 #, kde-format
 msgctxt "@info"
 msgid "Files: %1, New pairs: %2, New versions: %3"
 msgstr ""
 
-#: project/project.cpp:302
+#: project/project.cpp:308
 msgctxt "@action:inmenu"
 msgid "Configure project"
 msgstr ""
 
-#: project/project.cpp:306 project/projectview.cpp:93
+#: project/project.cpp:312 project/projectview.cpp:93
 msgctxt "@action:inmenu"
 msgid "Open project"
 msgstr "Dobrir un projècte"
 
-#: project/project.cpp:310 project/projectview.cpp:94
+#: project/project.cpp:316 project/projectview.cpp:94
 msgctxt "@action:inmenu"
 msgid "Create new project"
 msgstr ""
 
-#: project/project.cpp:314
+#: project/project.cpp:320
 msgctxt "@action:inmenu"
 msgid "Catalog Manager"
 msgstr ""
@@ -1449,3 +1483,11 @@ msgstr ""
 #: webquery/webqueryview.cpp:65
 msgid "Web Queries"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgctxt ""
+#~ "@title:window that displays difference between current file and 'merge "
+#~ "source'"
+#~ msgid "Merge Diff"
+#~ msgstr "Fusionar"
