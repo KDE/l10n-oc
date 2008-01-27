@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-26 09:53+0100\n"
+"POT-Creation-Date: 2008-01-27 10:35+0100\n"
 "PO-Revision-Date: 2008-01-12 13:46+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -454,14 +454,12 @@ msgstr ""
 
 #: plugins/korganizer/apptsummarywidget.cpp:193
 #: plugins/korganizer/todosummarywidget.cpp:212
-#: plugins/planner/planner.cpp:510
 #: plugins/specialdates/sdsummarywidget.cpp:455
 msgid "Today"
 msgstr "Uèi"
 
 #: plugins/korganizer/apptsummarywidget.cpp:197
 #: plugins/korganizer/todosummarywidget.cpp:214
-#: plugins/planner/planner.cpp:514
 #: plugins/specialdates/sdsummarywidget.cpp:457
 msgid "Tomorrow"
 msgstr "Deman"
@@ -481,7 +479,7 @@ msgid "now"
 msgstr "ara"
 
 #: plugins/korganizer/apptsummarywidget.cpp:270
-#: plugins/planner/planner.cpp:414
+#: plugins/planner/planner.cpp:415
 #, kde-format
 msgctxt "Time from - to"
 msgid "%1 - %2"
@@ -495,12 +493,12 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: plugins/korganizer/apptsummarywidget.cpp:317
-#: plugins/planner/planner.cpp:579
+#: plugins/planner/planner.cpp:581
 msgid "&Edit Appointment..."
 msgstr ""
 
 #: plugins/korganizer/apptsummarywidget.cpp:318
-#: plugins/planner/planner.cpp:581
+#: plugins/planner/planner.cpp:582
 msgid "&Delete Appointment"
 msgstr ""
 
@@ -619,7 +617,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: plugins/korganizer/todosummarywidget.cpp:335
-#: plugins/planner/planner.cpp:643
+#: plugins/planner/planner.cpp:644
 msgid "&Edit To-do..."
 msgstr ""
 
@@ -629,12 +627,12 @@ msgid "&Delete To-do"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:342
-#: plugins/planner/planner.cpp:649
+#: plugins/planner/planner.cpp:651
 msgid "&Mark To-do Completed"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:363
-#: plugins/planner/planner.cpp:751
+#: plugins/planner/planner.cpp:744
 #, kde-format
 msgid "Edit To-do: \"%1\""
 msgstr ""
@@ -644,13 +642,10 @@ msgid "open-ended"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:441
-#: plugins/planner/planner.cpp:235 plugins/planner/planner.cpp:256
-#: plugins/planner/planner.cpp:268 plugins/planner/planner.cpp:615
 msgid "overdue"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:443
-#: plugins/planner/planner.cpp:627
 msgid "starts today"
 msgstr ""
 
@@ -659,7 +654,6 @@ msgid "not-started"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:449
-#: plugins/planner/planner.cpp:635
 msgid "completed"
 msgstr ""
 
@@ -850,28 +844,106 @@ msgstr ""
 msgid "Special Dates"
 msgstr ""
 
-#: plugins/planner/planner.cpp:69
+#: plugins/planner/planner.cpp:71
 msgid "Planner"
 msgstr ""
 
-#: plugins/planner/planner.cpp:548
-#, c-format
+#: plugins/planner/planner.cpp:236 plugins/planner/planner.cpp:257
+#: plugins/planner/planner.cpp:269 plugins/planner/planner.cpp:616
+msgctxt "to-do is overdue"
+msgid "overdue"
+msgstr ""
+
+#: plugins/planner/planner.cpp:511
+#, fuzzy
+#| msgid "Today"
+msgctxt "today"
+msgid "Today"
+msgstr "Uèi"
+
+#: plugins/planner/planner.cpp:515
+#, fuzzy
+#| msgid "Tomorrow"
+msgctxt "tomorrow"
+msgid "Tomorrow"
+msgstr "Deman"
+
+#: plugins/planner/planner.cpp:549
+#, kde-format
+#| msgid "No appointments pending within the next day"
+#| msgid_plural "No appointments pending within the next %n days"
 msgid "No appointments pending within the next day"
-msgid_plural "No appointments pending within the next %n days"
+msgid_plural "No appointments pending within the next %1 days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: plugins/planner/planner.cpp:598
+#: plugins/planner/planner.cpp:599
 #, kde-format
 msgid "Edit Appointment: \"%1\""
 msgstr ""
 
-#: plugins/planner/planner.cpp:622
+#: plugins/planner/planner.cpp:623
+msgctxt "work on to-do is in progress"
 msgid "in progress"
 msgstr ""
 
-#: plugins/planner/planner.cpp:632
+#: plugins/planner/planner.cpp:628
+msgctxt "to-do starts today"
+msgid "starts today"
+msgstr ""
+
+#: plugins/planner/planner.cpp:633
+msgctxt "to-do ends today"
 msgid "ends today"
+msgstr ""
+
+#: plugins/planner/planner.cpp:636
+msgctxt "to-do is completed"
+msgid "completed"
+msgstr ""
+
+#: plugins/planner/planner.cpp:696
+msgid "0%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:697
+msgid "10%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:698
+msgid "20%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:699
+msgid "30%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:700
+msgid "40%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:701
+msgid "50%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:702
+msgid "60%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:703
+msgid "70%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:704
+msgid "80%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:705
+msgid "90%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:706
+msgid "100%"
 msgstr ""
 
 #: plugins/planner/plannerplugin.cpp:59
@@ -1015,7 +1087,7 @@ msgstr ""
 msgid "Summary for %1"
 msgstr ""
 
-#: plugins/summary/summaryview_part.cpp:311
+#: plugins/summary/summaryview_part.cpp:312
 msgid "What's next?"
 msgstr ""
 
