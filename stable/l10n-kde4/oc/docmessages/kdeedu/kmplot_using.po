@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmplot_using\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-11 07:46+0000\n"
+"POT-Creation-Date: 2008-03-02 04:47+0000\n"
 "PO-Revision-Date: 2008-01-01 00:39+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -75,7 +75,7 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Explicit differential plots are differential equations whereby the highest "
-"derivatve is given in terms of the lower derivatives. Differentiatation is "
+"derivatve is given in terms of the lower derivatives. Differentiation is "
 "denoted by a prime ('). In function form, the equation will look like "
 "<quote>f''(x) = f' &minus; f</quote>. In equation form, it will look like "
 "<quote>y'' = y' &minus; y</quote>. Note that in both cases, the <quote>(x)</"
@@ -201,13 +201,12 @@ msgstr ""
 msgid ""
 "As an example, suppose you want to draw a circle, which has parametric "
 "equations x = sin(t), y = cos(t). After creating a parametric plot, enter "
-"the appropriate equations in the x and y boxes, &ie;, <guilabel>xcircle(t) = "
-"</guilabel><userinput>sin(t)</userinput> and <guilabel>ycircle(t) = </"
-"guilabel><userinput>cos(t)</userinput>."
+"the appropriate equations in the x and y boxes, &ie;, <userinput>f_x(t)=sin"
+"(t)</userinput> and <userinput>f_y(t)=cos(t)</userinput>."
 msgstr ""
 
 #. Tag: para
-#: using.docbook:85 using.docbook:136
+#: using.docbook:85 using.docbook:137
 #, no-c-format
 msgid "You can set some further options for the plot in the function editor:"
 msgstr ""
@@ -245,46 +244,45 @@ msgid ""
 "Polar coordinates represent a point by its distance from the origin (usually "
 "called r), and the angle a line from the origin to the point makes with the "
 "x-axis (usually represented by &thgr; the Greek letter theta). To enter "
-"functions in polar coordinates, create a new Polar Plot from the "
-"<guilabel>Create New Plot</guilabel> button. In the definition box, complete "
-"the function definition, including the name of the theta variable you want "
-"to use, &eg;, to draw the Archimedes' spiral r = &thgr;, enter: "
-"<screen><userinput>r(theta) = theta</userinput></screen> so that the whole "
-"line reads <quote>r(theta) = theta</quote>. Note that you can use any name "
-"for the theta variable, so <quote>r(foo) = foo</quote> will produce exactly "
-"the same output."
+"functions in polar coordinates, click the <guilabel>Create</guilabel> button "
+"and select <guilabel>Polar Plot</guilabel> from the list. In the definition "
+"box, complete the function definition, including the name of the theta "
+"variable you want to use, &eg;, to draw the Archimedes' spiral r = &thgr;, "
+"enter: <screen><userinput>r(&thgr;) = &thgr;</userinput></screen>. Note that "
+"you can use any name for the theta variable, so <quote>r(t) = t</quote> or "
+"<quote>f(x) = x</quote> will produce exactly the same output."
 msgstr ""
 
 #. Tag: title
-#: using.docbook:116
+#: using.docbook:115
 #, no-c-format
 msgid "Implicit Functions"
 msgstr ""
 
 #. Tag: para
-#: using.docbook:118
+#: using.docbook:117
 #, no-c-format
 msgid ""
 "An implicit expression relates the x and y coordinates as an equality. To "
-"create a circle, for example, create a new Implicit Plot from the "
-"<guilabel>Create New Plot</guilabel> button. Then, enter into the equation "
-"box (below the function name box) the following:"
+"create a circle, for example, click the <guilabel>Create</guilabel> button "
+"and select <guilabel>Implicit Plot</guilabel> from the list. Then, enter "
+"into the equation box (below the function name box) the following:"
 msgstr ""
 
 #. Tag: screen
-#: using.docbook:119
+#: using.docbook:120
 #, no-c-format
 msgid "<userinput>x^2 + y^2 = 25</userinput>"
 msgstr ""
 
 #. Tag: title
-#: using.docbook:124
+#: using.docbook:125
 #, no-c-format
 msgid "Differential Functions"
 msgstr ""
 
 #. Tag: para
-#: using.docbook:126
+#: using.docbook:127
 #, no-c-format
 msgid ""
 "&kmplot; can plot explicit differential equations. These are equations of "
@@ -293,11 +291,12 @@ msgid ""
 "k<superscript>th</superscript> derivative of y(x). &kmplot; can only "
 "interpret the derivative order as the number of primes following the "
 "function name. To draw a sinusoidal curve, for example, you would use the "
-"differential equation y'' = &minus; y."
+"differential equation <userinput>y'' = &minus; y</userinput> oder "
+"<userinput>f''(x) = −f</userinput>."
 msgstr ""
 
 #. Tag: para
-#: using.docbook:133
+#: using.docbook:134
 #, no-c-format
 msgid ""
 "However, a differential equation on its own isn't enough to determine a "
@@ -310,13 +309,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: using.docbook:139
+#: using.docbook:140
 #, no-c-format
 msgid "Step"
 msgstr "Pas"
 
 #. Tag: para
-#: using.docbook:141
+#: using.docbook:142
 #, no-c-format
 msgid ""
 "The step value in the precision box is used in numerically solving the "
@@ -326,13 +325,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: using.docbook:151
+#: using.docbook:152
 #, no-c-format
 msgid "Combining Functions"
 msgstr ""
 
 #. Tag: para
-#: using.docbook:152
+#: using.docbook:153
 #, no-c-format
 msgid ""
 "Functions can be combined to produce new ones. Simply enter the functions "
@@ -342,29 +341,30 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: using.docbook:156
+#: using.docbook:157
 #, no-c-format
 msgid "<userinput>sum(x) = f(x) + g(x)</userinput>"
 msgstr ""
 
 #. Tag: title
-#: using.docbook:161
+#: using.docbook:162
 #, no-c-format
 msgid "Changing the appearance of functions"
 msgstr ""
 
 #. Tag: para
-#: using.docbook:163
+#: using.docbook:164
 #, no-c-format
 msgid ""
 "To change the appearance of a function's graph on the main plot window, "
-"select the function in the <guilabel>Function Editor</guilabel> sidebar. You "
-"can change the plot's line width, color and many other aspects by clicking "
-"on the <guilabel>Appearance</guilabel> button at the bottom."
+"select the function in the <guilabel>Functions</guilabel> sidebar. You can "
+"change the plot's line width, color and many other aspects by clicking on "
+"the <guibutton>Color</guibutton> or <guibutton>Advanced...</guibutton> "
+"button at the bottom of the section <guilabel>Appearance</guilabel>."
 msgstr ""
 
 #. Tag: para
-#: using.docbook:168
+#: using.docbook:171
 #, no-c-format
 msgid ""
 "If you are editing a Cartesian function, the function editor will have three "
@@ -375,13 +375,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: using.docbook:177
+#: using.docbook:180
 #, no-c-format
 msgid "Popup menu"
 msgstr ""
 
 #. Tag: para
-#: using.docbook:179
+#: using.docbook:182
 #, no-c-format
 msgid ""
 "When right-clicking on a plot function or a single-point parametric plot "
@@ -390,13 +390,27 @@ msgid ""
 msgstr ""
 
 #. Tag: guimenuitem
-#: using.docbook:184
+#: using.docbook:187
+#, no-c-format
+msgid "Edit"
+msgstr "Edicion"
+
+#. Tag: para
+#: using.docbook:190
+#, no-c-format
+msgid ""
+"Selects the function in the <guilabel>Functions</guilabel> sidebar for "
+"editing."
+msgstr ""
+
+#. Tag: guimenuitem
+#: using.docbook:195
 #, no-c-format
 msgid "Hide"
 msgstr "Amagar"
 
 #. Tag: para
-#: using.docbook:187
+#: using.docbook:198
 #, no-c-format
 msgid ""
 "Hides the selected graph. Other plots of the graph's function will still be "
@@ -404,61 +418,71 @@ msgid ""
 msgstr ""
 
 #. Tag: guimenuitem
-#: using.docbook:192
+#: using.docbook:203
 #, no-c-format
 msgid "Remove"
 msgstr "Suprimir"
 
 #. Tag: para
-#: using.docbook:195
+#: using.docbook:206
 #, no-c-format
 msgid "Removes the function. All its graphs will disappear."
 msgstr ""
 
 #. Tag: guimenuitem
-#: using.docbook:200
+#: using.docbook:210
 #, no-c-format
-msgid "Edit"
-msgstr "Edicion"
-
-#. Tag: para
-#: using.docbook:203
-#, no-c-format
-msgid ""
-"Selects the function in the <guilabel>Function Editor</guilabel> for editing."
+msgid "Animate Plot..."
 msgstr ""
 
 #. Tag: para
-#: using.docbook:208
+#: using.docbook:213
+#, no-c-format
+msgid "Displays the <guilabel>Parameter Animator</guilabel> dialog."
+msgstr ""
+
+#. Tag: guimenuitem
+#: using.docbook:217
+#, no-c-format
+msgid "Calculator"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:220
+#, no-c-format
+msgid "Opens the <guilabel>Calculator</guilabel> dialog."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:225
 #, no-c-format
 msgid ""
 "Depending on the plot type, there will also be up to four tools available:"
 msgstr ""
 
 #. Tag: guimenuitem
-#: using.docbook:212
+#: using.docbook:229
 #, no-c-format
-msgid "Get y-Value"
+msgid "Plot Area..."
 msgstr ""
 
 #. Tag: para
-#: using.docbook:215
+#: using.docbook:232
 #, no-c-format
 msgid ""
-"Opens a dialog in which you can find the y-value corresponding to a specific "
-"x-value. The selected graph will be highlighted in the dialog. Enter an x "
-"value in the <guilabel>X:</guilabel> box, and hit Enter. The corresponding y "
-"will be automatically calculated and shown underneath."
+"Select the minimum and maximum x-values for the graph in the new dialog that "
+"appears. Calulates the integral and draws the area between the graph and the "
+"x-axis in the selected range in the color of the graph."
 msgstr ""
 
 #. Tag: guimenuitem
-#: using.docbook:224
+#: using.docbook:240
 #, no-c-format
-msgid "Search for Minimum Value"
+msgid "Find Minimum..."
 msgstr ""
 
 #. Tag: para
-#: using.docbook:227
+#: using.docbook:243
 #, no-c-format
 msgid ""
 "Find the minimum value of the graph in a specified range. The selected graph "
@@ -467,39 +491,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: using.docbook:233
-#, no-c-format
-msgid ""
-"Note: You can also tell the plot to visually show the extreme points via the "
-"plot's <guilabel>Appearance</guilabel> dialog, accessible via the Function "
-"Editor."
-msgstr ""
-
-#. Tag: guimenuitem
-#: using.docbook:240
-#, no-c-format
-msgid "Search for Maximum Value"
-msgstr ""
-
-#. Tag: para
-#: using.docbook:243
-#, no-c-format
-msgid ""
-"This is the same as <guimenuitem>Search for Minimum Value</guimenuitem> "
-"above, but finds the maximum value instead of the minimum value."
-msgstr ""
-
-#. Tag: guimenuitem
 #: using.docbook:249
 #, no-c-format
-msgid "Calculate Integral"
+msgid ""
+"Note: You can also tell the plot to visually show the extreme points in the "
+"<guilabel>Plot Appearance</guilabel> dialog, accessible in the "
+"<guilabel>Functions</guilabel> sidebar by clicking on <guibutton>Advanced..."
+"</guibutton>."
+msgstr ""
+
+#. Tag: guimenuitem
+#: using.docbook:256
+#, no-c-format
+msgid "Find Maximum..."
 msgstr ""
 
 #. Tag: para
-#: using.docbook:252
+#: using.docbook:259
 #, no-c-format
 msgid ""
-"Select the x-values for the graph in the new dialog that appears. Calulates "
-"the integral and draws the area between the graph and the x-axis in the "
-"selected range in the color of the graph."
+"This is the same as <guimenuitem>Find Minimum...</guimenuitem> above, but "
+"finds the maximum value instead of the minimum value."
 msgstr ""
