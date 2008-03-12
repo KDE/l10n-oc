@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-11 07:19+0000\n"
+"POT-Creation-Date: 2008-03-12 04:19+0000\n"
 "PO-Revision-Date: 2008-01-12 13:50+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2595,7 +2595,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:776
+#: index.docbook:776 index.docbook:836
 #, no-c-format
 msgid "The following item is added to the Contact List's menus:"
 msgstr ""
@@ -2615,7 +2615,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:790
+#: index.docbook:790 index.docbook:850
 #, no-c-format
 msgid "The following items are added to the Chat window's menus:"
 msgstr ""
@@ -2669,13 +2669,315 @@ msgid ""
 msgstr ""
 
 #. Tag: title
+#: index.docbook:832
+#, no-c-format
+msgid "<title>OTR</title>"
+msgstr ""
+
+#. Tag: para
 #: index.docbook:833
+#, no-c-format
+msgid ""
+"The <guilabel>OTR</guilabel> plugin allows you to encrypt conversations "
+"using the Off-The-Record encryption method. This encryption method basically "
+"works like the PGP encryption but it is optimized for instant messaging and "
+"handles the key excange on its own. The only thing you have to do, is to "
+"make sure that you really are writing to the person you expect by using one "
+"of OTR's authentication mechanisms."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:835
+#, no-c-format
+msgid "Menu items"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:840
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>OTR Policy</guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:846
+#, no-c-format
+msgid ""
+"(Enabled when a contact is selected) You can set the encryption policy for "
+"each contact here. Setting this entry to \"Default\" causes Kopete to use "
+"the default setting in the configure dialog"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:854
+#, no-c-format
+msgid ""
+"<guimenu>Tools</guimenu> <guimenuitem>OTR Settings</guimenuitem> "
+"<guimenuitem>Start OTR session</guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:861
+#, no-c-format
+msgid "This lets you initiate an OTR encrypted session."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:866
+#, no-c-format
+msgid ""
+"<guimenu>Tools</guimenu> <guimenuitem>OTR Settings</guimenuitem> "
+"<guimenuitem>End OTR session</guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:873
+#, no-c-format
+msgid "This lets you end a previously established OTR session."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:878
+#, no-c-format
+msgid ""
+"<guimenu>Tools</guimenu> <guimenuitem>OTR Settings</guimenuitem> "
+"<guimenuitem>Authenticate contact</guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:885
+#, no-c-format
+msgid "Use this menu entry if you wish to authenticate the contact."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:891
+#, no-c-format
+msgid "The settings dialog"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:892
+#, no-c-format
+msgid ""
+"In the setting dialog you have various options to set the modules behaviour "
+"during your chatsessions. The most important of them ist the default policy "
+"configuration. Set the policy to \"Opportunistic\" if you wish Kopete to "
+"check if you contacts support OTR and establish an encrypted session on its "
+"own or to \"Manual\" if you wish to control each encryption state on your "
+"own. The options \"Always\" and \"Never\" are recommended only for "
+"experienced users that wish to set the policy on a per-contact base. In the "
+"\"Private Keys\" Pane you have the possibility to create you personal "
+"keypair for each account. You don't need to do this manually. If an account "
+"does not have a keypair it will be generated automatically the first time it "
+"is required. In the \"Known Fingerprints\" tab you have the possibility to "
+"see, verify and delete known public fingerprints of your contacts."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:895
+#, fuzzy, no-c-format
+#| msgid "Documentation"
+msgid "Authentication"
+msgstr "Documentacion"
+
+#. Tag: para
+#: index.docbook:896
+#, no-c-format
+msgid ""
+"You've probably received email from people pretending to be banks, credit "
+"agencies, even wealthy Nigerian expatriates. People lie about who they are "
+"all the time on the Internet. Authentication is a way to make sure that "
+"nobody can lie to you about who they are when they use OTR."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:898
+#, no-c-format
+msgid "<title>When to authenticate</title>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:899
+#, no-c-format
+msgid ""
+"You should authenticate a buddy the very first time that you talk to them "
+"using OTR. If you don't, then you can't really be sure that someone else "
+"isn't impersonating them or trying to listen in on your conversation. "
+"However, once you've authenticated your buddy once, you don't have to do it "
+"again. OTR will automatically do the authentication for all of your future "
+"conversations with that buddy."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:900
+#, no-c-format
+msgid ""
+"The only exceptions occur when your buddy switches between multiple "
+"computers or multiple IM accounts. In this case, you will need to "
+"authenticate once for each computer and account. Once you've done this, your "
+"buddy can freely use any of the computers you've authenticated them on, and "
+"OTR will recognize them automatically. If your buddy uses a new computer or "
+"account that OTR does not recognize, a message will pop up in your "
+"conversation window telling you about it."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:907
+#, no-c-format
+msgid "<phrase>When to authenticate</phrase>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:913
+#, no-c-format
+msgid "<title>How to authenticate</title>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:914
+#, no-c-format
+msgid ""
+"Important:If you are using OTR version 3.0.0 or earlier, or you would like "
+"to continue using the old fingerprints method, please refer to the help on "
+"fingerprints. The remainder of this page assumes that you are using a recent "
+"copy of OTR, and the standard authentication method."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:915
+#, no-c-format
+msgid ""
+"To authenticate someone, open a conversation with them and click on "
+"\"Authenticate Contact\" on the OTR button. OTR will ask both you and your "
+"friend to enter a secret known only to the two of you."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:922
+#, no-c-format
+msgid "<phrase>How to authenticate</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:926
+#, no-c-format
+msgid ""
+"If you both enter the same thing, then you know that you are really talking "
+"to your friend. Any imposter should have a hard time guessing what you're "
+"typing in, so you'll be able to catch them in the act."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:927
+#, no-c-format
+msgid ""
+"This method of authentication is only effective if it's hard for an imposter "
+"to guess what you're typing, but easy for your friend. The following is an "
+"example of what not to do:"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:935
+#, no-c-format
+msgid "Bad Example"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:939
+#, no-c-format
+msgid ""
+"Here you are telling the other person exactly what to do. An imposter can "
+"figure out what to type in just as easily as your friend can. A better way "
+"to pick a secret would be something like this:"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:947
+#, no-c-format
+msgid "Good Example"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:951
+#, no-c-format
+msgid ""
+"Now an imposter has no idea what to type in. Your friend, on the other hand, "
+"knows exactly what you're talking about. When OTR tells you that the secrets "
+"matched, you can be sure that you are really talking to your friend."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:954
+#, no-c-format
+msgid "What the results mean"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:955
+#, no-c-format
+msgid ""
+"When you have entered your secret and hit OK, the message \"Authenticatig "
+"contact...\" appears in the chatwindow. After a few seconds the result "
+"should show up in the chatwindow and display one of the following messages:"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:962
+#, no-c-format
+msgid "Authentication successful"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:966
+#, no-c-format
+msgid ""
+"This means that authentication has been a complete success. Your buddy "
+"entered the same secret that you did, and so they are not an imposter. The "
+"OTR button will automatically change to \"Private\", showing that "
+"conversations with this buddy are safe."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:973
+#, no-c-format
+msgid "Authentication failed"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:977
+#, no-c-format
+msgid ""
+"This means that although there were no errors, your buddy did not enter the "
+"same text as you. You should try again, making sure that you are clear about "
+"what to type (for example, \"the restaurant name in lower case\"). If you "
+"repeatedly get this result, you should view your buddy with suspicion."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:984
+#, no-c-format
+msgid "Authentication error"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:988
+#, no-c-format
+msgid ""
+"This means that something has gone wrong and the process could not complete "
+"normally. This will happen if your buddy hits \"cancel\" or fails to receive "
+"one of your messages. In this case, you should simply try again. If you try "
+"several times and keep getting an error, you should view your buddy with "
+"suspicion."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:993
 #, no-c-format
 msgid "KopeteTeX"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:834
+#: index.docbook:994
 #, no-c-format
 msgid ""
 "KopeteTeX allows scientists and mathematicians to hold conversations using "
@@ -2685,13 +2987,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:837
+#: index.docbook:997
 #, no-c-format
 msgid "Motion Auto-Away"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:838
+#: index.docbook:998
 #, no-c-format
 msgid ""
 "In conjunction with a webcam and the <application>Video4Linux</application> "
@@ -2700,13 +3002,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:841
+#: index.docbook:1001
 #, no-c-format
 msgid "Now Listening"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:842
+#: index.docbook:1002
 #, no-c-format
 msgid ""
 "With the <guilabel>Now Listening plugin</guilabel>, let people you're "
@@ -2717,13 +3019,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:845
+#: index.docbook:1005
 #, no-c-format
 msgid "Statistics"
 msgstr "Estadisticas"
 
 #. Tag: para
-#: index.docbook:846
+#: index.docbook:1006
 #, no-c-format
 msgid ""
 "This plugin uses a database to gather information about your contacts' "
@@ -2732,13 +3034,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:849
+#: index.docbook:1009
 #, no-c-format
 msgid "Text Effect"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:850
+#: index.docbook:1010
 #, no-c-format
 msgid ""
 "Text Effect applies funny effects to your messages before sending them, like "
@@ -2748,13 +3050,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:853
+#: index.docbook:1013
 #, no-c-format
 msgid "Translator"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:854
+#: index.docbook:1014
 #, no-c-format
 msgid ""
 "The Translator plugin lets you define a preferred language for each "
@@ -2766,13 +3068,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:855
+#: index.docbook:1015
 #, no-c-format
 msgid "The following item is added to the Chat window's menus:"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:859
+#: index.docbook:1019
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>T</keycap></keycombo> </"
@@ -2780,7 +3082,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:867
+#: index.docbook:1027
 #, no-c-format
 msgid ""
 "If you did not turn on automatic translation, this translates the current "
@@ -2788,13 +3090,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:873
+#: index.docbook:1033
 #, no-c-format
 msgid "Web Presence"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:874
+#: index.docbook:1034
 #, no-c-format
 msgid ""
 "Web Presence allows you to publicize your &im; presence on the Web. Give it "
@@ -2805,7 +3107,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:875
+#: index.docbook:1035
 #, no-c-format
 msgid ""
 "Example: <userinput>sftp://username@somehost.org/path/to/homes/user/im.html</"
@@ -2814,7 +3116,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:876
+#: index.docbook:1036
 #, no-c-format
 msgid ""
 "See <ulink url=\"help:/kioslave/index.html\">the KIO manuals</ulink> for "
@@ -2822,13 +3124,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:879
+#: index.docbook:1039
 #, no-c-format
 msgid "Pipes"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:880
+#: index.docbook:1040
 #, no-c-format
 msgid ""
 "Pipes allows you to pipe incoming or outgoing messages through an external "
@@ -2853,13 +3155,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:900
+#: index.docbook:1060
 #, no-c-format
 msgid "Contributing a plugin"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:901
+#: index.docbook:1061
 #, no-c-format
 msgid ""
 "&kopete; is designed to make it easy to create plugins that give it extra "
@@ -2868,19 +3170,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:908
+#: index.docbook:1068
 #, no-c-format
 msgid "Frequently Asked Questions"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:911
+#: index.docbook:1071
 #, no-c-format
 msgid "What does &kopete; mean? How do I pronounce it?"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:912
+#: index.docbook:1072
 #, no-c-format
 msgid ""
 "&kopete;'s name comes from the chilean word Copete, meaning <quote>a drink "
@@ -2890,7 +3192,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:915
+#: index.docbook:1075
 #, no-c-format
 msgid ""
 "When I have more than one messaging service under a user's name in my "
@@ -2899,7 +3201,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:917
+#: index.docbook:1077
 #, no-c-format
 msgid ""
 "You can change the order of accounts &kopete; tries to message people with "
@@ -2913,7 +3215,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:917
+#: index.docbook:1077
 #, no-c-format
 msgid ""
 "If you click on the small protocol icon on the right of the menu item, "
@@ -2922,7 +3224,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:921
+#: index.docbook:1081
 #, no-c-format
 msgid ""
 "I need to connect via a SOCKS proxy, but I cannot find any proxy "
@@ -2930,7 +3232,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:924
+#: index.docbook:1084
 #, no-c-format
 msgid ""
 "<trademark>MSN</trademark>, <trademark>ICQ</trademark>, <trademark>AIM</"
@@ -2942,13 +3244,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:929
+#: index.docbook:1089
 #, no-c-format
 msgid "Is it possible to customize the icons I see in &kopete;?"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:930
+#: index.docbook:1090
 #, no-c-format
 msgid ""
 "You can switch between different emoticons using the Emoticons tab of the "
@@ -2956,7 +3258,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:931
+#: index.docbook:1091
 #, no-c-format
 msgid ""
 "To install new emoticons, first look at <ulink url=\"http://www.kde-look.org/"
@@ -2965,7 +3267,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:933
+#: index.docbook:1093
 #, no-c-format
 msgid ""
 "The emoticons are easy to install - you just place a folder containing the "
@@ -2975,7 +3277,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:938
+#: index.docbook:1098
 #, no-c-format
 msgid ""
 "Copy the extracted folder to $KDEDIR/share/apps/kopete/pics/emoticons or "
@@ -2983,7 +3285,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:940
+#: index.docbook:1100
 #, no-c-format
 msgid ""
 "Select Configure &kopete; from the Settings menu and click on Appearance in "
@@ -2991,19 +3293,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:941
+#: index.docbook:1101
 #, no-c-format
 msgid "Select the emoticons set you just installed from the list"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:942
+#: index.docbook:1102
 #, no-c-format
 msgid "Now you can use the newly installed emoticons in &kopete;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:944
+#: index.docbook:1104
 #, no-c-format
 msgid ""
 "To replace the protocol icons, you'll have to replace the icons in $KDEDIR/"
@@ -3013,56 +3315,56 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:954
+#: index.docbook:1114
 #, no-c-format
 msgid "Specialized Actions"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:955
+#: index.docbook:1115
 #, no-c-format
 msgid "Command line parameters"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:956
+#: index.docbook:1116
 #, no-c-format
 msgid "Installing emoticon sets"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:960
+#: index.docbook:1120
 #, no-c-format
 msgid "Credits and Licenses"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:961
+#: index.docbook:1121
 #, no-c-format
 msgid "&kopete;: copyright 2001-2007, &kopete; Developers"
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:964
+#: index.docbook:1124
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:964
+#: index.docbook:1124
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:968
+#: index.docbook:1128
 #, no-c-format
 msgid "Current Development Team"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:971
+#: index.docbook:1131
 #, no-c-format
 msgid ""
 "Duncan Mac-Vicar Prett (duncan at kde org): Original author, developer, and "
@@ -3070,13 +3372,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:972
+#: index.docbook:1132
 #, no-c-format
 msgid "Till Gerken (till at tantalo net): Developer, Jabber maintainer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:973
+#: index.docbook:1133
 #, no-c-format
 msgid ""
 "Olivier Goffart (ogoffart at tiscalinet be): Lead Developer, MSN Plugin "
@@ -3084,13 +3386,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:974
+#: index.docbook:1134
 #, no-c-format
 msgid "Andy Goossens (andygoossens at telenet be): Developer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:975
+#: index.docbook:1135
 #, no-c-format
 msgid ""
 "Grzegorz Jaskiewicz (gregj at pointblue com pl): Developer, Gadu-gadu Plugin "
@@ -3098,26 +3400,26 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:976
+#: index.docbook:1136
 #, no-c-format
 msgid "Jason Keirstead (jason at keirstead org): Developer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:977
+#: index.docbook:1137
 #, no-c-format
 msgid ""
 "Matt Rogers (mattr at kde org): Lead Developer, AIM and ICQ plugin maintainer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:978
+#: index.docbook:1138
 #, no-c-format
 msgid "Richard Smith (lilachaze at hotmail com): Developer, UI maintainer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:979
+#: index.docbook:1139
 #, no-c-format
 msgid ""
 "Will Stephenson (lists at stevello free-online co uk): Developer, icons, "
@@ -3125,13 +3427,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:980
+#: index.docbook:1140
 #, no-c-format
 msgid "Michel Hermier (michel.hermier at wanadoo fr): IRC Plugin Maintainer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:981
+#: index.docbook:1141
 #, no-c-format
 msgid ""
 "Andre Duffeck (andre at duffeck de): Developer: Developer, Yahoo plugin "
@@ -3139,7 +3441,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:982
+#: index.docbook:1142
 #, no-c-format
 msgid ""
 "Michaël Larouche (michael.larouche at kdemail net): Developer, MSN, Chat "
@@ -3147,13 +3449,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:986
+#: index.docbook:1146
 #, no-c-format
 msgid "Former Developers (&kopete; Hall Of Fame)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:987
+#: index.docbook:1147
 #, no-c-format
 msgid ""
 "These people have moved on from &kopete;, so don't contact them for &kopete; "
@@ -3161,7 +3463,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:989
+#: index.docbook:1149
 #, no-c-format
 msgid ""
 "Christopher TenHarmsel (tenharmsel at users sourceforge net)Developer, Oscar "
@@ -3169,37 +3471,37 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:990
+#: index.docbook:1150
 #, no-c-format
 msgid "Ryan Cumming (ryan at kde org): Core developer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:991
+#: index.docbook:1151
 #, no-c-format
 msgid "Richard Stellingwerff (remenic at linuxfromscratch org): Developer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:992
+#: index.docbook:1152
 #, no-c-format
 msgid "Hendrik vom Lehn (hennevl at hennevl de): Developer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:993
+#: index.docbook:1153
 #, no-c-format
 msgid "Stefan Gehn (sgehn at gmx net): Developer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:994
+#: index.docbook:1154
 #, no-c-format
 msgid "Robert Gogolok (robertgogolock at gmx de): Developer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:995
+#: index.docbook:1155
 #, no-c-format
 msgid ""
 "Nick Betcher (nbetcher at kde org): Original author of ICQ, AIM and IRC "
@@ -3207,43 +3509,43 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:996
+#: index.docbook:1156
 #, no-c-format
 msgid "Daniel Stone (dstone at kde org): Original Jabber plugin author"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:997
+#: index.docbook:1157
 #, no-c-format
 msgid "James Grant (topace at lightbox org): Developer, importer Plugin author"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:998
+#: index.docbook:1158
 #, no-c-format
 msgid "Zack Rusin (zack at kde org): Developer, old Gadu-gadu Plugin author"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:999
+#: index.docbook:1159
 #, no-c-format
 msgid "Gav Wood (gav at kde org): WinPopup Plugin author"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1000
+#: index.docbook:1160
 #, no-c-format
 msgid "Martijn Klingens (klingens at kde org): Developer, MSN hacker"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1004
+#: index.docbook:1164
 #, no-c-format
 msgid "Documentation"
 msgstr "Documentacion"
 
 #. Tag: para
-#: index.docbook:1005
+#: index.docbook:1165
 #, no-c-format
 msgid ""
 "Documentation copyright 2003,2004,2005 Will Stephenson (lists at stevello "
@@ -3252,37 +3554,37 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1012
+#: index.docbook:1172
 #, no-c-format
 msgid "Installation"
 msgstr "Installacion"
 
 #. Tag: title
-#: index.docbook:1014
+#: index.docbook:1174
 #, no-c-format
 msgid "How to obtain &kopete;"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:1014
+#: index.docbook:1174
 #, no-c-format
 msgid "&install.intro.documentation;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1016
+#: index.docbook:1176
 #, no-c-format
 msgid "Development versions may be downloaded at &kopetewww;."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1019
+#: index.docbook:1179
 #, no-c-format
 msgid "Required Libraries"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1020
+#: index.docbook:1180
 #, no-c-format
 msgid ""
 "If you installed &kopete; as part of your distribution, you probably have "
@@ -3290,7 +3592,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1021
+#: index.docbook:1181
 #, no-c-format
 msgid ""
 "The Gadu-gadu plugin requires the libgadu package, see <ulink url=\"http://"
@@ -3298,7 +3600,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1022
+#: index.docbook:1182
 #, no-c-format
 msgid ""
 "The Now Listening plugin needs libxmms if you want to access what "
@@ -3308,13 +3610,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1025
+#: index.docbook:1185
 #, no-c-format
 msgid "Compilation and Installation"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:1025
+#: index.docbook:1185
 #, no-c-format
 msgid "&install.compile.documentation;"
 msgstr ""
