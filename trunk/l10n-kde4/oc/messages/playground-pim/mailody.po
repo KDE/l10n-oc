@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailody\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-16 00:13+0100\n"
+"POT-Creation-Date: 2008-03-17 08:44+0100\n"
 "PO-Revision-Date: 2008-01-12 13:48+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -81,12 +81,12 @@ msgstr ""
 msgid "&Message"
 msgstr "&Messatge"
 
-#: src/attachmentwidget.cpp:120 src/messageview.cpp:477
-#: src/messageview.cpp:697
+#: src/attachmentwidget.cpp:126 src/messageview.cpp:484
+#: src/messageview.cpp:686
 msgid "Open"
 msgstr "Dobrir"
 
-#: src/attachmentwidget.cpp:121 src/setupidentities.cpp:65
+#: src/attachmentwidget.cpp:127 src/setupidentities.cpp:65
 msgid "Remove"
 msgstr ""
 
@@ -142,11 +142,11 @@ msgstr "Apondre"
 msgid "Address"
 msgstr "Adreça"
 
-#: src/composer.cpp:214 src/messageview.cpp:338
+#: src/composer.cpp:214 src/messageview.cpp:342
 msgid "To"
 msgstr "A"
 
-#: src/composer.cpp:214 src/messageview.cpp:357
+#: src/composer.cpp:214 src/messageview.cpp:361
 msgid "Cc"
 msgstr "Cc"
 
@@ -237,15 +237,28 @@ msgstr ""
 msgid "Total amount of mails sent:"
 msgstr ""
 
-#: src/composer.cpp:939
+#: src/composer.cpp:938 src/composer.cpp:1054
+msgid ""
+"There is no outgoing mailserver configuration found, please set it up before "
+"sending"
+msgstr ""
+
+#: src/composer.cpp:946
 msgid ""
 "You have changed the subject in the thread you are writing to, do you want "
 "to start a new thread?"
 msgstr ""
 
-#: src/composer.cpp:941
+#: src/composer.cpp:948
 msgid "Subject Change"
 msgstr ""
+
+#: src/composer.cpp:1058
+#, fuzzy
+#| msgid "None"
+msgctxt "No valid mail transport is choosen"
+msgid "None"
+msgstr "Pas cap"
 
 #: src/imapmanager.cpp:79
 msgid ""
@@ -287,84 +300,80 @@ msgstr ""
 msgid "Connection has been closed. Reconnect?"
 msgstr ""
 
-#: src/main.cpp:105
+#: src/main.cpp:116
 msgid "Mailody"
 msgstr ""
 
-#: src/main.cpp:107
+#: src/main.cpp:118
 msgid "An IMAP Mail Client"
 msgstr ""
 
-#: src/main.cpp:109
-msgid "(c) 2006-2007 Omat Holding B.V. & Frode M. Døving"
-msgstr ""
-
-#: src/main.cpp:113
-msgid "Tom Albers"
-msgstr "Tom Albers"
-
-#: src/main.cpp:113
-msgid "Maintainer and author"
-msgstr ""
-
-#: src/main.cpp:115
-msgid "Frode M. Døving"
-msgstr ""
-
-#: src/main.cpp:115
-msgid "Author"
-msgstr "Autor"
-
-#: src/main.cpp:117
-msgid "Achim Bohnet"
-msgstr ""
-
-#: src/main.cpp:117
-msgid "Packaging and testing"
-msgstr ""
-
-#: src/main.cpp:119
-msgid "Marijke Verkaik"
-msgstr ""
-
-#: src/main.cpp:119
-msgid "Website and icons"
-msgstr ""
-
-#: src/main.cpp:121
-msgid "Lee Olson"
-msgstr ""
-
-#: src/main.cpp:121
-msgid "Logo"
-msgstr "Lògo"
-
-#: src/main.cpp:123
-msgid "Maxilys and Kolum"
+#: src/main.cpp:120
+msgid "(c) 2006-2008 Omat Holding B.V. & Frode M. Døving"
 msgstr ""
 
 #: src/main.cpp:124
-msgid "Idea to call this application Mailody"
+msgid "Tom Albers"
+msgstr "Tom Albers"
+
+#: src/main.cpp:124
+msgid "Maintainer and author"
 msgstr ""
 
-#: src/main.cpp:125
-msgid "Jörn Ahrens"
+#: src/main.cpp:126
+msgid "Frode M. Døving"
 msgstr ""
 
-#: src/main.cpp:125
-msgid "Sidebar in the composer"
+#: src/main.cpp:126
+msgid "Author"
+msgstr "Autor"
+
+#: src/main.cpp:128
+msgid "Achim Bohnet"
 msgstr ""
 
-#: src/main.cpp:131
-msgid "Open a composer with <email> as recipient"
+#: src/main.cpp:128
+msgid "Packaging and testing"
+msgstr ""
+
+#: src/main.cpp:130
+msgid "Marijke Verkaik"
+msgstr ""
+
+#: src/main.cpp:130
+msgid "Website and icons"
 msgstr ""
 
 #: src/main.cpp:132
+msgid "Lee Olson"
+msgstr ""
+
+#: src/main.cpp:132
+msgid "Logo"
+msgstr "Lògo"
+
+#: src/main.cpp:134
+msgid "Maxilys and Kolum"
+msgstr ""
+
+#: src/main.cpp:135
+msgid "Idea to call this application Mailody"
+msgstr ""
+
+#: src/main.cpp:140
+msgid "Open a composer with <email> as recipient"
+msgstr ""
+
+#: src/main.cpp:141
 msgid "Open a composer with <file> attached"
 msgstr ""
 
-#: src/main.cpp:133
-msgid "Send a message to that address"
+#: src/main.cpp:142
+msgid "Open a composer with the subject <subject>"
+msgstr ""
+
+#: src/main.cpp:143
+msgid "Open a composer with <body>"
 msgstr ""
 
 #: src/mainwindow.cpp:105
@@ -383,230 +392,230 @@ msgstr ""
 msgid "Close Tab"
 msgstr "Tampar onglet"
 
-#: src/mainwindow.cpp:268
+#: src/mainwindow.cpp:272
 msgid "Quit"
 msgstr "Quitar"
 
-#: src/mainwindow.cpp:276
+#: src/mainwindow.cpp:280
 msgid "Sync Mailbox List"
 msgstr ""
 
-#: src/mainwindow.cpp:282
+#: src/mainwindow.cpp:286
 msgid "Check for Mail Now"
 msgstr ""
 
-#: src/mainwindow.cpp:290 src/mainwindow.cpp:1470
+#: src/mainwindow.cpp:294 src/mainwindow.cpp:1484
 msgid "Save as..."
 msgstr "Enregistrar coma..."
 
-#: src/mainwindow.cpp:298
+#: src/mainwindow.cpp:302
 msgid "Print..."
 msgstr "Estampar..."
 
-#: src/mainwindow.cpp:306 src/messageview.cpp:699
+#: src/mainwindow.cpp:310 src/messageview.cpp:688
 msgid "Zoom In"
 msgstr "Agrandir lo zoom"
 
-#: src/mainwindow.cpp:314 src/messageview.cpp:701
+#: src/mainwindow.cpp:318 src/messageview.cpp:690
 msgid "Zoom Out"
 msgstr "Reduire el zoom"
 
-#: src/mainwindow.cpp:322
+#: src/mainwindow.cpp:326
 msgid "Show as Text"
 msgstr ""
 
-#: src/mainwindow.cpp:329
+#: src/mainwindow.cpp:333
 msgid "Show Source"
 msgstr ""
 
-#: src/mainwindow.cpp:336
+#: src/mainwindow.cpp:340
 msgid "Use Fixed Font"
 msgstr ""
 
-#: src/mainwindow.cpp:343
+#: src/mainwindow.cpp:347
 msgid "Load External Images"
 msgstr ""
 
-#: src/mainwindow.cpp:349
+#: src/mainwindow.cpp:353
 msgid "Message Deleted"
 msgstr ""
 
-#: src/mainwindow.cpp:357
+#: src/mainwindow.cpp:361
 msgid "New Message..."
 msgstr ""
 
-#: src/mainwindow.cpp:365
+#: src/mainwindow.cpp:369
 msgid "New Message to"
 msgstr ""
 
-#: src/mainwindow.cpp:379
+#: src/mainwindow.cpp:383
 msgid "Reply to Message"
 msgstr ""
 
-#: src/mainwindow.cpp:387
+#: src/mainwindow.cpp:391
 msgid "Re-Edit Message"
 msgstr ""
 
-#: src/mainwindow.cpp:395
+#: src/mainwindow.cpp:399
 msgid "Forward this Message"
 msgstr ""
 
-#: src/mainwindow.cpp:402
+#: src/mainwindow.cpp:406
 msgid "Forward this Message to"
 msgstr ""
 
-#: src/mainwindow.cpp:415
+#: src/mainwindow.cpp:419
 msgid "No Label"
 msgstr "Pas cap d'etiqueta"
 
-#: src/mainwindow.cpp:422
+#: src/mainwindow.cpp:426
 msgid "Label &1"
 msgstr ""
 
-#: src/mainwindow.cpp:430
+#: src/mainwindow.cpp:434
 msgid "Label &2"
 msgstr ""
 
-#: src/mainwindow.cpp:438
+#: src/mainwindow.cpp:442
 msgid "Label &3"
 msgstr ""
 
-#: src/mainwindow.cpp:446
+#: src/mainwindow.cpp:450
 msgid "Label &4"
 msgstr ""
 
-#: src/mainwindow.cpp:454
+#: src/mainwindow.cpp:458
 msgid "Label &5"
 msgstr ""
 
-#: src/mainwindow.cpp:465 src/mainwindow.cpp:1617
+#: src/mainwindow.cpp:469 src/mainwindow.cpp:1631
 msgid "Ready"
 msgstr "Prèst"
 
-#: src/mainwindow.cpp:467
+#: src/mainwindow.cpp:471
 msgid "Plain"
 msgstr "Simpla"
 
-#: src/mainwindow.cpp:469 src/mainwindow.cpp:1581
+#: src/mainwindow.cpp:473 src/mainwindow.cpp:1595
 msgctxt "Short for no ext. images"
 msgid "No ext."
 msgstr ""
 
-#: src/mainwindow.cpp:744 src/mainwindow.cpp:893
+#: src/mainwindow.cpp:758 src/mainwindow.cpp:907
 msgid "Message"
 msgstr "Messatge"
 
-#: src/mainwindow.cpp:827
+#: src/mainwindow.cpp:841
 msgid ""
 "Loading external images gives spammers the acknowledgement that you received "
 "this message so they will use your email address to spam you. So you should "
 "only continue for very trusted messages."
 msgstr ""
 
-#: src/mainwindow.cpp:1138
+#: src/mainwindow.cpp:1152
 #, kde-format
 msgid "At %1, you wrote:\n"
 msgstr ""
 
-#: src/mainwindow.cpp:1162
+#: src/mainwindow.cpp:1176
 #, kde-format
 msgid "At %1, %2 wrote:\n"
 msgstr ""
 
-#: src/mainwindow.cpp:1364
+#: src/mainwindow.cpp:1378
 msgid "None"
 msgstr "Pas cap"
 
-#: src/mainwindow.cpp:1562
+#: src/mainwindow.cpp:1576
 #, kde-format
 msgctxt "Status message: first is the account, second the message shown"
 msgid "[%1] %2"
 msgstr ""
 
-#: src/mainwindow.cpp:1573
+#: src/mainwindow.cpp:1587
 msgctxt "Short for text-mode"
 msgid "Plain"
 msgstr "Simpla"
 
-#: src/mainwindow.cpp:1575
+#: src/mainwindow.cpp:1589
 msgctxt "Short for html-mode"
 msgid "HTML"
 msgstr "HTML"
 
-#: src/mainwindow.cpp:1579
+#: src/mainwindow.cpp:1593
 msgctxt "Short for external images"
 msgid "Ext."
 msgstr ""
 
-#: src/mainwindow.cpp:1605
+#: src/mainwindow.cpp:1619
 #, kde-format
 msgctxt "task done"
 msgid "%1 [completed]"
 msgstr ""
 
-#: src/mainwindow.cpp:1641
+#: src/mainwindow.cpp:1655
 msgid "Site"
 msgstr "Siti"
 
-#: src/messageview.cpp:138
+#: src/messageview.cpp:111
 msgid "From:"
 msgstr "Expedidor :"
 
-#: src/messageview.cpp:142
+#: src/messageview.cpp:115
 msgid "To:"
 msgstr "Destinatari :"
 
-#: src/messageview.cpp:146
+#: src/messageview.cpp:119
 msgid "Cc:"
 msgstr ""
 
-#: src/messageview.cpp:151
+#: src/messageview.cpp:124
 msgid "Date:"
 msgstr "Data :"
 
-#: src/messageview.cpp:318
+#: src/messageview.cpp:322
 msgid "From"
 msgstr "De"
 
-#: src/messageview.cpp:377
+#: src/messageview.cpp:381
 msgid "Resent"
 msgstr ""
 
-#: src/messageview.cpp:380
+#: src/messageview.cpp:384
 #, kde-format
 msgctxt "resent by from-address(1) to to-address(2)"
 msgid "by %1 to %2"
 msgstr ""
 
-#: src/messageview.cpp:394
+#: src/messageview.cpp:401
 msgid "Attachments"
 msgstr "Estacaments"
 
-#: src/messageview.cpp:451 src/messageview.cpp:695
+#: src/messageview.cpp:458 src/messageview.cpp:684
 msgid "New Message to..."
 msgstr ""
 
-#: src/messageview.cpp:453 src/messageview.cpp:691
+#: src/messageview.cpp:460 src/messageview.cpp:680
 msgid "Add to KAddressBook..."
 msgstr ""
 
-#: src/messageview.cpp:455 src/messageview.cpp:693
+#: src/messageview.cpp:462 src/messageview.cpp:682
 msgid "Copy"
 msgstr "Copiar"
 
-#: src/messageview.cpp:478
+#: src/messageview.cpp:485
 msgid "Open with..."
 msgstr ""
 
-#: src/messageview.cpp:479
+#: src/messageview.cpp:486
 msgid "Save..."
 msgstr "Enregistrar..."
 
-#: src/messageview.cpp:480
+#: src/messageview.cpp:487
 msgid "Save All..."
 msgstr ""
 
-#: src/messageview.cpp:661
+#: src/messageview.cpp:650
 #, kde-format
 msgid ""
 "You have clicked on a link which might not indicate correctly where you are "
@@ -618,11 +627,11 @@ msgid ""
 "Do you want to go there?"
 msgstr ""
 
-#: src/messageview.cpp:665
+#: src/messageview.cpp:654
 msgid "Phishing Alert"
 msgstr ""
 
-#: src/messageview.cpp:698
+#: src/messageview.cpp:687
 msgid "Open in New Tab"
 msgstr ""
 
@@ -634,16 +643,16 @@ msgstr ""
 msgid "Settings are not complete, complete them and try again..."
 msgstr ""
 
-#: src/sendmessage.cpp:303
+#: src/sendmessage.cpp:302
 #, kde-format
 msgid "The size of the attachments is %1, are you sure you want to continue?"
 msgstr ""
 
-#: src/sendmessage.cpp:306
+#: src/sendmessage.cpp:305
 msgid "Big Attachment"
 msgstr ""
 
-#: src/sendmessage.cpp:363
+#: src/sendmessage.cpp:362
 msgid "Not possible to create SMTP Job!"
 msgstr ""
 
