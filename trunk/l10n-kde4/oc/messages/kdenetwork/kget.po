@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-21 13:25+0100\n"
+"POT-Creation-Date: 2008-03-22 20:27+0100\n"
 "PO-Revision-Date: 2008-01-12 14:22+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -80,64 +80,74 @@ msgstr "Renommar"
 msgid "Select Icon"
 msgstr "Seleccionar un fichièr"
 
-#: conf/preferencesdialog.cpp:49
+#: conf/preferencesdialog.cpp:45
+msgid "Xml"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:47
+#, fuzzy
+#| msgid "Size"
+msgid "Sqlite"
+msgstr "Talha"
+
+#: conf/preferencesdialog.cpp:56
 msgid "Appearance"
 msgstr "Aparéncia"
 
-#: conf/preferencesdialog.cpp:49
+#: conf/preferencesdialog.cpp:56
 msgid "Change appearance settings"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:50
+#: conf/preferencesdialog.cpp:57
 msgid "Groups"
 msgstr "Grops"
 
-#: conf/preferencesdialog.cpp:50
+#: conf/preferencesdialog.cpp:57
 msgid "Manage the groups"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 108
-#: conf/preferencesdialog.cpp:51 rc.cpp:201
+#: conf/preferencesdialog.cpp:58 rc.cpp:207
 msgid "Folders"
 msgstr "Repertòris"
 
-#: conf/preferencesdialog.cpp:51
+#: conf/preferencesdialog.cpp:58
 msgid "Default Download Folders"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 22
-#: conf/preferencesdialog.cpp:52 rc.cpp:180
+#: conf/preferencesdialog.cpp:59 rc.cpp:186
 msgid "Network"
 msgstr "Ret"
 
-#: conf/preferencesdialog.cpp:52
+#: conf/preferencesdialog.cpp:59
 msgid "Network and Downloads"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:53
+#: conf/preferencesdialog.cpp:60
 msgid "Webinterface"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:53
+#: conf/preferencesdialog.cpp:60
 msgid "Control KGet over Network or Internet"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:54
+#: conf/preferencesdialog.cpp:61
 msgctxt "Advanced Options"
 msgid "Advanced"
 msgstr "Avançat"
 
-#: conf/preferencesdialog.cpp:54
+#: conf/preferencesdialog.cpp:61
 msgid "Advanced Options"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:55
+#: conf/preferencesdialog.cpp:62
 msgid "Plugins"
 msgstr "Ajustons"
 
-#: conf/preferencesdialog.cpp:55
+#: conf/preferencesdialog.cpp:62
 msgid "Transfer Plugin Options"
 msgstr ""
 
@@ -145,8 +155,7 @@ msgstr ""
 msgid "Folder and extension can not be empty."
 msgstr ""
 
-#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:135 core/kget.cpp:457
-#: core/kget.cpp:797 ui/transferhistory.cpp:121 ui/transferhistory.cpp:224
+#: conf/dlgdirectories.cpp:140 core/kget.cpp:457 core/kget.cpp:797
 msgid "Error"
 msgstr "Error"
 
@@ -174,21 +183,6 @@ msgstr "Avançament"
 msgctxt "speed of download"
 msgid "Speed"
 msgstr "Velocitat"
-
-#: core/transfergroup.cpp:130 ui/transferhistory.cpp:309
-msgctxt "the transfer has been finished"
-msgid "Finished"
-msgstr "Terminat"
-
-#: core/transfergroup.cpp:132
-msgctxt "the transfer has been aborted"
-msgid "Aborted"
-msgstr "Abandonat"
-
-#: core/transfergroup.cpp:135 ui/transferhistory.cpp:121
-#: ui/transferhistory.cpp:224
-msgid "History-File cannot be opened correctly!"
-msgstr ""
 
 #: core/transferhandler.cpp:138
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:27
@@ -282,7 +276,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 24
-#: core/kget.cpp:734 ui/newtransferdialog.cpp:37 rc.cpp:348
+#: core/kget.cpp:734 ui/newtransferdialog.cpp:37 rc.cpp:354
 msgid "New Download"
 msgstr ""
 
@@ -393,10 +387,10 @@ msgid "File"
 msgstr "Fichièr"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 52
+#. i18n: file ui/history/transferhistory.ui line 120
 #: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:257
 #: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:72
-#: rc.cpp:408
+#: rc.cpp:420
 msgid "Size"
 msgstr "Talha"
 
@@ -467,7 +461,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 154
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:70
-#: rc.cpp:219 rc.cpp:297
+#: rc.cpp:225 rc.cpp:303
 msgid "Chunks"
 msgstr ""
 
@@ -710,48 +704,119 @@ msgstr ""
 msgid "Transfer details"
 msgstr ""
 
-#: ui/transferhistory.cpp:37
-msgid "Transfer History"
+#: ui/history/transferhistoryitemwidget.cpp:68
+#, fuzzy
+#| msgid "Downloading.."
+msgid "Download again"
+msgstr "Descarga..."
+
+#: ui/history/transferhistoryitemwidget.cpp:74
+msgid "Delete selected"
 msgstr ""
 
-#: ui/transferhistory.cpp:278
-msgid "Less than 1MiB"
-msgstr ""
+#: ui/history/transferhistoryitemwidget.cpp:80
+#, fuzzy
+#| msgid "Open File"
+msgid "Open file"
+msgstr "Dobrir fichièr"
 
-#: ui/transferhistory.cpp:279
-msgid "Between 1MiB-10MiB"
-msgstr ""
-
-#: ui/transferhistory.cpp:280
-msgid "Between 10MiB-100MiB"
-msgstr ""
-
-#: ui/transferhistory.cpp:281
-msgid "Between 100MiB-1GiB"
-msgstr ""
-
-#: ui/transferhistory.cpp:282
-msgid "More than 1GiB"
-msgstr ""
-
-#: ui/transferhistory.cpp:285
+#: ui/history/transferhistorycategorizeddelegate.cpp:45
+#: ui/history/transferhistory.cpp:230
 msgid "Today"
 msgstr ""
 
-#: ui/transferhistory.cpp:286
+#: ui/history/transferhistorycategorizeddelegate.cpp:49
+#: ui/history/transferhistory.cpp:231
 #, fuzzy
 #| msgctxt "Download last"
 #| msgid "Last"
 msgid "Last week"
 msgstr "Darrièr"
 
-#: ui/transferhistory.cpp:287
+#: ui/history/transferhistorycategorizeddelegate.cpp:53
+msgid "Last Month"
+msgstr ""
+
+#: ui/history/transferhistorycategorizeddelegate.cpp:57
+#: ui/history/transferhistory.cpp:233
+msgid "A long time ago"
+msgstr ""
+
+#: ui/history/transferhistorycategorizeddelegate.cpp:77
+msgid "Under 10MiB"
+msgstr ""
+
+#: ui/history/transferhistorycategorizeddelegate.cpp:80
+msgid "More than 10MiB and 50MiB"
+msgstr ""
+
+#: ui/history/transferhistorycategorizeddelegate.cpp:84
+msgid "More than 50MiB and 100MiB"
+msgstr ""
+
+#: ui/history/transferhistorycategorizeddelegate.cpp:89
+msgid "More than 100MiB"
+msgstr ""
+
+#: ui/history/transferhistory.cpp:47
+msgid "Transfer History"
+msgstr ""
+
+#: ui/history/transferhistory.cpp:217
+#, fuzzy
+#| msgctxt "@label transfer source"
+#| msgid "Source:"
+msgid "Source-File"
+msgstr "Sorga :"
+
+#. i18n: tag string
+#. i18n: file ui/newtransferwidget.ui line 49
+#: ui/history/transferhistory.cpp:217 rc.cpp:360
+msgid "Destination"
+msgstr "Destinacion"
+
+#: ui/history/transferhistory.cpp:217
+msgid "Time"
+msgstr "Ora"
+
+#: ui/history/transferhistory.cpp:217
+#, fuzzy
+#| msgid "File Name"
+msgid "File Size"
+msgstr "Nom de fichièr"
+
+#: ui/history/transferhistory.cpp:217
+msgid "Status"
+msgstr "Estatut"
+
+#: ui/history/transferhistory.cpp:222
+msgid "Less than 1MiB"
+msgstr ""
+
+#: ui/history/transferhistory.cpp:223
+msgid "Between 1MiB-10MiB"
+msgstr ""
+
+#: ui/history/transferhistory.cpp:224
+msgid "Between 10MiB-100MiB"
+msgstr ""
+
+#: ui/history/transferhistory.cpp:225
+msgid "Between 100MiB-1GiB"
+msgstr ""
+
+#: ui/history/transferhistory.cpp:226
+msgid "More than 1GiB"
+msgstr ""
+
+#: ui/history/transferhistory.cpp:232
 msgid "Last month"
 msgstr ""
 
-#: ui/transferhistory.cpp:288
-msgid "A long time ago"
-msgstr ""
+#: ui/history/transferhistory.cpp:253
+msgctxt "the transfer has been finished"
+msgid "Finished"
+msgstr "Terminat"
 
 #: ui/transfersettingsdialog.cpp:18
 #, kde-format
@@ -767,7 +832,7 @@ msgstr "Sorga :"
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 247
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 64
-#: ui/transferdetails.cpp:38 rc.cpp:327 rc.cpp:363
+#: ui/transferdetails.cpp:38 rc.cpp:333 rc.cpp:369
 msgid "Saving to:"
 msgstr ""
 
@@ -775,7 +840,7 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 60
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 143
-#: ui/transferdetails.cpp:39 rc.cpp:246 rc.cpp:372
+#: ui/transferdetails.cpp:39 rc.cpp:252 rc.cpp:378
 msgid "Status:"
 msgstr "Estat :"
 
@@ -810,7 +875,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 51
-#: ui/droptarget.cpp:358 rc.cpp:114
+#: ui/droptarget.cpp:358 rc.cpp:120
 msgid "Drop Target"
 msgstr ""
 
@@ -921,7 +986,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 137
-#: extensions/konqueror/kget_linkview.cpp:94 rc.cpp:177
+#: extensions/konqueror/kget_linkview.cpp:94 rc.cpp:183
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -1364,104 +1429,118 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 28
+#. i18n: file conf/dlgadvanced.ui line 19
 #: rc.cpp:78
 msgid "Disable confirmation dialogs (less verbosity)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 35
+#. i18n: file conf/dlgadvanced.ui line 26
 #: rc.cpp:81
 msgid "Enable system tray icon"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 42
+#. i18n: file conf/dlgadvanced.ui line 33
 #: rc.cpp:84
 msgid "Quit when all downloads have been finished"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 49
+#. i18n: file conf/dlgadvanced.ui line 40
 #: rc.cpp:87
+#, fuzzy
+#| msgid "Clear History"
+msgid "History"
+msgstr "Voidar l'istoric"
+
+#. i18n: tag string
+#. i18n: file conf/dlgadvanced.ui line 46
+#: rc.cpp:90
+msgid "History backend"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file conf/dlgadvanced.ui line 63
+#: rc.cpp:93
 msgid "Integration"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 55
-#: rc.cpp:90
+#. i18n: file conf/dlgadvanced.ui line 69
+#: rc.cpp:96
 msgid "Use as download manager for Konqueror"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 62
-#: rc.cpp:93
+#. i18n: file conf/dlgadvanced.ui line 76
+#: rc.cpp:99
 msgid "Monitor clipboard for files to download"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 78
-#: rc.cpp:96
+#. i18n: file conf/dlgadvanced.ui line 92
+#: rc.cpp:102
 msgid "Enable KDE global progress tracking"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 90
-#: rc.cpp:99
+#. i18n: file conf/dlgadvanced.ui line 104
+#: rc.cpp:105
 msgid "Show every single download "
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 97
-#: rc.cpp:102
+#. i18n: file conf/dlgadvanced.ui line 111
+#: rc.cpp:108
 msgid "Show overall progress"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 28
-#: rc.cpp:105
+#: rc.cpp:111
 msgid "Startup"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 34
-#: rc.cpp:108
+#: rc.cpp:114
 msgid "Show main window at startup"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 41
-#: rc.cpp:111
+#: rc.cpp:117
 msgid "Show splashscreen"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 57
-#: rc.cpp:117
+#: rc.cpp:123
 msgid "Show drop target"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 64
-#: rc.cpp:120
+#: rc.cpp:126
 msgid "Enable animations"
 msgstr "Activar las animacions"
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 74
-#: rc.cpp:123
+#: rc.cpp:129
 msgid "Transfer List"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 80
-#: rc.cpp:126
+#: rc.cpp:132
 msgid "Expandable transfer details instead of separate tabs"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgwebinterface.ui line 31
-#: rc.cpp:129
+#: rc.cpp:135
 msgid "Enable Webinterface"
 msgstr ""
 
@@ -1469,13 +1548,13 @@ msgstr ""
 #. i18n: file conf/dlgwebinterface.ui line 43
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 28
-#: rc.cpp:132 rc.cpp:183
+#: rc.cpp:138 rc.cpp:189
 msgid "Port:"
 msgstr "Pòrt :"
 
 #. i18n: tag string
 #. i18n: file conf/dlgwebinterface.ui line 70
-#: rc.cpp:135
+#: rc.cpp:141
 #, fuzzy
 #| msgid "Url:"
 msgid "User:"
@@ -1483,25 +1562,25 @@ msgstr "Url :"
 
 #. i18n: tag string
 #. i18n: file conf/dlgwebinterface.ui line 84
-#: rc.cpp:138
+#: rc.cpp:144
 msgid "Password:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 16
-#: rc.cpp:141
+#: rc.cpp:147
 msgid "Threads"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 22
-#: rc.cpp:144
+#: rc.cpp:150
 msgid "Number of threads:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 42
-#: rc.cpp:147
+#: rc.cpp:153
 msgid "Minimal segment size:"
 msgstr ""
 
@@ -1509,37 +1588,37 @@ msgstr ""
 #. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 62
 #. i18n: tag string
 #. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 91
-#: rc.cpp:150 rc.cpp:156
+#: rc.cpp:156 rc.cpp:162
 msgid "kBi"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 84
-#: rc.cpp:153
+#: rc.cpp:159
 msgid "Save data every:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 113
-#: rc.cpp:159
+#: rc.cpp:165
 msgid "Use search engines"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 16
-#: rc.cpp:162
+#: rc.cpp:168
 msgid "Scanning data of torrent :"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 30
-#: rc.cpp:165
+#: rc.cpp:171
 msgid "Number of chunks found :"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 40
-#: rc.cpp:168
+#: rc.cpp:174
 msgid "Number of chunks failed / not downloaded :"
 msgstr ""
 
@@ -1547,13 +1626,13 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 63
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 88
-#: rc.cpp:171 rc.cpp:174
+#: rc.cpp:177 rc.cpp:180
 msgid "0"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 51
-#: rc.cpp:186
+#: rc.cpp:192
 msgid "Upload Limit per Transfer: (0 if no limit)"
 msgstr ""
 
@@ -1569,43 +1648,43 @@ msgstr ""
 #. i18n: file ui/groupsettingsdialog.ui line 49
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 75
-#: rc.cpp:189 rc.cpp:195 rc.cpp:336 rc.cpp:342 rc.cpp:390 rc.cpp:396
+#: rc.cpp:195 rc.cpp:201 rc.cpp:342 rc.cpp:348 rc.cpp:396 rc.cpp:402
 msgid "KiB"
 msgstr "ko"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 68
-#: rc.cpp:192
+#: rc.cpp:198
 msgid "Download Limit per Transfer: (0 if no limit)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 85
-#: rc.cpp:198
+#: rc.cpp:204
 msgid "Maximum Shared Ration: (0 if no limit)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 120
-#: rc.cpp:204
+#: rc.cpp:210
 msgid "Default Torrent-Folder:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 140
-#: rc.cpp:207
+#: rc.cpp:213
 msgid "Default temporary folder"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 157
-#: rc.cpp:210
+#: rc.cpp:216
 msgid "Preallocate disk-space"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/btaddtrackerwidget.ui line 16
-#: rc.cpp:213
+#: rc.cpp:219
 msgid "Tracker-Url:"
 msgstr ""
 
@@ -1613,20 +1692,20 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/btaddtrackerwidget.ui line 26
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 125
-#: rc.cpp:216 rc.cpp:258
+#: rc.cpp:222 rc.cpp:264
 msgid "Add Tracker"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 23
-#: rc.cpp:222
+#: rc.cpp:228
 msgctxt "total chunks"
 msgid "Total:"
 msgstr "Total :"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 59
-#: rc.cpp:225
+#: rc.cpp:231
 msgid "Currently downloading:"
 msgstr ""
 
@@ -1634,7 +1713,7 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 95
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 163
-#: rc.cpp:228 rc.cpp:300
+#: rc.cpp:234 rc.cpp:306
 msgid "Downloaded:"
 msgstr ""
 
@@ -1642,7 +1721,7 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 131
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 205
-#: rc.cpp:231 rc.cpp:318
+#: rc.cpp:237 rc.cpp:324
 msgid "Excluded:"
 msgstr ""
 
@@ -1650,20 +1729,20 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 167
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 177
-#: rc.cpp:234 rc.cpp:306
+#: rc.cpp:240 rc.cpp:312
 msgctxt "chunks left"
 msgid "Left:"
 msgstr "Esquèrra:"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 203
-#: rc.cpp:237
+#: rc.cpp:243
 msgid "Size:"
 msgstr "Talha :"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 20
-#: rc.cpp:240
+#: rc.cpp:246
 msgid "URL:"
 msgstr "URL :"
 
@@ -1671,49 +1750,49 @@ msgstr "URL :"
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 33
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 73
-#: rc.cpp:243 rc.cpp:249
+#: rc.cpp:249 rc.cpp:255
 msgid "KSqueezedTextLabel"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 100
-#: rc.cpp:252
+#: rc.cpp:258
 msgid "Next Update In:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 118
-#: rc.cpp:255
+#: rc.cpp:261
 msgid "Update Tracker"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 144
-#: rc.cpp:261
+#: rc.cpp:267
 msgid "Remove Tracker"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 151
-#: rc.cpp:264
+#: rc.cpp:270
 msgid "Change Tracker"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 171
-#: rc.cpp:267
+#: rc.cpp:273
 msgid "Restore Defaults"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 29
-#: rc.cpp:270
+#: rc.cpp:276
 msgid "Stats"
 msgstr "Stats"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 47
-#: rc.cpp:273
+#: rc.cpp:279
 msgid "Seeders:"
 msgstr ""
 
@@ -1733,32 +1812,32 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 198
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 212
-#: rc.cpp:276 rc.cpp:282 rc.cpp:288 rc.cpp:294 rc.cpp:303 rc.cpp:309
-#: rc.cpp:315 rc.cpp:321
+#: rc.cpp:282 rc.cpp:288 rc.cpp:294 rc.cpp:300 rc.cpp:309 rc.cpp:315
+#: rc.cpp:321 rc.cpp:327
 msgid "<n>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 73
-#: rc.cpp:279
+#: rc.cpp:285
 msgid "Download-Speed:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 99
-#: rc.cpp:285
+#: rc.cpp:291
 msgid "Leechers:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 125
-#: rc.cpp:291
+#: rc.cpp:297
 msgid "Upload-Speed:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 191
-#: rc.cpp:312
+#: rc.cpp:318
 msgctxt "all chunks"
 msgid "All:"
 msgstr "Totes :"
@@ -1767,14 +1846,14 @@ msgstr "Totes :"
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 240
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 71
-#: rc.cpp:324 rc.cpp:366
+#: rc.cpp:330 rc.cpp:372
 msgctxt "source-file"
 msgid "Source:"
 msgstr "Sorga :"
 
 #. i18n: tag string
 #. i18n: file ui/transfersettingsdialog.ui line 22
-#: rc.cpp:330
+#: rc.cpp:336
 #, fuzzy
 #| msgid "Groups"
 msgid "Transfer-Settings"
@@ -1782,13 +1861,13 @@ msgstr "Grops"
 
 #. i18n: tag string
 #. i18n: file ui/transfersettingsdialog.ui line 29
-#: rc.cpp:333
+#: rc.cpp:339
 msgid "Upload Limit"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transfersettingsdialog.ui line 55
-#: rc.cpp:339
+#: rc.cpp:345
 #, fuzzy
 #| msgid "Download"
 msgid "Download Limit"
@@ -1796,61 +1875,55 @@ msgstr "Descargar"
 
 #. i18n: tag string
 #. i18n: file ui/transfersettingsdialog.ui line 81
-#: rc.cpp:345
+#: rc.cpp:351
 msgid "Maximum Share Ratio"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 39
-#: rc.cpp:351
+#: rc.cpp:357
 msgid "Url"
 msgstr "Url"
 
 #. i18n: tag string
-#. i18n: file ui/newtransferwidget.ui line 49
-#: rc.cpp:354
-msgid "Destination"
-msgstr "Destinacion"
-
-#. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 59
-#: rc.cpp:357
+#: rc.cpp:363
 msgid "Transfer Group"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 89
-#: rc.cpp:360
+#: rc.cpp:366
 msgid "Set as default folder"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 123
-#: rc.cpp:369
+#: rc.cpp:375
 msgid "<done> MiB of <todo> MiB"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 150
-#: rc.cpp:375
+#: rc.cpp:381
 msgid "<icon>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 157
-#: rc.cpp:378
+#: rc.cpp:384
 msgid "<status>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 183
-#: rc.cpp:381
+#: rc.cpp:387
 msgid "<speed>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 26
-#: rc.cpp:384
+#: rc.cpp:390
 #, fuzzy
 #| msgid "Groups"
 msgid "Group-Settings"
@@ -1858,7 +1931,7 @@ msgstr "Grops"
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 33
-#: rc.cpp:387
+#: rc.cpp:393
 #, fuzzy
 #| msgid "Downloaded"
 msgid "Max download Speed"
@@ -1866,93 +1939,114 @@ msgstr "Descargat"
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 59
-#: rc.cpp:393
+#: rc.cpp:399
 msgid "Max upload Speed"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 85
-#: rc.cpp:399
+#: rc.cpp:405
 msgid "Default folder:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 26
-#: rc.cpp:402
+#. i18n: file ui/history/transferhistory.ui line 26
+#: rc.cpp:408
 msgid "Clear History"
 msgstr "Voidar l'istoric"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 47
-#: rc.cpp:405
+#. i18n: file ui/history/transferhistory.ui line 46
+#: rc.cpp:411
+msgctxt "View modes"
+msgid "view modes"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ui/history/transferhistory.ui line 99
+#: rc.cpp:414
+#, fuzzy
+#| msgid "Select all"
+msgid "select ranges"
+msgstr "Seleccionar un fichièr"
+
+#. i18n: tag string
+#. i18n: file ui/history/transferhistory.ui line 115
+#: rc.cpp:417
 #, fuzzy
 #| msgid "Delete"
 msgid "Date"
 msgstr "Suprimir"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 66
-#: rc.cpp:411
-msgid "Filter history..."
+#. i18n: file ui/history/transferhistory.ui line 125
+#: rc.cpp:423
+msgid "Host"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 77
-#: rc.cpp:414
+#. i18n: file ui/history/transferhistory.ui line 136
+#: rc.cpp:426
+#, fuzzy
+#| msgid "Clear History"
+msgid "filter history"
+msgstr "Voidar l'istoric"
+
+#. i18n: tag string
+#. i18n: file ui/history/transferhistory.ui line 161
+#: rc.cpp:429
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 82
-#: rc.cpp:417
+#. i18n: file ui/history/transferhistory.ui line 166
+#: rc.cpp:432
 msgid "Download"
 msgstr "Descargar"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:420
+#: rc.cpp:435
 msgid "&File"
 msgstr "&Fichièr"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 14
-#: rc.cpp:423
+#: rc.cpp:438
 msgid "&Downloads"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 23
-#: rc.cpp:426
+#: rc.cpp:441
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 35
-#: rc.cpp:429
+#: rc.cpp:444
 msgid "&Help"
 msgstr "&Ajuda"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 38
-#: rc.cpp:432
+#: rc.cpp:447
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
 #. i18n: tag Text
 #. i18n: file extensions/konqueror/kget_plug_in.rc line 4
-#: rc.cpp:435
+#: rc.cpp:450
 msgid "&Tools"
 msgstr ""
+
+#~ msgctxt "the transfer has been aborted"
+#~ msgid "Aborted"
+#~ msgstr "Abandonat"
 
 #~ msgid "Url:"
 #~ msgstr "Url :"
 
 #~ msgid "Remove"
 #~ msgstr "Suprimir"
-
-#~ msgid "Time"
-#~ msgstr "Ora"
-
-#~ msgid "Status"
-#~ msgstr "Estatut"
