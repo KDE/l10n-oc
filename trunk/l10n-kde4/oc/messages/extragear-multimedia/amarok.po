@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-27 15:30+0100\n"
+"POT-Creation-Date: 2008-03-29 21:39+0100\n"
 "PO-Revision-Date: 2008-01-12 14:51+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -139,11 +139,11 @@ msgstr ""
 msgid "Local Collection"
 msgstr ""
 
-#: collection/sqlcollection/ScanManager.cpp:343
+#: collection/sqlcollection/ScanManager.cpp:359
 msgid "Scanning music"
 msgstr ""
 
-#: collection/sqlcollection/ScanManager.cpp:463
+#: collection/sqlcollection/ScanManager.cpp:479
 #, fuzzy
 #| msgid "&download"
 msgid "Processing scan results"
@@ -636,7 +636,7 @@ msgstr "Títol"
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 102
 #: context/applets/lyrics/LyricsApplet.cpp:90 editfilterdialog.cpp:136
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:478
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:477
 #: collectionbrowser/CollectionWidget.cpp:56 rc.cpp:473 rc.cpp:842
 #: transferdialog.cpp:90 playlist/PlaylistHeader.cpp:46
 #: playlist/PlaylistModel.cpp:413
@@ -755,6 +755,47 @@ msgstr ""
 
 #: tracktooltip.cpp:272
 msgid "Amarok - rediscover your music"
+msgstr ""
+
+#: PluginManager.cpp:94
+#, kde-format
+msgid ""
+"<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error message:"
+"<br/><i>%2</i></p>"
+msgstr ""
+
+#: PluginManager.cpp:175
+#, fuzzy
+#| msgid "Name"
+msgctxt "Title, as in: the title of this item"
+msgid "Name"
+msgstr "Nom"
+
+#: PluginManager.cpp:176
+msgid "Library"
+msgstr "Bibliotèca"
+
+#: PluginManager.cpp:177
+msgid "Authors"
+msgstr "Autors"
+
+#: PluginManager.cpp:178
+#, fuzzy
+#| msgid "Email"
+msgctxt "Property, belonging to the author of this item"
+msgid "Email"
+msgstr "Adreça electronica"
+
+#: PluginManager.cpp:179
+msgid "Version"
+msgstr "Version"
+
+#: PluginManager.cpp:180
+msgid "Framework Version"
+msgstr ""
+
+#: PluginManager.cpp:184
+msgid "Plugin Information"
 msgstr ""
 
 #: configdialog/dialogs/GeneralConfig.cpp:51
@@ -943,7 +984,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 113
 #: editfilterdialog.cpp:134 mediadevice/ifp/ifpmediadevice.cpp:402
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:477
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:476
 #: collectionbrowser/CollectionWidget.cpp:68 rc.cpp:476 rc.cpp:845
 #: transferdialog.cpp:91 playlist/PlaylistHeader.cpp:46
 #: playlist/PlaylistModel.cpp:417
@@ -969,7 +1010,7 @@ msgid "Comment"
 msgstr "Comentari"
 
 #: editfilterdialog.cpp:144
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:479
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:478
 #: playlist/PlaylistModel.cpp:415 SmartPlaylistEditor.cpp:182
 #: SmartPlaylistEditor.cpp:196
 msgid "Composer"
@@ -996,7 +1037,7 @@ msgid "Filetype"
 msgstr ""
 
 #: editfilterdialog.cpp:156
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:480 transferdialog.cpp:92
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:479 transferdialog.cpp:92
 #: playlist/PlaylistModel.cpp:421 SmartPlaylistEditor.cpp:182
 #: SmartPlaylistEditor.cpp:196
 msgid "Genre"
@@ -1056,7 +1097,7 @@ msgstr "Pista"
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 135
 #: editfilterdialog.cpp:184
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:481 rc.cpp:482 rc.cpp:851
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:480 rc.cpp:482 rc.cpp:851
 #: playlist/PlaylistModel.cpp:416 SmartPlaylistEditor.cpp:183
 #: SmartPlaylistEditor.cpp:196 SmartPlaylistEditor.cpp:920
 msgid "Year"
@@ -1211,28 +1252,6 @@ msgstr ""
 
 #: editfilterdialog.cpp:735
 msgid "Empty Text Field"
-msgstr ""
-
-#: enginecontroller.cpp:135
-#, kde-format
-msgid ""
-"<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to choose a "
-"different engine from the <i>Configure Dialog</i>, or examine the "
-"installation of the multimedia-framework that the current engine uses. "
-"<p>You may find useful information in the <i>FAQ</i> section of the "
-"<i>Amarok HandBook</i>."
-msgstr ""
-
-#: enginecontroller.cpp:160
-msgid "Amarok currently cannot play MP3 files."
-msgstr ""
-
-#: enginecontroller.cpp:161
-msgid "No MP3 Support"
-msgstr ""
-
-#: enginecontroller.cpp:429
-msgid "Previous track finished"
 msgstr ""
 
 #: scriptmanager.cpp:140 MainWindow.cpp:867
@@ -1453,7 +1472,7 @@ msgstr ""
 msgid "Downloading Playlist"
 msgstr ""
 
-#: playlistmanager/PlaylistManager.cpp:196 actionclasses.cpp:414
+#: playlistmanager/PlaylistManager.cpp:196 actionclasses.cpp:416
 msgid "Current Playlist"
 msgstr ""
 
@@ -1542,157 +1561,116 @@ msgstr ""
 msgid "Local Podcasts"
 msgstr ""
 
-#: actionclasses.cpp:86
+#: actionclasses.cpp:87
 msgid "Amarok Menu"
 msgstr ""
 
-#: actionclasses.cpp:199 app.cpp:449
+#: actionclasses.cpp:200 app.cpp:460
 msgid "Play/Pause"
 msgstr "Legida/Pausa"
 
-#: actionclasses.cpp:217 actionclasses.cpp:222 MainWindow.cpp:953 app.cpp:445
+#: actionclasses.cpp:218 actionclasses.cpp:223 MainWindow.cpp:953 app.cpp:456
 msgid "Pause"
 msgstr "Pausa"
 
-#: actionclasses.cpp:228 MainWindow.cpp:947 app.cpp:440
+#: actionclasses.cpp:229 MainWindow.cpp:947 app.cpp:451
 msgid "Play"
 msgstr "Legir"
 
-#: actionclasses.cpp:321
+#: actionclasses.cpp:323
 msgid "Click to change"
 msgstr ""
 
-#: actionclasses.cpp:328
+#: actionclasses.cpp:330
 msgid "Ra&ndom"
 msgstr ""
 
-#: actionclasses.cpp:330
+#: actionclasses.cpp:332
 #, fuzzy
 #| msgid "Off"
 msgctxt "State, as in disabled"
 msgid "&Off"
 msgstr "Inactiu"
 
-#: actionclasses.cpp:330
+#: actionclasses.cpp:332
 #, fuzzy
 #| msgid "Track"
 msgctxt "Items, as in music"
 msgid "&Tracks"
 msgstr "Pista"
 
-#: actionclasses.cpp:330
+#: actionclasses.cpp:332
 msgid "&Albums"
 msgstr ""
 
-#: actionclasses.cpp:349
+#: actionclasses.cpp:351
 msgid "&Favor"
 msgstr ""
 
-#: actionclasses.cpp:351
+#: actionclasses.cpp:353
 #, fuzzy
 #| msgid "Off"
 msgctxt "State, as in disabled"
 msgid "Off"
 msgstr "Inactiu"
 
-#: actionclasses.cpp:352
+#: actionclasses.cpp:354
 msgid "Higher &Scores"
 msgstr ""
 
-#: actionclasses.cpp:353
+#: actionclasses.cpp:355
 msgid "Higher &Ratings"
 msgstr ""
 
-#: actionclasses.cpp:354
+#: actionclasses.cpp:356
 msgid "Not Recently &Played"
 msgstr ""
 
-#: actionclasses.cpp:364
+#: actionclasses.cpp:366
 msgid "&Repeat"
 msgstr ""
 
-#: actionclasses.cpp:367
+#: actionclasses.cpp:369
 #, fuzzy
 #| msgid "Off"
 msgctxt "State, as in, disabled"
 msgid "&Off"
 msgstr "Inactiu"
 
-#: actionclasses.cpp:367
+#: actionclasses.cpp:369
 #, fuzzy
 #| msgid "Track"
 msgctxt "Item, as in, music"
 msgid "&Track"
 msgstr "Pista"
 
-#: actionclasses.cpp:368
+#: actionclasses.cpp:370
 msgid "&Album"
 msgstr ""
 
-#: actionclasses.cpp:368 MainWindow.cpp:1022
+#: actionclasses.cpp:370 MainWindow.cpp:1022
 msgid "&Playlist"
 msgstr ""
 
-#: actionclasses.cpp:381
+#: actionclasses.cpp:383
 msgid "Burn"
 msgstr "Gravar"
 
-#: actionclasses.cpp:415
+#: actionclasses.cpp:417
 msgid "Selected Tracks"
 msgstr ""
 
-#: actionclasses.cpp:446 actionclasses.cpp:470 actionclasses.cpp:487
-#: app.cpp:454
+#: actionclasses.cpp:449 actionclasses.cpp:474 actionclasses.cpp:512
+#: app.cpp:465
 msgid "Stop"
 msgstr "Arrestar"
 
-#: actionclasses.cpp:489
+#: actionclasses.cpp:514
 msgid "Now"
 msgstr "Ara"
 
-#: actionclasses.cpp:491
+#: actionclasses.cpp:516
 msgid "After Current Track"
-msgstr ""
-
-#: pluginmanager.cpp:94
-#, kde-format
-msgid ""
-"<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error message:"
-"<br/><i>%2</i></p>"
-msgstr ""
-
-#: pluginmanager.cpp:175
-#, fuzzy
-#| msgid "Name"
-msgctxt "Title, as in: the title of this item"
-msgid "Name"
-msgstr "Nom"
-
-#: pluginmanager.cpp:176
-msgid "Library"
-msgstr "Bibliotèca"
-
-#: pluginmanager.cpp:177
-msgid "Authors"
-msgstr "Autors"
-
-#: pluginmanager.cpp:178
-#, fuzzy
-#| msgid "Email"
-msgctxt "Property, belonging to the author of this item"
-msgid "Email"
-msgstr "Adreça electronica"
-
-#: pluginmanager.cpp:179
-msgid "Version"
-msgstr "Version"
-
-#: pluginmanager.cpp:180
-msgid "Framework Version"
-msgstr ""
-
-#: pluginmanager.cpp:184
-msgid "Plugin Information"
 msgstr ""
 
 #: queuemanager/QueueManager.cpp:51 MainWindow.cpp:871
@@ -1835,7 +1813,7 @@ msgstr ""
 #: Statistics.cpp:419 Statistics.cpp:451 Statistics.cpp:466 Statistics.cpp:468
 #: Statistics.cpp:505 Statistics.cpp:533 Statistics.cpp:546 Statistics.cpp:547
 #: MediaDevicePluginManager.cpp:536 history/mediabrowser.cpp:2204
-#: history/mediabrowser.cpp:2205 app.cpp:772
+#: history/mediabrowser.cpp:2205 app.cpp:783
 msgid "Unknown"
 msgstr "Desconegut"
 
@@ -1915,6 +1893,28 @@ msgstr ""
 #: Statistics.cpp:650
 msgctxt "[only-singular]"
 msgid "Edit Track &Information..."
+msgstr ""
+
+#: EngineController.cpp:135
+#, kde-format
+msgid ""
+"<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to choose a "
+"different engine from the <i>Configure Dialog</i>, or examine the "
+"installation of the multimedia-framework that the current engine uses. "
+"<p>You may find useful information in the <i>FAQ</i> section of the "
+"<i>Amarok HandBook</i>."
+msgstr ""
+
+#: EngineController.cpp:160
+msgid "Amarok currently cannot play MP3 files."
+msgstr ""
+
+#: EngineController.cpp:161
+msgid "No MP3 Support"
+msgstr ""
+
+#: EngineController.cpp:431
+msgid "Previous track finished"
 msgstr ""
 
 #: moodbar.cpp:662
@@ -3563,11 +3563,11 @@ msgstr ""
 msgid "Add las&t.fm Stream"
 msgstr ""
 
-#: MainWindow.cpp:941 app.cpp:470
+#: MainWindow.cpp:941 app.cpp:481
 msgid "Previous Track"
 msgstr ""
 
-#: MainWindow.cpp:959 app.cpp:465
+#: MainWindow.cpp:959 app.cpp:476
 msgid "Next Track"
 msgstr "Pista seguenta"
 
@@ -3675,29 +3675,29 @@ msgstr ""
 msgid "Organize Files"
 msgstr ""
 
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:335
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:334
 #, fuzzy
 #| msgid "Album"
 msgid "album"
 msgstr "Albom"
 
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:339
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:338
 #, fuzzy
 #| msgid "Artist"
 msgid "artist"
 msgstr "Artista"
 
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:343
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:342
 #, fuzzy
 #| msgid "Genre"
 msgid "genre"
 msgstr "Genre"
 
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:347
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:346
 msgid "composer"
 msgstr ""
 
-#: collectionbrowser/CollectionTreeItemModelBase.cpp:351
+#: collectionbrowser/CollectionTreeItemModelBase.cpp:350
 #, fuzzy
 #| msgid "Year"
 msgid "year"
@@ -8072,144 +8072,144 @@ msgid ""
 "(Build Date: "
 msgstr ""
 
-#: app.cpp:406
+#: app.cpp:414
 msgid "Files/URLs to open"
 msgstr ""
 
-#: app.cpp:408
+#: app.cpp:416
 msgid "Skip backwards in playlist"
 msgstr ""
 
-#: app.cpp:410
+#: app.cpp:418
 msgid "Start playing current playlist"
 msgstr ""
 
-#: app.cpp:412
+#: app.cpp:420
 msgid "Play if stopped, pause if playing"
 msgstr ""
 
-#: app.cpp:413
+#: app.cpp:421
 msgid "Pause playback"
 msgstr ""
 
-#: app.cpp:415
+#: app.cpp:423
 msgid "Stop playback"
 msgstr ""
 
-#: app.cpp:417
+#: app.cpp:425
 msgid "Skip forwards in playlist"
 msgstr ""
 
-#: app.cpp:418
+#: app.cpp:426
 msgid "Additional options:"
 msgstr ""
 
-#: app.cpp:420
+#: app.cpp:428
 msgid "Append files/URLs to playlist"
 msgstr ""
 
-#: app.cpp:421
+#: app.cpp:429
 msgid "Queue URLs after the currently playing track"
 msgstr ""
 
-#: app.cpp:423
+#: app.cpp:431
 msgid "Load URLs, replacing current playlist"
 msgstr ""
 
-#: app.cpp:425
+#: app.cpp:433
 msgid "Print verbose debugging information"
 msgstr ""
 
-#: app.cpp:427
+#: app.cpp:435
 msgid "Toggle the Playlist-window"
 msgstr ""
 
-#: app.cpp:428
+#: app.cpp:436
 msgid "Run first-run wizard"
 msgstr ""
 
-#: app.cpp:429
+#: app.cpp:437
 msgid "Base for relative filenames/URLs"
 msgstr ""
 
-#: app.cpp:430
+#: app.cpp:438
 msgid "Play an AudioCD from <device> or system:/media/<device>"
 msgstr ""
 
-#: app.cpp:475
+#: app.cpp:486
 msgid "Increase Volume"
 msgstr ""
 
-#: app.cpp:480
+#: app.cpp:491
 msgid "Decrease Volume"
 msgstr ""
 
-#: app.cpp:485
+#: app.cpp:496
 msgid "Seek Forward"
 msgstr ""
 
-#: app.cpp:490
+#: app.cpp:501
 msgid "Seek Backward"
 msgstr ""
 
-#: app.cpp:495
+#: app.cpp:506
 msgid "Add Media..."
 msgstr ""
 
-#: app.cpp:500
+#: app.cpp:511
 msgid "Toggle Main Window"
 msgstr ""
 
-#: app.cpp:505
+#: app.cpp:516
 msgid "Show OSD"
 msgstr ""
 
-#: app.cpp:510
+#: app.cpp:521
 msgid "Mute Volume"
 msgstr ""
 
-#: app.cpp:515
+#: app.cpp:526
 msgid "Rate Current Track: 1"
 msgstr ""
 
-#: app.cpp:520
+#: app.cpp:531
 msgid "Rate Current Track: 2"
 msgstr ""
 
-#: app.cpp:525
+#: app.cpp:536
 msgid "Rate Current Track: 3"
 msgstr ""
 
-#: app.cpp:530
+#: app.cpp:541
 msgid "Rate Current Track: 4"
 msgstr ""
 
-#: app.cpp:535
+#: app.cpp:546
 msgid "Rate Current Track: 5"
 msgstr ""
 
-#: app.cpp:769
+#: app.cpp:780
 msgctxt "state, as in playing"
 msgid "Play"
 msgstr "Legir"
 
-#: app.cpp:772 app.cpp:796
+#: app.cpp:783 app.cpp:807
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgid "%1 - %2 -  %3"
 msgstr "%1 - %2"
 
-#: app.cpp:776
+#: app.cpp:787
 #, fuzzy, kde-format
 #| msgid "Paused"
 msgid "Paused  -  %1"
 msgstr "En pausa"
 
-#: app.cpp:777
+#: app.cpp:788
 msgid "Paused"
 msgstr "En pausa"
 
-#: app.cpp:889
+#: app.cpp:900
 msgid "Moving files to trash"
 msgstr "Desplaçament de fichièrs dins l'escobilièr"
 
@@ -8254,6 +8254,10 @@ msgstr "Causissètz un fichièr"
 #: servicebrowser/magnatunestore/magnatuneinfoparser.cpp:44
 #, kde-format
 msgid "Fetching %1 Artist Info"
+msgstr ""
+
+#: servicebrowser/magnatunestore/magnatuneinfoparser.cpp:155
+msgid "Fetching Magnatune.com front page"
 msgstr ""
 
 #: servicebrowser/magnatunestore/MagnatuneMeta.cpp:229
@@ -8344,13 +8348,6 @@ msgstr ""
 
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:299
 msgid "Updating the local Magnatune database."
-msgstr ""
-
-#: servicebrowser/magnatunestore/MagnatuneStore.cpp:477
-msgid ""
-"Welcome to Amarok's integrated Magnatune.com store. If this is the first "
-"time you run it, you must update the database by pressing the 'Update' "
-"button below."
 msgstr ""
 
 #: servicebrowser/magnatunestore/magnatunealbumdownloader.cpp:70
