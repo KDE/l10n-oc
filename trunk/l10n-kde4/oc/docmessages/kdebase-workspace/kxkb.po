@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kxkb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-11 07:20+0000\n"
+"POT-Creation-Date: 2008-04-14 03:22+0000\n"
 "PO-Revision-Date: 2008-01-12 13:51+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -123,7 +123,7 @@ msgstr ""
 #, no-c-format
 msgid ""
 "When &kxkb; is running you can change layouts by clicking on its tray icon "
-"with the mouse or pressing its keyboard shortcut. Keyboard shortcut or mouse "
+"with the mouse or pressing keyboard shortcut. Keyboard shortcut or mouse "
 "click will switch to the next layout or alternatively you can &RMB; click "
 "the &kxkb; icon and select layout from the list."
 msgstr ""
@@ -134,83 +134,95 @@ msgstr ""
 msgid ""
 "&RMB; clicking on the &kxkb; icon you can start its configuration by "
 "selecting <guimenuitem>Configure...</guimenuitem> or by opening "
-"<application>Control Center</application> and selecting Localization/"
-"Keyboard Layout. Alternatively, you can start it by typing <command>kcmshell "
-"keyboard_layout</command> in a terminal."
+"<application>System Settings</application> and selecting Regional &amp; "
+"Language/Keyboard Layout. Alternatively, you can start it by typing "
+"<command>kcmshell4 keyboard_layout</command> from the terminal."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:87
+#: index.docbook:85
 #, no-c-format
 msgid "Configuring &kxkb;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:90
+#: index.docbook:88
 #, no-c-format
 msgid "General Information"
 msgstr "Entresenhas generalas"
 
 #. Tag: para
-#: index.docbook:91
+#: index.docbook:89
 #, no-c-format
 msgid ""
-"KXKB Configuration consists of two tabs: Layout Configuration and XKB "
-"Options which are mutually independent. The first one defines layouts you "
-"want to use and their options and second defines parameters for Xkb "
-"extension on which &kxkb; is based. Xkb options are property of X and are "
-"not handled in any way by kxkb - it just sets it up."
+"&kxkb; configuration consists of thre tabs: Layout, Switching Options, and "
+"Advanced. The first one defines layouts you want to use and their options "
+"(variant, display label etc.), second defines how the layout switching is "
+"done, including which shortcut is used and wether the layout should be "
+"remembered for each window, application etc. Third tab allows to set options "
+"for Xkb extension. These options are properties of X.org and are not handled "
+"in any way by &kxkb; - it just sets them up."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:99
+#: index.docbook:98
 #, no-c-format
 msgid ""
-"&kxkb; configuration does not change anything in XFree86 configuration files "
-"and Layout settings from XFree86 configuration are overridden by &kxkb; if "
-"<option>Enable keyboard layout</option> option is turned on."
+"&kxkb; can work in two modes: full switching support and indicator only. "
+"First mode allows user to configure layouts, shortcuts and other options, "
+"while in the second mode &kxkb; just displays current layout, assuming "
+"configuring and switching is done by X itself."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:104
 #, no-c-format
 msgid ""
-"To make your XFree86 configuration work you have to turn off both "
-"<option>Enable keyboard layout</option> in layout configuration tab "
-"<emphasis>and</emphasis> <option>Enable xkb options</option> in Xkb options "
-"configuration tab (for the latter the same effect can be reached if "
-"<option>Reset Old Options</option> is turned off and none of xkb options are "
-"set)."
+"&kxkb; configuration does not change anything in X.org configuration files. "
+"If <option>Enable keyboard layouts</option> is selected Layout settings from "
+"X.org configuration will be overridden and if <option>Reset old options</"
+"option> is turned on Xkb options will be overriden too."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:112
+#: index.docbook:110
 #, no-c-format
 msgid ""
-"&kxkb; does most of its actions through <command>setxkbmap</command> "
-"command. You can see the command line to be executed for each active layout "
-"when you select it and, on the xkb options tab, its available xkb option set."
+"If <option>Reset Old Options</option> is turned off, xkb options selected in "
+"the configuration will be merged with currently active ones, &ie; the ones "
+"from the X.org configuration file plus any set later."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:115
+#, no-c-format
+msgid ""
+"If <option>Enable keyboard layouts</option> is selected &kxkb; initializes "
+"the layouts with <command>setxkbmap</command> command. In the configuration "
+"window you can see the command line to be executed during initialization. "
+"The same is true for xkb options. These commands can be useful for "
+"troubleshooting or customizing xkb configuration."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:120
+#: index.docbook:125
 #, no-c-format
 msgid "Layout Configuration"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:121
+#: index.docbook:126
 #, no-c-format
 msgid ""
-"In layout configuration dialog the list of available layouts on your left. "
-"You have to choose each layout you want to use and add them (one by one) to "
-"the list of active layouts on the right. You can also change the order in "
-"which active layouts will be switched when toggled by keyboard shortcut or "
-"mouse button. The first layout in the list becomes default layout."
+"In layout configuration the list of available layouts is on your left. You "
+"have to choose each layout you want to use and add them (one by one) to the "
+"list of active layouts on the right. You can also change the order in which "
+"active layouts will be switched when toggled by keyboard shortcut or mouse "
+"button. The first layout in the list becomes the default layout."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:128
+#: index.docbook:133
 #, no-c-format
 msgid ""
 "Some layouts have several variants. Layout variants usually represent "
@@ -222,7 +234,15 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:136
+#: index.docbook:141
+#, no-c-format
+msgid ""
+"You can also change the label you want on the indicator when layout selected "
+"if you don't like default one."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:145
 #, no-c-format
 msgid ""
 "Keyboard model setting is independent of your keyboard layout and refers to "
@@ -233,162 +253,158 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:143
-#, no-c-format
-msgid ""
-"You can also choose a switching policy for keyboard layout. By default it's "
-"<option>Global</option>, meaning all applications will share the same "
-"current layout. <option>Application</option> means each application will "
-"have its own layout and switching layout while you are working with one "
-"application will not affect the layout for any others. <option>Window</"
-"option> will make every window have its own layout even if they belong to "
-"the same program."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:151
-#, no-c-format
-msgid ""
-"If you set only one active layout, at startup kxkb configures the keyboard "
-"and exits, thus its indicator will not appear. If you still want a kxkb "
-"indicator, select the <option>Show indicator for single layout</option> "
-"option."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:157
+#: index.docbook:153
 #, no-c-format
 msgid ""
 "If you leave the active layout list empty, keyboard layouts will be disabled"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:164
+#: index.docbook:159
 #, no-c-format
-msgid "XKB Options Configuration"
+msgid "Switching Options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:165
+#: index.docbook:160
 #, no-c-format
 msgid ""
-"Xkb options allow you to select behavior of your keyboard. These options are "
-"not handled by &kxkb; but may help tune your keyboard to your needs."
+"Here you can choose a switching policy for keyboard layout. By default it's "
+"<option>Global</option>, meaning all applications will share the same "
+"current layout. <option>Application</option> means each application will "
+"have its own layout and switching layout while you are working with one "
+"application will not affect the layout for any others. <option>Window</"
+"option> will make every window have its own layout even if they belong to "
+"the same program and <option>Desktop</option> allows you to have one layout "
+"per desktop."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:169
+#, no-c-format
+msgid ""
+"In shortcuts section you can choose which shortcut is used for switching "
+"layouts. Shortcut can be modifier-only key combination (&ie; Ctrl+Shift), "
+"non-modifier keys (&ie; Ctrl+Shift+K) or you can use both."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:174
+#: index.docbook:175
+#, no-c-format
+msgid "Modifier-only shortcuts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:176
+#, no-c-format
+msgid ""
+"These shortcuts are handled by X.org (not Qt/KDE) and are configured in "
+"Advanced tab. Availabe list of shortcuts is fixed but you can define your "
+"own if you know how to change xkb rules and maps. Just note if you hack xkb "
+"maps don't forget to change xorg.xml rules file as that's where &kxkb; takes "
+"the configuration information from."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:183
+#, no-c-format
+msgid ""
+"The disadvantage of this approach is that the switching is done on key press "
+"not key release so &eg; if you configure shortcut to be <keycombo action="
+"\"simul\">&Ctrl;&Shift;</keycombo> your other shortcuts wich start with this "
+"combination may stop working. See <ulink url=\"http://bugs.freedesktop.org/"
+"show_bug.cgi?id=865\">X.org bug 865</ulink>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:188
+#, no-c-format
+msgid ""
+"If your layout has 3d level of characters you can also configure the "
+"shortcut for it here."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:193
+#, no-c-format
+msgid "Standard shortcuts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:194
+#, no-c-format
+msgid ""
+"These shortcuts are handled by &Qt;/&kde; and allow more flexible key "
+"combinations."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:198
+#, no-c-format
+msgid ""
+"The disadvantage of this approach is that the standard shortcuts won't work "
+"if you have some popup window (like drop-down combobox) open."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:207
+#, no-c-format
+msgid "Advanced"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:208
+#, no-c-format
+msgid ""
+"Xkb options allow you to select behavior of your keyboard. These options are "
+"not handled by &kxkb; and just passed to xkb extension."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:217
 #, no-c-format
 msgid "Troubleshooting"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:177
+#: index.docbook:220
 #, no-c-format
 msgid "Common Problems"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:179
+#: index.docbook:222
 #, no-c-format
 msgid ""
 "If you switch to some layout and you cannot see some characters from your "
 "layout as you type, please check your local settings. &eg; <filename>~/."
 "i18n</filename> or <filename>/etc/sysconfig/i18n</filename>, locale you have "
-"before starting kde applications must have an encoding which contains "
-"characters from your layout. For example, to enter Ukrainian symbols you "
-"must have encoding KOI8-U, CP1251 or UTF-8. The last one is a good choice to "
-"try for most of the languages if you have such a problem."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:189
-#, no-c-format
-msgid ""
-"If kxkb does not switch with keyboard shortcut when you switch it to some "
-"layout, but switching with mouse is OK, may mean that your layout does not "
-"contain the key assigned in shortcut."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:193
-#, no-c-format
-msgid ""
-"In XFree86 prior to version 4.3.0 non-Latin layouts mutually included Latin "
-"group and this group was the default thus pressing <keycombo action=\"simul"
-"\">&Ctrl;&Alt;<keycap>k</keycap></keycombo> always yielded the right "
-"combination. From version 4.3.0 by default all layouts contain only one "
-"group thus non-Latin layouts may not work here."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:200
-#, no-c-format
-msgid "Possible solutions are:"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:204
-#, no-c-format
-msgid ""
-"add your layout to $nonlatin or $oldlayouts lists in <filename>/etc/X11/xkb/"
-"rules/xfree86</filename> or the location of the xkb rules on your computer."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:209
-#, no-c-format
-msgid ""
-"Change the shortcut to something language neutral, &eg; <keycombo action="
-"\"simul\">&Ctrl;<keycap>Menu</keycap></keycombo>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:213
-#, no-c-format
-msgid ""
-"Turn on the option to include the <quote>us</quote> group in your layout "
-"(effectively the same as solution 1)."
+"before starting &kde; applications must have an encoding which contains "
+"characters from your layout. Recommended encodning is UTF-8 which should "
+"work for most languages."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:222
+#: index.docbook:235
 #, no-c-format
 msgid "Files and Layout Descriptions"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:224
+#: index.docbook:237
 #, no-c-format
 msgid "<application>xkb</application> Files and Layouts"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:226
+#: index.docbook:239
 #, no-c-format
 msgid ""
-"All available keyboard layouts are described in <filename>/etc/X11/xkb/rules/"
-"xfree86.lst</filename> (and <filename>/etc/X11/xkb/rules/xfree86.xml</"
-"filename> since XFree86 4.3.0), the layouts themselves can be found in "
-"<filename>/etc/X11/xkb/symbols/pc</filename> (or <filename>/etc/X11/xkb/"
-"symbols</filename> for XFree86 4.2.x and older). Note that the location of "
-"these files may differ depending on your operating system and distribution."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:235
-#, no-c-format
-msgid ""
-"&kxkb; now uses the xkb extension instead of xmodmap, so to define your own "
-"layout you have to get one from <filename class=\"directory\">/etc/X11/xkb/"
-"symbols</filename> which is closest to what you want to get (or <filename "
-"class=\"directory\">/etc/X11/xkb/symbold/pc</filename> for XFree86 4.3.0), "
-"rename it to something you like and edit it. Then just add the name to "
-"<filename>/etc/X11/xkb/rules/xfree86.lst</filename> (and for XFree86 4.3.0 "
-"or later it is a good idea to add the name also to <filename>/etc/X11/xkb/"
-"rules/xfree86.xml</filename> - some packages already use it, not &kxkb; "
-"though yet) kxkb will pick it up on restart. Note: you have to be root to "
-"edit those files."
+"All available keyboard layouts, variants and options are described in "
+"<filename>/usr/share/X11/rules/xorg.xml</filename>, and the layouts "
+"themselves can be found in <filename>/usr/share/X11/symbols</filename>. Note "
+"that the location of these files may depend on your operating system and "
+"distribution."
 msgstr ""
 
 #. Tag: title
