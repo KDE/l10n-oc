@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdmconfig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-24 01:44+0200\n"
+"POT-Creation-Date: 2008-05-13 19:18+0200\n"
 "PO-Revision-Date: 2008-01-12 13:47+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -30,122 +30,130 @@ msgid ""
 "Setup= option in kdmrc (usually Xsetup)."
 msgstr ""
 
-#: kdm-conv.cpp:48
-msgid ""
-"<big style='color:red;text-align:center;font-weight:bold;'>Attention<br/"
-">Read help</big>"
-msgstr ""
-
-#: kdm-conv.cpp:53
-msgid "Enable Au&to-Login"
+#: kdm-conv.cpp:49
+msgid "<big><b><center>Attention<br/>Read help</center></b></big>"
 msgstr ""
 
 #: kdm-conv.cpp:59
+msgid "Enable Au&to-Login"
+msgstr ""
+
+#: kdm-conv.cpp:65
 msgid ""
 "Turn on the auto-login feature. This applies only to KDM's graphical login. "
 "Think twice before enabling this!"
 msgstr ""
 
-#: kdm-conv.cpp:65
+#: kdm-conv.cpp:71
 msgid "Use&r:"
 msgstr ""
 
-#: kdm-conv.cpp:74
+#: kdm-conv.cpp:80
 msgid "Select the user to be logged in automatically."
 msgstr ""
 
-#: kdm-conv.cpp:77
+#: kdm-conv.cpp:83
 msgid "Loc&k session"
 msgstr ""
 
-#: kdm-conv.cpp:80
+#: kdm-conv.cpp:86
 msgid ""
 "The automatically started session will be locked immediately (provided it is "
 "a KDE session). This can be used to obtain a super-fast login restricted to "
 "one user."
 msgstr ""
 
-#: kdm-conv.cpp:84
+#: kdm-conv.cpp:90
+msgctxt "@title:group"
 msgid "Preselect User"
 msgstr ""
 
-#: kdm-conv.cpp:88
-msgctxt "preselected user"
+#: kdm-conv.cpp:94
+#, fuzzy
+#| msgctxt "boot manager"
+#| msgid "None"
+msgctxt "@option:radio preselected user"
 msgid "&None"
-msgstr ""
+msgstr "Pas cap"
 
-#: kdm-conv.cpp:89
+#: kdm-conv.cpp:95
+msgctxt "@option:radio preselected user"
 msgid "Prev&ious"
 msgstr ""
 
-#: kdm-conv.cpp:90
+#: kdm-conv.cpp:96
 msgid ""
 "Preselect the user that logged in previously. Use this if this computer is "
 "usually used several consecutive times by one user."
 msgstr ""
 
-#: kdm-conv.cpp:92
+#: kdm-conv.cpp:98
+msgctxt "@option:radio preselected user"
 msgid "Specif&y"
 msgstr ""
 
-#: kdm-conv.cpp:93
+#: kdm-conv.cpp:99
 msgid ""
 "Preselect the user specified in the combo box below. Use this if this "
 "computer is predominantly used by a certain user."
 msgstr ""
 
-#: kdm-conv.cpp:109
+#: kdm-conv.cpp:115
 msgid "Us&er:"
 msgstr ""
 
-#: kdm-conv.cpp:112
+#: kdm-conv.cpp:118
 msgid ""
 "Select the user to be preselected for login. This box is editable, so you "
 "can specify an arbitrary non-existent user to mislead possible attackers."
 msgstr ""
 
-#: kdm-conv.cpp:124
+#: kdm-conv.cpp:130
+msgctxt "@option:check action"
 msgid "Focus pass&word"
 msgstr ""
 
-#: kdm-conv.cpp:126
+#: kdm-conv.cpp:132
 msgid ""
 "When this option is on, KDM will place the cursor in the password field "
 "instead of the user field after preselecting a user. Use this to save one "
 "key press per login, if the preselection usually does not need to be changed."
 msgstr ""
 
-#: kdm-conv.cpp:132
+#: kdm-conv.cpp:138
 msgid "Enable Password-&Less Logins"
 msgstr ""
 
-#: kdm-conv.cpp:138
+#: kdm-conv.cpp:144
 msgid ""
 "When this option is checked, the checked users from the list below will be "
 "allowed to log in without entering their password. This applies only to "
 "KDM's graphical login. Think twice before enabling this!"
 msgstr ""
 
-#: kdm-conv.cpp:145
+#: kdm-conv.cpp:151
 msgid "No password re&quired for:"
 msgstr ""
 
-#: kdm-conv.cpp:153
+#: kdm-conv.cpp:159
 msgid ""
 "Check all users you want to allow a password-less login for. Entries denoted "
 "with '@' are user groups. Checking a group is like checking all users in "
 "that group."
 msgstr ""
 
-#: kdm-conv.cpp:158 kdm-shut.cpp:90
+#: kdm-conv.cpp:164 kdm-shut.cpp:90
+#, fuzzy
+#| msgid "Miscellaneous"
+msgctxt "@title:group"
 msgid "Miscellaneous"
 msgstr "Divèrs"
 
-#: kdm-conv.cpp:162
+#: kdm-conv.cpp:168
 msgid "Automatically log in again after &X server crash"
 msgstr ""
 
-#: kdm-conv.cpp:163
+#: kdm-conv.cpp:169
 msgid ""
 "When this option is on, a user will be logged in again automatically when "
 "their session is interrupted by an X server crash; note that this can open a "
@@ -226,6 +234,7 @@ msgid ""
 msgstr ""
 
 #: kdm-gen.cpp:50
+msgctxt "@title:group"
 msgid "Appearance"
 msgstr ""
 
@@ -258,6 +267,7 @@ msgid "You can choose a basic Color Scheme here that will be used by KDM only."
 msgstr ""
 
 #: kdm-gen.cpp:90
+msgctxt "@title:group 'man locale' ..."
 msgid "Locale"
 msgstr ""
 
@@ -272,10 +282,12 @@ msgid ""
 msgstr ""
 
 #: kdm-gen.cpp:111
+msgctxt "@title:group"
 msgid "Fonts"
 msgstr ""
 
 #: kdm-gen.cpp:117
+msgctxt "... font"
 msgid "&General:"
 msgstr ""
 
@@ -286,7 +298,8 @@ msgid ""
 msgstr ""
 
 #: kdm-gen.cpp:125
-msgid "&Failure font:"
+msgctxt "font for ..."
+msgid "&Failure:"
 msgstr ""
 
 #: kdm-gen.cpp:128
@@ -296,6 +309,7 @@ msgid ""
 msgstr ""
 
 #: kdm-gen.cpp:133
+msgctxt "font for ..."
 msgid "Gree&ting:"
 msgstr ""
 
@@ -318,22 +332,31 @@ msgid "Allow Shutdown"
 msgstr ""
 
 #: kdm-shut.cpp:47
+msgctxt "shutdown request origin"
 msgid "&Local:"
 msgstr ""
 
 #: kdm-shut.cpp:49 kdm-shut.cpp:57
+#, fuzzy
+#| msgid "Everybody"
+msgctxt "@item:inlistbox allow shutdown"
 msgid "Everybody"
 msgstr "Tot lo mond"
 
 #: kdm-shut.cpp:50 kdm-shut.cpp:58
+msgctxt "@item:inlistbox allow shutdown"
 msgid "Only Root"
 msgstr ""
 
 #: kdm-shut.cpp:51 kdm-shut.cpp:59
+#, fuzzy
+#| msgid "Nobody"
+msgctxt "@item:inlistbox allow shutdown"
 msgid "Nobody"
 msgstr "Degun"
 
 #: kdm-shut.cpp:55
+msgctxt "shutdown request origin"
 msgid "&Remote:"
 msgstr ""
 
@@ -348,10 +371,14 @@ msgid ""
 msgstr ""
 
 #: kdm-shut.cpp:69
+#, fuzzy
+#| msgid "Commands"
+msgctxt "@title:group shell commands for shutdown"
 msgid "Commands"
 msgstr "Comandas"
 
 #: kdm-shut.cpp:72
+msgctxt "command for ..."
 msgid "H&alt:"
 msgstr ""
 
@@ -360,6 +387,7 @@ msgid "Command to initiate the system halt. Typical value: /sbin/halt"
 msgstr ""
 
 #: kdm-shut.cpp:81
+msgctxt "command for ..."
 msgid "Reb&oot:"
 msgstr ""
 
@@ -388,101 +416,109 @@ msgstr ""
 msgid "Enable boot options in the \"Shutdown...\" dialog."
 msgstr ""
 
-#: kdm-theme.cpp:73
+#: kdm-theme.cpp:74
+#, fuzzy
+#| msgid "Theme"
+msgctxt "@title:column"
 msgid "Theme"
 msgstr "Tèma"
 
-#: kdm-theme.cpp:73
+#: kdm-theme.cpp:75
+#, fuzzy
+#| msgid "Author"
+msgctxt "@title:column"
 msgid "Author"
 msgstr "Autor"
 
-#: kdm-theme.cpp:77
+#: kdm-theme.cpp:79
 msgid ""
 "This is a list of installed themes.\n"
 "Click the one to be used."
 msgstr ""
 
-#: kdm-theme.cpp:85
+#: kdm-theme.cpp:87
 msgid "This is a screen shot of what KDM will look like."
 msgstr ""
 
-#: kdm-theme.cpp:93
+#: kdm-theme.cpp:95
 msgid "This contains information about the selected theme."
 msgstr ""
 
-#: kdm-theme.cpp:97
+#: kdm-theme.cpp:99
+msgctxt "@action:button"
 msgid "Install &new theme"
 msgstr ""
 
-#: kdm-theme.cpp:98
+#: kdm-theme.cpp:100
 msgid "This will install a theme into the theme directory."
 msgstr ""
 
-#: kdm-theme.cpp:102
+#: kdm-theme.cpp:104
+msgctxt "@action:button"
 msgid "&Remove theme"
 msgstr ""
 
-#: kdm-theme.cpp:103
+#: kdm-theme.cpp:105
 msgid "This will remove the selected theme."
 msgstr ""
 
-#: kdm-theme.cpp:107
+#: kdm-theme.cpp:109
+msgctxt "@action:button"
 msgid "&Get New Themes"
 msgstr ""
 
-#: kdm-theme.cpp:108
-msgid "Get New Themes"
-msgstr ""
-
-#: kdm-theme.cpp:122 kdm-users.cpp:93
+#: kdm-theme.cpp:123 kdm-users.cpp:93
 #, kde-format
 msgid "Unable to create folder %1"
 msgstr ""
 
-#: kdm-theme.cpp:195
+#: kdm-theme.cpp:196
 #, kde-format
 msgid "<qt><strong>Copyright:</strong> %1<br/></qt>"
 msgstr ""
 
-#: kdm-theme.cpp:198
+#: kdm-theme.cpp:199
 #, kde-format
 msgid "<qt><strong>Description:</strong> %1</qt>"
 msgstr ""
 
-#: kdm-theme.cpp:210
+#: kdm-theme.cpp:211
 msgid "Drag or Type Theme URL"
 msgstr ""
 
-#: kdm-theme.cpp:229
+#: kdm-theme.cpp:230
 #, kde-format
 msgid "Unable to find the KDM theme archive %1."
 msgstr ""
 
-#: kdm-theme.cpp:231
+#: kdm-theme.cpp:232
 #, kde-format
 msgid ""
 "Unable to download the KDM theme archive;\n"
 "please check that address %1 is correct."
 msgstr ""
 
-#: kdm-theme.cpp:254
+#: kdm-theme.cpp:255
 msgid "The file is not a valid KDM theme archive."
 msgstr ""
 
-#: kdm-theme.cpp:257
+#: kdm-theme.cpp:258
+msgctxt "@title:window"
 msgid "Installing KDM themes"
 msgstr ""
 
-#: kdm-theme.cpp:265
+#: kdm-theme.cpp:267
 #, kde-format
+msgctxt "@info:progress"
 msgid "<qt>Installing <strong>%1</strong> theme</qt>"
 msgstr ""
 
-#: kdm-theme.cpp:310
+#: kdm-theme.cpp:312
 msgid "Are you sure you want to remove the following themes?"
 msgstr ""
 
-#: kdm-theme.cpp:311
+#: kdm-theme.cpp:313
+msgctxt "@title:window"
 msgid "Remove themes?"
 msgstr ""
 
@@ -491,11 +527,12 @@ msgid ""
 "User 'nobody' does not exist. Displaying user images will not work in KDM."
 msgstr ""
 
-#: kdm-users.cpp:103
+#: kdm-users.cpp:104
+msgctxt "@title:group UIDs belonging to system users like 'cron'"
 msgid "System U&IDs"
 msgstr ""
 
-#: kdm-users.cpp:104
+#: kdm-users.cpp:105
 msgid ""
 "Users with a UID (numerical user identification) outside this range will not "
 "be listed by KDM and this setup dialog. Note that users with the UID 0 "
@@ -503,43 +540,51 @@ msgid ""
 "\"Inverse selection\" mode."
 msgstr ""
 
-#: kdm-users.cpp:109
+#: kdm-users.cpp:110
+msgctxt "UIDs"
 msgid "Below:"
 msgstr ""
 
-#: kdm-users.cpp:116
+#: kdm-users.cpp:117
+msgctxt "UIDs"
 msgid "Above:"
 msgstr ""
 
-#: kdm-users.cpp:129
+#: kdm-users.cpp:130
+#, fuzzy
+#| msgid "Users"
+msgctxt "@title:group"
 msgid "Users"
 msgstr "Utilizaires"
 
-#: kdm-users.cpp:130
+#: kdm-users.cpp:131
+msgctxt "... of users"
 msgid "Show list"
 msgstr ""
 
-#: kdm-users.cpp:131
+#: kdm-users.cpp:132
 msgid ""
 "If this option is checked, KDM will show a list of users, so users can click "
 "on their name or image rather than typing in their login."
 msgstr ""
 
-#: kdm-users.cpp:133
+#: kdm-users.cpp:134
+msgctxt "user ..."
 msgid "Autocompletion"
 msgstr ""
 
-#: kdm-users.cpp:134
+#: kdm-users.cpp:135
 msgid ""
 "If this option is checked, KDM will automatically complete user names while "
 "they are typed in the line edit."
 msgstr ""
 
-#: kdm-users.cpp:136
+#: kdm-users.cpp:138
+msgctxt "@option:check mode of the user selection"
 msgid "Inverse selection"
 msgstr ""
 
-#: kdm-users.cpp:137
+#: kdm-users.cpp:139
 msgid ""
 "This option specifies how the users for \"Show list\" and \"Autocompletion\" "
 "are selected in the \"Select users and groups\" list: If not checked, select "
@@ -547,113 +592,124 @@ msgid ""
 "checked ones."
 msgstr ""
 
-#: kdm-users.cpp:141
+#: kdm-users.cpp:143
 msgid "Sor&t users"
 msgstr ""
 
-#: kdm-users.cpp:142
+#: kdm-users.cpp:144
 msgid ""
 "If this is checked, KDM will alphabetically sort the user list. Otherwise "
 "users are listed in the order they appear in the password file."
 msgstr ""
 
-#: kdm-users.cpp:159
+#: kdm-users.cpp:161
 msgid "S&elect users and groups:"
 msgstr ""
 
-#: kdm-users.cpp:162
+#: kdm-users.cpp:164
 msgid "Selected Users"
 msgstr ""
 
-#: kdm-users.cpp:164
+#: kdm-users.cpp:166
 msgid ""
 "KDM will show all checked users. Entries denoted with '@' are user groups. "
 "Checking a group is like checking all users in that group."
 msgstr ""
 
-#: kdm-users.cpp:171
+#: kdm-users.cpp:173
 msgid "Excluded Users"
 msgstr ""
 
-#: kdm-users.cpp:173
+#: kdm-users.cpp:175
 msgid ""
 "KDM will show all non-checked non-system users. Entries denoted with '@' are "
 "user groups. Checking a group is like checking all users in that group."
 msgstr ""
 
-#: kdm-users.cpp:180
+#: kdm-users.cpp:183
+msgctxt "@title:group source for user faces"
 msgid "User Image Source"
 msgstr ""
 
-#: kdm-users.cpp:181
+#: kdm-users.cpp:184
 msgid ""
 "Here you can specify where KDM will obtain the images that represent users. "
-"\"Admin\" represents the global folder; these are the pictures you can set "
+"\"System\" represents the global folder; these are the pictures you can set "
 "below. \"User\" means that KDM should read the user's $HOME/.face.icon file. "
 "The two selections in the middle define the order of preference if both "
 "sources are available."
 msgstr ""
 
-#: kdm-users.cpp:185
-msgid "Admin"
-msgstr ""
-
-#: kdm-users.cpp:186
-msgid "Admin, user"
-msgstr ""
-
-#: kdm-users.cpp:187
-msgid "User, admin"
-msgstr ""
-
 #: kdm-users.cpp:188
+msgctxt "@option:radio image source"
+msgid "System"
+msgstr ""
+
+#: kdm-users.cpp:189
+msgctxt "@option:radio image source"
+msgid "System, user"
+msgstr ""
+
+#: kdm-users.cpp:190
+msgctxt "@option:radio image source"
+msgid "User, system"
+msgstr ""
+
+#: kdm-users.cpp:191
+#, fuzzy
+#| msgid "User"
+msgctxt "@option:radio image source"
 msgid "User"
 msgstr "Utilizaire"
 
-#: kdm-users.cpp:202
+#: kdm-users.cpp:206
+#, fuzzy
+#| msgid "Users"
+msgctxt "@title:group user face assignments"
 msgid "User Images"
-msgstr ""
+msgstr "Utilizaires"
 
-#: kdm-users.cpp:204
+#: kdm-users.cpp:208
 msgid "The user the image below belongs to."
 msgstr ""
 
-#: kdm-users.cpp:207
+#: kdm-users.cpp:211
 msgid "User:"
 msgstr "Utilizaire :"
 
-#: kdm-users.cpp:216
+#: kdm-users.cpp:220
 msgid "Click or drop an image here"
 msgstr ""
 
-#: kdm-users.cpp:217
+#: kdm-users.cpp:221
 msgid ""
 "Here you can see the image assigned to the user selected in the combo box "
 "above. Click on the image button to select from a list of images or drag and "
 "drop your own image on to the button (e.g. from Konqueror)."
 msgstr ""
 
-#: kdm-users.cpp:219
-msgid "Unset"
+#: kdm-users.cpp:224
+msgctxt "@action:button assign default user face"
+msgid "R&eset"
 msgstr ""
 
-#: kdm-users.cpp:220
+#: kdm-users.cpp:225
 msgid ""
 "Click this button to make KDM use the default image for the selected user."
 msgstr ""
 
-#: kdm-users.cpp:322
-msgid "Save image as default image?"
+#: kdm-users.cpp:327
+msgid "Save image as default?"
 msgstr ""
 
-#: kdm-users.cpp:331
+#: kdm-users.cpp:336
 #, kde-format
 msgid ""
 "There was an error loading the image\n"
 "%1"
 msgstr ""
 
-#: kdm-users.cpp:339
+#: kdm-users.cpp:344
 #, kde-format
 msgid ""
 "There was an error saving the image:\n"
@@ -669,42 +725,38 @@ msgid ""
 msgstr ""
 
 #: main.cpp:99
-msgid "kcmkdm"
-msgstr ""
-
-#: main.cpp:99
 msgid "KDE Login Manager Config Module"
 msgstr ""
 
 #: main.cpp:101
-msgid "(c) 1996 - 2006 The KDM Authors"
-msgstr ""
-
-#: main.cpp:103
-msgid "Thomas Tanghus"
-msgstr ""
-
-#: main.cpp:103
-msgid "Original author"
+msgid "(c) 1996-2008 The KDM Authors"
 msgstr ""
 
 #: main.cpp:104
+msgid "Thomas Tanghus"
+msgstr ""
+
+#: main.cpp:104
+msgid "Original author"
+msgstr ""
+
+#: main.cpp:105
 msgid "Steffen Hansen"
 msgstr ""
 
-#: main.cpp:105
+#: main.cpp:106
 msgid "Oswald Buddenhagen"
 msgstr ""
 
-#: main.cpp:105
+#: main.cpp:106
 msgid "Current maintainer"
 msgstr ""
 
-#: main.cpp:106
+#: main.cpp:107
 msgid "Stephen Leaf"
 msgstr ""
 
-#: main.cpp:108
+#: main.cpp:109
 msgid ""
 "<h1>Login Manager</h1> In this module you can configure the various aspects "
 "of the KDE Login Manager. This includes the look and feel as well as the "
@@ -729,43 +781,43 @@ msgid ""
 "their nature, so use them very carefully."
 msgstr ""
 
-#: main.cpp:196
+#: main.cpp:197
 msgid "General (&1)"
 msgstr ""
 
-#: main.cpp:202
+#: main.cpp:203
 msgid "Dialog (&2)"
 msgstr ""
 
-#: main.cpp:207
+#: main.cpp:208
 msgid "There is no login dialog window in themed mode."
 msgstr ""
 
-#: main.cpp:213
+#: main.cpp:214
 msgid "Background (&3)"
 msgstr ""
 
-#: main.cpp:218
+#: main.cpp:219
 msgid "The background cannot be configured separately in themed mode."
 msgstr ""
 
-#: main.cpp:224
+#: main.cpp:225
 msgid "Theme (&4)"
 msgstr ""
 
-#: main.cpp:226
+#: main.cpp:227
 msgid "Themed mode is disabled. See \"General\" tab."
 msgstr ""
 
-#: main.cpp:235
+#: main.cpp:236
 msgid "Shutdown (&5)"
 msgstr ""
 
-#: main.cpp:239
+#: main.cpp:240
 msgid "Users (&6)"
 msgstr ""
 
-#: main.cpp:247
+#: main.cpp:248
 msgid "Convenience (&7)"
 msgstr ""
 
