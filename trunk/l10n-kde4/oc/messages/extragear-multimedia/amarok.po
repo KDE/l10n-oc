@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-10 18:22+0200\n"
+"POT-Creation-Date: 2008-06-14 19:49+0200\n"
 "PO-Revision-Date: 2008-01-12 14:51+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -109,26 +109,27 @@ msgstr ""
 msgid "Cannot read playlist (%1)."
 msgstr ""
 
-#: ktrm.cpp:745
+#: ktrm.cpp:749
 msgid "MusicBrainz Lookup"
 msgstr ""
 
-#: ktrm.cpp:757
+#: ktrm.cpp:761
 msgid "Could not connect to MusicBrainz server."
 msgstr ""
 
-#: ktrm.cpp:769
+#: ktrm.cpp:773
 msgid "MusicBrainz returned invalid content."
 msgstr ""
 
-#: collection/nepomukcollection/NepomukCollection.cpp:71
+#: collection/nepomukcollection/NepomukCollection.cpp:82
 #, fuzzy
 #| msgid "Collection"
 msgid "Nepomuk Collection"
 msgstr "Colleccion"
 
 #: collection/sqlcollection/SqlCollection.cpp:62
-msgid "Local collection"
+#: collection/sqlcollection/SqlCollectionLocation.cpp:62
+msgid "Local Collection"
 msgstr ""
 
 #: collection/sqlcollection/OrganizeCollectionDialog.cpp:142
@@ -140,7 +141,7 @@ msgstr ""
 #: mediadevice/generic/genericmediadevice.cpp:524
 #: collectionbrowser/CollectionTreeItem.cpp:136
 #: playlist/PlaylistGraphicsItem.cpp:328
-#: collectionscanner/collectionscanner.cpp:454
+#: collectionscanner/CollectionScanner.cpp:454
 #: covermanager/CoverManager.cpp:901
 msgid "Various Artists"
 msgstr ""
@@ -186,14 +187,10 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 187
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:353
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 171
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:350
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:316 rc.cpp:710
 msgid "(Help)"
-msgstr ""
-
-#: collection/sqlcollection/SqlCollectionLocation.cpp:62
-msgid "Local Collection"
 msgstr ""
 
 #: collection/sqlcollection/ScanManager.cpp:362
@@ -243,7 +240,7 @@ msgid ""
 "assistance join us at #amarok on irc.freenode.net.</p>"
 msgstr ""
 
-#: context/ContextView.cpp:289
+#: context/ContextView.cpp:290
 #, fuzzy
 #| msgid "Widgets"
 msgid "Add Applets"
@@ -452,15 +449,15 @@ msgstr ""
 msgid "Select the type of widget to install from the list below."
 msgstr ""
 
-#: context/plasma/appletbrowser/openwidgetassistant.cpp:54
+#: context/plasma/appletbrowser/openwidgetassistant.cpp:55
 msgid "Plasmoid: Native plasma widget"
 msgstr ""
 
-#: context/plasma/appletbrowser/openwidgetassistant.cpp:75
+#: context/plasma/appletbrowser/openwidgetassistant.cpp:76
 msgid "Install New Widget From File"
 msgstr ""
 
-#: context/plasma/appletbrowser/openwidgetassistant.cpp:80
+#: context/plasma/appletbrowser/openwidgetassistant.cpp:81
 #, fuzzy
 #| msgid "Deleting files"
 msgid "Select File"
@@ -478,12 +475,12 @@ msgstr ""
 msgid "Script initialization failed"
 msgstr ""
 
-#: context/plasma/applet.cpp:470
+#: context/plasma/applet.cpp:475
 msgid "Unknown Applet"
 msgstr ""
 
-#: context/plasma/applet.cpp:507 context/plasma/applet.cpp:1262
-#: context/plasma/applet.cpp:1263
+#: context/plasma/applet.cpp:512 context/plasma/applet.cpp:1276
+#: context/plasma/applet.cpp:1277
 msgid "Miscellaneous"
 msgstr "Divèrs"
 
@@ -496,42 +493,42 @@ msgstr "Configurar..."
 msgid "Remove this %1"
 msgstr ""
 
-#: context/plasma/applet.cpp:1039 context/plasma/applet.cpp:1178
+#: context/plasma/applet.cpp:1052 context/plasma/applet.cpp:1192
 #, kde-format
 msgid "%1 Settings"
 msgstr ""
 
-#: context/plasma/applet.cpp:1153
+#: context/plasma/applet.cpp:1167
 #, fuzzy, kde-format
 #| msgid "Settings"
 msgctxt "@title:window"
 msgid "%1 Settings"
 msgstr "Paramètres"
 
-#: context/plasma/applet.cpp:1178
+#: context/plasma/applet.cpp:1192
 msgid "Settings"
 msgstr "Paramètres"
 
-#: context/plasma/applet.cpp:1525
+#: context/plasma/applet.cpp:1542
 #, kde-format
 msgid "Could not locate the %1 package required for the %2 widget."
 msgstr ""
 
-#: context/plasma/applet.cpp:1543
+#: context/plasma/applet.cpp:1560
 #, kde-format
 msgid "Could not create a %1 ScriptEngine for the %2 widget."
 msgstr ""
 
-#: context/plasma/applet.cpp:1547
+#: context/plasma/applet.cpp:1564
 #, kde-format
 msgid "Could not open the %1 package required for the %2 widget."
 msgstr ""
 
-#: context/plasma/applet.cpp:1648
+#: context/plasma/applet.cpp:1665
 msgid "This object could not be created."
 msgstr ""
 
-#: context/plasma/applet.cpp:1650
+#: context/plasma/applet.cpp:1667
 #, kde-format
 msgid ""
 "This object could not be created for the following reason:<p><b>%1</b></p>"
@@ -649,13 +646,13 @@ msgstr ""
 msgid "Previous Applet"
 msgstr "&Precedent"
 
-#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1120
+#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1125
 #, fuzzy
 #| msgid "Widgets"
 msgid "Lock Widgets"
 msgstr "Largor"
 
-#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1120
+#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1125
 #, fuzzy
 #| msgid "Widgets"
 msgid "Unlock Widgets"
@@ -679,16 +676,16 @@ msgstr ""
 msgid "%1 Options"
 msgstr "Opcions"
 
-#: context/plasma/containment.cpp:734
+#: context/plasma/containment.cpp:738
 msgid "Icon"
 msgstr ""
 
-#: context/plasma/containment.cpp:990
+#: context/plasma/containment.cpp:995
 #, kde-format
 msgid "Do you really want to remove this %1?"
 msgstr ""
 
-#: context/plasma/containment.cpp:991
+#: context/plasma/containment.cpp:996
 #, fuzzy, kde-format
 #| msgid "Remove"
 msgid "Remove %1"
@@ -715,18 +712,18 @@ msgstr "Albom :"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:84
 #: dialogs/ScriptManager.cpp:139 dialogs/ScriptManager.cpp:805
-#: playlist/PlaylistModel.cpp:419 widgets/TrackTooltip.cpp:107
+#: playlist/PlaylistModel.cpp:419 widgets/TrackTooltip.cpp:116
 #: SmartPlaylistEditor.cpp:189
 msgid "Score"
 msgstr "Marca"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:87
-#: playlist/PlaylistModel.cpp:421 widgets/TrackTooltip.cpp:132
+#: playlist/PlaylistModel.cpp:421 widgets/TrackTooltip.cpp:141
 msgid "Play Count"
 msgstr ""
 
 #: context/applets/currenttrack/CurrentTrack.cpp:90
-#: widgets/TrackTooltip.cpp:137
+#: widgets/TrackTooltip.cpp:146
 msgid "Last Played"
 msgstr ""
 
@@ -735,14 +732,14 @@ msgid "Show Fullsize"
 msgstr ""
 
 #: context/applets/currenttrack/CurrentTrack.cpp:131
-#: covermanager/CoverFetchingActions.cpp:41
+#: covermanager/CoverFetchingActions.cpp:40
 msgid "Fetch Cover"
 msgid_plural "Fetch Covers"
 msgstr[0] ""
 msgstr[1] ""
 
 #: context/applets/currenttrack/CurrentTrack.cpp:132
-#: covermanager/CoverFetchingActions.cpp:75
+#: covermanager/CoverFetchingActions.cpp:74
 msgid "Unset Cover"
 msgid_plural "Unset Covers"
 msgstr[0] ""
@@ -1182,6 +1179,28 @@ msgstr ""
 msgid "Deleting files"
 msgstr "Supression de fichièrs"
 
+#: dialogs/CollectionSetup.cpp:43
+msgid "These folders will be scanned for media to make up your collection:"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:47
+msgid "&Scan folders recursively"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:48
+msgid "&Watch folders for changes"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:50
+msgid "If selected, Amarok will read all subfolders."
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:51
+msgid ""
+"If selected, folders will automatically get rescanned when the content is "
+"modified, e.g. when a new file was added."
+msgstr ""
+
 #: dialogs/Statistics.cpp:71
 msgid "Collection Statistics"
 msgstr ""
@@ -1321,7 +1340,7 @@ msgstr ""
 #: dialogs/Statistics.cpp:645 mediadevice/ipod/ipodmediadevice.cpp:2240
 #: mediadevice/generic/genericmediadevice.cpp:937 systray.cpp:123
 #: collectionbrowser/CollectionTreeView.cpp:666
-#: playlistbrowser/PodcastCategory.cpp:331
+#: playlistbrowser/PodcastCategory.cpp:339
 msgid "&Append to Playlist"
 msgstr ""
 
@@ -1633,7 +1652,7 @@ msgstr "Títol"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 124
-#: dialogs/EditFilterDialog.cpp:133 rc.cpp:1119 widgets/TrackTooltip.cpp:140
+#: dialogs/EditFilterDialog.cpp:133 rc.cpp:1119 widgets/TrackTooltip.cpp:149
 msgid "Track"
 msgstr "Pista"
 
@@ -2094,64 +2113,42 @@ msgstr "En pausa"
 msgid "Moving files to trash"
 msgstr "Desplaçament de fichièrs dins l'escobilièr"
 
-#: directorylist.cpp:45
-msgid "These folders will be scanned for media to make up your collection:"
-msgstr ""
-
-#: directorylist.cpp:49
-msgid "&Scan folders recursively"
-msgstr ""
-
-#: directorylist.cpp:50
-msgid "&Watch folders for changes"
-msgstr ""
-
-#: directorylist.cpp:52
-msgid "If selected, Amarok will read all subfolders."
-msgstr ""
-
-#: directorylist.cpp:53
-msgid ""
-"If selected, folders will automatically get rescanned when the content is "
-"modified, e.g. when a new file was added."
-msgstr ""
-
 #: Osd.cpp:128
 msgid "Rating changed"
 msgstr ""
 
-#: Osd.cpp:142
+#: Osd.cpp:144
 #, kde-format
 msgid "Volume: %1%"
 msgstr ""
 
-#: Osd.cpp:142
+#: Osd.cpp:144
 #, fuzzy
 #| msgid "Mute"
 msgctxt "State, as in, The playback is silent"
 msgid "Mute"
 msgstr "Mut"
 
-#: Osd.cpp:200 Osd.cpp:201
+#: Osd.cpp:204 Osd.cpp:205
 msgid "Volume: 100%"
 msgstr ""
 
-#: Osd.cpp:200 Osd.cpp:201
+#: Osd.cpp:204 Osd.cpp:205
 #, fuzzy
 #| msgid "Mute"
 msgctxt "State, as in, the playback is silent"
 msgid "Mute"
 msgstr "Mut"
 
-#: Osd.cpp:497
+#: Osd.cpp:501
 msgid "OSD Preview - drag to reposition"
 msgstr ""
 
-#: Osd.cpp:609
+#: Osd.cpp:613
 msgid "No track playing"
 msgstr ""
 
-#: Osd.cpp:629
+#: Osd.cpp:633
 msgid "No information available for this track"
 msgstr ""
 
@@ -2204,16 +2201,16 @@ msgid ""
 "installed</li></ul>Please check these possibilities and restart Amarok.</div>"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:213
+#: podcasts/sql/SqlPodcastProvider.cpp:212
 msgid "Downloading Podcast Media"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:214
+#: podcasts/sql/SqlPodcastProvider.cpp:213
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:298
+#: podcasts/sql/SqlPodcastProvider.cpp:297
 #, kde-format
 msgid "Unable to save podcast episode file to %1"
 msgstr ""
@@ -2978,11 +2975,13 @@ msgstr "Descargar"
 #: mediadevice/mtp/mtpmediadevice.cpp:1341
 #: mediadevice/ipod/ipodmediadevice.cpp:2323
 #: mediadevice/generic/genericmediadevice.cpp:947
+#: playlistbrowser/PlaylistCategory.cpp:121
 msgid "Rename"
 msgstr "Renommar"
 
 #: mediadevice/ifp/ifpmediadevice.cpp:658
 #: mediadevice/generic/genericmediadevice.cpp:948
+#: playlistbrowser/PlaylistCategory.cpp:118
 msgid "Delete"
 msgstr "Suprimir"
 
@@ -3719,7 +3718,7 @@ msgid "Toggle Main Window"
 msgstr ""
 
 #: MainWindow.cpp:782
-msgid "Show OSD"
+msgid "Show On Screen Display"
 msgstr ""
 
 #: MainWindow.cpp:788
@@ -5797,88 +5796,88 @@ msgid "I&gnore 'The' in Artist Names"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 117
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 101
 #: rc.cpp:686
 msgid "File Naming Scheme"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 123
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 107
 #: rc.cpp:689
 msgid ""
 "If checked, use a custom format string for naming the files in the collection"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 126
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 110
 #: rc.cpp:692
 msgid "Custo&m Format"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 133
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 117
 #: rc.cpp:695
 msgid "If checked, create a directory hierarchy using the filename extension."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 136
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 120
 #: rc.cpp:698
 msgid "Group b&y File Type"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 143
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 127
 #: rc.cpp:701
 msgid ""
 "If checked, introduce another directory hierarchy for the artists' initials."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 146
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 130
 #: rc.cpp:704
 msgid "Group &by Artist's Initial"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 158
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 142
 #: rc.cpp:707
 msgid "F&ilename Format:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 238
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 202
 #: rc.cpp:713
 msgid "Character Replacement"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 244
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 208
 #: rc.cpp:716
 msgid "If checked, convert spaces to underscores."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 247
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 211
 #: rc.cpp:719
 msgid "&Replace Spaces with Underscores"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 254
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 218
 #: rc.cpp:722
 msgid ""
 "If checked, replace characters that are unavailable in the 7-bit ASCII code."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 257
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 221
 #: rc.cpp:725
 msgid "Restrict to &ASCII"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 264
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 228
 #: rc.cpp:728
 msgid ""
 "If checked, replace characters that are incompatible with MS-DOS/VFAT file "
@@ -5886,55 +5885,55 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 267
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 231
 #: rc.cpp:731
 msgid "VFAT Safe &Names"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 276
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 240
 #: rc.cpp:734
 msgid "Replace"
 msgstr "Remplaçar"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 286
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 250
 #: rc.cpp:737
 msgid "Regular expression"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 293
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 257
 #: rc.cpp:740
 msgid "with"
 msgstr "amb"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 303
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 267
 #: rc.cpp:743
 msgid "Character string"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 337
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 283
 #: rc.cpp:746
 msgid "Destination Preview"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 349
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 295
 #: rc.cpp:749
 msgid "This is what the file names will look like after renaming."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 383
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 329
 #: rc.cpp:752
 msgid "If checked, overwrite files of the same name without asking."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 386
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 332
 #: rc.cpp:755
 msgid "Overwrite &Destination"
 msgstr ""
@@ -7172,7 +7171,7 @@ msgstr ""
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 83
 #: rc.cpp:2091 servicebrowser/jamendo/JamendoMeta.cpp:134
 #: servicebrowser/jamendo/JamendoMeta.cpp:361
-#: playlistbrowser/PodcastCategory.cpp:345
+#: playlistbrowser/PodcastCategory.cpp:353
 msgid "&Download"
 msgstr ""
 
@@ -7885,7 +7884,7 @@ msgid "Track Number - Title"
 msgstr ""
 
 #: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:416
-#: widgets/TrackTooltip.cpp:146 widgets/TrackTooltip.cpp:153
+#: widgets/TrackTooltip.cpp:155 widgets/TrackTooltip.cpp:162
 #: SmartPlaylistEditor.cpp:187
 msgid "Length"
 msgstr "Longor"
@@ -7986,7 +7985,7 @@ msgstr ""
 msgid "Sample Rate"
 msgstr ""
 
-#: playlist/PlaylistModel.cpp:420 widgets/TrackTooltip.cpp:125
+#: playlist/PlaylistModel.cpp:420 widgets/TrackTooltip.cpp:134
 #: SmartPlaylistEditor.cpp:189
 msgid "Rating"
 msgstr ""
@@ -8279,64 +8278,65 @@ msgstr ""
 msgid "Skip this track"
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:333
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:337
 #, kde-format
-msgid "Global Tag Radio: %1"
+msgid "Global Tag Radio: \"%1\""
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:339
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:343
 #, kde-format
-msgid "User Tag Radio: %1"
+msgid "User Tag Radio: \"%1\""
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:347
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:351
 #, kde-format
-msgid "Similar Artists to %1"
+msgid "Similar Artists to \"%1\""
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:350
-#, kde-format
-msgid "Artist Fan Radio: %1"
-msgstr ""
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:354
+#, fuzzy, kde-format
+#| msgid "Artist"
+msgid "Artist Fan Radio: \"%1\""
+msgstr "Artista"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:359
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:363
 #, kde-format
 msgid "%1's Neighbor Radio"
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:362
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:366
 #, kde-format
 msgid "%1's Personal Radio"
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:365
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:369
 #, kde-format
 msgid "%1's Loved Radio"
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:368
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:372
 #, kde-format
 msgid "%1's Recommended Radio (Popularity %2)"
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:375
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:379
 #, kde-format
 msgid "Group Radio: %1"
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:383
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:387
 #, fuzzy
 #| msgid "Track %1"
 msgid "Track Radio"
 msgstr "Pista %1"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:386
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:390
 #, fuzzy
 #| msgid "Artist"
 msgid "Artist Radio"
 msgstr "Artista"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:482
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:495
 msgid "Last.fm is cool..."
 msgstr ""
 
@@ -8404,8 +8404,8 @@ msgstr ""
 msgid "last.fm"
 msgstr ""
 
-#: servicebrowser/shoutcast/ShoutcastService.cpp:67
-msgid "The biggest damn list of online radio stations on the net :-)"
+#: servicebrowser/shoutcast/ShoutcastService.cpp:59
+msgid "The biggest list of online radio stations on the Internet"
 msgstr ""
 
 #: servicebrowser/shoutcast/ShoutcastServiceQueryMaker.cpp:216
@@ -8440,7 +8440,7 @@ msgid "Enter the server name and a password"
 msgstr ""
 
 #: servicebrowser/ampache/AmpacheService.cpp:233
-#: servicebrowser/mp3tunes/Mp3tunesService.cpp:135
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:140
 msgid "Authentication Error!"
 msgstr ""
 
@@ -8450,11 +8450,15 @@ msgid "Ampache Server %1"
 msgstr ""
 
 #: servicebrowser/mp3tunes/Mp3tunesService.cpp:79
-msgid "The MP3tunes Locker service. Access your stored music!"
+msgid "The MP3tunes Locker: Your Music Everywhere!"
 msgstr ""
 
-#: servicebrowser/mp3tunes/Mp3tunesService.cpp:107
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:109
 msgid "Enter your MP3tunes login and password"
+msgstr ""
+
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:130
+msgid "Authenticating"
 msgstr ""
 
 #: servicebrowser/jamendo/JamendoMeta.cpp:151
@@ -8485,6 +8489,10 @@ msgid ""
 "artists"
 msgstr ""
 
+#: playlistbrowser/UserPlaylistModel.cpp:288
+msgid "New Group"
+msgstr ""
+
 #: playlistbrowser/PodcastModel.cpp:284
 msgid "Enter Podcast URL:"
 msgstr ""
@@ -8501,13 +8509,17 @@ msgstr "Podcasts"
 msgid "&Update All"
 msgstr "Actualizar"
 
-#: playlistbrowser/PodcastCategory.cpp:330
+#: playlistbrowser/PodcastCategory.cpp:338
 msgctxt "Replace the cuurent playlist with these tracks"
 msgid "&Load"
 msgstr ""
 
-#: playlistbrowser/PodcastCategory.cpp:339
+#: playlistbrowser/PodcastCategory.cpp:347
 msgid "&Refresh"
+msgstr ""
+
+#: playlistbrowser/PlaylistCategory.cpp:84
+msgid "Add Folder"
 msgstr ""
 
 #: statusbar/StatusBar.cpp:71
@@ -8768,41 +8780,41 @@ msgstr ""
 msgid "Click for more analyzers"
 msgstr ""
 
-#: widgets/TrackTooltip.cpp:170 covermanager/CoverManager.cpp:789
+#: widgets/TrackTooltip.cpp:179 covermanager/CoverManager.cpp:789
 msgid " by "
 msgstr " per "
 
-#: widgets/TrackTooltip.cpp:172
+#: widgets/TrackTooltip.cpp:181
 msgid " on "
 msgstr ""
 
-#: widgets/TrackTooltip.cpp:200
+#: widgets/TrackTooltip.cpp:209
 msgid "Amarok - rediscover your music"
 msgstr ""
 
-#: covermanager/CoverFetchingActions.cpp:43
+#: covermanager/CoverFetchingActions.cpp:42
 #, kde-format
 msgid "Fetch the artwork for this album"
 msgid_plural "Fetch artwork for %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:58
+#: covermanager/CoverFetchingActions.cpp:57
 msgid "Display Cover"
 msgstr ""
 
-#: covermanager/CoverFetchingActions.cpp:60
+#: covermanager/CoverFetchingActions.cpp:59
 msgid "Display artwork for this album"
 msgstr ""
 
-#: covermanager/CoverFetchingActions.cpp:77
+#: covermanager/CoverFetchingActions.cpp:76
 #, kde-format
 msgid "Remove artwork for this album"
 msgid_plural "Remove artwork for %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:84
+#: covermanager/CoverFetchingActions.cpp:83
 #, kde-format
 msgid "Are you sure you want to remove this cover from the Collection?"
 msgid_plural ""
@@ -8810,18 +8822,18 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:107
+#: covermanager/CoverFetchingActions.cpp:106
 msgid "Set Custom Cover"
 msgstr ""
 
-#: covermanager/CoverFetchingActions.cpp:109
+#: covermanager/CoverFetchingActions.cpp:108
 #, kde-format
 msgid "Set custom artwork for this album"
 msgid_plural "Set custom artwork for these %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:116
+#: covermanager/CoverFetchingActions.cpp:115
 msgid "Select Cover Image File"
 msgstr ""
 
