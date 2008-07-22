@@ -1,0 +1,740 @@
+# translation of kugar_progguide.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kugar_progguide\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-02-11 07:20+0000\n"
+"PO-Revision-Date: 2008-01-12 13:49+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/koffice/doc/kugar/progguide.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 607579\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: author
+#: progguide.docbook:12
+#, no-c-format
+msgid "<firstname>Alexander</firstname> <surname>Dymo</surname>"
+msgstr ""
+
+#. Tag: email
+#: progguide.docbook:16
+#, no-c-format
+msgid "cloudtemple@mksat.net"
+msgstr ""
+
+#. Tag: author
+#: progguide.docbook:19
+#, no-c-format
+msgid "<firstname>Phil</firstname> <surname>Thompson</surname>"
+msgstr ""
+
+#. Tag: email
+#: progguide.docbook:23
+#, no-c-format
+msgid "phil@river-bank.demon.co.uk"
+msgstr ""
+
+#. Tag: trans_comment
+#: progguide.docbook:26
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
+
+#. Tag: title
+#: progguide.docbook:29
+#, no-c-format
+msgid "Programmer's Guide"
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:32
+#, no-c-format
+msgid "How to use &kugar; for reporting in your own programs"
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:35
+#, no-c-format
+msgid "There are several ways to use &kugar;"
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:37
+#, no-c-format
+msgid ""
+"Create a temporary file and fill it with data, organized according to the "
+"<link linkend=\"kugardata-dtd\">KugarData Document Type Definition</link>. "
+"Then call the <command>kugar</command> shell command ( <cmdsynopsis> "
+"<command>kugar</command> <group> <option>-d <replaceable>Kugar data file</"
+"replaceable></option> </group> <group> <option>-r <replaceable>Kugar "
+"template file</replaceable></option> </group> </cmdsynopsis> ) to preview "
+"and print the report. See <link linkend=\"prog-using-for-preview\">Using "
+"&kugar; shell for previewing reports</link> for a detailed description."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:56
+#, no-c-format
+msgid ""
+"Use &kugar; directly in the application's code. See <link linkend=\"prog-"
+"using-widget\">Using &kugar; classes for reporting</link> for a detailed "
+"description."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:63
+#, no-c-format
+msgid ""
+"Create a &Qt; designer plugin, use it to build the application &GUI; in the "
+"designer and link it to the program dynamically. See <link linkend=\"prog-"
+"designer-plugin\">Creating a &Qt; designer plugin</link> for a detailed "
+"description."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:72
+#, no-c-format
+msgid ""
+"The last two ways are acceptable for &Qt; and &kde; developers; but &kugar; "
+"is designed to be a report generator, independent from a programming "
+"language and/or <acronym>IDE</acronym>. It uses &XML; format for describing "
+"report templates and data files. So any program can produce output in "
+"&kugar; data file format as described in <link linkend=\"kugardata-dtd"
+"\">KugarData <acronym>DTD</acronym></link> or even a report template file "
+"format (see <link linkend=\"template-dtd\">KugarTemplate <acronym>DTD</"
+"acronym></link>). &kugar; shell (report viewer) can be used to preview and "
+"print the generated report."
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:86
+#, no-c-format
+msgid "Using &kugar; shell for previewing reports"
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:89
+#, no-c-format
+msgid "The way to create and preview (print) a report is:"
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:91
+#, no-c-format
+msgid "Create a report template file with &kudesigner;"
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:96
+#, no-c-format
+msgid ""
+"Create a data file with column values for detail bands of the report. Use "
+"<link linkend=\"kugardata-dtd\">KugarData <acronym>DTD</acronym></link> to "
+"produce correct data files."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:102
+#, no-c-format
+msgid ""
+"Run &kugar; shell to preview and print a report. For example, to do this, in "
+"C or C++ languages call:"
+msgstr ""
+
+#. Tag: programlisting
+#: progguide.docbook:106
+#, no-c-format
+msgid ""
+"<function>system(<option>\"kugar -r <replaceable>template_file.ktf</"
+"replaceable>-d <replaceable>data_file.kdf</replaceable>\"</option>)</"
+"function>."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:108
+#, no-c-format
+msgid ""
+"Don't forget to include <filename class=\"headerfile\">stdlib.h</filename>."
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:116
+#, no-c-format
+msgid "Using &kugar; classes for reporting"
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:117
+#, no-c-format
+msgid "The &kugar; library includes two widgets for use."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:120
+#, no-c-format
+msgid ""
+"The <classname>KReportViewer</classname> class is designed for &kde; "
+"developers. It supports a &kde; printing system and &UNIX; localization via "
+"<function>i18n()</function> calls."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:125
+#, no-c-format
+msgid ""
+"The <classname>MReportViewer</classname> class is designed for &Qt; "
+"developers and provides real crossplatforming. It can be used not only on "
+"&UNIX; platforms, but also on &Windows; and &MacOS;."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:130
+#, no-c-format
+msgid ""
+"In order to build a program that uses the &kugar; library, it should be "
+"linked with <filename>libkugar.so</filename> shared library, which is "
+"provided with the &kugar; distribution on all &UNIX; platforms."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:135
+#, no-c-format
+msgid ""
+"Include files are <filename>kugarqt.h</filename> and <filename>kugar.h</"
+"filename> for &Qt; and &kde; programs respectively."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:139
+#, no-c-format
+msgid ""
+"For a detailed example of how &kugar; classes can be used, look in the "
+"<filename class=\"directory\">/shell</filename> folder in the &kugar; "
+"sources."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:142
+#, no-c-format
+msgid ""
+"<classname>MReportViewer</classname> (and <classname>KReportViewer</"
+"classname> too) contains several public methods that can be used."
+msgstr ""
+
+#. Tag: funcdef
+#: progguide.docbook:148
+#, no-c-format
+msgid "void <function>renderReport</function>"
+msgstr ""
+
+#. Tag: funcsynopsisinfo
+#: progguide.docbook:151
+#, no-c-format
+msgid "Renders the report onto a screen."
+msgstr ""
+
+#. Tag: funcdef
+#: progguide.docbook:156
+#, no-c-format
+msgid "void <function>printReport</function>"
+msgstr ""
+
+#. Tag: funcsynopsisinfo
+#: progguide.docbook:159
+#, no-c-format
+msgid "Calls the print dialog to print the report."
+msgstr ""
+
+#. Tag: funcdef
+#: progguide.docbook:164
+#, no-c-format
+msgid "void <function>clearReport</function>"
+msgstr ""
+
+#. Tag: funcsynopsisinfo
+#: progguide.docbook:167
+#, no-c-format
+msgid ""
+"Clears the report on a screen and frees report data. Call this before "
+"opening the new report."
+msgstr ""
+
+#. Tag: funcprototype
+#: progguide.docbook:172
+#, no-c-format
+msgid ""
+"<funcdef>bool <function>setReportData</function></funcdef> <paramdef>const "
+"QString &amp;<parameter>data_file_name</parameter></paramdef>"
+msgstr ""
+
+#. Tag: funcsynopsisinfo
+#: progguide.docbook:176
+#, no-c-format
+msgid "Sets report data from <replaceable>data_file_name</replaceable> file."
+msgstr ""
+
+#. Tag: funcprototype
+#: progguide.docbook:180
+#, no-c-format
+msgid ""
+"<funcdef>bool <function>setReportData</function></funcdef> <paramdef>const "
+"QIODevice &amp;<parameter>data_io_device</parameter></paramdef>"
+msgstr ""
+
+#. Tag: funcsynopsisinfo
+#: progguide.docbook:184
+#, no-c-format
+msgid ""
+"Sets report data from <replaceable>data_io_device</replaceable> file. IO "
+"device can be any successor of the <classname>QIODevice</classname> class. "
+"For example, to fetch records directly from the database, create a "
+"<classname>QIODevice</classname> successor and redefine all necessary "
+"functionality."
+msgstr ""
+
+#. Tag: funcprototype
+#: progguide.docbook:193
+#, no-c-format
+msgid ""
+"<funcdef>bool <function>setReportTemplate</function></funcdef> "
+"<paramdef>const QString &amp;<parameter>template_file_name</parameter></"
+"paramdef>"
+msgstr ""
+
+#. Tag: funcsynopsisinfo
+#: progguide.docbook:197
+#, no-c-format
+msgid ""
+"Sets report template from <replaceable>template_file_name</replaceable> file."
+msgstr ""
+
+#. Tag: funcprototype
+#: progguide.docbook:201
+#, no-c-format
+msgid ""
+"<funcdef>bool <function>setReportTemplate</function></funcdef> "
+"<paramdef>const QIODevice &amp;<parameter>template_io_device</parameter></"
+"paramdef>"
+msgstr ""
+
+#. Tag: funcsynopsisinfo
+#: progguide.docbook:205
+#, no-c-format
+msgid ""
+"Sets report template from <replaceable>template_io_device</replaceable> "
+"file. IO device can be any successor of the <classname>QIODevice</classname> "
+"class. For example, to obtain a report template from network storage or "
+"database, create a QIODevice successor and redefine all necessary "
+"functionality."
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:215
+#, no-c-format
+msgid "Creating &Qt; designer plugin"
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:217
+#, no-c-format
+msgid ""
+"This is the example code of how a designer plugin is created. The code below "
+"creates a plugin for a &kde; <classname>KReportViewer</classname> widget."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:222
+#, no-c-format
+msgid ""
+"If a &Qt; widget is desired, replace <classname>KReportViewer</classname> "
+"with <classname>MReportViewer</classname> and <filename>kugar.h</filename> "
+"with <filename>kugarqt.h</filename> in the plugin code."
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:230
+#, no-c-format
+msgid "Plugin usage"
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:231
+#, no-c-format
+msgid ""
+"The designer plugin will allow the usage of &Qt; Designer to place a "
+"<classname>KReportViewer</classname> widget onto a window and preview it "
+"correctly."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:236
+#, no-c-format
+msgid ""
+"Programs that make use of this plugin must be linked dynamically with it. "
+"The corresponding library is called <filename>libkugar_plugin.so</filename>. "
+"Widgets or dialogs that include <classname>KReportViewer</classname> widget "
+"must include &lt;kugar.h&gt; in implementation and have a forward "
+"declaration of <classname>class KReportViewer</classname>. Includes can be "
+"done with &Qt; Designer's Object Explorer (Source tab)."
+msgstr ""
+
+#. Tag: para
+#: progguide.docbook:245
+#, no-c-format
+msgid "To build the plugin run:"
+msgstr ""
+
+#. Tag: cmdsynopsis
+#: progguide.docbook:247
+#, no-c-format
+msgid "<command>qmake</command> <arg>kugar_plugin.pro</arg>"
+msgstr ""
+
+#. Tag: command
+#: progguide.docbook:252
+#, no-c-format
+msgid "make"
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:259
+#, no-c-format
+msgid "Plugin code"
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:262
+#, no-c-format
+msgid "The plugin code consists of three files:"
+msgstr ""
+
+#. Tag: link
+#: progguide.docbook:263
+#, no-c-format
+msgid "<link>kugar_plugin.h</link>"
+msgstr ""
+
+#. Tag: link
+#: progguide.docbook:264
+#, no-c-format
+msgid "<link>kugar_plugin.cpp</link>"
+msgstr ""
+
+#. Tag: link
+#: progguide.docbook:265
+#, no-c-format
+msgid "<link>kugar_plugin.pro</link>"
+msgstr ""
+
+#. Tag: seg
+#: progguide.docbook:267
+#, no-c-format
+msgid ""
+"A header file for the <classname>KugarWidgetPlugin</classname>, "
+"<classname>QWidgetPlugin</classname> successor;"
+msgstr ""
+
+#. Tag: seg
+#: progguide.docbook:268
+#, no-c-format
+msgid ""
+"A source file for the <classname>KugarWidgetPlugin</classname>, "
+"<classname>QWidgetPlugin</classname> successor;"
+msgstr ""
+
+#. Tag: seg
+#: progguide.docbook:269
+#, no-c-format
+msgid "A project file for the <application>QMake</application> utility."
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:274
+#, no-c-format
+msgid "<title>kugar_plugin.h</title>"
+msgstr ""
+
+#. Tag: programlisting
+#: progguide.docbook:276
+#, no-c-format
+msgid ""
+"#include &lt;qwidgetplugin.h&gt;\n"
+"\n"
+"class KugarWidgetPlugin:public QWidgetPlugin\n"
+"{\n"
+"public:\n"
+"  KugarWidgetPlugin ();\n"
+"\n"
+"  QStringList keys () const;\n"
+"  QWidget *create (const QString &amp; classname, QWidget * parent =\n"
+"                   0, const char *name = 0);\n"
+"  QString group (const QString &amp;) const;\n"
+"  QIconSet iconSet (const QString &amp;) const;\n"
+"  QString includeFile (const QString &amp;) const;\n"
+"  QString toolTip (const QString &amp;) const;\n"
+"  QString whatsThis (const QString &amp;) const;\n"
+"  bool isContainer (const QString &amp;) const;\n"
+"};"
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:281
+#, no-c-format
+msgid "<title>kugar_plugin.cpp</title>"
+msgstr ""
+
+#. Tag: programlisting
+#: progguide.docbook:283
+#, no-c-format
+msgid ""
+"#include \"kugar_plugin.h\"\n"
+"#include &lt;kugar.h&gt;\n"
+"\n"
+"static const char *kugar_pixmap[] = {\n"
+"  \"22 22 127 2\",\n"
+"  \".d c #000000\",\n"
+"  \".c c #131313\",\n"
+"  \".b c #282828\",\n"
+"  \".a c #434241\",\n"
+"  \".e c #4e463a\",\n"
+"  \".# c #595551\",\n"
+"  \".G c #66553b\",\n"
+"  \"#F c #68635f\",\n"
+"  \"#R c #6b4f23\",\n"
+"  \"#q c #6e6862\",\n"
+"  \"#M c #6f5229\",\n"
+"  \".n c #6f6146\",\n"
+"  \".w c #735310\",\n"
+"  \".V c #755c2a\",\n"
+"  \".I c #775f34\",\n"
+"  \".0 c #77694a\",\n"
+"  \"#n c #7e6434\",\n"
+"  \".o c #806f50\",\n"
+"  \"#C c #835d2d\",\n"
+"  \".P c #837c75\",\n"
+"  \"#B c #85653a\",\n"
+"  \"#k c #85827e\",\n"
+"  \".x c #866d46\",\n"
+"  \".U c #877967\",\n"
+"  \".X c #888888\",\n"
+"  \".F c #89724d\",\n"
+"  \"#x c #8b6d2a\",\n"
+"  \".S c #8d7759\",\n"
+"  \".z c #8e733b\",\n"
+"  \"#L c #906e49\",\n"
+"  \"#Q c #947b56\",\n"
+"  \".r c #948058\",\n"
+"  \".J c #957844\",\n"
+"  \".4 c #987736\",\n"
+"  \".q c #998969\",\n"
+"  \".k c #999897\",\n"
+"  \".R c #9a8a75\",\n"
+"  \"#i c #9f8348\",\n"
+"  \"#I c #a37c4b\",\n"
+"  \".u c #a38d66\",\n"
+"  \".E c #a58558\",\n"
+"  \"#A c #a8834b\",\n"
+"  \".s c #a9967a\",\n"
+"  \".t c #aa9467\",\n"
+"  \".C c #ae9f8d\",\n"
+"  \"#6 c #afa49d\",\n"
+"  \"#5 c #afa9a4\",\n"
+"  \"#W c #b18e4d\",\n"
+"  \".K c #b1935a\",\n"
+"  \".B c #b39660\",\n"
+"  \"#V c #b49866\",\n"
+"  \"#a c #b49d6c\",\n"
+"  \"## c #b49d72\",\n"
+"  \".j c #b5b4b4\",\n"
+"  \"#0 c #b7a597\",\n"
+"  \".O c #b9b1a9\",\n"
+"  \".L c #bb9c61\",\n"
+"  \".M c #bb9e6b\",\n"
+"  \".A c #bca778\",\n"
+"  \"#j c #bea46b\",\n"
+"  \".T c #bfb37d\",\n"
+"  \".v c #c0b391\",\n"
+"  \".W c #c3a262\",\n"
+"  \".i c #c4c4c4\",\n"
+"  \"#m c #c5b7aa\",\n"
+"  \"#8 c #c69f80\",\n"
+"  \".D c #c6b79b\",\n"
+"  \"#3 c #c7a589\",\n"
+"  \".7 c #c7a76c\",\n"
+"  \"#u c #c7bbaf\",\n"
+"  \".6 c #c8ad74\",\n"
+"  \"#7 c #c8b7a9\",\n"
+"  \"#r c #c8beb5\",\n"
+"  \".m c #c8c8c8\",\n"
+"  \"#U c #cbad96\",\n"
+"  \"#f c #ccb681\",\n"
+"  \"#h c #cdac6c\",\n"
+"  \"#P c #cdb49f\",\n"
+"  \"#X c #cdb8a6\",\n"
+"  \"#H c #ceb7a4\",\n"
+"  \".y c #ceb892\",\n"
+"  \".N c #cecac3\",\n"
+"  \"#Z c #cfb16f\",\n"
+"  \"#O c #cfbdad\",\n"
+"  \".Z c #cfc7c0\",\n"
+"  \"#w c #d0bcab\",\n"
+"  \".5 c #d1ad6b\",\n"
+"  \"#s c #d1bfb1\",\n"
+"  \".h c #d5d5d5\",\n"
+"  \"#l c #d6cdc6\",\n"
+"  \"#D c #d8b36e\",\n"
+"  \".H c #dac592\",\n"
+"  \"#t c #dbb977\",\n"
+"  \".g c #dcdcdc\",\n"
+"  \".1 c #e0dcc1\",\n"
+"  \".f c #e0e0df\",\n"
+"  \"#1 c #e3c8b1\",\n"
+"  \"#S c #e4cdb9\",\n"
+"  \".3 c #e4d9a3\",\n"
+"  \"#4 c #e6c1a1\",\n"
+"  \"#2 c #e7c4a5\",\n"
+"  \"#K c #e9c179\",\n"
+"  \"#g c #e9c47e\",\n"
+"  \"#Y c #e9c8ac\",\n"
+"  \".2 c #eae6c0\",\n"
+"  \"#T c #ebcdb3\",\n"
+"  \".Q c #ebd4b9\",\n"
+"  \"#E c #ecca87\",\n"
+"  \"#z c #ecd799\",\n"
+"  \".l c #ececeb\",\n"
+"  \"#G c #efd7c2\",\n"
+"  \"#e c #efe3ab\",\n"
+"  \".8 c #efe8e3\",\n"
+"  \"#v c #f1dcca\",\n"
+"  \"#. c #f2e2d4\",\n"
+"  \".p c #f4f4f4\",\n"
+"  \"#y c #f5daa0\",\n"
+"  \"#J c #f6cf7f\",\n"
+"  \".9 c #f7ede4\",\n"
+"  \"#p c #f9d995\",\n"
+"  \".Y c #fcf9f6\",\n"
+"  \"#d c #fefcc5\",\n"
+"  \"#c c #fefdda\",\n"
+"  \"#b c #fefee1\",\n"
+"  \"#N c #ffd685\",\n"
+"  \"#o c #fff0a9\",\n"
+"  \"Qt c #ffffff\",\n"
+"  \"QtQtQtQtQtQt.#.a.a.a.b.b.b.c.c.d.d.dQtQtQtQt\",\n"
+"  \"QtQtQtQtQtQt.e.f.g.g.f.g.g.h.i.j.d.k.dQtQtQt\",\n"
+"  \"QtQtQtQtQtQt.a.gQtQtQtQtQtQt.l.f.c.m.k.dQtQt\",\n"
+"  \"QtQtQtQtQt.n.n.n.n.n.o.g.pQtQt.l.bQt.m.k.dQt\",\n"
+"  \"QtQtQt.q.q.r.q.s.t.r.q.u.u.g.pQt.a.fQt.m.k.d\",\n"
+"  \"QtQt.s.s.v.w.x.y.y.t.z.A.t.B.i.p.#.a.b.c.d.d\",\n"
+"  \"Qt.C.C.D.E.F.G.A.H.F.I.J.K.L.M.i.p.l.N.O.P.d\",\n"
+"  \"Qt.s.v.Q.q.R.S.T.A.R.U.V.L.W.W.X.g.Y.f.Z.k.d\",\n"
+"  \".0.s.t.Q.1.U.R.2.3.S.U.4.5.6.6.7.j.8.9#..O.d\",\n"
+"  \".G##.V#a#b.1#c#c#d#e#f#g#h#i#j.W#k#l.9#.#m.d\",\n"
+"  \".G.4.F#n#c#c#c#d#d#o#p#g.x.w#i.L#q#r#.#.#s.d\",\n"
+"  \".e.J.J.I.3#d.H#j.6#f#p#t#n.w.E.L#q#u#.#v#w.d\",\n"
+"  \".G.A#x.z#y#z#A#B#B#C#D#E.4.4.6#h#F#m#v#G#H.d\",\n"
+"  \".o.s.A#j#E#t#I#I#I#C#A#J#p#p#K#t#F#m#v#G#H.d\",\n"
+"  \"Qt##.A.6.7#I#I#A.E#L#M.W#N#J#K.a.U#O#G.Q#P.d\",\n"
+"  \"Qt#a.M.L.J#A#I.4.E#Q.x#R#D#J#g.#.C#S.Q#T#U.d\",\n"
+"  \"QtQt#V.K.z#Q.s.S.x.S#B#M#W#E.a.U#X.Q#T#Y#U.d\",\n"
+"  \"QtQtQt.M#i#B.r#Q#Q.r#Q.z#Z.a#q#0#1#T#Y#2#3.d\",\n"
+"  \"QtQtQtQtQt#j.L.L.W.5#t.a.#.U#0#1#T#Y#2#4#3.d\",\n"
+"  \"QtQtQtQtQtQt.d#F#q#q#q.P.C#O#S.Q#T#Y#2#4#3.d\",\n"
+"  \"QtQtQtQtQtQt.d#5#5#6#6#0#7#w#H#P#U#U#3#3#8.d\",\n"
+"  \"QtQtQtQtQtQt.d.d.d.d.d.d.d.d.d.d.d.d.d.d.d.d\"\n"
+"};\n"
+"\n"
+"KugarWidgetPlugin::KugarWidgetPlugin ()\n"
+"{\n"
+"}\n"
+"\n"
+"QStringList KugarWidgetPlugin::keys () const\n"
+"{\n"
+"  QStringList list;\n"
+"  list &lt;&lt; \"KReportViewer\";\n"
+"  return list;\n"
+"}\n"
+"\n"
+"QWidget* KugarWidgetPlugin::create (const QString &amp; key, QWidget * "
+"parent,\n"
+"                                    const char *name)\n"
+"{\n"
+"  if (key == \"KReportViewer\")\n"
+"    return new KReportViewer (parent, name);\n"
+"  return 0;\n"
+"}\n"
+"\n"
+"QString KugarWidgetPlugin::group (const QString &amp; feature) const\n"
+"{\n"
+"  if (feature == \"KReportViewer\")\n"
+"    return \"Display\";\n"
+"  return QString::null;\n"
+"}\n"
+"\n"
+"QIconSet KugarWidgetPlugin::iconSet (const QString &amp;) const\n"
+"{\n"
+"  return QIconSet (QPixmap (kugar_pixmap));\n"
+"}\n"
+"\n"
+"QString KugarWidgetPlugin::includeFile (const QString &amp; feature) const\n"
+"{\n"
+"  if (feature == \"KReportViewer\")\n"
+"    return \"kugar.h\";\n"
+"  return QString::null;\n"
+"}\n"
+"\n"
+"QString KugarWidgetPlugin::toolTip (const QString &amp; feature) const\n"
+"{\n"
+"  if (feature == \"KReportViewer\")\n"
+"    return \"Kugar report viewer widget\";\n"
+"  return QString::null;\n"
+"}\n"
+"\n"
+"QString KugarWidgetPlugin::whatsThis (const QString &amp; feature) const\n"
+"{\n"
+"  if (feature == \"KReportViewer\")\n"
+"    return \"A widget to view xml reports\";\n"
+"  return QString::null;\n"
+"}\n"
+"\n"
+"bool KugarWidgetPlugin::isContainer (const QString &amp;) const\n"
+"{\n"
+"  return FALSE;\n"
+"}\n"
+"\n"
+"Q_EXPORT_PLUGIN( KugarWidgetPlugin )"
+msgstr ""
+
+#. Tag: title
+#: progguide.docbook:287
+#, no-c-format
+msgid "<title>kugar_plugin.pro</title>"
+msgstr ""
+
+#. Tag: programlisting
+#: progguide.docbook:289
+#, no-c-format
+msgid ""
+"SOURCES        += kugar_plugin.cpp\n"
+"HEADERS        += kugar_plugin.h\n"
+"\n"
+"DESTDIR = $(QTDIR)/plugins/designer\n"
+"TARGET  = kugar_plugin\n"
+"\n"
+"target.path=$$plugins.path\n"
+"isEmpty(target.path):target.path=$$QT_PREFIX/plugins\n"
+"PROJECTNAME = KugarPlugin\n"
+"TEMPLATE    = lib\n"
+"CONFIG           += qt warn_on release plugin\n"
+"unix:LIBS  += -lkugar\n"
+"LANGUAGE    = C++"
+msgstr ""

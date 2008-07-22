@@ -1,0 +1,1357 @@
+# translation of ksysv.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysv\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-07-10 03:16+0000\n"
+"PO-Revision-Date: 2008-01-12 13:51+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdeadmin/doc/ksysv/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 643009\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: title
+#: index.docbook:12
+#, no-c-format
+msgid "The &ksysv; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "<firstname>Peter</firstname> <surname>Putzer</surname>"
+msgstr "<firstname>Peter</firstname> <surname>Putzer</surname>"
+
+#. Tag: email
+#: index.docbook:18
+#, no-c-format
+msgid "putzer@kde.org"
+msgstr "putzer@kde.org"
+
+#. Tag: trans_comment
+#: index.docbook:21
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname></firstname><surname></"
+"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
+"affiliation><contrib></contrib></othercredit>"
+
+#. Tag: holder
+#: index.docbook:31
+#, no-c-format
+msgid "Peter Putzer"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:37
+#, no-c-format
+msgid "&ksysv; is a graphical editor for the SysV style init configuration."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:42
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:43
+#, no-c-format
+msgid "KSysV"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:44
+#, no-c-format
+msgid "Runlevel"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:45
+#, no-c-format
+msgid "Runlevel editor"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:46
+#, no-c-format
+msgid "System V init"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:51
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduccion"
+
+#. Tag: para
+#: index.docbook:53
+#, no-c-format
+msgid ""
+"Welcome to the &kde; System V Init Editor, commonly known (and hereafter "
+"referenced) as &ksysv;. This section introduces a few concepts and explains "
+"what you can do with &ksysv;."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:62
+#, no-c-format
+msgid "A Brief Description of System V Init"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:64
+#, no-c-format
+msgid ""
+"The following explanation is <quote>borrowed</quote> from "
+"<application>tksysv</application> (an inspiration for &ksysv;):"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"System V init is fast becoming the standard in the &Linux; world to control "
+"the startup of software at boot time. This is because it is arguably easier "
+"to use and more powerful and flexible than the traditional <acronym>BSD</"
+"acronym> init."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:76
+#, no-c-format
+msgid "I won't go into the history here (mainly because I don't know it :-)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"The init binary is located in <filename class=\"directory\">/sbin</filename> "
+"and not <filename class=\"directory\">/etc</filename>. This is important as "
+"one might try and upgrade a machine to System V init without re-installing "
+"and reformatting. The &Linux; kernel looks in <filename class=\"directory\">/"
+"etc</filename> for its init first, so you must make sure and delete your old "
+"init from there if any."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"SysV init also differs from <acronym>BSD</acronym> init in that the config "
+"files are in a subfolder of <filename class=\"directory\">/etc</filename> "
+"instead of residing directly in <filename class=\"directory\">/etc</"
+"filename>. This folder is called <filename class=\"directory\">rc.d</"
+"filename>. In there you will find <filename>rc.sysinit</filename> and the "
+"following folders:"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:100
+#, no-c-format
+msgid "init.d/"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:105
+#, no-c-format
+msgid "rc0.d/"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:110
+#, no-c-format
+msgid "rc1.d/"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:115
+#, no-c-format
+msgid "rc2.d/"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:120
+#, no-c-format
+msgid "rc3.d/"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:125
+#, no-c-format
+msgid "rc4.d/"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:130
+#, no-c-format
+msgid "rc5.d/"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:135
+#, no-c-format
+msgid "rc6.d"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:140
+#, no-c-format
+msgid ""
+"<filename class=\"directory\">init.d</filename> contains a bunch of scripts. "
+"Basically, you need one script for each service you may need to start at "
+"boot time or when entering another runlevel. Services include things like "
+"networking, <acronym>NFS</acronym>, &Sendmail;, httpd,&etc; Services do not "
+"include things like <command>setserial</command> that must only be run once "
+"and then exited. Things like that should go in the file <filename>rc.local</"
+"filename>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:150
+#, no-c-format
+msgid ""
+"<filename>rc.local</filename> should be in <filename class=\"directory\">/"
+"etc/rc.d</filename> if you want one. Most systems include one even though it "
+"doesn't do much. You can also include an <filename>rc.serial</filename> in "
+"<filename class=\"directory\">/etc/rc.d</filename> if you need to do serial "
+"port specific things at boot time."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:159
+#, no-c-format
+msgid "The chain of events is as follows:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:163
+#, no-c-format
+msgid ""
+"The kernel looks in several places for init and runs the first one it finds."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:169
+#, no-c-format
+msgid "init runs <filename>/etc/rc.d/rc.sysinit</filename>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:174
+#, no-c-format
+msgid ""
+"<filename>rc.sysinit</filename> does a bunch of necessary things and then "
+"runs <filename>rc.serial</filename> (if it exists)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:180
+#, no-c-format
+msgid "init runs <filename>rc.local</filename>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:185
+#, no-c-format
+msgid "init runs all the scripts for the default runlevel"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:192
+#, no-c-format
+msgid ""
+"The default runlevel is decided in <filename>/etc/inittab</filename>. You "
+"should have a line close to the top like:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:198
+#, no-c-format
+msgid "id:3:initdefault:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:200
+#, no-c-format
+msgid ""
+"From this, you'd look in the second column and see that the default runlevel "
+"is 3, as should be the case for most systems. If you want to change it, you "
+"can edit <filename>/etc/inittab</filename> by hand and change the 3. Be very "
+"careful when you are messing with the inittab. If you do mess up, you can "
+"get in to fix it by rebooting and doing:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:208
+#, no-c-format
+msgid ""
+"<computeroutput>LILO boot:</computeroutput> <userinput>linux single</"
+"userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:210
+#, no-c-format
+msgid ""
+"This <emphasis>should</emphasis> allow you to boot into single user mode so "
+"you can fix it."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:214
+#, no-c-format
+msgid ""
+"Now, how does it run all the right scripts? If you do an "
+"<userinput><command>ls</command> <option>-l</option></userinput> on "
+"<filename class=\"directory\">rc3.d</filename>, you might see something like:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:222
+#, no-c-format
+msgid ""
+"lrwxrwxrwx 1 root root 13 13:11 S10network -&gt; ../init.d/network \n"
+"lrwxrwxrwx 1 root root 16 13:11 S30syslog -&gt; ../init.d/syslog \n"
+"lrwxrwxrwx 1 root root 14 13:32 S40cron -&gt; ../init.d/cron\n"
+"lrwxrwxrwx 1 root root 14 13:11 S50inet -&gt; ../init.d/inet\n"
+"lrwxrwxrwx 1 root root 13 13:11 S60nfs -&gt; ../init.d/nfs\n"
+"lrwxrwxrwx 1 root root 15 13:11 S70nfsfs -&gt; ../init.d/nfsfs\n"
+"lrwxrwxrwx 1 root root 18 13:11 S75keytable -&gt; ../init.d/keytable\n"
+"lrwxrwxrwx 1 root root 23 13:11 S80sendmail -&gt; ../init.d/sendmail.init\n"
+"lrwxrwxrwx 1 root root 18 13:11 S90lpd -&gt; ../init.d/lpd.init\n"
+"lrwxrwxrwx 1 root root 11 13:11 S99local -&gt; ../rc.local"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:224
+#, no-c-format
+msgid ""
+"What you'll notice is that there are no real files in the folder. Everything "
+"there is a link to one of the scripts in the <filename class=\"directory"
+"\">init.d</filename> folder."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:230
+#, no-c-format
+msgid ""
+"The links also have an <literal>S</literal> and a number at the beginning. "
+"The <literal>S</literal> means to start this particular script and a "
+"<literal>K</literal> would mean to stop it. The number is just there for "
+"ordering purposes. Init will start all the services based on the order they "
+"appear. You can duplicate numbers, but it will only confuse you somewhat. "
+"You just need to use a two digit number only, along with an uppercase "
+"<literal>S</literal> or <literal>K</literal> to start or stop the services "
+"you need to."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:241
+#, no-c-format
+msgid ""
+"How does it start and stop services? Simple. Each of the scripts is written "
+"to accept an argument which can be <option>start</option> and <option>stop</"
+"option>. You can execute those scripts by hand in fact with a command like:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:248
+#, no-c-format
+msgid ""
+"<userinput><command>/etc/rc.d/init.d/httpd.init</command> <option>stop</"
+"option></userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"To stop the httpd server. Init just reads the name and if it has a "
+"<literal>K</literal>, it calls the script with the <option>stop</option> "
+"argument. If it has an <option>S</option> it calls the script with a "
+"<option>start</option> argument."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:258
+#, no-c-format
+msgid "Why All These Runlevels ?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:260
+#, no-c-format
+msgid ""
+"Some people want an easy way to setup machines to be multi-purpose. I could "
+"have a <quote>server</quote> runlevel that just runs httpd, &Sendmail;, "
+"networking, &etc; Then I could have a <quote>user</quote> runlevel that runs "
+"&kdm;, networking, &etc;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:272
+#, no-c-format
+msgid "Onscreen Fundamentals"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:274
+#, no-c-format
+msgid ""
+"Here you learn how to use &ksysv;, which shouldn't be hard since it was "
+"designed to be as user-friendly as possible."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:280
+#, no-c-format
+msgid "Mouse"
+msgstr "Mirga"
+
+#. Tag: para
+#: index.docbook:282
+#, no-c-format
+msgid ""
+"Using &ksysv; with a mouse or other pointing device is easy: just drag an "
+"entry from the <guilabel> Available Services</guilabel> area onto one of the "
+"six runlevels to start (or resp. stop) it in that runlevel."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:288
+#, no-c-format
+msgid ""
+"You can also move scripts between runlevels, or change the position in a "
+"given runlevel, by dragging it around. Doing so removes the entry from its "
+"original runlevel (or position). This doesn't happen when you drag an entry "
+"from the <guilabel>Available Services</guilabel> area."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:296
+#, no-c-format
+msgid ""
+"Entries are moved when you drag them to a new area. To copy a service to a "
+"different runlevel, you have to select <guimenuitem>Copy</guimenuitem> from "
+"the <guimenu>Edit</guimenu> or context menu and <guimenuitem>Paste</"
+"guimenuitem> it in the target runlevel."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:304
+#, no-c-format
+msgid ""
+"The <quote>sorting number</quote> of an entry sometimes cannot be "
+"calculated. In such a case you have to edit the sorting numbers of "
+"surrounding entries before re-trying to insert the service."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:311
+#, no-c-format
+msgid "Sorting numbers can range from 00 to 99, but no higher."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:316
+#, no-c-format
+msgid ""
+"You can delete entries by dragging them onto the <guiicon>Trash Can</"
+"guiicon> area (symbolized by an icon depicting a garbage bin)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:322
+#, no-c-format
+msgid ""
+"Currently there is <emphasis>no</emphasis> way to recover items dragged onto "
+"the <guiicon>Trash Can</guiicon>, so be careful!"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:331
+#, no-c-format
+msgid "Keyboard"
+msgstr "Clavièr"
+
+#. Tag: para
+#: index.docbook:333
+#, no-c-format
+msgid ""
+"You can use the <keycap>Tab</keycap> key to switch focus between different "
+"panels (<guilabel>Available Services</guilabel>, <guilabel>Runlevel 1 Start</"
+"guilabel>, <guilabel>Runlevel 1 Stop</guilabel>, &etc;) and the cursor keys "
+"to move the selection up and down."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:341
+#, no-c-format
+msgid ""
+"To move an entry to a different runlevel, <guimenuitem>Cut</guimenuitem> it "
+"to the clipboard (using <keycombo action=\"simul\">&Ctrl; <keycap>X</"
+"keycap></keycombo> and <guimenuitem>Paste</guimenuitem> it in the target "
+"runlevel (with <keycombo action=\"simul\">&Ctrl; <keycap>V</keycap></"
+"keycombo>)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:349
+#, no-c-format
+msgid ""
+"To manually change an entries sorting number or name, press <keycap>Enter</"
+"keycap> to open the properties dialog. Use the <keycap>Tab</keycap> key to "
+"switch between different fields. Close the dialog by pressing <keycap>Enter</"
+"keycap> to accept the modifications, or press <keycap>Esc</keycap> to cancel "
+"any changes."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:360
+#, no-c-format
+msgid "The Menu Entries"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:362
+#, no-c-format
+msgid "A one by one description of &ksysv;'s menu."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:367
+#, no-c-format
+msgid "The <guimenu>File</guimenu> menu"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:369
+#, no-c-format
+msgid ""
+"Because of the danger of data loss, all menu entries under <guimenu>File</"
+"guimenu> ask for confirmation before doing their work."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:377
+#, no-c-format
+msgid ""
+"<guimenu>File</guimenu> <guimenuitem>Revert Configuration...</guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:383
+#, no-c-format
+msgid ""
+"Forget any changes you have made, and revert to the last saved configuration."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:391
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>O</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:401
+#, no-c-format
+msgid "Open a previously saved configuration."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:408
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>S</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Save Configuration</"
+"guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:417
+#, no-c-format
+msgid ""
+"<action>Make your changes permanent.</action> Saving does not generate any "
+"backup files, so use with care."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:426
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:433
+#, no-c-format
+msgid "Save a copy of your new configuration."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:440
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>L</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Save Log...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:450
+#, no-c-format
+msgid "Save a log"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:458
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>P</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Print Log...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:468
+#, no-c-format
+msgid "Print a copy of the log."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:475
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:484
+#, no-c-format
+msgid "<action>Quit</action> &ksysv;."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:494
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> menu"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:499
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Z</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:509
+#, no-c-format
+msgid "Undo the last unsaved change made."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:516
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Shift</keycap> "
+"<keycap>Z</keycap></keycombo> </shortcut> <guimenu>Edit</guimenu> "
+"<guimenuitem>Redo</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:527
+#, no-c-format
+msgid "Redo the last item undone."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:534
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>X</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:544
+#, no-c-format
+msgid "Cut the currently selected service to the clipboard."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:561
+#, no-c-format
+msgid ""
+"Copy the selected entry to the clipboard, without removing it from its "
+"original position."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:569
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>V</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:579
+#, no-c-format
+msgid "Paste the content of the clipboard at the current cursor position."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:587
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>Properties</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:594
+#, no-c-format
+msgid "Open the properties dialog for the selected item."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:603
+#, no-c-format
+msgid "The <guimenu>Tools</guimenu> menu"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:608
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Start Service...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:615
+#, no-c-format
+msgid "Start the selected service"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:622
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Stop Service...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:629
+#, no-c-format
+msgid "Stop the selected service"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:636
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Restart Service...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:643
+#, no-c-format
+msgid "Restart the selected service."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:650
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Edit Service...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:657
+#, no-c-format
+msgid "Edit the selected service"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:668
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> menu"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:673
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Toolbar</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:680
+#, no-c-format
+msgid "Toggle on and off display of the toolbar."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:687
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:694
+#, no-c-format
+msgid "Toggle on and off display of the statusbar."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:701
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Log</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:708
+#, no-c-format
+msgid "Toggle on and off the display of the log window"
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:715
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Save Settings</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:722
+#, no-c-format
+msgid "Save your current settings."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:729
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Key bindings...</"
+"guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:736
+#, no-c-format
+msgid "Customize the default keybindings."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:743
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: index.docbook:750
+#, no-c-format
+msgid "Customize the toolbar."
+msgstr ""
+
+#. Tag: menuchoice
+#: index.docbook:757
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure SysV-Init Editor...</"
+"guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:763
+#, no-c-format
+msgid "<action>Customize the behavior</action> of &ksysv;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:773
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> menu"
+msgstr ""
+
+#. Tag: sect2
+#: index.docbook:773
+#, no-c-format
+msgid "&help.menu.documentation;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:784
+#, no-c-format
+msgid "Configuration"
+msgstr "Configuracion"
+
+#. Tag: para
+#: index.docbook:786
+#, no-c-format
+msgid ""
+"All options are saved in <filename>$<envar>KDEHOME</envar>/share/config/"
+"ksysvrc</filename>. Defaults are taken from the global file (<filename>"
+"$<envar>KDEDIR</envar>/share/config/ksysvrc</filename>), if available, or "
+"else generated within &ksysv;. Changes to the defaults are stored in your "
+"local <filename>ksysvrc</filename>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:796
+#, no-c-format
+msgid "Recognized Sections"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:798
+#, no-c-format
+msgid "Recognized sections and keys plus their default values."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:803
+#, no-c-format
+msgid "&lsqb;Path Settings&rsqb;"
+msgstr ""
+
+#. Tag: segtitle
+#: index.docbook:806 index.docbook:830 index.docbook:853 index.docbook:875
+#, no-c-format
+msgid "Keyword"
+msgstr ""
+
+#. Tag: segtitle
+#: index.docbook:807 index.docbook:831 index.docbook:854 index.docbook:876
+#, no-c-format
+msgid "Default"
+msgstr "Defaut"
+
+#. Tag: segtitle
+#: index.docbook:808 index.docbook:832 index.docbook:855 index.docbook:877
+#, no-c-format
+msgid "Description"
+msgstr "Descripcion"
+
+#. Tag: seg
+#: index.docbook:810
+#, no-c-format
+msgid "ScriptPath"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:811
+#, no-c-format
+msgid "/etc/rc.d/init.d"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:812
+#, no-c-format
+msgid "Path to the scripts used for starting and stopping services."
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:816
+#, no-c-format
+msgid "RunlevelPath"
+msgstr ""
+
+#. Tag: filename
+#: index.docbook:817
+#, no-c-format
+msgid "/etc/rc.d"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:818
+#, no-c-format
+msgid "Path to the runlevel subfolders."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:826
+#, no-c-format
+msgid "&lsqb;Colors&rsqb;"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:834
+#, no-c-format
+msgid "Changed"
+msgstr "Modificat"
+
+#. Tag: seg
+#: index.docbook:835
+#, no-c-format
+msgid "<seg>red</seg>"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:836
+#, no-c-format
+msgid "Color used for changed entries"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:840
+#, no-c-format
+msgid "<seg>New</seg>"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:841
+#, no-c-format
+msgid "blue"
+msgstr "blau"
+
+#. Tag: seg
+#: index.docbook:842
+#, no-c-format
+msgid "Color used for new entries"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:850
+#, no-c-format
+msgid "&lsqb;Geometry&rsqb;"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:857
+#, no-c-format
+msgid "Width"
+msgstr "Largor"
+
+#. Tag: seg
+#: index.docbook:859
+#, no-c-format
+msgid "Width of &ksysv;'s window"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:863
+#, no-c-format
+msgid "Height"
+msgstr "Nautor"
+
+#. Tag: seg
+#: index.docbook:865
+#, no-c-format
+msgid "Height of &ksysv;'s"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:872
+#, no-c-format
+msgid "&lsqb;Other Settings&rsqb;"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:879
+#, no-c-format
+msgid "ToolBar"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:880 index.docbook:886 index.docbook:892
+#, no-c-format
+msgid "true"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:881
+#, no-c-format
+msgid "If the toolbar is enabled or not"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:885
+#, no-c-format
+msgid "StatusBar"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:887
+#, no-c-format
+msgid "If the status bar is enabled or not"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:891
+#, no-c-format
+msgid "ShowLog"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:893
+#, no-c-format
+msgid "If the log window is shown or not"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:897
+#, no-c-format
+msgid "PanningFactor"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:898
+#, no-c-format
+msgid "<seg>80</seg>"
+msgstr ""
+
+#. Tag: seg
+#: index.docbook:899
+#, no-c-format
+msgid ""
+"100 - PanningFactor = percentage of window reserved for the logfile display"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:911
+#, no-c-format
+msgid "Questions and Answers"
+msgstr "Questions e responsas"
+
+#. Tag: para
+#: index.docbook:916
+#, no-c-format
+msgid ""
+"I played around with the default runlevel, and now my machine reboots all "
+"the time. What can I do?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:922
+#, no-c-format
+msgid ""
+"Enter <userinput>linux single</userinput> at the <acronym>LILO</acronym> "
+"prompt, and press <keycap>Enter</keycap> to boot into single user mode. Edit "
+"the file <filename>/etc/inittab</filename> and change to the default "
+"runlevel to something sane. <literal>3</literal> should normally be safe."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:934
+#, no-c-format
+msgid "My Machine <quote>halts</quote> just after booting"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:939
+#, no-c-format
+msgid "See Question 1, above."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:947
+#, no-c-format
+msgid ""
+"I scheduled some services to be run in runlevel X using &ksysv;, so why "
+"aren't they working?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:954
+#, no-c-format
+msgid ""
+"If you're using &SuSE; or Delix (DLD) distributions, you also have to edit a "
+"distribution specific file in <filename class=\"directory\">/etc</filename>. "
+"Please have a look at the manual of your distribution for details."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:962
+#, no-c-format
+msgid ""
+"The approach to starting services used by the above mentioned distributions "
+"makes configuration of services easy for the proprietary configuration tools "
+"these distributions provide, but it is unfortunately non-standard. The "
+"&ksysv; authors plan to write a generic extension for this approach some "
+"time in the future, but don't hold your breath."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:971
+#, no-c-format
+msgid ""
+"If you're using a different distribution, please check you have all the "
+"config files needed by the service, and whether they are in the correct "
+"locations. Some daemons for example <application>Apache</application>, "
+"(<acronym>aka</acronym> <command>httpd</command>) just die silently if their "
+"configuration files are missing or misconfigured."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:986
+#, no-c-format
+msgid "Standard semantics of Runlevels"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:988
+#, no-c-format
+msgid ""
+"These vary by distribution, so this is an incomplete list of the most common "
+"&Linux; distributions. If you have additional distributions, please email "
+"the author and have the information added to this manual."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:996
+#, no-c-format
+msgid "&RedHat;"
+msgstr ""
+
+#. Tag: term
+#: index.docbook:1000
+#, no-c-format
+msgid "Runlevel 0:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1002
+#, no-c-format
+msgid "halt (shuts down the machine)"
+msgstr ""
+
+#. Tag: term
+#: index.docbook:1008
+#, no-c-format
+msgid "Runlevel 1:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1010
+#, no-c-format
+msgid "Single user mode."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:1016
+#, no-c-format
+msgid "Runlevel 2:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1018
+#, no-c-format
+msgid "Multi user text only, without <acronym>NFS</acronym>."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:1024
+#, no-c-format
+msgid "Runlevel 3:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1026
+#, no-c-format
+msgid "Multi user text-only, with full networking."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:1032
+#, no-c-format
+msgid "Runlevel 4:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1034
+#, no-c-format
+msgid "Not used."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:1040
+#, no-c-format
+msgid "Runlevel 5:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1042
+#, no-c-format
+msgid "Multi user X11 with full networking."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:1048
+#, no-c-format
+msgid "Runlevel 6:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1050
+#, no-c-format
+msgid "Reboot"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1063
+#, no-c-format
+msgid "License and Credits"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1064
+#, no-c-format
+msgid "&ksysv; Copyright &copy; 1997-1998 Peter Putzer"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1068
+#, no-c-format
+msgid "Peter Putzer, <email>putzer@kde.org</email> - Developer"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1074
+#, no-c-format
+msgid "Documentation:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1080
+#, no-c-format
+msgid "Peter Putzer, <email>putzer@kde.org</email> - Original content"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1082
+#, no-c-format
+msgid "Eric Bischoff, &Eric.Bischoff.mail; - Editor"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:1087
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
+
+#. Tag: chapter
+#: index.docbook:1087
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1094
+#, no-c-format
+msgid "Installation"
+msgstr "Installacion"

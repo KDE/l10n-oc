@@ -1,0 +1,237 @@
+# translation of faq_notrelated.po to Occitan
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: faq_notrelated\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-07-10 03:20+0000\n"
+"PO-Revision-Date: 2008-01-12 13:51+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdebase/doc/faq/notrelated.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 619366\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: title
+#: notrelated.docbook:10
+#, no-c-format
+msgid "Not really &kde;-related, but frequently asked nevertheless."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:15
+#, no-c-format
+msgid "How do I change the screen resolution?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:18
+#, no-c-format
+msgid ""
+"Use <keycombo action=\"simul\">&Ctrl;&Alt;<keycap>+</keycap></keycombo> and "
+"<keycombo action=\"simul\">&Ctrl;&Alt;<keycap>-</keycap></keycombo> to cycle "
+"through the resolutions you have defined in <filename>XF86Config</filename> "
+"(maybe under <filename class=\"directory\">/etc/X11</filename>; poke around "
+"first). If you prefer to get your hands dirty, you can always edit the file "
+"directly. By placing your favorite resolution at the beginning (or making it "
+"the only one listed), &X-Window; will always start up with that resolution."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:27
+#, no-c-format
+msgid ""
+"Always make a backup copy of your <filename>XF86Config</filename> file "
+"<emphasis>before</emphasis> you start editing it. Errors in this file can "
+"render &X-Window; unusable."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:30
+#, no-c-format
+msgid ""
+"These instructions are only valid if you are running version 3.3.x of the "
+"XFree86 server. If you are running XFree86 4.x, you must consult with the "
+"<ulink url=\"http://xfree.org\">XFree86(TM): Home Page</ulink>."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:39
+#, no-c-format
+msgid "How do I change the color depth?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:42
+#, no-c-format
+msgid ""
+"There is no way you can do this on the fly. You can either start &X-Window; "
+"using <command>startx <option> -bpp <replaceable>number</replaceable></"
+"option></command> where <replaceable>number</replaceable> can be 8, 16, 24 "
+"or 32, depending on the depth you want. Alternatively, if you are using "
+"<application>xdm</application>/&kdm;, you need to edit <filename>/etc/X11/"
+"xdm/Xservers</filename> (may vary) and enter <userinput>:0 local /usr/X11R6/"
+"bin/X -bpp 16</userinput> for 16 bit color depth."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:52
+#, no-c-format
+msgid ""
+"You can also edit the <filename>XF86Config</filename> file and add a line "
+"like <userinput>DefaultColorDepth <replaceable>number</replaceable></"
+"userinput> to Section \"Screen\". The next time you start X, it will run "
+"with the newly-configured color depth."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:62
+#, no-c-format
+msgid "What can I do if I am using a 2-button mouse?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:65
+#, no-c-format
+msgid ""
+"Go buy a 3-button one, or use third button emulation. The third button is "
+"emulated by pressing both the &LMB; and the &RMB; together. You would need "
+"to enable <option>Emulate3Buttons</option> in your <filename>XF86Config</"
+"filename> file."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:74
+#, no-c-format
+msgid "What is a \"sticky\" window?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:77
+#, no-c-format
+msgid ""
+"In a virtual desktop environment with multiple virtual desktops, a \"sticky"
+"\" window will stay put on the screen when you switch between desktops, as "
+"if sticking to the glass of the screen. <application>Xclock</application> is "
+"a typical candidate for sticking, as you need to run only one instance of "
+"it, and it always stays with you."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:89
+#, no-c-format
+msgid "How do I extract/install diff files?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:92
+#, no-c-format
+msgid ""
+"To generate a context-diff suitable for patching, use <command>diff -u "
+"<replaceable>old-file new-file</replaceable> &gt; <replaceable>patchfile</"
+"replaceable></command>. To apply the diff to a file (<abbrev>i.e.</abbrev> "
+"\"patch the file\"), execute <command>patch &lt; <replaceable>patchfile</"
+"replaceable></command>."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:102
+#, no-c-format
+msgid ""
+"How do I get &Linux; to mount the floppy device for use with both DOS and "
+"ext2 formatted floppies?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:106
+#, no-c-format
+msgid ""
+"Just specify the filesystem type as auto in <filename>/etc/fstab</filename>. "
+"Auto detection works fine for DOS and ext2."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:114
+#, no-c-format
+msgid "How do I start &kde; with the <keycap>Num Lock</keycap> on?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:117
+#, no-c-format
+msgid ""
+"Open the &kcontrolcenter; and navigate to <guimenu>Peripherals</"
+"guimenu><guimenuitem>Keyboard</guimenuitem>. Under the section "
+"<guilabel>NumLock on &kde; Startup</guilabel> move the radio button to "
+"select <guilabel>Turn on</guilabel>"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:123
+#, no-c-format
+msgid "How do I take window or desktop screenshots?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:126
+#, no-c-format
+msgid "Use &ksnapshot;."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:132
+#, no-c-format
+msgid "Is there a tool to make webpages?"
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:135
+#, no-c-format
+msgid ""
+"Yes, and there are a lot of them out there, including "
+"<application>StarOffice</application>, <application>&Netscape; Composer</"
+"application>, and <application>XEmacs</application>. There are also many "
+"&kde; applications. To find the most current list, go to <ulink url=\"http://"
+"kde-apps.org\">kde-apps.org: The Latest in &kde; Applications</ulink> and "
+"search for <emphasis>web development</emphasis>. Try as many as possible and "
+"choose the one most suitable to your needs."
+msgstr ""
+
+#. Tag: para
+#: notrelated.docbook:148
+#, no-c-format
+msgid "What do all those acronyms like AFAIK mean?"
+msgstr ""
+
+#. Tag: screen
+#: notrelated.docbook:151
+#, no-c-format
+msgid ""
+"AAMOF: as a matter of fact\n"
+"AFAIK: as far as I know\n"
+"AISE: as I see it\n"
+"BFN: bye for now\n"
+"BION: believe it or not\n"
+"BRB: be right back\n"
+"BTW: by the way\n"
+"CMIIW: correct me if I am wrong\n"
+"FUD: fear, uncertainty, and doubt\n"
+"FWIW: for what it's worth\n"
+"FYI: for your information\n"
+"HTH: hope this helps\n"
+"IIRC: if I recall correctly\n"
+"IMHO: in my humble opinion\n"
+"LOL: laughing out loud\n"
+"MYOB: mind your own business\n"
+"PITA: pain in the ass\n"
+"ROTFL: rolling on the floor laughing\n"
+"RTFM: read the fine manual\n"
+"SOP: standard operating procedure\n"
+"TIA: thanks in advance\n"
+"YMMV: your mileage may vary"
+msgstr ""
