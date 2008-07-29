@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomukserver\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-24 01:44+0200\n"
+"POT-Creation-Date: 2008-07-29 08:29+0200\n"
 "PO-Revision-Date: 2008-01-12 13:47+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,42 +17,60 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: kcm/nepomukserverkcm.cpp:43
+#: kcm/nepomukserverkcm.cpp:56
 msgid "Nepomuk Configuration Module"
 msgstr ""
 
-#: kcm/nepomukserverkcm.cpp:45
+#: kcm/nepomukserverkcm.cpp:58
 msgid "Copyright 2007 Sebastian Trüg"
 msgstr ""
 
-#: kcm/nepomukserverkcm.cpp:46 server/main.cpp:94 servicestub/main.cpp:86
+#: kcm/nepomukserverkcm.cpp:59 server/main.cpp:96 servicestub/main.cpp:86
 msgid "Sebastian Trüg"
 msgstr ""
 
-#: kcm/nepomukserverkcm.cpp:82
+#: kcm/nepomukserverkcm.cpp:104
+msgid "No Soprano Database backend available. Please check your installation."
+msgstr ""
+
+#: kcm/nepomukserverkcm.cpp:105
+msgid "Nepomuk cannot be started"
+msgstr ""
+
+#: kcm/nepomukserverkcm.cpp:113
 msgid ""
 "The Nepomuk Server is not running. The settings will be used the next time "
 "the server is started."
 msgstr ""
 
-#: kcm/nepomukserverkcm.cpp:84 kcm/nepomukserverkcm.cpp:146
+#: kcm/nepomukserverkcm.cpp:115 kcm/nepomukserverkcm.cpp:159
 msgid "Nepomuk server not running"
 msgstr ""
 
-#: kcm/nepomukserverkcm.cpp:144
+#: kcm/nepomukserverkcm.cpp:157
 msgid ""
 "The Nepomuk Server is not running. The settings have been saved and will be "
 "used the next time the server is started."
 msgstr ""
 
-#: kcm/nepomukserverkcm.cpp:178
-msgid "Strigi is running"
+#: kcm/nepomukserverkcm.cpp:183 services/strigi/systray.cpp:75
+#: services/strigi/statuswidget.cpp:76
+msgid "File indexer is suspended"
 msgstr ""
 
-#. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 102
-#: kcm/nepomukserverkcm.cpp:182 rc.cpp:26
-msgid "Strigi not running"
+#: kcm/nepomukserverkcm.cpp:185 services/strigi/systray.cpp:77
+#: services/strigi/statuswidget.cpp:78
+#, kde-format
+msgid "Strigi is currently indexing files in folder %1"
+msgstr ""
+
+#: kcm/nepomukserverkcm.cpp:187 services/strigi/systray.cpp:79
+#: services/strigi/statuswidget.cpp:80
+msgid "File indexer is idle"
+msgstr ""
+
+#: kcm/nepomukserverkcm.cpp:190
+msgid "Strigi service not running."
 msgstr ""
 
 #: rc.cpp:1
@@ -66,7 +84,7 @@ msgid "Your emails"
 msgstr "yannig@marchegay.org"
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 21
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 13
 #: rc.cpp:5
 #, fuzzy
 #| msgid "Advanced Settings"
@@ -74,33 +92,33 @@ msgid "Basic Settings"
 msgstr "Paramètres avançats"
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 27
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 19
 #: rc.cpp:8
 msgid "Nepomuk Semantic Desktop"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 33
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 25
 #: rc.cpp:11
 msgid ""
 "Nepomuk Semantic Desktop enables tagging and rating of files integrated with "
-"the Strigi Desktop Search."
+"the Desktop Search."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 43
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 35
 #: rc.cpp:14
 msgid "Enable Nepomuk Semantic Desktop"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 53
-#: rc.cpp:17 services/strigi/strigicontroller.cpp:140
-msgid "Strigi Desktop Search"
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 45
+#: rc.cpp:17
+msgid "Strigi Desktop File Indexer"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 59
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 51
 #: rc.cpp:20
 msgid ""
 "Strigi desktop search allows searching for files by content instead of just "
@@ -108,69 +126,146 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 71
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 61
 #: rc.cpp:23
-msgid "Enable Strigi Desktop Search"
+msgid "Enable Strigi Desktop File Indexer"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 130
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 99
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 28
+#: rc.cpp:26 rc.cpp:71
+msgid "KSqueezedTextLabel"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 125
 #: rc.cpp:29
 msgid "Advanced Settings"
 msgstr "Paramètres avançats"
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 136
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 131
 #: rc.cpp:32
-msgid "The folders Strigi scans for indexable files"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 142
-#: rc.cpp:35
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Select the folders that "
-"Strigi should scan for files to index. The files in these folders will be "
-"searchable through Strigi Desktop Search.</p></body></html>"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 145
-#: rc.cpp:41
 msgid "Strigi Index Folders"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 152
-#: rc.cpp:44
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 137
+#: rc.cpp:35
+msgid ""
+"Select the local folders that contain files to be indexed for fast desktop "
+"searches"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 153
+#: rc.cpp:38
 msgid "Filters which define the files that Strigi should ignore"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kcm/nepomukconfigwidget.ui line 158
-#: rc.cpp:47
+#. i18n: file ./kcm/nepomukconfigwidget.ui line 159
+#: rc.cpp:41
 msgid "Strigi Index Exclude Filters"
 msgstr ""
 
-#: server/main.cpp:87
-msgid "Nepomuk Server"
+#. i18n: tag string
+#. i18n: file ./services/strigi/progressgui.ui line 8
+#: rc.cpp:44
+msgid "Nepomuk/Strigi Desktop Search"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/progressgui.ui line 24
+#: rc.cpp:47
+msgid ""
+"(THIS IS A TEMPORARY INFO WIDGET WHICH IS SUPPOSED TO BE NON-INVASIVE. "
+"PLEASE COME UP WITH IDEAS TO IMPROVE IT: trueg@kde.org) \n"
+"Nepomuk/Strigi is analyzing the files on your local harddisk for fast "
+"desktop search.\n"
+"The initial analyzation can take a while. Subsequent checks are much faster "
+"as only changed and new files are analyzed.\n"
+"If you do not intend to use desktop search, you can always disable Strigi or "
+"suspend it temporarily."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/progressgui.ui line 43
+#: rc.cpp:53
+msgid "Do not show again"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/progressgui.ui line 63
+#: rc.cpp:56
+msgid "Configure..."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/progressgui.ui line 70
+#: rc.cpp:59
+msgid "Disable"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/progressgui.ui line 77
+#: rc.cpp:62
+msgid "Suspend"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 9
+#: rc.cpp:65
+msgid "Nepomuk Strigi File Indexing"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 16
+#: rc.cpp:68
+msgid "Strigi Indexing State"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 38
+#: rc.cpp:74
+msgid "Nepomuk Storage State"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 44
+#: rc.cpp:77
+msgid "Indexed files:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 57
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 77
+#: rc.cpp:80 rc.cpp:86
+msgid "Calculating..."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./services/strigi/statuswidget.ui line 64
+#: rc.cpp:83
+msgid "Nepomuk store size:"
 msgstr ""
 
 #: server/main.cpp:89
+msgid "Nepomuk Server"
+msgstr ""
+
+#: server/main.cpp:91
 msgid "Nepomuk Server - Manages Nepomuk storage and services"
 msgstr ""
 
-#: server/main.cpp:91 servicestub/main.cpp:83
+#: server/main.cpp:93 servicestub/main.cpp:83
 msgid "(c) 2008, Sebastian Trüg"
 msgstr ""
 
-#: server/main.cpp:94 servicestub/main.cpp:86
+#: server/main.cpp:96 servicestub/main.cpp:86
 msgid "Maintainer"
 msgstr ""
 
@@ -182,10 +277,64 @@ msgstr ""
 msgid "Some data was lost in the conversion."
 msgstr ""
 
-#: services/strigi/strigicontroller.cpp:139
+#: services/strigi/systray.cpp:35
+msgid "Strigi File Indexing"
+msgstr ""
+
+#: services/strigi/systray.cpp:37
+msgid "Suspend Strigi Indexing"
+msgstr ""
+
+#: services/strigi/systray.cpp:38
+msgid "Resume Strigi Indexing"
+msgstr ""
+
+#: services/strigi/systray.cpp:39
+msgid "Suspend or resume the Strigi file indexer manually"
+msgstr ""
+
+#: services/strigi/systray.cpp:44
+msgid "Configure Strigi"
+msgstr ""
+
+#: services/strigi/statuswidget.cpp:50
+msgid "Configure"
+msgstr ""
+
+#: services/strigi/statuswidget.cpp:96
+msgid "Calculation failed"
+msgstr ""
+
+#: services/strigi/statuswidget.cpp:112
+#, kde-format
+msgid "1 files in index"
+msgid_plural "%1 files in index"
+msgstr[0] ""
+msgstr[1] ""
+
+#: services/strigi/eventmonitor.cpp:80
 msgid ""
-"Strigi (the desktop file indexer) crashed repeatedly. It will not be started "
-"again."
+"Strigi file indexing started. Indexing all files for fast desktop searches "
+"may take a while."
+msgstr ""
+
+#: services/strigi/eventmonitor.cpp:119 services/strigi/eventmonitor.cpp:150
+msgid "Resuming Strigi file indexing."
+msgstr ""
+
+#: services/strigi/eventmonitor.cpp:126
+msgid "Suspending Strigi file indexing to preserve resources."
+msgstr ""
+
+#: services/strigi/eventmonitor.cpp:141
+#, kde-format
+msgid ""
+"Local disk space is running low (%1 left). Suspending Strigi file indexing."
+msgstr ""
+
+#: services/strigi/eventmonitor.cpp:165
+#, kde-format
+msgid "Strigi file indexing finished. Elapsed time: %1"
 msgstr ""
 
 #: servicestub/main.cpp:79 servicestub/main.cpp:81
@@ -201,6 +350,6 @@ msgstr ""
 msgid "No service name specified"
 msgstr ""
 
-#: servicestub/main.cpp:122
+#: servicestub/main.cpp:126
 msgid "Unknown service name:"
 msgstr ""

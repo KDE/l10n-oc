@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-23 11:08+0200\n"
+"POT-Creation-Date: 2008-07-29 08:29+0200\n"
 "PO-Revision-Date: 2008-01-12 13:47+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -59,59 +59,131 @@ msgstr ""
 msgid "Only use the blank screen saver"
 msgstr ""
 
-#: lock/lockprocess.cc:764
+#: lock/main.cc:67
+msgid "start with plasma unlocked for configuring"
+msgstr ""
+
+#: lock/lockprocess.cc:792
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 
-#: lock/lockprocess.cc:768
+#: lock/lockprocess.cc:796
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr ""
 
-#: lock/lockprocess.cc:769
+#: lock/lockprocess.cc:797
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr ""
 
-#: lock/lockprocess.cc:812
+#: lock/lockprocess.cc:840
 msgid "No appropriate greeter plugin configured."
 msgstr ""
 
-#: lock/lockdlg.cc:96
+#: lock/plasma/main.cpp:30
+msgid "Plasma widgets over the screensaver"
+msgstr ""
+
+#: lock/plasma/main.cpp:36
+msgid "Plasma for the Screensaver"
+msgstr ""
+
+#: lock/plasma/main.cpp:38
+msgid "Copyright 2006-2008, The KDE Team"
+msgstr ""
+
+#: lock/plasma/main.cpp:39
+msgid "Chani Armitage"
+msgstr ""
+
+#: lock/plasma/main.cpp:40 main.cpp:43
+msgid "Author and maintainer"
+msgstr ""
+
+#: lock/plasma/main.cpp:42 main.cpp:42
+msgid "Aaron J. Seigo"
+msgstr "Aaron J. Seigo"
+
+#: lock/plasma/main.cpp:43
+msgid "Plasma Author and maintainer"
+msgstr ""
+
+#: lock/plasma/main.cpp:45
+msgid "John Lions"
+msgstr ""
+
+#: lock/plasma/main.cpp:46
+msgid "In memory of his contributions, 1937-1998."
+msgstr ""
+
+#: lock/plasma/main.cpp:52
+msgid "Enables some cheats that are useful for debugging."
+msgstr ""
+
+#: lock/plasma/main.cpp:53
+msgid "Start unlocked for configuration."
+msgstr ""
+
+#: lock/plasma/saverview.cpp:67
+msgid "Hide Widgets"
+msgstr ""
+
+#: lock/plasma/saverview.cpp:122
+msgid "Add Widgets"
+msgstr ""
+
+#: lock/plasma/saverview.cpp:160
+msgid "Setup Mode - Screen is NOT locked"
+msgstr ""
+
+#: lock/plasma/plasmaapp.cpp:383
+msgid "Show plasma-overlay"
+msgstr ""
+
+#: lock/plasma/containment/desktop.cpp:82
+msgid "Unlock Desktop"
+msgstr ""
+
+#: lock/plasma/containment/desktop.cpp:152
+msgid "Unlock Plasma Widgets"
+msgstr ""
+
+#: lock/lockdlg.cc:98
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr ""
 
-#: lock/lockdlg.cc:97
+#: lock/lockdlg.cc:99
 #, kde-format
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr ""
 
-#: lock/lockdlg.cc:108
+#: lock/lockdlg.cc:112
 msgid "Unl&ock"
 msgstr ""
 
-#: lock/lockdlg.cc:110
+#: lock/lockdlg.cc:114
 msgid "Sw&itch User..."
 msgstr ""
 
-#: lock/lockdlg.cc:178
+#: lock/lockdlg.cc:182
 msgid "<b>Unlocking failed</b>"
 msgstr ""
 
-#: lock/lockdlg.cc:186
+#: lock/lockdlg.cc:190
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr ""
 
-#: lock/lockdlg.cc:418
+#: lock/lockdlg.cc:422
 #, kde-format
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
 "you must kill krunner_lock (pid %1) manually."
 msgstr ""
 
-#: lock/lockdlg.cc:507
+#: lock/lockdlg.cc:511
 msgid "&Start New Session"
 msgstr ""
 
-#: lock/lockdlg.cc:515
+#: lock/lockdlg.cc:519
 #, kde-format
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
@@ -125,24 +197,24 @@ msgid ""
 "between sessions."
 msgstr ""
 
-#: lock/lockdlg.cc:528
+#: lock/lockdlg.cc:532
 msgid "&Do not ask again"
 msgstr ""
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Session"
 msgstr "Sesilha"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Location"
 msgstr "Emplaçament"
 
-#: lock/lockdlg.cc:612
+#: lock/lockdlg.cc:616
 msgctxt "session"
 msgid "&Activate"
 msgstr "&Activar"
 
-#: lock/lockdlg.cc:621
+#: lock/lockdlg.cc:625
 msgid "Start &New Session"
 msgstr ""
 
@@ -156,14 +228,6 @@ msgstr ""
 
 #: main.cpp:41
 msgid "(c) 2006, Aaron Seigo"
-msgstr ""
-
-#: main.cpp:42
-msgid "Aaron J. Seigo"
-msgstr "Aaron J. Seigo"
-
-#: main.cpp:43
-msgid "Author and maintainer"
 msgstr ""
 
 #: interface.cpp:70 krunnerapp.cpp:141 krunnerapp.cpp:142
@@ -197,7 +261,7 @@ msgid "KRunner Settings"
 msgstr ""
 
 #: configdialog.cpp:51
-msgid "Runners"
+msgid "Available Features"
 msgstr ""
 
 #. i18n: tag label
@@ -259,12 +323,12 @@ msgid ""
 "suspend them."
 msgstr ""
 
-#: rc.cpp:64
+#: rc.cpp:66
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:65
+#: rc.cpp:67
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"

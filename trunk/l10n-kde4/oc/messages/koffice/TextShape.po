@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-22 05:32+0200\n"
+"POT-Creation-Date: 2008-07-29 08:34+0200\n"
 "PO-Revision-Date: 2008-01-12 13:47+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,9 +17,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 104
-#: TextShapeFactory.cpp:33 TextShapeFactory.cpp:40 rc.cpp:24 TextTool.cpp:1269
+#: TextShapeFactory.cpp:33 TextShapeFactory.cpp:40 TextTool.cpp:1264
 msgid "Text"
 msgstr "Tèxt"
 
@@ -106,17 +104,17 @@ msgstr ""
 msgid "Language"
 msgstr "Lenga"
 
-#: dialogs/SimpleStyleWidget.cpp:194
+#: dialogs/SimpleStyleWidget.cpp:173
 msgctxt "Short for LeftToRight"
 msgid "LTR"
 msgstr "LTR"
 
-#: dialogs/SimpleStyleWidget.cpp:197
+#: dialogs/SimpleStyleWidget.cpp:176
 msgctxt "Short for RightToLeft"
 msgid "RTL"
 msgstr ""
 
-#: dialogs/SimpleStyleWidget.cpp:201
+#: dialogs/SimpleStyleWidget.cpp:180
 msgctxt "Automatic direction detection"
 msgid "Auto"
 msgstr "Auto"
@@ -162,13 +160,53 @@ msgctxt "Text alignment"
 msgid "Centered"
 msgstr "Centrat"
 
-#: dialogs/StylesWidget.cpp:137
-msgid "New Style"
+#: dialogs/StylesWidget.cpp:125 dialogs/StylesWidget.cpp:139
+msgid "new style"
 msgstr ""
 
-#: dialogs/StylesWidget.cpp:137
-msgid "Enter style name:"
+#. i18n: tag string
+#. i18n: file ./dialogs/ParagraphGeneral.ui line 54
+#. i18n: tag string
+#. i18n: file ./dialogs/CharacterGeneral.ui line 54
+#. i18n: tag string
+#. i18n: file ./dialogs/NewStyleWidget.ui line 38
+#: dialogs/StylesWidget.cpp:126 rc.cpp:30 rc.cpp:238 rc.cpp:373
+msgid "Name:"
+msgstr "Nom :"
+
+#. i18n: tag string
+#. i18n: file ./dialogs/NewStyleWidget.ui line 61
+#: dialogs/StylesWidget.cpp:127 rc.cpp:379
+msgid "Paragraph style"
 msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./dialogs/NewStyleWidget.ui line 51
+#: dialogs/StylesWidget.cpp:129 rc.cpp:376
+msgid "Type:"
+msgstr "Tipe :"
+
+#. i18n: tag string
+#. i18n: file ./dialogs/NewStyleWidget.ui line 71
+#: dialogs/StylesWidget.cpp:130 rc.cpp:382
+msgid "Character style"
+msgstr ""
+
+#: dialogs/StylesWidget.cpp:134
+msgid "Create New Style"
+msgstr ""
+
+#: dialogs/StylesWidget.cpp:201
+#, fuzzy
+#| msgid "Paragraph"
+msgid "Edit Paragraph Style"
+msgstr "Paragraf"
+
+#: dialogs/StylesWidget.cpp:201
+#, fuzzy
+#| msgid "Character"
+msgid "Edit Character Style"
+msgstr "Caractèr"
 
 #: commands/ChangeListCommand.cpp:78 commands/ChangeListCommand.cpp:93
 msgid "Change List"
@@ -180,29 +218,29 @@ msgstr ""
 msgid "Paragraph tool"
 msgstr "Paragraf"
 
-#: ParagraphTool.cpp:84
+#: ParagraphTool.cpp:94
 msgid "Apply parent style to ruler"
 msgstr ""
 
-#: ParagraphTool.cpp:140
+#: ParagraphTool.cpp:144
 #, fuzzy
 #| msgid "Paragraph"
 msgid "Paragraph Style:"
 msgstr "Paragraf"
 
-#: ParagraphTool.cpp:143 ParagraphTool.cpp:358
+#: ParagraphTool.cpp:147 ParagraphTool.cpp:329
 msgid "n/a"
 msgstr ""
 
-#: ParagraphTool.cpp:147
+#: ParagraphTool.cpp:151
 msgid "Apply to all of paragraphs of this style"
 msgstr ""
 
-#: ParagraphTool.cpp:151
+#: ParagraphTool.cpp:155
 msgid "Enable Smooth Movement"
 msgstr ""
 
-#: ParagraphTool.cpp:212
+#: ParagraphTool.cpp:207
 #, fuzzy
 #| msgctxt "Inherit style"
 #| msgid "None"
@@ -211,12 +249,20 @@ msgstr "Pas cap"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/StylesWidget.ui line 19
+#: rc.cpp:3
+msgid "Show properties"
+msgstr ""
+
 #. i18n: tag string
-#. i18n: file ./dialogs/StylesWidget.ui line 29
+#. i18n: file ./dialogs/StylesWidget.ui line 22
+#. i18n: tag string
+#. i18n: file ./dialogs/StylesWidget.ui line 42
 #. i18n: tag string
 #. i18n: file ./dialogs/StylesWidget.ui line 52
 #. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget.ui line 82
+#. i18n: file ./dialogs/StylesWidget.ui line 62
+#. i18n: tag string
+#. i18n: file ./dialogs/SimpleStyleWidget.ui line 90
 #. i18n: tag string
 #. i18n: file ./dialogs/FontDecorations.ui line 47
 #. i18n: tag string
@@ -261,82 +307,24 @@ msgstr "Pas cap"
 #. i18n: file ./dialogs/ParagraphDecorations.ui line 55
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 136
-#: rc.cpp:3 rc.cpp:6 rc.cpp:9 rc.cpp:93 rc.cpp:145 rc.cpp:151 rc.cpp:160
-#: rc.cpp:163 rc.cpp:166 rc.cpp:169 rc.cpp:172 rc.cpp:175 rc.cpp:178
-#: rc.cpp:181 rc.cpp:256 rc.cpp:262 rc.cpp:271 rc.cpp:274 rc.cpp:277
-#: rc.cpp:280 rc.cpp:283 rc.cpp:286 rc.cpp:289 rc.cpp:292 rc.cpp:304
-#: rc.cpp:331
+#: rc.cpp:6 rc.cpp:9 rc.cpp:15 rc.cpp:21 rc.cpp:75 rc.cpp:136 rc.cpp:142
+#: rc.cpp:151 rc.cpp:154 rc.cpp:157 rc.cpp:160 rc.cpp:163 rc.cpp:166
+#: rc.cpp:169 rc.cpp:172 rc.cpp:247 rc.cpp:253 rc.cpp:262 rc.cpp:265
+#: rc.cpp:268 rc.cpp:271 rc.cpp:274 rc.cpp:277 rc.cpp:280 rc.cpp:283
+#: rc.cpp:295 rc.cpp:322
 msgid "..."
 msgstr "..."
 
 #. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 37
+#. i18n: file ./dialogs/StylesWidget.ui line 49
 #: rc.cpp:12
-#, fuzzy
-#| msgid "Font"
-msgid "Font:"
-msgstr "Poliça"
+msgid "Add a new style"
+msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 54
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 217
-#. i18n: tag string
-#. i18n: file ./dialogs/ParagraphGeneral.ui line 113
-#: rc.cpp:15 rc.cpp:36 rc.cpp:63
-msgid "Style:"
-msgstr "Estil :"
-
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 61
+#. i18n: file ./dialogs/StylesWidget.ui line 59
 #: rc.cpp:18
-msgid "Size:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 94
-#: rc.cpp:21
-#, fuzzy
-#| msgid "Colors"
-msgid "Colors:"
-msgstr "Colors"
-
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 111
-#. i18n: tag string
-#. i18n: file ./dialogs/ParagraphDecorations.ui line 31
-#: rc.cpp:27 rc.cpp:301 TextTool.cpp:330
-#, fuzzy
-#| msgid "Background color:"
-msgid "Background"
-msgstr "Color de fons :"
-
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 118
-#: rc.cpp:30
-#, fuzzy
-#| msgid "Alignment:"
-msgid "Align:"
-msgstr "Alinhament :"
-
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 178
-#: rc.cpp:33
-msgid "List Options"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 227
-#: rc.cpp:39
-#, fuzzy
-#| msgid "Indent"
-msgid "Indent:"
-msgstr "Alinèa"
-
-#. i18n: tag string
-#. i18n: file ./dialogs/SimpleStyleWidget_2.ui line 277
-#: rc.cpp:42
-msgid "Options..."
+msgid "Apply selected style to text"
 msgstr ""
 
 #. i18n: tag string
@@ -345,47 +333,45 @@ msgstr ""
 #. i18n: file ./dialogs/CharacterGeneral.ui line 35
 #. i18n: tag string
 #. i18n: file ./dialogs/NewStyleWidget.ui line 32
-#: rc.cpp:45 rc.cpp:241 rc.cpp:379
+#: rc.cpp:24 rc.cpp:232 rc.cpp:370
 msgid "General"
 msgstr "General"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphGeneral.ui line 47
-#: rc.cpp:48
+#: rc.cpp:27
 msgid "<b>Paragraph style properties</b>"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./dialogs/ParagraphGeneral.ui line 54
-#. i18n: tag string
-#. i18n: file ./dialogs/CharacterGeneral.ui line 54
-#. i18n: tag string
-#. i18n: file ./dialogs/NewStyleWidget.ui line 38
-#: rc.cpp:51 rc.cpp:247 rc.cpp:382
-msgid "Name:"
-msgstr "Nom :"
-
-#. i18n: tag string
 #. i18n: file ./dialogs/ParagraphGeneral.ui line 64
-#: rc.cpp:54
+#: rc.cpp:33
 msgid "Next style:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphGeneral.ui line 77
-#: rc.cpp:57
+#: rc.cpp:36
 msgid "Inherit style:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphGeneral.ui line 90
-#: rc.cpp:60
+#: rc.cpp:39
 msgid "Use named character style"
 msgstr ""
 
 #. i18n: tag string
+#. i18n: file ./dialogs/ParagraphGeneral.ui line 113
+#. i18n: tag string
+#. i18n: file ./dialogs/SimpleStyleWidget.ui line 235
+#: rc.cpp:42 rc.cpp:81
+msgid "Style:"
+msgstr "Estil :"
+
+#. i18n: tag string
 #. i18n: file ./dialogs/ParagraphGeneral.ui line 126
-#: rc.cpp:66
+#: rc.cpp:45
 msgid "Include in table of contents"
 msgstr ""
 
@@ -399,7 +385,7 @@ msgstr ""
 #. i18n: file ./dialogs/CharacterGeneral.ui line 67
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 186
-#: rc.cpp:69 rc.cpp:114 rc.cpp:226 rc.cpp:250 rc.cpp:340
+#: rc.cpp:48 rc.cpp:105 rc.cpp:217 rc.cpp:241 rc.cpp:331
 msgid "Preview"
 msgstr "Ulhada"
 
@@ -407,7 +393,7 @@ msgstr "Ulhada"
 #. i18n: file ./dialogs/FontLayoutTab.ui line 31
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterStyleOptions.ui line 31
-#: rc.cpp:72 rc.cpp:190
+#: rc.cpp:51 rc.cpp:181
 msgid "Position"
 msgstr "Posicion"
 
@@ -415,7 +401,7 @@ msgstr "Posicion"
 #. i18n: file ./dialogs/FontLayoutTab.ui line 81
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterStyleOptions.ui line 81
-#: rc.cpp:75 rc.cpp:193
+#: rc.cpp:54 rc.cpp:184
 msgid "Offset:"
 msgstr ""
 
@@ -423,7 +409,7 @@ msgstr ""
 #. i18n: file ./dialogs/FontLayoutTab.ui line 91
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterStyleOptions.ui line 91
-#: rc.cpp:78 rc.cpp:196
+#: rc.cpp:57 rc.cpp:187
 msgid "Custom"
 msgstr "Personalisat"
 
@@ -433,7 +419,7 @@ msgstr "Personalisat"
 #. i18n: file ./dialogs/CharacterStyleOptions.ui line 98
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 78
-#: rc.cpp:81 rc.cpp:199 rc.cpp:361
+#: rc.cpp:60 rc.cpp:190 rc.cpp:352
 msgid "Normal"
 msgstr "Normal"
 
@@ -441,7 +427,7 @@ msgstr "Normal"
 #. i18n: file ./dialogs/FontLayoutTab.ui line 108
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterStyleOptions.ui line 108
-#: rc.cpp:84 rc.cpp:202 TextTool.cpp:185
+#: rc.cpp:63 rc.cpp:193 TextTool.cpp:185
 msgid "Superscript"
 msgstr "Suscrich"
 
@@ -449,7 +435,7 @@ msgstr "Suscrich"
 #. i18n: file ./dialogs/FontLayoutTab.ui line 115
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterStyleOptions.ui line 115
-#: rc.cpp:87 rc.cpp:205 TextTool.cpp:190
+#: rc.cpp:66 rc.cpp:196 TextTool.cpp:190
 msgid "Subscript"
 msgstr "Soscrich"
 
@@ -457,88 +443,112 @@ msgstr "Soscrich"
 #. i18n: file ./dialogs/FontLayoutTab.ui line 125
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterStyleOptions.ui line 125
-#: rc.cpp:90 rc.cpp:208
+#: rc.cpp:69 rc.cpp:199
 msgid "Automatic hyphenation"
 msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./dialogs/SimpleStyleWidget.ui line 40
+#: rc.cpp:72
+#, fuzzy
+#| msgid "Indent"
+msgid "Indent:"
+msgstr "Alinèa"
+
+#. i18n: tag string
+#. i18n: file ./dialogs/SimpleStyleWidget.ui line 228
+#: rc.cpp:78
+#, fuzzy
+#| msgid "Alignment:"
+msgid "Align:"
+msgstr "Alinhament :"
+
+#. i18n: tag string
+#. i18n: file ./dialogs/SimpleStyleWidget.ui line 261
+#: rc.cpp:84
+#, fuzzy
+#| msgid "Style:"
+msgid "List Style:"
+msgstr "Estil :"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 13
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 94
-#: rc.cpp:96 rc.cpp:117
+#: rc.cpp:87 rc.cpp:108
 msgid "<p><ul><li><b>Single</b>: The normal linespacing</li></ul></p> "
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 19
-#: rc.cpp:99
+#: rc.cpp:90
 msgid "Indent"
 msgstr "Alinèa"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 25
-#: rc.cpp:102
+#: rc.cpp:93
 msgid "Left:"
 msgstr "Esquèrra:"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 51
-#: rc.cpp:105
+#: rc.cpp:96
 msgid "Right:"
 msgstr "Drecha:"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 64
-#: rc.cpp:108
+#: rc.cpp:99
 msgid "First Line:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 77
-#: rc.cpp:111
+#: rc.cpp:102
 msgid "Auto-infer from text size"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 97
-#: rc.cpp:120
+#: rc.cpp:111
 msgid "Line Spacing"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 151
-#: rc.cpp:124
+#: rc.cpp:115
 #, no-c-format
 msgid " %"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 176
-#: rc.cpp:127
+#: rc.cpp:118
 msgid "Use Font Metrics:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 193
-#: rc.cpp:130
+#: rc.cpp:121
 msgid "Minimum:"
 msgstr "Minimum :"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 224
-#: rc.cpp:133
+#: rc.cpp:124
 msgid "Paragraph Space"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 230
-#: rc.cpp:136
+#: rc.cpp:127
 msgid "Before:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphIndentSpacing.ui line 256
-#: rc.cpp:139
+#: rc.cpp:130
 msgid "After:"
 msgstr "Aprèp :"
 
@@ -546,7 +556,7 @@ msgstr "Aprèp :"
 #. i18n: file ./dialogs/FontDecorations.ui line 22
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterDecorations.ui line 22
-#: rc.cpp:142 rc.cpp:253
+#: rc.cpp:133 rc.cpp:244
 msgid "Colors"
 msgstr "Colors"
 
@@ -554,7 +564,7 @@ msgstr "Colors"
 #. i18n: file ./dialogs/FontDecorations.ui line 60
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterDecorations.ui line 60
-#: rc.cpp:148 rc.cpp:259
+#: rc.cpp:139 rc.cpp:250
 msgid "Text color:"
 msgstr ""
 
@@ -562,7 +572,7 @@ msgstr ""
 #. i18n: file ./dialogs/FontDecorations.ui line 80
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterDecorations.ui line 80
-#: rc.cpp:154 rc.cpp:265
+#: rc.cpp:145 rc.cpp:256
 msgid "Background color:"
 msgstr "Color de fons :"
 
@@ -570,7 +580,7 @@ msgstr "Color de fons :"
 #. i18n: file ./dialogs/FontDecorations.ui line 96
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterDecorations.ui line 96
-#: rc.cpp:157 rc.cpp:268
+#: rc.cpp:148 rc.cpp:259
 msgid "Text Shadow"
 msgstr ""
 
@@ -578,7 +588,7 @@ msgstr ""
 #. i18n: file ./dialogs/FontDecorations.ui line 251
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterDecorations.ui line 251
-#: rc.cpp:184 rc.cpp:295
+#: rc.cpp:175 rc.cpp:286
 msgid "Color:"
 msgstr "Color :"
 
@@ -586,73 +596,81 @@ msgstr "Color :"
 #. i18n: file ./dialogs/FontDecorations.ui line 264
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterDecorations.ui line 264
-#: rc.cpp:187 rc.cpp:298
+#: rc.cpp:178 rc.cpp:289
 msgid "Distance:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 16
-#: rc.cpp:211
+#: rc.cpp:202
 msgid "Alignment"
 msgstr "Alinhament"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 22
-#: rc.cpp:214
+#: rc.cpp:205
 msgid "Left"
 msgstr "Esquèrra"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 29
-#: rc.cpp:217
+#: rc.cpp:208
 msgid "Center"
 msgstr "Centre"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 36
-#: rc.cpp:220
+#: rc.cpp:211
 msgid "Right"
 msgstr "Drecha"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 43
-#: rc.cpp:223
+#: rc.cpp:214
 msgid "Justify"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 60
-#: rc.cpp:229
+#: rc.cpp:220
 msgid "Behavior at End of Frame/Page"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 66
-#: rc.cpp:232
+#: rc.cpp:223
 msgid "Keep lines together"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 73
-#: rc.cpp:235
+#: rc.cpp:226
 msgid "Insert break before paragraph"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphLayout.ui line 80
-#: rc.cpp:238
+#: rc.cpp:229
 msgid "Insert break after paragraph"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterGeneral.ui line 47
-#: rc.cpp:244
+#: rc.cpp:235
 msgid "<b>Character style properties</b>"
 msgstr ""
 
 #. i18n: tag string
+#. i18n: file ./dialogs/ParagraphDecorations.ui line 31
+#: rc.cpp:292 TextTool.cpp:330
+#, fuzzy
+#| msgid "Background color:"
+msgid "Background"
+msgstr "Color de fons :"
+
+#. i18n: tag string
 #. i18n: file ./dialogs/ParagraphDecorations.ui line 65
-#: rc.cpp:307
+#: rc.cpp:298
 #, fuzzy
 #| msgid "Background color:"
 msgid "Background color"
@@ -660,145 +678,127 @@ msgstr "Color de fons :"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 36
-#: rc.cpp:310
+#: rc.cpp:301
 msgid "Prefix:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 49
-#: rc.cpp:313
+#: rc.cpp:304
 msgid "Suffix:"
 msgstr "Sufix :"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 62
-#: rc.cpp:316
+#: rc.cpp:307
 msgid "Start at:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 85
-#: rc.cpp:319
+#: rc.cpp:310
 msgid "Alignment:"
 msgstr "Alinhament :"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 98
-#: rc.cpp:322
+#: rc.cpp:313
 msgid "Depth:"
 msgstr "Prigondor :"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 111
-#: rc.cpp:325
+#: rc.cpp:316
 msgid "Display Levels:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 126
-#: rc.cpp:328
+#: rc.cpp:319
 msgid "Custom character:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 156
-#: rc.cpp:334
+#: rc.cpp:325
 msgid "Restart numbering at this paragraph"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/ParagraphBulletsNumbers.ui line 176
-#: rc.cpp:337
+#: rc.cpp:328
 msgid "Letter Synchronization"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/StyleManager.ui line 62
-#: rc.cpp:343
+#: rc.cpp:334
 msgid "&New"
 msgstr "&Novèl"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/StyleManager.ui line 69
-#: rc.cpp:346
+#: rc.cpp:337
 msgid "Delete"
 msgstr "Suprimir"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/LanguageTab.ui line 18
-#: rc.cpp:349
+#: rc.cpp:340
 msgid "Quick search:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 16
-#: rc.cpp:352
+#: rc.cpp:343
 msgid "Underlining:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 46
-#: rc.cpp:355
+#: rc.cpp:346
 msgid "Strikethrough"
 msgstr "Barrat"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 72
-#: rc.cpp:358
+#: rc.cpp:349
 msgid "Capitalization"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 88
-#: rc.cpp:364
+#: rc.cpp:355
 msgid "Uppercase"
 msgstr "Majusculas"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 98
-#: rc.cpp:367
+#: rc.cpp:358
 msgid "Lowercase"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 108
-#: rc.cpp:370
+#: rc.cpp:361
 msgid "Small Caps"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 118
-#: rc.cpp:373
+#: rc.cpp:364
 msgid "horizontalSpacer"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./dialogs/CharacterHighlighting.ui line 141
-#: rc.cpp:376
+#: rc.cpp:367
 msgid "Capitalize"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./dialogs/NewStyleWidget.ui line 51
-#: rc.cpp:385
-msgid "Type:"
-msgstr "Tipe :"
-
-#. i18n: tag string
-#. i18n: file ./dialogs/NewStyleWidget.ui line 61
-#: rc.cpp:388
-msgid "Paragraph style"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./dialogs/NewStyleWidget.ui line 71
-#: rc.cpp:391
-msgid "Character style"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file ./dialogs/NewStyleWidget.ui line 78
-#: rc.cpp:394
+#: rc.cpp:385
 msgid "Create"
 msgstr "Crear"
 
@@ -1083,14 +1083,12 @@ msgid "Abc"
 msgstr "Arab"
 
 #: TextTool.cpp:1235
-msgid "¶"
-msgstr ""
+#, fuzzy
+#| msgid "Style"
+msgid "Styles"
+msgstr "Estil"
 
-#: TextTool.cpp:1237
-msgid "T"
-msgstr ""
-
-#: TextTool.cpp:1694
+#: TextTool.cpp:1689
 msgid "Key press"
 msgstr ""
 
@@ -1101,6 +1099,16 @@ msgstr ""
 #: TextToolFactory.cpp:29
 msgid "Text editing tool"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgid "Font:"
+#~ msgstr "Poliça"
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "Colors:"
+#~ msgstr "Colors"
 
 #~ msgid "Rename Bookmark"
 #~ msgstr "Renomar lo favorit"
@@ -1115,9 +1123,3 @@ msgstr ""
 #~| msgid "Normal"
 #~ msgid "Form"
 #~ msgstr "Normal"
-
-#~ msgid "Style"
-#~ msgstr "Estil"
-
-#~ msgid "Character"
-#~ msgstr "Caractèr"

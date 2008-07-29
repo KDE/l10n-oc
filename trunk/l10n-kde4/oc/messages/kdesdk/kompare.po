@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kompare\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-16 18:20+0200\n"
+"POT-Creation-Date: 2008-07-29 08:30+0200\n"
 "PO-Revision-Date: 2008-01-12 14:50+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -28,7 +28,8 @@ msgstr "Visualizacion"
 msgid "View Settings"
 msgstr ""
 
-#: komparepart/kompareprefdlg.cpp:49 kompareurldialog.cpp:47
+#: komparepart/kompareprefdlg.cpp:49 libdialogpages/diffpage.cpp:229
+#: kompareurldialog.cpp:47
 msgid "Diff"
 msgstr ""
 
@@ -263,9 +264,9 @@ msgstr ""
 msgid "Number of spaces to convert a tab character to:"
 msgstr ""
 
-#: libdialogpages/viewpage.cpp:116
-msgid "A&ppearance"
-msgstr ""
+#: libdialogpages/viewpage.cpp:116 kompareurldialog.cpp:55
+msgid "Appearance"
+msgstr "Aparéncia"
 
 #: libdialogpages/viewpage.cpp:124
 msgid "Text Font"
@@ -280,8 +281,10 @@ msgid "Size:"
 msgstr "Talha :"
 
 #: libdialogpages/viewpage.cpp:140
-msgid "&Fonts"
-msgstr ""
+#, fuzzy
+#| msgid "Font:"
+msgid "Fonts"
+msgstr "Poliça :"
 
 #: libdialogpages/diffpage.cpp:218
 msgid "Diff Program"
@@ -292,10 +295,6 @@ msgid ""
 "You can select a different diff program here. On Solaris the standard diff "
 "program does not support all the options that the GNU version does. This way "
 "you can select that version."
-msgstr ""
-
-#: libdialogpages/diffpage.cpp:229
-msgid "&Diff"
 msgstr ""
 
 #: libdialogpages/diffpage.cpp:241
@@ -326,9 +325,11 @@ msgid ""
 "unnecessarily."
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:275
-msgid "&Format"
-msgstr ""
+#. i18n: tag string
+#. i18n: file komparepart/komparesaveoptionsbase.ui line 198
+#: libdialogpages/diffpage.cpp:275 rc.cpp:62
+msgid "Format"
+msgstr "Format"
 
 #: libdialogpages/diffpage.cpp:289
 msgid "General"
@@ -426,9 +427,11 @@ msgstr ""
 msgid "This option corresponds to the -E diff option."
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:349
-msgid "O&ptions"
-msgstr "O&pcions"
+#. i18n: tag string
+#. i18n: file komparepart/komparesaveoptionsbase.ui line 102
+#: libdialogpages/diffpage.cpp:349 rc.cpp:32
+msgid "Options"
+msgstr "Opcions"
 
 #: libdialogpages/diffpage.cpp:360
 msgid "File Pattern to Exclude"
@@ -440,35 +443,35 @@ msgid ""
 "right or select entries from the list."
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:364
+#: libdialogpages/diffpage.cpp:367
 msgid ""
 "Here you can enter or remove a shell pattern or select one or more entries "
 "from the list."
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:371
+#: libdialogpages/diffpage.cpp:374
 msgid "File with Filenames to Exclude"
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:373
+#: libdialogpages/diffpage.cpp:376
 msgid ""
 "If this is checked you can enter a filename in the combo box on the right."
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:376
+#: libdialogpages/diffpage.cpp:379
 msgid ""
 "Here you can enter the URL of a file with shell patterns to ignore during "
 "the comparison of the folders."
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:379
+#: libdialogpages/diffpage.cpp:382
 msgid ""
 "Any file you select in the dialog that pops up when you click it will be put "
 "in the dialog to the left of this button."
 msgstr ""
 
-#: libdialogpages/diffpage.cpp:387
-msgid "&Exclude"
+#: libdialogpages/diffpage.cpp:390
+msgid "Exclude"
 msgstr ""
 
 #: libdialogpages/filespage.cpp:53
@@ -600,10 +603,6 @@ msgstr ""
 #: kompareurldialog.cpp:49
 msgid "Here you can change the options for comparing the files."
 msgstr ""
-
-#: kompareurldialog.cpp:55
-msgid "Appearance"
-msgstr "Aparéncia"
 
 #: kompareurldialog.cpp:57
 msgid "Here you can change the options for the view."
@@ -740,12 +739,6 @@ msgid "cd dir && diff -udHprNa -- source destination"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file komparepart/komparesaveoptionsbase.ui line 102
-#: rc.cpp:32
-msgid "Options"
-msgstr "Opcions"
-
-#. i18n: tag string
 #. i18n: file komparepart/komparesaveoptionsbase.ui line 114
 #: rc.cpp:35
 msgid "Look for smaller changes"
@@ -798,12 +791,6 @@ msgstr ""
 #: rc.cpp:59
 msgid "Treat new files as empty"
 msgstr ""
-
-#. i18n: tag string
-#. i18n: file komparepart/komparesaveoptionsbase.ui line 198
-#: rc.cpp:62
-msgid "Format"
-msgstr "Format"
 
 #. i18n: tag string
 #. i18n: file komparepart/komparesaveoptionsbase.ui line 248
@@ -973,7 +960,7 @@ msgid ""
 "</qt>"
 msgstr ""
 
-#: libdiff2/komparemodellist.cpp:309 libdiff2/komparemodellist.cpp:593
+#: libdiff2/komparemodellist.cpp:309 libdiff2/komparemodellist.cpp:596
 msgid "Could not open a temporary file."
 msgstr ""
 
@@ -997,14 +984,17 @@ msgid ""
 "copy it to the right place.</qt>"
 msgstr ""
 
-#: libdiff2/komparemodellist.cpp:445 libdiff2/komparemodellist.cpp:558
+#: libdiff2/komparemodellist.cpp:448 libdiff2/komparemodellist.cpp:561
 msgid "Could not parse diff output."
 msgstr ""
 
-#: libdiff2/komparemodellist.cpp:461
+#: libdiff2/komparemodellist.cpp:464
 msgid "The files are identical."
 msgstr ""
 
-#: libdiff2/komparemodellist.cpp:625
+#: libdiff2/komparemodellist.cpp:628
 msgid "Could not write to the temporary file."
 msgstr ""
+
+#~ msgid "O&ptions"
+#~ msgstr "O&pcions"
