@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kres_groupwise\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-20 07:38+0200\n"
+"POT-Creation-Date: 2008-07-30 05:48+0200\n"
 "PO-Revision-Date: 2008-01-12 13:46+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,11 +17,24 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: kabc_resourcegroupwise.cpp:310
-msgid "Downloading addressbook"
+#: kabc_resourcegroupwise.cpp:261
+#, kde-format
+msgid "Loading GroupWise resource %1"
 msgstr ""
 
-#: kabc_resourcegroupwise.cpp:469
+#: kabc_resourcegroupwise.cpp:335
+#, fuzzy
+#| msgid "Address Book"
+msgid "Fetching System Address Book"
+msgstr "Quasernet d'adreças"
+
+#: kabc_resourcegroupwise.cpp:345
+#, fuzzy
+#| msgid "Address Book"
+msgid "Fetching User Address Books"
+msgstr "Quasernet d'adreças"
+
+#: kabc_resourcegroupwise.cpp:455 kabc_resourcegroupwise.cpp:468
 msgid "Updating System Address Book"
 msgstr ""
 
@@ -74,8 +87,7 @@ msgid "Error parsing calendar data."
 msgstr ""
 
 #: kcal_resourcegroupwise.cpp:248
-msgid ""
-"Unable to login to server: TODO: return whole error list; see console output"
+msgid "Unable to login to server: "
 msgstr ""
 
 #: kcal_resourcegroupwise.cpp:282
@@ -94,13 +106,13 @@ msgstr "Suprimit"
 msgid "View User Settings"
 msgstr ""
 
-#: kcal_resourcegroupwiseconfig.cpp:128
+#: kcal_resourcegroupwiseconfig.cpp:129
 msgid "GroupWise Settings"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file groupwisesettingswidgetbase.ui line 23
-#: rc.cpp:3 soap/contactconverter.cpp:259
+#: rc.cpp:3 soap/contactconverter.cpp:261
 msgid "Group"
 msgstr "Grop"
 
@@ -126,7 +138,7 @@ msgstr "Varrolhat"
 #. i18n: file kresources_kabc_groupwise.kcfg line 9
 #. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 9
-#: rc.cpp:15 rc.cpp:57
+#: rc.cpp:15 rc.cpp:60
 msgid "Server URL"
 msgstr ""
 
@@ -134,7 +146,7 @@ msgstr ""
 #. i18n: file kresources_kabc_groupwise.kcfg line 10
 #. i18n: tag whatsthis
 #. i18n: file kresources_kcal_groupwise.kcfg line 10
-#: rc.cpp:18 rc.cpp:60
+#: rc.cpp:18 rc.cpp:63
 msgid "URL of SOAP interface of GroupWise server"
 msgstr ""
 
@@ -142,7 +154,7 @@ msgstr ""
 #. i18n: file kresources_kabc_groupwise.kcfg line 13
 #. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 13
-#: rc.cpp:21 rc.cpp:63
+#: rc.cpp:21 rc.cpp:66
 msgid "User Name"
 msgstr "Nom d'utilizaire"
 
@@ -150,7 +162,7 @@ msgstr "Nom d'utilizaire"
 #. i18n: file kresources_kabc_groupwise.kcfg line 16
 #. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 16
-#: rc.cpp:24 rc.cpp:66 soap/soapdebug.cpp:46
+#: rc.cpp:24 rc.cpp:69 soap/soapdebug.cpp:46
 msgid "Password"
 msgstr "Mot de pas"
 
@@ -215,49 +227,55 @@ msgid "The last sequence number of the GW System Address Book held locally"
 msgstr ""
 
 #. i18n: tag label
+#. i18n: file kresources_kabc_groupwise.kcfg line 51
+#: rc.cpp:57
+msgid "Applications which should load the System Address Book"
+msgstr ""
+
+#. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 19
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "TCP Port"
 msgstr ""
 
-#: rc.cpp:70
+#: rc.cpp:73
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:71
+#: rc.cpp:74
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
 
-#: soap/contactconverter.cpp:246
+#: soap/contactconverter.cpp:249
 msgid "Resource"
 msgstr "Ressorga"
 
-#: soap/groupwiseserver.cpp:132
+#: soap/groupwiseserver.cpp:134 soap/groupwiseserver.cpp:145
 #, kde-format
 msgid "Connect failed: %1."
 msgstr ""
 
-#: soap/groupwiseserver.cpp:320
+#: soap/groupwiseserver.cpp:336
 msgid "Login failed, but the GroupWise server did not report an error"
 msgstr ""
 
-#: soap/groupwiseserver.cpp:1360
+#: soap/groupwiseserver.cpp:1433
 msgid "SSL Error"
 msgstr ""
 
-#: soap/gwjobs.cpp:110
+#: soap/gwjobs.cpp:123
 #, kde-format
 msgid "Unable to read GroupWise address book: %1"
 msgstr ""
 
-#: soap/gwjobs.cpp:577
+#: soap/gwjobs.cpp:624
 #, kde-format
 msgid "Unable to read GroupWise address book: reading %1 returned no items."
 msgstr ""
 
-#: soap/incidenceconverter.cpp:217
+#: soap/incidenceconverter.cpp:233
 msgid "Novell GroupWise does not support locations for to-dos."
 msgstr ""
 
