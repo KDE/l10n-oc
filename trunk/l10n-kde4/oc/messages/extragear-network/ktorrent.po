@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-31 08:27+0200\n"
+"POT-Creation-Date: 2008-08-03 08:24+0200\n"
 "PO-Revision-Date: 2008-01-12 14:56+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -363,7 +363,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 234
 #: ktorrent/viewmanager.cpp:416 rc.cpp:1632 rc.cpp:1719 rc.cpp:1782
-#: plugins/infowidget/peerviewmodel.cpp:280
+#: plugins/infowidget/peerviewmodel.cpp:286
 msgid "DHT"
 msgstr ""
 
@@ -568,7 +568,7 @@ msgid "Adam Forsyth"
 msgstr ""
 
 #: ktorrent/main.cpp:103
-msgid "File prioritization"
+msgid "File prioritization and some other patches"
 msgstr ""
 
 #: ktorrent/main.cpp:104
@@ -840,7 +840,7 @@ msgstr "Nom"
 msgid "Status"
 msgstr "Estatut"
 
-#: ktorrent/viewmodel.cpp:357 plugins/infowidget/peerviewmodel.cpp:284
+#: ktorrent/viewmodel.cpp:357 plugins/infowidget/peerviewmodel.cpp:290
 #: plugins/infowidget/webseedsmodel.cpp:126
 msgid "Downloaded"
 msgstr "Descargat"
@@ -850,16 +850,16 @@ msgstr "Descargat"
 msgid "Size"
 msgstr "Talha"
 
-#: ktorrent/viewmodel.cpp:359 plugins/infowidget/peerviewmodel.cpp:285
+#: ktorrent/viewmodel.cpp:359 plugins/infowidget/peerviewmodel.cpp:291
 msgid "Uploaded"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:360 plugins/infowidget/peerviewmodel.cpp:275
+#: ktorrent/viewmodel.cpp:360 plugins/infowidget/peerviewmodel.cpp:281
 #: plugins/infowidget/chunkdownloadmodel.cpp:192
 msgid "Down Speed"
 msgstr ""
 
-#: ktorrent/viewmodel.cpp:361 plugins/infowidget/peerviewmodel.cpp:276
+#: ktorrent/viewmodel.cpp:361 plugins/infowidget/peerviewmodel.cpp:282
 msgid "Up Speed"
 msgstr ""
 
@@ -1262,7 +1262,7 @@ msgid "Running"
 msgstr "En foncionament"
 
 #: ktorrent/queuemanagermodel.cpp:142
-#: libbtcore/torrent/torrentcontrol.cpp:1461
+#: libbtcore/torrent/torrentcontrol.cpp:1474
 msgid "Queued"
 msgstr ""
 
@@ -3020,7 +3020,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/qmpref.ui line 182
-#: rc.cpp:674 libbtcore/torrent/torrentcontrol.cpp:1449
+#: rc.cpp:674 libbtcore/torrent/torrentcontrol.cpp:1462
 msgid "Seeding"
 msgstr ""
 
@@ -6192,60 +6192,100 @@ msgid ""
 "You will lose all data in these files, are you sure you want to do this ?"
 msgstr ""
 
-#: plugins/infowidget/peerviewmodel.cpp:143
+#: plugins/infowidget/peerviewmodel.cpp:145
 msgctxt "Choked"
 msgid "Yes"
 msgstr "Òc"
 
-#: plugins/infowidget/peerviewmodel.cpp:143
+#: plugins/infowidget/peerviewmodel.cpp:145
 msgctxt "Not choked"
 msgid "No"
 msgstr "Non"
 
-#: plugins/infowidget/peerviewmodel.cpp:144
+#: plugins/infowidget/peerviewmodel.cpp:146
 msgctxt "Snubbed"
 msgid "Yes"
 msgstr "Òc"
 
-#: plugins/infowidget/peerviewmodel.cpp:144
+#: plugins/infowidget/peerviewmodel.cpp:146
 msgctxt "Not snubbed"
 msgid "No"
 msgstr "Non"
 
-#: plugins/infowidget/peerviewmodel.cpp:272
+#: plugins/infowidget/peerviewmodel.cpp:154
+#, fuzzy
+#| msgctxt "Choked"
+#| msgid "Yes"
+msgctxt "Interested"
+msgid "Yes"
+msgstr "Òc"
+
+#: plugins/infowidget/peerviewmodel.cpp:154
+#, fuzzy
+#| msgctxt "Not choked"
+#| msgid "No"
+msgctxt "Not Interested"
+msgid "No"
+msgstr "Non"
+
+#: plugins/infowidget/peerviewmodel.cpp:155
+#, fuzzy
+#| msgctxt "Choked"
+#| msgid "Yes"
+msgctxt "Interesting"
+msgid "Yes"
+msgstr "Òc"
+
+#: plugins/infowidget/peerviewmodel.cpp:155
+#, fuzzy
+#| msgctxt "Not choked"
+#| msgid "No"
+msgctxt "Not Interesting"
+msgid "No"
+msgstr "Non"
+
+#: plugins/infowidget/peerviewmodel.cpp:278
 msgid "IP Address"
 msgstr "Adreça IP"
 
-#: plugins/infowidget/peerviewmodel.cpp:273
+#: plugins/infowidget/peerviewmodel.cpp:279
 msgid "Country"
 msgstr "País"
 
-#: plugins/infowidget/peerviewmodel.cpp:274
+#: plugins/infowidget/peerviewmodel.cpp:280
 msgid "Client"
 msgstr ""
 
-#: plugins/infowidget/peerviewmodel.cpp:277
+#: plugins/infowidget/peerviewmodel.cpp:283
 msgid "Choked"
 msgstr ""
 
-#: plugins/infowidget/peerviewmodel.cpp:278
+#: plugins/infowidget/peerviewmodel.cpp:284
 msgid "Snubbed"
 msgstr ""
 
-#: plugins/infowidget/peerviewmodel.cpp:279
+#: plugins/infowidget/peerviewmodel.cpp:285
 msgid "Availability"
 msgstr "Disponibilitat"
 
-#: plugins/infowidget/peerviewmodel.cpp:281
+#: plugins/infowidget/peerviewmodel.cpp:287
 msgid "Score"
 msgstr "Marca"
 
-#: plugins/infowidget/peerviewmodel.cpp:282
+#: plugins/infowidget/peerviewmodel.cpp:288
 msgid "Upload Slot"
 msgstr ""
 
-#: plugins/infowidget/peerviewmodel.cpp:283
+#: plugins/infowidget/peerviewmodel.cpp:289
 msgid "Requests"
+msgstr ""
+
+#: plugins/infowidget/peerviewmodel.cpp:292
+msgid "Interested"
+msgstr ""
+
+#: plugins/infowidget/peerviewmodel.cpp:293
+msgid "Interesting"
 msgstr ""
 
 #: plugins/infowidget/infowidgetplugin.cpp:79
@@ -7197,42 +7237,42 @@ msgstr ""
 msgid "Parse Error"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:532
+#: libbtcore/torrent/torrentcontrol.cpp:545
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>.<br/>The torrent is "
 "probably corrupt or is not a torrent file."
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:561
+#: libbtcore/torrent/torrentcontrol.cpp:574
 msgid ""
 "An error occurred while loading the torrent.<br/>The torrent is probably "
 "corrupt or is not a torrent file."
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:570
+#: libbtcore/torrent/torrentcontrol.cpp:583
 #, kde-format
 msgid "Unable to create %1 : %2"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:585
+#: libbtcore/torrent/torrentcontrol.cpp:598
 #, kde-format
 msgid ""
 "You are already downloading this torrent %1, the list of trackers of both "
 "torrents has been merged."
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:589
+#: libbtcore/torrent/torrentcontrol.cpp:602
 #, kde-format
 msgid "You are already downloading the torrent %1"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:689
+#: libbtcore/torrent/torrentcontrol.cpp:702
 #, kde-format
 msgid "Cannot migrate %1 : %2"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1350
+#: libbtcore/torrent/torrentcontrol.cpp:1363
 #, kde-format
 msgid ""
 "The torrent %1 was started with a previous version of KTorrent. To make sure "
@@ -7241,48 +7281,48 @@ msgid ""
 "press cancel, we will select your home directory."
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1355
+#: libbtcore/torrent/torrentcontrol.cpp:1368
 msgid "Select Folder to Save To"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1443
+#: libbtcore/torrent/torrentcontrol.cpp:1456
 msgid "Not started"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1445
+#: libbtcore/torrent/torrentcontrol.cpp:1458
 msgid "Download completed"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1447
+#: libbtcore/torrent/torrentcontrol.cpp:1460
 msgid "Seeding completed"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1451
+#: libbtcore/torrent/torrentcontrol.cpp:1464
 msgid "Downloading"
 msgstr "Descarga"
 
-#: libbtcore/torrent/torrentcontrol.cpp:1453
+#: libbtcore/torrent/torrentcontrol.cpp:1466
 msgid "Stalled"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1455
+#: libbtcore/torrent/torrentcontrol.cpp:1468
 #: libbtcore/torrent/peersourcemanager.cpp:162
 msgid "Stopped"
 msgstr "Arrestat"
 
-#: libbtcore/torrent/torrentcontrol.cpp:1457
+#: libbtcore/torrent/torrentcontrol.cpp:1470
 msgid "Error: "
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1459
+#: libbtcore/torrent/torrentcontrol.cpp:1472
 msgid "Allocating diskspace"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1463
+#: libbtcore/torrent/torrentcontrol.cpp:1476
 msgid "Checking data"
 msgstr ""
 
-#: libbtcore/torrent/torrentcontrol.cpp:1465
+#: libbtcore/torrent/torrentcontrol.cpp:1478
 msgid "Stopped. No space left on device."
 msgstr ""
 
