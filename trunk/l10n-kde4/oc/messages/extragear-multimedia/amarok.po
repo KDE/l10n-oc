@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-10 08:36+0200\n"
+"POT-Creation-Date: 2008-08-11 08:35+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -264,7 +264,7 @@ msgstr ""
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:175
 #: mediadevice/generic/genericmediadevice.cpp:523
 #: playlist/PlaylistGraphicsItem.cpp:350
-#: collectionscanner/CollectionScanner.cpp:584
+#: collectionscanner/CollectionScanner.cpp:585
 #: covermanager/CoverManager.cpp:345 covermanager/CoverManager.cpp:904
 msgid "Various Artists"
 msgstr "Mai d'un artista"
@@ -367,7 +367,7 @@ msgid ""
 "file. For further assistance join us at #amarok on irc.freenode.net.</p>"
 msgstr ""
 
-#: context/ContextView.cpp:748
+#: context/ContextView.cpp:745
 #, fuzzy
 #| msgid "Widgets"
 msgid "Add Applets"
@@ -878,6 +878,10 @@ msgstr "Largor"
 msgid "Service Info (No service active)"
 msgstr ""
 
+#: context/AmarokToolBox.cpp:458
+msgid "Hide menu"
+msgstr ""
+
 #: context/containments/ColumnContainment.cpp:126
 #, fuzzy
 #| msgid "Widgets"
@@ -1245,6 +1249,16 @@ msgstr "A_vançat"
 msgid "Search Scripts"
 msgstr ""
 
+#: dialogs/TagDialog.cpp:400
+msgid "No filename scheme to extract tags from"
+msgstr ""
+
+#: dialogs/TagDialog.cpp:400
+msgid ""
+"Please choose a filename scheme to describe the layout of the filename(s) to "
+"extract the tags."
+msgstr ""
+
 #: dialogs/TagDialog.cpp:460
 msgid "Generating audio fingerprint..."
 msgstr ""
@@ -1259,7 +1273,7 @@ msgstr ""
 msgid "The track was not found in the MusicBrainz database."
 msgstr ""
 
-#: dialogs/TagDialog.cpp:545
+#: dialogs/TagDialog.cpp:545 browsers/playlistbrowser/PodcastModel.cpp:241
 msgid "Summary"
 msgstr "Resumit"
 
@@ -1512,6 +1526,8 @@ msgstr ""
 #: browsers/collectionbrowser/CollectionWidget.cpp:71
 #: browsers/servicebrowser/magnatunestore/MagnatuneStore.cpp:175
 #: browsers/servicebrowser/jamendo/JamendoService.cpp:134
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:86
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:292
 #: mediadevice/ifp/ifpmediadevice.cpp:402 rc.cpp:905
 #: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:519
 #: widgets/TokenListWidget.cpp:39 widgets/FilenameLayoutWidget.cpp:289
@@ -1525,7 +1541,9 @@ msgstr "Album"
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:545
 #: browsers/collectionbrowser/CollectionWidget.cpp:58
 #: browsers/servicebrowser/magnatunestore/MagnatuneStore.cpp:167
-#: browsers/servicebrowser/jamendo/JamendoService.cpp:126 rc.cpp:902
+#: browsers/servicebrowser/jamendo/JamendoService.cpp:126
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:54
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:290 rc.cpp:902
 #: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:515
 #: widgets/TokenListWidget.cpp:36 widgets/FilenameLayoutWidget.cpp:277
 #: SmartPlaylistEditor.cpp:187 SmartPlaylistEditor.cpp:201
@@ -1534,6 +1552,7 @@ msgstr "Artista"
 
 #: dialogs/EditFilterDialog.cpp:129
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:546
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:291
 #: playlist/PlaylistModel.cpp:517 widgets/TokenListWidget.cpp:37
 #: widgets/FilenameLayoutWidget.cpp:281 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
@@ -1542,6 +1561,7 @@ msgstr "Compositor"
 
 #: dialogs/EditFilterDialog.cpp:131 dialogs/transferdialog.cpp:95
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:547
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:294
 #: playlist/PlaylistModel.cpp:523 widgets/TokenListWidget.cpp:41
 #: widgets/FilenameLayoutWidget.cpp:297 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
@@ -1550,23 +1570,29 @@ msgstr "Genre"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 91
-#: dialogs/EditFilterDialog.cpp:133 rc.cpp:899 playlist/PlaylistModel.cpp:514
-#: widgets/TokenListWidget.cpp:35 widgets/FilenameLayoutWidget.cpp:273
-#: SmartPlaylistEditor.cpp:187
+#: dialogs/EditFilterDialog.cpp:133
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:293
+#: browsers/playlistbrowser/PodcastModel.cpp:240 rc.cpp:899
+#: playlist/PlaylistModel.cpp:514 widgets/TokenListWidget.cpp:35
+#: widgets/FilenameLayoutWidget.cpp:273 SmartPlaylistEditor.cpp:187
 msgid "Title"
 msgstr "Títol"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 124
-#: dialogs/EditFilterDialog.cpp:135 rc.cpp:908 widgets/TokenListWidget.cpp:34
-#: widgets/TrackTooltip.cpp:200 widgets/FilenameLayoutWidget.cpp:269
+#: dialogs/EditFilterDialog.cpp:135
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:112 rc.cpp:908
+#: widgets/TokenListWidget.cpp:34 widgets/TrackTooltip.cpp:200
+#: widgets/FilenameLayoutWidget.cpp:269
 msgid "Track"
 msgstr "Pista"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 135
 #: dialogs/EditFilterDialog.cpp:137
-#: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:548 rc.cpp:911
+#: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:548
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:295
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:695 rc.cpp:911
 #: playlist/PlaylistModel.cpp:518 widgets/TokenListWidget.cpp:38
 #: widgets/FilenameLayoutWidget.cpp:285 SmartPlaylistEditor.cpp:188
 #: SmartPlaylistEditor.cpp:201 SmartPlaylistEditor.cpp:925
@@ -1590,6 +1616,7 @@ msgid "larger than"
 msgstr ""
 
 #: dialogs/EditFilterDialog.cpp:171
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:446
 msgid "equal to"
 msgstr "egal a"
 
@@ -1847,7 +1874,7 @@ msgstr ""
 msgid "There was an error communicating with Amazon."
 msgstr ""
 
-#: App.cpp:88
+#: App.cpp:88 browsers/playlistbrowser/PodcastModel.cpp:280
 msgid "Amarok"
 msgstr "Amarok"
 
@@ -2239,8 +2266,8 @@ msgstr ""
 
 #: EngineController.cpp:165
 msgid ""
-"<p>Phonon claims it <b>cannot</b> play MP3 files.You may want to examine the "
-"installation of the backend that phonon uses.</p><p>You may find useful "
+"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
+"the installation of the backend that phonon uses.</p><p>You may find useful "
 "information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
 msgstr ""
 
@@ -2262,7 +2289,7 @@ msgstr ""
 msgid "Generating playlist..."
 msgstr ""
 
-#: mediabrowser.cpp:120
+#: mediabrowser.cpp:120 mediabrowser.cpp:1262
 msgid "No Device Available"
 msgstr ""
 
@@ -2279,7 +2306,9 @@ msgid "Transfer"
 msgstr "Transferir"
 
 #: mediabrowser.cpp:189
-msgid "custom"
+#, fuzzy
+#| msgid "custom"
+msgid "Custom"
 msgstr "personalizat"
 
 #: mediabrowser.cpp:191
@@ -2890,8 +2919,32 @@ msgstr "Causissètz un fichièr"
 msgid "Fetching %1 Artist Info"
 msgstr ""
 
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:69
+#, fuzzy
+#| msgid "Genre"
+msgid "Genre: "
+msgstr "Genre"
+
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:70
+msgid "Release Year: "
+msgstr ""
+
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:75
+#, fuzzy
+#| msgid "Collection"
+msgid "Description:"
+msgstr "Colleccion"
+
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:79
+msgid "From Magnatune.com"
+msgstr ""
+
 #: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:155
 msgid "Fetching Magnatune.com front page"
+msgstr ""
+
+#: browsers/servicebrowser/magnatunestore/MagnatuneCollectionLocation.cpp:43
+msgid "Preview Tracks"
 msgstr ""
 
 #: browsers/servicebrowser/magnatunestore/MagnatuneCollectionLocation.cpp:46
@@ -2927,6 +2980,10 @@ msgstr "Crompar l'albom"
 #| msgid "Download"
 msgid "Magnatune.com: &Download Album"
 msgstr "Descargar"
+
+#: browsers/servicebrowser/magnatunestore/MagnatuneMeta.cpp:270
+msgid "The non evil record label that is fair to artists and customers alike"
+msgstr ""
 
 #: browsers/servicebrowser/magnatunestore/MagnatuneAlbumDownloader.cpp:70
 msgid "Downloading album"
@@ -3150,6 +3207,53 @@ msgstr ""
 msgid "Fetching Podcast Info"
 msgstr ""
 
+#: browsers/servicebrowser/lastfm/core/RadioPlaylist.cpp:219
+#, kde-format
+msgid ""
+"The playlist could not be read. Error:\n"
+"\n"
+"%1"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:740
+msgid "Bad session"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:743
+msgid "Client too old"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:746
+msgid "Wrong username / password"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:749
+msgid "Wrong timezone"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:752
+#, fuzzy
+#| msgid "Could not read this package."
+msgid "Could not reach server"
+msgstr "Impossible de legir lo paquetatge."
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:755
+msgid "OK"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Radio.cpp:193
+msgid ""
+"Sorry, this track isn't in the Last.fm catalog, and thus cannot be streamed."
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Radio.cpp:461
+msgid "Can't resume a station without having listened to one first."
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Radio.cpp:560
+msgid "Skip limit exceeded."
+msgstr ""
+
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:93
 msgid "Last.fm: &Love"
 msgstr ""
@@ -3185,6 +3289,13 @@ msgstr ""
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:107
 msgid "Skip this track"
 msgstr ""
+
+#: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:151
+#: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:391
+#, fuzzy
+#| msgid "Track %1"
+msgid "Track Radio"
+msgstr "Pista %1"
 
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:337
 #, kde-format
@@ -3231,12 +3342,6 @@ msgstr ""
 #, kde-format
 msgid "Group Radio: %1"
 msgstr ""
-
-#: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:391
-#, fuzzy
-#| msgid "Track %1"
-msgid "Track Radio"
-msgstr "Pista %1"
 
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:395
 #, fuzzy
@@ -3288,6 +3393,16 @@ msgstr ""
 
 #: browsers/servicebrowser/lastfm/SimilarArtistsAction.cpp:34
 msgid "Play Similar Artists from Last.fm"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/LastFmServiceCollection.cpp:36
+#, fuzzy, kde-format
+#| msgid "Add Stream"
+msgid "%1's Streams"
+msgstr "Apondre un flus"
+
+#: browsers/servicebrowser/lastfm/LastFmServiceCollection.cpp:40
+msgid "Global Tags"
 msgstr ""
 
 #: browsers/servicebrowser/lastfm/LastFmServiceCollection.cpp:44
@@ -3367,7 +3482,14 @@ msgid "Ampache Server %1"
 msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/Mp3tunesServiceCollection.cpp:51
+#: browsers/servicebrowser/mp3tunes/Mp3tunesServiceCollectionLocation.cpp:42
 msgid "MP3tunes Locker"
+msgstr ""
+
+#: browsers/servicebrowser/mp3tunes/Mp3tunesMeta.cpp:47
+msgid ""
+"Online music locker where you can safely store and access your music: http://"
+"mp3tunes.com"
 msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/Mp3tunesService.cpp:104
@@ -3410,6 +3532,13 @@ msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/Mp3tunesService.cpp:295
 msgid "MP3Tunes Harmony: Disconnected"
+msgstr ""
+
+#: browsers/servicebrowser/mp3tunes/Mp3tunesService.cpp:340
+#, kde-format
+msgid ""
+"Mp3tunes Harmony Error\n"
+"%1"
 msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/harmonydaemon/main.cpp:34
@@ -3463,7 +3592,8 @@ msgid "Upload to MP3tunes Initiated"
 msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/Mp3tunesWorkers.cpp:264
-msgid "Uploading Track "
+#, kde-format
+msgid "Uploading Track %1/%2"
 msgstr ""
 
 #. i18n: tag string
@@ -3476,6 +3606,10 @@ msgstr ""
 
 #: browsers/servicebrowser/jamendo/JamendoMeta.cpp:151
 msgid "Jamendo.com: &Download"
+msgstr ""
+
+#: browsers/servicebrowser/jamendo/JamendoMeta.cpp:173
+msgid "A site where artists can freely share their music"
 msgstr ""
 
 #: browsers/servicebrowser/jamendo/JamendoService.cpp:73
@@ -3502,6 +3636,12 @@ msgstr ""
 msgid "No description available..."
 msgstr ""
 
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:64
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:96
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:116
+msgid "From Jamendo.com"
+msgstr ""
+
 #: browsers/servicebrowser/jamendo/JamendoXmlParser.cpp:61
 #, kde-format
 msgid ""
@@ -3509,9 +3649,19 @@ msgid ""
 "artists"
 msgstr ""
 
-#: browsers/playlistbrowser/UserPlaylistModel.cpp:417
+#: browsers/playlistbrowser/UserPlaylistModel.cpp:222
+msgid "Name"
+msgstr "Nom"
+
+#: browsers/playlistbrowser/UserPlaylistModel.cpp:419
 msgid "New Group"
 msgstr "Grop novèl"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:99
+#, fuzzy
+#| msgid "Remove Playlist"
+msgid "Random Playlist"
+msgstr "Suprimir la tièra de lecturas"
 
 #: browsers/playlistbrowser/DynamicModel.cpp:213
 msgid "modified"
@@ -3529,12 +3679,123 @@ msgstr ""
 msgid "This controls what portion of the playlist should match the criteria"
 msgstr ""
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
+#, fuzzy
+#| msgid "Location:"
+msgid "Proportion:"
+msgstr "Emplaçament :"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:672
+msgid "Match:"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:296
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:696
+#: playlist/PlaylistModel.cpp:532 widgets/TrackTooltip.cpp:192
+msgid "Play Count"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:297
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
+#: playlist/PlaylistModel.cpp:531 widgets/TrackTooltip.cpp:185
+#: SmartPlaylistEditor.cpp:189
+msgid "Rating"
+msgstr "Classificacion"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:298
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:698
+#: playlist/PlaylistModel.cpp:530 widgets/TrackTooltip.cpp:167
+#: SmartPlaylistEditor.cpp:189
+msgid "Score"
+msgstr "Marca"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:299
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:699
+#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:527
+#: widgets/TrackTooltip.cpp:206 widgets/TrackTooltip.cpp:213
+#: SmartPlaylistEditor.cpp:187
+msgid "Length"
+msgstr "Longor"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:300
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:700
+#: SmartPlaylistEditor.cpp:188
+msgid "Track #"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:301
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:701
+#, fuzzy
+#| msgid "disc"
+msgid "Disc #"
+msgstr "es"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:302
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
+msgid "First Played"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:303
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:703
+#: widgets/TrackTooltip.cpp:197
+msgid "Last Played"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:304
+#: playlist/PlaylistModel.cpp:524 widgets/TokenListWidget.cpp:40
+#: widgets/FilenameLayoutWidget.cpp:293 SmartPlaylistEditor.cpp:188
+msgid "Comment"
+msgstr "Comentari"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:393
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:711
+#, fuzzy
+#| msgid "Width"
+msgid "With:"
+msgstr "Largor"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:445
+msgid "less than"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:447
+#, fuzzy
+#| msgid "is greater than"
+msgid "greater than"
+msgstr "es pus bèl que"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:663
 msgid "This controls how strictly to match the given value."
 msgstr ""
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:671
+msgid "Strictness:"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastModel.cpp:239
+#: playlist/PlaylistModel.cpp:526
+msgid "Type"
+msgstr "Tipe"
+
 #: browsers/playlistbrowser/PodcastModel.cpp:280
 msgid "Enter Podcast URL:"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:82
+msgid "Proportional Bias"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:83
+msgid "Match a certain portion of the playlist to a value."
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:99
+msgid "Fuzzy Bias"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:100
+msgid "Losely match the playlist to an approximate value."
 msgstr ""
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:75
@@ -3580,6 +3841,12 @@ msgstr "Remplaçar"
 msgid "Replace the upcoming tracks with fresh ones."
 msgstr ""
 
+#: browsers/playlistbrowser/DynamicCategory.cpp:78
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Playlist:"
+msgstr "&Tièra de lectura"
+
 #: browsers/playlistbrowser/DynamicCategory.cpp:108
 msgid "Save the preset."
 msgstr ""
@@ -3597,6 +3864,16 @@ msgstr "&Tièra de lectura"
 #: browsers/playlistbrowser/DynamicCategory.cpp:250
 msgid "Enter a name for the playlist:"
 msgstr ""
+
+#: browsers/playlistbrowser/DynamicCategory.cpp:260
+msgid "Warning!"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicCategory.cpp:260
+#, fuzzy
+#| msgid "Cannot write playlist (%1)."
+msgid "Can not overwrite the random playlist."
+msgstr "Impossible d'escriure la tièra de lecturas (%1)."
 
 #: browsers/playlistbrowser/PlaylistCategory.cpp:92
 msgid "Add Folder"
@@ -4555,6 +4832,11 @@ msgstr "&Espleches"
 #: MainWindow.cpp:942
 msgid "&Settings"
 msgstr "&Paramètres"
+
+#: MediaItem.cpp:437
+#, kde-format
+msgid "<i>Genre: %1</i>"
+msgstr ""
 
 #: MediaItem.cpp:444
 msgid "Drag items here to create new playlist"
@@ -7984,99 +8266,9 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:53
-msgid ""
-"Could not get a connected device list from libmtp. Possibly you are trying "
-"to run two copies of this kioslave at once, which is not supported."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:59
-msgid "libmtp found no devices."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:78
-msgid "Error getting a GenericInterface to the device from Solid."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:83
-msgid ""
-"Could not find serial number of MTP device in "
-"HAL.                                                   When filing a bug "
-"please include the full output of \"lshal -lt\"."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:90
-msgid "Could not get the serial number from HAL."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:131
-msgid "Failed to set friendly name on the device!"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:151
-msgid "Direct copying not supported"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:172
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:323
-msgid "Invalid path requested!"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:194
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:207
-#, kde-format
-msgid "libmtp reported failure deleting %1"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:294
-msgid "Could not find any folders on device!"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:388
-msgid "Stat requested on an invalid path!"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:491
-msgid "Receiving tracklisting...done"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:493
-#, kde-format
-msgid "Receiving tracklisting...%1\\%"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:84
-msgid ""
-"portable media player : Setting a hostname is not "
-"supported.                       Use a URL of the form pmp:/<udi> or pmp:///"
-"<udi>"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:95
-msgid "Direct copying not supported."
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:197
-msgid "Destination name cannot be the same as a Solid UDI!"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:209
-msgid "Could not rename file, files cannot be renamed across devices!"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:279
-msgid "portable media player : Empty UDI passed in"
-msgstr ""
-
 #: playlist/PlaylistHeader.cpp:45
 msgid "Track Number - Title"
 msgstr ""
-
-#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:527
-#: widgets/TrackTooltip.cpp:206 widgets/TrackTooltip.cpp:213
-#: SmartPlaylistEditor.cpp:187
-msgid "Length"
-msgstr "Longor"
 
 #: playlist/PlaylistViewCommon.cpp:43
 msgid "&Play"
@@ -8143,11 +8335,6 @@ msgstr "Pista"
 msgid "BPM"
 msgstr ""
 
-#: playlist/PlaylistModel.cpp:524 widgets/TokenListWidget.cpp:40
-#: widgets/FilenameLayoutWidget.cpp:293 SmartPlaylistEditor.cpp:188
-msgid "Comment"
-msgstr "Comentari"
-
 #: playlist/PlaylistModel.cpp:525
 #, fuzzy
 #| msgid "Directory"
@@ -8155,30 +8342,12 @@ msgctxt "The location on disc of this track"
 msgid "Directory"
 msgstr "Repertòri"
 
-#: playlist/PlaylistModel.cpp:526
-msgid "Type"
-msgstr "Tipe"
-
 #: playlist/PlaylistModel.cpp:528 SmartPlaylistEditor.cpp:191
 msgid "Bitrate"
 msgstr ""
 
 #: playlist/PlaylistModel.cpp:529
 msgid "Sample Rate"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:530 widgets/TrackTooltip.cpp:167
-#: SmartPlaylistEditor.cpp:189
-msgid "Score"
-msgstr "Marca"
-
-#: playlist/PlaylistModel.cpp:531 widgets/TrackTooltip.cpp:185
-#: SmartPlaylistEditor.cpp:189
-msgid "Rating"
-msgstr "Classificacion"
-
-#: playlist/PlaylistModel.cpp:532 widgets/TrackTooltip.cpp:192
-msgid "Play Count"
 msgstr ""
 
 #: playlist/PlaylistModel.cpp:533
@@ -8492,6 +8661,12 @@ msgstr ""
 msgid "Enter space-separated terms to search in the playlist."
 msgstr ""
 
+#: widgets/SearchWidget.cpp:71
+#, fuzzy
+#| msgid "Advanced"
+msgid "Advanced"
+msgstr "A_vançat"
+
 #: widgets/SearchWidget.cpp:75
 msgid "Click to edit playlist filter"
 msgstr ""
@@ -8538,10 +8713,6 @@ msgstr ""
 
 #: widgets/AnalyzerWidget.cpp:33
 msgid "Click for more analyzers"
-msgstr ""
-
-#: widgets/TrackTooltip.cpp:197
-msgid "Last Played"
 msgstr ""
 
 #: widgets/TrackTooltip.cpp:234
@@ -8839,10 +9010,6 @@ msgid "Edit Smart Playlist"
 msgstr ""
 
 #: SmartPlaylistEditor.cpp:188
-msgid "Track #"
-msgstr ""
-
-#: SmartPlaylistEditor.cpp:188
 msgid "Play Counter"
 msgstr ""
 
@@ -9025,9 +9192,6 @@ msgstr "Oras"
 #~| msgid "File Name"
 #~ msgid "Preset Name"
 #~ msgstr "Nom de fichièr"
-
-#~ msgid "Name"
-#~ msgstr "Nom"
 
 #~ msgid "%1. %2 - %3"
 #~ msgstr "%1. %2 - %3"
