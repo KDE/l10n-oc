@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-14 08:46+0200\n"
+"POT-Creation-Date: 2008-08-15 08:29+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -51,7 +51,7 @@ msgid "Sh&ow"
 msgstr ""
 
 #: src/lib/MapScaleFloatItem.cpp:25 src/lib/MapScaleFloatItem.cpp:117
-#: src/lib/MarbleWidget.cpp:1214 src/lib/MarbleMap.cpp:1106
+#: src/lib/MarbleWidget.cpp:1215 src/lib/MarbleMap.cpp:1106
 #: src/plugins/marble/mapscale/MapScaleFloatItem.cpp:38
 #: src/plugins/marble/mapscale/MapScaleFloatItem.cpp:149
 msgid "km"
@@ -105,6 +105,14 @@ msgstr "E"
 msgctxt "one-letter uppercase abbreviation for West"
 msgid "W"
 msgstr "W"
+
+#: src/lib/runners/LatLonRunner.cpp:47
+msgid "Latitude / Longitude Runner"
+msgstr ""
+
+#: src/lib/runners/OnfRunner.cpp:60
+msgid "OpenStreetMap Name Finder Runner"
+msgstr ""
 
 #: src/lib/MeasureTool.cpp:372
 #, kde-format
@@ -196,19 +204,23 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleControlBox.ui line 70
-#: src/lib/MarbleControlBox.cpp:461 src/marble_part.cpp:624 rc.cpp:958
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 13
+#: src/lib/MarbleControlBox.cpp:456 src/marble_part.cpp:624
+#: src/plugins/marble/navigation/NavigationFloatItem.cpp:46 rc.cpp:958
+#: rc.cpp:1319
 msgid "Navigation"
 msgstr "Navigacion"
 
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleControlBox.ui line 437
-#: src/lib/MarbleControlBox.cpp:467 rc.cpp:1054
+#: src/lib/MarbleControlBox.cpp:462 rc.cpp:1054
 msgid "Legend"
 msgstr "Legenda"
 
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleControlBox.ui line 465
-#: src/lib/MarbleControlBox.cpp:473 rc.cpp:1057
+#: src/lib/MarbleControlBox.cpp:468 rc.cpp:1057
 msgid "Map View"
 msgstr ""
 
@@ -216,13 +228,13 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 575
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleControlBox.ui line 993
-#: src/lib/MarbleControlBox.cpp:479 rc.cpp:1078 rc.cpp:1120
+#: src/lib/MarbleControlBox.cpp:474 rc.cpp:1078 rc.cpp:1120
 msgid "Current Location"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleControlBox.ui line 926
-#: src/lib/MarbleControlBox.cpp:485 rc.cpp:1111
+#: src/lib/MarbleControlBox.cpp:480 rc.cpp:1111
 msgid "File View"
 msgstr ""
 
@@ -418,165 +430,167 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 225
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 221
-#: src/lib/PlaceMarkInfoDialog.cpp:160 rc.cpp:985 rc.cpp:1241
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 40
+#: src/lib/PlaceMarkInfoDialog.cpp:160 rc.cpp:985 rc.cpp:1241 rc.cpp:1331
 msgid "-"
 msgstr "-"
 
-#: src/QtMainWindow.cpp:56 src/ControlView.cpp:29
+#: src/QtMainWindow.cpp:58 src/ControlView.cpp:29
 msgid "Marble - Desktop Globe"
 msgstr ""
 
-#: src/QtMainWindow.cpp:75 src/marble_part.cpp:457
+#: src/QtMainWindow.cpp:77 src/marble_part.cpp:457
 msgid "&Open Map..."
 msgstr ""
 
-#: src/QtMainWindow.cpp:76
+#: src/QtMainWindow.cpp:78
 msgid "Ctrl+O"
 msgstr "Ctrl+O"
 
-#: src/QtMainWindow.cpp:77
+#: src/QtMainWindow.cpp:79
 msgid "Open a file for viewing on Marble"
 msgstr ""
 
-#: src/QtMainWindow.cpp:81 src/marble_part.cpp:439
+#: src/QtMainWindow.cpp:83 src/marble_part.cpp:439
 msgid "&Export Map..."
 msgstr ""
 
-#: src/QtMainWindow.cpp:82
+#: src/QtMainWindow.cpp:84
 msgid "Ctrl+S"
 msgstr ""
 
-#: src/QtMainWindow.cpp:83
+#: src/QtMainWindow.cpp:85
 msgid "Save a screenshot of the map"
 msgstr ""
 
-#: src/QtMainWindow.cpp:86
+#: src/QtMainWindow.cpp:88
 msgid "&Print..."
 msgstr "&Estampar..."
 
-#: src/QtMainWindow.cpp:87
+#: src/QtMainWindow.cpp:89
 msgid "Ctrl+P"
 msgstr ""
 
-#: src/QtMainWindow.cpp:88
+#: src/QtMainWindow.cpp:90
 msgid "Print a screenshot of the map"
 msgstr ""
 
-#: src/QtMainWindow.cpp:91
+#: src/QtMainWindow.cpp:93
 msgid "&Quit"
 msgstr "&Sortir"
 
-#: src/QtMainWindow.cpp:92
+#: src/QtMainWindow.cpp:94
 msgid "Ctrl+Q"
 msgstr ""
 
-#: src/QtMainWindow.cpp:93
+#: src/QtMainWindow.cpp:95
 msgid "Quit the Application"
 msgstr ""
 
-#: src/QtMainWindow.cpp:96 src/marble_part.cpp:447
+#: src/QtMainWindow.cpp:98 src/marble_part.cpp:447
 msgid "&Copy Map"
 msgstr ""
 
-#: src/QtMainWindow.cpp:97
+#: src/QtMainWindow.cpp:99
 msgid "Ctrl+C"
 msgstr ""
 
-#: src/QtMainWindow.cpp:98
+#: src/QtMainWindow.cpp:100
 msgid "Copy a screenshot of the map"
 msgstr ""
 
-#: src/QtMainWindow.cpp:101 src/marble_part.cpp:452
+#: src/QtMainWindow.cpp:103 src/marble_part.cpp:452
 msgid "C&opy Coordinates"
 msgstr ""
 
-#: src/QtMainWindow.cpp:102
+#: src/QtMainWindow.cpp:104
 msgid "Copy the center coordinates as text"
 msgstr ""
 
-#: src/QtMainWindow.cpp:105 src/marble_part.cpp:473
+#: src/QtMainWindow.cpp:107 src/marble_part.cpp:473
 msgid "Show &Navigation Panel"
 msgstr ""
 
-#: src/QtMainWindow.cpp:106
+#: src/QtMainWindow.cpp:108
 msgid "F9"
 msgstr "F9"
 
-#: src/QtMainWindow.cpp:109 src/marble_part.cpp:478
+#: src/QtMainWindow.cpp:111 src/marble_part.cpp:478
 msgid "Show Navigation Panel"
 msgstr ""
 
-#: src/QtMainWindow.cpp:112
+#: src/QtMainWindow.cpp:114
 msgid "&Full Screen Mode"
 msgstr ""
 
-#: src/QtMainWindow.cpp:113
+#: src/QtMainWindow.cpp:115
 msgid "Ctrl+Shift+F"
 msgstr ""
 
-#: src/QtMainWindow.cpp:115
+#: src/QtMainWindow.cpp:117
 msgid "Full Screen Mode"
 msgstr ""
 
-#: src/QtMainWindow.cpp:118
+#: src/QtMainWindow.cpp:120
 msgid "&Status Bar"
 msgstr ""
 
-#: src/QtMainWindow.cpp:120
+#: src/QtMainWindow.cpp:122
 msgid "Show Status Bar"
 msgstr ""
 
-#: src/QtMainWindow.cpp:123 src/marble_part.cpp:497
+#: src/QtMainWindow.cpp:125 src/marble_part.cpp:497
 #, fuzzy
 #| msgid "&Close"
 msgid "&Clouds"
 msgstr "&Tampar"
 
-#: src/QtMainWindow.cpp:125
+#: src/QtMainWindow.cpp:127
 msgid "Show Real Time Cloud Cover"
 msgstr ""
 
-#: src/QtMainWindow.cpp:128 src/marble_part.cpp:489
+#: src/QtMainWindow.cpp:130 src/marble_part.cpp:489
 msgid "&Atmosphere"
 msgstr ""
 
-#: src/QtMainWindow.cpp:130
+#: src/QtMainWindow.cpp:132
 msgid "Show Atmosphere"
 msgstr ""
 
-#: src/QtMainWindow.cpp:133 src/marble_part.cpp:503
+#: src/QtMainWindow.cpp:135 src/marble_part.cpp:503
 msgid "S&un Control"
 msgstr ""
 
-#: src/QtMainWindow.cpp:134
+#: src/QtMainWindow.cpp:136
 msgid "Configure Sun Control"
 msgstr ""
 
-#: src/QtMainWindow.cpp:137
+#: src/QtMainWindow.cpp:139
 msgid "What's &This"
 msgstr "Qu'es &aquò ?"
 
-#: src/QtMainWindow.cpp:138
+#: src/QtMainWindow.cpp:140
 msgid "Shift+F1"
 msgstr ""
 
-#: src/QtMainWindow.cpp:139
+#: src/QtMainWindow.cpp:141
 msgid "Show a detailed explanation of the action."
 msgstr ""
 
-#: src/QtMainWindow.cpp:142
+#: src/QtMainWindow.cpp:144
 msgid "&About Marble Desktop Globe"
 msgstr ""
 
-#: src/QtMainWindow.cpp:143
+#: src/QtMainWindow.cpp:145
 msgid "Show the application's About Box"
 msgstr ""
 
-#: src/QtMainWindow.cpp:146
+#: src/QtMainWindow.cpp:148
 msgid "About &Qt"
 msgstr ""
 
-#: src/QtMainWindow.cpp:147
+#: src/QtMainWindow.cpp:149
 msgid "Show the Qt library's About box"
 msgstr ""
 
@@ -584,7 +598,7 @@ msgstr ""
 #. i18n: file ./src/marble_part.rc line 5
 #. i18n: tag text
 #. i18n: file ./src/marbleui.rc line 5
-#: src/QtMainWindow.cpp:154 rc.cpp:1319 rc.cpp:1337
+#: src/QtMainWindow.cpp:156 rc.cpp:1400 rc.cpp:1418
 msgid "&File"
 msgstr "&Fichièr"
 
@@ -592,7 +606,7 @@ msgstr "&Fichièr"
 #. i18n: file ./src/marble_part.rc line 13
 #. i18n: tag text
 #. i18n: file ./src/marbleui.rc line 12
-#: src/QtMainWindow.cpp:161 rc.cpp:1322 rc.cpp:1340
+#: src/QtMainWindow.cpp:163 rc.cpp:1403 rc.cpp:1421
 msgid "&Edit"
 msgstr "&Edicion"
 
@@ -600,39 +614,39 @@ msgstr "&Edicion"
 #. i18n: file ./src/marble_part.rc line 17
 #. i18n: tag text
 #. i18n: file ./src/marbleui.rc line 16
-#: src/QtMainWindow.cpp:165 rc.cpp:1325 rc.cpp:1343
+#: src/QtMainWindow.cpp:167 rc.cpp:1406 rc.cpp:1424
 msgid "&View"
 msgstr "Aficha&tge"
 
-#: src/QtMainWindow.cpp:180
+#: src/QtMainWindow.cpp:182
 msgid "&Help"
 msgstr "&Ajuda"
 
-#: src/QtMainWindow.cpp:203
+#: src/QtMainWindow.cpp:205
 msgid "Ready"
 msgstr "Prèst"
 
-#: src/QtMainWindow.cpp:209 src/marble_part.cpp:158
+#: src/QtMainWindow.cpp:211 src/marble_part.cpp:158
 msgid "Export Map"
 msgstr ""
 
-#: src/QtMainWindow.cpp:211 src/marble_part.cpp:157
+#: src/QtMainWindow.cpp:213 src/marble_part.cpp:157
 msgid "Images (*.jpg *.png)"
 msgstr ""
 
-#: src/QtMainWindow.cpp:227
+#: src/QtMainWindow.cpp:229
 msgid "Marble"
 msgstr ""
 
-#: src/QtMainWindow.cpp:228 src/marble_part.cpp:173
+#: src/QtMainWindow.cpp:230 src/marble_part.cpp:173
 msgid "An error occurred while trying to save the file.\n"
 msgstr ""
 
-#: src/QtMainWindow.cpp:373 src/marble_part.cpp:137
+#: src/QtMainWindow.cpp:375 src/marble_part.cpp:137
 msgid "Open File"
 msgstr "Dobrir un fichièr"
 
-#: src/QtMainWindow.cpp:375
+#: src/QtMainWindow.cpp:377
 msgid ""
 "All Supported Files (*.gpx *.kml);;GPS Data (*.gpx);;Google Earth KML (*.kml)"
 msgstr ""
@@ -850,6 +864,16 @@ msgstr ""
 msgid ""
 "Automatically downloads images from around the world in preference to their "
 "popularity"
+msgstr ""
+
+#: src/plugins/marble/navigation/NavigationFloatItem.cpp:51
+#, fuzzy
+#| msgid "Navigation"
+msgid "&Navigation"
+msgstr "Navigacion"
+
+#: src/plugins/marble/navigation/NavigationFloatItem.cpp:61
+msgid "A mouse control to zoom and move the map"
 msgstr ""
 
 #: src/plugins/marble/geodata/MarbleGeoDataPlugin.cpp:58
@@ -2483,9 +2507,24 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleNavigator.ui line 157
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 215
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 33
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 53
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 73
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 90
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 147
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 167
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 184
 #: rc.cpp:904 rc.cpp:982 rc.cpp:994 rc.cpp:1006 rc.cpp:1015 rc.cpp:1030
 #: rc.cpp:1042 rc.cpp:1051 rc.cpp:1166 rc.cpp:1175 rc.cpp:1187 rc.cpp:1199
-#: rc.cpp:1211 rc.cpp:1220 rc.cpp:1238
+#: rc.cpp:1211 rc.cpp:1220 rc.cpp:1238 rc.cpp:1328 rc.cpp:1340 rc.cpp:1352
+#: rc.cpp:1361 rc.cpp:1376 rc.cpp:1388 rc.cpp:1397
 msgid "..."
 msgstr "..."
 
@@ -2639,7 +2678,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 212
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 209
-#: rc.cpp:976 rc.cpp:1232
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 27
+#: rc.cpp:976 rc.cpp:1232 rc.cpp:1322
 msgid "Zoom Out"
 msgstr "Reduire el zoom"
 
@@ -2647,13 +2688,17 @@ msgstr "Reduire el zoom"
 #. i18n: file ./src/lib/MarbleControlBox.ui line 215
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 212
-#: rc.cpp:979 rc.cpp:1235
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 30
+#: rc.cpp:979 rc.cpp:1235 rc.cpp:1325
 msgid "Zoom out by pressing this button to see less details."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleControlBox.ui line 232
-#: rc.cpp:988
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 47
+#: rc.cpp:988 rc.cpp:1334
 msgid "Navigate to your 'Home Location'"
 msgstr ""
 
@@ -2661,7 +2706,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 235
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 100
-#: rc.cpp:991 rc.cpp:1184
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 50
+#: rc.cpp:991 rc.cpp:1184 rc.cpp:1337
 msgid "Click this button to restore the original zoom level and view angle."
 msgstr ""
 
@@ -2669,7 +2716,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 245
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 109
-#: rc.cpp:997 rc.cpp:1190
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 60
+#: rc.cpp:997 rc.cpp:1190 rc.cpp:1343
 msgid "Home"
 msgstr "Repertòri personal"
 
@@ -2679,7 +2728,9 @@ msgstr "Repertòri personal"
 #. i18n: file ./src/lib/MarbleNavigator.ui line 116
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 128
-#: rc.cpp:1000 rc.cpp:1193 rc.cpp:1202
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 67
+#: rc.cpp:1000 rc.cpp:1193 rc.cpp:1202 rc.cpp:1346
 msgid "Right"
 msgstr "Drecha"
 
@@ -2687,7 +2738,9 @@ msgstr "Drecha"
 #. i18n: file ./src/lib/MarbleControlBox.ui line 255
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 119
-#: rc.cpp:1003 rc.cpp:1196
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 70
+#: rc.cpp:1003 rc.cpp:1196 rc.cpp:1349
 msgid "Rotates the earth clockwise around its axis."
 msgstr ""
 
@@ -2695,7 +2748,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 269
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 62
-#: rc.cpp:1009 rc.cpp:1160
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 84
+#: rc.cpp:1009 rc.cpp:1160 rc.cpp:1355
 msgid "Up"
 msgstr "Amont"
 
@@ -2703,7 +2758,9 @@ msgstr "Amont"
 #. i18n: file ./src/lib/MarbleControlBox.ui line 272
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 65
-#: rc.cpp:1012 rc.cpp:1163
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 87
+#: rc.cpp:1012 rc.cpp:1163 rc.cpp:1358
 msgid "Tilts the earth's axis towards the user."
 msgstr ""
 
@@ -2711,7 +2768,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 292
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 178
-#: rc.cpp:1018 rc.cpp:1226
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 107
+#: rc.cpp:1018 rc.cpp:1226 rc.cpp:1364
 msgid "Zoom Slider"
 msgstr ""
 
@@ -2719,7 +2778,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 295
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 181
-#: rc.cpp:1021 rc.cpp:1229
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 110
+#: rc.cpp:1021 rc.cpp:1229 rc.cpp:1367
 msgid "Use this slider to adjust the zoom level of the map."
 msgstr ""
 
@@ -2727,7 +2788,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 326
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 151
-#: rc.cpp:1024 rc.cpp:1214
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 141
+#: rc.cpp:1024 rc.cpp:1214 rc.cpp:1370
 msgid "Zoom In"
 msgstr "Agrandir lo zoom"
 
@@ -2735,7 +2798,9 @@ msgstr "Agrandir lo zoom"
 #. i18n: file ./src/lib/MarbleControlBox.ui line 329
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 154
-#: rc.cpp:1027 rc.cpp:1217
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 144
+#: rc.cpp:1027 rc.cpp:1217 rc.cpp:1373
 msgid "Zoom in by pressing this button to see more details."
 msgstr ""
 
@@ -2743,7 +2808,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleControlBox.ui line 339
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 163
-#: rc.cpp:1033 rc.cpp:1223
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 154
+#: rc.cpp:1033 rc.cpp:1223 rc.cpp:1379
 msgid "+"
 msgstr "+"
 
@@ -2751,7 +2818,9 @@ msgstr "+"
 #. i18n: file ./src/lib/MarbleControlBox.ui line 346
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 135
-#: rc.cpp:1036 rc.cpp:1205
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 161
+#: rc.cpp:1036 rc.cpp:1205 rc.cpp:1382
 msgid "Down"
 msgstr "Aval"
 
@@ -2759,7 +2828,9 @@ msgstr "Aval"
 #. i18n: file ./src/lib/MarbleControlBox.ui line 349
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 138
-#: rc.cpp:1039 rc.cpp:1208
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 164
+#: rc.cpp:1039 rc.cpp:1208 rc.cpp:1385
 msgid "Tilts the earth's axis away from the user."
 msgstr ""
 
@@ -2769,7 +2840,9 @@ msgstr ""
 #. i18n: file ./src/lib/MarbleNavigator.ui line 78
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 90
-#: rc.cpp:1045 rc.cpp:1169 rc.cpp:1178
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 178
+#: rc.cpp:1045 rc.cpp:1169 rc.cpp:1178 rc.cpp:1391
 msgid "Left"
 msgstr "Esquèrra"
 
@@ -2777,7 +2850,9 @@ msgstr "Esquèrra"
 #. i18n: file ./src/lib/MarbleControlBox.ui line 366
 #. i18n: tag string
 #. i18n: file ./src/lib/MarbleNavigator.ui line 81
-#: rc.cpp:1048 rc.cpp:1172
+#. i18n: tag string
+#. i18n: file ./src/plugins/marble/navigation/navigation.ui line 181
+#: rc.cpp:1048 rc.cpp:1172 rc.cpp:1394
 msgid "Rotates the earth counterclockwise around its axis."
 msgstr ""
 
@@ -3108,7 +3183,7 @@ msgstr ""
 
 #. i18n: tag text
 #. i18n: file ./src/marble_part.rc line 22
-#: rc.cpp:1328
+#: rc.cpp:1409
 msgid "&Info Boxes"
 msgstr ""
 
@@ -3116,7 +3191,7 @@ msgstr ""
 #. i18n: file ./src/marble_part.rc line 33
 #. i18n: tag text
 #. i18n: file ./src/marbleui.rc line 26
-#: rc.cpp:1331 rc.cpp:1346
+#: rc.cpp:1412 rc.cpp:1427
 msgid "&Settings"
 msgstr "&Paramètres"
 
@@ -3124,7 +3199,7 @@ msgstr "&Paramètres"
 #. i18n: file ./src/marble_part.rc line 43
 #. i18n: tag text
 #. i18n: file ./src/marbleui.rc line 31
-#: rc.cpp:1334 rc.cpp:1349
+#: rc.cpp:1415 rc.cpp:1430
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
@@ -3132,7 +3207,7 @@ msgstr "Barra d'espleches principala"
 #. i18n: file ./examples/example1.ui line 53
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 43
-#: rc.cpp:1352 rc.cpp:1364
+#: rc.cpp:1433 rc.cpp:1445
 msgid "The Earth"
 msgstr ""
 
@@ -3140,78 +3215,78 @@ msgstr ""
 #. i18n: file ./examples/example1.ui line 56
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 46
-#: rc.cpp:1355 rc.cpp:1367
+#: rc.cpp:1436 rc.cpp:1448
 msgid "The Marble widget displays a virtual globe."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 33
-#: rc.cpp:1358
+#: rc.cpp:1439
 msgid "Navigation Control"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 36
-#: rc.cpp:1361
+#: rc.cpp:1442
 msgid "Use this control to navigate."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 57
-#: rc.cpp:1370
+#: rc.cpp:1451
 msgid "Show places"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 67
-#: rc.cpp:1373
+#: rc.cpp:1454
 msgid "Show relief"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 77
-#: rc.cpp:1376
+#: rc.cpp:1457
 msgid "Show scale bar"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 87
-#: rc.cpp:1379
+#: rc.cpp:1460
 msgid "Show borders"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 97
-#: rc.cpp:1382
+#: rc.cpp:1463
 msgid "Show ice / snow"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 107
-#: rc.cpp:1385
+#: rc.cpp:1466
 msgid "Show compass"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 117
-#: rc.cpp:1388
+#: rc.cpp:1469
 msgid "Show grid"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 127
-#: rc.cpp:1391
+#: rc.cpp:1472
 msgid "Show rivers / lakes"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 137
-#: rc.cpp:1394
+#: rc.cpp:1475
 msgid "Show elevation model"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./examples/example2.ui line 166
-#: rc.cpp:1397
+#: rc.cpp:1478
 msgid "Coordinates: "
 msgstr ""
