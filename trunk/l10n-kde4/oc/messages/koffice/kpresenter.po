@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-14 08:47+0200\n"
+"POT-Creation-Date: 2008-08-16 09:58+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -48,52 +48,56 @@ msgstr ""
 msgid "Confirm action"
 msgstr "Confirmar l'accion"
 
-#: part/ui/KPrConfigureSlideShowDialog.cpp:42
+#: part/ui/KPrConfigurePresenterViewDialog.cpp:42
 #, kde-format
 msgid "Monitor %1 (primary)"
 msgstr "Monitor %1 (principal)"
 
-#: part/ui/KPrConfigureSlideShowDialog.cpp:45
+#: part/ui/KPrConfigurePresenterViewDialog.cpp:45
 #, kde-format
 msgid "Monitor %1"
 msgstr "Monitor %1"
 
-#: part/ui/KPrConfigureSlideShowDialog.cpp:54
-msgid "Configure Slide Show"
+#: part/ui/KPrConfigurePresenterViewDialog.cpp:54
+msgid "Configure Presenter View"
 msgstr ""
 
-#: part/KPrView.cpp:100
-msgid "Start Presentation"
-msgstr "_Presentacion"
-
-#: part/KPrView.cpp:103
-msgid "From Current Page"
-msgstr ""
-
-#: part/KPrView.cpp:106
-msgid "From First Page"
-msgstr ""
-
-#: part/KPrView.cpp:110
+#: part/KPrView.cpp:101
 #, fuzzy
 #| msgid "Format"
 msgid "Normal"
 msgstr "Normal"
 
-#: part/KPrView.cpp:116
+#: part/KPrView.cpp:107
 msgid "Notes"
 msgstr "Nòtas"
 
-#: part/KPrView.cpp:125
+#: part/KPrView.cpp:116
 msgid "Create Appear Animation"
 msgstr ""
 
-#: part/KPrView.cpp:129
+#: part/KPrView.cpp:120
 msgid "Edit Custom Slide Shows..."
 msgstr ""
 
-#: part/KPrView.cpp:133
+#: part/KPrView.cpp:124
+msgid "Start Presentation"
+msgstr "_Presentacion"
+
+#: part/KPrView.cpp:127
+msgid "From Current Page"
+msgstr ""
+
+#: part/KPrView.cpp:130
+msgid "From First Page"
+msgstr ""
+
+#: part/KPrView.cpp:134
 msgid "Configure Slide Show..."
+msgstr ""
+
+#: part/KPrView.cpp:138
+msgid "Configure Presenter View..."
 msgstr ""
 
 #: part/tools/animationtool/KPrAnimationToolFactory.cpp:30
@@ -331,7 +335,7 @@ msgstr "Aficha&tge"
 #. i18n: tag text
 #. i18n: file kpresenter.rc line 52
 #. i18n: tag text
-#. i18n: file ./part/kpresenter.rc line 50
+#. i18n: file ./part/kpresenter.rc line 48
 #. i18n: tag text
 #. i18n: file ./kpresenter.rc line 52
 #: rc.cpp:12 rc.cpp:233 rc.cpp:254
@@ -357,7 +361,7 @@ msgstr "Forma"
 #. i18n: tag text
 #. i18n: file kpresenter.rc line 89
 #. i18n: tag text
-#. i18n: file ./part/kpresenter.rc line 53
+#. i18n: file ./part/kpresenter.rc line 51
 #. i18n: tag text
 #. i18n: file ./kpresenter.rc line 89
 #: rc.cpp:21 rc.cpp:236 rc.cpp:263
@@ -468,20 +472,20 @@ msgstr ""
 #. i18n: tag text
 #. i18n: file kpresenter_readonly.rc line 12
 #. i18n: tag text
+#. i18n: file ./part/kpresenter.rc line 66
+#. i18n: tag text
 #. i18n: file ./kpresenter.rc line 163
 #. i18n: tag text
 #. i18n: file ./kpresenter_readonly.rc line 12
-#: rc.cpp:45 rc.cpp:138 rc.cpp:287 rc.cpp:380
+#: rc.cpp:45 rc.cpp:138 rc.cpp:242 rc.cpp:287 rc.cpp:380
 msgid "Sli&de Show"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file kpresenter.rc line 178
 #. i18n: tag text
-#. i18n: file ./part/kpresenter.rc line 56
-#. i18n: tag text
 #. i18n: file ./kpresenter.rc line 178
-#: rc.cpp:48 rc.cpp:239 rc.cpp:290
+#: rc.cpp:48 rc.cpp:290
 msgid "&Settings"
 msgstr "&Paramètres"
 
@@ -691,13 +695,13 @@ msgid "Close"
 msgstr "Tampar"
 
 #. i18n: tag string
-#. i18n: file ./part/ui/KPrConfigureSlideShow.ui line 16
+#. i18n: file ./part/ui/KPrConfigurePresenterView.ui line 16
 #: rc.cpp:182
 msgid "Multiple monitors"
 msgstr "Monitors multiples"
 
 #. i18n: tag string
-#. i18n: file ./part/ui/KPrConfigureSlideShow.ui line 24
+#. i18n: file ./part/ui/KPrConfigurePresenterView.ui line 24
 #: rc.cpp:185
 #, fuzzy
 #| msgid "Presentation"
@@ -705,7 +709,7 @@ msgid "Presentation monitor:"
 msgstr "Presentacion"
 
 #. i18n: tag string
-#. i18n: file ./part/ui/KPrConfigureSlideShow.ui line 39
+#. i18n: file ./part/ui/KPrConfigurePresenterView.ui line 39
 #: rc.cpp:188
 msgid "Enable presenter view"
 msgstr ""
@@ -783,8 +787,8 @@ msgid "&Crop"
 msgstr ""
 
 #. i18n: tag Text
-#. i18n: file ./part/kpresenter.rc line 61
-#: rc.cpp:242
+#. i18n: file ./part/kpresenter.rc line 55
+#: rc.cpp:239
 msgid "&Page"
 msgstr ""
 
@@ -801,7 +805,7 @@ msgid "Import..."
 msgstr "Importacion..."
 
 #: plugins/pageeffects/matrixwipe/boxsnakes/KPrBoxSnakesWipeEffectFactory.cpp:29
-msgid "Box Snakes Wipe Effect"
+msgid "Box Snakes"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/boxsnakes/KPrBoxSnakesWipeEffectFactory.cpp:50
@@ -890,7 +894,7 @@ msgid "Unknown subtype"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/waterfallwipe/KPrWaterfallWipeEffectFactory.cpp:32
-msgid "Waterfall Wipe Effect"
+msgid "Waterfall"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/waterfallwipe/KPrWaterfallWipeEffectFactory.cpp:49
@@ -926,7 +930,7 @@ msgid "Bottom Right Horizontal"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/parallelsnakes/KPrParallelSnakesWipeEffectFactory.cpp:31
-msgid "Parallel Snakes Wipe Effect"
+msgid "Parallel Snakes"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/parallelsnakes/KPrParallelSnakesWipeEffectFactory.cpp:60
@@ -1010,7 +1014,7 @@ msgid "Diagonal Top Left Opposite Out"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/spiralwipe/KPrSpiralWipeEffectFactory.cpp:29
-msgid "Spiral Wipe Effect"
+msgid "Spiral"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/spiralwipe/KPrSpiralWipeEffectFactory.cpp:54
@@ -1078,8 +1082,10 @@ msgid "Counterclockwise Bottom Right Out"
 msgstr ""
 
 #: plugins/pageeffects/matrixwipe/snakewipe/KPrSnakeWipeEffectFactory.cpp:36
-msgid "Snake Wipe Effect"
-msgstr ""
+#, fuzzy
+#| msgid "Shape"
+msgid "Snake"
+msgstr "Forma"
 
 #: plugins/pageeffects/matrixwipe/snakewipe/KPrSnakeWipeEffectFactory.cpp:53
 #: plugins/pageeffects/clockwipe/saloondoorwipe/KPrSaloonDoorWipeEffectFactory.cpp:47
@@ -1144,8 +1150,10 @@ msgid "From Bottom Right"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:31
-msgid "Pentagon Wipe Effect"
-msgstr ""
+#, fuzzy
+#| msgid "Presentation"
+msgid "Pentagon"
+msgstr "Presentacion"
 
 #: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:66
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:84
@@ -1174,7 +1182,7 @@ msgid "Down Reverse"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:31
-msgid "RoundRect Wipe Effect"
+msgid "RoundRect"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:64
@@ -1216,7 +1224,7 @@ msgid "Vertical Reverse"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:29
-msgid "Misc Wipe Effect"
+msgid "Misc"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:61
@@ -1236,7 +1244,7 @@ msgid "Keyhole Reverse"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:30
-msgid "Ellipse Wipe Effect"
+msgid "Ellipse"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:63
@@ -1252,7 +1260,7 @@ msgid "Circle Reverse"
 msgstr "Fichièr"
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:9
-msgid "Iris Wipe Effect"
+msgid "Iris"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:39
@@ -1272,15 +1280,15 @@ msgid "Diamond Reverse"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:31
-msgid "Eye Wipe Effect"
+msgid "Eye"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:37
-msgid "Hexagon Wipe Effect"
+msgid "Hexagon"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:30
-msgid "Triangle Wipe Effect"
+msgid "Triangle"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:86
@@ -1306,11 +1314,11 @@ msgid "Left Reverse"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
-msgid "ArrowHead Wipe Effect"
+msgid "ArrowHead"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:38
-msgid "Star Wipe Effect"
+msgid "Star"
 msgstr ""
 
 #: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:102
@@ -1338,7 +1346,7 @@ msgid "Six Point Star Reverse"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/doublesweepwipe/KPrDoubleSweepWipeEffectFactory.cpp:28
-msgid "Double Sweep Wipe Effect"
+msgid "Double Sweep"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/doublesweepwipe/KPrDoubleSweepWipeEffectFactory.cpp:49
@@ -1390,7 +1398,7 @@ msgid "Parallel Diagonal Bottom Left Reverse"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/fanwipe/KPrFanWipeEffectFactory.cpp:29
-msgid "Fan Wipe Effect"
+msgid "Fan"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/fanwipe/KPrFanWipeEffectFactory.cpp:51
@@ -1446,7 +1454,7 @@ msgid "Fan In Left"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/pinwheelwipe/KPrPinWheelWipeEffectFactory.cpp:28
-msgid "Pin Wheel Wipe Effect"
+msgid "Pin Wheel"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/pinwheelwipe/KPrPinWheelWipeEffectFactory.cpp:43
@@ -1474,8 +1482,10 @@ msgid "Four Blades Horizontal Counterclockwise"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/clockwipe/KPrClockWipeEffectFactory.cpp:28
-msgid "Clock Wipe Effect"
-msgstr ""
+#, fuzzy
+#| msgid "Close"
+msgid "Clock"
+msgstr "Tampar"
 
 #: plugins/pageeffects/clockwipe/clockwipe/KPrClockWipeEffectFactory.cpp:45
 msgid "From Twelve Clockwise"
@@ -1510,7 +1520,7 @@ msgid "From Nine Counterclockwise"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/saloondoorwipe/KPrSaloonDoorWipeEffectFactory.cpp:28
-msgid "Saloon Door Wipe Effect"
+msgid "Saloon Door"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/saloondoorwipe/KPrSaloonDoorWipeEffectFactory.cpp:50
@@ -1534,11 +1544,11 @@ msgid "To Right"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:28
-msgid "Windshield Wipe Effect"
+msgid "Windshield"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/doublefanwipe/KPrDoubleFanWipeEffectFactory.cpp:29
-msgid "Double Fan Wipe Effect"
+msgid "Double Fan"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/doublefanwipe/KPrDoubleFanWipeEffectFactory.cpp:44
@@ -1566,7 +1576,7 @@ msgid "Fan In Horizontal Reverse"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/singlesweepwipe/KPrSingleSweepWipeEffectFactory.cpp:28
-msgid "Single Sweep Wipe Effect"
+msgid "Single Sweep"
 msgstr ""
 
 #: plugins/pageeffects/clockwipe/singlesweepwipe/KPrSingleSweepWipeEffectFactory.cpp:69
@@ -1634,15 +1644,17 @@ msgid "Clockwise Top Right"
 msgstr ""
 
 #: plugins/pageeffects/barwipe/KPrBarWipeEffectFactory.cpp:31
-msgid "Bar Wipe Effect"
+msgid "Bar"
 msgstr ""
 
 #: plugins/pageeffects/slidewipe/KPrSlideWipeEffectFactory.cpp:36
-msgid "Slide Wipe Effect"
-msgstr ""
+#, fuzzy
+#| msgid "Next Slide"
+msgid "Slide"
+msgstr "Diàpo seguenta"
 
 #: plugins/pageeffects/edgewipe/fourboxwipe/FourBoxWipeEffectFactory.cpp:29
-msgid "Four Box Wipe Effect"
+msgid "Four Box"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/fourboxwipe/FourBoxWipeEffectFactory.cpp:42
@@ -1662,7 +1674,7 @@ msgid "Corners Out Reverse"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/miscdiagonalwipe/MiscDiagonalWipeEffectFactory.cpp:29
-msgid "Misc Diagonal Wipe Effect"
+msgid "Misc Diagonal"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/miscdiagonalwipe/MiscDiagonalWipeEffectFactory.cpp:40
@@ -1674,15 +1686,15 @@ msgid "Double Diamond"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/barnveewipe/BarnVeeWipeEffectFactory.cpp:28
-msgid "Barn Vee Wipe Effect"
+msgid "Barn Vee"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/zigzagwipe/ZigZagWipeEffectFactory.cpp:28
-msgid "Zig Zag Wipe Effect"
+msgid "Zig Zag"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:28
-msgid "Barn Door Wipe Effect"
+msgid "Barn Door"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:49
@@ -1702,15 +1714,17 @@ msgid "Diagonal Top Left Reverse"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/diagonalwipe/DiagonalWipeEffectFactory.cpp:28
-msgid "Diagonal Wipe Effect"
-msgstr ""
+#, fuzzy
+#| msgid "Diamond"
+msgid "Diagonal"
+msgstr "Lausange"
 
 #: plugins/pageeffects/edgewipe/veewipe/VeeWipeEffectFactory.cpp:28
-msgid "Vee Wipe Effect"
+msgid "Vee"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/barnzigzagwipe/BarnZigZagWipeEffectFactory.cpp:28
-msgid "Barn Zig Zag Wipe Effect"
+msgid "Barn Zig Zag"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/barnzigzagwipe/BarnZigZagWipeEffectFactory.cpp:43
@@ -1722,5 +1736,5 @@ msgid "Horizontal Reversed"
 msgstr ""
 
 #: plugins/pageeffects/edgewipe/boxwipe/BoxWipeEffectFactory.cpp:28
-msgid "Box Wipe Effect"
+msgid "Box"
 msgstr ""
