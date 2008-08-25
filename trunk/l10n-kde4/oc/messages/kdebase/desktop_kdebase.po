@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdebase\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-19 06:52+0000\n"
+"POT-Creation-Date: 2008-08-25 07:19+0000\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1568,7 +1568,6 @@ msgid "Camera Program"
 msgstr ""
 
 #: apps/kappfinder/apps/Multimedia/xine.desktop:80
-#: runtime/phonon/xine/xine.desktop:12
 msgctxt "Name"
 msgid "Xine"
 msgstr "Xine"
@@ -2138,7 +2137,6 @@ msgid "SCSI information"
 msgstr ""
 
 #: apps/kinfocenter/info/sound.desktop:13
-#: runtime/phonon/kcm/kcm_phonon.desktop:13
 msgctxt "Name"
 msgid "Sound"
 msgstr "Son"
@@ -3428,7 +3426,7 @@ msgctxt "Name"
 msgid "Window Manager"
 msgstr "Gestionari de fichièrs"
 
-#: runtime/kcontrol/componentchooser/componentservices/kcm_wm.desktop:8
+#: runtime/kcontrol/componentchooser/componentservices/kcm_wm.desktop:12
 msgctxt "Comment"
 msgid ""
 "Here you can select the window manager to be run in your KDE session. Note "
@@ -3808,6 +3806,28 @@ msgstr "Fichièrs tèxt"
 msgctxt "Comment"
 msgid "Thumbnail Handler"
 msgstr ""
+
+#: runtime/kioslave/trash/kcmtrash.desktop:1
+#: runtime/kioslave/trash/kcmtrash.desktop:16
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Translation"
+msgctxt "Name"
+msgid "Trash"
+msgstr "Revirada"
+
+#: runtime/kioslave/trash/kcmtrash.desktop:3
+msgctxt "Comment"
+msgid "This service allows configuration of the trash."
+msgstr ""
+
+#: runtime/kioslave/trash/kcmtrash.desktop:18
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "Font settings"
+msgctxt "Comment"
+msgid "Configure trash settings"
+msgstr "Paramètres de poliça"
 
 #: runtime/kioslave/trash/trash.protocol:25
 msgctxt "ExtraNames"
@@ -6628,6 +6648,7 @@ msgid "More Applications"
 msgstr ""
 
 #: runtime/menu/desktop/kde-multimedia.directory:4
+#: runtime/phonon/kcm/kcm_phonon.desktop:13
 msgctxt "Name"
 msgid "Multimedia"
 msgstr "Multimedià"
@@ -6733,11 +6754,15 @@ msgid "Utilities"
 msgstr "Utilitaris"
 
 #: runtime/nepomuk/kcm/kcm_nepomuk.desktop:11
+#: workspace/plasma/runners/xesam/plasma-runner-xesam.desktop:2
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Desktop"
 msgctxt "Name"
-msgid "Nepomuk"
-msgstr ""
+msgid "Desktop Search"
+msgstr "Burèu"
 
-#: runtime/nepomuk/kcm/kcm_nepomuk.desktop:17
+#: runtime/nepomuk/kcm/kcm_nepomuk.desktop:12
 msgctxt "Comment"
 msgid "Nepomuk/Strigi Server Configuration"
 msgstr ""
@@ -6854,13 +6879,23 @@ msgctxt "Comment"
 msgid "Strigi file indexing has been resumed"
 msgstr ""
 
-#: runtime/phonon/kcm/kcm_phonon.desktop:88
+#: runtime/phonon/kcm/kcm_phonon.desktop:14
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "System Administration"
 msgctxt "Comment"
-msgid "Sound System Configuration"
+msgid "Sound and Video Configuration"
 msgstr "Administracion sistèma"
+
+#: runtime/phonon/kded-module/phononserver.desktop:8
+msgctxt "Name"
+msgid "Sound Policy Server"
+msgstr ""
+
+#: runtime/phonon/kded-module/phononserver.desktop:9
+msgctxt "Comment"
+msgid "A server to centralize decisions and data of applications using Phonon"
+msgstr ""
 
 #: runtime/phonon/platform_kde/phonon.notifyrc:3
 msgctxt "Comment"
@@ -6893,21 +6928,6 @@ msgstr ""
 msgctxt "Name"
 msgid "KDE Multimedia Backend"
 msgstr "Multimedià"
-
-#: runtime/phonon/xine/kcm/kcm_phononxine.desktop:11
-msgctxt "Name"
-msgid "Phonon Xine"
-msgstr ""
-
-#: runtime/phonon/xine/kcm/kcm_phononxine.desktop:28
-msgctxt "Comment"
-msgid "Xine Backend Configuration"
-msgstr ""
-
-#: runtime/phonon/xine/xine.desktop:22
-msgctxt "Comment"
-msgid "Phonon Xine backend"
-msgstr ""
 
 #: runtime/pics/hicolor/index.theme:2
 msgctxt "Name"
@@ -8486,14 +8506,6 @@ msgctxt "Name"
 msgid "Command Runner"
 msgstr ""
 
-#: workspace/krunner/lock/plasma/containment/plasma-containment-saverdesktop.desktop:2
-#, fuzzy
-#| msgctxt "Name"
-#| msgid "Desktop"
-msgctxt "Name"
-msgid "SaverDesktop"
-msgstr "Burèu"
-
 #: workspace/kscreensaver/kblank_screensaver/kblank.desktop:7
 msgctxt "Name"
 msgid "Blank Screen"
@@ -8941,7 +8953,7 @@ msgctxt "Name"
 msgid "Slide"
 msgstr "XSoldier"
 
-#: workspace/kwin/effects/slide.desktop:13
+#: workspace/kwin/effects/slide.desktop:15
 msgctxt "Comment"
 msgid "Slide windows when switching desktops"
 msgstr ""
@@ -9784,6 +9796,11 @@ msgctxt "Name"
 msgid "Trashcan"
 msgstr "Revirada"
 
+#: workspace/plasma/containments/desktop/plasma-containment-desktop.desktop:75
+msgctxt "Comment"
+msgid "Default desktop containment"
+msgstr ""
+
 #: workspace/plasma/containments/panel/plasma-containment-panel.desktop:2
 msgctxt "Name"
 msgid "Panel"
@@ -9929,11 +9946,6 @@ msgctxt "Comment"
 msgid "Theme done in the Oxygen style"
 msgstr ""
 
-#: workspace/plasma/plasma/plasma.desktop:4
-msgctxt "Name"
-msgid "Plasma"
-msgstr ""
-
 #: workspace/plasma/runners/bookmarks/plasma-runner-bookmarks.desktop:79
 msgctxt "Comment"
 msgid "Find and open bookmarks"
@@ -9997,14 +10009,6 @@ msgstr ""
 msgctxt "Comment"
 msgid "Allows user to use Konqueror's Web shortcuts"
 msgstr ""
-
-#: workspace/plasma/runners/xesam/plasma-runner-xesam.desktop:2
-#, fuzzy
-#| msgctxt "Name"
-#| msgid "Desktop"
-msgctxt "Name"
-msgid "Desktop Search"
-msgstr "Burèu"
 
 #: workspace/plasma/runners/xesam/plasma-runner-xesam.desktop:20
 msgctxt "Comment"
@@ -10093,6 +10097,24 @@ msgctxt "Comment"
 msgid "Webpage widget using HTML and JavaScript"
 msgstr ""
 
+#: workspace/plasma/shells/desktop/plasma.desktop:4
+msgctxt "Name"
+msgid "Plasma"
+msgstr ""
+
+#: workspace/plasma/shells/mid/plasma-mid.desktop:4
+msgctxt "Name"
+msgid "Plasma MID Shell"
+msgstr ""
+
+#: workspace/plasma/shells/screensaver/containment/plasma-containment-saverdesktop.desktop:2
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Desktop"
+msgctxt "Name"
+msgid "SaverDesktop"
+msgstr "Burèu"
+
 #: workspace/plasma/wallpapers/color/plasma-wallpaper-color.desktop:2
 #, fuzzy
 #| msgctxt "Name"
@@ -10100,6 +10122,23 @@ msgstr ""
 msgctxt "Name"
 msgid "Color"
 msgstr "Colors"
+
+#: workspace/plasma/wallpapers/image/plasma-wallpaper-image.desktop:3
+#: workspace/plasma/wallpapers/image/plasma-wallpaper-image.desktop:19
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Images"
+msgctxt "Name"
+msgid "Image"
+msgstr "Imatges"
+
+#: workspace/plasma/wallpapers/image/plasma-wallpaper-image.desktop:25
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "XSoldier"
+msgctxt "Name"
+msgid "Slideshow"
+msgstr "XSoldier"
 
 #: workspace/solid/bluez/solid_bluez.desktop:7
 msgctxt "Name"
@@ -10123,12 +10162,12 @@ msgstr ""
 
 #: workspace/solid/kcm/kcm_solid.desktop:12
 msgctxt "Name"
-msgid "Solid"
+msgid "Hardware"
 msgstr ""
 
-#: workspace/solid/kcm/kcm_solid.desktop:31
+#: workspace/solid/kcm/kcm_solid.desktop:13
 msgctxt "Comment"
-msgid "Hardware Integration Configuration"
+msgid "Hardware Integration Configuration with Solid"
 msgstr ""
 
 #: workspace/solid/networking/kded/networkstatus.desktop:2
