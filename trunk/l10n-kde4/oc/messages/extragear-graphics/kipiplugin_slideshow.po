@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-10 10:22+0200\n"
+"POT-Creation-Date: 2008-09-14 09:51+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -16,6 +16,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: captiondialog.cpp:39
+msgid "Slideshow is part of KIPI-Plugins (http://www.kipi-plugins.org)"
+msgstr ""
+
+#: maindialog.cpp:124
+msgid ""
+"In this version of kipi-plugins, normal SlideShow's effects still under "
+"porting.<br><b>They will be available again in the future.</b>"
+msgstr ""
+
+#: maindialog.cpp:187
+#, kde-format
+msgid "%1 image [%2]"
+msgstr "%1&nbsp;imatge [%2]"
+
+#: maindialog.cpp:189
+#, kde-format
+msgid "%1 images [%2]"
+msgstr "%1&nbsp;imatges [%2]"
+
+#: maindialog.cpp:253
+#, kde-format
+msgid "Cannot access to file %1, please check the path is right."
+msgstr ""
+
+#: maindialog.cpp:291
+#, kde-format
+msgid "Image no. %1"
+msgstr ""
+
+#: maindialog.cpp:377
+msgid "You can only move up one image file at once."
+msgstr ""
+
+#: maindialog.cpp:412
+msgid "You can only move down one image file at once."
+msgstr ""
+
+#: maindialog.cpp:450 slideshowkb.cpp:546
+msgid "Ken Burns"
+msgstr ""
+
+#: maindialog.cpp:472
+msgid "Delay between images (ms):"
+msgstr ""
+
+#: maindialog.cpp:480
+msgid "Delay between images  (s):"
+msgstr ""
 
 #: plugin_slideshow.cpp:86
 msgid "Advanced SlideShow..."
@@ -29,57 +79,177 @@ msgstr ""
 msgid "Sorry. OpenGL support not available on your system"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, SlideShowConfigBase)
-#: rc.cpp:3 slideshowconfig.cpp:90
+#. i18n: file: advanceddialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, AdvancedDialog)
+#: rc.cpp:3
 #, fuzzy
-#| msgid "Slide Show"
-msgid "SlideShow"
-msgstr "Diaporama"
+#| msgid "Advanced"
+msgid "advancedDialog"
+msgstr "A_vançat"
 
-#. i18n: file: slideshowconfigbase.ui:37
-#. i18n: ectx: attribute (title), widget (QWidget, mainTab)
+#. i18n: file: advanceddialog.ui:27
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:6
-msgid "Main"
-msgstr "Principal"
+#, fuzzy
+#| msgid "Interface"
+msgid "&Interface"
+msgstr "Interfaç"
 
-#. i18n: file: slideshowconfigbase.ui:61
-#. i18n: ectx: property (text), widget (QRadioButton, m_allFilesButton)
+#. i18n: file: advanceddialog.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, m_useMillisecondsCheckBox)
 #: rc.cpp:9
+msgid "Use &milliseconds instead of seconds"
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:55
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:12
+#, fuzzy
+#| msgid "Controls"
+msgid "&Controls"
+msgstr "Contraròtles"
+
+#. i18n: file: advanceddialog.ui:67
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_enableMouseWheelCheckBox)
+#: rc.cpp:15
+msgid "Enable mouse wheel to move between slides."
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:70
+#. i18n: ectx: property (text), widget (QCheckBox, m_enableMouseWheelCheckBox)
+#: rc.cpp:18
+msgid "Enable mouse &wheel "
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:88
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:21
+msgid "&Ken Burns effect"
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableFadeCheckBox)
+#: rc.cpp:24
+msgid "Disable &fade-in / fade-out"
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:113
+#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableCrossfadeCheckBox)
+#: rc.cpp:27
+msgid "Disable &crossfade"
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:129
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: rc.cpp:30
+#, fuzzy
+#| msgid "Others"
+msgid "&Others"
+msgstr "Autres"
+
+#. i18n: file: advanceddialog.ui:143
+#. i18n: ectx: property (text), widget (QCheckBox, m_cacheCheckBox)
+#: rc.cpp:33
+msgid "Enable &Cache"
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:158
+#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel1)
+#: rc.cpp:36
+msgid "Cache size:"
+msgstr ""
+
+#. i18n: file: advanceddialog.ui:200
+#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel2)
+#: rc.cpp:39
+msgid "images"
+msgstr "imatges"
+
+#. i18n: file: advanceddialog.ui:215
+#. i18n: ectx: property (text), widget (QLabel, m_KBCacheLabel)
+#: rc.cpp:42
+msgid ""
+"<b>Notice</b>:\n"
+"Ken Burns effect doesn't use this cache mechanism."
+msgstr ""
+
+#. i18n: file: captiondialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, CaptionDialog)
+#: rc.cpp:46
+msgid "captionDialog"
+msgstr ""
+
+#. i18n: file: captiondialog.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:49
+msgid "Colors"
+msgstr "Colors"
+
+#. i18n: file: captiondialog.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:52
+msgid "Font color :"
+msgstr ""
+
+#. i18n: file: captiondialog.ui:53
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:55
+msgid "Background color:"
+msgstr "Color de fons :"
+
+#. i18n: file: captiondialog.ui:76
+#. i18n: ectx: property (text), widget (QCheckBox, m_transparentBgCheckBox)
+#: rc.cpp:58
+msgid "Transparent background"
+msgstr ""
+
+#. i18n: file: captiondialog.ui:90
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:61
+msgid "Line lenght (in characters)"
+msgstr ""
+
+#. i18n: file: maindialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, MainDialog)
+#: rc.cpp:64
+msgid "mainDialog"
+msgstr ""
+
+#. i18n: file: maindialog.ui:28
+#. i18n: ectx: property (text), widget (QRadioButton, m_allFilesButton)
+#: rc.cpp:67
 msgid "Show all images in current al&bum"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:74
+#. i18n: file: maindialog.ui:35
 #. i18n: ectx: property (text), widget (QRadioButton, m_selectedFilesButton)
-#: rc.cpp:12
+#: rc.cpp:70
 msgid "Show onl&y selected images"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:81
+#. i18n: file: maindialog.ui:42
 #. i18n: ectx: property (text), widget (QRadioButton, m_customButton)
-#: rc.cpp:15
+#: rc.cpp:73
 #, fuzzy
 #| msgid "Custom"
 msgid "Cu&stom"
 msgstr "Personalizat"
 
-#. i18n: file: slideshowconfigbase.ui:91
-#. i18n: ectx: property (whatsThis), widget (Q3GroupBox, m_ImagesFilesGroup)
-#. i18n: file: slideshowconfigbase.ui:276
-#. i18n: ectx: property (whatsThis), widget (QLabel, m_ImageLabel)
-#: rc.cpp:18 rc.cpp:59
+#. i18n: file: maindialog.ui:52
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, m_ImagesFilesGroup)
+#: rc.cpp:76
 msgid "Preview the currently selected image."
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:94
-#. i18n: ectx: property (title), widget (Q3GroupBox, m_ImagesFilesGroup)
-#: rc.cpp:21
+#. i18n: file: maindialog.ui:55
+#. i18n: ectx: property (title), widget (QGroupBox, m_ImagesFilesGroup)
+#: rc.cpp:79
 msgid "Image Files in slideshow"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:110
+#. i18n: file: maindialog.ui:69
 #. i18n: ectx: property (whatsThis), widget (KIPISlideShowPlugin::ListImageItems, m_ImagesFilesListBox)
-#: rc.cpp:24
+#: rc.cpp:82
 msgid ""
 "This is the list of the image files for your portfolio.\n"
 "The portfolio's first image is on the top; the last image is on the bottom.\n"
@@ -87,286 +257,126 @@ msgid ""
 "and-drop."
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:123
-#. i18n: ectx: property (whatsThis), widget (QLabel, m_label6)
-#: rc.cpp:29
-msgid "Total number of images in the portfolio and sequence duration."
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:126
-#. i18n: ectx: property (text), widget (QLabel, m_label6)
-#. i18n: file: slideshowconfigbase.ui:304
-#. i18n: ectx: property (text), widget (QLabel, m_label7)
-#: rc.cpp:32 rc.cpp:65 slideshow.cpp:267 slideshowgl.cpp:409
-msgid "None"
-msgstr "Pas cap"
-
-#. i18n: file: slideshowconfigbase.ui:168
-#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonAdd)
-#: rc.cpp:35
-msgid "Add some image files to the portfolio list."
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:171
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonAdd)
-#: rc.cpp:38
-msgid "&Add..."
-msgstr "&Apondre..."
-
-#. i18n: file: slideshowconfigbase.ui:190
-#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonDelete)
-#: rc.cpp:41
-msgid "Remove some image files from the portfolio list."
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:193
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonDelete)
-#: rc.cpp:44
-msgid "&Delete"
-msgstr "&Suprimir"
-
-#. i18n: file: slideshowconfigbase.ui:212
+#. i18n: file: maindialog.ui:114
 #. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonUp)
-#: rc.cpp:47
+#: rc.cpp:87
 msgid "Moving the current image up on the portfolio list."
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:215
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonUp)
-#: rc.cpp:50
-msgid "Image &Up"
+#. i18n: file: maindialog.ui:136
+#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonAdd)
+#: rc.cpp:90
+msgid "Add some image files to the portfolio list."
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:234
+#. i18n: file: maindialog.ui:158
+#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonDelete)
+#: rc.cpp:93
+msgid "Remove some image files from the portfolio list."
+msgstr ""
+
+#. i18n: file: maindialog.ui:180
 #. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonDown)
-#: rc.cpp:53
+#: rc.cpp:96
 msgid "Moving the current image down on the portfolio list."
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:237
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonDown)
-#: rc.cpp:56
-msgid "Image D&own"
+#. i18n: file: maindialog.ui:212
+#. i18n: ectx: property (whatsThis), widget (QLabel, m_label6)
+#: rc.cpp:99
+msgid "Total number of images in the portfolio and sequence duration."
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:301
+#. i18n: file: maindialog.ui:215
+#. i18n: ectx: property (text), widget (QLabel, m_label6)
+#. i18n: file: maindialog.ui:234
+#. i18n: ectx: property (text), widget (QLabel, m_label7)
+#: rc.cpp:102 rc.cpp:108 slideshow.cpp:267 slideshowgl.cpp:409
+msgid "None"
+msgstr "Pas cap"
+
+#. i18n: file: maindialog.ui:231
 #. i18n: ectx: property (whatsThis), widget (QLabel, m_label7)
-#: rc.cpp:62
+#: rc.cpp:105
 msgid "Currently selected image in the portfolio list."
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:329
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox1)
-#: rc.cpp:68
-msgid "Video options"
-msgstr ""
+#. i18n: file: maindialog.ui:249
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:111
+#, fuzzy
+#| msgid "Comments"
+msgid "Content"
+msgstr "Comentaris"
 
-#. i18n: file: slideshowconfigbase.ui:347
-#. i18n: ectx: property (text), widget (QCheckBox, m_openglCheckBox)
-#: rc.cpp:71
-msgid "Use Open&GL slideshow transitions"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:382
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox1_2)
-#: rc.cpp:74
-msgid "Content options"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:402
+#. i18n: file: maindialog.ui:257
 #. i18n: ectx: property (text), widget (QCheckBox, m_printNameCheckBox)
-#: rc.cpp:77
+#: rc.cpp:114
 msgid "P&rint filename"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:418
+#. i18n: file: maindialog.ui:264
 #. i18n: ectx: property (text), widget (QCheckBox, m_printProgressCheckBox)
-#: rc.cpp:80
+#: rc.cpp:117
 msgid "Progress indicator"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:439
+#. i18n: file: maindialog.ui:273
 #. i18n: ectx: property (text), widget (QCheckBox, m_printCommentsCheckBox)
-#: rc.cpp:83
+#: rc.cpp:120
 msgid "Pr&int captions "
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:476
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox3)
-#: rc.cpp:86
-msgid "Playback options"
+#. i18n: file: maindialog.ui:296
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:123
+#, fuzzy
+#| msgid "Slide"
+msgid "Video"
+msgstr "Diàpo"
+
+#. i18n: file: maindialog.ui:302
+#. i18n: ectx: property (text), widget (QCheckBox, m_openglCheckBox)
+#: rc.cpp:126
+msgid "Use Open&GL slideshow transitions"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:497
+#. i18n: file: maindialog.ui:325
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:129
+msgid "Playback"
+msgstr ""
+
+#. i18n: file: maindialog.ui:331
 #. i18n: ectx: property (text), widget (QCheckBox, m_loopCheckBox)
-#: rc.cpp:89
+#: rc.cpp:132
 msgid "&Loop"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:516
+#. i18n: file: maindialog.ui:338
 #. i18n: ectx: property (text), widget (QCheckBox, m_shuffleCheckBox)
-#: rc.cpp:92
+#: rc.cpp:135
 msgid "&Shuffle images"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:537
+#. i18n: file: maindialog.ui:347
 #. i18n: ectx: property (text), widget (QLabel, m_delayLabel)
-#: rc.cpp:95
+#: rc.cpp:138
 msgid "Delay between images (s):"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:591
-#. i18n: ectx: property (text), widget (QLabel, label2)
-#: rc.cpp:98
+#. i18n: file: maindialog.ui:373
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:141
 msgid "Transition effect:"
 msgstr ""
 
-#. i18n: file: slideshowconfigbase.ui:680
-#. i18n: ectx: attribute (title), widget (QWidget, commentsTab)
-#: rc.cpp:101
-msgid "Comments"
-msgstr "Comentaris"
-
-#. i18n: file: slideshowconfigbase.ui:698
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox7)
-#: rc.cpp:104
-msgid "Colors"
-msgstr "Colors"
-
-#. i18n: file: slideshowconfigbase.ui:706
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:107
-msgid "Font color :"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:746
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:110
-msgid "Background color:"
-msgstr "Color de fons :"
-
-#. i18n: file: slideshowconfigbase.ui:791
-#. i18n: ectx: property (text), widget (QCheckBox, m_transparentBgCheckBox)
-#: rc.cpp:113
-msgid "Transparent background"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:821
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:116
-msgid "Line length (in characters) :"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:892
-#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
-#: rc.cpp:119
-msgid "Advanced"
-msgstr "A_vançat"
-
-#. i18n: file: slideshowconfigbase.ui:904
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox5)
-#: rc.cpp:122
-msgid "Interface"
-msgstr "Interfaç"
-
-#. i18n: file: slideshowconfigbase.ui:916
-#. i18n: ectx: property (text), widget (QCheckBox, m_useMillisecondsCheckBox)
-#: rc.cpp:125
-msgid "Use milliseconds instead of seconds"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:926
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox8)
-#: rc.cpp:128
-msgid "Controls"
-msgstr "Contraròtles"
-
-#. i18n: file: slideshowconfigbase.ui:938
-#. i18n: ectx: property (text), widget (QCheckBox, m_enableMouseWheelCheckBox)
-#: rc.cpp:131
-msgid "Enable mouse wheel (move between images)"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:948
-#. i18n: ectx: property (title), widget (Q3ButtonGroup, buttonGroup3)
-#: rc.cpp:134
-msgid "Ken Burns effect"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:954
-#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableFadeCheckBox)
-#: rc.cpp:137
-msgid "Disable fade-in / fade-out"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:961
-#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableCrossfadeCheckBox)
-#: rc.cpp:140
-msgid "Disable crossfade"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:974
-#. i18n: ectx: property (title), widget (Q3ButtonGroup, m_cacheButtonGroup)
-#: rc.cpp:143
-msgid "Others"
-msgstr "Autres"
-
-#. i18n: file: slideshowconfigbase.ui:980
-#. i18n: ectx: property (text), widget (QCheckBox, m_cacheCheckBox)
-#: rc.cpp:146
-msgid "Enable cache"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:992
-#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel1)
-#: rc.cpp:149
-msgid "Cache size:"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:1028
-#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel2)
-#: rc.cpp:152
-msgid "images"
-msgstr "imatges"
-
-#. i18n: file: slideshowconfigbase.ui:1044
-#. i18n: ectx: property (text), widget (QLabel, m_KBCacheLabel)
-#: rc.cpp:155
-msgid ""
-"<b>Notice</b>:\n"
-"Ken Burns effect doesn't use this cache mechanism."
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:1085
-#. i18n: ectx: property (text), widget (QPushButton, m_helpButton)
-#: rc.cpp:159
-msgid "&Help"
-msgstr "&Ajuda"
-
-#. i18n: file: slideshowconfigbase.ui:1088
-#. i18n: ectx: property (shortcut), widget (QPushButton, m_helpButton)
-#: rc.cpp:162
-msgid "F1"
-msgstr "F1"
-
-#. i18n: file: slideshowconfigbase.ui:1120
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonStart)
-#: rc.cpp:165
-msgid "&Start Slideshow"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:1139
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonExit)
-#: rc.cpp:168
-msgid "&Exit"
-msgstr "&Quitar"
-
-#: rc.cpp:169
+#: rc.cpp:142
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:170
+#: rc.cpp:143
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
@@ -431,88 +441,62 @@ msgstr ""
 msgid "Click To Exit..."
 msgstr ""
 
-#: slideshowconfig.cpp:94
-msgid "Slide Show"
+#: slideshowconfig.cpp:66 slideshowconfig.cpp:104
+#, fuzzy
+#| msgid "Slide Show"
+msgid "SlideShow"
 msgstr "Diaporama"
 
-#: slideshowconfig.cpp:97
+#: slideshowconfig.cpp:81
+#, fuzzy
+#| msgid "Slide Show"
+msgid "Start SlideShow"
+msgstr "Diaporama"
+
+#: slideshowconfig.cpp:88
+msgid "Main"
+msgstr "Principal"
+
+#: slideshowconfig.cpp:89
+msgid "Main Settings"
+msgstr ""
+
+#: slideshowconfig.cpp:93 slideshowconfig.cpp:94
+msgid "Caption"
+msgstr ""
+
+#: slideshowconfig.cpp:98 slideshowconfig.cpp:99
+msgid "Advanced"
+msgstr "A_vançat"
+
+#: slideshowconfig.cpp:107
 msgid "A Kipi plugin for image slideshow"
 msgstr ""
 
-#: slideshowconfig.cpp:98
+#: slideshowconfig.cpp:108
 msgid ""
 "(c) 2003-2004, Renchi Raju\n"
 "(c) 2006-2008, Valerio Fuoglio"
 msgstr ""
 
-#: slideshowconfig.cpp:100
+#: slideshowconfig.cpp:110
 msgid "Renchi Raju"
 msgstr ""
 
-#: slideshowconfig.cpp:100
+#: slideshowconfig.cpp:110
 msgid "Author"
 msgstr "Autor"
 
-#: slideshowconfig.cpp:102
+#: slideshowconfig.cpp:112
 msgid "Valerio Fuoglio"
 msgstr ""
 
-#: slideshowconfig.cpp:102
+#: slideshowconfig.cpp:112
 msgid "Author and maintainer"
 msgstr ""
 
-#: slideshowconfig.cpp:108
+#: slideshowconfig.cpp:121
 msgid "SlideShow Handbook"
-msgstr ""
-
-#: slideshowconfig.cpp:169
-msgid ""
-"In this version of kipi-plugins, normal SlideShow's effects still under "
-"porting.<br><b>They will be available again in the future.</b>"
-msgstr ""
-
-#: slideshowconfig.cpp:179
-msgid "Slideshow is part of KIPI-Plugins (http://www.kipi-plugins.org)"
-msgstr ""
-
-#: slideshowconfig.cpp:514
-msgid "Delay between images (ms):"
-msgstr ""
-
-#: slideshowconfig.cpp:522
-msgid "Delay between images  (s):"
-msgstr ""
-
-#: slideshowconfig.cpp:533 slideshowkb.cpp:546
-msgid "Ken Burns"
-msgstr ""
-
-#: slideshowconfig.cpp:652
-#, kde-format
-msgid "Image no. %1"
-msgstr ""
-
-#: slideshowconfig.cpp:705
-msgid "You can only move up one image file at once."
-msgstr ""
-
-#: slideshowconfig.cpp:740
-msgid "You can only move down one image file at once."
-msgstr ""
-
-#: slideshowconfig.cpp:779
-#, kde-format
-msgid "%1 image [%2]"
-msgstr "%1&nbsp;imatge [%2]"
-
-#: slideshowconfig.cpp:781
-#, kde-format
-msgid "%1 images [%2]"
-msgstr "%1&nbsp;imatges [%2]"
-
-#: slideshowconfig.cpp:810
-#, kde-format
-msgid "Cannot access to file %1, please check the path is right."
 msgstr ""
 
 #: slideshowgl.cpp:410
@@ -546,6 +530,24 @@ msgstr "እንደገና አስጀምሩ"
 #: slideshowgl.cpp:417
 msgid "Slide"
 msgstr "Diàpo"
+
+#~ msgid "&Add..."
+#~ msgstr "&Apondre..."
+
+#~ msgid "&Delete"
+#~ msgstr "&Suprimir"
+
+#~ msgid "&Help"
+#~ msgstr "&Ajuda"
+
+#~ msgid "F1"
+#~ msgstr "F1"
+
+#~ msgid "&Exit"
+#~ msgstr "&Quitar"
+
+#~ msgid "Slide Show"
+#~ msgstr "Diaporama"
 
 #~ msgid "Slideshow"
 #~ msgstr "Diaporamà"
