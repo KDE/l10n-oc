@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksirk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-20 10:31+0200\n"
+"POT-Creation-Date: 2008-09-21 09:48+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -80,7 +80,7 @@ msgstr ""
 #: gestionSprites.cpp:1393 gestionSprites.cpp:1470 GameLogic/onu.cpp:117
 #: GameLogic/onu.cpp:130 Sprites/animsprite.cpp:496 Sprites/animsprite.cpp:511
 #: kgamewin.cpp:142 kgamewin.cpp:291 kgamewin.cpp:474 kgamewin.cpp:646
-#: kgamewin.cpp:1351
+#: kgamewin.cpp:1355
 msgid "Error !"
 msgstr ""
 
@@ -129,6 +129,10 @@ msgstr "Carga"
 msgid "Quit"
 msgstr "Quitar"
 
+#: mainMenu.cpp:59
+msgid "<h1>KsirK</h1>"
+msgstr ""
+
 #: decoratedgameframe.cpp:99 kgamewin.cpp:320 kgamewin.cpp:1100
 #: kgamewin.cpp:1178
 msgid "Next Player"
@@ -139,7 +143,7 @@ msgid "Details"
 msgstr "Detalhs"
 
 #: decoratedgameframe.cpp:105 kgamewin.cpp:302 kgamewin.cpp:1206
-#: kgamewin.cpp:1397 kgamewin.cpp:1407 kgamewin.cpp:2634
+#: kgamewin.cpp:1401 kgamewin.cpp:1411 kgamewin.cpp:2638
 msgid "Goal"
 msgstr ""
 
@@ -180,7 +184,7 @@ msgstr ""
 msgid "Disable Arena"
 msgstr ""
 
-#: main.cpp:32 main.cpp:39 kgamewin.cpp:2447
+#: main.cpp:32 main.cpp:39 kgamewin.cpp:2451
 msgid "KsirK"
 msgstr ""
 
@@ -233,7 +237,7 @@ msgstr ""
 
 #: Dialogs/kplayersetupdialog.cpp:96 Dialogs/kplayersetupdialog.cpp:98
 #: Dialogs/kplayersetupdialog.cpp:103 Dialogs/kplayersetupdialog.cpp:105
-#: GameLogic/gameautomaton.cpp:1651 kgamewin.cpp:1535
+#: GameLogic/gameautomaton.cpp:1651 kgamewin.cpp:1539
 msgid "Error"
 msgstr "Error"
 
@@ -279,6 +283,10 @@ msgstr ""
 #: GameLogic/aiplayer.cpp:489 GameLogic/onu.cpp:87
 #: Sprites/skinSpritesData.cpp:89 Sprites/skinSpritesData.cpp:105
 msgid "Fatal Error"
+msgstr ""
+
+#: GameLogic/goal.cpp:157
+msgid "You must conquer the World !"
 msgstr ""
 
 #: GameLogic/goal.cpp:196
@@ -395,7 +403,7 @@ msgstr ""
 msgid "Do you really want to end your current game and join another ?"
 msgstr ""
 
-#: GameLogic/gameautomaton.cpp:1343 kgamewin.cpp:2804
+#: GameLogic/gameautomaton.cpp:1343 kgamewin.cpp:2808
 msgid "New game confirmation"
 msgstr ""
 
@@ -420,17 +428,17 @@ msgstr ""
 msgid "KsirK - Name already used !"
 msgstr ""
 
-#: GameLogic/gameautomaton.cpp:1643 kgamewin.cpp:1528
+#: GameLogic/gameautomaton.cpp:1643 kgamewin.cpp:1532
 #, kde-format
 msgid "Player number %1, what's your name ?"
 msgstr ""
 
-#: GameLogic/gameautomaton.cpp:1650 kgamewin.cpp:1534
+#: GameLogic/gameautomaton.cpp:1650 kgamewin.cpp:1538
 #, kde-format
 msgid "Error - Player %1, you have to choose a name."
 msgstr ""
 
-#: GameLogic/gameautomaton.cpp:1652 kgamewin.cpp:1536
+#: GameLogic/gameautomaton.cpp:1652 kgamewin.cpp:1540
 #, kde-format
 msgctxt "@info Forged player name"
 msgid "Player%1"
@@ -480,7 +488,7 @@ msgid "Do want to save your game?"
 msgstr ""
 
 #: GameLogic/gameautomaton.cpp:1978 GameLogic/gameautomaton.cpp:2362
-#: kgamewin.cpp:2260 kgamewin.cpp:2359 kgamewin.cpp:2396
+#: kgamewin.cpp:2264 kgamewin.cpp:2363 kgamewin.cpp:2400
 #, kde-format
 msgid "%1 : %2 armies to place"
 msgstr ""
@@ -524,6 +532,15 @@ msgstr ""
 
 #: GameLogic/gameautomaton.cpp:2514
 msgid "KsirK - Invalid password !"
+msgstr ""
+
+#: GameLogic/KsirkChatModel.cpp:72 kgamewin.cpp:174
+msgid "No message..."
+msgstr ""
+
+#: GameLogic/KsirkChatModel.cpp:74
+#, kde-format
+msgid "<b>%1:</b> %2"
 msgstr ""
 
 #. i18n: file: ksirksettings.kcfg:7
@@ -1728,26 +1745,30 @@ msgstr ""
 msgid "<i>Fighting in progress...</i>"
 msgstr ""
 
-#: krightdialog.cpp:216 krightdialog.cpp:227
-msgid "<i>("
-msgstr ""
-
 #: krightdialog.cpp:222
 #, kde-format
 msgid "<font color=\"red\">Attack</font> with %1 armies.<br>"
 msgstr ""
 
-#: krightdialog.cpp:225 krightdialog.cpp:314
-msgid "<u><b>"
-msgstr ""
-
-#: krightdialog.cpp:231
-msgid "<b>"
-msgstr ""
-
 #: krightdialog.cpp:233
 #, kde-format
 msgid "<font color=\"blue\">Defend</font> with %1 armies.<br>"
+msgstr ""
+
+#: krightdialog.cpp:263
+msgid "Stop Attack-auto"
+msgstr ""
+
+#: krightdialog.cpp:288
+msgid "Valid"
+msgstr ""
+
+#: krightdialog.cpp:289
+msgid "Recycle"
+msgstr ""
+
+#: krightdialog.cpp:290
+msgid "Done"
 msgstr ""
 
 #: krightdialog.cpp:317 krightdialog.cpp:386
@@ -1794,15 +1815,11 @@ msgstr ""
 msgid "Cannot load icon<br>Program cannot continue"
 msgstr ""
 
-#: kgamewin.cpp:174
-msgid "No message..."
-msgstr ""
-
 #: kgamewin.cpp:217
 msgid "Game Actions Toolbar"
 msgstr ""
 
-#: kgamewin.cpp:291 kgamewin.cpp:1351
+#: kgamewin.cpp:291 kgamewin.cpp:1355
 #, kde-format
 msgid "Cannot load button image %1<br>Program cannot continue"
 msgstr ""
@@ -1921,163 +1938,175 @@ msgstr ""
 msgid "Defend-Auto"
 msgstr ""
 
-#: kgamewin.cpp:1292
-msgid "Invade with one army"
-msgstr ""
-
-#: kgamewin.cpp:1293
-msgid "Invade with five armies"
-msgstr ""
-
-#: kgamewin.cpp:1294
-msgid "Invade with ten armies"
-msgstr ""
-
-#: kgamewin.cpp:1295
-msgid "End Invasion"
+#: kgamewin.cpp:1245
+#, kde-format
+msgid ""
+"<font color=\"red\">%1</font> attacks you from <font color=\"red\">%2</font> "
+"with %3 armies !<br> How do you want to defend <font color=\"blue\">%4</"
+"font> ?"
 msgstr ""
 
 #: kgamewin.cpp:1296
-msgid "Retract one army"
+msgid "Invade with one army"
 msgstr ""
 
 #: kgamewin.cpp:1297
-msgid "Retract five armies"
+msgid "Invade with five armies"
 msgstr ""
 
 #: kgamewin.cpp:1298
+msgid "Invade with ten armies"
+msgstr ""
+
+#: kgamewin.cpp:1299
+msgid "End Invasion"
+msgstr ""
+
+#: kgamewin.cpp:1300
+msgid "Retract one army"
+msgstr ""
+
+#: kgamewin.cpp:1301
+msgid "Retract five armies"
+msgstr ""
+
+#: kgamewin.cpp:1302
 msgid "Retract ten armies"
 msgstr ""
 
-#: kgamewin.cpp:1311
+#: kgamewin.cpp:1315
 msgid "Cancel"
 msgstr "Anullar"
 
-#: kgamewin.cpp:1473
+#: kgamewin.cpp:1477
 #, kde-format
 msgid "Waiting for %1 players to connect"
 msgstr ""
 
-#: kgamewin.cpp:1883 kgamewin.cpp:1922
+#: kgamewin.cpp:1887 kgamewin.cpp:1926
 msgid "There is no country here!"
 msgstr ""
 
-#: kgamewin.cpp:1887 kgamewin.cpp:1926
+#: kgamewin.cpp:1891 kgamewin.cpp:1930
 #, kde-format
 msgid "You are not the owner of the first country: %1 !"
 msgstr ""
 
-#: kgamewin.cpp:1891
+#: kgamewin.cpp:1895
 #, kde-format
 msgid "You are not the owner of the second country: %1 !"
 msgstr ""
 
-#: kgamewin.cpp:1895 kgamewin.cpp:1935
+#: kgamewin.cpp:1899 kgamewin.cpp:1939
 #, kde-format
 msgid "You are trying to move armies from %1 to itself !"
 msgstr ""
 
-#: kgamewin.cpp:1900 kgamewin.cpp:1940
+#: kgamewin.cpp:1904 kgamewin.cpp:1944
 #, kde-format
 msgid "%1 is not a neighbour of %2 !"
 msgstr ""
 
-#: kgamewin.cpp:1906
+#: kgamewin.cpp:1910
 #, kde-format
 msgid "Moving armies from %1 to %2."
 msgstr ""
 
-#: kgamewin.cpp:1931
+#: kgamewin.cpp:1935
 #, kde-format
 msgid "You are the owner of the second country: %1 !"
 msgstr ""
 
-#: kgamewin.cpp:1946
+#: kgamewin.cpp:1950
 msgid "Ready to fight !"
 msgstr ""
 
-#: kgamewin.cpp:2038
+#: kgamewin.cpp:2042
 msgid "<font color=\"orange\">No country here !</font>"
 msgstr ""
 
-#: kgamewin.cpp:2046
+#: kgamewin.cpp:2050
 #, kde-format
 msgid "<font color=\"orange\">You are not the owner of %1 !</font>"
 msgstr ""
 
-#: kgamewin.cpp:2053
+#: kgamewin.cpp:2057
 #, kde-format
 msgid "<font color=\"orange\">There is only %1 armies in %2 !</font>"
 msgstr ""
 
-#: kgamewin.cpp:2193
+#: kgamewin.cpp:2197
 #, kde-format
 msgid "%1, you defend with the only army you have in %2."
 msgstr ""
 
-#: kgamewin.cpp:2424
+#: kgamewin.cpp:2428
 msgid "Exchange armies again or continue ?"
 msgstr ""
 
-#: kgamewin.cpp:2447
+#: kgamewin.cpp:2451
 msgid ""
 "You must distribute\n"
 "all your armies"
 msgstr ""
 
-#: kgamewin.cpp:2517 kgamewin.cpp:2740 kgamewin.cpp:2751 kgamewin.cpp:2774
-#: kgamewin.cpp:2982
+#: kgamewin.cpp:2521 kgamewin.cpp:2744 kgamewin.cpp:2755 kgamewin.cpp:2778
+#: kgamewin.cpp:2986
 #, kde-format
 msgid "%1, it is up to you."
 msgstr ""
 
-#: kgamewin.cpp:2616
+#: kgamewin.cpp:2620
 msgid "Battle ongoing."
 msgstr ""
 
-#: kgamewin.cpp:2804
+#: kgamewin.cpp:2808
 msgid "Do you really want to end your current game and start a new one ?"
 msgstr ""
 
 #: kgamewin.cpp:3067
+msgid "<b>KsirK quick Introduction</b>"
+msgstr ""
+
+#: kgamewin.cpp:3071
 msgid ""
 "Attacks and moves are issued through drag & drop between neighbour countries."
 msgstr ""
 
-#: kgamewin.cpp:3071
+#: kgamewin.cpp:3075
 msgid "Start a new game or join a network game with the menu or the toolbar..."
 msgstr ""
 
-#: kgamewin.cpp:3108
+#: kgamewin.cpp:3112
 msgid ""
 "and then let the system guide you through messages and tooltips appearing on "
 "buttons when hovering above them. You can disable bubble help in the options "
 "window."
 msgstr ""
 
-#: kgamewin.cpp:3115
+#: kgamewin.cpp:3119
 msgid "Don't show messages anymore"
 msgstr ""
 
-#: kgamewin.cpp:3291
+#: kgamewin.cpp:3295
 #, kde-format
 msgid ""
 "You conquered <font color=\"blue\">%1</font> with <font color=\"red\">%2</"
 "font>!"
 msgstr ""
 
-#: kgamewin.cpp:3292
+#: kgamewin.cpp:3296
 msgid "<br><i>Choose the number of invade armies.</i>"
 msgstr ""
 
-#: kgamewin.cpp:3296
+#: kgamewin.cpp:3300
 #, kde-format
 msgid ""
 "You are moving armies from <font color=\"red\">%1</font> to <font color="
 "\"blue\">%2</font>!"
 msgstr ""
 
-#: kgamewin.cpp:3297
+#: kgamewin.cpp:3301
 msgid "<br><i>Choose the number of moved armies.</i>"
 msgstr ""
 

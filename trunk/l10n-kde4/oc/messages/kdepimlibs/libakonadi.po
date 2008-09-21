@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-15 09:42+0200\n"
+"POT-Creation-Date: 2008-09-21 09:50+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -79,24 +79,36 @@ msgctxt "@title:column, total number of messages"
 msgid "Total"
 msgstr "Total"
 
-#: collectionview.cpp:216
+#: collectionview.cpp:219
 msgid "&Move here"
 msgstr ""
 
-#: collectionview.cpp:217
+#: collectionview.cpp:220
 msgid "&Copy here"
 msgstr "&Copiar aicí"
 
-#: collectionview.cpp:219
+#: collectionview.cpp:222
 msgid "Cancel"
 msgstr "Anullar"
 
-#: control.cpp:195
+#: control.cpp:204
 msgid "Starting Akonadi server..."
 msgstr ""
 
-#: control.cpp:201
+#: control.cpp:210
 msgid "Stopping Akonadi server..."
+msgstr ""
+
+#: erroroverlay.cpp:95
+msgid ""
+"<p style=\"color: white;\"><b>Akonadi not operational.<br/><a href=\"details"
+"\" style=\"color: white;\">Details...</a></b></p>"
+msgstr ""
+
+#: erroroverlay.cpp:103
+msgid ""
+"The Akonadi personal information management framework is not operational.\n"
+"Click on \"Details...\" to obtain detailed information on this problem."
 msgstr ""
 
 #: itemmodel.cpp:280
@@ -344,15 +356,19 @@ msgctxt "@info:status"
 msgid "Syncing collection '%1'"
 msgstr ""
 
-#: selftestdialog.cpp:55
+#: selftestdialog.cpp:58
 msgid "Akonadi Server Self-Test"
 msgstr ""
 
-#: selftestdialog.cpp:57
-msgid "Save Report"
+#: selftestdialog.cpp:60
+msgid "Save Report..."
 msgstr ""
 
-#: selftestdialog.cpp:138
+#: selftestdialog.cpp:62
+msgid "Copy Report to Clipboard"
+msgstr ""
+
+#: selftestdialog.cpp:144
 #, kde-format
 msgid ""
 "The QtSQL driver '%1' is required by your current Akonadi server "
@@ -361,73 +377,78 @@ msgid ""
 "Make sure the required driver is installed."
 msgstr ""
 
-#: selftestdialog.cpp:142
+#: selftestdialog.cpp:149
 msgid "Database driver found."
 msgstr ""
 
-#: selftestdialog.cpp:144
+#: selftestdialog.cpp:151
 msgid "Database driver not found."
 msgstr ""
 
-#: selftestdialog.cpp:157
+#: selftestdialog.cpp:165
 #, kde-format
 msgid ""
 "You currently have configured Akonadi to use the MySQL server '%1'.\n"
 "Make sure you have the MySQL server installed, set the correct path and "
 "ensure you have the necessary read and execution rights on the server "
-"executable."
+"executable. The server executable is typically called 'mysqld', its "
+"locations varies depending on the distribution."
 msgstr ""
 
-#: selftestdialog.cpp:163
+#: selftestdialog.cpp:172
 msgid "MySQL server not found."
 msgstr ""
 
-#: selftestdialog.cpp:165
+#: selftestdialog.cpp:174
 msgid "MySQL server not readable."
 msgstr ""
 
-#: selftestdialog.cpp:167
+#: selftestdialog.cpp:176
 msgid "MySQL server not executable."
 msgstr ""
 
-#: selftestdialog.cpp:169
+#: selftestdialog.cpp:178
+msgid "MySQL found with unexpected name."
+msgstr ""
+
+#: selftestdialog.cpp:180
 msgid "MySQL server found."
 msgstr ""
 
-#: selftestdialog.cpp:174
+#: selftestdialog.cpp:185
 #, kde-format
 msgid "MySQL server found: %1"
 msgstr ""
 
-#: selftestdialog.cpp:175
+#: selftestdialog.cpp:186
 msgid "MySQL server is executable."
 msgstr ""
 
-#: selftestdialog.cpp:177
+#: selftestdialog.cpp:188
 #, kde-format
 msgid ""
 "Executing the MySQL server '%1' failed with the following error message: '%2'"
 msgstr ""
 
-#: selftestdialog.cpp:178
+#: selftestdialog.cpp:189
 msgid "Executing the MySQL server failed."
 msgstr ""
 
-#: selftestdialog.cpp:186
+#: selftestdialog.cpp:197
 msgid "akonadictl not found"
 msgstr ""
 
-#: selftestdialog.cpp:187
+#: selftestdialog.cpp:198
 msgid ""
 "The program 'akonadictl' needs to be accessible in $PATH. Make sure you have "
 "the Akonadi server installed."
 msgstr ""
 
-#: selftestdialog.cpp:193
+#: selftestdialog.cpp:204
 msgid "akonadictl found and usable"
 msgstr ""
 
-#: selftestdialog.cpp:194
+#: selftestdialog.cpp:205
 #, kde-format
 msgid ""
 "The program '%1' to control the Akonadi server was found and could be "
@@ -436,11 +457,11 @@ msgid ""
 "%2"
 msgstr ""
 
-#: selftestdialog.cpp:197
+#: selftestdialog.cpp:208
 msgid "akonadictl found but not usable"
 msgstr ""
 
-#: selftestdialog.cpp:198
+#: selftestdialog.cpp:209
 #, kde-format
 msgid ""
 "The program '%1' to control the Akonadi server was found but could not be "
@@ -450,147 +471,148 @@ msgid ""
 "Make sure the Akonadi server is installed correctly."
 msgstr ""
 
-#: selftestdialog.cpp:207
+#: selftestdialog.cpp:218
 msgid "Akonadi control process registered at D-Bus."
 msgstr ""
 
-#: selftestdialog.cpp:208
+#: selftestdialog.cpp:219
 msgid ""
 "The Akonadi control process is registered at D-Bus which typically indicates "
 "it is operational."
 msgstr ""
 
-#: selftestdialog.cpp:210
+#: selftestdialog.cpp:221
 msgid "Akonadi control process not registered at D-Bus."
 msgstr ""
 
-#: selftestdialog.cpp:211
+#: selftestdialog.cpp:222
 msgid ""
 "The Akonadi control process is not registered at D-Bus which typically means "
 "it was not started or encountered a fatal error during startup."
 msgstr ""
 
-#: selftestdialog.cpp:216
+#: selftestdialog.cpp:227
 msgid "Akonadi server process registered at D-Bus."
 msgstr ""
 
-#: selftestdialog.cpp:217
+#: selftestdialog.cpp:228
 msgid ""
 "The Akonadi server process is registered at D-Bus which typically indicates "
 "it is operational."
 msgstr ""
 
-#: selftestdialog.cpp:219
+#: selftestdialog.cpp:230
 msgid "Akonadi server process not registered at D-Bus."
 msgstr ""
 
-#: selftestdialog.cpp:220
+#: selftestdialog.cpp:231
 msgid ""
 "The Akonadi server process is not registered at D-Bus which typically means "
 "it was not started or encountered a fatal error during startup."
 msgstr ""
 
-#: selftestdialog.cpp:237
+#: selftestdialog.cpp:250
 msgid "Resource agents found."
 msgstr ""
 
-#: selftestdialog.cpp:237
+#: selftestdialog.cpp:250
 msgid "At least one resource agent has been found."
 msgstr ""
 
-#: selftestdialog.cpp:240
+#: selftestdialog.cpp:253
 msgid "No resource agents found."
 msgstr ""
 
-#: selftestdialog.cpp:241
+#: selftestdialog.cpp:254
+#, kde-format
 msgid ""
 "No resource agents have been found, Akonadi is not usable without at least "
 "one. This usually means that no resource agents are installed or that there "
-"is a setup problem."
+"is a setup problem.The following paths have been searched: %1"
 msgstr ""
 
-#: selftestdialog.cpp:252
+#: selftestdialog.cpp:267
 msgid "No current Akonadi server error log found."
 msgstr ""
 
-#: selftestdialog.cpp:253
+#: selftestdialog.cpp:268
 msgid ""
 "The Akonadi server did not report any errors during its current startup."
 msgstr ""
 
-#: selftestdialog.cpp:255
+#: selftestdialog.cpp:270
 msgid "Current Akonadi server error log found."
 msgstr ""
 
-#: selftestdialog.cpp:256
+#: selftestdialog.cpp:271
 #, kde-format
 msgid "The Akonadi server did report error during startup into %1."
 msgstr ""
 
-#: selftestdialog.cpp:263
+#: selftestdialog.cpp:278
 msgid "No previous Akonadi server error log found."
 msgstr ""
 
-#: selftestdialog.cpp:264
+#: selftestdialog.cpp:279
 msgid ""
 "The Akonadi server did not report any errors during its previous startup."
 msgstr ""
 
-#: selftestdialog.cpp:266
+#: selftestdialog.cpp:281
 msgid "Previous Akonadi server error log found."
 msgstr ""
 
-#: selftestdialog.cpp:267
+#: selftestdialog.cpp:282
 #, kde-format
 msgid ""
 "The Akonadi server did report error during its previous startup into %1."
 msgstr ""
 
-#: selftestdialog.cpp:278
+#: selftestdialog.cpp:293
 msgid "No current Akonadi control error log found."
 msgstr ""
 
-#: selftestdialog.cpp:279
+#: selftestdialog.cpp:294
 msgid ""
 "The Akonadi control process did not report any errors during its current "
 "startup."
 msgstr ""
 
-#: selftestdialog.cpp:281
+#: selftestdialog.cpp:296
 msgid "Current Akonadi control error log found."
 msgstr ""
 
-#: selftestdialog.cpp:282
+#: selftestdialog.cpp:297
 #, kde-format
 msgid "The Akonadi control process did report error during startup into %1."
 msgstr ""
 
-#: selftestdialog.cpp:289
+#: selftestdialog.cpp:304
 msgid "No previous Akonadi control error log found."
 msgstr ""
 
-#: selftestdialog.cpp:290
+#: selftestdialog.cpp:305
 msgid ""
 "The Akonadi control process did not report any errors during its previous "
 "startup."
 msgstr ""
 
-#: selftestdialog.cpp:292
+#: selftestdialog.cpp:307
 msgid "Previous Akonadi control error log found."
 msgstr ""
 
-#: selftestdialog.cpp:293
+#: selftestdialog.cpp:308
 #, kde-format
 msgid ""
 "The Akonadi control process did report error during its previous startup "
 "into %1."
 msgstr ""
 
-#: selftestdialog.cpp:301
+#: selftestdialog.cpp:360
 msgid "Save Test Report"
 msgstr ""
 
-#: selftestdialog.cpp:304
+#: selftestdialog.cpp:363
 #, fuzzy, kde-format
 #| msgid "Could not create folder: %1"
 msgid "Could not open file '%1'"
