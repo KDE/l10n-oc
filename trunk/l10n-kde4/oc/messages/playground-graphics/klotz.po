@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kldraw\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-21 09:55+0200\n"
+"POT-Creation-Date: 2008-09-25 10:36+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -136,27 +136,42 @@ msgstr ""
 msgid "Data"
 msgstr "Donadas"
 
-#: dbmanager.cpp:55
+#: dbmanager.cpp:66
 msgid "Could not open the part database."
 msgstr ""
 
-#: dbmanager.cpp:87 dbmanager.cpp:98 dbmanager.cpp:152 dbmanager.cpp:162
+#: dbmanager.cpp:98 dbmanager.cpp:109 dbmanager.cpp:163 dbmanager.cpp:173
 msgid "Sorry, Database is locked right now. Please try again later."
 msgstr ""
 
-#: dbmanager.cpp:119 dbmanager.cpp:180
+#: dbmanager.cpp:130 dbmanager.cpp:191
 msgid "Retry count has reached maximum"
 msgstr ""
 
-#: globals.cpp:54
+#: globals.cpp:58
 msgid ""
 "<qt>Couldn't find LDraw part library. If you have installed LDraw, please "
 "specify your installation path. Get it from <a href=\"http://www.ldraw.org"
 "\">http://www.ldraw.org</a> otherwise.</qt>"
 msgstr ""
 
-#: globals.cpp:56
+#: globals.cpp:60
 msgid "Choose LDraw installation directory"
+msgstr ""
+
+#: globals.cpp:146
+msgid "Scanning"
+msgstr ""
+
+#: globals.cpp:146 globals.cpp:162
+#, kde-format
+msgid ""
+"<qt><p align=center>Klotz is now creating database from LDraw part library "
+"in your computer. Please wait...<br/>%1</p></qt>"
+msgstr ""
+
+#: globals.cpp:176
+msgid "Could not scan LDraw part library."
 msgstr ""
 
 #: main.cpp:17
@@ -195,65 +210,61 @@ msgstr ""
 msgid "Path to LDraw part library"
 msgstr ""
 
+#: main_dbupdater.cpp:24
+msgid "Rescan the entire library"
+msgstr ""
+
 #: mainwindow.cpp:142
-msgid "LDraw Model Files (*.ldr *.mpd *.dat)"
+msgid "Select document(s)"
 msgstr ""
 
-#: mainwindow.cpp:143
-msgid "All Files"
-msgstr "Totes los fichièrs"
-
-#: mainwindow.cpp:143
-msgid "Open a file to load"
-msgstr ""
-
-#: mainwindow.cpp:193 mainwindow.cpp:479
+#: mainwindow.cpp:202 mainwindow.cpp:488
 #, kde-format
 msgid "The document \"%1\" has been modified. Do you want to save it?"
 msgstr ""
 
-#: mainwindow.cpp:349
+#: mainwindow.cpp:358
 #, fuzzy
 #| msgid "Comment"
 msgid "Contents"
 msgstr "Comentari"
 
-#: mainwindow.cpp:354
+#: mainwindow.cpp:363
 msgid "Submodels"
 msgstr ""
 
-#: mainwindow.cpp:359
+#: mainwindow.cpp:368
 #, fuzzy
 #| msgid "Print"
 msgid "Parts"
 msgstr "Estampar"
 
-#: mainwindow.cpp:438
+#: mainwindow.cpp:447
 msgid "Reset &Zoom"
 msgstr ""
 
-#: mainwindow.cpp:444
+#: mainwindow.cpp:453
 msgid "Re&set 3D View"
 msgstr ""
 
-#: mainwindow.cpp:448
+#: mainwindow.cpp:457
 msgid "R&ender"
 msgstr ""
 
-#: mainwindow.cpp:454
+#: mainwindow.cpp:463
 msgid "Render by &Steps"
 msgstr ""
 
-#: mainwindow.cpp:504
+#: mainwindow.cpp:514
 msgid "Save document"
 msgstr ""
 
-#: mainwindow.cpp:527
+#: mainwindow.cpp:541
 #, kde-format
 msgid "Could not open temporary file '%1' for writing."
 msgstr ""
 
-#: mainwindow.cpp:535
+#: mainwindow.cpp:549
 msgid "Could not write to a file."
 msgstr ""
 
@@ -284,7 +295,7 @@ msgid "Aborted."
 msgstr ""
 
 #: povrayrenderwidget.cpp:242
-msgid "Rendering failed. please refer to the POV-Ray output message below."
+msgid "Rendering failed. Please refer to the POV-Ray output message below."
 msgstr ""
 
 #: povrayrenderwidget.cpp:243
@@ -325,237 +336,243 @@ msgstr ""
 msgid "Revision number of current part library"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:33
-#. i18n: ectx: label, entry (ListRefColorize), group (UI)
+#. i18n: file: klotz.kcfg:31
+#. i18n: ectx: label, entry (Magic), group (Database)
 #: rc.cpp:18
-msgid "Colorize part list items"
+msgid "Database magic number"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:37
-#. i18n: ectx: label, entry (ListPartColor), group (UI)
+#. i18n: ectx: label, entry (ListRefColorize), group (UI)
 #: rc.cpp:21
-msgid "Color of parts in list"
+msgid "Colorize part list items"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:41
-#. i18n: ectx: label, entry (ListSubmodelColor), group (UI)
+#. i18n: ectx: label, entry (ListPartColor), group (UI)
 #: rc.cpp:24
-msgid "Color of submodels in list"
+msgid "Color of parts in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:45
-#. i18n: ectx: label, entry (ListUnresolvedColor), group (UI)
+#. i18n: ectx: label, entry (ListSubmodelColor), group (UI)
 #: rc.cpp:27
-msgid "Color of unresolved file in list"
+msgid "Color of submodels in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:49
-#. i18n: ectx: label, entry (ListPrimitiveColorize), group (UI)
+#. i18n: ectx: label, entry (ListUnresolvedColor), group (UI)
 #: rc.cpp:30
-msgid "Colorize primitives in list"
+msgid "Color of unresolved file in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:53
-#. i18n: ectx: label, entry (ListPrimitiveColor), group (UI)
+#. i18n: ectx: label, entry (ListPrimitiveColorize), group (UI)
 #: rc.cpp:33
-msgid "Color of primitives in list"
+msgid "Colorize primitives in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:57
-#. i18n: ectx: label, entry (ListMetaColorize), group (UI)
+#. i18n: ectx: label, entry (ListPrimitiveColor), group (UI)
 #: rc.cpp:36
-msgid "Colorize meta statements in list"
+msgid "Color of primitives in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:61
-#. i18n: ectx: label, entry (ListMetaColor), group (UI)
+#. i18n: ectx: label, entry (ListMetaColorize), group (UI)
 #: rc.cpp:39
-msgid "Color of meta statements in list"
+msgid "Colorize meta statements in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:65
-#. i18n: ectx: label, entry (ListCommentColorize), group (UI)
+#. i18n: ectx: label, entry (ListMetaColor), group (UI)
 #: rc.cpp:42
-msgid "Colorize comments in list"
+msgid "Color of meta statements in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:69
-#. i18n: ectx: label, entry (ListCommentColor), group (UI)
+#. i18n: ectx: label, entry (ListCommentColorize), group (UI)
 #: rc.cpp:45
-msgid "Color of comments in list"
+msgid "Colorize comments in list"
 msgstr ""
 
 #. i18n: file: klotz.kcfg:73
-#. i18n: ectx: label, entry (ViewportTopLeft), group (UI)
+#. i18n: ectx: label, entry (ListCommentColor), group (UI)
 #: rc.cpp:48
+msgid "Color of comments in list"
+msgstr ""
+
+#. i18n: file: klotz.kcfg:77
+#. i18n: ectx: label, entry (ViewportTopLeft), group (UI)
+#: rc.cpp:51
 msgid "Viewport of top-left compartment"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:86
+#. i18n: file: klotz.kcfg:90
 #. i18n: ectx: label, entry (ViewportTopRight), group (UI)
-#: rc.cpp:51
+#: rc.cpp:54
 msgid "Viewport of top-right compartment"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:99
+#. i18n: file: klotz.kcfg:103
 #. i18n: ectx: label, entry (ViewportBottomLeft), group (UI)
-#: rc.cpp:54
+#: rc.cpp:57
 msgid "Viewport of bottom-left compartment"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:112
+#. i18n: file: klotz.kcfg:116
 #. i18n: ectx: label, entry (ViewportBottomRight), group (UI)
-#: rc.cpp:57
+#: rc.cpp:60
 msgid "Viewport of bottom-right compartment"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:127
+#. i18n: file: klotz.kcfg:131
 #. i18n: ectx: label, entry (Multisampling), group (Renderer)
-#: rc.cpp:60
+#: rc.cpp:63
 msgid "Antialiased rendering"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:131
+#. i18n: file: klotz.kcfg:135
 #. i18n: ectx: label, entry (RenderMode), group (Renderer)
-#: rc.cpp:63
+#: rc.cpp:66
 msgid "Rendering mode"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:140
+#. i18n: file: klotz.kcfg:144
 #. i18n: ectx: label, entry (DragMode), group (Renderer)
-#: rc.cpp:66
+#: rc.cpp:69
 msgid "Rendering mode when moving objects"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:149
+#. i18n: file: klotz.kcfg:153
 #. i18n: ectx: label, entry (StudMode), group (Renderer)
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "Stud rendering mode"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:158
+#. i18n: file: klotz.kcfg:162
 #. i18n: ectx: label, entry (DrawGrids), group (Renderer)
-#: rc.cpp:72
+#: rc.cpp:75
 msgid "Draw Grids"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:162
+#. i18n: file: klotz.kcfg:166
 #. i18n: ectx: label, entry (GridResolution), group (Renderer)
-#: rc.cpp:75
+#: rc.cpp:78
 msgid "XY grid resolution"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:166
+#. i18n: file: klotz.kcfg:170
 #. i18n: ectx: label, entry (GridXOffset), group (Renderer)
-#: rc.cpp:78
+#: rc.cpp:81
 msgid "X grid offset"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:170
+#. i18n: file: klotz.kcfg:174
 #. i18n: ectx: label, entry (GridYOffset), group (Renderer)
-#: rc.cpp:81
+#: rc.cpp:84
 msgid "Y grid offset"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:174
+#. i18n: file: klotz.kcfg:178
 #. i18n: ectx: label, entry (GridZOffset), group (Renderer)
-#: rc.cpp:84
+#: rc.cpp:87
 msgid "Z grid offset"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:178
+#. i18n: file: klotz.kcfg:182
 #. i18n: ectx: label, entry (GridRows), group (Renderer)
-#: rc.cpp:87
+#: rc.cpp:90
 msgid "Row count of grid"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:182
+#. i18n: file: klotz.kcfg:186
 #. i18n: ectx: label, entry (GridColumns), group (Renderer)
-#: rc.cpp:90
+#: rc.cpp:93
 msgid "Column count of grid"
 msgstr ""
 
-#. i18n: file: klotz.kcfg:186
+#. i18n: file: klotz.kcfg:190
 #. i18n: ectx: label, entry (BackgroundColor), group (Renderer)
-#: rc.cpp:93
+#: rc.cpp:96
 msgid "Background color of render widget"
 msgstr ""
 
 #. i18n: file: klotzui.rc:5
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:96
+#: rc.cpp:99
 msgid "&Edit"
 msgstr ""
 
 #. i18n: file: klotzui.rc:12
 #. i18n: ectx: Menu (submodel)
-#: rc.cpp:99
+#: rc.cpp:102
 msgid "S&ubmodel"
 msgstr ""
 
 #. i18n: file: klotzui.rc:19
 #. i18n: ectx: Menu (view)
-#: rc.cpp:102
+#: rc.cpp:105
 msgid "&View"
 msgstr ""
 
 #. i18n: file: klotzui.rc:30
 #. i18n: ectx: Menu (render)
-#: rc.cpp:105
+#: rc.cpp:108
 msgid "&Render"
 msgstr ""
 
 #. i18n: file: klotzui.rc:39
 #. i18n: ectx: ToolBar (editBar)
-#: rc.cpp:108
+#: rc.cpp:111
 msgid "Edit"
 msgstr ""
 
 #. i18n: file: klotzui.rc:58
 #. i18n: ectx: ToolBar (viewBar)
-#: rc.cpp:111
+#: rc.cpp:114
 msgid "View"
 msgstr ""
 
 #. i18n: file: newmodeldialog.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, NewModelDialog)
-#: rc.cpp:114
+#: rc.cpp:117
 msgid "New Model"
 msgstr ""
 
 #. i18n: file: newmodeldialog.ui:21
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:117
+#: rc.cpp:120
 msgid "&Description:"
 msgstr ""
 
 #. i18n: file: newmodeldialog.ui:34
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:120
+#: rc.cpp:123
 msgid "&Author:"
 msgstr ""
 
 #. i18n: file: partswidget.ui:29
 #. i18n: ectx: property (toolTip), widget (KLineEdit, searchEdit)
-#: rc.cpp:123
-msgid "Enter space-separated terms to search in the playlist"
+#: rc.cpp:126
+msgid "Enter space-separated terms to search in the part list"
 msgstr ""
 
 #. i18n: file: partswidget.ui:32
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, searchEdit)
-#: rc.cpp:126
+#: rc.cpp:129
 msgid "Enter search terms here"
 msgstr ""
 
 #. i18n: file: partswidget.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, buttonAdvanced)
-#: rc.cpp:129
+#: rc.cpp:132
 msgid "&Advanced"
 msgstr ""
 
 #. i18n: file: partswidget.ui:63
 #. i18n: ectx: property (text), widget (QPushButton, buttonBasic)
-#: rc.cpp:132
+#: rc.cpp:135
 #, fuzzy
 #| msgid "Back"
 msgid "&Basic"
@@ -563,16 +580,16 @@ msgstr "Precedent"
 
 #. i18n: file: partswidget.ui:74
 #. i18n: ectx: property (text), widget (QCheckBox, hideUnofficial)
-#: rc.cpp:135
+#: rc.cpp:138
 msgid "&Hide unofficial parts"
 msgstr ""
 
-#: rc.cpp:136
+#: rc.cpp:139
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:137
+#: rc.cpp:140
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
@@ -608,6 +625,9 @@ msgstr ""
 #: submodelmodel.cpp:52
 msgid "Base model"
 msgstr ""
+
+#~ msgid "All Files"
+#~ msgstr "Totes los fichièrs"
 
 #~ msgid "Object"
 #~ msgstr "Objècte"
