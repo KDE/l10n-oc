@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail_configure\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-31 03:46+0000\n"
+"POT-Creation-Date: 2008-09-28 03:46+0000\n"
 "PO-Revision-Date: 2008-01-12 13:50+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2586,22 +2586,46 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:1912
+#: configure.docbook:1914
 #, no-c-format
 msgid "Options without a user interface representation"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1913
+#: configure.docbook:1915
 #, no-c-format
 msgid ""
 "Apart from the options presented in the configuration dialog, some options "
-"can only be set directly in the configuration file ($KDEHOME/share/config/"
-"kmailrc) or through KIOSK."
+"can only be set directly in the &kmail; configuration file or through KIOSK. "
+"These so called \"hidden\" configuration options cannot be changed via the "
+"normal &kmail; Settings dialog; they must be made by modifying the "
+"configuration file using a text editor or the <command>kwriteconfig</"
+"command> program."
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1924
+#, no-c-format
+msgid ""
+"The &kmail; configuration file is called <filename>kmailrc</filename> and "
+"can be found in your home directory. The location can vary according to your "
+"operating system or distribution, but can always be found by running the "
+"command <userinput><command>kde4-config --path config --locate kmailrc</"
+"command></userinput>. For the remainder of this section, assume that the "
+"configuration file is located in <filename>/path/to/kmailrc</filename>."
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1933
+#, no-c-format
+msgid ""
+"Whenever changing these options, make sure to quit &kmail; first before "
+"editing the configuration file. Only restart &kmail; after you have made "
+"<emphasis>and saved</emphasis> the changes to the configuration file."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1922
+#: configure.docbook:1942
 #, no-c-format
 msgid ""
 "Send Message Distribution Notifications with an empty sender string "
@@ -2609,7 +2633,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1924
+#: configure.docbook:1944
 #, no-c-format
 msgid ""
 "Send Message Disposition Notifications with an empty sender string. Some "
@@ -2623,35 +2647,53 @@ msgid ""
 "servers rejecting MDNs that KMail generates because they think they are SPAM."
 msgstr ""
 
+#. Tag: para
+#: configure.docbook:1958
+#, no-c-format
+msgid ""
+"<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
+"<option>--file <replaceable>/path/to/kmailrc</replaceable> --group MDN --key "
+"SendMDNsWithEmptySender true</option></userinput>"
+msgstr ""
+
 #. Tag: guilabel
-#: configure.docbook:1942
+#: configure.docbook:1965
 #, no-c-format
 msgid "MaximumAttachmentSize"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1944
+#: configure.docbook:1967
 #, no-c-format
 msgid ""
 "This allows the maximum file size allowed for attachments in the mail "
-"composer to be limited. To limit attachments to 20 MB ins size, for example, "
+"composer to be limited. To limit attachments to 20 MB in size, for example, "
 "add a line reading (under [Composer] section):"
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:1950
+#: configure.docbook:1973
 #, no-c-format
 msgid "MaximumAttachmentSize=20"
 msgstr ""
 
+#. Tag: para
+#: configure.docbook:1974
+#, no-c-format
+msgid ""
+"<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
+"<option>--file <replaceable>/path/to/kmailrc</replaceable> --group Composer "
+"--key MaximumAttachmentSize 20</option></userinput>"
+msgstr ""
+
 #. Tag: guilabel
-#: configure.docbook:1955
+#: configure.docbook:1981
 #, no-c-format
 msgid "CloseDespiteSystemTray"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1957
+#: configure.docbook:1983
 #, no-c-format
 msgid ""
 "This option allows you to configure the application to close fully, even if "
@@ -2661,19 +2703,28 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:1963
+#: configure.docbook:1989
 #, no-c-format
 msgid "CloseDespiteSystemTray=true"
 msgstr ""
 
+#. Tag: para
+#: configure.docbook:1990
+#, no-c-format
+msgid ""
+"<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
+"<option>--file <replaceable>/path/to/kmailrc</replaceable> --group General --"
+"key CloseDespiteSystemTray true</option></userinput>"
+msgstr ""
+
 #. Tag: guilabel
-#: configure.docbook:1968
+#: configure.docbook:1998
 #, no-c-format
 msgid "CheckOutOfOfficeOnStartup"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1970
+#: configure.docbook:2000
 #, no-c-format
 msgid ""
 "With this option enabled, KMail will check on every startup if there is an "
@@ -2682,91 +2733,79 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:1976
+#: configure.docbook:2006
 #, no-c-format
 msgid "CheckOutOfOfficeOnStartup=false"
 msgstr ""
 
-#. Tag: title
-#: configure.docbook:1987
-#, no-c-format
-msgid "Hidden Configuration Options"
-msgstr ""
-
 #. Tag: para
-#: configure.docbook:1989
+#: configure.docbook:2007
 #, no-c-format
 msgid ""
-"&kmail; provides a few \"hidden\" configuration options that cannot be "
-"changed via the normal Settings dialog. These types of options must be "
-"changed in a configuration file using a text editor."
+"<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
+"<option>--file <replaceable>/path/to/kmailrc</replaceable> --group "
+"OutOfOffice --key CheckOutOfOfficeOnStartup false</option></userinput>"
+msgstr ""
+
+#. Tag: guilabel
+#: configure.docbook:2015
+#, no-c-format
+msgid "disregardUmask"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1995
-#, no-c-format
-msgid ""
-"The &kmail; configuration file is called <filename>kmailrc</filename> and "
-"can be found in your home directory. The location can vary according to your "
-"operating system or distribution, but can always be found by running the "
-"command <userinput><command>kde4-config --path config --locate kmailrc</"
-"command></userinput>."
-msgstr ""
-
-#. Tag: para
-#: configure.docbook:2002
-#, no-c-format
-msgid ""
-"Whenever changing these options, make sure to quit &kmail; first before "
-"editing the configuration file. Only restart &kmail; after you have saved "
-"your changes to the configuration file and quit your editor."
-msgstr ""
-
-#. Tag: title
-#: configure.docbook:2010
-#, no-c-format
-msgid "Disregard Umask"
-msgstr ""
-
-#. Tag: para
-#: configure.docbook:2011
+#: configure.docbook:2017
 #, no-c-format
 msgid ""
 "In versions prior to 1.9, &kmail; saved all attachments to disk with "
 "permissions set to 600 &mdash; only readable or writable by the owner of the "
 "file. In response to user feedback, this was made configurable in &kmail; "
 "version 1.9, with the defaults changed to honour the umask set on the user "
-"account while saving files to disk."
+"account while saving files to disk. To enable this feature, add a line "
+"reading (under [General] section):"
+msgstr ""
+
+#. Tag: programlisting
+#: configure.docbook:2026
+#, no-c-format
+msgid "disregardUmask=true"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2019
+#: configure.docbook:2027
 #, no-c-format
 msgid ""
-"In <filename>kmailrc</filename>, scroll down to the heading <markup>[General]"
-"</markup> and add the line: <userinput>disregardUmask=true</userinput>. To "
-"reapply the default settings, either remove the line or set it to false."
+"<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
+"<option>--file <replaceable>/path/to/kmailrc</replaceable> --group General --"
+"key disregardUmask true</option></userinput>"
 msgstr ""
 
-#. Tag: title
-#: configure.docbook:2028
+#. Tag: guilabel
+#: configure.docbook:2034
 #, no-c-format
-msgid "Show User Agent in Fancy Headers"
+msgid "ShowUserAgent"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2029
+#: configure.docbook:2036
 #, no-c-format
 msgid ""
 "Starting in version 1.9, &kmail; can show the User-Agent or X-Mailer value "
-"from the message header when using Fancy Headers (see View->Headers menu)."
+"from the message header when using Fancy Headers (see View->Headers menu). "
+"To enable this feature, add a line reading (under [Reader] section):"
+msgstr ""
+
+#. Tag: programlisting
+#: configure.docbook:2042
+#, no-c-format
+msgid "ShowUserAgent=true"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2034
+#: configure.docbook:2043
 #, no-c-format
 msgid ""
-"In <filename>kmailrc</filename>, scroll down to the heading <markup>[Reader]"
-"</markup> and add the line: <userinput>ShowUserAgent=true</userinput>. To "
-"reapply the default settings, either remove the line or set it to false."
+"<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
+"<option>--file <replaceable>/path/to/kmailrc</replaceable> --group Reader --"
+"key ShowUserAgent true</option></userinput>"
 msgstr ""
