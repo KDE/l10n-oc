@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-30 10:06+0100\n"
+"POT-Creation-Date: 2008-11-01 10:38+0100\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -115,13 +115,34 @@ msgctxt "@action:inmenu"
 msgid "Add Folder to Places"
 msgstr ""
 
-#: app/thumbnailviewpanel.cpp:104
+#: app/thumbnailviewpanel.cpp:113
 #, kde-format
 msgctxt "@label"
 msgid "%1 document"
 msgid_plural "%1 documents"
 msgstr[0] ""
 msgstr[1] ""
+
+#: app/filtercontroller.cpp:282
+#, fuzzy
+#| msgid "&File"
+msgctxt "@action:inmenu"
+msgid "Filter by Name"
+msgstr "&Fichièr"
+
+#: app/filtercontroller.cpp:284
+#, fuzzy
+#| msgid "&File"
+msgctxt "@action:inmenu"
+msgid "Filter by Rating"
+msgstr "&Fichièr"
+
+#: app/filtercontroller.cpp:285
+#, fuzzy
+#| msgid "&File"
+msgctxt "@action:inmenu"
+msgid "Filter by Tag"
+msgstr "&Fichièr"
 
 #: app/gvcore.cpp:124
 msgctxt "@info:progress saving all image changes"
@@ -572,22 +593,6 @@ msgstr[1] ""
 msgid "If you quit now, your changes will be lost."
 msgstr ""
 
-#: app/filterwidget.cpp:306 app/filterwidget.cpp:332
-#, fuzzy
-#| msgid "&File"
-msgid "Filter by Name:"
-msgstr "&Fichièr"
-
-#: app/filterwidget.cpp:334
-#, fuzzy
-#| msgid "&File"
-msgid "Filter by Tag:"
-msgstr "&Fichièr"
-
-#: app/filterwidget.cpp:335
-msgid "Filter by Rating:"
-msgstr ""
-
 #: lib/redeyereduction/redeyereductiontool.cpp:69
 msgid "Click on the red eye you want to fix."
 msgstr ""
@@ -873,15 +878,21 @@ msgstr ""
 msgid "..."
 msgstr "..."
 
+#. i18n: file: app/thumbnailviewpanel.ui:80
+#. i18n: ectx: property (text), widget (QToolButton, mAddFilterButton)
+#: rc.cpp:44
+msgid "Add Filter"
+msgstr ""
+
 #. i18n: file: app/semanticinfodialog.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, SemanticInfoDialog)
-#: rc.cpp:44
+#: rc.cpp:47
 msgid "Tag Editor"
 msgstr ""
 
 #. i18n: file: app/semanticinfodialog.ui:31
 #. i18n: ectx: property (text), widget (QPushButton, mPreviousButton)
-#: rc.cpp:47
+#: rc.cpp:50
 #, fuzzy
 #| msgctxt "@action Go to previous image"
 #| msgid "Previous"
@@ -890,7 +901,7 @@ msgstr "Precedent"
 
 #. i18n: file: app/semanticinfodialog.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, mNextButton)
-#: rc.cpp:50
+#: rc.cpp:53
 #, fuzzy
 #| msgctxt "@action Go to next image"
 #| msgid "Next"
@@ -899,31 +910,31 @@ msgstr "Seguent"
 
 #. i18n: file: app/semanticinfosidebaritem.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:53
+#: rc.cpp:56
 msgid "Rating:"
 msgstr ""
 
 #. i18n: file: app/semanticinfosidebaritem.ui:39
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:56
+#: rc.cpp:59
 msgid "Description:"
 msgstr "Descripcion :"
 
 #. i18n: file: app/semanticinfosidebaritem.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:59
+#: rc.cpp:62
 msgid "Tags:"
 msgstr "Etiquetas :"
 
 #. i18n: file: app/performanceconfigpage.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DeleteThumbnailCacheOnExit)
-#: rc.cpp:62
+#: rc.cpp:65
 msgid "Delete  thumbnail cache folder on exit"
 msgstr ""
 
 #. i18n: file: app/performanceconfigpage.ui:24
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:65
+#: rc.cpp:68
 msgid ""
 "Enable this option if you do not have a lot of disk space.\n"
 "Be careful: this will delete the folder named <filename>.thumbnails</"
@@ -933,13 +944,13 @@ msgstr ""
 
 #. i18n: file: app/startpage.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "Places"
 msgstr "Acorchis"
 
 #. i18n: file: app/startpage.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:72
+#: rc.cpp:75
 #, fuzzy
 #| msgid "Create Folder"
 msgid "Recent Folders"
@@ -947,7 +958,7 @@ msgstr "Crear un repertòri"
 
 #. i18n: file: app/gwenviewui.rc:46
 #. i18n: ectx: Menu (rating)
-#: rc.cpp:75
+#: rc.cpp:78
 #, fuzzy
 #| msgid "&Settings"
 msgid "&Rating"
@@ -955,13 +966,13 @@ msgstr "&Paramètres"
 
 #. i18n: file: app/gwenviewui.rc:73
 #. i18n: ectx: Menu (plugins)
-#: rc.cpp:78
+#: rc.cpp:81
 msgid "&Plugins"
 msgstr "&Ajustons"
 
 #. i18n: file: app/gwenviewui.rc:75
 #. i18n: ectx: Menu (kipi_images)
-#: rc.cpp:81
+#: rc.cpp:84
 #, fuzzy
 #| msgctxt "@item:intable"
 #| msgid "Image Size"
@@ -970,43 +981,43 @@ msgstr "Imatges"
 
 #. i18n: file: app/gwenviewui.rc:79
 #. i18n: ectx: Menu (kipi_effects)
-#: rc.cpp:84
+#: rc.cpp:87
 msgid "Effects"
 msgstr "Efièches"
 
 #. i18n: file: app/gwenviewui.rc:83
 #. i18n: ectx: Menu (kipi_tools)
-#: rc.cpp:87
+#: rc.cpp:90
 msgid "Tools"
 msgstr "Espleches"
 
 #. i18n: file: app/gwenviewui.rc:87
 #. i18n: ectx: Menu (kipi_batch)
-#: rc.cpp:90
+#: rc.cpp:93
 msgid "Batch Processing"
 msgstr ""
 
 #. i18n: file: app/gwenviewui.rc:91
 #. i18n: ectx: Menu (kipi_import)
-#: rc.cpp:93
+#: rc.cpp:96
 msgid "Import"
 msgstr "Importar"
 
 #. i18n: file: app/gwenviewui.rc:95
 #. i18n: ectx: Menu (kipi_export)
-#: rc.cpp:96
+#: rc.cpp:99
 msgid "Export"
 msgstr "Exportar"
 
 #. i18n: file: app/gwenviewui.rc:99
 #. i18n: ectx: Menu (kipi_collections)
-#: rc.cpp:99
+#: rc.cpp:102
 msgid "Collections"
 msgstr "Colleccions"
 
 #. i18n: file: app/gwenviewui.rc:104
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:102
+#: rc.cpp:105
 msgid "&Settings"
 msgstr "&Paramètres"
 
@@ -1014,44 +1025,44 @@ msgstr "&Paramètres"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: part/gvpart.rc:15
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:105 rc.cpp:201
+#: rc.cpp:108 rc.cpp:204
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
 #. i18n: file: app/imageviewconfigpage.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:108
+#: rc.cpp:111
 msgid "Transparent background:"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:34
 #. i18n: ectx: property (text), widget (QRadioButton, checkBoardRadioButton)
-#: rc.cpp:111
+#: rc.cpp:114
 msgid "&Check board"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:67
 #. i18n: ectx: property (text), widget (QRadioButton, solidColorRadioButton)
-#: rc.cpp:114
+#: rc.cpp:117
 msgid "&Solid color:"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:117
+#: rc.cpp:120
 msgid "Mouse wheel behavior:"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:127
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelScrollRadioButton)
-#: rc.cpp:120
+#: rc.cpp:123
 msgctxt "@option:radio action on mouse wheel"
 msgid "Scroll"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:154
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelBrowseRadioButton)
-#: rc.cpp:123
+#: rc.cpp:126
 #, fuzzy
 #| msgid "Browse"
 msgctxt "@option:radio action on mouse wheel"
@@ -1062,13 +1073,13 @@ msgstr "Navigar"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:126 rc.cpp:150
+#: rc.cpp:129 rc.cpp:153
 msgid "Enlarge smaller images"
 msgstr ""
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:129
+#: rc.cpp:132
 #, fuzzy
 #| msgctxt "@item:intable"
 #| msgid "File Size"
@@ -1077,74 +1088,74 @@ msgstr "Nom de fichièr"
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
 #. i18n: ectx: property (text), widget (QToolButton, applyButton)
-#: rc.cpp:132
+#: rc.cpp:135
 msgid "Apply"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:135
+#: rc.cpp:138
 msgid "Image Settings"
 msgstr "Paramètres de l'imatge"
 
 #. i18n: file: lib/print/printoptionspage.ui:34
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:138
+#: rc.cpp:141
 msgid "Image Position"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:77
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:141
+#: rc.cpp:144
 msgid "Scaling"
 msgstr "Redimensionament"
 
 #. i18n: file: lib/print/printoptionspage.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:144
+#: rc.cpp:147
 msgid "&No scaling"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:111
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:147
+#: rc.cpp:150
 msgid "&Fit image to page"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:153
+#: rc.cpp:156
 msgid "&Scale to:"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:232
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:156
+#: rc.cpp:159
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr "x"
 
 #. i18n: file: lib/print/printoptionspage.ui:259
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:159
+#: rc.cpp:162
 msgid "Millimeters"
 msgstr "Milimètres"
 
 #. i18n: file: lib/print/printoptionspage.ui:264
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:162
+#: rc.cpp:165
 msgid "Centimeters"
 msgstr "Centimètres"
 
 #. i18n: file: lib/print/printoptionspage.ui:269
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:165
+#: rc.cpp:168
 msgid "Inches"
 msgstr "Poces"
 
 #. i18n: file: lib/print/printoptionspage.ui:280
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:168
+#: rc.cpp:171
 msgid "Keep ratio"
 msgstr ""
 
@@ -1152,37 +1163,37 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, mIconLabel)
 #. i18n: file: lib/documentview/messageview.ui:58
 #. i18n: ectx: property (text), widget (QLabel, mTextLabel)
-#: rc.cpp:171 rc.cpp:174
+#: rc.cpp:174 rc.cpp:177
 msgid "TextLabel"
 msgstr ""
 
 #. i18n: file: lib/cropsidebar.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:177
+#: rc.cpp:180
 msgid "&X:"
 msgstr ""
 
 #. i18n: file: lib/cropsidebar.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:180
+#: rc.cpp:183
 msgid "&Y:"
 msgstr ""
 
 #. i18n: file: lib/cropsidebar.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:183
+#: rc.cpp:186
 msgid "&Width:"
 msgstr ""
 
 #. i18n: file: lib/cropsidebar.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:186
+#: rc.cpp:189
 msgid "&Height:"
 msgstr ""
 
 #. i18n: file: lib/cropsidebar.ui:151
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:189
+#: rc.cpp:192
 #, fuzzy
 #| msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 #| msgid "x"
@@ -1191,19 +1202,19 @@ msgstr "x"
 
 #. i18n: file: lib/cropsidebar.ui:170
 #. i18n: ectx: property (text), widget (QCheckBox, constrainRatioCheckBox)
-#: rc.cpp:192
+#: rc.cpp:195
 msgid "Constrain ratio"
 msgstr ""
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:195
+#: rc.cpp:198
 msgid "&File"
 msgstr "&Fichièr"
 
 #. i18n: file: part/gvpart.rc:8
 #. i18n: ectx: Menu (view)
-#: rc.cpp:198
+#: rc.cpp:201
 msgid "&View"
 msgstr "Aficha&tge"
 
