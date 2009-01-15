@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-14 11:20+0100\n"
+"POT-Creation-Date: 2009-01-15 10:50+0100\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -769,6 +769,7 @@ msgstr ""
 #: browsers/filebrowser/MyDirOperator.cpp:261
 #: browsers/playlistbrowser/PodcastCategory.cpp:465
 #: browsers/playlistbrowser/UserPlaylistTreeView.cpp:167
+#: services/lastfm/LastFmTreeView.cpp:95
 msgid "&Append to Playlist"
 msgstr "&Apondre a la tièra de lecturas"
 
@@ -777,6 +778,7 @@ msgstr "&Apondre a la tièra de lecturas"
 #: browsers/filebrowser/MyDirOperator.cpp:262
 #: browsers/playlistbrowser/PodcastCategory.cpp:478
 #: browsers/playlistbrowser/UserPlaylistTreeView.cpp:173
+#: services/lastfm/LastFmTreeView.cpp:103
 msgctxt "Replace the currently loaded tracks with these"
 msgid "&Load"
 msgstr "&Cargar"
@@ -1282,6 +1284,7 @@ msgstr "Títol"
 #: browsers/collectionbrowser/CollectionWidget.cpp:108
 #: browsers/collectionbrowser/CollectionWidget.cpp:140
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:245 rc.cpp:906
+#: services/lastfm/LastFmService.cpp:402
 #: services/magnatune/MagnatuneStore.cpp:190
 #: services/jamendo/JamendoInfoParser.cpp:54 playlist/PlaylistDefines.h:67
 #: playlist/PlaylistHeader.cpp:42 playlist/PlaylistModel.cpp:665
@@ -6282,15 +6285,15 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: services/ServiceBase.cpp:171
+#: services/ServiceBase.cpp:173
 msgid "Group By"
 msgstr ""
 
-#: services/ServiceBase.cpp:367
+#: services/ServiceBase.cpp:403
 msgid "This service does not accept any messages"
 msgstr ""
 
-#: services/ServiceBase.cpp:374
+#: services/ServiceBase.cpp:410
 msgid "ERROR: unknown message"
 msgstr ""
 
@@ -6431,37 +6434,114 @@ msgstr "Artista"
 msgid "Last.fm is cool..."
 msgstr ""
 
+#: services/lastfm/LastFmTreeModel.cpp:105
+#, fuzzy
+#| msgid "Artist"
+msgid "Personal Radio"
+msgstr "Artista"
+
+#: services/lastfm/LastFmTreeModel.cpp:106
+#, fuzzy
+#| msgctxt "Items, as in music"
+#| msgid "&Tracks"
+msgid "Loved Tracks"
+msgstr "&Pistas"
+
+#: services/lastfm/LastFmTreeModel.cpp:107
+msgid "Neighborhood"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:269
+msgid "My Recommendations"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:271
+msgid "My Radio Station"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:273
+msgid "My Loved Tracks"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:275
+msgid "My Neighborhood"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:280
+#, fuzzy
+#| msgid "Tags"
+msgid "My Tags"
+msgstr "Etiquetas"
+
+#: services/lastfm/LastFmTreeModel.cpp:282
+#, fuzzy
+#| msgid "Files"
+msgid "Friends"
+msgstr "Fichièrs"
+
+#: services/lastfm/LastFmTreeModel.cpp:284
+msgid "Neighbors"
+msgstr ""
+
 #: services/lastfm/AudioController.cpp:93
 msgid "Radio playlist has ended."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:132
+#: services/lastfm/LastFmService.cpp:143
 msgid "Last.fm: The social music revolution."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:202
+#: services/lastfm/LastFmService.cpp:300
+#, fuzzy
+#| msgid "International"
+msgid "Enter an artist name"
+msgstr "Internacional"
+
+#: services/lastfm/LastFmService.cpp:303
+#, fuzzy
+#| msgid "International"
+msgid "Enter a tag"
+msgstr "Internacional"
+
+#: services/lastfm/LastFmService.cpp:306
+#, fuzzy
+#| msgid "International"
+msgid "Enter a last.fm user name"
+msgstr "Internacional"
+
+#: services/lastfm/LastFmService.cpp:323
+#, fuzzy
+#| msgid "Days"
+msgid " plays"
+msgstr "Jorns"
+
+#: services/lastfm/LastFmService.cpp:347
 #, fuzzy
 #| msgid "Remove"
 msgid "Love"
 msgstr "M'agranda fòrça"
 
-#: services/lastfm/LastFmService.cpp:209
+#: services/lastfm/LastFmService.cpp:354
 msgid "Ban"
 msgstr "Barein"
 
-#: services/lastfm/LastFmService.cpp:216
+#: services/lastfm/LastFmService.cpp:361
 msgid "Skip"
 msgstr "Sautar"
 
-#: services/lastfm/LastFmService.cpp:225
+#: services/lastfm/LastFmService.cpp:402
 #, fuzzy
-#| msgid "International"
-msgid "Enter artist name"
-msgstr "Internacional"
+#| msgid "Tags"
+msgid "Tag"
+msgstr "Etiquetas"
 
-#: services/lastfm/LastFmService.cpp:227
-msgid "Go"
-msgstr "Anar"
+#: services/lastfm/LastFmService.cpp:402
+msgid "User"
+msgstr "Utilizaire"
+
+#: services/lastfm/LastFmService.cpp:407
+msgid "Start New Station"
+msgstr ""
 
 #: services/lastfm/LastFmServiceSettings.cpp:84
 #, fuzzy
@@ -8034,6 +8114,9 @@ msgstr ""
 msgid "No Artist"
 msgstr "Artista"
 
+#~ msgid "Go"
+#~ msgstr "Anar"
+
 #~ msgid "Unit:"
 #~ msgstr "_Unitats :"
 
@@ -8235,9 +8318,6 @@ msgstr "Artista"
 
 #~ msgid "Port"
 #~ msgstr "Pòrt"
-
-#~ msgid "User"
-#~ msgstr "Utilizaire"
 
 #~ msgctxt "Replace the current playlist with these tracks"
 #~ msgid "&Load"
