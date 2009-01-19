@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-18 10:48+0100\n"
+"POT-Creation-Date: 2009-01-19 10:36+0100\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -263,7 +263,7 @@ msgstr ""
 #: collection/sqlcollection/OrganizeCollectionDialog.cpp:160
 #: browsers/collectionbrowser/CollectionTreeItem.cpp:153
 #: playlist/view/graphic/PlaylistGraphicsItem.cpp:343
-#: collectionscanner/CollectionScanner.cpp:841
+#: collectionscanner/CollectionScanner.cpp:663
 #: covermanager/CoverViewDialog.h:45 covermanager/CoverManager.cpp:869
 msgid "Various Artists"
 msgstr "Mai d'un artista"
@@ -784,7 +784,7 @@ msgstr ""
 #: browsers/filebrowser/MyDirOperator.cpp:261
 #: browsers/playlistbrowser/PodcastCategory.cpp:465
 #: browsers/playlistbrowser/UserPlaylistTreeView.cpp:166
-#: services/lastfm/LastFmTreeView.cpp:113
+#: services/lastfm/LastFmTreeView.cpp:116
 msgid "&Append to Playlist"
 msgstr "&Apondre a la tièra de lecturas"
 
@@ -793,7 +793,7 @@ msgstr "&Apondre a la tièra de lecturas"
 #: browsers/filebrowser/MyDirOperator.cpp:262
 #: browsers/playlistbrowser/PodcastCategory.cpp:478
 #: browsers/playlistbrowser/UserPlaylistTreeView.cpp:172
-#: services/lastfm/LastFmTreeView.cpp:121
+#: services/lastfm/LastFmTreeView.cpp:124
 msgctxt "Replace the currently loaded tracks with these"
 msgid "&Load"
 msgstr "&Cargar"
@@ -1525,7 +1525,7 @@ msgctxt "The collection this track is part of"
 msgid "None"
 msgstr "Pas cap"
 
-#: dialogs/TagDialog.cpp:1004
+#: dialogs/TagDialog.cpp:1006
 #, fuzzy, kde-format
 #| msgid "Track"
 msgctxt "The amount of tracks being edited"
@@ -1534,26 +1534,26 @@ msgid_plural "Information for %1 Tracks"
 msgstr[0] "Pista"
 msgstr[1] "Pista"
 
-#: dialogs/TagDialog.cpp:1119
+#: dialogs/TagDialog.cpp:1121
 #, kde-format
 msgid "Editing 1 file"
 msgid_plural "Editing %1 files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: dialogs/TagDialog.cpp:1124
+#: dialogs/TagDialog.cpp:1126
 msgid "Rated Songs:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1126
+#: dialogs/TagDialog.cpp:1128
 msgid "Average Rating:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1128
+#: dialogs/TagDialog.cpp:1130
 msgid "Scored Songs:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1130
+#: dialogs/TagDialog.cpp:1132
 msgid "Average Score:"
 msgstr ""
 
@@ -1673,7 +1673,7 @@ msgstr "Pas cap"
 #: browsers/collectionbrowser/CollectionWidget.cpp:108
 #: browsers/collectionbrowser/CollectionWidget.cpp:140
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:245 rc.cpp:906
-#: services/lastfm/LastFmService.cpp:402
+#: services/lastfm/LastFmService.cpp:405
 #: services/magnatune/MagnatuneStore.cpp:190
 #: services/jamendo/JamendoInfoParser.cpp:54 playlist/PlaylistDefines.h:67
 #: playlist/PlaylistHeader.cpp:42 playlist/PlaylistModel.cpp:665
@@ -2542,7 +2542,7 @@ msgid "Move to Collection"
 msgstr "Colleccion"
 
 #: browsers/collectionbrowser/CollectionTreeView.cpp:381
-#: services/lastfm/LastFmTreeView.cpp:201
+#: services/lastfm/LastFmTreeView.cpp:204
 #, fuzzy
 #| msgid "Configure..."
 msgid "More..."
@@ -6438,52 +6438,58 @@ msgstr "Artista"
 msgid "Last.fm is cool..."
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:105
+#: services/lastfm/LastFmTreeModel.cpp:130
 #, fuzzy
 #| msgid "Artist"
 msgid "Personal Radio"
 msgstr "Artista"
 
-#: services/lastfm/LastFmTreeModel.cpp:106
+#: services/lastfm/LastFmTreeModel.cpp:131
 #, fuzzy
 #| msgctxt "Items, as in music"
 #| msgid "&Tracks"
 msgid "Loved Tracks"
 msgstr "&Pistas"
 
-#: services/lastfm/LastFmTreeModel.cpp:107
+#: services/lastfm/LastFmTreeModel.cpp:132
 msgid "Neighborhood"
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:269
+#: services/lastfm/LastFmTreeModel.cpp:294
 msgid "My Recommendations"
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:271
+#: services/lastfm/LastFmTreeModel.cpp:296
 msgid "My Radio Station"
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:273
+#: services/lastfm/LastFmTreeModel.cpp:298
 msgid "My Loved Tracks"
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:275
+#: services/lastfm/LastFmTreeModel.cpp:300
 msgid "My Neighborhood"
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:280
+#: services/lastfm/LastFmTreeModel.cpp:305
+#, fuzzy
+#| msgid "Artist"
+msgid "My Top Artists"
+msgstr "Artista"
+
+#: services/lastfm/LastFmTreeModel.cpp:307
 #, fuzzy
 #| msgid "Tags"
 msgid "My Tags"
 msgstr "Etiquetas"
 
-#: services/lastfm/LastFmTreeModel.cpp:282
+#: services/lastfm/LastFmTreeModel.cpp:309
 #, fuzzy
 #| msgid "Files"
 msgid "Friends"
 msgstr "Fichièrs"
 
-#: services/lastfm/LastFmTreeModel.cpp:284
+#: services/lastfm/LastFmTreeModel.cpp:311
 msgid "Neighbors"
 msgstr ""
 
@@ -6533,19 +6539,19 @@ msgstr "Barein"
 msgid "Skip"
 msgstr "Sautar"
 
-#: services/lastfm/LastFmService.cpp:402
+#: services/lastfm/LastFmService.cpp:399
+msgid "Create a Custom Last.fm Station"
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:405
 #, fuzzy
 #| msgid "Tags"
 msgid "Tag"
 msgstr "Etiquetas"
 
-#: services/lastfm/LastFmService.cpp:402
+#: services/lastfm/LastFmService.cpp:405
 msgid "User"
 msgstr "Utilizaire"
-
-#: services/lastfm/LastFmService.cpp:407
-msgid "Start New Station"
-msgstr ""
 
 #: services/lastfm/LastFmServiceSettings.cpp:84
 #, fuzzy
@@ -6910,7 +6916,7 @@ msgstr ""
 msgid "Authentication Error!"
 msgstr ""
 
-#: services/ampache/AmpacheServiceCollection.cpp:61
+#: services/ampache/AmpacheServiceCollection.cpp:56
 #, kde-format
 msgid "Ampache Server %1"
 msgstr ""
