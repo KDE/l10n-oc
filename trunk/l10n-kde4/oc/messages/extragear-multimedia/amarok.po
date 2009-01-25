@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-24 10:24+0100\n"
+"POT-Creation-Date: 2009-01-25 10:10+0100\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -392,6 +392,30 @@ msgstr ""
 
 #: context/engines/wikipedia/WikipediaEngine.cpp:291
 msgid "Wikipedia Other Languages: <br/>"
+msgstr ""
+
+#: context/toolbar/AppletItemOverlay.cpp:101
+#: context/toolbar/AppletToolbarAppletItem.cpp:47
+#, fuzzy
+#| msgid "Remove Playlist"
+msgid "Remove Applet"
+msgstr "Suprimir la tièra de lecturas"
+
+#: context/toolbar/AppletToolbarConfigItem.cpp:30
+#, fuzzy
+#| msgid "Configure..."
+msgid "Configure Applets..."
+msgstr "Configurar..."
+
+#: context/toolbar/AppletToolbarAddItem.cpp:40
+#, fuzzy
+#| msgid "Widgets"
+msgid "Add Applets..."
+msgstr "Largor"
+
+#: context/toolbar/AppletToolbarAddItem.cpp:64
+#: context/containments/oldcontainment/ColumnContainment.cpp:95
+msgid "Add Applet..."
 msgstr ""
 
 #: context/LyricsManager.cpp:108
@@ -782,7 +806,7 @@ msgstr ""
 #: context/applets/albums/AlbumsView.cpp:105 Systray.cpp:216
 #: browsers/collectionbrowser/CollectionTreeView.cpp:595
 #: browsers/filebrowser/MyDirOperator.cpp:261
-#: browsers/playlistbrowser/PodcastModel.cpp:601
+#: browsers/playlistbrowser/PodcastModel.cpp:683
 #: browsers/playlistbrowser/UserPlaylistTreeView.cpp:166
 #: services/lastfm/LastFmTreeView.cpp:116
 msgid "&Append to Playlist"
@@ -791,7 +815,7 @@ msgstr "&Apondre a la tièra de lecturas"
 #: context/applets/albums/AlbumsView.cpp:106
 #: browsers/collectionbrowser/CollectionTreeView.cpp:603
 #: browsers/filebrowser/MyDirOperator.cpp:262
-#: browsers/playlistbrowser/PodcastModel.cpp:614
+#: browsers/playlistbrowser/PodcastModel.cpp:696
 #: browsers/playlistbrowser/UserPlaylistTreeView.cpp:172
 #: services/lastfm/LastFmTreeView.cpp:124
 msgctxt "Replace the currently loaded tracks with these"
@@ -872,11 +896,6 @@ msgstr "Largor"
 msgid "Service Info (No service active)"
 msgstr ""
 
-#: context/containments/oldcontainment/ColumnContainment.cpp:95
-#: context/containments/verticallayout/toolbar/AppletToolbarAddItem.cpp:64
-msgid "Add Applet..."
-msgstr ""
-
 #: context/containments/oldcontainment/ColumnContainment.cpp:177
 msgid "Remove Widgets..."
 msgstr ""
@@ -892,30 +911,6 @@ msgstr "Grop novèl"
 #| msgid "&Previous"
 msgid "Previous Group"
 msgstr "&Precedent"
-
-#: context/containments/verticallayout/toolbar/AppletToolbarConfigItem.cpp:30
-#, fuzzy
-#| msgid "Configure..."
-msgid "Configure Applets..."
-msgstr "Configurar..."
-
-#: context/containments/verticallayout/toolbar/AppletToolbarAddItem.cpp:40
-#, fuzzy
-#| msgid "Widgets"
-msgid "Add Applets..."
-msgstr "Largor"
-
-#: context/containments/verticallayout/toolbar/AppletToolbarAppletItem.cpp:48
-#, fuzzy
-#| msgid "Remove Playlist"
-msgid "Remove Applet"
-msgstr "Suprimir la tièra de lecturas"
-
-#: context/containments/verticallayout/toolbar/AppletToolbarAppletItem.cpp:57
-#, fuzzy
-#| msgid "Widgets"
-msgid "Move Applet"
-msgstr "Largor"
 
 #: context/widgets/ToolBoxMenu.cpp:102
 msgid "Hide menu"
@@ -1996,22 +1991,22 @@ msgstr "&Configurar"
 msgid "&Remove Subscription"
 msgstr "Descripcion :"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:518
+#: podcasts/sql/SqlPodcastProvider.cpp:519
 msgid "Downloading Podcast Media"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:518
+#: podcasts/sql/SqlPodcastProvider.cpp:519
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:612
+#: podcasts/sql/SqlPodcastProvider.cpp:613
 #, kde-format
 msgid "Unable to save podcast episode file to %1"
 msgstr ""
 
 #: podcasts/sql/SqlPodcastProvider.h:46
-#: browsers/playlistbrowser/PodcastModel.cpp:685
+#: browsers/playlistbrowser/PodcastModel.cpp:582
 #: services/opmldirectory/OpmlDirectoryService.cpp:240
 msgid "Local Podcasts"
 msgstr ""
@@ -2734,7 +2729,7 @@ msgstr ""
 msgid "Apply last filter (\"%1\")"
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:227
+#: browsers/filebrowser/FileBrowser.cpp:228
 msgid "Clear filter"
 msgstr "Causissètz un fichièr"
 
@@ -6903,7 +6898,11 @@ msgstr ""
 msgid "Enter the server name and a password"
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:220
+#: services/ampache/AmpacheService.cpp:188
+msgid "Authenticating with Ampache"
+msgstr ""
+
+#: services/ampache/AmpacheService.cpp:216
 msgid "Authentication Error!"
 msgstr ""
 
@@ -7625,13 +7624,13 @@ msgid "Enter search terms here"
 msgstr ""
 
 #: widgets/SearchWidget.cpp:66
-msgid "Enter space-separated terms to search in the playlist."
+msgid "Enter space-separated terms to search."
 msgstr ""
 
 #: widgets/SearchWidget.cpp:75
 #, fuzzy
 #| msgid "Playlist Files"
-msgid "Edit playlist filter"
+msgid "Edit filter"
 msgstr "Fichièrs de tièra de lecturas"
 
 #: widgets/BookmarkTriangle.cpp:32
@@ -8144,6 +8143,11 @@ msgstr ""
 #| msgid "Artist"
 msgid "No Artist"
 msgstr "Artista"
+
+#, fuzzy
+#~| msgid "Widgets"
+#~ msgid "Move Applet"
+#~ msgstr "Largor"
 
 #, fuzzy
 #~| msgid "Options"
