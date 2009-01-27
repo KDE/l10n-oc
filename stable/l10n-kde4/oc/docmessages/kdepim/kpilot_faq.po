@@ -1,0 +1,448 @@
+# translation of kpilot_faq.po to Occitan (lengadocian)
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kpilot_faq\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2009-01-08 04:18+0000\n"
+"PO-Revision-Date: 2008-08-13 13:38+0200\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdepim/doc/kpilot/faq.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 686214\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: title
+#: faq.docbook:2
+#, no-c-format
+msgid "&FAQ;"
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:5
+#, no-c-format
+msgid "&kpilot; Startup Problems"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:11
+#, no-c-format
+msgid "What do I put after <option>--debug</option>?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:16
+#, no-c-format
+msgid ""
+"Nothing. Most versions of &kpilot; don't even have a <option>--debug</"
+"option> option, and will complain if you use it. For those versions that "
+"<emphasis>do</emphasis> have it, use a value between 1 and 4, which will "
+"control the amount of debugging printed (a little). Using a value of 1 will "
+"print a fairly complete call trace without the really-boring functions, "
+"while 4 will include every trivial function in all of &kpilot;."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:32
+#, no-c-format
+msgid "&kpilot; says <errorname>Can't connect to pilot</errorname>"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:37
+#, no-c-format
+msgid "This can have various causes. Check that:"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:41
+#, no-c-format
+msgid ""
+"The pilot device (usually <filename class=\"devicefile\">/dev/pilot</"
+"filename>) exists and points to the serial port the &PalmPilot; is actually "
+"connected to."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:46
+#, no-c-format
+msgid ""
+"To link the &PalmPilot; device to the correct serial port, you can either "
+"fill in <filename class=\"devicefile\">/dev/ttyS<replaceable>n</"
+"replaceable></filename> in the <guilabel>Pilot Device</guilabel> field in "
+"the <link linkend=\"page-general\">setup dialog</link> or (preferably) link "
+"<filename class=\"devicefile\">/dev/pilot</filename> to <filename class="
+"\"devicefile\">/dev/ttyS<replaceable>n</replaceable></filename> with the "
+"following command (as <systemitem class=\"username\">root</systemitem>): "
+"<userinput> <command>ln</command> <option>-s</option> <parameter>/dev/"
+"ttyS<replaceable>n</replaceable></parameter> <parameter>/dev/pilot</"
+"parameter></userinput> Here <filename class=\"devicefile\">/dev/"
+"ttyS<replaceable>n</replaceable></filename> is the name of the serial port; "
+"replace <replaceable>n</replaceable> with the correct number (usually 0 or "
+"1)."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:71
+#, no-c-format
+msgid ""
+"Check that you have permission to read and write to the serial port. The "
+"permissions for the serial port should be such that you can write to it. "
+"This is most easily done by running the following (as root): <userinput> "
+"<command>chmod</command> <option>666</option> <parameter>/dev/"
+"ttyS<replaceable>n</replaceable></parameter> </userinput>"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:83
+#, no-c-format
+msgid "Try starting the daemon by hand before starting &kpilot;."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:88
+#, no-c-format
+msgid ""
+"(For &Linux-Mandrake; 7 systems) Check the system security level: settings "
+"higher than 3 prevent some forms of inter-process communication which are "
+"necessary for &kpilot; to operate correctly."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:95
+#, no-c-format
+msgid ""
+"(<emphasis>&Linux-Mandrake; security information courtesy of Jay Summett</"
+"emphasis>) To set your <acronym>MSEC</acronym> (Mandrake SECurity) settings "
+"to not block the &kpilot; socket (for connections to localhost) you can "
+"login as root and type <userinput> <command>/etc/security/msec/init.sh</"
+"command> <option>3</option> </userinput> Which will set your <acronym>MSEC</"
+"acronym> level to 3 (regular security). For more information about the "
+"various security levels, &etc;, see: <ulink url=\"http://www.linux-mandrake."
+"com/userguide/en/reference/017.html#157\"> the Mandrake reference guide</"
+"ulink>."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:129
+#, no-c-format
+msgid "Database Questions"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:131
+#, no-c-format
+msgid ""
+"This section answers questions commonly asked about particular databases and "
+"how they interact with &kpilot;."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:141
+#, no-c-format
+msgid "Databases become corrupted after a sync, what should I do?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:147
+#, no-c-format
+msgid ""
+"Certain databases (from third-party software manufacturers) appear not to "
+"follow the standard database layout. If you can find out what the creator id "
+"of the database is, you can add it to either the <guilabel>Backup Only:</"
+"guilabel> list or the <guilabel>Skip</guilabel> list in the <link linkend="
+"\"page-backup\">settings dialog</link>."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:157
+#, no-c-format
+msgid ""
+"The following table shows which databases should be skipped or backed-up "
+"only:"
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:161
+#, no-c-format
+msgid "Databases needing Special Treatment"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:164
+#, no-c-format
+msgid "Database"
+msgstr "Donadas"
+
+#. Tag: entry
+#: faq.docbook:164
+#, no-c-format
+msgid "Creator ID"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:164
+#, no-c-format
+msgid "Action"
+msgstr "Accion"
+
+#. Tag: entry
+#: faq.docbook:168
+#, no-c-format
+msgid "Launcher (the &PalmPilot;'s main menu)"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:169
+#, no-c-format
+msgid "lnch"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:170 faq.docbook:175 faq.docbook:180
+#, no-c-format
+msgid "Backup Only:"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:173
+#, no-c-format
+msgid "Arranger"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:174
+#, no-c-format
+msgid "Arng"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:178
+#, no-c-format
+msgid "(unknown)"
+msgstr "(desconegut)"
+
+#. Tag: entry
+#: faq.docbook:179
+#, no-c-format
+msgid "PmDB"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:183
+#, no-c-format
+msgid "AvantGo"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:184
+#, no-c-format
+msgid "avgo"
+msgstr ""
+
+#. Tag: entry
+#: faq.docbook:185
+#, no-c-format
+msgid ""
+"Skip (Mostly because there's no point in backing up the news articles that "
+"AvantGo gives you)"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:198
+#, no-c-format
+msgid "Is there a conduit for &Netscape; <application>Calendar</application>?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:203
+#, no-c-format
+msgid ""
+"No, there isn't. Neither are there plans to include support or write a "
+"conduit for &Netscape; <application>Calendar</application>."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:217
+#, no-c-format
+msgid "Special HotSync Questions"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:221
+#, no-c-format
+msgid ""
+"This section lists questions about HotSync methods that differ from the "
+"<quote>usual</quote> direct serial link method."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:230
+#, no-c-format
+msgid "How do I do an infrared (<acronym>IR</acronym>) HotSync?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:235
+#, no-c-format
+msgid ""
+"First of all your &PalmPilot; has to actually support <acronym>IR</acronym> "
+"HotSyncs. This can be achieved through various means: &PalmOS; 3.3 and "
+"higher include support for it; there is an <acronym>IR</acronym> "
+"enhancements package for older &PalmOS; versions; <application>IrLink</"
+"application> from IsComplete apparently has the same capabilities. Check out "
+"the <ulink url=\"http://www.palmone.com/us/\">PalmOne</ulink> web pages for "
+"more information."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:245
+#, no-c-format
+msgid ""
+"Assuming your &PalmPilot; now has <acronym>PC</acronym> HotSync support and "
+"it is setup to do <acronym>IR</acronym> HotSyncs (in the HotSync preferences "
+"on the &PalmPilot;), we can turn our attention to the <acronym>PC</acronym> "
+"you will be synchronization with. It needs an <acronym>IR</acronym> port. "
+"For laptops, this is trivial, desktop <acronym>PCs</acronym> may require "
+"some extra hardware."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:254
+#, no-c-format
+msgid ""
+"Your &Linux; kernel will need to support <acronym>IR</acronym> and the "
+"<acronym>IRCOMM</acronym> protocol. For stock &RedHat; systems, the "
+"following command should setup <acronym>IR</acronym> support (as <systemitem "
+"class=\"username\">root</systemitem>): <screen width=\"40\">\n"
+"<prompt># </prompt><userinput><command>modprobe</command> <option>ircomm</"
+"option></userinput>\n"
+"</screen> Other distributions should follow the <filename>IR-HOWTO</"
+"filename>. Once <acronym>IR</acronym> support in the kernel has been "
+"activated, you need to make devices for the <acronym>IR</acronym> ports. The "
+"<filename>IR-HOWTO</filename> suggests (as <systemitem class=\"username"
+"\">root</systemitem>): <screen width=\"40\">\n"
+"<prompt># </prompt><userinput><command>mknod</command>\n"
+"<option>/dev/ircomm0</option> <parameter>60</parameter> <parameter>64</"
+"parameter> </userinput>\n"
+"<prompt># </prompt><userinput><command>chmod</command>\n"
+"<option>666</option> <parameter>/dev/ircomm0</parameter></userinput>\n"
+"</screen> Next we need to start some daemons for <acronym>IR</acronym> "
+"services: <screen width=\"40\">\n"
+"<prompt># </prompt><userinput><command>irattach</command>\n"
+"<option>/dev/ttyS<replaceable>n</replaceable></option></userinput>\n"
+"<prompt># </prompt><userinput><command>irmanager</command>\n"
+"<option>-d</option> <parameter>0</parameter></userinput>\n"
+"</screen> Here <filename class=\"devicefile\">/dev/ttyS<replaceable>n</"
+"replaceable></filename> is the serial port the <acronym>IR</acronym> port is "
+"using. <replaceable>n</replaceable> could be 0, 1, or some other number "
+"depending on your hardware setup. Follow the instructions in the "
+"<filename>IR-HOWTO</filename> for assistance (for desktop machines, it's "
+"usually a setting in the <acronym>BIOS</acronym>)."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:277
+#, no-c-format
+msgid ""
+"Once you've gotten this far, just make <filename class=\"devicefile\">/dev/"
+"pilot</filename> point to <filename class=\"devicefile\">/dev/ircomm0</"
+"filename> and you're ready!"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:283
+#, no-c-format
+msgid ""
+"The IR-HOWTO and other useful information on using IR may be found at <ulink "
+"url=\"http://mobilix.org/howtos.html\">http://mobilix.org/howtos.html</"
+"ulink> and <ulink url=\"http://mobilix.org/software/irda/\">http://mobilix."
+"org/software/irda/</ulink>."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:295
+#, no-c-format
+msgid ""
+"Can I do a &HotSync; with my (<acronym>USB</acronym>) &Handspring; &Visor;?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:300
+#, no-c-format
+msgid ""
+"Yes, you can. I don't have definitive information, but postings on the "
+"&kpilot; mailing-list have stated that you can point <filename class="
+"\"devicefile\">/dev/pilot</filename> to the <acronym>USB</acronym> device "
+"and everything will work fine."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:310
+#, no-c-format
+msgid "Is there any support for remote HotSyncs?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:313
+#, no-c-format
+msgid "No, not yet. Maybe later."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:326
+#, no-c-format
+msgid "&kpilot;'s &DCOP; interface"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:332
+#, no-c-format
+msgid "What does &kpilot; use &DCOP; for?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:334
+#, no-c-format
+msgid ""
+"The daemon and &kpilot; communicate using &DCOP; for several purposes: "
+"logging messages, changing the &HotSync; type, and exchanging configuration "
+"information."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:342
+#, no-c-format
+msgid "Which &DCOP; interfaces are there?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:344
+#, no-c-format
+msgid ""
+"The daemon has two important interfaces: <interface>LogIface</interface> and "
+"<interface>KPilotDaemonIface </interface>. The <interface>LogIface</"
+"interface> interface is used to record messages in the sync log on the "
+"&handheld;, and is rarely used. The <interface>KPilotDaemonIface</interface> "
+"is the more important &DCOP; interface, and is used to control the kind of "
+"&HotSync; that &kpilot; will do."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:360
+#, no-c-format
+msgid "How can I tell the daemon to perform a specific kind of &HotSync;?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:362
+#, no-c-format
+msgid ""
+"There are three &DCOP; functions that control what kind of &HotSync; the "
+"daemon will do next: <function></function> <function></function>"
+msgstr ""
