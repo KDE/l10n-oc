@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-28 04:25+0000\n"
+"POT-Creation-Date: 2009-02-10 04:24+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -155,7 +155,7 @@ msgid ""
 "dragging and dropping from &konqueror; or &dolphin;. Archive files should be "
 "associated with &ark;, so you can also <mousebutton>right</mousebutton> "
 "click a file in &konqueror; or &dolphin; and select <guimenuitem>Open with "
-"&ark;</guimenuitem> to open it."
+"&ark;</guimenuitem> to open it or select an extract action for this file."
 msgstr ""
 
 #. Tag: title
@@ -209,29 +209,61 @@ msgstr ""
 #: index.docbook:106
 #, no-c-format
 msgid ""
-"<guimenuitem>Preview</guimenuitem> will open the file in the integrated "
+"<guimenuitem>Preview</guimenuitem> will open the file in the associated "
 "viewer."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:113
+#: index.docbook:112
 #, no-c-format
 msgid "Extracting Archives"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:115
+#: index.docbook:114
 #, no-c-format
 msgid ""
-"Once an archive has been opened in &ark;, it can be extracted. To extract "
-"files from an archive, you can select <guimenuitem>Extract...</guimenuitem> "
-"from the <guimenu>Action</guimenu> menu. The <guilabel>Extract</guilabel> "
-"dialog allows you to select where you will extract files to. You can also "
-"select which files to extract:"
+"Once an archive has been opened in &ark;, it can be extracted. To quick "
+"extract files from an archive, you can select <guimenuitem>Extract...</"
+"guimenuitem> from the <guimenu>Action</guimenu> menu. This opens a submenu "
+"with previously accessed folders, and you can select to quick extract into "
+"any of them. Clicking on the check mark at the right side of the "
+"<guibutton>Extract</guibutton> button in the toolbar performes the same "
+"action."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:124 index.docbook:541
+#: index.docbook:121
+#, no-c-format
+msgid ""
+"To open the <guilabel>Extract</guilabel> dialog click the "
+"<guibutton>Extract</guibutton> button in the toolbar or use the shortcut "
+"<keycombo action=\"simul\">&Ctrl; <keycap>E</keycap></keycombo>. This dialog "
+"allows you to select where you will extract files to. The default location "
+"is the folder the archive is in."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:128
+#, no-c-format
+msgid ""
+"You can specify to extract the files into a subfolder. The default name of "
+"this subfolder ist the first part of the archive name, but you can edit it "
+"to your needs. If you want to preserve paths when extracting, select this "
+"option. You may also choose to open the destination folder in &konqueror; or "
+"&dolphin; once the extraction is complete."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:134
+#, no-c-format
+msgid ""
+"If a file in the archive list is highlighted, you can also select which "
+"files to extract:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:139
 #, no-c-format
 msgid ""
 "<guimenuitem>Selected files only</guimenuitem> extracts only the files which "
@@ -239,31 +271,21 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:128 index.docbook:545
+#: index.docbook:143
 #, no-c-format
 msgid ""
 "<guimenuitem>All files</guimenuitem> extracts the entire contents of the "
 "archive."
 msgstr ""
 
-#. Tag: para
-#: index.docbook:133 index.docbook:550
-#, no-c-format
-msgid ""
-"You can specify the folder to extract files to in the <guilabel>Destination "
-"folder</guilabel> text box. The default location is the folder the archive "
-"is in. You may also choose to open the destination folder in &konqueror; or "
-"&dolphin; once the extraction is complete."
-msgstr ""
-
 #. Tag: title
-#: index.docbook:141
+#: index.docbook:151
 #, no-c-format
 msgid "Creating Archives and Adding Files"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:143
+#: index.docbook:153
 #, no-c-format
 msgid ""
 "To create a new archive in &ark;, choose <guimenuitem>New</guimenuitem> from "
@@ -271,20 +293,22 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:147
+#: index.docbook:157
 #, no-c-format
 msgid ""
 "You can then type the name of the archive, with the appropriate extension "
 "(<literal role=\"extension\">tar.gz</literal>, <literal role=\"extension"
-"\">zip</literal>, <literal role=\"extension\">bz2</literal> &etc;). To add "
-"files to the archive, choose <guimenuitem>Add File...</guimenuitem> from the "
-"<guimenu>Action</guimenu> menu. If you want to add an entire folder to an "
-"archive, choose <guimenuitem>Add Folder...</guimenuitem> from the "
+"\">zip</literal>, <literal role=\"extension\">bz2</literal> &etc;) or select "
+"a supported format in the <guilabel>Filter</guilabel> combo box and check "
+"the <guilabel>Automatically select filename extension</guilabel> option. To "
+"add files to the archive, choose <guimenuitem>Add File...</guimenuitem> from "
+"the <guimenu>Action</guimenu> menu. If you want to add an entire folder to "
+"an archive, choose <guimenuitem>Add Folder...</guimenuitem> from the "
 "<guimenu>Action</guimenu> menu."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:155
+#: index.docbook:167
 #, no-c-format
 msgid ""
 "An alternative way to add files to the archive is to drag a file from "
@@ -293,19 +317,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:320
+#: index.docbook:332
 #, no-c-format
 msgid "Command Reference"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:323
+#: index.docbook:335
 #, no-c-format
 msgid "The <guimenu>File</guimenu> Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:327
+#: index.docbook:339
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
@@ -313,13 +337,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:332
+#: index.docbook:344
 #, no-c-format
 msgid "<action>Creates a new archive</action>."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:337
+#: index.docbook:349
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
@@ -327,25 +351,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:342
+#: index.docbook:354
 #, no-c-format
 msgid "<action>Opens an archive</action>."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:347
+#: index.docbook:359
 #, no-c-format
 msgid "<guimenu>File</guimenu> <guisubmenu>Open Recent</guisubmenu>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:352
+#: index.docbook:364
 #, no-c-format
 msgid "<action>Shows a list of recent archives to choose from</action>."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:406
+#: index.docbook:418
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>Q</keycap></keycombo></"
@@ -353,25 +377,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:413
+#: index.docbook:425
 #, no-c-format
 msgid "<action>Closes &ark;</action>."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:490
+#: index.docbook:502
 #, no-c-format
 msgid "The <guimenu>Action</guimenu> Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:495
+#: index.docbook:507
 #, no-c-format
 msgid "<guimenu>Action</guimenu> <guimenuitem>Add File...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:500
+#: index.docbook:512
 #, no-c-format
 msgid ""
 "Shows the <guilabel>Add Files</guilabel> dialog, where you can select files. "
@@ -379,13 +403,13 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:507
+#: index.docbook:519
 #, no-c-format
 msgid "<guimenu>Action</guimenu> <guimenuitem>Add Folder...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:512
+#: index.docbook:524
 #, no-c-format
 msgid ""
 "Shows the <guilabel>Add Folder</guilabel> dialog. Just select a folder and "
@@ -393,71 +417,73 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:518
+#: index.docbook:530
 #, no-c-format
 msgid "<guimenu>Action</guimenu> <guimenuitem>Delete</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:523
+#: index.docbook:535
 #, no-c-format
 msgid "Removes the currently selected files from the archive."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:529
+#: index.docbook:541
 #, no-c-format
-msgid "<guimenu>Action</guimenu> <guimenuitem>Extract</guimenuitem>"
+msgid ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>E</keycap></keycombo></"
+"shortcut> <guimenu>Action</guimenu> <guisubmenu>Extract...</guisubmenu> "
+"<guimenuitem>Quick extract to...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:535
+#: index.docbook:548
 #, no-c-format
 msgid ""
-"Shows the <guilabel>Extract</guilabel> dialog box, which allows you to "
-"<action>select where you will extract files</action> to. You can also select "
-"which files to extract:"
+"This opens a submenu with previously accessed folders, and you can select to "
+"quick extract into any of them."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:558
+#: index.docbook:554
 #, no-c-format
 msgid "<guimenu>Action</guimenu> <guimenuitem>Preview</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:563
+#: index.docbook:559
 #, no-c-format
 msgid "Opens the currently selected file in the associated viewer program."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:597
+#: index.docbook:593
 #, no-c-format
 msgid "The <guimenu>Settings</guimenu> Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:612
+#: index.docbook:608
 #, no-c-format
 msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:617
+#: index.docbook:613
 #, no-c-format
 msgid "Toggles whether the status bar is displayed."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:634
+#: index.docbook:630
 #, no-c-format
 msgid ""
 "<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:639
+#: index.docbook:635
 #, no-c-format
 msgid ""
 "Displays the <guilabel>Configure Shortcuts</guilabel> dialog box. This "
@@ -468,100 +494,100 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:649
+#: index.docbook:645
 #, no-c-format
 msgid ""
 "<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:654
+#: index.docbook:650
 #, no-c-format
 msgid ""
 "Displays a &kde; standard dialog where you can configure the toolbar icons."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:676
+#: index.docbook:672
 #, no-c-format
 msgid "The <guimenu>Help</guimenu> Menu"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:676
+#: index.docbook:672
 #, no-c-format
 msgid "&help.menu.documentation;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:686
+#: index.docbook:682
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:688
+#: index.docbook:684
 #, no-c-format
 msgid "&ark; is Copyright &copy; 1997-2008, The Various &ark; Developers"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:691
+#: index.docbook:687
 #, no-c-format
 msgid "Authors:"
 msgstr "Autors :"
 
 #. Tag: para
-#: index.docbook:692
+#: index.docbook:688
 #, no-c-format
 msgid "Helio Chissini de Castro <email>helio@conectiva.com.br</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:694
+#: index.docbook:690
 #, no-c-format
 msgid "Georg Robbers <email>Georg.Robbers@urz.uni-hd.de</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:696
+#: index.docbook:692
 #, no-c-format
 msgid "Henrique Pinto <email>henrique.pinto@kdemail.net</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:698
+#: index.docbook:694
 #, no-c-format
 msgid "Roberto Selbach Teixeira <email>maragato@kde.org</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:700
+#: index.docbook:696
 #, no-c-format
 msgid "Robert Palmbos <email>palm9744@kettering.edu</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:702
+#: index.docbook:698
 #, no-c-format
 msgid "Francois-Xavier Duranceau <email>duranceau@kde.org</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:704
+#: index.docbook:700
 #, no-c-format
 msgid "Corel Corporation (author: Emily Ezust) <email>emilye@corel.com</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:708
+#: index.docbook:704
 #, no-c-format
 msgid ""
 "Documentation Copyright &copy; 2000 &Matt.Johnston; &Matt.Johnston.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:711
+#: index.docbook:707
 #, no-c-format
 msgid ""
 "Documentation updated for &kde; 3.3 by Henrique Pinto <email>henrique."
@@ -569,44 +595,44 @@ msgid ""
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:714
+#: index.docbook:710
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:714
+#: index.docbook:710
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:721
+#: index.docbook:717
 #, no-c-format
 msgid "Installation"
 msgstr "Installacion"
 
 #. Tag: title
-#: index.docbook:724
+#: index.docbook:720
 #, no-c-format
 msgid "How to obtain &ark;"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:724
+#: index.docbook:720
 #, no-c-format
 msgid "&install.intro.documentation;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:731
+#: index.docbook:727
 #, no-c-format
 msgid "Requirements"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:733
+#: index.docbook:729
 #, no-c-format
 msgid ""
 "In order to successfully use &ark;, you need &kde; 4.1. &GNU; <command>tar</"
@@ -618,13 +644,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:743
+#: index.docbook:739
 #, no-c-format
 msgid "Compilation and Installation"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:743
+#: index.docbook:739
 #, no-c-format
 msgid "&install.compile.documentation;"
 msgstr ""
