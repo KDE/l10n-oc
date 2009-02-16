@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-05 11:15+0100\n"
+"POT-Creation-Date: 2009-02-16 09:05+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -358,7 +358,7 @@ msgstr ""
 #: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
 #: dialogs/umlviewdialog.cpp:35 dialogs/objectnodedialog.cpp:39
 #: dialogs/classpropdlg.cpp:109 dialogs/parmpropdlg.cpp:65
-#: dialogs/assocgenpage.cpp:60 refactoring/refactoringassistant.cpp:313
+#: dialogs/assocgenpage.cpp:60 refactoring/refactoringassistant.cpp:453
 #: listpopupmenu.cpp:556
 msgid "Properties"
 msgstr "Propietats"
@@ -494,7 +494,8 @@ msgstr ""
 msgid "New Activity..."
 msgstr ""
 
-#: dialogs/activitypage.cpp:88 listpopupmenu.cpp:562
+#: dialogs/activitypage.cpp:88 refactoring/refactoringassistant.cpp:454
+#: listpopupmenu.cpp:562
 msgid "Delete"
 msgstr "Suprimir"
 
@@ -718,7 +719,7 @@ msgid "Color"
 msgstr "Color"
 
 #: dialogs/classifierlistpage.cpp:92 dialogs/classpropdlg.cpp:265
-#: refactoring/refactoringassistant.cpp:488 listpopupmenu.cpp:815
+#: refactoring/refactoringassistant.cpp:658 listpopupmenu.cpp:815
 msgid "Attributes"
 msgstr "Atributs"
 
@@ -727,7 +728,7 @@ msgid "N&ew Attribute..."
 msgstr ""
 
 #: dialogs/classifierlistpage.cpp:96 dialogs/classpropdlg.cpp:277
-#: refactoring/refactoringassistant.cpp:504 listpopupmenu.cpp:818
+#: refactoring/refactoringassistant.cpp:674 listpopupmenu.cpp:818
 msgid "Operations"
 msgstr "Operacions"
 
@@ -996,16 +997,16 @@ msgid "You have entered an invalid operation name."
 msgstr ""
 
 #: dialogs/umloperationdialog.cpp:430 dialogs/umloperationdialog.cpp:442
-#: refactoring/refactoringassistant.cpp:658
+#: refactoring/refactoringassistant.cpp:808
 msgid "Operation Name Invalid"
 msgstr ""
 
-#: dialogs/umloperationdialog.cpp:439 refactoring/refactoringassistant.cpp:655
+#: dialogs/umloperationdialog.cpp:439 refactoring/refactoringassistant.cpp:805
 #, kde-format
 msgid "An operation with that signature already exists in %1.\n"
 msgstr ""
 
-#: dialogs/umloperationdialog.cpp:441 refactoring/refactoringassistant.cpp:657
+#: dialogs/umloperationdialog.cpp:441 refactoring/refactoringassistant.cpp:807
 msgid "Choose a different name or parameter list."
 msgstr ""
 
@@ -1208,7 +1209,7 @@ msgstr "Protegit"
 msgid "You have entered an invalid attribute name."
 msgstr ""
 
-#: dialogs/umlattributedialog.cpp:161
+#: dialogs/umlattributedialog.cpp:161 refactoring/refactoringassistant.cpp:829
 msgid "Attribute Name Invalid"
 msgstr ""
 
@@ -4555,41 +4556,56 @@ msgid ""
 "item of the same name already exists.  Any other items have been pasted."
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:295
+#: refactoring/refactoringassistant.cpp:49
+#, fuzzy
+#| msgid "Name"
+msgid "Name"
+msgstr "Nom"
+
+#: refactoring/refactoringassistant.cpp:437
 msgid "Add Base Class"
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:296
+#: refactoring/refactoringassistant.cpp:438
 msgid "Add Derived Class"
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:298
-#: refactoring/refactoringassistant.cpp:305
-#: refactoring/refactoringassistant.cpp:319
+#: refactoring/refactoringassistant.cpp:440
+#: refactoring/refactoringassistant.cpp:446
+#: refactoring/refactoringassistant.cpp:458
 msgid "Add Operation"
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:299
-#: refactoring/refactoringassistant.cpp:323
+#: refactoring/refactoringassistant.cpp:441
+#: refactoring/refactoringassistant.cpp:461
 msgid "Add Attribute"
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:303
+#: refactoring/refactoringassistant.cpp:444
 msgid "Add Base Interface"
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:304
+#: refactoring/refactoringassistant.cpp:445
 msgid "Add Derived Interface"
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:361
-#: refactoring/refactoringassistant.cpp:515
+#: refactoring/refactoringassistant.cpp:504
+#: refactoring/refactoringassistant.cpp:684
 msgid "Base Classifiers"
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:403
-#: refactoring/refactoringassistant.cpp:533
+#: refactoring/refactoringassistant.cpp:549
+#: refactoring/refactoringassistant.cpp:699
 msgid "Derived Classifiers"
+msgstr ""
+
+#: refactoring/refactoringassistant.cpp:826
+#, kde-format
+msgid "An attribute with that name already exists in %1.\n"
+msgstr ""
+
+#: refactoring/refactoringassistant.cpp:828
+msgid "Choose a different name."
 msgstr ""
 
 #: widgets/objectnodewidget.cpp:198

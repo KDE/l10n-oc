@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-13 10:12+0100\n"
+"POT-Creation-Date: 2009-02-16 09:06+0100\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -615,7 +615,6 @@ msgid "Resize"
 msgstr "Redimensionar"
 
 #: app/imageopscontextmanageritem.cpp:101 lib/crop/cropimageoperation.cpp:48
-#: lib/crop/cropsidebar.cpp:120
 msgid "Crop"
 msgstr "Rosegar"
 
@@ -732,7 +731,7 @@ msgstr[1] ""
 msgid "If you quit now, your changes will be lost."
 msgstr ""
 
-#: lib/crop/cropsidebar.cpp:78
+#: lib/crop/cropwidget.cpp:75
 #, fuzzy
 #| msgid "Save"
 msgid "Square"
@@ -1167,7 +1166,7 @@ msgstr "&Paramètres"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: part/gvpart.rc:15
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:111 rc.cpp:203
+#: rc.cpp:111 rc.cpp:209
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
@@ -1215,52 +1214,68 @@ msgstr "Navigar"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:132 rc.cpp:174
+#: rc.cpp:132 rc.cpp:180
 msgid "Enlarge smaller images"
 msgstr ""
 
-#. i18n: file: lib/crop/cropsidebar.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: lib/crop/cropwidget.ui:17
+#. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
 #: rc.cpp:135
-msgid "&X:"
-msgstr ""
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced settings"
+msgstr "Paramètres de l'imatge"
 
-#. i18n: file: lib/crop/cropsidebar.ui:45
-#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: lib/crop/cropwidget.ui:24
+#. i18n: ectx: property (text), widget (QPushButton, cropButton)
 #: rc.cpp:138
-msgid "&Y:"
-msgstr ""
+#, fuzzy
+#| msgid "Crop"
+msgid "&Crop"
+msgstr "Rosegar"
 
-#. i18n: file: lib/crop/cropsidebar.ui:61
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: lib/crop/cropwidget.ui:36
+#. i18n: ectx: property (text), widget (QCheckBox, constrainRatioCheckBox)
 #: rc.cpp:141
-msgid "&Width:"
+msgid "Constrain ratio"
 msgstr ""
 
-#. i18n: file: lib/crop/cropsidebar.ui:77
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:144
-msgid "&Height:"
-msgstr ""
-
-#. i18n: file: lib/crop/cropsidebar.ui:151
+#. i18n: file: lib/crop/cropwidget.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:147
+#: rc.cpp:144
 #, fuzzy
 #| msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 #| msgid "x"
 msgid "x"
 msgstr "x"
 
-#. i18n: file: lib/crop/cropsidebar.ui:170
-#. i18n: ectx: property (text), widget (QCheckBox, constrainRatioCheckBox)
+#. i18n: file: lib/crop/cropwidget.ui:104
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:147
+msgid "&X:"
+msgstr ""
+
+#. i18n: file: lib/crop/cropwidget.ui:127
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:150
-msgid "Constrain ratio"
+msgid "&Y:"
+msgstr ""
+
+#. i18n: file: lib/crop/cropwidget.ui:143
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:153
+msgid "&Width:"
+msgstr ""
+
+#. i18n: file: lib/crop/cropwidget.ui:159
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:156
+msgid "&Height:"
 msgstr ""
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:153
+#: rc.cpp:159
 #, fuzzy
 #| msgctxt "@item:intable"
 #| msgid "File Size"
@@ -1269,86 +1284,86 @@ msgstr "Nom de fichièr"
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
 #. i18n: ectx: property (text), widget (QToolButton, applyButton)
-#: rc.cpp:156
+#: rc.cpp:162
 msgid "Apply"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:159
+#: rc.cpp:165
 msgid "Image Settings"
 msgstr "Paramètres de l'imatge"
 
 #. i18n: file: lib/print/printoptionspage.ui:34
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:162
+#: rc.cpp:168
 msgid "Image Position"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:77
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:165
+#: rc.cpp:171
 msgid "Scaling"
 msgstr "Redimensionament"
 
 #. i18n: file: lib/print/printoptionspage.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:168
+#: rc.cpp:174
 msgid "&No scaling"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:111
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:171
+#: rc.cpp:177
 msgid "&Fit image to page"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:177
+#: rc.cpp:183
 msgid "&Scale to:"
 msgstr ""
 
 #. i18n: file: lib/print/printoptionspage.ui:232
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:180
+#: rc.cpp:186
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr "x"
 
 #. i18n: file: lib/print/printoptionspage.ui:259
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:183
+#: rc.cpp:189
 msgid "Millimeters"
 msgstr "Milimètres"
 
 #. i18n: file: lib/print/printoptionspage.ui:264
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:186
+#: rc.cpp:192
 msgid "Centimeters"
 msgstr "Centimètres"
 
 #. i18n: file: lib/print/printoptionspage.ui:269
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:189
+#: rc.cpp:195
 msgid "Inches"
 msgstr "Poces"
 
 #. i18n: file: lib/print/printoptionspage.ui:280
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:192
+#: rc.cpp:198
 msgid "Keep ratio"
 msgstr ""
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:197
+#: rc.cpp:203
 msgid "&File"
 msgstr "&Fichièr"
 
 #. i18n: file: part/gvpart.rc:8
 #. i18n: ectx: Menu (view)
-#: rc.cpp:200
+#: rc.cpp:206
 msgid "&View"
 msgstr "Aficha&tge"
 
