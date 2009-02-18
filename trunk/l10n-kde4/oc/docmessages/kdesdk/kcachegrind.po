@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcachegrind\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-16 04:22+0000\n"
+"POT-Creation-Date: 2009-02-18 04:22+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -400,24 +400,25 @@ msgstr ""
 #: index.docbook:206
 #, no-c-format
 msgid ""
-"&callgrind; is available from <ulink url=\"http://kcachegrind.sf.net\"> "
-"http://kcachegrind.sf.net</ulink>. Note that it previously was called "
+"&callgrind; is a part of &valgrind;, <ulink url=\"http://valgrind.org"
+"\">http://valgrind.org</ulink>. Note that it previously was called "
 "&calltree;, but that name was misleading."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:213
+#: index.docbook:212
 #, no-c-format
 msgid ""
 "Most common use is to prefix the command line to start your application with "
-"<application>callgrind</application>, like in "
-"<blockquote><para><command>callgrind myprogram myargs</command></para></"
-"blockquote> At program termination, a file <filename>callgrind.out.pid</"
-"filename> will be generated which can be loaded into &kcachegrind;."
+"<application>valgrind --tool=callgrind</application>, like in "
+"<blockquote><para><command>valgrind --tool-callgrind myprogram myargs</"
+"command></para></blockquote> At program termination, a file "
+"<filename>callgrind.out.pid</filename> will be generated which can be loaded "
+"into &kcachegrind;."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:223
+#: index.docbook:222
 #, no-c-format
 msgid ""
 "More advanced use is to dump out profile data whenever a given function of "
@@ -425,23 +426,23 @@ msgid ""
 "profile data only for rendering a web page, you could decide to dump the "
 "data whenever you select the menu item View/Reload. This corresponds to a "
 "call to <symbol>KonqMainWindow::slotReload</symbol>. Use "
-"<blockquote><para><command> callgrind --dump-before=KonqMainWindow::"
-"slotReload konqueror </command></para></blockquote> This will produce "
-"multiple profile data files with an additional sequential number at the end "
-"of the filename. A file without such an number at the end (only ending in "
-"the process PID) will also be produced; by loading this file into "
-"&kcachegrind;, all others are loaded too, and can be seen in the Parts "
+"<blockquote><para><command> valgrind --tool=callgrind --dump-"
+"before=KonqMainWindow::slotReload konqueror </command></para></blockquote> "
+"This will produce multiple profile data files with an additional sequential "
+"number at the end of the filename. A file without such an number at the end "
+"(only ending in the process PID) will also be produced; by loading this file "
+"into &kcachegrind;, all others are loaded too, and can be seen in the Parts "
 "Overview and Parts list."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:244
+#: index.docbook:243
 #, no-c-format
 msgid "&oprofile;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:246
+#: index.docbook:245
 #, no-c-format
 msgid ""
 "&oprofile; is available from <ulink url=\"http://oprofile.sf.net\"> http://"
@@ -451,7 +452,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:253
+#: index.docbook:252
 #, no-c-format
 msgid ""
 "System-wide profiling is only permitted to the root user, as all actions on "
@@ -470,24 +471,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:273
+#: index.docbook:272
 #, no-c-format
 msgid "User Interface Basics"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:275
+#: index.docbook:274
 #, no-c-format
 msgid ""
 "When starting &kcachegrind; with a profile data file as argument, or after "
-"loading one with File/Open, you will see a navigation panel containing the "
+"loading one with <menuchoice><guimenu>File</guimenu> <guimenuitem>Open...</"
+"guimenuitem> </menuchoice>, you will see a navigation panel containing the "
 "function list at the left; and, on the right the main part, an area with "
 "visualizations for a selected function. This visualization area can be "
 "arbitrarily configured to show multiple visualizations at once."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:282
+#: index.docbook:281
 #, no-c-format
 msgid ""
 "At first start, this area will be divided into a top and a bottom part, each "
@@ -500,7 +502,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:292
+#: index.docbook:291
 #, no-c-format
 msgid ""
 "The active event type is important for visualization: for &callgrind;, this "
@@ -515,7 +517,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:298
+#: index.docbook:297
 #, no-c-format
 msgid ""
 "To explore the &GUI; further, in addition to this manual, also have a look "
@@ -525,13 +527,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:311
+#: index.docbook:310
 #, no-c-format
 msgid "Basic Concepts"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:313
+#: index.docbook:312
 #, no-c-format
 msgid ""
 "This chapter explains some concepts of the &kcachegrind;, and introduces "
@@ -539,19 +541,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:318
+#: index.docbook:317
 #, no-c-format
 msgid "The Data Model for Profile Data"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:321
+#: index.docbook:320
 #, no-c-format
 msgid "Cost Entities"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:323
+#: index.docbook:322
 #, no-c-format
 msgid ""
 "Cost counts of event types (like L2 Misses) are attributed to cost entities, "
@@ -563,7 +565,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:327
+#: index.docbook:326
 #, no-c-format
 msgid ""
 "The cost entities known to &kcachegrind; are given in the following. Simple "
@@ -600,7 +602,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:363
+#: index.docbook:362
 #, no-c-format
 msgid ""
 "Positions tuples: <itemizedlist> <listitem><para> Call from instruction "
@@ -615,13 +617,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:391 index.docbook:541
+#: index.docbook:390 index.docbook:540
 #, no-c-format
 msgid "Event Types"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:393
+#: index.docbook:392
 #, no-c-format
 msgid ""
 "Arbitrary event types can be specified in the profile data by giving them a "
@@ -629,7 +631,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:396
+#: index.docbook:395
 #, no-c-format
 msgid ""
 "Event types whose costs are specified in a profile data file are called real "
@@ -638,13 +640,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:404
+#: index.docbook:403
 #, no-c-format
 msgid "Visualization State"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:406
+#: index.docbook:405
 #, no-c-format
 msgid ""
 "The Visualization state of a &kcachegrind; window includes: <itemizedlist> "
@@ -659,7 +661,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:428
+#: index.docbook:427
 #, no-c-format
 msgid ""
 "Visualizations always are shown for one, the active, cost entity. When a "
@@ -669,7 +671,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:431
+#: index.docbook:430
 #, no-c-format
 msgid ""
 "For example, for an active function, the callee list shows all the functions "
@@ -679,19 +681,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:438
+#: index.docbook:437
 #, no-c-format
 msgid "Parts of the &GUI;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:441 index.docbook:496
+#: index.docbook:440 index.docbook:495
 #, no-c-format
 msgid "Sidedocks"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:442
+#: index.docbook:441
 #, no-c-format
 msgid ""
 "Sidedocks (Dockables) are side windows which can be placed at any border of "
@@ -700,7 +702,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:445
+#: index.docbook:444
 #, no-c-format
 msgid ""
 "Function Profile. The Function Profile is a list of functions showing "
@@ -708,25 +710,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:449
+#: index.docbook:448
 #, no-c-format
 msgid "<para>Parts Overview</para>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:452
+#: index.docbook:451
 #, no-c-format
 msgid "<para>Call Stack</para>"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:460
+#: index.docbook:459
 #, no-c-format
 msgid "Visualization Area"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:461
+#: index.docbook:460
 #, no-c-format
 msgid ""
 "The visualization area, typically the right part of a &kcachegrind; main "
@@ -739,13 +741,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:467
+#: index.docbook:466
 #, no-c-format
 msgid "Areas of a Tab View"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:468
+#: index.docbook:467
 #, no-c-format
 msgid ""
 "Each tab view can hold up to four view areas, namely Top, Right, Left, and "
@@ -757,13 +759,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:474
+#: index.docbook:473
 #, no-c-format
 msgid "Synchronized Visualization via Selected Entity in a Tab View"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:475
+#: index.docbook:474
 #, no-c-format
 msgid ""
 "Besides an active entity, each tab view has an selected entity. As most "
@@ -776,13 +778,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:481
+#: index.docbook:480
 #, no-c-format
 msgid "Synchronization between Tab Views"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:482
+#: index.docbook:481
 #, no-c-format
 msgid ""
 "If there are multiple tab views, a selection change in one tab view leads to "
@@ -791,13 +793,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:488
+#: index.docbook:487
 #, no-c-format
 msgid "Layouts"
 msgstr "Mesas en pagina"
 
 #. Tag: para
-#: index.docbook:489
+#: index.docbook:488
 #, no-c-format
 msgid ""
 "The layout of all the tab views of a window can be saved (see menu item View/"
@@ -811,13 +813,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:499
+#: index.docbook:498
 #, no-c-format
 msgid "Flat Profile"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:500
+#: index.docbook:499
 #, no-c-format
 msgid ""
 "The flat profile contains a group list and a function list. The group list "
@@ -826,7 +828,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:503
+#: index.docbook:502
 #, no-c-format
 msgid ""
 "The function list contains the functions of the selected group (or all "
@@ -837,13 +839,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:509
+#: index.docbook:508
 #, no-c-format
 msgid "<title>Parts Overview</title>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:510
+#: index.docbook:509
 #, no-c-format
 msgid ""
 "In a profile run, multiple profile data files can be produced, which can be "
@@ -855,7 +857,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:513
+#: index.docbook:512
 #, no-c-format
 msgid ""
 "The parts are further subdivided: there is a partitioning and an inclusive "
@@ -863,7 +865,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:516
+#: index.docbook:515
 #, no-c-format
 msgid ""
 "Partitioning: You see the partitioning into groups for a profile data part, "
@@ -873,7 +875,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:519
+#: index.docbook:518
 #, no-c-format
 msgid ""
 "Inclusive Cost Split: A rectangle showing the inclusive cost of the current "
@@ -882,13 +884,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:527
+#: index.docbook:526
 #, no-c-format
 msgid "<title>Call Stack</title>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:528
+#: index.docbook:527
 #, no-c-format
 msgid ""
 "This is a purely fictional 'most probable' call stack. It is built up by "
@@ -897,7 +899,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:531
+#: index.docbook:530
 #, no-c-format
 msgid ""
 "The 'Cost' and 'Calls' columns show the cost used for all calls from the "
@@ -905,13 +907,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:538
+#: index.docbook:537
 #, no-c-format
 msgid "Visualizations"
 msgstr "Visualizacions"
 
 #. Tag: para
-#: index.docbook:542
+#: index.docbook:541
 #, no-c-format
 msgid ""
 "This list shows all cost types available and the corresponding self and "
@@ -919,7 +921,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:545
+#: index.docbook:544
 #, no-c-format
 msgid ""
 "By choosing an event type from the list, you change the type of costs shown "
@@ -927,13 +929,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:551
+#: index.docbook:550
 #, no-c-format
 msgid "Call Lists"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:552
+#: index.docbook:551
 #, no-c-format
 msgid ""
 "These lists show calls to/from the current active function. With 'all' "
@@ -942,43 +944,43 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:555
+#: index.docbook:554
 #, no-c-format
 msgid "Call list views include:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:558
+#: index.docbook:557
 #, no-c-format
 msgid "Direct Callers"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:561
+#: index.docbook:560
 #, no-c-format
 msgid "Direct Callees"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:564
+#: index.docbook:563
 #, no-c-format
 msgid "All Callers"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:567
+#: index.docbook:566
 #, no-c-format
 msgid "All Callees"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:575
+#: index.docbook:574
 #, no-c-format
 msgid "Maps"
 msgstr "Cartas"
 
 #. Tag: para
-#: index.docbook:576
+#: index.docbook:575
 #, no-c-format
 msgid ""
 "A treemap visualization of the primary event type, up or down the call "
@@ -988,7 +990,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:579
+#: index.docbook:578
 #, no-c-format
 msgid ""
 "For the Caller Map, the graph shows the nested hierarchy of all callers of "
@@ -997,7 +999,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:582
+#: index.docbook:581
 #, no-c-format
 msgid ""
 "Appearance options can be found in the in the context menu. To get exact "
@@ -1010,7 +1012,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:585
+#: index.docbook:584
 #, no-c-format
 msgid ""
 "Keyboard navigation is available with the left/right arrow keys for "
@@ -1019,13 +1021,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:591
+#: index.docbook:590
 #, no-c-format
 msgid "Call Graph"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:592
+#: index.docbook:591
 #, no-c-format
 msgid ""
 "This view shows the call graph around the active function. The shown cost is "
@@ -1036,7 +1038,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:596
+#: index.docbook:595
 #, no-c-format
 msgid ""
 "For cycles, blue call arrows indicate that this is an artificial call added "
@@ -1044,7 +1046,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:599
+#: index.docbook:598
 #, no-c-format
 msgid ""
 "If the graph is larger than the widget area, a bird's eye view is shown in "
@@ -1053,13 +1055,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:605
+#: index.docbook:604
 #, no-c-format
 msgid "Annotations"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:606
+#: index.docbook:605
 #, no-c-format
 msgid ""
 "The annotated source/assembler lists show the source lines/disassembled "
@@ -1071,31 +1073,31 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:609
+#: index.docbook:608
 #, no-c-format
 msgid "Select such a call information line to activate the call destination."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:619
+#: index.docbook:618
 #, no-c-format
 msgid "Command Reference"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:622
+#: index.docbook:621
 #, no-c-format
 msgid "The main &kcachegrind; window"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:625
+#: index.docbook:624
 #, no-c-format
 msgid "The <guimenu>File</guimenu> Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:630
+#: index.docbook:629
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo>&Ctrl;<keycap>N</keycap></keycombo> </shortcut> "
@@ -1103,16 +1105,18 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:637
+#: index.docbook:636
 #, no-c-format
 msgid ""
 "<action> Opens an empty toplevel window into which you can load profile "
-"data. </action> This action is not really needed, as File/Open will give you "
-"a new toplevel window when the current one shows already some data."
+"data. </action> This action is not really needed, as "
+"<menuchoice><guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem> </"
+"menuchoice> will give you a new toplevel window when the current one shows "
+"already some data."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:645
+#: index.docbook:644
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo>&Ctrl;<keycap>O</keycap></keycombo> </shortcut> "
@@ -1120,27 +1124,29 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:652
+#: index.docbook:651
 #, no-c-format
 msgid ""
 "<action> Pops up the File Open Dialog to choose a profile data file to be "
 "loaded. </action> If there is some data already shown in the current "
 "toplevel window, this will open a new window; if you want to open additional "
-"profile data in the current window, use File/Add."
+"profile data in the current window, use <menuchoice><guimenu>File</guimenu> "
+"<guimenuitem>Add...</guimenuitem> </menuchoice>."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:657
+#: index.docbook:656
 #, no-c-format
 msgid ""
-"The name of profile data files usually ends in ..-, where and are optional "
-"and are used for multiple profile data files belonging to one application "
-"run. By loading a file ending only in ., eventually existing data files for "
-"this run, but with additional endings, are loaded too."
+"The name of profile data files usually ends in '.pid.part-threadID', where "
+"'part' and 'threadID' are optional 'pid' and 'part' are used for multiple "
+"profile data files belonging to one application run. By loading a file "
+"ending only in '.pid', eventually existing data files for this run, but with "
+"additional endings, are loaded too."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:660
+#: index.docbook:659
 #, no-c-format
 msgid ""
 "Example: If there exist profile data files cachegrind.out.123 and cachegrind."
@@ -1148,13 +1154,13 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:666
+#: index.docbook:665
 #, no-c-format
-msgid "<guimenu>File</guimenu> <guimenuitem>Add</guimenuitem>"
+msgid "<guimenu>File</guimenu> <guimenuitem>Add...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:670
+#: index.docbook:669
 #, no-c-format
 msgid ""
 "<action> Adds a profile data file to the current window. </action> Using "
@@ -1165,13 +1171,13 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:678
+#: index.docbook:677
 #, no-c-format
 msgid "<guimenu>File</guimenu> <guimenuitem>Reload</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:682
+#: index.docbook:681
 #, no-c-format
 msgid ""
 "<action> Reload the profile data. </action> This is most interesting after "
@@ -1180,7 +1186,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:690
+#: index.docbook:689
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo>&Ctrl;<keycap>Q</keycap></keycombo> </shortcut> "
@@ -1188,74 +1194,74 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:697
+#: index.docbook:696
 #, no-c-format
 msgid "<action>Quits</action> &kappname;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:705
+#: index.docbook:704
 #, no-c-format
 msgid "The <guimenu>View</guimenu> Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:710
+#: index.docbook:709
 #, no-c-format
 msgid "<guimenu>View</guimenu> <guimenuitem>Primary Event Type</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:714 index.docbook:722 index.docbook:730 index.docbook:738
-#: index.docbook:746
+#: index.docbook:713 index.docbook:721 index.docbook:729 index.docbook:737
+#: index.docbook:745
 #, no-c-format
 msgid "(To-do)"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:718
+#: index.docbook:717
 #, no-c-format
 msgid "<guimenu>View</guimenu> <guimenuitem>Secondary Event Type</guimenuitem>"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:726
+#: index.docbook:725
 #, no-c-format
 msgid "<guimenu>View</guimenu> <guimenuitem>Grouping</guimenuitem>"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:734
+#: index.docbook:733
 #, no-c-format
 msgid "<guimenu>View</guimenu> <guimenuitem>Layout</guimenuitem>"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:742
+#: index.docbook:741
 #, no-c-format
 msgid "<guimenu>View</guimenu> <guimenuitem>Split</guimenuitem>"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:759
+#: index.docbook:758
 #, no-c-format
 msgid "Questions and Answers"
 msgstr "Questions e responsas"
 
 #. Tag: chapter
-#: index.docbook:759
+#: index.docbook:758
 #, no-c-format
 msgid "&reporting.bugs; &updating.documentation;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:769
+#: index.docbook:768
 #, no-c-format
 msgid "What is &kcachegrind; for? I have no idea."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:774
+#: index.docbook:773
 #, no-c-format
 msgid ""
 "&kcachegrind; is a helpful at a later stage in software development, called "
@@ -1263,13 +1269,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:784
+#: index.docbook:783
 #, no-c-format
 msgid "What is the difference between 'Incl.' and 'Self' ?"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:789
+#: index.docbook:788
 #, no-c-format
 msgid ""
 "These are cost attributes for functions regarding some event type. As "
@@ -1280,7 +1286,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:791
+#: index.docbook:790
 #, no-c-format
 msgid ""
 "So, for example, for main(), you will always have a inclusive cost of almost "
@@ -1289,26 +1295,26 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:799
+#: index.docbook:798
 #, no-c-format
 msgid ""
 "The toolbar/menubar of my &kcachegrind; looks so spartanic. Is this normal?"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:802
+#: index.docbook:801
 #, no-c-format
 msgid ""
 "Obviously &kcachegrind; is wrongly installed on your system. It is "
 "recommended to compile it with the installation prefix to be your system "
-"wide &kde; base folder like <command>configure --prefix=/opt/kde3; make "
+"wide &kde; base folder like <command>configure --prefix=/opt/kde4; make "
 "install</command>. If you choose another folder like $HOME/kde, you should "
 "set the environment variable KDEDIR to this folder before running "
 "&kcachegrind;."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:811
+#: index.docbook:810
 #, no-c-format
 msgid ""
 "If I double-click on a function down in the Call Graph View, it shows for "
@@ -1317,7 +1323,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:816
+#: index.docbook:815
 #, no-c-format
 msgid ""
 "You have activated a function below main() with cost less than main(). For "
@@ -1327,19 +1333,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:827
+#: index.docbook:826
 #, no-c-format
 msgid "Glossary"
 msgstr "Glossari"
 
 #. Tag: para
-#: index.docbook:829
+#: index.docbook:828
 #, no-c-format
 msgid "The following is a mixed list of terms."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:832
+#: index.docbook:831
 #, no-c-format
 msgid ""
 "Profiling: The process of collecting statistical information about runtime "
@@ -1347,7 +1353,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:835
+#: index.docbook:834
 #, no-c-format
 msgid ""
 "Tracing: The process of supervising a program run and storing events "
@@ -1355,7 +1361,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:838
+#: index.docbook:837
 #, no-c-format
 msgid ""
 "Trace: A sequence of timestamped events that occurred while tracing a "
@@ -1364,7 +1370,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:841
+#: index.docbook:840
 #, no-c-format
 msgid ""
 "Profile Data File: A file containing data measured in a profile experiment "
@@ -1373,7 +1379,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:844
+#: index.docbook:843
 #, no-c-format
 msgid ""
 "Profile Data Part (incorrectly used also: Trace Part): Data from a profile "
@@ -1381,7 +1387,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:847
+#: index.docbook:846
 #, no-c-format
 msgid ""
 "Profile Experiment: A program run supervised by a profiling tool, producing "
@@ -1389,7 +1395,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:850
+#: index.docbook:849
 #, no-c-format
 msgid ""
 "Profile Project: A configuration for profile experiments used for one "
@@ -1399,7 +1405,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:853
+#: index.docbook:852
 #, no-c-format
 msgid ""
 "Cost Entity: An abstract item related to source code to which event counts "
@@ -1411,7 +1417,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:856
+#: index.docbook:855
 #, no-c-format
 msgid ""
 "Event Type: The kind of event of which costs can be attributed to a cost "
@@ -1419,7 +1425,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:859
+#: index.docbook:858
 #, no-c-format
 msgid ""
 "Real Event Type: A event type that can be measured by a tool. This needs the "
@@ -1427,7 +1433,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:862
+#: index.docbook:861
 #, no-c-format
 msgid ""
 "Inherited Event Type: A virtual event type only visible in the visualization "
@@ -1435,7 +1441,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:865
+#: index.docbook:864
 #, no-c-format
 msgid ""
 "Event Costs: Sum of events of some event type occurring while the execution "
@@ -1443,19 +1449,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:875
+#: index.docbook:874
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:877
+#: index.docbook:876
 #, no-c-format
 msgid "&kappname;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:880
+#: index.docbook:879
 #, no-c-format
 msgid ""
 "Thanks to Julian Seward for his excellent &valgrind;, and Nicholas "
@@ -1464,38 +1470,38 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:886
+#: index.docbook:885
 #, no-c-format
 msgid "And thanks for all the bug reports/suggestions from different users."
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:891
+#: index.docbook:890
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:891
+#: index.docbook:890
 #, no-c-format
 msgid "&underFDL;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:897
+#: index.docbook:896
 #, no-c-format
 msgid "Installation"
 msgstr "Installacion"
 
 #. Tag: title
-#: index.docbook:900
+#: index.docbook:899
 #, no-c-format
 msgid "How to obtain &kcachegrind;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:902
+#: index.docbook:901
 #, no-c-format
 msgid ""
 "&kcachegrind; is part of the &package; package of &kde;. For less supported "
@@ -1505,39 +1511,39 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:913
+#: index.docbook:912
 #, no-c-format
 msgid "Requirements"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:915
+#: index.docbook:914
 #, no-c-format
 msgid ""
-"In order to successfully use &kcachegrind;, you need &kde; 3.x. For "
+"In order to successfully use &kcachegrind;, you need &kde; 4.x. For "
 "generating profile data, &cachegrind; or &calltree;/&callgrind; is recommend."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:922
+#: index.docbook:921
 #, no-c-format
 msgid "Compilation and Installation"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:922
+#: index.docbook:921
 #, no-c-format
 msgid "&install.compile.documentation;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:929
+#: index.docbook:928
 #, no-c-format
 msgid "Configuration"
 msgstr "Configuracion"
 
 #. Tag: para
-#: index.docbook:931
+#: index.docbook:930
 #, no-c-format
 msgid ""
 "All configuration options are either in the configuration dialog or in the "
