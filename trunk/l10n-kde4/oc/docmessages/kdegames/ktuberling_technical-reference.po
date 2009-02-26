@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktuberling_technical-reference\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-28 04:21+0000\n"
+"POT-Creation-Date: 2009-02-26 04:16+0000\n"
 "PO-Revision-Date: 2008-08-13 13:38+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -230,13 +230,15 @@ msgstr ""
 #. Tag: para
 #: technical-reference.docbook:106
 #, no-c-format
-msgid "Record the sounds."
+msgid "Record the sounds in OGG Vorbis rc3 file format."
 msgstr ""
 
 #. Tag: para
 #: technical-reference.docbook:109
 #, no-c-format
-msgid "Create a .soundtheme file, it has to follow this schema:"
+msgid ""
+"Create a <replaceable>yourLanguageTwoLetterCode</replaceable>.soundtheme "
+"file, it has to follow this schema:"
 msgstr ""
 
 #. Tag: programlisting
@@ -299,12 +301,11 @@ msgstr ""
 #: technical-reference.docbook:126
 #, no-c-format
 msgid ""
-"install( FILES <replaceable>yourSoundFile1</replaceable> "
-"<replaceable>yourSoundFile2</replaceable> ... <replaceable>yourSoundFileN</"
-"replaceable> DESTINATION  ${DATA_INSTALL_DIR}/ktuberling/sounds/"
-"<replaceable>someUniquePath</replaceable> )\n"
-"install( FILES <replaceable>yourSoundThemeFile</replaceable> DESTINATION "
-"${DATA_INSTALL_DIR}/ktuberling/sounds/ )"
+"FILE(GLOB datafiles *.ogg)\n"
+"install( FILES ${datafiles} DESTINATION ${DATA_INSTALL_DIR}/ktuberling/"
+"sounds/<replaceable>yourLanguageTwoLetterCode</replaceable> )\n"
+"install( FILES <replaceable>yourLanguageTwoLetterCode</replaceable>."
+"soundtheme DESTINATION ${DATA_INSTALL_DIR}/ktuberling/sounds/ )"
 msgstr ""
 
 #. Tag: para
@@ -317,8 +318,8 @@ msgstr ""
 #: technical-reference.docbook:134
 #, no-c-format
 msgid ""
-"Place .soundtheme files in `kde4-config --prefix`/share/apps/ktuberling/"
-"sounds"
+"Place <replaceable>yourLanguageTwoLetterCode</replaceable>.soundtheme file "
+"in `kde4-config --prefix`/share/apps/ktuberling/sounds"
 msgstr ""
 
 #. Tag: para

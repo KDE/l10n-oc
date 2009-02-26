@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kblogger\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 11:51+0100\n"
+"POT-Creation-Date: 2009-02-26 10:51+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Select a blog"
 msgstr ""
 
-#: composer/composer.cpp:82 composer/composer.cpp:382
+#: composer/composer.cpp:82
 msgid "Please select a blog first."
 msgstr ""
 
@@ -122,38 +122,43 @@ msgstr ""
 msgid "Cannot create post without a blog."
 msgstr ""
 
-#: composer/composer.cpp:260
+#: composer/composer.cpp:89 composer/composer.cpp:138
+#, kde-format
+msgid "Blog post for blog: %1"
+msgstr ""
+
+#: composer/composer.cpp:236
 #, kde-format
 msgid "Loaded %1 categories..."
 msgstr ""
 
-#: composer/composer.cpp:269
+#: composer/composer.cpp:245
 msgid "Fetching List of Categories..."
 msgstr ""
 
-#: composer/composer.cpp:376
+#: composer/composer.cpp:352
 msgid "Your post is empty."
 msgstr ""
 
-#: composer/composer.cpp:388
+#: composer/composer.cpp:358
 msgid "Please fill the title field."
 msgstr ""
 
-#: composer/composer.cpp:394
+#: composer/composer.cpp:364
 #, kde-format
 msgid "Untitled post of %1"
 msgstr ""
 
-#: composer/composer.cpp:400
+#: composer/composer.cpp:370
 msgid "Post enqueued in the Local Draft."
 msgstr ""
 
-#: composer/composer.cpp:455
+#: composer/composer.cpp:425
 #, kde-format
 msgid "Retrieved %1 categories from your blog..."
 msgstr ""
 
-#: composer/composer.cpp:523
+#: composer/composer.cpp:492
 msgid "Categories are not supported on this blog."
 msgstr ""
 
@@ -318,6 +323,17 @@ msgstr ""
 msgid "This profile exists already."
 msgstr ""
 
+#: profiles/profilelist.cpp:124
+#, kde-format
+msgid ""
+"Do you really want to delete the account \"%1\"? All local changes will be "
+"lost."
+msgstr ""
+
+#: profiles/profilelist.cpp:124
+msgid "Confirm deletion"
+msgstr ""
+
 #: plugins/setupplugins.cpp:77
 #, kde-format
 msgid "Kipi library version: %1"
@@ -403,7 +419,10 @@ msgid "Trash"
 msgstr "Banasta"
 
 #: mainwindow.cpp:137
-msgctxt "a button to create a new post"
+#, fuzzy
+#| msgctxt "a button to create a new post"
+#| msgid "New"
+msgctxt "Create a new post"
 msgid "New"
 msgstr "Novèl"
 
