@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 10:58+0100\n"
+"POT-Creation-Date: 2009-02-28 10:21+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -353,8 +353,9 @@ msgstr "Aviar"
 msgid "Start all selected torrents in the current tab"
 msgstr ""
 
-#: ktorrent/viewmanager.cpp:523 plugins/mediaplayer/videowidget.cpp:55
-#: plugins/mediaplayer/mediaplayerplugin.cpp:81
+#: ktorrent/viewmanager.cpp:523
+#: plugins/mediaplayer/mediaplayeractivity.cpp:106
+#: plugins/mediaplayer/videowidget.cpp:55
 msgid "Stop"
 msgstr "Arrestar"
 
@@ -383,7 +384,7 @@ msgstr ""
 #. i18n: file: plugins/syndication/managefiltersdlg.ui:67
 #. i18n: ectx: property (text), widget (QPushButton, m_remove)
 #: ktorrent/viewmanager.cpp:529 rc.cpp:473 rc.cpp:500 rc.cpp:509 rc.cpp:860
-#: rc.cpp:1902
+#: rc.cpp:1902 plugins/mediaplayer/playlistwidget.cpp:102
 msgid "Remove"
 msgstr "Suprimir"
 
@@ -1097,78 +1098,78 @@ msgstr ""
 msgid "%1<br>Url: <b>%2</b>"
 msgstr ""
 
-#: ktorrent/core.cpp:120
+#: ktorrent/core.cpp:135
 #, kde-format
 msgid ""
 "Specified port (%1) is unavailable or in use by another application. "
 "KTorrent is now using port %2."
 msgstr ""
 
-#: ktorrent/core.cpp:128
+#: ktorrent/core.cpp:143
 #, kde-format
 msgid ""
 "KTorrent is unable to accept connections because the ports %1 to %2 are "
 "already in use by another program."
 msgstr ""
 
-#: ktorrent/core.cpp:835
+#: ktorrent/core.cpp:850
 msgid "KTorrent is running one or more torrents"
 msgstr ""
 
-#: ktorrent/core.cpp:927
+#: ktorrent/core.cpp:942
 #, kde-format
 msgid "Cannot create torrent: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:1023
+#: ktorrent/core.cpp:1038
 #, kde-format
 msgid ""
 "Several data files of the torrent \"%1\" are missing. \n"
 "Do you want to recreate them, or do you want to not download them?"
 msgstr ""
 
-#: ktorrent/core.cpp:1032 ktorrent/core.cpp:1044 ktorrent/core.cpp:1057
+#: ktorrent/core.cpp:1047 ktorrent/core.cpp:1059 ktorrent/core.cpp:1072
 msgid "Data files are missing"
 msgstr ""
 
-#: ktorrent/core.cpp:1043
+#: ktorrent/core.cpp:1058
 #, kde-format
 msgid "Cannot deselect missing files: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:1056
+#: ktorrent/core.cpp:1071
 #, kde-format
 msgid "Cannot recreate missing files: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:1072
+#: ktorrent/core.cpp:1087
 #, kde-format
 msgid ""
 "The file where the data is saved of the torrent \"%1\" is missing. \n"
 "Do you want to recreate it?"
 msgstr ""
 
-#: ktorrent/core.cpp:1079 ktorrent/core.cpp:1090
+#: ktorrent/core.cpp:1094 ktorrent/core.cpp:1105
 msgid "Data file is missing"
 msgstr ""
 
-#: ktorrent/core.cpp:1089
+#: ktorrent/core.cpp:1104
 #, kde-format
 msgid "Cannot recreate data file: %1"
 msgstr ""
 
-#: ktorrent/core.cpp:1157
+#: ktorrent/core.cpp:1172
 msgid "Checking Data Integrity"
 msgstr ""
 
-#: ktorrent/core.cpp:1179
+#: ktorrent/core.cpp:1194
 #, kde-format
 msgid ""
 "KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
 "want to import them ?"
 msgstr ""
 
-#: ktorrent/core.cpp:1201
+#: ktorrent/core.cpp:1216
 msgid "No torrents from the KDE3 version were found !"
 msgstr ""
 
@@ -1251,7 +1252,6 @@ msgid "Torrent Files"
 msgstr ""
 
 #: ktorrent/gui.cpp:220 ktorrent/gui.cpp:235
-#: plugins/mediaplayer/mediaview.cpp:72
 msgid "All Files"
 msgstr "Totes los fichièrs"
 
@@ -6893,117 +6893,169 @@ msgstr ""
 msgid "File download order for <b>%1</b>:"
 msgstr ""
 
+#: plugins/mediaplayer/mediaplayeractivity.cpp:47
+#: plugins/mediaplayer/mediaplayeractivity.cpp:151
+#: plugins/mediaplayer/mediaplayerplugin.cpp:49
+#: plugins/mediaplayer/mediaplayerplugin.cpp:61
+msgid "Media Player"
+msgstr "Media Player"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:74
+#, fuzzy
+#| msgid "Play"
+msgid "Play List"
+msgstr "Legir"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:98
 #: plugins/mediaplayer/videowidget.cpp:53
-#: plugins/mediaplayer/mediaplayerplugin.cpp:73
 msgid "Play"
 msgstr "Legir"
 
+#: plugins/mediaplayer/mediaplayeractivity.cpp:102
 #: plugins/mediaplayer/videowidget.cpp:54
-#: plugins/mediaplayer/mediaplayerplugin.cpp:77
 msgid "Pause"
 msgstr "Pausa"
 
-#: plugins/mediaplayer/videowidget.cpp:56
-msgid "Toggle Fullscreen"
-msgstr ""
-
-#: plugins/mediaplayer/mediaplayerplugin.cpp:85
+#: plugins/mediaplayer/mediaplayeractivity.cpp:110
 #, fuzzy
 #| msgid "Preview"
 msgid "Previous"
 msgstr "Precedent"
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:89
+#: plugins/mediaplayer/mediaplayeractivity.cpp:114
 msgid "Next"
 msgstr "Seguent"
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:93
+#: plugins/mediaplayer/mediaplayeractivity.cpp:118
 msgid "Show Video"
 msgstr ""
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:108
-#: plugins/mediaplayer/mediaplayerplugin.cpp:114
-#: plugins/mediaplayer/mediaplayerplugin.cpp:133
-#: plugins/mediaplayer/mediaplayerplugin.cpp:164
-msgid "Media Player"
-msgstr "Media Player"
+#: plugins/mediaplayer/mediaplayeractivity.cpp:122
+#: plugins/mediaplayer/playlistwidget.cpp:104
+#, fuzzy
+#| msgid "Add Folder"
+msgid "Add Media"
+msgstr "Apondre un repertòri"
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:114
-msgid "The media player allows you to play music and movies inside KTorrent"
+#: plugins/mediaplayer/mediaplayeractivity.cpp:126
+#: plugins/mediaplayer/playlistwidget.cpp:105
+msgid "Clear Playlist"
 msgstr ""
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:171
-#: plugins/mediaplayer/mediaplayerplugin.cpp:177
-#: plugins/mediaplayer/mediaplayerplugin.cpp:367
+#: plugins/mediaplayer/mediaplayeractivity.cpp:165
+#: plugins/mediaplayer/mediaplayeractivity.cpp:175
+#: plugins/mediaplayer/mediaplayeractivity.cpp:374
 #, fuzzy
 #| msgid "Media Player"
 msgid "Movie player"
 msgstr "Media Player"
 
-#: plugins/mediaplayer/mediaview.cpp:60 plugins/mediaplayer/mediaview.cpp:144
+#: plugins/mediaplayer/videowidget.cpp:56
+msgid "Toggle Fullscreen"
+msgstr ""
+
+#: plugins/mediaplayer/playlist.cpp:128
+#: plugins/syndication/feedwidgetmodel.cpp:81
+#, fuzzy
+#| msgid "File"
+msgid "Title"
+msgstr "Fichièr"
+
+#: plugins/mediaplayer/playlist.cpp:129
+msgid "Artist"
+msgstr ""
+
+#: plugins/mediaplayer/playlist.cpp:130
+msgid "Album"
+msgstr ""
+
+#: plugins/mediaplayer/playlist.cpp:131
+#, fuzzy
+#| msgid "Left:"
+msgid "Length"
+msgstr "Esquèrra:"
+
+#: plugins/mediaplayer/playlist.cpp:132
+#, fuzzy
+#| msgid "Clear"
+msgid "Year"
+msgstr "Netejar"
+
+#: plugins/mediaplayer/playlistwidget.cpp:66
+#: plugins/mediaplayer/playlistwidget.cpp:158
 msgid "Ready to play"
 msgstr ""
 
-#: plugins/mediaplayer/mediaview.cpp:68
+#: plugins/mediaplayer/playlistwidget.cpp:80
 msgid "Mode:"
 msgstr "Mòde :"
 
-#: plugins/mediaplayer/mediaview.cpp:71
+#: plugins/mediaplayer/playlistwidget.cpp:82
 #, fuzzy
 #| msgid "All Files"
 msgid "Single File"
 msgstr "Totes los fichièrs"
 
-#: plugins/mediaplayer/mediaview.cpp:73
-msgid "Random Files"
+#: plugins/mediaplayer/playlistwidget.cpp:83
+#, fuzzy
+#| msgid "Play"
+msgid "Playlist"
+msgstr "Legir"
+
+#: plugins/mediaplayer/playlistwidget.cpp:84
+msgid "Random"
 msgstr ""
 
-#: plugins/mediaplayer/mediaview.cpp:82
-msgid "Skip incomplete files"
-msgstr ""
-
-#: plugins/mediaplayer/mediaview.cpp:133
-#, kde-format
-msgid "Playing: <b>%1</b>"
-msgstr ""
-
-#: plugins/mediaplayer/mediaview.cpp:162
+#: plugins/mediaplayer/playlistwidget.cpp:184
 #, kde-format
 msgid "Title: <b>%1</b><br/>Artist: <b>%2</b><br/>Album: <b>%3</b>"
 msgstr ""
 
-#: plugins/mediaplayer/mediaview.cpp:166
-#, kde-format
-msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
-msgstr ""
-
-#: plugins/mediaplayer/mediaview.cpp:170
-#, kde-format
-msgid "Title: <b>%1</b>"
-msgstr ""
-
-#: plugins/mediaplayer/mediaview.cpp:182
+#: plugins/mediaplayer/playlistwidget.cpp:185
+#: plugins/mediaplayer/playlistwidget.cpp:190
+#: plugins/mediaplayer/playlistwidget.cpp:195
 #, kde-format
 msgid ""
 "Playing: <b>%1</b><br/>\n"
 "%2"
 msgstr ""
 
-#: plugins/mediaplayer/mediamodel.cpp:124
-#: plugins/mediaplayer/mediamodel.cpp:151
+#: plugins/mediaplayer/playlistwidget.cpp:189
+#, kde-format
+msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
+msgstr ""
+
+#: plugins/mediaplayer/playlistwidget.cpp:194
+#, kde-format
+msgid "Title: <b>%1</b>"
+msgstr ""
+
+#: plugins/mediaplayer/playlistwidget.cpp:199
+#, kde-format
+msgid "Playing: <b>%1</b>"
+msgstr ""
+
+#: plugins/mediaplayer/mediaview.cpp:46
+#, fuzzy
+#| msgid "Connections"
+msgid "Collection:"
+msgstr "Connexions"
+
+#: plugins/mediaplayer/mediamodel.cpp:125
+#: plugins/mediaplayer/mediamodel.cpp:152
 #, fuzzy
 #| msgctxt "Preview available"
 #| msgid "Available"
 msgid "Available"
 msgstr "Disponible"
 
-#: plugins/mediaplayer/mediamodel.cpp:124
-#: plugins/mediaplayer/mediamodel.cpp:151
+#: plugins/mediaplayer/mediamodel.cpp:125
+#: plugins/mediaplayer/mediamodel.cpp:152
 msgid "Pending"
 msgstr ""
 
-#: plugins/mediaplayer/mediamodel.cpp:125
-#: plugins/mediaplayer/mediamodel.cpp:152
+#: plugins/mediaplayer/mediamodel.cpp:126
+#: plugins/mediaplayer/mediamodel.cpp:153
 #, kde-format
 msgid "<b>%1</b><br/>Preview: %2<br/>Downloaded: %3 %"
 msgstr ""
@@ -7027,12 +7079,6 @@ msgstr "Descargat"
 #| msgid "Downloading"
 msgid "<b>Downloading</b>"
 msgstr "Descarga"
-
-#: plugins/syndication/feedwidgetmodel.cpp:81
-#, fuzzy
-#| msgid "File"
-msgid "Title"
-msgstr "Fichièr"
 
 #: plugins/syndication/feedwidgetmodel.cpp:82
 msgid "Date Published"
