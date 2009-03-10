@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kommander\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-20 10:13+0100\n"
+"POT-Creation-Date: 2009-03-10 10:24+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -19,64 +19,68 @@ msgstr ""
 
 #: lib/parser.cpp:117
 #, kde-format
-msgid "Invalid character: '%1'"
+msgid "Invalid character: '%1'."
 msgstr ""
 
 #: lib/parser.cpp:193
-msgid "Constant value expected"
+msgid "Constant value expected."
 msgstr ""
 
 #: lib/parser.cpp:224
 #, kde-format
-msgid "'%1' (%2) is not a widget"
+msgid "'%1' (%2) is not a widget."
 msgstr ""
 
 #: lib/parser.cpp:236 lib/parser.cpp:536
 #, kde-format
-msgid "'%1' is not a function"
+msgid "'%1' is not a function."
 msgstr ""
 
 #: lib/parser.cpp:247
-msgid "Expected value"
+msgid "Expected a value."
 msgstr ""
 
 #: lib/parser.cpp:272 lib/parser.cpp:282
-msgid "Divide by zero"
+msgid "Division by zero."
 msgstr ""
 
 #: lib/parser.cpp:427
-msgid "too few parameters"
-msgstr ""
-
-#: lib/parser.cpp:427 lib/parser.cpp:429 lib/parser.cpp:435
 #, kde-format
-msgid "in function '%1': %2"
+msgid "In function '%1': too few parameters."
 msgstr ""
 
 #: lib/parser.cpp:429
-msgid "too many parameters"
+#, kde-format
+msgid "In function '%1': too many parameters."
+msgstr ""
+
+#: lib/parser.cpp:435
+#, kde-format
+msgctxt "Parser error - %2 is an error message"
+msgid "In function '%1': %2"
 msgstr ""
 
 #: lib/parser.cpp:475
 #, kde-format
-msgid "in widget function '%1.%2': %3"
+msgctxt "Parser error - %1 is a widget, %2 is a var, %3 is an error message."
+msgid "In widget function '%1.%2': %3"
 msgstr ""
 
 #: lib/parser.cpp:533
 #, kde-format
-msgid "'%1' is not a widget"
+msgid "'%1' is not a widget."
 msgstr ""
 
 #: lib/parser.cpp:538
 #, kde-format
-msgid "Unexpected symbol after variable '%1'"
+msgid "Unexpected symbol after variable '%1'."
 msgstr ""
 
 #: lib/parser.cpp:783
 #, kde-format
 msgid ""
 "Expected '%1'<br><br>Possible cause of the error is having a variable with "
-"the same name as a widget"
+"the same name as a widget."
 msgstr ""
 
 #: lib/parser.cpp:785
@@ -606,13 +610,13 @@ msgid ""
 msgstr ""
 
 #: lib/specialinformation.cpp:518
-msgid "Convert a string to an integer. If not possible use the default value"
+msgid "Convert a string to an integer. If not possible, use the default value."
 msgstr ""
 
 #: lib/specialinformation.cpp:520
 msgid ""
-"Convert a string to a double precision floating point value. If not possible "
-"use the default value"
+"Convert a string to a double precision floating point value. If not "
+"possible, use the default value."
 msgstr ""
 
 #: lib/specialinformation.cpp:524
@@ -2114,7 +2118,7 @@ msgstr ""
 #: editor/widgetdatabase.cpp:358
 msgid ""
 "The Spacer provides horizontal and vertical spacing to be able to manipulate "
-"the behaviour of layouts."
+"the behavior of layouts."
 msgstr ""
 
 #: editor/widgetdatabase.cpp:489
@@ -2736,8 +2740,10 @@ msgstr "Mai bas"
 
 #: editor/formwindow.cpp:1854
 #, kde-format
-msgid "Accelerator '%1' is used %2 times."
-msgstr ""
+msgid "Accelerator '%1' is used %1 time."
+msgid_plural "Accelerator '%1' is used %2 times."
+msgstr[0] ""
+msgstr[1] ""
 
 #: editor/formwindow.cpp:1855
 msgid "&Select"
@@ -3520,9 +3526,9 @@ msgstr ""
 #: rc.cpp:316
 msgid ""
 "<b>Edit Iconview</b><p>Add, edit or delete items in the icon view.</"
-"p><p>Click the <b>New Item</b>-button to create a new item, then enter text "
+"p><p>Click the <b>New Item</b> button to create a new item, then enter text "
 "and choose a pixmap.</p><p>Select an item from the view and click the "
-"<b>Delete Item</b>-button to remove the item from the iconview.</p>"
+"<b>Delete Item</b> button to remove the item from the iconview.</p>"
 msgstr ""
 
 #. i18n: file: editor/iconvieweditor.ui:72
@@ -4072,8 +4078,8 @@ msgid ""
 "<b>Edit Listview</b><p>Use the controls on the <b>Items</b>-tab to add, edit "
 "or delete items in the listview. Change the column configuration of the "
 "listview using the controls on the <b>Columns</b>-tab.</p>Click the <b>New "
-"Item</b>-button to create a new item, then enter text and add a pixmap.</"
-"p><p>Select an item from the list and click the <b>Delete Item</b>-button to "
+"Item</b> button to create a new item, then enter text and add a pixmap.</"
+"p><p>Select an item from the list and click the <b>Delete Item</b> button to "
 "remove the item from the list.</p>"
 msgstr ""
 
@@ -4152,7 +4158,7 @@ msgstr ""
 #: rc.cpp:674
 msgid ""
 "<b>Adds a new item to the list.</b><p>The item will be inserted at the top "
-"of the list and can be moved using the up- and down-buttons.</p>"
+"of the list and can be moved using the up and down buttons.</p>"
 msgstr ""
 
 #. i18n: file: editor/listvieweditor.ui:238
@@ -4371,7 +4377,7 @@ msgstr ""
 #: rc.cpp:782
 msgid ""
 "<b>Create a new column.</b><p>New columns are appended at the end of (right "
-"of) the list and may be moved using the up- and down-buttons.</p>"
+"of) the list and may be moved using the up and down buttons.</p>"
 msgstr ""
 
 #. i18n: file: editor/listvieweditor.ui:530
@@ -4536,9 +4542,9 @@ msgstr ""
 #: rc.cpp:953
 msgid ""
 "<b>Edit Listbox</b><p>Add, edit or delete items in the listbox.</p><p>Click "
-"the <b>New Item</b>-button to create a new listbox entry, then enter text "
+"the <b>New Item</b> button to create a new listbox entry, then enter text "
 "and choose a pixmap.</p><p>Select an item from the list and click the "
-"<b>Delete Item</b>-button to remove the item from the list.</p>"
+"<b>Delete Item</b> button to remove the item from the list.</p>"
 msgstr ""
 
 #. i18n: file: editor/listboxeditor.ui:209
@@ -4587,7 +4593,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QDialog, MultiLineEditorBase)
 #: rc.cpp:1049
 msgid ""
-"<b>Edit Multiline Edit</b><p>Enter the text and click the <b>OK</b>-Button "
+"<b>Edit Multiline Edit</b><p>Enter the text and click the <b>OK</b> Button "
 "to apply the changes.</p>"
 msgstr ""
 
@@ -4724,9 +4730,9 @@ msgstr ""
 #: rc.cpp:1244
 msgid ""
 "<b>Edit Connections</b><p>Add and remove connections in the current form .</"
-"p><p>Select a signal and a corresponding slot then press the <b>Connect</b>-"
+"p><p>Select a signal and a corresponding slot then press the <b>Connect</b> "
 "button to create a connection.</p><p>Select a connection from the list then "
-"press the <b>Disconnect</b>-button to delete the connection.</p>"
+"press the <b>Disconnect</b> button to delete the connection.</p>"
 msgstr ""
 
 #. i18n: file: editor/connectioneditor.ui:61
@@ -4926,13 +4932,13 @@ msgstr ""
 msgid ""
 "Insert an item into the popup menu. The executeWidget's execute method will "
 "be run when this item is selected. Returns the id of the inserted item. Use -"
-"1 for index to insert to the end. The icon is optional."
+"1 as the index to insert at the end. The icon is optional."
 msgstr ""
 
 #: widgets/popupmenu.cpp:60
 msgid ""
-"Insert a separator item into the popup menu. Use -1 for index to insert to "
-"the end."
+"Insert a separator item into the popup menu. Use -1 as the index to insert "
+"at the end."
 msgstr ""
 
 #: widgets/popupmenu.cpp:61
@@ -4967,8 +4973,8 @@ msgstr ""
 
 #: widgets/popupmenu.cpp:68
 msgid ""
-"Insert submenu widget into the popup menu. Use -1 for index to insert to the "
-"end. The icon is optional."
+"Insert submenu widget into the popup menu. Use -1 as the index to insert at "
+"the end. The icon is optional."
 msgstr ""
 
 #: widgets/corewidgetsplugin.cpp:38
@@ -5045,7 +5051,7 @@ msgid "Shell process exited with an error."
 msgstr ""
 
 #: widgets/combobox.cpp:53
-msgid "Make the ComboBox expose it's list without mousing around."
+msgid "Make the ComboBox expose its list without needing to use the mouse."
 msgstr ""
 
 #: widgets/fontdialog.cpp:52
@@ -5059,15 +5065,15 @@ msgid "Returns the font family."
 msgstr ""
 
 #: widgets/fontdialog.cpp:56
-msgid "Returns the font size in point."
+msgid "Returns the font size in points."
 msgstr ""
 
 #: widgets/fontdialog.cpp:58
-msgid "Returns true, if the font is bold."
+msgid "Returns true if the font is bold."
 msgstr ""
 
 #: widgets/fontdialog.cpp:60
-msgid "Returns true, if the font is italic."
+msgid "Returns true if the font is italic."
 msgstr ""
 
 #: widgets/aboutdialog.cpp:61
@@ -5138,5 +5144,5 @@ msgid "Set the row read only using zero based index."
 msgstr ""
 
 #: widgets/textedit.cpp:49
-msgid "see if widget has been modified."
+msgid "See if the widget has been modified."
 msgstr ""
