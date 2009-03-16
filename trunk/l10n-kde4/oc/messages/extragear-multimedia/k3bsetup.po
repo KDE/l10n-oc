@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: k3bsetup\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-23 09:52+0100\n"
+"POT-Creation-Date: 2009-03-16 10:39+0100\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: k3bsetup2.cpp:120
+#: k3bsetup2.cpp:73
 msgid "K3bSetup 2"
 msgstr "K3bSetup 2"
 
-#: k3bsetup2.cpp:122
+#: k3bsetup2.cpp:75
 msgid "(C) 2003-2007 Sebastian Trueg"
 msgstr "(C) 2003-2007 Sebastian Trueg"
 
-#: k3bsetup2.cpp:123
+#: k3bsetup2.cpp:76
 msgid "Sebastian Trueg"
 msgstr "Sebastian Trueg"
 
-#: k3bsetup2.cpp:132
+#: k3bsetup2.cpp:85
 msgid ""
 "<p>This simple setup assistant is able to set the permissions needed by K3b "
 "in order to burn CDs and DVDs. <p>It does not take things like devfs or "
@@ -40,28 +40,7 @@ msgid ""
 "mess up your system no guarantee can be given."
 msgstr ""
 
-#: k3bsetup2.cpp:267 k3bsetup2.cpp:329 k3bsetup2.cpp:339
-msgid "no change"
-msgstr "pas de modificacion"
-
-#: k3bsetup2.cpp:395
-#, kde-format
-msgid "There is no group %1."
-msgstr ""
-
-#: k3bsetup2.cpp:466
-msgid "Successfully updated all permissions."
-msgstr ""
-
-#: k3bsetup2.cpp:469
-msgid "Could not update all permissions. You should run K3b::Setup 2 as root."
-msgstr ""
-
-#: k3bsetup2.cpp:471
-msgid "Could not update all permissions."
-msgstr ""
-
-#: k3bsetup2.cpp:482
+#: k3bsetup2.cpp:158
 msgid ""
 "<h2>K3b::Setup 2</h2><p>This simple setup assistant is able to set the "
 "permissions needed by K3b in order to burn CDs and DVDs.<p>It does not take "
@@ -74,21 +53,66 @@ msgid ""
 "can be given."
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:24
+#: k3bsetup2.cpp:214
+#, kde-format
+msgid "There is no group %1."
+msgstr ""
+
+#: k3bsetup2.cpp:266
+msgid "Successfully updated all permissions."
+msgstr ""
+
+#: k3bsetup2.cpp:269
+msgid "Could not update all permissions. You should run K3b::Setup 2 as root."
+msgstr ""
+
+#: k3bsetup2.cpp:271
+msgid "Could not update all permissions."
+msgstr ""
+
+#: k3bsetupdevices.cpp:144 k3bsetupdevices.cpp:151 k3bsetupprograms.cpp:237
+msgid "no change"
+msgstr "pas de modificacion"
+
+#: k3bsetupdevices.cpp:207
+msgid "Device"
+msgstr "Periferic"
+
+#: k3bsetupdevices.cpp:208
+msgid "Devicenode"
+msgstr ""
+
+#: k3bsetupdevices.cpp:209 k3bsetupprograms.cpp:294
+msgid "Permissions"
+msgstr "Permissions"
+
+#: k3bsetupdevices.cpp:210 k3bsetupprograms.cpp:295
+#, fuzzy
+#| msgid "Permissions"
+msgid "New permissions"
+msgstr "Permissions"
+
+#: k3bsetupprograms.cpp:291
+msgid "Program"
+msgstr "Programa"
+
+#: k3bsetupprograms.cpp:292
+msgid "Version"
+msgstr "Version"
+
+#: k3bsetupprograms.cpp:293
+msgid "Path"
+msgstr "Camin"
+
+#. i18n: file: base_k3bsetup2.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
 #: rc.cpp:3
 msgid "Settings"
 msgstr "Paramètres"
 
-#. i18n: file: base_k3bsetup2.ui:32
-#. i18n: ectx: property (text), widget (QCheckBox, m_checkUseBurningGroup)
-#: rc.cpp:6
-msgid "Use burning group:"
-msgstr ""
-
-#. i18n: file: base_k3bsetup2.ui:36
+#. i18n: file: base_k3bsetup2.ui:31
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_checkUseBurningGroup)
-#: rc.cpp:9
+#: rc.cpp:6
 msgid ""
 "<p>If this option is checked, only the users in the specified group will be "
 "able to burn CDs and DVDs, since only they will have access to the devices "
@@ -97,116 +121,76 @@ msgid ""
 "K3b functionality."
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:46
-#. i18n: ectx: property (text), widget (QLineEdit, m_editBurningGroup)
+#. i18n: file: base_k3bsetup2.ui:34
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkUseBurningGroup)
+#: rc.cpp:10
+msgid "Use burning group:"
+msgstr ""
+
+#. i18n: file: base_k3bsetup2.ui:44
+#. i18n: ectx: property (text), widget (KLineEdit, m_editBurningGroup)
 #: rc.cpp:13
 msgid "burning"
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:73
+#. i18n: file: base_k3bsetup2.ui:74
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: rc.cpp:16
 msgid "Users allowed to burn (separated by space):"
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:95
+#. i18n: file: base_k3bsetup2.ui:99
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
 #: rc.cpp:19
 msgid "Devices"
 msgstr "Periferics"
 
-#. i18n: file: base_k3bsetup2.ui:101
+#. i18n: file: base_k3bsetup2.ui:105
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #: rc.cpp:22
 msgid "Check the devices whose permissions you want to be changed"
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:112
-#. i18n: ectx: property (text), widget (K3ListView, m_viewDevices)
-#: rc.cpp:25
-msgid "Device"
-msgstr "Periferic"
-
-#. i18n: file: base_k3bsetup2.ui:123
-#. i18n: ectx: property (text), widget (K3ListView, m_viewDevices)
-#: rc.cpp:28
-msgid "Devicenode"
-msgstr ""
-
-#. i18n: file: base_k3bsetup2.ui:134
-#. i18n: ectx: property (text), widget (K3ListView, m_viewDevices)
-#. i18n: file: base_k3bsetup2.ui:239
-#. i18n: ectx: property (text), widget (K3ListView, m_viewPrograms)
-#: rc.cpp:31 rc.cpp:55
-msgid "Permissions"
-msgstr "Permissions"
-
-#. i18n: file: base_k3bsetup2.ui:145
-#. i18n: ectx: property (text), widget (K3ListView, m_viewDevices)
-#. i18n: file: base_k3bsetup2.ui:250
-#. i18n: ectx: property (text), widget (K3ListView, m_viewPrograms)
-#: rc.cpp:34 rc.cpp:58
-msgid "New Permissions"
-msgstr ""
-
-#. i18n: file: base_k3bsetup2.ui:182
+#. i18n: file: base_k3bsetup2.ui:128
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:37
+#: rc.cpp:25
 msgid "External Programs"
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:189
+#. i18n: file: base_k3bsetup2.ui:135
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:40
+#: rc.cpp:28
 msgid "Found Programs"
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:195
+#. i18n: file: base_k3bsetup2.ui:141
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:43
+#: rc.cpp:31
 msgid "Check the programs whose permissions you want to be changed"
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:206
-#. i18n: ectx: property (text), widget (K3ListView, m_viewPrograms)
-#: rc.cpp:46
-msgid "Program"
-msgstr "Programa"
-
-#. i18n: file: base_k3bsetup2.ui:217
-#. i18n: ectx: property (text), widget (K3ListView, m_viewPrograms)
-#: rc.cpp:49
-msgid "Version"
-msgstr "Version"
-
-#. i18n: file: base_k3bsetup2.ui:228
-#. i18n: ectx: property (text), widget (K3ListView, m_viewPrograms)
-#: rc.cpp:52
-msgid "Path"
-msgstr "Camin"
-
-#. i18n: file: base_k3bsetup2.ui:265
+#. i18n: file: base_k3bsetup2.ui:162
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: file: base_k3bsetup2.ui:271
+#. i18n: file: base_k3bsetup2.ui:168
 #. i18n: ectx: property (title), widget (KEditListBox, m_editSearchPath)
-#: rc.cpp:61 rc.cpp:64
+#: rc.cpp:34 rc.cpp:37
 msgid "Search Path"
 msgstr ""
 
-#. i18n: file: base_k3bsetup2.ui:281
+#. i18n: file: base_k3bsetup2.ui:178
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:67
+#: rc.cpp:40
 msgid ""
 "<qt><b>Hint:</b> to force K3b to use another than the default name for the "
 "executable specify it in the search path.</qt>"
 msgstr ""
 
-#: rc.cpp:68
+#: rc.cpp:41
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:69
+#: rc.cpp:42
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
