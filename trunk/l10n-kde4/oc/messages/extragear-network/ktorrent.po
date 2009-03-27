@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-26 10:56+0100\n"
+"POT-Creation-Date: 2009-03-27 11:03+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -288,7 +288,7 @@ msgstr ""
 msgid "Torrent files"
 msgstr ""
 
-#: ktorrent/importdialog.cpp:52 plugins/scripting/scriptingplugin.cpp:197
+#: ktorrent/importdialog.cpp:52 plugins/scripting/scriptingplugin.cpp:218
 #: plugins/bwscheduler/scheduleeditor.cpp:117
 msgid "All files"
 msgstr "Totes los fichièrs"
@@ -4465,7 +4465,7 @@ msgstr ""
 #. i18n: file: libktcore/ktorrent.kcfg:45
 #. i18n: ectx: label, entry (maxRatio), group (downloads)
 #: rc.cpp:1237
-msgid "Maximum share ratio(0 = no limit)"
+msgid "Maximum share ratio (0 = no limit)"
 msgstr ""
 
 #. i18n: file: libktcore/ktorrent.kcfg:62
@@ -4594,8 +4594,8 @@ msgstr ""
 #. i18n: ectx: label, entry (minDiskSpace), group (downloads)
 #: rc.cpp:1312
 msgid ""
-"When there's no space left to complete download and free diskspace is less "
-"than minDiskSpace, torrent will be stopped."
+"When there is no space left to complete download, and the available disk "
+"space is less than this value, the torrent will be stopped."
 msgstr ""
 
 #. i18n: file: libktcore/ktorrent.kcfg:259
@@ -6786,7 +6786,7 @@ msgstr ""
 
 #. i18n: file: plugins/scripting/scriptproperties.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, ScriptProperties)
-#: rc.cpp:2439 plugins/scripting/scriptingplugin.cpp:298
+#: rc.cpp:2439 plugins/scripting/scriptingplugin.cpp:340
 msgid "Script Properties"
 msgstr ""
 
@@ -7993,7 +7993,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: plugins/syndication/feedlist.cpp:186 plugins/scripting/scriptmodel.cpp:95
+#: plugins/syndication/feedlist.cpp:186 plugins/scripting/scriptmodel.cpp:178
 #, kde-format
 msgid "<b>%1</b><br/><br/>%2"
 msgstr ""
@@ -8022,7 +8022,7 @@ msgstr ""
 
 #: plugins/search/searchprefpage.cpp:150
 #, kde-format
-msgid "The URL %1, does not contain {searchTerms}."
+msgid "The URL %1 does not contain {searchTerms}."
 msgstr ""
 
 #: plugins/search/searchenginelist.cpp:209
@@ -8090,60 +8090,93 @@ msgstr ""
 msgid "Download Torrent"
 msgstr ""
 
-#: plugins/scripting/scriptingplugin.cpp:71
+#: plugins/scripting/scriptingplugin.cpp:72
 #, fuzzy
 #| msgid "Add Folder"
 msgid "Add Script"
 msgstr "Apondre un repertòri"
 
-#: plugins/scripting/scriptingplugin.cpp:75
+#: plugins/scripting/scriptingplugin.cpp:76
 #, fuzzy
 #| msgid "Remove Group"
 msgid "Remove Script"
 msgstr "Suprimir un escript"
 
-#: plugins/scripting/scriptingplugin.cpp:79
+#: plugins/scripting/scriptingplugin.cpp:80
 #, fuzzy
 #| msgid "Add Folder"
 msgid "Run Script"
 msgstr "Apondre un repertòri"
 
-#: plugins/scripting/scriptingplugin.cpp:83
+#: plugins/scripting/scriptingplugin.cpp:84
 #, fuzzy
 #| msgid "Add Folder"
 msgid "Stop Script"
 msgstr "Apondre un repertòri"
 
-#: plugins/scripting/scriptingplugin.cpp:87
+#: plugins/scripting/scriptingplugin.cpp:88
 #, fuzzy
 #| msgid "Add Folder"
 msgid "Edit Script"
 msgstr "Apondre un repertòri"
 
-#: plugins/scripting/scriptingplugin.cpp:91
+#: plugins/scripting/scriptingplugin.cpp:92
 #, fuzzy
 #| msgid "Progress"
 msgid "Properties"
 msgstr "Avançament"
 
-#: plugins/scripting/scriptingplugin.cpp:95
+#: plugins/scripting/scriptingplugin.cpp:96
 msgid "Configure"
 msgstr ""
 
-#: plugins/scripting/scriptingplugin.cpp:102
-#: plugins/scripting/scriptingplugin.cpp:122
+#: plugins/scripting/scriptingplugin.cpp:108
+#: plugins/scripting/scriptingplugin.cpp:128
 #, fuzzy
 #| msgid "Add Folder"
 msgid "Scripting"
 msgstr "Apondre un repertòri"
 
-#: plugins/scripting/scriptingplugin.cpp:197
+#: plugins/scripting/scriptingplugin.cpp:216
+msgid "KTorrent Script Packages"
+msgstr ""
+
+#: plugins/scripting/scriptingplugin.cpp:217
 #: plugins/scripting/scriptmanager.cpp:41
 msgid "Scripts"
 msgstr ""
 
+#: plugins/scripting/scriptingplugin.cpp:277
+msgid ""
+"Removing these scripts will fully delete them from your disk. Are you sure "
+"you want to do this ?"
+msgstr ""
+
 #: plugins/scripting/scriptmanager.cpp:43
 msgid "Widget to start, stop and manage scripts"
+msgstr ""
+
+#: plugins/scripting/scriptmodel.cpp:112
+msgid "Cannot open archive for reading !"
+msgstr ""
+
+#: plugins/scripting/scriptmodel.cpp:116
+msgid "Invalid archive !"
+msgstr ""
+
+#: plugins/scripting/scriptmodel.cpp:143
+#, kde-format
+msgid "There is already a script package named %1 installed."
+msgstr ""
+
+#: plugins/scripting/scriptmodel.cpp:149
+msgid ""
+"Failed to load script from archive. There is something wrong with the "
+"desktop file."
+msgstr ""
+
+#: plugins/scripting/scriptmodel.cpp:154
+msgid "No script found in archive !"
 msgstr ""
 
 #: plugins/zeroconf/zeroconfplugin.cpp:51
