@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-28 11:16+0100\n"
+"POT-Creation-Date: 2009-03-29 11:44+0200\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:112
-#: context/applets/currenttrack/CurrentTrack.cpp:129 widgets/Osd.cpp:558
+#: context/applets/currenttrack/CurrentTrack.cpp:91 widgets/Osd.cpp:558
 msgid "No track playing"
 msgstr ""
 
@@ -432,47 +432,53 @@ msgstr ""
 msgid "Lyrics data could not be parsed"
 msgstr ""
 
-#. i18n: file: dialogs/TagDialogBase.ui:502
-#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: context/applets/currenttrack/CurrentTrack.cpp:86
-#: context/applets/currenttrack/CurrentTrack.cpp:90
-#: context/applets/currenttrack/CurrentTrack.cpp:400
-#: context/applets/currenttrack/CurrentTrack.cpp:404 dialogs/TagDialog.cpp:901
-#: rc.cpp:828
-msgid "Score:"
-msgstr "Marca :"
+#: context/applets/currenttrack/CurrentTrack.cpp:70
+#, fuzzy
+#| msgid "Modify"
+msgctxt "What artist is this track by"
+msgid "By"
+msgstr "Modificar"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:87
-#: context/applets/currenttrack/CurrentTrack.cpp:91 dialogs/TagDialog.cpp:905
+#: context/applets/currenttrack/CurrentTrack.cpp:71
+#, fuzzy
+#| msgid "On"
+msgctxt "What album is this track on"
+msgid "On"
+msgstr "Actiu"
+
+#: context/applets/currenttrack/CurrentTrack.cpp:98
+#: playlist/PlaylistDefines.h:88
 #, fuzzy
 #| msgctxt "state, as in playing"
 #| msgid "Play"
-msgid "Play Count:"
+msgid "Play count"
 msgstr "Legir"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:88
-#: context/applets/currenttrack/CurrentTrack.cpp:92
-#: context/applets/currenttrack/CurrentTrack.cpp:402
-#: context/applets/currenttrack/CurrentTrack.cpp:406 dialogs/TagDialog.cpp:910
-msgctxt "a single item (singular)"
-msgid "Last Played:"
+#: context/applets/currenttrack/CurrentTrack.cpp:99
+#: context/widgets/TrackWidget.cpp:38 Systray.cpp:147
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
+#: playlist/PlaylistDefines.h:91 playlist/PlaylistModel.cpp:702
+#: widgets/SmartPlaylistEditor.cpp:186
+msgid "Score"
+msgstr "Marca"
+
+#: context/applets/currenttrack/CurrentTrack.cpp:100 Systray.cpp:177
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
+msgid "Last Played"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.cpp:139
+#: context/applets/currenttrack/CurrentTrack.cpp:106
 #: playlist/PlaylistDefines.h:85
 msgid "Last played"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.cpp:140
+#: context/applets/currenttrack/CurrentTrack.cpp:107
 #, fuzzy
 #| msgid "Favorite"
 msgid "Favorite tracks"
 msgstr "Favorit"
-
-#: context/applets/currenttrack/CurrentTrack.cpp:401
-#: context/applets/currenttrack/CurrentTrack.cpp:405
-msgid "Playcount:"
-msgstr ""
 
 #: context/applets/albums/AlbumsView.cpp:109 Systray.cpp:219
 #: browsers/CollectionTreeView.cpp:589
@@ -484,7 +490,6 @@ msgid "&Append to Playlist"
 msgstr "&Apondre a la tièra de lecturas"
 
 #: context/applets/albums/AlbumsView.cpp:110
-#: browsers/CollectionTreeView.cpp:597
 #: browsers/filebrowser/MyDirOperator.cpp:274
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:388
 #: browsers/playlistbrowser/PodcastModel.cpp:705
@@ -606,14 +611,6 @@ msgstr ""
 #: context/widgets/ToolBoxMenu.cpp:123
 msgid "Install Applets"
 msgstr ""
-
-#: context/widgets/TrackWidget.cpp:38 Systray.cpp:147
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
-#: playlist/PlaylistDefines.h:91 playlist/PlaylistModel.cpp:702
-#: widgets/SmartPlaylistEditor.cpp:186
-msgid "Score"
-msgstr "Marca"
 
 #: context/widgets/TrackWidget.cpp:117
 #, fuzzy, kde-format
@@ -1408,11 +1405,24 @@ msgstr "Talha :"
 msgid "Format:"
 msgstr "Format :"
 
+#. i18n: file: dialogs/TagDialogBase.ui:502
+#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
+#: dialogs/TagDialog.cpp:901 rc.cpp:828
+msgid "Score:"
+msgstr "Marca :"
+
 #. i18n: file: dialogs/TagDialogBase.ui:531
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
 #: dialogs/TagDialog.cpp:903 rc.cpp:831
 msgid "Rating:"
 msgstr ""
+
+#: dialogs/TagDialog.cpp:905
+#, fuzzy
+#| msgctxt "state, as in playing"
+#| msgid "Play"
+msgid "Play Count:"
+msgstr "Legir"
 
 #: dialogs/TagDialog.cpp:908
 msgid "First Played:"
@@ -1424,6 +1434,11 @@ msgstr ""
 msgctxt "When this track was first played"
 msgid "Never"
 msgstr "Jamai"
+
+#: dialogs/TagDialog.cpp:910
+msgctxt "a single item (singular)"
+msgid "Last Played:"
+msgstr ""
 
 #: dialogs/TagDialog.cpp:911
 #, fuzzy
@@ -2010,11 +2025,6 @@ msgstr "Classificacion"
 msgid "Play Count"
 msgstr ""
 
-#: Systray.cpp:177 browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
-msgid "Last Played"
-msgstr ""
-
 #: Systray.cpp:182 browsers/playlistbrowser/DynamicBiasWidgets.cpp:254
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:698
 #: playlist/PlaylistDefines.h:86 playlist/PlaylistHeader.cpp:42
@@ -2485,6 +2495,13 @@ msgstr "Colleccion"
 #| msgid "Configure..."
 msgid "More..."
 msgstr "Mai..."
+
+#: browsers/CollectionTreeView.cpp:597
+#, fuzzy
+#| msgid "New Playlist"
+msgctxt "Replace the currently loaded tracks with these"
+msgid "&Overwrite Playlist"
+msgstr "Novèla tièra de lecturas"
 
 #: browsers/CollectionTreeView.cpp:623
 msgid "&Edit Track Details"
@@ -7283,13 +7300,6 @@ msgstr ""
 #: playlist/PlaylistDefines.h:87 playlist/PlaylistModel.cpp:706
 msgid "Mood"
 msgstr ""
-
-#: playlist/PlaylistDefines.h:88
-#, fuzzy
-#| msgctxt "state, as in playing"
-#| msgid "Play"
-msgid "Play count"
-msgstr "Legir"
 
 #: playlist/PlaylistDefines.h:90
 #, fuzzy
