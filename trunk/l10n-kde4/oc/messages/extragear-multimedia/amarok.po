@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-29 11:44+0200\n"
+"POT-Creation-Date: 2009-03-30 10:52+0200\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:112
-#: context/applets/currenttrack/CurrentTrack.cpp:91 widgets/Osd.cpp:558
+#: context/applets/currenttrack/CurrentTrack.cpp:93 widgets/Osd.cpp:558
 msgid "No track playing"
 msgstr ""
 
@@ -116,8 +116,13 @@ msgid "Stream (%1)"
 msgstr "Opcions generalas"
 
 #: meta/capabilities/TimecodeWriteCapability.cpp:105
-#, kde-format
-msgid "%1 - Playback stopped at %2"
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgid "%1 - Stopped %2"
+msgstr "%1 - %2"
+
+#: meta/capabilities/TimecodeWriteCapability.cpp:110
+msgid "Playback Ended Markers"
 msgstr ""
 
 #: meta/DynamicPlaylist.cpp:38
@@ -405,25 +410,25 @@ msgid "Wikipedia Other Languages: <br/>"
 msgstr ""
 
 #: context/toolbar/AppletItemOverlay.cpp:101
-#: context/toolbar/AppletToolbarAppletItem.cpp:46
+#: context/toolbar/AppletToolbarAppletItem.cpp:48
 #, fuzzy
 #| msgid "Remove Playlist"
 msgid "Remove Applet"
 msgstr "Suprimir la tièra de lecturas"
 
-#: context/toolbar/AppletToolbarConfigItem.cpp:30
+#: context/toolbar/AppletToolbarConfigItem.cpp:33
 #, fuzzy
 #| msgid "Configure..."
 msgid "Configure Applets..."
 msgstr "Configurar..."
 
-#: context/toolbar/AppletToolbarAddItem.cpp:40
+#: context/toolbar/AppletToolbarAddItem.cpp:42
 #, fuzzy
 #| msgid "Widgets"
 msgid "Add Applets..."
 msgstr "Largor"
 
-#: context/toolbar/AppletToolbarAddItem.cpp:64
+#: context/toolbar/AppletToolbarAddItem.cpp:66
 #: context/containments/oldcontainment/ColumnContainment.cpp:95
 msgid "Add Applet..."
 msgstr ""
@@ -432,21 +437,21 @@ msgstr ""
 msgid "Lyrics data could not be parsed"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.cpp:70
+#: context/applets/currenttrack/CurrentTrack.cpp:72
 #, fuzzy
 #| msgid "Modify"
 msgctxt "What artist is this track by"
 msgid "By"
 msgstr "Modificar"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:71
+#: context/applets/currenttrack/CurrentTrack.cpp:73
 #, fuzzy
 #| msgid "On"
 msgctxt "What album is this track on"
 msgid "On"
 msgstr "Actiu"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:98
+#: context/applets/currenttrack/CurrentTrack.cpp:100
 #: playlist/PlaylistDefines.h:88
 #, fuzzy
 #| msgctxt "state, as in playing"
@@ -454,8 +459,7 @@ msgstr "Actiu"
 msgid "Play count"
 msgstr "Legir"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:99
-#: context/widgets/TrackWidget.cpp:38 Systray.cpp:147
+#: context/applets/currenttrack/CurrentTrack.cpp:101 Systray.cpp:147
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
 #: playlist/PlaylistDefines.h:91 playlist/PlaylistModel.cpp:702
@@ -463,18 +467,18 @@ msgstr "Legir"
 msgid "Score"
 msgstr "Marca"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:100 Systray.cpp:177
+#: context/applets/currenttrack/CurrentTrack.cpp:102 Systray.cpp:177
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
 msgid "Last Played"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.cpp:106
+#: context/applets/currenttrack/CurrentTrack.cpp:108
 #: playlist/PlaylistDefines.h:85
 msgid "Last played"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.cpp:107
+#: context/applets/currenttrack/CurrentTrack.cpp:109
 #, fuzzy
 #| msgid "Favorite"
 msgid "Favorite tracks"
@@ -612,10 +616,17 @@ msgstr ""
 msgid "Install Applets"
 msgstr ""
 
-#: context/widgets/TrackWidget.cpp:117
+#: context/widgets/TrackWidget.cpp:35
+#, fuzzy
+#| msgid "Score:"
+msgctxt "Score of a track"
+msgid "Score:"
+msgstr "Marca :"
+
+#: context/widgets/TrackWidget.cpp:120
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
-msgid "%1 - %2 ( %3 )"
+msgid "%1 - %2 (%3)"
 msgstr "%1 - %2"
 
 #: ActionClasses.cpp:76
@@ -2500,7 +2511,7 @@ msgstr "Mai..."
 #, fuzzy
 #| msgid "New Playlist"
 msgctxt "Replace the currently loaded tracks with these"
-msgid "&Overwrite Playlist"
+msgid "&Replace Playlist"
 msgstr "Novèla tièra de lecturas"
 
 #: browsers/CollectionTreeView.cpp:623
@@ -7588,7 +7599,7 @@ msgstr ""
 msgid "Abort all background operations"
 msgstr ""
 
-#: amarokurls/BookmarkModel.cpp:437
+#: amarokurls/BookmarkModel.cpp:438
 msgid "New Group"
 msgstr "Grop novèl"
 
@@ -8310,6 +8321,12 @@ msgstr ""
 #| msgid "Artist"
 msgid "No Artist"
 msgstr "Artista"
+
+#, fuzzy
+#~| msgid "New Playlist"
+#~ msgctxt "Replace the currently loaded tracks with these"
+#~ msgid "&Overwrite Playlist"
+#~ msgstr "Novèla tièra de lecturas"
 
 #, fuzzy
 #~| msgid "Track"
