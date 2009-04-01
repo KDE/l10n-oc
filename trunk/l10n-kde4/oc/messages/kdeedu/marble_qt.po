@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-31 10:47+0200\n"
+"POT-Creation-Date: 2009-04-01 11:21+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -246,20 +246,36 @@ msgid "An error occurred while trying to save the file.\n"
 msgstr ""
 
 #: src/QtMainWindow.cpp:473
-#: src/plugins/render/fileview/FileViewFloatItem.cpp:233
+#: src/plugins/render/fileview/FileViewFloatItem.cpp:234
 msgid "Open File"
 msgstr "Dobrir un fichièr"
 
 #: src/QtMainWindow.cpp:475
-#: src/plugins/render/fileview/FileViewFloatItem.cpp:235
+#: src/plugins/render/fileview/FileViewFloatItem.cpp:236
 msgid ""
 "All Supported Files (*.gpx *.kml);;GPS Data (*.gpx);;Google Earth KML (*.kml)"
 msgstr ""
 
-#: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:57
-msgid "Downloading data..."
+#: src/plugins/network/kio/KIONetworkPlugin.cpp:109
+msgid "KIO Network Plugin"
 msgstr ""
 
+#: src/plugins/network/kio/KIONetworkPlugin.cpp:119
+msgid "KIO based Network Plugin"
+msgstr ""
+
+#: src/plugins/network/kio/KIONetworkPlugin.cpp:124
+msgid ""
+"A network plugin which supports HTTP pipelining to deliver a better user "
+"experience."
+msgstr ""
+
+#: src/plugins/network/qnam/QNamDownloadJob.cpp:66
+#: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:133
+msgid "Download finished."
+msgstr ""
+
+#: src/plugins/network/qnam/QNamDownloadJob.cpp:69
 #: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:111
 #: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:119
 #: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:127
@@ -267,8 +283,26 @@ msgstr ""
 msgid "Download failed: %1."
 msgstr ""
 
-#: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:133
-msgid "Download finished."
+#: src/plugins/network/qnam/QNamDownloadJob.cpp:77
+msgid "Download failed."
+msgstr ""
+
+#: src/plugins/network/qnam/QNamNetworkPlugin.cpp:34
+msgid "QNam Network Plugin"
+msgstr ""
+
+#: src/plugins/network/qnam/QNamNetworkPlugin.cpp:44
+msgid "QNetworkAccessManager based Network Plugin"
+msgstr ""
+
+#: src/plugins/network/qnam/QNamNetworkPlugin.cpp:49
+msgid ""
+"A network plugin which keeps connected to the hosts used to deliver a better "
+"user experience."
+msgstr ""
+
+#: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:57
+msgid "Downloading data..."
 msgstr ""
 
 #: src/plugins/network/qhttp/QHttpNetworkPlugin.cpp:148
@@ -293,7 +327,7 @@ msgid "&Test Plugin"
 msgstr ""
 
 #: src/plugins/render/test/TestPlugin.cpp:57
-#: src/plugins/render/geodata/GeoDataPlugin.cpp:84
+#: src/plugins/render/geodata/GeoRendererPlugin.cpp:84
 msgid "This is a simple test plugin."
 msgstr ""
 
@@ -357,26 +391,26 @@ msgstr "&Recercar"
 msgid "A plugin that shows the Starry Sky."
 msgstr ""
 
-#: src/plugins/render/fileview/FileViewFloatItem.cpp:55
+#: src/plugins/render/fileview/FileViewFloatItem.cpp:56
 #: src/lib/MarbleControlBox.cpp:491
 msgid "File View"
 msgstr ""
 
-#: src/plugins/render/fileview/FileViewFloatItem.cpp:60
+#: src/plugins/render/fileview/FileViewFloatItem.cpp:61
 #, fuzzy
 #| msgid "&File"
 msgid "&File View"
 msgstr "&Fichièr"
 
-#: src/plugins/render/fileview/FileViewFloatItem.cpp:70
+#: src/plugins/render/fileview/FileViewFloatItem.cpp:71
 msgid "A list of currently opened files"
 msgstr ""
 
-#: src/plugins/render/fileview/FileViewFloatItem.cpp:222
+#: src/plugins/render/fileview/FileViewFloatItem.cpp:223
 msgid "Open new kml file..."
 msgstr ""
 
-#: src/plugins/render/fileview/FileViewFloatItem.cpp:224
+#: src/plugins/render/fileview/FileViewFloatItem.cpp:225
 msgid "close this kml file..."
 msgstr ""
 
@@ -432,27 +466,27 @@ msgid ""
 "popularity"
 msgstr ""
 
-#: src/plugins/render/navigation/NavigationFloatItem.cpp:45
+#: src/plugins/render/navigation/NavigationFloatItem.cpp:46
 #: src/lib/MarbleControlBox.cpp:467
 msgid "Navigation"
 msgstr "Navigacion"
 
-#: src/plugins/render/navigation/NavigationFloatItem.cpp:50
+#: src/plugins/render/navigation/NavigationFloatItem.cpp:51
 #, fuzzy
 #| msgid "Navigation"
 msgid "&Navigation"
 msgstr "Navigacion"
 
-#: src/plugins/render/navigation/NavigationFloatItem.cpp:60
+#: src/plugins/render/navigation/NavigationFloatItem.cpp:61
 msgid "A mouse control to zoom and move the map"
 msgstr ""
 
-#: src/plugins/render/geodata/GeoDataPlugin.cpp:69
-msgid "GeoData Plugin"
+#: src/plugins/render/geodata/GeoRendererPlugin.cpp:69
+msgid "GeoRenderer Plugin"
 msgstr ""
 
-#: src/plugins/render/geodata/GeoDataPlugin.cpp:74
-msgid "&GeoData Plugin"
+#: src/plugins/render/geodata/GeoRendererPlugin.cpp:74
+msgid "&GeoRenderer Plugin"
 msgstr ""
 
 #: src/plugins/render/twitter/twitterPlugin.cpp:47
@@ -669,11 +703,6 @@ msgstr ""
 msgid "Could not convert <maximum> child text content to integer. Was: '%1'"
 msgstr ""
 
-#: src/lib/geodata/parser/GeoParser.cpp:97
-#, qt-format
-msgid "Parsing failed. Still %1 unclosed tag(s) after document end."
-msgstr ""
-
 #: src/lib/geodata/parser/GeoParser.cpp:185
 msgid "File format unrecognized"
 msgstr ""
@@ -795,92 +824,114 @@ msgstr ""
 msgid "Marble Info Center - %1"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:61
+#: src/lib/PlacemarkInfoDialog.cpp:60
 msgid "Population:"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:70 src/lib/PlacemarkInfoDialog.cpp:73
+#: src/lib/PlacemarkInfoDialog.cpp:68 src/lib/PlacemarkInfoDialog.cpp:71
 msgid "Capital"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:76
+#: src/lib/PlacemarkInfoDialog.cpp:74
 msgid "Regional Capital"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:79 src/lib/PlacemarkInfoDialog.cpp:82
+#: src/lib/PlacemarkInfoDialog.cpp:77 src/lib/PlacemarkInfoDialog.cpp:80
 msgid "Location"
 msgstr "Emplaçament"
 
-#: src/lib/PlacemarkInfoDialog.cpp:86
+#: src/lib/PlacemarkInfoDialog.cpp:84
 msgid "Mountain"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:88
+#: src/lib/PlacemarkInfoDialog.cpp:86
 msgid "Elevation extreme"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:91
+#: src/lib/PlacemarkInfoDialog.cpp:89
 msgid "Volcano"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:94
+#: src/lib/PlacemarkInfoDialog.cpp:92
 msgid "Shipwreck"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:97
+#: src/lib/PlacemarkInfoDialog.cpp:95
 msgid "City"
 msgstr "Ciutat"
 
-#: src/lib/PlacemarkInfoDialog.cpp:100
+#: src/lib/PlacemarkInfoDialog.cpp:98
 msgid "Ocean"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:103
+#: src/lib/PlacemarkInfoDialog.cpp:101
 msgid "Nation"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:106
+#: src/lib/PlacemarkInfoDialog.cpp:104
 msgid "Continent"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:109
+#: src/lib/PlacemarkInfoDialog.cpp:107
 msgid "Astronomical observatory"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:112
+#: src/lib/PlacemarkInfoDialog.cpp:110
+#, fuzzy
+#| msgid "&Search"
+msgid "Maria"
+msgstr "&Recercar"
+
+#: src/lib/PlacemarkInfoDialog.cpp:113
+#, fuzzy
+#| msgid "State"
+msgid "Crater"
+msgstr "Aiga"
+
+#: src/lib/PlacemarkInfoDialog.cpp:119
+msgid "Landing Site"
+msgstr ""
+
+#: src/lib/PlacemarkInfoDialog.cpp:122
 msgid "Other Place"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:136
+#: src/lib/PlacemarkInfoDialog.cpp:146
 msgid "Area:"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:138
+#: src/lib/PlacemarkInfoDialog.cpp:148
 #, qt-format
 msgid "%1 sq km"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:140
+#: src/lib/PlacemarkInfoDialog.cpp:150
 #, qt-format
 msgid "%1 Mio. sq km"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:144
+#: src/lib/PlacemarkInfoDialog.cpp:154
 #, qt-format
 msgid "%1 inh."
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:146
+#: src/lib/PlacemarkInfoDialog.cpp:156
 #, qt-format
 msgid "%1 Mio. inh."
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:149
+#: src/lib/PlacemarkInfoDialog.cpp:159
 #, qt-format
 msgid "%1 m"
 msgstr ""
 
-#: src/lib/PlacemarkInfoDialog.cpp:163
+#: src/lib/PlacemarkInfoDialog.cpp:160
+#, fuzzy, qt-format
+#| msgid "10 mm"
+msgid "%1 km"
+msgstr "10 mm"
+
+#: src/lib/PlacemarkInfoDialog.cpp:176
 msgid "-"
 msgstr "-"
 
@@ -913,11 +964,6 @@ msgstr "-"
 
 #, fuzzy
 #~| msgid "State"
-#~ msgid "Craters"
-#~ msgstr "Aiga"
-
-#, fuzzy
-#~| msgid "State"
 #~ msgid "Other"
 #~ msgstr "Aiga"
 
@@ -936,9 +982,6 @@ msgstr "-"
 #~| msgid "Description"
 #~ msgid "Precipitation"
 #~ msgstr "Descripcion"
-
-#~ msgid "10 mm"
-#~ msgstr "10 mm"
 
 #~ msgid "Surface"
 #~ msgstr "Surfàcia"
