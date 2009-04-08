@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-20 10:15+0100\n"
+"POT-Creation-Date: 2009-04-08 12:04+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -34,44 +34,46 @@ msgstr ""
 msgid "This file is damaged and may not be playable."
 msgstr ""
 
-#: maindialog.cpp:249
-#, kde-format
+#: maindialog.cpp:248
+#, fuzzy, kde-format
+#| msgid "%1 image [%2]"
 msgid "%1 image [%2]"
-msgstr "%1&nbsp;imatge [%2]"
+msgid_plural "%1 images [%2]"
+msgstr[0] "%1&nbsp;imatge [%2]"
+msgstr[1] "%1&nbsp;imatge [%2]"
 
-#: maindialog.cpp:251
+#: maindialog.cpp:320 soundtrackdialog.cpp:379
 #, kde-format
-msgid "%1 images [%2]"
-msgstr "%1&nbsp;imatges [%2]"
+msgid "Cannot access file %1. Please check the path is correct."
+msgstr ""
 
-#: maindialog.cpp:323 soundtrackdialog.cpp:379
+#: maindialog.cpp:357
 #, kde-format
-msgid "Cannot access to file %1, please check the path is right."
+msgid "Image number %1"
+msgid_plural "Image #%1"
+msgstr[0] ""
+msgstr[1] ""
+
+#: maindialog.cpp:437 soundtrackdialog.cpp:322
+msgid "You can only move image files up one at a time."
 msgstr ""
 
-#: maindialog.cpp:360
-#, kde-format
-msgid "Image no. %1"
+#: maindialog.cpp:466
+msgid "You can only move image files down one at a time."
 msgstr ""
 
-#: maindialog.cpp:440 soundtrackdialog.cpp:322
-msgid "You can only move up one image file at once."
-msgstr ""
-
-#: maindialog.cpp:469
-msgid "You can only move down one image file at once."
-msgstr ""
-
-#: maindialog.cpp:503 slideshowkb.cpp:588
+#: maindialog.cpp:500 slideshowkb.cpp:588
 msgid "Ken Burns"
 msgstr ""
 
-#: maindialog.cpp:526
+#: maindialog.cpp:523
 msgid "Delay between images (ms):"
 msgstr ""
 
-#: maindialog.cpp:535
-msgid "Delay between images  (s):"
+#. i18n: file: maindialog.ui:414
+#. i18n: ectx: property (text), widget (QLabel, m_delayLabel)
+#: maindialog.cpp:532 rc.cpp:139
+msgid "Delay between images (s):"
 msgstr ""
 
 #: plugin_advancedslideshow.cpp:83
@@ -85,7 +87,7 @@ msgid "There are no images to show."
 msgstr ""
 
 #: plugin_advancedslideshow.cpp:246
-msgid "Sorry. OpenGL support not available on your system"
+msgid "OpenGL support is not available on your system."
 msgstr ""
 
 #. i18n: file: advanceddialog.ui:13
@@ -145,7 +147,7 @@ msgstr ""
 #. i18n: file: advanceddialog.ui:113
 #. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableCrossfadeCheckBox)
 #: rc.cpp:27
-msgid "Disable &crossfade"
+msgid "Disable &cross-fade"
 msgstr ""
 
 #. i18n: file: advanceddialog.ui:129
@@ -179,7 +181,7 @@ msgstr "imatges"
 #: rc.cpp:42
 msgid ""
 "<b>Notice</b>:\n"
-"Ken Burns effect doesn't use this cache mechanism."
+"Ken Burns effect does not use this cache mechanism."
 msgstr ""
 
 #. i18n: file: captiondialog.ui:13
@@ -197,8 +199,10 @@ msgstr "Colors"
 #. i18n: file: captiondialog.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:52
-msgid "Font color :"
-msgstr ""
+#, fuzzy
+#| msgid "Background color:"
+msgid "Font color:"
+msgstr "Color de fons :"
 
 #. i18n: file: captiondialog.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -253,7 +257,7 @@ msgstr ""
 #. i18n: file: maindialog.ui:55
 #. i18n: ectx: property (title), widget (QGroupBox, m_ImagesFilesGroup)
 #: rc.cpp:79
-msgid "Image Files in slideshow"
+msgid "Image Files in Slideshow"
 msgstr ""
 
 #. i18n: file: maindialog.ui:69
@@ -261,9 +265,9 @@ msgstr ""
 #: rc.cpp:82
 msgid ""
 "This is the list of the image files for your portfolio.\n"
-"The portfolio's first image is on the top; the last image is on the bottom.\n"
-"If you want to add some images, click on the 'Add' button or use the drag-"
-"and-drop."
+"The portfolio's first image is at the top; the last image is at the bottom.\n"
+"If you want to add some images, click on the 'Add' button or use drag-and-"
+"drop."
 msgstr ""
 
 #. i18n: file: maindialog.ui:112
@@ -271,7 +275,7 @@ msgstr ""
 #. i18n: file: soundtrackdialog.ui:75
 #. i18n: ectx: property (whatsThis), widget (QPushButton, m_SoundFilesButtonUp)
 #: rc.cpp:87 rc.cpp:193
-msgid "Moving the current image up on the portfolio list."
+msgid "Move the current image up in the portfolio list."
 msgstr ""
 
 #. i18n: file: maindialog.ui:140
@@ -295,7 +299,7 @@ msgstr ""
 #. i18n: file: soundtrackdialog.ui:159
 #. i18n: ectx: property (whatsThis), widget (QPushButton, m_SoundFilesButtonDown)
 #: rc.cpp:96 rc.cpp:202
-msgid "Moving the current image down on the portfolio list."
+msgid "Move the current image down in the portfolio list."
 msgstr ""
 
 #. i18n: file: maindialog.ui:279
@@ -376,12 +380,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, m_shuffleCheckBox)
 #: rc.cpp:136
 msgid "&Shuffle images"
-msgstr ""
-
-#. i18n: file: maindialog.ui:414
-#. i18n: ectx: property (text), widget (QLabel, m_delayLabel)
-#: rc.cpp:139
-msgid "Delay between images (s):"
 msgstr ""
 
 #. i18n: file: maindialog.ui:440
@@ -493,13 +491,13 @@ msgstr ""
 #: rc.cpp:218
 #, fuzzy
 #| msgid "Slide"
-msgid "Slide :"
+msgid "Slide:"
 msgstr "Diàpo"
 
 #. i18n: file: soundtrackdialog.ui:288
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:222
-msgid "Soundtrack :"
+msgid "Soundtrack:"
 msgstr ""
 
 #: rc.cpp:225
@@ -553,7 +551,7 @@ msgid "Circle Out"
 msgstr ""
 
 #: slideshow.cpp:240
-msgid "MultiCircle Out"
+msgid "Multi-Circle Out"
 msgstr ""
 
 #: slideshow.cpp:241
@@ -569,11 +567,11 @@ msgid "Random"
 msgstr "Aleatòri"
 
 #: slideshow.cpp:1309 slideshowgl.cpp:737
-msgid "Slideshow Completed."
+msgid "Slideshow Completed"
 msgstr ""
 
 #: slideshow.cpp:1310 slideshowgl.cpp:738 slideshowkb.cpp:530
-msgid "Click To Exit..."
+msgid "Click to Exit..."
 msgstr ""
 
 #: slideshowconfig.cpp:70 slideshowconfig.cpp:108
@@ -609,7 +607,7 @@ msgid "Advanced"
 msgstr "A_vançat"
 
 #: slideshowconfig.cpp:111
-msgid "A Kipi plugin for image slideshow"
+msgid "A Kipi plugin for image slideshows"
 msgstr ""
 
 #: slideshowconfig.cpp:112
@@ -671,8 +669,10 @@ msgid "Slide"
 msgstr "Diàpo"
 
 #: slideshowkb.cpp:529
-msgid "SlideShow Completed."
-msgstr ""
+#, fuzzy
+#| msgid "Slide Show"
+msgid "SlideShow Completed"
+msgstr "Diaporama"
 
 #: soundtrackdialog.cpp:57
 msgid "Soundtrack preview"
@@ -691,7 +691,8 @@ msgid "%1 tracks [%2]"
 msgstr "%1&nbsp;imatges [%2]"
 
 #: soundtrackdialog.cpp:211
-msgid "Slide time is more than soundtrack time. Suggest: add more sound files."
+msgid ""
+"Slide time is greater than soundtrack time. Suggestion: add more sound files."
 msgstr ""
 
 #: soundtrackdialog.cpp:279
@@ -699,17 +700,15 @@ msgid "Select sound files"
 msgstr ""
 
 #: soundtrackdialog.cpp:351
-msgid "You can only move down one file at once."
+msgid "You can only move files down one at a time."
 msgstr ""
 
 #: soundtrackdialog.cpp:389
 msgid "Cannot create a preview of an empty file list."
 msgstr ""
 
-#, fuzzy
-#~| msgid "Slide Show"
-#~ msgid "SlideShow"
-#~ msgstr "Diaporama"
+#~ msgid "%1 images [%2]"
+#~ msgstr "%1&nbsp;imatges [%2]"
 
 #~ msgid "Noise"
 #~ msgstr "Bruch"

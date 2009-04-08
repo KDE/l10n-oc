@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_rawconverter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-02 11:33+0200\n"
+"POT-Creation-Date: 2009-04-08 12:04+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: actionthread.cpp:235
-msgid "Cannot identify Raw image"
+msgid "Cannot identify RAW image"
 msgstr ""
 
 #: actionthread.cpp:242
@@ -57,11 +57,11 @@ msgid "Sensitivity: %1 ISO"
 msgstr ""
 
 #: batchdialog.cpp:148 singledialog.cpp:210
-msgid "Exit Raw Converter"
+msgid "Exit RAW Converter"
 msgstr ""
 
 #: batchdialog.cpp:149
-msgid "Raw Images Batch Converter"
+msgid "RAW Image Batch Converter"
 msgstr ""
 
 #: batchdialog.cpp:152
@@ -69,7 +69,7 @@ msgid "&Add"
 msgstr "&Apondre"
 
 #: batchdialog.cpp:153
-msgid "Add new Raw files to the list"
+msgid "Add new RAW files to the list"
 msgstr ""
 
 #: batchdialog.cpp:155
@@ -77,7 +77,7 @@ msgid "&Remove"
 msgstr "&Suprimir "
 
 #: batchdialog.cpp:156
-msgid "Remove selected Raw files from the list"
+msgid "Remove selected RAW files from the list"
 msgstr ""
 
 #: batchdialog.cpp:175
@@ -85,7 +85,7 @@ msgid "Thumbnail"
 msgstr "Miniatura"
 
 #: batchdialog.cpp:176
-msgid "Raw File"
+msgid "RAW File"
 msgstr ""
 
 #: batchdialog.cpp:177
@@ -100,12 +100,12 @@ msgstr "Aparelh de fotografiar"
 msgid "Save settings"
 msgstr "Enregistrar los paramètres"
 
-#: batchdialog.cpp:211 singledialog.cpp:173
+#: batchdialog.cpp:211 singledialog.cpp:143 singledialog.cpp:173
 msgid "RAW Image Converter"
 msgstr ""
 
 #: batchdialog.cpp:214
-msgid "A Kipi plugin to batch convert Raw images"
+msgid "A Kipi plugin to batch convert RAW images"
 msgstr ""
 
 #: batchdialog.cpp:215 singledialog.cpp:177
@@ -135,15 +135,15 @@ msgid "Handbook"
 msgstr ""
 
 #: batchdialog.cpp:438
-msgid "There is no Raw file to process in the list!"
+msgid "There is no RAW file in the list to process."
 msgstr ""
 
 #: batchdialog.cpp:654 singledialog.cpp:142
 msgid "&Abort"
 msgstr "&Abandonar"
 
-#: batchdialog.cpp:655
-msgid "Abort the current Raw files conversion"
+#: batchdialog.cpp:655 singledialog.cpp:208
+msgid "Abort the current RAW file conversion"
 msgstr ""
 
 #: batchdialog.cpp:660 singledialog.cpp:141
@@ -151,12 +151,12 @@ msgid "Con&vert"
 msgstr ""
 
 #: batchdialog.cpp:661
-msgid "Start converting the Raw images from current settings"
+msgid "Start converting the RAW images using current settings."
 msgstr ""
 
 #: batchdialog.cpp:711 singledialog.cpp:570
 #, kde-format
-msgid "Save Raw Image converted from '%1' as"
+msgid "Save RAW image converted from '%1' as"
 msgstr ""
 
 #: batchdialog.cpp:740 singledialog.cpp:597
@@ -165,16 +165,16 @@ msgid "Failed to save image %1"
 msgstr ""
 
 #: plugin_rawconverter.cpp:91
-msgid "Raw Image Converter..."
+msgid "RAW Image Converter..."
 msgstr ""
 
 #: plugin_rawconverter.cpp:100
-msgid "Batch Raw Converter..."
+msgid "Batch RAW Converter..."
 msgstr ""
 
 #: plugin_rawconverter.cpp:174
 #, kde-format
-msgid "\"%1\" is not a Raw file."
+msgid "\"%1\" is not a RAW file."
 msgstr ""
 
 #: previewwidget.cpp:90
@@ -197,17 +197,17 @@ msgstr ""
 
 #: savesettingswidget.cpp:77
 msgid ""
-"<p>Set here the output file format to use:</p><p><b>JPEG</b>: output the "
-"processed image in JPEG Format. this format will give smaller-sized files. "
-"Minimum JPEG compression level will be used during Raw conversion.</"
-"p><p><b>Warning!!! duing of destructive compression algorithm, JPEG is a "
+"<p>Set the output file format to use here:</p><p><b>JPEG</b>: output the "
+"processed image in JPEG format. This format will give smaller-sized files. "
+"Minimum JPEG compression level will be used during RAW conversion.</"
+"p><p><b>Warning: Due to the destructive compression algorithm, JPEG is a "
 "lossy quality format.</b></p><p><b>TIFF</b>: output the processed image in "
-"TIFF Format. This generates larges, without losing quality. Adobe Deflate "
-"compression will be used during conversion.</p><p><b>PPM</b>: output the "
-"processed image in PPM Format. This generates the largest files, without "
-"losing quality.</p><p><b>PNG</b>: output the processed image in PNG Format. "
-"This generates larges, without losing quality. Maximum PNG compression will "
-"be used during conversion.</p>"
+"TIFF format. This generates large files, without losing quality. Adobe "
+"Deflate compression will be used during conversion.</p><p><b>PPM</b>: output "
+"the processed image in PPM format. This generates the largest files, without "
+"losing quality.</p><p><b>PNG</b>: output the processed image in PNG format. "
+"This generates large files, without losing quality. Maximum PNG compression "
+"will be used during conversion.</p>"
 msgstr ""
 
 #: savesettingswidget.cpp:96
@@ -226,28 +226,20 @@ msgstr ""
 msgid "&Preview"
 msgstr "&Ulhada"
 
-#: singledialog.cpp:143
-msgid "Raw Image Converter"
-msgstr ""
-
 #: singledialog.cpp:176
-msgid "A Kipi plugin to convert a Raw image"
+msgid "A Kipi plugin to convert RAW images"
 msgstr ""
 
 #: singledialog.cpp:201
 msgid ""
-"Generate a Preview from current settings. Uses a simple bilinear "
+"Generate a preview using current settings. Uses a simple bilinear "
 "interpolation for quick results."
 msgstr ""
 
 #: singledialog.cpp:205
 msgid ""
-"Convert the Raw Image from current settings. This uses a high-quality "
+"Convert the RAW Image using current settings. This uses a high-quality "
 "adaptive algorithm."
-msgstr ""
-
-#: singledialog.cpp:208
-msgid "Abort the current Raw file conversion"
 msgstr ""
 
 #: singledialog.cpp:527
@@ -255,7 +247,7 @@ msgid "Failed to generate preview"
 msgstr ""
 
 #: singledialog.cpp:614
-msgid "Failed to convert Raw image"
+msgid "Failed to convert RAW image"
 msgstr ""
 
 #: singledialog.cpp:619
@@ -263,5 +255,5 @@ msgid "Generating Preview..."
 msgstr ""
 
 #: singledialog.cpp:632
-msgid "Converting Raw Image..."
+msgid "Converting RAW Image..."
 msgstr ""
