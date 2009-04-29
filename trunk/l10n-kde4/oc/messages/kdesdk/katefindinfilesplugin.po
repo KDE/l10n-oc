@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katefindinfilesplugin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-09 09:44+0200\n"
+"POT-Creation-Date: 2009-04-29 11:57+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -61,11 +61,17 @@ msgid ""
 "If this option is enabled (the default), the search will be case sensitive."
 msgstr ""
 
-#: katefinddialog.cpp:143
-msgid "You must enter an existing local folder in the 'Folder' entry."
+#: katefinddialog.cpp:107
+msgid ""
+"If this option is enabled, the search will follow symlinks to directories. "
+"This can lead to infinite recursion if cyclic symlinks exist!"
 msgstr ""
 
 #: katefinddialog.cpp:144
+msgid "You must enter an existing local folder in the 'Folder' entry."
+msgstr ""
+
+#: katefinddialog.cpp:145
 msgid "Invalid Folder"
 msgstr ""
 
@@ -88,7 +94,7 @@ msgstr ""
 
 #. i18n: file: resultwidget.ui:110
 #. i18n: ectx: property (text), widget (KPushButton, btnRefine)
-#: kateresultview.cpp:66 rc.cpp:42
+#: kateresultview.cpp:66 rc.cpp:45
 msgid "Refine Search..."
 msgstr ""
 
@@ -99,31 +105,31 @@ msgid ""
 "on the item to show the respective line in the editor."
 msgstr ""
 
-#. i18n: file: findwidget.ui:16
+#. i18n: file: findwidget.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, gbFind)
 #: rc.cpp:3
 msgid "Find"
 msgstr ""
 
-#. i18n: file: findwidget.ui:22
+#. i18n: file: findwidget.ui:23
 #. i18n: ectx: property (text), widget (QLabel, lblPattern)
 #: rc.cpp:6
 msgid "Pattern:"
 msgstr ""
 
-#. i18n: file: findwidget.ui:48
+#. i18n: file: findwidget.ui:49
 #. i18n: ectx: property (text), widget (QLabel, lblFolder)
 #: rc.cpp:9
 msgid "Folder:"
 msgstr "Repertòri :"
 
-#. i18n: file: findwidget.ui:79
+#. i18n: file: findwidget.ui:80
 #. i18n: ectx: property (toolTip), widget (QToolButton, btnSync)
 #: rc.cpp:12
 msgid "Use the current document's path."
 msgstr ""
 
-#. i18n: file: findwidget.ui:91
+#. i18n: file: findwidget.ui:92
 #. i18n: ectx: property (text), widget (QLabel, lblFiles)
 #: rc.cpp:15
 #, fuzzy
@@ -131,72 +137,78 @@ msgstr ""
 msgid "Filter:"
 msgstr "_Fichièrs"
 
-#. i18n: file: findwidget.ui:120
+#. i18n: file: findwidget.ui:121
 #. i18n: ectx: property (title), widget (QGroupBox, gbOptions)
 #: rc.cpp:18
 msgid "Options"
 msgstr ""
 
-#. i18n: file: findwidget.ui:126
+#. i18n: file: findwidget.ui:127
 #. i18n: ectx: property (text), widget (QCheckBox, chkCaseSensitive)
 #: rc.cpp:21
 msgid "Case sensitive"
 msgstr "Respectar la cassa"
 
-#. i18n: file: findwidget.ui:133
-#. i18n: ectx: property (text), widget (QCheckBox, chkRegExp)
+#. i18n: file: findwidget.ui:134
+#. i18n: ectx: property (text), widget (QCheckBox, chkRecursive)
 #: rc.cpp:24
+msgid "Recursive search"
+msgstr ""
+
+#. i18n: file: findwidget.ui:141
+#. i18n: ectx: property (text), widget (QCheckBox, chkRegExp)
+#: rc.cpp:27
 msgid "Regular expression"
 msgstr ""
 
-#. i18n: file: findwidget.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, chkRecursive)
-#: rc.cpp:27
-msgid "Recursive search"
+#. i18n: file: findwidget.ui:148
+#. i18n: ectx: property (text), widget (QCheckBox, chkFollowSymlinks)
+#: rc.cpp:30
+msgid "Follow directory symlinks"
 msgstr ""
 
 #. i18n: file: resultwidget.ui:41
 #. i18n: ectx: property (text), widget (QTreeWidget, twResults)
-#: rc.cpp:30
+#: rc.cpp:33
 msgid "File"
 msgstr "Fichièr"
 
 #. i18n: file: resultwidget.ui:46
 #. i18n: ectx: property (text), widget (QTreeWidget, twResults)
-#: rc.cpp:33
+#: rc.cpp:36
 msgid "Line"
 msgstr "Linha"
 
 #. i18n: file: resultwidget.ui:51
 #. i18n: ectx: property (text), widget (QTreeWidget, twResults)
-#: rc.cpp:36
+#: rc.cpp:39
 msgid "Text"
 msgstr "Tèxt"
 
 #. i18n: file: resultwidget.ui:87
 #. i18n: ectx: property (text), widget (QLabel, lblStatus)
-#: rc.cpp:39
+#: rc.cpp:42
 msgid "Searching for files..."
 msgstr ""
 
 #. i18n: file: resultwidget.ui:117
 #. i18n: ectx: property (text), widget (KPushButton, btnRemove)
-#: rc.cpp:45
+#: rc.cpp:48
 msgid "Remove"
 msgstr ""
 
 #. i18n: file: ui.rc:4
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:48
+#: rc.cpp:51
 msgid "&Edit"
 msgstr ""
 
-#: rc.cpp:49
+#: rc.cpp:52
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 
-#: rc.cpp:50
+#: rc.cpp:53
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
