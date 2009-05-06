@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okteta\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-05 11:22+0200\n"
+"POT-Creation-Date: 2009-05-06 12:10+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -97,7 +97,7 @@ msgid "Copyright 2006-2009 Friedrich W. H. Kossebau"
 msgstr ""
 
 #: about.cpp:45
-msgid "Edit files as an array of bytes"
+msgid "Edit the raw data of files"
 msgstr ""
 
 #: about.cpp:50
@@ -223,7 +223,7 @@ msgstr ""
 
 #: libkakao/controllers/io/export/exportdialog.cpp:44
 msgctxt "@action:button"
-msgid "&Export to file"
+msgid "&Export to File..."
 msgstr ""
 
 #: libkakao/controllers/io/export/exportdialog.cpp:45
@@ -304,7 +304,12 @@ msgctxt "@title:window"
 msgid "Documents"
 msgstr ""
 
-#: libkakao/controllers/documentsystem/filesystembrowser/filesystembrowsertool.cpp:42
+#: libkakao/controllers/documentsystem/filesystembrowser/filesystembrowserview.cpp:83
+msgctxt ""
+msgid "Folder of Current Document"
+msgstr ""
+
+#: libkakao/controllers/documentsystem/filesystembrowser/filesystembrowsertool.cpp:43
 msgctxt "@title:window"
 msgid "Filesystem"
 msgstr ""
@@ -697,9 +702,12 @@ msgid ""
 msgstr ""
 
 #: oktetakakao/controllers/view/replace/kreplacedialog.cpp:57
+#, fuzzy
+#| msgctxt "@title:window prompt for iterative replacement"
+#| msgid "Replace"
 msgctxt "@title:group"
-msgid "Replace by"
-msgstr ""
+msgid "Replace By"
+msgstr "Remplaçar"
 
 #: oktetakakao/controllers/view/replace/kreplacedialog.cpp:62
 msgctxt "@label:textbox"
@@ -722,20 +730,20 @@ msgctxt "@info:whatsthis"
 msgid "Ask before replacing each match found."
 msgstr "Demandar abans de remplaçar cada correspondéncia trobada."
 
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:80
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:93
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:82
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:95
 msgctxt "@title:window"
 msgid "Replace"
 msgstr "Remplaçar"
 
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:82
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:95
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:84
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:97
 msgctxt "@info"
 msgid "No replacements made."
 msgstr ""
 
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:83
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:96
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:85
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:98
 #, kde-format
 msgctxt "@info"
 msgid "1 replacement made."
@@ -743,19 +751,19 @@ msgid_plural "%1 replacements made."
 msgstr[0] ""
 msgstr[1] ""
 
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:86
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:88
 msgctxt "@info"
 msgid "Replace pattern not found in byte array."
 msgstr ""
 
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:98
-#: oktetakakao/controllers/view/search/searchcontroller.cpp:110
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:100
+#: oktetakakao/controllers/view/search/searchcontroller.cpp:114
 msgctxt "@info"
 msgid "End of byte array reached.<nl/>Continue from the beginning?"
 msgstr ""
 
-#: oktetakakao/controllers/view/replace/replacecontroller.cpp:99
-#: oktetakakao/controllers/view/search/searchcontroller.cpp:111
+#: oktetakakao/controllers/view/replace/replacecontroller.cpp:101
+#: oktetakakao/controllers/view/search/searchcontroller.cpp:115
 msgctxt "@info"
 msgid "Beginning of byte array reached.<nl/>Continue from the end?"
 msgstr ""
@@ -769,16 +777,19 @@ msgid "Replace"
 msgstr "Remplaçar"
 
 #: oktetakakao/controllers/view/overwritemode/overwritemodecontroller.cpp:40
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Insert"
 msgctxt "@option:check set the view into overwrite mode"
-msgid "Set Overwrite mode"
-msgstr ""
+msgid "Set Overwrite Mode"
+msgstr "Inserir"
 
 #: oktetakakao/controllers/view/overwritemode/overwritemodecontroller.cpp:42
 #, fuzzy
 #| msgctxt "@title:menu"
 #| msgid "Insert"
 msgctxt "@option:check set the view into insert mode"
-msgid "Set Insert mode"
+msgid "Set Insert Mode"
 msgstr "Inserir"
 
 #: oktetakakao/controllers/view/overwritemode/overwritemodecontroller.cpp:47
@@ -928,7 +939,7 @@ msgstr ""
 
 #: oktetakakao/controllers/view/insertpattern/insertpatterncontroller.cpp:45
 msgctxt "@action:inmenu"
-msgid "&Insert pattern..."
+msgid "&Insert Pattern..."
 msgstr ""
 
 #: oktetakakao/controllers/view/insertpattern/insertpatterntool.cpp:90
@@ -1288,8 +1299,11 @@ msgid ""
 msgstr ""
 
 #: oktetakakao/controllers/view/gotooffset/kgotooffsetdialog.cpp:74
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "Go to"
 msgctxt "@title:group"
-msgid "Go to"
+msgid "Go To"
 msgstr "Anar a"
 
 #: oktetakakao/controllers/view/gotooffset/kgotooffsetdialog.cpp:80
@@ -1440,21 +1454,21 @@ msgctxt "@title"
 msgid "Search"
 msgstr ""
 
-#: oktetakakao/controllers/view/search/searchcontroller.cpp:102
-#: oktetakakao/controllers/view/search/searchcontroller.cpp:108
+#: oktetakakao/controllers/view/search/searchcontroller.cpp:106
+#: oktetakakao/controllers/view/search/searchcontroller.cpp:112
 #: oktetakakao/controllers/view/libfinddialog/kabstractfinddialog.cpp:62
 msgctxt "@title:window"
 msgid "Find"
 msgstr "Recercar"
 
-#: oktetakakao/controllers/view/search/searchcontroller.cpp:103
+#: oktetakakao/controllers/view/search/searchcontroller.cpp:107
 msgctxt "@info"
 msgid "Search key not found in byte array."
 msgstr ""
 
 #: oktetakakao/controllers/view/libfinddialog/kabstractfinddialog.cpp:68
 msgctxt "@label:textbox"
-msgid "Byte String to F&ind:"
+msgid "Byte string to f&ind:"
 msgstr ""
 
 #: oktetakakao/controllers/view/libfinddialog/kabstractfinddialog.cpp:104
@@ -1554,7 +1568,7 @@ msgstr ""
 msgctxt ""
 "@item:inmenu  The layout will adapt to the size, but only with complete "
 "groups of bytes."
-msgid "&Wrap only complete Byte Groups"
+msgid "&Wrap Only Complete Byte Groups"
 msgstr ""
 
 #: oktetakakao/controllers/view/viewconfig/viewconfigcontroller.cpp:72
@@ -1592,7 +1606,7 @@ msgstr "Modificacions"
 
 #: oktetakakao/controllers/view/viewconfig/viewconfigcontroller.cpp:87
 msgctxt "@item:inmenu"
-msgid "Values &and Chars"
+msgid "Values && Chars"
 msgstr ""
 
 #: oktetakakao/controllers/view/bookmarks/bookmarklistmodel.cpp:125
@@ -1722,7 +1736,7 @@ msgid "Decimal"
 msgstr "Decimal"
 
 #: oktetakakao/controllers/view/libbytearraylineedit/kbytearrayvalidator.cpp:43
-msgctxt "@item:inlistbox cding of the bytes as values in the octal format"
+msgctxt "@item:inlistbox coding of the bytes as values in the octal format"
 msgid "Octal"
 msgstr ""
 
