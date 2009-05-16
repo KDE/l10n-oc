@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-28 04:25+0000\n"
+"POT-Creation-Date: 2009-05-16 03:21+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -176,7 +176,9 @@ msgstr ""
 msgid ""
 "When you start &kgpg;, a system tray icon will appear. A &LMB; click will "
 "open the Key Manager window, while a &RMB; click will open a menu allowing "
-"quick access to some important features."
+"quick access to some important features. If you prefer other options you can "
+"change the &LMB; action to show the editor or completely disable the system "
+"tray icon using the <link linkend=\"conf-misc\">settings dialog</link>."
 msgstr ""
 
 #. Tag: term
@@ -218,7 +220,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "It's a simple text editor, where you can type or paste text to encrypt/"
-"decrypt it. To open the editor, click with the &RMB; on &kgpg;'s applet."
+"decrypt it. To open the <link linkend=\"editor\">editor</link>, click with "
+"the &RMB; on &kgpg;'s applet."
 msgstr ""
 
 #. Tag: term
@@ -317,26 +320,27 @@ msgstr ""
 #: index.docbook:189
 #, no-c-format
 msgid ""
-"If you create a public key for the first time it's usually a good idea to "
-"limit the lifetime to some 12 month. You can modify the lifetime of your "
-"secret keys later using the <link linkend=\"keyproperties\">key properties "
-"window</link>."
+"Many people play around with their first key, generate bad user ids, add "
+"comments they later regret or simply forget their passphrase. To avoid such "
+"keys to stay valid forever it's usually a good idea to limit the lifetime to "
+"some 12 month. You can modify the lifetime of your secret keys later using "
+"the <link linkend=\"keyproperties\">key properties window</link>."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:196
+#: index.docbook:198
 #, no-c-format
 msgid "Encrypting Your Data"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:200
+#: index.docbook:202
 #, no-c-format
 msgid "Encrypting a file from &konqueror; or Dolphin"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:202
+#: index.docbook:204
 #, no-c-format
 msgid ""
 "Click on the file you want to encrypt with the &RMB;. Choose "
@@ -346,49 +350,43 @@ msgid ""
 "<guibutton>Encrypt</guibutton>. The encrypted file will be saved with a "
 "<literal role=\"extension\">.asc</literal> or <literal role=\"extension\">."
 "gpg</literal> extension depending on whether you chose ASCII encryption or "
-"not."
+"not. ASCII encrypted files only use readable characters to represent the "
+"data resulting in files that are more robust when copied around or sent by "
+"mail but are one third larger."
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:213
+#: index.docbook:217
 #, no-c-format
 msgid "Here is a screen shot of the key selection window"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:223
+#: index.docbook:227
 #, no-c-format
 msgid "Encrypting a text with &kgpg;'s applet"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:225
+#: index.docbook:229
 #, no-c-format
 msgid ""
 "You can encrypt the contents of the clipboard by selecting the "
 "<guimenuitem>Encrypt clipboard</guimenuitem> item in applet menu. When you "
 "choose <guimenuitem>Sign clipboard</guimenuitem> then the text will be "
-"signed instead."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:230
-#, no-c-format
-msgid ""
-"For more information on the encryption options <quote>ASCII armor</quote>, "
-"<quote>Allow encryption with untrusted keys</quote> and <quote>Symmetrical "
-"encryption</quote>, please refer to gpg's documentation or <ulink url=\"man:"
-"gpg\">man pages</ulink>."
+"signed instead. Both actions will import the current clipboard contents into "
+"an <link linkend=\"editor\">editor window</link>, perform the requested "
+"action and paste the contents back into the editor."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:238
+#: index.docbook:239
 #, no-c-format
 msgid "Encrypting text from &kgpg;'s editor"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:240
+#: index.docbook:241
 #, no-c-format
 msgid ""
 "This is as simple as clicking on the <guibutton>Encrypt</guibutton> button. "
@@ -397,20 +395,51 @@ msgid ""
 "in the editor window."
 msgstr ""
 
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"Usually you can only encrypt files with keys that are trusted by you. Since "
+"you sometimes want to just send a confident note to some random people you "
+"are aware of having a GPG key you can set the option <guilabel>Allow "
+"encryption with untrusted keys</guilabel>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:252
+#, no-c-format
+msgid ""
+"To make sure that you can decrypt every file you have encrypted even if they "
+"are encrypted with someone else's key you can use the options "
+"<guilabel>Always encrypt with</guilabel> and <guilabel>Encrypt files with</"
+"guilabel> which are available in the <link linkend=\"conf-encryption\">KGpg "
+"configuration</link>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:257
+#, no-c-format
+msgid ""
+"For more information on the encryption options <guilabel>ASCII armor</"
+"guilabel>, <guilabel>Allow encryption with untrusted keys</guilabel> and "
+"<guilabel>Symmetrical encryption</guilabel>, please refer to gpg's "
+"documentation or <ulink url=\"man:gpg\">man pages</ulink>."
+msgstr ""
+
 #. Tag: title
-#: index.docbook:250
+#: index.docbook:266
 #, no-c-format
 msgid "Decrypting Your Data"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:254
+#: index.docbook:270
 #, no-c-format
 msgid "Decrypting a file from &konqueror; or Dolphin"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:255
+#: index.docbook:271
 #, no-c-format
 msgid ""
 "<mousebutton>Left</mousebutton> click on the file you want to decrypt. Enter "
@@ -423,27 +452,29 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:266
+#: index.docbook:282
 #, no-c-format
 msgid "Decrypting text with &kgpg;'s applet"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:268
+#: index.docbook:284
 #, no-c-format
 msgid ""
 "You can also decrypt the contents of the clipboard with the "
-"<guimenuitem>decrypt clipboard</guimenuitem> menu entry of the &kgpg; applet."
+"<guimenuitem>decrypt clipboard</guimenuitem> menu entry of the &kgpg; "
+"applet. An <link linkend=\"editor\">editor window</link> will show up with "
+"the decrypted text."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:275
+#: index.docbook:292
 #, no-c-format
 msgid "Decrypting a text from the editor"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:277
+#: index.docbook:294
 #, no-c-format
 msgid ""
 "Copy or Drag and Drop the text you want to decrypt, and click on the "
@@ -452,13 +483,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:286
+#: index.docbook:303
 #, no-c-format
 msgid "Key Management"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:288
+#: index.docbook:305
 #, no-c-format
 msgid ""
 "All basic key management options can be performed through &kgpg;. To open "
@@ -469,19 +500,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:295
+#: index.docbook:312
 #, no-c-format
 msgid "Key Manager"
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:298
+#: index.docbook:315
 #, no-c-format
 msgid "Here's a screen shot of key management"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:305
+#: index.docbook:322
 #, no-c-format
 msgid ""
 "In this example you see a key group containing two keys, two key pairs and "
@@ -494,7 +525,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:306
+#: index.docbook:323
 #, no-c-format
 msgid ""
 "Signatures allow navigating through your keyring. Double clicking on a "
@@ -503,19 +534,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:310
+#: index.docbook:327
 #, no-c-format
 msgid "Key properties"
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:313
+#: index.docbook:330
 #, no-c-format
 msgid "The key properties window"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:320
+#: index.docbook:337
 #, no-c-format
 msgid ""
 "While the key manager allows you to do general actions with one or multiple "
@@ -525,7 +556,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:321
+#: index.docbook:338
 #, no-c-format
 msgid ""
 "In this window you can change the key passphrase and expiration of your "
@@ -533,7 +564,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:322
+#: index.docbook:339
 #, no-c-format
 msgid ""
 "This value indicates how much you trust the owner of this key to correctly "
@@ -543,21 +574,14 @@ msgid ""
 "have signed without the need that you first have to sign their keys too."
 msgstr ""
 
-#. Tag: para
-#: index.docbook:323
-#, no-c-format
-msgid ""
-"All changes you make in this dialog are immediately applied to your keyring."
-msgstr ""
-
 #. Tag: title
-#: index.docbook:329
+#: index.docbook:345
 #, no-c-format
 msgid "Communication with key servers"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:331
+#: index.docbook:347
 #, no-c-format
 msgid ""
 "The public part of a key pair is usually stored on a key server. These "
@@ -566,13 +590,13 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:334
+#: index.docbook:350
 #, no-c-format
 msgid "Here's a screen shot of keyserver window."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:341
+#: index.docbook:357
 #, no-c-format
 msgid ""
 "This dialog gives you access to the keyservers. You can search and import "
@@ -585,7 +609,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:342
+#: index.docbook:358
 #, no-c-format
 msgid ""
 "Most keyservers synchronize their data between each others so you will get "
@@ -597,7 +621,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:343
+#: index.docbook:359
 #, no-c-format
 msgid ""
 "Please note that everything you upload to a keyserver usually stays there "
@@ -607,13 +631,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:348
+#: index.docbook:364
 #, no-c-format
 msgid "Configuring &kgpg;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:350
+#: index.docbook:366
 #, no-c-format
 msgid ""
 "Configuration is accessible through the &kgpg; applet menu (&RMB; click on "
@@ -625,19 +649,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:357
+#: index.docbook:373
 #, no-c-format
 msgid "Encryption"
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:359
+#: index.docbook:375
 #, no-c-format
 msgid "A screen shot of the option dialog with encryption tab opened"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:365
+#: index.docbook:381
 #, no-c-format
 msgid ""
 "Here you can configure special options to be passed to GnuPG to change the "
@@ -646,7 +670,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:367
+#: index.docbook:383
 #, no-c-format
 msgid ""
 "<guilabel>ASCII armored encryption</guilabel>: this causes encrypted files "
@@ -656,7 +680,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:368
+#: index.docbook:384
 #, no-c-format
 msgid ""
 "<guilabel>Allow encryption with untrusted keys</guilabel>: this allows you "
@@ -664,7 +688,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:369
+#: index.docbook:385
 #, no-c-format
 msgid ""
 "<guilabel>PGP 6 compatibility</guilabel>: encrypted files are compatible "
@@ -673,7 +697,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:370
+#: index.docbook:386
 #, no-c-format
 msgid ""
 "<guilabel>Hide user id</guilabel>: this removes all evidence of the receiver "
@@ -683,7 +707,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:371
+#: index.docbook:387
 #, no-c-format
 msgid ""
 "<guilabel>Always encrypt with</guilabel>: all encryptions are additionally "
@@ -693,7 +717,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:372
+#: index.docbook:388
 #, no-c-format
 msgid ""
 "<guilabel>Encrypt files with</guilabel>: behaves like <guilabel>Always "
@@ -701,7 +725,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:373
+#: index.docbook:389
 #, no-c-format
 msgid ""
 "<guilabel>Custom encryption command</guilabel>: if you need to pass some "
@@ -710,7 +734,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:374
+#: index.docbook:390
 #, no-c-format
 msgid ""
 "<guilabel>Use *.pgp extension for encrypted files</guilabel>: if you check "
@@ -720,13 +744,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:379
+#: index.docbook:395
 #, no-c-format
 msgid "Decryption"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:381
+#: index.docbook:397
 #, no-c-format
 msgid ""
 "Here you can specify a custom decryption command. This option is seldomly "
@@ -735,13 +759,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:385
+#: index.docbook:401
 #, no-c-format
 msgid "Appearance"
 msgstr "Aparéncia"
 
 #. Tag: para
-#: index.docbook:386
+#: index.docbook:402
 #, no-c-format
 msgid ""
 "Here you can configure the way &kgpg; looks to you. Possible settings are "
@@ -751,13 +775,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:390
+#: index.docbook:406
 #, no-c-format
 msgid "GnuPG Settings"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:391
+#: index.docbook:407
 #, no-c-format
 msgid ""
 "Here you can configure which gpg binary and which <guilabel>configuration "
@@ -766,7 +790,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:392
+#: index.docbook:408
 #, no-c-format
 msgid ""
 "Using the <ulink url=\"man:gpg-agent\">GnuPG agent</ulink> makes work with "
@@ -777,13 +801,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:396
+#: index.docbook:412
 #, no-c-format
 msgid "Key Servers"
 msgstr "Servidors de clau"
 
 #. Tag: para
-#: index.docbook:397
+#: index.docbook:413
 #, no-c-format
 msgid ""
 "Here you can create a list of keyservers that are shown to you when you open "
@@ -793,7 +817,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:398
+#: index.docbook:414
 #, no-c-format
 msgid ""
 "The protocol used for communication with the key servers is based on &HTTP;, "
@@ -802,13 +826,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:402
+#: index.docbook:418
 #, no-c-format
 msgid "Misc"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:403
+#: index.docbook:419
 #, no-c-format
 msgid ""
 "This section allows the setting of some different features that do not fit "
@@ -820,7 +844,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:404
+#: index.docbook:420
 #, no-c-format
 msgid ""
 "You can also change if the systray icon of &kgpg; is shown or not and what "
@@ -830,19 +854,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:414
+#: index.docbook:430
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:416
+#: index.docbook:432
 #, no-c-format
 msgid "&kgpg;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:420
+#: index.docbook:436
 #, no-c-format
 msgid ""
 "Program copyright &copy; 2002-2003 Jean-Baptiste Mardelle <email>bj@altern."
@@ -850,26 +874,26 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:423
+#: index.docbook:439
 #, no-c-format
 msgid "&copy; 2006-2007 Jimmy Gilles <email>jimmygilles@gmail.com</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:426
+#: index.docbook:442
 #, no-c-format
 msgid "&copy; 2006-2008 Rolf Eike Beer <email>kde@opensource.sf-tec.de</email>"
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:430
+#: index.docbook:446
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:430
+#: index.docbook:446
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr ""
