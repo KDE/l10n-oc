@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-11 12:58+0200\n"
+"POT-Creation-Date: 2009-05-27 12:31+0200\n"
 "PO-Revision-Date: 2008-08-05 22:41+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -83,8 +83,7 @@ msgid "Files Exist"
 msgstr ""
 
 #: rip/k3baudioprojectconvertingdialog.cpp:196
-#: rip/k3baudiorippingdialog.cpp:244 k3b.cpp:926 k3bemptydiscwaiter.cpp:260
-#: k3bemptydiscwaiter.cpp:342 k3bemptydiscwaiter.cpp:412
+#: rip/k3baudiorippingdialog.cpp:244 k3b.cpp:926
 #: k3bdebuggingoutputdialog.cpp:82 option/k3bthemeoptiontab.cpp:188
 #: projects/k3bmovixburndialog.cpp:217 projects/k3bvideodvdburndialog.cpp:171
 #: projects/k3bdataburndialog.cpp:183 projects/k3bvcdburndialog.cpp:551
@@ -825,12 +824,12 @@ msgid "Video Size"
 msgstr ""
 
 #: rip/videodvd/k3bvideodvdrippingwidget.cpp:100
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:50
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:53
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:56
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:156
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:157
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:158
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:48
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:51
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:54
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:153
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:154
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:155
 #, kde-format
 msgid "%1 kbps"
 msgstr ""
@@ -1676,7 +1675,9 @@ msgstr ""
 msgid "&Mount"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:60
+#: k3bappdevicemanager.cpp:60 k3bemptydiscwaiter.cpp:263
+#: k3bemptydiscwaiter.cpp:346 k3bemptydiscwaiter.cpp:417
+#: k3bemptydiscwaiter.cpp:475 k3bemptydiscwaiter.cpp:549
 msgid "&Eject"
 msgstr ""
 
@@ -2528,7 +2529,7 @@ msgstr ""
 msgid "Show Document Header"
 msgstr ""
 
-#: k3b.cpp:262 k3bemptydiscwaiter.cpp:469
+#: k3b.cpp:262
 msgid "Format"
 msgstr "Format"
 
@@ -3141,57 +3142,66 @@ msgstr "Carga"
 msgid "Found medium:"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:255 k3bemptydiscwaiter.cpp:337
-#: k3bemptydiscwaiter.cpp:407
+#: k3bemptydiscwaiter.cpp:257 k3bemptydiscwaiter.cpp:339
+#: k3bemptydiscwaiter.cpp:410
 #, kde-format
 msgid "Found %1 medium in %2 - %3. Should it be overwritten?"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:260 k3bemptydiscwaiter.cpp:342
-#: k3bemptydiscwaiter.cpp:412 k3bemptydiscwaiter.cpp:469
+#: k3bemptydiscwaiter.cpp:261 k3bemptydiscwaiter.cpp:344
+#: k3bemptydiscwaiter.cpp:415 k3bemptydiscwaiter.cpp:473
 #, kde-format
 msgid "Found %1"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:312
+#: k3bemptydiscwaiter.cpp:262 k3bemptydiscwaiter.cpp:345
+#: k3bemptydiscwaiter.cpp:416
+#, fuzzy
+#| msgid "Overwrite"
+msgid "&Overwrite"
+msgstr "Remplaçar"
+
+#: k3bemptydiscwaiter.cpp:314
 msgid "Preformatting DVD+RW"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:464
+#: k3bemptydiscwaiter.cpp:468
 #, kde-format
 msgid "Found %1 medium in %2 - %3. Should it be formatted?"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:490
+#: k3bemptydiscwaiter.cpp:474
+#, fuzzy
+#| msgid "Format"
+msgid "&Format"
+msgstr "Format"
+
+#: k3bemptydiscwaiter.cpp:496
 msgid "Formatting DVD-RW"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:540
+#: k3bemptydiscwaiter.cpp:545
 #, kde-format
 msgid "Found rewritable medium in %1 - %2. Should it be erased?"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:542
+#: k3bemptydiscwaiter.cpp:547
 msgid "Found Rewritable Disk"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:543
-msgid "&Erase"
+#: k3bemptydiscwaiter.cpp:548
+msgid "E&rase"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:544
-msgid "E&ject"
-msgstr ""
-
-#: k3bemptydiscwaiter.cpp:550
+#: k3bemptydiscwaiter.cpp:555
 msgid "Erasing CD-RW"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:596
+#: k3bemptydiscwaiter.cpp:600
 msgid "Waiting for Medium"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:661
+#: k3bemptydiscwaiter.cpp:665
 msgid "Erasing failed."
 msgstr ""
 
@@ -6152,8 +6162,8 @@ msgstr ""
 msgid "Error protection"
 msgstr ""
 
-#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:23
-#. i18n: ectx: property (text), widget (K3ActiveLabel, kActiveLabel1)
+#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:1271
 msgid ""
 "<p>This dialog can be used to setup external command line applications as "
@@ -6170,27 +6180,27 @@ msgstr ""
 msgid "Configured Encoders"
 msgstr ""
 
-#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:45
-#. i18n: ectx: property (text), widget (Q3ListView, m_viewEncoders)
+#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:51
+#. i18n: ectx: property (text), widget (QTreeWidget, m_viewEncoders)
 #: rc.cpp:1278
 msgid "Name"
 msgstr "Nom"
 
 #. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:56
-#. i18n: ectx: property (text), widget (Q3ListView, m_viewEncoders)
+#. i18n: ectx: property (text), widget (QTreeWidget, m_viewEncoders)
 #: rc.cpp:1281
 msgid "Extension"
 msgstr "Destiblança"
 
-#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:67
-#. i18n: ectx: property (text), widget (Q3ListView, m_viewEncoders)
+#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:61
+#. i18n: ectx: property (text), widget (QTreeWidget, m_viewEncoders)
 #. i18n: file: ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui:57
 #. i18n: ectx: property (title), widget (Q3GroupBox, groupBox2)
 #: rc.cpp:1284 rc.cpp:1305
 msgid "Command"
 msgstr "Comanda"
 
-#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:99
+#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:87
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonRemove)
 #: rc.cpp:1287 k3baudioplayer.cpp:229 projects/k3bmovixview.cpp:60
 #: projects/k3bvcdlistview.cpp:101 projects/k3bdataview.cpp:200
@@ -6199,13 +6209,13 @@ msgstr "Comanda"
 msgid "Remove"
 msgstr "Suprimir"
 
-#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:106
+#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:94
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonEdit)
 #: rc.cpp:1290
 msgid "Edit..."
 msgstr "Editar..."
 
-#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:113
+#. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:101
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonAdd)
 #: rc.cpp:1293
 msgid "Add..."
@@ -9055,12 +9065,12 @@ msgstr ""
 msgid "Raw"
 msgstr ""
 
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:114
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:112
 #, kde-format
 msgid "Constant Bitrate: %1 kbps (%2)"
 msgstr ""
 
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:118
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:116
 #, kde-format
 msgid "Variable Bitrate (%1)"
 msgstr ""
@@ -9109,40 +9119,40 @@ msgstr ""
 msgid "Archiving (320 kbps)"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:40
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:37
 msgid "Editing external audio encoder"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:80
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:75
 msgid "Please specify a name for the command."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:81
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:76
 msgid "No name specified"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:85
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:80
 msgid "Please specify an extension for the command."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:86
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:81
 msgid "No extension specified"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:90
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:85
 msgid "Please specify the command line."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:91
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:86
 msgid "No command line specified"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:96
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:91
 #, no-c-format
 msgid "Please add the output filename (%f) to the command line."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:97
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:92
 msgid "No filename specified"
 msgstr ""
 
