@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-20 12:15+0200\n"
+"POT-Creation-Date: 2009-07-05 11:43+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -35,21 +35,21 @@ msgstr ""
 msgid "Select the channel representing the master volume:"
 msgstr ""
 
-#: dialogviewconfiguration.cpp:42 kmixprefdlg.cpp:41
+#: dialogviewconfiguration.cpp:152 kmixprefdlg.cpp:41
 msgid "Configure"
 msgstr "Configurar"
 
-#: dialogviewconfiguration.cpp:58
+#: dialogviewconfiguration.cpp:167
 msgid "Configuration of the channels."
 msgstr ""
 
-#: dialogviewconfiguration.cpp:73
-msgid "Show/Hide"
+#: dialogviewconfiguration.cpp:228
+msgid "Available channels"
 msgstr ""
 
-#: dialogviewconfiguration.cpp:75
-msgid "Split"
-msgstr "Dividir"
+#: dialogviewconfiguration.cpp:232
+msgid "Visible channels"
+msgstr ""
 
 #: kmixapplet.cpp:94
 msgid "Configure - Mixer Applet"
@@ -91,42 +91,46 @@ msgstr ""
 msgid "Invalid mixer entered."
 msgstr ""
 
-#: kmix.cpp:119
+#: kmix.cpp:120
 msgid "Hardware &Information"
 msgstr ""
 
-#: kmix.cpp:122 kmixdockwidget.cpp:382
+#: kmix.cpp:123 kmixdockwidget.cpp:380
 msgid "Hide Mixer Window"
 msgstr ""
 
-#: kmix.cpp:126
+#: kmix.cpp:127
 msgid "Configure &Channels..."
 msgstr ""
 
-#: kmix.cpp:130 mdwslider.cpp:111
+#: kmix.cpp:130 kmixdockwidget.cpp:103
+msgid "Select Master Channel..."
+msgstr ""
+
+#: kmix.cpp:134 mdwslider.cpp:111
 msgid "Increase Volume"
 msgstr ""
 
-#: kmix.cpp:135 mdwslider.cpp:122
+#: kmix.cpp:139 mdwslider.cpp:122
 msgid "Decrease Volume"
 msgstr ""
 
-#: kmix.cpp:140 mdwslider.cpp:365
+#: kmix.cpp:144 mdwslider.cpp:365
 msgid "Mute"
 msgstr "Mut"
 
-#: kmix.cpp:493
+#: kmix.cpp:503
 #, kde-format
 msgid ""
 "The soundcard containing the master device was unplugged. Changing to "
 "control %1 on card %2."
 msgstr ""
 
-#: kmix.cpp:502
+#: kmix.cpp:512
 msgid "The last soundcard was unplugged."
 msgstr ""
 
-#: kmix.cpp:777
+#: kmix.cpp:789
 msgid "Mixer Hardware Information"
 msgstr ""
 
@@ -158,24 +162,20 @@ msgstr ""
 msgid "M&ute"
 msgstr ""
 
-#: kmixdockwidget.cpp:104
-msgid "Select Master Channel..."
-msgstr ""
-
-#: kmixdockwidget.cpp:193
+#: kmixdockwidget.cpp:191
 msgid "Mixer cannot be found"
 msgstr ""
 
-#: kmixdockwidget.cpp:213
+#: kmixdockwidget.cpp:211
 #, kde-format
 msgid "Volume at %1%"
 msgstr ""
 
-#: kmixdockwidget.cpp:215
+#: kmixdockwidget.cpp:213
 msgid " (Muted)"
 msgstr ""
 
-#: kmixdockwidget.cpp:386
+#: kmixdockwidget.cpp:384
 msgid "Show Mixer Window"
 msgstr ""
 
@@ -426,6 +426,21 @@ msgstr ""
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr ""
 
+#: mixer_oss4.cpp:349 mixer_oss.cpp:230
+msgid ""
+"kmix: You do not have permission to access the mixer device.\n"
+"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
+msgstr ""
+
+#: mixer_oss4.cpp:353
+msgid ""
+"kmix: Mixer cannot be found.\n"
+"Please check that the soundcard is installed and the\n"
+"soundcard driver is loaded.\n"
+"On Linux you might need to use 'insmod' to load the driver.\n"
+"Use 'soundon' when using OSS4 from 4front."
+msgstr ""
+
 #: mixer_oss.cpp:58
 msgid "Volume"
 msgstr "Volum"
@@ -538,12 +553,6 @@ msgstr ""
 msgid "unused"
 msgstr "pas utilisada"
 
-#: mixer_oss.cpp:230
-msgid ""
-"kmix: You do not have permission to access the mixer device.\n"
-"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
-msgstr ""
-
 #: mixer_oss.cpp:234
 msgid ""
 "kmix: Mixer cannot be found.\n"
@@ -583,11 +592,11 @@ msgid ""
 "Ask your system administrator to fix /dev/audioctl to allow access."
 msgstr ""
 
-#: mixertoolbox.cpp:198
+#: mixertoolbox.cpp:199
 msgid "Sound drivers supported:"
 msgstr ""
 
-#: mixertoolbox.cpp:199
+#: mixertoolbox.cpp:200
 msgid "Sound drivers used:"
 msgstr ""
 
@@ -651,7 +660,7 @@ msgstr ""
 msgid "&File"
 msgstr "&Fichièr"
 
-#. i18n: file: kmixui.rc:19
+#. i18n: file: kmixui.rc:20
 #. i18n: ectx: Menu (help)
 #: rc.cpp:33
 msgid "&Help"
@@ -671,10 +680,13 @@ msgstr "yannig@marchegay.org"
 msgid "&Channels"
 msgstr ""
 
-#: viewbase.cpp:146
+#: viewbase.cpp:182
 msgid "Device Settings"
 msgstr "Paramètres del periferic"
 
-#: viewdockareapopup.cpp:112
+#: viewdockareapopup.cpp:115
 msgid "Mixer"
 msgstr "Boirador"
+
+#~ msgid "Split"
+#~ msgstr "Dividir"
