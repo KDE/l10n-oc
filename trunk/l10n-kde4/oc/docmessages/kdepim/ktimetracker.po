@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktimetracker\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-06 04:17+0000\n"
+"POT-Creation-Date: 2009-07-08 21:44+0000\n"
 "PO-Revision-Date: 2008-08-13 13:38+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -336,50 +336,50 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:194 index.docbook:985
+#: index.docbook:194 index.docbook:679
 #, no-c-format
 msgid "Session Time"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:195 index.docbook:986
+#: index.docbook:195 index.docbook:680
 #, no-c-format
 msgid "The time spent on the task since the session began."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:198 index.docbook:1002
+#: index.docbook:198 index.docbook:696
 #, no-c-format
 msgid "Total Session Time"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:199 index.docbook:1003
+#: index.docbook:199 index.docbook:697
 #, no-c-format
 msgid ""
 "The time spent on the task and all its subtasks since the session began."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:201 index.docbook:1005
+#: index.docbook:201 index.docbook:699
 #, no-c-format
 msgid "Time"
 msgstr "Ora"
 
 #. Tag: para
-#: index.docbook:201 index.docbook:1006
+#: index.docbook:201 index.docbook:700
 #, no-c-format
 msgid "The time spent on the task since all times were reset."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:205 index.docbook:1009
+#: index.docbook:205 index.docbook:703
 #, no-c-format
 msgid "Total Time"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:206 index.docbook:1010
+#: index.docbook:206 index.docbook:704
 #, no-c-format
 msgid ""
 "The time spent on the task and all its subtasks since all times were reset."
@@ -825,14 +825,8 @@ msgstr ""
 #: index.docbook:444
 #, no-c-format
 msgid ""
-"DCOPID=`dcop | grep karm`\n"
-"        if [ $DCOPID ]\n"
-"        then\n"
-"                VERS=`dcop $DCOPID KarmDCOPIface version`\n"
-"                echo \"&karm; version is $VERS\"\n"
-"        else\n"
-"                echo \"&karm; not running\"\n"
-"        fi"
+"qdbus org.kde.ktimetracker /KTimeTracker version 2>/dev/null || echo "
+"\"ktimetracker not running\""
 msgstr ""
 
 #. Tag: para
@@ -862,13 +856,8 @@ msgstr ""
 #: index.docbook:455
 #, no-c-format
 msgid ""
-"DCOPID=`dcop | grep karm`\n"
-"        if [ $DCOPID ]\n"
-"        then\n"
-"                dcop $DCOPID KarmDCOPIface\n"
-"        else\n"
-"                echo \"&karm; not running\"\n"
-"        fi"
+"qdbus org.kde.ktimetracker /KTimeTracker 2>/dev/null || echo \"ktimetracker "
+"not running\""
 msgstr ""
 
 #. Tag: title
@@ -1059,548 +1048,185 @@ msgstr ""
 #. Tag: title
 #: index.docbook:565
 #, no-c-format
-msgid "The &karm; menubar"
-msgstr ""
-
-#. Tag: title
-#: index.docbook:567
-#, no-c-format
-msgid "The <guimenu>File</guimenu> menu"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:572
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
-msgstr ""
-
-#. Tag: action
-#: index.docbook:579
-#, no-c-format
-msgid "Saves the current tasks and subtasks with their accumulated times"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:586
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:593
-#, no-c-format
-msgid "<action>Prints</action> the &karm; window"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:599
-#, no-c-format
-msgid "<guimenu>File</guimenu> <guimenuitem>Start New Session</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:604
-#, no-c-format
-msgid "<action>Resets </action>all session times to zero"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:609
-#, no-c-format
-msgid "<guimenu>File</guimenu> <guimenuitem>Reset All Times</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:614
-#, no-c-format
-msgid "<action>Resets </action>all times to zero"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:619
-#, no-c-format
-msgid ""
-"<guimenu>File</guimenu> <guisubmenu>Import/Export</guisubmenu> "
-"<guimenuitem>Import Legacy Flat File...</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:625
-#, no-c-format
-msgid ""
-"<action>Import </action>old style &karm; save files (&karm; now uses "
-"iCalendar-style save files.)"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:631
-#, no-c-format
-msgid ""
-"<guimenu>File</guimenu> <guisubmenu>Import/Export</guisubmenu> "
-"<guimenuitem>Import Tasks from Planner...</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:637
-#, no-c-format
-msgid ""
-"<action>Import </action>an imendio planner project (see <ulink url=\"http://"
-"planner.imendio.org\">planner.imendio.org</ulink>). All tasks, subtasks and "
-"their \"completed\" flag will be imported from a .planner-file. You can "
-"import them as a subtask by creating a subtask, leaving it marked, and then "
-"importing."
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:644
-#, no-c-format
-msgid ""
-"<guimenu>File</guimenu> <guisubmenu>Import/Export</guisubmenu> "
-"<guimenuitem>Export to CSV file...</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:650
-#, no-c-format
-msgid ""
-"<action>Export </action> <guilabel>Total Session Time</guilabel>, "
-"<guilabel>Session Time</guilabel>, <guilabel>Time</guilabel>, and "
-"<guilabel>Total Time</guilabel> to a text file."
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:658
-#, no-c-format
-msgid ""
-"<guimenu>File</guimenu> <guisubmenu>Import/Export</guisubmenu> "
-"<guimenuitem>Export History to CSV file...</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:664
-#, no-c-format
-msgid "<action>Export </action> task history to a text file."
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:670
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>Copy Totals to Clipboard</"
-"guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:678
-#, no-c-format
-msgid ""
-"<action>Copies </action> the current total time for a task or all tasks to "
-"the &kde; clipboard"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:684
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;&Alt;<keycap>C</keycap></"
-"keycombo> </shortcut> <guimenu>File</guimenu> <guimenuitem>Copy History to "
-"Clipboard</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:692
-#, no-c-format
-msgid ""
-"<action>Copies </action> daily times for a given period to the &kde; "
-"clipboard"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:698
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:706
-#, no-c-format
-msgid "<action>Closes</action> &karm;"
-msgstr ""
-
-#. Tag: title
-#: index.docbook:714
-#, no-c-format
-msgid "The <guimenu>Clock</guimenu> menu"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:719
-#, no-c-format
-msgid ""
-"<shortcut><keycap>S</keycap></shortcut> <guimenu>Clock</guimenu> "
-"<guimenuitem>Start</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:726
-#, no-c-format
-msgid "<action>Starts</action> timing the selected task"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:731
-#, no-c-format
-msgid "<guimenu>Clock</guimenu> <guimenuitem>Stop</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:737
-#, no-c-format
-msgid "<action>Stops</action> timing the selected task"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:742
-#, no-c-format
-msgid ""
-"<shortcut><keycap>&Esc;</keycap></shortcut> <guimenu>Clock</guimenu> "
-"<guimenuitem>Stop All Timers</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:748
-#, no-c-format
-msgid "<action>Stops</action> timing all tasks"
-msgstr ""
-
-#. Tag: title
-#: index.docbook:754
-#, no-c-format
-msgid "The <guimenu>Task</guimenu> menu"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:759
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
-"shortcut> <guimenu>Task</guimenu> <guimenuitem>New</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:767
-#, no-c-format
-msgid "<action>Add</action> a new task"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:772
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;&Alt;<keycap>N</keycap></"
-"keycombo> </shortcut> <guimenu>Task</guimenu> <guimenuitem>New Subtask</"
-"guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:781
-#, no-c-format
-msgid "<action>Add</action> a new subtask to the selected task"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:787
-#, no-c-format
-msgid ""
-"<shortcut> <keycap>Del</keycap> </shortcut> <guimenu>Task</guimenu> "
-"<guimenuitem>Delete</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:796
-#, no-c-format
-msgid "<action>Delete</action> the selected task or subtask"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:802
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>E</keycap></keycombo> </"
-"shortcut> <guimenu>Task</guimenu> <guimenuitem>Edit</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:811
-#, no-c-format
-msgid ""
-"<action>Change the name or accumulated time</action> for the current task"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:812
-#, no-c-format
-msgid ""
-"There are two options for changing the time: Edit Absolute, in which the "
-"session and total times can be changed separately; and Edit Relative, in "
-"which a certain change is added to or subtracted from both the session and "
-"total times."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:815
-#, no-c-format
-msgid ""
-"The Auto tracking option allows timing to start and stop automatically when "
-"you switch to or from a particular &kde; desktop."
-msgstr ""
-
-#. Tag: title
-#: index.docbook:824
-#, no-c-format
-msgid "The <guimenu>Settings</guimenu> menu"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:830
-#, no-c-format
-msgid ""
-"<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:835
-#, no-c-format
-msgid ""
-"<action>Opens</action> a dialog to allow the user to customize the keyboard "
-"shortcuts"
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:842
-#, no-c-format
-msgid "<guimenu>Settings</guimenu> <guimenuitem>Configure &karm;</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:847
-#, no-c-format
-msgid "<action>Opens</action> a dialog to allow the user to configure &karm;"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:850
-#, no-c-format
-msgid ""
-"The dialog has three tabbed panes: <guilabel>Behavior </guilabel>, which "
-"allows you to specify an alert for no activity and a warning message when "
-"you delete a task set, <guilabel>Display </guilabel>, which configures the "
-"fields shown in the main window and <guilabel>Storage</guilabel>, which "
-"configures the location of the save file, whether auto saving is enabled and "
-"the auto save interval."
-msgstr ""
-
-#. Tag: title
-#: index.docbook:862
-#, no-c-format
-msgid "The <guimenu>Help</guimenu> menu"
-msgstr ""
-
-#. Tag: sect2
-#: index.docbook:862
-#, no-c-format
-msgid "&help.menu.documentation;"
-msgstr ""
-
-#. Tag: title
-#: index.docbook:871
-#, no-c-format
 msgid "The Toolbar"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:872
+#: index.docbook:566
 #, no-c-format
 msgid "The toolbar contains icons for the following commands:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:874
+#: index.docbook:568
 #, no-c-format
 msgid "(All behave identically to the menu command.)"
 msgstr ""
 
 #. Tag: guiicon
-#: index.docbook:877
+#: index.docbook:571
 #, no-c-format
 msgid "Start"
 msgstr "Aviar"
 
 #. Tag: guiicon
-#: index.docbook:878
+#: index.docbook:572
 #, no-c-format
 msgid "Stop"
 msgstr "Arrestar"
 
 #. Tag: guiicon
-#: index.docbook:879
+#: index.docbook:573
 #, no-c-format
 msgid "<guiicon>New</guiicon>"
 msgstr ""
 
 #. Tag: guiicon
-#: index.docbook:880
+#: index.docbook:574
 #, no-c-format
 msgid "New Subtask"
 msgstr ""
 
 #. Tag: guiicon
-#: index.docbook:881
+#: index.docbook:575
 #, no-c-format
 msgid "Delete"
 msgstr "Suprimir"
 
 #. Tag: guiicon
-#: index.docbook:882
+#: index.docbook:576
 #, no-c-format
 msgid "Edit"
 msgstr "Edicion"
 
 #. Tag: title
-#: index.docbook:888
+#: index.docbook:582
 #, no-c-format
 msgid "The Statusbar"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:890
+#: index.docbook:584
 #, no-c-format
 msgid "Reports the total elapsed time for the session."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:897
+#: index.docbook:591
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:899
+#: index.docbook:593
 #, no-c-format
 msgid "&karm;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:903
+#: index.docbook:597
 #, no-c-format
 msgid "Program copyright:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:907
+#: index.docbook:601
 #, no-c-format
 msgid "1997-2000 &Sirtaj.Singh.Kang; &Sirtaj.Singh.Kang.mail;."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:910
+#: index.docbook:604
 #, no-c-format
 msgid "2001-2002 Tomas Pospisek <email>tpo_deb@sourcepole.ch</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:913
+#: index.docbook:607
 #, no-c-format
 msgid "2003-2004 Mark Bucciarelli<email>mark@hubcapconsulting.com</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:918
+#: index.docbook:612
 #, no-c-format
 msgid "Contributors (in alphabetical order)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:920
+#: index.docbook:614
 #, no-c-format
 msgid "Allen Winter <email>winter@kde.org</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:921
+#: index.docbook:615
 #, no-c-format
 msgid "&David.Faure; &David.Faure.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:922
+#: index.docbook:616
 #, no-c-format
 msgid "&Espen.Sand; <email>espen@kde.org</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:923
+#: index.docbook:617
 #, no-c-format
 msgid "Gioele Barabucci <email>gioele@gioelebarabucci.com</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:924
+#: index.docbook:618
 #, no-c-format
 msgid "Jan Schaumann <email>jschauma@netmeister.org</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:925
+#: index.docbook:619
 #, no-c-format
 msgid "&Jesper.Pedersen; <email>blackie@ifad.dk</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:926
+#: index.docbook:620
 #, no-c-format
 msgid "Kalle Dalheimer &Matthias.Kalle.Dalheimer.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:927
+#: index.docbook:621
 #, no-c-format
 msgid "Klar&auml;lvdalens Datakonsult AB"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:928
+#: index.docbook:622
 #, no-c-format
 msgid "Mark Bucciarelli <email>mark@hubcapconsulting.com</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:929
+#: index.docbook:623
 #, no-c-format
 msgid "Thorsten St&auml;rk <email>dev@staerk.de</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:930
+#: index.docbook:624
 #, no-c-format
 msgid "Tomas Pospisek <email>tpo_deb@sourcepole.ch</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:931
+#: index.docbook:625
 #, no-c-format
 msgid "Willi Richert <email>w.richert@cox.net</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:934
+#: index.docbook:628
 #, no-c-format
 msgid ""
 "&karm; was inspired by Harald Tveit Alvestrand's very useful utility called "
@@ -1609,7 +1235,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:938
+#: index.docbook:632
 #, no-c-format
 msgid ""
 "Documentation copyright 2000-2004 &Jonathan.Singer; &Jonathan.Singer.mail; "
@@ -1617,38 +1243,38 @@ msgid ""
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:941
+#: index.docbook:635
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:941
+#: index.docbook:635
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:950
+#: index.docbook:644
 #, no-c-format
 msgid "active task"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:951
+#: index.docbook:645
 #, no-c-format
 msgid "A task which has a timer running."
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:955
+#: index.docbook:649
 #, no-c-format
 msgid "<glossterm>&DCOP;</glossterm>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:956
+#: index.docbook:650
 #, no-c-format
 msgid ""
 "The interprocess communication protocol used in &kde;. Short for Desktop "
@@ -1656,13 +1282,13 @@ msgid ""
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:961
+#: index.docbook:655
 #, no-c-format
 msgid "desktop"
 msgstr "burèu"
 
 #. Tag: para
-#: index.docbook:962
+#: index.docbook:656
 #, no-c-format
 msgid ""
 "&GNU;/&Linux;, FreeBSD and other systems that run X-Windows have multiple "
@@ -1675,13 +1301,13 @@ msgid ""
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:972
+#: index.docbook:666
 #, no-c-format
 msgid "history"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:973
+#: index.docbook:667
 #, no-c-format
 msgid ""
 "If &karm; is configured to log history, it will record ever start/stop timer "
@@ -1690,13 +1316,13 @@ msgid ""
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:978
+#: index.docbook:672
 #, no-c-format
 msgid "session"
 msgstr "sesilha"
 
 #. Tag: para
-#: index.docbook:979
+#: index.docbook:673
 #, no-c-format
 msgid ""
 "A user-defined starting point for the session timers. A new session begins "
@@ -1706,13 +1332,13 @@ msgid ""
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:989
+#: index.docbook:683
 #, no-c-format
 msgid "system tray"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:990
+#: index.docbook:684
 #, no-c-format
 msgid ""
 "The system tray is in the bar that (by default) appears at the bottom of the "
@@ -1722,73 +1348,73 @@ msgid ""
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:998
+#: index.docbook:692
 #, no-c-format
 msgid "top level task"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:999
+#: index.docbook:693
 #, no-c-format
 msgid "A task with no parent tasks."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1016
+#: index.docbook:710
 #, no-c-format
 msgid "Installation"
 msgstr "Installacion"
 
 #. Tag: title
-#: index.docbook:1019
+#: index.docbook:713
 #, no-c-format
 msgid "How to obtain &karm;"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:1019
+#: index.docbook:713
 #, no-c-format
 msgid "&install.intro.documentation; &install.compile.documentation;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1028
+#: index.docbook:722
 #, no-c-format
 msgid "&DCOP; Interface"
 msgstr ""
 
 #. Tag: refentrytitle
-#: index.docbook:1032
+#: index.docbook:726
 #, no-c-format
 msgid "<refentrytitle>version</refentrytitle>"
 msgstr ""
 
 #. Tag: refname
-#: index.docbook:1035
+#: index.docbook:729
 #, no-c-format
 msgid "<refname>version</refname>"
 msgstr ""
 
 #. Tag: refpurpose
-#: index.docbook:1036
+#: index.docbook:730
 #, no-c-format
 msgid "Return &karm;'s version."
 msgstr ""
 
 #. Tag: synopsis
-#: index.docbook:1039
+#: index.docbook:733
 #, no-c-format
 msgid "QString version()"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1042 index.docbook:1061 index.docbook:1091 index.docbook:1127
+#: index.docbook:736 index.docbook:755 index.docbook:785 index.docbook:821
 #, no-c-format
 msgid "Description"
 msgstr "Descripcion"
 
 #. Tag: para
-#: index.docbook:1043
+#: index.docbook:737
 #, no-c-format
 msgid ""
 "<function>version()</function> is a &DCOP; call that returns &karm;'s "
@@ -1797,31 +1423,31 @@ msgid ""
 msgstr ""
 
 #. Tag: refentrytitle
-#: index.docbook:1051
+#: index.docbook:745
 #, no-c-format
 msgid "<refentrytitle>quit</refentrytitle>"
 msgstr ""
 
 #. Tag: refname
-#: index.docbook:1054
+#: index.docbook:748
 #, no-c-format
 msgid "<refname>quit</refname>"
 msgstr ""
 
 #. Tag: refpurpose
-#: index.docbook:1055
+#: index.docbook:749
 #, no-c-format
 msgid "Return &karm;'s quit."
 msgstr ""
 
 #. Tag: synopsis
-#: index.docbook:1058
+#: index.docbook:752
 #, no-c-format
 msgid "QString quit()"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1062
+#: index.docbook:756
 #, no-c-format
 msgid ""
 "<function>quit()</function> is a &DCOP; call that provides a way that an "
@@ -1829,49 +1455,49 @@ msgid ""
 msgstr ""
 
 #. Tag: refentrytitle
-#: index.docbook:1070
+#: index.docbook:764
 #, no-c-format
 msgid "<refentrytitle>hastodo</refentrytitle>"
 msgstr ""
 
 #. Tag: refname
-#: index.docbook:1073
+#: index.docbook:767
 #, no-c-format
 msgid "<refname>hastodo</refname>"
 msgstr ""
 
 #. Tag: refpurpose
-#: index.docbook:1074
+#: index.docbook:768
 #, no-c-format
 msgid "Check if top-level to-do exists."
 msgstr ""
 
 #. Tag: synopsis
-#: index.docbook:1077
+#: index.docbook:771
 #, no-c-format
 msgid "QString hastodo(QString taskname)"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1079 index.docbook:1114
+#: index.docbook:773 index.docbook:808
 #, no-c-format
 msgid "Parameters"
 msgstr "Paramètres"
 
 #. Tag: parameter
-#: index.docbook:1082
+#: index.docbook:776
 #, no-c-format
 msgid "taskname"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1084
+#: index.docbook:778
 #, no-c-format
 msgid "The name of the to-do to look for."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1092
+#: index.docbook:786
 #, no-c-format
 msgid ""
 "<function>hastodo(QString taskname)</function> is a &DCOP; call that looks "
@@ -1880,7 +1506,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1097
+#: index.docbook:791
 #, no-c-format
 msgid ""
 "The iCalendar file that &karm; currently has opened is the file that is "
@@ -1889,43 +1515,43 @@ msgid ""
 msgstr ""
 
 #. Tag: refentrytitle
-#: index.docbook:1105
+#: index.docbook:799
 #, no-c-format
 msgid "<refentrytitle>addtodo</refentrytitle>"
 msgstr ""
 
 #. Tag: refname
-#: index.docbook:1108
+#: index.docbook:802
 #, no-c-format
 msgid "<refname>addtodo</refname>"
 msgstr ""
 
 #. Tag: refpurpose
-#: index.docbook:1109
+#: index.docbook:803
 #, no-c-format
 msgid "Add new todo."
 msgstr ""
 
 #. Tag: synopsis
-#: index.docbook:1112
+#: index.docbook:806
 #, no-c-format
 msgid "QString addtodo(QString todoname)"
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1117
+#: index.docbook:811
 #, no-c-format
 msgid "todoname"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1119
+#: index.docbook:813
 #, no-c-format
 msgid "The name of new to-do."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1128
+#: index.docbook:822
 #, no-c-format
 msgid ""
 "<function>addtodo(QString todoname)</function> is a &DCOP; call that adds a "
