@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-06 11:47+0200\n"
+"POT-Creation-Date: 2009-07-10 11:59+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1280,6 +1280,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QToolButton, add)
 #: kokross/KoScriptManagerAdd.cpp:272 kokross/KoScriptManagerAdd.cpp:275
 #: rc.cpp:498 pigment/compositeops/KoCompositeOpAdd.h:35
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:91
 msgid "Add"
 msgstr "Apondre"
 
@@ -2642,11 +2643,6 @@ msgstr "Suprimir"
 msgid "Screen"
 msgstr "Ecran"
 
-#: pigment/compositeops/KoCompositeOpSubstract.h:35
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
-msgid "Subtract"
-msgstr ""
-
 #: pigment/compositeops/KoCompositeOpBurn.h:35
 msgid "Burn"
 msgstr ""
@@ -2655,6 +2651,11 @@ msgstr ""
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:43
 msgid "Normal"
 msgstr "Normal"
+
+#: pigment/compositeops/KoCompositeOpSubtract.h:36
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
+msgid "Subtract"
+msgstr ""
 
 #: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
 #, fuzzy
@@ -2711,6 +2712,7 @@ msgid "RGB (8-bit integer/channel)"
 msgstr ""
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:142
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:94
 msgid "Clear"
 msgstr "Netejar"
 
@@ -2764,31 +2766,56 @@ msgstr ""
 msgid "L*a*b* (16-bit integer/channel)"
 msgstr ""
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:81
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:83
 msgid "Darken"
 msgstr "Escuresir"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:82
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:84
 msgid "Lighten"
 msgstr "Esclarzir"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:83
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:85
 #: widgets/colorwidgets/KoUniColorChooser.cpp:113
 msgid "Hue"
 msgstr ""
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:84
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:86
 #: widgets/colorwidgets/KoUniColorChooser.cpp:122
 msgid "Saturation"
 msgstr "Saturacion"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:85
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:87
 msgid "Value"
 msgstr "Valor"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:86 pigment/KoCompositeOp.cpp:35
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:88 pigment/KoCompositeOp.cpp:35
 msgid "Color"
 msgstr "Color"
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:89
+#, fuzzy
+#| msgctxt "Mouse Cursor Shape"
+#| msgid "I"
+msgid "In"
+msgstr "I"
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:90
+#, fuzzy
+#| msgid "Custom"
+msgid "Out"
+msgstr "Personalizat"
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:92
+msgid "Diff"
+msgstr ""
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:93
+msgid "Bumpmap"
+msgstr ""
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:95
+msgid "Dissolve"
+msgstr ""
 
 #: pigment/colorspaces/KoLabColorSpace.cpp:35
 #: widgets/colorwidgets/KoUniColorChooser.cpp:198
@@ -3730,10 +3757,6 @@ msgstr ""
 #~ msgctxt "Mouse Cursor Shape"
 #~ msgid "Waiting"
 #~ msgstr "En espèra"
-
-#~ msgctxt "Mouse Cursor Shape"
-#~ msgid "I"
-#~ msgstr "I"
 
 #, fuzzy
 #~| msgid "Vertical"
