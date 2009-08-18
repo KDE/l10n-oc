@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatowork\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-15 06:49+0200\n"
+"POT-Creation-Date: 2009-08-18 06:44+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -71,7 +71,17 @@ msgstr ""
 msgid "Project/node already exists, Merge?"
 msgstr ""
 
-#: part.cpp:392
+#: part.cpp:389
+msgid "Cannot find package"
+msgstr ""
+
+#: part.cpp:392 part.cpp:403
+msgid "Remove work package"
+msgid_plural "Remove work packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: part.cpp:441
 #, fuzzy, kde-format
 #| msgid "File to open"
 msgid ""
@@ -79,38 +89,38 @@ msgid ""
 "%1"
 msgstr "Fichièr de dobrir"
 
-#: part.cpp:405
+#: part.cpp:454
 #, kde-format
 msgid "Not a valid KPlatoWork file: %1"
 msgstr ""
 
-#: part.cpp:432
+#: part.cpp:481
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr ""
 
-#: part.cpp:458
+#: part.cpp:507
 #, kde-format
 msgid "Could not find %1"
 msgstr ""
 
-#: part.cpp:470
+#: part.cpp:519
 #, kde-format
 msgid ""
 "Parsing error in %1 at line %2, column %3\n"
 "Error message: %4"
 msgstr ""
 
-#: part.cpp:489
+#: part.cpp:538
 msgid "Invalid document. No mimetype specified."
 msgstr ""
 
-#: part.cpp:493
+#: part.cpp:542
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-vnd.kde.kplato.work, got %1"
 msgstr ""
 
-#: part.cpp:500
+#: part.cpp:549
 #, kde-format
 msgid ""
 "This document was created with a newer version of KPlatoWork (syntax "
@@ -118,115 +128,151 @@ msgid ""
 "Opening it in this version of KPlatoWork will lose some information."
 msgstr ""
 
-#: part.cpp:502
+#: part.cpp:551
 msgid "File-Format Mismatch"
 msgstr ""
 
-#: part.cpp:502
+#: part.cpp:551
 msgid "Continue"
 msgstr "Contunhar"
 
-#: part.cpp:527
+#: part.cpp:576
 #, kde-format
 msgid "Failed to load project: %1"
 msgstr ""
 
-#: part.cpp:546
+#: part.cpp:595
 #, kde-format
 msgid "Failed to set workpackage, project: %1"
 msgstr ""
 
-#: part.cpp:688
+#: part.cpp:737
 msgid "No WorkPackage handles this document"
 msgstr ""
 
 #. i18n: file: kplatowork.rc:4
-#. i18n: ectx: Menu (settings)
+#. i18n: ectx: Menu (edit)
 #: rc.cpp:3
+msgid "&Edit"
+msgstr "&Edicion"
+
+#. i18n: file: kplatowork.rc:7
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:6
 msgid "&Settings"
 msgstr "&Paramètres"
 
 #. i18n: file: kplatowork_readonly.rc:3
 #. i18n: ectx: Menu (view)
-#: rc.cpp:6
+#: rc.cpp:9
 msgid "&View"
 msgstr "Aficha&tge"
 
-#: rc.cpp:7
+#: rc.cpp:10
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: rc.cpp:8
+#: rc.cpp:11
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
 
-#: taskworkpackagemodel.cpp:373
+#: taskworkpackagemodel.cpp:313
 #, no-c-format
 msgid "Modify % Completed"
 msgstr ""
 
-#: taskworkpackagemodel.cpp:402
+#: taskworkpackagemodel.cpp:342
 msgid "Set finished"
 msgstr ""
 
-#: taskworkpackagemodel.cpp:423
+#: taskworkpackagemodel.cpp:363
 msgid "Modify Remainig Effort"
 msgstr ""
 
-#: taskworkpackagemodel.cpp:436
+#: taskworkpackagemodel.cpp:376
 msgid "Modify Actual Effort"
 msgstr ""
 
-#: taskworkpackageview.cpp:285
+#: taskworkpackagemodel.cpp:488
+#, fuzzy
+#| msgid "Project"
+msgid "Project Name"
+msgstr "Projècte"
+
+#: taskworkpackagemodel.cpp:489
+#, fuzzy
+#| msgid "Project"
+msgid "Project Manager"
+msgstr "Projècte"
+
+#: taskworkpackageview.cpp:300
 msgid "Configure View..."
 msgstr ""
 
-#: view.cpp:120 view.cpp:144
-msgid "Progress..."
+#: view.cpp:120
+msgid "Remove Packages"
 msgstr ""
 
-#: view.cpp:125
-msgid "Configure KPlatoWork..."
+#: view.cpp:124
+msgid "Remove Package"
 msgstr ""
 
 #: view.cpp:129
+msgid "Progress..."
+msgstr ""
+
+#: view.cpp:134
+msgid "Configure KPlatoWork..."
+msgstr ""
+
+#: view.cpp:138
 #, fuzzy
 #| msgid "&Edit"
 msgid "Edit..."
 msgstr "&Edicion"
 
-#: view.cpp:133
+#: view.cpp:142
 #, fuzzy
 #| msgid "&View"
 msgctxt "@verb"
 msgid "View..."
 msgstr "Aficha&tge"
 
-#: view.cpp:140
+#: view.cpp:149
 msgid "Send Package..."
 msgstr ""
 
-#: view.cpp:353
+#: view.cpp:153
+#, fuzzy
+#| msgid "&Edit"
+msgid "Edit Progress..."
+msgstr "&Edicion"
+
+#: view.cpp:157
+msgid "View Description..."
+msgstr ""
+
+#: view.cpp:302
 msgid "This file is not editable"
 msgstr ""
 
-#: view.cpp:368
+#: view.cpp:317
 msgid "No node selected"
 msgstr ""
 
-#: view.cpp:374
+#: view.cpp:323
 msgid "Cannot find work package"
 msgstr ""
 
-#: view.cpp:378
+#: view.cpp:327
 msgid ""
 "This work package has been modified.\n"
 "Do you want to save it before sending?"
 msgstr ""
 
-#: view.cpp:391
+#: view.cpp:340
 #, kde-format
 msgid "Work Package: %1"
 msgstr ""
@@ -255,28 +301,28 @@ msgid ""
 " %1"
 msgstr ""
 
-#: workpackage.cpp:258
+#: workpackage.cpp:268
 #, kde-format
 msgid ""
 "Cannot save to projects store:\n"
 "%1"
 msgstr ""
 
-#: workpackage.cpp:285
+#: workpackage.cpp:295
 #, kde-format
 msgid ""
 "Failed read file:\n"
 " %1"
 msgstr ""
 
-#: workpackage.cpp:289
+#: workpackage.cpp:299
 #, kde-format
 msgid ""
 "Failed write file:\n"
 " %1"
 msgstr ""
 
-#: workpackage.cpp:381
+#: workpackage.cpp:391
 #, kde-format
 msgid ""
 "<p>The work package <b>'%2'</b> has an open document.</p><p>Data may be lost "
@@ -287,19 +333,19 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: workpackage.cpp:402
+#: workpackage.cpp:412
 #, kde-format
 msgid ""
 "<p>The work package <b>'%1'</b> has been modified.</p><p>Do you want to save "
 "it?</p>"
 msgstr ""
 
-#: workpackage.cpp:428
+#: workpackage.cpp:438
 #, kde-format
 msgid "<p>Work package <b>'%1'</b></p><p>Could not open store:</p><p>%2</p>"
 msgstr ""
 
-#: workpackage.cpp:438
+#: workpackage.cpp:448
 #, kde-format
 msgid "<p>Work package <b>'%1'</b></p><p>Could not extract file:</p><p>%2</p>"
 msgstr ""
@@ -319,12 +365,6 @@ msgstr ""
 #: aboutdata.h:42
 msgid "Dag Andersen"
 msgstr ""
-
-#~ msgid "&Edit"
-#~ msgstr "&Edicion"
-
-#~ msgid "Project"
-#~ msgstr "Projècte"
 
 #~ msgid "Information"
 #~ msgstr "Entresenhas"
