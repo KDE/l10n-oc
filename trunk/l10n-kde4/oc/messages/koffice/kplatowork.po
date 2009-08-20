@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatowork\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-18 06:44+0200\n"
+"POT-Creation-Date: 2009-08-20 06:17+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -34,29 +34,27 @@ msgstr ""
 
 #: part.cpp:172
 #, kde-format
-msgid "Document is already open: %1"
+msgid "Document is already open:<br>%1"
 msgstr ""
 
 #: part.cpp:180
 #, kde-format
-msgid "Could not extract file: %1"
+msgid "Could not extract document from storage:<br>%1"
 msgstr ""
 
 #: part.cpp:188
 #, kde-format
-msgid "Invalid url: %1"
+msgid "Invalid url:<br>%1"
 msgstr ""
 
 #: part.cpp:200
 #, kde-format
-msgid ""
-"Document is already open:\n"
-" %1"
+msgid "Document is already open:<br> %1"
 msgstr ""
 
 #: part.cpp:204
 #, kde-format
-msgid "File does not exist: %1"
+msgid "File does not exist:<br>%1"
 msgstr ""
 
 #: part.cpp:224
@@ -64,90 +62,86 @@ msgid "Edit with:"
 msgstr "Modificar amb :"
 
 #: part.cpp:353
-msgid "No node in this package"
+msgid "Invalid work package.<br>The package does not contain a task."
 msgstr ""
 
 #: part.cpp:360
-msgid "Project/node already exists, Merge?"
+#, kde-format
+msgid ""
+"<p>The work package already exists in the projects store.</p><p>Project: %"
+"1<br>Task: %2</p><p>Do you want to merge the new package with the existing "
+"one?</p>"
 msgstr ""
 
-#: part.cpp:389
-msgid "Cannot find package"
+#: part.cpp:392
+msgid "Remove failed. Cannot find work package"
 msgstr ""
 
-#: part.cpp:392 part.cpp:403
+#: part.cpp:395 part.cpp:406
 msgid "Remove work package"
 msgid_plural "Remove work packages"
 msgstr[0] ""
 msgstr[1] ""
 
-#: part.cpp:441
+#: part.cpp:444
 #, fuzzy, kde-format
 #| msgid "File to open"
-msgid ""
-"Failed to load:\n"
-"%1"
+msgid "Failed to load file:<br>%1"
 msgstr "Fichièr de dobrir"
 
-#: part.cpp:454
+#: part.cpp:457
 #, kde-format
-msgid "Not a valid KPlatoWork file: %1"
+msgid "Not a valid work package file:<br>%1"
 msgstr ""
 
-#: part.cpp:481
-msgid "Invalid document: no file 'maindoc.xml'."
+#: part.cpp:485
+msgid "Invalid document. The document does not contain 'maindoc.xml'."
 msgstr ""
 
-#: part.cpp:507
+#: part.cpp:511
+#, fuzzy, kde-format
+#| msgid "File to open"
+msgid "Failed to open file: %1"
+msgstr "Fichièr de dobrir"
+
+#: part.cpp:523
 #, kde-format
-msgid "Could not find %1"
+msgid "Parsing error in file '%1' at line %2, column %3<br>Error message: %4"
 msgstr ""
 
-#: part.cpp:519
-#, kde-format
-msgid ""
-"Parsing error in %1 at line %2, column %3\n"
-"Error message: %4"
-msgstr ""
-
-#: part.cpp:538
+#: part.cpp:541
 msgid "Invalid document. No mimetype specified."
 msgstr ""
 
-#: part.cpp:542
+#: part.cpp:545
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-vnd.kde.kplato.work, got %1"
 msgstr ""
 
-#: part.cpp:549
+#: part.cpp:552
 #, kde-format
 msgid ""
-"This document was created with a newer version of KPlatoWork (syntax "
-"version: %1)\n"
-"Opening it in this version of KPlatoWork will lose some information."
+"This document is a newer version than supported by KPlatoWork  (syntax "
+"version: %1)<br>Opening it in this version of KPlatoWork will lose some "
+"information."
 msgstr ""
 
-#: part.cpp:551
+#: part.cpp:554
 msgid "File-Format Mismatch"
 msgstr ""
 
-#: part.cpp:551
+#: part.cpp:554
 msgid "Continue"
 msgstr "Contunhar"
 
-#: part.cpp:576
+#: part.cpp:579
 #, kde-format
 msgid "Failed to load project: %1"
 msgstr ""
 
-#: part.cpp:595
-#, kde-format
-msgid "Failed to set workpackage, project: %1"
-msgstr ""
-
-#: part.cpp:737
-msgid "No WorkPackage handles this document"
+#: part.cpp:678
+msgid "Edit failed. Cannot find a work package."
 msgstr ""
 
 #. i18n: file: kplatowork.rc:4
@@ -207,7 +201,7 @@ msgstr "Projècte"
 msgid "Project Manager"
 msgstr "Projècte"
 
-#: taskworkpackageview.cpp:300
+#: taskworkpackageview.cpp:301
 msgid "Configure View..."
 msgstr ""
 

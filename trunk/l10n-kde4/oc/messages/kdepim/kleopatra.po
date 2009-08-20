@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-06 06:22+0200\n"
+"POT-Creation-Date: 2009-08-20 06:14+0200\n"
 "PO-Revision-Date: 2008-01-12 15:10+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -418,8 +418,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: dialogs/deletecertificatesdialog.cpp:218
-msgid "Secret Key Deletion"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Secret Certificate Deletion"
+msgstr "Remplaçar lo fichièr ?"
 
 #: dialogs/certificateselectiondialog.cpp:110
 msgid "Please select one or more of the following certificates:"
@@ -773,16 +775,22 @@ msgid "FlatKeyListModel Test"
 msgstr ""
 
 #: tests/test_keylistmodels.cpp:94
-msgid "Perform flat key listing"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Perform flat certificate listing"
+msgstr "Remplaçar lo fichièr ?"
 
 #: tests/test_keylistmodels.cpp:95
-msgid "Perform hierarchical key listing"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Perform hierarchical certificate listing"
+msgstr "Remplaçar lo fichièr ?"
 
 #: tests/test_keylistmodels.cpp:96
-msgid "Do not list SMIME keys"
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "Do not list SMIME certificates"
+msgstr "Anullat."
 
 #: utils/formatting.cpp:205 utils/formatting.cpp:208
 #, kde-format
@@ -791,7 +799,7 @@ msgstr ""
 
 #: utils/formatting.cpp:217
 #, kde-format
-msgid "%1-bit %2 (secret key available)"
+msgid "%1-bit %2 (secret certificate available)"
 msgstr ""
 
 #: utils/formatting.cpp:219
@@ -969,8 +977,10 @@ msgid "good"
 msgstr ""
 
 #: utils/formatting.cpp:468
-msgid "key expired"
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "certificate expired"
+msgstr "Anullat."
 
 #: utils/formatting.cpp:469
 msgctxt "fake/invalid signature"
@@ -985,12 +995,12 @@ msgstr ""
 
 #: utils/formatting.cpp:528
 #, kde-format
-msgid "Bad signature by unknown key %1: %2"
+msgid "Bad signature by unknown certificate %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:530
 #, kde-format
-msgid "Bad signature by an unknown key: %1"
+msgid "Bad signature by an unknown certificate: %1"
 msgstr ""
 
 #: utils/formatting.cpp:532
@@ -999,13 +1009,16 @@ msgid "Bad signature by %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:537
-#, kde-format
-msgid "Good signature by unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgid "Good signature by unknown certificate %1."
+msgstr "Anullat."
 
 #: utils/formatting.cpp:539
-msgid "Good signature by an unknown key."
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Good signature by an unknown certificate."
+msgstr "Remplaçar lo fichièr ?"
 
 #: utils/formatting.cpp:541
 #, kde-format
@@ -1014,12 +1027,12 @@ msgstr ""
 
 #: utils/formatting.cpp:546
 #, kde-format
-msgid "Invalid signature by unknown key %1: %2"
+msgid "Invalid signature by unknown certificate %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:548
 #, kde-format
-msgid "Invalid signature by an unknown key: %1"
+msgid "Invalid signature by an unknown certificate: %1"
 msgstr ""
 
 #: utils/formatting.cpp:550
@@ -1942,7 +1955,7 @@ msgid "Signing certificate expired"
 msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:177
-msgid "No public key to verify the signature"
+msgid "No public certificate to verify the signature"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:179
@@ -1950,8 +1963,10 @@ msgid "Signature expired"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:181
-msgid "Key missing"
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "Certificate missing"
+msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:183
 msgid "CRL missing"
@@ -1999,18 +2014,22 @@ msgid "The signature is valid but the certificate's validity is undefined."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:225 crypto/decryptverifytask.cpp:231
-msgid "Unknown key"
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "Unknown certificate"
+msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:250
-#, kde-format
-msgid "Signed on %1 with unknown key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgid "Signed on %1 with unknown certificate %2."
+msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:252
-#, kde-format
-msgid "Signed with unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgid "Signed with unknown certificate %1."
+msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:257
 #, kde-format
@@ -2019,19 +2038,22 @@ msgid "Signed on %1 by %2 (Key ID: %3)."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:262
-#, kde-format
-msgid "Signed by %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgid "Signed by %1 with certificate %2."
+msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:265
-#, kde-format
-msgid "Signed on %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgid "Signed on %1 with certificate %2."
+msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:266
-#, kde-format
-msgid "Signed with key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgid "Signed with certificate %1."
+msgstr "Anullat."
 
 #: crypto/decryptverifytask.cpp:371
 msgid "<b>Verification canceled.</b>"
@@ -2520,13 +2542,16 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to learn the smart card's keys.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to learn the smart card's certificates."
+"</para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
 
 #: commands/learncardkeyscommand.cpp:94
-msgid "Smart card keys successfully learned."
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Smart card certificates successfully learned."
+msgstr "Remplaçar lo fichièr ?"
 
 #: commands/adduseridcommand.cpp:212
 #, kde-format
@@ -2563,7 +2588,7 @@ msgstr "Remplaçar lo fichièr ?"
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Failed to search on keyserver. The error returned was:\n"
+"Failed to search on certificate server. The error returned was:\n"
 "%1"
 msgstr ""
 
@@ -2600,37 +2625,40 @@ msgstr ""
 #, fuzzy
 #| msgid "Overwrite File?"
 msgctxt "@title:window"
-msgid "Secret Key Export Error"
+msgid "Secret Certificate Export Error"
 msgstr "Remplaçar lo fichièr ?"
 
 #: commands/exportsecretkeycommand.cpp:133
 #, fuzzy
 #| msgid "Overwrite File?"
 msgctxt "@title:window"
-msgid "Secret Key Export Finished"
+msgid "Secret Certificate Export Finished"
 msgstr "Remplaçar lo fichièr ?"
 
 #: commands/exportsecretkeycommand.cpp:138
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>The GPG or GpgSM process that tried to export the secret key ended "
-"prematurely because of an unexpected error.</para><para>Please check the "
-"output of <icode>%1</icode> for details.</para>"
+"<para>The GPG or GpgSM process that tried to export the secret certificate "
+"ended prematurely because of an unexpected error.</para><para>Please check "
+"the output of <icode>%1</icode> for details.</para>"
 msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:145
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to export the secret key.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to export the secret certificate.</"
+"para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:151
+#, fuzzy
+#| msgid "Overwrite File?"
 msgctxt "@info"
-msgid "Secret key successfully exported."
-msgstr ""
+msgid "Secret certificate successfully exported."
+msgstr "Remplaçar lo fichièr ?"
 
 #: commands/encryptclipboardcommand.cpp:146
 #: commands/encryptclipboardcommand.cpp:160
@@ -2718,20 +2746,26 @@ msgid "Unchanged:"
 msgstr ""
 
 #: commands/importcertificatescommand.cpp:271
-msgid "Secret keys processed:"
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "Secret certificates processed:"
+msgstr "Anullat."
 
 #: commands/importcertificatescommand.cpp:274
-msgid "Secret keys imported:"
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "Secret certificates imported:"
+msgstr "Anullat."
 
 #: commands/importcertificatescommand.cpp:278
-msgid "Secret keys <em>not</em> imported:"
+msgid "Secret certificates <em>not</em> imported:"
 msgstr ""
 
 #: commands/importcertificatescommand.cpp:281
-msgid "Secret keys unchanged:"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Secret certificates unchanged:"
+msgstr "Remplaçar lo fichièr ?"
 
 #: commands/importcertificatescommand.cpp:294
 msgid "No imports (should not happen, please report a bug)."
@@ -3472,20 +3506,28 @@ msgid ""
 msgstr ""
 
 #: models/keycache.cpp:902
-msgid "Listing public X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Listing public X.509 certificates"
+msgstr "Remplaçar lo fichièr ?"
 
 #: models/keycache.cpp:902
-msgid "Listing private X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Listing private X.509 certificates"
+msgstr "Remplaçar lo fichièr ?"
 
 #: models/keycache.cpp:903
-msgid "Listing public OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Listing public OpenPGP certificates"
+msgstr "Remplaçar lo fichièr ?"
 
 #: models/keycache.cpp:903
-msgid "Listing private OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Listing private OpenPGP certificates"
+msgstr "Remplaçar lo fichièr ?"
 
 #: models/keylistmodel.cpp:248 models/useridlistmodel.cpp:249
 #: newcertificatewizard/newcertificatewizard.cpp:921
@@ -4098,8 +4140,10 @@ msgstr ""
 #. i18n: file: dialogs/exportsecretkeydialog.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, ExportSecretKeyDialog)
 #: rc.cpp:261
-msgid "Export Secret Key"
-msgstr ""
+#, fuzzy
+#| msgid "Overwrite File?"
+msgid "Export Secret Certificate"
+msgstr "Remplaçar lo fichièr ?"
 
 #. i18n: file: dialogs/exportsecretkeydialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, outputFileLB)
@@ -4122,8 +4166,10 @@ msgstr ""
 #. i18n: file: dialogs/lookupcertificatesdialog.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, LookupCertificatesDialog)
 #: rc.cpp:273
-msgid "Keyserver Certificate Lookup"
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "Certificateserver Certificate Lookup"
+msgstr "Anullat."
 
 #. i18n: file: dialogs/lookupcertificatesdialog.ui:24
 #. i18n: ectx: property (text), widget (QPushButton, findPB)
@@ -4170,7 +4216,7 @@ msgstr ""
 #. i18n: file: dialogs/certificationoptionswidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:297
-msgid "Choose which of your keys to sign with:"
+msgid "Choose which of your certificates to sign with:"
 msgstr ""
 
 #. i18n: file: dialogs/certificationoptionswidget.ui:60
@@ -4308,8 +4354,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:358
 msgid ""
-"<b>Step 2:</b> How thoroughly have you checked that this key actually "
-"belongs to the person it claims it is from?"
+"<b>Step 2:</b> How thoroughly have you checked that this certificate "
+"actually belongs to the person it claims it is from?"
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:26
@@ -4335,8 +4381,8 @@ msgstr ""
 #: rc.cpp:370
 msgid ""
 "Choose this if you know the person, and have asked them whether this was "
-"their key, but you have not verified they are actually in possession of the "
-"secret key."
+"their certificate, but you have not verified they are actually in possession "
+"of the secret certificate."
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:98
@@ -5730,7 +5776,7 @@ msgid "Michel Boyer de la Giroday"
 msgstr ""
 
 #: aboutdata.cpp:68
-msgid "Key-state dependant colors and fonts in the key list"
+msgid "Key-state dependant colors and fonts in the certificates list"
 msgstr ""
 
 #: aboutdata.cpp:70
@@ -6074,8 +6120,10 @@ msgid "Export Certificates to Server..."
 msgstr "Remplaçar lo fichièr ?"
 
 #: mainwindow.cpp:400
-msgid "Export Secret Key..."
-msgstr ""
+#, fuzzy
+#| msgid "Canceled."
+msgid "Export Secret Certificate..."
+msgstr "Anullat."
 
 #: mainwindow.cpp:402
 msgid "Lookup Certificates on Server..."
@@ -6224,6 +6272,18 @@ msgstr ""
 #: crlview.cpp:145
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Overwrite File?"
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Error"
+#~ msgstr "Remplaçar lo fichièr ?"
+
+#, fuzzy
+#~| msgid "Overwrite File?"
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Finished"
+#~ msgstr "Remplaçar lo fichièr ?"
 
 #, fuzzy
 #~| msgid "Overwrite File?"
