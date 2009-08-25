@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-24 06:55+0200\n"
+"POT-Creation-Date: 2009-08-25 07:13+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1295,7 +1295,7 @@ msgstr ""
 msgid "Create an Account Later"
 msgstr ""
 
-#: accountwizard.cpp:174 kmfolderdialog.cpp:1164
+#: accountwizard.cpp:174 kmfolderdialog.cpp:1176
 msgid "Location:"
 msgstr "Emplaçament :"
 
@@ -3732,7 +3732,7 @@ msgstr ""
 msgid "Layout"
 msgstr ""
 
-#: configuredialog.cpp:1112 configuredialog.cpp:1146 kmfolderdialog.cpp:882
+#: configuredialog.cpp:1112 configuredialog.cpp:1146 kmfolderdialog.cpp:829
 #: messagelistview/pane.cpp:93
 msgid "Message List"
 msgstr ""
@@ -4639,7 +4639,7 @@ msgstr "Modèls"
 msgid "&Use custom message templates for this identity"
 msgstr ""
 
-#: identitydialog.cpp:441 kmfolderdialog.cpp:1049
+#: identitydialog.cpp:441 kmfolderdialog.cpp:1061
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -6322,32 +6322,16 @@ msgctxt "@label:textbox Name of the folder."
 msgid "&Name:"
 msgstr "&Nom :"
 
-#: kmfolderdialog.cpp:372 kmfolderdialog.cpp:794 kmcomposewin.cpp:3256
+#: kmfolderdialog.cpp:372 kmfolderdialog.cpp:691 kmcomposewin.cpp:3256
 #: kmfilterdlg.cpp:768 managesievescriptsdialog.cpp:393
 msgid "unnamed"
 msgstr "sens nom"
 
-#: kmfolderdialog.cpp:399
-msgid "Use custom &icons"
-msgstr ""
-
-#: kmfolderdialog.cpp:405
-msgctxt "Icon used for folders with no unread messages."
-msgid "&Normal:"
-msgstr ""
-
-#: kmfolderdialog.cpp:421
-#, fuzzy
-#| msgid "Unread"
-msgctxt "Icon used for folders which do have unread messages."
-msgid "&Unread:"
-msgstr "Pas legit"
-
-#: kmfolderdialog.cpp:459
+#: kmfolderdialog.cpp:398
 msgid "Act on new/unread mail in this folder"
 msgstr ""
 
-#: kmfolderdialog.cpp:461
+#: kmfolderdialog.cpp:400
 msgid ""
 "<qt><p>If this option is enabled then you will be notified about new/unread "
 "mail in this folder. Moreover, going to the next/previous folder with unread "
@@ -6358,33 +6342,33 @@ msgid ""
 "spam folder.</p></qt>"
 msgstr ""
 
-#: kmfolderdialog.cpp:478
+#: kmfolderdialog.cpp:417
 msgid "Include this folder in mail checks"
 msgstr ""
 
-#: kmfolderdialog.cpp:480
+#: kmfolderdialog.cpp:419
 msgid ""
 "<qt><p>If this option is enabled this folder will be included while checking "
 "new emails.</p><p>Uncheck this option if you want to skip this folder while "
 "checking new emails.</p></qt>"
 msgstr ""
 
-#: kmfolderdialog.cpp:495
+#: kmfolderdialog.cpp:434
 msgid "Keep replies in this folder"
 msgstr ""
 
-#: kmfolderdialog.cpp:497
+#: kmfolderdialog.cpp:436
 msgid ""
 "Check this option if you want replies you write to mails in this folder to "
 "be put in this same folder after sending, instead of in the configured sent-"
 "mail folder."
 msgstr ""
 
-#: kmfolderdialog.cpp:508
+#: kmfolderdialog.cpp:447
 msgid "Hide this folder in the folder selection dialog"
 msgstr ""
 
-#: kmfolderdialog.cpp:510
+#: kmfolderdialog.cpp:449
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this option if you do not want that this folder is shown in the folder "
@@ -6393,17 +6377,17 @@ msgstr ""
 
 #. i18n: file: ui/imapsettings.ui:315
 #. i18n: ectx: property (text), widget (QCheckBox, useDefaultIdentityCheck)
-#: kmfolderdialog.cpp:527 rc.cpp:315
+#: kmfolderdialog.cpp:466 rc.cpp:315
 #, fuzzy
 #| msgid "New Identity"
 msgid "Use &default identity"
 msgstr "Identitat novèla"
 
-#: kmfolderdialog.cpp:533
+#: kmfolderdialog.cpp:472
 msgid "&Sender identity:"
 msgstr ""
 
-#: kmfolderdialog.cpp:539
+#: kmfolderdialog.cpp:478
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
 "mail in this folder. This means that if you are in one of your work folders, "
@@ -6412,56 +6396,27 @@ msgid ""
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
 
-#: kmfolderdialog.cpp:548
-msgid "Show Sender/Receiver Column in List of Messages"
-msgstr ""
-
-#: kmfolderdialog.cpp:550
-msgid "Sho&w column:"
-msgstr ""
-
-#: kmfolderdialog.cpp:556
-#, fuzzy
-#| msgid "Default"
-msgctxt "@item:inlistbox Show default value."
-msgid "Default"
-msgstr "Defaut"
-
-#: kmfolderdialog.cpp:557
-#, fuzzy
-#| msgid "Sender"
-msgctxt "@item:inlistbox Show sender."
-msgid "Sender"
-msgstr "Expeditor"
-
-#: kmfolderdialog.cpp:558
-#, fuzzy
-#| msgid "Receiver"
-msgctxt "@item:inlistbox Show receiver."
-msgid "Receiver"
-msgstr "Destinatari"
-
-#: kmfolderdialog.cpp:573
+#: kmfolderdialog.cpp:492
 msgid "&Folder contents:"
 msgstr ""
 
-#: kmfolderdialog.cpp:605
+#: kmfolderdialog.cpp:524
 msgid "Generate free/&busy and activate alarms for:"
 msgstr ""
 
-#: kmfolderdialog.cpp:611
+#: kmfolderdialog.cpp:530
 msgid "Nobody"
 msgstr "Degun"
 
-#: kmfolderdialog.cpp:612
+#: kmfolderdialog.cpp:531
 msgid "Admins of This Folder"
 msgstr ""
 
-#: kmfolderdialog.cpp:613
+#: kmfolderdialog.cpp:532
 msgid "All Readers of This Folder"
 msgstr ""
 
-#: kmfolderdialog.cpp:615
+#: kmfolderdialog.cpp:534
 msgid ""
 "This setting defines which users sharing this folder should get \"busy\" "
 "periods in their freebusy lists and should see the alarms for the events or "
@@ -6477,27 +6432,27 @@ msgid ""
 "it is not known who will go to those events."
 msgstr ""
 
-#: kmfolderdialog.cpp:633
+#: kmfolderdialog.cpp:552
 msgid ""
 "This setting allows you to disable alarms for folders shared by others. "
 msgstr ""
 
-#: kmfolderdialog.cpp:636
+#: kmfolderdialog.cpp:555
 msgid "Block free/&busy and alarms locally"
 msgstr ""
 
-#: kmfolderdialog.cpp:651
+#: kmfolderdialog.cpp:570
 msgid "Share unread state with all users"
 msgstr ""
 
-#: kmfolderdialog.cpp:654
+#: kmfolderdialog.cpp:573
 msgid ""
 "If enabled, the unread state of messages in this folder will be the same for "
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
 
-#: kmfolderdialog.cpp:739
+#: kmfolderdialog.cpp:643
 msgid ""
 "You have configured this folder to contain groupware information and the "
 "general configuration option to hide groupware folders is set. That means "
@@ -6506,121 +6461,166 @@ msgid ""
 "hiding of groupware folders to be able to see it."
 msgstr ""
 
-#: kmfolderdialog.cpp:888
+#: kmfolderdialog.cpp:760
+msgid "Use custom &icons"
+msgstr ""
+
+#: kmfolderdialog.cpp:763
+msgctxt "Icon used for folders with no unread messages."
+msgid "&Normal:"
+msgstr ""
+
+#: kmfolderdialog.cpp:776
+#, fuzzy
+#| msgid "Unread"
+msgctxt "Icon used for folders which do have unread messages."
+msgid "&Unread:"
+msgstr "Pas legit"
+
+#: kmfolderdialog.cpp:813
+msgid "Show Sender/Receiver Column in List of Messages"
+msgstr ""
+
+#: kmfolderdialog.cpp:815
+msgid "Sho&w column:"
+msgstr ""
+
+#: kmfolderdialog.cpp:819
+#, fuzzy
+#| msgid "Default"
+msgctxt "@item:inlistbox Show default value."
+msgid "Default"
+msgstr "Defaut"
+
+#: kmfolderdialog.cpp:820
+#, fuzzy
+#| msgid "Sender"
+msgctxt "@item:inlistbox Show sender."
+msgid "Sender"
+msgstr "Expeditor"
+
+#: kmfolderdialog.cpp:821
+#, fuzzy
+#| msgid "Receiver"
+msgctxt "@item:inlistbox Show receiver."
+msgid "Receiver"
+msgstr "Destinatari"
+
+#: kmfolderdialog.cpp:835
 #, fuzzy
 #| msgid "New Identity"
 msgid "Use default aggregation"
 msgstr "Identitat novèla"
 
-#: kmfolderdialog.cpp:895 messagelistview/core/widgetbase.cpp:447
+#: kmfolderdialog.cpp:842 messagelistview/core/widgetbase.cpp:447
 #: messagelistview/core/view.cpp:1524
 msgid "Aggregation"
 msgstr ""
 
-#: kmfolderdialog.cpp:911
+#: kmfolderdialog.cpp:858
 #, fuzzy
 #| msgid "Delete"
 msgid "Use default theme"
 msgstr "Suprimir"
 
-#: kmfolderdialog.cpp:918 messagelistview/core/widgetbase.cpp:324
+#: kmfolderdialog.cpp:865 messagelistview/core/widgetbase.cpp:324
 #: messagelistview/core/view.cpp:1530
 #, fuzzy
 #| msgid "Time"
 msgid "Theme"
 msgstr "Ora"
 
-#: kmfolderdialog.cpp:1034
+#: kmfolderdialog.cpp:1046
 msgid "&Use custom message templates in this folder"
 msgstr ""
 
-#: kmfolderdialog.cpp:1146
+#: kmfolderdialog.cpp:1158
 #, fuzzy
 #| msgid "&File"
 msgid "Files"
 msgstr "&Fichièr"
 
-#: kmfolderdialog.cpp:1154
+#: kmfolderdialog.cpp:1166
 #, fuzzy
 #| msgid "Contacts"
 msgctxt "@label:textbox Folder content type (eg. Mail)"
 msgid "Contents:"
 msgstr "Contactes"
 
-#: kmfolderdialog.cpp:1160
+#: kmfolderdialog.cpp:1172
 #, fuzzy
 #| msgid "Folder"
 msgid "Folder type:"
 msgstr "Repertòri"
 
-#: kmfolderdialog.cpp:1166 kmfolderdialog.cpp:1174
+#: kmfolderdialog.cpp:1178 kmfolderdialog.cpp:1186
 #, fuzzy
 #| msgid "Not available"
 msgctxt "folder size"
 msgid "Not available"
 msgstr "Pas disponible"
 
-#: kmfolderdialog.cpp:1167 kmfolderdialog.cpp:1175
+#: kmfolderdialog.cpp:1179 kmfolderdialog.cpp:1187
 #, fuzzy
 #| msgid "Size"
 msgid "Size:"
 msgstr "Talha"
 
-#: kmfolderdialog.cpp:1172
+#: kmfolderdialog.cpp:1184
 msgid "Index:"
 msgstr ""
 
-#: kmfolderdialog.cpp:1179
+#: kmfolderdialog.cpp:1191
 msgid "Recreate Index"
 msgstr ""
 
-#: kmfolderdialog.cpp:1190
+#: kmfolderdialog.cpp:1202
 msgid "Rebuild Local IMAP Cache"
 msgstr ""
 
-#: kmfolderdialog.cpp:1201
+#: kmfolderdialog.cpp:1213
 #, fuzzy
 #| msgid "&Message"
 msgid "Messages"
 msgstr "Fusionar"
 
-#: kmfolderdialog.cpp:1206
+#: kmfolderdialog.cpp:1218
 #, fuzzy
 #| msgid "HTML Messages"
 msgid "Total messages:"
 msgstr "Messatges HTML"
 
-#: kmfolderdialog.cpp:1209
+#: kmfolderdialog.cpp:1221
 #, fuzzy
 #| msgid "New Message"
 msgid "Unread messages:"
 msgstr "Messatge novèl"
 
-#: kmfolderdialog.cpp:1218
+#: kmfolderdialog.cpp:1230
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "compaction status"
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: kmfolderdialog.cpp:1219
+#: kmfolderdialog.cpp:1231
 #, fuzzy
 #| msgid "Location:"
 msgid "Compaction:"
 msgstr "Emplaçament :"
 
-#: kmfolderdialog.cpp:1221
+#: kmfolderdialog.cpp:1233
 msgid "Compact Now"
 msgstr ""
 
-#: kmfolderdialog.cpp:1241
+#: kmfolderdialog.cpp:1253
 #, fuzzy, kde-format
 #| msgid "%"
 msgctxt "File size in bytes"
 msgid "%1 B"
 msgstr "%"
 
-#: kmfolderdialog.cpp:1242
+#: kmfolderdialog.cpp:1254
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "%1: name; %2: number appended to it to make it unique among a list of "
@@ -6629,22 +6629,22 @@ msgstr "%"
 msgid "%1 (%2)"
 msgstr "%1 %2"
 
-#: kmfolderdialog.cpp:1266
+#: kmfolderdialog.cpp:1278
 msgctxt "compaction status"
 msgid "Possible"
 msgstr ""
 
-#: kmfolderdialog.cpp:1267
+#: kmfolderdialog.cpp:1279
 msgctxt "compaction status"
 msgid "Possible, but unsafe"
 msgstr ""
 
-#: kmfolderdialog.cpp:1269
+#: kmfolderdialog.cpp:1281
 msgctxt "compaction status"
 msgid "Not required"
 msgstr ""
 
-#: kmfolderdialog.cpp:1305
+#: kmfolderdialog.cpp:1317
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -6653,14 +6653,14 @@ msgid ""
 "have a recent backup of the mailbox and messages."
 msgstr ""
 
-#: kmfolderdialog.cpp:1308
+#: kmfolderdialog.cpp:1320
 #, fuzzy
 #| msgid "Delete Folder"
 msgctxt "@title"
 msgid "Really compact folder?"
 msgstr "Suprimir lo repertòri"
 
-#: kmfolderdialog.cpp:1309
+#: kmfolderdialog.cpp:1321
 #, fuzzy
 #| msgid "Local Folders"
 msgctxt "@action:button"
