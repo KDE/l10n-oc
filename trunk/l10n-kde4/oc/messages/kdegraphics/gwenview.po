@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-20 06:12+0200\n"
+"POT-Creation-Date: 2009-08-27 07:12+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -172,7 +172,7 @@ msgctxt "@action:inmenu"
 msgid "Rating"
 msgstr "&Paramètres"
 
-#: app/thumbnailviewpanel.cpp:139 app/fileopscontextmanageritem.cpp:124
+#: app/thumbnailviewpanel.cpp:139 app/fileopscontextmanageritem.cpp:196
 #: app/mainwindow.cpp:288
 #, fuzzy
 #| msgid "&File"
@@ -429,7 +429,7 @@ msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr ""
 
-#: app/imagemetainfodialog.cpp:118
+#: app/imagemetainfodialog.cpp:120
 msgid "Meta Information"
 msgstr ""
 
@@ -493,49 +493,89 @@ msgstr "Crear un repertòri"
 msgid "Forget All"
 msgstr ""
 
-#: app/fileopscontextmanageritem.cpp:115
+#: app/fileopscontextmanageritem.cpp:81
+#, fuzzy
+#| msgid "Create Folder"
+msgctxt "@action:inmenu"
+msgid "Paste One Folder"
+msgstr "Crear un repertòri"
+
+#: app/fileopscontextmanageritem.cpp:82
+msgctxt "@action:inmenu"
+msgid "Paste One File"
+msgstr ""
+
+#: app/fileopscontextmanageritem.cpp:85
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Paste One Item"
+msgid_plural "Paste %1 Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/fileopscontextmanageritem.cpp:87
+msgctxt "@action:inmenu"
+msgid "Paste Clipboard Contents..."
+msgstr ""
+
+#: app/fileopscontextmanageritem.cpp:91
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "Paste"
+msgstr "Suprimir"
+
+#: app/fileopscontextmanageritem.cpp:187
 msgid "File Operations"
 msgstr "Operacions suls fichièrs"
 
-#: app/fileopscontextmanageritem.cpp:127
+#: app/fileopscontextmanageritem.cpp:197
+#: app/semanticinfocontextmanageritem.cpp:161
+#, fuzzy
+#| msgid "Edit"
+msgctxt "@title actions category"
+msgid "Edit"
+msgstr "Edicion"
+
+#: app/fileopscontextmanageritem.cpp:204
 msgctxt "Verb"
 msgid "Copy To..."
 msgstr ""
 
-#: app/fileopscontextmanageritem.cpp:131
+#: app/fileopscontextmanageritem.cpp:208
 msgctxt "Verb"
 msgid "Move To..."
 msgstr ""
 
-#: app/fileopscontextmanageritem.cpp:135
+#: app/fileopscontextmanageritem.cpp:212
 msgctxt "Verb: create link to the file where user wants"
 msgid "Link To..."
 msgstr ""
 
-#: app/fileopscontextmanageritem.cpp:139
+#: app/fileopscontextmanageritem.cpp:216
 msgctxt "Verb"
 msgid "Trash"
 msgstr "Banasta"
 
-#: app/fileopscontextmanageritem.cpp:144
+#: app/fileopscontextmanageritem.cpp:221
 msgid "Delete"
 msgstr "Suprimir"
 
-#: app/fileopscontextmanageritem.cpp:149
+#: app/fileopscontextmanageritem.cpp:226
 msgid "Properties"
 msgstr "Propietats"
 
-#: app/fileopscontextmanageritem.cpp:153
+#: app/fileopscontextmanageritem.cpp:230
 msgid "Create Folder..."
 msgstr "Crear un repertòri"
 
-#: app/fileopscontextmanageritem.cpp:157
+#: app/fileopscontextmanageritem.cpp:234
 #, fuzzy
 #| msgid "Open With..."
 msgid "Open With"
 msgstr "Dobrir amb..."
 
-#: app/fileopscontextmanageritem.cpp:272
+#: app/fileopscontextmanageritem.cpp:381
 msgid "Other Application..."
 msgstr ""
 
@@ -551,13 +591,6 @@ msgstr "Entresenhas"
 #| msgid "Description:"
 msgid "Description"
 msgstr "Descripcion :"
-
-#: app/semanticinfocontextmanageritem.cpp:161
-#, fuzzy
-#| msgid "Edit"
-msgctxt "@title actions category"
-msgid "Edit"
-msgstr "Edicion"
 
 #: app/semanticinfocontextmanageritem.cpp:164
 msgctxt "@action"
@@ -1162,7 +1195,7 @@ msgstr "Crear un repertòri"
 msgid "Recent URLs"
 msgstr "Crear un repertòri"
 
-#. i18n: file: app/gwenviewui.rc:49
+#. i18n: file: app/gwenviewui.rc:53
 #. i18n: ectx: Menu (rating)
 #: rc.cpp:80
 #, fuzzy
@@ -1170,13 +1203,13 @@ msgstr "Crear un repertòri"
 msgid "&Rating"
 msgstr "&Paramètres"
 
-#. i18n: file: app/gwenviewui.rc:76
+#. i18n: file: app/gwenviewui.rc:80
 #. i18n: ectx: Menu (plugins)
 #: rc.cpp:83
 msgid "&Plugins"
 msgstr "&Ajustons"
 
-#. i18n: file: app/gwenviewui.rc:78
+#. i18n: file: app/gwenviewui.rc:82
 #. i18n: ectx: Menu (kipi_images)
 #: rc.cpp:86
 #, fuzzy
@@ -1185,49 +1218,49 @@ msgstr "&Ajustons"
 msgid "Images"
 msgstr "Imatges"
 
-#. i18n: file: app/gwenviewui.rc:82
+#. i18n: file: app/gwenviewui.rc:86
 #. i18n: ectx: Menu (kipi_effects)
 #: rc.cpp:89
 msgid "Effects"
 msgstr "Efièches"
 
-#. i18n: file: app/gwenviewui.rc:86
+#. i18n: file: app/gwenviewui.rc:90
 #. i18n: ectx: Menu (kipi_tools)
 #: rc.cpp:92
 msgid "Tools"
 msgstr "Espleches"
 
-#. i18n: file: app/gwenviewui.rc:90
+#. i18n: file: app/gwenviewui.rc:94
 #. i18n: ectx: Menu (kipi_batch)
 #: rc.cpp:95
 msgid "Batch Processing"
 msgstr ""
 
-#. i18n: file: app/gwenviewui.rc:94
+#. i18n: file: app/gwenviewui.rc:98
 #. i18n: ectx: Menu (kipi_import)
 #: rc.cpp:98
 msgid "Import"
 msgstr "Importar"
 
-#. i18n: file: app/gwenviewui.rc:98
+#. i18n: file: app/gwenviewui.rc:102
 #. i18n: ectx: Menu (kipi_export)
 #: rc.cpp:101
 msgid "Export"
 msgstr "Exportar"
 
-#. i18n: file: app/gwenviewui.rc:102
+#. i18n: file: app/gwenviewui.rc:106
 #. i18n: ectx: Menu (kipi_collections)
 #: rc.cpp:104
 msgid "Collections"
 msgstr "Colleccions"
 
-#. i18n: file: app/gwenviewui.rc:107
+#. i18n: file: app/gwenviewui.rc:111
 #. i18n: ectx: Menu (settings)
 #: rc.cpp:107
 msgid "&Settings"
 msgstr "&Paramètres"
 
-#. i18n: file: app/gwenviewui.rc:120
+#. i18n: file: app/gwenviewui.rc:124
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: part/gvpart.rc:15
 #. i18n: ectx: ToolBar (mainToolBar)
