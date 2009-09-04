@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontrol_filetypes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-24 16:08+0000\n"
+"POT-Creation-Date: 2009-09-03 19:02+0000\n"
 "PO-Revision-Date: 2008-08-13 13:37+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -74,10 +74,10 @@ msgstr "Introduccion"
 #, no-c-format
 msgid ""
 "One of the most convenient aspects of &kde;, is its ability to automatically "
-"match a data file, with its application. As an example, when you click on "
-"your favorite &kword; document in &konqueror;, &kde; automatically starts "
-"&kword;, and automatically loads that file into &kword; so you can begin "
-"working on it."
+"match a data file with its application. As an example, when you click on "
+"your favorite &kword; document in the filemanager, &kde; automatically "
+"starts &kword;, and automatically loads that file into &kword; so you can "
+"begin working on it."
 msgstr ""
 
 #. Tag: para
@@ -151,80 +151,82 @@ msgstr ""
 #: index.docbook:69
 #, no-c-format
 msgid ""
+"You can start this module by opening &systemsettings; and selecting "
+"<guilabel>File Associations</guilabel> on the <guilabel>Advanced</guilabel> "
+"tab. Alternatively, you can start it by typing <command>kcmshell4 filetypes</"
+"command> from the terminal or &krunner;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
 "The file associations are organized into several categories, and at a "
 "minimum you will have:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:73
+#: index.docbook:78
 #, no-c-format
 msgid "Application"
 msgstr "Aplicacion"
 
 #. Tag: para
-#: index.docbook:74
+#: index.docbook:79
 #, no-c-format
 msgid "Audio"
 msgstr "Audio"
 
 #. Tag: para
-#: index.docbook:75
+#: index.docbook:80
 #, no-c-format
 msgid "Image"
 msgstr "Imatge"
 
 #. Tag: para
-#: index.docbook:76
+#: index.docbook:81
 #, no-c-format
 msgid "Inode"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:77
+#: index.docbook:82
 #, no-c-format
 msgid "Message"
 msgstr "Messatge"
 
 #. Tag: para
-#: index.docbook:78
+#: index.docbook:83
 #, no-c-format
 msgid "Multipart"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:79
+#: index.docbook:84
 #, no-c-format
 msgid "Print"
 msgstr "Estampar"
 
 #. Tag: para
-#: index.docbook:80
+#: index.docbook:85
 #, no-c-format
 msgid "Text"
 msgstr "Tèxt"
 
 #. Tag: para
-#: index.docbook:81
+#: index.docbook:86
 #, no-c-format
 msgid "Video"
 msgstr "Vidèo"
 
 #. Tag: para
-#: index.docbook:84
+#: index.docbook:89
 #, no-c-format
 msgid "All of the file associations are sorted into one of these categories."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:87
-#, no-c-format
-msgid ""
-"There is also an overview category <quote>All</quote>, which displays all "
-"the file types in one list, without categorizing them."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:91
+#: index.docbook:92
 #, no-c-format
 msgid ""
 "There is no functional difference between any of the categories. These "
@@ -233,7 +235,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:96
+#: index.docbook:97
 #, no-c-format
 msgid ""
 "The categories are listed in the box labeled <guilabel>Known Types</"
@@ -241,7 +243,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:99
+#: index.docbook:100
 #, no-c-format
 msgid ""
 "You can explore each of these categories, and see the file associations "
@@ -251,16 +253,16 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:104
+#: index.docbook:105
 #, no-c-format
 msgid ""
 "You can also search for a particular &MIME; type by using the search box. "
-"The search box is labeled <guilabel>Find filename pattern</guilabel> and is "
-"located above the category list."
+"The search box is labeled <guilabel>Find file type or filename pattern</"
+"guilabel> and is located above the category list."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:108
+#: index.docbook:109
 #, no-c-format
 msgid ""
 "Simply type the first letter of the &MIME; type you are interested in. The "
@@ -269,7 +271,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:112
+#: index.docbook:113
 #, no-c-format
 msgid ""
 "You can then enter a second character and the mime-types will be further "
@@ -277,31 +279,32 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:117
+#: index.docbook:118
 #, no-c-format
 msgid "Adding a new mime type"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:119
+#: index.docbook:120
 #, no-c-format
 msgid ""
 "If you want to add a new &MIME; type to your file associations, you can "
 "click on the <guibutton>Add...</guibutton> button. A small dialog box will "
-"appear. You select the category from the drop down box, and type the &MIME; "
-"name in the blank labeled <guilabel>Type name</guilabel>. Click "
-"<guibutton>OK</guibutton> to add the new mime type, or click "
-"<guibutton>Cancel</guibutton> to not add any new mime-types."
+"appear. You select the category from the drop down box labeled "
+"<guilabel>Group</guilabel>, and type the &MIME; name in the blank labeled "
+"<guilabel>Type name</guilabel>. Click <guibutton>OK</guibutton> to add the "
+"new mime type, or click <guibutton>Cancel</guibutton> to not add any new "
+"mime-types."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:130
+#: index.docbook:131
 #, no-c-format
 msgid "Removing a mime type"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:132
+#: index.docbook:133
 #, no-c-format
 msgid ""
 "If you want to remove a &MIME; type, simply select the &MIME; type you want "
@@ -311,13 +314,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:141
+#: index.docbook:142
 #, no-c-format
 msgid "Editing a mime types properties"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:143
+#: index.docbook:144
 #, no-c-format
 msgid ""
 "Before you can edit a &MIME; types property, you must first specify which "
@@ -326,7 +329,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:148
+#: index.docbook:149
 #, no-c-format
 msgid ""
 "As soon as you have selected the &MIME; type, the current values of the "
@@ -334,7 +337,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:151
+#: index.docbook:152
 #, no-c-format
 msgid ""
 "You will notice the current values are split into two tabs: "
@@ -342,27 +345,27 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:156
+#: index.docbook:157
 #, no-c-format
 msgid "General"
 msgstr "General"
 
 #. Tag: para
-#: index.docbook:158
+#: index.docbook:159
 #, no-c-format
 msgid "There are 4 properties for each &MIME; type in this tab:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:161
+#: index.docbook:162
 #, no-c-format
 msgid ""
 "<guilabel>Mime Type Icon</guilabel> is the icon that will be visible when "
-"using &konqueror; as a file manager."
+"using &dolphin; or &konqueror; as a file manager."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:164
+#: index.docbook:165
 #, no-c-format
 msgid ""
 "<guilabel>Filename Patterns</guilabel> is a search pattern which &kde; will "
@@ -370,7 +373,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:166
+#: index.docbook:167
 #, no-c-format
 msgid ""
 "<guilabel>Description</guilabel> is a short description of the file type. "
@@ -378,7 +381,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:168
+#: index.docbook:169
 #, no-c-format
 msgid ""
 "<guilabel>Application Preference Order</guilabel> determines which "
@@ -386,27 +389,27 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:176
+#: index.docbook:177
 #, no-c-format
 msgid "Embedding Tab"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:178
+#: index.docbook:179
 #, no-c-format
 msgid ""
 "The Embedding tab allows you to determine if a file will be viewed within a "
-"&konqueror; window, or by starting the application."
+"filemanager window, or by starting the application."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:188
+#: index.docbook:189
 #, no-c-format
 msgid "Changing the Icon"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:190
+#: index.docbook:191
 #, no-c-format
 msgid ""
 "To change the icon, simply click on the Icon button. A dialog box will "
@@ -415,13 +418,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:198
+#: index.docbook:199
 #, no-c-format
 msgid "Editing the mime-type patterns"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:200
+#: index.docbook:201
 #, no-c-format
 msgid ""
 "The box labeled <guilabel>Filename Patterns</guilabel>, determines what "
@@ -429,7 +432,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:203
+#: index.docbook:204
 #, no-c-format
 msgid ""
 "Usually, files are selected based on their suffix. (Examples: Files that end "
@@ -439,13 +442,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:208
+#: index.docbook:209
 #, no-c-format
 msgid "You should enter your filename mask in this combo box."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:210
+#: index.docbook:211
 #, no-c-format
 msgid ""
 "The asterisk (<literal>*</literal>) is a wildcard character that will be "
@@ -459,7 +462,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:221
+#: index.docbook:222
 #, no-c-format
 msgid ""
 "It is very beneficial to have multiple masks. One for lower case, one for "
@@ -468,13 +471,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:228
+#: index.docbook:229
 #, no-c-format
 msgid "Editing a mime types description."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:230
+#: index.docbook:231
 #, no-c-format
 msgid ""
 "You can type a short description of the &MIME; type in the text box labeled "
@@ -483,33 +486,33 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:237
+#: index.docbook:238
 #, no-c-format
 msgid "Editing the application associations"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:239
+#: index.docbook:240
 #, no-c-format
 msgid ""
-"There are four buttons (<guibutton>Move Up</guibutton>, <guibutton>Move "
-"Down</guibutton>, <guibutton>Add</guibutton> and <guibutton>Remove</"
-"guibutton>) and a combo box (which lists the applications) which are used to "
-"configure the applications."
+"There are five buttons (<guibutton>Move Up</guibutton>, <guibutton>Move "
+"Down</guibutton>, <guibutton>Add</guibutton>, <guibutton>Edit</guibutton> "
+"and <guibutton>Remove</guibutton>) and a combo box (which lists the "
+"applications) which are used to configure the applications."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:244
+#: index.docbook:245
 #, no-c-format
 msgid ""
 "The combo box lists all of the applications associated with a specific "
 "&MIME; type. The list is in a specific order. The top application is the "
 "first application tried. The next application down the list is the second, "
-"etc."
+"&etc;."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:249
+#: index.docbook:250
 #, no-c-format
 msgid ""
 "What do you mean there is more than one application per &MIME; type? Why is "
@@ -517,7 +520,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:252
+#: index.docbook:253
 #, no-c-format
 msgid ""
 "We started out by saying that &kde; comes preconfigured with hundreds of "
@@ -528,26 +531,24 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:259
+#: index.docbook:260
 #, no-c-format
 msgid "As an example:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:260
+#: index.docbook:261
 #, no-c-format
 msgid ""
 "For the &MIME; type <literal>pdf</literal>, there are two applications "
-"associated with this file type. The first program is called <application>PS "
-"Viewer</application>. If your system does not have <application>PS Viewer</"
-"application> installed, then &kde; automatically starts the second "
-"application <application>Adobe Acrobat Reader</application>. As you can see, "
-"this will help keep &kde; running strong as you add and subtract "
-"applications."
+"associated with this file type. The first program is called &okular;. If "
+"your system does not have &okular; installed, then &kde; automatically "
+"starts the second application &krita;. As you can see, this will help keep "
+"&kde; running strong as you add and subtract applications."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:268
+#: index.docbook:269
 #, no-c-format
 msgid ""
 "We have established that the order is important. You can change the order of "
@@ -558,7 +559,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:275
+#: index.docbook:276
 #, no-c-format
 msgid ""
 "You can add new applications to the list by clicking the button labeled "
@@ -569,7 +570,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:281
+#: index.docbook:282
 #, no-c-format
 msgid ""
 "You can remove an application (thereby ensuring that the application will "
@@ -578,7 +579,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:286
+#: index.docbook:287
 #, no-c-format
 msgid ""
 "It is a good idea to use the <guibutton>Move Up</guibutton> and "
@@ -590,55 +591,55 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:296
+#: index.docbook:297
 #, no-c-format
 msgid "Embedding"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:297
+#: index.docbook:298
 #, no-c-format
 msgid ""
 "By clicking on the <guilabel>Embedding</guilabel> tab, you are presented "
 "with three radio buttons in the <guilabel>Left click action</guilabel> "
-"group. These determine how &konqueror; views the selected &MIME; type:"
+"group. These determine how the filemanager views the selected &MIME; type:"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:303
+#: index.docbook:304
 #, no-c-format
 msgid "Show file in embedded viewer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:304
+#: index.docbook:305
 #, no-c-format
 msgid ""
 "If this is selected, the file will be shown <emphasis>within</emphasis> the "
-"&konqueror; window."
+"filemanager window."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:305
+#: index.docbook:306
 #, no-c-format
 msgid "Show file in separate viewer"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:306
+#: index.docbook:307
 #, no-c-format
 msgid ""
 "This will cause a separate window to be created when showing this mime-type."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:307
+#: index.docbook:308
 #, no-c-format
-msgid "Use group settings."
+msgid "Use settings for 'application' group"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:308
+#: index.docbook:309
 #, no-c-format
 msgid ""
 "This will cause the mime-type to use the settings for the mime-type group. "
@@ -647,7 +648,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:312
+#: index.docbook:315
 #, no-c-format
 msgid ""
 "Below this is a listbox labeled <guilabel>Services Preference Order</"
@@ -655,17 +656,18 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:315
+#: index.docbook:318
 #, no-c-format
 msgid ""
-"When you are in &konqueror;, you can <mousebutton>right</mousebutton> mouse "
-"click, and a menu will with an entry labeled <guimenu>Preview with...</"
-"guimenu> will appear. This box lists the applications that will appear, in "
-"the order they will appear, under this menu."
+"When you use a filemanager like &dolphin; or &konqueror;, you can "
+"<mousebutton>right</mousebutton> mouse click, and a menu will with an entry "
+"labeled <guimenu>Open with...</guimenu> will appear. This box lists the "
+"applications that will appear, in the order they will appear, under this "
+"menu."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:321
+#: index.docbook:324
 #, no-c-format
 msgid ""
 "You can use the <guibutton>Move Up</guibutton> and <guibutton>Move Down</"
@@ -673,13 +675,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:327
+#: index.docbook:330
 #, no-c-format
 msgid "Making changes permanent"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:329
+#: index.docbook:332
 #, no-c-format
 msgid ""
 "When you are done making any changes to mime types, you can click "
