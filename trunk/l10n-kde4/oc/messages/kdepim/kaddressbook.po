@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-12 06:24+0200\n"
+"POT-Creation-Date: 2009-09-15 06:15+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -60,7 +60,7 @@ msgid "All Contacts"
 msgstr "Totes los contactes"
 
 #: mainwidget.cpp:266
-msgid "Print a special number of contacts."
+msgid "Print the complete address book or a selected number of contacts."
 msgstr ""
 
 #: mainwidget.cpp:269
@@ -71,113 +71,167 @@ msgstr ""
 msgid "Select All"
 msgstr "Tot seleccionar"
 
-#: mainwidget.cpp:278
+#: mainwidget.cpp:275
+#, fuzzy
+#| msgid "Address Book"
+msgid "Select all contacts in the current address book view."
+msgstr "Quasernet d'adreças"
+
+#: mainwidget.cpp:279
 #, fuzzy
 #| msgid "Address Books"
 msgid "Show Address Books View"
 msgstr "Quasernets d'adreças"
 
-#: mainwidget.cpp:279
+#: mainwidget.cpp:280
 msgid "Toggle whether the address books view shall be visible."
 msgstr ""
 
-#: mainwidget.cpp:280
+#: mainwidget.cpp:281
 #, fuzzy
 #| msgid "Address Books"
 msgid "Hide Address Books View"
 msgstr "Quasernets d'adreças"
 
-#: mainwidget.cpp:285
+#: mainwidget.cpp:286
 #, fuzzy
 #| msgid "New Contact"
 #| msgid_plural "New %1 Contacts"
 msgid "Show Contacts View"
 msgstr "Contacte novèl"
 
-#: mainwidget.cpp:286
+#: mainwidget.cpp:287
 msgid "Toggle whether the contacts view shall be visible."
 msgstr ""
 
-#: mainwidget.cpp:287
+#: mainwidget.cpp:288
 #, fuzzy
 #| msgid "New Contact"
 #| msgid_plural "New %1 Contacts"
 msgid "Hide Contacts View"
 msgstr "Contacte novèl"
 
-#: mainwidget.cpp:292
+#: mainwidget.cpp:293
 #, fuzzy
 #| msgid "Show Details"
 msgid "Show Details View"
 msgstr "Visualizar los detalhs"
 
-#: mainwidget.cpp:293
+#: mainwidget.cpp:294
 msgid "Toggle whether the details view shall be visible."
 msgstr ""
 
-#: mainwidget.cpp:294
+#: mainwidget.cpp:295
 #, fuzzy
 #| msgid "Hide Details"
 msgid "Hide Details View"
 msgstr "Amagar los detalhs"
 
-#: mainwidget.cpp:299
+#: mainwidget.cpp:300
 msgid "Show Simple View"
 msgstr ""
 
-#: mainwidget.cpp:304
+#: mainwidget.cpp:301
+msgid "Show a simple mode of the address book view."
+msgstr ""
+
+#: mainwidget.cpp:306
 msgid "Import vCard..."
 msgstr ""
 
-#: mainwidget.cpp:308
+#: mainwidget.cpp:307
+msgid "Import contacts from a vCard file."
+msgstr ""
+
+#: mainwidget.cpp:311
 msgid "Import CSV file..."
 msgstr ""
 
 #: mainwidget.cpp:312
+msgid "Import contacts from a file in comma separated value format."
+msgstr ""
+
+#: mainwidget.cpp:316
 #, fuzzy
 #| msgid "Address Book"
 msgid "Import LDIF file..."
 msgstr "Quasernet d'adreças"
 
-#: mainwidget.cpp:316
+#: mainwidget.cpp:317
+#, fuzzy
+#| msgid "Address Book"
+msgid "Import contacts from a LDIF file."
+msgstr "Quasernet d'adreças"
+
+#: mainwidget.cpp:321
 msgid "Import from LDAP server..."
 msgstr ""
 
-#: mainwidget.cpp:320
-msgid "Import GMX file..."
+#: mainwidget.cpp:322
+msgid "Import contacts from a LDAP server."
 msgstr ""
 
 #: mainwidget.cpp:326
+msgid "Import GMX file..."
+msgstr ""
+
+#: mainwidget.cpp:327
+msgid "Import contacts from a GMX address book file."
+msgstr ""
+
+#: mainwidget.cpp:333
 msgid "Export vCard 3.0..."
 msgstr ""
 
-#: mainwidget.cpp:330
+#: mainwidget.cpp:334
+msgid "Export contacts to a vCard 3.0 file."
+msgstr ""
+
+#: mainwidget.cpp:338
 msgid "Export vCard 2.1..."
 msgstr ""
 
-#: mainwidget.cpp:334
+#: mainwidget.cpp:339
+msgid "Export contacts to a vCard 2.1 file."
+msgstr ""
+
+#: mainwidget.cpp:343
 #, fuzzy
 #| msgid "Export..."
 msgid "Export CSV file..."
 msgstr "Exportar..."
 
-#: mainwidget.cpp:338
+#: mainwidget.cpp:344
+msgid "Export contacts to a file in comma separated value format."
+msgstr ""
+
+#: mainwidget.cpp:348
 #, fuzzy
 #| msgid "Address Book"
 msgid "Export LDIF file..."
 msgstr "Quasernet d'adreças"
 
-#: mainwidget.cpp:342
+#: mainwidget.cpp:349
+#, fuzzy
+#| msgid "Address Book"
+msgid "Export contacts to a LDIF file."
+msgstr "Quasernet d'adreças"
+
+#: mainwidget.cpp:353
 #, fuzzy
 #| msgid "Export..."
 msgid "Export GMX file..."
 msgstr "Exportar..."
 
-#: mainwidget.cpp:350
+#: mainwidget.cpp:354
+msgid "Export contacts to a GMX address book file."
+msgstr ""
+
+#: mainwidget.cpp:361
 msgid "Address Book"
 msgstr "Quasernet d'adreças"
 
-#: mainwidget.cpp:355
+#: mainwidget.cpp:366
 #, fuzzy
 #| msgid "Contacts"
 msgid "Print Contacts"
@@ -190,6 +244,11 @@ msgid "Add Address Book Folder..."
 msgstr "Apondre un quasernet d'adreças"
 
 #: standardcontactactionmanager.cpp:52
+msgid ""
+"Add a new address book folder to the currently selected address book folder."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:53
 #, fuzzy, kde-format
 #| msgid "Address Book"
 msgid "Copy Address Book Folder"
@@ -197,23 +256,40 @@ msgid_plural "Copy %1 Address Book Folders"
 msgstr[0] "Quasernet d'adreças"
 msgstr[1] "Quasernet d'adreças"
 
-#: standardcontactactionmanager.cpp:53
+#: standardcontactactionmanager.cpp:54
+msgid "Copy the selected address book folders to the clipboard."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:55
 #, fuzzy
 #| msgid "Address Book"
 msgid "Delete Address Book Folder"
 msgstr "Quasernet d'adreças"
 
-#: standardcontactactionmanager.cpp:54
+#: standardcontactactionmanager.cpp:56
+msgid "Delete the selected address book folders from the address book."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:57
 #, fuzzy
 #| msgid "Iceland"
 msgid "Reload"
 msgstr "Islàndia"
 
-#: standardcontactactionmanager.cpp:55
+#: standardcontactactionmanager.cpp:58
+msgid "Reloads the contacts from Akonadi and updates the address book view."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:59
 msgid "Properties..."
 msgstr ""
 
-#: standardcontactactionmanager.cpp:56 standardcontactactionmanager.cpp:76
+#: standardcontactactionmanager.cpp:60
+msgid ""
+"Open a dialog to edit the properties of the selected address book folder."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:61 standardcontactactionmanager.cpp:83
 #, fuzzy, kde-format
 #| msgid "Contacts"
 msgid "Copy Contact"
@@ -221,27 +297,35 @@ msgid_plural "Copy %1 Contacts"
 msgstr[0] "Contactes"
 msgstr[1] "Contactes"
 
-#: standardcontactactionmanager.cpp:57 standardcontactactionmanager.cpp:78
+#: standardcontactactionmanager.cpp:62
+msgid "Copy the selected contacts to the clipboard."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:63 standardcontactactionmanager.cpp:85
 #, kde-format
 msgid "Delete Contact"
 msgid_plural "Delete %1 Contacts"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardcontactactionmanager.cpp:80 standardcontactactionmanager.cpp:267
+#: standardcontactactionmanager.cpp:64
+msgid "Delete the selected contacts from the address book."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:87 standardcontactactionmanager.cpp:274
 #, fuzzy
 #| msgid "Edit..."
 msgid "Edit Contact..."
 msgstr "Editar..."
 
-#: standardcontactactionmanager.cpp:83
+#: standardcontactactionmanager.cpp:90
 #, kde-format
 msgid "Copy Group"
 msgid_plural "Copy %1 Groups"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardcontactactionmanager.cpp:85
+#: standardcontactactionmanager.cpp:92
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "Delete Group"
@@ -249,75 +333,93 @@ msgid_plural "Delete %1 Groups"
 msgstr[0] "Suprimir"
 msgstr[1] "Suprimir"
 
-#: standardcontactactionmanager.cpp:87
+#: standardcontactactionmanager.cpp:94
 #, fuzzy
 #| msgid "Edit..."
 msgid "Edit Group..."
 msgstr "Editar..."
 
-#: standardcontactactionmanager.cpp:148
+#: standardcontactactionmanager.cpp:155
 msgid "Add Address Book"
 msgstr "Apondre un quasernet d'adreças"
 
-#: standardcontactactionmanager.cpp:168
+#: standardcontactactionmanager.cpp:175
 #, fuzzy, kde-format
 #| msgid "Add Address Book"
 msgid "Could not add address book: %1"
 msgstr "Apondre un quasernet d'adreças"
 
-#: standardcontactactionmanager.cpp:169
+#: standardcontactactionmanager.cpp:176
 #, fuzzy
 #| msgid "Add Address Book"
 msgid "Adding Address Book failed"
 msgstr "Apondre un quasernet d'adreças"
 
-#: standardcontactactionmanager.cpp:189
+#: standardcontactactionmanager.cpp:196
 #, kde-format
 msgid "Do you really want to delete address book '%1'?"
 msgstr ""
 
-#: standardcontactactionmanager.cpp:192
+#: standardcontactactionmanager.cpp:199
 #, fuzzy
 #| msgid "Address Book"
 msgid "Delete Address Book?"
 msgstr "Quasernet d'adreças"
 
-#: standardcontactactionmanager.cpp:249
+#: standardcontactactionmanager.cpp:256
 #, fuzzy
 #| msgid "New Contact"
 #| msgid_plural "New %1 Contacts"
 msgid "New &Contact..."
 msgstr "Contacte novèl"
 
-#: standardcontactactionmanager.cpp:251
+#: standardcontactactionmanager.cpp:258
 msgid ""
 "Create a new contact<p>You will be presented with a dialog where you can add "
 "all data about a person, including addresses and phone numbers.</p>"
 msgstr ""
 
-#: standardcontactactionmanager.cpp:258
+#: standardcontactactionmanager.cpp:265
 #, fuzzy
 #| msgid "New..."
 msgid "New &Group..."
 msgstr "Novèl..."
 
-#: standardcontactactionmanager.cpp:260
+#: standardcontactactionmanager.cpp:267
 msgid ""
 "Create a new group<p>You will be presented with a dialog where you can add a "
 "new group of contacts.</p>"
 msgstr ""
 
-#: standardcontactactionmanager.cpp:276
+#: standardcontactactionmanager.cpp:275
+msgid ""
+"Edit the selected contact<p>You will be presented with a dialog where you "
+"can edit all data about a person, including addresses and phone numbers.</p>"
+msgstr ""
+
+#: standardcontactactionmanager.cpp:284
 #, fuzzy
 #| msgid "Add Address Book"
 msgid "Add &Address Book..."
 msgstr "Apondre un quasernet d'adreças"
 
-#: standardcontactactionmanager.cpp:284
+#: standardcontactactionmanager.cpp:285
+msgid ""
+"Add a new address book<p>You will be presented with a dialog where you can "
+"select the type of the address book that shall be added.</p>"
+msgstr ""
+
+#: standardcontactactionmanager.cpp:293
 #, fuzzy
 #| msgid "Address Book"
 msgid "&Delete Address Book"
 msgstr "Quasernet d'adreças"
+
+#: standardcontactactionmanager.cpp:294
+msgid ""
+"Delete the selected address book<p>The currently selected address book and "
+"all contained contacts and contact groups will be deleted.</p>"
+msgstr ""
 
 #: quicksearchwidget.cpp:38
 #, fuzzy
@@ -1415,11 +1517,6 @@ msgstr ""
 #, fuzzy
 #~| msgid "Address Book"
 #~ msgid "Select Address Book"
-#~ msgstr "Quasernet d'adreças"
-
-#, fuzzy
-#~| msgid "Address Book"
-#~ msgid "Select the address book"
 #~ msgstr "Quasernet d'adreças"
 
 #, fuzzy
