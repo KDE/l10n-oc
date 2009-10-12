@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-06 06:08+0200\n"
+"POT-Creation-Date: 2009-10-12 06:56+0200\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -631,7 +631,7 @@ msgstr ""
 
 #. i18n: file: ktorrent/advancedpref.ui:174
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_eta)
-#: ktorrent/main.cpp:84 rc.cpp:1209
+#: ktorrent/main.cpp:84 rc.cpp:1209 plugins/search/homepage.cpp:118
 msgid "KTorrent"
 msgstr ""
 
@@ -980,7 +980,7 @@ msgstr ""
 msgid "Create A Torrent"
 msgstr ""
 
-#: ktorrent/torrentcreatordlg.cpp:113 ktorrent/fileselectdlg.cpp:328
+#: ktorrent/torrentcreatordlg.cpp:113 ktorrent/fileselectdlg.cpp:350
 #: libktcore/groups/allgroup.cpp:26
 msgid "All Torrents"
 msgstr ""
@@ -1302,55 +1302,70 @@ msgstr "Filtre"
 msgid "Opening %1"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:187
+#: ktorrent/fileselectdlg.cpp:202
 msgid ""
-"Files of the torrent have been found in the completed downloads directory. "
-"Do you want to use them, and download to the completed downloads directory?"
+"Some files of this torrent have been found in the completed downloads "
+"directory. Do you want to import these files and use the completed downloads "
+"directory as the location ?"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:204
+#: ktorrent/fileselectdlg.cpp:205
+msgid ""
+"All files of this torrent have been found in the completed downloads "
+"directory. Do you want to import these files and use the completed downloads "
+"directory as the location ?"
+msgstr ""
+
+#: ktorrent/fileselectdlg.cpp:209
+#, kde-format
+msgid ""
+"The file <b>%1</b> was found in the completed downloads directory. Do you "
+"want to import this file ?"
+msgstr ""
+
+#: ktorrent/fileselectdlg.cpp:226
 #, kde-format
 msgid "The directory %1 does not exist, do you want to create it?"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:237
+#: ktorrent/fileselectdlg.cpp:259
 msgid ""
 "You have deselected the following existing files. You will lose all data in "
 "these files, are you sure you want to do this?"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:241
+#: ktorrent/fileselectdlg.cpp:263
 msgid "Yes, delete the files"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:242
+#: ktorrent/fileselectdlg.cpp:264
 msgid "No, keep the files"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:393
+#: ktorrent/fileselectdlg.cpp:415
 #, kde-format
 msgctxt "We are %1 bytes short of what we need"
 msgid "%1 short"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:412
+#: ktorrent/fileselectdlg.cpp:434
 msgid "Existing files: <b>None</b>"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:414
+#: ktorrent/fileselectdlg.cpp:436
 msgid "Existing files: <b>All</b>"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:416
+#: ktorrent/fileselectdlg.cpp:438
 #, kde-format
 msgid "Existing files: <b>%1</b> of <b>%2</b>"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:422
+#: ktorrent/fileselectdlg.cpp:444
 msgid "Existing file: <b>No</b>"
 msgstr ""
 
-#: ktorrent/fileselectdlg.cpp:424
+#: ktorrent/fileselectdlg.cpp:446
 msgid "Existing file: <b>Yes</b>"
 msgstr ""
 
@@ -5762,7 +5777,7 @@ msgstr "Velocitat"
 #. i18n: file: plugins/syndication/feedwidget.ui:125
 #. i18n: ectx: property (text), widget (KPushButton, m_download)
 #: rc.cpp:1826 rc.cpp:1838 rc.cpp:1841 rc.cpp:2060 rc.cpp:2195
-#: plugins/search/htmlpart.cpp:182
+#: plugins/search/htmlpart.cpp:196
 msgid "Download"
 msgstr "Telecargar"
 
@@ -8353,9 +8368,10 @@ msgstr[1] ""
 msgid "<b>%1</b><br/><br/>%2"
 msgstr ""
 
-#: plugins/search/searchprefpage.cpp:58 plugins/search/searchactivity.cpp:35
-#: plugins/search/searchtoolbar.cpp:72 plugins/search/searchplugin.cpp:67
-#: plugins/search/searchplugin.cpp:89 plugins/search/searchplugin.cpp:144
+#: plugins/search/searchprefpage.cpp:58 plugins/search/homepage.cpp:121
+#: plugins/search/searchactivity.cpp:35 plugins/search/searchtoolbar.cpp:72
+#: plugins/search/searchplugin.cpp:67 plugins/search/searchplugin.cpp:89
+#: plugins/search/searchplugin.cpp:144
 msgid "Search"
 msgstr "Recercar"
 
@@ -8380,6 +8396,19 @@ msgstr ""
 msgid "The URL %1 does not contain {searchTerms}."
 msgstr ""
 
+#: plugins/search/homepage.cpp:117
+msgid "Home"
+msgstr ""
+
+#: plugins/search/homepage.cpp:119
+msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
+msgid "Be free."
+msgstr ""
+
+#: plugins/search/homepage.cpp:120
+msgid "Search the web for torrents."
+msgstr ""
+
 #: plugins/search/searchenginelist.cpp:216
 #, kde-format
 msgid "Failed to parse %1"
@@ -8390,32 +8419,28 @@ msgstr ""
 msgid "Url: <b>%1</b>"
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:77
+#: plugins/search/searchwidget.cpp:78
 msgid " Engine:"
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:90
+#: plugins/search/searchwidget.cpp:91
 msgid "Open in New Tab"
 msgstr "Dobrir dins un onglet novèl"
 
-#: plugins/search/searchwidget.cpp:199
+#: plugins/search/searchwidget.cpp:198
 #, kde-format
 msgid "Searching for %1..."
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:227
+#: plugins/search/searchwidget.cpp:232
 msgid "torrent files"
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:295
+#: plugins/search/searchwidget.cpp:300
 msgid "Search finished"
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:333
-msgid "Home"
-msgstr ""
-
-#: plugins/search/searchactivity.cpp:215
+#: plugins/search/searchactivity.cpp:212
 #, fuzzy, kde-format
 #| msgid "Search"
 msgid "Search for %1"
@@ -8437,11 +8462,11 @@ msgstr ""
 msgid " Engine: "
 msgstr ""
 
-#: plugins/search/htmlpart.cpp:180
+#: plugins/search/htmlpart.cpp:194
 msgid "Do you want to download or save the torrent?"
 msgstr ""
 
-#: plugins/search/htmlpart.cpp:181
+#: plugins/search/htmlpart.cpp:195
 msgid "Download Torrent"
 msgstr ""
 
