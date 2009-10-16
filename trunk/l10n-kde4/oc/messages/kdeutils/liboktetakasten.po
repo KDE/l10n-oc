@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okteta\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-15 06:17+0200\n"
+"POT-Creation-Date: 2009-10-16 06:18+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -78,6 +78,15 @@ msgctxt "name of the encoding target"
 msgid "Plain Text"
 msgstr "Tèxt brut"
 
+#: gui/io/bytearraysequencegenerator.cpp:51
+msgctxt "name of the generated data"
+msgid "Sequence"
+msgstr ""
+
+#: gui/io/bytearraysequencegenerator.cpp:79
+msgid "Sequence inserted."
+msgstr ""
+
 #: gui/io/bytearraysourcecodestreamencoderconfigeditor.cpp:52
 msgctxt "@label:textbox name of the created variable"
 msgid "Name of variable:"
@@ -105,6 +114,37 @@ msgctxt "@item name of the encoding result"
 msgid "C Array"
 msgstr ""
 
+#: gui/io/bytearraypatterngeneratorconfigeditor.cpp:50
+msgctxt "@label:textbox"
+msgid "Pattern:"
+msgstr ""
+
+#: gui/io/bytearraypatterngeneratorconfigeditor.cpp:56
+#: controllers/view/libfinddialog/kabstractfinddialog.cpp:75
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter a pattern to search for, or select a previous pattern from the list."
+msgstr ""
+"Picatz un motiu de recercar, o seleccionatz un motiu precedent de la tièra."
+
+#: gui/io/bytearraypatterngeneratorconfigeditor.cpp:66
+msgctxt "@label:spinbox number of times to insert the pattern"
+msgid "&Number:"
+msgstr ""
+
+#: gui/io/bytearraypatterngeneratorconfigeditor.cpp:73
+msgctxt "@info:whatsthis"
+msgid "Enter the number of times the pattern should be inserted."
+msgstr ""
+
+#: gui/io/bytearraypatterngeneratorconfigeditor.cpp:83
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Insert"
+msgctxt "@item name of the generated data"
+msgid "Pattern"
+msgstr "Inserir"
+
 #: gui/io/bytearrayvaluestreamencoder.cpp:44
 #, fuzzy
 #| msgctxt "name of the encoding target"
@@ -120,6 +160,15 @@ msgstr "Valors"
 msgctxt "name of the encoding target"
 msgid "View in Plain Text"
 msgstr "Tèxt brut"
+
+#: gui/io/bytearraypatterngenerator.cpp:49
+msgctxt "name of the generated data"
+msgid "Pattern..."
+msgstr ""
+
+#: gui/io/bytearraypatterngenerator.cpp:79
+msgid "Pattern inserted."
+msgstr ""
 
 #: core/io/filesystem/bytearrayrawfileloadthread.cpp:67
 msgctxt "destination of the byte array"
@@ -641,83 +690,6 @@ msgstr ""
 #: controllers/view/libbytearraychecksum/algorithm/modsum32bytearraychecksumalgorithm.cpp:35
 msgctxt "name of the checksum algorithm"
 msgid "Modular sum 32-bit"
-msgstr ""
-
-#: controllers/view/insertpattern/insertsequencecontroller.cpp:45
-msgctxt "@action:inmenu"
-msgid "Insert Complete Byte Sequence"
-msgstr ""
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:43
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Insert"
-msgctxt "@title:window"
-msgid "Insert Pattern"
-msgstr "Inserir"
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:45
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Insert"
-msgctxt "@action:button"
-msgid "&Insert"
-msgstr "&Inserir"
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:46
-msgctxt "@info:tooltip"
-msgid "Insert the pattern"
-msgstr ""
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:48
-msgctxt "@info:whatsthis"
-msgid ""
-"If you press the <interface>Insert</interface> button, the pattern you "
-"entered above is inserted in the byte array at the cursor position."
-msgstr ""
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:61
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Insert"
-msgctxt "@title:group"
-msgid "Insert"
-msgstr "Inserir"
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:66
-msgctxt "@label:textbox"
-msgid "Pattern:"
-msgstr ""
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:71
-#: controllers/view/libfinddialog/kabstractfinddialog.cpp:75
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter a pattern to search for, or select a previous pattern from the list."
-msgstr ""
-"Picatz un motiu de recercar, o seleccionatz un motiu precedent de la tièra."
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:78
-msgctxt "@label:spinbox number of times to insert the pattern"
-msgid "&Number:"
-msgstr ""
-
-#: controllers/view/insertpattern/insertpatterndialog.cpp:84
-msgctxt "@info:whatsthis"
-msgid "Enter the number of times the pattern should be inserted."
-msgstr ""
-
-#: controllers/view/insertpattern/insertpatterncontroller.cpp:48
-msgctxt "@action:inmenu"
-msgid "&Insert Pattern..."
-msgstr ""
-
-#: controllers/view/insertpattern/insertpatterntool.cpp:93
-msgid "Pattern inserted."
-msgstr ""
-
-#: controllers/view/insertpattern/insertsequencetool.cpp:88
-msgid "Sequence inserted."
 msgstr ""
 
 #: controllers/view/checksum/checksumtool.cpp:78
@@ -1807,6 +1779,20 @@ msgstr ""
 msgctxt "@action:inmenu"
 msgid "Overwrite only"
 msgstr "Inserir"
+
+#, fuzzy
+#~| msgctxt "@title:menu"
+#~| msgid "Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Inserir"
+
+#, fuzzy
+#~| msgctxt "@title:menu"
+#~| msgid "Insert"
+#~ msgctxt "@title:group"
+#~ msgid "Insert"
+#~ msgstr "Inserir"
 
 #~ msgctxt "@item:inlistbox coding of offset in the hexadecimal format"
 #~ msgid "Hexadecimal"
