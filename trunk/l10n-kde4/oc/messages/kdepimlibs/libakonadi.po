@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-22 06:24+0200\n"
+"POT-Creation-Date: 2009-10-23 06:10+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -54,6 +54,18 @@ msgid_plural "minutes"
 msgstr[0] "minuta"
 msgstr[1] "minuta"
 
+#: collectioncreatejob.cpp:58
+msgid "Invalid parent"
+msgstr ""
+
+#: collectiondeletejob.cpp:59 collectionmodifyjob.cpp:57
+msgid "Invalid collection"
+msgstr ""
+
+#: collectionfetchjob.cpp:129
+msgid "Invalid collection given."
+msgstr ""
+
 #: collectiongeneralpropertiespage.cpp:36
 #, fuzzy
 #| msgid "&General"
@@ -81,6 +93,10 @@ msgstr ""
 msgid "no collection"
 msgstr ""
 
+#: collectionselectjob.cpp:72
+msgid "Invalid collection specified"
+msgstr ""
+
 #: collectionstatisticsmodel.cpp:157
 msgctxt "@title:column, number of unread messages"
 msgid "Unread"
@@ -97,6 +113,22 @@ msgstr "Total"
 msgctxt "@title:column, total size (in bytes) of the collection"
 msgid "Size"
 msgstr "Talha :"
+
+#: collectionsync.cpp:172
+msgid ""
+"Inconsistent local collection tree detected! OMG, what have you done to my "
+"database?!?!"
+msgstr ""
+
+#: collectionsync.cpp:269
+msgid ""
+"Remote collection without root-terminated ancestor chain provided, fix your "
+"resource dude!"
+msgstr ""
+
+#: collectionsync.cpp:466
+msgid "Found unresolved orphan collections"
+msgstr ""
 
 #: collectionview.cpp:222 dragdropmanager.cpp:111
 msgid "&Move here"
@@ -143,6 +175,10 @@ msgstr ""
 msgid "Favorite Folders"
 msgstr "Repertòri novèl"
 
+#: itemfetchjob.cpp:149
+msgid "Cannot list root collection."
+msgstr ""
+
 #: itemmodel.cpp:312
 msgid "Id"
 msgstr ""
@@ -172,6 +208,29 @@ msgstr ""
 #: job.cpp:241
 msgid "Unknown error."
 msgstr "Error desconeguda."
+
+#: partfetcher.cpp:61
+msgid "Unable to fetch item for index"
+msgstr ""
+
+#: partfetcher.cpp:76
+msgid "Index is no longer available"
+msgstr ""
+
+#: partfetcher.cpp:123
+#, kde-format
+msgid "Payload part '%1' is not available for this index"
+msgstr ""
+
+#: partfetcher.cpp:132
+#, fuzzy
+#| msgid "No description available"
+msgid "No session available for this index"
+msgstr "Pas cap de descripcion es disponibla"
+
+#: partfetcher.cpp:141
+msgid "No item available for this index"
+msgstr ""
 
 #: pluginloader.cpp:137
 msgid "Unnamed plugin"
@@ -974,11 +1033,12 @@ msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
 #: standardactionmanager.cpp:82 standardactionmanager.cpp:117
-#, kde-format
-msgid "&Cut Collection"
-msgid_plural "&Cut %1 Collections"
-msgstr[0] ""
-msgstr[1] ""
+#, fuzzy, kde-format
+#| msgid "&Copy here"
+msgid "&Cut Folder"
+msgid_plural "&Cut %1 Folders"
+msgstr[0] "&Copiar aicí"
+msgstr[1] "&Copiar aicí"
 
 #: standardactionmanager.cpp:114
 #, fuzzy, kde-format
@@ -1162,6 +1222,14 @@ msgstr ""
 msgctxt "@info:status"
 msgid "Error."
 msgstr "Enganada !"
+
+#: linkjobimpl_p.h:49 movejobimpl_p.h:49
+msgid "No valid destination specified"
+msgstr ""
+
+#: movejobimpl_p.h:43
+msgid "No objects specified for moving"
+msgstr ""
 
 #: qtest_akonadi.h:44
 msgid "KDE Test Program"
