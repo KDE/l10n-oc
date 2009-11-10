@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-09 06:06+0100\n"
+"POT-Creation-Date: 2009-11-10 06:16+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2335,7 +2335,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:581 rc.cpp:2650 rc.cpp:3392 rc.cpp:3545 ui/kis_view2.cpp:338
+#: rc.cpp:581 rc.cpp:2650 rc.cpp:3392 rc.cpp:3545 ui/kis_view2.cpp:337
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -8398,7 +8398,19 @@ msgstr ""
 msgid "YCbCr (8-bit integer/channel)"
 msgstr ""
 
-#: ui/tool/kis_tool.cc:350
+#: ui/tool/kis_tool.cc:98
+#, fuzzy
+#| msgid "Background Color"
+msgid "Swap Foreground and Background Color"
+msgstr "Color de fons"
+
+#: ui/tool/kis_tool.cc:103
+#, fuzzy
+#| msgid "Background Color"
+msgid "Reset Foreground and Background Color"
+msgstr "Color de fons"
+
+#: ui/tool/kis_tool.cc:367
 #, fuzzy
 #| msgid "Options"
 msgid "No options"
@@ -8940,6 +8952,19 @@ msgstr ""
 msgid "As on &Monitor"
 msgstr ""
 
+#: ui/kis_node_model.cpp:295 image/kis_base_node.cpp:120
+msgid "Visible"
+msgstr ""
+
+#: ui/kis_node_model.cpp:296 image/kis_base_node.cpp:121
+msgid "Locked"
+msgstr ""
+
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:144
+#: image/kis_paint_layer.cc:151
+msgid "Alpha Locked"
+msgstr ""
+
 #: ui/kis_zoom_manager.cc:84
 msgid "Show Rulers"
 msgstr ""
@@ -9006,35 +9031,35 @@ msgstr ""
 msgid "Show Dockers"
 msgstr ""
 
-#: ui/kis_view2.cpp:227
+#: ui/kis_view2.cpp:226
 #, fuzzy
 #| msgid "&Tools"
 msgid "Tools"
 msgstr "&Espleches"
 
-#: ui/kis_view2.cpp:332
+#: ui/kis_view2.cpp:331
 msgid "Insert as New Layer"
 msgstr ""
 
-#: ui/kis_view2.cpp:333
+#: ui/kis_view2.cpp:332
 msgid "Insert as New Layers"
 msgstr ""
 
-#: ui/kis_view2.cpp:335
+#: ui/kis_view2.cpp:334
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:336
+#: ui/kis_view2.cpp:335
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:538
+#: ui/kis_view2.cpp:537
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette..."
 msgstr "Paleta"
 
-#: ui/kis_view2.cpp:678 ui/kis_view2.cpp:681
+#: ui/kis_view2.cpp:677 ui/kis_view2.cpp:680
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette"
@@ -9238,10 +9263,6 @@ msgid ""
 "This merge strategy attempt to find the best solution for merging, for "
 "instance by merging list of authors together, or keeping photographic "
 "information that are identical..."
-msgstr ""
-
-#: image/kis_paint_layer.cc:144 image/kis_paint_layer.cc:151
-msgid "Alpha Locked"
 msgstr ""
 
 #: image/tests/kis_random_generator_demo.cpp:141
@@ -9454,14 +9475,6 @@ msgstr "Filtre"
 
 #: image/kis_bookmarked_configuration_manager.cc:35
 msgid "Last used"
-msgstr ""
-
-#: image/kis_base_node.cpp:120
-msgid "Visible"
-msgstr ""
-
-#: image/kis_base_node.cpp:121
-msgid "Locked"
 msgstr ""
 
 #: image/recorder/kis_macro.cc:93
@@ -10778,7 +10791,7 @@ msgstr "Personalizat"
 msgid "Float"
 msgstr "Clucatejar"
 
-#: plugins/colorspaces/ctlcs/ctl_cs_plugin.cpp:127
+#: plugins/colorspaces/ctlcs/ctl_cs_plugin.cpp:115
 #: plugins/colorspaces/lms_f32/lms_f32_plugin.cc:54
 msgid "Float32 Histogram"
 msgstr ""
