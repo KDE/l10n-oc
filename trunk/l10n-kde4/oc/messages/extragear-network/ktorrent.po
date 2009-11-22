@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-21 06:39+0100\n"
+"POT-Creation-Date: 2009-11-22 06:22+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -405,8 +405,9 @@ msgstr ""
 msgid "Open an URL"
 msgstr ""
 
-#: ktorrent/pastedialog.cpp:59
-msgid "Invalid URL: "
+#: ktorrent/pastedialog.cpp:59 ktorrent/gui.cpp:314
+#, kde-format
+msgid "Invalid URL: %1"
 msgstr ""
 
 #: ktorrent/viewmanager.cpp:533
@@ -514,8 +515,7 @@ msgstr ""
 msgid "Scrape"
 msgstr ""
 
-#: ktorrent/viewmanager.cpp:596 plugins/infowidget/iwfilelistmodel.cpp:78
-#: plugins/infowidget/iwfiletreemodel.cpp:90
+#: ktorrent/viewmanager.cpp:596
 msgid "Preview"
 msgstr "Ulhada"
 
@@ -1037,7 +1037,6 @@ msgid "Name"
 msgstr "Nom"
 
 #: ktorrent/viewmodel.cpp:433 ktorrent/queuemanagermodel.cpp:120
-#: plugins/infowidget/infowidgetplugin.cpp:83
 #: plugins/infowidget/trackermodel.cpp:148
 #: plugins/infowidget/webseedsmodel.cpp:127
 msgid "Status"
@@ -1388,11 +1387,6 @@ msgstr "Totes los fichièrs"
 #: ktorrent/gui.cpp:230 ktorrent/gui.cpp:245
 msgid "Open Location"
 msgstr "Dobrir un emplaçament"
-
-#: ktorrent/gui.cpp:314
-#, kde-format
-msgid "Invalid URL: %1"
-msgstr ""
 
 #: ktorrent/gui.cpp:375
 msgid "Create a new torrent"
@@ -5723,7 +5717,10 @@ msgstr "Connexions"
 
 #. i18n: file: plugins/stats/Spd.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, SpdWgt)
-#: rc.cpp:1805 plugins/infowidget/webseedsmodel.cpp:125
+#: rc.cpp:1805
+#, fuzzy
+#| msgid "Speed"
+msgctxt "@title:window"
 msgid "Speed"
 msgstr "Velocitat"
 
@@ -7566,12 +7563,21 @@ msgstr ""
 msgid "Info Widget"
 msgstr ""
 
+#: plugins/infowidget/infowidgetplugin.cpp:83
+#, fuzzy
+#| msgid "Status"
+msgctxt "@title:tab"
+msgid "Status"
+msgstr "Estatut"
+
 #: plugins/infowidget/infowidgetplugin.cpp:84
 msgid "Displays status information about a torrent"
 msgstr ""
 
 #: plugins/infowidget/infowidgetplugin.cpp:85
-#: plugins/infowidget/chunkdownloadmodel.cpp:214
+#, fuzzy
+#| msgid "Files"
+msgctxt "@title:tab"
 msgid "Files"
 msgstr "Fichièrs"
 
@@ -7626,6 +7632,10 @@ msgstr "Actualizar"
 msgid "URL"
 msgstr "URL"
 
+#: plugins/infowidget/webseedsmodel.cpp:125
+msgid "Speed"
+msgstr "Velocitat"
+
 #: plugins/infowidget/webseedstab.cpp:96
 #, kde-format
 msgid "Cannot add the webseed %1, it is already part of the list of webseeds."
@@ -7663,6 +7673,14 @@ msgid ""
 "\"unavailable_color\">&nbsp; - Unavailable Chunks<br><img src="
 "\"excluded_color\">&nbsp; - Excluded Chunks"
 msgstr ""
+
+#: plugins/infowidget/iwfilelistmodel.cpp:78
+#: plugins/infowidget/iwfiletreemodel.cpp:90
+#, fuzzy
+#| msgid "Preview"
+msgctxt "@title:column"
+msgid "Preview"
+msgstr "Ulhada"
 
 #: plugins/infowidget/iwfilelistmodel.cpp:80
 #: plugins/infowidget/iwfiletreemodel.cpp:92
@@ -7731,6 +7749,10 @@ msgstr "Avançament"
 #: plugins/infowidget/chunkdownloadmodel.cpp:212
 msgid "Peer"
 msgstr ""
+
+#: plugins/infowidget/chunkdownloadmodel.cpp:214
+msgid "Files"
+msgstr "Fichièrs"
 
 #: plugins/infowidget/chunkdownloadmodel.cpp:222
 msgid "Number of the chunk"
@@ -7940,7 +7962,7 @@ msgstr ""
 msgid "Shutdown Enabled"
 msgstr ""
 
-#: plugins/shutdown/shutdownplugin.cpp:49 plugins/shutdown/shutdowndlg.cpp:29
+#: plugins/shutdown/shutdownplugin.cpp:49
 msgid "Configure Shutdown"
 msgstr ""
 
@@ -7958,6 +7980,11 @@ msgstr ""
 
 #: plugins/shutdown/shutdownplugin.cpp:164 plugins/shutdown/shutdowndlg.cpp:42
 msgid "Hibernate (suspend to disk)"
+msgstr ""
+
+#: plugins/shutdown/shutdowndlg.cpp:29
+msgctxt "@title:window"
+msgid "Configure Shutdown"
 msgstr ""
 
 #: plugins/shutdown/shutdowndlg.cpp:44
@@ -8949,21 +8976,21 @@ msgstr ""
 msgid "Cannot open file %1 : %2"
 msgstr ""
 
-#: libbtcore/torrent/torrent.cpp:83 libbtcore/torrent/torrent.cpp:154
-#: libbtcore/torrent/torrent.cpp:182 libbtcore/torrent/torrent.cpp:189
-#: libbtcore/torrent/torrent.cpp:197 libbtcore/torrent/torrent.cpp:201
-#: libbtcore/torrent/torrent.cpp:222 libbtcore/torrent/torrent.cpp:293
+#: libbtcore/torrent/torrent.cpp:83 libbtcore/torrent/torrent.cpp:155
+#: libbtcore/torrent/torrent.cpp:183 libbtcore/torrent/torrent.cpp:190
+#: libbtcore/torrent/torrent.cpp:198 libbtcore/torrent/torrent.cpp:202
+#: libbtcore/torrent/torrent.cpp:223 libbtcore/torrent/torrent.cpp:294
 #, fuzzy
 #| msgid "Important"
 msgid "Corrupted torrent."
 msgstr "Important"
 
-#: libbtcore/torrent/torrent.cpp:145
+#: libbtcore/torrent/torrent.cpp:146
 #, kde-format
 msgid " Unable to open torrent file %1 : %2"
 msgstr ""
 
-#: libbtcore/torrent/torrent.cpp:275
+#: libbtcore/torrent/torrent.cpp:276
 msgid "Parse Error"
 msgstr ""
 
