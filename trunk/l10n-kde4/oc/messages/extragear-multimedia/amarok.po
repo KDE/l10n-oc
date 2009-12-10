@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-09 08:06+0100\n"
+"POT-Creation-Date: 2009-12-10 06:47+0100\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -1118,11 +1118,11 @@ msgstr "Novèla tièra de lecturas"
 
 #: context/applets/albums/AlbumsView.cpp:115
 #: browsers/filebrowser/MyDirOperator.cpp:274
-#: playlist/view/PlaylistViewCommon.cpp:198
+#: playlist/view/PlaylistViewCommon.cpp:203
 msgid "Edit Track Details"
 msgstr ""
 
-#: context/applets/albums/Albums.cpp:178
+#: context/applets/albums/Albums.cpp:182
 #, fuzzy, kde-format
 #| msgid "disc"
 msgid "Disc %1"
@@ -1304,7 +1304,8 @@ msgstr "Artista"
 #: browsers/collectionbrowser/CollectionWidget.cpp:186
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250 rc.cpp:1225
 #: services/magnatune/MagnatuneStore.cpp:211
-#: services/jamendo/JamendoInfoParser.cpp:83 playlist/PlaylistHeader.cpp:40
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: playlist/view/PlaylistViewCommon.cpp:52 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:704 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
 msgid "Album"
@@ -4804,16 +4805,22 @@ msgstr "&Apondre un flus..."
 msgid "&Export Playlist As..."
 msgstr ""
 
-#: MainWindow.cpp:747 MainWindow.cpp:755
+#: MainWindow.cpp:747 amarokurls/NavigationUrlGenerator.cpp:216
 #, fuzzy
 #| msgid "Bookmarks"
-msgid "Bookmark This Location"
+msgid "Bookmark Media Sources View"
 msgstr "Marca-paginas"
 
 #: MainWindow.cpp:751 amarokurls/BookmarkManager.cpp:42
 #, fuzzy
 #| msgid "Bookmarks"
 msgid "Bookmark Manager"
+msgstr "Marca-paginas"
+
+#: MainWindow.cpp:755 playlist/PlaylistViewUrlGenerator.cpp:101
+#, fuzzy
+#| msgid "Bookmarks"
+msgid "Bookmark Playlist Setup"
 msgstr "Marca-paginas"
 
 #: MainWindow.cpp:759
@@ -4902,7 +4909,7 @@ msgstr "Pista seguenta"
 msgid "Last.fm: Skip Current Track"
 msgstr "Pista seguenta"
 
-#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:106
+#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:111
 #, fuzzy
 #| msgid "Track %1"
 msgid "Queue Track"
@@ -9397,27 +9404,21 @@ msgstr ""
 msgid "Ok"
 msgstr ""
 
-#: playlist/view/PlaylistViewCommon.cpp:48
-#, fuzzy
-#| msgid "Album"
-msgid " Album"
-msgstr "Album"
-
-#: playlist/view/PlaylistViewCommon.cpp:99
+#: playlist/view/PlaylistViewCommon.cpp:104
 msgid "Stop Playing After This Track"
 msgstr ""
 
-#: playlist/view/PlaylistViewCommon.cpp:106
+#: playlist/view/PlaylistViewCommon.cpp:111
 #, fuzzy
 #| msgid "&Delete"
 msgid "Dequeue Track"
 msgstr "&Suprimir"
 
-#: playlist/view/PlaylistViewCommon.cpp:117
+#: playlist/view/PlaylistViewCommon.cpp:122
 msgid "Remove From Playlist"
 msgstr "Suprimir de la tièra de lecturas"
 
-#: playlist/view/PlaylistViewCommon.cpp:181
+#: playlist/view/PlaylistViewCommon.cpp:186
 #, fuzzy
 #| msgid "Deleting files"
 msgid "Select Source"
@@ -9440,12 +9441,6 @@ msgstr "&Recercar"
 #| msgid "Days"
 msgid "%1 layout"
 msgstr "Jorns"
-
-#: playlist/PlaylistViewUrlGenerator.cpp:101
-#, fuzzy
-#| msgid "Bookmarks"
-msgid "Bookmark Playlist Setup"
-msgstr "Marca-paginas"
 
 #: playlist/PlaylistDefines.h:86
 msgctxt "Empty placeholder token used for spacing in playlist layouts"
@@ -10284,12 +10279,6 @@ msgstr ""
 msgid "Artist \"%1\""
 msgstr "Artista"
 
-#: amarokurls/NavigationUrlGenerator.cpp:216
-#, fuzzy
-#| msgid "Bookmarks"
-msgid "Bookmark Media Sources View"
-msgstr "Marca-paginas"
-
 #: widgets/VolumeWidget.cpp:48
 #, fuzzy
 #| msgid "Mute"
@@ -10819,6 +10808,16 @@ msgstr "&Apondre a la tièra de lecturas"
 #: TrayIcon.cpp:224
 msgid "&Queue Track"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Bookmarks"
+#~ msgid "Bookmark This Location"
+#~ msgstr "Marca-paginas"
+
+#, fuzzy
+#~| msgid "Album"
+#~ msgid " Album"
+#~ msgstr "Album"
 
 #, fuzzy
 #~| msgid "Authors"
