@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-17 06:05+0100\n"
+"POT-Creation-Date: 2010-01-18 06:38+0100\n"
 "PO-Revision-Date: 2008-08-06 00:13+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -255,8 +255,11 @@ msgid "Switches to text view."
 msgstr ""
 
 #: core/KexiView.cpp:232
-msgid "Save Design"
-msgstr ""
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:384
+#, fuzzy
+#| msgid "&Save"
+msgid "Save"
+msgstr "Enregistrar"
 
 #: core/KexiView.cpp:233
 msgid "Save current design"
@@ -1908,7 +1911,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, btnRemove)
 #: main/KexiMainWindow.cpp:4248 rc.cpp:270
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:923
-#: plugins/reportspgz/kexireportdesignview.cpp:44
 msgid "Delete"
 msgstr "Suprimir"
 
@@ -2649,7 +2651,7 @@ msgid "Double Precision Number"
 msgstr ""
 
 #: kexidb/field.cpp:716 kexidb/field.cpp:737 formeditor/form.cpp:413
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1359
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1358
 msgid "Text"
 msgstr "Tèxt"
 
@@ -3414,7 +3416,7 @@ msgstr "Nombre"
 
 #: kexidb/utils.cpp:1250 widget/utils/kexicontextmenuutils.cpp:290
 #: plugins/forms/kexidbfactory.cpp:344
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1371
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1370
 msgid "Image"
 msgstr "Imatge"
 
@@ -3541,7 +3543,6 @@ msgstr ""
 
 #: formeditor/commands.cpp:1382
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:919
-#: plugins/reportspgz/kexireportdesignview.cpp:42
 #, fuzzy
 #| msgid "Date"
 msgid "Paste"
@@ -3561,7 +3562,6 @@ msgstr "Largor"
 
 #: formeditor/commands.cpp:1893
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:915
-#: plugins/reportspgz/kexireportdesignview.cpp:38
 msgid "Cut"
 msgstr "Talhar"
 
@@ -3873,7 +3873,7 @@ msgid "A progress indicator widget"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:362
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1363
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1362
 #: plugins/reportspgz/koreport/common/krchartdata.cpp:143
 msgid "Line"
 msgstr "Linha"
@@ -5798,7 +5798,7 @@ msgstr "&Descripcion :"
 
 #. i18n: file: plugins/reportspgz/koreport/wrtembed/sectioneditor.ui:31
 #. i18n: ectx: property (windowTitle), widget (QDialog, SectionEditor)
-#: rc.cpp:216 plugins/reportspgz/kexireportdesignview.cpp:47
+#: rc.cpp:216
 #, fuzzy
 #| msgid "Text Editor"
 msgid "Section Editor"
@@ -7466,12 +7466,6 @@ msgid ""
 msgstr ""
 
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:384
-#, fuzzy
-#| msgid "&Save"
-msgid "Save"
-msgstr "Enregistrar"
-
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:384
 msgid "Discard"
 msgstr "Abandonar"
 
@@ -7516,36 +7510,35 @@ msgid "Page Footer (Last)"
 msgstr ""
 
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:916
-#: plugins/reportspgz/kexireportdesignview.cpp:40
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:65
 msgid "Copy"
 msgstr "Copiar"
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1351
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1350
 msgid "Label"
 msgstr "Etiqueta"
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1355
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1354
 #, fuzzy
 #| msgid "File"
 msgid "Field"
 msgstr "Zòna"
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1367
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1366
 msgid "Barcode"
 msgstr ""
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1375
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1374
 msgid "Chart"
 msgstr "Chart (Diagrama)"
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1379
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1378
 #, fuzzy
 #| msgid "&Save"
 msgid "Shape"
 msgstr "Forma"
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1383
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1382
 #, fuzzy
 #| msgid "Check Box"
 msgid "Check"
@@ -7566,6 +7559,12 @@ msgstr ""
 #| msgid "Details"
 msgid "Detail"
 msgstr "Detalhs"
+
+#: plugins/reportspgz/koreport/wrtembed/reportpropertiesbutton.cpp:23
+msgid ""
+"A button that allows to select report's surface, so it is possible to see "
+"report's properties."
+msgstr ""
 
 #: plugins/reportspgz/koreport/common/krimagedata.cpp:116
 msgid "Clip"
@@ -7695,11 +7694,17 @@ msgstr "Superior"
 msgid "Bottom"
 msgstr "Inferior"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:50
+#: plugins/reportspgz/kexireportdesignview.cpp:51
+#, fuzzy
+#| msgid "Test Connection"
+msgid "Edit Sections"
+msgstr "Test de la connexion"
+
+#: plugins/reportspgz/kexireportdesignview.cpp:54
 msgid "Raise"
 msgstr ""
 
-#: plugins/reportspgz/kexireportdesignview.cpp:52
+#: plugins/reportspgz/kexireportdesignview.cpp:56
 msgid "Lower"
 msgstr "Mai bas"
 
