@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-19 06:48+0100\n"
+"POT-Creation-Date: 2010-01-24 06:19+0100\n"
 "PO-Revision-Date: 2008-08-05 22:41+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2075,7 +2075,7 @@ msgstr ""
 msgid "Bookmarks"
 msgstr "Marca-paginas"
 
-#: k3bdiroperator.cpp:55 k3bfiletreeview.cpp:314
+#: k3bdiroperator.cpp:55 k3bfiletreeview.cpp:96
 msgid "&Add to Project"
 msgstr ""
 
@@ -2455,8 +2455,7 @@ msgid ""
 "Manager.)"
 msgstr ""
 
-#: k3bpassivepopup.cpp:126 k3bsystemproblemdialog.cpp:102
-#: projects/k3bprojectburndialog.cpp:82
+#: k3bpassivepopup.cpp:126 projects/k3bprojectburndialog.cpp:82
 msgid "Close"
 msgstr "Tampar"
 
@@ -2739,7 +2738,7 @@ msgstr ""
 msgid "No Active Project"
 msgstr ""
 
-#: k3b.cpp:1356 k3bsystemproblemdialog.cpp:610
+#: k3b.cpp:1356 k3bsystemproblemdialog.cpp:591
 #: option/k3bdeviceoptiontab.cpp:85
 msgid "Unable to start K3b::Setup."
 msgstr ""
@@ -2764,38 +2763,46 @@ msgstr ""
 msgid "Video CD Rip"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:92 k3bsystemproblemdialog.cpp:99
+#: k3bsystemproblemdialog.cpp:87 k3bsystemproblemdialog.cpp:94
 msgid "System Configuration Problems"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:100
+#: k3bsystemproblemdialog.cpp:95
 #, kde-format
 msgid "1 problem"
 msgid_plural "%1 problems"
 msgstr[0] ""
 msgstr[1] ""
 
-#: k3bsystemproblemdialog.cpp:104
+#: k3bsystemproblemdialog.cpp:99
 msgid "Do not show again"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:107
-msgid "Start K3b::Setup"
+#: k3bsystemproblemdialog.cpp:102 option/k3bdevicewidget.cpp:57
+msgid "Modify Permissions..."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:147 k3bsystemproblemdialog.cpp:150
+#: k3bsystemproblemdialog.cpp:146
 msgid "Solution"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:150
-msgid "Use K3b::Setup to solve this problem."
+#: k3bsystemproblemdialog.cpp:176
+msgid "No optical drive found."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:181
-msgid "No CD/DVD writer found."
+#: k3bsystemproblemdialog.cpp:177
+msgid "K3b did not find any optical device in your system."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:182
+#: k3bsystemproblemdialog.cpp:179
+msgid "Make sure HAL daemon is running, it is used by K3b for finding devices."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:185
+msgid "No CD/DVD/BD writer found."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:186
 msgid ""
 "K3b did not find an optical writing device in your system. Thus, you will "
 "not be able to burn CDs or DVDs. However, you can still use other K3b "
@@ -2803,55 +2810,60 @@ msgid ""
 "creation."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:192 k3bsystemproblemdialog.cpp:247
-#: k3bsystemproblemdialog.cpp:272 k3bsystemproblemdialog.cpp:321
+#: k3bsystemproblemdialog.cpp:196 k3bsystemproblemdialog.cpp:247
+#: k3bsystemproblemdialog.cpp:270 k3bsystemproblemdialog.cpp:314
 #, kde-format
 msgid "Unable to find %1 executable"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:193
+#: k3bsystemproblemdialog.cpp:197
 msgid "K3b uses cdrecord to actually write CDs."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:194
+#: k3bsystemproblemdialog.cpp:198
 msgid "Install the cdrtools package which contains cdrecord."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:201 k3bsystemproblemdialog.cpp:282
-#: k3bsystemproblemdialog.cpp:290 k3bsystemproblemdialog.cpp:299
-#: k3bsystemproblemdialog.cpp:333 k3bsystemproblemdialog.cpp:444
+#: k3bsystemproblemdialog.cpp:204 k3bsystemproblemdialog.cpp:279
+#: k3bsystemproblemdialog.cpp:286 k3bsystemproblemdialog.cpp:294
+#: k3bsystemproblemdialog.cpp:325 k3bsystemproblemdialog.cpp:431
 #, kde-format
 msgid "Used %1 version %2 is outdated"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:202
+#: k3bsystemproblemdialog.cpp:205
 msgid ""
 "Although K3b supports all cdrtools versions since 1.10 it is highly "
 "recommended to at least use version 2.0."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:205
+#: k3bsystemproblemdialog.cpp:208
 msgid "Install a more recent version of the cdrtools."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:222
+#: k3bsystemproblemdialog.cpp:224
 #, kde-format
 msgid "%1 will be run with root privileges on kernel >= 2.6.8"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:223
+#: k3bsystemproblemdialog.cpp:225
 #, kde-format
 msgid ""
 "Since Linux kernel 2.6.8 %1 will not work when run suid root for security "
 "reasons anymore."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:232 k3bsystemproblemdialog.cpp:257
+#: k3bsystemproblemdialog.cpp:228 k3bsystemproblemdialog.cpp:240
+#: k3bsystemproblemdialog.cpp:260
+msgid "Click \"Modify Permissions...\" to solve this problem."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:233 k3bsystemproblemdialog.cpp:256
 #, kde-format
 msgid "%1 will be run without root privileges"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:233
+#: k3bsystemproblemdialog.cpp:234
 msgid ""
 "It is highly recommended to configure cdrecord to run with root privileges, "
 "as then cdrecord runs with high priority that increases the overall "
@@ -2868,98 +2880,98 @@ msgstr ""
 msgid "Install the cdrdao package."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:258
+#: k3bsystemproblemdialog.cpp:257
 msgid ""
 "It is highly recommended to configure cdrdao to run with root privileges to "
 "increase the overall stability of the burning process."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:273
+#: k3bsystemproblemdialog.cpp:271
 msgid ""
 "K3b uses growisofs to actually write DVDs. Without growisofs you will not be "
 "able to write DVDs. Make sure to install at least version 5.10."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:276 k3bsystemproblemdialog.cpp:323
+#: k3bsystemproblemdialog.cpp:274 k3bsystemproblemdialog.cpp:316
 msgid "Install the dvd+rw-tools package."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:283
+#: k3bsystemproblemdialog.cpp:280
 msgid ""
 "K3b needs at least growisofs version 5.10 to write DVDs. All older versions "
 "will not work and K3b will refuse to use them."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:285 k3bsystemproblemdialog.cpp:294
-#: k3bsystemproblemdialog.cpp:303 k3bsystemproblemdialog.cpp:338
+#: k3bsystemproblemdialog.cpp:282 k3bsystemproblemdialog.cpp:290
+#: k3bsystemproblemdialog.cpp:298 k3bsystemproblemdialog.cpp:330
 #, kde-format
 msgid "Install a more recent version of %1."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:291
+#: k3bsystemproblemdialog.cpp:287
 msgid ""
 "K3b will not be able to copy DVDs on-the-fly or write a DVD+RW in multiple "
 "sessions using a growisofs version older than 5.12."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:300
+#: k3bsystemproblemdialog.cpp:295
 msgid ""
 "It is highly recommended to use growisofs 7.0 or higher. K3b will not be "
 "able to write a DVD+RW in multiple sessions using a growisofs version older "
 "than 7.0."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:322
+#: k3bsystemproblemdialog.cpp:315
 msgid "K3b uses dvd+rw-format to format DVD-RWs and DVD+RWs."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:336
+#: k3bsystemproblemdialog.cpp:328
 msgid ""
 "K3b needs at least mkisofs version 1.14. Older versions may introduce "
 "problems when creating data projects."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:361
+#: k3bsystemproblemdialog.cpp:352
 #, kde-format
 msgid "Device %1 - %2 is automounted."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:363
+#: k3bsystemproblemdialog.cpp:354
 msgid ""
 "K3b is not able to unmount automounted devices. Thus, especially DVD+RW "
 "rewriting might fail. There is no need to report this as a bug or feature "
 "wish; it is not possible to solve this problem from within K3b."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:367
+#: k3bsystemproblemdialog.cpp:358
 msgid ""
 "Replace the automounting entries in /etc/fstab with old-fashioned ones or "
 "use a user-space mounting solution like pmount or ivman."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:377
+#: k3bsystemproblemdialog.cpp:367
 msgid "No ATAPI writing support in kernel"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:378
+#: k3bsystemproblemdialog.cpp:368
 msgid ""
 "Your kernel does not support writing without SCSI emulation but there is at "
 "least one writer in your system not configured to use SCSI emulation."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:382
+#: k3bsystemproblemdialog.cpp:372
 msgid ""
 "The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
 "all devices. This way you will not have any problems. Be aware that you may "
 "still enable DMA on ide-scsi emulated drives."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:399 k3bsystemproblemdialog.cpp:419
+#: k3bsystemproblemdialog.cpp:388 k3bsystemproblemdialog.cpp:407
 #, kde-format
 msgid "%1 %2 does not support ATAPI"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:400 k3bsystemproblemdialog.cpp:422
+#: k3bsystemproblemdialog.cpp:389 k3bsystemproblemdialog.cpp:410
 #, kde-format
 msgid ""
 "The configured version of %1 does not support writing to ATAPI devices "
@@ -2967,7 +2979,7 @@ msgid ""
 "configured to use SCSI emulation."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:405
+#: k3bsystemproblemdialog.cpp:394
 #, kde-format
 msgid ""
 "The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
@@ -2975,12 +2987,12 @@ msgid ""
 "select as the default) a more recent version of %1."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:428
+#: k3bsystemproblemdialog.cpp:416
 msgid ""
 "Install cdrdao >= 1.1.8 which supports writing to ATAPI devices directly."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:430
+#: k3bsystemproblemdialog.cpp:418
 #, kde-format
 msgid ""
 "The best, and recommended, solution is to use ide-scsi (SCSI emulation) for "
@@ -2988,83 +3000,83 @@ msgid ""
 "install (or select as the default) a more recent version of %1."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:445
+#: k3bsystemproblemdialog.cpp:432
 msgid ""
 "K3b will not be able to write DVD-R Dual Layer media using a growisofs "
 "version older than 6.0."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:447
+#: k3bsystemproblemdialog.cpp:434
 msgid "Install a more recent version of growisofs."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:458
+#: k3bsystemproblemdialog.cpp:444
 #, kde-format
 msgid "No write access to device %1"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:459
+#: k3bsystemproblemdialog.cpp:445
 #, kde-format
 msgid ""
 "K3b needs write access to all the devices to perform certain tasks. Without "
 "it you might encounter problems with %1 - %2"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:461
+#: k3bsystemproblemdialog.cpp:447
 #, kde-format
 msgid ""
 "Make sure you have write access to %1. In case you are not using devfs or "
-"udev K3b::Setup is able to do this for you."
+"udev click \"Modify Permissions...\" and setup permissions by hand."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:468
+#: k3bsystemproblemdialog.cpp:453
 #, kde-format
 msgid "DMA disabled on device %1 - %2"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:469
+#: k3bsystemproblemdialog.cpp:454
 msgid ""
-"With most modern CD/DVD devices enabling DMA highly increases read/write "
+"With most modern CD/DVD/BD devices enabling DMA highly increases read/write "
 "performance. If you experience very low writing speeds this is probably the "
 "cause."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:472
+#: k3bsystemproblemdialog.cpp:457
 #, kde-format
 msgid "Enable DMA temporarily as root with 'hdparm -d 1 %1'."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:486
+#: k3bsystemproblemdialog.cpp:471
 #, kde-format
 msgid "User parameters specified for external program %1"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:487
+#: k3bsystemproblemdialog.cpp:472
 msgid ""
 "Sometimes it may be necessary to specify user parameters in addition to the "
 "parameters generated by K3b. This is simply a warning to make sure that "
 "these parameters are really wanted and will not be part of some bug report."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:490
+#: k3bsystemproblemdialog.cpp:475
 #, kde-format
 msgid ""
 "To remove the user parameters for the external program %1 open the K3b "
 "settings page 'Programs' and choose the tab 'User Parameters'."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:512
+#: k3bsystemproblemdialog.cpp:496
 msgid "MP3 Audio Decoder plugin not found."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:513
+#: k3bsystemproblemdialog.cpp:497
 msgid ""
 "K3b could not load or find the MP3 decoder plugin. This means that you will "
 "not be able to create Audio CDs from MP3 files. Many Linux distributions do "
 "not include MP3 support for legal reasons."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:516
+#: k3bsystemproblemdialog.cpp:500
 msgid ""
 "To enable MP3 support, please install the MAD MP3 decoding library as well "
 "as the K3b MAD MP3 decoder plugin (the latter may already be installed but "
@@ -3072,11 +3084,11 @@ msgid ""
 "installation of MP3 support via an online update tool."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:532
+#: k3bsystemproblemdialog.cpp:515
 msgid "System locale charset is ANSI_X3.4-1968"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:533
+#: k3bsystemproblemdialog.cpp:516
 msgid ""
 "Your system's locale charset (i.e. the charset used to encode filenames) is "
 "set to ANSI_X3.4-1968. It is highly unlikely that this has been done "
@@ -3084,37 +3096,37 @@ msgid ""
 "will result in problems when creating data projects."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:537
+#: k3bsystemproblemdialog.cpp:520
 msgid ""
 "To properly set the locale charset make sure the LC_* environment variables "
 "are set. Normally the distribution setup tools take care of this."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:550
+#: k3bsystemproblemdialog.cpp:532
 msgid "Running K3b as root user"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:551
+#: k3bsystemproblemdialog.cpp:533
 msgid ""
 "It is not recommended to run K3b under the root user account. This "
 "introduces unnecessary security risks."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:553
+#: k3bsystemproblemdialog.cpp:535
 msgid ""
 "Run K3b from a proper user account and setup the device and external tool "
 "permissions appropriately."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:556
-msgid "The latter can be done via K3b::Setup."
+#: k3bsystemproblemdialog.cpp:538
+msgid "The latter can be done via \"Modify Permissions...\"."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:587
+#: k3bsystemproblemdialog.cpp:568
 msgid "No problems found in system configuration."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:587
+#: k3bsystemproblemdialog.cpp:568
 msgid "System configured properly"
 msgstr ""
 
@@ -3692,10 +3704,6 @@ msgid ""
 "may result in damaged media."
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:57
-msgid "Modify Permissions..."
-msgstr ""
-
 #: option/k3bdevicewidget.cpp:58
 msgid "Refresh"
 msgstr "Actualizar"
@@ -3708,59 +3716,59 @@ msgstr ""
 msgid "CD/DVD/BD Drives"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:122
+#: option/k3bdevicewidget.cpp:123
 msgid "Writer Drives"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:127
+#: option/k3bdevicewidget.cpp:128
 msgid "Read-only Drives"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:143
+#: option/k3bdevicewidget.cpp:144
 msgid "System device name:"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:148
+#: option/k3bdevicewidget.cpp:150
 msgid "Vendor:"
 msgstr "Vendeire :"
 
-#: option/k3bdevicewidget.cpp:153
+#: option/k3bdevicewidget.cpp:156
 msgid "Description:"
 msgstr "Descripcion :"
 
-#: option/k3bdevicewidget.cpp:158
+#: option/k3bdevicewidget.cpp:162
 msgid "Firmware:"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:166
+#: option/k3bdevicewidget.cpp:171
 msgid "Write Capabilities:"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:171
+#: option/k3bdevicewidget.cpp:178
 msgid "Read Capabilities:"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:180
+#: option/k3bdevicewidget.cpp:189
 msgid "Buffer Size:"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:189
+#: option/k3bdevicewidget.cpp:199
 msgid "Supports Burnfree:"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:190
+#: option/k3bdevicewidget.cpp:200
 msgid "yes"
 msgstr "òc"
 
-#: option/k3bdevicewidget.cpp:190
+#: option/k3bdevicewidget.cpp:200
 msgid "no"
 msgstr "non"
 
-#: option/k3bdevicewidget.cpp:195
+#: option/k3bdevicewidget.cpp:206
 msgid "Write modes:"
 msgstr ""
 
-#: option/k3bdevicewidget.cpp:204 option/k3bdevicewidget.cpp:209
+#: option/k3bdevicewidget.cpp:217 option/k3bdevicewidget.cpp:222
 msgid "none"
 msgstr "pas cap"
 
