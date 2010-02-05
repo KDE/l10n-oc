@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-04 06:49+0100\n"
+"POT-Creation-Date: 2010-02-05 02:50+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2476,7 +2476,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:349
+#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:346
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -3376,7 +3376,8 @@ msgstr ""
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:66
+#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
 msgid "Ellipse"
 msgstr "Ellipsa"
 
@@ -6157,7 +6158,7 @@ msgstr ""
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:168
+#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:167
 msgid "Opacity: "
 msgstr ""
 
@@ -8481,29 +8482,25 @@ msgstr "Seleccion"
 msgid "&Finish"
 msgstr ""
 
-#: ui/tool/kis_tool.cc:103
+#: ui/tool/kis_tool.cc:104
 #, fuzzy
 #| msgid "Background Color"
 msgid "Swap Foreground and Background Color"
 msgstr "Color de fons"
 
-#: ui/tool/kis_tool.cc:108
+#: ui/tool/kis_tool.cc:109
 #, fuzzy
 #| msgid "Background Color"
 msgid "Reset Foreground and Background Color"
 msgstr "Color de fons"
 
-#: ui/tool/kis_tool.cc:378
+#: ui/tool/kis_tool.cc:384
 #, fuzzy
 #| msgid "Options"
 msgid "No options"
 msgstr "Opcions"
 
-#: ui/tool/kis_tool_freehand.cc:416 ui/tool/kis_tool_freehand.cc:425
-msgid "Freehand tool"
-msgstr ""
-
-#: ui/tool/kis_tool_paint.cc:176
+#: ui/tool/kis_tool_paint.cc:175
 msgid "Mode: "
 msgstr ""
 
@@ -9161,35 +9158,35 @@ msgstr ""
 msgid "Show Dockers"
 msgstr ""
 
-#: ui/kis_view2.cpp:238
+#: ui/kis_view2.cpp:240
 #, fuzzy
 #| msgid "&Tools"
 msgid "Tools"
 msgstr "&Espleches"
 
-#: ui/kis_view2.cpp:343
+#: ui/kis_view2.cpp:340
 msgid "Insert as New Layer"
 msgstr ""
 
-#: ui/kis_view2.cpp:344
+#: ui/kis_view2.cpp:341
 msgid "Insert as New Layers"
 msgstr ""
 
-#: ui/kis_view2.cpp:346
+#: ui/kis_view2.cpp:343
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:347
+#: ui/kis_view2.cpp:344
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:549
+#: ui/kis_view2.cpp:546
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette..."
 msgstr "Paleta"
 
-#: ui/kis_view2.cpp:686 ui/kis_view2.cpp:689
+#: ui/kis_view2.cpp:683 ui/kis_view2.cpp:686
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette"
@@ -9619,6 +9616,16 @@ msgstr ""
 msgid "Play macro"
 msgstr ""
 
+#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
+#, fuzzy
+#| msgid "Line"
+msgid "Poly line"
+msgstr "Linha"
+
+#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
+msgid "Bezier curve"
+msgstr ""
+
 #: image/kis_clone_layer.cpp:199
 msgid "Copy From"
 msgstr ""
@@ -9758,12 +9765,6 @@ msgstr ""
 msgid "Angle: "
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:54
-#, fuzzy
-#| msgid "Ellipse"
-msgid "Ellipse tool"
-msgstr "Ellipsa"
-
 #: plugins/tools/defaulttools/kis_tool_colorpicker.h:89
 msgid "Select a color from the image or current layer"
 msgstr ""
@@ -9786,13 +9787,7 @@ msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "Linha"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:176
-#, fuzzy
-#| msgid "Line"
-msgid "Line tool"
-msgstr "Linha"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:269
+#: plugins/tools/defaulttools/kis_tool_line.cc:270
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -9974,13 +9969,6 @@ msgstr ""
 #: plugins/tools/tool_polygon/kis_tool_polygon.h:50
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr ""
-
-#: plugins/tools/tool_polygon/kis_tool_polygon.cc:65
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:54
-#, fuzzy
-#| msgid "Line"
-msgid "Polyline tool"
-msgstr "Linha"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
 msgid "Polyline"
@@ -11956,7 +11944,7 @@ msgstr ""
 msgid "Index out of bound"
 msgstr ""
 
-#: plugins/extensions/scripting/scriptingpart.cpp:137
+#: plugins/extensions/scripting/scriptingpart.cpp:138
 #, fuzzy, kde-format
 #| msgid "&Show"
 msgid "&Show %1"
@@ -12067,6 +12055,16 @@ msgstr "Regulièr"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:68
 msgid "Ruler assistant editor tool"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Ellipse"
+#~ msgid "Ellipse tool"
+#~ msgstr "Ellipsa"
+
+#, fuzzy
+#~| msgid "Line"
+#~ msgid "Line tool"
+#~ msgstr "Linha"
 
 #, fuzzy
 #~| msgid "Normal"
