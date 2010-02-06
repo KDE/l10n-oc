@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelirc_kcmlirc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-08 18:23+0000\n"
+"POT-Creation-Date: 2010-02-05 15:18+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -20,23 +20,47 @@ msgstr ""
 #. Tag: title
 #: index.docbook:13
 #, no-c-format
-msgid "KDE Infrared Remote Control Configuration"
+msgid "&kde; Infrared Remote Control Configuration"
 msgstr ""
 
 #. Tag: author
 #: index.docbook:16
 #, no-c-format
-msgid "<firstname>Gav</firstname> <surname>Wood</surname>"
+msgid "<firstname>Frank</firstname> <surname>Scheffold</surname>"
 msgstr ""
 
 #. Tag: email
 #: index.docbook:20
 #, no-c-format
+msgid "fscheffold@googlemail.com"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:23
+#, no-c-format
+msgid "<firstname>Michael</firstname> <surname>Zanetti</surname>"
+msgstr ""
+
+#. Tag: email
+#: index.docbook:27
+#, no-c-format
+msgid "michael_zanetti@gmx.net"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:30
+#, no-c-format
+msgid "<firstname>Gav</firstname> <surname>Wood</surname>"
+msgstr ""
+
+#. Tag: email
+#: index.docbook:34
+#, no-c-format
 msgid "gav@kde.org"
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:23
+#: index.docbook:37
 #, no-c-format
 msgid "ROLES_OF_TRANSLATORS"
 msgstr ""
@@ -45,236 +69,513 @@ msgstr ""
 "affiliation><contrib></contrib></othercredit>"
 
 #. Tag: holder
-#: index.docbook:31
+#: index.docbook:45
 #, no-c-format
 msgid "Gav Wood"
 msgstr ""
 
+#. Tag: holder
+#: index.docbook:49
+#, no-c-format
+msgid "Frank Scheffold"
+msgstr ""
+
+#. Tag: holder
+#: index.docbook:50
+#, no-c-format
+msgid "Michael Zanetti"
+msgstr ""
+
 #. Tag: para
-#: index.docbook:36
+#: index.docbook:57
 #, no-c-format
 msgid ""
-"&kdelirc; configuration: The infrastructure for the KDE's Infrared Remote "
+"&kdelirc; configuration: The infrastructure for the &kde;'s Infrared Remote "
 "Control functionality."
 msgstr ""
 
 #. Tag: keyword
-#: index.docbook:40
+#: index.docbook:61
 #, no-c-format
 msgid "<keyword>KDE</keyword>"
 msgstr "<keyword>KDE</keyword>"
 
 #. Tag: keyword
-#: index.docbook:41
+#: index.docbook:62
 #, no-c-format
 msgid "irkick"
 msgstr ""
 
 #. Tag: keyword
-#: index.docbook:42
+#: index.docbook:63
 #, no-c-format
 msgid "kdelirc"
 msgstr ""
 
 #. Tag: keyword
-#: index.docbook:43
+#: index.docbook:64
 #, no-c-format
 msgid "kcmlirc"
 msgstr ""
 
 #. Tag: keyword
-#: index.docbook:44
+#: index.docbook:65
 #, no-c-format
 msgid "lirc"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:50
+#: index.docbook:71 index.docbook:171
 #, no-c-format
 msgid "Introduction"
 msgstr "Introduccion"
 
 #. Tag: title
-#: index.docbook:56
+#: index.docbook:73
 #, no-c-format
 msgid "Requirements"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:58
+#: index.docbook:74
 #, no-c-format
 msgid ""
-"For the KDELirc framework to be utilised you must have setup a LIRC on your "
-"computer. If it is properly set up, the &kdelirc; icon in the system tray "
-"(show icon here) will light up red. If not, it will be grey and crossed out."
+"To use the &kdelirc; framework you must have set up LIRC on your computer. "
+"If it is properly set up, the &kdelirc; icon in the system tray will light "
+"up red <inlinemediaobject><imageobject><imagedata fileref=\"irkick.png\" "
+"format=\"PNG\"/></imageobject></inlinemediaobject>. If not, it will be grey "
+"and crossed out <inlinemediaobject><imageobject><imagedata fileref="
+"\"irkickoff.png\" format=\"PNG\"/></imageobject></inlinemediaobject>."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:65
+#: index.docbook:81
 #, no-c-format
 msgid ""
-"For more information about LIRC, visit their website at http://www.lirc.org."
+"For more information about LIRC and how to configure it, visit their website "
+"at <ulink url=\"http://www.lirc.org\">http://www.lirc.org</ulink>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:85
+#, no-c-format
+msgid ""
+"<emphasis role=\"strong\">Note:</emphasis> When configuring LIRC it is "
+"recommended to make use of button-namespaces."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:73
+#: index.docbook:93
 #, no-c-format
 msgid "Usage"
 msgstr "Utilizacion"
 
 #. Tag: para
-#: index.docbook:75
+#: index.docbook:95
 #, no-c-format
 msgid ""
-"There are several sections of the configuration. The list on the left "
-"details the remote controls and modes. The selection of that dictates the "
-"contents of the right-most list, which shows button/action bindings. "
-"Flicking the main tab over to Loaded Extensions will show a list of "
-"applications and remote controls that are recognized for the advanced "
-"functionality; some data is also viewable by selecting one of the items."
+"There are three tabs giving you several sections of configuration and "
+"additional information. The first tab, called <guibutton>Controller "
+"Functions</guibutton> is used to configure modes and actions for all "
+"available remotes. The tab named <guibutton>Profiles Overview</guibutton> "
+"contains details about the available profiles. The <guibutton>Available "
+"Remotes</guibutton> tab shows you additional information about your remote "
+"controls. Selecting a remote gives you an overview about their buttons."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:80
+#: index.docbook:99
+#, fuzzy, no-c-format
+#| msgid "Introduction"
+msgid "Controller Functions"
+msgstr "Introduccion"
+
+#. Tag: title
+#: index.docbook:101
 #, no-c-format
 msgid "Remote Controls and Modes"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:82
-#, no-c-format
-msgid ""
-"Each remote control can have a number of modes. Having multiple modes allows "
-"the same button to conduct different actions in difference situations, and "
-"is how many remote controls handle many different appliances with a limited "
-"number of buttons. A good example are the TV/Video/Satellite/DVD multi-"
-"purpose remote controls - rather than having several sets of number buttons "
-"for each appliance they have only one set which works for the currently "
-"selected appliance only."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:86
-#, no-c-format
-msgid ""
-"Each remote control can be in at most one mode at once (it may also be in no "
-"mode at all). The remote control also has a \"default mode\", which is the "
-"mode that it starts in, and the mode that it gets reset to normally. This "
-"may be set by using the Edit button."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:90
-#, no-c-format
-msgid ""
-"The list contains any remote controls detected on your system. Modes may be "
-"added and removed by selecting the desired remote control and using the "
-"buttons directly below the list Add, Remove. Modes may be renamed \"inline\" "
-"in the standard KDE fashion by first selecting the mode in the list box, and "
-"then clicking it again after a short pause. The Edit button allows mode "
-"names to be edited, and also allows you to define an icon that will show up "
-"in the system tray when that mode is entered."
-msgstr ""
-
-#. Tag: title
-#: index.docbook:97
-#, no-c-format
-msgid "Action-Button Bindings"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:99
-#, no-c-format
-msgid ""
-"An action/button binding (\"action\") is a connection between a button press "
-"and an effect. The effect may be to switch modes, to start a program or to "
-"execute a function in a program (using D-Bus)."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:103
 #, no-c-format
 msgid ""
-"Actions may be associated with a mode of the remote control; if it is, the "
-"action will only have effect when the remote control is in that mode. "
-"Actions may also be placed out of any mode. Such actions will always have "
-"their desired effect no matter what mode that remote control happens to be "
-"in."
+"Each remote control can have a number of different modes. Having multiple "
+"modes allows buttons to execute different actions in different situations. "
+"Think of it as a TV/Video/Satellite/DVD multi-purpose remote control. "
+"Instead of using different remote controls for different applications, you "
+"can change the behaviour of one remote control to adapt to an application by "
+"creating different modes and switching them as needed."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:107
 #, no-c-format
 msgid ""
-"To add an action/button binding simply use the Add button. Removal may be "
-"performed by selecting the action(s) to be removed and clicking the Remove "
-"button. Actions may be Edited with the Edit button, and moved to different "
-"modes by dragging and dropping onto the desired mode in the remotes/modes "
-"list."
+"Actions defined directly to the remote control are always available, no "
+"matter in what mode the remote currently is. Actions defined in a mode are "
+"only executed if the remote is currently set to that mode. Each remote "
+"control can be only in one mode at a time. It may also be in no mode at all "
+"meaning that only always available actions are executed on button presses. "
+"You can also define a default mode, which is the mode automatically assigned "
+"on startup."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:111
 #, no-c-format
 msgid ""
-"Actions may also be \"automatically\" populated. This handles the instance "
-"when you have a supported remote control and you wish to map its buttons to "
-"a supported application's functions. &kdelirc; can attempt to match buttons "
-"to functions for you; this behaviour may have to be tweaked, however."
+"The list on the left contains all remote controls detected on your system. "
+"Modes may be added and removed by selecting the desired remote control or "
+"mode and using the buttons directly below the list. The Edit button allows "
+"you to change existing modes."
 msgstr ""
 
 #. Tag: title
 #: index.docbook:118
 #, no-c-format
-msgid "Loaded Extensions"
+msgid "Assigning actions to buttons"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:120
+#: index.docbook:119
 #, no-c-format
 msgid ""
-"There is another tab available named \"Loaded Extensions\". This details the "
-"applications and remote controls that &kdelirc; recognises. &kdelirc; can "
-"also use unsupported remote controls and applications, but the Auto-Populate "
-"function will not work as well (if at all)."
+"&kdelirc; knows two different types of actions. Mode switches and actions to "
+"be executed. Mode switches allow to switch the current remote to a different "
+"mode, while regular actions allow executing commands over &DBus;. When "
+"defining a new executable action you have two options. One is to use a "
+"template while the other requires to manually specify all possible options. "
+"Templates for actions are called profiles. While using profiles to create "
+"actions is more easy and straight forward it is not possible to access all "
+"functions with profiles. More advanced actions may be configured by manually "
+"selecting functions and their parameters."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:124
+#: index.docbook:123
 #, no-c-format
 msgid ""
-"By clicking on an entry you can see information on it such as the author's "
-"details."
+"To add an action use the <guibutton>Add...</guibutton> button on the lower "
+"right side. A wizard will show up asking you what type of action should be "
+"created. The first option will create an action based on a profile. The "
+"second option lets you create the entire action manually. Remember that the "
+"application you would like to control must be running at the time you "
+"configure the action or it won't show up in the list of available "
+"applications. The third option allows to create a mode switch action. Select "
+"the desired type of action and follow the steps through the wizard."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:128
+#, no-c-format
+msgid ""
+"Actions may also be automatically populated using the "
+"<guibutton>Autopopulate...</guibutton> button. This means that &kdelirc; can "
+"attempt to match buttons to functions for you. The autopopulate dialog shows "
+"all available profiles with a flag. Depending on the color of the flag your "
+"remote control is fully, partially or not supported by that profile. Green "
+"means full support, yellow partial and red none."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:131
+#, no-c-format
+msgid ""
+"<emphasis role=\"strong\">Note:</emphasis> If your remote control isn't "
+"compatible to any profile you might haven't configured lirc using namespaces."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:133
+#: index.docbook:140
 #, no-c-format
-msgid "Credits and Licenses"
+msgid "Profiles Overview"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:135
+#: index.docbook:142
 #, no-c-format
 msgid ""
-"&kdelirc; Framework Copyright (c) 2004 Gav Wood <email>gav@kde.org</email>."
+"The <guibutton>Profiles Overview</guibutton> tab gives you information about "
+"the available profiles. By selecting a profile you can see detailed "
+"informations such as the author's details and a list of all defined actions. "
+"Each action entry contains information about additional settings, a comment "
+"and the identifier of the button to be used by the autopopulate function."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:138
+#: index.docbook:146
 #, no-c-format
 msgid ""
-"Documentation Copyright (c) 2004 by Gav Wood <email>gav@kde.org</email>."
-msgstr ""
-
-#. Tag: chapter
-#: index.docbook:139
-#, no-c-format
-msgid "&underFDL; &underGPL;"
+"If you would like to contribute application profiles see the <link linkend="
+"\"advancedInformation\">advanced information</link> chapter."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:147
+#: index.docbook:153
+#, no-c-format
+msgid "Available Remotes"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:154
+#, no-c-format
+msgid ""
+"This tab gives you detailed information on your remote controls. You can "
+"check here if your remote controls were recognized correctly by the system."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:162
+#, no-c-format
+msgid "Advanced Information"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:163
+#, no-c-format
+msgid ""
+"This chapter will discuss some information which might be interesting for "
+"more advanced users or developers. You will learn how to create your own "
+"profiles."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:168
+#, no-c-format
+msgid "Profile Creation"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"All &DBus; capable applications can be used with &kdelirc; without any "
+"further actions. However, to provide user friendly configuration and let the "
+"application appear in the autpopulate dialog you might want to create a "
+"profile for it."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:175
+#, no-c-format
+msgid ""
+"A profile tells &kdelirc; (and the user!) what the various &DBus; calls do. "
+"Essentially this is a kind of documentation for the &DBus; calls. You don't "
+"have to include all &DBus; calls - just the ones that you feel end-users "
+"would benefit the most (usually <quote>interface adjusting</quote> calls "
+"rather the <quote>information gathering</quote> calls)."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:181
+#, no-c-format
+msgid "Creation"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:185
+#, no-c-format
+msgid "&DBus;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"Make sure the application you want to create the profile for, provides "
+"functions over &DBus;. Basically you can check this by trying to add actions "
+"for that application using the manual method in &kdelirc;. The "
+"<quote>qdbusviewer</quote> application, which is shipped with your Qt4 "
+"installation is also a very good tool to find out about &DBus; capabilities "
+"of applications."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:192
+#, no-c-format
+msgid "Create a profile"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:193
+#, no-c-format
+msgid ""
+"Once you have found the appropriate &DBus; functions you need to describe "
+"them in a <filename>appname.profile.xml</filename> document. Here is a quick "
+"guide how to create such files:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:199
+#, no-c-format
+msgid ""
+"First create a new file containing the following content. Replace "
+"<quote>myapp</quote> with the executable name of the application and "
+"<quote>My Application</quote> with a descriptive application name."
+msgstr ""
+
+#. Tag: programlisting
+#: index.docbook:202
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" ?&gt;\n"
+"&lt;!DOCTYPE profile SYSTEM \"profile.dtd\"&gt;\n"
+"\n"
+"  &lt;profile id=\"myapp\" servicename=\"My Application\"&gt;\n"
+"  &lt;/profile&gt;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:206
+#, no-c-format
+msgid ""
+"Inside the <quote>profile</quote> tag add name and author information. The "
+"<quote>instances</quote> tag tells &kdelirc; whether the application can be "
+"executed multiple times or not. Set <quote>unique</quote> to <quote>0</"
+"quote> if you can start the application multiple times (it defaults to "
+"<quote>1</quote>). The <quote>ifmulti</quote> property specifies what "
+"&kdelirc; should do if there are multiple instances running when a button is "
+"pressed. The options are <quote>dontsend</quote> (do nothing if &gt;1 "
+"instance), <quote>sendtoone</quote> (send call to one arbitrarily chosen "
+"instance) and <quote>sendtoall</quote> (send to all instances). The default "
+"is <quote>dontsend</quote>, however, <quote>sendtoone</quote> may be the "
+"most useful in many circumstances."
+msgstr ""
+
+#. Tag: programlisting
+#: index.docbook:210
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" ?&gt;\n"
+"&lt;!DOCTYPE profile SYSTEM \"profile.dtd\"&gt;\n"
+"\n"
+"  &lt;profile id=\"myapp\" servicename=\"My Application\"&gt;\n"
+"    &lt;name&gt;My Application&lt;/name&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;instances unique=\"0\" ifmulti=\"sendtoone\"/&gt;\n"
+"  &lt;/profile&gt;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:214
+#, no-c-format
+msgid ""
+"Populate the profile with action tags. Each action tag should contain the "
+"&DBus; object name and the function prototype."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:218
+#, no-c-format
+msgid ""
+"&kdelirc; needs some additional attributes to know how to handle an action. "
+"The <quote>button</quote> tag is used for the autopopulate function. See "
+"<ulink url=\"http://api.kde.org/4.x-api/kdebase-workspace-apidocs/libs/solid/"
+"html/classSolid_1_1Control_1_1RemoteControlButton.html\">the solid API docs</"
+"ulink> for a complete list of available button names. The <quote>repeat</"
+"quote> tag tells whether the action should be executed multiple times if the "
+"button on the remote is being held pressed (0 = No, 1 = Yes). The "
+"<quote>autostart</quote> tag defines whether the application should be "
+"started if not already running."
+msgstr ""
+
+#. Tag: programlisting
+#: index.docbook:221
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" ?&gt;\n"
+"&lt;!DOCTYPE profile SYSTEM \"profile.dtd\"&gt;\n"
+"\n"
+"  &lt;profile id=\"myapp\" servicename=\"My Application\"&gt;\n"
+"    &lt;name&gt;My Application&lt;/name&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;instances unique=\"0\" ifmulti=\"sendtoone\"/&gt;\n"
+"    &lt;action objid=\"MyApp\" prototype=\"void showint(short int)\"\n"
+"      button=\"Menu\" repeat=\"0\" autostart=\"0\"&gt;\n"
+"    &lt;/action&gt;\n"
+"  &lt;/profile&gt;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:225
+#, no-c-format
+msgid ""
+"Add a name and a comment to the action. This is shown in the &kdelirc; user "
+"interface."
+msgstr ""
+
+#. Tag: programlisting
+#: index.docbook:229
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" ?&gt;\n"
+"&lt;!DOCTYPE profile SYSTEM \"profile.dtd\"&gt;\n"
+"\n"
+"  &lt;profile id=\"myapp\" servicename=\"My Application\"&gt;\n"
+"    &lt;name&gt;My Application&lt;/name&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;instances unique=\"0\" ifmulti=\"sendtoone\"/&gt;\n"
+"    &lt;action objid=\"MyApp\" prototype=\"void showints(short int)\"\n"
+"        button=\"Menu\" repeat=\"0\" autostart=\"0\"&gt;\n"
+"      &lt;name&gt;Show Integers&lt;/name&gt;\n"
+"      &lt;comment&gt;Shows a configurable integer&lt;/comment&gt;\n"
+"    &lt;/action&gt;\n"
+"  &lt;/profile&gt;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:233
+#, no-c-format
+msgid ""
+"Describe each argument with a comment and type attribute. A list of valid "
+"types can be found in the <ulink url=\"http://websvn.kde.org/trunk/KDE/"
+"kdeutils/kdelirc/profiles/profile.dtd?view=markup\">profiles description "
+"file</ulink>. You should declare a default value for each argument between "
+"the <quote>default</quote> tags:"
+msgstr ""
+
+#. Tag: programlisting
+#: index.docbook:237
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" ?&gt;\n"
+"&lt;!DOCTYPE profile SYSTEM \"profile.dtd\"&gt;\n"
+"\n"
+"  &lt;profile id=\"myapp\" servicename=\"My Application\"&gt;\n"
+"    &lt;name&gt;My Application&lt;/name&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;instances unique=\"0\" ifmulti=\"sendtoone\"/&gt;\n"
+"    &lt;action objid=\"MyApp\" prototype=\"void showints(short int)\"\n"
+"        button=\"Menu\" repeat=\"0\" autostart=\"0\"&gt;\n"
+"      &lt;name&gt;Show Integers&lt;/name&gt;\n"
+"      &lt;comment&gt;Shows a configurable integer&lt;/comment&gt;\n"
+"      &lt;argument type=\"int\"&gt;\n"
+"        &lt;default&gt;5&lt;/default&gt;\n"
+"        &lt;comment&gt;The integer to be shown&lt;/comment&gt;\n"
+"      &lt;/argument&gt;\n"
+"    &lt;/action&gt;\n"
+"  &lt;/profile&gt;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:244
 #, no-c-format
 msgid "Installation"
 msgstr "Installacion"
+
+#. Tag: para
+#: index.docbook:245
+#, no-c-format
+msgid ""
+"To test and use the profile you need to copy it into <filename>"
+"$(kde_datadir)/profiles</filename> and restart &kdelirc;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:248
+#, no-c-format
+msgid ""
+"If you would like to contribute the profile to the &kde; SC please send it "
+"to the kdeutils team at <email>kde-utils-devel@kde.org</email>."
+msgstr ""
