@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-06 01:57+0100\n"
+"POT-Creation-Date: 2010-02-07 07:49+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -3111,7 +3111,7 @@ msgstr ""
 
 #. i18n: file: plugins/tools/tool_star/wdg_tool_star.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolStar)
-#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:121
+#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:134
 msgid "Star"
 msgstr "Estèla"
 
@@ -3376,8 +3376,8 @@ msgstr ""
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
+#: image/recorder/kis_recorded_shape_paint_action.cpp:54
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 msgid "Ellipse"
 msgstr "Ellipsa"
 
@@ -3398,7 +3398,8 @@ msgstr "Ellipsa"
 #. i18n: file: plugins/filters/blur/wdgblur.ui:130
 #. i18n: ectx: property (text), item, widget (KComboBox, cbShape)
 #: rc.cpp:959 rc.cpp:1245 rc.cpp:1569 rc.cpp:1650
-#: plugins/tools/defaulttools/kis_tool_rectangle.cc:70
+#: image/recorder/kis_recorded_shape_paint_action.cpp:56
+#: plugins/tools/defaulttools/kis_tool_rectangle.cc:80
 msgid "Rectangle"
 msgstr "Rectangle"
 
@@ -3456,6 +3457,7 @@ msgstr "Aleatòri"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:983 rc.cpp:1269
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 msgid "Rotation"
 msgstr "Rotacion"
 
@@ -4237,7 +4239,7 @@ msgstr ""
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:62
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 msgid "Pressure"
 msgstr "Pression"
 
@@ -4599,7 +4601,7 @@ msgstr "Linha"
 
 #. i18n: file: plugins/paintops/dynadraw/wdgdynaoptions.ui:271
 #. i18n: ectx: property (text), widget (QRadioButton, polygonRBox)
-#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:78
+#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:77
 msgid "Polygon"
 msgstr ""
 
@@ -6557,7 +6559,7 @@ msgstr ""
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:2657 image/kis_image.cc:568
+#: rc.cpp:2657 image/kis_image.cc:566
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 msgid "Shear Image"
@@ -6927,7 +6929,7 @@ msgstr ""
 
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#: rc.cpp:2910 image/kis_image.cc:516
+#: rc.cpp:2910 image/kis_image.cc:514
 #: plugins/extensions/rotateimage/rotateimage.cc:117
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 msgid "Rotate Image"
@@ -8942,7 +8944,7 @@ msgstr ""
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:795 image/kis_image.cc:765
+#: ui/kis_layer_manager.cc:795 image/kis_image.cc:768
 msgid "Flatten Image"
 msgstr ""
 
@@ -9081,8 +9083,8 @@ msgstr ""
 msgid "Locked"
 msgstr ""
 
-#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:146
-#: image/kis_paint_layer.cc:153
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:139
+#: image/kis_paint_layer.cc:146
 msgid "Alpha Locked"
 msgstr ""
 
@@ -9412,12 +9414,12 @@ msgstr ""
 msgid "Matthew Woehlke"
 msgstr ""
 
-#: image/kis_adjustment_layer.cc:88
+#: image/kis_adjustment_layer.cc:124
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
 msgid "Filter"
 msgstr "Filtre"
 
-#: image/kis_transformation_mask.cpp:110
+#: image/kis_transformation_mask.cpp:111
 msgid "Transformation Mask Settings"
 msgstr ""
 
@@ -9457,7 +9459,7 @@ msgstr ""
 msgid "Mitchell"
 msgstr ""
 
-#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:394
+#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:392
 msgid "Resize Image"
 msgstr ""
 
@@ -9482,7 +9484,7 @@ msgstr ""
 msgid "Raise"
 msgstr ""
 
-#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:603
+#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:601
 msgid "Convert Image Type"
 msgstr ""
 
@@ -9577,32 +9579,32 @@ msgstr "defaut"
 msgid "Rotate Node"
 msgstr "Rotacion"
 
-#: image/kis_image.cc:285
+#: image/kis_image.cc:283
 msgid "background"
 msgstr ""
 
-#: image/kis_image.cc:288
+#: image/kis_image.cc:286
 #, kde-format
 msgid "Layer %1"
 msgstr ""
 
-#: image/kis_image.cc:392
+#: image/kis_image.cc:390
 msgid "Crop Image"
 msgstr ""
 
-#: image/kis_image.cc:426
+#: image/kis_image.cc:424
 msgid "Size Canvas"
 msgstr ""
 
-#: image/kis_image.cc:475
+#: image/kis_image.cc:473
 msgid "Scale Image"
 msgstr ""
 
-#: image/kis_image.cc:801
+#: image/kis_image.cc:798
 msgid "Merge with Layer Below"
 msgstr ""
 
-#: image/kis_image.cc:841
+#: image/kis_image.cc:835
 #, fuzzy
 #| msgid "Filter"
 msgid "Flatten Layer"
@@ -9612,21 +9614,16 @@ msgstr "Filtre"
 msgid "Last used"
 msgstr ""
 
+#: image/recorder/kis_recorded_path_paint_action.cpp:62
+#: plugins/tools/defaulttools/kis_tool_path.cc:124
+msgid "Path"
+msgstr "Camin"
+
 #: image/recorder/kis_macro.cc:96
 msgid "Play macro"
 msgstr ""
 
-#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
-#, fuzzy
-#| msgid "Line"
-msgid "Poly line"
-msgstr "Linha"
-
-#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
-msgid "Bezier curve"
-msgstr ""
-
-#: image/kis_clone_layer.cpp:199
+#: image/kis_clone_layer.cpp:192
 msgid "Copy From"
 msgstr ""
 
@@ -9676,63 +9673,47 @@ msgstr ""
 msgid "Dyna"
 msgstr ""
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:223
-#: plugins/tools/defaulttools/kis_tool_brush.cc:142
-msgctxt "smooth out the curves while drawing"
-msgid "Smoothness"
-msgstr ""
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:236
-#: plugins/tools/defaulttools/kis_tool_brush.cc:165
-msgid "Assistant:"
-msgstr ""
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:238
-#: plugins/tools/defaulttools/kis_tool_brush.cc:167
-msgid "Magnetism:"
-msgstr ""
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:248
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:211
 #, fuzzy
 #| msgid "Width:"
 msgid "Initial width:"
 msgstr "Largor :"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:249
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:212
 msgid "Mass:"
 msgstr ""
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:250
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:213
 #, fuzzy
 #| msgid "Dialog"
 msgid "Drag:"
 msgstr "Dialòg"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:251
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:214
 #, fuzzy
 #| msgid "Angle"
 msgid "X angle:"
 msgstr "Angle"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:252
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:215
 #, fuzzy
 #| msgid "Angle"
 msgid "Y angle:"
 msgstr "Angle"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:253
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:216
 #, fuzzy
 #| msgid "Width:"
 msgid "Width range:"
 msgstr "Largor :"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:255
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:218
 #, fuzzy
 #| msgid "Triangle"
 msgid "Fixed angle:"
 msgstr "Triangle"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.h:170
+#: plugins/tools/tool_dyna/kis_tool_dyna.h:164
 msgid "Paint with brushes using dynamic movements"
 msgstr ""
 
@@ -9774,13 +9755,26 @@ msgstr ""
 msgid "ms"
 msgstr ""
 
+#: plugins/tools/defaulttools/kis_tool_brush.cc:142
+msgctxt "smooth out the curves while drawing"
+msgid "Smoothness"
+msgstr ""
+
 #: plugins/tools/defaulttools/kis_tool_brush.cc:147
 #, fuzzy
 #| msgid "Date:"
 msgid "Rate:"
 msgstr "Data :"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:155
+#: plugins/tools/defaulttools/kis_tool_brush.cc:165
+msgid "Assistant:"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:167
+msgid "Magnetism:"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:156
 #, fuzzy
 #| msgid "Line"
 msgctxt "a straight drawn line"
@@ -9852,10 +9846,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_ellipse.h:55
 msgid "Draw an ellipse"
 msgstr ""
-
-#: plugins/tools/defaulttools/kis_tool_path.cc:72
-msgid "Path"
-msgstr "Camin"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.h:124
 msgid "Draw a gradient."
@@ -9970,7 +9960,7 @@ msgstr ""
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr ""
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:65
 msgid "Polyline"
 msgstr ""
 
@@ -10277,11 +10267,11 @@ msgstr "Títol:"
 msgid "Drawing angle"
 msgstr "Triangle"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
 msgid "X-Tilt"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 msgid "Y-Tilt"
 msgstr ""
 
@@ -11487,23 +11477,23 @@ msgstr ""
 msgid "Success"
 msgstr "Sorga"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:60
+#: plugins/extensions/bigbrother/bigbrother.cc:81
 msgid "Open and play..."
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:64
+#: plugins/extensions/bigbrother/bigbrother.cc:85
 msgid "Open and edit..."
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:68
+#: plugins/extensions/bigbrother/bigbrother.cc:89
 msgid "Save all actions"
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:72
+#: plugins/extensions/bigbrother/bigbrother.cc:93
 msgid "Start recording macro"
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:76
+#: plugins/extensions/bigbrother/bigbrother.cc:97
 msgid "Stop recording actions"
 msgstr ""
 
@@ -12055,6 +12045,11 @@ msgstr "Regulièr"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:68
 msgid "Ruler assistant editor tool"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Line"
+#~ msgid "Poly line"
+#~ msgstr "Linha"
 
 #, fuzzy
 #~| msgid "Ellipse"
