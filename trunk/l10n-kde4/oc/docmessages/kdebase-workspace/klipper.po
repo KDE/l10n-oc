@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klipper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-05 15:20+0000\n"
+"POT-Creation-Date: 2010-02-25 20:59+0000\n"
 "PO-Revision-Date: 2008-08-13 13:38+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -92,7 +92,7 @@ msgstr "Introduccion"
 msgid ""
 "&klipper; is the &kde; clipboard utility. It stores clipboard history, and "
 "allows you to link clipboard contents to application actions. Please report "
-"any problems or feature requests to<ulink url=\"http://bugs.kde.org\">KDEs "
+"any problems or feature requests to <ulink url=\"http://bugs.kde.org\">KDEs "
 "bugzilla</ulink> or use the \"report bug\" feature."
 msgstr ""
 
@@ -166,8 +166,8 @@ msgid ""
 "clipboard contents starting with <quote>http://</quote> can be passed to "
 "Firefox or &konqueror; as &URL;s to open. In addition, if the contents "
 "matches a path, similar actions can be performed according to the file's "
-"type. E.g, if the path to a pdf file is copied to the clipboard, the file "
-"can be view in Okular"
+"type. E.g, if the path to a <acronym>PDF</acronym> file is copied to the "
+"clipboard, the file can be viewed in &okular;."
 msgstr ""
 
 #. Tag: para
@@ -191,9 +191,9 @@ msgid ""
 "leaving you to continue your work. You can change the time that the menu "
 "remains for in the <guilabel>Configure Klipper...</guilabel> dialog, with "
 "the option <guilabel>Timeout for action popups</guilabel> under the "
-"<guilabel>General</guilabel> tab. You can separately disable the file path "
+"<guilabel>General</guilabel> page. You can separately disable the file path "
 "part using the option <guilabel>Enable MIME-based actions</guilabel> under "
-"the <guilabel>Actions</guilabel> tab."
+"the <guilabel>Actions</guilabel> page."
 msgstr ""
 
 #. Tag: para
@@ -272,7 +272,7 @@ msgid ""
 "In order to change clipboard/selection behavior, select "
 "<guimenuitem>Configure &klipper;...</guimenuitem> from the &klipper; pop-up "
 "menu, and in the dialog box that appears, select the <guilabel>General</"
-"guilabel> tab. Unchecking <guilabel>Synchronize contents of the clipboard "
+"guilabel> page. Unchecking <guilabel>Synchronize contents of the clipboard "
 "and the selection</guilabel> makes the clipboard and selection function as "
 "completely separate buffers as described above. With this option set, the "
 "option <guilabel>Ignore selection</guilabel> will prevent &klipper; from "
@@ -497,10 +497,10 @@ msgstr ""
 #: index.docbook:341
 #, no-c-format
 msgid ""
-"On the <guilabel>Actions</guilabel> tab, double-click the regular expression "
-"or action that you want to edit. An in-place text editing box will appear in "
-"which the text can be edited as you wish. Make sure you press &Enter; when "
-"you are done."
+"On the <guilabel>Actions</guilabel> page, double-click the regular "
+"expression or action that you want to edit or select it and press the "
+"<guibutton>Edit Action</guibutton> button. An dialog will appear in which "
+"the expression text can be edited as you wish."
 msgstr ""
 
 #. Tag: term
@@ -545,13 +545,12 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Edit the regular expression as described above. To add a command to execute, "
-"<mousebutton>right</mousebutton> click, select <guimenuitem>Add Command</"
-"guimenuitem> and edit the command which appears in the tree under the "
-"regular expression."
+"click <guimenuitem>Add Command</guimenuitem> and edit the command in an in-"
+"place text editing box. Double-clicking on a command allows you to edit it."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:369
+#: index.docbook:368
 #, no-c-format
 msgid ""
 "Note that <token>%s</token> in the command line is replaced with the "
@@ -564,14 +563,14 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: index.docbook:379
+#: index.docbook:378
 #, fuzzy, no-c-format
 #| msgid "Advanced..."
 msgid "Advanced"
 msgstr "Avançat..."
 
 #. Tag: para
-#: index.docbook:380
+#: index.docbook:379
 #, no-c-format
 msgid ""
 "Brings up the <guilabel>Disable Actions for windows of type WM_CLASS</"
@@ -579,7 +578,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:382
+#: index.docbook:381
 #, no-c-format
 msgid ""
 "Some programs, such as &konqueror;, use the clipboard internally. If you get "
@@ -588,13 +587,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:387
+#: index.docbook:386
 #, no-c-format
 msgid "Open the application."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:388
+#: index.docbook:387
 #, no-c-format
 msgid ""
 "From a terminal, run <userinput><command>xprop</command> | <command>grep</"
@@ -603,13 +602,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:392
+#: index.docbook:391
 #, no-c-format
 msgid "The first string after the equals sign is the one to enter."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:396
+#: index.docbook:395
 #, no-c-format
 msgid ""
 "Once the WM_CLASS is added, no more actions will be generated for windows of "
@@ -617,40 +616,40 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:405
+#: index.docbook:404
 #, no-c-format
 msgid "Shortcuts Options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:407
+#: index.docbook:406
 #, no-c-format
 msgid ""
-"The shortcuts tab allows you to change the keyboard shortcuts which are used "
-"to access &klipper; functions. You can change the shortcut to one of three "
-"things:"
+"The shortcuts page allows you to change the keyboard shortcuts which are "
+"used to access &klipper; functions. You can change the shortcut to one of "
+"three things:"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:413
+#: index.docbook:412
 #, no-c-format
 msgid "None"
 msgstr "Pas cap"
 
 #. Tag: para
-#: index.docbook:414
+#: index.docbook:413
 #, no-c-format
 msgid "The selected action cannot be accessed directly from the keyboard"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:418
+#: index.docbook:417
 #, no-c-format
 msgid "Default"
 msgstr "Defaut"
 
 #. Tag: para
-#: index.docbook:419
+#: index.docbook:418
 #, no-c-format
 msgid ""
 "The selected action uses &klipper;'s default key. These are the shortcuts "
@@ -658,19 +657,19 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:423
+#: index.docbook:422
 #, no-c-format
 msgid "Custom"
 msgstr "Personalizat"
 
 #. Tag: para
-#: index.docbook:424
+#: index.docbook:423
 #, no-c-format
 msgid "The selected action is assigned to the keys you choose."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:425
+#: index.docbook:424
 #, no-c-format
 msgid ""
 "To choose a custom key for the action you have selected, click on "
@@ -679,32 +678,32 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:436
+#: index.docbook:435
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:438
+#: index.docbook:437
 #, no-c-format
 msgid "&klipper;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:441
+#: index.docbook:440
 #, no-c-format
 msgid ""
 "Program copyright 1998 &Andrew.Stanley-Jones; <email>asj@cban.com</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:444
+#: index.docbook:443
 #, no-c-format
 msgid "Program copyright 1998-2000 &Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:446
+#: index.docbook:445
 #, no-c-format
 msgid ""
 "Currently maintained by Esben Mose Hansen. See <ulink url=\"http://"
@@ -712,7 +711,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:452
+#: index.docbook:451
 #, no-c-format
 msgid ""
 "Documentation copyright 2000-2003, 2005 &Philip.Rodrigues; &Philip.Rodrigues."
@@ -720,56 +719,56 @@ msgid ""
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:456
+#: index.docbook:455
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:456
+#: index.docbook:455
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:463
+#: index.docbook:462
 #, no-c-format
 msgid "Installation"
 msgstr "Installacion"
 
 #. Tag: title
-#: index.docbook:466
+#: index.docbook:465
 #, no-c-format
 msgid "How to obtain &klipper;"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:466
+#: index.docbook:465
 #, no-c-format
 msgid "&install.intro.documentation;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:473
+#: index.docbook:472
 #, no-c-format
 msgid "Compilation and Installation"
 msgstr ""
 
 #. Tag: sect1
-#: index.docbook:473
+#: index.docbook:472
 #, no-c-format
 msgid "&install.compile.documentation;"
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:477
+#: index.docbook:476
 #, no-c-format
 msgid "&klipper; icon"
 msgstr ""
 
 #. Tag: phrase
-#: index.docbook:483
+#: index.docbook:482
 #, no-c-format
 msgid "Screenshot"
 msgstr "Ecran"
