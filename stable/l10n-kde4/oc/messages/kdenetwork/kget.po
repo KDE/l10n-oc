@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-26 20:28+0100\n"
+"POT-Creation-Date: 2010-03-01 01:14+0100\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -475,7 +475,14 @@ msgstr ""
 msgid "Downloading...."
 msgstr "Descarga..."
 
-#: core/transfer.cpp:244 core/transfer.cpp:269
+#: core/transfer.cpp:38
+#, fuzzy
+#| msgid "Delete"
+msgctxt "transfer state: delayed"
+msgid "Delayed"
+msgstr "Suprimir"
+
+#: core/transfer.cpp:39 core/transfer.cpp:244 core/transfer.cpp:269
 #: transfer-plugins/contentfetch/contentfetch.cpp:69
 #: transfer-plugins/mmsclient/mmsTransfer.cpp:48
 #: transfer-plugins/bittorrent/bttransfer.cpp:326
@@ -483,6 +490,24 @@ msgstr "Descarga..."
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "Arrestat"
+
+#: core/transfer.cpp:40
+msgctxt "transfer state: aborted"
+msgid "Aborted"
+msgstr "Abandonat"
+
+#: core/transfer.cpp:41 transfer-plugins/bittorrent/bttransfer.cpp:240
+#: transfer-plugins/bittorrent/bttransfer.cpp:322
+msgctxt "transfer state: finished"
+msgid "Finished"
+msgstr "Terminat"
+
+#: core/transfer.cpp:43 transfer-plugins/bittorrent/bttransfer.cpp:179
+#, fuzzy
+#| msgid "Destination"
+msgctxt "changing the destination of the file"
+msgid "Changing destination"
+msgstr "Destinacion"
 
 #: core/transfertreemodel.cpp:544
 msgctxt "name of download"
@@ -1169,13 +1194,6 @@ msgstr "Fichièrs"
 msgid "Downloading Torrent File...."
 msgstr "Descarga..."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:179
-#, fuzzy
-#| msgid "Destination"
-msgctxt "changing the destination of the file"
-msgid "Changing destination"
-msgstr "Destinacion"
-
 #: transfer-plugins/bittorrent/bttransfer.cpp:196
 #: transfer-plugins/bittorrent/bttransfer.cpp:301
 #, fuzzy
@@ -1183,12 +1201,6 @@ msgstr "Destinacion"
 msgctxt "transfer state: downloading"
 msgid "Downloading...."
 msgstr "Descarga..."
-
-#: transfer-plugins/bittorrent/bttransfer.cpp:240
-#: transfer-plugins/bittorrent/bttransfer.cpp:322
-msgctxt "transfer state: finished"
-msgid "Finished"
-msgstr "Terminat"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:274
 msgid "Cannot add a tracker to a private torrent."
@@ -4797,10 +4809,6 @@ msgstr ""
 msgid "List of whether the script is enabled"
 msgstr ""
 
-#~ msgctxt "transfer state: aborted"
-#~ msgid "Aborted"
-#~ msgstr "Abandonat"
-
 #, fuzzy
 #~| msgid "Turn off the computer"
 #~ msgid "Name of the license"
@@ -4810,12 +4818,6 @@ msgstr ""
 #~| msgid "Turn off the computer"
 #~ msgid "URL to the license"
 #~ msgstr "Atudar l'ordenador"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "The transfer is delayed"
-#~ msgid "Delayed"
-#~ msgstr "Suprimir"
 
 #, fuzzy
 #~| msgid "Overwrite existing file?"
