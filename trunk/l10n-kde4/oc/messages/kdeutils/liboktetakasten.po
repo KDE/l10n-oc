@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okteta\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-28 05:36+0200\n"
+"POT-Creation-Date: 2010-03-30 04:28+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -613,8 +613,8 @@ msgctxt "data type in C/C++"
 msgid "union"
 msgstr ""
 
-#: controllers/view/structures/datatypes/datainformation.cpp:56
-#: controllers/view/structures/datatypes/datainformation.cpp:63
+#: controllers/view/structures/datatypes/datainformation.cpp:57
+#: controllers/view/structures/datatypes/datainformation.cpp:61
 #: controllers/view/info/infoview.cpp:118
 #: controllers/view/viewstatus/viewstatuscontroller.cpp:123
 #: controllers/view/viewstatus/viewstatuscontroller.cpp:231
@@ -624,7 +624,7 @@ msgid_plural "%1 bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: controllers/view/structures/datatypes/datainformation.cpp:64
+#: controllers/view/structures/datatypes/datainformation.cpp:62
 #, fuzzy, kde-format
 #| msgctxt "@label:textbox encoding of the bytes as value in the binary format"
 #| msgid "Binary:"
@@ -633,7 +633,7 @@ msgid_plural "%1 bits"
 msgstr[0] "Binari :"
 msgstr[1] "Binari :"
 
-#: controllers/view/structures/datatypes/datainformation.cpp:65
+#: controllers/view/structures/datatypes/datainformation.cpp:63
 #, fuzzy, kde-format
 #| msgctxt "zoom-factor (percentage)"
 #| msgid "%1%"
@@ -665,7 +665,7 @@ msgctxt "Data type"
 msgid "unsigned int"
 msgstr "Binari :"
 
-#: controllers/view/structures/datatypes/datainformationwithchildren.cpp:184
+#: controllers/view/structures/datatypes/datainformationwithchildren.cpp:185
 #, kde-format
 msgid ""
 "Name: %2\n"
@@ -770,31 +770,35 @@ msgstr ""
 msgid "Apply Changes"
 msgstr "Modificacions"
 
-#: controllers/view/structures/settings/structuresmanagerview.cpp:93
+#: controllers/view/structures/settings/structuresmanagerview.cpp:100
 msgid "Structure Definitions"
 msgstr ""
 
-#: controllers/view/structures/settings/structuresmanagerview.cpp:115
-#: controllers/view/structures/settings/structuresmanagerview.cpp:138
+#: controllers/view/structures/settings/structuresmanagerview.cpp:102
+msgid "Dynamic Structure Definitions"
+msgstr ""
+
+#: controllers/view/structures/settings/structuresmanagerview.cpp:126
+#: controllers/view/structures/settings/structuresmanagerview.cpp:150
 msgid "*.osd|Okteta structure definition files (*.osd)"
 msgstr ""
 
-#: controllers/view/structures/settings/structuresmanagerview.cpp:117
+#: controllers/view/structures/settings/structuresmanagerview.cpp:128
 msgctxt "@title:window Do import the structure definitions"
 msgid "Import Structure Definitions"
 msgstr ""
 
-#: controllers/view/structures/settings/structuresmanagerview.cpp:140
+#: controllers/view/structures/settings/structuresmanagerview.cpp:152
 msgctxt "@title:window Do export the structure definition"
 msgid "Export Structure Definition"
 msgstr ""
 
-#: controllers/view/structures/settings/structuresmanagerview.cpp:152
-#: controllers/view/structures/settings/structuresmanagerview.cpp:177
+#: controllers/view/structures/settings/structuresmanagerview.cpp:164
+#: controllers/view/structures/settings/structuresmanagerview.cpp:190
 msgid "Error"
 msgstr ""
 
-#: controllers/view/structures/settings/structuresmanagerview.cpp:176
+#: controllers/view/structures/settings/structuresmanagerview.cpp:189
 msgid "You do not have permission to delete that structure definition."
 msgstr ""
 
@@ -809,23 +813,9 @@ msgid "Used structures:"
 msgstr ""
 
 #: controllers/view/structures/structurestoolviewfactory.cpp:44
-#: controllers/view/structures/structtool.cpp:74
+#: controllers/view/structures/structtool.cpp:77
 msgctxt "@title:window"
 msgid "Structures"
-msgstr ""
-
-#: controllers/view/structures/structuredefinitionfile.cpp:99
-#: controllers/view/structures/structuredefinitionfile.cpp:114
-msgid "<no name specified>"
-msgstr ""
-
-#: controllers/view/structures/structuredefinitionfile.cpp:235
-#: controllers/view/structures/structuredefinitionfile.cpp:276
-#: controllers/view/structures/structuredefinitionfile.cpp:292
-#: controllers/view/structures/structuredefinitionfile.cpp:319
-#: controllers/view/structures/structuredefinitionfile.cpp:335
-#: controllers/view/structures/structuredefinitionfile.cpp:350
-msgid "<invalid name>"
 msgstr ""
 
 #: controllers/view/structures/structview.cpp:87
@@ -874,23 +864,38 @@ msgstr ""
 msgid "Structures management"
 msgstr ""
 
-#: controllers/view/structures/structtool.cpp:202
+#: controllers/view/structures/structtool.cpp:205
 msgctxt "name of a data structure"
 msgid "Name"
 msgstr ""
 
-#: controllers/view/structures/structtool.cpp:204
+#: controllers/view/structures/structtool.cpp:207
 msgctxt "type of a data structure"
 msgid "Type"
 msgstr ""
 
-#: controllers/view/structures/structtool.cpp:206
+#: controllers/view/structures/structtool.cpp:209
 #, fuzzy
 #| msgctxt "name of the encoding target"
 #| msgid "Values"
 msgctxt "value of a data structure (primitive type)"
 msgid "Value"
 msgstr "Valors"
+
+#: controllers/view/structures/parsers/osdparser.cpp:177
+#: controllers/view/structures/parsers/osdparser.cpp:217
+#: controllers/view/structures/parsers/osdparser.cpp:234
+#: controllers/view/structures/parsers/osdparser.cpp:260
+#: controllers/view/structures/parsers/osdparser.cpp:275
+#: controllers/view/structures/parsers/osdparser.cpp:290
+msgid "<invalid name>"
+msgstr ""
+
+#: controllers/view/structures/parsers/osdparser.cpp:375
+#: controllers/view/structures/parsers/osdparser.cpp:390
+#: controllers/view/structures/script/scriptvalueconverter.cpp:78
+msgid "<no name specified>"
+msgstr ""
 
 #: controllers/view/stringsextract/stringsextractview.cpp:62
 msgctxt ""
