@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-10 04:42+0200\n"
+"POT-Creation-Date: 2010-04-11 05:14+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -286,7 +286,7 @@ msgstr "Suprimir"
 
 #: kmfilterdlg.cpp:771 collectiongeneralpage.cpp:146
 #: managesievescriptsdialog.cpp:366 attachmentcontroller.cpp:606
-#: kmcomposewin.cpp:2914
+#: kmcomposewin.cpp:2915
 msgid "unnamed"
 msgstr "sens nom"
 
@@ -956,6 +956,14 @@ msgstr ""
 msgid "There is nothing to undo."
 msgstr ""
 
+#: kmmainwin.cpp:57
+msgid "New &Window"
+msgstr "&Fenèstra nòva"
+
+#: kmmainwin.cpp:205
+msgid "Starting..."
+msgstr "Aviada..."
+
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
 #: tips.cpp:3
@@ -1045,14 +1053,6 @@ msgid ""
 "<em>Message-&gt;Reply Without Quote</em>.</p>\n"
 "<p align=\"right\"><em>contributed by David F. Newman</em></p>\n"
 msgstr ""
-
-#: kmmainwin.cpp:57
-msgid "New &Window"
-msgstr "&Fenèstra nòva"
-
-#: kmmainwin.cpp:205
-msgid "Starting..."
-msgstr "Aviada..."
 
 #: kmsearchpattern.h:249
 #, fuzzy
@@ -1168,20 +1168,11 @@ msgstr ""
 msgid "Please select a folder"
 msgstr ""
 
-#: util.cpp:69
-#, kde-format
-msgid "Distribution list \"%1\" is empty, it cannot be used."
-msgstr ""
-
-#: util.cpp:70 util.cpp:79 identitydialog.cpp:536
-msgid "Invalid Email Address"
-msgstr ""
-
-#: util.cpp:182
+#: util.cpp:154
 msgid "Could not start the account wizard. Please check your installation."
 msgstr ""
 
-#: util.cpp:184
+#: util.cpp:156
 msgid "Unable to start account wizard"
 msgstr ""
 
@@ -1492,7 +1483,7 @@ msgstr ""
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr ""
 
-#: kmkernel.cpp:887 kmcomposewin.cpp:3100
+#: kmkernel.cpp:887 kmcomposewin.cpp:3101
 msgid "Online/Offline"
 msgstr ""
 
@@ -1783,12 +1774,12 @@ msgid ""
 "all available addresses."
 msgstr ""
 
-#: redirectdialog.cpp:87 kmcomposewin.cpp:3369
+#: redirectdialog.cpp:87 kmcomposewin.cpp:3392
 msgid "&Send Now"
 msgstr ""
 
-#: redirectdialog.cpp:88 kmcomposewin.cpp:1133 kmcomposewin.cpp:1142
-#: kmcomposewin.cpp:3370
+#: redirectdialog.cpp:88 kmcomposewin.cpp:1134 kmcomposewin.cpp:1143
+#: kmcomposewin.cpp:3393
 msgid "Send &Later"
 msgstr ""
 
@@ -1798,6 +1789,16 @@ msgstr ""
 
 #: redirectdialog.cpp:123
 msgid "Empty Redirection Address"
+msgstr ""
+
+#: addressvalidationjob.cpp:288
+#, kde-format
+msgid "Distribution list \"%1\" is empty, it cannot be used."
+msgstr ""
+
+#: addressvalidationjob.cpp:290 addressvalidationjob.cpp:299
+#: identitydialog.cpp:536
+msgid "Invalid Email Address"
 msgstr ""
 
 #: rulewidgethandlermanager.cpp:406 rulewidgethandlermanager.cpp:726
@@ -5594,7 +5595,7 @@ msgstr ""
 msgid "Send Queued Messages Via"
 msgstr ""
 
-#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1201
+#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1202
 msgid "&Address Book"
 msgstr ""
 
@@ -6199,7 +6200,7 @@ msgstr ""
 msgid "Attach &My Public Key"
 msgstr ""
 
-#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1993
+#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1994
 msgid "&Attach File..."
 msgstr ""
 
@@ -7360,7 +7361,7 @@ msgstr "Signatura"
 msgid "Picture"
 msgstr "Signatura"
 
-#: identitydialog.cpp:561
+#: identitydialog.cpp:571
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -7369,14 +7370,14 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:569
+#: identitydialog.cpp:579
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
 "with the configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:575
+#: identitydialog.cpp:585
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -7385,41 +7386,41 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:583
+#: identitydialog.cpp:593
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
 "configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:591
+#: identitydialog.cpp:601
 msgid "Email Address Not Found in Key/Certificates"
 msgstr ""
 
-#: identitydialog.cpp:606
+#: identitydialog.cpp:616
 msgid "The signature file is not valid"
 msgstr ""
 
-#: identitydialog.cpp:626
+#: identitydialog.cpp:636
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr ""
 
-#: identitydialog.cpp:656
+#: identitydialog.cpp:666
 #, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
 "therefore, the default sent-mail folder will be used."
 msgstr ""
 
-#: identitydialog.cpp:668
+#: identitydialog.cpp:678
 #, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
 "therefore, the default drafts folder will be used."
 msgstr ""
 
-#: identitydialog.cpp:680
+#: identitydialog.cpp:690
 #, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
@@ -7689,106 +7690,106 @@ msgid ""
 "the filter will fallback to the default address book.</p>"
 msgstr ""
 
-#: kmcomposewin.cpp:222
+#: kmcomposewin.cpp:223
 #, fuzzy
 #| msgid "New Identity"
 msgid "Select an identity for this message"
 msgstr "Identitat novèla"
 
-#: kmcomposewin.cpp:225
+#: kmcomposewin.cpp:226
 msgid "Select the dictionary to use when spell-checking this message"
 msgstr ""
 
-#: kmcomposewin.cpp:229
+#: kmcomposewin.cpp:230
 msgid "Select the sent-mail folder where a copy of this message will be saved"
 msgstr ""
 
-#: kmcomposewin.cpp:236
+#: kmcomposewin.cpp:237
 msgid "Select the outgoing account to use for sending this message"
 msgstr ""
 
-#: kmcomposewin.cpp:238
+#: kmcomposewin.cpp:239
 msgid "Set the \"From:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:240
+#: kmcomposewin.cpp:241
 msgid "Set the \"Reply-To:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:251
+#: kmcomposewin.cpp:252
 msgid "Set a subject for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:252
+#: kmcomposewin.cpp:253
 msgid "&Identity:"
 msgstr ""
 
-#: kmcomposewin.cpp:253
+#: kmcomposewin.cpp:254
 msgid "&Dictionary:"
 msgstr "&Diccionari :"
 
-#: kmcomposewin.cpp:254
+#: kmcomposewin.cpp:255
 msgid "&Sent-Mail folder:"
 msgstr ""
 
-#: kmcomposewin.cpp:255
+#: kmcomposewin.cpp:256
 msgid "&Mail transport:"
 msgstr ""
 
-#: kmcomposewin.cpp:256
+#: kmcomposewin.cpp:257
 msgctxt "sender address field"
 msgid "&From:"
 msgstr ""
 
-#: kmcomposewin.cpp:257
+#: kmcomposewin.cpp:258
 msgid "&Reply to:"
 msgstr ""
 
-#: kmcomposewin.cpp:258
+#: kmcomposewin.cpp:259
 #, fuzzy
 #| msgid "Subject"
 msgctxt "@label:textbox Subject of email."
 msgid "S&ubject:"
 msgstr "Subjècte"
 
-#: kmcomposewin.cpp:259
+#: kmcomposewin.cpp:260
 msgctxt "@option:check Sticky identity."
 msgid "Sticky"
 msgstr ""
 
-#: kmcomposewin.cpp:261
+#: kmcomposewin.cpp:262
 msgid "Use the selected value as your identity for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:263
+#: kmcomposewin.cpp:264
 msgid "Use the selected value as your sent-mail folder for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:265
+#: kmcomposewin.cpp:266
 msgid "Use the selected value as your outgoing account for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:267
+#: kmcomposewin.cpp:268
 msgid "Use the selected value as your dictionary for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:350 kmcomposewin.cpp:2278 configuredialog.cpp:925
+#: kmcomposewin.cpp:351 kmcomposewin.cpp:2279 configuredialog.cpp:925
 msgid "Composer"
 msgstr "Compositor"
 
-#: kmcomposewin.cpp:677
+#: kmcomposewin.cpp:678
 msgid "Could not write all data to file."
 msgstr ""
 
-#: kmcomposewin.cpp:681
+#: kmcomposewin.cpp:682
 msgid "Could not finalize the file."
 msgstr ""
 
-#: kmcomposewin.cpp:686
+#: kmcomposewin.cpp:687
 msgid "Could not open file."
 msgstr ""
 
-#: kmcomposewin.cpp:692
+#: kmcomposewin.cpp:693
 #, kde-format
 msgid ""
 "Autosaving the message as %1 failed.\n"
@@ -7796,267 +7797,267 @@ msgid ""
 "Reason: %3"
 msgstr ""
 
-#: kmcomposewin.cpp:698
+#: kmcomposewin.cpp:699
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Autosaving Message Failed"
 msgstr "Desplaçament de messatges"
 
-#: kmcomposewin.cpp:1123 kmcomposewin.cpp:1149
+#: kmcomposewin.cpp:1124 kmcomposewin.cpp:1150
 msgid "&Send Mail"
 msgstr ""
 
-#: kmcomposewin.cpp:1129 kmcomposewin.cpp:1154
+#: kmcomposewin.cpp:1130 kmcomposewin.cpp:1155
 msgid "&Send Mail Via"
 msgstr ""
 
-#: kmcomposewin.cpp:1130
+#: kmcomposewin.cpp:1131
 msgid "Send"
 msgstr "Segondas"
 
-#: kmcomposewin.cpp:1136 kmcomposewin.cpp:1146
+#: kmcomposewin.cpp:1137 kmcomposewin.cpp:1147
 msgid "Send &Later Via"
 msgstr ""
 
-#: kmcomposewin.cpp:1137
+#: kmcomposewin.cpp:1138
 #, fuzzy
 #| msgid "Queue"
 msgctxt "Queue the message for sending at a later date"
 msgid "Queue"
 msgstr "Méter dins la coa"
 
-#: kmcomposewin.cpp:1181
+#: kmcomposewin.cpp:1182
 msgid "Save as &Draft"
 msgstr ""
 
-#: kmcomposewin.cpp:1185
+#: kmcomposewin.cpp:1186
 msgid "Save as &Template"
 msgstr ""
 
-#: kmcomposewin.cpp:1189
+#: kmcomposewin.cpp:1190
 msgid "&Insert File..."
 msgstr ""
 
-#: kmcomposewin.cpp:1193
+#: kmcomposewin.cpp:1194
 msgid "&Insert File Recent"
 msgstr ""
 
-#: kmcomposewin.cpp:1204
+#: kmcomposewin.cpp:1205
 msgid "&New Composer"
 msgstr ""
 
-#: kmcomposewin.cpp:1208
+#: kmcomposewin.cpp:1209
 msgid "New Main &Window"
 msgstr ""
 
-#: kmcomposewin.cpp:1212
+#: kmcomposewin.cpp:1213
 msgid "Select &Recipients..."
 msgstr ""
 
-#: kmcomposewin.cpp:1216
+#: kmcomposewin.cpp:1217
 msgid "Save &Distribution List..."
 msgstr ""
 
-#: kmcomposewin.cpp:1238
+#: kmcomposewin.cpp:1239
 msgid "Paste as Attac&hment"
 msgstr ""
 
-#: kmcomposewin.cpp:1242
+#: kmcomposewin.cpp:1243
 msgid "Cl&ean Spaces"
 msgstr ""
 
-#: kmcomposewin.cpp:1246
+#: kmcomposewin.cpp:1247
 msgid "Use Fi&xed Font"
 msgstr ""
 
-#: kmcomposewin.cpp:1253
+#: kmcomposewin.cpp:1254
 msgctxt "@action:inmenu Mark the email as urgent."
 msgid "&Urgent"
 msgstr ""
 
-#: kmcomposewin.cpp:1255
+#: kmcomposewin.cpp:1256
 msgid "&Request Disposition Notification"
 msgstr ""
 
-#: kmcomposewin.cpp:1261
+#: kmcomposewin.cpp:1262
 msgid "&Wordwrap"
 msgstr ""
 
-#: kmcomposewin.cpp:1266
+#: kmcomposewin.cpp:1267
 msgid "&Snippets"
 msgstr ""
 
-#: kmcomposewin.cpp:1273
+#: kmcomposewin.cpp:1274
 msgid "&Automatic Spellchecking"
 msgstr ""
 
-#: kmcomposewin.cpp:1290
+#: kmcomposewin.cpp:1291
 msgid "Formatting (HTML)"
 msgstr ""
 
-#: kmcomposewin.cpp:1291
+#: kmcomposewin.cpp:1292
 msgid "HTML"
 msgstr "HTML"
 
-#: kmcomposewin.cpp:1295
+#: kmcomposewin.cpp:1296
 msgid "&All Fields"
 msgstr ""
 
-#: kmcomposewin.cpp:1298
+#: kmcomposewin.cpp:1299
 msgid "&Identity"
 msgstr ""
 
-#: kmcomposewin.cpp:1301
+#: kmcomposewin.cpp:1302
 msgid "&Dictionary"
 msgstr ""
 
-#: kmcomposewin.cpp:1304
+#: kmcomposewin.cpp:1305
 msgid "&Sent-Mail Folder"
 msgstr ""
 
-#: kmcomposewin.cpp:1307
+#: kmcomposewin.cpp:1308
 msgid "&Mail Transport"
 msgstr ""
 
-#: kmcomposewin.cpp:1310
+#: kmcomposewin.cpp:1311
 msgid "&From"
 msgstr ""
 
-#: kmcomposewin.cpp:1313
+#: kmcomposewin.cpp:1314
 msgid "&Reply To"
 msgstr ""
 
-#: kmcomposewin.cpp:1317
+#: kmcomposewin.cpp:1318
 #, fuzzy
 #| msgid "Subject"
 msgctxt "@action:inmenu Show the subject in the composer window."
 msgid "S&ubject"
 msgstr "Subjècte"
 
-#: kmcomposewin.cpp:1322
+#: kmcomposewin.cpp:1323
 msgid "Append S&ignature"
 msgstr ""
 
-#: kmcomposewin.cpp:1325
+#: kmcomposewin.cpp:1326
 #, fuzzy
 #| msgid "Signature"
 msgid "Pr&epend Signature"
 msgstr "Signatura"
 
-#: kmcomposewin.cpp:1328
+#: kmcomposewin.cpp:1329
 msgid "Insert Signature At C&ursor Position"
 msgstr ""
 
-#: kmcomposewin.cpp:1346
+#: kmcomposewin.cpp:1347
 msgid "&Spellchecker..."
 msgstr ""
 
-#: kmcomposewin.cpp:1347
+#: kmcomposewin.cpp:1348
 msgid "Spellchecker"
 msgstr ""
 
-#: kmcomposewin.cpp:1352 kmcomposewin.cpp:1354
+#: kmcomposewin.cpp:1353 kmcomposewin.cpp:1355
 msgid "Encrypt Message with Chiasmus..."
 msgstr ""
 
-#: kmcomposewin.cpp:1362
+#: kmcomposewin.cpp:1363
 msgid "&Encrypt Message"
 msgstr ""
 
-#: kmcomposewin.cpp:1363
+#: kmcomposewin.cpp:1364
 msgid "Encrypt"
 msgstr ""
 
-#: kmcomposewin.cpp:1365
+#: kmcomposewin.cpp:1366
 msgid "&Sign Message"
 msgstr ""
 
-#: kmcomposewin.cpp:1366
+#: kmcomposewin.cpp:1367
 msgid "Sign"
 msgstr ""
 
-#: kmcomposewin.cpp:1404
+#: kmcomposewin.cpp:1405
 msgid "&Cryptographic Message Format"
 msgstr ""
 
-#: kmcomposewin.cpp:1410
+#: kmcomposewin.cpp:1411
 msgid "Select a cryptographic format for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:1413
+#: kmcomposewin.cpp:1414
 msgid "Reset Font Settings"
 msgstr ""
 
-#: kmcomposewin.cpp:1414
+#: kmcomposewin.cpp:1415
 #, fuzzy
 #| msgid "Select Font"
 msgid "Reset Font"
 msgstr "Seleccionar una poliça"
 
-#: kmcomposewin.cpp:1436
+#: kmcomposewin.cpp:1437
 msgid "Configure KMail..."
 msgstr ""
 
-#: kmcomposewin.cpp:1446
+#: kmcomposewin.cpp:1447
 #, kde-format
 msgid " Spellcheck: %1 "
 msgstr ""
 
-#: kmcomposewin.cpp:1447 kmcomposewin.cpp:3857
+#: kmcomposewin.cpp:1448 kmcomposewin.cpp:3880
 #, kde-format
 msgid " Column: %1 "
 msgstr ""
 
-#: kmcomposewin.cpp:1449 kmcomposewin.cpp:3855
+#: kmcomposewin.cpp:1450 kmcomposewin.cpp:3878
 #, kde-format
 msgctxt "Shows the linenumber of the cursor position."
 msgid " Line: %1 "
 msgstr ""
 
-#: kmcomposewin.cpp:1915
+#: kmcomposewin.cpp:1916
 msgid "Re&save as Template"
 msgstr ""
 
-#: kmcomposewin.cpp:1916
+#: kmcomposewin.cpp:1917
 msgid "&Save as Draft"
 msgstr ""
 
-#: kmcomposewin.cpp:1918
+#: kmcomposewin.cpp:1919
 msgid ""
 "Resave this message in the Templates folder. It can then be used at a later "
 "time."
 msgstr ""
 
-#: kmcomposewin.cpp:1920
+#: kmcomposewin.cpp:1921
 msgid ""
 "Save this message in the Drafts folder. It can then be edited and sent at a "
 "later time."
 msgstr ""
 
-#: kmcomposewin.cpp:1924
+#: kmcomposewin.cpp:1925
 msgid "Do you want to save the message for later or discard it?"
 msgstr ""
 
-#: kmcomposewin.cpp:1925
+#: kmcomposewin.cpp:1926
 msgid "Close Composer"
 msgstr ""
 
-#: kmcomposewin.cpp:1989
+#: kmcomposewin.cpp:1990
 msgid ""
 "The message you have composed seems to refer to an attached file but you "
 "have not attached anything.\n"
 "Do you want to attach a file to your message?"
 msgstr ""
 
-#: kmcomposewin.cpp:1992
+#: kmcomposewin.cpp:1993
 msgid "File Attachment Reminder"
 msgstr ""
 
-#: kmcomposewin.cpp:1994 kmcomposewin.cpp:3390
+#: kmcomposewin.cpp:1995 kmcomposewin.cpp:3413
 msgid "&Send as Is"
 msgstr ""
 
-#: kmcomposewin.cpp:2273
+#: kmcomposewin.cpp:2274
 #, kde-format
 msgid ""
 "Error composing message:\n"
@@ -8066,7 +8067,7 @@ msgid ""
 "Please report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:2275
+#: kmcomposewin.cpp:2276
 #, kde-format
 msgid ""
 "Error composing message:\n"
@@ -8074,15 +8075,15 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kmcomposewin.cpp:2773
+#: kmcomposewin.cpp:2774
 msgid "Insert clipboard text as attachment"
 msgstr ""
 
-#: kmcomposewin.cpp:2774 kmcomposereditor.cpp:190
+#: kmcomposewin.cpp:2775 kmcomposereditor.cpp:190
 msgid "Name of the attachment:"
 msgstr ""
 
-#: kmcomposewin.cpp:2942
+#: kmcomposewin.cpp:2943
 msgid ""
 "<qt><p>You have requested that messages be encrypted to yourself, but the "
 "currently selected identity does not define an (OpenPGP or S/MIME) "
@@ -8090,210 +8091,210 @@ msgid ""
 "identity configuration.</p></qt>"
 msgstr ""
 
-#: kmcomposewin.cpp:2949
+#: kmcomposewin.cpp:2950
 msgid "Undefined Encryption Key"
 msgstr ""
 
-#: kmcomposewin.cpp:2993
+#: kmcomposewin.cpp:2994
 msgid ""
 "<qt><p>In order to be able to sign this message you first have to define the "
 "(OpenPGP or S/MIME) signing key to use.</p><p>Please select the key to use "
 "in the identity configuration.</p></qt>"
 msgstr ""
 
-#: kmcomposewin.cpp:3000
+#: kmcomposewin.cpp:3001
 msgid "Undefined Signing Key"
 msgstr ""
 
-#: kmcomposewin.cpp:3098
+#: kmcomposewin.cpp:3099
 msgid ""
 "KMail is currently in offline mode. Your messages will be kept in the outbox "
 "until you go online."
 msgstr ""
 
-#: kmcomposewin.cpp:3115
+#: kmcomposewin.cpp:3116
 msgid ""
 "You must enter your email address in the From: field. You should also set "
 "your email address for all identities, so that you do not have to enter it "
 "for each message."
 msgstr ""
 
-#: kmcomposewin.cpp:3124
+#: kmcomposewin.cpp:3125
 msgid ""
 "You must specify at least one receiver,either in the To: field or as CC or "
 "as BCC."
 msgstr ""
 
-#: kmcomposewin.cpp:3130
+#: kmcomposewin.cpp:3131
 msgid "To: field is empty. Send message anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:3132
+#: kmcomposewin.cpp:3133
 msgid "No To: specified"
 msgstr ""
 
-#: kmcomposewin.cpp:3159
+#: kmcomposewin.cpp:3147
 msgid "You did not specify a subject. Send message anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:3161
+#: kmcomposewin.cpp:3149
 msgid "No Subject Specified"
 msgstr ""
 
-#: kmcomposewin.cpp:3162
+#: kmcomposewin.cpp:3150
 msgid "S&end as Is"
 msgstr ""
 
-#: kmcomposewin.cpp:3163
+#: kmcomposewin.cpp:3151
 msgid "&Specify the Subject"
 msgstr ""
 
-#: kmcomposewin.cpp:3200
+#: kmcomposewin.cpp:3223
 msgid "&Keep markup, do not sign/encrypt"
 msgstr ""
 
-#: kmcomposewin.cpp:3201
+#: kmcomposewin.cpp:3224
 msgid "&Keep markup, do not encrypt"
 msgstr ""
 
-#: kmcomposewin.cpp:3202
+#: kmcomposewin.cpp:3225
 msgid "&Keep markup, do not sign"
 msgstr ""
 
-#: kmcomposewin.cpp:3204
+#: kmcomposewin.cpp:3227
 msgid "Sign/Encrypt (delete markup)"
 msgstr ""
 
-#: kmcomposewin.cpp:3205
+#: kmcomposewin.cpp:3228
 msgid "Encrypt (delete markup)"
 msgstr ""
 
-#: kmcomposewin.cpp:3206
+#: kmcomposewin.cpp:3229
 msgid "Sign (delete markup)"
 msgstr ""
 
-#: kmcomposewin.cpp:3208
+#: kmcomposewin.cpp:3231
 msgid ""
 "<qt><p>Inline signing/encrypting of HTML messages is not possible;</p><p>do "
 "you want to delete your markup?</p></qt>"
 msgstr ""
 
-#: kmcomposewin.cpp:3210
+#: kmcomposewin.cpp:3233
 msgid "Sign/Encrypt Message?"
 msgstr ""
 
-#: kmcomposewin.cpp:3262
+#: kmcomposewin.cpp:3285
 #, kde-format
 msgid ""
 "The custom drafts or templates folder for identify \"%1\" does not exist "
 "(anymore); therefore, the default drafts or templates folder will be used."
 msgstr ""
 
-#: kmcomposewin.cpp:3367
+#: kmcomposewin.cpp:3390
 msgid "About to send email..."
 msgstr ""
 
-#: kmcomposewin.cpp:3368
+#: kmcomposewin.cpp:3391
 msgid "Send Confirmation"
 msgstr "Mandar una confirmacion"
 
-#: kmcomposewin.cpp:3388
+#: kmcomposewin.cpp:3411
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:3389
+#: kmcomposewin.cpp:3412
 msgid "Too many recipients"
 msgstr ""
 
-#: kmcomposewin.cpp:3391
+#: kmcomposewin.cpp:3414
 msgid "&Edit Recipients"
 msgstr ""
 
-#: kmcomposewin.cpp:3479
+#: kmcomposewin.cpp:3502
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr ""
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 msgid "Lose the formatting?"
 msgstr ""
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 msgid "Lose Formatting"
 msgstr ""
 
-#: kmcomposewin.cpp:3535
+#: kmcomposewin.cpp:3558
 msgid "Spellcheck: on"
 msgstr ""
 
-#: kmcomposewin.cpp:3537
+#: kmcomposewin.cpp:3560
 msgid "Spellcheck: off"
 msgstr ""
 
-#: kmcomposewin.cpp:3903
+#: kmcomposewin.cpp:3926
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
 "Security page."
 msgstr ""
 
-#: kmcomposewin.cpp:3907
+#: kmcomposewin.cpp:3930
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
 msgstr ""
 
-#: kmcomposewin.cpp:3910
+#: kmcomposewin.cpp:3933
 msgid "No Chiasmus Backend Configured"
 msgstr ""
 
-#: kmcomposewin.cpp:3916
+#: kmcomposewin.cpp:3939
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:3918 kmcomposewin.cpp:3923 kmcomposewin.cpp:3932
+#: kmcomposewin.cpp:3941 kmcomposewin.cpp:3946 kmcomposewin.cpp:3955
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: kmcomposewin.cpp:3929
+#: kmcomposewin.cpp:3952
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:3938
+#: kmcomposewin.cpp:3961
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: kmcomposewin.cpp:3941
+#: kmcomposewin.cpp:3964
 msgid "No Chiasmus Keys Found"
 msgstr ""
 
-#: kmcomposewin.cpp:3945
+#: kmcomposewin.cpp:3968
 msgid "Chiasmus Encryption Key Selection"
 msgstr ""
 
-#: kmcomposewin.cpp:3974
+#: kmcomposewin.cpp:3997
 msgid "Message will be signed"
 msgstr ""
 
-#: kmcomposewin.cpp:3975
+#: kmcomposewin.cpp:3998
 msgid "Message will not be signed"
 msgstr ""
 
-#: kmcomposewin.cpp:3977
+#: kmcomposewin.cpp:4000
 msgid "Message will be encrypted"
 msgstr ""
 
-#: kmcomposewin.cpp:3978
+#: kmcomposewin.cpp:4001
 msgid "Message will not be encrypted"
 msgstr ""
 

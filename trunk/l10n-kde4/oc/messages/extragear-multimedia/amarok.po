@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-10 04:48+0200\n"
+"POT-Creation-Date: 2010-04-11 05:22+0200\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -1624,6 +1624,7 @@ msgstr[0] "Suprimir de la tièra de lecturas"
 msgstr[1] "Suprimir de la tièra de lecturas"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
+#: playlistmanager/file/PlaylistFileProvider.cpp:430
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:121
 #: playlistmanager/PlaylistManager.cpp:253
 #, fuzzy
@@ -1632,6 +1633,7 @@ msgid "Change playlist"
 msgstr "Novèla tièra de lecturas"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
+#: playlistmanager/file/PlaylistFileProvider.cpp:431
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:122
 #: playlistmanager/PlaylistManager.cpp:254
 #, fuzzy
@@ -1933,7 +1935,7 @@ msgstr "Seleccionar un fichièr"
 
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:251
 #: browsers/filebrowser/FileView.cpp:456
-#: playlistmanager/file/PlaylistFileProvider.cpp:273
+#: playlistmanager/file/PlaylistFileProvider.cpp:320
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:238
 #, fuzzy
 #| msgid "&Configure"
@@ -2021,6 +2023,10 @@ msgid " Item"
 msgid_plural " Items"
 msgstr[0] ""
 msgstr[1] ""
+
+#: core-impl/podcasts/sql/SqlPodcastProvider.h:50
+msgid "Local Podcasts"
+msgstr ""
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:269
 #, fuzzy
@@ -2133,10 +2139,6 @@ msgstr ""
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1408
 #, kde-format
 msgid "Unable to save podcast episode file to %1"
-msgstr ""
-
-#: core-impl/podcasts/sql/SqlPodcastProvider.h:50
-msgid "Local Podcasts"
 msgstr ""
 
 #: TrayIcon.cpp:127 widgets/VolumeDial.cpp:298 widgets/VolumeDial.cpp:337
@@ -2879,8 +2881,8 @@ msgid "Sort Options"
 msgstr "Opcions"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:324
-#: browsers/playlistbrowser/UserPlaylistCategory.cpp:100
 #: browsers/playlistbrowser/PodcastCategory.cpp:146
+#: browsers/playlistbrowser/UserPlaylistCategory.cpp:100
 msgid "Merged View"
 msgstr ""
 
@@ -2961,7 +2963,7 @@ msgstr[0] "Sètz segur que volètz desinstallar l'escript '%1' ?"
 msgstr[1] "Sètz segur que volètz desinstallar l'escript '%1' ?"
 
 #: browsers/filebrowser/FileView.cpp:463
-#: playlistmanager/file/PlaylistFileProvider.cpp:280
+#: playlistmanager/file/PlaylistFileProvider.cpp:327
 msgid "Yes, delete from disk."
 msgstr ""
 
@@ -3078,6 +3080,73 @@ msgstr ""
 
 #: browsers/playlistbrowser/APGCategory.cpp:124
 msgid "Accuracy"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:97
+msgid "Podcasts"
+msgstr "Podcasts"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:98
+msgid "List of podcast subscriptions and episodes"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:101
+msgid ""
+"Manage your podcast subscriptions and browse individual episodes. "
+"Downloading episodes to the disk is also done here, or you can tell Amarok "
+"to do this automatically."
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:119
+#, fuzzy
+#| msgid "Podcasts"
+msgid "&Add Podcast"
+msgstr "Podcasts"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:124
+#, fuzzy
+#| msgid "Update"
+msgid "&Update All"
+msgstr "Actualizar"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:192
+#: browsers/playlistbrowser/PodcastCategory.cpp:195
+#, fuzzy
+#| msgid "New Playlist"
+msgid "Import OPML File"
+msgstr "Novèla tièra de lecturas"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:227
+#, fuzzy
+#| msgid "Modify"
+msgid "By"
+msgstr "Modificar"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:266
+#, fuzzy
+#| msgid "On"
+msgctxt "Podcast published on date"
+msgid "On"
+msgstr "Actiu"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:284
+#, fuzzy
+#| msgid "File Size"
+msgid "File Size:"
+msgstr "Nom de fichièr"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:296
+#, fuzzy
+#| msgid "Collection"
+msgid "Subscription Date:"
+msgstr "Descripcion :"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:304
+msgid "Keywords:"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:341
+msgid "Select OPML file to import"
 msgstr ""
 
 #: browsers/playlistbrowser/UserPlaylistCategory.cpp:57
@@ -3266,73 +3335,6 @@ msgstr "Renommar"
 msgctxt "Enter a new name for a folder that already exists"
 msgid "Enter new folder name:"
 msgstr "Internacional"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:97
-msgid "Podcasts"
-msgstr "Podcasts"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:98
-msgid "List of podcast subscriptions and episodes"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:101
-msgid ""
-"Manage your podcast subscriptions and browse individual episodes. "
-"Downloading episodes to the disk is also done here, or you can tell Amarok "
-"to do this automatically."
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:119
-#, fuzzy
-#| msgid "Podcasts"
-msgid "&Add Podcast"
-msgstr "Podcasts"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:124
-#, fuzzy
-#| msgid "Update"
-msgid "&Update All"
-msgstr "Actualizar"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:192
-#: browsers/playlistbrowser/PodcastCategory.cpp:195
-#, fuzzy
-#| msgid "New Playlist"
-msgid "Import OPML File"
-msgstr "Novèla tièra de lecturas"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:227
-#, fuzzy
-#| msgid "Modify"
-msgid "By"
-msgstr "Modificar"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:266
-#, fuzzy
-#| msgid "On"
-msgctxt "Podcast published on date"
-msgid "On"
-msgstr "Actiu"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:284
-#, fuzzy
-#| msgid "File Size"
-msgid "File Size:"
-msgstr "Nom de fichièr"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:296
-#, fuzzy
-#| msgid "Collection"
-msgid "Subscription Date:"
-msgstr "Descripcion :"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:304
-msgid "Keywords:"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:341
-msgid "Select OPML file to import"
-msgstr ""
 
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:111
 msgid "Add a new bias."
@@ -5445,69 +5447,6 @@ msgstr ""
 msgid "Script Manager - Amarok"
 msgstr ""
 
-#: dialogs/CollectionSetup.cpp:67
-#, kde-format
-msgid "Rescan '%1'"
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:96
-msgid ""
-"These folders will be scanned for media to make up your collection. You can\n"
-"right-click on a folder to individually rescan it, if it was previously "
-"selected:"
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:110
-#, fuzzy
-#| msgid "Collection"
-msgid "Fully Rescan Entire Collection"
-msgstr "Colleccion"
-
-#: dialogs/CollectionSetup.cpp:111
-msgid ""
-"Rescan your entire collection. This will <i>not</i> delete any statistics."
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:114
-#, fuzzy
-#| msgid "Statistics"
-msgid "Import Statistics"
-msgstr "Estadisticas"
-
-#: dialogs/CollectionSetup.cpp:115
-msgid ""
-"Import collection statistics from older Amarok versions, or from other media "
-"players."
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:118
-msgid "&Scan folders recursively"
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:119
-msgid "&Watch folders for changes"
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:120
-msgid "&Enable character set detection in ID3 tags"
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:125
-msgid "If selected, Amarok will read all subfolders."
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:126
-msgid ""
-"If selected, folders will automatically get rescanned when the content is "
-"modified, e.g. when a new file was added."
-msgstr ""
-
-#: dialogs/CollectionSetup.cpp:127
-msgid ""
-"If selected, Amarok will use Mozilla's Character Set Detector to attempt to "
-"automatically guess the character sets used in ID3 tags."
-msgstr ""
-
 #: dialogs/EditFilterDialog.cpp:43
 msgid "Edit Filter"
 msgstr ""
@@ -5779,6 +5718,69 @@ msgstr ""
 #: dialogs/TagDialog.cpp:1646
 msgid ""
 "Writing to file failed. Please check permissions and available disc space."
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:67
+#, kde-format
+msgid "Rescan '%1'"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:96
+msgid ""
+"These folders will be scanned for media to make up your collection. You can "
+"right-click on a folder to individually rescan it, if it was previously "
+"selected:"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:112
+#, fuzzy
+#| msgid "Collection"
+msgid "Fully Rescan Entire Collection"
+msgstr "Colleccion"
+
+#: dialogs/CollectionSetup.cpp:113
+msgid ""
+"Rescan your entire collection. This will <i>not</i> delete any statistics."
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:116
+#, fuzzy
+#| msgid "Statistics"
+msgid "Import Statistics"
+msgstr "Estadisticas"
+
+#: dialogs/CollectionSetup.cpp:117
+msgid ""
+"Import collection statistics from older Amarok versions, or from other media "
+"players."
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:120
+msgid "&Scan folders recursively"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:121
+msgid "&Watch folders for changes"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:122
+msgid "&Enable character set detection in ID3 tags"
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:127
+msgid "If selected, Amarok will read all subfolders."
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:128
+msgid ""
+"If selected, folders will automatically get rescanned when the content is "
+"modified, e.g. when a new file was added."
+msgstr ""
+
+#: dialogs/CollectionSetup.cpp:129
+msgid ""
+"If selected, Amarok will use Mozilla's Character Set Detector to attempt to "
+"automatically guess the character sets used in ID3 tags."
 msgstr ""
 
 #: dynamic/biases/EchoNest.cpp:52
@@ -6157,176 +6159,6 @@ msgstr "&Tièra de lectura"
 msgid "Encountered an unknown element name while reading layout."
 msgstr ""
 
-#: playlist/layouts/LayoutManager.cpp:105
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:418
-#, kde-format
-msgid "copy of %1"
-msgstr ""
-
-#: playlist/layouts/LayoutManager.cpp:113
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:426
-#, fuzzy, kde-format
-#| msgctxt "monthname year"
-#| msgid "%1 %2"
-msgctxt ""
-"adds a copy number to a generated name if the name already exists, for "
-"instance 'copy of Foo 2' if 'copy of Foo' is taken"
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: playlist/layouts/LayoutManager.cpp:117
-#, kde-format
-msgid ""
-"Current layout '%1' is read only. Creating a new layout '%2' with your "
-"changes and setting this as active"
-msgstr ""
-
-#: playlist/layouts/LayoutManager.cpp:408
-#, kde-format
-msgid "The layout '%1' is one of the default layouts and cannot be deleted."
-msgstr ""
-
-#: playlist/layouts/LayoutManager.cpp:408
-msgid "Cannot Delete Default Layouts"
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:73
-#: playlist/PlaylistDefines.h:108
-#, fuzzy
-#| msgid "Modify"
-msgctxt "'Moodbar' playlist column name and token for playlist layouts"
-msgid "Moodbar"
-msgstr "Modificar"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:106
-msgid "Head"
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:107
-#, fuzzy
-#| msgid "Modify"
-msgid "Body"
-msgstr "Modificar"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:108
-#, fuzzy
-#| msgid "Various Artists"
-msgid "Body (Various artists)"
-msgstr "Mai d'un artista"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:109
-msgid "Single"
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:143
-#, fuzzy
-#| msgid "&Playlist"
-msgid "New playlist layout"
-msgstr "&Tièra de lectura"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:148
-#, fuzzy
-#| msgid "&Playlist"
-msgid "Copy playlist layout"
-msgstr "&Tièra de lectura"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:153
-#, fuzzy
-#| msgid "&Playlist"
-msgid "Delete playlist layout"
-msgstr "&Tièra de lectura"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:158
-#, fuzzy
-#| msgid "&Playlist"
-msgid "Rename playlist layout"
-msgstr "&Tièra de lectura"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:181
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:232
-#, fuzzy
-#| msgid "Configure..."
-msgid "Choose a name for the new playlist layout"
-msgstr "Configurar..."
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:182
-msgid "Please enter a name for the playlist layout you are about to define:"
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:187
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:240
-msgid "Cannot create a layout with no name."
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:187
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:192
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:197
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:240
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:245
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:299
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:301
-#, fuzzy
-#| msgctxt "state, as in playing"
-#| msgid "Play"
-msgid "Layout name error"
-msgstr "Legir"
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:192
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:245
-msgid "Cannot create a layout with the same name as an existing layout."
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:197
-msgid "Cannot create a layout containing '/'."
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:233
-#, kde-format
-msgid ""
-"Please enter a name for the playlist layout you are about to define as copy "
-"of the layout '%1':"
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:290
-#, fuzzy
-#| msgid "Configure..."
-msgid "Choose a new name for the playlist layout"
-msgstr "Configurar..."
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:291
-msgid ""
-"Please enter a new name for the playlist layout you are about to rename:"
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:299
-msgid "Cannot rename a layout to have no name."
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:301
-msgid "Cannot rename a layout to have the same name as an existing layout."
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:429
-#, kde-format
-msgid ""
-"The layout '%1' you modified is one of the default layouts and cannot be "
-"overwritten. Saved as new layout '%2'"
-msgstr ""
-
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:431
-#, fuzzy
-#| msgid "&Playlist"
-msgid "Default Layout"
-msgstr "&Tièra de lectura"
-
-#. i18n: tag layout attribute name
-#. i18n: file: data/DefaultPlaylistLayouts.xml:38
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:525 rc.cpp:2719
-#, fuzzy
-#| msgid "New Group"
-msgid "No Grouping"
-msgstr "Grop novèl"
-
 #: playlist/layouts/LayoutEditDialog.cpp:75
 #, fuzzy
 #| msgid "Configure"
@@ -6384,6 +6216,176 @@ msgstr "Format :"
 #| msgid "Configure"
 msgid "Configuration for '%1'"
 msgstr "Configurar"
+
+#: playlist/layouts/LayoutManager.cpp:105
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:413
+#, kde-format
+msgid "copy of %1"
+msgstr ""
+
+#: playlist/layouts/LayoutManager.cpp:113
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:421
+#, fuzzy, kde-format
+#| msgctxt "monthname year"
+#| msgid "%1 %2"
+msgctxt ""
+"adds a copy number to a generated name if the name already exists, for "
+"instance 'copy of Foo 2' if 'copy of Foo' is taken"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: playlist/layouts/LayoutManager.cpp:117
+#, kde-format
+msgid ""
+"Current layout '%1' is read only. Creating a new layout '%2' with your "
+"changes and setting this as active"
+msgstr ""
+
+#: playlist/layouts/LayoutManager.cpp:408
+#, kde-format
+msgid "The layout '%1' is one of the default layouts and cannot be deleted."
+msgstr ""
+
+#: playlist/layouts/LayoutManager.cpp:408
+msgid "Cannot Delete Default Layouts"
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:72
+#: playlist/PlaylistDefines.h:108
+#, fuzzy
+#| msgid "Modify"
+msgctxt "'Moodbar' playlist column name and token for playlist layouts"
+msgid "Moodbar"
+msgstr "Modificar"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:103
+msgid "Head"
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:104
+#, fuzzy
+#| msgid "Modify"
+msgid "Body"
+msgstr "Modificar"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:105
+#, fuzzy
+#| msgid "Various Artists"
+msgid "Body (Various artists)"
+msgstr "Mai d'un artista"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:106
+msgid "Single"
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:140
+#, fuzzy
+#| msgid "&Playlist"
+msgid "New playlist layout"
+msgstr "&Tièra de lectura"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:145
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Copy playlist layout"
+msgstr "&Tièra de lectura"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:150
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Delete playlist layout"
+msgstr "&Tièra de lectura"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:155
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Rename playlist layout"
+msgstr "&Tièra de lectura"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:177
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:225
+#, fuzzy
+#| msgid "Configure..."
+msgid "Choose a name for the new playlist layout"
+msgstr "Configurar..."
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:178
+msgid "Please enter a name for the playlist layout you are about to define:"
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:183
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:233
+msgid "Cannot create a layout with no name."
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:183
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:188
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:193
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:233
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:238
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:292
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:294
+#, fuzzy
+#| msgctxt "state, as in playing"
+#| msgid "Play"
+msgid "Layout name error"
+msgstr "Legir"
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:188
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:238
+msgid "Cannot create a layout with the same name as an existing layout."
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:193
+msgid "Cannot create a layout containing '/'."
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:226
+#, kde-format
+msgid ""
+"Please enter a name for the playlist layout you are about to define as copy "
+"of the layout '%1':"
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:283
+#, fuzzy
+#| msgid "Configure..."
+msgid "Choose a new name for the playlist layout"
+msgstr "Configurar..."
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:284
+msgid ""
+"Please enter a new name for the playlist layout you are about to rename:"
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:292
+msgid "Cannot rename a layout to have no name."
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:294
+msgid "Cannot rename a layout to have the same name as an existing layout."
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:424
+#, kde-format
+msgid ""
+"The layout '%1' you modified is one of the default layouts and cannot be "
+"overwritten. Saved as new layout '%2'"
+msgstr ""
+
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:426
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Default Layout"
+msgstr "&Tièra de lectura"
+
+#. i18n: tag layout attribute name
+#. i18n: file: data/DefaultPlaylistLayouts.xml:38
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:524 rc.cpp:2719
+#, fuzzy
+#| msgid "New Group"
+msgid "No Grouping"
+msgstr "Grop novèl"
 
 #: playlist/navigators/NavigatorConfigAction.cpp:33
 #, fuzzy
@@ -6898,14 +6900,28 @@ msgstr "Numerò de pista"
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr ""
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:79
+#: playlistmanager/file/PlaylistFileProvider.cpp:81
 #, fuzzy
 #| msgid "Playlist Files"
 msgid "Playlist Files on Disk"
 msgstr "Fichièrs de tièra de lecturas"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:131
-#: playlistmanager/file/PlaylistFileProvider.cpp:140
+#: playlistmanager/file/PlaylistFileProvider.cpp:123
+#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:163
+#, fuzzy
+#| msgid "&Rename"
+msgid "&Rename..."
+msgstr "&Tornar nomenar"
+
+#: playlistmanager/file/PlaylistFileProvider.cpp:135
+#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:175
+#, fuzzy
+#| msgid "&Delete"
+msgid "&Delete..."
+msgstr "&Suprimir"
+
+#: playlistmanager/file/PlaylistFileProvider.cpp:171
+#: playlistmanager/file/PlaylistFileProvider.cpp:180
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:199
 #, fuzzy, kde-format
 #| msgid "Remove %1"
@@ -6917,11 +6933,11 @@ msgstr "Suprimir %1"
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:98
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: playlistmanager/file/PlaylistFileProvider.cpp:157 rc.cpp:1196 rc.cpp:1928
+#: playlistmanager/file/PlaylistFileProvider.cpp:197 rc.cpp:1196 rc.cpp:1928
 msgid "Remove"
 msgstr "Suprimir"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:275
+#: playlistmanager/file/PlaylistFileProvider.cpp:322
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:240
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to uninstall the script '%1'?"
@@ -6930,8 +6946,8 @@ msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] "Sètz segur que volètz desinstallar l'escript '%1' ?"
 msgstr[1] "Sètz segur que volètz desinstallar l'escript '%1' ?"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:322
-#: playlistmanager/file/PlaylistFileProvider.cpp:348
+#: playlistmanager/file/PlaylistFileProvider.cpp:363
+#: playlistmanager/file/PlaylistFileProvider.cpp:389
 #, kde-format
 msgid "The playlist file \"%1\" could not be loaded."
 msgstr ""
@@ -6963,18 +6979,6 @@ msgstr "Sètz segur que volètz desinstallar l'escript '%1' ?"
 #| msgid "International"
 msgid "Yes, rename this playlist."
 msgstr "Internacional"
-
-#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:163
-#, fuzzy
-#| msgid "&Rename"
-msgid "&Rename..."
-msgstr "&Tornar nomenar"
-
-#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:175
-#, fuzzy
-#| msgid "&Delete"
-msgid "&Delete..."
-msgstr "&Suprimir"
 
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:245
 msgid "Yes, delete from database."
@@ -8007,7 +8011,7 @@ msgstr ""
 msgid "Playing: %1"
 msgstr ""
 
-#: statusbar/StatusBar.cpp:366
+#: statusbar/StatusBar.cpp:368
 #, fuzzy, kde-format
 #| msgid "Track %1"
 msgctxt "%1 is number of tracks, %2 is time"
@@ -8016,23 +8020,23 @@ msgid_plural "%1 tracks (%2)"
 msgstr[0] "%1 (%2)"
 msgstr[1] "%1 (%2)"
 
-#: statusbar/StatusBar.cpp:389 statusbar/StatusBar.cpp:395
+#: statusbar/StatusBar.cpp:391 statusbar/StatusBar.cpp:397
 #, fuzzy, kde-format
 #| msgid "New Playlist"
 msgid "Total playlist size: %1"
 msgstr "Novèla tièra de lecturas"
 
-#: statusbar/StatusBar.cpp:390
+#: statusbar/StatusBar.cpp:392
 #, kde-format
 msgid "Queue size: %1"
 msgstr ""
 
-#: statusbar/StatusBar.cpp:391
+#: statusbar/StatusBar.cpp:393
 #, kde-format
 msgid "Queue length: %1"
 msgstr ""
 
-#: statusbar/StatusBar.cpp:403
+#: statusbar/StatusBar.cpp:405
 #, fuzzy, kde-format
 #| msgid "Track"
 msgctxt "%1 is number of tracks"
