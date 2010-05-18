@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-15 04:53+0200\n"
+"POT-Creation-Date: 2010-05-18 06:07+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -249,13 +249,15 @@ msgstr ""
 msgid "Script Dialog"
 msgstr ""
 
-#. i18n: file: src/editor/editorui.rc:12
-#. i18n: ectx: Menu (edit)
-#: src/welcomescreen/buttondelegate.cpp:42 rc.cpp:272
+#: src/welcomescreen/buttondelegate.cpp:42
 #, fuzzy
 #| msgid "Editing"
-msgid "&Edit"
+msgid "&Editor"
 msgstr "Modificacion"
+
+#: src/welcomescreen/buttondelegate.cpp:44
+msgid "Open this vocabulary collection in the editor"
+msgstr ""
 
 #. i18n: file: src/editor/editorui.rc:60
 #. i18n: ectx: Menu (learning)
@@ -263,7 +265,7 @@ msgstr "Modificacion"
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/practice/practicesummaryui.rc:11
 #. i18n: ectx: Menu (learning)
-#: src/welcomescreen/buttondelegate.cpp:45 rc.cpp:281 rc.cpp:1198 rc.cpp:1282
+#: src/welcomescreen/buttondelegate.cpp:46 rc.cpp:281 rc.cpp:1198 rc.cpp:1282
 msgid "&Practice"
 msgstr ""
 
@@ -1172,7 +1174,7 @@ msgctxt "caption for an overview of the grades for a document"
 msgid "Statistics for \"%1\""
 msgstr ""
 
-#: src/statistics/statisticsmainwindow.cpp:92 src/parleyactions.cpp:140
+#: src/statistics/statisticsmainwindow.cpp:92 src/parleyactions.cpp:141
 msgid "Start Practice..."
 msgstr ""
 
@@ -1470,111 +1472,113 @@ msgid "Edit document properties"
 msgstr ""
 
 #: src/parleyactions.cpp:101
-msgid "Close the current collection"
+msgid "&Start Page"
 msgstr ""
 
-#: src/parleyactions.cpp:105
+#: src/parleyactions.cpp:102
+msgid "Close the current vocabulary collection and show the start page"
+msgstr ""
+
+#: src/parleyactions.cpp:106
 msgid "Quit Parley"
 msgstr ""
 
-#: src/parleyactions.cpp:109
+#: src/parleyactions.cpp:110
 msgid "Show the configuration dialog"
 msgstr ""
 
-#: src/parleyactions.cpp:113
+#: src/parleyactions.cpp:114
 msgid "&Languages..."
 msgstr ""
 
-#: src/parleyactions.cpp:114
+#: src/parleyactions.cpp:115
 msgid ""
 "Edit which languages are in the collection and their grammar properties."
 msgstr ""
 
-#: src/parleyactions.cpp:118
+#: src/parleyactions.cpp:119
 #, fuzzy
 #| msgid "Remove"
 msgid "Remove Grades"
 msgstr "Suprimir"
 
-#: src/parleyactions.cpp:119
+#: src/parleyactions.cpp:120
 msgid "Remove all grades from the current document"
 msgstr ""
 
-#: src/parleyactions.cpp:126
+#: src/parleyactions.cpp:127
 msgid "Show Entries from Child Lessons"
 msgstr ""
 
-#: src/parleyactions.cpp:127
+#: src/parleyactions.cpp:128
 msgid "Enable to also see the entries of child lessons in each lesson."
 msgstr ""
 
-#: src/parleyactions.cpp:133
+#: src/parleyactions.cpp:134
 msgid "Automatic Translation"
 msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:50
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
-#: src/parleyactions.cpp:134 rc.cpp:533
+#: src/parleyactions.cpp:135 rc.cpp:533
 msgid "Enable automatic translation of the lesson entries."
 msgstr ""
 
-#: src/parleyactions.cpp:141
+#: src/parleyactions.cpp:142
 #, fuzzy
 #| msgid "Articles"
 msgid "Start practicing"
 msgstr "Articles"
 
-#: src/parleyactions.cpp:145
+#: src/parleyactions.cpp:146
 msgid "Configure Practice..."
 msgstr ""
 
-#: src/parleyactions.cpp:146
+#: src/parleyactions.cpp:147
 #, fuzzy
 #| msgid "General Settings"
 msgid "Change practice settings"
 msgstr "Paramètres generals"
 
-#: src/parleyactions.cpp:150
-#, fuzzy
-#| msgid "Editing"
-msgid "Edit..."
-msgstr "Modificacion"
-
 #: src/parleyactions.cpp:151
 #, fuzzy
-#| msgid "HTML document"
-msgid "Edit the document"
-msgstr "Document HTML"
+#| msgid "Editing"
+msgid "Editor"
+msgstr "Modificacion"
 
-#: src/parleyactions.cpp:155
-msgid "Show Se&arch"
+#: src/parleyactions.cpp:152
+msgid "Switch to vocabulary editor"
 msgstr ""
 
 #: src/parleyactions.cpp:156
+msgid "Show Se&arch"
+msgstr ""
+
+#: src/parleyactions.cpp:157
 msgid "Toggle display of the search bar"
 msgstr ""
 
-#: src/parleyactions.cpp:165
+#: src/parleyactions.cpp:166
 msgid "&Script Manager"
 msgstr ""
 
-#: src/parleyactions.cpp:166
+#: src/parleyactions.cpp:167
 msgid "Enable and disable scripts"
 msgstr ""
 
-#: src/parleyactions.cpp:182
+#: src/parleyactions.cpp:183
 msgid "Download New Vocabularies..."
 msgstr ""
 
-#: src/parleyactions.cpp:184
+#: src/parleyactions.cpp:185
 msgid "Downloads new vocabulary collections"
 msgstr ""
 
-#: src/parleyactions.cpp:190
+#: src/parleyactions.cpp:191
 msgid "&Upload Vocabulary Document..."
 msgstr ""
 
-#: src/parleyactions.cpp:191
+#: src/parleyactions.cpp:192
 msgid "Share the current vocabulary collection with other users"
 msgstr ""
 
@@ -2064,9 +2068,19 @@ msgstr ""
 msgid "&File"
 msgstr "Visualizacion"
 
+#. i18n: file: src/editor/editorui.rc:12
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:272
+#, fuzzy
+#| msgid "Editing"
+msgid "&Edit"
+msgstr "Modificacion"
+
 #. i18n: file: src/editor/editorui.rc:23
 #. i18n: ectx: Menu (view)
-#: rc.cpp:275
+#. i18n: file: src/practice/practiceui.rc:12
+#. i18n: ectx: Menu (view)
+#: rc.cpp:275 rc.cpp:1291
 #, fuzzy
 #| msgid "View"
 msgid "&View"
@@ -3638,17 +3652,17 @@ msgstr "&Ajuda"
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
-#. i18n: file: src/parleyui.rc:36
+#. i18n: file: src/parleyui.rc:35
 #. i18n: ectx: ToolBar (practiceToolBar)
-#. i18n: file: src/practice/practiceui.rc:13
+#. i18n: file: src/practice/practiceui.rc:18
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:1156 rc.cpp:1291
+#: rc.cpp:1156 rc.cpp:1294
 #, fuzzy
 #| msgid "Main Toolbar"
 msgid "Practice Toolbar"
 msgstr "Barra d'espleches principala"
 
-#. i18n: file: src/parleyui.rc:40
+#. i18n: file: src/parleyui.rc:39
 #. i18n: ectx: ToolBar (statisticsToolBar)
 #. i18n: file: src/statistics/statisticsui.rc:18
 #. i18n: ectx: ToolBar (statisticsToolBar)
@@ -3658,7 +3672,7 @@ msgstr "Barra d'espleches principala"
 msgid "Statistics Toolbar"
 msgstr "Barra d'espleches principala"
 
-#. i18n: file: src/parleyui.rc:47
+#. i18n: file: src/parleyui.rc:46
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
 #. i18n: file: src/practice/practicesummaryui.rc:18
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
@@ -3809,7 +3823,7 @@ msgstr "Son"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1250 rc.cpp:1306
+#: rc.cpp:1250 rc.cpp:1309
 #, fuzzy
 #| msgid "Sound"
 msgid "Solution"
@@ -3871,13 +3885,13 @@ msgstr ""
 
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1294
+#: rc.cpp:1297
 msgid "Vocabulary collection:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1297
+#: rc.cpp:1300
 #, fuzzy
 #| msgid "Languages"
 msgid "Language Selection"
@@ -3885,7 +3899,7 @@ msgstr "Lengas"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1300
+#: rc.cpp:1303
 #, fuzzy
 #| msgid "To"
 msgid "Top:"
@@ -3893,25 +3907,25 @@ msgstr "Amont:"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1303
+#: rc.cpp:1306
 msgid "Bottom:"
 msgstr "Aval:"
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1309
+#: rc.cpp:1312
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1312
+#: rc.cpp:1315
 msgid "Always show the solution"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1315
+#: rc.cpp:1318
 #, fuzzy
 #| msgid "Update interval"
 msgid "Update interval:"
@@ -3919,7 +3933,7 @@ msgstr "Interval de mesa a jorn"
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1318
+#: rc.cpp:1321
 msgid "Select Font..."
 msgstr ""
 
@@ -4051,6 +4065,16 @@ msgstr ""
 #: plugins/google_images.py:250
 msgid "Fetches an image for the selected translation"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Editing"
+#~ msgid "Edit..."
+#~ msgstr "Modificacion"
+
+#, fuzzy
+#~| msgid "HTML document"
+#~ msgid "Edit the document"
+#~ msgstr "Document HTML"
 
 #, fuzzy
 #~| msgid "From"
