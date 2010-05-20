@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-19 04:48+0200\n"
+"POT-Creation-Date: 2010-05-20 04:49+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -410,7 +410,7 @@ msgstr ""
 msgid "Number of entries in this lesson."
 msgstr ""
 
-#: src/vocabulary/basiccontainermodel.cpp:134
+#: src/vocabulary/basiccontainermodel.cpp:145
 #, fuzzy
 #| msgid "Sound"
 msgid "None"
@@ -1347,13 +1347,13 @@ msgstr "Articles"
 msgid "Stop practicing"
 msgstr "Articles"
 
-#: src/practice/guifrontend.cpp:125
+#: src/practice/guifrontend.cpp:129
 #, kde-format
 msgctxt "Display of the current lesson during practice"
 msgid "Lesson: %1"
 msgstr ""
 
-#: src/practice/guifrontend.cpp:187
+#: src/practice/guifrontend.cpp:191
 #, kde-format
 msgid ""
 "You answered %2 of a total of %1 word.\n"
@@ -1404,6 +1404,43 @@ msgstr ""
 #: src/practice/summarybarwidget.cpp:162
 #, kde-format
 msgid "Not answered during this practice: %1 of %2 (%3 %)"
+msgstr ""
+
+#: src/practice/comparisonmodewidget.cpp:57
+msgid "Enter the comparison forms."
+msgstr ""
+
+#: src/practice/comparisonbackendmode.cpp:81
+msgid "All comparison forms were right."
+msgstr ""
+
+#: src/practice/comparisonbackendmode.cpp:88
+#, kde-format
+msgctxt ""
+"the user entered the wrong absolute form when practicing comparison forms of "
+"adjectives (the base form of the adjective is wrong)"
+msgid "\"%1\" is the wrong word."
+msgstr ""
+
+#: src/practice/comparisonbackendmode.cpp:92
+msgctxt ""
+"the user entered the wrong comparison forms when practicing comparison forms "
+"of adjectives (good, better, best)"
+msgid "Both comparison forms (comparative and superlative) are wrong."
+msgstr ""
+
+#: src/practice/comparisonbackendmode.cpp:95
+msgctxt ""
+"the user entered the wrong comparison forms when practicing comparison forms "
+"of adjectives (second form wrong - better)"
+msgid "The comparative is wrong."
+msgstr ""
+
+#: src/practice/comparisonbackendmode.cpp:98
+msgctxt ""
+"the user entered the wrong comparison forms when practicing comparison forms "
+"of adjectives (third form wrong - best)"
+msgid "The superlative is wrong."
 msgstr ""
 
 #: src/practice/writtenpracticewidget.cpp:119
@@ -2084,7 +2121,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: src/practice/practiceui.rc:7
 #. i18n: ectx: Menu (file)
-#: rc.cpp:269 rc.cpp:1195 rc.cpp:1282 rc.cpp:1291
+#: rc.cpp:269 rc.cpp:1195 rc.cpp:1282 rc.cpp:1302
 #, fuzzy
 #| msgid "View"
 msgid "&File"
@@ -2102,7 +2139,7 @@ msgstr "Modificacion"
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/practice/practiceui.rc:12
 #. i18n: ectx: Menu (view)
-#: rc.cpp:275 rc.cpp:1294
+#: rc.cpp:275 rc.cpp:1305
 #, fuzzy
 #| msgid "View"
 msgid "&View"
@@ -3678,7 +3715,7 @@ msgstr "Barra d'espleches principala"
 #. i18n: ectx: ToolBar (practiceToolBar)
 #. i18n: file: src/practice/practiceui.rc:18
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:1156 rc.cpp:1297
+#: rc.cpp:1156 rc.cpp:1308
 #, fuzzy
 #| msgid "Main Toolbar"
 msgid "Practice Toolbar"
@@ -3845,7 +3882,7 @@ msgstr "Son"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1250 rc.cpp:1312
+#: rc.cpp:1250 rc.cpp:1323
 #, fuzzy
 #| msgid "Sound"
 msgid "Solution"
@@ -3911,15 +3948,41 @@ msgstr ""
 msgid "%v/%m"
 msgstr ""
 
+#. i18n: file: src/practice/practice_widget_comparison.ui:42
+#. i18n: ectx: property (text), widget (QLabel, absoluteLabel)
+#: rc.cpp:1291
+#, fuzzy
+#| msgid "Paste"
+msgid "absolute"
+msgstr "Pegar"
+
+#. i18n: file: src/practice/practice_widget_comparison.ui:99
+#. i18n: ectx: property (text), widget (QLabel, comparativeLabel)
+#: rc.cpp:1295
+#, fuzzy
+#| msgctxt "state of a row"
+#| msgid "Inactive"
+msgid "comparative"
+msgstr "Inactiu"
+
+#. i18n: file: src/practice/practice_widget_comparison.ui:156
+#. i18n: ectx: property (text), widget (QLabel, superlativeLabel)
+#: rc.cpp:1299
+#, fuzzy
+#| msgctxt "state of a row"
+#| msgid "Active"
+msgid "superlative"
+msgstr "Actiu"
+
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1300
+#: rc.cpp:1311
 msgid "Vocabulary collection:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1303
+#: rc.cpp:1314
 #, fuzzy
 #| msgid "Languages"
 msgid "Language Selection"
@@ -3927,7 +3990,7 @@ msgstr "Lengas"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1306
+#: rc.cpp:1317
 #, fuzzy
 #| msgid "To"
 msgid "Top:"
@@ -3935,25 +3998,25 @@ msgstr "Amont:"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1309
+#: rc.cpp:1320
 msgid "Bottom:"
 msgstr "Aval:"
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1315
+#: rc.cpp:1326
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1318
+#: rc.cpp:1329
 msgid "Always show the solution"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1321
+#: rc.cpp:1332
 #, fuzzy
 #| msgid "Update interval"
 msgid "Update interval:"
@@ -3961,7 +4024,7 @@ msgstr "Interval de mesa a jorn"
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1324
+#: rc.cpp:1335
 msgid "Select Font..."
 msgstr ""
 
