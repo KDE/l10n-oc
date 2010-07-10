@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-16 04:59+0200\n"
+"POT-Creation-Date: 2010-07-10 01:27+0200\n"
 "PO-Revision-Date: 2008-08-05 22:41+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -97,11 +97,10 @@ msgstr "Còpias"
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: misc/k3bimagewritingdialog.cpp:303 misc/k3bimagewritingdialog.cpp:319
 #: misc/k3bmediacopydialog.cpp:120 misc/k3bmediaformattingdialog.cpp:71
-#: projects/k3bvcdtrackdialog.cpp:434 projects/k3baudioburndialog.cpp:80
-#: projects/k3bvcdburndialog.cpp:415 projects/k3bvcdburndialog.cpp:447
-#: projects/k3bdatapropertiesdialog.cpp:147
-#: projects/k3bprojectburndialog.cpp:268 option/k3boptiondialog.cpp:48
-#: rip/k3bvideocdrippingdialog.cpp:102
+#: projects/k3bdatapropertiesdialog.cpp:147 projects/k3bvcdtrackdialog.cpp:434
+#: projects/k3baudioburndialog.cpp:80 projects/k3bvcdburndialog.cpp:415
+#: projects/k3bvcdburndialog.cpp:447 projects/k3bprojectburndialog.cpp:268
+#: option/k3boptiondialog.cpp:48 rip/k3bvideocdrippingdialog.cpp:102
 #: rip/k3baudioprojectconvertingdialog.cpp:145
 #: rip/k3baudiorippingdialog.cpp:163 rc.cpp:550 rc.cpp:1238
 msgid "Settings"
@@ -121,9 +120,10 @@ msgstr ""
 #. i18n: file: ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui:267
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: misc/k3bimagewritingdialog.cpp:349 misc/k3bimagewritingdialog.cpp:890
+#: projects/k3bdatapropertiesdialog.cpp:148
 #: projects/k3baudioburndialog.cpp:108 projects/k3bvcdburndialog.cpp:386
-#: projects/k3bdatapropertiesdialog.cpp:148 option/k3boptiondialog.cpp:202
-#: rip/k3baudiorippingdialog.cpp:177 rc.cpp:726 rc.cpp:1265
+#: option/k3boptiondialog.cpp:202 rip/k3baudiorippingdialog.cpp:177 rc.cpp:726
+#: rc.cpp:1265
 msgid "Advanced"
 msgstr "A_vançat"
 
@@ -490,211 +490,139 @@ msgstr ""
 msgid "KOffice Storage"
 msgstr ""
 
-#: projects/k3baudiotrackdialog.cpp:45
-msgid "Audio Track Properties"
+#: projects/k3bdatapropertiesdialog.cpp:47
+msgid "File Properties"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:45
-msgid "Linux/Unix only"
+#: projects/k3bdatapropertiesdialog.cpp:88 projects/k3bvcdtrackdialog.cpp:573
+#: projects/k3bvcdtrackdialog.cpp:628 k3bdiskinfoview.cpp:297
+msgid "Type:"
+msgstr "Mena :"
+
+#: projects/k3bdatapropertiesdialog.cpp:92
+msgid "Location:"
+msgstr "Emplaçament :"
+
+#: projects/k3bdatapropertiesdialog.cpp:94 projects/k3bvcdtrackdialog.cpp:376
+msgid "Size:"
+msgstr "Talha :"
+
+#: projects/k3bdatapropertiesdialog.cpp:96
+msgid "Used blocks:"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:46
-msgid "Linux/Unix + Windows"
+#: projects/k3bdatapropertiesdialog.cpp:105
+msgid "Local name:"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:47
-msgid "Very large files (UDF)"
+#: projects/k3bdatapropertiesdialog.cpp:108
+msgid "Local location:"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:48
-msgid "DOS Compatibility"
+#: projects/k3bdatapropertiesdialog.cpp:129
+msgid "Hide on Rockridge"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:49
-#: rip/videodvd/k3bvideodvdrippingwidget.cpp:71
-msgid "Custom"
-msgstr "Personalizat"
+#: projects/k3bdatapropertiesdialog.cpp:130
+msgid "Hide on Joliet"
+msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:146
+#: projects/k3bdatapropertiesdialog.cpp:142
+msgid "Sort weight:"
+msgstr ""
+
+#: projects/k3bdatapropertiesdialog.cpp:161
+msgid "Hide this file in the RockRidge filesystem"
+msgstr ""
+
+#: projects/k3bdatapropertiesdialog.cpp:162
+msgid "Hide this file in the Joliet filesystem"
+msgstr ""
+
+#: projects/k3bdatapropertiesdialog.cpp:163
+msgid "Modify the physical sorting"
+msgstr ""
+
+#: projects/k3bdatapropertiesdialog.cpp:164
 msgid ""
-"<p><b>File System Presets</b><p>K3b provides the following file system "
-"Presets which allow for a quick selection of the most frequently used "
-"settings."
+"<p>If this option is checked, the file or folder (and its entire contents) "
+"will be hidden on the ISO9660 and RockRidge filesystem.</p><p>This is "
+"useful, for example, for having different README files for RockRidge and "
+"Joliet, which can be managed by hiding README.joliet on RockRidge and README."
+"rr on the Joliet filesystem.</p>"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:150
+#: projects/k3bdatapropertiesdialog.cpp:171
 msgid ""
-"The file system is optimized for usage on Linux/Unix systems. This mainly "
-"means that it uses the Rock Ridge extensions to provide long filenames, "
-"symbolic links, and POSIX compatible file permissions."
+"<p>If this option is checked, the file or folder (and its entire contents) "
+"will be hidden on the Joliet filesystem.</p><p>This is useful, for example, "
+"for having different README files for RockRidge and Joliet, which can be "
+"managed by hiding README.joliet on RockRidge and README.rr on the Joliet "
+"filesystem.</p>"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:154
+#: projects/k3bdatapropertiesdialog.cpp:178
 msgid ""
-"In addition to the settings for Linux/Unix the file system contains a Joliet "
-"tree which allows for long file names on Windows which does not support the "
-"Rock Ridge extensions. Be aware that the file name length is restricted to "
-"103 characters."
+"<p>This value modifies the physical sort order of the files in the ISO9660 "
+"filesystem. A higher weighting means that the file will be located closer to "
+"the beginning of the image (and the disk).<p>This option is useful in order "
+"to optimize the data layout on a medium.<p><b>Caution:</b> This does not "
+"sort the order of the file names that appear in the ISO9660 folder. It sorts "
+"the order in which the file data is written to the image."
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:158
-msgid ""
-"The file system has additional UDF entries attached to it. This raises the "
-"maximal file size to 4 GB. Be aware that the UDF support in K3b is limited."
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:161
-msgid ""
-"The file system is optimized for compatibility with old systems. That means "
-"file names are restricted to 8.3 characters and no symbolic links or file "
-"permissions are supported."
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:216
-msgid "Rock Ridge"
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:218
-msgid "Joliet"
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:220
-msgid "UDF"
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:222
-msgid "Custom (ISO9660 only)"
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:224
+#: projects/k3bdatapropertiesdialog.cpp:205
+#: projects/k3bmovixprojectmodel.cpp:270
 #, kde-format
-msgid "Custom (%1)"
+msgid "Link to %1"
 msgstr ""
 
-#: projects/k3bdataimagesettingswidget.cpp:241
-msgid ""
-"<p>Be aware that it is not recommended to disable the Rock Ridge Extensions. "
-"There is no disadvantage in enabling Rock Ridge (except for a very small "
-"space overhead) but a lot of advantages.<p>Without Rock Ridge Extensions "
-"symbolic links are not supported and will always be followed as if the "
-"\"Follow Symbolic Links\" option was enabled."
-msgstr ""
+#: projects/k3bdatapropertiesdialog.cpp:216
+#, fuzzy
+#| msgid "Folders"
+msgid "Folder"
+msgstr "Repertòris"
 
-#: projects/k3bdataimagesettingswidget.cpp:247
-msgid "Rock Ridge Extensions Disabled"
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:253
-msgid ""
-"<p>Be aware that without the Joliet extensions Windows systems will not be "
-"able to display long filenames. You will only see the ISO9660 filenames."
-"<p>If you do not intend to use the CD/DVD on a Windows system it is safe to "
-"disable Joliet."
-msgstr ""
-
-#: projects/k3bdataimagesettingswidget.cpp:258
-msgid "Joliet Extensions Disabled"
-msgstr ""
-
-#: projects/k3bbootimageview.cpp:55
-msgid "Floppy"
-msgstr "Disqueta"
-
-#. i18n: file: projects/base_k3bbootimageview.ui:115
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioHarddisk)
-#: projects/k3bbootimageview.cpp:57 rc.cpp:538
-msgid "Harddisk"
-msgstr "Disc dur"
-
-#. i18n: file: projects/base_k3bbootimageview.ui:125
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioNoEmulation)
-#: projects/k3bbootimageview.cpp:59 rc.cpp:544
-#: ../plugins/decoder/mp3/k3bmaddecoder.cpp:432
-msgid "None"
-msgstr "Pas cap"
-
-#: projects/k3bbootimageview.cpp:126
-msgid "Hide Advanced Options"
-msgstr ""
-
-#: projects/k3bbootimageview.cpp:130
-msgid "Show Advanced Options"
-msgstr ""
-
-#: projects/k3bbootimageview.cpp:137
-msgid "Please Choose Boot Image"
-msgstr ""
-
-#: projects/k3bbootimageview.cpp:145
-msgid ""
-"<p>The file you selected is not a floppy image (floppy images are of size "
-"1200 KB, 1440 KB, or 2880 KB). You may still use boot images of other sizes "
-"by emulating a harddisk or disabling emulation completely. <p>If you are not "
-"familiar with terms like 'harddisk emulation' you most likely want to use a "
-"floppy image here. Floppy images can be created by directly extracting them "
-"from a real floppy disk:<pre>dd if=/dev/floppy of=/tmp/floppy.img</pre>or by "
-"using one of the many boot floppy generators that can be found on <a href="
-"\"http://www.google.com/search?q=linux+boot+floppy&ie=UTF-8&oe=UTF-8\">the "
-"Internet</a>."
-msgstr ""
-
-#: projects/k3bbootimageview.cpp:154
-msgid "No Floppy image selected"
-msgstr ""
-
-#: projects/k3bbootimageview.cpp:155
-msgid "Use harddisk emulation"
-msgstr ""
-
-#: projects/k3bbootimageview.cpp:156
-msgid "Use no emulation"
-msgstr ""
-
-#: projects/k3bdataburndialog.cpp:70
-msgid "Data Project"
-msgstr ""
-
-#: projects/k3bdataburndialog.cpp:70 projects/k3bvideodvdburndialog.cpp:47
+#: projects/k3bdatapropertiesdialog.cpp:223
 #, kde-format
-msgid "Size: %1"
+msgid "in 1 file"
+msgid_plural "in %1 files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: projects/k3bdatapropertiesdialog.cpp:224
+#, fuzzy, kde-format
+#| msgid "1 folder"
+#| msgid_plural "%1 folders"
+msgid "and 1 folder"
+msgid_plural "and %1 folders"
+msgstr[0] "1 repertòri"
+msgstr[1] "%1 repertòris"
+
+#: projects/k3bdatapropertiesdialog.cpp:228
+msgid "Special file"
 msgstr ""
 
-#: projects/k3bdataburndialog.cpp:81 projects/k3bmovixburndialog.cpp:64
-#: projects/k3bvideodvdburndialog.cpp:60 projects/k3bmixedburndialog.cpp:80
-msgid "Filesystem"
-msgstr "Sistèma de fichièrs"
+#: projects/k3bdatapropertiesdialog.cpp:290
+#, kde-format
+msgid "1 Item"
+msgid_plural "%1 Items"
+msgstr[0] ""
+msgstr[1] ""
 
-#: projects/k3bdataburndialog.cpp:156 projects/k3bmovixburndialog.cpp:99
-#: projects/k3bmixedburndialog.cpp:98
-msgid "Datatrack Mode"
-msgstr ""
+#: projects/k3bdatapropertiesdialog.cpp:293
+#, kde-format
+msgid "1 File"
+msgid_plural "%1 Files"
+msgstr[0] ""
+msgstr[1] ""
 
-#: projects/k3bdataburndialog.cpp:161
-msgid "Multisession Mode"
-msgstr ""
-
-#. i18n: file: option/base_k3bmiscoptiontab.ui:12
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: projects/k3bdataburndialog.cpp:170 projects/k3bvcdburndialog.cpp:366
-#: projects/k3bmovixburndialog.cpp:113 projects/k3bmixedburndialog.cpp:101
-#: projects/k3bmixedburndialog.cpp:144 option/k3boptiondialog.cpp:132
-#: rc.cpp:583
-msgid "Misc"
-msgstr ""
-
-#: projects/k3bdataburndialog.cpp:199 projects/k3bmovixburndialog.cpp:227
-msgid "Most writers do not support writing multisession CDs in DAO mode."
-msgstr ""
-
-#: projects/k3bdataburndialog.cpp:262
-msgid ""
-"It is not possible to write multisession media in DAO mode. Multisession has "
-"been disabled."
-msgstr ""
-
-#: projects/k3bdataburndialog.cpp:264
-msgid "Multisession Problem"
-msgstr ""
+#: projects/k3bdatapropertiesdialog.cpp:298
+#, kde-format
+msgid "1 Folder"
+msgid_plural "%1 Folders"
+msgstr[0] ""
+msgstr[1] ""
 
 #: projects/k3bvcdtrackdialog.cpp:55
 msgid "Video Track Properties"
@@ -821,10 +749,6 @@ msgstr ""
 msgid "Filename"
 msgstr "Nom de fichièr"
 
-#: projects/k3bvcdtrackdialog.cpp:376 projects/k3bdatapropertiesdialog.cpp:94
-msgid "Size:"
-msgstr "Talha :"
-
 #: projects/k3bvcdtrackdialog.cpp:377
 msgid "Length:"
 msgstr "Longor :"
@@ -915,11 +839,6 @@ msgstr "Clau"
 msgid "Overwrite default assignment"
 msgstr ""
 
-#: projects/k3bvcdtrackdialog.cpp:573 projects/k3bvcdtrackdialog.cpp:628
-#: projects/k3bdatapropertiesdialog.cpp:88 k3bdiskinfoview.cpp:297
-msgid "Type:"
-msgstr "Mena :"
-
 #: projects/k3bvcdtrackdialog.cpp:574 projects/k3bvcdtrackdialog.cpp:629
 msgid "Rate:"
 msgstr ""
@@ -980,16 +899,172 @@ msgstr ""
 msgid "No Data to Burn"
 msgstr ""
 
-#: projects/k3bvcdview.cpp:51 projects/k3bmovixview.cpp:53
-#: projects/k3bdataviewimpl.cpp:48 projects/k3baudiotrackview.cpp:181
+#: projects/k3bbootimageview.cpp:55
+msgid "Floppy"
+msgstr "Disqueta"
+
+#. i18n: file: projects/base_k3bbootimageview.ui:115
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioHarddisk)
+#: projects/k3bbootimageview.cpp:57 rc.cpp:538
+msgid "Harddisk"
+msgstr "Disc dur"
+
+#. i18n: file: projects/base_k3bbootimageview.ui:125
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioNoEmulation)
+#: projects/k3bbootimageview.cpp:59 rc.cpp:544
+#: ../plugins/decoder/mp3/k3bmaddecoder.cpp:432
+msgid "None"
+msgstr "Pas cap"
+
+#: projects/k3bbootimageview.cpp:126
+msgid "Hide Advanced Options"
+msgstr ""
+
+#: projects/k3bbootimageview.cpp:130
+msgid "Show Advanced Options"
+msgstr ""
+
+#: projects/k3bbootimageview.cpp:137
+msgid "Please Choose Boot Image"
+msgstr ""
+
+#: projects/k3bbootimageview.cpp:145
+msgid ""
+"<p>The file you selected is not a floppy image (floppy images are of size "
+"1200 KB, 1440 KB, or 2880 KB). You may still use boot images of other sizes "
+"by emulating a harddisk or disabling emulation completely. <p>If you are not "
+"familiar with terms like 'harddisk emulation' you most likely want to use a "
+"floppy image here. Floppy images can be created by directly extracting them "
+"from a real floppy disk:<pre>dd if=/dev/floppy of=/tmp/floppy.img</pre>or by "
+"using one of the many boot floppy generators that can be found on <a href="
+"\"http://www.google.com/search?q=linux+boot+floppy&ie=UTF-8&oe=UTF-8\">the "
+"Internet</a>."
+msgstr ""
+
+#: projects/k3bbootimageview.cpp:154
+msgid "No Floppy image selected"
+msgstr ""
+
+#: projects/k3bbootimageview.cpp:155
+msgid "Use harddisk emulation"
+msgstr ""
+
+#: projects/k3bbootimageview.cpp:156
+msgid "Use no emulation"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:45
+msgid "Linux/Unix only"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:46
+msgid "Linux/Unix + Windows"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:47
+msgid "Very large files (UDF)"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:48
+msgid "DOS Compatibility"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:49
+#: rip/videodvd/k3bvideodvdrippingwidget.cpp:71
+msgid "Custom"
+msgstr "Personalizat"
+
+#: projects/k3bdataimagesettingswidget.cpp:146
+msgid ""
+"<p><b>File System Presets</b><p>K3b provides the following file system "
+"Presets which allow for a quick selection of the most frequently used "
+"settings."
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:150
+msgid ""
+"The file system is optimized for usage on Linux/Unix systems. This mainly "
+"means that it uses the Rock Ridge extensions to provide long filenames, "
+"symbolic links, and POSIX compatible file permissions."
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:154
+msgid ""
+"In addition to the settings for Linux/Unix the file system contains a Joliet "
+"tree which allows for long file names on Windows which does not support the "
+"Rock Ridge extensions. Be aware that the file name length is restricted to "
+"103 characters."
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:158
+msgid ""
+"The file system has additional UDF entries attached to it. This raises the "
+"maximal file size to 4 GB. Be aware that the UDF support in K3b is limited."
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:161
+msgid ""
+"The file system is optimized for compatibility with old systems. That means "
+"file names are restricted to 8.3 characters and no symbolic links or file "
+"permissions are supported."
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:216
+msgid "Rock Ridge"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:218
+msgid "Joliet"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:220
+msgid "UDF"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:222
+msgid "Custom (ISO9660 only)"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:224
+#, kde-format
+msgid "Custom (%1)"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:241
+msgid ""
+"<p>Be aware that it is not recommended to disable the Rock Ridge Extensions. "
+"There is no disadvantage in enabling Rock Ridge (except for a very small "
+"space overhead) but a lot of advantages.<p>Without Rock Ridge Extensions "
+"symbolic links are not supported and will always be followed as if the "
+"\"Follow Symbolic Links\" option was enabled."
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:247
+msgid "Rock Ridge Extensions Disabled"
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:253
+msgid ""
+"<p>Be aware that without the Joliet extensions Windows systems will not be "
+"able to display long filenames. You will only see the ISO9660 filenames."
+"<p>If you do not intend to use the CD/DVD on a Windows system it is safe to "
+"disable Joliet."
+msgstr ""
+
+#: projects/k3bdataimagesettingswidget.cpp:258
+msgid "Joliet Extensions Disabled"
+msgstr ""
+
+#: projects/k3bvcdview.cpp:51 projects/k3bdataviewimpl.cpp:48
+#: projects/k3bmovixview.cpp:53 projects/k3baudiotrackview.cpp:181
 #: projects/k3baudioviewimpl.cpp:63
 msgid "Properties"
 msgstr "Propietats"
 
 #. i18n: file: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonRemove)
-#: projects/k3bvcdview.cpp:55 projects/k3bmovixview.cpp:56
-#: projects/k3bdataviewimpl.cpp:42 projects/k3baudiotrackview.cpp:187
+#: projects/k3bvcdview.cpp:55 projects/k3bdataviewimpl.cpp:42
+#: projects/k3bmovixview.cpp:56 projects/k3baudiotrackview.cpp:187
 #: projects/k3baudioviewimpl.cpp:65 rc.cpp:1029 k3baudioplayer.cpp:229
 msgid "Remove"
 msgstr "Suprimir"
@@ -1001,11 +1076,50 @@ msgid ""
 "download it from http://www.vcdimager.org"
 msgstr ""
 
-#. i18n: file: projects/base_k3bdatavolumedescwidget.ui:15
-#. i18n: ectx: property (windowTitle), widget (QWidget, base_K3bDataVolumeDescWidget)
-#: projects/k3bdatavolumedescdialog.cpp:33 projects/k3bvcdburndialog.cpp:543
-#: rc.cpp:60
-msgid "Volume Descriptor"
+#: projects/k3bdataburndialog.cpp:70
+msgid "Data Project"
+msgstr ""
+
+#: projects/k3bdataburndialog.cpp:70 projects/k3bvideodvdburndialog.cpp:47
+#, kde-format
+msgid "Size: %1"
+msgstr ""
+
+#: projects/k3bdataburndialog.cpp:81 projects/k3bmovixburndialog.cpp:64
+#: projects/k3bvideodvdburndialog.cpp:60 projects/k3bmixedburndialog.cpp:80
+msgid "Filesystem"
+msgstr "Sistèma de fichièrs"
+
+#: projects/k3bdataburndialog.cpp:156 projects/k3bmovixburndialog.cpp:99
+#: projects/k3bmixedburndialog.cpp:98
+msgid "Datatrack Mode"
+msgstr ""
+
+#: projects/k3bdataburndialog.cpp:161
+msgid "Multisession Mode"
+msgstr ""
+
+#. i18n: file: option/base_k3bmiscoptiontab.ui:12
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: projects/k3bdataburndialog.cpp:170 projects/k3bvcdburndialog.cpp:366
+#: projects/k3bmovixburndialog.cpp:113 projects/k3bmixedburndialog.cpp:101
+#: projects/k3bmixedburndialog.cpp:144 option/k3boptiondialog.cpp:132
+#: rc.cpp:583
+msgid "Misc"
+msgstr ""
+
+#: projects/k3bdataburndialog.cpp:199 projects/k3bmovixburndialog.cpp:227
+msgid "Most writers do not support writing multisession CDs in DAO mode."
+msgstr ""
+
+#: projects/k3bdataburndialog.cpp:262
+msgid ""
+"It is not possible to write multisession media in DAO mode. Multisession has "
+"been disabled."
+msgstr ""
+
+#: projects/k3bdataburndialog.cpp:264
+msgid "Multisession Problem"
 msgstr ""
 
 #: projects/k3baudioburndialog.cpp:64
@@ -1081,6 +1195,17 @@ msgstr ""
 #: projects/k3baudioburndialog.cpp:299 projects/k3baudioburndialog.cpp:318
 #: projects/k3bmixedburndialog.cpp:305 projects/k3bmixedburndialog.cpp:324
 msgid "Disable on-the-fly burning"
+msgstr ""
+
+#. i18n: file: projects/base_k3bdatavolumedescwidget.ui:15
+#. i18n: ectx: property (windowTitle), widget (QWidget, base_K3bDataVolumeDescWidget)
+#: projects/k3bdatavolumedescdialog.cpp:33 projects/k3bvcdburndialog.cpp:543
+#: rc.cpp:60
+msgid "Volume Descriptor"
+msgstr ""
+
+#: projects/k3bvolumenamewidget.cpp:57
+msgid "Volume Name:"
 msgstr ""
 
 #: projects/k3bfillstatusdisplay.cpp:217 projects/k3bfillstatusdisplay.cpp:613
@@ -1208,13 +1333,60 @@ msgstr ""
 msgid "Right click for media sizes"
 msgstr ""
 
-#: projects/k3bvolumenamewidget.cpp:57
-msgid "Volume Name:"
-msgstr ""
-
 #: projects/k3bmovixoptionswidget.cpp:46 projects/k3bmovixoptionswidget.cpp:62
 msgid "default"
 msgstr "defaut"
+
+#: projects/k3bdataview.cpp:133 projects/k3bview.cpp:91
+#: projects/k3baudioviewimpl.cpp:349
+msgid "Please add files to your project first."
+msgstr ""
+
+#: projects/k3bdatamultisessioncombobox.cpp:36
+msgid "Select the Multisession Mode for the project."
+msgstr ""
+
+#: projects/k3bdatamultisessioncombobox.cpp:37
+msgid ""
+"<p><b>Multisession Mode</b><p><b>Auto</b><br>Let K3b decide which mode to "
+"use. The decision will be based on the size of the project (does it fill the "
+"whole media) and the state of the inserted media (appendable or not)."
+"<p><b>No Multisession</b><br>Create a single-session CD or DVD and close the "
+"disk.<p><b>Start Multisession</b><br>Start a multisession CD or DVD, not "
+"closing the disk to allow further sessions to be appended.<p><b>Continue "
+"Multisession</b><br>Continue an appendable data CD (as for example created "
+"in <em>Start Multisession</em> mode) and add another session without closing "
+"the disk to allow further sessions to be appended.<p><b>Finish Multisession</"
+"b><br>Continue an appendable data CD (as for example created in <em>Start "
+"Multisession</em> mode), add another session, and close the disk.<p><em>In "
+"the case of DVD+RW and DVD-RW restricted overwrite media K3b will not "
+"actually create multiple sessions but grow the file system to include the "
+"new data.</em>"
+msgstr ""
+
+#: projects/k3bdatamultisessioncombobox.cpp:73
+#: rip/videodvd/k3bvideodvdrippingwidget.cpp:363
+#: rip/videodvd/k3bvideodvdrippingwidget.cpp:364
+#: k3bwriterselectionwidget.cpp:270 k3bwriterselectionwidget.cpp:523
+#: k3bdatamodewidget.cpp:33 k3bwritingmodewidget.cpp:157
+msgid "Auto"
+msgstr "Auto"
+
+#: projects/k3bdatamultisessioncombobox.cpp:74
+msgid "No Multisession"
+msgstr ""
+
+#: projects/k3bdatamultisessioncombobox.cpp:76
+msgid "Start Multisession"
+msgstr ""
+
+#: projects/k3bdatamultisessioncombobox.cpp:77
+msgid "Continue Multisession "
+msgstr ""
+
+#: projects/k3bdatamultisessioncombobox.cpp:78
+msgid "Finish Multisession "
+msgstr ""
 
 #: projects/k3bvcdburndialog.cpp:64
 msgid "Video CD (Version 1.1)"
@@ -1669,57 +1841,6 @@ msgstr ""
 msgid "&Publisher:"
 msgstr ""
 
-#: projects/k3bdataview.cpp:133 projects/k3bview.cpp:91
-#: projects/k3baudioviewimpl.cpp:349
-msgid "Please add files to your project first."
-msgstr ""
-
-#: projects/k3bdatamultisessioncombobox.cpp:36
-msgid "Select the Multisession Mode for the project."
-msgstr ""
-
-#: projects/k3bdatamultisessioncombobox.cpp:37
-msgid ""
-"<p><b>Multisession Mode</b><p><b>Auto</b><br>Let K3b decide which mode to "
-"use. The decision will be based on the size of the project (does it fill the "
-"whole media) and the state of the inserted media (appendable or not)."
-"<p><b>No Multisession</b><br>Create a single-session CD or DVD and close the "
-"disk.<p><b>Start Multisession</b><br>Start a multisession CD or DVD, not "
-"closing the disk to allow further sessions to be appended.<p><b>Continue "
-"Multisession</b><br>Continue an appendable data CD (as for example created "
-"in <em>Start Multisession</em> mode) and add another session without closing "
-"the disk to allow further sessions to be appended.<p><b>Finish Multisession</"
-"b><br>Continue an appendable data CD (as for example created in <em>Start "
-"Multisession</em> mode), add another session, and close the disk.<p><em>In "
-"the case of DVD+RW and DVD-RW restricted overwrite media K3b will not "
-"actually create multiple sessions but grow the file system to include the "
-"new data.</em>"
-msgstr ""
-
-#: projects/k3bdatamultisessioncombobox.cpp:73
-#: rip/videodvd/k3bvideodvdrippingwidget.cpp:363
-#: rip/videodvd/k3bvideodvdrippingwidget.cpp:364
-#: k3bwriterselectionwidget.cpp:270 k3bwriterselectionwidget.cpp:523
-#: k3bdatamodewidget.cpp:33 k3bwritingmodewidget.cpp:157
-msgid "Auto"
-msgstr "Auto"
-
-#: projects/k3bdatamultisessioncombobox.cpp:74
-msgid "No Multisession"
-msgstr ""
-
-#: projects/k3bdatamultisessioncombobox.cpp:76
-msgid "Start Multisession"
-msgstr ""
-
-#: projects/k3bdatamultisessioncombobox.cpp:77
-msgid "Continue Multisession "
-msgstr ""
-
-#: projects/k3bdatamultisessioncombobox.cpp:78
-msgid "Finish Multisession "
-msgstr ""
-
 #: projects/k3bmusicbrainzjob.cpp:122
 #: projects/k3baudiotracktrmlookupdialog.cpp:48
 msgid "MusicBrainz Query"
@@ -1728,18 +1849,6 @@ msgstr ""
 #: projects/k3bmusicbrainzjob.cpp:123
 #, kde-format
 msgid "Found multiple matches for track %1 (%2). Please select one."
-msgstr ""
-
-#: projects/k3bmovixview.cpp:59
-msgid "Remove Subtitle File"
-msgstr ""
-
-#: projects/k3bmovixview.cpp:62
-msgid "Add Subtitle File..."
-msgstr ""
-
-#: projects/k3bmovixview.cpp:144
-msgid "K3b currently only supports local files."
 msgstr ""
 
 #: projects/k3bdataviewimpl.cpp:40
@@ -1808,6 +1917,22 @@ msgstr ""
 msgid "Edit Boot Images"
 msgstr ""
 
+#: projects/k3bmovixview.cpp:59
+msgid "Remove Subtitle File"
+msgstr ""
+
+#: projects/k3bmovixview.cpp:62
+msgid "Add Subtitle File..."
+msgstr ""
+
+#: projects/k3bmovixview.cpp:144
+msgid "K3b currently only supports local files."
+msgstr ""
+
+#: projects/k3bbootimagedialog.cpp:27
+msgid "Boot Images"
+msgstr ""
+
 #: projects/k3baudiotrackplayer.cpp:117 projects/k3baudiotrackplayer.cpp:176
 msgid "Play"
 msgstr "Legir"
@@ -1835,10 +1960,6 @@ msgstr "Ulhada"
 #: projects/k3baudiotrackplayer.cpp:180
 msgid "Previous"
 msgstr "Precedent"
-
-#: projects/k3bbootimagedialog.cpp:27
-msgid "Boot Images"
-msgstr ""
 
 #: projects/k3bvideodvdview.cpp:58
 msgid ""
@@ -1990,130 +2111,9 @@ msgstr ""
 msgid "Could not find a valid eMovix installation."
 msgstr ""
 
-#: projects/k3bdatapropertiesdialog.cpp:47
-msgid "File Properties"
+#: projects/k3baudiotrackdialog.cpp:45
+msgid "Audio Track Properties"
 msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:92
-msgid "Location:"
-msgstr "Emplaçament :"
-
-#: projects/k3bdatapropertiesdialog.cpp:96
-msgid "Used blocks:"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:105
-msgid "Local name:"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:108
-msgid "Local location:"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:129
-msgid "Hide on Rockridge"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:130
-msgid "Hide on Joliet"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:142
-msgid "Sort weight:"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:161
-msgid "Hide this file in the RockRidge filesystem"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:162
-msgid "Hide this file in the Joliet filesystem"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:163
-msgid "Modify the physical sorting"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:164
-msgid ""
-"<p>If this option is checked, the file or folder (and its entire contents) "
-"will be hidden on the ISO9660 and RockRidge filesystem.</p><p>This is "
-"useful, for example, for having different README files for RockRidge and "
-"Joliet, which can be managed by hiding README.joliet on RockRidge and README."
-"rr on the Joliet filesystem.</p>"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:171
-msgid ""
-"<p>If this option is checked, the file or folder (and its entire contents) "
-"will be hidden on the Joliet filesystem.</p><p>This is useful, for example, "
-"for having different README files for RockRidge and Joliet, which can be "
-"managed by hiding README.joliet on RockRidge and README.rr on the Joliet "
-"filesystem.</p>"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:178
-msgid ""
-"<p>This value modifies the physical sort order of the files in the ISO9660 "
-"filesystem. A higher weighting means that the file will be located closer to "
-"the beginning of the image (and the disk).<p>This option is useful in order "
-"to optimize the data layout on a medium.<p><b>Caution:</b> This does not "
-"sort the order of the file names that appear in the ISO9660 folder. It sorts "
-"the order in which the file data is written to the image."
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:205
-#: projects/k3bmovixprojectmodel.cpp:270
-#, kde-format
-msgid "Link to %1"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:216
-#, fuzzy
-#| msgid "Folders"
-msgid "Folder"
-msgstr "Repertòris"
-
-#: projects/k3bdatapropertiesdialog.cpp:223
-#, kde-format
-msgid "in 1 file"
-msgid_plural "in %1 files"
-msgstr[0] ""
-msgstr[1] ""
-
-#: projects/k3bdatapropertiesdialog.cpp:224
-#, fuzzy, kde-format
-#| msgid "1 folder"
-#| msgid_plural "%1 folders"
-msgid "and 1 folder"
-msgid_plural "and %1 folders"
-msgstr[0] "1 repertòri"
-msgstr[1] "%1 repertòris"
-
-#: projects/k3bdatapropertiesdialog.cpp:228
-msgid "Special file"
-msgstr ""
-
-#: projects/k3bdatapropertiesdialog.cpp:290
-#, kde-format
-msgid "1 Item"
-msgid_plural "%1 Items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: projects/k3bdatapropertiesdialog.cpp:293
-#, kde-format
-msgid "1 File"
-msgid_plural "%1 Files"
-msgstr[0] ""
-msgstr[1] ""
-
-#: projects/k3bdatapropertiesdialog.cpp:298
-#, kde-format
-msgid "1 Folder"
-msgid_plural "%1 Folders"
-msgstr[0] ""
-msgstr[1] ""
 
 #: projects/k3baudioprojectmodel.cpp:317 rip/k3baudiotrackmodel.cpp:157
 msgctxt "audio track number"
@@ -2141,44 +2141,6 @@ msgstr "Tipe"
 msgctxt "audio track length"
 msgid "Length"
 msgstr "Longor"
-
-#: projects/k3bdataprojectmodel.cpp:282
-msgid "outside of project"
-msgstr ""
-
-#: projects/k3bdataprojectmodel.cpp:302
-#, fuzzy
-#| msgid "Name"
-msgctxt "file name"
-msgid "Name"
-msgstr "Nom"
-
-#: projects/k3bdataprojectmodel.cpp:304
-#, fuzzy
-#| msgid "Type"
-msgctxt "file type"
-msgid "Type"
-msgstr "Tipe"
-
-#: projects/k3bdataprojectmodel.cpp:306
-#, fuzzy
-#| msgid "Size"
-msgctxt "file size"
-msgid "Size"
-msgstr "Talha"
-
-#. i18n: file: projects/base_k3bbootimageview.ui:85
-#. i18n: ectx: property (text), widget (K3ListView, m_viewImages)
-#: projects/k3bdataprojectmodel.cpp:308 rc.cpp:526
-msgid "Local Path"
-msgstr ""
-
-#: projects/k3bdataprojectmodel.cpp:310
-#, fuzzy
-#| msgid "Link"
-msgctxt "symbolic link target"
-msgid "Link"
-msgstr "Ligam"
 
 #: projects/k3baudiotrackview.cpp:193 projects/k3baudioviewimpl.cpp:48
 msgid "Add Silence..."
@@ -2224,6 +2186,44 @@ msgstr ""
 msgid "Please select an audio track."
 msgstr ""
 
+#: projects/k3bdataprojectmodel.cpp:282
+msgid "outside of project"
+msgstr ""
+
+#: projects/k3bdataprojectmodel.cpp:302
+#, fuzzy
+#| msgid "Name"
+msgctxt "file name"
+msgid "Name"
+msgstr "Nom"
+
+#: projects/k3bdataprojectmodel.cpp:304
+#, fuzzy
+#| msgid "Type"
+msgctxt "file type"
+msgid "Type"
+msgstr "Tipe"
+
+#: projects/k3bdataprojectmodel.cpp:306
+#, fuzzy
+#| msgid "Size"
+msgctxt "file size"
+msgid "Size"
+msgstr "Talha"
+
+#. i18n: file: projects/base_k3bbootimageview.ui:85
+#. i18n: ectx: property (text), widget (K3ListView, m_viewImages)
+#: projects/k3bdataprojectmodel.cpp:308 rc.cpp:526
+msgid "Local Path"
+msgstr ""
+
+#: projects/k3bdataprojectmodel.cpp:310
+#, fuzzy
+#| msgid "Link"
+msgctxt "symbolic link target"
+msgid "Link"
+msgstr "Ligam"
+
 #: projects/k3bview.cpp:54
 msgid "&Burn"
 msgstr ""
@@ -2262,26 +2262,6 @@ msgstr "Paramètres per defaut"
 
 #: projects/k3bmixedprojectmodel.cpp:31
 msgid "Audio Section"
-msgstr ""
-
-#: projects/k3baudiotracksplitdialog.cpp:41
-msgid "Split Audio Track"
-msgstr ""
-
-#: projects/k3baudiotracksplitdialog.cpp:53
-msgid "Please select the position where the track should be split."
-msgstr ""
-
-#: projects/k3baudiotracksplitdialog.cpp:58
-msgid "Split track at:"
-msgstr ""
-
-#: projects/k3baudiotracksplitdialog.cpp:101
-msgid "Split Here"
-msgstr ""
-
-#: projects/k3baudiotracksplitdialog.cpp:105
-msgid "Remove part"
 msgstr ""
 
 #: projects/k3bmovixprojectmodel.cpp:296
@@ -2329,6 +2309,26 @@ msgstr "Local"
 msgctxt "Movix File Link"
 msgid "Link"
 msgstr "Ligam"
+
+#: projects/k3baudiotracksplitdialog.cpp:41
+msgid "Split Audio Track"
+msgstr ""
+
+#: projects/k3baudiotracksplitdialog.cpp:53
+msgid "Please select the position where the track should be split."
+msgstr ""
+
+#: projects/k3baudiotracksplitdialog.cpp:58
+msgid "Split track at:"
+msgstr ""
+
+#: projects/k3baudiotracksplitdialog.cpp:101
+msgid "Split Here"
+msgstr ""
+
+#: projects/k3baudiotracksplitdialog.cpp:105
+msgid "Remove part"
+msgstr ""
 
 #: projects/k3bprojectburndialog.cpp:61 k3bprojecttabwidget.cpp:82
 msgid "Project"
@@ -2396,50 +2396,6 @@ msgstr "Imatge"
 msgid "Use the 'Image' tab to optionally adjust the path of the image."
 msgstr ""
 
-#: projects/k3baudiotrackaddingdialog.cpp:58
-msgid "Please be patient..."
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:62
-#, kde-format
-msgid "Adding files to project \"%1\"..."
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:80
-#: projects/k3bdataurladdingdialog.cpp:803
-msgid "Insufficient permissions to read the following files"
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:84
-#: projects/k3bdataurladdingdialog.cpp:807
-msgid "Unable to find the following files"
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:88
-#: projects/k3bdataurladdingdialog.cpp:811
-msgid "No non-local files supported"
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:92
-msgid "Unable to handle the following files due to an unsupported format"
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:93
-msgid ""
-"You may manually convert these audio files to wave using another application "
-"supporting the audio format and then add the wave files to the K3b project."
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:99
-#: projects/k3bdataurladdingdialog.cpp:148
-msgid "Problems while adding files to the project."
-msgstr ""
-
-#: projects/k3baudiotrackaddingdialog.cpp:153
-#, kde-format
-msgid "Analysing file '%1'..."
-msgstr ""
-
 #: projects/k3bmixedburndialog.cpp:68
 msgid "Mixed Project"
 msgstr ""
@@ -2501,6 +2457,50 @@ msgstr ""
 
 #: projects/k3baudioviewimpl.cpp:350
 msgid "No tracks to convert"
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:58
+msgid "Please be patient..."
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:62
+#, kde-format
+msgid "Adding files to project \"%1\"..."
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:80
+#: projects/k3bdataurladdingdialog.cpp:803
+msgid "Insufficient permissions to read the following files"
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:84
+#: projects/k3bdataurladdingdialog.cpp:807
+msgid "Unable to find the following files"
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:88
+#: projects/k3bdataurladdingdialog.cpp:811
+msgid "No non-local files supported"
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:92
+msgid "Unable to handle the following files due to an unsupported format"
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:93
+msgid ""
+"You may manually convert these audio files to wave using another application "
+"supporting the audio format and then add the wave files to the K3b project."
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:99
+#: projects/k3bdataurladdingdialog.cpp:148
+msgid "Problems while adding files to the project."
+msgstr ""
+
+#: projects/k3baudiotrackaddingdialog.cpp:153
+#, kde-format
+msgid "Analysing file '%1'..."
 msgstr ""
 
 #: projects/k3baudiotracktrmlookupdialog.cpp:122
@@ -2608,7 +2608,7 @@ msgstr ""
 #. i18n: file: projects/base_k3bdataimagesettings.ui:179
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSpaceHandling)
 #: projects/k3bdataurladdingdialog.cpp:406
-#: projects/k3bdataurladdingdialog.cpp:633 rc.cpp:389
+#: projects/k3bdataurladdingdialog.cpp:633 rc.cpp:443
 msgid "Replace"
 msgstr "Remplaçar"
 
@@ -2964,6 +2964,18 @@ msgid ""
 "menu structure.</p>"
 msgstr ""
 
+#: option/k3bdeviceoptiontab.cpp:45
+msgid ""
+"K3b tries to detect all your devices properly. If K3b is unable to detect "
+"your drive, you need to modify their permissions to give K3b write access to "
+"all devices."
+msgstr ""
+
+#: option/k3bdeviceoptiontab.cpp:85 k3b.cpp:1399
+#: k3bsystemproblemdialog.cpp:615
+msgid "Unable to start K3b::Setup."
+msgstr ""
+
 #: option/k3bexternalbinwidget.cpp:107
 msgid "&Search"
 msgstr "&Recercar"
@@ -3034,18 +3046,6 @@ msgstr ""
 
 #: option/k3bexternalbinwidget.cpp:228
 msgid " (not found)"
-msgstr ""
-
-#: option/k3bdeviceoptiontab.cpp:45
-msgid ""
-"K3b tries to detect all your devices properly. If K3b is unable to detect "
-"your drive, you need to modify their permissions to give K3b write access to "
-"all devices."
-msgstr ""
-
-#: option/k3bdeviceoptiontab.cpp:85 k3b.cpp:1399
-#: k3bsystemproblemdialog.cpp:615
-msgid "Unable to start K3b::Setup."
 msgstr ""
 
 #: option/k3bthemeoptiontab.cpp:111
@@ -4321,6 +4321,56 @@ msgstr ""
 msgid "Wave"
 msgstr "Ondulacion"
 
+#: k3binteractiondialog.cpp:86
+msgid "Load default settings"
+msgstr ""
+
+#: k3binteractiondialog.cpp:87
+msgid "Load saved settings"
+msgstr ""
+
+#: k3binteractiondialog.cpp:88
+msgid "Load last used settings"
+msgstr ""
+
+#: k3binteractiondialog.cpp:112
+msgid "Start the task"
+msgstr ""
+
+#: k3binteractiondialog.cpp:202
+msgid "Load default or saved settings"
+msgstr ""
+
+#: k3binteractiondialog.cpp:203
+msgid "Save current settings to reuse them later"
+msgstr ""
+
+#: k3binteractiondialog.cpp:207
+msgid ""
+"<p>Load a set of settings either from the default K3b settings, settings "
+"saved before, or the last used ones."
+msgstr ""
+
+#: k3binteractiondialog.cpp:209
+msgid ""
+"<p>Saves the current settings of the action dialog.<p>These settings can be "
+"loaded with the <em>Load saved settings</em> button.<p><b>The K3b defaults "
+"are not overwritten by this.</b>"
+msgstr ""
+
+#: k3binteractiondialog.cpp:287
+msgid "Action Dialog Settings"
+msgstr ""
+
+#: k3binteractiondialog.cpp:288
+msgid ""
+"<p>K3b handles three sets of settings in action dialogs: the defaults, the "
+"saved settings, and the last used settings. Please choose which of these "
+"sets should be loaded if an action dialog is opened again.<p><em>Be aware "
+"that this choice can always be changed from the K3b configuration dialog.</"
+"em>"
+msgstr ""
+
 #: k3bjobprogressdialog.cpp:109
 msgid "Show Debugging Output"
 msgstr ""
@@ -4406,56 +4456,6 @@ msgstr ""
 #: k3bprojectmanager.cpp:222
 #, kde-format
 msgid "VideoDVD%1"
-msgstr ""
-
-#: k3binteractiondialog.cpp:86
-msgid "Load default settings"
-msgstr ""
-
-#: k3binteractiondialog.cpp:87
-msgid "Load saved settings"
-msgstr ""
-
-#: k3binteractiondialog.cpp:88
-msgid "Load last used settings"
-msgstr ""
-
-#: k3binteractiondialog.cpp:112
-msgid "Start the task"
-msgstr ""
-
-#: k3binteractiondialog.cpp:202
-msgid "Load default or saved settings"
-msgstr ""
-
-#: k3binteractiondialog.cpp:203
-msgid "Save current settings to reuse them later"
-msgstr ""
-
-#: k3binteractiondialog.cpp:207
-msgid ""
-"<p>Load a set of settings either from the default K3b settings, settings "
-"saved before, or the last used ones."
-msgstr ""
-
-#: k3binteractiondialog.cpp:209
-msgid ""
-"<p>Saves the current settings of the action dialog.<p>These settings can be "
-"loaded with the <em>Load saved settings</em> button.<p><b>The K3b defaults "
-"are not overwritten by this.</b>"
-msgstr ""
-
-#: k3binteractiondialog.cpp:287
-msgid "Action Dialog Settings"
-msgstr ""
-
-#: k3binteractiondialog.cpp:288
-msgid ""
-"<p>K3b handles three sets of settings in action dialogs: the defaults, the "
-"saved settings, and the last used settings. Please choose which of these "
-"sets should be loaded if an action dialog is opened again.<p><em>Be aware "
-"that this choice can always be changed from the K3b configuration dialog.</"
-"em>"
 msgstr ""
 
 #: k3bdiskinfoview.cpp:80
@@ -5180,24 +5180,6 @@ msgid ""
 "as your burning medium.</p>\n"
 msgstr ""
 
-#: k3bwelcomewidget.cpp:86
-#, fuzzy
-#| msgid "More..."
-msgid "More actions..."
-msgstr "Mai..."
-
-#: k3bwelcomewidget.cpp:263
-msgid "Welcome to K3b - The CD and DVD Kreator"
-msgstr ""
-
-#: k3bwelcomewidget.cpp:397
-msgid "Add Button"
-msgstr "Apondre un boton"
-
-#: k3bwelcomewidget.cpp:420
-msgid "Remove Button"
-msgstr ""
-
 #: k3bstatusbarmanager.cpp:60
 msgid "Temp:"
 msgstr ""
@@ -5279,6 +5261,24 @@ msgstr ""
 
 #: k3bdirview.cpp:258
 msgid "Unmount Failed"
+msgstr ""
+
+#: k3bwelcomewidget.cpp:86
+#, fuzzy
+#| msgid "More..."
+msgid "More actions..."
+msgstr "Mai..."
+
+#: k3bwelcomewidget.cpp:263
+msgid "Welcome to K3b - The CD and DVD Kreator"
+msgstr ""
+
+#: k3bwelcomewidget.cpp:397
+msgid "Add Button"
+msgstr "Apondre un boton"
+
+#: k3bwelcomewidget.cpp:420
+msgid "Remove Button"
 msgstr ""
 
 #: k3btempdirselectionwidget.cpp:54
@@ -5888,8 +5888,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, m_buttonCopyPerformer)
 #. i18n: file: rip/base_k3baudiorippingoptionwidget.ui:37
 #. i18n: ectx: property (text), widget (QToolButton, m_buttonConfigurePlugin)
-#: rc.cpp:42 rc.cpp:48 rc.cpp:90 rc.cpp:96 rc.cpp:102 rc.cpp:404 rc.cpp:413
-#: rc.cpp:428 rc.cpp:440 rc.cpp:449 rc.cpp:902
+#: rc.cpp:42 rc.cpp:48 rc.cpp:90 rc.cpp:96 rc.cpp:102 rc.cpp:313 rc.cpp:322
+#: rc.cpp:337 rc.cpp:349 rc.cpp:358 rc.cpp:902
 msgid "..."
 msgstr "..."
 
@@ -5907,7 +5907,7 @@ msgstr "..."
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_buttonCopyTitle)
 #. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:217
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_buttonCopyPerformer)
-#: rc.cpp:45 rc.cpp:51 rc.cpp:401 rc.cpp:410 rc.cpp:425 rc.cpp:437 rc.cpp:446
+#: rc.cpp:45 rc.cpp:51 rc.cpp:310 rc.cpp:319 rc.cpp:334 rc.cpp:346 rc.cpp:355
 msgid "Copy to all tracks"
 msgstr ""
 
@@ -5917,7 +5917,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: file: projects/base_k3baudiotrackwidget.ui:129
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:54 rc.cpp:443 rc.cpp:476
+#: rc.cpp:54 rc.cpp:352 rc.cpp:476
 msgid "&Title:"
 msgstr ""
 
@@ -6415,33 +6415,83 @@ msgstr ""
 msgid "Re&boot"
 msgstr ""
 
+#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:21
+#. i18n: ectx: property (text), widget (QLabel, textLabel8)
+#: rc.cpp:307
+msgid "Messa&ge:"
+msgstr ""
+
+#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:51
+#. i18n: ectx: property (text), widget (QLabel, textLabel6)
+#: rc.cpp:316
+msgid "&UPC EAN:"
+msgstr ""
+
+#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:81
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#. i18n: file: projects/base_k3baudiotrackwidget.ui:29
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: rc.cpp:325 rc.cpp:458
+msgid "So&ngwriter:"
+msgstr ""
+
+#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:94
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#. i18n: file: projects/base_k3baudiotrackwidget.ui:74
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: rc.cpp:328 rc.cpp:464
+msgid "&Composer:"
+msgstr ""
+
+#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:107
+#. i18n: ectx: property (text), widget (QLabel, textLabel7)
+#: rc.cpp:331
+msgid "&Disk id:"
+msgstr ""
+
+#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:137
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: projects/base_k3baudiotrackwidget.ui:61
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:340 rc.cpp:461
+msgid "&Arranger:"
+msgstr ""
+
+#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:159
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: projects/base_k3baudiotrackwidget.ui:103
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:343 rc.cpp:470
+msgid "&Performer:"
+msgstr ""
+
 #. i18n: file: projects/base_k3bdataimagesettings.ui:15
 #. i18n: ectx: property (windowTitle), widget (QWidget, base_K3bDataImageSettings)
-#: rc.cpp:307
+#: rc.cpp:361
 msgid "Data Image Settings"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:21
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupVolumeName)
-#: rc.cpp:310
+#: rc.cpp:364
 msgid "Volume Name"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:34
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonMoreVolDescFields)
-#: rc.cpp:313
+#: rc.cpp:367
 msgid "&More fields..."
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:44
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupFileSystem)
-#: rc.cpp:316
+#: rc.cpp:370
 msgid "File System"
 msgstr "Sistèma de fichièrs"
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:56
 #. i18n: ectx: property (toolTip), widget (QComboBox, m_comboFilesystems)
-#: rc.cpp:319
+#: rc.cpp:373
 msgid "File system presets"
 msgstr ""
 
@@ -6449,25 +6499,25 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonCustomFilesystems)
 #. i18n: file: rip/videodvd/base_k3bvideodvdrippingwidget.ui:79
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonCustomPictureSize)
-#: rc.cpp:322 rc.cpp:786
+#: rc.cpp:376 rc.cpp:786
 msgid "&Custom..."
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:75
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupSymlinks)
-#: rc.cpp:325
+#: rc.cpp:379
 msgid "Symbolic Links"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:87
 #. i18n: ectx: property (toolTip), widget (QComboBox, m_comboSymlinkHandling)
-#: rc.cpp:328
+#: rc.cpp:382
 msgid "Symbolic link handling in the project"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:105
 #. i18n: ectx: property (whatsThis), widget (QComboBox, m_comboSymlinkHandling)
-#: rc.cpp:331
+#: rc.cpp:385
 msgid ""
 "<p>K3b can create ISO9660 filesystems that contain symlinks if the Rock "
 "Ridge extensions are enabled (they are by default). You can change the way "
@@ -6500,43 +6550,43 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSymlinkHandling)
 #. i18n: file: projects/base_k3bdataimagesettings.ui:164
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSpaceHandling)
-#: rc.cpp:349 rc.cpp:380
+#: rc.cpp:403 rc.cpp:434
 msgid "No Change"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:114
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSymlinkHandling)
-#: rc.cpp:352
+#: rc.cpp:406
 msgid "Discard broken symlinks"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:119
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSymlinkHandling)
-#: rc.cpp:355
+#: rc.cpp:409
 msgid "Discard all symlinks"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:124
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSymlinkHandling)
-#: rc.cpp:358
+#: rc.cpp:412
 msgid "Follow symlinks"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:135
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupWhitespace)
-#: rc.cpp:361
+#: rc.cpp:415
 msgid "White space handling"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:147
 #. i18n: ectx: property (toolTip), widget (QComboBox, m_comboSpaceHandling)
-#: rc.cpp:364
+#: rc.cpp:418
 msgid "Handling of spaces in filenames"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:160
 #. i18n: ectx: property (whatsThis), widget (QComboBox, m_comboSpaceHandling)
-#: rc.cpp:367
+#: rc.cpp:421
 msgid ""
 "<p><b>No Change</b><br>\n"
 "If this option is checked, K3b will leave all spaces in filenames as they "
@@ -6557,19 +6607,19 @@ msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:169
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSpaceHandling)
-#: rc.cpp:383
+#: rc.cpp:437
 msgid "Strip"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:174
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboSpaceHandling)
-#: rc.cpp:386
+#: rc.cpp:440
 msgid "Extended Strip"
 msgstr ""
 
 #. i18n: file: projects/base_k3bdataimagesettings.ui:196
 #. i18n: ectx: property (toolTip), widget (QLineEdit, m_editReplace)
-#: rc.cpp:392
+#: rc.cpp:446
 msgid "The string to replace spaces with"
 msgstr ""
 
@@ -6579,58 +6629,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (KLineEdit, m_editBlankReplace)
 #. i18n: file: rip/base_k3bcddbpatternwidget.ui:32
 #. i18n: ectx: property (text), widget (KLineEdit, m_editBlankReplace)
-#: rc.cpp:395 rc.cpp:855 rc.cpp:974
+#: rc.cpp:449 rc.cpp:855 rc.cpp:974
 msgid "_"
-msgstr ""
-
-#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:21
-#. i18n: ectx: property (text), widget (QLabel, textLabel8)
-#: rc.cpp:398
-msgid "Messa&ge:"
-msgstr ""
-
-#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:51
-#. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:407
-msgid "&UPC EAN:"
-msgstr ""
-
-#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:81
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#. i18n: file: projects/base_k3baudiotrackwidget.ui:29
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:416 rc.cpp:458
-msgid "So&ngwriter:"
-msgstr ""
-
-#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:94
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#. i18n: file: projects/base_k3baudiotrackwidget.ui:74
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:419 rc.cpp:464
-msgid "&Composer:"
-msgstr ""
-
-#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:107
-#. i18n: ectx: property (text), widget (QLabel, textLabel7)
-#: rc.cpp:422
-msgid "&Disk id:"
-msgstr ""
-
-#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:137
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: projects/base_k3baudiotrackwidget.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:431 rc.cpp:461
-msgid "&Arranger:"
-msgstr ""
-
-#. i18n: file: projects/base_k3baudiocdtextallfieldswidget.ui:159
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: projects/base_k3baudiotrackwidget.ui:103
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:434 rc.cpp:470
-msgid "&Performer:"
 msgstr ""
 
 #. i18n: file: projects/base_k3baudiotrackwidget.ui:8
@@ -8711,12 +8711,12 @@ msgstr ""
 msgid "Command failed: %1"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:203
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:205
 #, kde-format
 msgid "Could not find program '%1'"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:210
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:212
 msgid "Invalid command: the command is empty."
 msgstr ""
 
