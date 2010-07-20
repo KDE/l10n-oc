@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-17 05:03+0200\n"
+"POT-Creation-Date: 2010-07-20 06:11+0200\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -624,7 +624,7 @@ msgid "Last Played"
 msgstr ""
 
 #: TrayIconLegacy.cpp:218 browsers/filebrowser/FileView.cpp:347
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:41
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:41
 #: browsers/CollectionTreeView.cpp:799
 #: context/applets/albums/AlbumsView.cpp:117
 #: services/lastfm/LastFmTreeView.cpp:112
@@ -878,7 +878,7 @@ msgid "Add Position Marker"
 msgstr ""
 
 #: amarokurls/BookmarkModel.cpp:86
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:363
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:363
 #, fuzzy
 #| msgid "New Group"
 msgid "Group"
@@ -891,7 +891,7 @@ msgstr "Grop novèl"
 #. i18n: file: aboutdialog/OcsPersonItem.ui:137
 #. i18n: ectx: property (text), widget (QLabel, m_textLabel)
 #: amarokurls/BookmarkModel.cpp:265
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:362
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:362
 #: playlistgenerator/TreeModel.cpp:67 rc.cpp:1178 rc.cpp:1184 rc.cpp:1190
 msgid "Name"
 msgstr "Nom"
@@ -1020,42 +1020,6 @@ msgstr "Favorit"
 #| msgid "Deleting files"
 msgid "Filter Music Sources"
 msgstr "Seleccionar un fichièr"
-
-#: browsers/CollectionTreeItem.cpp:170
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "The Name is not known"
-msgid "Unknown"
-msgstr "Desconegut"
-
-#: browsers/CollectionTreeItem.cpp:188
-#: core-impl/collections/sqlcollection/ScanManager.cpp:764
-#: covermanager/CoverManager.cpp:844 covermanager/CoverViewDialog.h:45
-#: dialogs/TrackOrganizer.cpp:46 widgets/AlbumBreadcrumbWidget.cpp:60
-msgid "Various Artists"
-msgstr "Mai d'un artista"
-
-#: browsers/CollectionTreeItem.cpp:194
-#, fuzzy
-#| msgid "Labels"
-msgctxt "No labels are assigned to the given item are any of its subitems"
-msgid "No Labels"
-msgstr "Etiquetas"
-
-#: browsers/CollectionTreeItem.cpp:199
-#, fuzzy
-#| msgid "Connect"
-msgid "Counting"
-msgstr "Se connectar"
-
-#: browsers/CollectionTreeItem.cpp:224
-#: playlist/proxymodels/GroupingProxy.cpp:186
-#, fuzzy, kde-format
-#| msgid "Track"
-msgid "1 track"
-msgid_plural "%1 tracks"
-msgstr[0] "Pista"
-msgstr[1] "Pista"
 
 #: browsers/InfoProxy.cpp:164 browsers/filebrowser/FileBrowser.cpp:378
 #, fuzzy
@@ -1245,8 +1209,8 @@ msgid "Show Cover Art"
 msgstr "Mostrar los detalhs"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:403
-#: browsers/playlistbrowser/PodcastCategory.cpp:146
 #: browsers/playlistbrowser/UserPlaylistCategory.cpp:100
+#: browsers/playlistbrowser/PodcastCategory.cpp:146
 msgid "Merged View"
 msgstr ""
 
@@ -1271,7 +1235,7 @@ msgid "Copy to Collection"
 msgstr "Colleccion"
 
 #: browsers/filebrowser/FileView.cpp:356
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:48
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:48
 #: browsers/CollectionTreeView.cpp:808
 #: context/applets/albums/AlbumsView.cpp:118
 #: services/lastfm/LastFmTreeView.cpp:121
@@ -1632,73 +1596,6 @@ msgid ""
 "podcast subscriptions and episodes."
 msgstr ""
 
-#: browsers/playlistbrowser/PodcastCategory.cpp:97
-msgid "Podcasts"
-msgstr "Podcasts"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:98
-msgid "List of podcast subscriptions and episodes"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:101
-msgid ""
-"Manage your podcast subscriptions and browse individual episodes. "
-"Downloading episodes to the disk is also done here, or you can tell Amarok "
-"to do this automatically."
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:119
-#, fuzzy
-#| msgid "Podcasts"
-msgid "&Add Podcast"
-msgstr "Podcasts"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:124
-#, fuzzy
-#| msgid "Update"
-msgid "&Update All"
-msgstr "Actualizar"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:192
-#: browsers/playlistbrowser/PodcastCategory.cpp:195
-#, fuzzy
-#| msgid "New Playlist"
-msgid "Import OPML File"
-msgstr "Novèla tièra de lecturas"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:227
-#, fuzzy
-#| msgid "Modify"
-msgid "By"
-msgstr "Modificar"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:266
-#, fuzzy
-#| msgid "On"
-msgctxt "Podcast published on date"
-msgid "On"
-msgstr "Actiu"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:284
-#, fuzzy
-#| msgid "File Size"
-msgid "File Size:"
-msgstr "Nom de fichièr"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:296
-#, fuzzy
-#| msgid "Collection"
-msgid "Subscription Date:"
-msgstr "Descripcion :"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:304
-msgid "Keywords:"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:341
-msgid "Select OPML file to import"
-msgstr ""
-
 #: browsers/playlistbrowser/UserPlaylistCategory.cpp:57
 #, fuzzy
 #| msgid "New Playlist"
@@ -1791,39 +1688,9 @@ msgstr ""
 msgid "Accuracy"
 msgstr ""
 
-#: browsers/playlistbrowser/PodcastModel.cpp:73
-#, fuzzy
-#| msgid "&Next"
-msgctxt "toggle the \"new\" status of this podcast episode"
-msgid "&New"
-msgstr "&Seguent"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:265
-#, fuzzy, kde-format
-#| msgid "Update"
-msgctxt "number of podcasts from one source"
-msgid "One Channel"
-msgid_plural "%1 channels"
-msgstr[0] "Actualizar"
-msgstr[1] "Actualizar"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:332 dialogs/TagDialog.cpp:696
-msgid "Summary"
-msgstr "Resumit"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:352
-#, fuzzy
-#| msgid "Podcasts"
-msgid "Add Podcast"
-msgstr "Podcasts"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:353
-msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
-msgstr ""
-
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:90
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:171
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:216
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:90
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:171
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:216
 #, fuzzy, kde-format
 #| msgid "New Playlist"
 msgctxt "number of playlists from one source"
@@ -1832,7 +1699,7 @@ msgid_plural "%1 playlists"
 msgstr[0] "Novèla tièra de lecturas"
 msgstr[1] "Novèla tièra de lecturas"
 
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:364
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:364
 #, fuzzy
 #| msgid "Score"
 msgid "Source"
@@ -1862,6 +1729,103 @@ msgstr "Renommar"
 msgctxt "Enter a new name for a folder that already exists"
 msgid "Enter new folder name:"
 msgstr "Internacional"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:97
+msgid "Podcasts"
+msgstr "Podcasts"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:98
+msgid "List of podcast subscriptions and episodes"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:101
+msgid ""
+"Manage your podcast subscriptions and browse individual episodes. "
+"Downloading episodes to the disk is also done here, or you can tell Amarok "
+"to do this automatically."
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:119
+#, fuzzy
+#| msgid "Podcasts"
+msgid "&Add Podcast"
+msgstr "Podcasts"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:124
+#, fuzzy
+#| msgid "Update"
+msgid "&Update All"
+msgstr "Actualizar"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:192
+#: browsers/playlistbrowser/PodcastCategory.cpp:195
+#, fuzzy
+#| msgid "New Playlist"
+msgid "Import OPML File"
+msgstr "Novèla tièra de lecturas"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:227
+#, fuzzy
+#| msgid "Modify"
+msgid "By"
+msgstr "Modificar"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:266
+#, fuzzy
+#| msgid "On"
+msgctxt "Podcast published on date"
+msgid "On"
+msgstr "Actiu"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:284
+#, fuzzy
+#| msgid "File Size"
+msgid "File Size:"
+msgstr "Nom de fichièr"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:296
+#, fuzzy
+#| msgid "Collection"
+msgid "Subscription Date:"
+msgstr "Descripcion :"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:304
+msgid "Keywords:"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:341
+msgid "Select OPML file to import"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastModel.cpp:73
+#, fuzzy
+#| msgid "&Next"
+msgctxt "toggle the \"new\" status of this podcast episode"
+msgid "&New"
+msgstr "&Seguent"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:265
+#, fuzzy, kde-format
+#| msgid "Update"
+msgctxt "number of podcasts from one source"
+msgid "One Channel"
+msgid_plural "%1 channels"
+msgstr[0] "Actualizar"
+msgstr[1] "Actualizar"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:332 dialogs/TagDialog.cpp:696
+msgid "Summary"
+msgstr "Resumit"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:352
+#, fuzzy
+#| msgid "Podcasts"
+msgid "Add Podcast"
+msgstr "Podcasts"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:353
+msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
+msgstr ""
 
 #: browsers/servicebrowser/ServiceBrowser.cpp:44
 msgid ""
@@ -2084,6 +2048,42 @@ msgstr ""
 #| msgid "&Delete"
 msgid "Delete Tracks"
 msgstr "&Suprimir"
+
+#: browsers/CollectionTreeItem.cpp:170
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "The Name is not known"
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: browsers/CollectionTreeItem.cpp:188
+#: core-impl/collections/sqlcollection/ScanManager.cpp:764
+#: covermanager/CoverManager.cpp:844 covermanager/CoverViewDialog.h:45
+#: dialogs/TrackOrganizer.cpp:46 widgets/AlbumBreadcrumbWidget.cpp:60
+msgid "Various Artists"
+msgstr "Mai d'un artista"
+
+#: browsers/CollectionTreeItem.cpp:194
+#, fuzzy
+#| msgid "Labels"
+msgctxt "No labels are assigned to the given item are any of its subitems"
+msgid "No Labels"
+msgstr "Etiquetas"
+
+#: browsers/CollectionTreeItem.cpp:199
+#, fuzzy
+#| msgid "Connect"
+msgid "Counting"
+msgstr "Se connectar"
+
+#: browsers/CollectionTreeItem.cpp:225
+#: playlist/proxymodels/GroupingProxy.cpp:186
+#, fuzzy, kde-format
+#| msgid "Track"
+msgid "1 track"
+msgid_plural "%1 tracks"
+msgstr[0] "Pista"
+msgstr[1] "Pista"
 
 #: configdialog/ConfigDialog.cpp:55
 msgctxt "Miscellaneous settings"
@@ -2628,6 +2628,10 @@ msgstr ""
 #| msgid "Configure..."
 msgid "Loading picture..."
 msgstr "Configurar..."
+
+#: context/applets/upcomingevents/UpcomingEventsWidget.cpp:155
+msgid "No other participants"
+msgstr ""
 
 #: context/applets/upcomingevents/UpcomingEventsWidget.cpp:222
 msgid "Event website"
@@ -3290,12 +3294,6 @@ msgstr[1] ""
 msgid "Orphaned Tracks Added"
 msgstr ""
 
-#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:281
-#, fuzzy
-#| msgid "&Disconnect the iPod"
-msgid "&Disconnect Device"
-msgstr "&Desconnectar l'iPod"
-
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:302
 msgid "Copying Tracks Failed"
 msgstr ""
@@ -3372,7 +3370,7 @@ msgstr[1] "Suprimir de la tièra de lecturas"
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
 #: playlistmanager/file/PlaylistFileProvider.cpp:442
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:122
-#: playlistmanager/PlaylistManager.cpp:343
+#: playlistmanager/PlaylistManager.cpp:346
 #, fuzzy
 #| msgid "New Playlist"
 msgid "Change playlist"
@@ -3381,7 +3379,7 @@ msgstr "Novèla tièra de lecturas"
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
 #: playlistmanager/file/PlaylistFileProvider.cpp:443
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:123
-#: playlistmanager/PlaylistManager.cpp:344
+#: playlistmanager/PlaylistManager.cpp:347
 #, fuzzy
 #| msgid "International"
 msgid "Enter new name for playlist:"
@@ -3400,6 +3398,12 @@ msgstr "Novèla tièra de lecturas"
 msgctxt "Podcasts on a media device"
 msgid "Podcasts on %1"
 msgstr "Podcasts"
+
+#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:275
+#, fuzzy
+#| msgid "&Disconnect the iPod"
+msgid "&Disconnect Device"
+msgstr "&Desconnectar l'iPod"
 
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:151
 msgid "Could not connect to MTP Device"
@@ -7767,17 +7771,23 @@ msgstr "Internacional"
 msgid "Yes, delete from database."
 msgstr ""
 
+#: playlistmanager/sql/SqlPlaylist.cpp:40
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Playlist in database"
+msgstr "&Tièra de lectura"
+
 #: playlistmanager/sql/SqlUserPlaylistProvider.h:44
 #, fuzzy
-#| msgid "Add to Database"
-msgid "Internal Database"
-msgstr "Apondre a la basa de donadas"
+#| msgid "Database name"
+msgid "Amarok Database"
+msgstr "Nom de basa de donadas"
 
 #: playlistmanager/sql/SqlUserPlaylistProvider.h:45
 msgid "Local playlists stored in the database"
 msgstr ""
 
-#: playlistmanager/PlaylistManager.cpp:267
+#: playlistmanager/PlaylistManager.cpp:270
 msgid "Downloading Playlist"
 msgstr ""
 
@@ -13175,6 +13185,11 @@ msgstr "Grop novèl"
 #: rc.cpp:2816
 msgid "Verbose"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Add to Database"
+#~ msgid "Internal Database"
+#~ msgstr "Apondre a la basa de donadas"
 
 #, fuzzy
 #~| msgid "&Playlist"
