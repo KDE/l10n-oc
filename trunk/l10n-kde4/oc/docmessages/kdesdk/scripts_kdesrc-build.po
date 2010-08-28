@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: scripts_kdesvn-build\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-27 04:04+0000\n"
+"POT-Creation-Date: 2010-08-28 04:02+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1690,8 +1690,8 @@ msgid "async"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:997 index.docbook:1106 index.docbook:1159 index.docbook:1188
-#: index.docbook:1202 index.docbook:1249 index.docbook:1357 index.docbook:1547
+#: index.docbook:997 index.docbook:1132 index.docbook:1185 index.docbook:1214
+#: index.docbook:1228 index.docbook:1275 index.docbook:1383 index.docbook:1573
 #, no-c-format
 msgid "Cannot be overridden"
 msgstr ""
@@ -1721,13 +1721,13 @@ msgstr ""
 
 #. Tag: entry
 #: index.docbook:1007 index.docbook:1020 index.docbook:1036 index.docbook:1068
-#: index.docbook:1116 index.docbook:1146 index.docbook:1171 index.docbook:1227
-#: index.docbook:1239 index.docbook:1273 index.docbook:1285 index.docbook:1293
-#: index.docbook:1302 index.docbook:1312 index.docbook:1323 index.docbook:1333
-#: index.docbook:1366 index.docbook:1381 index.docbook:1391 index.docbook:1402
-#: index.docbook:1419 index.docbook:1431 index.docbook:1453 index.docbook:1462
-#: index.docbook:1473 index.docbook:1483 index.docbook:1498 index.docbook:1508
-#: index.docbook:1517 index.docbook:1528 index.docbook:1558
+#: index.docbook:1094 index.docbook:1142 index.docbook:1172 index.docbook:1197
+#: index.docbook:1253 index.docbook:1265 index.docbook:1299 index.docbook:1311
+#: index.docbook:1319 index.docbook:1328 index.docbook:1338 index.docbook:1349
+#: index.docbook:1359 index.docbook:1392 index.docbook:1407 index.docbook:1417
+#: index.docbook:1428 index.docbook:1445 index.docbook:1457 index.docbook:1479
+#: index.docbook:1488 index.docbook:1499 index.docbook:1509 index.docbook:1524
+#: index.docbook:1534 index.docbook:1543 index.docbook:1554 index.docbook:1584
 #, no-c-format
 msgid "Module setting overrides global"
 msgstr ""
@@ -1811,11 +1811,57 @@ msgstr ""
 #. Tag: entry
 #: index.docbook:1067
 #, no-c-format
-msgid "checkout-only"
+msgid "build-when-unchanged"
 msgstr ""
 
 #. Tag: para
 #: index.docbook:1069
+#, no-c-format
+msgid ""
+"Use this option in order to control whether &kdesrc-build; always tries to "
+"build a module that has not had any source code updates."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1072
+#, no-c-format
+msgid ""
+"By setting <option>build-when-unchanged</option> to <replaceable>true</"
+"replaceable>, &kdesrc-build; always attempts the build phase for a module, "
+"even if the module did not have any source code updates. This is the default "
+"setting since it is more likely to lead to a correct build."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1078
+#, no-c-format
+msgid ""
+"By setting <option>build-when-unchanged</option> to <replaceable>false</"
+"replaceable>, &kdesrc-build; will only attempt to run the build phase for a "
+"module if the module has a source code update, or in other situations where "
+"it is likely that a rebuild is actually required. This can save time, "
+"especially if you run &kdesrc-build; daily, or more frequently."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1084
+#, no-c-format
+msgid ""
+"This feature is provided as an optimization only. Like many other "
+"optimizations, there are trade-offs for the correctness of your "
+"installation. For instance, changes to the qt-copy or kdelibs modules may "
+"cause a rebuild of other modules to be necessary, even if the source code "
+"doesn't change at all."
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:1093
+#, no-c-format
+msgid "checkout-only"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1095
 #, no-c-format
 msgid ""
 "Set this option to checkout &subversion; sources piece by piece. The value "
@@ -1825,7 +1871,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1075
+#: index.docbook:1101
 #, no-c-format
 msgid ""
 "Note that this setting has no effect on &git; modules due to the operation "
@@ -1833,25 +1879,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1078
+#: index.docbook:1104
 #, no-c-format
 msgid "See <xref linkend=\"checking-out-parts\"/> for an example."
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1082
+#: index.docbook:1108
 #, no-c-format
 msgid "cmake-options"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1083
+#: index.docbook:1109
 #, no-c-format
 msgid "Appends to global options (not applicable to qt-copy)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1084
+#: index.docbook:1110
 #, no-c-format
 msgid ""
 "Use this option to specify what flags to pass to &cmake; when creating the "
@@ -1862,7 +1908,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1090
+#: index.docbook:1116
 #, no-c-format
 msgid ""
 "This option does not apply to qt-copy (which does not use &cmake;). Use "
@@ -1870,7 +1916,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1093
+#: index.docbook:1119
 #, no-c-format
 msgid ""
 "Since these options are passed directly to the &cmake; command line, they "
@@ -1878,13 +1924,13 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:1096
+#: index.docbook:1122
 #, no-c-format
 msgid "cmake-options -DCMAKE_BUILD_TYPE=RelWithDebInfo"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1098
+#: index.docbook:1124
 #, no-c-format
 msgid ""
 "Since this is a hassle, &kdesrc-build; takes pains to ensure that as long as "
@@ -1894,13 +1940,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1105
+#: index.docbook:1131
 #, no-c-format
 msgid "colorful-output"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1107
+#: index.docbook:1133
 #, no-c-format
 msgid ""
 "Set this option to <replaceable>false</replaceable> to disable the colorful "
@@ -1911,13 +1957,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1115
+#: index.docbook:1141
 #, no-c-format
 msgid "configure-flags"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1117
+#: index.docbook:1143
 #, no-c-format
 msgid ""
 "Use this option to specify what flags to pass to ./configure when creating "
@@ -1927,7 +1973,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1122
+#: index.docbook:1148
 #, no-c-format
 msgid ""
 "To change configuration settings for KDE 4 modules, see <link linkend=\"conf-"
@@ -1935,19 +1981,19 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1129
+#: index.docbook:1155
 #, no-c-format
 msgid "cxxflags"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1130
+#: index.docbook:1156
 #, no-c-format
 msgid "Appends to global option"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1131
+#: index.docbook:1157
 #, no-c-format
 msgid ""
 "Use this option to specify what flags to use for building the module. This "
@@ -1958,7 +2004,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1138
+#: index.docbook:1164
 #, no-c-format
 msgid ""
 "Note that for &kde; 4 and any other modules that use &cmake;, it is "
@@ -1968,13 +2014,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1145
+#: index.docbook:1171
 #, no-c-format
 msgid "dest-dir"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1147
+#: index.docbook:1173
 #, no-c-format
 msgid ""
 "Use this option to change the name a module is given on disk. For example, "
@@ -1987,13 +2033,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1158
+#: index.docbook:1184
 #, no-c-format
 msgid "disable-agent-check"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1160
+#: index.docbook:1186
 #, no-c-format
 msgid ""
 "Normally if you are using &ssh; to download the &subversion; sources (such "
@@ -2005,13 +2051,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1170
+#: index.docbook:1196
 #, no-c-format
 msgid "do-not-compile"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1172
+#: index.docbook:1198
 #, no-c-format
 msgid ""
 "Use this option to select a specific set of directories not to be built in a "
@@ -2020,7 +2066,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1175
+#: index.docbook:1201
 #, no-c-format
 msgid ""
 "Note that the sources to the programs will still be downloaded. You can use "
@@ -2029,7 +2075,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1179
+#: index.docbook:1205
 #, no-c-format
 msgid ""
 "For example, to hold &juk; and &kscd; in the kdemultimedia module from "
@@ -2038,19 +2084,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1182
+#: index.docbook:1208
 #, no-c-format
 msgid "See <xref linkend=\"not-compiling\"/> for an example."
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1187
+#: index.docbook:1213
 #, no-c-format
 msgid "email-address"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1190
+#: index.docbook:1216
 #, no-c-format
 msgid ""
 "Set this option to the e-mail address &kdesrc-build; should send from should "
@@ -2059,7 +2105,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1195
+#: index.docbook:1221
 #, no-c-format
 msgid ""
 "Currently only <link linkend=\"conf-email-on-compile-error\">email-on-"
@@ -2067,13 +2113,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1201
+#: index.docbook:1227
 #, no-c-format
 msgid "email-on-compile-error"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1204
+#: index.docbook:1230
 #, no-c-format
 msgid ""
 "You can set this option to the email address to send a report to when a "
@@ -2083,7 +2129,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1210
+#: index.docbook:1236
 #, no-c-format
 msgid ""
 "Please see the <link linkend=\"conf-email-address\">email-address</link> "
@@ -2092,25 +2138,25 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1218
+#: index.docbook:1244
 #, no-c-format
 msgid "inst-apps"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1220
+#: index.docbook:1246
 #, no-c-format
 msgid "This option was removed in version 1.10"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1226
+#: index.docbook:1252
 #, no-c-format
 msgid "install-after-build"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1228
+#: index.docbook:1254
 #, no-c-format
 msgid ""
 "This option is used to install the package after it successfully builds. "
@@ -2122,13 +2168,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1238
+#: index.docbook:1264
 #, no-c-format
 msgid "kdedir"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1240
+#: index.docbook:1266
 #, no-c-format
 msgid ""
 "This option sets the directory that &kde; will be installed to after it is "
@@ -2139,13 +2185,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1248
+#: index.docbook:1274
 #, no-c-format
 msgid "kde-languages"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1250
+#: index.docbook:1276
 #, no-c-format
 msgid ""
 "This option allows you to choose to download and install localization "
@@ -2154,7 +2200,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1255
+#: index.docbook:1281
 #, no-c-format
 msgid ""
 "To use this option, set it to a space-separated list of languages to "
@@ -2164,7 +2210,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1261
+#: index.docbook:1287
 #, no-c-format
 msgid ""
 "It is alright to choose only one language. By default, none are downloaded, "
@@ -2172,7 +2218,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1264
+#: index.docbook:1290
 #, no-c-format
 msgid ""
 "For instance, to choose to install French, you would set the option to "
@@ -2182,13 +2228,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1272
+#: index.docbook:1298
 #, no-c-format
 msgid "libpath"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1274
+#: index.docbook:1300
 #, no-c-format
 msgid ""
 "Set this option to set the environment variable <envar>LD_LIBRARY_PATH</"
@@ -2200,13 +2246,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1284
+#: index.docbook:1310
 #, no-c-format
 msgid "log-dir"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1286
+#: index.docbook:1312
 #, no-c-format
 msgid ""
 "Use this option to change the directory used to hold the log files generated "
@@ -2214,13 +2260,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1292
+#: index.docbook:1318
 #, no-c-format
 msgid "make-install-prefix"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1294
+#: index.docbook:1320
 #, no-c-format
 msgid ""
 "Set this variable to a space-separated list, which is interpreted as a "
@@ -2231,13 +2277,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1301
+#: index.docbook:1327
 #, no-c-format
 msgid "make-options"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1303
+#: index.docbook:1329
 #, no-c-format
 msgid ""
 "Set this variable in order to pass command line options to the "
@@ -2247,13 +2293,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1311
+#: index.docbook:1337
 #, no-c-format
 msgid "manual-build"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1313
+#: index.docbook:1339
 #, no-c-format
 msgid ""
 "Set the option value to <replaceable>true</replaceable> to keep the build "
@@ -2264,13 +2310,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1322
+#: index.docbook:1348
 #, no-c-format
 msgid "manual-update"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1324
+#: index.docbook:1350
 #, no-c-format
 msgid ""
 "Set the option value to <replaceable>true</replaceable> to keep the build "
@@ -2280,13 +2326,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1332
+#: index.docbook:1358
 #, no-c-format
 msgid "module-base-path"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1334
+#: index.docbook:1360
 #, no-c-format
 msgid ""
 "Set this option to override &kdesrc-build;'s default directory path to the "
@@ -2296,7 +2342,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1339
+#: index.docbook:1365
 #, no-c-format
 msgid ""
 "Note that &kdesrc-build; constructs the final path according to the "
@@ -2305,7 +2351,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1344
+#: index.docbook:1370
 #, no-c-format
 msgid ""
 "The default value is either <filename class=\"directory\">trunk/<varname>"
@@ -2314,7 +2360,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1349
+#: index.docbook:1375
 #, no-c-format
 msgid ""
 "Use the <link linkend=\"conf-branch\">branch</link> or <link linkend=\"conf-"
@@ -2322,13 +2368,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1356
+#: index.docbook:1382
 #, no-c-format
 msgid "niceness"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1358
+#: index.docbook:1384
 #, no-c-format
 msgid ""
 "Set this option to a number between 20 and 0. The higher the number, the "
@@ -2337,13 +2383,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1365
+#: index.docbook:1391
 #, no-c-format
 msgid "no-svn"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1367
+#: index.docbook:1393
 #, no-c-format
 msgid ""
 "If this option is set to true then &kdesrc-build; will not update the source "
@@ -2352,13 +2398,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1373
+#: index.docbook:1399
 #, no-c-format
 msgid "no-rebuild-on-fail"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1375
+#: index.docbook:1401
 #, no-c-format
 msgid ""
 "This option was removed in version 1.10, since this behavior no longer helps "
@@ -2366,13 +2412,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1380
+#: index.docbook:1406
 #, no-c-format
 msgid "override-url"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1382
+#: index.docbook:1408
 #, no-c-format
 msgid ""
 "If you set this option, &kdesrc-build; will use its value as the &url; to "
@@ -2383,13 +2429,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1390
+#: index.docbook:1416
 #, no-c-format
 msgid "prefix"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1392
+#: index.docbook:1418
 #, no-c-format
 msgid ""
 "This option controls where to install the module (normally the <option><link "
@@ -2400,13 +2446,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1401
+#: index.docbook:1427
 #, no-c-format
 msgid "purge-old-logs"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1403
+#: index.docbook:1429
 #, no-c-format
 msgid ""
 "This option controls whether old log directories are automatically deleted "
@@ -2414,7 +2460,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1406
+#: index.docbook:1432
 #, no-c-format
 msgid ""
 "Even if you have not set this option to true, you can manually purge the old "
@@ -2422,7 +2468,7 @@ msgid ""
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1409
+#: index.docbook:1435
 #, no-c-format
 msgid ""
 "kdesrc-build --no-src --no-build --purge-old-logs <replaceable>kdelibs</"
@@ -2430,7 +2476,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1412
+#: index.docbook:1438
 #, no-c-format
 msgid ""
 "You can use any module name in the above command line, it does not have to "
@@ -2438,13 +2484,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1418
+#: index.docbook:1444
 #, no-c-format
 msgid "qtdir"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1420
+#: index.docbook:1446
 #, no-c-format
 msgid ""
 "Set this option to set the environment variable <envar>QTDIR</envar> while "
@@ -2456,13 +2502,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1430
+#: index.docbook:1456
 #, no-c-format
 msgid "remove-after-install"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1432
+#: index.docbook:1458
 #, no-c-format
 msgid ""
 "If you are low on hard disk space, you may want to use this option in order "
@@ -2472,31 +2518,31 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1437
+#: index.docbook:1463
 #, no-c-format
 msgid "Possible values for this option are:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1439
+#: index.docbook:1465
 #, no-c-format
 msgid "none - Do not delete anything (This is the default)."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1440
+#: index.docbook:1466
 #, no-c-format
 msgid "builddir - Delete the build directory, but not the source."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1441
+#: index.docbook:1467
 #, no-c-format
 msgid "all - Delete both the source code and build directory."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1445
+#: index.docbook:1471
 #, no-c-format
 msgid ""
 "Note that using this option can have a significant detrimental impact on "
@@ -2506,13 +2552,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1452
+#: index.docbook:1478
 #, no-c-format
 msgid "repository"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1454
+#: index.docbook:1480
 #, no-c-format
 msgid ""
 "This option was introduced with version 1.10, and is used to specify the "
@@ -2522,13 +2568,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1461
+#: index.docbook:1487
 #, no-c-format
 msgid "revision"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1463
+#: index.docbook:1489
 #, no-c-format
 msgid ""
 "If this option is set to a value other than 0 (zero), &kdesrc-build; will "
@@ -2540,13 +2586,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1472
+#: index.docbook:1498
 #, no-c-format
 msgid "run-tests"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1474
+#: index.docbook:1500
 #, no-c-format
 msgid ""
 "If set to <replaceable>true</replaceable>, then the module will be built "
@@ -2557,13 +2603,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1482
+#: index.docbook:1508
 #, no-c-format
 msgid "set-env"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1484
+#: index.docbook:1510
 #, no-c-format
 msgid ""
 "This option accepts a space-separated set of values, where the first value "
@@ -2573,7 +2619,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:1488
+#: index.docbook:1514
 #, no-c-format
 msgid ""
 "<command>set-env</command> <envar>RONALD</envar> <userinput>McDonald</"
@@ -2581,7 +2627,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1489
+#: index.docbook:1515
 #, no-c-format
 msgid ""
 "This option is special in that it can be repeated without overriding earlier "
@@ -2591,13 +2637,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1497
+#: index.docbook:1523
 #, no-c-format
 msgid "source-dir"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1499
+#: index.docbook:1525
 #, no-c-format
 msgid ""
 "This option is used to set the directory on your computer to store the &kde; "
@@ -2607,13 +2653,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1507
+#: index.docbook:1533
 #, no-c-format
 msgid "stop-on-failure"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1509
+#: index.docbook:1535
 #, no-c-format
 msgid ""
 "Set this option value to <replaceable>true</replaceable> to cause the script "
@@ -2622,13 +2668,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1516
+#: index.docbook:1542
 #, no-c-format
 msgid "svn-server"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1518
+#: index.docbook:1544
 #, no-c-format
 msgid ""
 "This option is used to set the server used to check out from &subversion;. "
@@ -2637,7 +2683,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1520
+#: index.docbook:1546
 #, no-c-format
 msgid ""
 "If you are developing for KDE, use the &subversion; repository that was "
@@ -2646,19 +2692,19 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1527
+#: index.docbook:1553
 #, no-c-format
 msgid "<entry>tag</entry>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1529
+#: index.docbook:1555
 #, no-c-format
 msgid "Use this option to download a specific release of a module."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1530
+#: index.docbook:1556
 #, no-c-format
 msgid ""
 "<emphasis>Note:</emphasis> The odds are very good that you <emphasis>do not "
@@ -2669,13 +2715,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1538
+#: index.docbook:1564
 #, no-c-format
 msgid "use-cmake"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1540
+#: index.docbook:1566
 #, no-c-format
 msgid ""
 "This option was removed in &kdesrc-build; 1.4 as all &kde; 4 modules require "
@@ -2683,13 +2729,13 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1546
+#: index.docbook:1572
 #, no-c-format
 msgid "use-idle-io-priority"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1548
+#: index.docbook:1574
 #, no-c-format
 msgid ""
 "This option, added in &kdesrc-build; 1.12, will cause a lower priority to be "
@@ -2700,26 +2746,26 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1557
+#: index.docbook:1583
 #, no-c-format
 msgid "use-qt-builddir-hack"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1559
+#: index.docbook:1585
 #, no-c-format
 msgid ""
 "This option has been removed due to improvements in the &Qt; build system."
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:1565
+#: index.docbook:1591
 #, no-c-format
 msgid "use-stable-kde"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1567
+#: index.docbook:1593
 #, no-c-format
 msgid ""
 "This option was removed in version 1.10, which limits support to KDE 4, "
@@ -2727,19 +2773,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1583
+#: index.docbook:1609
 #, no-c-format
 msgid "Command Line Options and Environment Variables"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1586
+#: index.docbook:1612
 #, no-c-format
 msgid "Supported Environment Variables"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1588
+#: index.docbook:1614
 #, no-c-format
 msgid ""
 "&kdesrc-build; does not use environment variables. If you need to set "
@@ -2748,25 +2794,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1597
+#: index.docbook:1623
 #, no-c-format
 msgid "Supported command-line parameters"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1599
+#: index.docbook:1625
 #, no-c-format
 msgid "The script accepts the following command-line options:"
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1606
+#: index.docbook:1632
 #, no-c-format
 msgid "--async"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1607
+#: index.docbook:1633
 #, no-c-format
 msgid ""
 "Enables the <link linkend=\"conf-async\">asynchronous mode</link>, which can "
@@ -2776,62 +2822,62 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1616
+#: index.docbook:1642
 #, no-c-format
 msgid "--help"
 msgstr "--help"
 
 #. Tag: para
-#: index.docbook:1617
+#: index.docbook:1643
 #, no-c-format
 msgid "Only display simple help on this script."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1623
+#: index.docbook:1649
 #, no-c-format
 msgid "--version"
 msgstr "--version"
 
 #. Tag: para
-#: index.docbook:1624
+#: index.docbook:1650
 #, no-c-format
 msgid "Display the program version."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1630
+#: index.docbook:1656
 #, no-c-format
 msgid "--author"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1631
+#: index.docbook:1657
 #, no-c-format
 msgid "Display contact information for the author."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1638
+#: index.docbook:1664
 #, no-c-format
 msgid "--color"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1639
+#: index.docbook:1665
 #, no-c-format
 msgid ""
 "Enable colorful output. (This is the default for interactive terminals)."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1645
+#: index.docbook:1671
 #, no-c-format
 msgid "--nice=<replaceable>value</replaceable>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1646
+#: index.docbook:1672
 #, no-c-format
 msgid ""
 "This value adjusts the computer CPU priority requested by &kdesrc-build;, "
@@ -2841,13 +2887,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1655
+#: index.docbook:1681
 #, no-c-format
 msgid "--no-async"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1656
+#: index.docbook:1682
 #, no-c-format
 msgid ""
 "Disables the <link linkend=\"conf-async\">asynchronous mode</link> of "
@@ -2858,25 +2904,25 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1666
+#: index.docbook:1692
 #, no-c-format
 msgid "--no-color"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1667
+#: index.docbook:1693
 #, no-c-format
 msgid "Disable colorful output."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1673
+#: index.docbook:1699
 #, no-c-format
 msgid "<parameter>--pretend</parameter> (or <parameter>-p</parameter>)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1674
+#: index.docbook:1700
 #, no-c-format
 msgid ""
 "&kdesrc-build; will run through the update and build process, but instead of "
@@ -2886,7 +2932,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1680
+#: index.docbook:1706
 #, no-c-format
 msgid ""
 "Note: Simple read-only commands (such as reading file information) may still "
@@ -2895,13 +2941,13 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1687
+#: index.docbook:1713
 #, no-c-format
 msgid "<parameter>--quiet</parameter> (or <parameter>-q</parameter>)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1688
+#: index.docbook:1714
 #, no-c-format
 msgid ""
 "Do not be as noisy with the output. With this switch only the basics are "
@@ -2909,39 +2955,39 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1695
+#: index.docbook:1721
 #, no-c-format
 msgid "--really-quiet"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1696
+#: index.docbook:1722
 #, no-c-format
 msgid "Only output warnings and errors."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1702
+#: index.docbook:1728
 #, no-c-format
 msgid "<parameter>--verbose</parameter> (or <parameter>-v</parameter>)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1703
+#: index.docbook:1729
 #, no-c-format
 msgid ""
 "Be very descriptive about what is going on, and what &kdesrc-build; is doing."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1709
+#: index.docbook:1735
 #, no-c-format
 msgid ""
 "<parameter>--src-only</parameter> (or <parameter>--svn-only</parameter>)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1710
+#: index.docbook:1736
 #, no-c-format
 msgid ""
 "Only perform the source update. (The <parameter>--svn-only</parameter> is "
@@ -2949,25 +2995,25 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1717
+#: index.docbook:1743
 #, no-c-format
 msgid "--build-only"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1718
+#: index.docbook:1744
 #, no-c-format
 msgid "Only perform the build process."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1724
+#: index.docbook:1750
 #, no-c-format
 msgid "--ignore-modules"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1725
+#: index.docbook:1751
 #, no-c-format
 msgid ""
 "Do not include the modules passed on the rest of the command line in the "
@@ -2977,13 +3023,13 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1734
+#: index.docbook:1760
 #, no-c-format
 msgid "<parameter>--no-src</parameter> (or <parameter>--no-svn</parameter>)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1735
+#: index.docbook:1761
 #, no-c-format
 msgid ""
 "Skip contacting the &subversion; server. (The <parameter>--no-svn</"
@@ -2992,37 +3038,67 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1743
+#: index.docbook:1769
 #, no-c-format
 msgid "--no-build"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1744
+#: index.docbook:1770
 #, no-c-format
 msgid "Skip the build process."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1750
+#: index.docbook:1776
 #, no-c-format
 msgid "--no-install"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1751
+#: index.docbook:1777
 #, no-c-format
 msgid "Do not automatically install packages after they are built."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1757
+#: index.docbook:1783
+#, no-c-format
+msgid "--no-build-when-unchanged"
+msgstr ""
+
+#. Tag: parameter
+#: index.docbook:1784
+#, no-c-format
+msgid "--force-build"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1785
+#, no-c-format
+msgid ""
+"This option explicitly disables skipping the build process (an optimization "
+"controlled by the <link linkend=\"conf-build-when-unchanged\">build-when-"
+"unchanged</link> option. This is useful for making &kdesrc-build; run the "
+"build when you have changed something that &kdesrc-build; cannot check."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1792
+#, no-c-format
+msgid ""
+"<parameter>--force-build</parameter> performs the exact same function, and "
+"is perhaps easier to remember."
+msgstr ""
+
+#. Tag: parameter
+#: index.docbook:1798
 #, no-c-format
 msgid "--debug"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1758
+#: index.docbook:1799
 #, no-c-format
 msgid ""
 "Enables debug mode for the script. Currently this means that all output will "
@@ -3032,13 +3108,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1767
+#: index.docbook:1808
 #, no-c-format
 msgid "--no-rebuild-on-fail"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1768
+#: index.docbook:1809
 #, no-c-format
 msgid ""
 "Do not try to rebuild modules that have failed building from scratch. "
@@ -3047,25 +3123,25 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1777
+#: index.docbook:1818
 #, no-c-format
 msgid "--refresh-build"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1778
+#: index.docbook:1819
 #, no-c-format
 msgid "Recreate the build system and make from scratch."
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1784
+#: index.docbook:1825
 #, no-c-format
 msgid "--reconfigure"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1785
+#: index.docbook:1826
 #, no-c-format
 msgid ""
 "Run <command>cmake</command> (for &kde; modules) or <command>configure</"
@@ -3077,13 +3153,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1796
+#: index.docbook:1837
 #, no-c-format
 msgid "--resume-from"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1797
+#: index.docbook:1838
 #, no-c-format
 msgid ""
 "This option is used to resume the build starting from the given module, "
@@ -3093,7 +3169,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1803
+#: index.docbook:1844
 #, no-c-format
 msgid ""
 "See also: <xref linkend=\"cmdline-resume-after\"/> and <xref linkend="
@@ -3102,13 +3178,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1810
+#: index.docbook:1851
 #, no-c-format
 msgid "--resume-after"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1811
+#: index.docbook:1852
 #, no-c-format
 msgid ""
 "This option is used to resume the build starting after the given module, "
@@ -3118,7 +3194,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1817
+#: index.docbook:1858
 #, no-c-format
 msgid ""
 "See also: <xref linkend=\"cmdline-resume-from\"/> and <xref linkend="
@@ -3128,13 +3204,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1825
+#: index.docbook:1866
 #, no-c-format
 msgid "--rc-file"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1826
+#: index.docbook:1867
 #, no-c-format
 msgid ""
 "This interprets the next command line parameter as the file to read the "
@@ -3145,13 +3221,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1836
+#: index.docbook:1877
 #, no-c-format
 msgid "--run"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1837
+#: index.docbook:1878
 #, no-c-format
 msgid ""
 "This option interprets the next item on the command line as a program to "
@@ -3160,7 +3236,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1842
+#: index.docbook:1883
 #, no-c-format
 msgid ""
 "This will not work to start a shell with the &kdesrc-build; environment in "
@@ -3170,7 +3246,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1848
+#: index.docbook:1889
 #, no-c-format
 msgid ""
 "If you want to see the environment used by &kdesrc-build;, you can run the "
@@ -3178,7 +3254,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:1851
+#: index.docbook:1892
 #, no-c-format
 msgid ""
 "$ <command>kdesrc-build</command> <parameter>--run</parameter> "
@@ -3193,13 +3269,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1857
+#: index.docbook:1898
 #, no-c-format
 msgid "--prefix=&lt;/path/to/kde&gt;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1858
+#: index.docbook:1899
 #, no-c-format
 msgid ""
 "This allows you to change the directory that &kde; will be installed to from "
@@ -3210,14 +3286,14 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1868
+#: index.docbook:1909
 #, fuzzy, no-c-format
 #| msgid "--version"
 msgid "--revision"
 msgstr "--version"
 
 #. Tag: para
-#: index.docbook:1869
+#: index.docbook:1910
 #, no-c-format
 msgid ""
 "This option causes &kdesrc-build; to checkout a specific numbered revision "
@@ -3227,7 +3303,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1875
+#: index.docbook:1916
 #, no-c-format
 msgid ""
 "This option is likely not a good idea, and is only supported for "
@@ -3235,13 +3311,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1881
+#: index.docbook:1922
 #, no-c-format
 msgid "--build-system-only"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1882
+#: index.docbook:1923
 #, no-c-format
 msgid ""
 "This option causes &kdesrc-build; to abort building a module just before the "
@@ -3251,13 +3327,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1890
+#: index.docbook:1931
 #, no-c-format
 msgid "--install"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1891
+#: index.docbook:1932
 #, no-c-format
 msgid ""
 "If this is the only command-line option, it tries to install all of the "
@@ -3268,13 +3344,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1900
+#: index.docbook:1941
 #, no-c-format
 msgid "--purge-old-logs"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1901
+#: index.docbook:1942
 #, no-c-format
 msgid ""
 "This option causes &kdesrc-build; to delete unneeded log directories after "
@@ -3285,13 +3361,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1910
+#: index.docbook:1951
 #, no-c-format
 msgid "--no-snapshots"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1911
+#: index.docbook:1952
 #, no-c-format
 msgid ""
 "Supplying this option causes &kdesrc-build; to always prefer a &subversion; "
@@ -3299,7 +3375,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1916
+#: index.docbook:1957
 #, no-c-format
 msgid ""
 "Module snapshots <emphasis>are</emphasis> real &subversion; checkouts. You "
@@ -3307,13 +3383,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1923
+#: index.docbook:1964
 #, no-c-format
 msgid "--&lt;option-name&gt;="
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1924
+#: index.docbook:1965
 #, no-c-format
 msgid ""
 "You can use this option to override an option in your <link linkend="
@@ -3325,13 +3401,13 @@ msgid ""
 msgstr ""
 
 #. Tag: parameter
-#: index.docbook:1933
+#: index.docbook:1974
 #, no-c-format
 msgid "--&lt;module-name&gt;,&lt;option-name&gt;="
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1934
+#: index.docbook:1975
 #, no-c-format
 msgid ""
 "You can use this option to override an option in your <link linkend="
@@ -3339,7 +3415,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1942
+#: index.docbook:1983
 #, no-c-format
 msgid ""
 "Any other command-line options are assumed to be modules to update and "
@@ -3347,19 +3423,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1952
+#: index.docbook:1993
 #, no-c-format
 msgid "Using &kdesrc-build;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1955
+#: index.docbook:1996
 #, no-c-format
 msgid "Preface"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1957
+#: index.docbook:1998
 #, no-c-format
 msgid ""
 "Normally using &kdesrc-build; after you have gone through <xref linkend="
@@ -3368,7 +3444,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:1960
+#: index.docbook:2001
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <command><userinput>kdesrc-build</userinput></"
@@ -3376,7 +3452,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1962
+#: index.docbook:2003
 #, no-c-format
 msgid ""
 "&kdesrc-build; will then download the sources for &kde;, try to configure "
@@ -3384,7 +3460,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1965
+#: index.docbook:2006
 #, no-c-format
 msgid ""
 "Read on to discover how &kdesrc-build; does this, and what else you can do "
@@ -3392,19 +3468,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1971
+#: index.docbook:2012
 #, no-c-format
 msgid "Basic &kdesrc-build; features"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1974
+#: index.docbook:2015
 #, no-c-format
 msgid "qt-copy support"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1975
+#: index.docbook:2016
 #, no-c-format
 msgid ""
 "&kdesrc-build; supports building the &Qt; toolkit used by &kde; software as "
@@ -3413,7 +3489,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1979
+#: index.docbook:2020
 #, no-c-format
 msgid ""
 "&Qt; is developed under a separate repository from &kde; software located at "
@@ -3421,7 +3497,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1983
+#: index.docbook:2024
 #, no-c-format
 msgid ""
 "In order to build &Qt;, you should make sure that the <link linkend=\"conf-"
@@ -3430,7 +3506,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1987
+#: index.docbook:2028
 #, no-c-format
 msgid ""
 "You should then ensure that the qt-copy module is added to your <filename>."
@@ -3440,7 +3516,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1992
+#: index.docbook:2033
 #, no-c-format
 msgid ""
 "Now you should verify the <link linkend=\"conf-repository\">repository</"
@@ -3449,7 +3525,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1997
+#: index.docbook:2038
 #, no-c-format
 msgid ""
 "The first option is to build with a grouping of recommended bug fix and "
@@ -3463,7 +3539,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2007
+#: index.docbook:2048
 #, no-c-format
 msgid ""
 "Otherwise, to build the standard &Qt;, set your repository option to "
@@ -3471,7 +3547,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2012
+#: index.docbook:2053
 #, no-c-format
 msgid ""
 "In both cases, the branch option should be set to <userinput>master</"
@@ -3479,7 +3555,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2015
+#: index.docbook:2056
 #, no-c-format
 msgid ""
 "In some cases the underlying source control software is unable to work when "
@@ -3488,13 +3564,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2022
+#: index.docbook:2063
 #, no-c-format
 msgid "Standard flags added by &kdesrc-build;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2023
+#: index.docbook:2064
 #, no-c-format
 msgid ""
 "To save you time, &kdesrc-build; adds some standard paths to your "
@@ -3502,7 +3578,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2028
+#: index.docbook:2069
 #, no-c-format
 msgid ""
 "The path to the &kde; and &Qt; libraries is added to the "
@@ -3511,7 +3587,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2034
+#: index.docbook:2075
 #, no-c-format
 msgid ""
 "The path to the &kde; and &Qt; development support programs are added to the "
@@ -3520,7 +3596,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2040
+#: index.docbook:2081
 #, no-c-format
 msgid ""
 "The path to the &kde;-provided <application>pkg-config</application> is "
@@ -3529,7 +3605,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2046
+#: index.docbook:2087
 #, no-c-format
 msgid ""
 "The setting for &kdedir; is automatically propagated to the <envar>KDEDIR</"
@@ -3538,7 +3614,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2051
+#: index.docbook:2092
 #, no-c-format
 msgid ""
 "The setting for &qtdir; is automatically propagated to the <envar>QTDIR</"
@@ -3546,13 +3622,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2061
+#: index.docbook:2102
 #, no-c-format
 msgid "Changing &kdesrc-build;'s build priority"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2062
+#: index.docbook:2103
 #, no-c-format
 msgid ""
 "Programs can run with different priority levels on Operating Systems, "
@@ -3561,7 +3637,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2067
+#: index.docbook:2108
 #, no-c-format
 msgid ""
 "&kdesrc-build; will normally allocate itself a low priority so that the rest "
@@ -3570,7 +3646,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2072
+#: index.docbook:2113
 #, no-c-format
 msgid ""
 "&kdesrc-build; will still maintain a high enough priority level so that it "
@@ -3579,7 +3655,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2077
+#: index.docbook:2118
 #, no-c-format
 msgid ""
 "To alter &kdesrc-build; so that it uses a higher (or lower) priority level "
@@ -3593,7 +3669,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2086
+#: index.docbook:2127
 #, no-c-format
 msgid ""
 "You can also temporarily change the priority for &kdesrc-build; by using the "
@@ -3602,7 +3678,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2090
+#: index.docbook:2131
 #, no-c-format
 msgid ""
 "It is possible for some programs run by the super user to have a negative "
@@ -3613,14 +3689,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2098
+#: index.docbook:2139
 #, no-c-format
 msgid ""
 "To run &kdesrc-build; with a niceness of 15 (a lower priority than normal):"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2101
+#: index.docbook:2142
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <userinput><command>kdesrc-build</command> "
@@ -3628,7 +3704,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2103
+#: index.docbook:2144
 #, no-c-format
 msgid ""
 "Or, you can edit the <link linkend=\"configure-data\">configuration file</"
@@ -3636,13 +3712,13 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2105
+#: index.docbook:2146
 #, no-c-format
 msgid "&niceness; <replaceable>15</replaceable>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2109
+#: index.docbook:2150
 #, no-c-format
 msgid ""
 "The <link linkend=\"conf-niceness\">niceness</link> option only affects the "
@@ -3657,13 +3733,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2125
+#: index.docbook:2166
 #, no-c-format
 msgid "Installation as the superuser"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2126
+#: index.docbook:2167
 #, no-c-format
 msgid ""
 "You may wish to have &kdesrc-build; run the installation with super user "
@@ -3676,7 +3752,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2134
+#: index.docbook:2175
 #, no-c-format
 msgid ""
 "You could simply run &kdesrc-build; as the super user directly, but this is "
@@ -3686,7 +3762,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2139
+#: index.docbook:2180
 #, no-c-format
 msgid ""
 "To take care of this, &kdesrc-build; provides the &make-install-prefix; "
@@ -3697,7 +3773,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2146
+#: index.docbook:2187
 #, no-c-format
 msgid ""
 "For example, to install all modules using &sudo;, you could do something "
@@ -3705,7 +3781,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2149
+#: index.docbook:2190
 #, no-c-format
 msgid ""
 "global\n"
@@ -3715,13 +3791,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2151
+#: index.docbook:2192
 #, no-c-format
 msgid "To use &make-install-prefix; for only a single module, this would work:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2154
+#: index.docbook:2195
 #, no-c-format
 msgid ""
 "module <replaceable>kdemultimedia</replaceable>\n"
@@ -3730,13 +3806,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2160
+#: index.docbook:2201
 #, no-c-format
 msgid "Showing the progress of a module build"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2161
+#: index.docbook:2202
 #, no-c-format
 msgid ""
 "This feature is always available, and is automatically enabled when "
@@ -3746,19 +3822,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2172
+#: index.docbook:2213
 #, no-c-format
 msgid "Advanced features"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2175
+#: index.docbook:2216
 #, no-c-format
 msgid "Partially building a module"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2176
+#: index.docbook:2217
 #, no-c-format
 msgid ""
 "It is possible to build only pieces from a single &kde; module. For example, "
@@ -3767,13 +3843,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2183
+#: index.docbook:2224
 #, no-c-format
 msgid "Checking out portions of a module"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2185
+#: index.docbook:2226
 #, no-c-format
 msgid ""
 "This is perhaps the best way to do this. When it works, it will save you "
@@ -3784,7 +3860,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2191
+#: index.docbook:2232
 #, no-c-format
 msgid ""
 "If you do not already know what to download from a module, it may be a good "
@@ -3793,7 +3869,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2198
+#: index.docbook:2239
 #, no-c-format
 msgid ""
 "To only grab &kuser; and <application>KSystemLog</application> from "
@@ -3801,7 +3877,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2201
+#: index.docbook:2242
 #, no-c-format
 msgid ""
 "module <replaceable>kdeadmin</replaceable>\n"
@@ -3810,7 +3886,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2205
+#: index.docbook:2246
 #, no-c-format
 msgid ""
 "The directories will be built in the order they are listed in the option. If "
@@ -3820,7 +3896,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2210
+#: index.docbook:2251
 #, no-c-format
 msgid ""
 "Also, sometimes an application may need other directories and it is hard to "
@@ -3831,7 +3907,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2217
+#: index.docbook:2258
 #, no-c-format
 msgid ""
 "One final note to make about this option: If you change the value of this "
@@ -3845,13 +3921,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2228
+#: index.docbook:2269
 #, no-c-format
 msgid "Removing directories from a build"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2229
+#: index.docbook:2270
 #, no-c-format
 msgid ""
 "Instead of restricting what is downloaded, it is possible to download "
@@ -3861,7 +3937,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2235
+#: index.docbook:2276
 #, no-c-format
 msgid ""
 "This is controlled with the &do-not-compile; option. It works similar to the "
@@ -3870,7 +3946,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2239
+#: index.docbook:2280
 #, no-c-format
 msgid ""
 "Also like &checkout-only;, this option requires at least that the build "
@@ -3881,7 +3957,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2248
+#: index.docbook:2289
 #, no-c-format
 msgid ""
 "To remove the <filename class=\"directory\">python</filename> directory from "
@@ -3889,7 +3965,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2251
+#: index.docbook:2292
 #, no-c-format
 msgid ""
 "module <replaceable>kdebindings</replaceable>\n"
@@ -3898,7 +3974,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2255
+#: index.docbook:2296
 #, no-c-format
 msgid ""
 "This function depends on some standard conventions used in most &kde; "
@@ -3906,19 +3982,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2263
+#: index.docbook:2304
 #, no-c-format
 msgid "Branching and tagging support for &kdesrc-build;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2266
+#: index.docbook:2307
 #, no-c-format
 msgid "What are branches and tags?"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2268
+#: index.docbook:2309
 #, no-c-format
 msgid ""
 "&subversion; supports managing the history of the &kde; source code. &kde; "
@@ -3927,7 +4003,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2273
+#: index.docbook:2314
 #, no-c-format
 msgid ""
 "For example, the &kmail; developers may be working on a new feature in a "
@@ -3937,7 +4013,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2279
+#: index.docbook:2320
 #, no-c-format
 msgid ""
 "A tag, on the other hand, is a snapshot of the source code repository at a "
@@ -3947,7 +4023,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2285
+#: index.docbook:2326
 #, no-c-format
 msgid ""
 "In &subversion;, there is no difference between branches, tags, or trunk "
@@ -3957,13 +4033,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2294
+#: index.docbook:2335
 #, no-c-format
 msgid "How to use branches and tags"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2296
+#: index.docbook:2337
 #, no-c-format
 msgid ""
 "Support for branches and tags is handled by a set of options, which range "
@@ -3972,7 +4048,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2301
+#: index.docbook:2342
 #, no-c-format
 msgid ""
 "The easiest method is to use the &branch; and &tag; options. You simply use "
@@ -3983,14 +4059,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2308
+#: index.docbook:2349
 #, no-c-format
 msgid ""
 "To download kdelibs from &kde; 4.5 (which is simply known as the 4.5 branch):"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2311
+#: index.docbook:2352
 #, no-c-format
 msgid ""
 "module kdelibs\n"
@@ -4000,13 +4076,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2313
+#: index.docbook:2354
 #, no-c-format
 msgid "Or, to download kdemultimedia as it was released with &kde; 4.5.1:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2315
+#: index.docbook:2356
 #, no-c-format
 msgid ""
 "module kdemultimedia\n"
@@ -4016,7 +4092,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2319
+#: index.docbook:2360
 #, no-c-format
 msgid ""
 "You can specify a global branch value. But if you do so, do not forget to "
@@ -4024,13 +4100,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2325
+#: index.docbook:2366
 #, no-c-format
 msgid "Advanced branch support options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2327
+#: index.docbook:2368
 #, no-c-format
 msgid ""
 "&kdesrc-build; supports two options for situations where &branch; and &tag; "
@@ -4038,7 +4114,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2332
+#: index.docbook:2373
 #, no-c-format
 msgid ""
 "&module-base-path; is used to help &kdesrc-build; fill in the missing part "
@@ -4050,7 +4126,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2341
+#: index.docbook:2382
 #, no-c-format
 msgid ""
 "module kdesupport\n"
@@ -4061,7 +4137,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2343
+#: index.docbook:2384
 #, no-c-format
 msgid ""
 "This would cause &kdesrc-build; to download kdesupport from (in this "
@@ -4070,7 +4146,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2347
+#: index.docbook:2388
 #, no-c-format
 msgid ""
 "In previous versions of &kdesrc-build;, the &module-base-path; was handled "
@@ -4081,7 +4157,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2354
+#: index.docbook:2395
 #, no-c-format
 msgid ""
 "The &override-url; option, on the other hand, requires you to specify the "
@@ -4092,7 +4168,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2361
+#: index.docbook:2402
 #, no-c-format
 msgid ""
 "&kdesrc-build; will not touch or correct the value you specify for &override-"
@@ -4101,19 +4177,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2375
+#: index.docbook:2416
 #, no-c-format
 msgid "How &kdesrc-build; tries to ensure a successful build"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2378
+#: index.docbook:2419
 #, no-c-format
 msgid "Automatic rebuilds"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2380
+#: index.docbook:2421
 #, no-c-format
 msgid ""
 "&kdesrc-build; used to include features to automatically attempt to rebuild "
@@ -4125,7 +4201,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2389
+#: index.docbook:2430
 #, no-c-format
 msgid ""
 "If you change <link linkend=\"conf-configure-flags\">configure-flags</link> "
@@ -4135,7 +4211,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2394
+#: index.docbook:2435
 #, no-c-format
 msgid ""
 "If the buildsystem does not exist (even if &kdesrc-build; did not delete it) "
@@ -4146,13 +4222,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2405
+#: index.docbook:2446
 #, no-c-format
 msgid "Manually rebuilding a module"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2406
+#: index.docbook:2447
 #, no-c-format
 msgid ""
 "If you make a change to a module's option settings, or the module's source "
@@ -4161,7 +4237,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2410
+#: index.docbook:2451
 #, no-c-format
 msgid ""
 "You can do this by simply running <userinput><command>kdesrc-build</command> "
@@ -4170,7 +4246,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2414
+#: index.docbook:2455
 #, no-c-format
 msgid ""
 "If you would like to have &kdesrc-build; automatically rebuild the module "
@@ -4182,7 +4258,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2422
+#: index.docbook:2463
 #, no-c-format
 msgid ""
 "By default, the build directory is <filename class=\"directory\">~/kdesvn/"
@@ -4192,7 +4268,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2428
+#: index.docbook:2469
 #, no-c-format
 msgid ""
 "Rebuild using <filename>.refresh-me</filename> for module <replaceable>arts</"
@@ -4200,7 +4276,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2429
+#: index.docbook:2470
 #, no-c-format
 msgid ""
 "<prompt>%</prompt> <userinput><command>touch</command> <filename class="
@@ -4210,13 +4286,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2436
+#: index.docbook:2477
 #, no-c-format
 msgid "Changing environment variable settings"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2437
+#: index.docbook:2478
 #, no-c-format
 msgid ""
 "Normally &kdesrc-build; uses the environment that is present when starting "
@@ -4225,7 +4301,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2441
+#: index.docbook:2482
 #, no-c-format
 msgid ""
 "However, you may want to change the setting for environment variables that "
@@ -4235,7 +4311,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2446
+#: index.docbook:2487
 #, no-c-format
 msgid ""
 "Unlike most options, it can be set more than once, and it accepts two "
@@ -4244,7 +4320,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2451
+#: index.docbook:2492
 #, no-c-format
 msgid ""
 "Set <userinput><envar>DISTRO</envar>=<replaceable>BSD</replaceable></"
@@ -4252,7 +4328,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2453
+#: index.docbook:2494
 #, no-c-format
 msgid ""
 "global\n"
@@ -4261,19 +4337,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2459
+#: index.docbook:2500
 #, no-c-format
 msgid "Resuming builds"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2462
+#: index.docbook:2503
 #, no-c-format
 msgid "Resuming a failed or canceled build"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2464
+#: index.docbook:2505
 #, no-c-format
 msgid ""
 "You can tell &kdesrc-build; to start building from a different module than "
@@ -4283,19 +4359,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2469
+#: index.docbook:2510
 #, no-c-format
 msgid "Using either of the resume options will skip the source code update."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2473
+#: index.docbook:2514
 #, no-c-format
 msgid "Resuming the build starting from kdebase:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2475
+#: index.docbook:2516
 #, no-c-format
 msgid ""
 "<prompt>%</prompt> <userinput><command>kdesrc-build</command> <option>--"
@@ -4303,7 +4379,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2479
+#: index.docbook:2520
 #, no-c-format
 msgid ""
 "Resuming the build starting after kdebase (in case you manually fixed the "
@@ -4311,7 +4387,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2482
+#: index.docbook:2523
 #, no-c-format
 msgid ""
 "<prompt>%</prompt> <userinput><command>kdesrc-build</command> <option>--"
@@ -4319,13 +4395,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2488
+#: index.docbook:2529
 #, no-c-format
 msgid "Ignoring modules in a build"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2490
+#: index.docbook:2531
 #, no-c-format
 msgid ""
 "Similar to the way you can <link linkend=\"resuming-failed\">resume the "
@@ -4334,7 +4410,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2494
+#: index.docbook:2535
 #, no-c-format
 msgid ""
 "You can do this using the &cmd-ignore-modules; option. This option tells "
@@ -4343,13 +4419,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2499
+#: index.docbook:2540
 #, no-c-format
 msgid "Ignoring extragear/multimedia and kdereview during a full run:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2500
+#: index.docbook:2541
 #, no-c-format
 msgid ""
 "<prompt>%</prompt> <userinput><command>kdesrc-build</command> <option>--"
@@ -4358,19 +4434,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2507
+#: index.docbook:2548
 #, no-c-format
 msgid "Changing options from the command line"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2510
+#: index.docbook:2551
 #, no-c-format
 msgid "Changing global options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2511
+#: index.docbook:2552
 #, no-c-format
 msgid ""
 "You can change the setting of options read from the <link linkend="
@@ -4381,7 +4457,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2516
+#: index.docbook:2557
 #, no-c-format
 msgid ""
 "&kdesrc-build; allows you to change options named like <replaceable>option-"
@@ -4394,7 +4470,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2524
+#: index.docbook:2565
 #, no-c-format
 msgid ""
 "Setting the &source-dir; option to <filename>/dev/null</filename> for "
@@ -4402,7 +4478,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2527
+#: index.docbook:2568
 #, no-c-format
 msgid ""
 "<prompt>%</prompt> <userinput><command>kdesrc-build</command> <option>--"
@@ -4411,13 +4487,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2534
+#: index.docbook:2575
 #, no-c-format
 msgid "Changing module options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2535
+#: index.docbook:2576
 #, no-c-format
 msgid ""
 "It is also possible to change options only for a specific module. The syntax "
@@ -4426,7 +4502,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2539
+#: index.docbook:2580
 #, no-c-format
 msgid ""
 "This change overrides any duplicate setting for the module found in the "
@@ -4435,13 +4511,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2543
+#: index.docbook:2584
 #, no-c-format
 msgid "Using a different build directory for the kdeedu module:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2545
+#: index.docbook:2586
 #, no-c-format
 msgid ""
 "<prompt>%</prompt> <userinput><command>kdesrc-build</command> <option>--"
@@ -4450,19 +4526,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2556
+#: index.docbook:2597
 #, no-c-format
 msgid "Features for &kde; developers"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2559
+#: index.docbook:2600
 #, no-c-format
 msgid "&ssh; Agent checks"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2560
+#: index.docbook:2601
 #, no-c-format
 msgid ""
 "&kdesrc-build; can ensure that &kde; developers that use &ssh; to access the "
@@ -4473,7 +4549,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2568
+#: index.docbook:2609
 #, no-c-format
 msgid ""
 "This is only done for &kde; developers using &ssh;. This is because no "
@@ -4483,7 +4559,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2573
+#: index.docbook:2614
 #, no-c-format
 msgid ""
 "You may wish to disable the &ssh; Agent check, in case of situations where "
@@ -4493,13 +4569,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2579
+#: index.docbook:2620
 #, no-c-format
 msgid "Disabling the &ssh; agent check:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2580
+#: index.docbook:2621
 #, no-c-format
 msgid ""
 "global\n"
@@ -4508,19 +4584,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2588
+#: index.docbook:2629
 #, no-c-format
 msgid "Other &kdesrc-build; features"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2591
+#: index.docbook:2632
 #, no-c-format
 msgid "Changing the amount of output from &kdesrc-build;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2592
+#: index.docbook:2633
 #, no-c-format
 msgid ""
 "&kdesrc-build; has several options to control the amount of output the "
@@ -4528,7 +4604,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2596
+#: index.docbook:2637
 #, no-c-format
 msgid ""
 "The <option>--quiet</option> option (short form is <option>-q</option>) "
@@ -4538,7 +4614,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2601
+#: index.docbook:2642
 #, no-c-format
 msgid ""
 "The <option>--really-quiet</option> option (no short form) causes &kdesrc-"
@@ -4546,7 +4622,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2605
+#: index.docbook:2646
 #, no-c-format
 msgid ""
 "The <option>--verbose</option> option (short form is <option>-v</option>) "
@@ -4554,7 +4630,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2609
+#: index.docbook:2650
 #, no-c-format
 msgid ""
 "The <option>--debug</option> option is for debugging purposes only, it "
@@ -4564,13 +4640,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2618
+#: index.docbook:2659
 #, no-c-format
 msgid "Color output"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2619
+#: index.docbook:2660
 #, no-c-format
 msgid ""
 "When being run from &konsole; or a different terminal, &kdesrc-build; will "
@@ -4578,7 +4654,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2622
+#: index.docbook:2663
 #, no-c-format
 msgid ""
 "You can disable this by using the <option>--no-color</option> on the command "
@@ -4588,13 +4664,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2628
+#: index.docbook:2669
 #, no-c-format
 msgid "Disabling color output in the configuration file:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2629
+#: index.docbook:2670
 #, no-c-format
 msgid ""
 "global\n"
@@ -4603,13 +4679,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2635
+#: index.docbook:2676
 #, no-c-format
 msgid "E-mailing build failure reports"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2636
+#: index.docbook:2677
 #, no-c-format
 msgid ""
 "&kdesrc-build; can send a e-mail report to an e-mail address of your choice "
@@ -4619,7 +4695,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2641
+#: index.docbook:2682
 #, no-c-format
 msgid ""
 "&kdesrc-build; will then, at the end of a complete run, construct an e-mail "
@@ -4629,7 +4705,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2647
+#: index.docbook:2688
 #, no-c-format
 msgid ""
 "This feature is not enabled by default. To enable it, you need to set both "
@@ -4640,7 +4716,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2654
+#: index.docbook:2695
 #, no-c-format
 msgid ""
 "&kdesrc-build; uses the Perl-standard Mail::Mailer module to send e-mail. It "
@@ -4651,14 +4727,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2662
+#: index.docbook:2703
 #, no-c-format
 msgid ""
 "Sending email from foo@example.com to bar@example.com on a build failure:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2664
+#: index.docbook:2705
 #, no-c-format
 msgid ""
 "global\n"
@@ -4670,13 +4746,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2670
+#: index.docbook:2711
 #, no-c-format
 msgid "Removing unneeded directories after a build"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2671
+#: index.docbook:2712
 #, no-c-format
 msgid ""
 "Are you short on disk space but still want to run a bleeding-edge &kde; "
@@ -4685,7 +4761,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2675
+#: index.docbook:2716
 #, no-c-format
 msgid ""
 "Be aware that building &kde; does take a lot of space. There are several "
@@ -4693,7 +4769,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2679
+#: index.docbook:2720
 #, no-c-format
 msgid ""
 "The actual source checkout can take up a fair amount of space. The default "
@@ -4708,7 +4784,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2689
+#: index.docbook:2730
 #, no-c-format
 msgid ""
 "Also, if you already have a &Qt; installed by your distribution (and the "
@@ -4717,7 +4793,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2694
+#: index.docbook:2735
 #, no-c-format
 msgid ""
 "One thing to note is that due to the way &subversion; works: there are "
@@ -4727,7 +4803,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2702
+#: index.docbook:2743
 #, no-c-format
 msgid ""
 "&kdesrc-build; will create a separate build directory to build the source "
@@ -4740,7 +4816,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2710
+#: index.docbook:2751
 #, no-c-format
 msgid ""
 "Luckily, the build directory is not required after a module has successfully "
@@ -4751,7 +4827,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2717
+#: index.docbook:2758
 #, no-c-format
 msgid ""
 "Finally, there is disk space required for the actual installation of &kde;, "
@@ -4760,7 +4836,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2724
+#: index.docbook:2765
 #, no-c-format
 msgid ""
 "How do you reduce the space requirements of &kde;? One way is to use the "
@@ -4770,7 +4846,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2730
+#: index.docbook:2771
 #, no-c-format
 msgid ""
 "You should be very sure you know what you are doing before deciding to "
@@ -4784,7 +4860,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2742
+#: index.docbook:2783
 #, no-c-format
 msgid ""
 "Removing the build directory after installation of a module. The source "
@@ -4792,7 +4868,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2745
+#: index.docbook:2786
 #, no-c-format
 msgid ""
 "global\n"
@@ -4803,7 +4879,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2747
+#: index.docbook:2788
 #, no-c-format
 msgid ""
 "Removing the build directory after installation, without debugging "
@@ -4811,7 +4887,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:2750
+#: index.docbook:2791
 #, no-c-format
 msgid ""
 "global\n"
@@ -4823,19 +4899,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2759
+#: index.docbook:2800
 #, no-c-format
 msgid "&cmake;, the &kde; 4 build system"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2762
+#: index.docbook:2803
 #, no-c-format
 msgid "Introduction to &cmake;"
 msgstr "Introduccion a &cmake;"
 
 #. Tag: para
-#: index.docbook:2764
+#: index.docbook:2805
 #, no-c-format
 msgid ""
 "In March 2006, the &cmake; program beat out several competitors and was "
@@ -4844,7 +4920,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2768
+#: index.docbook:2809
 #, no-c-format
 msgid ""
 "A introduction to &cmake; page is available on the <ulink url=\"http://"
@@ -4856,7 +4932,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2775
+#: index.docbook:2816
 #, no-c-format
 msgid ""
 "&kdesrc-build; has support for &cmake;. A few features of &kdesrc-build; "
@@ -4870,13 +4946,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2789
+#: index.docbook:2830
 #, no-c-format
 msgid "Credits And Licenses"
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:2791
+#: index.docbook:2832
 #, fuzzy, no-c-format
 #| msgid "ROLES_OF_TRANSLATORS"
 msgid "CREDIT_FOR_TRANSLATORS"
@@ -4886,7 +4962,7 @@ msgstr ""
 "affiliation><contrib></contrib></othercredit>"
 
 #. Tag: chapter
-#: index.docbook:2791
+#: index.docbook:2832
 #, no-c-format
 msgid "&underFDL;"
 msgstr ""
