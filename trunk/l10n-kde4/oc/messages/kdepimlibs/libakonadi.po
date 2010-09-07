@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-26 05:56+0200\n"
+"POT-Creation-Date: 2010-09-07 02:33+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -83,7 +83,7 @@ msgstr ""
 msgid "Unable to create agent instance."
 msgstr ""
 
-#: agentinstancemodel.cpp:177 collectionmodel_p.h:51
+#: agentinstancemodel.cpp:179 collectionmodel_p.h:51
 msgctxt "@title:column, name of a thing"
 msgid "Name"
 msgstr "Nom"
@@ -126,7 +126,7 @@ msgid "Create a new subfolder under the currently selected folder"
 msgstr ""
 
 #: collectiondialog_desktop.cpp:199 collectiondialog_mobile.cpp:134
-#: standardactionmanager.cpp:144
+#: standardactionmanager.cpp:174
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Repertòri novèl"
@@ -137,13 +137,13 @@ msgid "Name"
 msgstr "Nom"
 
 #: collectiondialog_desktop.cpp:216 collectiondialog_mobile.cpp:151
-#: standardactionmanager.cpp:148
+#: standardactionmanager.cpp:178
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Impossible de crear lo repertòri : %1"
 
 #: collectiondialog_desktop.cpp:217 collectiondialog_mobile.cpp:152
-#: standardactionmanager.cpp:150
+#: standardactionmanager.cpp:180
 msgid "Folder creation failed"
 msgstr ""
 
@@ -607,39 +607,39 @@ msgstr ""
 msgid "Unsubscribe from selected folder"
 msgstr ""
 
-#: resourcebase.cpp:231
+#: resourcebase.cpp:233
 msgctxt "@title application name"
 msgid "Akonadi Resource"
 msgstr ""
 
-#: resourcebase.cpp:232
+#: resourcebase.cpp:234
 msgctxt "@title application description"
 msgid "Akonadi Resource"
 msgstr ""
 
-#: resourcebase.cpp:236
+#: resourcebase.cpp:238
 msgctxt "@label commandline option"
 msgid "Resource identifier"
 msgstr ""
 
-#: resourcebase.cpp:343
+#: resourcebase.cpp:345
 #, kde-format
 msgctxt "@info"
 msgid "Updating local collection failed: %1."
 msgstr ""
 
-#: resourcebase.cpp:353
+#: resourcebase.cpp:355
 msgctxt "@info"
 msgid "Cannot fetch item in offline mode."
 msgstr ""
 
-#: resourcebase.cpp:481
+#: resourcebase.cpp:483
 #, kde-format
 msgctxt "@info:status"
 msgid "Syncing collection '%1'"
 msgstr ""
 
-#: resourcebase.cpp:515
+#: resourcebase.cpp:517
 msgid "The requested item no longer exists"
 msgstr ""
 
@@ -1176,7 +1176,7 @@ msgstr ""
 msgid "Could not open file '%1'"
 msgstr "Impossible de crear lo repertòri : %1"
 
-#: session.cpp:253
+#: session.cpp:262
 #, kde-format
 msgid "Protocol version %1 found, expected at least %2"
 msgstr ""
@@ -1207,72 +1207,78 @@ msgstr ""
 msgid "Timeout trying to get lock."
 msgstr ""
 
-#: standardactionmanager.cpp:72
+#: standardactionmanager.cpp:81
 #, fuzzy
 #| msgid "New Folder..."
 msgid "&New Folder..."
 msgstr "Repertòri &nòu..."
 
-#: standardactionmanager.cpp:74
-#, fuzzy
+#: standardactionmanager.cpp:83 standardactionmanager.cpp:168
+#, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "&Delete Folder"
-msgstr "&Suprimir lo repertòri"
+msgid_plural "&Delete %1 Folders"
+msgstr[0] "&Suprimir lo repertòri"
+msgstr[1] "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:75
+#: standardactionmanager.cpp:84 standardactionmanager.cpp:169
+#, kde-format
+#| msgid "&Synchronize Folder"
 msgid "&Synchronize Folder"
-msgstr ""
+msgid_plural "&Synchronize %1 Folders"
+msgstr[0] ""
+msgstr[1] ""
 
-#: standardactionmanager.cpp:76
+#: standardactionmanager.cpp:85
 msgid "Folder &Properties"
 msgstr ""
 
-#: standardactionmanager.cpp:78
+#: standardactionmanager.cpp:87
 msgid "&Paste"
 msgstr "&Pegar"
 
-#: standardactionmanager.cpp:80
+#: standardactionmanager.cpp:89
 msgid "Manage Local &Subscriptions..."
 msgstr ""
 
-#: standardactionmanager.cpp:81
+#: standardactionmanager.cpp:90
 msgid "Add to Favorite Folders"
 msgstr ""
 
-#: standardactionmanager.cpp:82
+#: standardactionmanager.cpp:91
 msgid "Remove from Favorite Folders"
 msgstr ""
 
-#: standardactionmanager.cpp:83
+#: standardactionmanager.cpp:92
 msgid "Rename Favorite..."
 msgstr ""
 
-#: standardactionmanager.cpp:85 standardactionmanager.cpp:90
+#: standardactionmanager.cpp:94 standardactionmanager.cpp:99
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Copy Folder To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:86 standardactionmanager.cpp:91
+#: standardactionmanager.cpp:95 standardactionmanager.cpp:100
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Copy Item To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:87 standardactionmanager.cpp:92
+#: standardactionmanager.cpp:96 standardactionmanager.cpp:101
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Move Item To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:88 standardactionmanager.cpp:93
+#: standardactionmanager.cpp:97 standardactionmanager.cpp:102
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Move Folder To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:95 standardactionmanager.cpp:139
+#: standardactionmanager.cpp:104 standardactionmanager.cpp:165
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Cut Item"
@@ -1280,7 +1286,7 @@ msgid_plural "&Cut %1 Items"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:96 standardactionmanager.cpp:140
+#: standardactionmanager.cpp:105 standardactionmanager.cpp:166
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Cut Folder"
@@ -1288,32 +1294,39 @@ msgid_plural "&Cut %1 Folders"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:97
+#: standardactionmanager.cpp:106
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "Create Resource"
 msgstr "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:98
+#: standardactionmanager.cpp:107
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "Delete Resource"
 msgstr "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:99
+#: standardactionmanager.cpp:108
 msgid "&Resource Properties"
 msgstr ""
 
-#: standardactionmanager.cpp:100
+#: standardactionmanager.cpp:109
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "Synchronize Resource"
 msgstr "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:137
+#: standardactionmanager.cpp:110
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "Offline"
+msgid "Work Offline"
+msgstr "Desconnectat"
+
+#: standardactionmanager.cpp:163
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Copy Folder"
@@ -1321,7 +1334,7 @@ msgid_plural "&Copy %1 Folders"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:138
+#: standardactionmanager.cpp:164
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Copy Item"
@@ -1329,7 +1342,7 @@ msgid_plural "&Copy %1 Items"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:141
+#: standardactionmanager.cpp:167
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1338,7 +1351,25 @@ msgid_plural "&Delete %1 Items"
 msgstr[0] "Repertòri novèl"
 msgstr[1] "Repertòri novèl"
 
-#: standardactionmanager.cpp:146
+#: standardactionmanager.cpp:170
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgid "&Delete Resource"
+msgid_plural "&Delete %1 Resources"
+msgstr[0] "&Suprimir lo repertòri"
+msgstr[1] "&Suprimir lo repertòri"
+
+#: standardactionmanager.cpp:171
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgid "&Synchronize Resource"
+msgid_plural "&Synchronize %1 Resources"
+msgstr[0] "&Suprimir lo repertòri"
+msgstr[1] "&Suprimir lo repertòri"
+
+#: standardactionmanager.cpp:176
 #, fuzzy
 #| msgctxt "@title:column, name of a thing"
 #| msgid "Name"
@@ -1346,62 +1377,78 @@ msgctxt "@label:textbox name of a thing"
 msgid "Name"
 msgstr "Nom"
 
-#: standardactionmanager.cpp:153
+#: standardactionmanager.cpp:183
 #, kde-format
-msgid "Do you really want to delete folder '%1' and all its sub-folders?"
-msgstr ""
+msgid "Do you really want to delete folder '%2' and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] ""
+msgstr[1] ""
 
-#: standardactionmanager.cpp:155
-#, kde-format
-msgid "Do you really want to delete the search view '%1'?"
-msgstr ""
-
-#: standardactionmanager.cpp:157
+#: standardactionmanager.cpp:186
 #, fuzzy
 #| msgid "folder"
 msgctxt "@title:window"
 msgid "Delete folder?"
-msgstr "repertòri"
+msgid_plural "Delete folders?"
+msgstr[0] "repertòri"
+msgstr[1] "repertòri"
 
-#: standardactionmanager.cpp:159
+#: standardactionmanager.cpp:188
 #, kde-format
 msgid "Could not delete folder: %1"
 msgstr ""
 
-#: standardactionmanager.cpp:161
+#: standardactionmanager.cpp:190
 msgid "Folder deletion failed"
 msgstr ""
 
-#: standardactionmanager.cpp:164
+#: standardactionmanager.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr ""
 
-#: standardactionmanager.cpp:167
-msgid "Do you really want to delete all selected items?"
+#: standardactionmanager.cpp:196
+#, kde-format
+msgid "Do you really want to delete the selected item?"
+msgid_plural "Do you really want to delete %1 items?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: standardactionmanager.cpp:198
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgctxt "@title:window"
+msgid "Delete item?"
+msgid_plural "Delete items?"
+msgstr[0] "Repertòri novèl"
+msgstr[1] "Repertòri novèl"
+
+#: standardactionmanager.cpp:200
+#, fuzzy, kde-format
+#| msgid "Could not create folder: %1"
+msgid "Could not delete item: %1"
+msgstr "Impossible de crear lo repertòri : %1"
+
+#: standardactionmanager.cpp:202
+msgid "Item deletion failed"
 msgstr ""
 
-#: standardactionmanager.cpp:169
-#, fuzzy
-#| msgid "folder"
-msgctxt "@title:window"
-msgid "Delete?"
-msgstr "repertòri"
-
-#: standardactionmanager.cpp:172
+#: standardactionmanager.cpp:205
 msgctxt "@title:window"
 msgid "Rename Favorite"
 msgstr ""
 
-#: standardactionmanager.cpp:174
+#: standardactionmanager.cpp:207
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "@label:textbox name of the folder"
 msgid "Name:"
 msgstr "&Nom :"
 
-#: standardactionmanager.cpp:177
+#: standardactionmanager.cpp:210
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1409,45 +1456,49 @@ msgctxt "@title:window"
 msgid "New Resource"
 msgstr "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:179
+#: standardactionmanager.cpp:212
 #, fuzzy, kde-format
 #| msgid "Could not create folder: %1"
 msgid "Could not create resource: %1"
 msgstr "Impossible de crear lo repertòri : %1"
 
-#: standardactionmanager.cpp:181
+#: standardactionmanager.cpp:214
 msgid "Resource creation failed"
 msgstr ""
 
-#: standardactionmanager.cpp:184
+#: standardactionmanager.cpp:217
 #, kde-format
-msgid "Do you really want to delete resource '%1'?"
-msgstr ""
+msgid "Do you really want to delete resource '%2'?"
+msgid_plural "Do you really want to delete %1 resources?"
+msgstr[0] ""
+msgstr[1] ""
 
-#: standardactionmanager.cpp:186
+#: standardactionmanager.cpp:219
 #, fuzzy
 #| msgid "folder"
 msgctxt "@title:window"
 msgid "Delete Resource?"
-msgstr "repertòri"
+msgid_plural "Delete Resources?"
+msgstr[0] "repertòri"
+msgstr[1] "repertòri"
 
-#: standardactionmanager.cpp:189
+#: standardactionmanager.cpp:222
 #, fuzzy, kde-format
 #| msgid "Could not create folder: %1"
 msgid "Could not paste data: %1"
 msgstr "Impossible de crear lo repertòri : %1"
 
-#: standardactionmanager.cpp:191
+#: standardactionmanager.cpp:224
 msgid "Paste failed"
 msgstr ""
 
-#: standardactionmanager.cpp:900
+#: standardactionmanager.cpp:928
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Move to This Folder"
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:900
+#: standardactionmanager.cpp:928
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Copy to This Folder"
@@ -1472,14 +1523,14 @@ msgstr "Total"
 msgid "Storage Size"
 msgstr ""
 
-#: statisticsproxymodel.cpp:282
+#: statisticsproxymodel.cpp:286
 #, fuzzy
 #| msgid "Size:"
 msgctxt "collection size"
 msgid "Size"
 msgstr "Talha :"
 
-#: statisticsproxymodel.cpp:284
+#: statisticsproxymodel.cpp:288
 #, fuzzy
 #| msgctxt "@title:column, total number of messages"
 #| msgid "Total"
@@ -1487,7 +1538,7 @@ msgctxt "number of entities in the collection"
 msgid "Total"
 msgstr "Total"
 
-#: statisticsproxymodel.cpp:286
+#: statisticsproxymodel.cpp:290
 #, fuzzy
 #| msgctxt "@title:column, number of unread messages"
 #| msgid "Unread"
@@ -1569,6 +1620,12 @@ msgstr ""
 #: conflicthandling/conflictresolvedialog.cpp:227
 msgid "Data"
 msgstr ""
+
+#, fuzzy
+#~| msgid "folder"
+#~ msgctxt "@title:window"
+#~ msgid "Delete?"
+#~ msgstr "repertòri"
 
 #, fuzzy
 #~| msgid "&Copy here"
