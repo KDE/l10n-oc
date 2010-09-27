@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-07 02:30+0200\n"
+"POT-Creation-Date: 2010-09-27 06:06+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -337,30 +337,31 @@ msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:77
+#: app/imageopscontextmanageritem.cpp:78
 #, fuzzy
 #| msgid "Edit"
 msgctxt "@title actions category - means actions changing image"
 msgid "Edit"
 msgstr "Edicion"
 
-#: app/imageopscontextmanageritem.cpp:79 lib/transformimageoperation.cpp:69
+#: app/imageopscontextmanageritem.cpp:80 lib/transformimageoperation.cpp:69
 msgid "Rotate Left"
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:84 lib/transformimageoperation.cpp:66
+#: app/imageopscontextmanageritem.cpp:85 lib/transformimageoperation.cpp:66
 msgid "Rotate Right"
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:89 lib/transformimageoperation.cpp:72
+#: app/imageopscontextmanageritem.cpp:90 lib/transformimageoperation.cpp:72
 msgid "Mirror"
 msgstr "Miralh"
 
-#: app/imageopscontextmanageritem.cpp:93 lib/transformimageoperation.cpp:75
+#: app/imageopscontextmanageritem.cpp:94 lib/transformimageoperation.cpp:75
 msgid "Flip"
 msgstr "Coalevar"
 
-#: app/imageopscontextmanageritem.cpp:97 lib/resizeimageoperation.cpp:69
+#: app/imageopscontextmanageritem.cpp:98 lib/resize/resizeimagedialog.cpp:50
+#: lib/resize/resizeimageoperation.cpp:69
 msgid "Resize"
 msgstr "Redimensionar"
 
@@ -368,26 +369,18 @@ msgstr "Redimensionar"
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
 #. i18n: file: lib/crop/cropwidget.ui:32
 #. i18n: ectx: property (text), widget (QToolButton, cropButton)
-#: app/imageopscontextmanageritem.cpp:101 lib/crop/cropimageoperation.cpp:73
+#: app/imageopscontextmanageritem.cpp:103 lib/crop/cropimageoperation.cpp:73
 #: rc.cpp:175 rc.cpp:181
 msgid "Crop"
 msgstr "Rosegar"
 
-#: app/imageopscontextmanageritem.cpp:105
+#: app/imageopscontextmanageritem.cpp:108
 msgid "Red Eye Reduction"
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:132
+#: app/imageopscontextmanageritem.cpp:135
 msgid "Image Operations"
 msgstr "Operacions d'imatge"
-
-#: app/imageopscontextmanageritem.cpp:225
-msgid "Image Resizing"
-msgstr ""
-
-#: app/imageopscontextmanageritem.cpp:226
-msgid "Enter the new size of the image:"
-msgstr ""
 
 #: app/fileoperations.cpp:72
 msgid "Copy To"
@@ -1335,7 +1328,7 @@ msgstr "&Paramètres"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: part/gvpart.rc:15
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:20 rc.cpp:269
+#: rc.cpp:20 rc.cpp:281
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
@@ -1836,15 +1829,42 @@ msgstr ""
 msgid "Interval between images (in seconds)"
 msgstr ""
 
+#. i18n: file: lib/resize/resizeimagewidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
+#: rc.cpp:263
+msgid "Image Resizing"
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:20
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:266
+msgid "Current Size:"
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:62
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:269
+#, fuzzy
+#| msgctxt "@item:intable"
+#| msgid "File Size"
+msgid "New Size:"
+msgstr "Nom de fichièr"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:101
+#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
+#: rc.cpp:272
+msgid "Keep aspect ratio"
+msgstr ""
+
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:263
+#: rc.cpp:275
 msgid "&File"
 msgstr "&Fichièr"
 
 #. i18n: file: part/gvpart.rc:8
 #. i18n: ectx: Menu (view)
-#: rc.cpp:266
+#: rc.cpp:278
 msgid "&View"
 msgstr "Aficha&tge"
 
