@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-10 05:05+0000\n"
+"POT-Creation-Date: 2010-10-11 05:02+0000\n"
 "PO-Revision-Date: 2008-08-13 13:38+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2132,9 +2132,9 @@ msgstr ""
 #: index.docbook:1204
 #, no-c-format
 msgid ""
-"&kdm; detects most available window manager and desktop environments when it "
-"is run. Installing a new one should make it automatically available in the "
-"&kdm; main dialog's <guimenuitem>Session Type</guimenuitem> submenu."
+"&kdm; detects most available window managers and desktop environments when "
+"it is run. Installing a new one should make it automatically available in "
+"the &kdm; main dialog's <guimenuitem>Session Type</guimenuitem> submenu."
 msgstr ""
 
 #. Tag: para
@@ -2142,8 +2142,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "If you have a very new window manager, or something that &kdm; does not "
-"support, the first thing you should check is that the application to be run "
-"is in the <envar>PATH</envar> and has not been renamed during the install "
+"support, the first thing you should check is that the executable to be run "
+"is in the <envar>PATH</envar> and has not been renamed by the distributor "
 "into something unexpected."
 msgstr ""
 
@@ -2151,22 +2151,31 @@ msgstr ""
 #: index.docbook:1213
 #, no-c-format
 msgid ""
-"If the case is that the application is too new and not yet supported by "
-"&kdm;, you can quite simply add a new session."
+"If the case is that the session type is not supported by &kdm; yet (maybe "
+"because it is too new), you can quite easily add it."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:1216
 #, no-c-format
 msgid ""
-"The sessions are defined in <firstterm>.desktop</firstterm> files in "
-"<filename class=\"directory\">$<envar>KDEDIR</envar>/share/apps/kdm/"
+"The session types are defined by <firstterm>.desktop</firstterm> files "
+"located in the directories listed in <link linkend=\"option-sessionsdirs"
+"\"><option>SessionsDirs</option></link>. The last named directory contains "
+"the system-provided default session types and is <filename class=\"directory"
+"\">$<envar>KDEDIR</envar>/share/apps/kdm/sessions</filename> in an "
+"installation from source. Software upgrades will typically overwrite "
+"anything in here, so it is unwise to use it for configuration purposes. "
+"Instead, a separate configuration directory should be listed first. It is "
+"set to <filename class=\"directory\">$<envar>KDEDIR</envar>/share/config/kdm/"
+"sessions</filename> in an installation from source, but distributors often "
+"change it to something like <filename class=\"directory\">/etc/kde4/kdm/"
 "sessions</filename>. You can simply add an appropriately named <literal role="
-"\"extension\">.desktop</literal> file in this directory. The fields are:"
+"\"extension\">.desktop</literal> files here. The fields are:"
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:1223
+#: index.docbook:1232
 #, no-c-format
 msgid ""
 "[Desktop Entry]\n"
@@ -2184,19 +2193,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1225
+#: index.docbook:1234
 #, no-c-format
 msgid "There are also three <quote>magic</quote> types:"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1229
+#: index.docbook:1238
 #, no-c-format
 msgid "default"
 msgstr "defaut"
 
 #. Tag: para
-#: index.docbook:1231
+#: index.docbook:1240
 #, no-c-format
 msgid ""
 "The default session for &kdm; is normally &kde; but can be configured by the "
@@ -2204,25 +2213,27 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1238
+#: index.docbook:1247
 #, no-c-format
 msgid "custom"
 msgstr "personalizat"
 
 #. Tag: para
-#: index.docbook:1240
+#: index.docbook:1249
 #, no-c-format
-msgid "The Custom session will run the user's ~/.xsession if it exists."
+msgid ""
+"The Custom session will run the user's ~/.xsession if it exists, falling "
+"back to the default session otherwise."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1246
+#: index.docbook:1256
 #, no-c-format
 msgid "failsafe"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1248
+#: index.docbook:1258
 #, no-c-format
 msgid ""
 "Failsafe will run a very plain session, and is useful only for debugging "
@@ -2230,25 +2241,24 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1256
+#: index.docbook:1266
 #, no-c-format
 msgid ""
 "To override a session type, copy the .desktop file from the data dir to the "
 "config dir and edit it at will. Removing the shipped session types can be "
 "accomplished by <quote>shadowing</quote> them with .desktop files containing "
 "Hidden=true. For the magic session types no .desktop files exist by default, "
-"but &kdm; pretends they would, so you can override them like any other type. "
-"I guess you already know how to add a new session type by now. ;-)"
+"but &kdm; pretends they would, so you can override them like any other type."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1267
+#: index.docbook:1276
 #, no-c-format
 msgid "Using &kdm; for Remote Logins (&XDMCP;)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1269
+#: index.docbook:1278
 #, no-c-format
 msgid ""
 "&XDMCP; is the Open Group standard, the <quote>X Display Manager Control "
@@ -2257,7 +2267,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1273
+#: index.docbook:1282
 #, no-c-format
 msgid ""
 "&XDMCP; is useful in multiuser situations where there are users with "
@@ -2271,7 +2281,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1282
+#: index.docbook:1291
 #, no-c-format
 msgid ""
 "However, allowing another method of login to your machine obviously has "
@@ -2281,19 +2291,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1291
+#: index.docbook:1300
 #, no-c-format
 msgid "Advanced Topics"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1294
+#: index.docbook:1303
 #, no-c-format
 msgid "Command Sockets"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1296
+#: index.docbook:1305
 #, no-c-format
 msgid ""
 "This is a feature you can use to remote-control &kdm;. It's mostly intended "
@@ -2302,7 +2312,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1300
+#: index.docbook:1309
 #, no-c-format
 msgid ""
 "The sockets are &UNIX; domain sockets which live in subdirectories of the "
@@ -2314,7 +2324,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1307
+#: index.docbook:1316
 #, no-c-format
 msgid ""
 "There are two types of sockets: the global one (dmctl) and the per-display "
@@ -2322,7 +2332,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1310
+#: index.docbook:1319
 #, no-c-format
 msgid ""
 "The global one's subdir is owned by root, the subdirs of the per-display "
@@ -2333,7 +2343,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1316
+#: index.docbook:1325
 #, no-c-format
 msgid ""
 "The fields of a command are separated by tabs (<token>\\t</token>), the "
@@ -2342,13 +2352,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1320
+#: index.docbook:1329
 #, no-c-format
 msgid "The command is terminated by a newline (<token>\\n</token>)."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1322
+#: index.docbook:1331
 #, no-c-format
 msgid ""
 "The same applies to replies. The reply on success is <returnvalue>ok</"
@@ -2358,13 +2368,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1329
+#: index.docbook:1338
 #, no-c-format
 msgid "Global commands:"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1332
+#: index.docbook:1341
 #, no-c-format
 msgid ""
 "<command>login</command> <option>display</option> (<parameter>now</"
@@ -2373,7 +2383,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1336
+#: index.docbook:1345
 #, no-c-format
 msgid ""
 "login user at specified display. if <parameter>now</parameter> is specified, "
@@ -2383,19 +2393,19 @@ msgid ""
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1344
+#: index.docbook:1353
 #, no-c-format
 msgid "resume"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1346
+#: index.docbook:1355
 #, no-c-format
 msgid "Force return from console mode, even if TTY logins are still active."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1352
+#: index.docbook:1361
 #, no-c-format
 msgid ""
 "<command>manage</command> <parameter>display</parameter> "
@@ -2404,13 +2414,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1356
+#: index.docbook:1365
 #, no-c-format
 msgid "Start managing the named foreign display."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1357
+#: index.docbook:1366
 #, no-c-format
 msgid ""
 "<parameter>display_class</parameter>, if specified and non-empty, will be "
@@ -2418,7 +2428,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1360
+#: index.docbook:1369
 #, no-c-format
 msgid ""
 "<parameter>auth_name</parameter> and <parameter>auth_data</parameter> need "
@@ -2427,31 +2437,31 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1368
+#: index.docbook:1377
 #, no-c-format
 msgid "<command>unmanage</command> <parameter>display</parameter>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1370
+#: index.docbook:1379
 #, no-c-format
 msgid "Stop managing the named foreign display."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1377
+#: index.docbook:1386
 #, no-c-format
 msgid "Per-display commands:"
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1379
+#: index.docbook:1388
 #, no-c-format
 msgid "lock"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1381
+#: index.docbook:1390
 #, no-c-format
 msgid ""
 "The display is marked as locked. If the &X-Server; crashes in this state, no "
@@ -2459,26 +2469,26 @@ msgid ""
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1386
+#: index.docbook:1395
 #, no-c-format
 msgid "unlock"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1388
+#: index.docbook:1397
 #, no-c-format
 msgid ""
 "Reverse the effect of <command>lock</command>, and re-enable auto-relogin."
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1393
+#: index.docbook:1402
 #, no-c-format
 msgid "suicide"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1395
+#: index.docbook:1404
 #, no-c-format
 msgid ""
 "The currently running session is forcibly terminated. No auto-relogin is "
@@ -2486,37 +2496,37 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1402
+#: index.docbook:1411
 #, no-c-format
 msgid "Commands for all sockets"
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1404
+#: index.docbook:1413
 #, no-c-format
 msgid "caps"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1406
+#: index.docbook:1415
 #, no-c-format
 msgid "Returns a list of this socket's capabilities:"
 msgstr ""
 
 #. Tag: returnvalue
-#: index.docbook:1410
+#: index.docbook:1419
 #, no-c-format
 msgid "<returnvalue>kdm</returnvalue>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1412
+#: index.docbook:1421
 #, no-c-format
 msgid "identifies &kdm;, in case some other DM implements this protocol, too"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1417
+#: index.docbook:1426
 #, no-c-format
 msgid ""
 "<returnvalue>list</returnvalue>, <returnvalue>lock</returnvalue>, "
@@ -2525,19 +2535,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1422
+#: index.docbook:1431
 #, no-c-format
 msgid "The respective command is supported"
 msgstr ""
 
 #. Tag: returnvalue
-#: index.docbook:1426
+#: index.docbook:1435
 #, no-c-format
 msgid "bootoptions"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1428
+#: index.docbook:1437
 #, no-c-format
 msgid ""
 "The <command>listbootoptions</command> command and the <option>=</option> to "
@@ -2545,13 +2555,13 @@ msgid ""
 msgstr ""
 
 #. Tag: returnvalue
-#: index.docbook:1433
+#: index.docbook:1442
 #, no-c-format
 msgid "shutdown &lt;list&gt;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1435
+#: index.docbook:1444
 #, no-c-format
 msgid ""
 "<command>shutdown</command> is supported and allowed for the listed users (a "
@@ -2560,37 +2570,37 @@ msgid ""
 msgstr ""
 
 #. Tag: returnvalue
-#: index.docbook:1441
+#: index.docbook:1450
 #, no-c-format
 msgid "nuke &lt;list&gt;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1443
+#: index.docbook:1452
 #, no-c-format
 msgid "Forced shutdown may be performed by the listed users."
 msgstr ""
 
 #. Tag: returnvalue
-#: index.docbook:1447
+#: index.docbook:1456
 #, no-c-format
 msgid "nuke"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1449
+#: index.docbook:1458
 #, no-c-format
 msgid "Forced shutdown may be performed by everybody"
 msgstr ""
 
 #. Tag: returnvalue
-#: index.docbook:1453
+#: index.docbook:1462
 #, no-c-format
 msgid "reserve &lt;number&gt;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1455
+#: index.docbook:1464
 #, no-c-format
 msgid ""
 "Reserve displays are configured, and <returnvalue>number</returnvalue> are "
@@ -2598,7 +2608,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1461
+#: index.docbook:1470
 #, no-c-format
 msgid ""
 "<command>list</command> [<parameter>all</parameter> | <parameter>alllocal</"
@@ -2606,7 +2616,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1464
+#: index.docbook:1473
 #, no-c-format
 msgid ""
 "Return a list of running sessions. By default all active sessions are "
@@ -2616,25 +2626,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1469
+#: index.docbook:1478
 #, no-c-format
 msgid "Each session entry is a comma separated tuple of:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1471
+#: index.docbook:1480
 #, no-c-format
 msgid "Display or TTY name"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1472
+#: index.docbook:1481
 #, no-c-format
 msgid "VT name for local sessions"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1473
+#: index.docbook:1482
 #, no-c-format
 msgid ""
 "Logged in user's name, empty for passive sessions and outgoing remote "
@@ -2642,7 +2652,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1475
+#: index.docbook:1484
 #, no-c-format
 msgid ""
 "Session type or <quote>&lt;remote&gt;</quote> for outgoing remote sessions, "
@@ -2650,20 +2660,20 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1477
+#: index.docbook:1486
 #, no-c-format
 msgid "A Flag field:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1478
+#: index.docbook:1487
 #, no-c-format
 msgid ""
 "<literal>*</literal> for the display belonging to the requesting socket."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1480
+#: index.docbook:1489
 #, no-c-format
 msgid ""
 "<literal>!</literal> for sessions that cannot be killed by the reqeusting "
@@ -2671,19 +2681,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1485
+#: index.docbook:1494
 #, no-c-format
 msgid "New fields may be added in the future."
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1490
+#: index.docbook:1499
 #, no-c-format
 msgid "reserve"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1492
+#: index.docbook:1501
 #, no-c-format
 msgid ""
 "Start a reserve login screen. If nobody logs in within some time, the "
@@ -2692,13 +2702,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1495 index.docbook:1507
+#: index.docbook:1504 index.docbook:1516
 #, no-c-format
 msgid "Permitted only on sockets of local displays and the global socket."
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1501
+#: index.docbook:1510
 #, no-c-format
 msgid ""
 "<command>activate</command> (<parameter>vt</parameter>|<parameter>display</"
@@ -2706,7 +2716,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1504
+#: index.docbook:1513
 #, no-c-format
 msgid ""
 "Switch to a particular VT (virtual terminal). The VT may be specified either "
@@ -2715,43 +2725,43 @@ msgid ""
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1513
+#: index.docbook:1522
 #, no-c-format
 msgid "listbootoptions"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1515
+#: index.docbook:1524
 #, no-c-format
 msgid "List available boot options."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1516
+#: index.docbook:1525
 #, no-c-format
 msgid "The return value contains these tokens:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1519
+#: index.docbook:1528
 #, no-c-format
 msgid "A list of boot options (as shown in &kdm; itself)."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1522
+#: index.docbook:1531
 #, no-c-format
 msgid "The default boot option."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1525
+#: index.docbook:1534
 #, no-c-format
 msgid "The current boot option."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1528
+#: index.docbook:1537
 #, no-c-format
 msgid ""
 "The default and current option are zero-based indices into the list of boot "
@@ -2759,7 +2769,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1534
+#: index.docbook:1543
 #, no-c-format
 msgid ""
 "<command>shutdown</command> (<parameter>reboot</parameter> | "
@@ -2772,13 +2782,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1541
+#: index.docbook:1550
 #, no-c-format
 msgid "Request a system shutdown, either a reboot or a halt/poweroff."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1542
+#: index.docbook:1551
 #, no-c-format
 msgid ""
 "An OS choice for the next boot may be specified from the list returned by "
@@ -2786,7 +2796,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1544
+#: index.docbook:1553
 #, no-c-format
 msgid ""
 "Shutdowns requested from per-display sockets are executed when the current "
@@ -2795,7 +2805,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1547
+#: index.docbook:1556
 #, no-c-format
 msgid ""
 "<parameter>start</parameter> is the time for which the shutdown is "
@@ -2804,7 +2814,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1550
+#: index.docbook:1559
 #, no-c-format
 msgid ""
 "<parameter>end</parameter> is the latest time at which the shutdown should "
@@ -2814,19 +2824,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1556
+#: index.docbook:1565
 #, no-c-format
 msgid "<parameter>cancel</parameter> - give up the shutdown"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1558
+#: index.docbook:1567
 #, no-c-format
 msgid "<parameter>force</parameter> - shut down nonetheless"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1560
+#: index.docbook:1569
 #, no-c-format
 msgid ""
 "<parameter>forcemy</parameter> - shut down nonetheless if all active "
@@ -2834,7 +2844,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1564
+#: index.docbook:1573
 #, no-c-format
 msgid ""
 "<parameter>start</parameter> and <parameter>end</parameter> are specified in "
@@ -2842,7 +2852,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1566
+#: index.docbook:1575
 #, no-c-format
 msgid ""
 "<parameter>trynow</parameter> is a synonym for <parameter>0 0 cancel</"
@@ -2852,7 +2862,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1570
+#: index.docbook:1579
 #, no-c-format
 msgid ""
 "<parameter>ask</parameter> attempts an immediate shutdown and interacts with "
@@ -2860,7 +2870,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1577
+#: index.docbook:1586
 #, no-c-format
 msgid ""
 "<command>shutdown cancel</command> [<parameter>local</parameter>|"
@@ -2868,7 +2878,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1580
+#: index.docbook:1589
 #, no-c-format
 msgid ""
 "Cancel a scheduled shutdown. The global socket always cancels the currently "
@@ -2877,25 +2887,25 @@ msgid ""
 msgstr ""
 
 #. Tag: command
-#: index.docbook:1587
+#: index.docbook:1596
 #, no-c-format
 msgid "shutdown status"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1589
+#: index.docbook:1598
 #, no-c-format
 msgid "Return a list with information about shutdowns."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1590
+#: index.docbook:1599
 #, no-c-format
 msgid "The entries are a comma-separated tuples of:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1593
+#: index.docbook:1602
 #, no-c-format
 msgid ""
 "(<returnvalue>global</returnvalue>|<returnvalue>local</returnvalue>) - "
@@ -2904,55 +2914,55 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1597
+#: index.docbook:1606
 #, no-c-format
 msgid "(<returnvalue>halt</returnvalue>|<returnvalue>reboot</returnvalue>)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1598
+#: index.docbook:1607
 #, no-c-format
 msgid "start"
 msgstr "començament"
 
 #. Tag: para
-#: index.docbook:1599
+#: index.docbook:1608
 #, no-c-format
 msgid "<para>end</para>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1600
+#: index.docbook:1609
 #, no-c-format
 msgid "(\"ask\"|\"force\"|\"forcemy\"|\"cancel\")"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1601
+#: index.docbook:1610
 #, no-c-format
 msgid "Numeric user ID of the requesting user, -1 for the global socket."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1603
+#: index.docbook:1612
 #, no-c-format
 msgid "The next boot OS choice or \"-\" for none."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1605
+#: index.docbook:1614
 #, no-c-format
 msgid "New fields might be added later"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1612
+#: index.docbook:1621
 #, no-c-format
 msgid "There are two ways of using the sockets:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1615
+#: index.docbook:1624
 #, no-c-format
 msgid ""
 "Connecting them directly. FifoDir is exported as $<envar>DM_CONTROL</envar>; "
@@ -2960,7 +2970,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1620
+#: index.docbook:1629
 #, no-c-format
 msgid ""
 "By using the <command>kdmctl</command> command (&eg; from within a shell "
@@ -2968,13 +2978,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1626
+#: index.docbook:1635
 #, no-c-format
 msgid "Here is an example bash script <quote>reboot into FreeBSD</quote>:"
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:1628
+#: index.docbook:1637
 #, no-c-format
 msgid ""
 "if kdmctl | grep -q shutdown; then\n"
@@ -2997,13 +3007,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1634
+#: index.docbook:1643
 #, no-c-format
 msgid "Other sources of information"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1636
+#: index.docbook:1645
 #, no-c-format
 msgid ""
 "Since &kdm; is descended from &xdm;, the <ulink url=\"man:xdm\">xdm man "
@@ -3016,13 +3026,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1648
+#: index.docbook:1657
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1650
+#: index.docbook:1659
 #, no-c-format
 msgid ""
 "&kdm; is derived from, and includes code from, &xdm; &copy; Keith Packard, "
@@ -3030,7 +3040,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1653
+#: index.docbook:1662
 #, no-c-format
 msgid ""
 "&kdm; 0.1 was written by &Matthias.Ettrich;. Later versions till &kde; 2.0.x "
@@ -3039,7 +3049,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1657
+#: index.docbook:1666
 #, no-c-format
 msgid ""
 "Other parts of the &kdm; code are copyright by the authors, and licensed "
@@ -3049,25 +3059,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1662
+#: index.docbook:1671
 #, no-c-format
 msgid "&kdm; requires the &Qt; library, which is copyright Troll Tech AS."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1664
+#: index.docbook:1673
 #, no-c-format
 msgid "Documentation contributors:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1667
+#: index.docbook:1676
 #, no-c-format
 msgid "Documentation written by &Steffen.Hansen; &Steffen.Hansen.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1670
+#: index.docbook:1679
 #, no-c-format
 msgid ""
 "Documentation extended by Gregor Zumstein<email>zumstein@ssd.ethz.ch</"
@@ -3075,7 +3085,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1674
+#: index.docbook:1683
 #, no-c-format
 msgid ""
 "Documentation revised for &kde; 2 by &Neal.Crook; &Neal.Crook.mail;. Last "
@@ -3083,7 +3093,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1678
+#: index.docbook:1687
 #, no-c-format
 msgid ""
 "Documentation extended and revised for &kde; 2.2 and 4.0 by &Oswald."
@@ -3091,7 +3101,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1684
+#: index.docbook:1693
 #, no-c-format
 msgid ""
 "Documentation copyright &Steffen.Hansen;, Gregor Zumstein, &Neal.Crook; and "
@@ -3102,7 +3112,7 @@ msgid ""
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:1692
+#: index.docbook:1701
 #, fuzzy, no-c-format
 #| msgid "ROLES_OF_TRANSLATORS"
 msgid "CREDIT_FOR_TRANSLATORS"
@@ -3112,38 +3122,38 @@ msgstr ""
 "affiliation><contrib></contrib></othercredit>"
 
 #. Tag: chapter
-#: index.docbook:1692
+#: index.docbook:1701
 #, no-c-format
 msgid "&underFDL;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1699
+#: index.docbook:1708
 #, no-c-format
 msgid "Glossary"
 msgstr "Glossari"
 
 #. Tag: glossterm
-#: index.docbook:1702
+#: index.docbook:1711
 #, no-c-format
 msgid "greeter"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1703
+#: index.docbook:1712
 #, no-c-format
 msgid ""
 "The greeter is the login dialog, &ie; the part of &kdm; which the user sees."
 msgstr ""
 
 #. Tag: glossterm
-#: index.docbook:1709
+#: index.docbook:1718
 #, no-c-format
 msgid "entropy"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1710
+#: index.docbook:1719
 #, no-c-format
 msgid ""
 "The entropy of a system is the measure of its unpredictability. This is used "
