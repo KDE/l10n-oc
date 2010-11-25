@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-24 06:32+0100\n"
+"POT-Creation-Date: 2010-11-25 06:50+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -143,7 +143,7 @@ msgid "Create a new subfolder under the currently selected folder"
 msgstr ""
 
 #: collectiondialog_desktop.cpp:199 collectiondialog_mobile.cpp:134
-#: standardactionmanager.cpp:179
+#: standardactionmanager.cpp:199
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Repertòri novèl"
@@ -154,13 +154,13 @@ msgid "Name"
 msgstr "Nom"
 
 #: collectiondialog_desktop.cpp:216 collectiondialog_mobile.cpp:151
-#: standardactionmanager.cpp:183
+#: standardactionmanager.cpp:203
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Impossible de crear lo repertòri : %1"
 
 #: collectiondialog_desktop.cpp:217 collectiondialog_mobile.cpp:152
-#: standardactionmanager.cpp:185
+#: standardactionmanager.cpp:205
 msgid "Folder creation failed"
 msgstr ""
 
@@ -175,7 +175,7 @@ msgctxt "@title:tab general properties page"
 msgid "General"
 msgstr "General"
 
-#: collectiongeneralpropertiespage.cpp:67
+#: collectiongeneralpropertiespage.cpp:65
 #, kde-format
 msgctxt "@label"
 msgid "One object"
@@ -505,60 +505,74 @@ msgctxt "no cache timeout"
 msgid "Never"
 msgstr "Jamai"
 
+#. i18n: file: collectiongeneralpropertiespage_mobile.ui:16
+#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: collectiongeneralpropertiespage.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:80
+#: rc.cpp:80 rc.cpp:101
 msgid "&Name:"
 msgstr "&Nom :"
 
+#. i18n: file: collectiongeneralpropertiespage_mobile.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, customIconCheckbox)
 #. i18n: file: collectiongeneralpropertiespage.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, customIconCheckbox)
-#: rc.cpp:83
+#: rc.cpp:83 rc.cpp:104
 msgid "&Use custom icon:"
 msgstr ""
 
-#. i18n: file: collectiongeneralpropertiespage.ui:39
-#. i18n: ectx: property (icon), widget (KIconButton, customIcon)
-#: rc.cpp:86
-msgid "folder"
-msgstr "repertòri"
-
+#. i18n: file: collectiongeneralpropertiespage_mobile.ui:49
+#. i18n: ectx: property (title), widget (QGroupBox, statsBox)
 #. i18n: file: collectiongeneralpropertiespage.ui:62
 #. i18n: ectx: property (title), widget (QGroupBox, statsBox)
-#: rc.cpp:89
+#: rc.cpp:86 rc.cpp:110
 msgid "Statistics"
 msgstr "Estadisticas"
 
+#. i18n: file: collectiongeneralpropertiespage_mobile.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: collectiongeneralpropertiespage.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:92
+#: rc.cpp:89 rc.cpp:113
 msgctxt "object names"
 msgid "Content:"
 msgstr ""
 
+#. i18n: file: collectiongeneralpropertiespage_mobile.ui:62
+#. i18n: ectx: property (text), widget (QLabel, countLabel)
 #. i18n: file: collectiongeneralpropertiespage.ui:75
 #. i18n: ectx: property (text), widget (QLabel, countLabel)
-#: rc.cpp:95
+#: rc.cpp:92 rc.cpp:116
 msgid "0 objects"
 msgstr ""
 
+#. i18n: file: collectiongeneralpropertiespage_mobile.ui:69
+#. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: collectiongeneralpropertiespage.ui:82
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:98
+#: rc.cpp:95 rc.cpp:119
 msgid "Size:"
 msgstr "Talha :"
 
+#. i18n: file: collectiongeneralpropertiespage_mobile.ui:76
+#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
 #. i18n: file: collectiongeneralpropertiespage.ui:89
 #. i18n: ectx: property (text), widget (QLabel, sizeLabel)
-#: rc.cpp:101
+#: rc.cpp:98 rc.cpp:122
 msgid "0 Byte"
 msgstr ""
+
+#. i18n: file: collectiongeneralpropertiespage.ui:39
+#. i18n: ectx: property (icon), widget (KIconButton, customIcon)
+#: rc.cpp:107
+msgid "folder"
+msgstr "repertòri"
 
 #. i18n: file: erroroverlay.ui:21
 #. i18n: ectx: property (toolTip), widget (QWidget, notRunningPage)
 #. i18n: file: erroroverlay.ui:50
 #. i18n: ectx: property (text), widget (QLabel, notRunningDescription)
-#: rc.cpp:104 rc.cpp:107
+#: rc.cpp:125 rc.cpp:128
 msgid ""
 "The Akonadi personal information management service is not running. This "
 "application cannot be used without it."
@@ -566,14 +580,14 @@ msgstr ""
 
 #. i18n: file: erroroverlay.ui:78
 #. i18n: ectx: property (text), widget (KPushButton, startButton)
-#: rc.cpp:110
+#: rc.cpp:131
 msgctxt "@action:button Start the Akonadi server"
 msgid "Start"
 msgstr ""
 
 #. i18n: file: erroroverlay.ui:115
 #. i18n: ectx: property (toolTip), widget (QWidget, brokenPage)
-#: rc.cpp:113
+#: rc.cpp:134
 msgid ""
 "The Akonadi personal information management framework is not operational.\n"
 "Click on \"Details...\" to obtain detailed information on this problem."
@@ -581,19 +595,19 @@ msgstr ""
 
 #. i18n: file: erroroverlay.ui:144
 #. i18n: ectx: property (text), widget (QLabel, brokenDescription)
-#: rc.cpp:117
+#: rc.cpp:138
 msgid "The Akonadi personal information management service is not operational."
 msgstr ""
 
 #. i18n: file: erroroverlay.ui:178
 #. i18n: ectx: property (text), widget (KPushButton, selfTestButton)
-#: rc.cpp:120
+#: rc.cpp:141
 msgid "Details..."
 msgstr ""
 
 #. i18n: file: selftestdialog.ui:16
 #. i18n: ectx: property (text), widget (QLabel, introductionLabel)
-#: rc.cpp:123
+#: rc.cpp:144
 msgid ""
 "An error occurred during the startup of the Akonadi server. The following "
 "self-tests are supposed to help with tracking down and solving this problem. "
@@ -602,13 +616,13 @@ msgstr ""
 
 #. i18n: file: selftestdialog.ui:39
 #. i18n: ectx: property (title), widget (QGroupBox, detailsGroup)
-#: rc.cpp:126
+#: rc.cpp:147
 msgid "Details"
 msgstr ""
 
 #. i18n: file: selftestdialog.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:129
+#: rc.cpp:150
 msgid ""
 "<p>For more troubleshooting tips please refer to <a href=\"http://userbase."
 "kde.org/Akonadi\">userbase.kde.org/Akonadi</a>.</p>"
@@ -1205,13 +1219,19 @@ msgstr ""
 msgid "Timeout trying to get lock."
 msgstr ""
 
-#: standardactionmanager.cpp:80
+#: standardactionmanager.cpp:81
 #, fuzzy
 #| msgid "New Folder..."
 msgid "&New Folder..."
 msgstr "Repertòri &nòu..."
 
-#: standardactionmanager.cpp:82 standardactionmanager.cpp:170
+#: standardactionmanager.cpp:81
+#, fuzzy
+#| msgid "New Folder..."
+msgid "New Folder..."
+msgstr "Repertòri &nòu..."
+
+#: standardactionmanager.cpp:83 standardactionmanager.cpp:171
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1220,62 +1240,88 @@ msgid_plural "&Delete %1 Folders"
 msgstr[0] "&Suprimir lo repertòri"
 msgstr[1] "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:83 standardactionmanager.cpp:172
+#: standardactionmanager.cpp:83 standardactionmanager.cpp:190
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "&Suprimir lo repertòri"
+msgstr[1] "&Suprimir lo repertòri"
+
+#: standardactionmanager.cpp:84 standardactionmanager.cpp:173
 #, kde-format
 msgid "&Synchronize Folder"
 msgid_plural "&Synchronize %1 Folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:84
+#: standardactionmanager.cpp:84 standardactionmanager.cpp:192
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgid "Synchronize Folder"
+msgid_plural "Synchronize %1 Folders"
+msgstr[0] "&Suprimir lo repertòri"
+msgstr[1] "&Suprimir lo repertòri"
+
+#: standardactionmanager.cpp:85
 msgid "Folder &Properties"
 msgstr ""
 
-#: standardactionmanager.cpp:86
+#: standardactionmanager.cpp:85
+msgid "Folder Properties"
+msgstr ""
+
+#: standardactionmanager.cpp:87
 msgid "&Paste"
 msgstr "&Pegar"
 
-#: standardactionmanager.cpp:88
+#: standardactionmanager.cpp:89
 msgid "Manage Local &Subscriptions..."
 msgstr ""
 
 #: standardactionmanager.cpp:89
-msgid "Add to Favorite Folders"
+msgid "Manage Local Subscriptions..."
 msgstr ""
 
 #: standardactionmanager.cpp:90
-msgid "Remove from Favorite Folders"
+msgid "Add to Favorite Folders"
 msgstr ""
 
 #: standardactionmanager.cpp:91
+msgid "Remove from Favorite Folders"
+msgstr ""
+
+#: standardactionmanager.cpp:92
 msgid "Rename Favorite..."
 msgstr ""
 
-#: standardactionmanager.cpp:92 standardactionmanager.cpp:103
+#: standardactionmanager.cpp:93 standardactionmanager.cpp:104
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Copy Folder To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:93 standardactionmanager.cpp:105
+#: standardactionmanager.cpp:94 standardactionmanager.cpp:106
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Copy Item To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:94 standardactionmanager.cpp:106
+#: standardactionmanager.cpp:95 standardactionmanager.cpp:107
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Move Item To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:95 standardactionmanager.cpp:104
+#: standardactionmanager.cpp:96 standardactionmanager.cpp:105
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Move Folder To..."
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:96 standardactionmanager.cpp:164
+#: standardactionmanager.cpp:97 standardactionmanager.cpp:165
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Cut Item"
@@ -1283,7 +1329,15 @@ msgid_plural "&Cut %1 Items"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:97 standardactionmanager.cpp:166
+#: standardactionmanager.cpp:97 standardactionmanager.cpp:184
+#, fuzzy, kde-format
+#| msgid "&Copy here"
+msgid "Cut Item"
+msgid_plural "Cut %1 Items"
+msgstr[0] "&Copiar aicí"
+msgstr[1] "&Copiar aicí"
+
+#: standardactionmanager.cpp:98 standardactionmanager.cpp:167
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Cut Folder"
@@ -1291,39 +1345,55 @@ msgid_plural "&Cut %1 Folders"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:98
+#: standardactionmanager.cpp:98 standardactionmanager.cpp:186
+#, fuzzy, kde-format
+#| msgid "&Copy here"
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "&Copiar aicí"
+msgstr[1] "&Copiar aicí"
+
+#: standardactionmanager.cpp:99
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "Create Resource"
 msgstr "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:99
-#, fuzzy
+#: standardactionmanager.cpp:100 standardactionmanager.cpp:194
+#, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "Delete Resource"
-msgstr "&Suprimir lo repertòri"
+msgid_plural "Delete %1 Resources"
+msgstr[0] "&Suprimir lo repertòri"
+msgstr[1] "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:100
+#: standardactionmanager.cpp:101
 msgid "&Resource Properties"
 msgstr ""
 
 #: standardactionmanager.cpp:101
-#, fuzzy
+msgid "Resource Properties"
+msgstr ""
+
+#: standardactionmanager.cpp:102 standardactionmanager.cpp:196
+#, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
 msgid "Synchronize Resource"
-msgstr "&Suprimir lo repertòri"
+msgid_plural "Synchronize %1 Resources"
+msgstr[0] "&Suprimir lo repertòri"
+msgstr[1] "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:102
+#: standardactionmanager.cpp:103
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid "Offline"
 msgid "Work Offline"
 msgstr "Desconnectat"
 
-#: standardactionmanager.cpp:160
+#: standardactionmanager.cpp:161
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Copy Folder"
@@ -1331,7 +1401,7 @@ msgid_plural "&Copy %1 Folders"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:162
+#: standardactionmanager.cpp:163
 #, fuzzy, kde-format
 #| msgid "&Copy here"
 msgid "&Copy Item"
@@ -1339,7 +1409,7 @@ msgid_plural "&Copy %1 Items"
 msgstr[0] "&Copiar aicí"
 msgstr[1] "&Copiar aicí"
 
-#: standardactionmanager.cpp:168
+#: standardactionmanager.cpp:169
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1348,7 +1418,7 @@ msgid_plural "&Delete %1 Items"
 msgstr[0] "Repertòri novèl"
 msgstr[1] "Repertòri novèl"
 
-#: standardactionmanager.cpp:174
+#: standardactionmanager.cpp:175
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1357,7 +1427,7 @@ msgid_plural "&Delete %1 Resources"
 msgstr[0] "&Suprimir lo repertòri"
 msgstr[1] "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:176
+#: standardactionmanager.cpp:177
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1366,7 +1436,32 @@ msgid_plural "&Synchronize %1 Resources"
 msgstr[0] "&Suprimir lo repertòri"
 msgstr[1] "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:181
+#: standardactionmanager.cpp:180
+#, fuzzy, kde-format
+#| msgid "&Copy here"
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "&Copiar aicí"
+msgstr[1] "&Copiar aicí"
+
+#: standardactionmanager.cpp:182
+#, fuzzy, kde-format
+#| msgid "&Copy here"
+msgid "Copy Item"
+msgid_plural "Copy %1 Items"
+msgstr[0] "&Copiar aicí"
+msgstr[1] "&Copiar aicí"
+
+#: standardactionmanager.cpp:188
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "New Folder"
+msgid "Delete Item"
+msgid_plural "Delete %1 Items"
+msgstr[0] "Repertòri novèl"
+msgstr[1] "Repertòri novèl"
+
+#: standardactionmanager.cpp:201
 #, fuzzy
 #| msgctxt "@title:column, name of a thing"
 #| msgid "Name"
@@ -1374,7 +1469,7 @@ msgctxt "@label:textbox name of a thing"
 msgid "Name"
 msgstr "Nom"
 
-#: standardactionmanager.cpp:188
+#: standardactionmanager.cpp:208
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
@@ -1382,7 +1477,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:191
+#: standardactionmanager.cpp:211
 #, fuzzy
 #| msgid "folder"
 msgctxt "@title:window"
@@ -1391,29 +1486,29 @@ msgid_plural "Delete folders?"
 msgstr[0] "repertòri"
 msgstr[1] "repertòri"
 
-#: standardactionmanager.cpp:193
+#: standardactionmanager.cpp:213
 #, kde-format
 msgid "Could not delete folder: %1"
 msgstr ""
 
-#: standardactionmanager.cpp:195
+#: standardactionmanager.cpp:215
 msgid "Folder deletion failed"
 msgstr ""
 
-#: standardactionmanager.cpp:198
+#: standardactionmanager.cpp:218
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr ""
 
-#: standardactionmanager.cpp:201
+#: standardactionmanager.cpp:221
 #, kde-format
 msgid "Do you really want to delete the selected item?"
 msgid_plural "Do you really want to delete %1 items?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:204
+#: standardactionmanager.cpp:224
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1423,29 +1518,29 @@ msgid_plural "Delete items?"
 msgstr[0] "Repertòri novèl"
 msgstr[1] "Repertòri novèl"
 
-#: standardactionmanager.cpp:206
+#: standardactionmanager.cpp:226
 #, fuzzy, kde-format
 #| msgid "Could not create folder: %1"
 msgid "Could not delete item: %1"
 msgstr "Impossible de crear lo repertòri : %1"
 
-#: standardactionmanager.cpp:208
+#: standardactionmanager.cpp:228
 msgid "Item deletion failed"
 msgstr ""
 
-#: standardactionmanager.cpp:211
+#: standardactionmanager.cpp:231
 msgctxt "@title:window"
 msgid "Rename Favorite"
 msgstr ""
 
-#: standardactionmanager.cpp:213
+#: standardactionmanager.cpp:233
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "@label:textbox name of the folder"
 msgid "Name:"
 msgstr "&Nom :"
 
-#: standardactionmanager.cpp:216
+#: standardactionmanager.cpp:236
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Folder"
@@ -1453,24 +1548,24 @@ msgctxt "@title:window"
 msgid "New Resource"
 msgstr "&Suprimir lo repertòri"
 
-#: standardactionmanager.cpp:218
+#: standardactionmanager.cpp:238
 #, fuzzy, kde-format
 #| msgid "Could not create folder: %1"
 msgid "Could not create resource: %1"
 msgstr "Impossible de crear lo repertòri : %1"
 
-#: standardactionmanager.cpp:220
+#: standardactionmanager.cpp:240
 msgid "Resource creation failed"
 msgstr ""
 
-#: standardactionmanager.cpp:223
+#: standardactionmanager.cpp:243
 #, kde-format
 msgid "Do you really want to delete this resource?"
 msgid_plural "Do you really want to delete %1 resources?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:226
+#: standardactionmanager.cpp:246
 #, fuzzy
 #| msgid "folder"
 msgctxt "@title:window"
@@ -1479,23 +1574,23 @@ msgid_plural "Delete Resources?"
 msgstr[0] "repertòri"
 msgstr[1] "repertòri"
 
-#: standardactionmanager.cpp:229
+#: standardactionmanager.cpp:249
 #, fuzzy, kde-format
 #| msgid "Could not create folder: %1"
 msgid "Could not paste data: %1"
 msgstr "Impossible de crear lo repertòri : %1"
 
-#: standardactionmanager.cpp:231
+#: standardactionmanager.cpp:251
 msgid "Paste failed"
 msgstr ""
 
-#: standardactionmanager.cpp:972
+#: standardactionmanager.cpp:997
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Move to This Folder"
 msgstr "&Copiar aicí"
 
-#: standardactionmanager.cpp:972
+#: standardactionmanager.cpp:997
 #, fuzzy
 #| msgid "&Copy here"
 msgid "Copy to This Folder"
