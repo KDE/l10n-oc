@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-21 06:22+0100\n"
+"POT-Creation-Date: 2010-11-29 02:29+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -741,7 +741,7 @@ msgstr ""
 
 #. i18n: file: ktorrent/pref/advancedpref.ui:174
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_eta)
-#: ktorrent/main.cpp:94 plugins/search/homepage.cpp:118 rc.cpp:548
+#: ktorrent/main.cpp:94 plugins/search/webview.cpp:152 rc.cpp:548
 msgid "KTorrent"
 msgstr ""
 
@@ -1161,25 +1161,6 @@ msgstr ""
 msgid "(= %1/s)"
 msgstr "%1"
 
-#: ktorrent/statusbar.cpp:39 ktorrent/statusbar.cpp:71
-#, kde-format
-msgid "Speed down: %1 / up: %2"
-msgstr ""
-
-#: ktorrent/statusbar.cpp:40 ktorrent/statusbar.cpp:82
-#, kde-format
-msgid "Transferred down: %1 / up: %2"
-msgstr ""
-
-#: ktorrent/statusbar.cpp:42 ktorrent/statusbar.cpp:97
-msgid "DHT: off"
-msgstr ""
-
-#: ktorrent/statusbar.cpp:95
-#, kde-format
-msgid "DHT: %1 nodes, %2 tasks"
-msgstr ""
-
 #: ktorrent/tools/magnetmodel.cpp:128
 msgid "Magnet Link"
 msgstr ""
@@ -1274,8 +1255,9 @@ msgid ""
 "order."
 msgstr ""
 
-#: ktorrent/tools/queuemanagerwidget.cpp:56 plugins/search/homepage.cpp:121
-#: plugins/search/searchplugin.cpp:147 plugins/search/searchtoolbar.cpp:72
+#: ktorrent/tools/queuemanagerwidget.cpp:56
+#: plugins/search/searchactivity.cpp:81 plugins/search/searchtoolbar.cpp:70
+#: plugins/search/webview.cpp:155
 msgid "Search"
 msgstr "Recercar"
 
@@ -1862,6 +1844,25 @@ msgstr ""
 #: ktorrent/view/viewmodel.cpp:536
 #, kde-format
 msgid "%1<br>Url: <b>%2</b>"
+msgstr ""
+
+#: ktorrent/statusbar.cpp:39 ktorrent/statusbar.cpp:71
+#, kde-format
+msgid "Speed down: %1 / up: %2"
+msgstr ""
+
+#: ktorrent/statusbar.cpp:40 ktorrent/statusbar.cpp:82
+#, kde-format
+msgid "Transferred down: %1 / up: %2"
+msgstr ""
+
+#: ktorrent/statusbar.cpp:42 ktorrent/statusbar.cpp:97
+msgid "DHT: off"
+msgstr ""
+
+#: ktorrent/statusbar.cpp:95
+#, kde-format
+msgid "DHT: %1 nodes, %2 tasks"
 msgstr ""
 
 #: ktupnptest/main.cpp:40
@@ -3250,28 +3251,76 @@ msgstr ""
 msgid "<b>%1</b><br/><br/>%2"
 msgstr ""
 
-#: plugins/search/homepage.cpp:117
-msgid "Home"
+#: plugins/search/searchenginelist.cpp:216
+#, kde-format
+msgid "Failed to parse %1"
 msgstr ""
 
-#: plugins/search/homepage.cpp:119
-msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
-msgid "Be free."
+#: plugins/search/searchenginelist.cpp:365
+#, kde-format
+msgid "URL: <b>%1</b>"
 msgstr ""
 
-#: plugins/search/homepage.cpp:120
-msgid "Search the web for torrents."
+#: plugins/search/searchprefpage.cpp:58 plugins/search/searchactivity.cpp:47
+#: plugins/search/searchplugin.cpp:65 plugins/search/searchplugin.cpp:83
+#, fuzzy
+#| msgid "Search"
+msgctxt "plugin name"
+msgid "Search"
+msgstr "Recercar"
+
+#: plugins/search/searchprefpage.cpp:104 plugins/search/searchprefpage.cpp:145
+msgid "Add a Search Engine"
 msgstr ""
 
-#: plugins/search/htmlpart.cpp:94
-msgid "Do you want to download this magnet link?"
+#: plugins/search/searchprefpage.cpp:105
+msgid "Enter the hostname of the search engine (for example www.google.com):"
 msgstr ""
 
-#: plugins/search/htmlpart.cpp:201
+#: plugins/search/searchprefpage.cpp:143
+#, kde-format
+msgid ""
+"Opensearch is not supported by %1, you will need to enter the search URL "
+"manually. The URL should contain {searchTerms}, ktorrent will replace this "
+"by the thing you are searching for."
+msgstr ""
+
+#: plugins/search/searchprefpage.cpp:150
+#, kde-format
+msgid "The URL %1 does not contain {searchTerms}."
+msgstr ""
+
+#: plugins/search/searchactivity.cpp:246
+#, fuzzy, kde-format
+#| msgid "Search"
+msgid "Search for %1"
+msgstr "Recercar"
+
+#: plugins/search/searchtoolbar.cpp:66
+msgid "Search Text"
+msgstr ""
+
+#: plugins/search/searchtoolbar.cpp:75
+msgid "Search Engine"
+msgstr ""
+
+#: plugins/search/searchtoolbar.cpp:80
+msgid "Search Engine Label"
+msgstr ""
+
+#: plugins/search/searchtoolbar.cpp:81
+msgid " Engine: "
+msgstr ""
+
+#: plugins/search/searchwidget.cpp:75
+msgid " Engine:"
+msgstr ""
+
+#: plugins/search/searchwidget.cpp:225
 msgid "Do you want to download or save the torrent?"
 msgstr ""
 
-#: plugins/search/htmlpart.cpp:202
+#: plugins/search/searchwidget.cpp:226
 msgid "Download Torrent"
 msgstr ""
 
@@ -3295,94 +3344,27 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, DlSpdGbw)
 #. i18n: file: plugins/syndication/feedwidget.ui:121
 #. i18n: ectx: property (text), widget (KPushButton, m_download)
-#: plugins/search/htmlpart.cpp:203 rc.cpp:2377 rc.cpp:2380 rc.cpp:2497
+#: plugins/search/searchwidget.cpp:227 rc.cpp:2377 rc.cpp:2380 rc.cpp:2497
 #: rc.cpp:2536 rc.cpp:2664
 msgid "Download"
 msgstr "Telecargar"
 
-#: plugins/search/searchactivity.cpp:44 plugins/search/searchplugin.cpp:67
-#: plugins/search/searchplugin.cpp:90 plugins/search/searchprefpage.cpp:58
-#, fuzzy
-#| msgid "Search"
-msgctxt "plugin name"
-msgid "Search"
-msgstr "Recercar"
+#: plugins/search/webview.cpp:151
+msgid "Home"
+msgstr ""
 
-#: plugins/search/searchactivity.cpp:245
-#, fuzzy, kde-format
-#| msgid "Search"
-msgid "Search for %1"
-msgstr "Recercar"
+#: plugins/search/webview.cpp:153
+msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
+msgid "Be free."
+msgstr ""
 
-#: plugins/search/searchenginelist.cpp:216
+#: plugins/search/webview.cpp:154
+msgid "Search the web for torrents."
+msgstr ""
+
+#: plugins/search/webview.cpp:182
 #, kde-format
-msgid "Failed to parse %1"
-msgstr ""
-
-#: plugins/search/searchenginelist.cpp:365
-#, kde-format
-msgid "URL: <b>%1</b>"
-msgstr ""
-
-#: plugins/search/searchprefpage.cpp:104 plugins/search/searchprefpage.cpp:145
-msgid "Add a Search Engine"
-msgstr ""
-
-#: plugins/search/searchprefpage.cpp:105
-msgid "Enter the hostname of the search engine (for example www.google.com):"
-msgstr ""
-
-#: plugins/search/searchprefpage.cpp:143
-#, kde-format
-msgid ""
-"Opensearch is not supported by %1, you will need to enter the search URL "
-"manually. The URL should contain {searchTerms}, ktorrent will replace this "
-"by the thing you are searching for."
-msgstr ""
-
-#: plugins/search/searchprefpage.cpp:150
-#, kde-format
-msgid "The URL %1 does not contain {searchTerms}."
-msgstr ""
-
-#: plugins/search/searchtoolbar.cpp:68
-msgid "Search Text"
-msgstr ""
-
-#: plugins/search/searchtoolbar.cpp:77
-msgid "Search Engine"
-msgstr ""
-
-#: plugins/search/searchtoolbar.cpp:82
-msgid "Search Engine Label"
-msgstr ""
-
-#: plugins/search/searchtoolbar.cpp:83
-msgid " Engine: "
-msgstr ""
-
-#: plugins/search/searchwidget.cpp:80
-msgid " Engine:"
-msgstr ""
-
-#: plugins/search/searchwidget.cpp:93
-msgid "Open in New Tab"
-msgstr "Dobrir dins un onglet novèl"
-
-#: plugins/search/searchwidget.cpp:100
-#, fuzzy
-#| msgctxt "Open file"
-#| msgid "Open"
-msgid "Copy URL"
-msgstr "Dobrir"
-
-#: plugins/search/searchwidget.cpp:207
-#, kde-format
-msgid "Searching for %1..."
-msgstr ""
-
-#: plugins/search/searchwidget.cpp:312
-msgid "Search finished"
+msgid "Save %1 to"
 msgstr ""
 
 #: plugins/shutdown/shutdowndlg.cpp:29
@@ -9293,6 +9275,15 @@ msgstr ""
 #: rc.cpp:2953
 msgid " secs"
 msgstr ""
+
+#~ msgid "Open in New Tab"
+#~ msgstr "Dobrir dins un onglet novèl"
+
+#, fuzzy
+#~| msgctxt "Open file"
+#~| msgid "Open"
+#~ msgid "Copy URL"
+#~ msgstr "Dobrir"
 
 #, fuzzy
 #~| msgid "From:"
