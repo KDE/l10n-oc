@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-14 03:07+0100\n"
+"POT-Creation-Date: 2010-12-15 02:52+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1856,7 +1856,7 @@ msgstr "Saturacion :"
 #. i18n: ectx: property (text), widget (QRadioButton, lastUsedColorsAlignVertical)
 #. i18n: file: plugins/extensions/dockers/colorselectorng/wdg_color_selector_settings.ui:741
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignVertical)
-#: rc.cpp:389 rc.cpp:425
+#: rc.cpp:389 rc.cpp:425 ui/tool/kis_tool_paint.cc:259
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Vertical"
@@ -10764,14 +10764,6 @@ msgstr "Canal"
 msgid "Minimize Channel"
 msgstr "Canal"
 
-#: plugins/filters/colorsfilters/colorsfilters.cpp:90
-msgid "&Auto Contrast"
-msgstr ""
-
-#: plugins/filters/colorsfilters/colorsfilters.cpp:243
-msgid "&Desaturate"
-msgstr ""
-
 #: plugins/filters/colorsfilters/colorsfilters.h:52
 #, fuzzy
 #| msgid "Contrast"
@@ -10798,7 +10790,15 @@ msgstr "Luminositat"
 msgid "&HSV Adjustment..."
 msgstr ""
 
-#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:381
+#: plugins/filters/colorsfilters/colorsfilters.cpp:90
+msgid "&Auto Contrast"
+msgstr ""
+
+#: plugins/filters/colorsfilters/colorsfilters.cpp:244
+msgid "&Desaturate"
+msgstr ""
+
+#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:380
 msgid "&Color Adjustment curves..."
 msgstr ""
 
@@ -13439,16 +13439,6 @@ msgstr "Paramètres"
 msgid "Decrease Brush Size"
 msgstr "Paramètres"
 
-#: ui/tool/kis_tool_paint.cc:257
-msgid "Mirror: "
-msgstr ""
-
-#: ui/tool/kis_tool_paint.cc:259
-#, fuzzy
-#| msgid "Vertical:"
-msgid "Verical"
-msgstr "Vertical :"
-
 #: ui/tool/kis_tool_polyline_base.cpp:37
 msgid "&Finish"
 msgstr ""
@@ -13456,6 +13446,10 @@ msgstr ""
 #: ui/tool/kis_tool_select_base.cpp:45
 msgid "Selection"
 msgstr "Seleccion"
+
+#: ui/tool/kis_tool_paint.cc:257
+msgid "Mirror: "
+msgstr ""
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -13498,6 +13492,11 @@ msgstr ""
 #: ui/widgets/kis_wdg_generator.cpp:150 ui/widgets/kis_wdg_generator.cpp:164
 msgid "No configuration options."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Vertical:"
+#~ msgid "Verical"
+#~ msgstr "Vertical :"
 
 #, fuzzy
 #~| msgid "Scales"
