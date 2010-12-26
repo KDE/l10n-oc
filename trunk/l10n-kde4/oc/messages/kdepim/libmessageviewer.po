@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-22 02:24+0100\n"
+"POT-Creation-Date: 2010-12-26 03:01+0100\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -16,6 +16,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: attachmentdialog.cpp:36
+#, kde-format
+msgid ""
+"Open attachment '%1'?\n"
+"Note that opening an attachment may compromise your system's security."
+msgstr ""
+
+#: attachmentdialog.cpp:42
+msgid "Open Attachment?"
+msgstr ""
+
+#: attachmentdialog.cpp:49
+#, kde-format
+msgid "&Open with '%1'"
+msgstr "&Dobrir amb '%1'"
+
+#: attachmentdialog.cpp:53
+msgid "&Open With..."
+msgstr "&Dobrir amb..."
+
+#: attachmentdialog.cpp:72
+msgid "Do not ask again"
+msgstr ""
+
+#: chiasmuskeyselector.cpp:31
+msgid "Please select the Chiasmus key file to use:"
+msgstr ""
+
+#: chiasmuskeyselector.cpp:41
+msgid "Additional arguments for chiasmus:"
+msgstr ""
+
+#: configurewidget.cpp:43 configurewidget.cpp:125 viewer_p.cpp:1427
+msgid "Auto"
+msgstr "Auto"
+
+#: editorwatcher.cpp:71
+msgid "Edit with:"
+msgstr "Modificar amb :"
+
+#: editorwatcher.cpp:160
+msgid ""
+"KMail is unable to detect when the chosen editor is closed. To avoid data "
+"loss, editing the attachment will be aborted."
+msgstr ""
+
+#: editorwatcher.cpp:162
+msgid "Unable to edit attachment"
+msgstr ""
 
 #: findbar/findbar.cpp:51
 #, fuzzy
@@ -76,486 +126,198 @@ msgstr ""
 msgid "Highlight all matches"
 msgstr ""
 
-#: pluginloaderbase.cpp:80
+#: headerstyle.cpp:147 headerstyle.cpp:233 headerstyle.cpp:460
+#: headerstyle.cpp:597 headerstyle.cpp:766
+msgid "No Subject"
+msgstr ""
+
+#: headerstyle.cpp:166 headerstyle.cpp:266 headerstyle.cpp:632
+#: headerstyle.cpp:832 headerstyle.cpp:974
+msgid "[vCard]"
+msgstr ""
+
+#: headerstyle.cpp:171 headerstyle.cpp:280 headerstyle.cpp:655
+#: headerstyle.cpp:857
+msgid "CC: "
+msgstr ""
+
+#: headerstyle.cpp:174 headerstyle.cpp:284 headerstyle.cpp:665
+#: headerstyle.cpp:868
+msgid "BCC: "
+msgstr ""
+
+#: headerstyle.cpp:255 headerstyle.cpp:671
+msgid "Date: "
+msgstr "Data : "
+
+#: headerstyle.cpp:262 headerstyle.cpp:624 headerstyle.cpp:837
+msgid "From: "
+msgstr ""
+
+#: headerstyle.cpp:276
 #, fuzzy
-#| msgctxt "Missing profile name placeholder"
-#| msgid "Unnamed"
-msgid "Unnamed plugin"
-msgstr "Sens nom"
+#| msgid "To"
+msgctxt "To-field of the mailheader."
+msgid "To: "
+msgstr "A"
 
-#: pluginloaderbase.cpp:86
+#: headerstyle.cpp:288
+msgid "Reply to: "
+msgstr ""
+
+#: headerstyle.cpp:390
+#, kde-format
+msgid ""
+"%1% probability of being spam with confidence %3%.\n"
+"\n"
+"Full report:\n"
+"Probability=%2\n"
+"Confidence=%4"
+msgstr ""
+
+#: headerstyle.cpp:397
+#, kde-format
+msgid ""
+"%1% probability of being spam.\n"
+"\n"
+"Full report:\n"
+"Probability=%2"
+msgstr ""
+
+#: headerstyle.cpp:408
+msgid "No Spam agent"
+msgstr ""
+
+#: headerstyle.cpp:411
+msgid "Spam filter score not a number"
+msgstr ""
+
+#: headerstyle.cpp:414
+msgid "Threshold not a valid number"
+msgstr ""
+
+#: headerstyle.cpp:417
+msgid "Spam filter score could not be extracted from header"
+msgstr ""
+
+#: headerstyle.cpp:420
+msgid "Threshold could not be extracted from header"
+msgstr ""
+
+#: headerstyle.cpp:423
+msgid "Error evaluating spam score"
+msgstr ""
+
+#: headerstyle.cpp:427
+#, kde-format
+msgid ""
+"%1.\n"
+"\n"
+"Full report:\n"
+"%2"
+msgstr ""
+
+#: headerstyle.cpp:627
+#, kde-format
+msgid "(resent from %1)"
+msgstr ""
+
+#: headerstyle.cpp:645
 #, fuzzy
-#| msgid "Not available"
-msgid "No description available"
-msgstr "Pas disponible"
+#| msgid "To"
+msgctxt "To-field of the mail header."
+msgid "To: "
+msgstr "A"
 
-#: viewer.cpp:96
+#: headerstyle.cpp:679
+msgid "User-Agent: "
+msgstr ""
+
+#: headerstyle.cpp:688
+msgid "X-Mailer: "
+msgstr ""
+
+#: headerstyle.cpp:699
+msgid "Spam Status:"
+msgstr ""
+
+#: headerstyle.cpp:846
 #, fuzzy
-#| msgid "Moving messages"
-msgid "Loading message..."
-msgstr "Desplaçament de messatges"
+#| msgid "To"
+msgid "To: "
+msgstr "A"
 
-#: editorwatcher.cpp:71
-msgid "Edit with:"
-msgstr "Modificar amb :"
-
-#: editorwatcher.cpp:160
+#: htmlstatusbar.cpp:113
+msgctxt ""
+"'HTML Message' with html linebreaks between each letter and in bold text."
 msgid ""
-"KMail is unable to detect when the chosen editor is closed. To avoid data "
-"loss, editing the attachment will be aborted."
+"<b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
+">a<br />g<br />e</b></qt>"
 msgstr ""
 
-#: editorwatcher.cpp:162
-msgid "Unable to edit attachment"
-msgstr ""
-
-#. i18n: file: invitationsettings.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:3
-msgid "Groupware Compatibility && Legacy Options"
-msgstr ""
-
-#. i18n: file: invitationsettings.ui:23
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mLegacyMangleFromTo)
-#: rc.cpp:6
+#: htmlstatusbar.cpp:117
+msgctxt "'No HTML Message' with html linebreaks between each letter."
 msgid ""
-"Turn this option on in order to make Outlook(tm) understand your answers to "
-"invitation replies"
+"<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
+">e<br />s<br />s<br />a<br />g<br />e</qt>"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:26
-#. i18n: ectx: property (text), widget (QCheckBox, mLegacyMangleFromTo)
-#: rc.cpp:9
-msgid "&Mangle From:/To: headers in replies to invitations"
-msgstr ""
-
-#. i18n: file: invitationsettings.ui:33
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mLegacyBodyInvites)
-#: rc.cpp:12
+#: htmlstatusbar.cpp:122
+msgctxt "'Plain Message' with html linebreaks between each letter."
 msgid ""
-"Turn this option on in order to make Outlook(tm) understand your answers to "
-"invitations"
+"<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
+">s<br />a<br />g<br />e<br /></qt>"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:36
-#. i18n: ectx: property (text), widget (QCheckBox, mLegacyBodyInvites)
-#: rc.cpp:15
-msgid "Send &invitations in the mail body"
+#: htmlstatusbar.cpp:136
+msgid "Click to toggle between HTML and plain text."
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:45
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mExchangeCompatibleInvitations)
-#: rc.cpp:18
+#: invitationsettings.cpp:98
 msgid ""
-"Microsoft Outlook, when used in combination with a Microsoft Exchange "
-"server,\n"
-"has a problem understanding standards-compliant groupware email.\n"
-"Turn this option on to send groupware invitations in a way that Microsoft "
-"Exchange understands."
+"<qt>Invitations are normally sent as attachments to a mail. This switch "
+"changes the invitation mails to be sent in the text of the mail instead; "
+"this is necessary to send invitations and replies to Microsoft Outlook.<br /"
+">But, when you do this, you no longer get descriptive text that mail "
+"programs can read; so, to people who have email programs that do not "
+"understand the invitations, the resulting messages look very odd.<br /"
+">People that have email programs that do understand invitations will still "
+"be able to work with this.</qt>"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:48
-#. i18n: ectx: property (text), widget (QCheckBox, mExchangeCompatibleInvitations)
-#: rc.cpp:23
-msgid "Exchange-compatible invitation &naming"
+#: mailsourceviewer.cpp:162
+msgctxt "Unchanged mail message"
+msgid "Raw Source"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:55
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mOutlookCompatibleInvitationComments)
-#: rc.cpp:26
-msgid ""
-"Send invitation reply comments in a way that Microsoft Outlook(tm) "
-"understands."
+#: mailsourceviewer.cpp:163
+msgid "Raw, unmodified mail as it is stored on the filesystem or on the server"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:58
-#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComments)
-#. i18n: file: messageviewer.kcfg.cmake:179
-#. i18n: ectx: label, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: rc.cpp:29 rc.cpp:185
-msgid "Outlook compatible invitation reply comments"
+#: mailsourceviewer.cpp:169
+msgctxt "Mail message as shown, in HTML format"
+msgid "HTML Source"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:65
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
-#: rc.cpp:32
-msgid ""
-"Display invitation update differences in the Microsoft Outlook(tm) style."
+#: mailsourceviewer.cpp:170
+msgid "HTML code for displaying the message to the user"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:68
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
-#. i18n: file: messageviewer.kcfg.cmake:186
-#. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: rc.cpp:35 rc.cpp:194
-msgid ""
-"When viewing invitation updates, show the differences in the Microsoft "
-"Outlook style."
+#: mimetreemodel.cpp:69
+msgid "body part"
 msgstr ""
 
-#. i18n: file: invitationsettings.ui:71
-#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
-#. i18n: file: messageviewer.kcfg.cmake:185
-#. i18n: ectx: label, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: rc.cpp:38 rc.cpp:191
-msgid "Show invitation update differences in the Outlook style"
-msgstr ""
+#: mimetreemodel.cpp:229
+msgid "Description"
+msgstr "Descripcion"
 
-#. i18n: file: invitationsettings.ui:81
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mAutomaticSending)
-#: rc.cpp:41
-msgid ""
-"When this is on, the user will not see the mail composer window. Invitation "
-"mails are sent automatically."
-msgstr ""
+#: mimetreemodel.cpp:231
+msgid "Type"
+msgstr "Tipe"
 
-#. i18n: file: invitationsettings.ui:84
-#. i18n: ectx: property (text), widget (QCheckBox, mAutomaticSending)
-#: rc.cpp:44
-msgid "&Automatic invitation sending"
-msgstr ""
-
-#. i18n: file: invitationsettings.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, mDeleteInvitations)
-#. i18n: file: messageviewer.kcfg.cmake:197
-#. i18n: ectx: label, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: rc.cpp:50 rc.cpp:203
-msgid "Delete invitation emails after the reply to them has been sent"
-msgstr ""
-
-#. i18n: file: settings.ui:31
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: rc.cpp:53
-msgid "Viewer settings"
-msgstr ""
-
-#. i18n: file: settings.ui:40
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showColorBar)
-#: rc.cpp:56
-msgid "Show &HTML status bar"
-msgstr ""
-
-#. i18n: file: settings.ui:47
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSpamStatus)
-#: rc.cpp:59
-msgid "Show spam status &in fancy headers"
-msgstr ""
-
-#. i18n: file: settings.ui:54
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowEmoticons)
-#: rc.cpp:62
-msgid "Replace smileys &by emoticons"
-msgstr ""
-
-#. i18n: file: settings.ui:61
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShrinkQuotes)
-#: rc.cpp:65
-msgid "Reduce font size for &quoted text"
-msgstr ""
-
-#. i18n: file: settings.ui:68
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowExpandQuotesMark)
-#: rc.cpp:68
-msgid "Show &expand/collapse quote marks"
-msgstr ""
-
-#. i18n: file: settings.ui:91
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:71
-msgid "Au&tomatic collapse level:"
-msgstr ""
-
-#. i18n: file: settings.ui:135
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:74
-msgid "Fallback character e&ncoding:"
-msgstr ""
-
-#. i18n: file: settings.ui:161
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:77
-msgid "&Override character encoding:"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:18
-#. i18n: ectx: label, entry (ShowToltecReplacementText), group (Reader)
-#: rc.cpp:80
-msgid ""
-"When encountering a Toltec scheduling message, display a custom replacement "
-"text for it."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:22
-#. i18n: ectx: label, entry (ToltecReplacementText), group (Reader)
-#: rc.cpp:83
-msgid ""
-"The text that will be displayed as a replacement when encountering Toltec "
-"scheduling messages."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:33
-#. i18n: ectx: label, entry (showColorBar), group (Reader)
-#: rc.cpp:86
-msgid "Show HTML status bar"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:37
-#. i18n: ectx: label, entry (showSpamStatus), group (Reader)
-#: rc.cpp:89
-msgid "Show spam status in fancy headers"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:41
-#. i18n: ectx: label, entry (ShowEmoticons), group (Reader)
-#: rc.cpp:92
-msgid "Replace smileys by emoticons"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:42
-#. i18n: ectx: whatsthis, entry (ShowEmoticons), group (Reader)
-#: rc.cpp:95
-msgid ""
-"Enable this if you want smileys like :-) appearing in the message text to be "
-"replaced by emoticons (small pictures)."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:46
-#. i18n: ectx: label, entry (ShowExpandQuotesMark), group (Reader)
-#: rc.cpp:98
-msgid "Show expand/collapse quote marks"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:47
-#. i18n: ectx: whatsthis, entry (ShowExpandQuotesMark), group (Reader)
-#: rc.cpp:101
-msgid ""
-"Enable this option to show different levels of quoted text. Disable to hide "
-"the levels of quoted text."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:50
-#. i18n: ectx: label, entry (CollapseQuoteLevelSpin), group (Reader)
-#: rc.cpp:104
-msgid "Automatic collapse level:"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:57
-#. i18n: ectx: label, entry (ShrinkQuotes), group (Reader)
-#: rc.cpp:107
-msgid "Reduce font size for quoted text"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:58
-#. i18n: ectx: whatsthis, entry (ShrinkQuotes), group (Reader)
-#: rc.cpp:110
-msgid "Enable this option to show quoted text with a smaller font."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:64
-#. i18n: ectx: label, entry (ShowUserAgent), group (Reader)
-#: rc.cpp:113
-msgid "Show user agent in fancy headers"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:65
-#. i18n: ectx: whatsthis, entry (ShowUserAgent), group (Reader)
-#: rc.cpp:116
-msgid ""
-"Enable this option to get the User-Agent and X-Mailer header lines displayed "
-"when using fancy headers."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:69
-#. i18n: ectx: label, entry (AllowAttachmentDeletion), group (Reader)
-#: rc.cpp:119
-msgid "Allow to delete attachments of existing mails."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:73
-#. i18n: ectx: label, entry (AllowAttachmentEditing), group (Reader)
-#: rc.cpp:122
-msgid "Allow to edit attachments of existing mails."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:77
-#. i18n: ectx: label, entry (AlwaysDecrypt), group (Reader)
-#: rc.cpp:125
-msgid "Always decrypt messages when viewing or ask before decrypting"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:80
-#. i18n: ectx: label, entry (MimeTreeLocation), group (Reader)
-#: rc.cpp:128
-#, fuzzy
-#| msgid "Message Status"
-msgid "Message Structure Viewer Placement"
-msgstr "Estat del messatge"
-
-#. i18n: file: messageviewer.kcfg.cmake:83
-#. i18n: ectx: label, entry (MimeTreeLocation), group (Reader)
-#: rc.cpp:131
-msgid "Above the message pane"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:86
-#. i18n: ectx: label, entry (MimeTreeLocation), group (Reader)
-#: rc.cpp:134
-msgid "Below the message pane"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:92
-#. i18n: ectx: label, entry (MimeTreeMode), group (Reader)
-#: rc.cpp:137
-#, fuzzy
-#| msgid "Message Status"
-msgid "Message Structure Viewer"
-msgstr "Estat del messatge"
-
-#. i18n: file: messageviewer.kcfg.cmake:95
-#. i18n: ectx: label, entry (MimeTreeMode), group (Reader)
-#: rc.cpp:140
-msgid "Show never"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:98
-#. i18n: ectx: label, entry (MimeTreeMode), group (Reader)
-#: rc.cpp:143
-#, fuzzy
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
-msgid "Show always"
-msgstr "Visualizar los detalhs"
-
-#. i18n: file: messageviewer.kcfg.cmake:104
-#. i18n: ectx: label, entry (numberOfAddressesToShow), group (Reader)
-#: rc.cpp:146
-msgid "Number of addresses to show before collapsing"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:115
-#. i18n: ectx: label, entry (headerStyle), group (Reader)
-#: rc.cpp:149
-msgid "What style of headers should be displayed"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:119
-#. i18n: ectx: label, entry (headerSetDisplayed), group (Reader)
-#: rc.cpp:152
-msgid "How much of headers should be displayed"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:123
-#. i18n: ectx: label, entry (htmlMail), group (Reader)
-#: rc.cpp:155
-msgid "Prefer HTML to plain text"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:127
-#. i18n: ectx: label, entry (htmlLoadExternal), group (Reader)
-#: rc.cpp:158
-msgid "Allow messages to load external references from the Internet"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:131
-#. i18n: ectx: label, entry (attachmentStrategy), group (Reader)
-#: rc.cpp:161
-#, fuzzy
-#| msgid "Save Attachments..."
-msgid "How attachments are shown"
-msgstr "Enregistrar los fichièrs junts..."
-
-#. i18n: file: messageviewer.kcfg.cmake:145
-#. i18n: ectx: label, entry (notSendWhenEncrypted), group (MDN)
-#: rc.cpp:164
-msgid "Do not send MDNs in response to encrypted messages"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:161
-#. i18n: ectx: label, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: rc.cpp:167
-msgid "Mangle From:/To: headers in replies to replies"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:162
-#. i18n: ectx: whatsthis, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: rc.cpp:170
-msgid ""
-"Microsoft Outlook has a number of shortcomings in its implementation of the "
-"iCalendar standard; this option works around one of them. If you have "
-"problems with Outlook users not being able to get your replies, try setting "
-"this option."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:167
-#. i18n: ectx: label, entry (LegacyBodyInvites), group (Invitations)
-#: rc.cpp:173
-msgid "Send groupware invitations in the mail body"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:168
-#. i18n: ectx: whatsthis, entry (LegacyBodyInvites), group (Invitations)
-#: rc.cpp:176
-msgid ""
-"Microsoft Outlook has a number of shortcomings in its implementation of the "
-"iCalendar standard; this option works around one of them. If you have "
-"problems with Outlook users not being able to get your invitations, try "
-"setting this option."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:173
-#. i18n: ectx: label, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: rc.cpp:179
-msgid "Exchange-compatible invitation naming"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:174
-#. i18n: ectx: whatsthis, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: rc.cpp:182
-msgid ""
-"Microsoft Outlook, when used in combination with a Microsoft Exchange "
-"server, has a problem understanding standards-compliant groupware email. "
-"Turn this option on to send groupware invitations in a way that Microsoft "
-"Exchange understands."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:180
-#. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: rc.cpp:188
-msgid ""
-"When replying to invitations, send the reply comment in way that Microsoft "
-"Outlook understands."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:191
-#. i18n: ectx: label, entry (AutomaticSending), group (Invitations)
-#: rc.cpp:197
-msgid "Automatic invitation sending"
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:192
-#. i18n: ectx: whatsthis, entry (AutomaticSending), group (Invitations)
-#: rc.cpp:200
-msgid ""
-"When this is checked, you will not see the mail composer window. Instead, "
-"all invitation mails are sent automatically. If you want to see the mail "
-"before sending it, you can uncheck this option. However, be aware that the "
-"text in the composer window is in iCalendar syntax, and you should not try "
-"modifying it by hand."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:198
-#. i18n: ectx: whatsthis, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: rc.cpp:206
-msgid ""
-"When this is checked, received invitation emails that have been replied to "
-"will be moved to the Trash folder, once the reply has been successfully sent."
-msgstr ""
-
-#. i18n: file: messageviewer.kcfg.cmake:222
-#. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: rc.cpp:211 viewer_p.cpp:1461
-msgid "Use Fi&xed Font"
-msgstr ""
+#: mimetreemodel.cpp:233
+msgid "Size"
+msgstr "Talha"
 
 #: objecttreeparser.cpp:533
 msgid "Wrong Crypto Plug-In."
@@ -1063,150 +825,170 @@ msgstr ""
 msgid "The message could not be decrypted."
 msgstr ""
 
-#: attachmentdialog.cpp:36
-#, kde-format
-msgid ""
-"Open attachment '%1'?\n"
-"Note that opening an attachment may compromise your system's security."
-msgstr ""
-
-#: attachmentdialog.cpp:42
-msgid "Open Attachment?"
-msgstr ""
-
-#: attachmentdialog.cpp:49
-#, kde-format
-msgid "&Open with '%1'"
-msgstr "&Dobrir amb '%1'"
-
-#: attachmentdialog.cpp:53
-msgid "&Open With..."
-msgstr "&Dobrir amb..."
-
-#: attachmentdialog.cpp:72
-msgid "Do not ask again"
-msgstr ""
-
-#: headerstyle.cpp:147 headerstyle.cpp:233 headerstyle.cpp:460
-#: headerstyle.cpp:597 headerstyle.cpp:766
-msgid "No Subject"
-msgstr ""
-
-#: headerstyle.cpp:166 headerstyle.cpp:266 headerstyle.cpp:632
-#: headerstyle.cpp:832 headerstyle.cpp:974
-msgid "[vCard]"
-msgstr ""
-
-#: headerstyle.cpp:171 headerstyle.cpp:280 headerstyle.cpp:655
-#: headerstyle.cpp:857
-msgid "CC: "
-msgstr ""
-
-#: headerstyle.cpp:174 headerstyle.cpp:284 headerstyle.cpp:665
-#: headerstyle.cpp:868
-msgid "BCC: "
-msgstr ""
-
-#: headerstyle.cpp:255 headerstyle.cpp:671
-msgid "Date: "
-msgstr "Data : "
-
-#: headerstyle.cpp:262 headerstyle.cpp:624 headerstyle.cpp:837
-msgid "From: "
-msgstr ""
-
-#: headerstyle.cpp:276
+#: pluginloaderbase.cpp:80
 #, fuzzy
-#| msgid "To"
-msgctxt "To-field of the mailheader."
-msgid "To: "
-msgstr "A"
+#| msgctxt "Missing profile name placeholder"
+#| msgid "Unnamed"
+msgid "Unnamed plugin"
+msgstr "Sens nom"
 
-#: headerstyle.cpp:288
-msgid "Reply to: "
-msgstr ""
-
-#: headerstyle.cpp:390
-#, kde-format
-msgid ""
-"%1% probability of being spam with confidence %3%.\n"
-"\n"
-"Full report:\n"
-"Probability=%2\n"
-"Confidence=%4"
-msgstr ""
-
-#: headerstyle.cpp:397
-#, kde-format
-msgid ""
-"%1% probability of being spam.\n"
-"\n"
-"Full report:\n"
-"Probability=%2"
-msgstr ""
-
-#: headerstyle.cpp:408
-msgid "No Spam agent"
-msgstr ""
-
-#: headerstyle.cpp:411
-msgid "Spam filter score not a number"
-msgstr ""
-
-#: headerstyle.cpp:414
-msgid "Threshold not a valid number"
-msgstr ""
-
-#: headerstyle.cpp:417
-msgid "Spam filter score could not be extracted from header"
-msgstr ""
-
-#: headerstyle.cpp:420
-msgid "Threshold could not be extracted from header"
-msgstr ""
-
-#: headerstyle.cpp:423
-msgid "Error evaluating spam score"
-msgstr ""
-
-#: headerstyle.cpp:427
-#, kde-format
-msgid ""
-"%1.\n"
-"\n"
-"Full report:\n"
-"%2"
-msgstr ""
-
-#: headerstyle.cpp:627
-#, kde-format
-msgid "(resent from %1)"
-msgstr ""
-
-#: headerstyle.cpp:645
+#: pluginloaderbase.cpp:86
 #, fuzzy
-#| msgid "To"
-msgctxt "To-field of the mail header."
-msgid "To: "
-msgstr "A"
+#| msgid "Not available"
+msgid "No description available"
+msgstr "Pas disponible"
 
-#: headerstyle.cpp:679
-msgid "User-Agent: "
+#: urlhandlermanager.cpp:513
+msgid "Turn on HTML rendering for this message."
 msgstr ""
 
-#: headerstyle.cpp:688
-msgid "X-Mailer: "
+#: urlhandlermanager.cpp:515
+msgid "Load external references from the Internet for this message."
 msgstr ""
 
-#: headerstyle.cpp:699
-msgid "Spam Status:"
-msgstr ""
-
-#: headerstyle.cpp:846
+#: urlhandlermanager.cpp:517
 #, fuzzy
-#| msgid "To"
-msgid "To: "
-msgstr "A"
+#| msgid "Work Offline"
+msgid "Work online."
+msgstr "Trabalhar desconnectat"
+
+#: urlhandlermanager.cpp:519
+msgid "Decrypt message."
+msgstr ""
+
+#: urlhandlermanager.cpp:521
+#, fuzzy
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgid "Show signature details."
+msgstr "yannig@marchegay.org"
+
+#: urlhandlermanager.cpp:523
+msgid "Hide signature details."
+msgstr ""
+
+#: urlhandlermanager.cpp:525
+#, fuzzy
+#| msgid "Save Attachments..."
+msgid "Show attachment list."
+msgstr "Enregistrar los fichièrs junts..."
+
+#: urlhandlermanager.cpp:527
+#, fuzzy
+#| msgid "Save Attachments..."
+msgid "Hide attachment list."
+msgstr "Enregistrar los fichièrs junts..."
+
+#: urlhandlermanager.cpp:529
+#, fuzzy
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgid "Show full \"To\" list"
+msgstr "Visualizar los detalhs"
+
+#: urlhandlermanager.cpp:531
+#, fuzzy
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgid "Hide full \"To\" list"
+msgstr "Visualizar los detalhs"
+
+#: urlhandlermanager.cpp:533
+#, fuzzy
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgid "Show full \"Cc\" list"
+msgstr "Visualizar los detalhs"
+
+#: urlhandlermanager.cpp:535
+#, fuzzy
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgid "Hide full \"Cc\" list"
+msgstr "Visualizar los detalhs"
+
+#: urlhandlermanager.cpp:570
+msgid "Expand all quoted text."
+msgstr ""
+
+#: urlhandlermanager.cpp:573
+msgid "Collapse quoted text."
+msgstr ""
+
+#: urlhandlermanager.cpp:637
+msgid "Could not start certificate manager. Please check your installation."
+msgstr ""
+
+#: urlhandlermanager.cpp:639
+msgid "KMail Error"
+msgstr ""
+
+#: urlhandlermanager.cpp:649
+#, kde-format
+msgid "Show certificate 0x%1"
+msgstr ""
+
+#: urlhandlermanager.cpp:712
+#, fuzzy
+#| msgid "Address book:"
+msgid "&Open in Address Book"
+msgstr "Quasernet d'adreça&nbsp;:"
+
+#: urlhandlermanager.cpp:715
+#, fuzzy
+#| msgid "Email Address"
+msgid "&Copy Email Address"
+msgstr "Adreça electronica"
+
+#: urlhandlermanager.cpp:728 viewer_p.cpp:2418
+msgid "Address copied to clipboard."
+msgstr ""
+
+#: urlhandlermanager.cpp:740
+msgid "Lookup the contact in KAddressbook"
+msgstr ""
+
+#: urlhandlermanager.cpp:844
+#, kde-format
+msgid "Attachment: %1"
+msgstr ""
+
+#: urlhandlermanager.cpp:847
+#, kde-format
+msgid "Encapsulated Message (Subject: %1)"
+msgstr ""
+
+#: urlhandlermanager.cpp:850
+#, fuzzy
+#| msgid "New Message"
+msgid "Encapsulated Message"
+msgstr "Messatge novèl"
+
+#: urlhandlermanager.cpp:853
+#, fuzzy
+#| msgid "Save Attachments..."
+msgid "Unnamed attachment"
+msgstr "Enregistrar los fichièrs junts..."
+
+#: urlhandlermanager.cpp:883
+msgid "Show GnuPG Audit Log for this operation"
+msgstr ""
+
+#: urlhandlermanager.cpp:919
+#, fuzzy
+#| msgid "Open With..."
+msgid "Opening URL..."
+msgstr "Dobrir amb..."
+
+#: urlhandlermanager.cpp:928
+#, kde-format
+msgctxt "@info"
+msgid "Do you really want to execute <filename>%1</filename>?"
+msgstr ""
+
+#: urlhandlermanager.cpp:929
+msgid "Execute"
+msgstr "Executar"
 
 #: util.cpp:71
 #, kde-format
@@ -1301,6 +1083,28 @@ msgstr ""
 #: util.cpp:353 util.cpp:377 util.cpp:395
 msgid "Error saving attachment"
 msgstr ""
+
+#: vcardviewer.cpp:48
+msgid "VCard Viewer"
+msgstr ""
+
+#: vcardviewer.cpp:52
+msgid "&Import"
+msgstr "&Importar"
+
+#: vcardviewer.cpp:53
+msgid "&Next Card"
+msgstr ""
+
+#: vcardviewer.cpp:54
+msgid "&Previous Card"
+msgstr ""
+
+#: viewer.cpp:96
+#, fuzzy
+#| msgid "Moving messages"
+msgid "Loading message..."
+msgstr "Desplaçament de messatges"
 
 #: viewer_p.cpp:362
 msgid ""
@@ -1496,10 +1300,6 @@ msgstr ""
 msgid "&Set Encoding"
 msgstr ""
 
-#: viewer_p.cpp:1427 configurewidget.cpp:43 configurewidget.cpp:125
-msgid "Auto"
-msgstr "Auto"
-
 #: viewer_p.cpp:1444
 msgid "Select All Text"
 msgstr ""
@@ -1510,6 +1310,12 @@ msgstr "Copiar l'adreça del ligam"
 
 #: viewer_p.cpp:1456
 msgid "Open URL"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:222
+#. i18n: ectx: label, entry (UseFixedFont), group (Composer)
+#: viewer_p.cpp:1461 rc.cpp:184
+msgid "Use Fi&xed Font"
 msgstr ""
 
 #: viewer_p.cpp:1467
@@ -1580,10 +1386,6 @@ msgstr "Fichièr junt"
 msgid "Found no attachments to save."
 msgstr ""
 
-#: viewer_p.cpp:2418 urlhandlermanager.cpp:728
-msgid "Address copied to clipboard."
-msgstr ""
-
 #: viewer_p.cpp:2423
 msgid "URL copied to clipboard."
 msgstr ""
@@ -1611,248 +1413,446 @@ msgstr "Desplaçament de messatges"
 msgid "Message not found."
 msgstr "Còs del messatge"
 
-#: vcardviewer.cpp:48
-msgid "VCard Viewer"
+#. i18n: file: invitationsettings.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:3
+msgid "Groupware Compatibility && Legacy Options"
 msgstr ""
 
-#: vcardviewer.cpp:52
-msgid "&Import"
-msgstr "&Importar"
-
-#: vcardviewer.cpp:53
-msgid "&Next Card"
-msgstr ""
-
-#: vcardviewer.cpp:54
-msgid "&Previous Card"
-msgstr ""
-
-#: htmlstatusbar.cpp:113
-msgctxt ""
-"'HTML Message' with html linebreaks between each letter and in bold text."
+#. i18n: file: invitationsettings.ui:23
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mLegacyMangleFromTo)
+#: rc.cpp:6
 msgid ""
-"<b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
-">a<br />g<br />e</b></qt>"
+"Turn this option on in order to make Outlook(tm) understand your answers to "
+"invitation replies"
 msgstr ""
 
-#: htmlstatusbar.cpp:117
-msgctxt "'No HTML Message' with html linebreaks between each letter."
+#. i18n: file: invitationsettings.ui:26
+#. i18n: ectx: property (text), widget (QCheckBox, mLegacyMangleFromTo)
+#: rc.cpp:9
+msgid "&Mangle From:/To: headers in replies to invitations"
+msgstr ""
+
+#. i18n: file: invitationsettings.ui:33
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mLegacyBodyInvites)
+#: rc.cpp:12
 msgid ""
-"<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
-">e<br />s<br />s<br />a<br />g<br />e</qt>"
+"Turn this option on in order to make Outlook(tm) understand your answers to "
+"invitations"
 msgstr ""
 
-#: htmlstatusbar.cpp:122
-msgctxt "'Plain Message' with html linebreaks between each letter."
+#. i18n: file: invitationsettings.ui:36
+#. i18n: ectx: property (text), widget (QCheckBox, mLegacyBodyInvites)
+#: rc.cpp:15
+msgid "Send &invitations in the mail body"
+msgstr ""
+
+#. i18n: file: invitationsettings.ui:45
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mExchangeCompatibleInvitations)
+#: rc.cpp:18
 msgid ""
-"<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
-">s<br />a<br />g<br />e<br /></qt>"
+"Microsoft Outlook, when used in combination with a Microsoft Exchange "
+"server,\n"
+"has a problem understanding standards-compliant groupware email.\n"
+"Turn this option on to send groupware invitations in a way that Microsoft "
+"Exchange understands."
 msgstr ""
 
-#: htmlstatusbar.cpp:136
-msgid "Click to toggle between HTML and plain text."
+#. i18n: file: invitationsettings.ui:48
+#. i18n: ectx: property (text), widget (QCheckBox, mExchangeCompatibleInvitations)
+#: rc.cpp:23
+msgid "Exchange-compatible invitation &naming"
 msgstr ""
 
-#: mimetreemodel.cpp:69
-msgid "body part"
+#. i18n: file: invitationsettings.ui:55
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mOutlookCompatibleInvitationComments)
+#: rc.cpp:26
+msgid ""
+"Send invitation reply comments in a way that Microsoft Outlook(tm) "
+"understands."
 msgstr ""
 
-#: mimetreemodel.cpp:229
-msgid "Description"
-msgstr "Descripcion"
-
-#: mimetreemodel.cpp:231
-msgid "Type"
-msgstr "Tipe"
-
-#: mimetreemodel.cpp:233
-msgid "Size"
-msgstr "Talha"
-
-#: mailsourceviewer.cpp:162
-msgctxt "Unchanged mail message"
-msgid "Raw Source"
+#. i18n: file: invitationsettings.ui:58
+#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComments)
+#. i18n: file: messageviewer.kcfg.cmake:179
+#. i18n: ectx: label, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
+#: rc.cpp:29 rc.cpp:158
+msgid "Outlook compatible invitation reply comments"
 msgstr ""
 
-#: mailsourceviewer.cpp:163
-msgid "Raw, unmodified mail as it is stored on the filesystem or on the server"
+#. i18n: file: invitationsettings.ui:65
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
+#: rc.cpp:32
+msgid ""
+"Display invitation update differences in the Microsoft Outlook(tm) style."
 msgstr ""
 
-#: mailsourceviewer.cpp:169
-msgctxt "Mail message as shown, in HTML format"
-msgid "HTML Source"
+#. i18n: file: invitationsettings.ui:68
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
+#. i18n: file: messageviewer.kcfg.cmake:186
+#. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
+#: rc.cpp:35 rc.cpp:167
+msgid ""
+"When viewing invitation updates, show the differences in the Microsoft "
+"Outlook style."
 msgstr ""
 
-#: mailsourceviewer.cpp:170
-msgid "HTML code for displaying the message to the user"
+#. i18n: file: invitationsettings.ui:71
+#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
+#. i18n: file: messageviewer.kcfg.cmake:185
+#. i18n: ectx: label, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
+#: rc.cpp:38 rc.cpp:164
+msgid "Show invitation update differences in the Outlook style"
 msgstr ""
 
-#: chiasmuskeyselector.cpp:31
-msgid "Please select the Chiasmus key file to use:"
+#. i18n: file: invitationsettings.ui:81
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mAutomaticSending)
+#: rc.cpp:41
+msgid ""
+"When this is on, the user will not see the mail composer window. Invitation "
+"mails are sent automatically."
 msgstr ""
 
-#: chiasmuskeyselector.cpp:41
-msgid "Additional arguments for chiasmus:"
+#. i18n: file: invitationsettings.ui:84
+#. i18n: ectx: property (text), widget (QCheckBox, mAutomaticSending)
+#: rc.cpp:44
+msgid "&Automatic invitation sending"
 msgstr ""
 
-#: urlhandlermanager.cpp:513
-msgid "Turn on HTML rendering for this message."
+#. i18n: file: invitationsettings.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, mDeleteInvitations)
+#. i18n: file: messageviewer.kcfg.cmake:197
+#. i18n: ectx: label, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
+#: rc.cpp:50 rc.cpp:176
+msgid "Delete invitation emails after the reply to them has been sent"
 msgstr ""
 
-#: urlhandlermanager.cpp:515
-msgid "Load external references from the Internet for this message."
+#. i18n: file: messageviewer.kcfg.cmake:18
+#. i18n: ectx: label, entry (ShowToltecReplacementText), group (Reader)
+#: rc.cpp:53
+msgid ""
+"When encountering a Toltec scheduling message, display a custom replacement "
+"text for it."
 msgstr ""
 
-#: urlhandlermanager.cpp:517
+#. i18n: file: messageviewer.kcfg.cmake:22
+#. i18n: ectx: label, entry (ToltecReplacementText), group (Reader)
+#: rc.cpp:56
+msgid ""
+"The text that will be displayed as a replacement when encountering Toltec "
+"scheduling messages."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:33
+#. i18n: ectx: label, entry (showColorBar), group (Reader)
+#: rc.cpp:59
+msgid "Show HTML status bar"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:37
+#. i18n: ectx: label, entry (showSpamStatus), group (Reader)
+#: rc.cpp:62
+msgid "Show spam status in fancy headers"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:41
+#. i18n: ectx: label, entry (ShowEmoticons), group (Reader)
+#: rc.cpp:65
+msgid "Replace smileys by emoticons"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:42
+#. i18n: ectx: whatsthis, entry (ShowEmoticons), group (Reader)
+#: rc.cpp:68
+msgid ""
+"Enable this if you want smileys like :-) appearing in the message text to be "
+"replaced by emoticons (small pictures)."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:46
+#. i18n: ectx: label, entry (ShowExpandQuotesMark), group (Reader)
+#: rc.cpp:71
+msgid "Show expand/collapse quote marks"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:47
+#. i18n: ectx: whatsthis, entry (ShowExpandQuotesMark), group (Reader)
+#: rc.cpp:74
+msgid ""
+"Enable this option to show different levels of quoted text. Disable to hide "
+"the levels of quoted text."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:50
+#. i18n: ectx: label, entry (CollapseQuoteLevelSpin), group (Reader)
+#: rc.cpp:77
+msgid "Automatic collapse level:"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:57
+#. i18n: ectx: label, entry (ShrinkQuotes), group (Reader)
+#: rc.cpp:80
+msgid "Reduce font size for quoted text"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:58
+#. i18n: ectx: whatsthis, entry (ShrinkQuotes), group (Reader)
+#: rc.cpp:83
+msgid "Enable this option to show quoted text with a smaller font."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:64
+#. i18n: ectx: label, entry (ShowUserAgent), group (Reader)
+#: rc.cpp:86
+msgid "Show user agent in fancy headers"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:65
+#. i18n: ectx: whatsthis, entry (ShowUserAgent), group (Reader)
+#: rc.cpp:89
+msgid ""
+"Enable this option to get the User-Agent and X-Mailer header lines displayed "
+"when using fancy headers."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:69
+#. i18n: ectx: label, entry (AllowAttachmentDeletion), group (Reader)
+#: rc.cpp:92
+msgid "Allow to delete attachments of existing mails."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:73
+#. i18n: ectx: label, entry (AllowAttachmentEditing), group (Reader)
+#: rc.cpp:95
+msgid "Allow to edit attachments of existing mails."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:77
+#. i18n: ectx: label, entry (AlwaysDecrypt), group (Reader)
+#: rc.cpp:98
+msgid "Always decrypt messages when viewing or ask before decrypting"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:80
+#. i18n: ectx: label, entry (MimeTreeLocation), group (Reader)
+#: rc.cpp:101
 #, fuzzy
-#| msgid "Work Offline"
-msgid "Work online."
-msgstr "Trabalhar desconnectat"
+#| msgid "Message Status"
+msgid "Message Structure Viewer Placement"
+msgstr "Estat del messatge"
 
-#: urlhandlermanager.cpp:519
-msgid "Decrypt message."
+#. i18n: file: messageviewer.kcfg.cmake:83
+#. i18n: ectx: label, entry (MimeTreeLocation), group (Reader)
+#: rc.cpp:104
+msgid "Above the message pane"
 msgstr ""
 
-#: urlhandlermanager.cpp:521
+#. i18n: file: messageviewer.kcfg.cmake:86
+#. i18n: ectx: label, entry (MimeTreeLocation), group (Reader)
+#: rc.cpp:107
+msgid "Below the message pane"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:92
+#. i18n: ectx: label, entry (MimeTreeMode), group (Reader)
+#: rc.cpp:110
+#, fuzzy
+#| msgid "Message Status"
+msgid "Message Structure Viewer"
+msgstr "Estat del messatge"
+
+#. i18n: file: messageviewer.kcfg.cmake:95
+#. i18n: ectx: label, entry (MimeTreeMode), group (Reader)
+#: rc.cpp:113
+msgid "Show never"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:98
+#. i18n: ectx: label, entry (MimeTreeMode), group (Reader)
+#: rc.cpp:116
 #, fuzzy
 #| msgctxt "EMAIL OF TRANSLATORS"
 #| msgid "Your emails"
-msgid "Show signature details."
-msgstr "yannig@marchegay.org"
+msgid "Show always"
+msgstr "Visualizar los detalhs"
 
-#: urlhandlermanager.cpp:523
-msgid "Hide signature details."
+#. i18n: file: messageviewer.kcfg.cmake:104
+#. i18n: ectx: label, entry (numberOfAddressesToShow), group (Reader)
+#: rc.cpp:119
+msgid "Number of addresses to show before collapsing"
 msgstr ""
 
-#: urlhandlermanager.cpp:525
+#. i18n: file: messageviewer.kcfg.cmake:115
+#. i18n: ectx: label, entry (headerStyle), group (Reader)
+#: rc.cpp:122
+msgid "What style of headers should be displayed"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:119
+#. i18n: ectx: label, entry (headerSetDisplayed), group (Reader)
+#: rc.cpp:125
+msgid "How much of headers should be displayed"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:123
+#. i18n: ectx: label, entry (htmlMail), group (Reader)
+#: rc.cpp:128
+msgid "Prefer HTML to plain text"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:127
+#. i18n: ectx: label, entry (htmlLoadExternal), group (Reader)
+#: rc.cpp:131
+msgid "Allow messages to load external references from the Internet"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:131
+#. i18n: ectx: label, entry (attachmentStrategy), group (Reader)
+#: rc.cpp:134
 #, fuzzy
 #| msgid "Save Attachments..."
-msgid "Show attachment list."
+msgid "How attachments are shown"
 msgstr "Enregistrar los fichièrs junts..."
 
-#: urlhandlermanager.cpp:527
-#, fuzzy
-#| msgid "Save Attachments..."
-msgid "Hide attachment list."
-msgstr "Enregistrar los fichièrs junts..."
-
-#: urlhandlermanager.cpp:529
-#, fuzzy
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
-msgid "Show full \"To\" list"
-msgstr "Visualizar los detalhs"
-
-#: urlhandlermanager.cpp:531
-#, fuzzy
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
-msgid "Hide full \"To\" list"
-msgstr "Visualizar los detalhs"
-
-#: urlhandlermanager.cpp:533
-#, fuzzy
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
-msgid "Show full \"Cc\" list"
-msgstr "Visualizar los detalhs"
-
-#: urlhandlermanager.cpp:535
-#, fuzzy
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
-msgid "Hide full \"Cc\" list"
-msgstr "Visualizar los detalhs"
-
-#: urlhandlermanager.cpp:570
-msgid "Expand all quoted text."
+#. i18n: file: messageviewer.kcfg.cmake:145
+#. i18n: ectx: label, entry (notSendWhenEncrypted), group (MDN)
+#: rc.cpp:137
+msgid "Do not send MDNs in response to encrypted messages"
 msgstr ""
 
-#: urlhandlermanager.cpp:573
-msgid "Collapse quoted text."
+#. i18n: file: messageviewer.kcfg.cmake:161
+#. i18n: ectx: label, entry (LegacyMangleFromToHeaders), group (Invitations)
+#: rc.cpp:140
+msgid "Mangle From:/To: headers in replies to replies"
 msgstr ""
 
-#: urlhandlermanager.cpp:637
-msgid "Could not start certificate manager. Please check your installation."
-msgstr ""
-
-#: urlhandlermanager.cpp:639
-msgid "KMail Error"
-msgstr ""
-
-#: urlhandlermanager.cpp:649
-#, kde-format
-msgid "Show certificate 0x%1"
-msgstr ""
-
-#: urlhandlermanager.cpp:712
-#, fuzzy
-#| msgid "Address book:"
-msgid "&Open in Address Book"
-msgstr "Quasernet d'adreça&nbsp;:"
-
-#: urlhandlermanager.cpp:715
-#, fuzzy
-#| msgid "Email Address"
-msgid "&Copy Email Address"
-msgstr "Adreça electronica"
-
-#: urlhandlermanager.cpp:740
-msgid "Lookup the contact in KAddressbook"
-msgstr ""
-
-#: urlhandlermanager.cpp:844
-#, kde-format
-msgid "Attachment: %1"
-msgstr ""
-
-#: urlhandlermanager.cpp:847
-#, kde-format
-msgid "Encapsulated Message (Subject: %1)"
-msgstr ""
-
-#: urlhandlermanager.cpp:850
-#, fuzzy
-#| msgid "New Message"
-msgid "Encapsulated Message"
-msgstr "Messatge novèl"
-
-#: urlhandlermanager.cpp:853
-#, fuzzy
-#| msgid "Save Attachments..."
-msgid "Unnamed attachment"
-msgstr "Enregistrar los fichièrs junts..."
-
-#: urlhandlermanager.cpp:883
-msgid "Show GnuPG Audit Log for this operation"
-msgstr ""
-
-#: urlhandlermanager.cpp:919
-#, fuzzy
-#| msgid "Open With..."
-msgid "Opening URL..."
-msgstr "Dobrir amb..."
-
-#: urlhandlermanager.cpp:928
-#, kde-format
-msgctxt "@info"
-msgid "Do you really want to execute <filename>%1</filename>?"
-msgstr ""
-
-#: urlhandlermanager.cpp:929
-msgid "Execute"
-msgstr "Executar"
-
-#: invitationsettings.cpp:98
+#. i18n: file: messageviewer.kcfg.cmake:162
+#. i18n: ectx: whatsthis, entry (LegacyMangleFromToHeaders), group (Invitations)
+#: rc.cpp:143
 msgid ""
-"<qt>Invitations are normally sent as attachments to a mail. This switch "
-"changes the invitation mails to be sent in the text of the mail instead; "
-"this is necessary to send invitations and replies to Microsoft Outlook.<br /"
-">But, when you do this, you no longer get descriptive text that mail "
-"programs can read; so, to people who have email programs that do not "
-"understand the invitations, the resulting messages look very odd.<br /"
-">People that have email programs that do understand invitations will still "
-"be able to work with this.</qt>"
+"Microsoft Outlook has a number of shortcomings in its implementation of the "
+"iCalendar standard; this option works around one of them. If you have "
+"problems with Outlook users not being able to get your replies, try setting "
+"this option."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:167
+#. i18n: ectx: label, entry (LegacyBodyInvites), group (Invitations)
+#: rc.cpp:146
+msgid "Send groupware invitations in the mail body"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:168
+#. i18n: ectx: whatsthis, entry (LegacyBodyInvites), group (Invitations)
+#: rc.cpp:149
+msgid ""
+"Microsoft Outlook has a number of shortcomings in its implementation of the "
+"iCalendar standard; this option works around one of them. If you have "
+"problems with Outlook users not being able to get your invitations, try "
+"setting this option."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:173
+#. i18n: ectx: label, entry (ExchangeCompatibleInvitations), group (Invitations)
+#: rc.cpp:152
+msgid "Exchange-compatible invitation naming"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:174
+#. i18n: ectx: whatsthis, entry (ExchangeCompatibleInvitations), group (Invitations)
+#: rc.cpp:155
+msgid ""
+"Microsoft Outlook, when used in combination with a Microsoft Exchange "
+"server, has a problem understanding standards-compliant groupware email. "
+"Turn this option on to send groupware invitations in a way that Microsoft "
+"Exchange understands."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:180
+#. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
+#: rc.cpp:161
+msgid ""
+"When replying to invitations, send the reply comment in way that Microsoft "
+"Outlook understands."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:191
+#. i18n: ectx: label, entry (AutomaticSending), group (Invitations)
+#: rc.cpp:170
+msgid "Automatic invitation sending"
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:192
+#. i18n: ectx: whatsthis, entry (AutomaticSending), group (Invitations)
+#: rc.cpp:173
+msgid ""
+"When this is checked, you will not see the mail composer window. Instead, "
+"all invitation mails are sent automatically. If you want to see the mail "
+"before sending it, you can uncheck this option. However, be aware that the "
+"text in the composer window is in iCalendar syntax, and you should not try "
+"modifying it by hand."
+msgstr ""
+
+#. i18n: file: messageviewer.kcfg.cmake:198
+#. i18n: ectx: whatsthis, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
+#: rc.cpp:179
+msgid ""
+"When this is checked, received invitation emails that have been replied to "
+"will be moved to the Trash folder, once the reply has been successfully sent."
+msgstr ""
+
+#. i18n: file: settings.ui:31
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: rc.cpp:189
+msgid "Viewer settings"
+msgstr ""
+
+#. i18n: file: settings.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showColorBar)
+#: rc.cpp:192
+msgid "Show &HTML status bar"
+msgstr ""
+
+#. i18n: file: settings.ui:47
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSpamStatus)
+#: rc.cpp:195
+msgid "Show spam status &in fancy headers"
+msgstr ""
+
+#. i18n: file: settings.ui:54
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowEmoticons)
+#: rc.cpp:198
+msgid "Replace smileys &by emoticons"
+msgstr ""
+
+#. i18n: file: settings.ui:61
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShrinkQuotes)
+#: rc.cpp:201
+msgid "Reduce font size for &quoted text"
+msgstr ""
+
+#. i18n: file: settings.ui:68
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowExpandQuotesMark)
+#: rc.cpp:204
+msgid "Show &expand/collapse quote marks"
+msgstr ""
+
+#. i18n: file: settings.ui:91
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:207
+msgid "Au&tomatic collapse level:"
+msgstr ""
+
+#. i18n: file: settings.ui:135
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:210
+msgid "Fallback character e&ncoding:"
+msgstr ""
+
+#. i18n: file: settings.ui:161
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:213
+msgid "&Override character encoding:"
 msgstr ""
 
 #, fuzzy

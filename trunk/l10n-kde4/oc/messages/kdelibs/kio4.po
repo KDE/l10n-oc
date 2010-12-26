@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-09 02:17+0100\n"
+"POT-Creation-Date: 2010-12-26 02:59+0100\n"
 "PO-Revision-Date: 2008-08-06 00:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
 msgstr ""
 
 #: kio/kscan.cpp:50
@@ -28,6 +27,24 @@ msgstr ""
 
 #: kio/kscan.cpp:99
 msgid "OCR Image"
+msgstr ""
+
+#: kio/kfileitemdelegate.cpp:236
+#, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "1 element"
+msgstr[1] "%1 elements"
+
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
 msgstr ""
 
 #: kio/global.cpp:89
@@ -864,8 +881,8 @@ msgstr ""
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr ""
 
-#: kio/global.cpp:666 kio/job.cpp:2110 kio/paste.cpp:64 kio/copyjob.cpp:1337
-#: kio/copyjob.cpp:1908
+#: kio/global.cpp:666 kio/job.cpp:2110 kio/copyjob.cpp:1337
+#: kio/copyjob.cpp:1908 kio/paste.cpp:64
 msgid "File Already Exists"
 msgstr ""
 
@@ -1618,125 +1635,86 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr ""
 
-#: kio/renamedialog.cpp:124
-msgid "Appl&y to All"
+#: kio/fileundomanager.cpp:116
+msgid "Creating directory"
 msgstr ""
 
-#: kio/renamedialog.cpp:125
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
+#: kio/fileundomanager.cpp:117 kio/job.cpp:171
+msgid "Directory"
+msgstr "Repertòri"
 
-#: kio/renamedialog.cpp:126
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-
-#: kio/renamedialog.cpp:131
-msgid "&Rename"
-msgstr "&Tornar nomenar"
-
-#: kio/renamedialog.cpp:133
-msgid "Suggest New &Name"
-msgstr ""
-
-#: kio/renamedialog.cpp:139
-msgid "&Skip"
-msgstr "&Ignorar"
-
-#: kio/renamedialog.cpp:140
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:141
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:146
+#: kio/fileundomanager.cpp:119
 #, fuzzy
-#| msgid "Write"
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "Escritura"
+#| msgctxt "@title job"
+#| msgid "Moving"
+msgid "Moving"
+msgstr "Desplaçament"
 
-#: kio/renamedialog.cpp:146
-msgid "&Overwrite"
-msgstr "&Espotir"
-
-#: kio/renamedialog.cpp:148
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:153
-msgid "&Resume"
-msgstr ""
-
-#: kio/renamedialog.cpp:162
-#, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-
-#: kio/renamedialog.cpp:166
-msgid "C&ontinue"
-msgstr "C&ontunhar"
-
-#: kio/renamedialog.cpp:238
-msgid "This action will overwrite the destination."
-msgstr ""
-
-#: kio/renamedialog.cpp:240
+#: kio/fileundomanager.cpp:120 kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189
 #, fuzzy
 #| msgid "Source"
+msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Sorga"
 
-#: kio/renamedialog.cpp:241
+#: kio/fileundomanager.cpp:121 kio/job.cpp:158 kio/job.cpp:165
 #, fuzzy
 #| msgid "Destination"
+msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Destinacion"
 
-#: kio/renamedialog.cpp:247
-msgid "Warning, the destination is newer."
-msgstr ""
-
-#: kio/renamedialog.cpp:278
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr ""
-
-#: kio/renamedialog.cpp:280
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr ""
-
-#: kio/renamedialog.cpp:282
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr ""
-
-#: kio/renamedialog.cpp:293
+#: kio/fileundomanager.cpp:123
 #, fuzzy
-#| msgid "&Rename"
-msgid "Rename:"
-msgstr "&Tornar nomenar"
+#| msgid "Delete"
+msgid "Deleting"
+msgstr "Suprimir"
 
-#: kio/renamedialog.cpp:422 kio/paste.cpp:242 kio/krun.cpp:1125
-#: kio/kdirlister.cpp:331
+#: kio/fileundomanager.cpp:124 kio/job.cpp:177 kio/job.cpp:183
+msgid "File"
+msgstr "Fichièr"
+
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr ""
+
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr ""
+
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr ""
+
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr ""
+
+#: kio/fileundomanager.cpp:294
+msgid "Und&o: Rename"
+msgstr ""
+
+#: kio/fileundomanager.cpp:296
+#, fuzzy
+#| msgid "Trash"
+msgid "Und&o: Trash"
+msgstr "Banasta"
+
+#: kio/fileundomanager.cpp:298
+msgid "Und&o: Create Folder"
+msgstr ""
+
+#: kio/fileundomanager.cpp:764
 #, kde-format
 msgid ""
-"Malformed URL\n"
-"%1"
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
+msgstr ""
+
+#: kio/fileundomanager.cpp:767
+msgid "Undo File Copy Confirmation"
 msgstr ""
 
 #: kio/kdesktopfileactions.cpp:65
@@ -1780,6 +1758,54 @@ msgstr "Ejectar"
 #: kio/kdesktopfileactions.cpp:221
 msgid "Unmount"
 msgstr "Desmontar"
+
+#: kio/job.cpp:156
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Desplaçament"
+
+#: kio/job.cpp:163
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Còpia"
+
+#: kio/job.cpp:170
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr ""
+
+#: kio/job.cpp:176
+msgctxt "@title job"
+msgid "Deleting"
+msgstr ""
+
+#: kio/job.cpp:182
+msgctxt "@title job"
+msgid "Examining"
+msgstr ""
+
+#: kio/job.cpp:188
+msgctxt "@title job"
+msgid "Transferring"
+msgstr ""
+
+#: kio/job.cpp:194
+msgctxt "@title job"
+msgid "Mounting"
+msgstr ""
+
+#: kio/job.cpp:195
+msgid "Device"
+msgstr "Periferic"
+
+#: kio/job.cpp:196 kio/job.cpp:202
+msgid "Mountpoint"
+msgstr "Punt de montatge"
+
+#: kio/job.cpp:201
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr ""
 
 #: kio/slave.cpp:442
 #, kde-format
@@ -1905,155 +1931,37 @@ msgid ""
 "KDE System Settings."
 msgstr ""
 
-#: kio/kfileitemdelegate.cpp:236
-#, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "1 element"
-msgstr[1] "%1 elements"
+#: kio/slavebase.h:266 kio/slavebase.h:286
+msgid "&Yes"
+msgstr "&Òc"
 
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "Desconegut"
+#: kio/slavebase.h:267 kio/slavebase.h:287
+msgid "&No"
+msgstr "&Non"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr ""
 
-#: kio/job.cpp:156
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Desplaçament"
-
-#: kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189 kio/fileundomanager.cpp:120
-#, fuzzy
-#| msgid "Source"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Sorga"
-
-#: kio/job.cpp:158 kio/job.cpp:165 kio/fileundomanager.cpp:121
-#, fuzzy
-#| msgid "Destination"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Destinacion"
-
-#: kio/job.cpp:163
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Còpia"
-
-#: kio/job.cpp:170
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr ""
-
-#: kio/job.cpp:171 kio/fileundomanager.cpp:117
-msgid "Directory"
-msgstr "Repertòri"
-
-#: kio/job.cpp:176
-msgctxt "@title job"
-msgid "Deleting"
-msgstr ""
-
-#: kio/job.cpp:177 kio/job.cpp:183 kio/fileundomanager.cpp:124
-msgid "File"
-msgstr "Fichièr"
-
-#: kio/job.cpp:182
-msgctxt "@title job"
-msgid "Examining"
-msgstr ""
-
-#: kio/job.cpp:188
-msgctxt "@title job"
-msgid "Transferring"
-msgstr ""
-
-#: kio/job.cpp:194
-msgctxt "@title job"
-msgid "Mounting"
-msgstr ""
-
-#: kio/job.cpp:195
-msgid "Device"
-msgstr "Periferic"
-
-#: kio/job.cpp:196 kio/job.cpp:202
-msgid "Mountpoint"
-msgstr "Punt de montatge"
-
-#: kio/job.cpp:201
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr ""
-
-#: kio/fileundomanager.cpp:116
-msgid "Creating directory"
-msgstr ""
-
-#: kio/fileundomanager.cpp:119
-#, fuzzy
-#| msgctxt "@title job"
-#| msgid "Moving"
-msgid "Moving"
-msgstr "Desplaçament"
-
-#: kio/fileundomanager.cpp:123
-#, fuzzy
-#| msgid "Delete"
-msgid "Deleting"
-msgstr "Suprimir"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
-msgstr ""
-
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr ""
-
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr ""
-
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr ""
-
-#: kio/fileundomanager.cpp:294
-msgid "Und&o: Rename"
-msgstr ""
-
-#: kio/fileundomanager.cpp:296
-#, fuzzy
-#| msgid "Trash"
-msgid "Und&o: Trash"
-msgstr "Banasta"
-
-#: kio/fileundomanager.cpp:298
-msgid "Und&o: Create Folder"
-msgstr ""
-
-#: kio/fileundomanager.cpp:764
-#, kde-format
-msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
-msgstr ""
-
-#: kio/fileundomanager.cpp:767
-msgid "Undo File Copy Confirmation"
-msgstr ""
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+msgid "Default"
+msgstr "Defaut"
 
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
+msgstr ""
+
+#: kio/skipdialog.cpp:40
+msgid "Information"
+msgstr "Entresenhas"
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "Sautar"
+
+#: kio/skipdialog.cpp:50
+msgid "AutoSkip"
 msgstr ""
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:812
@@ -2143,80 +2051,6 @@ msgstr "Propietari :"
 msgid "Permissions:"
 msgstr ""
 
-#: kio/paste.cpp:48 kio/paste.cpp:131
-msgid "Filename for clipboard content:"
-msgstr ""
-
-#: kio/paste.cpp:124
-#, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/paste.cpp:140
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-
-#: kio/paste.cpp:218 kio/paste.cpp:291
-msgid "The clipboard is empty"
-msgstr ""
-
-#: kio/paste.cpp:339
-#, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kio/paste.cpp:341
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kio/paste.cpp:343
-msgid "&Paste Clipboard Contents"
-msgstr ""
-
-#: kio/slavebase.h:266 kio/slavebase.h:286
-msgid "&Yes"
-msgstr "&Òc"
-
-#: kio/slavebase.h:267 kio/slavebase.h:287
-msgid "&No"
-msgstr "&Non"
-
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr ""
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr ""
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr ""
-
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-msgid "Default"
-msgstr "Defaut"
-
-#: kio/skipdialog.cpp:40
-msgid "Information"
-msgstr "Entresenhas"
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "Sautar"
-
-#: kio/skipdialog.cpp:50
-msgid "AutoSkip"
-msgstr ""
-
 #: kio/krun.cpp:126
 #, kde-format
 msgid ""
@@ -2281,6 +2115,14 @@ msgstr ""
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
+#: kio/krun.cpp:1125 kio/renamedialog.cpp:422 kio/paste.cpp:242
+#: kio/kdirlister.cpp:331
+#, kde-format
+msgid ""
+"Malformed URL\n"
+"%1"
+msgstr ""
+
 #: kio/krun.cpp:1158
 #, kde-format
 msgid ""
@@ -2293,13 +2135,170 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr ""
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
+#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
+msgid "Already Exists as Folder"
 msgstr ""
 
-#: kio/kdbusservicestarter.cpp:76
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr ""
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr ""
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr ""
+
+#: kio/renamedialog.cpp:124
+msgid "Appl&y to All"
+msgstr ""
+
+#: kio/renamedialog.cpp:125
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:126
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:131
+msgid "&Rename"
+msgstr "&Tornar nomenar"
+
+#: kio/renamedialog.cpp:133
+msgid "Suggest New &Name"
+msgstr ""
+
+#: kio/renamedialog.cpp:139
+msgid "&Skip"
+msgstr "&Ignorar"
+
+#: kio/renamedialog.cpp:140
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:141
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:146
+#, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Escritura"
+
+#: kio/renamedialog.cpp:146
+msgid "&Overwrite"
+msgstr "&Espotir"
+
+#: kio/renamedialog.cpp:148
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:153
+msgid "&Resume"
+msgstr ""
+
+#: kio/renamedialog.cpp:162
 #, kde-format
-msgid "No service implementing %1"
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+
+#: kio/renamedialog.cpp:166
+msgid "C&ontinue"
+msgstr "C&ontunhar"
+
+#: kio/renamedialog.cpp:238
+msgid "This action will overwrite the destination."
+msgstr ""
+
+#: kio/renamedialog.cpp:240
+#, fuzzy
+#| msgid "Source"
+msgid "Source"
+msgstr "Sorga"
+
+#: kio/renamedialog.cpp:241
+#, fuzzy
+#| msgid "Destination"
+msgid "Destination"
+msgstr "Destinacion"
+
+#: kio/renamedialog.cpp:247
+msgid "Warning, the destination is newer."
+msgstr ""
+
+#: kio/renamedialog.cpp:278
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr ""
+
+#: kio/renamedialog.cpp:280
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr ""
+
+#: kio/renamedialog.cpp:282
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr ""
+
+#: kio/renamedialog.cpp:293
+#, fuzzy
+#| msgid "&Rename"
+msgid "Rename:"
+msgstr "&Tornar nomenar"
+
+#: kio/paste.cpp:48 kio/paste.cpp:131
+msgid "Filename for clipboard content:"
+msgstr ""
+
+#: kio/paste.cpp:124
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/paste.cpp:140
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+
+#: kio/paste.cpp:218 kio/paste.cpp:291
+msgid "The clipboard is empty"
+msgstr ""
+
+#: kio/paste.cpp:339
+#, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kio/paste.cpp:341
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kio/paste.cpp:343
+msgid "&Paste Clipboard Contents"
 msgstr ""
 
 #: kio/kdirlister.cpp:341
@@ -2309,8 +2308,9 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
-msgid "Already Exists as Folder"
+#: kio/kdbusservicestarter.cpp:76
+#, kde-format
+msgid "No service implementing %1"
 msgstr ""
 
 #: kio/chmodjob.cpp:214
@@ -2685,6 +2685,87 @@ msgstr "Dobrir dins un onglet novèl"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr ""
 
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:482
+msgid "Open With"
+msgstr "Dobrir amb"
+
+#: kfile/kopenwithdialog.cpp:487
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:493
+msgid "Choose the name of the program with which to open the selected files."
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:520
+#, kde-format
+msgid "Choose Application for %1"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:536
+msgid "Choose Application"
+msgstr "Causissètz una aplicacion"
+
+#: kfile/kopenwithdialog.cpp:537
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:600
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:634
+msgid "Run in &terminal"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:651
+msgid "&Do not close when command exits"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:668
+msgid "&Remember application association for this type of file"
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:806
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:852
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr ""
+
 #: kfile/kfiledialog.cpp:129
 msgid "*|All files"
 msgstr ""
@@ -2709,9 +2790,37 @@ msgstr "Dobrir"
 msgid "Save As"
 msgstr "Enregistrar coma"
 
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr ""
+
 #: kfile/kurlrequester.cpp:246
 msgid "Open file dialog"
 msgstr ""
+
+#: kfile/kmetaprops.cpp:57
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Select which data should be shown:"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:120
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "A calcular..."
+
+#: kfile/kmetaprops.cpp:130
+#, fuzzy
+#| msgid "Information"
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Entresenhas"
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -2810,37 +2919,9 @@ msgstr "x"
 msgid "Effective"
 msgstr ""
 
-#: kfile/kmetaprops.cpp:57
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Select which data should be shown:"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:120
-#, fuzzy
-#| msgid "Calculating..."
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "A calcular..."
-
-#: kfile/kmetaprops.cpp:130
-#, fuzzy
-#| msgid "Information"
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Entresenhas"
-
 #: kfile/kdevicelistmodel.cpp:116
 msgid "Device name"
 msgstr ""
-
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
-msgid "Location:"
-msgstr "Emplaçament :"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -2909,322 +2990,41 @@ msgid ""
 "Perl script 'fileshareset' is set suid root."
 msgstr ""
 
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
+msgid "Location:"
+msgstr "Emplaçament :"
+
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
 msgstr ""
 
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
+#: kfile/kcommentwidget.cpp:65
 #, fuzzy
 #| msgid "Comment"
 msgctxt "@label"
-msgid "Comment"
+msgid "Add Comment..."
 msgstr "Comentari"
 
-#: kfile/knfotranslator.cpp:41
+#: kfile/kcommentwidget.cpp:71
 #, fuzzy
-#| msgid "Created:"
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "Creat :"
+#| msgid "Calculating..."
+msgctxt "@label"
+msgid "Change..."
+msgstr "A calcular..."
 
-#: kfile/knfotranslator.cpp:42
+#: kfile/kcommentwidget.cpp:124
 #, fuzzy
-#| msgctxt "@title:column"
-#| msgid "Size"
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "Talha"
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Change Comment"
+msgstr "Comentari"
 
-#: kfile/knfotranslator.cpp:43
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:44
+#: kfile/kcommentwidget.cpp:125
 #, fuzzy
-#| msgid "&General"
-msgctxt "@label Software used to generate content"
-msgid "Generator"
-msgstr "&General"
-
-#: kfile/knfotranslator.cpp:45
-msgctxt ""
-"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
-"nie#hasLogicalPart"
-msgid "Has Logical Part"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:46
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:47
-msgctxt "@label"
-msgid "Keyword"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:48
-#, fuzzy
-#| msgid "Modified:"
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "Modificat :"
-
-#: kfile/knfotranslator.cpp:49
-#, fuzzy
-#| msgid "Mime Type"
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "Tipe MIME"
-
-#: kfile/knfotranslator.cpp:50
-#, fuzzy
-#| msgid "Contents:"
-msgctxt "@label"
-msgid "Content"
-msgstr "Ensenhador :"
-
-#: kfile/knfotranslator.cpp:51
-#, fuzzy
-#| msgid "Subject"
-msgctxt "@label"
-msgid "Subject"
-msgstr "Subjècte"
-
-#: kfile/knfotranslator.cpp:52
-#, fuzzy
-#| msgid "File"
-msgctxt "@label music title"
-msgid "Title"
-msgstr "Fichièr"
-
-#: kfile/knfotranslator.cpp:53
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "Emplaçament :"
-
-#: kfile/knfotranslator.cpp:54
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label"
-msgid "Creator"
-msgstr "Creat :"
-
-#: kfile/knfotranslator.cpp:55
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Channels"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:57
-#, fuzzy
-#| msgid "Categories"
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr "Categorias"
-
-#: kfile/knfotranslator.cpp:58
-msgctxt "@label"
-msgid "Codec"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Color Depth"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:60
-#, fuzzy
-#| msgid "Destination"
-msgctxt "@label"
-msgid "Duration"
-msgstr "Destinacion"
-
-#: kfile/knfotranslator.cpp:61
-#, fuzzy
-#| msgid "File system:"
-msgctxt "@label"
-msgid "Filename"
-msgstr "Sistèma de fichièrs :"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label"
-msgid "Height"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:64
-#, fuzzy
-#| msgid "Link"
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "Ligam"
-
-#: kfile/knfotranslator.cpp:65
-msgctxt "@label"
-msgid "Programming Language"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:66
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:67
-#, fuzzy
-#| msgid "Write"
-msgctxt "@label"
-msgid "Width"
-msgstr "Escritura"
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label number of words"
-msgid "Words"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:70
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:71
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:72
-#, fuzzy
-#| msgid "Class"
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "Classa"
-
-#: kfile/knfotranslator.cpp:73
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:75
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:76
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:78
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:79
-#, fuzzy
-#| msgid "Authentication"
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "Orientacion"
-
-#: kfile/knfotranslator.cpp:80
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:81
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "&General"
-
-#: kfile/knfotranslator.cpp:82
-msgctxt "@label music album"
-msgid "Album"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:83
-msgctxt "@label"
-msgid "Performer"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:84
-msgctxt "@label music track number"
-msgid "Track"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:85
-#, fuzzy
-#| msgid "Type"
-msgctxt "@label file type"
-msgid "Type"
-msgstr "Tipe"
-
-#: kfile/knfotranslator.cpp:86
-msgctxt "@label Number of fuzzy translations"
-msgid "Fuzzy Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:87
-msgctxt "@label Name of last translator"
-msgid "Last Translator"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:88
-msgctxt "@label Number of obsolete translations"
-msgid "Obsolete Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:89
-msgctxt "@label"
-msgid "Translation Source Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:90
-msgctxt "@label Number of total translations"
-msgid "Total Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:91
-msgctxt "@label Number of translated strings"
-msgid "Translated"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:92
-msgctxt "@label"
-msgid "Translation Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:93
-msgctxt "@label Number of untranslated strings"
-msgid "Untranslated"
-msgstr ""
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "Comentari"
 
 #: kfile/kencodingfiledialog.cpp:50
 msgid "Encoding:"
@@ -3758,6 +3558,319 @@ msgstr ""
 msgid "Advanced Options for %1"
 msgstr ""
 
+#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@label"
+msgid "Comment"
+msgstr "Comentari"
+
+#: kfile/knfotranslator.cpp:41
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "Creat :"
+
+#: kfile/knfotranslator.cpp:42
+#, fuzzy
+#| msgctxt "@title:column"
+#| msgid "Size"
+msgctxt "@label file content size"
+msgid "Size"
+msgstr "Talha"
+
+#: kfile/knfotranslator.cpp:43
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:44
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label Software used to generate content"
+msgid "Generator"
+msgstr "&General"
+
+#: kfile/knfotranslator.cpp:45
+msgctxt ""
+"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
+"nie#hasLogicalPart"
+msgid "Has Logical Part"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:46
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:47
+msgctxt "@label"
+msgid "Keyword"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:48
+#, fuzzy
+#| msgid "Modified:"
+msgctxt "@label modified date of file"
+msgid "Modified"
+msgstr "Modificat :"
+
+#: kfile/knfotranslator.cpp:49
+#, fuzzy
+#| msgid "Mime Type"
+msgctxt "@label"
+msgid "MIME Type"
+msgstr "Tipe MIME"
+
+#: kfile/knfotranslator.cpp:50
+#, fuzzy
+#| msgid "Contents:"
+msgctxt "@label"
+msgid "Content"
+msgstr "Ensenhador :"
+
+#: kfile/knfotranslator.cpp:51
+#, fuzzy
+#| msgid "Subject"
+msgctxt "@label"
+msgid "Subject"
+msgstr "Subjècte"
+
+#: kfile/knfotranslator.cpp:52
+#, fuzzy
+#| msgid "File"
+msgctxt "@label music title"
+msgid "Title"
+msgstr "Fichièr"
+
+#: kfile/knfotranslator.cpp:53
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "Emplaçament :"
+
+#: kfile/knfotranslator.cpp:54
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label"
+msgid "Creator"
+msgstr "Creat :"
+
+#: kfile/knfotranslator.cpp:55
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Channels"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:57
+#, fuzzy
+#| msgid "Categories"
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr "Categorias"
+
+#: kfile/knfotranslator.cpp:58
+msgctxt "@label"
+msgid "Codec"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Color Depth"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:60
+#, fuzzy
+#| msgid "Destination"
+msgctxt "@label"
+msgid "Duration"
+msgstr "Destinacion"
+
+#: kfile/knfotranslator.cpp:61
+#, fuzzy
+#| msgid "File system:"
+msgctxt "@label"
+msgid "Filename"
+msgstr "Sistèma de fichièrs :"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label"
+msgid "Height"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:64
+#, fuzzy
+#| msgid "Link"
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "Ligam"
+
+#: kfile/knfotranslator.cpp:65
+msgctxt "@label"
+msgid "Programming Language"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:66
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:67
+#, fuzzy
+#| msgid "Write"
+msgctxt "@label"
+msgid "Width"
+msgstr "Escritura"
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label number of words"
+msgid "Words"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:70
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:71
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:72
+#, fuzzy
+#| msgid "Class"
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "Classa"
+
+#: kfile/knfotranslator.cpp:73
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:75
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:76
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:78
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:79
+#, fuzzy
+#| msgid "Authentication"
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "Orientacion"
+
+#: kfile/knfotranslator.cpp:80
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:81
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "&General"
+
+#: kfile/knfotranslator.cpp:82
+msgctxt "@label music album"
+msgid "Album"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:83
+msgctxt "@label"
+msgid "Performer"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:84
+msgctxt "@label music track number"
+msgid "Track"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:85
+#, fuzzy
+#| msgid "Type"
+msgctxt "@label file type"
+msgid "Type"
+msgstr "Tipe"
+
+#: kfile/knfotranslator.cpp:86
+msgctxt "@label Number of fuzzy translations"
+msgid "Fuzzy Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:87
+msgctxt "@label Name of last translator"
+msgid "Last Translator"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:88
+msgctxt "@label Number of obsolete translations"
+msgid "Obsolete Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:89
+msgctxt "@label"
+msgid "Translation Source Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:90
+msgctxt "@label Number of total translations"
+msgid "Total Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:91
+msgctxt "@label Number of translated strings"
+msgid "Translated"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:92
+msgctxt "@label"
+msgid "Translation Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:93
+msgctxt "@label Number of untranslated strings"
+msgid "Untranslated"
+msgstr ""
+
 #: kfile/kfilemetadataprovider.cpp:414
 #, fuzzy
 #| msgid "Modified:"
@@ -3815,119 +3928,6 @@ msgstr "Talha :"
 msgctxt "@label"
 msgid "Type"
 msgstr "Tipe"
-
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:482
-msgid "Open With"
-msgstr "Dobrir amb"
-
-#: kfile/kopenwithdialog.cpp:487
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:493
-msgid "Choose the name of the program with which to open the selected files."
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:520
-#, kde-format
-msgid "Choose Application for %1"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:536
-msgid "Choose Application"
-msgstr "Causissètz una aplicacion"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:600
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:634
-msgid "Run in &terminal"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:651
-msgid "&Do not close when command exits"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:668
-msgid "&Remember application association for this type of file"
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:806
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:852
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr ""
-
-#: kfile/kcommentwidget.cpp:65
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@label"
-msgid "Add Comment..."
-msgstr "Comentari"
-
-#: kfile/kcommentwidget.cpp:71
-#, fuzzy
-#| msgid "Calculating..."
-msgctxt "@label"
-msgid "Change..."
-msgstr "A calcular..."
-
-#: kfile/kcommentwidget.cpp:124
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Change Comment"
-msgstr "Comentari"
-
-#: kfile/kcommentwidget.cpp:125
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "Comentari"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -4027,6 +4027,47 @@ msgstr ""
 #, kde-format
 msgid "You do not have permission to access the %1 protocol."
 msgstr ""
+
+#: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:225
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
+msgid "%1 to %2"
+msgstr "%1 (%2)"
+
+#: kssl/kcm/cacertificatespage.cpp:131
+#, fuzzy
+#| msgid "Certificate"
+msgid "System certificates"
+msgstr "Certificat"
+
+#: kssl/kcm/cacertificatespage.cpp:138
+msgid "User-added certificates"
+msgstr ""
+
+#: kssl/kcm/cacertificatespage.cpp:295
+#, fuzzy
+#| msgid "Certificate"
+msgid "Pick Certificates"
+msgstr "Certificat"
+
+#: kssl/kcm/kcmssl.cpp:40
+msgid "SSL Configuration Module"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:42
+msgid "Copyright 2010 Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:43
+msgid "Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:55
+#, fuzzy
+#| msgid "Link"
+msgid "SSL Signers"
+msgstr "Ligam"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -4373,13 +4414,6 @@ msgctxt "The certificate is trusted"
 msgid "Yes"
 msgstr "&Òc"
 
-#: kssl/ksslinfodialog.cpp:225 kssl/kcm/displaycertdialog.cpp:54
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
-msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
-msgid "%1 to %2"
-msgstr "%1 (%2)"
-
 #: kssl/ksslcertdialog.cpp:61
 msgid "Certificate"
 msgstr "Certificat"
@@ -4468,40 +4502,6 @@ msgstr ""
 #: kssl/ksslutils.cpp:78
 msgid "GMT"
 msgstr ""
-
-#: kssl/kcm/cacertificatespage.cpp:131
-#, fuzzy
-#| msgid "Certificate"
-msgid "System certificates"
-msgstr "Certificat"
-
-#: kssl/kcm/cacertificatespage.cpp:138
-msgid "User-added certificates"
-msgstr ""
-
-#: kssl/kcm/cacertificatespage.cpp:295
-#, fuzzy
-#| msgid "Certificate"
-msgid "Pick Certificates"
-msgstr "Certificat"
-
-#: kssl/kcm/kcmssl.cpp:40
-msgid "SSL Configuration Module"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:42
-msgid "Copyright 2010 Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:43
-msgid "Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:55
-#, fuzzy
-#| msgid "Link"
-msgid "SSL Signers"
-msgstr "Ligam"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4825,7 +4825,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, add)
-#: rc.cpp:168 rc.cpp:327
+#: rc.cpp:168 rc.cpp:234
 msgid "Add..."
 msgstr "Apondre..."
 
@@ -4841,7 +4841,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeSelection)
-#: rc.cpp:174 rc.cpp:324
+#: rc.cpp:174 rc.cpp:231
 msgid "Remove"
 msgstr "Suprimir"
 
@@ -4859,195 +4859,15 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "Opcions a&vançadas"
 
-#. i18n: file: kssl/sslinfo.ui:16
-#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
-#: rc.cpp:183
-msgid "[padlock]"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:30
-#. i18n: ectx: property (text), widget (QLabel, addressTag)
-#: rc.cpp:187
-#, fuzzy
-#| msgid "Address:"
-msgctxt "Web page address"
-msgid "Address:"
-msgstr "Adreça :"
-
-#. i18n: file: kssl/sslinfo.ui:47
-#. i18n: ectx: property (text), widget (QLabel, ipTag)
-#: rc.cpp:191
-#, fuzzy
-#| msgid "IP Address:"
-msgid "IP address:"
-msgstr "Adreça IP :"
-
-#. i18n: file: kssl/sslinfo.ui:64
-#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
-#: rc.cpp:195
-msgid "Encryption:"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:81
-#. i18n: ectx: property (text), widget (QLabel, detailsTag)
-#: rc.cpp:199
-msgid "Details:"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:98
-#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
-#: rc.cpp:203
-msgid "SSL version:"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:115
-#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
-#: rc.cpp:207
-#, fuzzy
-#| msgid "Certificate"
-msgid "Certificate chain:"
-msgstr "Certificat"
-
-#. i18n: file: kssl/sslinfo.ui:144
-#. i18n: ectx: property (text), widget (QLabel, trustedTag)
-#: rc.cpp:210
-msgid "Trusted:"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:161
-#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
-#: rc.cpp:214
-msgid "Validity period:"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:178
-#. i18n: ectx: property (text), widget (QLabel, serialTag)
-#: rc.cpp:218
-msgid "Serial number:"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:195
-#. i18n: ectx: property (text), widget (QLabel, digestTag)
-#: rc.cpp:222
-msgid "MD5 digest:"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:211
-#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
-#: rc.cpp:225
-msgid "SHA1 digest:"
-msgstr ""
-
-#. i18n: file: kssl/keygenwizard2.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
-#: rc.cpp:228
-msgid ""
-"You must now provide a password for the certificate request. Please choose a "
-"very secure password as this will be used to encrypt your private key."
-msgstr ""
-
-#. i18n: file: kssl/keygenwizard2.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:231
-msgid "&Repeat password:"
-msgstr ""
-
-#. i18n: file: kssl/keygenwizard2.ui:58
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:234
-msgid "&Choose password:"
-msgstr "&Causir un mot de pas :"
-
-#. i18n: file: kssl/keygenwizard.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:237
-msgid ""
-"You have indicated that you wish to obtain or purchase a secure certificate. "
-"This wizard is intended to guide you through the procedure. You may cancel "
-"at any time, and this will abort the transaction."
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:27
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: rc.cpp:240
-msgid "Common name:"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:37
-#. i18n: ectx: property (text), widget (QLabel, commonName)
-#: rc.cpp:243
-msgid "Acme Co."
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:44
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: rc.cpp:246
-msgid "Organization:"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:54
-#. i18n: ectx: property (text), widget (QLabel, organization)
-#: rc.cpp:249
-msgid "Acme Sundry Products Company"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:61
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: rc.cpp:252
-msgid "Organizational unit:"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:71
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
-#: rc.cpp:255
-msgid "Fraud Department"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:78
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: rc.cpp:258
-msgid "Country:"
-msgstr "Païs :"
-
-#. i18n: file: kssl/certificateparty.ui:88
-#. i18n: ectx: property (text), widget (QLabel, country)
-#: rc.cpp:261
-msgid "Canada"
-msgstr "Canadà"
-
-#. i18n: file: kssl/certificateparty.ui:95
-#. i18n: ectx: property (text), widget (QLabel, stateTag)
-#: rc.cpp:264
-msgid "State:"
-msgstr "Estat :"
-
-#. i18n: file: kssl/certificateparty.ui:105
-#. i18n: ectx: property (text), widget (QLabel, state)
-#: rc.cpp:267
-msgid "Quebec"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:112
-#. i18n: ectx: property (text), widget (QLabel, cityTag)
-#: rc.cpp:270
-msgid "City:"
-msgstr "Ciutat :"
-
-#. i18n: file: kssl/certificateparty.ui:122
-#. i18n: ectx: property (text), widget (QLabel, city)
-#: rc.cpp:273
-msgid "Lakeridge Meadows"
-msgstr ""
-
 #. i18n: file: kssl/kcm/displaycert.ui:23
 #. i18n: ectx: property (text), widget (QLabel, subjectHeading)
-#: rc.cpp:276
+#: rc.cpp:183
 msgid "<b>Subject Information</b>"
 msgstr ""
 
 #. i18n: file: kssl/kcm/displaycert.ui:39
 #. i18n: ectx: property (text), widget (QLabel, issuerHeading)
-#: rc.cpp:279
+#: rc.cpp:186
 #, fuzzy
 #| msgid "Information"
 msgid "<b>Issuer Information</b>"
@@ -5055,13 +4875,13 @@ msgstr "Entresenhas"
 
 #. i18n: file: kssl/kcm/displaycert.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:282
+#: rc.cpp:189
 msgid "<b>Other</b>"
 msgstr ""
 
 #. i18n: file: kssl/kcm/displaycert.ui:64
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodLabel)
-#: rc.cpp:285
+#: rc.cpp:192
 msgid "Validity period"
 msgstr ""
 
@@ -5073,7 +4893,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, md5Digest)
 #. i18n: file: kssl/kcm/displaycert.ui:113
 #. i18n: ectx: property (text), widget (QLabel, sha1Digest)
-#: rc.cpp:288 rc.cpp:294 rc.cpp:300 rc.cpp:306
+#: rc.cpp:195 rc.cpp:201 rc.cpp:207 rc.cpp:213
 #, fuzzy
 #| msgid "&Name:"
 msgid "TextLabel"
@@ -5081,53 +4901,233 @@ msgstr "&Nom :"
 
 #. i18n: file: kssl/kcm/displaycert.ui:78
 #. i18n: ectx: property (text), widget (QLabel, serialNumberLabel)
-#: rc.cpp:291
+#: rc.cpp:198
 msgid "Serial number"
 msgstr ""
 
 #. i18n: file: kssl/kcm/displaycert.ui:92
 #. i18n: ectx: property (text), widget (QLabel, md5DigestLabel)
-#: rc.cpp:297
+#: rc.cpp:204
 msgid "MD5 digest"
 msgstr ""
 
 #. i18n: file: kssl/kcm/displaycert.ui:106
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestLabel)
-#: rc.cpp:303
+#: rc.cpp:210
 msgid "SHA1 digest"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:24
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:309
+#: rc.cpp:216
 msgid "Organization / Common Name"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:312
+#: rc.cpp:219
 msgid "Organizational Unit"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, displaySelection)
-#: rc.cpp:315
+#: rc.cpp:222
 msgid "Display..."
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:68
 #. i18n: ectx: property (text), widget (KPushButton, disableSelection)
-#: rc.cpp:318
+#: rc.cpp:225
 msgid "Disable"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, enableSelection)
-#: rc.cpp:321
+#: rc.cpp:228
 #, fuzzy
 #| msgid "Emblems"
 msgid "Enable"
 msgstr "Emblèmas"
+
+#. i18n: file: kssl/sslinfo.ui:16
+#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
+#: rc.cpp:237
+msgid "[padlock]"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:30
+#. i18n: ectx: property (text), widget (QLabel, addressTag)
+#: rc.cpp:241
+#, fuzzy
+#| msgid "Address:"
+msgctxt "Web page address"
+msgid "Address:"
+msgstr "Adreça :"
+
+#. i18n: file: kssl/sslinfo.ui:47
+#. i18n: ectx: property (text), widget (QLabel, ipTag)
+#: rc.cpp:245
+#, fuzzy
+#| msgid "IP Address:"
+msgid "IP address:"
+msgstr "Adreça IP :"
+
+#. i18n: file: kssl/sslinfo.ui:64
+#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
+#: rc.cpp:249
+msgid "Encryption:"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:81
+#. i18n: ectx: property (text), widget (QLabel, detailsTag)
+#: rc.cpp:253
+msgid "Details:"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:98
+#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
+#: rc.cpp:257
+msgid "SSL version:"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:115
+#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
+#: rc.cpp:261
+#, fuzzy
+#| msgid "Certificate"
+msgid "Certificate chain:"
+msgstr "Certificat"
+
+#. i18n: file: kssl/sslinfo.ui:144
+#. i18n: ectx: property (text), widget (QLabel, trustedTag)
+#: rc.cpp:264
+msgid "Trusted:"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:161
+#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
+#: rc.cpp:268
+msgid "Validity period:"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:178
+#. i18n: ectx: property (text), widget (QLabel, serialTag)
+#: rc.cpp:272
+msgid "Serial number:"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:195
+#. i18n: ectx: property (text), widget (QLabel, digestTag)
+#: rc.cpp:276
+msgid "MD5 digest:"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:211
+#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
+#: rc.cpp:279
+msgid "SHA1 digest:"
+msgstr ""
+
+#. i18n: file: kssl/keygenwizard2.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: rc.cpp:282
+msgid ""
+"You must now provide a password for the certificate request. Please choose a "
+"very secure password as this will be used to encrypt your private key."
+msgstr ""
+
+#. i18n: file: kssl/keygenwizard2.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: rc.cpp:285
+msgid "&Repeat password:"
+msgstr ""
+
+#. i18n: file: kssl/keygenwizard2.ui:58
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:288
+msgid "&Choose password:"
+msgstr "&Causir un mot de pas :"
+
+#. i18n: file: kssl/keygenwizard.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: rc.cpp:291
+msgid ""
+"You have indicated that you wish to obtain or purchase a secure certificate. "
+"This wizard is intended to guide you through the procedure. You may cancel "
+"at any time, and this will abort the transaction."
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:27
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:294
+msgid "Common name:"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:37
+#. i18n: ectx: property (text), widget (QLabel, commonName)
+#: rc.cpp:297
+msgid "Acme Co."
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:44
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:300
+msgid "Organization:"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:54
+#. i18n: ectx: property (text), widget (QLabel, organization)
+#: rc.cpp:303
+msgid "Acme Sundry Products Company"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:61
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:306
+msgid "Organizational unit:"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:71
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
+#: rc.cpp:309
+msgid "Fraud Department"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:312
+msgid "Country:"
+msgstr "Païs :"
+
+#. i18n: file: kssl/certificateparty.ui:88
+#. i18n: ectx: property (text), widget (QLabel, country)
+#: rc.cpp:315
+msgid "Canada"
+msgstr "Canadà"
+
+#. i18n: file: kssl/certificateparty.ui:95
+#. i18n: ectx: property (text), widget (QLabel, stateTag)
+#: rc.cpp:318
+msgid "State:"
+msgstr "Estat :"
+
+#. i18n: file: kssl/certificateparty.ui:105
+#. i18n: ectx: property (text), widget (QLabel, state)
+#: rc.cpp:321
+msgid "Quebec"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:112
+#. i18n: ectx: property (text), widget (QLabel, cityTag)
+#: rc.cpp:324
+msgid "City:"
+msgstr "Ciutat :"
+
+#. i18n: file: kssl/certificateparty.ui:122
+#. i18n: ectx: property (text), widget (QLabel, city)
+#: rc.cpp:327
+msgid "Lakeridge Meadows"
+msgstr ""
 
 #: ../kioslave/file/file.cpp:209
 #, kde-format
@@ -5508,64 +5508,64 @@ msgstr ""
 msgid "%1 contacted. Waiting for reply..."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:2908
+#: ../kioslave/http/http.cpp:2913
 msgid "Server processing request, please wait..."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3256 ../kioslave/ftp/ftp.cpp:477
+#: ../kioslave/http/http.cpp:3261 ../kioslave/ftp/ftp.cpp:477
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3258 ../kioslave/ftp/ftp.cpp:479
+#: ../kioslave/http/http.cpp:3263 ../kioslave/ftp/ftp.cpp:479
 msgid "Site:"
 msgstr "Sit :"
 
-#: ../kioslave/http/http.cpp:3268 ../kioslave/http/http.cpp:5027
+#: ../kioslave/http/http.cpp:3273 ../kioslave/http/http.cpp:5041
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3271 ../kioslave/http/http.cpp:5031
+#: ../kioslave/http/http.cpp:3276 ../kioslave/http/http.cpp:5045
 msgid "Proxy:"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3332
+#: ../kioslave/http/http.cpp:3337
 msgid "Authentication Failed."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3335 ../kioslave/http/http.cpp:5033
+#: ../kioslave/http/http.cpp:3340 ../kioslave/http/http.cpp:5047
 msgid "Proxy Authentication Failed."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3345 ../kioslave/http/http.cpp:5032
+#: ../kioslave/http/http.cpp:3350 ../kioslave/http/http.cpp:5046
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3377
+#: ../kioslave/http/http.cpp:3382
 msgid "Authorization failed."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3394
+#: ../kioslave/http/http.cpp:3399
 msgid "Unknown Authorization method."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3777
+#: ../kioslave/http/http.cpp:3791
 msgid "Requesting data to send"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3809
+#: ../kioslave/http/http.cpp:3823
 #, kde-format
 msgid "Sending data to %1"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:4227
+#: ../kioslave/http/http.cpp:4241
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr ""
 
-#: ../kioslave/http/http.cpp:4233
+#: ../kioslave/http/http.cpp:4247
 #, kde-format
 msgid "Retrieving from %1..."
 msgstr ""
@@ -5873,14 +5873,6 @@ msgid ""
 "otherwise operate like bookmarks elsewhere in KDE.</qt>"
 msgstr ""
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr ""
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr ""
-
 #: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6048,25 +6040,6 @@ msgstr ""
 msgid "&View"
 msgstr "Aficha&tge"
 
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-#, fuzzy
-#| msgid "Devices"
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Periferics"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr ""
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-#, fuzzy
-#| msgid "Others"
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Autres"
-
 #: ../kfile/kdirselectdialog.cpp:128
 #, fuzzy
 #| msgid "New Folder"
@@ -6123,6 +6096,14 @@ msgstr "Repertòri personal"
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Propietats"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:90
+msgid "Click for Location Navigation"
+msgstr ""
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:92
+msgid "Click to Edit Location"
+msgstr ""
 
 #: ../kfile/kfileplacesview.cpp:575
 #, fuzzy
@@ -6405,6 +6386,25 @@ msgstr ""
 #| msgid "Home Folder"
 msgid "Show Hidden Folders"
 msgstr "Repertòri personal"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
+#, fuzzy
+#| msgid "Devices"
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Periferics"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr ""
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+#, fuzzy
+#| msgid "Others"
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Autres"
 
 #, fuzzy
 #~| msgid "Size:"
