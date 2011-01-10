@@ -1,0 +1,2417 @@
+# translation of xsldbg_commands.po to Occitan (lengadocian)
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: xsldbg_commands\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-09-10 05:09+0000\n"
+"PO-Revision-Date: 2008-08-13 13:39+0200\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdewebdev/doc/xsldbg/commands.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 628579\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Tag: title
+#: commands.docbook:3
+#, no-c-format
+msgid "Command Reference"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:5
+#, no-c-format
+msgid "Addparam"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:6
+#, no-c-format
+msgid ""
+"Add a libxslt parameter; equivalent to providing --param &lt;QNAME&gt;:&lt;"
+"XPATH&gt; via command line."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:9
+#, no-c-format
+msgid "Addparam usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:11
+#, no-c-format
+msgid ""
+"addparam &lt;QNAME&gt; &lt;XPATH&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(The "
+"&lt;XPATH&gt; must not contain any spaces nor double quotation marks.) </"
+"emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:12
+#, no-c-format
+msgid ""
+"addparam &lt;QNAME&gt; \"&lt;XPATH&gt;\"&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(Must not contain double quotation marks in &lt;XPATH&gt;)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:18
+#, no-c-format
+msgid "Addwatch"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:19
+#, no-c-format
+msgid "Add an expression to be watched. See showwatch for display watch values"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:20
+#, no-c-format
+msgid "Shortcut name: watch"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:21
+#, no-c-format
+msgid "Addwatch usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:23
+#, no-c-format
+msgid "addwatch &lt;XPATH&gt;"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:29
+#, no-c-format
+msgid "Base"
+msgstr "Basa"
+
+#. Tag: para
+#: commands.docbook:30
+#, no-c-format
+msgid "Print the base for this node"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:31
+#, no-c-format
+msgid "Base usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:34
+#, no-c-format
+msgid "base"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:40
+#, no-c-format
+msgid "Break"
+msgstr "Fraccionar"
+
+#. Tag: para
+#: commands.docbook:41
+#, no-c-format
+msgid ""
+"Break at a template, at a location in a stylesheet or xml file loaded by "
+"xsldbg, or at the current node. New for xsldbg 3.1.4: When in gdb "
+"compatibility mode orphaned breakpoints can be set at a specific file and "
+"line number and be resolved to an active later on."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:44
+#, no-c-format
+msgid "Shortcut name: b"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:44
+#, no-c-format
+msgid ""
+"xsldbg will try to guess the complete URL given a <informaltable> <tgroup "
+"cols=\"1\"><tbody> <row><entry>file name without a path specified.</entry></"
+"row> <row><entry>a file name in the same directory as the <quote>top</quote> "
+"stylesheet loaded</entry></row> <row><entry>a file name relative to the "
+"current working directory of xsldbg</entry></row> </tbody></tgroup> </"
+"informaltable> Ie if you have loaded a stylesheet file of <filename>../en/"
+"xsldoc.xsl</filename> you can do this"
+msgstr ""
+
+#. Tag: userinput
+#: commands.docbook:53
+#, no-c-format
+msgid "break -l xsldoc.xsl 26"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:54
+#, no-c-format
+msgid ""
+"This command will match a partial or complete QNAME template and or mode "
+"name provided. &eg; <quote>template</quote> will match any QNAME with a "
+"local part of <quote>template</quote>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:55
+#, no-c-format
+msgid ""
+"Any name spaces in the provided QNAME will be expanded as specified by the "
+"names spaces defined in the XSL SOURCE file. &eg; <quote>xsl:test1</quote> "
+"will be expanded to <quote>http://www.w3.org/199/XSL/Transform:test1</quote>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:57
+#, no-c-format
+msgid ""
+"A requested breakpoint may need to be resolved to its associated URL and "
+"line number. This is done automatically after the first template has been "
+"seen by xsldbg. Breakpoints are re-validated shortly after the start of each "
+"run."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:59
+#, no-c-format
+msgid ""
+"Automatic breakpoint validation is used when gdb mode is enabled - the "
+"default behaviour of xsldbg"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:60
+#, no-c-format
+msgid "Break usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:63
+#, no-c-format
+msgid ""
+"break -l &lt;FILENAME&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(To set breakpoint at specified file, line number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:64
+#, no-c-format
+msgid ""
+"break -l &lt;URI&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To set "
+"breakpoint at specified URI, line number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:65
+#, no-c-format
+msgid ""
+"break &lt;TEMPLATE_NAME&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To break at "
+"named or matched template.)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:66
+#, no-c-format
+msgid ""
+"break &lt;TEMPLATE_NAME&gt; &lt;MODE_NAME&gt;&nbsp;&nbsp;&nbsp;&nbsp;"
+"<emphasis>(To break at named template with given mode.)></emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:67
+#, no-c-format
+msgid ""
+"break \"\" &lt;MODE_NAME&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To break at "
+"any template that has a given mode name)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:68
+#, no-c-format
+msgid ""
+"break *&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To break at any template found.)</"
+"emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:69
+#, no-c-format
+msgid ""
+"break \\*&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To break at the <literal>*</"
+"literal> template. Other name that include <quote>*</quote> will not be "
+"treated specially.)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:70
+#, no-c-format
+msgid ""
+"break &nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To break point at current node. Yes "
+"that includes xml data nodes!)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:76
+#, no-c-format
+msgid "<title>Bye</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:77 commands.docbook:265 commands.docbook:421
+#, no-c-format
+msgid "Exit processing stylesheet as soon as possible."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:78
+#, no-c-format
+msgid "Bye usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:81
+#, no-c-format
+msgid "<entry>bye</entry>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:87
+#, no-c-format
+msgid "<title>Cat</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:88
+#, no-c-format
+msgid "Print the result of a xpath expression on relative current node."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:89
+#, no-c-format
+msgid "Cat usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:92
+#, no-c-format
+msgid ""
+"Usage: cat &lt;XPATH&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To view a "
+"variable or parameter)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:93
+#, no-c-format
+msgid "Usage: cat $&lt;QNAME&gt;"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:99
+#, no-c-format
+msgid "<title>Cd</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:100
+#, no-c-format
+msgid "Change to the path specified by a xpath."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:101
+#, no-c-format
+msgid "Cd usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:104
+#, no-c-format
+msgid "&lt;&lt; = preceding-sibling::node()"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:105
+#, no-c-format
+msgid "&gt;&gt; = following-sibling::node()"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:106
+#, no-c-format
+msgid "&lt;- = ancestor::node()"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:107
+#, no-c-format
+msgid "-&gt; = decendant::node()"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:112
+#, no-c-format
+msgid "Chdir"
+msgstr "Chdir"
+
+#. Tag: para
+#: commands.docbook:113
+#, no-c-format
+msgid "Change the working directory"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:114
+#, no-c-format
+msgid "Chdir usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:117
+#, no-c-format
+msgid ""
+"chdir &lt;PATH&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(A relative or absolute "
+"path for operating system)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:123
+#, no-c-format
+msgid "Continue"
+msgstr "Contunhar"
+
+#. Tag: para
+#: commands.docbook:124
+#, no-c-format
+msgid "Continue running stylesheet, stopping at any break points found."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:125
+#, no-c-format
+msgid "Shortcut name: c"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:126
+#, fuzzy, no-c-format
+#| msgid "Continue"
+msgid "Continue usage"
+msgstr "Contunhar"
+
+#. Tag: entry
+#: commands.docbook:129
+#, no-c-format
+msgid "continue"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:135
+#, no-c-format
+msgid "Data"
+msgstr "Donadas"
+
+#. Tag: para
+#: commands.docbook:136
+#, no-c-format
+msgid ""
+"Switch to displaying the current node in xml data. Or change xml data used"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:137
+#, no-c-format
+msgid "Data usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:140
+#, no-c-format
+msgid ""
+"data&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Switch to the current document node.)"
+"</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:141
+#, no-c-format
+msgid ""
+"data &lt;DATA&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To change to a new xml "
+"data file. A leading <literal>~</literal> is replaced by the $HOME "
+"environment variable value. You will need to use the <quote>run</quote> "
+"command to process it)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:147
+#, no-c-format
+msgid "Delete"
+msgstr "Suprimir"
+
+#. Tag: para
+#: commands.docbook:148
+#, no-c-format
+msgid "Delete a template breakpoint"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:149
+#, no-c-format
+msgid "Shortcut name: d"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:150
+#, no-c-format
+msgid "Delete usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:153
+#, no-c-format
+msgid ""
+"delete&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To delete breakpoint at current "
+"node)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:154
+#, no-c-format
+msgid ""
+"delete &lt;BREAKPOINT_ID&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To delete "
+"breakpoint at specified break point number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:155
+#, no-c-format
+msgid ""
+"delete -l &lt;FILENAME&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(Delete at specified file, line number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:156
+#, no-c-format
+msgid ""
+"delete -l &lt;URI&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(Delete at specified URI, line number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:157
+#, no-c-format
+msgid ""
+"delete &lt;TEMPLATENAME&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To delete "
+"break point at named template.)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:158
+#, no-c-format
+msgid ""
+"delete *&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To delete all break points.)</"
+"emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:164
+#, no-c-format
+msgid "Delparam"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:165
+#, no-c-format
+msgid "Delete a libxslt parameter"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:166
+#, no-c-format
+msgid "Delparam usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:169
+#, no-c-format
+msgid ""
+"delparam&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Delete all parameters present)</"
+"emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:170
+#, no-c-format
+msgid "delparam &lt;PARAM_ID&gt;"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:171
+#, no-c-format
+msgid "delparam &lt;PARAM_NAME&gt;"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:177
+#, no-c-format
+msgid "Delwatch"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:178
+#, no-c-format
+msgid ""
+"Delete a watch expression or remove all watch expressions as displayed by "
+"\"showwatch.\" command"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:179
+#, no-c-format
+msgid "Delwatch usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:182
+#, no-c-format
+msgid ""
+"delwatch &lt;WATCHID&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Delete a watch "
+"expression with given ID)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:183
+#, no-c-format
+msgid ""
+"delwatch *&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Delete all watch expressions)</"
+"emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:189
+#, no-c-format
+msgid "<title>Dir</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:190
+#, no-c-format
+msgid "Print list of nodes in a similarly way to the dir shell command."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:192
+#, no-c-format
+msgid "Dir usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:195
+#, no-c-format
+msgid "<entry>dir</entry>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:201
+#, no-c-format
+msgid "Disable"
+msgstr "Desactivar"
+
+#. Tag: para
+#: commands.docbook:202
+#, no-c-format
+msgid "Disable a breakpoint"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:203
+#, no-c-format
+msgid "Disable usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:206
+#, no-c-format
+msgid ""
+"disable&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To disable breakpoint at current "
+"node)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:207
+#, no-c-format
+msgid ""
+"disable &lt;BREAKPOINT_ID&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To disable "
+"breakpoint at specified break point number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:208
+#, no-c-format
+msgid ""
+"disable -l &lt;FILENAME&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(Disable breakpoint at specified file, line number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:209
+#, no-c-format
+msgid ""
+"disable -l &lt;URI&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(Disable breakpoint at specified URI, line number)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:215
+#, no-c-format
+msgid "<title>Du</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:216
+#, no-c-format
+msgid "Print a summary of child nodes in a tree format."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:217
+#, no-c-format
+msgid "Du usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:220
+#, no-c-format
+msgid "<entry>du</entry>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:226
+#, no-c-format
+msgid "Dump"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:227
+#, no-c-format
+msgid "Dump the details of this node"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:228
+#, no-c-format
+msgid "Dump usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:231
+#, no-c-format
+msgid "dump"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:237
+#, no-c-format
+msgid "Enable"
+msgstr "Activar"
+
+#. Tag: para
+#: commands.docbook:238
+#, no-c-format
+msgid "Enable or disable a breakpoint (Toggle enable/disable/)"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:239
+#, no-c-format
+msgid "Shortcut name: e"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:240
+#, no-c-format
+msgid "Enable usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:243
+#, no-c-format
+msgid ""
+"enable&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To enable/disable breakpoint at "
+"current node)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:244
+#, no-c-format
+msgid ""
+"enable &lt;BREAKPOINT_ID&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To enable/"
+"disable breakpoint at specified break point number</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:245
+#, no-c-format
+msgid ""
+"enable -l &lt;FILENAME&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(Enable/disable breakpoint at specified file, line number)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:246
+#, no-c-format
+msgid ""
+"enable -l &lt;URI&gt; &lt;LINENO&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>"
+"(Enable/disable breakpoint at specified URI, line number)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:252
+#, no-c-format
+msgid "Entities"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:253
+#, no-c-format
+msgid ""
+"Print list of external General Parsed entities used data file (document)"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:254
+#, no-c-format
+msgid "Shortcut name: ent"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:255
+#, no-c-format
+msgid "Entities usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:258
+#, no-c-format
+msgid "entities"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:264
+#, no-c-format
+msgid "Exit"
+msgstr "Sortir"
+
+#. Tag: title
+#: commands.docbook:266
+#, no-c-format
+msgid "Exit usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:269
+#, no-c-format
+msgid "exit"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:275
+#, no-c-format
+msgid "Frame"
+msgstr "Encastre"
+
+#. Tag: para
+#: commands.docbook:276
+#, no-c-format
+msgid "Print the stack frame at a given depth"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:277
+#, no-c-format
+msgid "Shortcut name: f"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:278
+#, no-c-format
+msgid "Frame usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:281
+#, no-c-format
+msgid ""
+"frame &lt;FRAME_DEPTH&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Depth is a "
+"number from 0 to the current depth of call stack)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:287
+#, no-c-format
+msgid "Free"
+msgstr "Liure"
+
+#. Tag: para
+#: commands.docbook:288
+#, no-c-format
+msgid "Free stylesheet and data (Disabled see run)"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:289
+#, no-c-format
+msgid "Free usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:292
+#, no-c-format
+msgid "free"
+msgstr "liure"
+
+#. Tag: title
+#: commands.docbook:298
+#, no-c-format
+msgid "Globals"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:299
+#, no-c-format
+msgid ""
+"Print a list of global stylesheet variables or parameters. Print the value "
+"of a global variable"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:300
+#, no-c-format
+msgid "Globals usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:303
+#, no-c-format
+msgid ""
+"globals&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Print list of all globally "
+"available variables)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:304
+#, no-c-format
+msgid ""
+"globals -f&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Print list of all globally "
+"available variables and their values)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:305
+#, no-c-format
+msgid ""
+"globals &lt;QNAME&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Print the value of "
+"variable specified)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:311
+#, no-c-format
+msgid "Help"
+msgstr "Ajuda"
+
+#. Tag: para
+#: commands.docbook:312
+#, no-c-format
+msgid "Display help on command or overview"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:313
+#, no-c-format
+msgid "Shortcut name: h"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:314
+#, no-c-format
+msgid "Help usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:317
+#, no-c-format
+msgid ""
+"help &nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Show overview of product)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:318
+#, no-c-format
+msgid ""
+"help &lt;COMMAND&gt; &nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Show help about a "
+"command)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:324
+#, no-c-format
+msgid "Load"
+msgstr "Carga"
+
+#. Tag: para
+#: commands.docbook:325
+#, no-c-format
+msgid "Load the xsldbg's options and user preferences from disk"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:326
+#, no-c-format
+msgid "Load usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:329
+#, no-c-format
+msgid "load"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:335
+#, no-c-format
+msgid "Locals"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:336
+#, no-c-format
+msgid ""
+"Print a list of local stylesheet variables or parameters. Print the value of "
+"a local variable"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:337
+#, no-c-format
+msgid "Locals usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:340
+#, no-c-format
+msgid ""
+"locals&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Print list of all locally available "
+"variables)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:341
+#, no-c-format
+msgid ""
+"locals -f&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Print list of all locally "
+"available variables and their values)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:342
+#, no-c-format
+msgid ""
+"locals &lt;QNAME&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Print the value of "
+"variable specified)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:348
+#, no-c-format
+msgid "<title>Ls</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:349
+#, no-c-format
+msgid "List nodes in a brief format"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:350
+#, no-c-format
+msgid "Ls usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:353
+#, no-c-format
+msgid "<entry>ls</entry>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:359
+#, no-c-format
+msgid "Next"
+msgstr "Seguent"
+
+#. Tag: para
+#: commands.docbook:360
+#, no-c-format
+msgid ""
+"Skip over an xsl:call-template or xsl:apply-templates. This command has the "
+"same effect of entering the commands \"step\" and then \"up\""
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:362
+#, no-c-format
+msgid "Shortcut name: n"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:363
+#, no-c-format
+msgid "Next usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:366
+#, no-c-format
+msgid ""
+"next&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(proceed to next sibling instruction)</"
+"emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:372
+#, no-c-format
+msgid "Options"
+msgstr "Opcions"
+
+#. Tag: para
+#: commands.docbook:373
+#, no-c-format
+msgid "Print the values for xsldbg's option"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:374
+#, no-c-format
+msgid "Options usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:377
+#, no-c-format
+msgid "options"
+msgstr "opcions"
+
+#. Tag: title
+#: commands.docbook:383
+#, no-c-format
+msgid "Output"
+msgstr "Sortida"
+
+#. Tag: para
+#: commands.docbook:384
+#, no-c-format
+msgid "Specify a local, writable file to be used for output of results"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:385
+#, no-c-format
+msgid "Shortcut name: o"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:386
+#, no-c-format
+msgid "Output usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:389
+#, no-c-format
+msgid ""
+"output &lt;FILENAME&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(A local writable "
+"file name. Which can have a \"~\" prefix on *nix and CYGWIN platforms. Or "
+"environment variables under RISC OS)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:390
+#, no-c-format
+msgid ""
+"output &lt;URI&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(The &lt;URI&gt; must "
+"only use the \"file://\" protocol. This is then converted to a file name "
+"suitable for the operating system)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:391
+#, no-c-format
+msgid ""
+"output -&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>( Send to standard output. Must "
+"only be used when using xsldbg's command line prompt )</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:397
+#, no-c-format
+msgid "Public"
+msgstr "Public"
+
+#. Tag: para
+#: commands.docbook:398
+#, no-c-format
+msgid "Print the value that a public ID maps via the current catalog"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:399
+#, no-c-format
+msgid "Shortcut name: pub"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:400
+#, no-c-format
+msgid "Public usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:403
+#, no-c-format
+msgid "public \"&lt;PublicID&gt;\""
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:409
+#, no-c-format
+msgid "<title>Pwd</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:410
+#, no-c-format
+msgid "Print the current working directory."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:411
+#, no-c-format
+msgid "Pwd usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:414
+#, no-c-format
+msgid "<entry>pwd</entry>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:420
+#, no-c-format
+msgid "Quit"
+msgstr "Quitar"
+
+#. Tag: para
+#: commands.docbook:422
+#, no-c-format
+msgid "Shortcut name: q"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:423
+#, no-c-format
+msgid "Quit usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:426
+#, no-c-format
+msgid "quit"
+msgstr "sortir"
+
+#. Tag: title
+#: commands.docbook:432
+#, no-c-format
+msgid "Readconfig"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:433
+#, no-c-format
+msgid "Read xsldbg's configuration from settings stored on disk."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:434
+#, no-c-format
+msgid "Readconfig usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:437
+#, no-c-format
+msgid "readconfig"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:443
+#, no-c-format
+msgid "<title>Run</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:444
+#, no-c-format
+msgid "Restart the stylesheet."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:445
+#, no-c-format
+msgid "Shortcut name: r"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:446
+#, no-c-format
+msgid "Run usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:449
+#, no-c-format
+msgid "<entry>run</entry>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:455
+#, no-c-format
+msgid "Save"
+msgstr "Enregistrar"
+
+#. Tag: para
+#: commands.docbook:456
+#, no-c-format
+msgid "Save the xsldbg's options and user preferences to disk"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:457
+#, no-c-format
+msgid "Save usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:460
+#, no-c-format
+msgid "save"
+msgstr "enregistrar"
+
+#. Tag: title
+#: commands.docbook:466
+#, no-c-format
+msgid "Search"
+msgstr "Recercar"
+
+#. Tag: para
+#: commands.docbook:467
+#, no-c-format
+msgid "Search a dataBase of all information gathered from stylesheets loaded"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:468
+#, no-c-format
+msgid ""
+"All output files are stored in, value of the \"searchresultspath\" option if "
+"set, or the same directory as the provided stylesheet. searchresults.xml is "
+"normally transformed by search.xsl, but will be transformed using searchhtml."
+"xsl if the \"prefrehtml\" option is set."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:469
+#, no-c-format
+msgid ""
+"When the search command is issued a xml file (searchresults.xml) will be "
+"created. You can then process this file with your own stylesheet to present "
+"data in other ways. If \"preferhtml\" option is not set then searchresult."
+"txt is printed to display."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:471
+#, no-c-format
+msgid ""
+"Depending on the amount of data collected it might take a while to complete "
+"this command."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:473
+#, no-c-format
+msgid "Search usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:476
+#, no-c-format
+msgid ""
+"search &lt;XPATH&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(See what xpath can be "
+"used see search.dtd. The default &lt;XPATH&gt; is '//search/*' )</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:477
+#, no-c-format
+msgid ""
+"search -sort &lt;XPATH&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Tell search.xsl "
+"to sort the result before outputing it)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:483
+#, no-c-format
+msgid "<title>Set</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:484
+#, no-c-format
+msgid "Set the value of a variable"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:485
+#, no-c-format
+msgid "Set usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:488
+#, no-c-format
+msgid "set &lt;VARIABLE_NAME&gt; &lt;XPATH&gt;"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:494
+#, no-c-format
+msgid "Setoption"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:495
+#, no-c-format
+msgid "Set an option for execution of stylesheet"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:496
+#, no-c-format
+msgid "You will need to use run command to active changes"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:497
+#, no-c-format
+msgid "Setoption usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:500
+#, no-c-format
+msgid "Example usage : setoption net 1"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:501
+#, no-c-format
+msgid "Example usage : setoption encoding \"Some encoding value\""
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:502
+#, no-c-format
+msgid ""
+"setoption &lt;OPTION_NAME&gt; (&lt;INTEGER_VALUE&gt; | &lt;STRING_VALUE&gt;)"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:503
+#, no-c-format
+msgid ""
+"Where &lt;INTEGER_VALUE&gt; is optional for options that can be treated as "
+"integer values"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:504 commands.docbook:565
+#, no-c-format
+msgid "Where &lt;OPTION_NAME&gt; can be either"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:509
+#, no-c-format
+msgid ""
+"debug&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"dump the tree of the result instead)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:510
+#, no-c-format
+msgid ""
+"catalogs&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"use the catalogs from $SGML_CATALOG_FILES or SGML$CatalogFiles for risc "
+"operating system)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:511
+#, no-c-format
+msgid ""
+"html&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true the "
+"input document is an HTML file)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:512
+#, no-c-format
+msgid ""
+"docbook&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"and docbook is still supported by libxml the input document is SGML docbook)"
+"</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:513
+#, no-c-format
+msgid ""
+"xinclude&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"do XInclude processing on document input)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:514
+#, no-c-format
+msgid ""
+"preferhtml&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is "
+"true prefer html output for search results. See search command)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:515
+#, no-c-format
+msgid ""
+"autoencode&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is "
+"true try to use the encoding from the stylesheet)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:516
+#, no-c-format
+msgid ""
+"utf8input&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"all input from user is in UTF-8. This is normally used when xsldbg is "
+"running as a thread)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:517
+#, no-c-format
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;<emphasis></emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:518
+#, no-c-format
+msgid ""
+"gdb&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Run in gdb compatability mode)</"
+"emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:522
+#, no-c-format
+msgid "For a value of 1 this means"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:526
+#, no-c-format
+msgid ""
+"Print lots more messages. Increase the frequency of printing \"Breakpoint "
+"at ...\""
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:527
+#, no-c-format
+msgid ""
+"At most GDB_LINES_TO_PRINT lines will be printed when evaluating "
+"expressions, followed by a \"...\". See options.h to change this value, the "
+"default is three lines of text"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:528
+#, no-c-format
+msgid ""
+"Both local and globals will be printed when the \"locals\" command is issued"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:529
+#, no-c-format
+msgid ""
+"When printing expressions with cat/print. The evaluated value will be "
+"prefixed by \"= \" &lt; EXPRESSION &gt;"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:535
+#, no-c-format
+msgid "For a value of 2 this means"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:539
+#, no-c-format
+msgid ""
+"Print messages needed by KDbg as well as the output state above (when value "
+"is 1)"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:548
+#, no-c-format
+msgid ""
+"net&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true fetch "
+"DTDs or entities over network)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:549
+#, no-c-format
+msgid ""
+"valid&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"perform the DTD loading phase)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:550
+#, no-c-format
+msgid ""
+"repeat&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is greater "
+"than zero(0) then run the transformation &lt;INTEGER_VALUE&gt; times)</"
+"emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:551
+#, no-c-format
+msgid ""
+"profile&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"dump profiling information)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:552
+#, no-c-format
+msgid ""
+"timing&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true "
+"display the time used)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:553
+#, no-c-format
+msgid ""
+"out&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(If &lt;INTEGER_VALUE&gt; is true dump "
+"the result)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:558
+#, no-c-format
+msgid ""
+"Where value is true if the word \"true\" is supplied or the value is NOT "
+"equal to zero"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:559
+#, no-c-format
+msgid ""
+"Where value is false if the word \"false\" is supplied or value IS equal to "
+"zero"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:560
+#, no-c-format
+msgid ""
+"Where value is by default true, when no value is supplied, eg setoption net"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:561
+#, no-c-format
+msgid ""
+"Where value is by default false if the option name is preceded by \"no\", "
+"&eg; setoption nonet"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:562
+#, no-c-format
+msgid ""
+"stdout&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>Print all error messages to stdout. "
+"Normally error messages go to stderr.</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:563
+#, no-c-format
+msgid ""
+"setoption &lt;OPTION_NAME&gt; \"&lt;STRING_VALUE&gt;\"&nbsp;&nbsp;&nbsp;"
+"&nbsp;<emphasis>(Must not contain double quotation marks in &lt;"
+"STRING_VALUE&gt;)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:564
+#, no-c-format
+msgid ""
+"setoption &lt;OPTION_NAME&gt; &lt;STRING_VALUE&gt;&nbsp;&nbsp;&nbsp;&nbsp;"
+"<emphasis>(Must not contain any spaces, nor double quotation marks in &lt;"
+"STRING_VALUE&gt;)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:570
+#, no-c-format
+msgid "data&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Data file's URI)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:571
+#, no-c-format
+msgid "source&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Source file's URI)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:572
+#, no-c-format
+msgid ""
+"output&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Output file's SystemID )</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:573
+#, no-c-format
+msgid ""
+"docspath&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Path to use when looking for "
+"documentation)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:574
+#, no-c-format
+msgid ""
+"catalognames&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(The names of the catalogs to "
+"use when the catalogs option is set. Value will be lost if set before "
+"setting catalogs option)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:575
+#, no-c-format
+msgid ""
+"encoding&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(What encoding to use for standard "
+"output)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:576
+#, no-c-format
+msgid ""
+"searchresultspath&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>What path is to be used "
+"when storing the results of searching. If this is not set then xsldbg will "
+"use the path of the stylesheet</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:577
+#, no-c-format
+msgid ""
+"cwd&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(The directory changed into by the "
+"chdir command)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:578
+#, no-c-format
+msgid ""
+"comment&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(A freeform comment about the "
+"debugger current session)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:587
+#, no-c-format
+msgid "Shell"
+msgstr "Copèla"
+
+#. Tag: para
+#: commands.docbook:588
+#, no-c-format
+msgid "Execute shell command"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:589
+#, no-c-format
+msgid "Shell usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:592
+#, no-c-format
+msgid ""
+"shell &lt;TEXT&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(&lt;TEXT&gt; is the "
+"text to be passed to operating system for execution)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:598
+#, no-c-format
+msgid "Showbreak"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:599
+#, no-c-format
+msgid "To display list of template break points."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:600
+#, no-c-format
+msgid "Shortcut name: show"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:600
+#, no-c-format
+msgid ""
+"If a mode exists on a template breakpoint then it will be appended to the "
+"end of template name for breakpoint. An example of the output is:"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:604
+#, no-c-format
+msgid "Breakpoint 3 enabled for template :\"*\" in file test1.xsl : line 105"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:605
+#, no-c-format
+msgid ""
+"Breakpoint 2 enabled for template :\"* testMode\" in file test1.xsl : line "
+"109"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:606
+#, no-c-format
+msgid ""
+"Breakpoint 1 enabled for template :\"* http://www.w3.org/1999/XSL/Transform:"
+"testMode\" in file test1.xsl : line 113"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:608
+#, no-c-format
+msgid "Total of 3 breakpoints present"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:610
+#, no-c-format
+msgid "Showbreak usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:613
+#, no-c-format
+msgid "showbreak"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:619
+#, no-c-format
+msgid "Showparam"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:620
+#, no-c-format
+msgid "Print the libxslt parameters present"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:621
+#, no-c-format
+msgid "Showparam usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:624
+#, no-c-format
+msgid "showparam"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:630
+#, no-c-format
+msgid "Showwatch"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:631
+#, no-c-format
+msgid "Show the current expression being watched"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:632
+#, no-c-format
+msgid "Shortcut name: watches"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:633
+#, no-c-format
+msgid "Showwatch usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:636
+#, no-c-format
+msgid ""
+"showwatch&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Show the currently selected "
+"watches and their values)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:637
+#, no-c-format
+msgid ""
+"showwatch 1&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Enable the automatic printing "
+"of watch expressions. This is used by default.)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:638
+#, no-c-format
+msgid ""
+"showwatch 0&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Disable the automatic printing "
+"of watch expressions.)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:644
+#, no-c-format
+msgid "Source"
+msgstr "Sorga"
+
+#. Tag: para
+#: commands.docbook:645
+#, no-c-format
+msgid ""
+"Switch to displaying the current node in stylesheet. Or change stylesheet "
+"used"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:646
+#, no-c-format
+msgid "Source usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:649
+#, no-c-format
+msgid ""
+"source&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Switch to the current node in "
+"stylesheet.)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:650
+#, no-c-format
+msgid ""
+"source &lt;SOURCE&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(To change to a new "
+"source file. A leading <literal>~</literal> is replaced by the $HOME "
+"environment variable value. You will need to use the <command>run</command> "
+"command to execute it)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:656
+#, no-c-format
+msgid "Step"
+msgstr "Pas"
+
+#. Tag: para
+#: commands.docbook:657
+#, no-c-format
+msgid "Step until next stylesheet instruction."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:658
+#, no-c-format
+msgid "Shortcut name: s"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:659
+#, no-c-format
+msgid "Step usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:662
+#, no-c-format
+msgid "step"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:668
+#, no-c-format
+msgid "Stepdown"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:669
+#, no-c-format
+msgid "Step down to a newer <quote>call frame</quote>."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:670
+#, no-c-format
+msgid "Shortcut name: down"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:671
+#, no-c-format
+msgid "Stepdown usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:674
+#, no-c-format
+msgid ""
+"stepdown &nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(step down one frame)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:675
+#, no-c-format
+msgid ""
+"stepdown &lt;NUMBER_OF_FRAMES&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(step "
+"down specified number of frames)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:681
+#, no-c-format
+msgid "Stepup"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:682
+#, no-c-format
+msgid "Step up to a older <quote>call frame</quote>."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:683
+#, no-c-format
+msgid "Shortcut name: up"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:683
+#, no-c-format
+msgid "This is not an accurate command, xsldbg will stop as close as it can."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:684
+#, no-c-format
+msgid "Stepup usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:687
+#, no-c-format
+msgid "stepup &nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(step up one frame)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:688
+#, no-c-format
+msgid ""
+"stepup &lt;NUMBER_OF_FRAMES&gt; &nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(step up "
+"specified number of frames)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:694
+#, no-c-format
+msgid "Stylesheets"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:695
+#, no-c-format
+msgid "Print out a list of stylesheets loaded"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:696
+#, no-c-format
+msgid "Shortcut name: style"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:697
+#, no-c-format
+msgid "Stylesheets usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:700
+#, no-c-format
+msgid "stylesheets"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:707
+#, no-c-format
+msgid "System"
+msgstr "Sistèma"
+
+#. Tag: para
+#: commands.docbook:708
+#, no-c-format
+msgid "Print the value that a system file maps via the current catalog"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:709
+#, no-c-format
+msgid "Shortcut name: sys"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:710
+#, no-c-format
+msgid "System usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:713
+#, no-c-format
+msgid "system \"&lt;SystemID&gt;\""
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:719
+#, no-c-format
+msgid "Templates"
+msgstr "Modèls"
+
+#. Tag: para
+#: commands.docbook:720
+#, no-c-format
+msgid "Print a list of available templates. Search for a template"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:721
+#, no-c-format
+msgid "Shortcut name: t"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:722
+#, no-c-format
+msgid "Templates usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:725
+#, no-c-format
+msgid "templates"
+msgstr "modèls"
+
+#. Tag: entry
+#: commands.docbook:726
+#, no-c-format
+msgid ""
+"templates &lt;TEMPLATE&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Print details "
+"of template named &lt;TEMPLATE&gt; if it can be found)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:732
+#, no-c-format
+msgid "Trace"
+msgstr "França"
+
+#. Tag: para
+#: commands.docbook:733
+#, no-c-format
+msgid ""
+"Trace one execution of the stylesheet printing the file and lines of "
+"intermediate steps"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:735
+#, no-c-format
+msgid "Trace usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:738
+#, no-c-format
+msgid "trace"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:744
+#, no-c-format
+msgid "<title>Tty</title>"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:745
+#, no-c-format
+msgid "Open a terminal. Set the level of tty redirection."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:746
+#, no-c-format
+msgid "Tty usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:749
+#, no-c-format
+msgid ""
+"tty &lt;DEVICE_PATH&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Where &lt;"
+"DEVICE_PATH&gt; is a valid terminal on the operating system. Just tries to "
+"open the terminal</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:750
+#, no-c-format
+msgid ""
+"tty &lt;TTY_LEVEL&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Set the level of tty "
+"redirection, where &lt;TTY_LEVEL&gt; is a valid level of input/output to use)"
+"</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:754
+#, no-c-format
+msgid "Where level is"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:755
+#, no-c-format
+msgid "0 = Default input/output"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:756
+#, no-c-format
+msgid ""
+"1 = Terminal output of results of transformation, tracing and walking &nbsp;"
+"&nbsp;&nbsp;&nbsp;<emphasis>(Default state when tty device has been opened. "
+"Not fully implemented yet.)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:757
+#, no-c-format
+msgid ""
+"2 = Full redirection to terminal&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Not "
+"implemented yet.)</emphasis>"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:758
+#, no-c-format
+msgid "All other integer values are assumed to mean level 0"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:769
+#, no-c-format
+msgid "Validate"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:770
+#, no-c-format
+msgid "Validate the output file generated by stylesheet (Disabled)"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:771
+#, no-c-format
+msgid "Validate usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:774
+#, no-c-format
+msgid "validate"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:780
+#, no-c-format
+msgid "Walk"
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:781
+#, no-c-format
+msgid "Walk through code using a range of speeds"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:782
+#, no-c-format
+msgid "Walk usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:785
+#, no-c-format
+msgid ""
+"walk &lt;SPEED&gt;&nbsp;&nbsp;&nbsp;&nbsp;<emphasis>(Use Ctrl-c to stop "
+"execution, &lt;SPEED&gt; is a value between 0 and 9. Where 0 means stop, 1 "
+"is very fast, 9 is very slow)</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:793
+#, no-c-format
+msgid "Where"
+msgstr "Ont"
+
+#. Tag: para
+#: commands.docbook:794
+#, no-c-format
+msgid ""
+"Print a trace of templates calls (frame stack) and print the working "
+"directory."
+msgstr ""
+
+#. Tag: para
+#: commands.docbook:795
+#, no-c-format
+msgid "Shortcut name: w"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:796
+#, no-c-format
+msgid "Where usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:799
+#, no-c-format
+msgid "where"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:805
+#, no-c-format
+msgid "Write"
+msgstr "Escritura"
+
+#. Tag: para
+#: commands.docbook:806
+#, no-c-format
+msgid "To be completed"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:807
+#, no-c-format
+msgid "Write usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:810
+#, no-c-format
+msgid "write"
+msgstr "escritura"
+
+#. Tag: title
+#: commands.docbook:817
+#, fuzzy, no-c-format
+#| msgid "Write"
+msgid "Writeconfig"
+msgstr "Escritura"
+
+#. Tag: para
+#: commands.docbook:818
+#, no-c-format
+msgid "Write xsldbg's configuration from settings stored on disk."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:819
+#, no-c-format
+msgid "Writeconfig usage"
+msgstr ""
+
+#. Tag: entry
+#: commands.docbook:822
+#, fuzzy, no-c-format
+#| msgid "write"
+msgid "writeconfig"
+msgstr "escritura"
