@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-22 02:56+0100\n"
+"POT-Creation-Date: 2011-01-23 02:54+0100\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -1376,25 +1376,6 @@ msgstr ""
 msgid "Accuracy"
 msgstr ""
 
-#: browsers/playlistbrowser/DynamicModel.cpp:99
-#: browsers/playlistbrowser/DynamicModel.cpp:179
-#: browsers/playlistbrowser/DynamicModel.cpp:563
-#: widgets/SmartPlaylistEditor.cpp:238
-msgid "Random"
-msgstr "Aleatòri"
-
-#: browsers/playlistbrowser/DynamicModel.cpp:229
-#, fuzzy, kde-format
-#| msgid "modified"
-msgid "%1 (modified) "
-msgstr "modificat"
-
-#: browsers/playlistbrowser/DynamicModel.cpp:564
-#, fuzzy
-#| msgid "modified"
-msgid "Random (modified)"
-msgstr "modificat"
-
 #: browsers/playlistbrowser/PodcastModel.cpp:73
 #, fuzzy
 #| msgid "&Next"
@@ -1560,6 +1541,25 @@ msgstr "Renommar"
 msgctxt "Enter a new name for a folder that already exists"
 msgid "Enter new folder name:"
 msgstr "Internacional"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:95
+#: browsers/playlistbrowser/DynamicModel.cpp:175
+#: browsers/playlistbrowser/DynamicModel.cpp:559
+#: widgets/SmartPlaylistEditor.cpp:238
+msgid "Random"
+msgstr "Aleatòri"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:225
+#, fuzzy, kde-format
+#| msgid "modified"
+msgid "%1 (modified) "
+msgstr "modificat"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:560
+#, fuzzy
+#| msgid "modified"
+msgid "Random (modified)"
+msgstr "modificat"
 
 #: browsers/servicebrowser/ServiceBrowser.cpp:44
 msgid ""
@@ -1804,7 +1804,7 @@ msgid "Edit Track Details"
 msgstr ""
 
 #: context/applets/albums/Albums.cpp:63
-#: context/engines/current/CurrentEngine.cpp:134
+#: context/engines/current/CurrentEngine.cpp:133
 msgid "Recently added albums"
 msgstr ""
 
@@ -2015,7 +2015,7 @@ msgid "Reload"
 msgstr "&Descargar"
 
 #: context/applets/labels/LabelsApplet.cpp:176
-#: context/engines/current/CurrentEngine.cpp:126 mac/GrowlInterface.cpp:43
+#: context/engines/current/CurrentEngine.cpp:125 mac/GrowlInterface.cpp:43
 #: widgets/Osd.cpp:623 EngineController.cpp:1409
 msgid "No track playing"
 msgstr ""
@@ -2703,7 +2703,14 @@ msgid ""
 "Please add some applets from the toolbar at the bottom of the context view."
 msgstr ""
 
-#: context/engines/current/CurrentEngine.cpp:208
+#: context/engines/current/CurrentEngine.cpp:205
+#, fuzzy
+#| msgid "&Albums"
+msgctxt "Header text for current album applet"
+msgid "Albums"
+msgstr "&Alboms"
+
+#: context/engines/current/CurrentEngine.cpp:216
 #, fuzzy, kde-format
 #| msgid "Albums By"
 msgid "Albums by %1"
@@ -3735,20 +3742,20 @@ msgid ""
 msgstr ""
 
 #: core-impl/meta/default/DefaultMetaTypes.h:39
-#: core-impl/meta/default/DefaultMetaTypes.h:77
-#: core-impl/meta/default/DefaultMetaTypes.h:94
-#: services/scriptable/ScriptableServiceMeta_p.h:108
-#: services/scriptable/ScriptableServiceMeta_p.h:166
-#: services/scriptable/ScriptableServiceMeta_p.h:215
-#: services/scriptable/ScriptableServiceMeta_p.h:258
-#: services/scriptable/ScriptableServiceMeta_p.h:300
+#: core-impl/meta/default/DefaultMetaTypes.h:75
+#: core-impl/meta/default/DefaultMetaTypes.h:92
+#: services/scriptable/ScriptableServiceMeta_p.h:103
+#: services/scriptable/ScriptableServiceMeta_p.h:161
+#: services/scriptable/ScriptableServiceMeta_p.h:210
+#: services/scriptable/ScriptableServiceMeta_p.h:253
+#: services/scriptable/ScriptableServiceMeta_p.h:295
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "The value is not known"
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: core-impl/meta/default/DefaultMetaTypes.h:60
+#: core-impl/meta/default/DefaultMetaTypes.h:58
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "The Value is not known"
@@ -5747,110 +5754,104 @@ msgstr "Desconegut"
 msgid "Tracks by this Artist"
 msgstr "Mai d'un artista"
 
-#: dialogs/TagDialog.cpp:938
-#, fuzzy
-#| msgid "Album Artist"
-msgid "Albums by this Artist"
-msgstr "Artista de l'album"
-
-#: dialogs/TagDialog.cpp:995
+#: dialogs/TagDialog.cpp:1000
 #, kde-format
 msgid "Track Details: %1 by %2"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1019 dialogs/TagDialog.cpp:1029
+#: dialogs/TagDialog.cpp:1024 dialogs/TagDialog.cpp:1034
 #, kde-format
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%1</b> per <b>%2</b>"
 
-#: dialogs/TagDialog.cpp:1027
+#: dialogs/TagDialog.cpp:1032
 #, kde-format
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1031
+#: dialogs/TagDialog.cpp:1036
 #, kde-format
 msgid "<b>%1</b>"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1078
+#: dialogs/TagDialog.cpp:1083
 msgid "Length:"
 msgstr "Longor :"
 
-#: dialogs/TagDialog.cpp:1079
+#: dialogs/TagDialog.cpp:1084
 #, fuzzy
 #| msgid "Aborted"
 msgid "Bit rate:"
 msgstr "Abandonat"
 
-#: dialogs/TagDialog.cpp:1080
+#: dialogs/TagDialog.cpp:1085
 #, fuzzy
 #| msgid "Framerate"
 msgid "Sample rate:"
 msgstr "Imatges per segonda"
 
-#: dialogs/TagDialog.cpp:1081
+#: dialogs/TagDialog.cpp:1086
 msgid "Size:"
 msgstr "Talha :"
 
-#: dialogs/TagDialog.cpp:1082
+#: dialogs/TagDialog.cpp:1087
 msgid "Format:"
 msgstr "Format :"
 
 #. i18n: file: dialogs/TagDialogBase.ui:654
 #. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: dialogs/TagDialog.cpp:1085 rc.cpp:1118
+#: dialogs/TagDialog.cpp:1090 rc.cpp:1118
 msgid "Score:"
 msgstr "Marca :"
 
 #. i18n: file: dialogs/TagDialogBase.ui:686
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
-#: dialogs/TagDialog.cpp:1087 rc.cpp:1121
+#: dialogs/TagDialog.cpp:1092 rc.cpp:1121
 msgid "Rating:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1089
+#: dialogs/TagDialog.cpp:1094
 #, fuzzy
 #| msgctxt "state, as in playing"
 #| msgid "Play"
 msgid "Play Count:"
 msgstr "Legir"
 
-#: dialogs/TagDialog.cpp:1092
+#: dialogs/TagDialog.cpp:1097
 msgid "First Played:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1093
+#: dialogs/TagDialog.cpp:1098
 #, fuzzy
 #| msgid "Never"
 msgctxt "When this track was first played"
 msgid "Never"
 msgstr "Jamai"
 
-#: dialogs/TagDialog.cpp:1094
+#: dialogs/TagDialog.cpp:1099
 msgctxt "a single item (singular)"
 msgid "Last Played:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1095
+#: dialogs/TagDialog.cpp:1100
 #, fuzzy
 #| msgid "Never"
 msgctxt "When this track was last played"
 msgid "Never"
 msgstr "Jamai"
 
-#: dialogs/TagDialog.cpp:1099
+#: dialogs/TagDialog.cpp:1104
 msgid "Collection:"
 msgstr "Colleccion :"
 
-#: dialogs/TagDialog.cpp:1101
+#: dialogs/TagDialog.cpp:1106
 #, fuzzy
 #| msgid "None"
 msgctxt "The collection this track is part of"
 msgid "None"
 msgstr "Pas cap"
 
-#: dialogs/TagDialog.cpp:1190
+#: dialogs/TagDialog.cpp:1195
 #, fuzzy, kde-format
 #| msgid "Track"
 msgctxt "The amount of tracks being edited"
@@ -5859,37 +5860,37 @@ msgid_plural "Information for %1 Tracks"
 msgstr[0] "Pista"
 msgstr[1] "Pista"
 
-#: dialogs/TagDialog.cpp:1330
+#: dialogs/TagDialog.cpp:1335
 #, kde-format
 msgid "Editing 1 file"
 msgid_plural "Editing %1 files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: dialogs/TagDialog.cpp:1335
+#: dialogs/TagDialog.cpp:1340
 msgid "Rated Songs:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1337
+#: dialogs/TagDialog.cpp:1342
 msgid "Average Rating:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1339
+#: dialogs/TagDialog.cpp:1344
 msgid "Scored Songs:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1341
+#: dialogs/TagDialog.cpp:1346
 msgid "Average Score:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1731
+#: dialogs/TagDialog.cpp:1736
 msgid ""
 "Writing to file failed. Please check permissions and available disc space."
 msgstr ""
 
 #. i18n: file: dialogs/MusicBrainzTagger.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, MusicBrainzTagger)
-#: dialogs/TagDialog.cpp:1919 rc.cpp:919
+#: dialogs/TagDialog.cpp:1924 rc.cpp:919
 msgid "MusicBrainz Tagger"
 msgstr ""
 
@@ -7798,31 +7799,6 @@ msgid ""
 "constraints to find more tracks."
 msgstr ""
 
-#: playlistgenerator/Preset.cpp:41 playlistgenerator/Preset.cpp:54
-#, fuzzy
-#| msgid "&Playlist"
-msgid "New playlist preset"
-msgstr "&Tièra de lectura"
-
-#: playlistgenerator/Preset.cpp:44 playlistgenerator/Preset.cpp:66
-#, fuzzy
-#| msgid "New Playlist"
-msgid "Unnamed playlist preset"
-msgstr "Novèla tièra de lecturas"
-
-#: playlistgenerator/Preset.cpp:128
-#, fuzzy
-#| msgid "New Playlist"
-msgid "Generating a new playlist"
-msgstr "Novèla tièra de lecturas"
-
-#: playlistgenerator/Preset.cpp:148
-msgid ""
-"The playlist generator created a playlist which does not meet all of your "
-"constraints.  If you are not satisfied with the results, try loosening or "
-"removing some constraints and then generating a new playlist."
-msgstr ""
-
 #: playlistgenerator/PresetModel.cpp:157 playlistgenerator/PresetModel.cpp:286
 msgid "Preset files (*.xml)"
 msgstr ""
@@ -7878,6 +7854,31 @@ msgstr ""
 #: playlistgenerator/PresetModel.cpp:295
 #, kde-format
 msgid "Export `%1' preset"
+msgstr ""
+
+#: playlistgenerator/Preset.cpp:40 playlistgenerator/Preset.cpp:53
+#, fuzzy
+#| msgid "&Playlist"
+msgid "New playlist preset"
+msgstr "&Tièra de lectura"
+
+#: playlistgenerator/Preset.cpp:43 playlistgenerator/Preset.cpp:65
+#, fuzzy
+#| msgid "New Playlist"
+msgid "Unnamed playlist preset"
+msgstr "Novèla tièra de lecturas"
+
+#: playlistgenerator/Preset.cpp:127
+#, fuzzy
+#| msgid "New Playlist"
+msgid "Generating a new playlist"
+msgstr "Novèla tièra de lecturas"
+
+#: playlistgenerator/Preset.cpp:147
+msgid ""
+"The playlist generator created a playlist which does not meet all of your "
+"constraints.  If you are not satisfied with the results, try loosening or "
+"removing some constraints and then generating a new playlist."
 msgstr ""
 
 #: playlistmanager/SyncedPlaylist.cpp:40 playlistmanager/SyncedPlaylist.cpp:48
@@ -14824,6 +14825,11 @@ msgstr "Grop novèl"
 #: rc.cpp:2415
 msgid "Verbose"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Album Artist"
+#~ msgid "Albums by this Artist"
+#~ msgstr "Artista de l'album"
 
 #, fuzzy
 #~| msgid "Aborted"
