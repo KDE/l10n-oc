@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-22 03:22+0100\n"
+"POT-Creation-Date: 2011-01-25 03:38+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -53,6 +53,10 @@ msgstr "Suprimir pagina"
 msgid "A simple path shape"
 msgstr ""
 
+#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
+msgid "Tool Options"
+msgstr "Opcions dels espleches"
+
 #: flake/KoShapeController.cpp:64 kotext/InsertTextReferenceAction.cpp:63
 #: kotext/InsertVariableAction.cpp:51
 #: main/rdf/InsertSemanticObjectCreateAction.cpp:59
@@ -61,28 +65,14 @@ msgstr ""
 msgid "%1 Options"
 msgstr ""
 
-#: flake/KoShapePaste.cpp:100
-msgid "Paste Shapes"
-msgstr ""
-
-#: flake/KoToolBase.cpp:187 flake/KoToolManager.cpp:356
-msgid "Tool Options"
-msgstr "Opcions dels espleches"
-
-#: flake/KoToolManager.cpp:355
+#: flake/KoToolManager.cpp:350
 #, kde-format
 msgid "Active tool: %1"
 msgstr ""
 
-#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
-msgid "Change Connection"
+#: flake/KoShapePaste.cpp:100
+msgid "Paste Shapes"
 msgstr ""
-
-#: flake/commands/KoParameterHandleMoveCommand.cpp:34
-#, fuzzy
-#| msgid "Change"
-msgid "Change Parameter"
-msgstr "Cambiar"
 
 #: flake/commands/KoParameterToPathCommand.cpp:43
 #: flake/commands/KoParameterToPathCommand.cpp:52
@@ -273,29 +263,15 @@ msgstr "Suprimir un grop"
 msgid "Remove Subpath"
 msgstr "Suprimir un grop"
 
-#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
-msgid "Snapping"
+#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+msgid "Change Connection"
 msgstr ""
 
-#: flake/tools/KoCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:379
-msgid "Angle Constraints"
-msgstr ""
-
-#: flake/tools/KoCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr ""
-
-#: flake/tools/KoCreateShapesToolFactory.cpp:33
-msgid "Create object"
-msgstr ""
-
-#: flake/tools/KoPanToolFactory.cpp:29
-msgid "Pan"
-msgstr "Pan"
+#: flake/commands/KoParameterHandleMoveCommand.cpp:34
+#, fuzzy
+#| msgid "Change"
+msgid "Change Parameter"
+msgstr "Cambiar"
 
 #: flake/tools/KoPathSegmentChangeStrategy.cpp:145
 #, fuzzy
@@ -365,6 +341,10 @@ msgstr ""
 msgid "Line/Curve"
 msgstr "Corba"
 
+#: flake/tools/KoPathTool.cpp:181 flake/tools/KoCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr ""
+
 #: flake/tools/KoPathTool.cpp:515
 msgid "Drag to move handle."
 msgstr ""
@@ -388,6 +368,26 @@ msgstr ""
 #: flake/tools/KoPathToolFactory.cpp:29
 msgid "Path editing tool"
 msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:379
+msgid "Angle Constraints"
+msgstr ""
+
+#: flake/tools/KoCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr ""
+
+#: flake/tools/KoCreateShapesToolFactory.cpp:33
+msgid "Create object"
+msgstr ""
+
+#: flake/tools/KoPanToolFactory.cpp:29
+msgid "Pan"
+msgstr "Pan"
 
 #: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
@@ -952,25 +952,6 @@ msgstr[1] ""
 msgid "Found no match"
 msgstr ""
 
-#: kotext/KoReplaceStrategy.cpp:56
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-
-#: kotext/KoReplaceStrategy.cpp:59
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kotext/KoReplaceStrategy.cpp:72
-#, kde-format
-msgid "Replace %1 with %2?"
-msgstr ""
-
 #: kotext/KoText.cpp:29
 msgctxt "Underline Style"
 msgid "None"
@@ -1108,6 +1089,25 @@ msgstr "Inserir un saut"
 #: kotext/KoTextEditor_p.h:83 kotext/KoTextEditor_p.h:120 rc.cpp:348
 msgid "Format"
 msgstr "Format"
+
+#: kotext/KoReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+
+#: kotext/KoReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kotext/KoReplaceStrategy.cpp:74
+#, kde-format
+msgid "Replace %1 with %2?"
+msgstr ""
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
