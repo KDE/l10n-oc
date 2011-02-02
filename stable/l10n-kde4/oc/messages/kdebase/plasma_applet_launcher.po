@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 02:55+0100\n"
+"POT-Creation-Date: 2011-02-02 12:18+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,67 +17,110 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: simpleapplet/simpleapplet.cpp:193 core/favoritesmodel.cpp:49
-#: core/favoritesmodel.cpp:322 ui/launcher.cpp:116 ui/launcher.cpp:175
+#: applet/applet.cpp:84
+msgid "Kickoff Application Launcher"
+msgstr ""
+
+#: applet/applet.cpp:85
+msgid ""
+"Favorites, applications, computer places, recently used items and desktop "
+"sessions"
+msgstr ""
+
+#: applet/applet.cpp:108 simpleapplet/simpleapplet.cpp:345
+#, fuzzy
+#| msgid "Applications"
+msgid "Edit Applications..."
+msgstr "Aplicacions"
+
+#: applet/applet.cpp:114
+msgid "Switch to Classic Menu Style"
+msgstr ""
+
+#: applet/applet.cpp:159
+msgctxt "General configuration page"
+msgid "General"
+msgstr ""
+
+#: core/applicationmodel.cpp:335
+msgid "Games"
+msgstr ""
+
+#: core/applicationmodel.cpp:425 ui/flipscrollview.cpp:138
+#, fuzzy
+#| msgid "Applications"
+msgid "All Applications"
+msgstr "Totas las aplicacions"
+
+#: core/favoritesmodel.cpp:49 core/favoritesmodel.cpp:322
+#: simpleapplet/simpleapplet.cpp:193 ui/launcher.cpp:116 ui/launcher.cpp:175
 msgid "Favorites"
 msgstr "Marca-paginas"
 
-#: simpleapplet/simpleapplet.cpp:194
-msgid "Bookmarks"
+#: core/leavemodel.cpp:48 simpleapplet/simpleapplet.cpp:210
+#, fuzzy
+#| msgid "Logout"
+msgid "Log out"
+msgstr "Desconnexion"
+
+#: core/leavemodel.cpp:50
+msgid "End session"
 msgstr ""
 
-#: simpleapplet/simpleapplet.cpp:195 core/systemmodel.cpp:84
-#: core/recentlyusedmodel.cpp:120 ui/launcher.cpp:118 ui/launcher.cpp:205
-msgid "Applications"
-msgstr "Aplicacions"
+#: core/leavemodel.cpp:52
+msgid "Lock"
+msgstr "Varrolhar"
 
-#: simpleapplet/simpleapplet.cpp:196 core/systemmodel.cpp:327
-#: ui/launcher.cpp:118 ui/launcher.cpp:239
-msgid "Computer"
-msgstr "Ordenador"
-
-#: simpleapplet/simpleapplet.cpp:197 core/recentlyusedmodel.cpp:186
-#: ui/launcher.cpp:119 ui/launcher.cpp:218
-msgid "Recently Used"
-msgstr "Utilizat recentament"
-
-#: simpleapplet/simpleapplet.cpp:198 core/recentlyusedmodel.cpp:190
-#, fuzzy
-#| msgid "Applications"
-msgid "Recently Used Applications"
-msgstr "Totas las aplicacions"
-
-#: simpleapplet/simpleapplet.cpp:199 core/recentlyusedmodel.cpp:188
-#, fuzzy
-#| msgid "Recently Used"
-msgid "Recently Used Documents"
-msgstr "Utilizat recentament"
-
-#: simpleapplet/simpleapplet.cpp:200
-msgid "System Settings"
-msgstr ""
-
-#: simpleapplet/simpleapplet.cpp:201 core/systemmodel.cpp:215
-msgid "Run Command..."
-msgstr ""
-
-#: simpleapplet/simpleapplet.cpp:202 core/leavemodel.cpp:56
-msgid "Switch User"
-msgstr "Cambiar d'utilizaire"
-
-#: simpleapplet/simpleapplet.cpp:203 core/leavemodel.cpp:68
-#, fuzzy
-#| msgid "Session"
-msgid "Save Session"
-msgstr "Sesilha"
-
-#: simpleapplet/simpleapplet.cpp:204 core/leavemodel.cpp:54
+#: core/leavemodel.cpp:54 simpleapplet/simpleapplet.cpp:204
 #, fuzzy
 #| msgid "Lock the screen"
 msgid "Lock Screen"
 msgstr "Varrolhar l'ecran"
 
-#: simpleapplet/simpleapplet.cpp:205 core/leavemodel.cpp:72
+#: core/leavemodel.cpp:56 simpleapplet/simpleapplet.cpp:202
+msgid "Switch User"
+msgstr "Cambiar d'utilizaire"
+
+#: core/leavemodel.cpp:58
+msgid "Start a parallel session as a different user"
+msgstr ""
+
+#: core/leavemodel.cpp:60 simpleapplet/simpleapplet.cpp:209
+#, fuzzy
+#| msgid "Shutdown"
+msgid "Shut down"
+msgstr "Atudar"
+
+#: core/leavemodel.cpp:62
+#, fuzzy
+#| msgid "Turn off the computer"
+msgid "Turn off computer"
+msgstr "Atudar l'ordenador"
+
+#: core/leavemodel.cpp:64
+#, fuzzy
+#| msgid "Restart"
+msgctxt "Restart computer"
+msgid "Restart"
+msgstr "Tornar lançar"
+
+#: core/leavemodel.cpp:66
+#, fuzzy
+#| msgid "Restart the computer"
+msgid "Restart Computer"
+msgstr "Tornar aviar l'ordenador"
+
+#: core/leavemodel.cpp:68 simpleapplet/simpleapplet.cpp:203
+#, fuzzy
+#| msgid "Session"
+msgid "Save Session"
+msgstr "Sesilha"
+
+#: core/leavemodel.cpp:70
+msgid "Save current session for next login"
+msgstr ""
+
+#: core/leavemodel.cpp:72 simpleapplet/simpleapplet.cpp:205
 #, fuzzy
 #| msgctxt "@item:inlistbox View:"
 #| msgid "Standard"
@@ -85,12 +128,112 @@ msgctxt "Puts the system on standby"
 msgid "Standby"
 msgstr "Estandard"
 
-#: simpleapplet/simpleapplet.cpp:206 core/leavemodel.cpp:76
+#: core/leavemodel.cpp:74
+msgid "Pause without logging out"
+msgstr ""
+
+#: core/leavemodel.cpp:76 simpleapplet/simpleapplet.cpp:206
 msgid "Hibernate"
 msgstr "Ibernar"
 
-#: simpleapplet/simpleapplet.cpp:207 core/leavemodel.cpp:80
+#: core/leavemodel.cpp:78
+msgid "Suspend to disk"
+msgstr ""
+
+#: core/leavemodel.cpp:80 simpleapplet/simpleapplet.cpp:207
 msgid "Sleep"
+msgstr ""
+
+#: core/leavemodel.cpp:82
+msgid "Suspend to RAM"
+msgstr ""
+
+#: core/leavemodel.cpp:105 simpleapplet/simpleapplet.cpp:211
+#: ui/launcher.cpp:163
+msgid "Leave"
+msgstr "Sortir"
+
+#: core/leavemodel.cpp:117
+msgid "Session"
+msgstr "Sesilha"
+
+#: core/leavemodel.cpp:139
+msgid "System"
+msgstr "Sistèma"
+
+#: core/models.cpp:121
+msgid "Home Folder"
+msgstr "Repertòri personal"
+
+#: core/models.cpp:124
+msgid "Network Folders"
+msgstr ""
+
+#: core/recentlyusedmodel.cpp:109
+msgid "Documents"
+msgstr "Documents"
+
+#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:84
+#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:118 ui/launcher.cpp:205
+msgid "Applications"
+msgstr "Aplicacions"
+
+#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
+#: ui/launcher.cpp:119 ui/launcher.cpp:218
+msgid "Recently Used"
+msgstr "Utilizat recentament"
+
+#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
+#, fuzzy
+#| msgid "Recently Used"
+msgid "Recently Used Documents"
+msgstr "Utilizat recentament"
+
+#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
+#, fuzzy
+#| msgid "Applications"
+msgid "Recently Used Applications"
+msgstr "Totas las aplicacions"
+
+#: core/systemmodel.cpp:85
+msgid "Places"
+msgstr "Acorchis"
+
+#: core/systemmodel.cpp:86
+msgid "Removable Storage"
+msgstr ""
+
+#: core/systemmodel.cpp:87
+msgid "Storage"
+msgstr ""
+
+#: core/systemmodel.cpp:215 simpleapplet/simpleapplet.cpp:201
+msgid "Run Command..."
+msgstr ""
+
+#: core/systemmodel.cpp:219
+msgid "Run a command or a search query"
+msgstr ""
+
+#: core/systemmodel.cpp:327 simpleapplet/simpleapplet.cpp:196
+#: ui/launcher.cpp:118 ui/launcher.cpp:239
+msgid "Computer"
+msgstr "Ordenador"
+
+#: main.cpp:32
+msgid "Kickoff"
+msgstr ""
+
+#: main.cpp:33
+msgid "Application Launcher"
+msgstr ""
+
+#: simpleapplet/simpleapplet.cpp:194
+msgid "Bookmarks"
+msgstr ""
+
+#: simpleapplet/simpleapplet.cpp:200
+msgid "System Settings"
 msgstr ""
 
 #: simpleapplet/simpleapplet.cpp:208
@@ -100,23 +243,6 @@ msgctxt "Restart Computer"
 msgid "Restart"
 msgstr "Tornar lançar"
 
-#: simpleapplet/simpleapplet.cpp:209 core/leavemodel.cpp:60
-#, fuzzy
-#| msgid "Shutdown"
-msgid "Shut down"
-msgstr "Atudar"
-
-#: simpleapplet/simpleapplet.cpp:210 core/leavemodel.cpp:48
-#, fuzzy
-#| msgid "Logout"
-msgid "Log out"
-msgstr "Desconnexion"
-
-#: simpleapplet/simpleapplet.cpp:211 core/leavemodel.cpp:105
-#: ui/launcher.cpp:163
-msgid "Leave"
-msgstr "Sortir"
-
 #: simpleapplet/simpleapplet.cpp:267
 msgid "Application Launcher Menu"
 msgstr ""
@@ -124,12 +250,6 @@ msgstr ""
 #: simpleapplet/simpleapplet.cpp:335
 msgid "Switch to Application Launcher Style"
 msgstr ""
-
-#: simpleapplet/simpleapplet.cpp:345 applet/applet.cpp:108
-#, fuzzy
-#| msgid "Applications"
-msgid "Edit Applications..."
-msgstr "Aplicacions"
 
 #: simpleapplet/simpleapplet.cpp:445
 msgid "View"
@@ -190,118 +310,6 @@ msgstr "Aplicacions"
 #| msgid "Applications"
 msgid "Actions"
 msgstr "Aplicacions"
-
-#: applet/applet.cpp:84
-msgid "Kickoff Application Launcher"
-msgstr ""
-
-#: applet/applet.cpp:85
-msgid ""
-"Favorites, applications, computer places, recently used items and desktop "
-"sessions"
-msgstr ""
-
-#: applet/applet.cpp:114
-msgid "Switch to Classic Menu Style"
-msgstr ""
-
-#: applet/applet.cpp:159
-msgctxt "General configuration page"
-msgid "General"
-msgstr ""
-
-#: core/systemmodel.cpp:85
-msgid "Places"
-msgstr "Acorchis"
-
-#: core/systemmodel.cpp:86
-msgid "Removable Storage"
-msgstr ""
-
-#: core/systemmodel.cpp:87
-msgid "Storage"
-msgstr ""
-
-#: core/systemmodel.cpp:219
-msgid "Run a command or a search query"
-msgstr ""
-
-#: core/leavemodel.cpp:50
-msgid "End session"
-msgstr ""
-
-#: core/leavemodel.cpp:52
-msgid "Lock"
-msgstr "Varrolhar"
-
-#: core/leavemodel.cpp:58
-msgid "Start a parallel session as a different user"
-msgstr ""
-
-#: core/leavemodel.cpp:62
-#, fuzzy
-#| msgid "Turn off the computer"
-msgid "Turn off computer"
-msgstr "Atudar l'ordenador"
-
-#: core/leavemodel.cpp:64
-#, fuzzy
-#| msgid "Restart"
-msgctxt "Restart computer"
-msgid "Restart"
-msgstr "Tornar lançar"
-
-#: core/leavemodel.cpp:66
-#, fuzzy
-#| msgid "Restart the computer"
-msgid "Restart Computer"
-msgstr "Tornar aviar l'ordenador"
-
-#: core/leavemodel.cpp:70
-msgid "Save current session for next login"
-msgstr ""
-
-#: core/leavemodel.cpp:74
-msgid "Pause without logging out"
-msgstr ""
-
-#: core/leavemodel.cpp:78
-msgid "Suspend to disk"
-msgstr ""
-
-#: core/leavemodel.cpp:82
-msgid "Suspend to RAM"
-msgstr ""
-
-#: core/leavemodel.cpp:117
-msgid "Session"
-msgstr "Sesilha"
-
-#: core/leavemodel.cpp:139
-msgid "System"
-msgstr "Sistèma"
-
-#: core/models.cpp:121
-msgid "Home Folder"
-msgstr "Repertòri personal"
-
-#: core/models.cpp:124
-msgid "Network Folders"
-msgstr ""
-
-#: core/applicationmodel.cpp:335
-msgid "Games"
-msgstr ""
-
-#: core/applicationmodel.cpp:425 ui/flipscrollview.cpp:138
-#, fuzzy
-#| msgid "Applications"
-msgid "All Applications"
-msgstr "Totas las aplicacions"
-
-#: core/recentlyusedmodel.cpp:109
-msgid "Documents"
-msgstr "Documents"
 
 #: ui/contextmenufactory.cpp:83
 msgid "Advanced"
@@ -365,14 +373,6 @@ msgstr ""
 msgctxt "Label of the search bar textedit"
 msgid "Search:"
 msgstr "Recercar :"
-
-#: main.cpp:32
-msgid "Kickoff"
-msgstr ""
-
-#: main.cpp:33
-msgid "Application Launcher"
-msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
