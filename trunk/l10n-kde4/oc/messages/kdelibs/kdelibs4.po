@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-15 03:32+0100\n"
+"POT-Creation-Date: 2011-02-20 03:34+0100\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -6215,7 +6215,7 @@ msgid "Reset Toolbars"
 msgstr "Reïnicializar las barras d'espleches"
 
 #: kdeui/dialogs/kedittoolbar.cpp:602 khtml/khtmlview.cpp:2811
-#: khtml/khtmlview.cpp:2844 khtml/html/html_formimpl.cpp:1836
+#: khtml/khtmlview.cpp:2844 khtml/html/html_formimpl.cpp:1839
 msgid "Reset"
 msgstr "Reinicializar"
 
@@ -10545,7 +10545,7 @@ msgid "Access Keys activated"
 msgstr "Tòcas d'accès activadas"
 
 #: khtml/khtmlview.cpp:2797 khtml/khtmlview.cpp:2839 khtml/khtml_part.cpp:4761
-#: khtml/html/html_formimpl.cpp:1632 khtml/html/html_formimpl.cpp:1844
+#: khtml/html/html_formimpl.cpp:1635 khtml/html/html_formimpl.cpp:1847
 msgid "Submit"
 msgstr "Sometre"
 
@@ -11147,38 +11147,9 @@ msgstr "JavaScript"
 msgid "&Stop Script"
 msgstr "Descripcion"
 
-#: khtml/ecma/kjs_html.cpp:2168 khtml/ecma/kjs_window.cpp:1650
+#: khtml/ecma/kjs_window.cpp:1650 khtml/ecma/kjs_html.cpp:2174
 msgid "Confirmation: JavaScript Popup"
 msgstr "Confirmacion : Fenèstra Javascript novèla"
-
-#: khtml/ecma/kjs_html.cpp:2170
-msgid ""
-"This site is submitting a form which will open up a new browser window via "
-"JavaScript.\n"
-"Do you want to allow the form to be submitted?"
-msgstr ""
-"Aqueste sit somet un formulari que dobrirà una fenèstra de navegaire novèla "
-"via JavaScript.\n"
-"Volètz autorizar la somission del formulari ?"
-
-#: khtml/ecma/kjs_html.cpp:2173
-#, kde-format
-msgid ""
-"<qt>This site is submitting a form which will open <p>%1</p> in a new "
-"browser window via JavaScript.<br />Do you want to allow the form to be "
-"submitted?</qt>"
-msgstr ""
-"<qt>Aqueste sit somet un formulari qu'ensaja de dobrir <p>%1</p> dins una "
-"fenèstra de navigacion novèla amb Javascript.<br />Volètz autorizar la "
-"somission del formulari ?</qt>"
-
-#: khtml/ecma/kjs_html.cpp:2175 khtml/ecma/kjs_window.cpp:1658
-msgid "Allow"
-msgstr "Autorizar"
-
-#: khtml/ecma/kjs_html.cpp:2175 khtml/ecma/kjs_window.cpp:1658
-msgid "Do Not Allow"
-msgstr "Autorizar pas"
 
 #: khtml/ecma/kjs_window.cpp:1653
 msgid ""
@@ -11196,6 +11167,14 @@ msgid ""
 msgstr ""
 "<qt>Aqueste sit ensaja de dobrir <p>%1</p>dins una fenèstra de navigacion "
 "novèla amb Javascript.<br />L'i volètz autorizar ?</qt>"
+
+#: khtml/ecma/kjs_window.cpp:1658 khtml/ecma/kjs_html.cpp:2181
+msgid "Allow"
+msgstr "Autorizar"
+
+#: khtml/ecma/kjs_window.cpp:1658 khtml/ecma/kjs_html.cpp:2181
+msgid "Do Not Allow"
+msgstr "Autorizar pas"
 
 #: khtml/ecma/kjs_window.cpp:1971
 msgid "Close window?"
@@ -11234,6 +11213,27 @@ msgstr "Inserir"
 #: khtml/ecma/kjs_window.cpp:2883
 msgid "Disallow"
 msgstr "Desactivar"
+
+#: khtml/ecma/kjs_html.cpp:2176
+msgid ""
+"This site is submitting a form which will open up a new browser window via "
+"JavaScript.\n"
+"Do you want to allow the form to be submitted?"
+msgstr ""
+"Aqueste sit somet un formulari que dobrirà una fenèstra de navegaire novèla "
+"via JavaScript.\n"
+"Volètz autorizar la somission del formulari ?"
+
+#: khtml/ecma/kjs_html.cpp:2179
+#, kde-format
+msgid ""
+"<qt>This site is submitting a form which will open <p>%1</p> in a new "
+"browser window via JavaScript.<br />Do you want to allow the form to be "
+"submitted?</qt>"
+msgstr ""
+"<qt>Aqueste sit somet un formulari qu'ensaja de dobrir <p>%1</p> dins una "
+"fenèstra de navigacion novèla amb Javascript.<br />Volètz autorizar la "
+"somission del formulari ?</qt>"
 
 #: khtml/ecma/debugger/consoledock.cpp:220
 msgid "Console"
@@ -11361,6 +11361,31 @@ msgstr ""
 msgid "Line"
 msgstr "Linha"
 
+#: khtml/html/html_objectimpl.cpp:610
+#, kde-format
+msgid ""
+"No plugin found for '%1'.\n"
+"Do you want to download one from %2?"
+msgstr ""
+"Cap de modul extèrn pas trobat per «%1».\n"
+"Ne volètz telecargar un dempuèi %2 ?"
+
+#: khtml/html/html_objectimpl.cpp:611
+msgid "Missing Plugin"
+msgstr "Modul extèrn mancant"
+
+#: khtml/html/html_objectimpl.cpp:611
+msgid "Download"
+msgstr "Telecargar"
+
+#: khtml/html/html_objectimpl.cpp:611
+msgid "Do Not Download"
+msgstr "Telecargar pas"
+
+#: khtml/html/htmlparser.cpp:1938
+msgid "This is a searchable index. Enter search keywords: "
+msgstr "Aquò es un indèx de recèrca. Picatz los mots claus de la recèrca : "
+
 #: khtml/html/html_formimpl.cpp:422
 msgid ""
 "The following files will not be uploaded because they could not be found.\n"
@@ -11396,34 +11421,9 @@ msgid_plural "&Send Files"
 msgstr[0] "&Mandar los fichièrs"
 msgstr[1] "&Mandar los fichièrs"
 
-#: khtml/html/html_formimpl.cpp:2688
+#: khtml/html/html_formimpl.cpp:2701
 msgid "Key Generator"
 msgstr ""
-
-#: khtml/html/html_objectimpl.cpp:610
-#, kde-format
-msgid ""
-"No plugin found for '%1'.\n"
-"Do you want to download one from %2?"
-msgstr ""
-"Cap de modul extèrn pas trobat per «%1».\n"
-"Ne volètz telecargar un dempuèi %2 ?"
-
-#: khtml/html/html_objectimpl.cpp:611
-msgid "Missing Plugin"
-msgstr "Modul extèrn mancant"
-
-#: khtml/html/html_objectimpl.cpp:611
-msgid "Download"
-msgstr "Telecargar"
-
-#: khtml/html/html_objectimpl.cpp:611
-msgid "Do Not Download"
-msgstr "Telecargar pas"
-
-#: khtml/html/htmlparser.cpp:1938
-msgid "This is a searchable index. Enter search keywords: "
-msgstr "Aquò es un indèx de recèrca. Picatz los mots claus de la recèrca : "
 
 #: khtml/java/kjavaapplet.cpp:224
 #, kde-format
