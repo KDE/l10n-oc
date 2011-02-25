@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-22 03:21+0100\n"
+"POT-Creation-Date: 2011-02-25 03:09+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -309,7 +309,7 @@ msgstr "Pas cap"
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
 #: kernel/kptnode.cpp:137 models/kptpertcpmmodel.cpp:425
-#: models/kptresourceappointmentsmodel.cpp:1263 rc.cpp:328
+#: models/kptresourceappointmentsmodel.cpp:1271 rc.cpp:328
 msgid "Project"
 msgstr "Projècte"
 
@@ -748,10 +748,9 @@ msgstr ""
 #: models/kptaccountsmodel.cpp:131 models/kptaccountsmodel.cpp:1037
 #: models/kptresourceallocationmodel.cpp:332 models/kptresourcemodel.cpp:433
 #: models/kptschedulemodel.cpp:759 models/kptschedulemodel.cpp:1017
-#: models/kptresourceappointmentsmodel.cpp:908
+#: models/kptcalendarmodel.cpp:424 models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
-#: models/kptresourceappointmentsmodel.cpp:1500
-#: models/kptcalendarmodel.cpp:424 rc.cpp:316
+#: models/kptresourceappointmentsmodel.cpp:1519 rc.cpp:316
 msgid "Name"
 msgstr "Nom"
 
@@ -805,7 +804,7 @@ msgstr "Url"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
 #: models/kptresourceallocationmodel.cpp:333 models/kptresourcemodel.cpp:434
-#: models/kptresourceappointmentsmodel.cpp:1501 rc.cpp:319
+#: models/kptresourceappointmentsmodel.cpp:1520 rc.cpp:319
 msgid "Type"
 msgstr "Tipe"
 
@@ -1303,65 +1302,6 @@ msgstr ""
 #| msgid "% Completed"
 msgid "Task reported %1% completed"
 msgstr "% acabat"
-
-#: models/kptresourceappointmentsmodel.cpp:581
-#, kde-format
-msgid "External project: %1"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:657
-#, kde-format
-msgid "The total booking on %1, along with the maximum hours for the resource"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:689
-msgid "Total booking by this task"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:691
-msgid "Total booking by the external project"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:734
-#, kde-format
-msgid "Booking by this task on %1"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:736
-#, kde-format
-msgid "Booking by external project on %1"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:924
-msgid "The total hours booked"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:928
-#, kde-format
-msgid "Bookings on %1"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:1298
-msgid "Interval"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:1502
-#, fuzzy
-#| msgctxt "Interval start time"
-#| msgid "Start"
-msgid "Start Time"
-msgstr "Aviar"
-
-#: models/kptresourceappointmentsmodel.cpp:1503
-msgid "End Time"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:1504
-#, fuzzy
-#| msgid "Load"
-msgctxt "@title:column noun"
-msgid "Load"
-msgstr "Carga"
 
 #: models/kptnodechartmodel.cpp:157
 #, fuzzy
@@ -3063,6 +3003,77 @@ msgctxt "@info:tooltip"
 msgid "Working"
 msgstr "Professional"
 
+#: models/kptresourceappointmentsmodel.cpp:581
+#, kde-format
+msgid "External project: %1"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:657
+#, kde-format
+msgid "The total booking on %1, along with the maximum hours for the resource"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:689
+msgid "Total booking by this task"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:691
+msgid "Total booking by the external project"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:734
+#, kde-format
+msgid "Booking by this task on %1"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:736
+#, kde-format
+msgid "Booking by external project on %1"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:924
+msgid "The total hours booked"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:928
+#, kde-format
+msgid "Bookings on %1"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1253
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1: %2<nl/>%3: %4"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1306
+msgid "Interval"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1314
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1: %2<nl/>%3: %4<nl/>Assigned: %5<nl/>Available: %6"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1521
+#, fuzzy
+#| msgctxt "Interval start time"
+#| msgid "Start"
+msgid "Start Time"
+msgstr "Aviar"
+
+#: models/kptresourceappointmentsmodel.cpp:1522
+msgid "End Time"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1523
+#, fuzzy
+#| msgid "Load"
+msgctxt "@title:column noun"
+msgid "Load"
+msgstr "Carga"
+
 #: ui/kptaccountseditor.cpp:227
 msgid "Add Account"
 msgstr "Apondre un compte"
@@ -3072,7 +3083,7 @@ msgid "Add Subaccount"
 msgstr ""
 
 #: ui/kptaccountseditor.cpp:239 ui/kptcalendareditor.cpp:631
-#: ui/kptdependencyeditor.cpp:2228 ui/kptresourceeditor.cpp:295
+#: ui/kptdependencyeditor.cpp:2239 ui/kptresourceeditor.cpp:295
 #: ui/kptscheduleeditor.cpp:287 ui/kpttaskeditor.cpp:590
 #, fuzzy
 #| msgid "Delete"
@@ -3131,33 +3142,33 @@ msgstr ""
 msgid "Set %1 to Undefined"
 msgstr ""
 
-#: ui/kptdependencyeditor.cpp:2197 ui/kpttaskeditor.cpp:559
+#: ui/kptdependencyeditor.cpp:2208 ui/kpttaskeditor.cpp:559
 #: ui/kpttaskeditor.cpp:564
 #, fuzzy
 #| msgid "Task"
 msgid "Add Task"
 msgstr "Prètzfach (Task)"
 
-#: ui/kptdependencyeditor.cpp:2202
+#: ui/kptdependencyeditor.cpp:2213
 msgid "Add Task..."
 msgstr ""
 
-#: ui/kptdependencyeditor.cpp:2207
+#: ui/kptdependencyeditor.cpp:2218
 msgid "Add Milestone..."
 msgstr ""
 
-#: ui/kptdependencyeditor.cpp:2213 ui/kpttaskeditor.cpp:575
+#: ui/kptdependencyeditor.cpp:2224 ui/kpttaskeditor.cpp:575
 #: ui/kpttaskeditor.cpp:580
 #, fuzzy
 #| msgid "Task"
 msgid "Add Sub-Task"
 msgstr "Prètzfach (Task)"
 
-#: ui/kptdependencyeditor.cpp:2218
+#: ui/kptdependencyeditor.cpp:2229
 msgid "Add Sub-Task..."
 msgstr ""
 
-#: ui/kptdependencyeditor.cpp:2223
+#: ui/kptdependencyeditor.cpp:2234
 msgid "Add Sub-Milestone..."
 msgstr ""
 
@@ -3282,8 +3293,8 @@ msgctxt "@infot:tooltip"
 msgid "Name: %1<nl/>Planned: %2 - %3"
 msgstr ""
 
-#: ui/kptganttview.cpp:131 ui/kpttaskstatusview.cpp:1186
-#: ui/kpttaskstatusview.cpp:1199
+#: ui/kptganttview.cpp:131 ui/kpttaskstatusview.cpp:1255
+#: ui/kpttaskstatusview.cpp:1268
 #, fuzzy
 #| msgid "Clear"
 msgid "Chart"
@@ -3302,7 +3313,7 @@ msgctxt "@title:tab"
 msgid "Chart"
 msgstr "Chart (Diagrama)"
 
-#: ui/kptganttview.cpp:546 ui/kpttaskeditor.cpp:619 ui/kpttaskeditor.cpp:1047
+#: ui/kptganttview.cpp:555 ui/kpttaskeditor.cpp:619 ui/kpttaskeditor.cpp:1047
 #, fuzzy
 #| msgid "Project"
 msgid "Show Project"
@@ -3736,24 +3747,24 @@ msgstr "Setmana %1"
 msgid "General Settings"
 msgstr "Paramètres generals"
 
-#: ui/kpttaskstatusview.cpp:511
+#: ui/kpttaskstatusview.cpp:563
 msgctxt "@info:tooltip"
 msgid "Cost performance index (BCWP/ACWP)"
 msgstr ""
 
-#: ui/kpttaskstatusview.cpp:847 ui/kpttaskstatusview.cpp:850
+#: ui/kpttaskstatusview.cpp:899 ui/kpttaskstatusview.cpp:902
 #, fuzzy, kde-format
 #| msgid "Cost"
 msgctxt "Chart axis title 1=currency symbol"
 msgid "Cost (%1)"
 msgstr "Còst"
 
-#: ui/kpttaskstatusview.cpp:848 ui/kpttaskstatusview.cpp:851
+#: ui/kpttaskstatusview.cpp:900 ui/kpttaskstatusview.cpp:903
 msgctxt "Chart axis title"
 msgid "Effort (hours)"
 msgstr ""
 
-#: ui/kpttaskstatusview.cpp:1186 ui/kpttaskstatusview.cpp:1200
+#: ui/kpttaskstatusview.cpp:1255 ui/kpttaskstatusview.cpp:1269
 #, fuzzy
 #| msgid "Project Settings"
 msgid "Chart Settings"
