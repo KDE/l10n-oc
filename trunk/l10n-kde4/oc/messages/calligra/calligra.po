@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-12 03:43+0200\n"
+"POT-Creation-Date: 2011-04-13 03:25+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -654,7 +654,7 @@ msgstr ""
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:43
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:39
 msgid "Misc"
 msgstr ""
 
@@ -891,7 +891,7 @@ msgstr "Personalizat"
 #: kopageapp/KoPADocumentStructureDocker.cpp:641
 #: koreport/wrtembed/KoReportDesigner.cpp:833
 #: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:52
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
 msgid "Copy"
 msgstr ""
 
@@ -3167,37 +3167,19 @@ msgstr ""
 msgid "32 Bits Float"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:27
-msgid "Mix"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:31
-#, fuzzy
-#| msgid "Lighten"
-msgid "Light"
-msgstr "Esclarzir"
-
-#: pigment/KoCompositeOp.cpp:35
-#, fuzzy
-#| msgid "Automatic"
-msgid "Arithmetic"
-msgstr "Automatic"
-
-#: pigment/KoCompositeOp.cpp:39
-msgid "Color"
-msgstr "Color"
-
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:48
 msgid "Clear"
 msgstr "Netejar"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:121
 #: pigment/compositeops/KoCompositeOpSubtract.h:37
+#: pigment/compositeops/KoCompositeOps.h:87
 msgid "Subtract"
 msgstr ""
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
+#: pigment/compositeops/KoCompositeOps.h:88
 msgid "Multiply"
 msgstr ""
 
@@ -3222,7 +3204,7 @@ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr ""
 
 #: pigment/colorspaces/KoLabColorSpace.cpp:42
-#: widgets/KoUniColorChooser.cpp:201
+#: pigment/compositeops/KoCompositeOps.h:152 widgets/KoUniColorChooser.cpp:201
 msgid "Lightness"
 msgstr "Clar"
 
@@ -3278,6 +3260,7 @@ msgid "Alpha darken"
 msgstr "Alfa"
 
 #: pigment/compositeops/KoCompositeOpDivide.h:36
+#: pigment/compositeops/KoCompositeOps.h:89
 msgid "Divide"
 msgstr ""
 
@@ -3306,10 +3289,12 @@ msgid "Normal"
 msgstr "Normal"
 
 #: pigment/compositeops/KoCompositeOpOverlay.h:36
+#: pigment/compositeops/KoCompositeOps.h:62
 msgid "Overlay"
 msgstr ""
 
 #: pigment/compositeops/KoCompositeOpScreen.h:36
+#: pigment/compositeops/KoCompositeOps.h:70
 msgid "Screen"
 msgstr "Ecran"
 
@@ -3327,8 +3312,360 @@ msgstr ""
 msgid "Copy Opacy"
 msgstr "Alfa"
 
+#: pigment/compositeops/KoCompositeOpDissolve.h:61
+msgid "Dissolve"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:63
+msgid "Grain Merge"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:64
+msgid "Grain Extract"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:65
+#, fuzzy
+#| msgid "Height:"
+msgid "Hard Mix"
+msgstr "Nautor"
+
+#: pigment/compositeops/KoCompositeOps.h:66
+msgid "Geometric Mean"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:67
+#, fuzzy
+#| msgid "Variable"
+msgid "Parallel"
+msgstr "Variable"
+
+#: pigment/compositeops/KoCompositeOps.h:68
+msgid "Allanon"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:71
+#, fuzzy
+#| msgid "Color"
+msgid "Color Dodge"
+msgstr "Color"
+
+#: pigment/compositeops/KoCompositeOps.h:72
+#, fuzzy
+#| msgid "Lighten"
+msgid "Linear Dodge"
+msgstr "Esclarzir"
+
+#: pigment/compositeops/KoCompositeOps.h:73 pigment/KoCompositeOp.cpp:32
+msgid "Lighten"
+msgstr "Esclarzir"
+
+#: pigment/compositeops/KoCompositeOps.h:74
+#, fuzzy
+#| msgid "Height:"
+msgid "Hard Light"
+msgstr "Nautor"
+
+#: pigment/compositeops/KoCompositeOps.h:75
+#, fuzzy
+#| msgid "Lighten"
+msgid "Soft Light"
+msgstr "Esclarzir"
+
+#: pigment/compositeops/KoCompositeOps.h:76
+#, fuzzy
+#| msgid "Lighten"
+msgid "Gamma Light"
+msgstr "Esclarzir"
+
+#: pigment/compositeops/KoCompositeOps.h:77
+#, fuzzy
+#| msgid "Lighten"
+msgid "Vivid Light"
+msgstr "Esclarzir"
+
+#: pigment/compositeops/KoCompositeOps.h:78
+#, fuzzy
+#| msgid "Lighten"
+msgid "Pin Light"
+msgstr "Esclarzir"
+
+#: pigment/compositeops/KoCompositeOps.h:79
+#, fuzzy
+#| msgid "Lighten"
+msgid "Linear Light"
+msgstr "Esclarzir"
+
+#: pigment/compositeops/KoCompositeOps.h:81
+#, fuzzy
+#| msgid "Color"
+msgid "Color Burn"
+msgstr "Color"
+
+#: pigment/compositeops/KoCompositeOps.h:82
+#, fuzzy
+#| msgid "Insert Break"
+msgid "Linear Burn"
+msgstr "Inserir un saut"
+
+#: pigment/compositeops/KoCompositeOps.h:83 pigment/KoCompositeOp.cpp:33
+msgid "Darken"
+msgstr "Escuresir"
+
+#: pigment/compositeops/KoCompositeOps.h:84
+msgid "Gamma Dark"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:86
+#, fuzzy
+#| msgid "Position:"
+msgid "Addition"
+msgstr "Posicion :"
+
+#: pigment/compositeops/KoCompositeOps.h:91
+msgid "Arcus Tangent"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:92
+msgid "Difference"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:93
+msgid "Exclusion"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:94
+msgid "Equivalence"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:95
+msgid "Additive-Substractive"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:100
+#, fuzzy
+#| msgid "Alpha"
+msgid "Copy Alpha"
+msgstr "Alfa"
+
+#: pigment/compositeops/KoCompositeOps.h:125
+#, fuzzy
+#| msgid "Blue"
+msgid "Copy Red"
+msgstr "Blau"
+
+#: pigment/compositeops/KoCompositeOps.h:126
+#, fuzzy
+#| msgid "Green"
+msgid "Copy Green"
+msgstr "Vèrd"
+
+#: pigment/compositeops/KoCompositeOps.h:127
+#, fuzzy
+#| msgid "Blue"
+msgid "Copy Blue"
+msgstr "Blau"
+
+#: pigment/compositeops/KoCompositeOps.h:129 pigment/KoCompositeOp.cpp:27
+msgid "Color"
+msgstr "Color"
+
+#: pigment/compositeops/KoCompositeOps.h:130 widgets/KoUniColorChooser.cpp:116
+msgid "Hue"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:131 widgets/KoUniColorChooser.cpp:125
+msgid "Saturation"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:132
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:133
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:134
+msgid "Luminosity"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:135
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Luminosity"
+msgstr "Aumentar l'alinèa"
+
+#: pigment/compositeops/KoCompositeOps.h:136
+#, fuzzy
+#| msgid "Decrease Indent"
+msgid "Decrease Luminosity"
+msgstr "Reduire l'alinèa"
+
+#: pigment/compositeops/KoCompositeOps.h:138
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSI"
+msgstr "Color"
+
+#: pigment/compositeops/KoCompositeOps.h:139
+msgid "Hue HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:140
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSI"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:141
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSI"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:142
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSI"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:143
+msgid "Intensity"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:144
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Intensity"
+msgstr "Aumentar l'alinèa"
+
+#: pigment/compositeops/KoCompositeOps.h:145
+#, fuzzy
+#| msgid "Decrease Indent"
+msgid "Decrease Intensity"
+msgstr "Reduire l'alinèa"
+
+#: pigment/compositeops/KoCompositeOps.h:147
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSL"
+msgstr "Color"
+
+#: pigment/compositeops/KoCompositeOps.h:148
+msgid "Hue HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:149
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSL"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:150
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSL"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:151
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSL"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:153
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Lightness"
+msgstr "Aumentar l'alinèa"
+
+#: pigment/compositeops/KoCompositeOps.h:154
+#, fuzzy
+#| msgid "Decrease Indent"
+msgid "Decrease Lightness"
+msgstr "Reduire l'alinèa"
+
+#: pigment/compositeops/KoCompositeOps.h:156
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSV"
+msgstr "Color"
+
+#: pigment/compositeops/KoCompositeOps.h:157
+msgid "Hue HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:158
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSV"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:159
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSV"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:160
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSV"
+msgstr "Saturacion"
+
+#: pigment/compositeops/KoCompositeOps.h:161
+msgid "Value"
+msgstr "Valor"
+
+#: pigment/compositeops/KoCompositeOps.h:162
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Value"
+msgstr "Aumentar l'alinèa"
+
+#: pigment/compositeops/KoCompositeOps.h:163
+#, fuzzy
+#| msgid "Decrease Indent"
+msgid "Decrease Value"
+msgstr "Reduire l'alinèa"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:30
+#, fuzzy
+#| msgid "Automatic"
+msgid "Arithmetic"
+msgstr "Automatic"
+
+#: pigment/KoCompositeOp.cpp:31
+msgid "Negative"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:34
+msgid "HSY"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:35
+msgid "HSI"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:36
+msgid "HSL"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:37
+msgid "HSV"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:38
+msgid "Mix"
 msgstr ""
 
 #: widgets/KoColorSetWidget.cpp:189
@@ -3484,14 +3821,6 @@ msgstr "Forma"
 #: widgets/KoResourceItemChooser.cpp:124
 msgid "Choose File to Add"
 msgstr ""
-
-#: widgets/KoUniColorChooser.cpp:116
-msgid "Hue"
-msgstr ""
-
-#: widgets/KoUniColorChooser.cpp:125
-msgid "Saturation"
-msgstr "Saturacion"
 
 #: widgets/KoUniColorChooser.cpp:134
 msgid "Value (brightness)"
@@ -4669,85 +4998,14 @@ msgid "Blur radius:"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
 #~| msgid "Stop"
 #~ msgid "Atop"
 #~ msgstr "Arrestar"
-
-#, fuzzy
-#~| msgid "Height:"
-#~ msgid "Hard Mix"
-#~ msgstr "Nautor"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Color Burn"
-#~ msgstr "Color"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Color Dodge"
-#~ msgstr "Color"
-
-#, fuzzy
-#~| msgid "Insert Break"
-#~ msgid "Linear Burn"
-#~ msgstr "Inserir un saut"
-
-#~ msgid "Darken"
-#~ msgstr "Escuresir"
-
-#~ msgid "Lighten"
-#~ msgstr "Esclarzir"
-
-#, fuzzy
-#~| msgid "Height:"
-#~ msgid "Hard Light"
-#~ msgstr "Nautor"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Soft Light"
-#~ msgstr "Esclarzir"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Gamma Light"
-#~ msgstr "Esclarzir"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Vivid Light"
-#~ msgstr "Esclarzir"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Pin Light"
-#~ msgstr "Esclarzir"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Linear Light"
-#~ msgstr "Esclarzir"
-
-#, fuzzy
-#~| msgid "Position:"
-#~ msgid "Addition"
-#~ msgstr "Posicion :"
-
-#, fuzzy
-#~| msgid "Variable"
-#~ msgid "Parallel"
-#~ msgstr "Variable"
-
-#, fuzzy
-#~| msgid "Green"
-#~ msgid "Copy Green"
-#~ msgstr "Vèrd"
-
-#, fuzzy
-#~| msgid "Blue"
-#~ msgid "Copy Blue"
-#~ msgstr "Blau"
 
 #~ msgid "KOffice"
 #~ msgstr "KOffice"
@@ -4811,9 +5069,6 @@ msgstr ""
 #~| msgid "&Background color:"
 #~ msgid "Background tool"
 #~ msgstr "Color de &fons :"
-
-#~ msgid "Value"
-#~ msgstr "Valor"
 
 #, fuzzy
 #~| msgctxt "Mouse Cursor Shape"
