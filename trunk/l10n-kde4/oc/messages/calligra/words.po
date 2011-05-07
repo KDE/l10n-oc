@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-06 03:32+0200\n"
+"POT-Creation-Date: 2011-05-07 03:32+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -662,40 +662,64 @@ msgstr ""
 msgid "Change Variable To"
 msgstr ""
 
-#: part/KWDocument.cpp:574
+#: part/KWDLoader.cpp:74
+msgid "Invalid document. No mimetype specified."
+msgstr ""
+
+#: part/KWDLoader.cpp:78
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or application/vnd."
+"kde.kword, got %1"
+msgstr ""
+
+#: part/KWDLoader.cpp:104
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr ""
+
+#: part/KWDLoader.cpp:691
+msgid "Unable to locate footnote text"
+msgstr ""
+
+#: part/KWDLoader.cpp:717
+msgid "Unable to locate note-text"
+msgstr ""
+
+#: part/KWDocument.cpp:573
 msgid "Copy"
 msgstr "Copiar"
 
-#: part/KWDocument.cpp:619
+#: part/KWDocument.cpp:618
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Header 1"
 msgid "Head 1"
 msgstr "Encap 1"
 
-#: part/KWDocument.cpp:626
+#: part/KWDocument.cpp:625
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Header 2"
 msgid "Head 2"
 msgstr "Encap 2"
 
-#: part/KWDocument.cpp:633
+#: part/KWDocument.cpp:632
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Header 3"
 msgid "Head 3"
 msgstr "Encap 3"
 
-#: part/KWDocument.cpp:640
+#: part/KWDocument.cpp:639
 msgid "Bullet List"
 msgstr ""
 
-#: part/KWDocument.cpp:993
+#: part/KWDocument.cpp:986
 msgid "Can not find needed text component, Words will quit now"
 msgstr ""
 
-#: part/KWDocument.cpp:994
+#: part/KWDocument.cpp:987
 msgid "Installation Error"
 msgstr ""
 
@@ -754,13 +778,13 @@ msgstr "Suprimir lo quadre"
 msgid "Insert Page Style"
 msgstr "Paginas"
 
-#: part/commands/KWPageRemoveCommand.cpp:32
-msgid "Remove Page"
-msgstr ""
-
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 msgid "Page Properties"
 msgstr "Propietats de la pagina"
+
+#: part/commands/KWPageRemoveCommand.cpp:33
+msgid "Remove Page"
+msgstr ""
 
 #: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
 msgid "Options"
@@ -1272,30 +1296,6 @@ msgstr ""
 
 #: part/KWord.cpp:68
 msgid "Other text"
-msgstr ""
-
-#: part/KWDLoader.cpp:74
-msgid "Invalid document. No mimetype specified."
-msgstr ""
-
-#: part/KWDLoader.cpp:78
-#, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-kword or application/vnd."
-"kde.kword, got %1"
-msgstr ""
-
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr ""
-
-#: part/KWDLoader.cpp:690
-msgid "Unable to locate footnote text"
-msgstr ""
-
-#: part/KWDLoader.cpp:716
-msgid "Unable to locate note-text"
 msgstr ""
 
 #: part/KWView.cpp:256
