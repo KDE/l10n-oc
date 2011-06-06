@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-01 14:12+0200\n"
+"POT-Creation-Date: 2011-06-06 14:19+0200\n"
 "PO-Revision-Date: 2008-08-06 00:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -64,15 +64,15 @@ msgctxt "@title:window"
 msgid "Add Bookmarks"
 msgstr "Apondre un favorit"
 
-#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:278
+#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:281
 #, fuzzy
 #| msgid "Select Folder"
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Seleccionar un repertòri"
 
-#: bookmarks/kbookmarkdialog.cc:159 ../kfile/kdirselectdialog.cpp:132
-#: ../kfile/knewfilemenu.cpp:1013
+#: bookmarks/kbookmarkdialog.cc:159 ../kfile/knewfilemenu.cpp:1013
+#: ../kfile/kdirselectdialog.cpp:135
 #, fuzzy
 #| msgid "New Folder"
 msgctxt "@title:window"
@@ -5639,72 +5639,6 @@ msgstr ""
 msgid "No metainfo for %1"
 msgstr ""
 
-#: ../kfile/kdirselectdialog.cpp:128
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "folder name"
-msgid "New Folder"
-msgstr "Repertòri novèl"
-
-#: ../kfile/kdirselectdialog.cpp:133
-#, kde-format
-msgctxt "@label:textbox"
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-
-#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:766
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr ""
-
-#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:768
-msgid "You do not have permission to create that folder."
-msgstr ""
-
-#: ../kfile/kdirselectdialog.cpp:280
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "@action:button"
-msgid "New Folder..."
-msgstr "Repertòri novèl"
-
-#: ../kfile/kdirselectdialog.cpp:321
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "@action:inmenu"
-msgid "New Folder..."
-msgstr "Repertòri novèl"
-
-#: ../kfile/kdirselectdialog.cpp:328
-#, fuzzy
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "Move to Trash"
-msgstr "Desplaçar dins la banasta"
-
-#: ../kfile/kdirselectdialog.cpp:335
-#, fuzzy
-#| msgid "Delete"
-msgctxt "@action:inmenu"
-msgid "Delete"
-msgstr "Suprimir"
-
-#: ../kfile/kdirselectdialog.cpp:344
-#, fuzzy
-#| msgid "Home Folder"
-msgctxt "@option:check"
-msgid "Show Hidden Folders"
-msgstr "Repertòri personal"
-
-#: ../kfile/kdirselectdialog.cpp:351
-#, fuzzy
-#| msgid "Properties"
-msgctxt "@action:inmenu"
-msgid "Properties"
-msgstr "Propietats"
-
 #: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1790
 msgid "*|All Files"
 msgstr ""
@@ -5836,12 +5770,6 @@ msgstr ""
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr ""
-
-#: ../kfile/kfiletreeview.cpp:187
-#, fuzzy
-#| msgid "Home Folder"
-msgid "Show Hidden Folders"
-msgstr "Repertòri personal"
 
 #: ../kfile/kfilewidget.cpp:285
 msgid ""
@@ -6159,6 +6087,12 @@ msgid ""
 "%1"
 msgstr ""
 
+#: ../kfile/kfiletreeview.cpp:187
+#, fuzzy
+#| msgid "Home Folder"
+msgid "Show Hidden Folders"
+msgstr "Repertòri personal"
+
 #: ../kfile/kfileplacesview.cpp:575
 #, fuzzy
 #| msgid "Trash"
@@ -6246,6 +6180,15 @@ msgstr ""
 
 #: ../kfile/kurlnavigatortogglebutton.cpp:92
 msgid "Click to Edit Location"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
+msgid "You do not have permission to create that folder."
 msgstr ""
 
 #: ../kfile/kdiroperator.cpp:783
@@ -6405,6 +6348,63 @@ msgstr ""
 #: ../kfile/kdiroperator.cpp:1990
 msgid "&View"
 msgstr "Aficha&tge"
+
+#: ../kfile/kdirselectdialog.cpp:131
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "folder name"
+msgid "New Folder"
+msgstr "Repertòri novèl"
+
+#: ../kfile/kdirselectdialog.cpp:136
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+
+#: ../kfile/kdirselectdialog.cpp:283
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "@action:button"
+msgid "New Folder..."
+msgstr "Repertòri novèl"
+
+#: ../kfile/kdirselectdialog.cpp:324
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "@action:inmenu"
+msgid "New Folder..."
+msgstr "Repertòri novèl"
+
+#: ../kfile/kdirselectdialog.cpp:331
+#, fuzzy
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Desplaçar dins la banasta"
+
+#: ../kfile/kdirselectdialog.cpp:338
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Suprimir"
+
+#: ../kfile/kdirselectdialog.cpp:347
+#, fuzzy
+#| msgid "Home Folder"
+msgctxt "@option:check"
+msgid "Show Hidden Folders"
+msgstr "Repertòri personal"
+
+#: ../kfile/kdirselectdialog.cpp:354
+#, fuzzy
+#| msgid "Properties"
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr "Propietats"
 
 #, fuzzy
 #~| msgid "Size:"
