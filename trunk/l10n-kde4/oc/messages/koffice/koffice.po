@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:35+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -16,10 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#: flake/KoToolBase.cpp:173 flake/KoToolManager.cpp:352
-msgid "Tool Options"
-msgstr "Opcions dels espleches"
 
 #: flake/KPathShapeFactory.cpp:32
 #, fuzzy
@@ -31,13 +27,17 @@ msgstr "Suprimir pagina"
 msgid "A simple path shape"
 msgstr ""
 
-#: flake/KShapePaste.cpp:100
-msgid "Paste Shapes"
-msgstr ""
+#: flake/KToolBase.cpp:173 flake/KToolManager.cpp:352
+msgid "Tool Options"
+msgstr "Opcions dels espleches"
 
-#: flake/KoToolManager.cpp:351
+#: flake/KToolManager.cpp:351
 #, kde-format
 msgid "Active tool: %1"
+msgstr ""
+
+#: flake/KShapePaste.cpp:100
+msgid "Paste Shapes"
 msgstr ""
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
@@ -112,6 +112,12 @@ msgstr ""
 msgid "Resize Shapes"
 msgstr "Redimensionar"
 
+#: flake/commands/KSubpathRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Remove Group"
+msgid "Remove Subpath"
+msgstr "Suprimir un grop"
+
 #: flake/commands/KParameterHandleMoveCommand.cpp:34
 #, fuzzy
 #| msgid "Change"
@@ -149,13 +155,6 @@ msgstr "Marges"
 #: flake/commands/KPathPointMoveCommand.cpp:58
 msgid "Move points"
 msgstr ""
-
-#: flake/commands/KPathPointRemoveCommand.cpp:104
-#: flake/commands/KPathPointRemoveCommand.cpp:133
-#, fuzzy
-#| msgid "Remove Group"
-msgid "Remove Points"
-msgstr "Suprimir un grop"
 
 #: flake/commands/KPathPointTypeCommand.cpp:46
 #, fuzzy
@@ -201,32 +200,33 @@ msgstr "Forma"
 msgid "Set Shadow"
 msgstr ""
 
-#: flake/commands/KoShapeTransparencyCommand.cpp:49
-#: flake/commands/KoShapeTransparencyCommand.cpp:60
-#: flake/commands/KoShapeTransparencyCommand.cpp:73
+#: flake/commands/KPathPointRemoveCommand.cpp:104
+#: flake/commands/KPathPointRemoveCommand.cpp:133
+#, fuzzy
+#| msgid "Remove Group"
+msgid "Remove Points"
+msgstr "Suprimir un grop"
+
+#: flake/commands/KShapeTransparencyCommand.cpp:49
+#: flake/commands/KShapeTransparencyCommand.cpp:60
+#: flake/commands/KShapeTransparencyCommand.cpp:73
 #, fuzzy
 #| msgid "Opacity"
 msgid "Set Opacity"
 msgstr "Opacitat"
 
-#: flake/commands/KoShapeUngroupCommand.cpp:57
+#: flake/commands/KShapeUngroupCommand.cpp:57
 msgid "Ungroup Shapes"
 msgstr ""
 
-#: flake/commands/KoSubpathJoinCommand.cpp:51
+#: flake/commands/KSubpathJoinCommand.cpp:51
 msgid "Close Subpath"
 msgstr ""
 
-#: flake/commands/KoSubpathJoinCommand.cpp:53
+#: flake/commands/KSubpathJoinCommand.cpp:53
 #, fuzzy
 #| msgid "Remove Group"
 msgid "Join Subpaths"
-msgstr "Suprimir un grop"
-
-#: flake/commands/KoSubpathRemoveCommand.cpp:30
-#, fuzzy
-#| msgid "Remove Group"
-msgid "Remove Subpath"
 msgstr "Suprimir un grop"
 
 #: flake/commands/KShapeShearCommand.cpp:51
@@ -235,22 +235,6 @@ msgstr "Suprimir un grop"
 msgid "Shear Shapes"
 msgstr "Suprimir pagina"
 
-#: flake/tools/KCreatePathTool.cpp:369 flake/tools/KPathTool.cpp:180
-msgid "Snapping"
-msgstr ""
-
-#: flake/tools/KCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KCreatePathTool.cpp:379
-msgid "Angle Constraints"
-msgstr ""
-
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr ""
-
 #: flake/tools/KCreateShapesToolFactory.cpp:33
 msgid "Create object"
 msgstr ""
@@ -258,12 +242,6 @@ msgstr ""
 #: flake/tools/KPanToolFactory.cpp:29
 msgid "Pan"
 msgstr "Pan"
-
-#: flake/tools/KPathSegmentChangeStrategy.cpp:140
-#, fuzzy
-#| msgid "Change"
-msgid "Change Segment"
-msgstr "Cambiar"
 
 #: flake/tools/KPathTool.cpp:87
 msgid "Corner point"
@@ -327,6 +305,10 @@ msgstr ""
 msgid "Line/Curve"
 msgstr "Corba"
 
+#: flake/tools/KPathTool.cpp:180 flake/tools/KCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr ""
+
 #: flake/tools/KPathTool.cpp:514
 msgid "Drag to move handle."
 msgstr ""
@@ -347,14 +329,32 @@ msgstr ""
 msgid "Press B to break path at selected segments."
 msgstr ""
 
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
+#: flake/tools/KPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr ""
+
+#: flake/tools/KZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr "Zoom"
 
-#: flake/tools/KPathToolFactory.cpp:29
-msgid "Path editing tool"
+#: flake/tools/KCreatePathTool.cpp:374
+msgid "Angle snapping delta"
 msgstr ""
+
+#: flake/tools/KCreatePathTool.cpp:379
+msgid "Angle Constraints"
+msgstr ""
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr ""
+
+#: flake/tools/KPathSegmentChangeStrategy.cpp:140
+#, fuzzy
+#| msgid "Change"
+msgid "Change Segment"
+msgstr "Cambiar"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -755,6 +755,12 @@ msgstr ""
 msgid "Master Page"
 msgstr "Suprimir pagina"
 
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
+#, fuzzy
+#| msgid "Delete Page"
+msgid "Change background image"
+msgstr "Suprimir pagina"
+
 #: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
 #, fuzzy
 #| msgid "&Background color:"
@@ -770,12 +776,6 @@ msgstr ""
 #| msgid "&Background color:"
 msgid "Background editing tool"
 msgstr "Color de &fons :"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
-#, fuzzy
-#| msgid "Delete Page"
-msgid "Change background image"
-msgstr "Suprimir pagina"
 
 #: kopageapp/KoPAPastePage.cpp:132
 #, fuzzy
@@ -903,45 +903,6 @@ msgstr[1] ""
 msgid "Found no match"
 msgstr ""
 
-#: kotext/InsertTextLocator.cpp:29
-msgid "Index Reference"
-msgstr ""
-
-#: kotext/InsertTextReferenceAction.cpp:35
-#: kotext/InsertTextReferenceAction.cpp:63
-msgid "Text Reference"
-msgstr ""
-
-#: kotext/InsertTextReferenceAction.cpp:44
-msgid "Please create an index to reference first."
-msgstr ""
-
-#: kotext/InsertTextReferenceAction.cpp:53
-msgid "Select the index you want to reference"
-msgstr ""
-
-#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
-#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
-#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
-#, kde-format
-msgid "%1 Options"
-msgstr ""
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Pas cap"
-
-#: kotext/KoText.cpp:48
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Simple"
-
-#: kotext/KoText.cpp:49
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Doble"
-
 #: kotext/commands/DeleteTableColumnCommand.cpp:40
 #: kotext/KoTextEditor.cpp:1058
 #, fuzzy
@@ -979,6 +940,66 @@ msgstr "Inserir un saut"
 #| msgid "Insert Break"
 msgid "Insert Row Above"
 msgstr "Inserir un saut"
+
+#: kotext/KoText.cpp:47
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Pas cap"
+
+#: kotext/KoText.cpp:48
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Simple"
+
+#: kotext/KoText.cpp:49
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Doble"
+
+#: kotext/KReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+
+#: kotext/KReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kotext/KReplaceStrategy.cpp:74
+#, kde-format
+msgid "Replace %1 with %2?"
+msgstr ""
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
+msgid "Format"
+msgstr "Format"
+
+#: kotext/InsertTextReferenceAction.cpp:35
+#: kotext/InsertTextReferenceAction.cpp:63
+msgid "Text Reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:44
+msgid "Please create an index to reference first."
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:53
+msgid "Select the index you want to reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
+#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
+#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
+#, kde-format
+msgid "%1 Options"
+msgstr ""
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -1111,30 +1132,9 @@ msgstr "Vertical"
 msgid "Line Break"
 msgstr "Inserir un saut"
 
-#: kotext/KReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
+#: kotext/InsertTextLocator.cpp:29
+msgid "Index Reference"
 msgstr ""
-
-#: kotext/KReplaceStrategy.cpp:61
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kotext/KReplaceStrategy.cpp:74
-#, kde-format
-msgid "Replace %1 with %2?"
-msgstr ""
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
-msgid "Format"
-msgstr "Format"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2144,6 +2144,10 @@ msgstr ""
 msgid "Locations"
 msgstr "Accions"
 
+#: main/rdf/KoDocumentRdf.cpp:851
+msgid "Reference"
+msgstr ""
+
 #: main/rdf/KoSopranoTableModel.cpp:80
 msgid "Empty"
 msgstr ""
@@ -2207,10 +2211,6 @@ msgstr "Arrestat"
 
 #: main/rdf/InsertSemanticObjectReferenceAction.cpp:55
 msgid "Select the object you want to reference"
-msgstr ""
-
-#: main/rdf/KoDocumentRdf.cpp:851
-msgid "Reference"
 msgstr ""
 
 #: main/config/KoConfigDocumentPage.cpp:75
@@ -3082,7 +3082,7 @@ msgstr ""
 msgid "Guide lines"
 msgstr "Soslinhat"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
+#. i18n: file: flake/tools/KZoomToolWidget.ui:20
 #. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
 #: rc.cpp:27
 #, fuzzy
@@ -3090,7 +3090,7 @@ msgstr "Soslinhat"
 msgid "Zoom In"
 msgstr "Agrandir lo zoom"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
+#. i18n: file: flake/tools/KZoomToolWidget.ui:30
 #. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
 #: rc.cpp:30
 #, fuzzy
