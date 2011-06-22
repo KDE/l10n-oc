@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-20 03:43+0200\n"
+"POT-Creation-Date: 2011-06-22 03:41+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -6556,8 +6556,8 @@ msgstr "Pression"
 #. i18n: file: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:2515 rc.cpp:3106
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:53
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
 msgid "Threshold"
 msgstr ""
@@ -9774,22 +9774,6 @@ msgstr "Escalas"
 msgid "default"
 msgstr "defaut"
 
-#: image/commands/kis_change_filter_command.h:40
-#, fuzzy
-#| msgid "Filter"
-msgid "Change Filter"
-msgstr "Filtre"
-
-#: image/commands/kis_change_generator_command.h:40
-#, fuzzy
-#| msgid "General"
-msgid "Change Generator"
-msgstr "General"
-
-#: image/commands/kis_deselect_global_selection_command.cpp:30
-msgid "Deselect"
-msgstr ""
-
 #: image/commands/kis_image_layer_add_command.cpp:27
 #: image/commands/kis_image_layer_add_command.cpp:35
 msgid "Add Layer"
@@ -9836,6 +9820,22 @@ msgstr ""
 #| msgid "Opacity"
 msgid "Node Opacity"
 msgstr "Opacitat"
+
+#: image/commands/kis_change_filter_command.h:40
+#, fuzzy
+#| msgid "Filter"
+msgid "Change Filter"
+msgstr "Filtre"
+
+#: image/commands/kis_change_generator_command.h:40
+#, fuzzy
+#| msgid "General"
+msgid "Change Generator"
+msgstr "General"
+
+#: image/commands/kis_deselect_global_selection_command.cpp:30
+msgid "Deselect"
+msgstr ""
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -10014,15 +10014,15 @@ msgstr ""
 msgid "Alpha Channel Disabled"
 msgstr ""
 
+#: image/kis_transformation_mask.cpp:112
+msgid "Transformation Mask Settings"
+msgstr ""
+
 #: image/kis_transform_visitor.h:158
 #, fuzzy
 #| msgid "Rotation"
 msgid "Rotate Node"
 msgstr "Rotacion"
-
-#: image/kis_transformation_mask.cpp:112
-msgid "Transformation Mask Settings"
-msgstr ""
 
 #: image/metadata/kis_meta_data_merge_strategy_p.cc:50
 msgid "Drop"
@@ -10459,19 +10459,19 @@ msgstr "Seleccion"
 msgid "&Transformation Mask..."
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:336
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:348
 #, fuzzy
 #| msgid "Properties..."
 msgid "&Properties..."
 msgstr "Propietats..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:338
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:350
 #, fuzzy
 #| msgid "&Remove"
 msgid "&Remove Layer"
 msgstr "&Suprimir "
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:339
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:351
 msgid "&Duplicate Layer or Mask"
 msgstr ""
 
@@ -10540,17 +10540,17 @@ msgid "Advanced Color Selector"
 msgstr "Seleccion"
 
 #: plugins/extensions/dropshadow/dlg_dropshadow.cc:42
-#: plugins/extensions/dropshadow/kis_dropshadow.cc:130
 #: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:83
+#: plugins/extensions/dropshadow/kis_dropshadow.cc:130
 msgid "Drop Shadow"
-msgstr ""
-
-#: plugins/extensions/dropshadow/kis_dropshadow.cc:93
-msgid "Add Drop Shadow"
 msgstr ""
 
 #: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:60
 msgid "Add Drop Shadow..."
+msgstr ""
+
+#: plugins/extensions/dropshadow/kis_dropshadow.cc:93
+msgid "Add Drop Shadow"
 msgstr ""
 
 #: plugins/extensions/extensionsmanager/ExtensionsManager.cpp:107
@@ -10896,11 +10896,6 @@ msgstr ""
 msgid "Shear Layer"
 msgstr ""
 
-#: plugins/extensions/tonemapping/kis_tonemapping_dialog.cc:120
-#: ui/widgets/kis_filter_selector_widget.cc:142
-msgid "No configuration option."
-msgstr ""
-
 #: plugins/extensions/tonemapping/operators/ashikhmin02/kis_ashikhmin02_operator.cc:66
 msgid "Ashikhmin 02"
 msgstr ""
@@ -10923,6 +10918,11 @@ msgstr ""
 
 #: plugins/extensions/tonemapping/tonemapping.cc:53
 msgid "Tonemapping..."
+msgstr ""
+
+#: plugins/extensions/tonemapping/kis_tonemapping_dialog.cc:120
+#: ui/widgets/kis_filter_selector_widget.cc:142
+msgid "No configuration option."
 msgstr ""
 
 #: plugins/extensions/imagesplit/imagesplit.cpp:60
@@ -11188,6 +11188,10 @@ msgstr ""
 msgid "Wavelet Noise Reducer"
 msgstr ""
 
+#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:38
+msgid "&Wavelet Noise Reducer..."
+msgstr ""
+
 #: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:41
 msgid "&Gaussian Noise Reduction..."
 msgstr ""
@@ -11197,10 +11201,6 @@ msgstr ""
 #| msgid "Resize"
 msgid "Window size"
 msgstr "Redimensionar"
-
-#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:38
-msgid "&Wavelet Noise Reducer..."
-msgstr ""
 
 #: plugins/filters/levelfilter/kis_level_filter.cpp:49
 #, fuzzy
@@ -11339,12 +11339,12 @@ msgstr ""
 msgid "Sobel"
 msgstr ""
 
-#: plugins/filters/unsharp/kis_unsharp_filter.cpp:43
-msgid "&Unsharp Mask..."
-msgstr ""
-
 #: plugins/filters/unsharp/kis_unsharp_filter.h:41
 msgid "Unsharp Mask"
+msgstr ""
+
+#: plugins/filters/unsharp/kis_unsharp_filter.cpp:43
+msgid "&Unsharp Mask..."
 msgstr ""
 
 #: plugins/filters/wavefilter/wavefilter.cpp:106
@@ -12702,37 +12702,6 @@ msgstr "Filtre"
 msgid "MultiBrush"
 msgstr "Filtre"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:80
-#, fuzzy
-#| msgid "Title:"
-msgid "Tilt"
-msgstr "Títol:"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:82
-#, fuzzy
-#| msgid "Pressure"
-msgid "Tangential Pressure"
-msgstr "Pression"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:83
-#, fuzzy
-#| msgid "Options"
-msgid "Varying End-Points"
-msgstr "Opcions"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:219
-#, fuzzy
-#| msgid "Line"
-msgctxt "a straight drawn line"
-msgid "Line"
-msgstr "Linha"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:303
-msgid ""
-"Alt+Drag will move the origin of the currently displayed line around, Shift"
-"+Drag will force you to draw straight lines"
-msgstr ""
-
 #: plugins/tools/defaulttools/kis_tool_line.h:83
 msgid "Draw a straight line with the current brush"
 msgstr ""
@@ -12775,6 +12744,37 @@ msgstr "Triangle"
 msgid "Brush count"
 msgstr "Paramètres"
 
+#: plugins/tools/defaulttools/kis_tool_line.cc:80
+#, fuzzy
+#| msgid "Title:"
+msgid "Tilt"
+msgstr "Títol:"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:82
+#, fuzzy
+#| msgid "Pressure"
+msgid "Tangential Pressure"
+msgstr "Pression"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:83
+#, fuzzy
+#| msgid "Options"
+msgid "Varying End-Points"
+msgstr "Opcions"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:219
+#, fuzzy
+#| msgid "Line"
+msgctxt "a straight drawn line"
+msgid "Line"
+msgstr "Linha"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:303
+msgid ""
+"Alt+Drag will move the origin of the currently displayed line around, Shift"
+"+Drag will force you to draw straight lines"
+msgstr ""
+
 #: plugins/tools/selectiontools/kis_tool_select_brush.h:74
 #, fuzzy
 #| msgid "Custom"
@@ -12813,11 +12813,6 @@ msgstr ""
 
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.h:70
 msgid "Select a polygonal region"
-msgstr ""
-
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:68
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:83
-msgid "Rectangular Selection"
 msgstr ""
 
 #: plugins/tools/selectiontools/kis_tool_select_rectangular.h:67
@@ -12879,6 +12874,11 @@ msgstr ""
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:72
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:83
 msgid "Polygonal Selection"
+msgstr ""
+
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:68
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:83
+msgid "Rectangular Selection"
 msgstr ""
 
 #: plugins/tools/tool_crop/kis_tool_crop.h:148
@@ -13039,18 +13039,6 @@ msgstr ""
 msgid "Star"
 msgstr "Estèla"
 
-#: plugins/tools/tool_transform2/tool_transform_commands.cc:24
-msgid "Apply transformation"
-msgstr ""
-
-#: plugins/tools/tool_transform2/tool_transform_commands.cc:55
-msgid "Transform"
-msgstr ""
-
-#: plugins/tools/tool_transform2/kis_tool_transform.h:435
-msgid "Transform a layer or a selection"
-msgstr ""
-
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:2106
 msgid "Apply Transformation"
 msgstr ""
@@ -13074,6 +13062,18 @@ msgstr "Drecha:"
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:2511
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:2896
 msgid "Unlock Points"
+msgstr ""
+
+#: plugins/tools/tool_transform2/kis_tool_transform.h:435
+msgid "Transform a layer or a selection"
+msgstr ""
+
+#: plugins/tools/tool_transform2/tool_transform_commands.cc:24
+msgid "Apply transformation"
+msgstr ""
+
+#: plugins/tools/tool_transform2/tool_transform_commands.cc:55
+msgid "Transform"
 msgstr ""
 
 #: ui/kis_filter_handler.cc:110
@@ -13154,6 +13154,10 @@ msgstr "Propietats de l'imatge"
 msgid "New Transformation Mask"
 msgstr ""
 
+#: ui/dialogs/kis_dlg_layer_properties.cc:62
+msgid "Layer Properties"
+msgstr ""
+
 #: ui/dialogs/kis_dlg_preferences.cc:191
 msgid "Monitor profile: "
 msgstr ""
@@ -13209,10 +13213,6 @@ msgstr ""
 #: ui/dialogs/kis_dlg_preferences.cc:688 ui/kis_aboutdata.h:31
 #: ui/kis_clipboard.cc:154
 msgid "Krita"
-msgstr ""
-
-#: ui/dialogs/kis_dlg_layer_properties.cc:62
-msgid "Layer Properties"
 msgstr ""
 
 #: ui/flake/kis_shape_controller.cpp:229
@@ -13522,6 +13522,23 @@ msgstr ""
 msgid "As on &Monitor"
 msgstr ""
 
+#: ui/kis_doc2.cc:440
+msgid ""
+"The Calligra LittleCMS color management plugin is not installed. Krita will "
+"quit now."
+msgstr ""
+
+#: ui/kis_doc2.cc:451
+#, kde-format
+msgid ""
+"Krita needs at least Qt 4.6.3 to work correctly. Your Qt version is %1. If "
+"you have a graphics tablet it will not work correctly!"
+msgstr ""
+
+#: ui/kis_doc2.cc:468
+msgid "Installation error"
+msgstr ""
+
 #: ui/kis_control_frame.cpp:79 ui/kis_control_frame.cpp:80
 #, fuzzy
 #| msgid "Pattern"
@@ -13581,23 +13598,6 @@ msgstr ""
 msgid ""
 "The current image is too big to create a pattern. The pattern will be scaled "
 "down."
-msgstr ""
-
-#: ui/kis_doc2.cc:440
-msgid ""
-"The Calligra LittleCMS color management plugin is not installed. Krita will "
-"quit now."
-msgstr ""
-
-#: ui/kis_doc2.cc:451
-#, kde-format
-msgid ""
-"Krita needs at least Qt 4.6.3 to work correctly. Your Qt version is %1. If "
-"you have a graphics tablet it will not work correctly!"
-msgstr ""
-
-#: ui/kis_doc2.cc:468
-msgid "Installation error"
 msgstr ""
 
 #: ui/kis_view2.cpp:260
