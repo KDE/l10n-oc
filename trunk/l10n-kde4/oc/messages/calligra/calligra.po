@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-30 03:40+0200\n"
+"POT-Creation-Date: 2011-08-02 03:59+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -250,6 +251,12 @@ msgstr ""
 #| msgid "Delete Page"
 msgctxt "(qtundo-format)"
 msgid "Move shapes"
+msgstr "Suprimir pagina"
+
+#: flake/commands/KoShapeRenameCommand.cpp:44
+#, fuzzy
+#| msgid "Delete Page"
+msgid "Rename Shape"
 msgstr "Suprimir pagina"
 
 #: flake/commands/KoShapeReorderCommand.cpp:51
@@ -577,7 +584,7 @@ msgstr ""
 msgid "Execute Script File"
 msgstr ""
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:166
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:172
 #, kde-format
 msgid "Slide %1"
 msgstr ""
@@ -769,39 +776,121 @@ msgctxt "(qtundo-format)"
 msgid "Change background image"
 msgstr "Suprimir pagina"
 
-#: kopageapp/KoPADocumentModel.cpp:168
-#, fuzzy, kde-format
-#| msgid "Page"
-msgid "Page  %1"
-msgstr "Pagina %1"
+#: kopageapp/KoPADocumentStructureDocker.cpp:96 main/KoMainWindow.cpp:1732
+msgid "Document"
+msgstr "Document"
 
-#: kopageapp/KoPADocumentModel.cpp:172
-#: kopageapp/KoPADocumentStructureDocker.cpp:118
+#: kopageapp/KoPADocumentStructureDocker.cpp:105
+msgid "Add a new slide or layer"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:107
+msgid "Add a new page or layer"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:115
+#, fuzzy
+#| msgid "Time:"
+msgid "Slide"
+msgstr "Talha :"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:117
+#: widgets/KoPageLayoutDialog.cpp:50
+msgid "Page"
+msgstr "Pagina"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:119
+#: kopageapp/KoPADocumentModel.cpp:178
 msgid "Layer"
 msgstr "Jaç"
 
-#: kopageapp/KoPADocumentModel.cpp:175
-msgid "Group"
-msgstr "Grop"
+#: kopageapp/KoPADocumentStructureDocker.cpp:126
+#: kopageapp/KoPADocumentStructureDocker.cpp:647
+msgid "Delete selected objects"
+msgstr ""
 
-#: kopageapp/KoPADocumentModel.cpp:178
-msgid "Shape"
-msgstr "Forma"
+#: kopageapp/KoPADocumentStructureDocker.cpp:132
+msgid "Raise selected objects"
+msgstr ""
 
-#: kopageapp/KoPADocumentModel.cpp:291
-msgid "Visible"
-msgstr "Visible"
+#: kopageapp/KoPADocumentStructureDocker.cpp:138
+msgid "Lower selected objects"
+msgstr ""
 
-#: kopageapp/KoPADocumentModel.cpp:292
-msgid "Locked"
-msgstr "Varrolhat"
+#: kopageapp/KoPADocumentStructureDocker.cpp:147
+msgid "Minimal View"
+msgstr ""
 
-#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
+#: kopageapp/KoPADocumentStructureDocker.cpp:149
+msgid "Detailed View"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:151
+msgid "Thumbnail View"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:161
+msgid "View mode"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:330
+msgid "New Layer"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:330
+msgid "Enter the name of the new layer:"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:331
+msgid "New layer"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:345
 #, fuzzy
 #| msgid "Delete Page"
 msgctxt "(qtundo-format)"
-msgid "Reparent shapes"
+msgid "Create Layer"
 msgstr "Suprimir pagina"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:374
+#, fuzzy
+#| msgid "Delete Page"
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
+msgstr "Suprimir pagina"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:378
+msgid "Could not delete all layers. At least one layer is required."
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:378
+msgid "Error deleting layers"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:646
+msgid "Add a new slide"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:649
+#: koreport/wrtembed/KoReportDesigner.cpp:830
+#, fuzzy
+#| msgid "Custom"
+msgid "Cut"
+msgstr "Personalizat"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:650
+#: koreport/wrtembed/KoReportDesigner.cpp:831
+#: pigment/compositeops/KoCompositeOpCopy.h:37
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
+msgid "Copy"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:651
+#: koreport/wrtembed/KoReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Date"
+msgid "Paste"
+msgstr "Data"
 
 #: kopageapp/KoPAPastePage.cpp:131
 #, fuzzy
@@ -917,116 +1006,70 @@ msgctxt "(qtundo-format)"
 msgid "Change page layout"
 msgstr "Cambiar"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1732
-msgid "Document"
-msgstr "Document"
+#: kopageapp/KoPADocumentModel.cpp:174
+#, fuzzy, kde-format
+#| msgid "Page"
+msgid "Page  %1"
+msgstr "Pagina %1"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:104
-msgid "Add a new slide or layer"
-msgstr ""
+#: kopageapp/KoPADocumentModel.cpp:181
+msgid "Group"
+msgstr "Grop"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:106
-msgid "Add a new page or layer"
-msgstr ""
+#: kopageapp/KoPADocumentModel.cpp:184
+msgid "Shape"
+msgstr "Forma"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:114
+#: kopageapp/KoPADocumentModel.cpp:270
 #, fuzzy
-#| msgid "Time:"
-msgid "Slide"
-msgstr "Talha :"
+#| msgid "Delete Page"
+msgid "Rename Slide"
+msgstr "Suprimir pagina"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:116
-#: widgets/KoPageLayoutDialog.cpp:50
-msgid "Page"
+#: kopageapp/KoPADocumentModel.cpp:273
+#, fuzzy
+#| msgid "Page"
+msgid "Rename Page"
 msgstr "Pagina"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:125
-#: kopageapp/KoPADocumentStructureDocker.cpp:644
-msgid "Delete selected objects"
-msgstr ""
+#: kopageapp/KoPADocumentModel.cpp:277
+#, fuzzy
+#| msgid "Delete Page"
+msgid "Rename Layer"
+msgstr "Suprimir pagina"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:131
-msgid "Raise selected objects"
-msgstr ""
+#: kopageapp/KoPADocumentModel.cpp:307
+msgid "Visible"
+msgstr "Visible"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:137
-msgid "Lower selected objects"
-msgstr ""
+#: kopageapp/KoPADocumentModel.cpp:308
+msgid "Locked"
+msgstr "Varrolhat"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:146
-msgid "Minimal View"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:148
-msgid "Detailed View"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:150
-msgid "Thumbnail View"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:160
-msgid "View mode"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:327
-msgid "New Layer"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:327
-msgid "Enter the name of the new layer:"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:328
-msgid "New layer"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:342
+#: kopageapp/KoPADocumentModel.cpp:532 kopageapp/KoPADocumentModel.cpp:553
 #, fuzzy
 #| msgid "Delete Page"
 msgctxt "(qtundo-format)"
-msgid "Create Layer"
+msgid "Reparent shapes"
 msgstr "Suprimir pagina"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:371
+#: kopageapp/KoPADocumentModel.cpp:674
 #, fuzzy
 #| msgid "Delete Page"
-msgctxt "(qtundo-format)"
-msgid "Delete Layer"
+msgid "&Move Here"
 msgstr "Suprimir pagina"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:375
-msgid "Could not delete all layers. At least one layer is required."
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:375
-msgid "Error deleting layers"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:643
-msgid "Add a new slide"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:646
-#: koreport/wrtembed/KoReportDesigner.cpp:830
+#: kopageapp/KoPADocumentModel.cpp:678
 #, fuzzy
-#| msgid "Custom"
-msgid "Cut"
-msgstr "Personalizat"
+#| msgid "Green"
+msgid "&Copy Here"
+msgstr "Vèrd"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:647
-#: koreport/wrtembed/KoReportDesigner.cpp:831
-#: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:42
-msgid "Copy"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:648
-#: koreport/wrtembed/KoReportDesigner.cpp:834
+#: kopageapp/KoPADocumentModel.cpp:682
 #, fuzzy
-#| msgid "Date"
-msgid "Paste"
-msgstr "Data"
+#| msgid "Change"
+msgid "C&ancel"
+msgstr "Cambiar"
 
 #. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1291,8 +1334,8 @@ msgid "Label"
 msgstr "Jaç"
 
 #: koreport/items/text/KoReportTextPlugin.cpp:34 kotext/KoTextEditor.cpp:169
-#: kotext/KoTextEditor.cpp:322 widgets/KoCsvImportDialog.cpp:216
-#: widgets/KoCsvImportDialog.cpp:569
+#: kotext/KoTextEditor.cpp:322 widgets/KoCsvImportDialog.cpp:217
+#: widgets/KoCsvImportDialog.cpp:581
 msgid "Text"
 msgstr "Tèxt"
 
@@ -3882,59 +3925,6 @@ msgstr ""
 msgid "Add / Remove Colors..."
 msgstr ""
 
-#: widgets/KoCsvImportDialog.cpp:92
-msgid "Import Data"
-msgstr "Importar de donadas"
-
-#: widgets/KoCsvImportDialog.cpp:95
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:96
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:99
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:214 widgets/KoCsvImportDialog.cpp:544
-#: widgets/KoCsvImportDialog.cpp:567
-msgid "Generic"
-msgstr "Generic"
-
-#: widgets/KoCsvImportDialog.cpp:218 widgets/KoCsvImportDialog.cpp:571
-msgid "Date"
-msgstr "Data"
-
-#: widgets/KoCsvImportDialog.cpp:220 widgets/KoCsvImportDialog.cpp:573
-msgid "Currency"
-msgstr ""
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:268
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: widgets/KoCsvImportDialog.cpp:222 widgets/KoCsvImportDialog.cpp:575
-#: widgets/KoCsvImportDialog.cpp:682 rc.cpp:499
-msgid "None"
-msgstr "Pas cap"
-
-#: widgets/KoCsvImportDialog.cpp:709
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:755
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr ""
-
 #: widgets/KoEditColorSetDialog.cpp:159
 msgid "Add Color To Palette"
 msgstr ""
@@ -3954,6 +3944,69 @@ msgstr "Paleta"
 
 #: widgets/KoEditColorSetDialog.cpp:211
 msgid "Add/Remove Colors"
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:93
+msgid "Import Data"
+msgstr "Importar de donadas"
+
+#: widgets/KoCsvImportDialog.cpp:96
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:97
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:100
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:215 widgets/KoCsvImportDialog.cpp:556
+#: widgets/KoCsvImportDialog.cpp:579
+msgid "Generic"
+msgstr "Generic"
+
+#: widgets/KoCsvImportDialog.cpp:219 widgets/KoCsvImportDialog.cpp:583
+msgid "Date"
+msgstr "Data"
+
+#: widgets/KoCsvImportDialog.cpp:221 widgets/KoCsvImportDialog.cpp:585
+msgid "Currency"
+msgstr ""
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:268
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: widgets/KoCsvImportDialog.cpp:223 widgets/KoCsvImportDialog.cpp:587
+#: widgets/KoCsvImportDialog.cpp:694 rc.cpp:499
+msgid "None"
+msgstr "Pas cap"
+
+#: widgets/KoCsvImportDialog.cpp:721
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:767
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr ""
+
+#: widgets/KoSelectionToggle.cpp:133
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
+msgstr ""
+
+#: widgets/KoSelectionToggle.cpp:134
+msgctxt "@info:tooltip"
+msgid "Select Item"
 msgstr ""
 
 #: widgets/KoUniColorChooser.cpp:134
