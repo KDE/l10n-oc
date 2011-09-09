@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-25 11:07+0200\n"
+"POT-Creation-Date: 2011-09-09 11:27+0200\n"
 "PO-Revision-Date: 2008-08-06 00:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -19,6 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5014
+#: src/konqmainwindow.cpp:5074
+msgid "no name"
+msgstr ""
 
 #: src/konqextensionmanager.cpp:54
 #, fuzzy
@@ -31,11 +36,6 @@ msgstr "Configurar"
 #: src/konqextensionmanager.cpp:78
 msgid "Extensions"
 msgstr "Extensions"
-
-#: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5014
-#: src/konqmainwindow.cpp:5074
-msgid "no name"
-msgstr ""
 
 #: src/konqfactory.cpp:90
 #, kde-format
@@ -331,6 +331,30 @@ msgstr "%1/s"
 msgid "Stalled"
 msgstr ""
 
+#: src/konqguiclients.cpp:66
+#, kde-format
+msgid "Preview &in %1"
+msgstr ""
+
+#: src/konqguiclients.cpp:135
+#, kde-format
+msgid "Show %1"
+msgstr "Mostrar %1"
+
+#: src/konqhistorydialog.cpp:45
+#, fuzzy
+#| msgid "Clear History"
+msgctxt "@title:window"
+msgid "History"
+msgstr "Voidar l'istoric"
+
+#: src/konqhistorydialog.cpp:61 src/konqhistoryview.cpp:143
+#, fuzzy
+#| msgid "Sort"
+msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
+msgid "Sort"
+msgstr "Ordenar"
+
 #: src/konqhistorymodel.cpp:137
 #, kde-format
 msgid ""
@@ -389,13 +413,6 @@ msgstr "Per &data"
 msgid "Search in history"
 msgstr "Voidar l'istoric"
 
-#: src/konqhistoryview.cpp:143 src/konqhistorydialog.cpp:61
-#, fuzzy
-#| msgid "Sort"
-msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
-msgid "Sort"
-msgstr "Ordenar"
-
 #: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
 msgid "Do you really want to clear the entire history?"
 msgstr ""
@@ -405,122 +422,6 @@ msgstr ""
 #| msgid "Clear History"
 msgctxt "@title:window"
 msgid "Clear History?"
-msgstr "Voidar l'istoric"
-
-#: src/konqtabs.cpp:66
-msgid ""
-"This bar contains the list of currently open tabs. Click on a tab to make it "
-"active. You can also use keyboard shortcuts to navigate through tabs. The "
-"text on the tab shows the content currently open in it; place your mouse "
-"over the tab to see the full title, in case it has been shortened to fit the "
-"tab width."
-msgstr ""
-
-#: src/konqtabs.cpp:100
-msgid "Open a new tab"
-msgstr "Dobrir un onglet nòu"
-
-#: src/konqtabs.cpp:109
-msgid "Close the current tab"
-msgstr "Tampar l'onglet actual"
-
-#: src/konqtabs.cpp:326 src/konqmainwindow.cpp:3647
-msgid "&Reload All Tabs"
-msgstr ""
-
-#: src/konqtabs.cpp:349 src/konqmainwindow.cpp:2476
-#: src/konqmainwindow.cpp:3585
-msgid "Close &Other Tabs"
-msgstr ""
-
-#: src/konqtabs.cpp:460 src/konqmainwindow.cpp:3558
-msgid "&New Tab"
-msgstr "Onglet &nòu"
-
-#: src/konqtabs.cpp:465
-msgid "&Duplicate Tab"
-msgstr ""
-
-#: src/konqtabs.cpp:470
-msgid "&Reload Tab"
-msgstr ""
-
-#: src/konqtabs.cpp:477
-msgid "Other Tabs"
-msgstr "Autres onglets"
-
-#: src/konqtabs.cpp:482
-msgid "D&etach Tab"
-msgstr ""
-
-#: src/konqtabs.cpp:488
-msgid "&Close Tab"
-msgstr "&Barrar l'onglet"
-
-#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
-msgid "Und&o: Closed Tab"
-msgstr ""
-
-#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
-#: src/konqundomanager.cpp:162
-msgid "Und&o: Closed Window"
-msgstr ""
-
-#: src/konqundomanager.cpp:122
-msgid "Und&o"
-msgstr ""
-
-#: src/konqsessiondlg.cpp:77
-#, fuzzy
-#| msgid "Rename"
-msgctxt "@title:window"
-msgid "Manage Sessions"
-msgstr "Renommar"
-
-#: src/konqsessiondlg.cpp:81
-msgid "&Open"
-msgstr "&Dobrir"
-
-#: src/konqsessiondlg.cpp:175
-#, fuzzy
-#| msgid "Rename"
-msgctxt "@title:window"
-msgid "Rename Session"
-msgstr "Renommar"
-
-#: src/konqsessiondlg.cpp:223
-#, fuzzy
-#| msgid "Save Session"
-msgctxt "@title:window"
-msgid "Save Session"
-msgstr "Enregistrar la session"
-
-#: src/konqsessiondlg.cpp:247
-#, kde-format
-msgid ""
-"A session with the name '%1' already exists, do you want to overwrite it?"
-msgstr ""
-
-#: src/konqsessiondlg.cpp:248
-msgctxt "@title:window"
-msgid "Session exists. Overwrite?"
-msgstr ""
-
-#: src/konqguiclients.cpp:66
-#, kde-format
-msgid "Preview &in %1"
-msgstr ""
-
-#: src/konqguiclients.cpp:135
-#, kde-format
-msgid "Show %1"
-msgstr "Mostrar %1"
-
-#: src/konqhistorydialog.cpp:45
-#, fuzzy
-#| msgid "Clear History"
-msgctxt "@title:window"
-msgid "History"
 msgstr "Voidar l'istoric"
 
 #: src/konqmain.cpp:96
@@ -568,86 +469,6 @@ msgstr ""
 msgid "Location to open"
 msgstr ""
 
-#: src/konqprofiledlg.cpp:111
-#, fuzzy
-#| msgid "File Management"
-msgctxt "@title:window"
-msgid "Profile Management"
-msgstr "Gestion de fichièrs"
-
-#: src/konqprofiledlg.cpp:114
-msgid "&Rename Profile"
-msgstr ""
-
-#: src/konqprofiledlg.cpp:115
-msgid "&Delete Profile"
-msgstr ""
-
-#: src/konqsessionmanager.cpp:330
-msgid ""
-"Konqueror did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr ""
-
-#: src/konqsessionmanager.cpp:332
-#, fuzzy
-#| msgid "Rename"
-msgctxt "@title:window"
-msgid "Restore Session?"
-msgstr "Renommar"
-
-#: src/konqsessionmanager.cpp:333
-#, fuzzy
-#| msgid "Rename"
-msgid "Restore Session"
-msgstr "Renommar"
-
-#: src/konqsessionmanager.cpp:334
-msgid "Do Not Restore"
-msgstr ""
-
-#: src/konqsessionmanager.cpp:335
-msgid "Ask Me Later"
-msgstr ""
-
-#: src/konqviewmanager.cpp:1411
-msgid ""
-"You have multiple tabs open in this window.\n"
-"Loading a view profile will close them."
-msgstr ""
-
-#: src/konqviewmanager.cpp:1413 src/konqmainwindow.cpp:4941
-#, fuzzy
-#| msgid "Confirmation"
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Confirmacion"
-
-#: src/konqviewmanager.cpp:1414
-msgid "Load View Profile"
-msgstr ""
-
-#: src/konqviewmanager.cpp:1426
-msgid ""
-"This tab contains changes that have not been submitted.\n"
-"Loading a profile will discard these changes."
-msgstr ""
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2514 src/konqmainwindow.cpp:4976
-msgctxt "@title:window"
-msgid "Discard Changes?"
-msgstr ""
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2515 src/konqmainwindow.cpp:4976
-msgid "&Discard Changes"
-msgstr ""
-
 #: src/konqmainwindow.cpp:574
 msgctxt "@title:tab"
 msgid "Loading..."
@@ -661,6 +482,21 @@ msgstr "Anullat."
 msgid ""
 "This page contains changes that have not been submitted.\n"
 "Reloading the page will discard these changes."
+msgstr ""
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2514
+#: src/konqmainwindow.cpp:4976 src/konqviewmanager.cpp:1427
+msgctxt "@title:window"
+msgid "Discard Changes?"
+msgstr ""
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2515
+#: src/konqmainwindow.cpp:4976 src/konqviewmanager.cpp:1427
+msgid "&Discard Changes"
 msgstr ""
 
 #: src/konqmainwindow.cpp:1725
@@ -734,6 +570,11 @@ msgstr ""
 #: src/konqmainwindow.cpp:2476
 msgctxt "@title:window"
 msgid "Close Other Tabs Confirmation"
+msgstr ""
+
+#: src/konqmainwindow.cpp:2476 src/konqmainwindow.cpp:3585
+#: src/konqtabs.cpp:349
+msgid "Close &Other Tabs"
 msgstr ""
 
 #: src/konqmainwindow.cpp:2491
@@ -878,6 +719,10 @@ msgstr ""
 msgid "Split View &Top/Bottom"
 msgstr ""
 
+#: src/konqmainwindow.cpp:3558 src/konqtabs.cpp:460
+msgid "&New Tab"
+msgstr "Onglet &nòu"
+
 #: src/konqmainwindow.cpp:3564
 msgid "&Duplicate Current Tab"
 msgstr ""
@@ -930,6 +775,10 @@ msgstr ""
 #: src/konqmainwindow.cpp:3642 sidebar/web_module/web_module.cpp:68
 msgid "&Reload"
 msgstr "&Tornar cargar"
+
+#: src/konqmainwindow.cpp:3647 src/konqtabs.cpp:326
+msgid "&Reload All Tabs"
+msgstr ""
 
 #: src/konqmainwindow.cpp:3655
 #, fuzzy
@@ -1179,6 +1028,13 @@ msgid ""
 "You have multiple tabs open in this window, are you sure you want to quit?"
 msgstr ""
 
+#: src/konqmainwindow.cpp:4941 src/konqviewmanager.cpp:1413
+#, fuzzy
+#| msgid "Confirmation"
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Confirmacion"
+
 #: src/konqmainwindow.cpp:4943
 msgid "C&lose Current Tab"
 msgstr ""
@@ -1227,6 +1083,134 @@ msgid ""
 "with %1, but it cannot handle this file type."
 msgstr ""
 
+#: src/konqprofiledlg.cpp:111
+#, fuzzy
+#| msgid "File Management"
+msgctxt "@title:window"
+msgid "Profile Management"
+msgstr "Gestion de fichièrs"
+
+#: src/konqprofiledlg.cpp:114
+msgid "&Rename Profile"
+msgstr ""
+
+#: src/konqprofiledlg.cpp:115
+msgid "&Delete Profile"
+msgstr ""
+
+#: src/konqsessiondlg.cpp:77
+#, fuzzy
+#| msgid "Rename"
+msgctxt "@title:window"
+msgid "Manage Sessions"
+msgstr "Renommar"
+
+#: src/konqsessiondlg.cpp:81
+msgid "&Open"
+msgstr "&Dobrir"
+
+#: src/konqsessiondlg.cpp:175
+#, fuzzy
+#| msgid "Rename"
+msgctxt "@title:window"
+msgid "Rename Session"
+msgstr "Renommar"
+
+#: src/konqsessiondlg.cpp:223
+#, fuzzy
+#| msgid "Save Session"
+msgctxt "@title:window"
+msgid "Save Session"
+msgstr "Enregistrar la session"
+
+#: src/konqsessiondlg.cpp:247
+#, kde-format
+msgid ""
+"A session with the name '%1' already exists, do you want to overwrite it?"
+msgstr ""
+
+#: src/konqsessiondlg.cpp:248
+msgctxt "@title:window"
+msgid "Session exists. Overwrite?"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:330
+msgid ""
+"Konqueror did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:332
+#, fuzzy
+#| msgid "Rename"
+msgctxt "@title:window"
+msgid "Restore Session?"
+msgstr "Renommar"
+
+#: src/konqsessionmanager.cpp:333
+#, fuzzy
+#| msgid "Rename"
+msgid "Restore Session"
+msgstr "Renommar"
+
+#: src/konqsessionmanager.cpp:334
+msgid "Do Not Restore"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:335
+msgid "Ask Me Later"
+msgstr ""
+
+#: src/konqtabs.cpp:66
+msgid ""
+"This bar contains the list of currently open tabs. Click on a tab to make it "
+"active. You can also use keyboard shortcuts to navigate through tabs. The "
+"text on the tab shows the content currently open in it; place your mouse "
+"over the tab to see the full title, in case it has been shortened to fit the "
+"tab width."
+msgstr ""
+
+#: src/konqtabs.cpp:100
+msgid "Open a new tab"
+msgstr "Dobrir un onglet nòu"
+
+#: src/konqtabs.cpp:109
+msgid "Close the current tab"
+msgstr "Tampar l'onglet actual"
+
+#: src/konqtabs.cpp:465
+msgid "&Duplicate Tab"
+msgstr ""
+
+#: src/konqtabs.cpp:470
+msgid "&Reload Tab"
+msgstr ""
+
+#: src/konqtabs.cpp:477
+msgid "Other Tabs"
+msgstr "Autres onglets"
+
+#: src/konqtabs.cpp:482
+msgid "D&etach Tab"
+msgstr ""
+
+#: src/konqtabs.cpp:488
+msgid "&Close Tab"
+msgstr "&Barrar l'onglet"
+
+#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
+msgid "Und&o: Closed Tab"
+msgstr ""
+
+#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
+#: src/konqundomanager.cpp:162
+msgid "Und&o: Closed Window"
+msgstr ""
+
+#: src/konqundomanager.cpp:122
+msgid "Und&o"
+msgstr ""
+
 #: src/konqview.cpp:1203
 msgid ""
 "The page you are trying to view is the result of posted form data. If you "
@@ -1243,6 +1227,22 @@ msgstr "Alèrta"
 
 #: src/konqview.cpp:1205
 msgid "Resend"
+msgstr ""
+
+#: src/konqviewmanager.cpp:1411
+msgid ""
+"You have multiple tabs open in this window.\n"
+"Loading a view profile will close them."
+msgstr ""
+
+#: src/konqviewmanager.cpp:1414
+msgid "Load View Profile"
+msgstr ""
+
+#: src/konqviewmanager.cpp:1426
+msgid ""
+"This tab contains changes that have not been submitted.\n"
+"Loading a profile will discard these changes."
 msgstr ""
 
 #: sidebar/history_module/history_module.cpp:126
@@ -1297,6 +1297,98 @@ msgstr ""
 
 #: sidebar/sidebar_part.cpp:28
 msgid "Extended Sidebar"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:94
+msgid "Rollback to System Default"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:154 sidebar/sidebar_widget.cpp:431
+msgid "Configure Sidebar"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:156
+msgid "Add New"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:160
+msgid "Multiple Views"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:162 sidebar/sidebar_widget.cpp:277
+msgid "Show Tabs Left"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:163
+msgid "Show Configuration Button"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:166
+#, fuzzy
+#| msgid "&Close Tab"
+msgid "Close Sidebar"
+msgstr "&Barrar l'onglet"
+
+#: sidebar/sidebar_widget.cpp:224
+msgid "This entry already exists."
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:235
+msgid ""
+"<qt>This removes all your entries from the sidebar and adds the system "
+"default ones.<br /><b>This procedure is irreversible</b><br />Do you want to "
+"proceed?</qt>"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:277
+msgid "Show Tabs Right"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:287
+#, fuzzy
+#| msgid "By &Name"
+msgctxt "@title:window"
+msgid "Set Name"
+msgstr "Per &nom"
+
+#: sidebar/sidebar_widget.cpp:287
+msgid "Enter the name:"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:304
+msgid "Enter a URL:"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:327
+#, kde-format
+msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:372
+msgid ""
+"You have hidden the sidebar configuration button. To make it visible again, "
+"click the right mouse button on any of the sidebar buttons and select \"Show "
+"Configuration Button\"."
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:549
+msgid "Set Name..."
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:550
+msgid "Set URL..."
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:551
+msgid "Set Icon..."
+msgstr ""
+
+#: sidebar/sidebar_widget.cpp:553
+msgid "Remove"
+msgstr "Suprimir"
+
+#: sidebar/sidebar_widget.cpp:846
+msgid "Web module"
 msgstr ""
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:74
@@ -1390,25 +1482,6 @@ msgstr "Apondre un favorit"
 msgid "Cannot find parent item %1 in the tree. Internal error."
 msgstr ""
 
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-#, fuzzy
-#| msgid "Name:"
-msgctxt "@label"
-msgid "Name:"
-msgstr "Nom :"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-msgctxt "@label"
-msgid "Path or URL:"
-msgstr ""
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
-msgctxt "@title:window"
-msgid "Add folder sidebar module"
-msgstr ""
-
 #: sidebar/trees/konq_sidebartree.cpp:203
 msgid "&Create New Folder..."
 msgstr ""
@@ -1438,6 +1511,25 @@ msgstr "Crear un repertòri novèl"
 
 #: sidebar/trees/konq_sidebartree.cpp:956
 msgid "Enter folder name:"
+msgstr ""
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+#, fuzzy
+#| msgid "Name:"
+msgctxt "@label"
+msgid "Name:"
+msgstr "Nom :"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+msgctxt "@label"
+msgid "Path or URL:"
+msgstr ""
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
+msgctxt "@title:window"
+msgid "Add folder sidebar module"
 msgstr ""
 
 #: sidebar/web_module/web_module.cpp:57
@@ -1478,98 +1570,6 @@ msgstr ""
 #: sidebar/web_module/web_module.cpp:301
 msgctxt "@title:window"
 msgid "Add web sidebar module"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:94
-msgid "Rollback to System Default"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:154 sidebar/sidebar_widget.cpp:431
-msgid "Configure Sidebar"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:156
-msgid "Add New"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:160
-msgid "Multiple Views"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:162 sidebar/sidebar_widget.cpp:277
-msgid "Show Tabs Left"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:163
-msgid "Show Configuration Button"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:166
-#, fuzzy
-#| msgid "&Close Tab"
-msgid "Close Sidebar"
-msgstr "&Barrar l'onglet"
-
-#: sidebar/sidebar_widget.cpp:224
-msgid "This entry already exists."
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:235
-msgid ""
-"<qt>This removes all your entries from the sidebar and adds the system "
-"default ones.<br /><b>This procedure is irreversible</b><br />Do you want to "
-"proceed?</qt>"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:277
-msgid "Show Tabs Right"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:287
-#, fuzzy
-#| msgid "By &Name"
-msgctxt "@title:window"
-msgid "Set Name"
-msgstr "Per &nom"
-
-#: sidebar/sidebar_widget.cpp:287
-msgid "Enter the name:"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:304
-msgid "Enter a URL:"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:327
-#, kde-format
-msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:372
-msgid ""
-"You have hidden the sidebar configuration button. To make it visible again, "
-"click the right mouse button on any of the sidebar buttons and select \"Show "
-"Configuration Button\"."
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:549
-msgid "Set Name..."
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:550
-msgid "Set URL..."
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:551
-msgid "Set Icon..."
-msgstr ""
-
-#: sidebar/sidebar_widget.cpp:553
-msgid "Remove"
-msgstr "Suprimir"
-
-#: sidebar/sidebar_widget.cpp:846
-msgid "Web module"
 msgstr ""
 
 #: about/konq_aboutpage.cc:79 about/konq_aboutpage.cc:81
