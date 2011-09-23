@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-22 03:48+0200\n"
+"POT-Creation-Date: 2011-09-23 04:01+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -384,53 +384,53 @@ msgid ""
 "osm)"
 msgstr ""
 
-#: src/QtMainWindow.cpp:986
+#: src/QtMainWindow.cpp:992
 msgid "Unnamed"
 msgstr ""
 
-#: src/QtMainWindow.cpp:1285
+#: src/QtMainWindow.cpp:1296
 msgid "Map View - Marble"
 msgstr ""
 
-#: src/QtMainWindow.cpp:1313
+#: src/QtMainWindow.cpp:1324
 msgid "Routing - Marble"
 msgstr ""
 
-#: src/QtMainWindow.cpp:1322
+#: src/QtMainWindow.cpp:1333
 #, fuzzy
 #| msgid "Open File"
 msgid "Open Route..."
 msgstr "Dobrir un fichièr"
 
-#: src/QtMainWindow.cpp:1326
+#: src/QtMainWindow.cpp:1337
 #, fuzzy
 #| msgid "Open File"
 msgid "Save Route..."
 msgstr "Dobrir un fichièr"
 
-#: src/QtMainWindow.cpp:1330
+#: src/QtMainWindow.cpp:1341
 #, fuzzy
 #| msgid "Open File"
 msgid "Reverse Route"
 msgstr "Dobrir un fichièr"
 
-#: src/QtMainWindow.cpp:1336 src/lib/routing/RoutingLineEdit.cpp:41
+#: src/QtMainWindow.cpp:1347 src/lib/routing/RoutingLineEdit.cpp:41
 #, fuzzy
 #| msgid "&Search"
 msgid "Clear"
 msgstr "&Recercar"
 
-#: src/QtMainWindow.cpp:1360
+#: src/QtMainWindow.cpp:1371
 msgid "Tracking - Marble"
 msgstr ""
 
-#: src/QtMainWindow.cpp:1384
+#: src/QtMainWindow.cpp:1395
 #, fuzzy
 #| msgid "Zoom In"
 msgid "Zoom &In"
 msgstr "Agrandir lo zoom"
 
-#: src/QtMainWindow.cpp:1389
+#: src/QtMainWindow.cpp:1400
 #, fuzzy
 #| msgid "Zoom Out"
 msgid "Zoom &Out"
@@ -755,7 +755,7 @@ msgstr ""
 
 #: src/plugins/render/mapscale/MapScaleFloatItem.cpp:48
 #: src/plugins/render/mapscale/MapScaleFloatItem.cpp:244
-#: src/lib/MarbleWidget.cpp:1219
+#: src/lib/MarbleWidget.cpp:1224
 msgid "km"
 msgstr "km"
 
@@ -793,7 +793,7 @@ msgid "m"
 msgstr "m"
 
 #: src/plugins/render/mapscale/MapScaleFloatItem.cpp:253
-#: src/lib/MarbleWidget.cpp:1223
+#: src/lib/MarbleWidget.cpp:1228
 #, fuzzy
 #| msgid "km"
 msgid "mi"
@@ -2077,10 +2077,6 @@ msgstr ""
 msgid "Gpx Parser"
 msgstr ""
 
-#: src/plugins/runner/gpx/GpxParser.cpp:32
-msgid "The file is not a valid GPX 1.0 / 1.1 file"
-msgstr ""
-
 #: src/plugins/runner/pnt/PntPlugin.cpp:19
 msgid "Pnt File Parser"
 msgstr ""
@@ -2091,10 +2087,6 @@ msgstr ""
 
 #: src/plugins/runner/pnt/PntPlugin.cpp:22
 msgid "Pnt Parser"
-msgstr ""
-
-#: src/plugins/runner/osm/OsmParser.cpp:37
-msgid "The file is not a valid OSM file"
 msgstr ""
 
 #: src/plugins/runner/osm/OsmPlugin.cpp:19
@@ -2137,11 +2129,11 @@ msgstr "&Fichièr"
 msgid "Add &Measure Point"
 msgstr ""
 
-#: src/lib/MarbleWidgetInputHandler.cpp:316
+#: src/lib/MarbleWidgetInputHandler.cpp:315
 msgid "Remove &Last Measure Point"
 msgstr ""
 
-#: src/lib/MarbleWidgetInputHandler.cpp:320
+#: src/lib/MarbleWidgetInputHandler.cpp:318
 msgid "&Remove Measure Points"
 msgstr ""
 
@@ -2257,21 +2249,29 @@ msgstr "km"
 msgid "Disabled"
 msgstr ""
 
-#: src/lib/CurrentLocationWidget.cpp:318
+#: src/lib/CurrentLocationWidget.cpp:317
 #, fuzzy
 #| msgid "Back"
 msgid "Save Track"
 msgstr "Pista"
 
-#: src/lib/CurrentLocationWidget.cpp:320 src/lib/CurrentLocationWidget.cpp:333
+#: src/lib/CurrentLocationWidget.cpp:319 src/lib/CurrentLocationWidget.cpp:331
 msgid "KML File (*.kml)"
 msgstr ""
 
-#: src/lib/CurrentLocationWidget.cpp:332
+#: src/lib/CurrentLocationWidget.cpp:330
 #, fuzzy
 #| msgid "Back"
 msgid "Open Track"
 msgstr "Pista"
+
+#: src/lib/CurrentLocationWidget.cpp:342
+msgid "Clear current track"
+msgstr ""
+
+#: src/lib/CurrentLocationWidget.cpp:343
+msgid "Are you sure you want to clear the current track?"
+msgstr ""
 
 #: src/lib/DataMigration.cpp:98
 msgid "Marble data conversion"
@@ -2373,6 +2373,10 @@ msgstr ""
 
 #: src/lib/MarbleControlBox.cpp:181
 msgid "Current Location"
+msgstr ""
+
+#: src/lib/FileManager.cpp:186
+msgid "File Parsing Error"
 msgstr ""
 
 #: src/lib/LatLonEdit.cpp:113
@@ -3342,25 +3346,13 @@ msgstr ""
 msgid "Could not convert <minimum> child text content to integer. Was: '%1'"
 msgstr ""
 
-#: src/lib/geodata/parser/GeoSceneParser.cpp:65
-msgid "The file is not a valid DGML 2.0 file"
-msgstr ""
-
-#: src/lib/geodata/parser/GeoParser.cpp:134
+#: src/lib/geodata/parser/GeoParser.cpp:135
 #, qt-format
 msgid "Error parsing file at line: %1 and column %2 . "
 msgstr ""
 
-#: src/lib/geodata/parser/GeoParser.cpp:136
+#: src/lib/geodata/parser/GeoParser.cpp:137
 msgid "This is an Invalid File"
-msgstr ""
-
-#: src/lib/geodata/parser/GeoParser.cpp:194
-msgid "File format unrecognized"
-msgstr ""
-
-#: src/lib/geodata/parser/GeoDataParser.cpp:82
-msgid "The file is not a valid KML 2.0 / 2.1 / 2.2 file"
 msgstr ""
 
 #: src/lib/routing/RoutingProfilesModel.cpp:111
