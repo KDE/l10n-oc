@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-28 03:54+0200\n"
+"POT-Creation-Date: 2011-10-30 03:15+0100\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -509,6 +509,26 @@ msgstr ""
 msgid "Save All"
 msgstr "Tot enregistrar"
 
+#: app/configdialog.cpp:68
+#, fuzzy
+#| msgctxt "@title:group General info about the image"
+#| msgid "General"
+msgid "General"
+msgstr "General"
+
+#: app/configdialog.cpp:90
+#, fuzzy
+#| msgctxt "@item:intable"
+#| msgid "Image Size"
+msgid "Image View"
+msgstr "Talha d'imatge"
+
+#: app/configdialog.cpp:95
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced"
+msgstr "Paramètres de l'imatge"
+
 #: app/mainwindow.cpp:321
 msgctxt "@action reload the currently viewed image"
 msgid "Reload"
@@ -690,26 +710,6 @@ msgid "%1 sec"
 msgid_plural "%1 secs"
 msgstr[0] ""
 msgstr[1] ""
-
-#: app/configdialog.cpp:68
-#, fuzzy
-#| msgctxt "@title:group General info about the image"
-#| msgid "General"
-msgid "General"
-msgstr "General"
-
-#: app/configdialog.cpp:90
-#, fuzzy
-#| msgctxt "@item:intable"
-#| msgid "Image Size"
-msgid "Image View"
-msgstr "Talha d'imatge"
-
-#: app/configdialog.cpp:95
-#, fuzzy
-#| msgid "Image Settings"
-msgid "Advanced"
-msgstr "Paramètres de l'imatge"
 
 #: app/gvcore.cpp:83
 msgctxt "@info"
@@ -905,7 +905,7 @@ msgstr "Redimensionar"
 #. i18n: file: lib/crop/cropwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
 #: app/imageopscontextmanageritem.cpp:103 lib/crop/cropimageoperation.cpp:68
-#: lib/crop/cropwidget.cpp:166 rc.cpp:202
+#: lib/crop/cropwidget.cpp:166 rc.cpp:174
 msgid "Crop"
 msgstr "Rosegar"
 
@@ -1180,24 +1180,24 @@ msgstr "100 %"
 msgid "No document selected"
 msgstr ""
 
-#: lib/documentview/documentview.cpp:181
+#: lib/documentview/documentview.cpp:175
 #, fuzzy
 #| msgctxt "Verb"
 #| msgid "Trash"
 msgid "Trash"
 msgstr "Banasta"
 
-#: lib/documentview/documentview.cpp:182
+#: lib/documentview/documentview.cpp:176
 #, fuzzy
 #| msgid "Delete"
 msgid "Deselect"
 msgstr "Suprimir"
 
-#: lib/documentview/documentview.cpp:362
+#: lib/documentview/documentview.cpp:356
 msgid "Gwenview does not know how to display this kind of document"
 msgstr ""
 
-#: lib/documentview/documentview.cpp:467
+#: lib/documentview/documentview.cpp:461
 #, kde-format
 msgid "Loading <filename>%1</filename> failed"
 msgstr ""
@@ -1504,7 +1504,7 @@ msgstr "Navigar"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:98
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:72 rc.cpp:232
+#: rc.cpp:72 rc.cpp:204
 msgid "Enlarge smaller images"
 msgstr ""
 
@@ -1734,9 +1734,157 @@ msgstr "Gwenview"
 msgid "<i>Type text or click the items below to customize the format</i>"
 msgstr ""
 
+#. i18n: file: lib/crop/cropwidget.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:177
+#, fuzzy
+#| msgid "&Settings"
+msgid "Ratio:"
+msgstr "&Paramètres"
+
+#. i18n: file: lib/crop/cropwidget.ui:68
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:180
+#, fuzzy
+#| msgid "Description:"
+msgid "Position:"
+msgstr "Descripcion :"
+
+#. i18n: file: lib/crop/cropwidget.ui:101
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:183
+#, fuzzy
+#| msgctxt "@item:intable"
+#| msgid "File Size"
+msgid "Size:"
+msgstr "Nom de fichièr"
+
+#. i18n: file: lib/crop/cropwidget.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
+#: rc.cpp:186
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced settings"
+msgstr "Paramètres de l'imatge"
+
+#. i18n: file: lib/print/printoptionspage.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
+#: rc.cpp:189
+msgid "Image Settings"
+msgstr "Paramètres de l'imatge"
+
+#. i18n: file: lib/print/printoptionspage.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:192
+msgid "Image Position"
+msgstr ""
+
+#. i18n: file: lib/print/printoptionspage.ui:45
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:195
+msgid "Scaling"
+msgstr "Redimensionament"
+
+#. i18n: file: lib/print/printoptionspage.ui:51
+#. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
+#: rc.cpp:198
+msgid "&No scaling"
+msgstr ""
+
+#. i18n: file: lib/print/printoptionspage.ui:61
+#. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
+#: rc.cpp:201
+msgid "&Fit image to page"
+msgstr ""
+
+#. i18n: file: lib/print/printoptionspage.ui:123
+#. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
+#: rc.cpp:207
+msgid "&Scale to:"
+msgstr ""
+
+#. i18n: file: lib/print/printoptionspage.ui:158
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:210
+msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
+msgid "x"
+msgstr "x"
+
+#. i18n: file: lib/print/printoptionspage.ui:185
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: rc.cpp:213
+msgid "Millimeters"
+msgstr "Milimètres"
+
+#. i18n: file: lib/print/printoptionspage.ui:190
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: rc.cpp:216
+msgid "Centimeters"
+msgstr "Centimètres"
+
+#. i18n: file: lib/print/printoptionspage.ui:195
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: rc.cpp:219
+msgid "Inches"
+msgstr "Poces"
+
+#. i18n: file: lib/print/printoptionspage.ui:224
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
+#: rc.cpp:222
+msgid "Keep ratio"
+msgstr ""
+
+#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:225
+#, fuzzy
+#| msgctxt "@item:intable"
+#| msgid "File Size"
+msgid "Size"
+msgstr "Nom de fichièr"
+
+#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
+#. i18n: ectx: property (text), widget (QToolButton, applyButton)
+#: rc.cpp:228
+msgid "Apply"
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
+#: rc.cpp:231
+msgid "Image Resizing"
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:20
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:234
+msgid "Enter the new size for this image."
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:237
+msgid "Current size:"
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:88
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:240
+#, fuzzy
+#| msgctxt "@item:intable"
+#| msgid "File Size"
+msgid "New Size:"
+msgstr "Nom de fichièr"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
+#: rc.cpp:243
+msgid "Keep aspect ratio"
+msgstr ""
+
 #. i18n: file: lib/gwenviewconfig.kcfg:30
 #. i18n: ectx: whatsthis, entry (PercentageOfMemoryUsageWarning), group (General)
-#: rc.cpp:174
+#: rc.cpp:246
 msgid ""
 "The percentage of memory used by Gwenview before it\n"
 "\t\t\twarns the user and suggest saving changes."
@@ -1744,7 +1892,7 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:38
 #. i18n: ectx: whatsthis, entry (BlackListedExtensions), group (General)
-#: rc.cpp:178
+#: rc.cpp:250
 msgid ""
 "A list of filename extensions Gwenview should not try to\n"
 "\t\t\tload. This is useful to exclude raw files which are recognized as\n"
@@ -1754,180 +1902,32 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:194
 #. i18n: ectx: label, entry (random), group (slide show)
-#: rc.cpp:184
+#: rc.cpp:256
 msgid "Display slide show images in random order"
 msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:198
 #. i18n: ectx: label, entry (fullscreen), group (slide show)
-#: rc.cpp:187
+#: rc.cpp:259
 msgid "Show slideshow in fullscreen mode"
 msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:202
 #. i18n: ectx: label, entry (loop), group (slide show)
-#: rc.cpp:190
+#: rc.cpp:262
 msgid "Loop on images"
 msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:206
 #. i18n: ectx: label, entry (stopAtEnd), group (slide show)
-#: rc.cpp:193
+#: rc.cpp:265
 msgid "Stop at last image of folder"
 msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:210
 #. i18n: ectx: label, entry (interval), group (slide show)
-#: rc.cpp:196
-msgid "Interval between images (in seconds)"
-msgstr ""
-
-#. i18n: file: lib/crop/cropwidget.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:205
-#, fuzzy
-#| msgid "&Settings"
-msgid "Ratio:"
-msgstr "&Paramètres"
-
-#. i18n: file: lib/crop/cropwidget.ui:68
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:208
-#, fuzzy
-#| msgid "Description:"
-msgid "Position:"
-msgstr "Descripcion :"
-
-#. i18n: file: lib/crop/cropwidget.ui:101
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:211
-#, fuzzy
-#| msgctxt "@item:intable"
-#| msgid "File Size"
-msgid "Size:"
-msgstr "Nom de fichièr"
-
-#. i18n: file: lib/crop/cropwidget.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
-#: rc.cpp:214
-#, fuzzy
-#| msgid "Image Settings"
-msgid "Advanced settings"
-msgstr "Paramètres de l'imatge"
-
-#. i18n: file: lib/print/printoptionspage.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:217
-msgid "Image Settings"
-msgstr "Paramètres de l'imatge"
-
-#. i18n: file: lib/print/printoptionspage.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:220
-msgid "Image Position"
-msgstr ""
-
-#. i18n: file: lib/print/printoptionspage.ui:45
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:223
-msgid "Scaling"
-msgstr "Redimensionament"
-
-#. i18n: file: lib/print/printoptionspage.ui:51
-#. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:226
-msgid "&No scaling"
-msgstr ""
-
-#. i18n: file: lib/print/printoptionspage.ui:61
-#. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:229
-msgid "&Fit image to page"
-msgstr ""
-
-#. i18n: file: lib/print/printoptionspage.ui:123
-#. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:235
-msgid "&Scale to:"
-msgstr ""
-
-#. i18n: file: lib/print/printoptionspage.ui:158
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:238
-msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
-msgid "x"
-msgstr "x"
-
-#. i18n: file: lib/print/printoptionspage.ui:185
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:241
-msgid "Millimeters"
-msgstr "Milimètres"
-
-#. i18n: file: lib/print/printoptionspage.ui:190
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:244
-msgid "Centimeters"
-msgstr "Centimètres"
-
-#. i18n: file: lib/print/printoptionspage.ui:195
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:247
-msgid "Inches"
-msgstr "Poces"
-
-#. i18n: file: lib/print/printoptionspage.ui:224
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:250
-msgid "Keep ratio"
-msgstr ""
-
-#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:253
-#, fuzzy
-#| msgctxt "@item:intable"
-#| msgid "File Size"
-msgid "Size"
-msgstr "Nom de fichièr"
-
-#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
-#. i18n: ectx: property (text), widget (QToolButton, applyButton)
-#: rc.cpp:256
-msgid "Apply"
-msgstr ""
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
-#: rc.cpp:259
-msgid "Image Resizing"
-msgstr ""
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:20
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:262
-msgid "Enter the new size for this image."
-msgstr ""
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:265
-msgid "Current size:"
-msgstr ""
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:88
-#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:268
-#, fuzzy
-#| msgctxt "@item:intable"
-#| msgid "File Size"
-msgid "New Size:"
-msgstr "Nom de fichièr"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:135
-#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
-#: rc.cpp:271
-msgid "Keep aspect ratio"
+msgid "Interval between images (in seconds)"
 msgstr ""
 
 #. i18n: file: part/gvpart.rc:4
