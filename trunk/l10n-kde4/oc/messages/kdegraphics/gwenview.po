@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-20 04:13+0100\n"
+"POT-Creation-Date: 2011-11-21 04:41+0100\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -157,87 +157,70 @@ msgstr "Dobrir amb..."
 msgid "Other Application..."
 msgstr ""
 
-#: app/filtercontroller.cpp:128
-#, fuzzy
-#| msgid "Collections"
-msgid "Name contains"
-msgstr "Colleccions"
-
-#: app/filtercontroller.cpp:129
-msgid "Name does not contain"
+#: app/fullscreencontent.cpp:111
+msgctxt "@info:tooltip"
+msgid "Configure Full Screen Mode"
 msgstr ""
 
-#: app/filtercontroller.cpp:231
-#, fuzzy
-#| msgid "Delete"
-msgid "Date >="
-msgstr "Suprimir"
+#: app/fullscreencontent.cpp:277
+msgctxt "@item:intext fullscreen meta info separator"
+msgid ", "
+msgstr ", "
 
-#: app/filtercontroller.cpp:232
-#, fuzzy
-#| msgid "Delete"
-msgid "Date ="
-msgstr "Suprimir"
+#: app/fullscreencontent.cpp:337
+#, kde-format
+msgctxt "Slideshow interval in seconds"
+msgid "%1 sec"
+msgid_plural "%1 secs"
+msgstr[0] ""
+msgstr[1] ""
 
-#: app/filtercontroller.cpp:233
-#, fuzzy
-#| msgid "Delete"
-msgid "Date <="
-msgstr "Suprimir"
-
-#: app/filtercontroller.cpp:324
-#, fuzzy
-#| msgid "&Settings"
-msgid "Rating >="
-msgstr "&Paramètres"
-
-#: app/filtercontroller.cpp:325
-#, fuzzy
-#| msgid "&Settings"
-msgid "Rating ="
-msgstr "&Paramètres"
-
-#: app/filtercontroller.cpp:326
-#, fuzzy
-#| msgid "&Settings"
-msgid "Rating <="
-msgstr "&Paramètres"
-
-#: app/filtercontroller.cpp:421
-msgid "Tagged"
+#: app/gvcore.cpp:84
+msgctxt "@info"
+msgid "No image format selected."
 msgstr ""
 
-#: app/filtercontroller.cpp:422
-msgid "Not Tagged"
+#: app/gvcore.cpp:97
+#, kde-format
+msgctxt "@info"
+msgid "Gwenview cannot save images as %1."
 msgstr ""
 
-#: app/filtercontroller.cpp:556
-#, fuzzy
-#| msgid "&File"
-msgctxt "@action:inmenu"
-msgid "Filter by Name"
-msgstr "&Fichièr"
+#: app/gvcore.cpp:182
+msgid "Save using another format"
+msgstr ""
 
-#: app/filtercontroller.cpp:557
-#, fuzzy
-#| msgid "&File"
-msgctxt "@action:inmenu"
-msgid "Filter by Date"
-msgstr "&Fichièr"
+#: app/gvcore.cpp:185
+#, kde-format
+msgid "Gwenview cannot save images in '%1' format."
+msgstr ""
 
-#: app/filtercontroller.cpp:563
-#, fuzzy
-#| msgid "&File"
-msgctxt "@action:inmenu"
-msgid "Filter by Rating"
-msgstr "&Fichièr"
+#: app/gvcore.cpp:208
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
 
-#: app/filtercontroller.cpp:564
-#, fuzzy
-#| msgid "&File"
-msgctxt "@action:inmenu"
-msgid "Filter by Tag"
-msgstr "&Fichièr"
+#: app/gvcore.cpp:223 app/gvcore.cpp:246
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr ""
+
+#: app/gvcore.cpp:264
+msgid "You are now viewing the new document."
+msgstr ""
+
+#: app/gvcore.cpp:266
+msgid "Go back to the original"
+msgstr ""
+
+#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr ""
 
 #: app/imagemetainfodialog.cpp:125
 #, fuzzy
@@ -246,6 +229,73 @@ msgstr "&Fichièr"
 msgctxt "@title:window"
 msgid "Meta Information"
 msgstr "Entresenhas"
+
+#: app/imageopscontextmanageritem.cpp:80
+#, fuzzy
+#| msgid "Edit"
+msgctxt "@title actions category - means actions changing image"
+msgid "Edit"
+msgstr "Edicion"
+
+#: app/imageopscontextmanageritem.cpp:82
+msgid "Rotate Left"
+msgstr ""
+
+#: app/imageopscontextmanageritem.cpp:87
+msgid "Rotate Right"
+msgstr ""
+
+#: app/imageopscontextmanageritem.cpp:92
+msgid "Mirror"
+msgstr "Miralh"
+
+#: app/imageopscontextmanageritem.cpp:96
+msgid "Flip"
+msgstr "Coalevar"
+
+#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
+msgid "Resize"
+msgstr "Redimensionar"
+
+#. i18n: file: lib/crop/cropwidget.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
+#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
+#: lib/crop/cropwidget.cpp:163 rc.cpp:174
+msgid "Crop"
+msgstr "Rosegar"
+
+#: app/imageopscontextmanageritem.cpp:110
+msgid "Red Eye Reduction"
+msgstr ""
+
+#: app/imageopscontextmanageritem.cpp:137
+msgid "Image Operations"
+msgstr "Operacions d'imatge"
+
+#: app/saveallhelper.cpp:57
+msgctxt "@info:progress saving all image changes"
+msgid "Saving..."
+msgstr "Enregistrament..."
+
+#: app/saveallhelper.cpp:58
+msgid "&Stop"
+msgstr ""
+
+#: app/saveallhelper.cpp:83
+#, kde-format
+msgctxt "@info"
+msgid "One document could not be saved:"
+msgid_plural "%1 documents could not be saved:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/saveallhelper.cpp:107
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr ""
 
 #: app/infocontextmanageritem.cpp:168
 #, fuzzy, kde-format
@@ -304,26 +354,6 @@ msgstr[1] ""
 msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr ""
-
-#: app/kipiexportaction.cpp:51
-msgid "Last Used Plugin"
-msgstr ""
-
-#: app/kipiexportaction.cpp:53
-#, fuzzy
-#| msgid "&Plugins"
-msgid "Other Plugins"
-msgstr "&Ajustons"
-
-#: app/kipiexportaction.cpp:63 app/kipiinterface.cpp:303
-msgid "No Plugin Found"
-msgstr ""
-
-#: app/kipiexportaction.cpp:76
-#, fuzzy
-#| msgid "Save"
-msgid "Share"
-msgstr "Carrat"
 
 #: app/kipiimagecollectionselector.cpp:54
 #, kde-format
@@ -387,6 +417,10 @@ msgstr "Colleccions"
 #| msgid "Saving..."
 msgid "Loading..."
 msgstr "Enregistrament..."
+
+#: app/kipiinterface.cpp:303 app/kipiexportaction.cpp:63
+msgid "No Plugin Found"
+msgstr ""
 
 #: app/kipiuploadwidget.cpp:43
 #, kde-format
@@ -586,31 +620,6 @@ msgstr[1] ""
 msgid "If you quit now, your changes will be lost."
 msgstr ""
 
-#: app/saveallhelper.cpp:57
-msgctxt "@info:progress saving all image changes"
-msgid "Saving..."
-msgstr "Enregistrament..."
-
-#: app/saveallhelper.cpp:58
-msgid "&Stop"
-msgstr ""
-
-#: app/saveallhelper.cpp:83
-#, kde-format
-msgctxt "@info"
-msgid "One document could not be saved:"
-msgid_plural "%1 documents could not be saved:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: app/saveallhelper.cpp:107
-#, kde-format
-msgctxt ""
-"@info %1 is the name of the document which failed to save, %2 is the reason "
-"for the failure"
-msgid "<filename>%1</filename>: %2"
-msgstr ""
-
 #: app/savebar.cpp:86
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -709,70 +718,21 @@ msgid ""
 "This image has been modified. Reloading it will discard all your changes."
 msgstr ""
 
-#: app/fullscreencontent.cpp:111
-msgctxt "@info:tooltip"
-msgid "Configure Full Screen Mode"
+#: app/kipiexportaction.cpp:51
+msgid "Last Used Plugin"
 msgstr ""
 
-#: app/fullscreencontent.cpp:277
-msgctxt "@item:intext fullscreen meta info separator"
-msgid ", "
-msgstr ", "
+#: app/kipiexportaction.cpp:53
+#, fuzzy
+#| msgid "&Plugins"
+msgid "Other Plugins"
+msgstr "&Ajustons"
 
-#: app/fullscreencontent.cpp:337
-#, kde-format
-msgctxt "Slideshow interval in seconds"
-msgid "%1 sec"
-msgid_plural "%1 secs"
-msgstr[0] ""
-msgstr[1] ""
-
-#: app/gvcore.cpp:84
-msgctxt "@info"
-msgid "No image format selected."
-msgstr ""
-
-#: app/gvcore.cpp:97
-#, kde-format
-msgctxt "@info"
-msgid "Gwenview cannot save images as %1."
-msgstr ""
-
-#: app/gvcore.cpp:182
-msgid "Save using another format"
-msgstr ""
-
-#: app/gvcore.cpp:185
-#, kde-format
-msgid "Gwenview cannot save images in '%1' format."
-msgstr ""
-
-#: app/gvcore.cpp:208
-#, kde-format
-msgctxt "@info"
-msgid ""
-"A file named <filename>%1</filename> already exists.\n"
-"Are you sure you want to overwrite it?"
-msgstr ""
-
-#: app/gvcore.cpp:223 app/gvcore.cpp:246
-#, kde-format
-msgctxt "@info"
-msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-msgstr ""
-
-#: app/gvcore.cpp:264
-msgid "You are now viewing the new document."
-msgstr ""
-
-#: app/gvcore.cpp:266
-msgid "Go back to the original"
-msgstr ""
-
-#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr ""
+#: app/kipiexportaction.cpp:76
+#, fuzzy
+#| msgid "Save"
+msgid "Share"
+msgstr "Carrat"
 
 #: app/semanticinfocontextmanageritem.cpp:140
 #, fuzzy
@@ -883,47 +843,109 @@ msgid_plural "%1 documents"
 msgstr[0] ""
 msgstr[1] ""
 
-#: app/imageopscontextmanageritem.cpp:80
+#: app/filtercontroller.cpp:128
 #, fuzzy
-#| msgid "Edit"
-msgctxt "@title actions category - means actions changing image"
-msgid "Edit"
-msgstr "Edicion"
+#| msgid "Collections"
+msgid "Name contains"
+msgstr "Colleccions"
 
-#: app/imageopscontextmanageritem.cpp:82
-msgid "Rotate Left"
+#: app/filtercontroller.cpp:129
+msgid "Name does not contain"
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:87
-msgid "Rotate Right"
+#: app/filtercontroller.cpp:231
+#, fuzzy
+#| msgid "Delete"
+msgid "Date >="
+msgstr "Suprimir"
+
+#: app/filtercontroller.cpp:232
+#, fuzzy
+#| msgid "Delete"
+msgid "Date ="
+msgstr "Suprimir"
+
+#: app/filtercontroller.cpp:233
+#, fuzzy
+#| msgid "Delete"
+msgid "Date <="
+msgstr "Suprimir"
+
+#: app/filtercontroller.cpp:324
+#, fuzzy
+#| msgid "&Settings"
+msgid "Rating >="
+msgstr "&Paramètres"
+
+#: app/filtercontroller.cpp:325
+#, fuzzy
+#| msgid "&Settings"
+msgid "Rating ="
+msgstr "&Paramètres"
+
+#: app/filtercontroller.cpp:326
+#, fuzzy
+#| msgid "&Settings"
+msgid "Rating <="
+msgstr "&Paramètres"
+
+#: app/filtercontroller.cpp:421
+msgid "Tagged"
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:92
-msgid "Mirror"
-msgstr "Miralh"
-
-#: app/imageopscontextmanageritem.cpp:96
-msgid "Flip"
-msgstr "Coalevar"
-
-#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
-msgid "Resize"
-msgstr "Redimensionar"
-
-#. i18n: file: lib/crop/cropwidget.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
-#: lib/crop/cropwidget.cpp:163 rc.cpp:174
-msgid "Crop"
-msgstr "Rosegar"
-
-#: app/imageopscontextmanageritem.cpp:110
-msgid "Red Eye Reduction"
+#: app/filtercontroller.cpp:422
+msgid "Not Tagged"
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:137
-msgid "Image Operations"
-msgstr "Operacions d'imatge"
+#: app/filtercontroller.cpp:556
+#, fuzzy
+#| msgid "&File"
+msgctxt "@action:inmenu"
+msgid "Filter by Name"
+msgstr "&Fichièr"
+
+#: app/filtercontroller.cpp:557
+#, fuzzy
+#| msgid "&File"
+msgctxt "@action:inmenu"
+msgid "Filter by Date"
+msgstr "&Fichièr"
+
+#: app/filtercontroller.cpp:563
+#, fuzzy
+#| msgid "&File"
+msgctxt "@action:inmenu"
+msgid "Filter by Rating"
+msgstr "&Fichièr"
+
+#: app/filtercontroller.cpp:564
+#, fuzzy
+#| msgid "&File"
+msgctxt "@action:inmenu"
+msgid "Filter by Tag"
+msgstr "&Fichièr"
+
+#: importer/main.cpp:40
+#, fuzzy
+#| msgid "Gwenview KPart"
+msgid "Gwenview Importer"
+msgstr "Gwenview KPart"
+
+#: importer/main.cpp:42
+#, fuzzy
+#| msgid "Import"
+msgid "Photo Importer"
+msgstr "Importar"
+
+#: importer/main.cpp:44
+msgid "Copyright 2009-2010 Aurélien Gâteau"
+msgstr ""
+
+#: importer/main.cpp:53
+#, fuzzy
+#| msgid "Create Folder"
+msgid "Source folder"
+msgstr "Crear un repertòri"
 
 #: importer/filenameformater.cpp:103
 msgid "Shooting date"
@@ -1062,28 +1084,6 @@ msgctxt "%1 is the importer keyword, %2 is keyword explanation"
 msgid "%1: %2"
 msgstr "%1"
 
-#: importer/main.cpp:40
-#, fuzzy
-#| msgid "Gwenview KPart"
-msgid "Gwenview Importer"
-msgstr "Gwenview KPart"
-
-#: importer/main.cpp:42
-#, fuzzy
-#| msgid "Import"
-msgid "Photo Importer"
-msgstr "Importar"
-
-#: importer/main.cpp:44
-msgid "Copyright 2009-2010 Aurélien Gâteau"
-msgstr ""
-
-#: importer/main.cpp:53
-#, fuzzy
-#| msgid "Create Folder"
-msgid "Source folder"
-msgstr "Crear un repertòri"
-
 #: importer/thumbnailpage.cpp:149
 msgid "Import Selected"
 msgstr ""
@@ -1093,12 +1093,6 @@ msgstr ""
 #| msgid "Import"
 msgid "Import All"
 msgstr "Importar"
-
-#: lib/fullscreenbar.cpp:260 lib/statusbartoolbutton.cpp:119
-#, kde-format
-msgctxt "@info:tooltip of custom toolbar button"
-msgid "%1"
-msgstr "%1"
 
 #: lib/crop/cropwidget.cpp:117
 #, fuzzy
@@ -1210,6 +1204,11 @@ msgstr "100 %"
 msgid "No document selected"
 msgstr ""
 
+#: lib/historymodel.cpp:138
+#, kde-format
+msgid "Last visited: %1"
+msgstr ""
+
 #: lib/jpegcontent.cpp:564
 msgctxt "@info"
 msgid "Could not open file for writing."
@@ -1243,6 +1242,12 @@ msgstr "Redimensionar"
 msgid "Assign this tag to all selected images"
 msgstr ""
 
+#: lib/statusbartoolbutton.cpp:119 lib/fullscreenbar.cpp:260
+#, kde-format
+msgctxt "@info:tooltip of custom toolbar button"
+msgid "%1"
+msgstr "%1"
+
 #: lib/transformimageoperation.cpp:67
 msgctxt "(qtundo-format)"
 msgid "Rotate Right"
@@ -1270,11 +1275,6 @@ msgstr "Coalevar"
 #: lib/transformimageoperation.cpp:81
 msgctxt "(qtundo-format)"
 msgid "Transform"
-msgstr ""
-
-#: lib/historymodel.cpp:138
-#, kde-format
-msgid "Last visited: %1"
 msgstr ""
 
 #: lib/imagemetainfomodel.cpp:230
