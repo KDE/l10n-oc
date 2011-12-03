@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-02 03:32+0100\n"
+"POT-Creation-Date: 2011-12-03 03:10+0100\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -7113,6 +7113,12 @@ msgstr "Desplaçament de fichièrs dins l'escobilièr"
 msgid "Delete Tracks"
 msgstr "&Suprimir"
 
+#: browsers/BrowserCategoryList.cpp:52
+#, fuzzy
+#| msgid "Deleting files"
+msgid "Filter Music Sources"
+msgstr "Seleccionar un fichièr"
+
 #: browsers/BrowserBreadcrumbItem.cpp:68
 #, fuzzy
 #| msgid "Deleting files"
@@ -7152,12 +7158,6 @@ msgid "1 track"
 msgid_plural "%1 tracks"
 msgstr[0] "Pista"
 msgstr[1] "Pista"
-
-#: browsers/BrowserCategoryList.cpp:52
-#, fuzzy
-#| msgid "Deleting files"
-msgid "Filter Music Sources"
-msgstr "Seleccionar un fichièr"
 
 #: configdialog/dialogs/DatabaseConfig.cpp:93
 #, fuzzy
@@ -8386,13 +8386,6 @@ msgstr ""
 msgid "print() takes one argument"
 msgstr ""
 
-#: context/toolbar/AppletItemOverlay.cpp:104
-#: context/toolbar/AppletToolbarAppletItem.cpp:58
-#, fuzzy
-#| msgid "Remove Playlist"
-msgid "Remove Applet"
-msgstr "Suprimir la tièra de lecturas"
-
 #: context/toolbar/AppletToolbarAddItem.cpp:47
 #, fuzzy
 #| msgid "Widgets"
@@ -8414,6 +8407,13 @@ msgstr "Configurar..."
 #| msgid "Filename"
 msgid "no applet name"
 msgstr "Nom de fichièr"
+
+#: context/toolbar/AppletToolbarAppletItem.cpp:58
+#: context/toolbar/AppletItemOverlay.cpp:105
+#, fuzzy
+#| msgid "Remove Playlist"
+msgid "Remove Applet"
+msgstr "Suprimir la tièra de lecturas"
 
 #: context/tools/amarokpkg.cpp:40
 msgid "Install, list, remove Amarok applets"
@@ -13737,54 +13737,6 @@ msgstr ""
 msgid "Updating the local Jamendo database."
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:182
-#, fuzzy
-#| msgid "Artist"
-msgid "Personal Radio"
-msgstr "Artista"
-
-#: services/lastfm/LastFmTreeModel.cpp:183
-msgid "Neighborhood"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:368
-msgid "My Recommendations"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:370
-msgid "My Radio Station"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:372
-msgid "My Mix Radio"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:374
-msgid "My Neighborhood"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:379
-#, fuzzy
-#| msgid "Artist"
-msgid "My Top Artists"
-msgstr "Artista"
-
-#: services/lastfm/LastFmTreeModel.cpp:381
-#, fuzzy
-#| msgid "Tags"
-msgid "My Tags"
-msgstr "Etiquetas"
-
-#: services/lastfm/LastFmTreeModel.cpp:383
-#, fuzzy
-#| msgid "Files"
-msgid "Friends"
-msgstr "Fichièrs"
-
-#: services/lastfm/LastFmTreeModel.cpp:385
-msgid "Neighbors"
-msgstr ""
-
 #: services/lastfm/LoveTrackAction.cpp:25
 #: services/lastfm/LastFmService.cpp:284
 #, fuzzy
@@ -14143,6 +14095,54 @@ msgstr "Utilizaire"
 msgctxt "As in, lastfm"
 msgid "Loved Track: %1"
 msgstr "&Pistas"
+
+#: services/lastfm/LastFmTreeModel.cpp:172
+#, fuzzy
+#| msgid "Artist"
+msgid "Personal Radio"
+msgstr "Artista"
+
+#: services/lastfm/LastFmTreeModel.cpp:173
+msgid "Neighborhood"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:331
+msgid "My Recommendations"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:333
+msgid "My Radio Station"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:335
+msgid "My Mix Radio"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:337
+msgid "My Neighborhood"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:342
+#, fuzzy
+#| msgid "Artist"
+msgid "My Top Artists"
+msgstr "Artista"
+
+#: services/lastfm/LastFmTreeModel.cpp:344
+#, fuzzy
+#| msgid "Tags"
+msgid "My Tags"
+msgstr "Etiquetas"
+
+#: services/lastfm/LastFmTreeModel.cpp:346
+#, fuzzy
+#| msgid "Files"
+msgid "Friends"
+msgstr "Fichièrs"
+
+#: services/lastfm/LastFmTreeModel.cpp:348
+msgid "Neighbors"
+msgstr ""
 
 #: services/magnatune/MagnatuneCollectionLocation.cpp:42
 msgid "Preview Tracks"
@@ -14635,12 +14635,6 @@ msgctxt ""
 msgid "Amazon"
 msgstr ""
 
-#: services/amazon/AmazonShoppingCartView.cpp:64
-#, fuzzy
-#| msgid "Remove From Playlist"
-msgid "Remove from Cart"
-msgstr "Suprimir de la tièra de lecturas"
-
 #: services/amazon/AmazonStore.cpp:100
 msgid "Access the Amazon MP3 Store directly from Amarok"
 msgstr ""
@@ -14670,22 +14664,22 @@ msgid ""
 "settings to make the store work."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:403
+#: services/amazon/AmazonStore.cpp:409
 msgid "Select results page to show"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:426
+#: services/amazon/AmazonStore.cpp:432
 #, fuzzy
 #| msgid "Add to playlist"
 msgctxt "Add selected item to your shopping cart"
 msgid "Add to Cart"
 msgstr "Apondre a la tièra de lecturas"
 
-#: services/amazon/AmazonStore.cpp:427
+#: services/amazon/AmazonStore.cpp:433
 msgid "Add selected item to your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:434
+#: services/amazon/AmazonStore.cpp:440
 #, fuzzy
 #| msgctxt "@title buttontext for popup-menu"
 #| msgid "View"
@@ -14693,36 +14687,42 @@ msgctxt "View your shopping cart contents"
 msgid "View Cart"
 msgstr "Visualizacion"
 
-#: services/amazon/AmazonStore.cpp:435
+#: services/amazon/AmazonStore.cpp:441
 msgid "View your shopping cart contents"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:442
+#: services/amazon/AmazonStore.cpp:448
 #, fuzzy
 #| msgid "Comment"
 msgctxt "Checkout your shopping cart"
 msgid "Checkout"
 msgstr "Comentari"
 
-#: services/amazon/AmazonStore.cpp:443
+#: services/amazon/AmazonStore.cpp:449
 msgid "Checkout your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:463
+#: services/amazon/AmazonStore.cpp:469
 msgid "Error: Querying MP3 Music Store database failed. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:498
+#: services/amazon/AmazonStore.cpp:504
 msgid "Error: Received an invalid reply. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:518
+#: services/amazon/AmazonStore.cpp:524
 msgid "Error: Unable to open temporary file. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:538
+#: services/amazon/AmazonStore.cpp:544
 msgid "Error: Unable to parse temporary file. :-("
 msgstr ""
+
+#: services/amazon/AmazonShoppingCartView.cpp:64
+#, fuzzy
+#| msgid "Remove From Playlist"
+msgid "Remove from Cart"
+msgstr "Suprimir de la tièra de lecturas"
 
 #: services/amazon/AmazonItemTreeView.cpp:271
 #, fuzzy

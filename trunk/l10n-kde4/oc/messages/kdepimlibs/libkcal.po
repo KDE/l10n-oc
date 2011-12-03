@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkcal\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-08 04:04+0200\n"
+"POT-Creation-Date: 2011-12-03 04:09+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -181,7 +181,9 @@ msgid "Event"
 msgstr "Eveniment"
 
 #: htmlexport.cpp:270
-msgctxt "@title:column event locatin"
+#, fuzzy
+#| msgid "Location"
+msgctxt "@title:column event location"
 msgid "Location"
 msgstr "Emplaçament"
 
@@ -420,9 +422,10 @@ msgstr ""
 msgid "Calendar:"
 msgstr ""
 
-#: incidenceformatter.cpp:491 incidenceformatter.cpp:664
-#: incidenceformatter.cpp:3125 resourcelocalconfig.cpp:67
-#: resourcelocaldirconfig.cpp:62
+#: incidenceformatter.cpp:491
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@title:column event location"
 msgid "Location:"
 msgstr "Emplaçament :"
 
@@ -501,6 +504,13 @@ msgid "Attachment:"
 msgid_plural "Attachments:"
 msgstr[0] ""
 msgstr[1] ""
+
+#: incidenceformatter.cpp:664
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@title:column to-do location"
+msgid "Location:"
+msgstr "Emplaçament :"
 
 #: incidenceformatter.cpp:678
 #, fuzzy
@@ -656,7 +666,8 @@ msgstr "Comentaris :"
 msgid "Summary unspecified"
 msgstr ""
 
-#: incidenceformatter.cpp:1371 incidenceformatter.cpp:1455
+#: incidenceformatter.cpp:1371
+msgctxt "event location"
 msgid "Location unspecified"
 msgstr ""
 
@@ -690,6 +701,11 @@ msgstr ""
 
 #: incidenceformatter.cpp:1416
 msgid "no end date specified"
+msgstr ""
+
+#: incidenceformatter.cpp:1455
+msgctxt "todo location"
+msgid "Location unspecified"
 msgstr ""
 
 #: incidenceformatter.cpp:1476
@@ -1175,6 +1191,7 @@ msgstr ""
 
 #: incidenceformatter.cpp:2279
 #, kde-format
+msgctxt "event/todo location"
 msgid "The location has been changed to: \"%1\""
 msgstr ""
 
@@ -1387,6 +1404,13 @@ msgctxt "elipsis"
 msgid "..."
 msgstr ""
 
+#: incidenceformatter.cpp:3125
+#, fuzzy
+#| msgid "Location:"
+msgctxt "event/todo location"
+msgid "Location:"
+msgstr "Emplaçament :"
+
 #: incidenceformatter.cpp:3233
 #, kde-format
 msgid "Summary: %1\n"
@@ -1398,9 +1422,11 @@ msgid "Organizer: %1\n"
 msgstr ""
 
 #: incidenceformatter.cpp:3239
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Location:"
+msgctxt "event/todo location"
 msgid "Location: %1\n"
-msgstr ""
+msgstr "Emplaçament :"
 
 #: incidenceformatter.cpp:3270
 msgid "This is a Free Busy Object"
@@ -2432,6 +2458,10 @@ msgstr ""
 msgid "Error while saving %1.\n"
 msgstr ""
 
+#: resourcelocalconfig.cpp:67 resourcelocaldirconfig.cpp:62
+msgid "Location:"
+msgstr "Emplaçament :"
+
 #: resourcelocalconfig.cpp:69
 msgid "*.ics *.vcs|Calendar Files"
 msgstr ""
@@ -2677,6 +2707,10 @@ msgctxt "@option"
 msgid "Do Not Send"
 msgstr ""
 
+#~ msgctxt "@title:column event locatin"
+#~ msgid "Location"
+#~ msgstr "Emplaçament"
+
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Yannig Marchegay (Kokoyaya)"
@@ -2748,9 +2782,6 @@ msgstr ""
 #~ msgid_plural "%1&nbsp;categories"
 #~ msgstr[0] "%1&nbsp;categorias"
 #~ msgstr[1] "%1&nbsp;categorias"
-
-#~ msgid "Location"
-#~ msgstr "Emplaçament"
 
 #~ msgid "Time"
 #~ msgstr "Ora"
