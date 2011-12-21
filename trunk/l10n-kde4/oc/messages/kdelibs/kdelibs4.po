@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-02 04:24+0100\n"
+"POT-Creation-Date: 2011-12-21 04:41+0100\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -829,7 +829,7 @@ msgstr "&Paramètres"
 
 #. i18n: file: kdeui/xmlgui/ui_standards.rc:177
 #. i18n: ectx: Menu (help)
-#: rc.cpp:445 kdeui/widgets/khelpmenu.cpp:148
+#: rc.cpp:445 kdeui/widgets/khelpmenu.cpp:188
 msgid "&Help"
 msgstr "&Ajuda"
 
@@ -2159,7 +2159,7 @@ msgstr "Alt"
 
 #. i18n: file: nepomuk/utils/daterangeselectionwidget.ui:81
 #. i18n: ectx: property (text), widget (QToolButton, m_rangesButton)
-#: rc.cpp:1109 kdecore/localization/klocale_kde.cpp:2517
+#: rc.cpp:1109 kdecore/localization/klocale_kde.cpp:2523
 #: nepomuk/utils/daterangeselectionwidget.cpp:193
 msgid "Today"
 msgstr "Uèi"
@@ -2427,7 +2427,7 @@ msgstr "(Cap de lògo pas disponible)"
 
 #: kde3support/kdeui/k3aboutdialog.cpp:1044
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:92
-#: kdeui/dialogs/kmessagebox.cpp:1049 kdeui/widgets/khelpmenu.cpp:264
+#: kdeui/dialogs/kmessagebox.cpp:1049 kdeui/widgets/khelpmenu.cpp:290
 #, kde-format
 msgid "About %1"
 msgstr "A prepaus de %1"
@@ -4806,49 +4806,49 @@ msgctxt ""
 msgid "%1 and %2"
 msgstr "%1 %2"
 
-#: kdecore/localization/klocale_kde.cpp:2462
+#: kdecore/localization/klocale_kde.cpp:2468
 msgctxt "Before Noon KLocale::LongName"
 msgid "Ante Meridiem"
 msgstr ""
 
-#: kdecore/localization/klocale_kde.cpp:2463
+#: kdecore/localization/klocale_kde.cpp:2469
 msgctxt "Before Noon KLocale::ShortName"
 msgid "AM"
 msgstr ""
 
-#: kdecore/localization/klocale_kde.cpp:2464
+#: kdecore/localization/klocale_kde.cpp:2470
 #, fuzzy
 #| msgid "Av"
 msgctxt "Before Noon KLocale::NarrowName"
 msgid "A"
 msgstr "Av"
 
-#: kdecore/localization/klocale_kde.cpp:2467
+#: kdecore/localization/klocale_kde.cpp:2473
 msgctxt "After Noon KLocale::LongName"
 msgid "Post Meridiem"
 msgstr ""
 
-#: kdecore/localization/klocale_kde.cpp:2468
+#: kdecore/localization/klocale_kde.cpp:2474
 msgctxt "After Noon KLocale::ShortName"
 msgid "PM"
 msgstr ""
 
-#: kdecore/localization/klocale_kde.cpp:2469
+#: kdecore/localization/klocale_kde.cpp:2475
 msgctxt "After Noon KLocale::NarrowName"
 msgid "P"
 msgstr ""
 
-#: kdecore/localization/klocale_kde.cpp:2520
+#: kdecore/localization/klocale_kde.cpp:2526
 msgid "Yesterday"
 msgstr "Ièr"
 
-#: kdecore/localization/klocale_kde.cpp:2536
+#: kdecore/localization/klocale_kde.cpp:2542
 #, kde-format
 msgctxt "concatenation of dates and time"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: kdecore/localization/klocale_kde.cpp:2576
+#: kdecore/localization/klocale_kde.cpp:2582
 #, kde-format
 msgctxt "concatenation of date/time and time zone"
 msgid "%1 %2"
@@ -5475,18 +5475,6 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Deteccion automatica"
 
-#: kdeui/actions/krecentfilesaction.cpp:80
-#, fuzzy
-#| msgid "Notes:"
-msgid "No Entries"
-msgstr "Nòtas :"
-
-#: kdeui/actions/krecentfilesaction.cpp:84
-#, fuzzy
-#| msgid "Clear input"
-msgid "Clear List"
-msgstr "Escafar la picada"
-
 #: kdeui/actions/ktogglefullscreenaction.cpp:48
 #: kdeui/actions/ktogglefullscreenaction.cpp:55
 #: kdeui/actions/ktogglefullscreenaction.cpp:85
@@ -5519,6 +5507,18 @@ msgstr ""
 #: kdeui/actions/kaction.cpp:126
 msgid "Ambiguous shortcut detected"
 msgstr ""
+
+#: kdeui/actions/krecentfilesaction.cpp:81
+#, fuzzy
+#| msgid "Notes:"
+msgid "No Entries"
+msgstr "Nòtas :"
+
+#: kdeui/actions/krecentfilesaction.cpp:85
+#, fuzzy
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Escafar la picada"
 
 #: kdeui/actions/kstandardaction.cpp:93 kdeui/util/kstandardguiitem.cpp:210
 msgctxt "go back"
@@ -5554,8 +5554,8 @@ msgstr "Afichar la barra d'est&at"
 
 #: kdeui/actions/kstandardaction.cpp:542
 msgid ""
-"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
-"window used for status information.</p>"
+"Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+"bottom of the window used for status information."
 msgstr ""
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
@@ -7198,12 +7198,18 @@ msgctxt "@info:whatsthis"
 msgid "Here you can choose the font style to be used."
 msgstr "Podètz causir aicí l'estil de poliça d'utilizar."
 
-#: kdeui/fonts/kfontchooser.cpp:296 kdeui/fonts/kfontchooser.cpp:639
+#: kdeui/fonts/kfontchooser.cpp:295 kdeui/fonts/kfontchooser.cpp:623
+#: kdeui/fonts/kfontchooser.cpp:640
+msgctxt "@item font"
+msgid "Regular"
+msgstr "Regulièr"
+
+#: kdeui/fonts/kfontchooser.cpp:296 kdeui/fonts/kfontchooser.cpp:644
 msgctxt "@item font"
 msgid "Italic"
 msgstr "Italic"
 
-#: kdeui/fonts/kfontchooser.cpp:297 kdeui/fonts/kfontchooser.cpp:640
+#: kdeui/fonts/kfontchooser.cpp:297 kdeui/fonts/kfontchooser.cpp:645
 msgctxt "@item font"
 msgid "Oblique"
 msgstr ""
@@ -7266,7 +7272,7 @@ msgstr "Poliça actuala"
 #. noun-adjective congruence wrt. gender of the family name).
 #. The message provides the dynamic context 'family', which is
 #. the family name to which the style string corresponds.
-#: kdeui/fonts/kfontchooser.cpp:625
+#: kdeui/fonts/kfontchooser.cpp:630
 #, kde-format
 msgctxt "@item Font style"
 msgid "%1"
@@ -7446,26 +7452,26 @@ msgid "Minimize"
 msgstr "Minimizar"
 
 #: kdeui/notifications/ksystemtrayicon.cpp:215
-#: kdeui/notifications/kstatusnotifieritem.cpp:487
-#: kdeui/notifications/kstatusnotifieritem.cpp:925
+#: kdeui/notifications/kstatusnotifieritem.cpp:488
+#: kdeui/notifications/kstatusnotifieritem.cpp:926
 msgid "&Minimize"
 msgstr "&Redusir"
 
 #: kdeui/notifications/ksystemtrayicon.cpp:219
-#: kdeui/notifications/kstatusnotifieritem.cpp:923
+#: kdeui/notifications/kstatusnotifieritem.cpp:924
 #, fuzzy
 #| msgid "Store"
 msgid "&Restore"
 msgstr "Store"
 
 #: kdeui/notifications/ksystemtrayicon.cpp:239
-#: kdeui/notifications/kstatusnotifieritem.cpp:933
+#: kdeui/notifications/kstatusnotifieritem.cpp:934
 #, kde-format
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Volètz vertadièrament quitar <b>%1</b> ?</qt>"
 
 #: kdeui/notifications/ksystemtrayicon.cpp:242
-#: kdeui/notifications/kstatusnotifieritem.cpp:936
+#: kdeui/notifications/kstatusnotifieritem.cpp:937
 msgid "Confirm Quit From System Tray"
 msgstr "Confirmar la tampadura dempuèi la bóstia de miniaturas"
 
@@ -9580,31 +9586,79 @@ msgstr "&Pujar"
 msgid "Move &Down"
 msgstr "&Davalar"
 
-#: kdeui/widgets/khelpmenu.cpp:153 kdeui/actions/kstandardaction_p.h:111
-#, kde-format
-msgid "%1 &Handbook"
-msgstr "&Manual de : %1"
+#. i18n: Placeholder text in line edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter search pattern").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#. i18n: Placeholder text in text edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter message").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#: kdeui/widgets/klineedit.cpp:87 kdeui/widgets/ktextedit.cpp:79
+#, fuzzy
+#| msgid "1"
+msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
+msgid "1"
+msgstr "1"
 
-#: kdeui/widgets/khelpmenu.cpp:162
-msgid "What's &This"
-msgstr "Qu'es &aquò ?"
-
-#: kdeui/widgets/khelpmenu.cpp:173 kdeui/actions/kstandardaction_p.h:114
-msgid "&Report Bug..."
-msgstr "&Rapòrt de bòg..."
-
-#: kdeui/widgets/khelpmenu.cpp:183 kdeui/actions/kstandardaction_p.h:115
-msgid "Switch Application &Language..."
+#: kdeui/widgets/klineedit.cpp:296
+msgctxt "@action:button Clear current text in the line edit"
+msgid "Clear text"
 msgstr ""
 
-#: kdeui/widgets/khelpmenu.cpp:194 kdeui/actions/kstandardaction_p.h:116
-#, kde-format
-msgid "&About %1"
-msgstr "&A prepaus de %1"
+#: kdeui/widgets/klineedit.cpp:1216
+#, fuzzy
+#| msgid "Select Color"
+msgctxt "@title:menu"
+msgid "Text Completion"
+msgstr "Autocomplètament de tèxt"
 
-#: kdeui/widgets/khelpmenu.cpp:199 kdeui/actions/kstandardaction_p.h:117
-msgid "About &KDE"
-msgstr "A prepaus de KDE"
+#: kdeui/widgets/klineedit.cpp:1223
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inmenu Text Completion"
+msgid "None"
+msgstr "Pas cap"
+
+#: kdeui/widgets/klineedit.cpp:1224
+#, fuzzy
+#| msgid "Manual"
+msgctxt "@item:inmenu Text Completion"
+msgid "Manual"
+msgstr "Manual"
+
+#: kdeui/widgets/klineedit.cpp:1225
+#, fuzzy
+#| msgid "Automatic"
+msgctxt "@item:inmenu Text Completion"
+msgid "Automatic"
+msgstr "Automatic"
+
+#: kdeui/widgets/klineedit.cpp:1226
+msgctxt "@item:inmenu Text Completion"
+msgid "Dropdown List"
+msgstr "Tièra desenrotlanta"
+
+#: kdeui/widgets/klineedit.cpp:1227
+#, fuzzy
+#| msgid "Automatic"
+msgctxt "@item:inmenu Text Completion"
+msgid "Short Automatic"
+msgstr "Automatic cort"
+
+#: kdeui/widgets/klineedit.cpp:1228
+msgctxt "@item:inmenu Text Completion"
+msgid "Dropdown List && Automatic"
+msgstr "Tièra desenrotlanta e automatica"
+
+#: kdeui/widgets/klineedit.cpp:1259
+#, fuzzy
+#| msgid "Default"
+msgctxt "@item:inmenu Text Completion"
+msgid "Default"
+msgstr "Defaut"
 
 #: kdeui/widgets/khistorycombobox.cpp:177 khtml/rendering/render_form.cpp:936
 msgid "Clear &History"
@@ -9736,80 +9790,6 @@ msgstr ""
 #: kdeui/widgets/klanguagebutton.cpp:177
 msgid "without name"
 msgstr ""
-
-#. i18n: Placeholder text in line edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter search pattern").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#. i18n: Placeholder text in text edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter message").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#: kdeui/widgets/klineedit.cpp:87 kdeui/widgets/ktextedit.cpp:79
-#, fuzzy
-#| msgid "1"
-msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
-msgid "1"
-msgstr "1"
-
-#: kdeui/widgets/klineedit.cpp:296
-msgctxt "@action:button Clear current text in the line edit"
-msgid "Clear text"
-msgstr ""
-
-#: kdeui/widgets/klineedit.cpp:1213
-#, fuzzy
-#| msgid "Select Color"
-msgctxt "@title:menu"
-msgid "Text Completion"
-msgstr "Autocomplètament de tèxt"
-
-#: kdeui/widgets/klineedit.cpp:1220
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inmenu Text Completion"
-msgid "None"
-msgstr "Pas cap"
-
-#: kdeui/widgets/klineedit.cpp:1221
-#, fuzzy
-#| msgid "Manual"
-msgctxt "@item:inmenu Text Completion"
-msgid "Manual"
-msgstr "Manual"
-
-#: kdeui/widgets/klineedit.cpp:1222
-#, fuzzy
-#| msgid "Automatic"
-msgctxt "@item:inmenu Text Completion"
-msgid "Automatic"
-msgstr "Automatic"
-
-#: kdeui/widgets/klineedit.cpp:1223
-msgctxt "@item:inmenu Text Completion"
-msgid "Dropdown List"
-msgstr "Tièra desenrotlanta"
-
-#: kdeui/widgets/klineedit.cpp:1224
-#, fuzzy
-#| msgid "Automatic"
-msgctxt "@item:inmenu Text Completion"
-msgid "Short Automatic"
-msgstr "Automatic cort"
-
-#: kdeui/widgets/klineedit.cpp:1225
-msgctxt "@item:inmenu Text Completion"
-msgid "Dropdown List && Automatic"
-msgstr "Tièra desenrotlanta e automatica"
-
-#: kdeui/widgets/klineedit.cpp:1256
-#, fuzzy
-#| msgid "Default"
-msgctxt "@item:inmenu Text Completion"
-msgid "Default"
-msgstr "Defaut"
 
 #: kdeui/widgets/ktextedit.cpp:527
 #, fuzzy
@@ -11261,6 +11241,10 @@ msgstr "Afichar la &notificacion de blocatge de las fenèstras popup passivas"
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "&Configurar JavaScript sus la gestion de las fenèstras novèlas..."
 
+#: khtml/khtmlview.cpp:1842
+msgid "Access Keys activated"
+msgstr "Tòcas d'accès activadas"
+
 #: khtml/khtmlimage.cpp:202
 #, kde-format
 msgid "%1 (%2 - %3x%4 Pixels)"
@@ -11284,10 +11268,6 @@ msgstr "Imatge - %1 x %2 pixels"
 #: khtml/khtmlimage.cpp:217
 msgid "Done."
 msgstr "Terminat."
-
-#: khtml/khtmlview.cpp:1842
-msgid "Access Keys activated"
-msgstr "Tòcas d'accès activadas"
 
 #: khtml/ecma/kjs_binding.cpp:185
 #, fuzzy
@@ -12914,76 +12894,6 @@ msgstr ""
 msgid "Execute File?"
 msgstr "Executar lo fichièr ?"
 
-#: kparts/browseropenorsavequestion.cpp:100
-#, fuzzy, kde-format
-#| msgid "Red:"
-msgctxt "@label Type of file"
-msgid "Type: %1"
-msgstr "Roje :"
-
-#: kparts/browseropenorsavequestion.cpp:108
-#, fuzzy
-#| msgid "Do not show this message again"
-msgctxt "@label:checkbox"
-msgid "Remember action for files of this type"
-msgstr "Visualizar pas mai lo messatge"
-
-#: kparts/browseropenorsavequestion.cpp:139
-#: kparts/browseropenorsavequestion.cpp:214
-#, fuzzy, kde-format
-#| msgid "&Open with '%1'"
-msgctxt "@label:button"
-msgid "&Open with %1"
-msgstr "&Dobrir amb '%1'"
-
-#: kparts/browseropenorsavequestion.cpp:188
-#, fuzzy, kde-format
-#| msgid "&Open with '%1'"
-msgctxt "@action:inmenu"
-msgid "Open &with %1"
-msgstr "&Dobrir amb '%1'"
-
-#: kparts/browseropenorsavequestion.cpp:199
-#: kparts/browseropenorsavequestion.cpp:293
-#, fuzzy, kde-format
-#| msgid "Open '%1'"
-msgctxt "@info"
-msgid "Open '%1'?"
-msgstr "Dobrir « %1 »"
-
-#: kparts/browseropenorsavequestion.cpp:203
-#, fuzzy
-#| msgid "&Open With..."
-msgctxt "@label:button"
-msgid "&Open with..."
-msgstr "&Dobrir amb..."
-
-#: kparts/browseropenorsavequestion.cpp:223
-#, fuzzy
-#| msgid "&Open With..."
-msgctxt "@label:button"
-msgid "&Open with"
-msgstr "&Dobrir amb..."
-
-#: kparts/browseropenorsavequestion.cpp:290
-#, fuzzy
-#| msgid "&Open"
-msgctxt "@label:button"
-msgid "&Open"
-msgstr "&Dobrir"
-
-#: kparts/browseropenorsavequestion.cpp:315
-#, fuzzy, kde-format
-#| msgid "Name: "
-msgctxt "@label File name"
-msgid "Name: %1"
-msgstr "Nom : "
-
-#: kparts/browseropenorsavequestion.cpp:317
-msgctxt "@info:whatsthis"
-msgid "This is the file name suggested by the server"
-msgstr ""
-
 #: kparts/part.cpp:815
 msgid "Untitled"
 msgstr "Sens nom"
@@ -13000,6 +12910,76 @@ msgstr ""
 #: kparts/part.cpp:823
 msgid "Close Document"
 msgstr "Tampar lo document"
+
+#: kparts/browseropenorsavequestion.cpp:100
+#, fuzzy, kde-format
+#| msgid "Red:"
+msgctxt "@label Type of file"
+msgid "Type: %1"
+msgstr "Roje :"
+
+#: kparts/browseropenorsavequestion.cpp:108
+#, fuzzy
+#| msgid "Do not show this message again"
+msgctxt "@label:checkbox"
+msgid "Remember action for files of this type"
+msgstr "Visualizar pas mai lo messatge"
+
+#: kparts/browseropenorsavequestion.cpp:139
+#: kparts/browseropenorsavequestion.cpp:215
+#, fuzzy, kde-format
+#| msgid "&Open with '%1'"
+msgctxt "@label:button"
+msgid "&Open with %1"
+msgstr "&Dobrir amb '%1'"
+
+#: kparts/browseropenorsavequestion.cpp:189
+#, fuzzy, kde-format
+#| msgid "&Open with '%1'"
+msgctxt "@action:inmenu"
+msgid "Open &with %1"
+msgstr "&Dobrir amb '%1'"
+
+#: kparts/browseropenorsavequestion.cpp:200
+#: kparts/browseropenorsavequestion.cpp:294
+#, fuzzy, kde-format
+#| msgid "Open '%1'"
+msgctxt "@info"
+msgid "Open '%1'?"
+msgstr "Dobrir « %1 »"
+
+#: kparts/browseropenorsavequestion.cpp:204
+#, fuzzy
+#| msgid "&Open With..."
+msgctxt "@label:button"
+msgid "&Open with..."
+msgstr "&Dobrir amb..."
+
+#: kparts/browseropenorsavequestion.cpp:224
+#, fuzzy
+#| msgid "&Open With..."
+msgctxt "@label:button"
+msgid "&Open with"
+msgstr "&Dobrir amb..."
+
+#: kparts/browseropenorsavequestion.cpp:291
+#, fuzzy
+#| msgid "&Open"
+msgctxt "@label:button"
+msgid "&Open"
+msgstr "&Dobrir"
+
+#: kparts/browseropenorsavequestion.cpp:316
+#, fuzzy, kde-format
+#| msgid "Name: "
+msgctxt "@label File name"
+msgid "Name: %1"
+msgstr "Nom : "
+
+#: kparts/browseropenorsavequestion.cpp:318
+msgctxt "@info:whatsthis"
+msgid "This is the file name suggested by the server"
+msgstr ""
 
 #: kpty/kptydevice.cpp:322
 msgid "Error reading from PTY"
@@ -13287,7 +13267,7 @@ msgstr[1] ""
 msgid "Search Plugins"
 msgstr "Recercar"
 
-#: kutils/kpluginselector.cpp:768 kutils/kpluginselector.cpp:797
+#: kutils/kpluginselector.cpp:767 kutils/kpluginselector.cpp:796
 #, fuzzy, kde-format
 #| msgid "About %1"
 msgctxt "Used only for plugins"
@@ -13564,7 +13544,7 @@ msgctxt "@option:check A filter on file type - media video"
 msgid "Video"
 msgstr "Aficha&tge"
 
-#: nepomuk/utils/facet.cpp:143 nepomuk/utils/typefacet.cpp:74
+#: nepomuk/utils/facet.cpp:143 nepomuk/utils/typefacet.cpp:73
 #, fuzzy
 #| msgid "Pause"
 msgctxt "@option:check A filter on file type"
@@ -13734,42 +13714,42 @@ msgstr "Personalizat..."
 msgid "Enter Search Terms..."
 msgstr "Recèrca sus internet"
 
-#: nepomuk/utils/typefacet.cpp:81
+#: nepomuk/utils/typefacet.cpp:80
 #, fuzzy
 #| msgid "Comments"
 msgctxt "@option:check A filter on resource type"
 msgid "Contacts"
 msgstr "Comentaris"
 
-#: nepomuk/utils/typefacet.cpp:83
+#: nepomuk/utils/typefacet.cpp:82
 #, fuzzy
 #| msgid "Email"
 msgctxt "@option:check A filter on resource type"
 msgid "Emails"
 msgstr "Adreça electronica"
 
-#: nepomuk/utils/typefacet.cpp:85
+#: nepomuk/utils/typefacet.cpp:84
 #, fuzzy
 #| msgid "Task"
 msgctxt "@option:check A filter on resource type"
 msgid "Tasks"
 msgstr "Prètzfach (Task)"
 
-#: nepomuk/utils/typefacet.cpp:87
+#: nepomuk/utils/typefacet.cpp:86
 #, fuzzy
 #| msgid "Task"
 msgctxt "@option:check A filter on resource type"
 msgid "Tags"
 msgstr "Prètzfach (Task)"
 
-#: nepomuk/utils/typefacet.cpp:221 nepomuk/utils/typefacet.cpp:230
+#: nepomuk/utils/typefacet.cpp:220 nepomuk/utils/typefacet.cpp:229
 #, fuzzy
 #| msgid "File"
 msgctxt "@option:check Do filter on type - show only files"
 msgid "Files"
 msgstr "Fichièr"
 
-#: nepomuk/utils/typefacet.cpp:223 nepomuk/utils/typefacet.cpp:232
+#: nepomuk/utils/typefacet.cpp:222 nepomuk/utils/typefacet.cpp:231
 #, fuzzy
 #| msgctxt "@item Text character set"
 #| msgid "Other"
@@ -14088,6 +14068,11 @@ msgstr ""
 msgid "Configure &Notifications..."
 msgstr ""
 
+#: kdeui/actions/kstandardaction_p.h:111
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Manual de : %1"
+
 #: kdeui/actions/kstandardaction_p.h:112
 msgid "What's &This?"
 msgstr "Qu'es &aquò ?"
@@ -14095,6 +14080,23 @@ msgstr "Qu'es &aquò ?"
 #: kdeui/actions/kstandardaction_p.h:113
 msgid "Tip of the &Day"
 msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:114
+msgid "&Report Bug..."
+msgstr "&Rapòrt de bòg..."
+
+#: kdeui/actions/kstandardaction_p.h:115
+msgid "Switch Application &Language..."
+msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:116
+#, kde-format
+msgid "&About %1"
+msgstr "&A prepaus de %1"
+
+#: kdeui/actions/kstandardaction_p.h:117
+msgid "About &KDE"
+msgstr "A prepaus de KDE"
 
 #: kross/qts/values_p.h:69
 #, kde-format
@@ -14110,9 +14112,8 @@ msgstr "am"
 msgid "pm"
 msgstr "pm"
 
-#~ msgctxt "@item font"
-#~ msgid "Regular"
-#~ msgstr "Regulièr"
+#~ msgid "What's &This"
+#~ msgstr "Qu'es &aquò ?"
 
 #, fuzzy
 #~| msgid "Next year"
