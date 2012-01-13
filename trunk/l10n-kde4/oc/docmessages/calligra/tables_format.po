@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread_format\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-12 03:56+0000\n"
+"POT-Creation-Date: 2012-01-13 03:54+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -210,7 +210,7 @@ msgstr "per cent"
 msgid ""
 "When you have a number in the current cell and you switch the cell format "
 "from <guilabel>Generic</guilabel> to <guilabel>Percent</guilabel>, the "
-"current cell number will be multiplied by 100%."
+"current cell number will be multiplied by 100."
 msgstr ""
 
 #. Tag: para
@@ -245,7 +245,7 @@ msgid ""
 "<menuchoice><guimenu>Locale</guimenu><guisubmenu>Country/Region &amp; "
 "Language</guisubmenu><guimenuitem>Money</guimenuitem></menuchoice>. The "
 "currency symbol will be displayed and the precision will be the one set in "
-"&kcontrolcenter;."
+"&systemsettings;."
 msgstr ""
 
 #. Tag: para
@@ -300,8 +300,8 @@ msgstr ""
 #. Tag: guilabel
 #: format.docbook:153
 #, no-c-format
-msgid "Date format"
-msgstr "Format de la data"
+msgid "Date"
+msgstr ""
 
 #. Tag: para
 #: format.docbook:154
@@ -320,7 +320,7 @@ msgstr ""
 msgid ""
 "A random natural number NN will be transformed in the date from 30st "
 "December 1899 (which is 0) with the number of days NN added. For example if "
-"you have a cell with 100 and you choose <guilabel>Date format</guilabel>, "
+"you have a cell with 100 and you choose <guilabel>Date</guilabel> format, "
 "\"1900-04-09\" will be displayed in the cell which is 100 days after 30st "
 "December 1899. This starting date is two days early as it was a bug in Lotus "
 "123 and then it stayed that way in Excel in order to keep compatibility. Few "
@@ -333,7 +333,7 @@ msgstr ""
 #: format.docbook:168
 #, no-c-format
 msgid ""
-"When a cell is in the <guilabel>Date format</guilabel>, you can drag this "
+"When a cell is in the <guilabel>Date</guilabel> format, you can drag this "
 "cell down as you do with numbers and the next cells will also get dates, "
 "each date being increased by one day."
 msgstr ""
@@ -341,33 +341,55 @@ msgstr ""
 #. Tag: guilabel
 #: format.docbook:175
 #, no-c-format
-msgid "Time format"
-msgstr "Format de l'ora"
+msgid "Time"
+msgstr ""
 
 #. Tag: para
 #: format.docbook:176
 #, no-c-format
 msgid ""
 "This formats your cell content as a time. To enter a time, you should enter "
-"it in the <guilabel>Time format</guilabel> set in &kcontrolcenter; in "
-"<menuchoice><guimenu>Regional &amp; Accessibility</"
-"guimenu><guisubmenu>Country/Region &amp; Language</"
-"guisubmenu><guimenuitem>Time &amp; Dates</guimenuitem></menuchoice>. In the "
-"<guilabel>Cell Format</guilabel> dialog box you can set how the time should "
-"be displayed by choosing one of the available time format options. The "
-"default format is the system format set in &kcontrolcenter;. When the number "
-"in the cell does not make sense as a time, &tables; will display 00:00 in "
-"the global format you have in &kcontrolcenter;."
+"it in the <guilabel>Time format</guilabel> set in &systemsettings; in "
+"<menuchoice><guimenu>Locale</guimenu> <guisubmenu>Country/Region &amp; "
+"Language</guisubmenu><guimenuitem>Date &amp; Time</guimenuitem></"
+"menuchoice>. In the <guilabel>Cell Format</guilabel> dialog box you can set "
+"how the time should be displayed by choosing one of the available time "
+"format options. The default format is the system format set in "
+"&systemsettings;. When the number in the cell does not make sense as a time, "
+"&tables; will display 00:00 in the global format you have in "
+"&systemsettings;."
 msgstr ""
 
 #. Tag: guilabel
 #: format.docbook:189
 #, no-c-format
+msgid "Date and Time"
+msgstr ""
+
+#. Tag: para
+#: format.docbook:190
+#, no-c-format
+msgid ""
+"This formats your cell content as date and time. To enter a date and a time, "
+"you should enter it in the <guilabel>Time format</guilabel> set in "
+"&systemsettings; in <menuchoice><guimenu>Locale</guimenu> "
+"<guisubmenu>Country/Region &amp; Language</guisubmenu><guimenuitem>Date "
+"&amp; Time</guimenuitem></menuchoice>. In the <guilabel>Cell Format</"
+"guilabel> dialog box you can set how the date and time should be displayed "
+"by choosing one of the available date and time format options. The default "
+"format is the system format set in &systemsettings;. When the number in the "
+"cell does not make sense as a date and time, &tables; will display 00:00 in "
+"the global format you have in &systemsettings;."
+msgstr ""
+
+#. Tag: guilabel
+#: format.docbook:203
+#, no-c-format
 msgid "Text"
 msgstr "Tèxt"
 
 #. Tag: para
-#: format.docbook:190
+#: format.docbook:204
 #, no-c-format
 msgid ""
 "This formats your cell content as text. This can be useful if you want a "
@@ -378,19 +400,19 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:198
+#: format.docbook:212
 #, no-c-format
 msgid "Custom"
 msgstr "Personalizat"
 
 #. Tag: para
-#: format.docbook:199
+#: format.docbook:213
 #, no-c-format
 msgid "Does not work yet. To be enabled in the next release."
 msgstr ""
 
 #. Tag: para
-#: format.docbook:204
+#: format.docbook:218
 #, no-c-format
 msgid ""
 "The lower part of the <guilabel>Data Format</guilabel> page lets you add a "
@@ -402,19 +424,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:214
+#: format.docbook:228
 #, no-c-format
 msgid "Fonts and Text Settings"
 msgstr ""
 
 #. Tag: phrase
-#: format.docbook:221
+#: format.docbook:235
 #, no-c-format
 msgid "Font page."
 msgstr ""
 
 #. Tag: para
-#: format.docbook:225
+#: format.docbook:239
 #, no-c-format
 msgid ""
 "The <guilabel>Font</guilabel> page lets you select the font family, "
@@ -425,7 +447,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:230
+#: format.docbook:244
 #, no-c-format
 msgid ""
 "The default font is set for all cells in the <menuchoice><guimenu>Format</"
@@ -434,13 +456,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:241
+#: format.docbook:255
 #, no-c-format
 msgid "Style:"
 msgstr "Estil :"
 
 #. Tag: para
-#: format.docbook:242
+#: format.docbook:256
 #, no-c-format
 msgid ""
 "Choose the style for your font for the currently selected cells. When you "
@@ -452,13 +474,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:251
+#: format.docbook:265
 #, no-c-format
 msgid "Size:"
 msgstr "Talha :"
 
 #. Tag: para
-#: format.docbook:252
+#: format.docbook:266
 #, no-c-format
 msgid ""
 "Choose the size for your font for the currently selected cells. When you "
@@ -470,13 +492,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:261
+#: format.docbook:275
 #, no-c-format
 msgid "Weight:"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:262
+#: format.docbook:276
 #, no-c-format
 msgid ""
 "Choose the weight for your font for the currently selected cells. When you "
@@ -488,13 +510,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:271
+#: format.docbook:285
 #, no-c-format
 msgid "Color:"
 msgstr "Color :"
 
 #. Tag: para
-#: format.docbook:272
+#: format.docbook:286
 #, no-c-format
 msgid ""
 "Choose the color for the currently selected cells' text. Clicking on the "
@@ -503,13 +525,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:278
+#: format.docbook:292
 #, no-c-format
 msgid "Underline"
 msgstr "Soslinhat"
 
 #. Tag: para
-#: format.docbook:279
+#: format.docbook:293
 #, no-c-format
 msgid ""
 "Underlines the currently selected cells' text if checked. This is not "
@@ -517,13 +539,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:285
+#: format.docbook:299
 #, no-c-format
 msgid "Strike out"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:286
+#: format.docbook:300
 #, no-c-format
 msgid ""
 "This will strike out the currently selected cells' text if this is checked. "
@@ -531,19 +553,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:295
+#: format.docbook:309
 #, no-c-format
 msgid "Text Position and Rotation"
 msgstr ""
 
 #. Tag: phrase
-#: format.docbook:302
+#: format.docbook:316
 #, no-c-format
 msgid "Position page."
 msgstr ""
 
 #. Tag: para
-#: format.docbook:306
+#: format.docbook:320
 #, no-c-format
 msgid ""
 "From the <guilabel>Position</guilabel> page you can control the position of "
@@ -554,13 +576,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:314
+#: format.docbook:328
 #, no-c-format
 msgid "Horizontal"
 msgstr "Orizontal"
 
 #. Tag: para
-#: format.docbook:315
+#: format.docbook:329
 #, no-c-format
 msgid ""
 "Set the content position horizontally in the cell. <guilabel>Standard</"
@@ -572,13 +594,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:324
+#: format.docbook:338
 #, no-c-format
 msgid "Vertical"
 msgstr "Vertical"
 
 #. Tag: para
-#: format.docbook:325
+#: format.docbook:339
 #, no-c-format
 msgid ""
 "Set the content position vertically in the cell. <guilabel>Top</guilabel> "
@@ -589,13 +611,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:333
+#: format.docbook:347
 #, no-c-format
 msgid "Text Option"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:334
+#: format.docbook:348
 #, no-c-format
 msgid ""
 "This is only available when the rotation is 0°. <guilabel>Wrap text</"
@@ -604,19 +626,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:337
+#: format.docbook:351
 #, no-c-format
 msgid "<guilabel>Vertical text</guilabel> puts your text vertically."
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:341
+#: format.docbook:355
 #, no-c-format
 msgid "Rotation"
 msgstr "Rotacion"
 
 #. Tag: para
-#: format.docbook:342
+#: format.docbook:356
 #, no-c-format
 msgid ""
 "Your text will appear oriented in the angle you set here. Positive values "
@@ -624,13 +646,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:348
+#: format.docbook:362
 #, no-c-format
 msgid "Merge Cells"
 msgstr "Fusionar las cellulas"
 
 #. Tag: para
-#: format.docbook:349
+#: format.docbook:363
 #, no-c-format
 msgid ""
 "When checked, this has the same effect as <menuchoice><guimenu>Format</"
@@ -640,7 +662,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:354
+#: format.docbook:368
 #, no-c-format
 msgid ""
 "When a merged cell is selected and when you uncheck this, then all cells "
@@ -650,13 +672,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:361
+#: format.docbook:375
 #, no-c-format
 msgid "Indent"
 msgstr "Alinèa"
 
 #. Tag: para
-#: format.docbook:362
+#: format.docbook:376
 #, no-c-format
 msgid ""
 "Set the amount of indent that will be used in the cell when you choose the "
@@ -666,13 +688,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:368
+#: format.docbook:382
 #, no-c-format
 msgid "Size of Cell"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:369
+#: format.docbook:383
 #, no-c-format
 msgid ""
 "You set here the size of the cell, either a custom width and height or "
@@ -680,19 +702,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:377
+#: format.docbook:391
 #, no-c-format
 msgid "Cell Border"
 msgstr ""
 
 #. Tag: phrase
-#: format.docbook:384
+#: format.docbook:398
 #, no-c-format
 msgid "Border page."
 msgstr ""
 
 #. Tag: para
-#: format.docbook:388
+#: format.docbook:402
 #, no-c-format
 msgid ""
 "The <guilabel>Border</guilabel> page lets you set the appearance of the cell "
@@ -702,7 +724,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:392
+#: format.docbook:406
 #, no-c-format
 msgid ""
 "First select the pattern and color from the <guilabel>Pattern</guilabel> "
@@ -715,19 +737,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:401
+#: format.docbook:415
 #, no-c-format
 msgid "Cell Background"
 msgstr ""
 
 #. Tag: phrase
-#: format.docbook:408
+#: format.docbook:422
 #, no-c-format
 msgid "Background page."
 msgstr ""
 
 #. Tag: para
-#: format.docbook:412
+#: format.docbook:426
 #, no-c-format
 msgid ""
 "The cell background pattern and color can be selected from the "
@@ -735,7 +757,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:414
+#: format.docbook:428
 #, no-c-format
 msgid ""
 "Simply choose a desired <guilabel>Pattern</guilabel>, then select the "
@@ -744,7 +766,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:416
+#: format.docbook:430
 #, no-c-format
 msgid ""
 "At the bottom of this page you can see a <guilabel>Preview</guilabel> of the "
@@ -752,19 +774,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:420
+#: format.docbook:434
 #, no-c-format
 msgid "Cell Protection"
 msgstr ""
 
 #. Tag: phrase
-#: format.docbook:427
+#: format.docbook:441
 #, no-c-format
 msgid "Cell protection page."
 msgstr ""
 
 #. Tag: para
-#: format.docbook:431
+#: format.docbook:445
 #, no-c-format
 msgid ""
 "You can change the way the content of a cell is protected in the "
@@ -772,7 +794,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:433
+#: format.docbook:447
 #, no-c-format
 msgid ""
 "All cells are protected by default (that means cell content cannot be "
@@ -787,13 +809,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:446
+#: format.docbook:460
 #, no-c-format
 msgid "Hide all"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:447
+#: format.docbook:461
 #, no-c-format
 msgid ""
 "This hides the cell content and works only when the sheet is protected which "
@@ -803,7 +825,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:451
+#: format.docbook:465
 #, no-c-format
 msgid ""
 "When <guilabel>Hide all</guilabel> is selected, <guilabel>Protected</"
@@ -813,13 +835,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:458
+#: format.docbook:472
 #, no-c-format
 msgid "Protected"
 msgstr "Protegit"
 
 #. Tag: para
-#: format.docbook:459
+#: format.docbook:473
 #, no-c-format
 msgid ""
 "If checked, the cell content will be protected. This is the default "
@@ -830,13 +852,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:467
+#: format.docbook:481
 #, no-c-format
 msgid "Hide formula"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:468
+#: format.docbook:482
 #, no-c-format
 msgid ""
 "When this is checked, the cell is still visible. However, its contents do "
@@ -846,13 +868,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:476
+#: format.docbook:490
 #, no-c-format
 msgid "Do not print text"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:477
+#: format.docbook:491
 #, no-c-format
 msgid ""
 "If you check <guilabel>Do not print text</guilabel> then the text in the "
@@ -861,13 +883,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:487
+#: format.docbook:501
 #, no-c-format
 msgid "Conditional Cell Attributes"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:488
+#: format.docbook:502
 #, no-c-format
 msgid ""
 "You can make the appearance of a cell change according to the value it "
@@ -877,7 +899,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:492
+#: format.docbook:506
 #, no-c-format
 msgid ""
 "To do this select the cell(s) then choose <guimenuitem>Conditional Styles..."
@@ -889,7 +911,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:498
+#: format.docbook:512
 #, no-c-format
 msgid ""
 "Use <menuchoice><guisubmenu>Clear</guisubmenu><guimenuitem>Conditional "
@@ -898,13 +920,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:504
+#: format.docbook:518
 #, no-c-format
 msgid "Changing Cell Sizes"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:505
+#: format.docbook:519
 #, no-c-format
 msgid ""
 "The <guilabel>Position</guilabel> page in the <guilabel>Cell Format</"
@@ -914,7 +936,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:509
+#: format.docbook:523
 #, no-c-format
 msgid ""
 "You can also select the row(s) or column(s) to be changed then select "
@@ -926,7 +948,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:515
+#: format.docbook:529
 #, no-c-format
 msgid ""
 "If you move the mouse cursor so that its tip is over the line between two of "
@@ -939,7 +961,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:523
+#: format.docbook:537
 #, no-c-format
 msgid ""
 "To set the row height or column width to the minimum needed to display the "
@@ -953,7 +975,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:532
+#: format.docbook:546
 #, no-c-format
 msgid ""
 "You can make a number of adjacent rows or columns the same size by selecting "
@@ -964,13 +986,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:541
+#: format.docbook:555
 #, no-c-format
 msgid "Merging Cells"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:542
+#: format.docbook:556
 #, no-c-format
 msgid ""
 "It is often convenient to have one cell that spreads across two or more "
@@ -981,7 +1003,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:546
+#: format.docbook:560
 #, no-c-format
 msgid ""
 "To reverse this process, select the merged cell then choose <guimenuitem> "
@@ -989,13 +1011,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:551
+#: format.docbook:565
 #, no-c-format
 msgid "Hiding Rows and Columns"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:552
+#: format.docbook:566
 #, no-c-format
 msgid ""
 "A finished spreadsheet can often be made to look more attractive by hiding "
@@ -1004,7 +1026,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:555
+#: format.docbook:569
 #, no-c-format
 msgid ""
 "In &tables; you can hide selected rows or columns by using the "
@@ -1017,7 +1039,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:562
+#: format.docbook:576
 #, no-c-format
 msgid ""
 "Hiding cells in this way also makes them slightly less prone to accidental "
@@ -1025,7 +1047,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:564
+#: format.docbook:578
 #, no-c-format
 msgid ""
 "To un-hide a row or column select <menuchoice><guisubmenu>Row </"
@@ -1036,13 +1058,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: format.docbook:573
+#: format.docbook:587
 #, no-c-format
 msgid "Sheet properties"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:574
+#: format.docbook:588
 #, no-c-format
 msgid ""
 "You can access the current sheet properties either by right clicking on the "
@@ -1054,7 +1076,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: format.docbook:581
+#: format.docbook:595
 #, no-c-format
 msgid ""
 "You can set different properties that will be valid in the current sheet. "
@@ -1063,19 +1085,19 @@ msgid ""
 msgstr ""
 
 #. Tag: phrase
-#: format.docbook:590
+#: format.docbook:604
 #, no-c-format
 msgid "Sheet Properties dialog."
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:596
+#: format.docbook:610
 #, no-c-format
 msgid "Layout direction:"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:597
+#: format.docbook:611
 #, no-c-format
 msgid ""
 "Let you choose the sheet orientation. Default is that the first column of "
@@ -1085,26 +1107,26 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:603
+#: format.docbook:617
 #, no-c-format
 msgid "Hide zero"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:604
+#: format.docbook:618
 #, no-c-format
 msgid ""
 "If this box is checked any cell containing the value zero will appear blank."
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:609
+#: format.docbook:623
 #, no-c-format
 msgid "Automatic recalculation"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:610
+#: format.docbook:624
 #, no-c-format
 msgid ""
 "This setting controls whether formulae are recalculated automatically when "
@@ -1112,13 +1134,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:615
+#: format.docbook:629
 #, no-c-format
 msgid "Show column as numbers"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:616
+#: format.docbook:630
 #, no-c-format
 msgid ""
 "If this box is checked the column headings will show as numbers rather than "
@@ -1126,13 +1148,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:621
+#: format.docbook:635
 #, no-c-format
 msgid "Use LC mode"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:622
+#: format.docbook:636
 #, no-c-format
 msgid ""
 "If this box is checked the cell reference shown at the left end of the "
@@ -1141,13 +1163,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:628
+#: format.docbook:642
 #, no-c-format
 msgid "Convert first letter to uppercase"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:629
+#: format.docbook:643
 #, no-c-format
 msgid ""
 "Check this box and the first letter of any text you type in will "
@@ -1155,13 +1177,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:634
+#: format.docbook:648
 #, no-c-format
 msgid "Show grid"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:635
+#: format.docbook:649
 #, no-c-format
 msgid ""
 "If checked the grid (the cell limits) will be shown. This is default. If you "
@@ -1169,13 +1191,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:640
+#: format.docbook:654
 #, no-c-format
 msgid "Show page borders"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:641
+#: format.docbook:655
 #, no-c-format
 msgid ""
 "If you check this option, the page borders will be drawn on your current "
@@ -1184,13 +1206,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:647
+#: format.docbook:661
 #, no-c-format
 msgid "Show formula"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:648
+#: format.docbook:662
 #, no-c-format
 msgid ""
 "If this box is checked &tables; will display the actual formulae in cells "
@@ -1198,13 +1220,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:653
+#: format.docbook:667
 #, no-c-format
 msgid "Show formula indicator"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:654
+#: format.docbook:668
 #, no-c-format
 msgid ""
 "If this box is checked &tables; will display a small blue triangle at the "
@@ -1213,15 +1235,21 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: format.docbook:660
+#: format.docbook:674
 #, no-c-format
 msgid "Show comment indicator"
 msgstr ""
 
 #. Tag: para
-#: format.docbook:661
+#: format.docbook:675
 #, no-c-format
 msgid ""
 "If this box is checked cells containing comments will be marked by a small "
 "red triangle at the top right corner."
 msgstr ""
+
+#~ msgid "Date format"
+#~ msgstr "Format de la data"
+
+#~ msgid "Time format"
+#~ msgstr "Format de l'ora"
