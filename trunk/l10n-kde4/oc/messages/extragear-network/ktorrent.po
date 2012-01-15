@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-09 03:22+0100\n"
+"POT-Creation-Date: 2012-01-15 03:24+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -110,27 +110,9 @@ msgstr ""
 msgid "Failed to create %1: %2"
 msgstr ""
 
-#. i18n: file: ktorrent/dialogs/pastedlgbase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, PasteDlgBase)
-#: ktorrent/dialogs/pastedialog.cpp:38 rc.cpp:112
-msgid "Open an URL"
-msgstr ""
-
-#: ktorrent/dialogs/pastedialog.cpp:62
-#: ktorrent/dialogs/torrentcreatordlg.cpp:118
-#: ktorrent/dialogs/fileselectdlg.cpp:430 libktcore/groups/allgroup.cpp:26
-msgid "All Torrents"
-msgstr ""
-
-#: ktorrent/dialogs/pastedialog.cpp:105
-#: ktorrent/dialogs/torrentcreatordlg.cpp:251 ktorrent/gui.cpp:337
-#, kde-format
-msgid "Invalid URL: %1"
-msgstr ""
-
 #. i18n: file: ktorrent/dialogs/speedlimitsdlg.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, SpeedLimitsDlg)
-#: ktorrent/dialogs/speedlimitsdlg.cpp:50 ktorrent/view/view.cpp:251
+#: ktorrent/dialogs/speedlimitsdlg.cpp:50 ktorrent/view/view.cpp:254
 #: rc.cpp:124
 msgid "Speed Limits"
 msgstr ""
@@ -336,31 +318,6 @@ msgstr ""
 msgid " KiB/s"
 msgstr " ko"
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:44
-msgid "Create A Torrent"
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:257
-msgid "Only HTTP is supported for webseeding."
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:289
-msgid "You must select a file or a folder."
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:295
-msgid ""
-"You have not added a tracker, are you sure you want to create this torrent?"
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:303
-msgid "You must add at least one node."
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:369
-msgid "Choose a file to save the torrent"
-msgstr ""
-
 #: ktorrent/dialogs/torrentmigratordlg.cpp:97
 #, fuzzy, kde-format
 #| msgid "Important"
@@ -493,44 +450,86 @@ msgid ""
 "Please select a different location."
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:504
+#: ktorrent/dialogs/fileselectdlg.cpp:430 ktorrent/dialogs/pastedialog.cpp:62
+#: ktorrent/dialogs/torrentcreatordlg.cpp:118 libktcore/groups/allgroup.cpp:26
+msgid "All Torrents"
+msgstr ""
+
+#: ktorrent/dialogs/fileselectdlg.cpp:507
 msgid "<b>Unable to determine free space</b>"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:514
+#: ktorrent/dialogs/fileselectdlg.cpp:517
 #, kde-format
 msgid "%1 (%2 in use by existing files)"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:523
+#: ktorrent/dialogs/fileselectdlg.cpp:526
 #, kde-format
 msgctxt "We are %1 bytes short of what we need"
 msgid "%1 short"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:555
+#: ktorrent/dialogs/fileselectdlg.cpp:558
 msgid "Existing files: <b>None</b>"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:557
+#: ktorrent/dialogs/fileselectdlg.cpp:560
 msgid "Existing files: <b>All</b>"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:559
+#: ktorrent/dialogs/fileselectdlg.cpp:562
 #, kde-format
 msgid "Existing files: <b>%1</b> of <b>%2</b>"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:566
+#: ktorrent/dialogs/fileselectdlg.cpp:569
 msgid "Existing file: <b>No</b>"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:571
+#: ktorrent/dialogs/fileselectdlg.cpp:574
 msgid "Existing file: <b>Yes</b>"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:651
+#: ktorrent/dialogs/fileselectdlg.cpp:654
 msgid "Clear History"
+msgstr ""
+
+#. i18n: file: ktorrent/dialogs/pastedlgbase.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, PasteDlgBase)
+#: ktorrent/dialogs/pastedialog.cpp:38 rc.cpp:112
+msgid "Open an URL"
+msgstr ""
+
+#: ktorrent/dialogs/pastedialog.cpp:106
+#: ktorrent/dialogs/torrentcreatordlg.cpp:252 ktorrent/gui.cpp:337
+#, kde-format
+msgid "Invalid URL: %1"
+msgstr ""
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:44
+msgid "Create A Torrent"
+msgstr ""
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:258
+msgid "Only HTTP is supported for webseeding."
+msgstr ""
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:290
+msgid "You must select a file or a folder."
+msgstr ""
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:296
+msgid ""
+"You have not added a tracker, are you sure you want to create this torrent?"
+msgstr ""
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:304
+msgid "You must add at least one node."
+msgstr ""
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:370
+msgid "Choose a file to save the torrent"
 msgstr ""
 
 #: ktorrent/groups/grouppolicydlg.cpp:31
@@ -538,31 +537,31 @@ msgstr ""
 msgid "Policy for the %1 group"
 msgstr ""
 
-#: ktorrent/groups/groupview.cpp:117
+#: ktorrent/groups/groupview.cpp:116
 msgid "Custom Groups"
 msgstr ""
 
-#: ktorrent/groups/groupview.cpp:139 ktorrent/view/view.cpp:219
+#: ktorrent/groups/groupview.cpp:142 ktorrent/view/view.cpp:219
 msgid "New Group"
 msgstr "Grop novèl"
 
-#: ktorrent/groups/groupview.cpp:143
+#: ktorrent/groups/groupview.cpp:146
 msgid "Edit Name"
 msgstr ""
 
-#: ktorrent/groups/groupview.cpp:147
+#: ktorrent/groups/groupview.cpp:150
 msgid "Remove Group"
 msgstr "Suprimir un grop"
 
-#: ktorrent/groups/groupview.cpp:151
+#: ktorrent/groups/groupview.cpp:154
 msgid "Group Policy"
 msgstr ""
 
-#: ktorrent/groups/groupview.cpp:317
+#: ktorrent/groups/groupview.cpp:321
 msgid "Please enter the group name."
 msgstr ""
 
-#: ktorrent/groups/groupview.cpp:324 ktorrent/groups/groupview.cpp:445
+#: ktorrent/groups/groupview.cpp:328 ktorrent/groups/groupview.cpp:449
 #, kde-format
 msgid "The group %1 already exists."
 msgstr ""
@@ -605,7 +604,7 @@ msgstr "Proxy"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: file: ktorrent/pref/qmpref.ui:27
 #. i18n: ectx: property (title), widget (QGroupBox, m_qm_group_box)
-#: ktorrent/pref/qmpref.cpp:25 ktorrent/torrentactivity.cpp:89 rc.cpp:990
+#: ktorrent/pref/qmpref.cpp:25 ktorrent/torrentactivity.cpp:95 rc.cpp:990
 #: rc.cpp:1008
 msgid "Queue Manager"
 msgstr ""
@@ -1152,60 +1151,60 @@ msgstr ""
 
 #. i18n: file: ktorrent/kttorrentactivityui.rc:60
 #. i18n: ectx: Menu (OpenDirMenu)
-#: ktorrent/view/view.cpp:237 rc.cpp:1303
+#: ktorrent/view/view.cpp:240 rc.cpp:1303
 msgid "Open Directory"
 msgstr ""
 
 #. i18n: file: ktorrent/kttorrentactivityui.rc:66
 #. i18n: ectx: Menu (GroupsSubMenu)
-#: ktorrent/view/view.cpp:240 rc.cpp:1306
+#: ktorrent/view/view.cpp:243 rc.cpp:1306
 msgid "Add to Group"
 msgstr ""
 
-#: ktorrent/view/view.cpp:243
+#: ktorrent/view/view.cpp:246
 msgid "Copy Torrent URL"
 msgstr ""
 
-#: ktorrent/view/view.cpp:247
+#: ktorrent/view/view.cpp:250
 #, fuzzy
 #| msgid "Important"
 msgid "Export Torrent"
 msgstr "Important"
 
-#: ktorrent/view/view.cpp:252
+#: ktorrent/view/view.cpp:255
 msgid "Set the speed limits of individual torrents"
 msgstr ""
 
-#: ktorrent/view/view.cpp:461
+#: ktorrent/view/view.cpp:464
 #, kde-format
 msgid ""
 "The torrent <b>%1</b> has not finished downloading, do you want to delete "
 "the incomplete data, too?"
 msgstr ""
 
-#: ktorrent/view/view.cpp:466
+#: ktorrent/view/view.cpp:469
 msgid "Remove Download"
 msgstr ""
 
-#: ktorrent/view/view.cpp:467
+#: ktorrent/view/view.cpp:470
 msgid "Delete Data"
 msgstr ""
 
-#: ktorrent/view/view.cpp:468
+#: ktorrent/view/view.cpp:471
 msgid "Keep Data"
 msgstr ""
 
-#: ktorrent/view/view.cpp:493
+#: ktorrent/view/view.cpp:496
 msgid ""
 "You will lose all the downloaded data of the following torrents. Are you "
 "sure you want to do this?"
 msgstr ""
 
-#: ktorrent/view/view.cpp:494
+#: ktorrent/view/view.cpp:497
 msgid "Remove Torrent"
 msgstr ""
 
-#: ktorrent/view/view.cpp:590 plugins/infowidget/fileview.cpp:348
+#: ktorrent/view/view.cpp:593 plugins/infowidget/fileview.cpp:348
 #: plugins/infowidget/fileview.cpp:369
 msgid "Select a directory to move the data to."
 msgstr ""
@@ -1663,82 +1662,6 @@ msgstr "Causissètz un fichièr"
 msgid "Choose a filename to save under"
 msgstr ""
 
-#. i18n: file: ktorrent/kttorrentactivityui.rc:7
-#. i18n: ectx: Menu (Torrents)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:81
-#. i18n: ectx: ToolBar (TorrentsToolBar)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:7
-#. i18n: ectx: Menu (Torrents)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:81
-#. i18n: ectx: ToolBar (TorrentsToolBar)
-#: ktorrent/torrentactivity.cpp:48 libktcore/interfaces/functions.cpp:179
-#: rc.cpp:1291 rc.cpp:1315
-#, fuzzy
-#| msgid "Open Location"
-msgid "Torrents"
-msgstr "Dobrir un emplaçament"
-
-#: ktorrent/torrentactivity.cpp:89
-msgid "Widget to manage the torrent queue"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:92
-#: plugins/magnetgenerator/magnetgeneratorplugin.cpp:143
-msgid "Magnet"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:93
-msgid "Displays the currently downloading magnet links"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:108
-msgid "Start All"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:109
-msgid "Start all torrents"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:113
-msgid "Stop All"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:114
-msgid "Stop all torrents"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:118
-#, fuzzy
-#| msgid "Open Location"
-msgid "Suspend Torrents"
-msgstr "Dobrir un emplaçament"
-
-#. i18n: file: plugins/bwscheduler/edititemdlg.ui:109
-#. i18n: ectx: property (text), widget (QCheckBox, m_suspended)
-#: ktorrent/torrentactivity.cpp:120 rc.cpp:1565
-#, fuzzy
-#| msgid "Open Location"
-msgid "Suspend all running torrents"
-msgstr "Dobrir un emplaçament"
-
-#: ktorrent/torrentactivity.cpp:125
-msgid "Group View Visible"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:126
-msgid "Show or hide the group view"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:130
-#, fuzzy
-#| msgid "Open Location"
-msgid "Filter Torrents"
-msgstr "Dobrir un emplaçament"
-
-#: ktorrent/torrentactivity.cpp:131
-msgid "Filter torrents based on filter string"
-msgstr ""
-
 #: ktorrent/trayicon.cpp:111
 msgid "Set max upload speed"
 msgstr ""
@@ -1941,6 +1864,88 @@ msgid ""
 "optimum results enable DHT."
 msgstr ""
 
+#. i18n: file: ktorrent/kttorrentactivityui.rc:7
+#. i18n: ectx: Menu (Torrents)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:81
+#. i18n: ectx: ToolBar (TorrentsToolBar)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:7
+#. i18n: ectx: Menu (Torrents)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:81
+#. i18n: ectx: ToolBar (TorrentsToolBar)
+#: ktorrent/torrentactivity.cpp:51 libktcore/interfaces/functions.cpp:179
+#: rc.cpp:1291 rc.cpp:1315
+#, fuzzy
+#| msgid "Open Location"
+msgid "Torrents"
+msgstr "Dobrir un emplaçament"
+
+#: ktorrent/torrentactivity.cpp:95
+msgid "Widget to manage the torrent queue"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:98
+#: plugins/magnetgenerator/magnetgeneratorplugin.cpp:143
+msgid "Magnet"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:99
+msgid "Displays the currently downloading magnet links"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:114
+msgid "Start All"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:115
+msgid "Start all torrents"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:119
+msgid "Stop All"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:120
+msgid "Stop all torrents"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:124
+#, fuzzy
+#| msgid "Open Location"
+msgid "Suspend Torrents"
+msgstr "Dobrir un emplaçament"
+
+#. i18n: file: plugins/bwscheduler/edititemdlg.ui:109
+#. i18n: ectx: property (text), widget (QCheckBox, m_suspended)
+#: ktorrent/torrentactivity.cpp:126 rc.cpp:1565
+#, fuzzy
+#| msgid "Open Location"
+msgid "Suspend all running torrents"
+msgstr "Dobrir un emplaçament"
+
+#: ktorrent/torrentactivity.cpp:131
+msgid "Group View Visible"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:132
+msgid "Show or hide the group view"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:136
+#, fuzzy
+#| msgid "Open Location"
+msgid "Filter Torrents"
+msgstr "Dobrir un emplaçament"
+
+#: ktorrent/torrentactivity.cpp:137
+msgid "Filter torrents based on filter string"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:142
+#, fuzzy
+#| msgid "Tracker"
+msgid "Switch To View"
+msgstr "Tracker"
+
 #: ktupnptest/main.cpp:40
 msgid "KTUPnPTest"
 msgstr ""
@@ -1961,75 +1966,75 @@ msgstr ""
 msgid "Maximum seed time reached."
 msgstr ""
 
-#: libktcore/groups/ungroupedgroup.cpp:27
-msgid "Ungrouped Torrents"
-msgstr ""
-
-#: libktcore/groups/groupmanager.cpp:100
+#: libktcore/groups/groupmanager.cpp:102
 msgid "Uploads"
 msgstr ""
 
-#: libktcore/groups/groupmanager.cpp:102
+#: libktcore/groups/groupmanager.cpp:104
 #, fuzzy
 #| msgid "Running"
 msgid "Running Uploads"
 msgstr "En foncionament"
 
-#: libktcore/groups/groupmanager.cpp:104
+#: libktcore/groups/groupmanager.cpp:106
 msgid "Not Running Uploads"
 msgstr ""
 
-#: libktcore/groups/groupmanager.cpp:108
+#: libktcore/groups/groupmanager.cpp:110
 msgid "Downloads"
 msgstr "Descargas"
 
-#: libktcore/groups/groupmanager.cpp:110
+#: libktcore/groups/groupmanager.cpp:112
 #, fuzzy
 #| msgid "Downloads"
 msgid "Running Downloads"
 msgstr "Descargas"
 
-#: libktcore/groups/groupmanager.cpp:112
+#: libktcore/groups/groupmanager.cpp:114
 #, fuzzy
 #| msgid "Do Not Download"
 msgid "Not Running Downloads"
 msgstr "Telecargar pas"
 
-#: libktcore/groups/groupmanager.cpp:116
+#: libktcore/groups/groupmanager.cpp:118
 #, fuzzy
 #| msgid "Open Location"
 msgid "Active Torrents"
 msgstr "Dobrir un emplaçament"
 
-#: libktcore/groups/groupmanager.cpp:118
+#: libktcore/groups/groupmanager.cpp:120
 #, fuzzy
 #| msgid "Downloads"
 msgid "Active Downloads"
 msgstr "Descargas"
 
-#: libktcore/groups/groupmanager.cpp:120
+#: libktcore/groups/groupmanager.cpp:122
 #, fuzzy
 #| msgid "Upload"
 msgid "Active Uploads"
 msgstr "Enviar"
 
-#: libktcore/groups/groupmanager.cpp:122
+#: libktcore/groups/groupmanager.cpp:124
 #, fuzzy
 #| msgid "Open Location"
 msgid "Passive Torrents"
 msgstr "Dobrir un emplaçament"
 
-#: libktcore/groups/groupmanager.cpp:124
+#: libktcore/groups/groupmanager.cpp:126
 #, fuzzy
 #| msgid "Downloads"
 msgid "Passive Downloads"
 msgstr "Descargas"
 
-#: libktcore/groups/groupmanager.cpp:126
+#: libktcore/groups/groupmanager.cpp:128
 #, fuzzy
 #| msgid "Downloads"
 msgid "Passive Uploads"
 msgstr "Descargas"
+
+#: libktcore/groups/ungroupedgroup.cpp:27
+msgid "Ungrouped Torrents"
+msgstr ""
 
 #: libktcore/interfaces/functions.cpp:181
 #: plugins/bwscheduler/scheduleeditor.cpp:141
@@ -3192,9 +3197,9 @@ msgstr "Preferéncias de recèrca"
 msgid "Search media files"
 msgstr "Preferéncias de recèrca"
 
-#: plugins/scanfolder/scanfolderprefpage.cpp:37
 #: plugins/scanfolder/scanfolderplugin.cpp:64
 #: plugins/scanfolder/scanfolderplugin.cpp:77
+#: plugins/scanfolder/scanfolderprefpage.cpp:37
 #, fuzzy
 #| msgid "Folders"
 msgctxt "plugin name"
