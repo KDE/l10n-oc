@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-08 03:09+0100\n"
+"POT-Creation-Date: 2012-02-12 02:38+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1281,7 +1281,7 @@ msgstr ""
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:494
+#: rc.cpp:80 ui/kis_view2.cpp:497
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -4220,7 +4220,7 @@ msgstr ""
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:1371 image/kis_image.cc:683
+#: rc.cpp:1371 image/kis_image.cc:667
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 msgid "Shear Image"
@@ -4539,7 +4539,7 @@ msgstr ""
 #. i18n: file: plugins/paintops/spray/wdgshapeoptions.ui:37
 #. i18n: ectx: property (text), widget (QLabel, widthInfoLbl_2)
 #: rc.cpp:1482 rc.cpp:1533 rc.cpp:1878 rc.cpp:1899 rc.cpp:2471 rc.cpp:3085
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:330
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:337
 msgid "Shape:"
 msgstr ""
 
@@ -7284,7 +7284,7 @@ msgstr "Paleta"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: file: plugins/tools/tool_curves/wdg_tool_example.ui:73
 #. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:2811 rc.cpp:3296 plugins/tools/tool_star/kis_tool_star.cc:215
+#: rc.cpp:2811 rc.cpp:3296 plugins/tools/tool_star/kis_tool_star.cc:217
 msgid "Ratio:"
 msgstr ""
 
@@ -8086,7 +8086,7 @@ msgstr "Exemple"
 
 #. i18n: file: plugins/tools/tool_curves/wdg_tool_example.ui:38
 #. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:3293 plugins/tools/tool_star/kis_tool_star.cc:209
+#: rc.cpp:3293 plugins/tools/tool_star/kis_tool_star.cc:211
 msgid "Vertices:"
 msgstr ""
 
@@ -8126,8 +8126,8 @@ msgstr "Color de fons"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: rc.cpp:3311 plugins/paintops/libpaintop/kis_color_source_option.cpp:58
 #: plugins/paintops/libpaintop/kis_pressure_gradient_option.cpp:26
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:268
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:277
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:270
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:284
 msgid "Gradient"
 msgstr "Degradat"
 
@@ -10215,8 +10215,8 @@ msgid "YCbCr (8-bit integer/channel)"
 msgstr ""
 
 #: benchmarks/kis_floodfill_benchmark.cpp:87
-#: plugins/tools/defaulttools/kis_tool_fill.cc:101
-#: plugins/tools/defaulttools/kis_tool_fill.cc:106
+#: plugins/tools/defaulttools/kis_tool_fill.cc:103
+#: plugins/tools/defaulttools/kis_tool_fill.cc:108
 msgid "Flood Fill"
 msgstr ""
 
@@ -10275,21 +10275,6 @@ msgctxt "(qtundo-format)"
 msgid "Add Layer"
 msgstr "Jaç"
 
-#: image/commands/kis_image_layer_move_command.cpp:39
-#: image/commands/kis_image_layer_move_command.cpp:50
-#, fuzzy
-#| msgid "Duplicate"
-msgctxt "(qtundo-format)"
-msgid "Move Layer"
-msgstr "Duplicar"
-
-#: image/commands/kis_image_layer_remove_command.cpp:27
-#, fuzzy
-#| msgid "&Remove"
-msgctxt "(qtundo-format)"
-msgid "Remove Layer"
-msgstr "&Suprimir "
-
 #: image/commands/kis_image_node_lower_command.cpp:28
 #: image/commands/kis_image_node_to_bottom_command.cpp:29
 #: image/commands/kis_image_node_to_top_command.cpp:28
@@ -10347,6 +10332,21 @@ msgstr "Opacitat"
 msgctxt "(qtundo-format)"
 msgid "Reselect"
 msgstr "Seleccionar"
+
+#: image/commands/kis_image_layer_move_command.cpp:39
+#: image/commands/kis_image_layer_move_command.cpp:51
+#, fuzzy
+#| msgid "Duplicate"
+msgctxt "(qtundo-format)"
+msgid "Move Layer"
+msgstr "Duplicar"
+
+#: image/commands/kis_image_layer_remove_command.cpp:38
+#, fuzzy
+#| msgid "&Remove"
+msgctxt "(qtundo-format)"
+msgid "Remove Layer"
+msgstr "&Suprimir "
 
 #: image/commands_new/kis_image_resize_command.cpp:28
 #, fuzzy
@@ -10408,13 +10408,13 @@ msgstr "Personalizat"
 msgid "Gaussian brush"
 msgstr "Personalizat"
 
-#: image/kis_base_node.cpp:136 ui/kis_node_model.cpp:345
+#: image/kis_base_node.cpp:138 ui/kis_node_model.cpp:366
 msgid "Visible"
 msgstr ""
 
-#: image/kis_base_node.cpp:137
+#: image/kis_base_node.cpp:139
 #: plugins/extensions/dockers/channeldocker/channelmodel.cpp:67
-#: ui/kis_node_model.cpp:346
+#: ui/kis_node_model.cpp:367
 msgid "Locked"
 msgstr ""
 
@@ -10422,7 +10422,7 @@ msgstr ""
 msgid "Last used"
 msgstr ""
 
-#: image/kis_clone_layer.cpp:237
+#: image/kis_clone_layer.cpp:249
 msgid "Copy From"
 msgstr ""
 
@@ -10462,52 +10462,52 @@ msgstr ""
 msgid "Mitchell"
 msgstr ""
 
-#: image/kis_image.cc:293
+#: image/kis_image.cc:277
 msgid "background"
 msgstr ""
 
-#: image/kis_image.cc:296
+#: image/kis_image.cc:280
 #, kde-format
 msgid "Layer %1"
 msgstr ""
 
-#: image/kis_image.cc:452
+#: image/kis_image.cc:436
 msgid "Crop Image"
 msgstr ""
 
-#: image/kis_image.cc:452
+#: image/kis_image.cc:436
 msgid "Resize Image"
 msgstr ""
 
-#: image/kis_image.cc:484
+#: image/kis_image.cc:468
 #, fuzzy
 #| msgid "Crop"
 msgid "Crop Node"
 msgstr "Rosegar"
 
-#: image/kis_image.cc:677
+#: image/kis_image.cc:661
 msgid "Shear layer"
 msgstr ""
 
-#: image/kis_image.cc:693
+#: image/kis_image.cc:677
 #, fuzzy
 #| msgid "Filter"
 msgid "Convert Image Color Space"
 msgstr "Filtre"
 
-#: image/kis_image.cc:724
+#: image/kis_image.cc:708
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:898 ui/kis_layer_manager.cc:720
+#: image/kis_image.cc:882 ui/kis_layer_manager.cc:701
 msgid "Flatten Image"
 msgstr ""
 
-#: image/kis_image.cc:956
+#: image/kis_image.cc:940
 msgid "Merge with Layer Below"
 msgstr ""
 
-#: image/kis_image.cc:981
+#: image/kis_image.cc:965
 #, fuzzy
 #| msgid "Filter"
 msgid "Flatten Layer"
@@ -10535,7 +10535,7 @@ msgstr ""
 msgid "Alpha Channel Disabled"
 msgstr ""
 
-#: image/kis_selection_mask.cpp:110 ui/kis_node_model.cpp:347
+#: image/kis_selection_mask.cpp:110 ui/kis_node_model.cpp:368
 msgid "Active"
 msgstr "Actiu"
 
@@ -10627,10 +10627,6 @@ msgstr "Camin"
 #| msgid "Rotation"
 msgid "Rotate Node"
 msgstr "Rotacion"
-
-#: main.cc:50
-msgid "File(s) or URL(s) to open"
-msgstr ""
 
 #: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
 #, fuzzy
@@ -10936,112 +10932,112 @@ msgstr "activat"
 msgid "Select the exposure (stops) for HDR images"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:81
+#: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:32
+msgid "Palettes"
+msgstr "Paletas"
+
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:84
 #, fuzzy
 #| msgid "Layer"
 msgid "Layers"
 msgstr "Jaç"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:106
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:109
 msgid "Minimal View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:108
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:111
 msgid "Detailed View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:110
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:113
 msgid "Thumbnail View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:123
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:126
 #, fuzzy
 #| msgid "View"
 msgid "View mode"
 msgstr "Visualizacion"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:167
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:170
 #, fuzzy
 #| msgid "Filter"
 msgid "&Paint Layer"
 msgstr "Filtre"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:170
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:173
 #, fuzzy
 #| msgid "Filter"
 msgid "&Group Layer"
 msgstr "Filtre"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:173
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:176
 #, fuzzy
 #| msgid "Layer"
 msgid "&Clone Layer"
 msgstr "Jaç"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:176
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:179
 #, fuzzy
 #| msgid "Filter"
 msgid "&Shape Layer"
 msgstr "Filtre"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:179
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:182
 #, fuzzy
 #| msgid "Filter"
 msgid "&Filter Layer..."
 msgstr "Filtre"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:182
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:185
 #, fuzzy
 #| msgid "Filter"
 msgid "&Generated Layer..."
 msgstr "Filtre"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:185
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:188
 #, fuzzy
 #| msgid "Transparent"
 msgid "&Transparency Mask"
 msgstr "Transparent"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:188
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:191
 #, fuzzy
 #| msgid "Filter"
 msgid "&Filter Mask..."
 msgstr "Filtre"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:191
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:194
 #, fuzzy
 #| msgid "Selection"
 msgid "&Local Selection"
 msgstr "Seleccion"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:208
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:211
 msgid "&Transformation Mask..."
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:377
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:387
 #, fuzzy
 #| msgid "Properties..."
 msgid "&Properties..."
 msgstr "Propietats..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:379
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:389
 #, fuzzy
 #| msgid "&Remove"
 msgid "&Remove Layer"
 msgstr "&Suprimir "
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:380
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:390
 msgid "&Duplicate Layer or Mask"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:381
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:391
 #: ui/kis_layer_manager.cc:137
 msgid "&Merge with Layer Below"
 msgstr ""
-
-#: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:32
-msgid "Palettes"
-msgstr "Paletas"
 
 #: plugins/extensions/dockers/digitalmixer/digitalmixer_dock.cc:43
 msgid "Digital Colors Mixer"
@@ -11407,7 +11403,7 @@ msgid "Rotate Layer of 90° to the Left"
 msgstr ""
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:676
+#: ui/kis_layer_manager.cc:657
 msgid "Rotate Layer"
 msgstr ""
 
@@ -11466,7 +11462,7 @@ msgid "Separate Image"
 msgstr ""
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:812
+#: ui/kis_layer_manager.cc:787
 msgid "Export Layer"
 msgstr ""
 
@@ -11543,11 +11539,11 @@ msgstr ""
 msgid "Motion Blur"
 msgstr ""
 
-#: plugins/filters/bumpmap/bumpmap.cpp:91
+#: plugins/filters/bumpmap/bumpmap.cpp:92
 msgid "Bumpmap"
 msgstr ""
 
-#: plugins/filters/bumpmap/bumpmap.cpp:91
+#: plugins/filters/bumpmap/bumpmap.cpp:92
 msgid "&Bumpmap..."
 msgstr ""
 
@@ -13175,110 +13171,110 @@ msgstr ""
 msgid "Draw a rectangle"
 msgstr "Rectangle"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:212
+#: plugins/tools/defaulttools/kis_tool_fill.cc:219
 msgid "Threshold: "
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:220
+#: plugins/tools/defaulttools/kis_tool_fill.cc:227
 msgid "Use pattern"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:221
+#: plugins/tools/defaulttools/kis_tool_fill.cc:228
 msgid ""
 "When checked do not use the foreground color, but the gradient selected to "
 "fill with"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:225
+#: plugins/tools/defaulttools/kis_tool_fill.cc:232
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:140
 msgid "Limit to current layer"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:229
+#: plugins/tools/defaulttools/kis_tool_fill.cc:236
 msgid "Fill entire selection"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:230
+#: plugins/tools/defaulttools/kis_tool_fill.cc:237
 msgid ""
 "When checked do not look at the current layer colors, but just fill all of "
 "the selected area"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:331
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:338
 msgid "Repeat:"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:333
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:340
 #, fuzzy
 #| msgid "Reverse"
 msgctxt "the gradient will be drawn with the color order reversed"
 msgid "Reverse"
 msgstr "mètres"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:340
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:347
 #, fuzzy
 #| msgid "Line"
 msgctxt "the gradient will be drawn linearly"
 msgid "Linear"
 msgstr "Linha"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:341
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:348
 #, fuzzy
 #| msgid "Line"
 msgctxt "the gradient will be drawn bilinearly"
 msgid "Bi-Linear"
 msgstr "Linha"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:342
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:349
 #, fuzzy
 #| msgid "Partial"
 msgctxt "the gradient will be drawn radially"
 msgid "Radial"
 msgstr "parcial"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:343
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
 #, fuzzy
 #| msgid "Square"
 msgctxt "the gradient will be drawn in a square around a centre"
 msgid "Square"
 msgstr "Carrat"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:344
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:351
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "the gradient will be drawn as an assymmetric cone"
 msgid "Conical"
 msgstr "Anullar"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:345
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:352
 msgctxt "the gradient will be drawn as a symmetric cone"
 msgid "Conical Symmetric"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:357
 #, fuzzy
 #| msgid "None"
 msgctxt "The gradient will not repeat"
 msgid "None"
 msgstr "Pas cap"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:351
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:358
 msgctxt "The gradient will repeat forwards"
 msgid "Forwards"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:352
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:359
 #, fuzzy
 #| msgid "Printing"
 msgctxt "The gradient will repeat alternatingly"
 msgid "Alternating"
 msgstr "Estampatge"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:360
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:367
 msgid "Anti-alias threshold:"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:371
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:378
 msgid "Preview opacity:"
 msgstr ""
 
@@ -13307,7 +13303,7 @@ msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "Linha"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:285
+#: plugins/tools/defaulttools/kis_tool_line.cc:287
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -13739,7 +13735,7 @@ msgstr ""
 msgid "Layer Properties"
 msgstr ""
 
-#: ui/flake/kis_shape_controller.cpp:170
+#: ui/flake/kis_shape_controller.cpp:169
 #, kde-format
 msgid "Vector Layer %1"
 msgstr ""
@@ -14134,7 +14130,7 @@ msgstr ""
 msgid "&Flatten Layer"
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:146 ui/kis_layer_manager.cc:784
+#: ui/kis_layer_manager.cc:146 ui/kis_layer_manager.cc:759
 #, fuzzy
 #| msgid "&Remove"
 msgid "Rasterize Layer"
@@ -14160,40 +14156,40 @@ msgstr "Propietas de l'imatge"
 msgid "Generator Layer Properties"
 msgstr "Propietas de l'imatge"
 
-#: ui/kis_layer_manager.cc:302 ui/kis_layer_manager.cc:318
-#: ui/kis_layer_manager.cc:362 ui/kis_layer_manager.cc:395
-#: ui/kis_layer_manager.cc:534
+#: ui/kis_layer_manager.cc:300 ui/kis_layer_manager.cc:314
+#: ui/kis_layer_manager.cc:355 ui/kis_layer_manager.cc:386
+#: ui/kis_layer_manager.cc:515
 msgid "Could not add layer to image."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:302 ui/kis_layer_manager.cc:318
-#: ui/kis_layer_manager.cc:362 ui/kis_layer_manager.cc:395
-#: ui/kis_layer_manager.cc:534
+#: ui/kis_layer_manager.cc:300 ui/kis_layer_manager.cc:314
+#: ui/kis_layer_manager.cc:355 ui/kis_layer_manager.cc:386
+#: ui/kis_layer_manager.cc:515
 msgid "Layer Error"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:425
+#: ui/kis_layer_manager.cc:416
 msgid "New Filter Layer"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:596 ui/kis_layer_manager.cc:606
+#: ui/kis_layer_manager.cc:577 ui/kis_layer_manager.cc:587
 msgid "Mirror Layer X"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:623 ui/kis_layer_manager.cc:633
+#: ui/kis_layer_manager.cc:604 ui/kis_layer_manager.cc:614
 #: ui/kis_mask_manager.cc:316
 msgid "Mirror Layer Y"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:655
+#: ui/kis_layer_manager.cc:636
 msgid "Scale Layer"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:719
+#: ui/kis_layer_manager.cc:700
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:721
+#: ui/kis_layer_manager.cc:702
 msgid "&Flatten Image"
 msgstr ""
 
@@ -14247,19 +14243,19 @@ msgstr ""
 msgid "Effect Mask Properties"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:149
+#: ui/kis_node_manager.cpp:146
 #, fuzzy
 #| msgid "Horizontal:"
 msgid "Mirror Horizontally"
 msgstr "Orizontal :"
 
-#: ui/kis_node_manager.cpp:153
+#: ui/kis_node_manager.cpp:150
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Mirror Vertically"
 msgstr "Vertical :"
 
-#: ui/kis_node_model.cpp:354
+#: ui/kis_node_model.cpp:375
 msgid "Alpha Locked"
 msgstr ""
 
@@ -14433,15 +14429,15 @@ msgstr ""
 msgid "Cut Selection to New Layer"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:591
+#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:588
 msgid "Fill with Foreground Color"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:596
+#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:593
 msgid "Fill with Background Color"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:601
+#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:598
 msgid "Fill with Pattern"
 msgstr ""
 
@@ -14467,13 +14463,13 @@ msgstr "Talhar"
 msgid "(pasted)"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:479
+#: ui/kis_selection_manager.cc:476
 #, fuzzy
 #| msgid "Pattern"
 msgid "Pasted"
 msgstr "Motiu"
 
-#: ui/kis_selection_manager.cc:503
+#: ui/kis_selection_manager.cc:500
 msgid "Select All"
 msgstr "Tot seleccionar"
 
@@ -14514,97 +14510,97 @@ msgstr ""
 msgid "No profile"
 msgstr ""
 
-#: ui/kis_view2.cpp:263
+#: ui/kis_view2.cpp:265
 msgid "Save Incremental &Version"
 msgstr ""
 
-#: ui/kis_view2.cpp:268
+#: ui/kis_view2.cpp:270
 msgid "Save Incremental Backup"
 msgstr ""
 
-#: ui/kis_view2.cpp:280
+#: ui/kis_view2.cpp:282
 msgid "Total Refresh"
 msgstr ""
 
-#: ui/kis_view2.cpp:285
+#: ui/kis_view2.cpp:287
 msgid "&Create Template From Image..."
 msgstr ""
 
-#: ui/kis_view2.cpp:289
+#: ui/kis_view2.cpp:291
 msgid "Load Tutorial"
 msgstr ""
 
-#: ui/kis_view2.cpp:293
+#: ui/kis_view2.cpp:295
 msgid "Mirror Image"
 msgstr ""
 
-#: ui/kis_view2.cpp:299
+#: ui/kis_view2.cpp:301
 msgid "Rotate Canvas Right"
 msgstr ""
 
-#: ui/kis_view2.cpp:304
+#: ui/kis_view2.cpp:306
 msgid "Rotate Canvas Left"
 msgstr ""
 
-#: ui/kis_view2.cpp:309
+#: ui/kis_view2.cpp:311
 #, fuzzy
 #| msgid "Selection"
 msgid "Reset Canvas Transformations"
 msgstr "Seleccion"
 
-#: ui/kis_view2.cpp:314
+#: ui/kis_view2.cpp:316
 msgid "Show Status Bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:315
+#: ui/kis_view2.cpp:317
 msgid "Hide Status Bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:317
+#: ui/kis_view2.cpp:319
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:321
+#: ui/kis_view2.cpp:323
 msgid "Show Canvas Only"
 msgstr ""
 
-#: ui/kis_view2.cpp:322
+#: ui/kis_view2.cpp:324
 msgid "Return to Window"
 msgstr ""
 
-#: ui/kis_view2.cpp:323
+#: ui/kis_view2.cpp:325
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:442
+#: ui/kis_view2.cpp:453
 #, fuzzy
 #| msgid "Filter"
 msgid "Pasted Layer"
 msgstr "Filtre"
 
-#: ui/kis_view2.cpp:488
+#: ui/kis_view2.cpp:491
 msgid "Insert as New Layer"
 msgstr ""
 
-#: ui/kis_view2.cpp:489
+#: ui/kis_view2.cpp:492
 msgid "Insert as New Layers"
 msgstr ""
 
-#: ui/kis_view2.cpp:491
+#: ui/kis_view2.cpp:494
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:492
+#: ui/kis_view2.cpp:495
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:695
+#: ui/kis_view2.cpp:698
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette..."
 msgstr "Paleta"
 
-#: ui/kis_view2.cpp:823 ui/kis_view2.cpp:826
+#: ui/kis_view2.cpp:826 ui/kis_view2.cpp:829
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette"
@@ -14657,14 +14653,6 @@ msgstr "Paramètres"
 msgid "Decrease Brush Size"
 msgstr "Paramètres"
 
-#: ui/tool/kis_tool_paint.cc:88
-msgid "Make Brush color lighter"
-msgstr ""
-
-#: ui/tool/kis_tool_paint.cc:94
-msgid "Make Brush color darker"
-msgstr ""
-
 #: ui/tool/kis_tool_polyline_base.cpp:38
 msgid "&Finish"
 msgstr ""
@@ -14689,11 +14677,19 @@ msgstr "Color de fons"
 msgid "Clear"
 msgstr "Netejar"
 
-#: ui/tool/kis_tool.cc:609
+#: ui/tool/kis_tool.cc:592
 #, fuzzy
 #| msgid "Options"
 msgid "No options"
 msgstr "Opcions"
+
+#: ui/tool/kis_tool_paint.cc:88
+msgid "Make Brush color lighter"
+msgstr ""
+
+#: ui/tool/kis_tool_paint.cc:94
+msgid "Make Brush color darker"
+msgstr ""
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -14788,6 +14784,10 @@ msgstr "Seleccion"
 #: ui/widgets/kis_workspace_chooser.cpp:129
 #, kde-format
 msgid "Workspace %1"
+msgstr ""
+
+#: main.cc:50
+msgid "File(s) or URL(s) to open"
 msgstr ""
 
 #, fuzzy
