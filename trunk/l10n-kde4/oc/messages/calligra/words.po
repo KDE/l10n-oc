@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-12 02:43+0100\n"
+"POT-Creation-Date: 2012-02-27 02:59+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -752,6 +752,21 @@ msgstr ""
 msgid "Unable to locate note-text"
 msgstr ""
 
+#: part/KWOdfLoader.cpp:90
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:102
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:104
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
 msgstr "Modificat"
@@ -975,6 +990,65 @@ msgstr ""
 msgid "Options"
 msgstr "Opcions"
 
+#: part/dialogs/KWAnchoringProperties.cpp:432
+msgid "Baseline"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:433
+#: part/dialogs/KWAnchoringProperties.cpp:444
+#, fuzzy
+#| msgid "Create"
+msgid "Character"
+msgstr "Crear"
+
+#: part/dialogs/KWAnchoringProperties.cpp:436
+msgid "Row"
+msgstr "Linha"
+
+#: part/dialogs/KWAnchoringProperties.cpp:437
+#: part/dialogs/KWAnchoringProperties.cpp:445
+msgid "Page (entire) area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:438
+#: part/dialogs/KWAnchoringProperties.cpp:446
+msgid "Page text area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:439
+#: part/dialogs/KWAnchoringProperties.cpp:453
+#, fuzzy
+#| msgid "Paragraph"
+msgid "Paragraph area"
+msgstr "Paragraf"
+
+#: part/dialogs/KWAnchoringProperties.cpp:440
+#: part/dialogs/KWAnchoringProperties.cpp:454
+#, fuzzy
+#| msgid "Paragraph"
+msgid "Paragraph text area"
+msgstr "Paragraf"
+
+#: part/dialogs/KWAnchoringProperties.cpp:447
+#, fuzzy
+#| msgid "Borders"
+msgid "Left page border"
+msgstr "Bordaduras"
+
+#: part/dialogs/KWAnchoringProperties.cpp:448
+#, fuzzy
+#| msgid "Borders"
+msgid "Right page border"
+msgstr "Bordaduras"
+
+#: part/dialogs/KWAnchoringProperties.cpp:455
+msgid "Right paragraph border"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:456
+msgid "Left paragraph border"
+msgstr ""
+
 #: part/dialogs/KWFrameDialog.cpp:41
 msgid "General"
 msgstr "General"
@@ -985,71 +1059,12 @@ msgstr "General"
 msgid "Smart Positioning"
 msgstr "Posicion"
 
-#: part/dialogs/KWFrameDialog.cpp:79
+#: part/dialogs/KWFrameDialog.cpp:83
 #, fuzzy
 #| msgid "Page Properties"
 msgctxt "(qtundo-format)"
 msgid "Change Shape Properties"
 msgstr "Propietats de la pagina"
-
-#: part/dialogs/KWAnchoringProperties.cpp:431
-msgid "Baseline"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:432
-#: part/dialogs/KWAnchoringProperties.cpp:443
-#, fuzzy
-#| msgid "Create"
-msgid "Character"
-msgstr "Crear"
-
-#: part/dialogs/KWAnchoringProperties.cpp:435
-msgid "Row"
-msgstr "Linha"
-
-#: part/dialogs/KWAnchoringProperties.cpp:436
-#: part/dialogs/KWAnchoringProperties.cpp:444
-msgid "Page (entire) area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:437
-#: part/dialogs/KWAnchoringProperties.cpp:445
-msgid "Page text area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:438
-#: part/dialogs/KWAnchoringProperties.cpp:452
-#, fuzzy
-#| msgid "Paragraph"
-msgid "Paragraph area"
-msgstr "Paragraf"
-
-#: part/dialogs/KWAnchoringProperties.cpp:439
-#: part/dialogs/KWAnchoringProperties.cpp:453
-#, fuzzy
-#| msgid "Paragraph"
-msgid "Paragraph text area"
-msgstr "Paragraf"
-
-#: part/dialogs/KWAnchoringProperties.cpp:446
-#, fuzzy
-#| msgid "Borders"
-msgid "Left page border"
-msgstr "Bordaduras"
-
-#: part/dialogs/KWAnchoringProperties.cpp:447
-#, fuzzy
-#| msgid "Borders"
-msgid "Right page border"
-msgstr "Bordaduras"
-
-#: part/dialogs/KWAnchoringProperties.cpp:454
-msgid "Right paragraph border"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:455
-msgid "Left paragraph border"
-msgstr ""
 
 #: part/dockers/KWRdfDocker.cpp:53
 msgid "RDF"
@@ -1298,19 +1313,41 @@ msgstr ""
 msgid "File to open"
 msgstr "Fichièr de dobrir"
 
-#: part/KWOdfLoader.cpp:90
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+#: part/KWDocument.cpp:518
+msgid "Copy"
+msgstr "Copiar"
+
+#: part/KWDocument.cpp:563
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Header 1"
+msgid "Head 1"
+msgstr "Encap 1"
+
+#: part/KWDocument.cpp:569
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Header 2"
+msgid "Head 2"
+msgstr "Encap 2"
+
+#: part/KWDocument.cpp:575
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Header 3"
+msgid "Head 3"
+msgstr "Encap 3"
+
+#: part/KWDocument.cpp:581
+msgid "Bullet List"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:102
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+#: part/KWDocument.cpp:806
+msgid "Can not find needed text component, Words will quit now"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:104
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+#: part/KWDocument.cpp:807
+msgid "Installation Error"
 msgstr ""
 
 #: part/KWGui.cpp:74
@@ -1732,43 +1769,6 @@ msgstr "Paginas"
 #| msgid "Header 1"
 msgid "Header & Footer"
 msgstr "Encap 1"
-
-#: part/KWDocument.cpp:515
-msgid "Copy"
-msgstr "Copiar"
-
-#: part/KWDocument.cpp:560
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Header 1"
-msgid "Head 1"
-msgstr "Encap 1"
-
-#: part/KWDocument.cpp:566
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Header 2"
-msgid "Head 2"
-msgstr "Encap 2"
-
-#: part/KWDocument.cpp:572
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Header 3"
-msgid "Head 3"
-msgstr "Encap 3"
-
-#: part/KWDocument.cpp:578
-msgid "Bullet List"
-msgstr ""
-
-#: part/KWDocument.cpp:803
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:804
-msgid "Installation Error"
-msgstr ""
 
 #, fuzzy
 #~| msgid "Format"
