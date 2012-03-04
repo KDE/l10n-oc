@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-02 03:03+0100\n"
+"POT-Creation-Date: 2012-03-04 11:30+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -142,6 +142,15 @@ msgstr "Efièches"
 msgid "View"
 msgstr "Visualizacion"
 
+#: common/KarbonDocument.cpp:281
+msgid "Master Page"
+msgstr ""
+
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:880
+msgctxt "(qtundo-format)"
+msgid "Boolean Operation"
+msgstr ""
+
 #: common/commands/KarbonLayerReorderCommand.cpp:37
 #: common/commands/KarbonLayerReorderCommand.cpp:46
 #, fuzzy
@@ -158,121 +167,16 @@ msgctxt "(qtundo-format)"
 msgid "Lower Layer"
 msgstr "Jaç"
 
-#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:880
-msgctxt "(qtundo-format)"
-msgid "Boolean Operation"
-msgstr ""
-
-#: common/KarbonDocument.cpp:281
-msgid "Master Page"
-msgstr ""
-
 #: main.cpp:43
 msgid "File to open"
 msgstr "Fichièr de dobrir"
 
-#: plugins/filtereffects/BlendEffectFactory.cpp:27
 #: plugins/filtereffects/BlendEffect.cpp:30
+#: plugins/filtereffects/BlendEffectFactory.cpp:27
 #, fuzzy
 #| msgid "&File"
 msgid "Blend"
 msgstr "Mosaïc"
-
-#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
-msgid "Flood color"
-msgstr ""
-
-#: plugins/filtereffects/BlurEffectFactory.cpp:27
-#: plugins/filtereffects/BlurEffect.cpp:276
-msgid "Gaussian blur"
-msgstr ""
-
-#: plugins/filtereffects/ColorMatrixEffectFactory.cpp:27
-msgid "Color matrix"
-msgstr ""
-
-#: plugins/filtereffects/ComponentTransferEffectFactory.cpp:27
-#: plugins/filtereffects/ComponentTransferEffect.cpp:30
-msgid "Component transfer"
-msgstr ""
-
-#: plugins/filtereffects/CompositeEffectFactory.cpp:27
-#: plugins/filtereffects/CompositeEffect.cpp:32
-msgid "Composite"
-msgstr ""
-
-#: plugins/filtereffects/FloodEffect.cpp:30
-#: plugins/filtereffects/FloodEffectFactory.cpp:27
-msgid "Flood fill"
-msgstr ""
-
-#: plugins/filtereffects/ImageEffect.cpp:35
-#: plugins/filtereffects/ImageEffectFactory.cpp:26
-msgid "Image"
-msgstr ""
-
-#: plugins/filtereffects/MorphologyEffect.cpp:32
-#: plugins/filtereffects/MorphologyEffectFactory.cpp:27
-msgid "Morphology"
-msgstr ""
-
-#: plugins/filtereffects/ConvolveMatrixEffectFactory.cpp:27
-#: plugins/filtereffects/ConvolveMatrixEffect.cpp:33
-msgid "Convolve Matrix"
-msgstr ""
-
-#: plugins/filtereffects/ImageEffectConfigWidget.cpp:37
-msgid "Select image..."
-msgstr ""
-
-#: plugins/filtereffects/ImageEffectConfigWidget.cpp:70
-msgid "Select image"
-msgstr ""
-
-#: plugins/filtereffects/MergeEffectFactory.cpp:27
-#: plugins/filtereffects/MergeEffect.cpp:30
-msgid "Merge"
-msgstr ""
-
-#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:38
-msgid "Erode"
-msgstr ""
-
-#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:39
-#, fuzzy
-#| msgid "Delete"
-msgid "Dilate"
-msgstr "Suprimir"
-
-#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:42
-#, fuzzy
-#| msgid "Repeat"
-msgid "Operator:"
-msgstr "Repetar"
-
-#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:46
-msgid "Radius x:"
-msgstr ""
-
-#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:51
-msgid "Radius y:"
-msgstr ""
-
-#: plugins/filtereffects/OffsetEffect.cpp:31
-#: plugins/filtereffects/OffsetEffectFactory.cpp:26
-#: plugins/filtereffects/ComponentTransferEffectConfigWidget.cpp:120
-#, fuzzy
-#| msgid "Effects"
-msgid "Offset"
-msgstr "Efièches"
-
-#: plugins/filtereffects/OffsetEffectConfigWidget.cpp:35
-msgid "dx"
-msgstr ""
-
-#: plugins/filtereffects/OffsetEffectConfigWidget.cpp:40
-msgid "dy"
-msgstr ""
 
 #: plugins/filtereffects/BlendEffectConfigWidget.cpp:35
 #, fuzzy
@@ -301,6 +205,11 @@ msgstr ""
 #| msgid "Height:"
 msgid "Lighten"
 msgstr "Drecha"
+
+#: plugins/filtereffects/BlurEffect.cpp:276
+#: plugins/filtereffects/BlurEffectFactory.cpp:27
+msgid "Gaussian blur"
+msgstr ""
 
 #: plugins/filtereffects/BlurEffectConfigWidget.cpp:35
 msgid "Radius"
@@ -335,6 +244,15 @@ msgstr ""
 #| msgid "Angle:"
 msgid "Angle"
 msgstr "Angle :"
+
+#: plugins/filtereffects/ColorMatrixEffectFactory.cpp:27
+msgid "Color matrix"
+msgstr ""
+
+#: plugins/filtereffects/ComponentTransferEffect.cpp:30
+#: plugins/filtereffects/ComponentTransferEffectFactory.cpp:27
+msgid "Component transfer"
+msgstr ""
 
 #: plugins/filtereffects/ComponentTransferEffectConfigWidget.cpp:58
 msgid "Function"
@@ -387,8 +305,26 @@ msgstr ""
 msgid "Exponent"
 msgstr ""
 
+#: plugins/filtereffects/ComponentTransferEffectConfigWidget.cpp:120
+#: plugins/filtereffects/OffsetEffect.cpp:31
+#: plugins/filtereffects/OffsetEffectFactory.cpp:26
+#, fuzzy
+#| msgid "Effects"
+msgid "Offset"
+msgstr "Efièches"
+
+#: plugins/filtereffects/CompositeEffect.cpp:32
+#: plugins/filtereffects/CompositeEffectFactory.cpp:27
+msgid "Composite"
+msgstr ""
+
 #: plugins/filtereffects/CompositeEffectConfigWidget.cpp:37
 msgid "Operation"
+msgstr ""
+
+#: plugins/filtereffects/ConvolveMatrixEffect.cpp:33
+#: plugins/filtereffects/ConvolveMatrixEffectFactory.cpp:27
+msgid "Convolve Matrix"
 msgstr ""
 
 #: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:43
@@ -441,9 +377,68 @@ msgstr ""
 msgid "Edit kernel"
 msgstr "Motiu"
 
-#: plugins/flattenpath/KarbonPathFlattenCommand.cpp:165
-msgctxt "(qtundo-format)"
-msgid "Flatten path"
+#: plugins/filtereffects/FloodEffect.cpp:30
+#: plugins/filtereffects/FloodEffectFactory.cpp:27
+msgid "Flood fill"
+msgstr ""
+
+#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
+msgid "Flood color"
+msgstr ""
+
+#: plugins/filtereffects/ImageEffect.cpp:35
+#: plugins/filtereffects/ImageEffectFactory.cpp:26
+msgid "Image"
+msgstr ""
+
+#: plugins/filtereffects/ImageEffectConfigWidget.cpp:37
+msgid "Select image..."
+msgstr ""
+
+#: plugins/filtereffects/ImageEffectConfigWidget.cpp:70
+msgid "Select image"
+msgstr ""
+
+#: plugins/filtereffects/MergeEffect.cpp:30
+#: plugins/filtereffects/MergeEffectFactory.cpp:27
+msgid "Merge"
+msgstr ""
+
+#: plugins/filtereffects/MorphologyEffect.cpp:32
+#: plugins/filtereffects/MorphologyEffectFactory.cpp:27
+msgid "Morphology"
+msgstr ""
+
+#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:38
+msgid "Erode"
+msgstr ""
+
+#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:39
+#, fuzzy
+#| msgid "Delete"
+msgid "Dilate"
+msgstr "Suprimir"
+
+#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:42
+#, fuzzy
+#| msgid "Repeat"
+msgid "Operator:"
+msgstr "Repetar"
+
+#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:46
+msgid "Radius x:"
+msgstr ""
+
+#: plugins/filtereffects/MorphologyEffectConfigWidget.cpp:51
+msgid "Radius y:"
+msgstr ""
+
+#: plugins/filtereffects/OffsetEffectConfigWidget.cpp:35
+msgid "dx"
+msgstr ""
+
+#: plugins/filtereffects/OffsetEffectConfigWidget.cpp:40
+msgid "dy"
 msgstr ""
 
 #: plugins/flattenpath/FlattenPathPlugin.cpp:57
@@ -463,6 +458,11 @@ msgstr "Propietats"
 
 #: plugins/flattenpath/FlattenPathPlugin.cpp:103
 msgid "Flatness:"
+msgstr ""
+
+#: plugins/flattenpath/KarbonPathFlattenCommand.cpp:165
+msgctxt "(qtundo-format)"
+msgid "Flatten path"
 msgstr ""
 
 #: plugins/refinepath/KarbonPathRefineCommand.cpp:41
@@ -532,351 +532,79 @@ msgstr "Angle :"
 msgid "Pinch:"
 msgstr ""
 
+#: ui/KarbonAboutData.h:26
+msgid "A Vector Graphics Drawing Application."
+msgstr ""
+
+#: ui/KarbonAboutData.h:35
+msgid "Karbon"
+msgstr ""
+
+#: ui/KarbonAboutData.h:39
+msgid "(c) 2001-2011, The Karbon Developers"
+msgstr ""
+
+#: ui/KarbonAboutData.h:40
+msgid "You are invited to participate in any way."
+msgstr ""
+
+#: ui/KarbonAboutData.h:44
+msgid "Rob Buis"
+msgstr ""
+
+#: ui/KarbonAboutData.h:48
+msgid "Tomislav Lukman"
+msgstr ""
+
+#: ui/KarbonAboutData.h:52
+msgid "Benoît Vautrin"
+msgstr ""
+
+#: ui/KarbonAboutData.h:56
+msgid "Jan Hambrecht"
+msgstr ""
+
+#: ui/KarbonAboutData.h:57 ui/KarbonAboutData.h:61 ui/KarbonAboutData.h:65
+#: ui/KarbonAboutData.h:69 ui/KarbonAboutData.h:73
+msgid "Bug fixes and improvements"
+msgstr ""
+
+#: ui/KarbonAboutData.h:60
+msgid "Peter Simonsson"
+msgstr ""
+
+#: ui/KarbonAboutData.h:64
+msgid "Tim Beaulen"
+msgstr ""
+
+#: ui/KarbonAboutData.h:68
+msgid "Boudewijn Rempt"
+msgstr ""
+
+#: ui/KarbonAboutData.h:72
+msgid "Pierre Stirnweiss"
+msgstr ""
+
+#: ui/KarbonAboutData.h:76
+msgid "Inge Wallin"
+msgstr ""
+
+#: ui/KarbonAboutData.h:77
+msgid "Bug fixes"
+msgstr ""
+
+#: ui/KarbonAboutData.h:80
+msgid "Alan Horkan"
+msgstr ""
+
+#: ui/KarbonAboutData.h:81
+msgid "Helpful patches and advice"
+msgstr ""
+
 #: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:550
 msgctxt "(qtundo-format)"
 msgid "Insert graphics"
 msgstr ""
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:38
-msgid "Configure"
-msgstr "Configurar"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:43
-#: ui/dialogs/KarbonConfigureDialog.cpp:44
-#: ui/widgets/KarbonConfigInterfacePage.cpp:56
-msgid "Interface"
-msgstr "Interfaç"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:48
-#: ui/dialogs/KarbonConfigureDialog.cpp:49
-msgid "Misc"
-msgstr ""
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:53
-#: ui/dialogs/KarbonConfigureDialog.cpp:54
-msgid "Grid"
-msgstr "Grasilha"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:60
-msgctxt "@title:tab Document settings page"
-msgid "Document"
-msgstr "Document"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:61
-msgid "Document Settings"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:84
-msgid "Layer view"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:95
-msgid "Add a new layer"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:101
-msgid "Delete selected objects"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:107
-msgid "Raise selected objects"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:113
-msgid "Lower selected objects"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:122
-msgid "Minimal View"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:124
-msgid "Detailed View"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:126
-msgid "Thumbnail View"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:136
-#, fuzzy
-#| msgid "View"
-msgid "View mode"
-msgstr "Visualizacion"
-
-#: ui/dockers/KarbonLayerDocker.cpp:276
-msgid "New Layer"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:277
-msgid "Enter the name of the new layer:"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:278
-msgid "New layer"
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:284
-#, fuzzy
-#| msgid "Delete"
-msgctxt "(qtundo-format)"
-msgid "Create Layer"
-msgstr "Suprimir"
-
-#: ui/dockers/KarbonLayerDocker.cpp:308
-#, fuzzy
-#| msgid "Delete"
-msgctxt "(qtundo-format)"
-msgid "Delete Layer"
-msgstr "Suprimir"
-
-#: ui/dockers/KarbonLayerDocker.cpp:310
-msgid "Could not delete all layers. At least one layer is required."
-msgstr ""
-
-#: ui/dockers/KarbonLayerDocker.cpp:310
-msgid "Error deleting layers"
-msgstr ""
-
-#: ui/dockers/KarbonLayerModel.cpp:161
-msgid "Layer"
-msgstr "Jaç"
-
-#: ui/dockers/KarbonLayerModel.cpp:163
-msgctxt "A group of shapes"
-msgid "Group"
-msgstr "Grop"
-
-#: ui/dockers/KarbonLayerModel.cpp:165
-msgid "Shape"
-msgstr "Forma"
-
-#: ui/dockers/KarbonLayerModel.cpp:260
-msgctxt "Visibility state of the shape"
-msgid "Visible"
-msgstr "Visible"
-
-#: ui/dockers/KarbonLayerModel.cpp:261
-msgctxt "Lock state of the shape"
-msgid "Locked"
-msgstr "Varrolhat"
-
-#: ui/dockers/KarbonLayerModel.cpp:262
-msgctxt "The z-index of the shape"
-msgid "zIndex"
-msgstr ""
-
-#: ui/dockers/KarbonLayerModel.cpp:263
-#, fuzzy
-#| msgid "Opacity"
-msgctxt "The opacity of the shape"
-msgid "Opacity"
-msgstr "Opacitat"
-
-#: ui/dockers/KarbonLayerModel.cpp:264
-msgctxt "Clipped state of the shape"
-msgid "Clipped"
-msgstr ""
-
-#: ui/dockers/KarbonLayerModel.cpp:264
-#, fuzzy
-#| msgid "Style:"
-msgid "yes"
-msgstr "Estils"
-
-#: ui/dockers/KarbonLayerModel.cpp:264
-#, fuzzy
-#| msgid "Info"
-msgid "no"
-msgstr "Info"
-
-#: ui/dockers/KarbonLayerModel.cpp:465
-msgctxt "(qtundo-format)"
-msgid "Reparent shapes"
-msgstr ""
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:33
-msgid "Original"
-msgstr "Original"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:34
-#, fuzzy
-#| msgid "&File"
-msgid "Tiled"
-msgstr "Mosaïc"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:35
-msgid "Stretched"
-msgstr ""
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:37
-msgid "Top Left"
-msgstr "Amont a esquèrra"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:38
-msgid "Top"
-msgstr "Superior"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:39
-msgid "Top Right"
-msgstr "Amont a drecha"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:40
-msgid "Left"
-msgstr "Esquèrra"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:41
-msgid "Center"
-msgstr "Centre"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:42
-#, fuzzy
-#| msgid "Height:"
-msgid "Right"
-msgstr "Drecha"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:43
-msgid "Bottom Left"
-msgstr "Aval a esquèrra"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:44
-#, fuzzy
-#| msgid "Align Bottom"
-msgid "Bottom"
-msgstr "Inferior"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:45
-msgid "Bottom Right"
-msgstr "Aval a drecha"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:71
-msgid "Show status bar:"
-msgstr ""
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:76
-msgid "Number of recent files:"
-msgstr ""
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:82
-msgid "Palette font size:"
-msgstr ""
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:88
-msgid "Canvas color:"
-msgstr ""
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:167
-msgid "Target:"
-msgstr "Cibla :"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:169
-msgid "Stroke"
-msgstr ""
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:170
-msgid "Fill"
-msgstr "Emplenar"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:174
-msgid "Type:"
-msgstr "Mena :"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:176
-msgctxt "Linear gradient type"
-msgid "Linear"
-msgstr ""
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:177
-msgctxt "Radial gradient type"
-msgid "Radial"
-msgstr ""
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:178
-msgctxt "Conical gradient type"
-msgid "Conical"
-msgstr ""
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:181
-#, fuzzy
-#| msgid "Repeat"
-msgid "Repeat:"
-msgstr "Repetar"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:183
-msgctxt "No gradient spread"
-msgid "None"
-msgstr "Pas cap"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:184
-#, fuzzy
-#| msgid "Reference"
-msgid "Reflect"
-msgstr "Preferéncias"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:185
-msgid "Repeat"
-msgstr "Repetar"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:188
-#, fuzzy
-#| msgid "Opacity:"
-msgid "Overall opacity:"
-msgstr "Opacitat :"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:193
-msgid "Color stop:"
-msgstr ""
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:200
-msgid "Stop color."
-msgstr ""
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:203
-msgid "&Add to Predefined Gradients"
-msgstr ""
-
-#: ui/widgets/KarbonPaletteBarWidget.cpp:58
-msgid "Select palette"
-msgstr ""
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:56
-msgid "Press to apply fill to selection"
-msgstr ""
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:103
-#, fuzzy
-#| msgid "None"
-msgctxt "The style has no fill"
-msgid "None"
-msgstr "Pas cap"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:121
-msgid "Press to apply stroke to selection"
-msgstr ""
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:166
-#, fuzzy
-#| msgid "Custom"
-msgctxt "The style has a custom stroking"
-msgid "Custom"
-msgstr "Personalizat"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:172
-#, fuzzy
-#| msgid "None"
-msgctxt "The style has no stroking"
-msgid "None"
-msgstr "Pas cap"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:192
-msgid "Stroke:"
-msgstr ""
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:197
-#, fuzzy
-#| msgid "Fill"
-msgid "Fill:"
-msgstr "Emplenar"
 
 #: ui/KarbonPart.cpp:208
 msgid "Invalid OASIS document. No office:body tag found."
@@ -1088,74 +816,346 @@ msgstr ""
 msgid "Zoom"
 msgstr "Inferior"
 
-#: ui/KarbonAboutData.h:26
-msgid "A Vector Graphics Drawing Application."
+#: ui/dialogs/KarbonConfigureDialog.cpp:38
+msgid "Configure"
+msgstr "Configurar"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:43
+#: ui/dialogs/KarbonConfigureDialog.cpp:44
+#: ui/widgets/KarbonConfigInterfacePage.cpp:56
+msgid "Interface"
+msgstr "Interfaç"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:48
+#: ui/dialogs/KarbonConfigureDialog.cpp:49
+msgid "Misc"
 msgstr ""
 
-#: ui/KarbonAboutData.h:35
-msgid "Karbon"
+#: ui/dialogs/KarbonConfigureDialog.cpp:53
+#: ui/dialogs/KarbonConfigureDialog.cpp:54
+msgid "Grid"
+msgstr "Grasilha"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:60
+msgctxt "@title:tab Document settings page"
+msgid "Document"
+msgstr "Document"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:61
+msgid "Document Settings"
 msgstr ""
 
-#: ui/KarbonAboutData.h:39
-msgid "(c) 2001-2011, The Karbon Developers"
+#: ui/dockers/KarbonLayerDocker.cpp:84
+msgid "Layer view"
 msgstr ""
 
-#: ui/KarbonAboutData.h:40
-msgid "You are invited to participate in any way."
+#: ui/dockers/KarbonLayerDocker.cpp:95
+msgid "Add a new layer"
 msgstr ""
 
-#: ui/KarbonAboutData.h:44
-msgid "Rob Buis"
+#: ui/dockers/KarbonLayerDocker.cpp:101
+msgid "Delete selected objects"
 msgstr ""
 
-#: ui/KarbonAboutData.h:48
-msgid "Tomislav Lukman"
+#: ui/dockers/KarbonLayerDocker.cpp:107
+msgid "Raise selected objects"
 msgstr ""
 
-#: ui/KarbonAboutData.h:52
-msgid "Benoît Vautrin"
+#: ui/dockers/KarbonLayerDocker.cpp:113
+msgid "Lower selected objects"
 msgstr ""
 
-#: ui/KarbonAboutData.h:56
-msgid "Jan Hambrecht"
+#: ui/dockers/KarbonLayerDocker.cpp:122
+msgid "Minimal View"
 msgstr ""
 
-#: ui/KarbonAboutData.h:57 ui/KarbonAboutData.h:61 ui/KarbonAboutData.h:65
-#: ui/KarbonAboutData.h:69 ui/KarbonAboutData.h:73
-msgid "Bug fixes and improvements"
+#: ui/dockers/KarbonLayerDocker.cpp:124
+msgid "Detailed View"
 msgstr ""
 
-#: ui/KarbonAboutData.h:60
-msgid "Peter Simonsson"
+#: ui/dockers/KarbonLayerDocker.cpp:126
+msgid "Thumbnail View"
 msgstr ""
 
-#: ui/KarbonAboutData.h:64
-msgid "Tim Beaulen"
+#: ui/dockers/KarbonLayerDocker.cpp:136
+#, fuzzy
+#| msgid "View"
+msgid "View mode"
+msgstr "Visualizacion"
+
+#: ui/dockers/KarbonLayerDocker.cpp:276
+msgid "New Layer"
 msgstr ""
 
-#: ui/KarbonAboutData.h:68
-msgid "Boudewijn Rempt"
+#: ui/dockers/KarbonLayerDocker.cpp:277
+msgid "Enter the name of the new layer:"
 msgstr ""
 
-#: ui/KarbonAboutData.h:72
-msgid "Pierre Stirnweiss"
+#: ui/dockers/KarbonLayerDocker.cpp:278
+msgid "New layer"
 msgstr ""
 
-#: ui/KarbonAboutData.h:76
-msgid "Inge Wallin"
+#: ui/dockers/KarbonLayerDocker.cpp:284
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Create Layer"
+msgstr "Suprimir"
+
+#: ui/dockers/KarbonLayerDocker.cpp:308
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
+msgstr "Suprimir"
+
+#: ui/dockers/KarbonLayerDocker.cpp:310
+msgid "Could not delete all layers. At least one layer is required."
 msgstr ""
 
-#: ui/KarbonAboutData.h:77
-msgid "Bug fixes"
+#: ui/dockers/KarbonLayerDocker.cpp:310
+msgid "Error deleting layers"
 msgstr ""
 
-#: ui/KarbonAboutData.h:80
-msgid "Alan Horkan"
+#: ui/dockers/KarbonLayerModel.cpp:161
+msgid "Layer"
+msgstr "Jaç"
+
+#: ui/dockers/KarbonLayerModel.cpp:163
+msgctxt "A group of shapes"
+msgid "Group"
+msgstr "Grop"
+
+#: ui/dockers/KarbonLayerModel.cpp:165
+msgid "Shape"
+msgstr "Forma"
+
+#: ui/dockers/KarbonLayerModel.cpp:260
+msgctxt "Visibility state of the shape"
+msgid "Visible"
+msgstr "Visible"
+
+#: ui/dockers/KarbonLayerModel.cpp:261
+msgctxt "Lock state of the shape"
+msgid "Locked"
+msgstr "Varrolhat"
+
+#: ui/dockers/KarbonLayerModel.cpp:262
+msgctxt "The z-index of the shape"
+msgid "zIndex"
 msgstr ""
 
-#: ui/KarbonAboutData.h:81
-msgid "Helpful patches and advice"
+#: ui/dockers/KarbonLayerModel.cpp:263
+#, fuzzy
+#| msgid "Opacity"
+msgctxt "The opacity of the shape"
+msgid "Opacity"
+msgstr "Opacitat"
+
+#: ui/dockers/KarbonLayerModel.cpp:264
+msgctxt "Clipped state of the shape"
+msgid "Clipped"
 msgstr ""
+
+#: ui/dockers/KarbonLayerModel.cpp:264
+#, fuzzy
+#| msgid "Style:"
+msgid "yes"
+msgstr "Estils"
+
+#: ui/dockers/KarbonLayerModel.cpp:264
+#, fuzzy
+#| msgid "Info"
+msgid "no"
+msgstr "Info"
+
+#: ui/dockers/KarbonLayerModel.cpp:465
+msgctxt "(qtundo-format)"
+msgid "Reparent shapes"
+msgstr ""
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:71
+msgid "Show status bar:"
+msgstr ""
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:76
+msgid "Number of recent files:"
+msgstr ""
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:82
+msgid "Palette font size:"
+msgstr ""
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:88
+msgid "Canvas color:"
+msgstr ""
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:167
+msgid "Target:"
+msgstr "Cibla :"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:169
+msgid "Stroke"
+msgstr ""
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:170
+msgid "Fill"
+msgstr "Emplenar"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:174
+msgid "Type:"
+msgstr "Mena :"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:176
+msgctxt "Linear gradient type"
+msgid "Linear"
+msgstr ""
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:177
+msgctxt "Radial gradient type"
+msgid "Radial"
+msgstr ""
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:178
+msgctxt "Conical gradient type"
+msgid "Conical"
+msgstr ""
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:181
+#, fuzzy
+#| msgid "Repeat"
+msgid "Repeat:"
+msgstr "Repetar"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:183
+msgctxt "No gradient spread"
+msgid "None"
+msgstr "Pas cap"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:184
+#, fuzzy
+#| msgid "Reference"
+msgid "Reflect"
+msgstr "Preferéncias"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:185
+msgid "Repeat"
+msgstr "Repetar"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:188
+#, fuzzy
+#| msgid "Opacity:"
+msgid "Overall opacity:"
+msgstr "Opacitat :"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:193
+msgid "Color stop:"
+msgstr ""
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:200
+msgid "Stop color."
+msgstr ""
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:203
+msgid "&Add to Predefined Gradients"
+msgstr ""
+
+#: ui/widgets/KarbonPaletteBarWidget.cpp:58
+msgid "Select palette"
+msgstr ""
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:33
+msgid "Original"
+msgstr "Original"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:34
+#, fuzzy
+#| msgid "&File"
+msgid "Tiled"
+msgstr "Mosaïc"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:35
+msgid "Stretched"
+msgstr ""
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:37
+msgid "Top Left"
+msgstr "Amont a esquèrra"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:38
+msgid "Top"
+msgstr "Superior"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:39
+msgid "Top Right"
+msgstr "Amont a drecha"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:40
+msgid "Left"
+msgstr "Esquèrra"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:41
+msgid "Center"
+msgstr "Centre"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:42
+#, fuzzy
+#| msgid "Height:"
+msgid "Right"
+msgstr "Drecha"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:43
+msgid "Bottom Left"
+msgstr "Aval a esquèrra"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:44
+#, fuzzy
+#| msgid "Align Bottom"
+msgid "Bottom"
+msgstr "Inferior"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:45
+msgid "Bottom Right"
+msgstr "Aval a drecha"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:56
+msgid "Press to apply fill to selection"
+msgstr ""
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:103
+#, fuzzy
+#| msgid "None"
+msgctxt "The style has no fill"
+msgid "None"
+msgstr "Pas cap"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:121
+msgid "Press to apply stroke to selection"
+msgstr ""
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:166
+#, fuzzy
+#| msgid "Custom"
+msgctxt "The style has a custom stroking"
+msgid "Custom"
+msgstr "Personalizat"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:172
+#, fuzzy
+#| msgid "None"
+msgctxt "The style has no stroking"
+msgid "None"
+msgstr "Pas cap"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:192
+msgid "Stroke:"
+msgstr ""
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:197
+#, fuzzy
+#| msgid "Fill"
+msgid "Fill:"
+msgstr "Emplenar"
 
 #~ msgctxt "No stroke or fill"
 #~ msgid "None"
