@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-23 04:49+0100\n"
+"POT-Creation-Date: 2012-03-06 06:36+0100\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -8003,12 +8003,6 @@ msgstr ""
 msgid "Conflict With Registered Global Shortcut"
 msgstr "Conflicte amb los acorchis clavièr globals"
 
-#: kdeui/sonnet/configdialog.cpp:51
-#, fuzzy
-#| msgid "Send Confirmation"
-msgid "Spell Checking Configuration"
-msgstr "Mandar una confirmacion"
-
 #: kdeui/sonnet/dialog.cpp:103 kdeui/sonnet/dialog.cpp:224
 #: kdeui/sonnet/dialog.cpp:445
 msgctxt "@title:window"
@@ -8038,6 +8032,12 @@ msgstr ""
 #: kdeui/sonnet/dialog.cpp:441 kdeui/sonnet/dialog.cpp:445
 msgid "Spell check complete."
 msgstr ""
+
+#: kdeui/sonnet/configdialog.cpp:51
+#, fuzzy
+#| msgid "Send Confirmation"
+msgid "Spell Checking Configuration"
+msgstr "Mandar una confirmacion"
 
 #: kdeui/util/kcompletion.cpp:693
 msgid ""
@@ -9517,56 +9517,110 @@ msgstr ""
 msgid "Separator, Space"
 msgstr ""
 
-#. i18n: Placeholder text in text edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter message").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#. i18n: Placeholder text in line edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter search pattern").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#: kdeui/widgets/ktextedit.cpp:79 kdeui/widgets/klineedit.cpp:87
+#: kdeui/widgets/ktoolbar.cpp:292
 #, fuzzy
-#| msgid "1"
-msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
-msgid "1"
-msgstr "1"
+#| msgid "Show help"
+msgctxt "@title:menu"
+msgid "Show Text"
+msgstr "Afichar l'ajuda"
 
-#: kdeui/widgets/ktextedit.cpp:527
+#: kdeui/widgets/ktoolbar.cpp:295
 #, fuzzy
-#| msgid "Text:"
-msgid "Speak Text"
-msgstr "Tèxt :"
+#| msgid "Toolbar Menu"
+msgctxt "@title:menu"
+msgid "Toolbar Settings"
+msgstr "Menut de la barra d'espleches"
 
-#: kdeui/widgets/ktextedit.cpp:542
-msgid "Starting Jovie Text-to-Speech Service Failed"
+#: kdeui/widgets/ktoolbar.cpp:297
+msgid "Orientation"
+msgstr "Orientacion"
+
+#: kdeui/widgets/ktoolbar.cpp:299
+msgctxt "toolbar position string"
+msgid "Top"
+msgstr "Superior"
+
+#: kdeui/widgets/ktoolbar.cpp:301
+msgctxt "toolbar position string"
+msgid "Left"
+msgstr "Esquèrra"
+
+#: kdeui/widgets/ktoolbar.cpp:302
+msgctxt "toolbar position string"
+msgid "Right"
+msgstr "Drecha"
+
+#: kdeui/widgets/ktoolbar.cpp:303
+msgctxt "toolbar position string"
+msgid "Bottom"
+msgstr "Inferior"
+
+#: kdeui/widgets/ktoolbar.cpp:311
+msgid "Text Position"
+msgstr "Posicion del tèxt"
+
+#: kdeui/widgets/ktoolbar.cpp:313
+msgid "Icons Only"
+msgstr "Sonque icònas"
+
+#: kdeui/widgets/ktoolbar.cpp:314
+msgid "Text Only"
+msgstr "Sonque tèxt"
+
+#: kdeui/widgets/ktoolbar.cpp:315
+msgid "Text Alongside Icons"
+msgstr "Tèxt contra las icònas"
+
+#: kdeui/widgets/ktoolbar.cpp:316
+msgid "Text Under Icons"
+msgstr "Tèxt jos las icònas"
+
+#: kdeui/widgets/ktoolbar.cpp:324
+msgid "Icon Size"
+msgstr "Talhas de las icònas"
+
+#: kdeui/widgets/ktoolbar.cpp:326
+#, fuzzy
+#| msgid "Default"
+msgctxt "@item:inmenu Icon size"
+msgid "Default"
+msgstr "Defaut"
+
+#: kdeui/widgets/ktoolbar.cpp:343 kdeui/widgets/ktoolbar.cpp:363
+#, kde-format
+msgid "Small (%1x%2)"
+msgstr "Pichona (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:345 kdeui/widgets/ktoolbar.cpp:365
+#, kde-format
+msgid "Medium (%1x%2)"
+msgstr "Mejana (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:347 kdeui/widgets/ktoolbar.cpp:367
+#, kde-format
+msgid "Large (%1x%2)"
+msgstr "Granda (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:349 kdeui/widgets/ktoolbar.cpp:369
+#, kde-format
+msgid "Huge (%1x%2)"
+msgstr "Enòrme (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:389
+msgid "Lock Toolbar Positions"
 msgstr ""
 
-#: kdeui/widgets/ktextedit.cpp:631
-#, fuzzy, kde-format
-#| msgid "Suggestion List"
-msgid "No suggestions for %1"
-msgstr "Tièra de suggestions"
+#: kdeui/widgets/ktoolbar.cpp:1321
+#, kde-format
+msgctxt "@action:intoolbar Text label of toolbar button"
+msgid "%1"
+msgstr "%1"
 
-#: kdeui/widgets/ktextedit.cpp:642
-#, fuzzy
-#| msgid "&Ignore"
-msgid "Ignore"
-msgstr "&Ignorar"
-
-#: kdeui/widgets/ktextedit.cpp:643
-#, fuzzy
-#| msgid "<< Add to Dictionary"
-msgid "Add to Dictionary"
-msgstr "<< Apondre al diccionari"
-
-#: kdeui/widgets/ktextedit.cpp:788
-#, fuzzy
-#| msgid "Nothing to Delete"
-msgid "Nothing to spell check."
-msgstr "Res a suprimir"
+#: kdeui/widgets/ktoolbar.cpp:1322
+#, kde-format
+msgctxt "@info:tooltip Tooltip of toolbar button"
+msgid "%1"
+msgstr "%1"
 
 #: kdeui/widgets/kdatepicker.cpp:174
 #, kde-format
@@ -9762,6 +9816,23 @@ msgstr ""
 msgid "You are not allowed to save the configuration"
 msgstr "Volètz tornar cargar la configuracion de KDE ?"
 
+#. i18n: Placeholder text in line edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter search pattern").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#. i18n: Placeholder text in text edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter message").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#: kdeui/widgets/klineedit.cpp:87 kdeui/widgets/ktextedit.cpp:79
+#, fuzzy
+#| msgid "1"
+msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
+msgid "1"
+msgstr "1"
+
 #: kdeui/widgets/klineedit.cpp:296
 msgctxt "@action:button Clear current text in the line edit"
 msgid "Clear text"
@@ -9830,6 +9901,40 @@ msgstr "&Rotacion orària"
 #: kdeui/widgets/kpixmapregionselectorwidget.cpp:205
 msgid "Rotate &Counterclockwise"
 msgstr "Rotacion &antiorària"
+
+#: kdeui/widgets/ktextedit.cpp:527
+#, fuzzy
+#| msgid "Text:"
+msgid "Speak Text"
+msgstr "Tèxt :"
+
+#: kdeui/widgets/ktextedit.cpp:542
+msgid "Starting Jovie Text-to-Speech Service Failed"
+msgstr ""
+
+#: kdeui/widgets/ktextedit.cpp:631
+#, fuzzy, kde-format
+#| msgid "Suggestion List"
+msgid "No suggestions for %1"
+msgstr "Tièra de suggestions"
+
+#: kdeui/widgets/ktextedit.cpp:642
+#, fuzzy
+#| msgid "&Ignore"
+msgid "Ignore"
+msgstr "&Ignorar"
+
+#: kdeui/widgets/ktextedit.cpp:643
+#, fuzzy
+#| msgid "<< Add to Dictionary"
+msgid "Add to Dictionary"
+msgstr "<< Apondre al diccionari"
+
+#: kdeui/widgets/ktextedit.cpp:788
+#, fuzzy
+#| msgid "Nothing to Delete"
+msgid "Nothing to spell check."
+msgstr "Res a suprimir"
 
 #: kdeui/widgets/krichtextwidget.cpp:232
 #, fuzzy
@@ -10059,111 +10164,6 @@ msgstr "Descripcion"
 #: kdeui/widgets/ksqueezedtextlabel.cpp:165
 msgid "&Copy Full Text"
 msgstr ""
-
-#: kdeui/widgets/ktoolbar.cpp:292
-#, fuzzy
-#| msgid "Show help"
-msgctxt "@title:menu"
-msgid "Show Text"
-msgstr "Afichar l'ajuda"
-
-#: kdeui/widgets/ktoolbar.cpp:295
-#, fuzzy
-#| msgid "Toolbar Menu"
-msgctxt "@title:menu"
-msgid "Toolbar Settings"
-msgstr "Menut de la barra d'espleches"
-
-#: kdeui/widgets/ktoolbar.cpp:297
-msgid "Orientation"
-msgstr "Orientacion"
-
-#: kdeui/widgets/ktoolbar.cpp:299
-msgctxt "toolbar position string"
-msgid "Top"
-msgstr "Superior"
-
-#: kdeui/widgets/ktoolbar.cpp:301
-msgctxt "toolbar position string"
-msgid "Left"
-msgstr "Esquèrra"
-
-#: kdeui/widgets/ktoolbar.cpp:302
-msgctxt "toolbar position string"
-msgid "Right"
-msgstr "Drecha"
-
-#: kdeui/widgets/ktoolbar.cpp:303
-msgctxt "toolbar position string"
-msgid "Bottom"
-msgstr "Inferior"
-
-#: kdeui/widgets/ktoolbar.cpp:311
-msgid "Text Position"
-msgstr "Posicion del tèxt"
-
-#: kdeui/widgets/ktoolbar.cpp:313
-msgid "Icons Only"
-msgstr "Sonque icònas"
-
-#: kdeui/widgets/ktoolbar.cpp:314
-msgid "Text Only"
-msgstr "Sonque tèxt"
-
-#: kdeui/widgets/ktoolbar.cpp:315
-msgid "Text Alongside Icons"
-msgstr "Tèxt contra las icònas"
-
-#: kdeui/widgets/ktoolbar.cpp:316
-msgid "Text Under Icons"
-msgstr "Tèxt jos las icònas"
-
-#: kdeui/widgets/ktoolbar.cpp:324
-msgid "Icon Size"
-msgstr "Talhas de las icònas"
-
-#: kdeui/widgets/ktoolbar.cpp:326
-#, fuzzy
-#| msgid "Default"
-msgctxt "@item:inmenu Icon size"
-msgid "Default"
-msgstr "Defaut"
-
-#: kdeui/widgets/ktoolbar.cpp:343 kdeui/widgets/ktoolbar.cpp:363
-#, kde-format
-msgid "Small (%1x%2)"
-msgstr "Pichona (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:345 kdeui/widgets/ktoolbar.cpp:365
-#, kde-format
-msgid "Medium (%1x%2)"
-msgstr "Mejana (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:347 kdeui/widgets/ktoolbar.cpp:367
-#, kde-format
-msgid "Large (%1x%2)"
-msgstr "Granda (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:349 kdeui/widgets/ktoolbar.cpp:369
-#, kde-format
-msgid "Huge (%1x%2)"
-msgstr "Enòrme (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:389
-msgid "Lock Toolbar Positions"
-msgstr ""
-
-#: kdeui/widgets/ktoolbar.cpp:1319
-#, kde-format
-msgctxt "@action:intoolbar Text label of toolbar button"
-msgid "%1"
-msgstr "%1"
-
-#: kdeui/widgets/ktoolbar.cpp:1320
-#, kde-format
-msgctxt "@info:tooltip Tooltip of toolbar button"
-msgid "%1"
-msgstr "%1"
 
 #: kdeui/widgets/ktimezonewidget.cpp:66
 #, fuzzy
@@ -11776,9 +11776,16 @@ msgstr ""
 "Impossible de trobar 'kdemain' dins '%1'.\n"
 "%2"
 
+#: kinit/klauncher_main.cpp:62
+msgid ""
+"klauncher: This program is not supposed to be started manually.\n"
+"klauncher: It is started automatically by kdeinit4.\n"
+msgstr ""
+
 #: kinit/klauncher.cpp:564
-#, kde-format
-msgid "KDEInit could not launch '%1'."
+#, fuzzy, kde-format
+#| msgid "KDEInit could not launch '%1'."
+msgid "KDEInit could not launch '%1'"
 msgstr "KDEInit pòt pas aviar « %1 »."
 
 #: kinit/klauncher.cpp:745 kinit/klauncher.cpp:774 kinit/klauncher.cpp:789
@@ -11810,12 +11817,6 @@ msgstr "Protocòl «%1» desconegut.\n"
 #, kde-format
 msgid "Error loading '%1'.\n"
 msgstr "Problèma de cargament de «%1».\n"
-
-#: kinit/klauncher_main.cpp:62
-msgid ""
-"klauncher: This program is not supposed to be started manually.\n"
-"klauncher: It is started automatically by kdeinit4.\n"
-msgstr ""
 
 #: kjs/object.cpp:554
 msgid "Evaluation error"
