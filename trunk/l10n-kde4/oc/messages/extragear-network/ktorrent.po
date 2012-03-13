@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-09 03:48+0100\n"
+"POT-Creation-Date: 2012-03-13 04:31+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -662,20 +662,6 @@ msgstr ""
 msgid "DHT: %1 nodes, %2 tasks"
 msgstr ""
 
-#: ktorrent/tools/magnetview.cpp:42
-msgid "Start Magnet"
-msgstr ""
-
-#: ktorrent/tools/magnetview.cpp:43
-msgid "Stop Magnet"
-msgstr ""
-
-#: ktorrent/tools/magnetview.cpp:45
-#, fuzzy
-#| msgid "Remove"
-msgid "Remove Magnet"
-msgstr "Suprimir"
-
 #: ktorrent/tools/queuemanagermodel.cpp:190
 msgid "Order"
 msgstr "Òrdre"
@@ -849,13 +835,27 @@ msgstr ""
 msgid "Peers"
 msgstr ""
 
-#: ktorrent/tools/magnetmodel.cpp:211
+#: ktorrent/tools/magnetmodel.cpp:210
 msgid "Downloading"
 msgstr "Descarga"
 
-#: ktorrent/tools/magnetmodel.cpp:213
+#: ktorrent/tools/magnetmodel.cpp:212
 msgid "Stopped"
 msgstr "Arrestat"
+
+#: ktorrent/tools/magnetview.cpp:42
+msgid "Start Magnet"
+msgstr ""
+
+#: ktorrent/tools/magnetview.cpp:43
+msgid "Stop Magnet"
+msgstr ""
+
+#: ktorrent/tools/magnetview.cpp:45
+#, fuzzy
+#| msgid "Remove"
+msgid "Remove Magnet"
+msgstr "Suprimir"
 
 #: ktorrent/view/propertiesdlg.cpp:34
 #, fuzzy
@@ -1784,99 +1784,6 @@ msgstr ""
 msgid "Unlimited"
 msgstr ""
 
-#: ktorrent/core.cpp:178
-#, kde-format
-msgid ""
-"KTorrent is unable to accept connections because the TCP ports %1 is already "
-"in use by another program."
-msgstr ""
-
-#: ktorrent/core.cpp:192
-#, kde-format
-msgid ""
-"KTorrent is unable to accept connections because the UDP port %1 is already "
-"in use by another program."
-msgstr ""
-
-#: ktorrent/core.cpp:305
-#, kde-format
-msgid ""
-"Opening the torrent <b>%1</b>, would share one or more files with the "
-"following torrents. .Torrents are not allowed to write to the same files. "
-msgstr ""
-
-#: ktorrent/core.cpp:1016
-msgid "KTorrent is running one or more torrents"
-msgstr ""
-
-#: ktorrent/core.cpp:1103
-#, kde-format
-msgid "Cannot create torrent: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1206
-#, kde-format
-msgid ""
-"Several data files of the torrent \"%1\" are missing. \n"
-"Do you want to recreate them, or do you want to not download them?"
-msgstr ""
-
-#: ktorrent/core.cpp:1215 ktorrent/core.cpp:1226 ktorrent/core.cpp:1239
-msgid "Data files are missing"
-msgstr ""
-
-#: ktorrent/core.cpp:1225
-#, kde-format
-msgid "Cannot deselect missing files: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1238
-#, kde-format
-msgid "Cannot recreate missing files: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1249
-#, kde-format
-msgid ""
-"The file where the data is saved of the torrent \"%1\" is missing.\n"
-"Do you want to recreate it?"
-msgstr ""
-
-#: ktorrent/core.cpp:1256 ktorrent/core.cpp:1266
-msgid "Data file is missing"
-msgstr ""
-
-#: ktorrent/core.cpp:1265
-#, kde-format
-msgid "Cannot recreate data file: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1353
-#, kde-format
-msgid ""
-"KTorrent has found a torrent from the KDE3 version of KTorrent, do you want "
-"to import it?"
-msgid_plural ""
-"KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
-"want to import them?"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ktorrent/core.cpp:1375
-msgid "No torrents from the KDE3 version were found."
-msgstr ""
-
-#: ktorrent/core.cpp:1407 ktorrent/core.cpp:1426
-#, kde-format
-msgid "Invalid magnet bittorrent link: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1412 ktorrent/core.cpp:1431
-msgid ""
-"You are attempting to download a magnet link, and DHT is not enabled. For "
-"optimum results enable DHT."
-msgstr ""
-
 #. i18n: file: ktorrent/kttorrentactivityui.rc:7
 #. i18n: ectx: Menu (Torrents)
 #. i18n: file: ktorrent/kttorrentactivityui.rc:81
@@ -1958,6 +1865,99 @@ msgstr ""
 #| msgid "Tracker"
 msgid "Switch To View"
 msgstr "Tracker"
+
+#: ktorrent/core.cpp:179
+#, kde-format
+msgid ""
+"KTorrent is unable to accept connections because the TCP ports %1 is already "
+"in use by another program."
+msgstr ""
+
+#: ktorrent/core.cpp:193
+#, kde-format
+msgid ""
+"KTorrent is unable to accept connections because the UDP port %1 is already "
+"in use by another program."
+msgstr ""
+
+#: ktorrent/core.cpp:306
+#, kde-format
+msgid ""
+"Opening the torrent <b>%1</b>, would share one or more files with the "
+"following torrents. .Torrents are not allowed to write to the same files. "
+msgstr ""
+
+#: ktorrent/core.cpp:1023
+msgid "KTorrent is running one or more torrents"
+msgstr ""
+
+#: ktorrent/core.cpp:1110
+#, kde-format
+msgid "Cannot create torrent: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1213
+#, kde-format
+msgid ""
+"Several data files of the torrent \"%1\" are missing. \n"
+"Do you want to recreate them, or do you want to not download them?"
+msgstr ""
+
+#: ktorrent/core.cpp:1222 ktorrent/core.cpp:1233 ktorrent/core.cpp:1246
+msgid "Data files are missing"
+msgstr ""
+
+#: ktorrent/core.cpp:1232
+#, kde-format
+msgid "Cannot deselect missing files: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1245
+#, kde-format
+msgid "Cannot recreate missing files: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1256
+#, kde-format
+msgid ""
+"The file where the data is saved of the torrent \"%1\" is missing.\n"
+"Do you want to recreate it?"
+msgstr ""
+
+#: ktorrent/core.cpp:1263 ktorrent/core.cpp:1273
+msgid "Data file is missing"
+msgstr ""
+
+#: ktorrent/core.cpp:1272
+#, kde-format
+msgid "Cannot recreate data file: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1360
+#, kde-format
+msgid ""
+"KTorrent has found a torrent from the KDE3 version of KTorrent, do you want "
+"to import it?"
+msgid_plural ""
+"KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
+"want to import them?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ktorrent/core.cpp:1382
+msgid "No torrents from the KDE3 version were found."
+msgstr ""
+
+#: ktorrent/core.cpp:1414
+#, kde-format
+msgid "Invalid magnet bittorrent link: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1419
+msgid ""
+"You are attempting to download a magnet link, and DHT is not enabled. For "
+"optimum results enable DHT."
+msgstr ""
 
 #: ktupnptest/main.cpp:40
 msgid "KTUPnPTest"
@@ -3405,21 +3405,44 @@ msgstr ""
 msgid " Engine: "
 msgstr ""
 
+#: plugins/search/webview.cpp:174
+msgid "Home"
+msgstr ""
+
+#: plugins/search/webview.cpp:176
+msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
+msgid "Be free."
+msgstr ""
+
+#: plugins/search/webview.cpp:177
+msgid "Search the web for torrents."
+msgstr ""
+
+#: plugins/search/webview.cpp:205
+#, kde-format
+msgid "Save %1 to"
+msgstr ""
+
+#: plugins/search/webview.cpp:225
+#, kde-format
+msgid "Cannot open <b>%1</b>: %2"
+msgstr ""
+
 #: plugins/search/searchwidget.cpp:77
 msgid " Engine:"
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:203
+#: plugins/search/searchwidget.cpp:205
 #, fuzzy, kde-format
 #| msgid "Downloading"
 msgid "Downloading:<br/><b>%1</b>"
 msgstr "Descarga"
 
-#: plugins/search/searchwidget.cpp:243
+#: plugins/search/searchwidget.cpp:245
 msgid "Do you want to download or save the torrent?"
 msgstr ""
 
-#: plugins/search/searchwidget.cpp:244
+#: plugins/search/searchwidget.cpp:246
 msgid "Download Torrent"
 msgstr ""
 
@@ -3443,33 +3466,10 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, DlSpdGbw)
 #. i18n: file: plugins/syndication/feedwidget.ui:121
 #. i18n: ectx: property (text), widget (KPushButton, m_download)
-#: plugins/search/searchwidget.cpp:245 rc.cpp:2271 rc.cpp:2274 rc.cpp:2391
+#: plugins/search/searchwidget.cpp:247 rc.cpp:2271 rc.cpp:2274 rc.cpp:2391
 #: rc.cpp:2430 rc.cpp:2556
 msgid "Download"
 msgstr "Telecargar"
-
-#: plugins/search/webview.cpp:174
-msgid "Home"
-msgstr ""
-
-#: plugins/search/webview.cpp:176
-msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
-msgid "Be free."
-msgstr ""
-
-#: plugins/search/webview.cpp:177
-msgid "Search the web for torrents."
-msgstr ""
-
-#: plugins/search/webview.cpp:205
-#, kde-format
-msgid "Save %1 to"
-msgstr ""
-
-#: plugins/search/webview.cpp:225
-#, kde-format
-msgid "Cannot open <b>%1</b>: %2"
-msgstr ""
 
 #: plugins/shutdown/shutdowntorrentmodel.cpp:92
 #: plugins/shutdown/shutdowntorrentmodel.cpp:235
@@ -3836,7 +3836,7 @@ msgstr ""
 
 #: plugins/syndication/syndicationplugin.cpp:42
 #: plugins/syndication/syndicationplugin.cpp:47
-#: plugins/syndication/syndicationactivity.cpp:48
+#: plugins/syndication/syndicationactivity.cpp:51
 #, fuzzy
 #| msgid "Application"
 msgid "Syndication"
@@ -3908,46 +3908,46 @@ msgstr ""
 msgid "Success"
 msgstr ""
 
-#: plugins/syndication/syndicationactivity.cpp:54
+#: plugins/syndication/linkdownloader.cpp:199
+#, kde-format
+msgid "Could not find a valid link to a torrent on %1"
+msgstr ""
+
+#: plugins/syndication/syndicationactivity.cpp:57
 msgid "Manages RSS and Atom feeds"
 msgstr ""
 
-#: plugins/syndication/syndicationactivity.cpp:131
+#: plugins/syndication/syndicationactivity.cpp:134
 msgid "Enter the URL"
 msgstr ""
 
-#: plugins/syndication/syndicationactivity.cpp:131
+#: plugins/syndication/syndicationactivity.cpp:134
 msgid "Please enter the URL of the RSS or Atom feed."
 msgstr ""
 
-#: plugins/syndication/syndicationactivity.cpp:157
+#: plugins/syndication/syndicationactivity.cpp:160
 #, kde-format
 msgid "Failed to load feed %1: %2"
 msgstr ""
 
-#: plugins/syndication/syndicationactivity.cpp:173
+#: plugins/syndication/syndicationactivity.cpp:176
 #, kde-format
 msgid "Failed to create directory for feed %1: %2"
 msgstr ""
 
 #. i18n: file: plugins/syndication/managefiltersdlg.ui:127
 #. i18n: ectx: property (text), widget (QPushButton, m_new_filter)
-#: plugins/syndication/syndicationactivity.cpp:281 rc.cpp:2746
+#: plugins/syndication/syndicationactivity.cpp:296 rc.cpp:2746
 #, fuzzy
 #| msgid "Add Folder"
 msgid "New Filter"
 msgstr "Apondre un repertòri"
 
-#: plugins/syndication/syndicationactivity.cpp:283
+#: plugins/syndication/syndicationactivity.cpp:298
 #, fuzzy
 #| msgid "Add Folder"
 msgid "Add New Filter"
 msgstr "Apondre un repertòri"
-
-#: plugins/syndication/linkdownloader.cpp:185
-#, kde-format
-msgid "Could not find a valid link to a torrent on %1"
-msgstr ""
 
 #. i18n: file: plugins/upnp/upnpwidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, UPnPWidget)
