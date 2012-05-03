@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: scripts_kdesvn-build\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-01 09:00+0000\n"
+"POT-Creation-Date: 2012-05-03 04:07+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -367,9 +367,9 @@ msgstr ""
 #: index.docbook:257
 #, no-c-format
 msgid ""
-"Make sure to remove the qt-copy module from your <link linkend=\"configure-"
-"data\">configuration file</link>, as you will not need it, and having it "
-"would add extra time to your build."
+"Make sure to remove the qt module from your <link linkend=\"configure-data"
+"\">configuration file</link>, as you will not need it, and having it would "
+"add extra time to your build."
 msgstr ""
 
 #. Tag: para
@@ -604,15 +604,14 @@ msgstr ""
 msgid ""
 "<link linkend=\"conf-qtdir\">qtdir</link>, which controls the path to the "
 "installation of &Qt; to use. The default is to use a &Qt; compiled by "
-"&kdesrc-build;, using the special qt-copy module and the latest available "
-"source code. (<filename class=\"directory\">~/kdesrc/build/qt-copy</"
-"filename>)."
+"&kdesrc-build;, using the special qt module and the latest available source "
+"code. (<filename class=\"directory\">~/kdesrc/build/qt</filename>)."
 msgstr ""
 
 #. Tag: para
 #: index.docbook:410
 #, no-c-format
-msgid "This also controls where to install qt-copy."
+msgid "This also controls where to install qt."
 msgstr ""
 
 #. Tag: para
@@ -877,7 +876,7 @@ msgid ""
 "replaceable>\n"
 "end global\n"
 "\n"
-"module <replaceable>qt-copy</replaceable>\n"
+"module <replaceable>qt</replaceable>\n"
 "    # Options removed for brevity\n"
 "end module\n"
 "\n"
@@ -1313,9 +1312,9 @@ msgstr ""
 msgid ""
 "Open or create the <filename>.bash_profile</filename> file in the home "
 "directory with your favorite editor, and add to the end of the file: If you "
-"are building the qt-copy module (you are by default), add instead: "
+"are building the qt module (you are by default), add instead: "
 "<programlisting>\n"
-"QTDIR=(path to qtdir)   # Such as ~/kdesrc/build/qt-copy by default.\n"
+"QTDIR=(path to qtdir)   # Such as ~/kdesrc/build/qt by default.\n"
 "KDEDIR=(path to kdedir) # Such as ~/kde by default.\n"
 "KDEDIRS=$KDEDIR\n"
 "PATH=$KDEDIR/bin:$QTDIR/bin:$PATH\n"
@@ -1329,8 +1328,8 @@ msgid ""
 "fi\n"
 "\n"
 "export QTDIR KDEDIRS PATH MANPATH LD_LIBRARY_PATH\n"
-"</programlisting> or, if you are not building qt-copy (and are using your "
-"system &Qt; instead), add this instead:"
+"</programlisting> or, if you are not building qt (and are using your system "
+"&Qt; instead), add this instead:"
 msgstr ""
 
 #. Tag: programlisting
@@ -1580,8 +1579,7 @@ msgstr ""
 #, no-c-format
 msgid ""
 "For historical reasons, the &kdesrc-build; module used to build &Qt; should "
-"be called <literal>qt-copy</literal>. See also <xref linkend=\"using-qt-copy"
-"\"/>."
+"be called <literal>qt</literal>. See also <xref linkend=\"using-qt\"/>."
 msgstr ""
 
 #. Tag: para
@@ -1737,7 +1735,7 @@ msgstr ""
 #. Tag: programlisting
 #: index.docbook:1030
 #, no-c-format
-msgid "qtdir ~/kdesrc/build/qt-copy"
+msgid "qtdir ~/kdesrc/build/qt"
 msgstr ""
 
 #. Tag: para
@@ -2255,7 +2253,7 @@ msgstr ""
 #, no-c-format
 msgid ""
 "This option was removed in kdesrc-build 1.10. To get the same effect, see "
-"<xref linkend=\"using-qt-copy\"/> and the <link linkend=\"conf-repository"
+"<xref linkend=\"using-qt\"/> and the <link linkend=\"conf-repository"
 "\">repository</link> option."
 msgstr ""
 
@@ -2426,9 +2424,9 @@ msgstr ""
 msgid ""
 "This feature is provided as an optimization only. Like many other "
 "optimizations, there are trade-offs for the correctness of your "
-"installation. For instance, changes to the qt-copy or kdelibs modules may "
-"cause a rebuild of other modules to be necessary, even if the source code "
-"doesn't change at all."
+"installation. For instance, changes to the qt or kdelibs modules may cause a "
+"rebuild of other modules to be necessary, even if the source code doesn't "
+"change at all."
 msgstr ""
 
 #. Tag: entry
@@ -2470,7 +2468,7 @@ msgstr ""
 #. Tag: entry
 #: index.docbook:1428
 #, no-c-format
-msgid "Appends to global options (not applicable to qt-copy)"
+msgid "Appends to global options (not applicable to qt)"
 msgstr ""
 
 #. Tag: para
@@ -2488,8 +2486,8 @@ msgstr ""
 #: index.docbook:1435
 #, no-c-format
 msgid ""
-"This option does not apply to qt-copy (which does not use &cmake;). Use "
-"<link linkend=\"conf-configure-flags\">configure-flags</link> instead."
+"This option does not apply to qt (which does not use &cmake;). Use <link "
+"linkend=\"conf-configure-flags\">configure-flags</link> instead."
 msgstr ""
 
 #. Tag: para
@@ -2546,7 +2544,7 @@ msgid ""
 "Use this option to specify what flags to pass to ./configure when creating "
 "the build system for the module. When this is used as a global-option, it is "
 "applied to all modules that this script builds. <emphasis>This option only "
-"works for qt-copy.</emphasis>"
+"works for qt.</emphasis>"
 msgstr ""
 
 #. Tag: para
@@ -3144,8 +3142,8 @@ msgid ""
 "Set this option to set the environment variable <envar>QTDIR</envar> while "
 "building. You cannot override this setting in a module option. If you do not "
 "specify this option, it defaults to <filename class=\"directory\"><symbol>"
-"${source-dir}</symbol>/build/qt-copy</filename>, which uses the qt-copy "
-"module included in the &kde; source repository. You may use a tilde (~) to "
+"${source-dir}</symbol>/build/qt</filename>, which uses the qt module "
+"included in the &kde; source repository. You may use a tilde (~) to "
 "represent your home directory."
 msgstr ""
 
@@ -3211,8 +3209,8 @@ msgstr ""
 msgid ""
 "This option was introduced with version 1.10, and is used to specify the "
 "&git; repository to download the source code for the module. &Qt; (and "
-"therefore qt-copy) would need this option, as well as various &kde; modules "
-"that are in the process of conversion to use &git;."
+"therefore qt) would need this option, as well as various &kde; modules that "
+"are in the process of conversion to use &git;."
 msgstr ""
 
 #. Tag: entry
@@ -4412,7 +4410,7 @@ msgstr ""
 #. Tag: title
 #: index.docbook:2529
 #, no-c-format
-msgid "qt-copy support"
+msgid "qt support"
 msgstr ""
 
 #. Tag: para
@@ -4420,8 +4418,7 @@ msgstr ""
 #, no-c-format
 msgid ""
 "&kdesrc-build; supports building the &Qt; toolkit used by &kde; software as "
-"a convenience to users. This support is handled by a special module named qt-"
-"copy."
+"a convenience to users. This support is handled by a special module named qt."
 msgstr ""
 
 #. Tag: para
@@ -4445,10 +4442,10 @@ msgstr ""
 #: index.docbook:2542
 #, no-c-format
 msgid ""
-"You should then ensure that the qt-copy module is added to your <filename>."
-"kdesrc-buildrc</filename>, before any other modules in the file. If you are "
-"using the sample configuration file, you can simply uncomment the existing "
-"qt-copy module entry."
+"You should then ensure that the qt module is added to your <filename>.kdesrc-"
+"buildrc</filename>, before any other modules in the file. If you are using "
+"the sample configuration file, you can simply uncomment the existing qt "
+"module entry."
 msgstr ""
 
 #. Tag: para
@@ -4474,7 +4471,7 @@ msgstr ""
 #: index.docbook:2557
 #, no-c-format
 msgid ""
-"You can set the <option>repository</option> option for the qt-copy module to "
+"You can set the <option>repository</option> option for the qt module to "
 "<userinput>kde:qt</userinput> to use this option."
 msgstr ""
 
@@ -5658,7 +5655,7 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Also, if you already have a &Qt; installed by your distribution (and the "
-"odds are good that you do), you probably do not need to install the qt-copy "
+"odds are good that you do), you probably do not need to install the qt "
 "module. That will shave about 200 megabytes off of the on-disk source size."
 msgstr ""
 
