@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-18 04:05+0200\n"
+"POT-Creation-Date: 2012-06-09 04:01+0200\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -58,22 +58,15 @@ msgstr ""
 msgid "Torrent has been removed from KTorrent."
 msgstr ""
 
-#: kio-magnet/kio_magnet.cpp:294
-#, kde-format
-msgid ""
-"File exists in KTorrent, but cannot open it on disk at path\"%1\". Have you "
-"removed thefile manually?"
-msgstr ""
-
-#: kio-magnet/kio_magnet.cpp:375
-msgid "You cannot write to magnet resources."
-msgstr ""
-
-#: kio-magnet/kio_magnet.cpp:395
+#: kio-magnet/kio_magnet.cpp:294 kio-magnet/kio_magnet.cpp:395
 #, kde-format
 msgid ""
 "File exists in KTorrent, but cannot open it on disk at path\"%1\". Have you "
 "removed the file manually?"
+msgstr ""
+
+#: kio-magnet/kio_magnet.cpp:375
+msgid "You cannot write to magnet resources."
 msgstr ""
 
 #: kio-magnet/kio_magnet.cpp:403
@@ -1526,99 +1519,6 @@ msgstr "Dobrir un emplaçament"
 msgid "Filter torrents based on filter string"
 msgstr ""
 
-#: ktorrent/core.cpp:180
-#, kde-format
-msgid ""
-"KTorrent is unable to accept connections because the TCP ports %1 is already "
-"in use by another program."
-msgstr ""
-
-#: ktorrent/core.cpp:194
-#, kde-format
-msgid ""
-"KTorrent is unable to accept connections because the UDP port %1 is already "
-"in use by another program."
-msgstr ""
-
-#: ktorrent/core.cpp:307
-#, kde-format
-msgid ""
-"Opening the torrent <b>%1</b>, would share one or more files with the "
-"following torrents. .Torrents are not allowed to write to the same files. "
-msgstr ""
-
-#: ktorrent/core.cpp:1026
-msgid "KTorrent is running one or more torrents"
-msgstr ""
-
-#: ktorrent/core.cpp:1113
-#, kde-format
-msgid "Cannot create torrent: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1216
-#, kde-format
-msgid ""
-"Several data files of the torrent \"%1\" are missing. \n"
-"Do you want to recreate them, or do you want to not download them?"
-msgstr ""
-
-#: ktorrent/core.cpp:1225 ktorrent/core.cpp:1236 ktorrent/core.cpp:1249
-msgid "Data files are missing"
-msgstr ""
-
-#: ktorrent/core.cpp:1235
-#, kde-format
-msgid "Cannot deselect missing files: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1248
-#, kde-format
-msgid "Cannot recreate missing files: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1259
-#, kde-format
-msgid ""
-"The file where the data is saved of the torrent \"%1\" is missing.\n"
-"Do you want to recreate it?"
-msgstr ""
-
-#: ktorrent/core.cpp:1266 ktorrent/core.cpp:1276
-msgid "Data file is missing"
-msgstr ""
-
-#: ktorrent/core.cpp:1275
-#, kde-format
-msgid "Cannot recreate data file: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1363
-#, kde-format
-msgid ""
-"KTorrent has found a torrent from the KDE3 version of KTorrent, do you want "
-"to import it?"
-msgid_plural ""
-"KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
-"want to import them?"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ktorrent/core.cpp:1385
-msgid "No torrents from the KDE3 version were found."
-msgstr ""
-
-#: ktorrent/core.cpp:1424
-#, kde-format
-msgid "Invalid magnet bittorrent link: %1"
-msgstr ""
-
-#: ktorrent/core.cpp:1429
-msgid ""
-"You are attempting to download a magnet link, and DHT is not enabled. For "
-"optimum results enable DHT."
-msgstr ""
-
 #. i18n: file: ktorrent/pref/advancedpref.ui:158
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_eta)
 #: ktorrent/main.cpp:95 plugins/search/webview.cpp:175 rc.cpp:559
@@ -1983,6 +1883,119 @@ msgstr ""
 
 #: ktorrent/main.cpp:154
 msgid "Silently open torrent given on URL"
+msgstr ""
+
+#: ktorrent/core.cpp:180
+#, kde-format
+msgid ""
+"KTorrent is unable to accept connections because the TCP ports %1 is already "
+"in use by another program."
+msgstr ""
+
+#: ktorrent/core.cpp:194
+#, kde-format
+msgid ""
+"KTorrent is unable to accept connections because the UDP port %1 is already "
+"in use by another program."
+msgstr ""
+
+#: ktorrent/core.cpp:307
+#, kde-format
+msgid ""
+"Opening the torrent <b>%1</b>, would share one or more files with the "
+"following torrents. .Torrents are not allowed to write to the same files. "
+msgstr ""
+
+#: ktorrent/core.cpp:1026
+msgid "KTorrent is running one or more torrents"
+msgstr ""
+
+#: ktorrent/core.cpp:1113
+#, kde-format
+msgid "Cannot create torrent: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1212
+msgid ""
+"One or more storage volumes are not mounted. In order to start this torrent, "
+"they need to be mounted."
+msgstr ""
+
+#: ktorrent/core.cpp:1213
+msgid "Retry"
+msgstr ""
+
+#: ktorrent/core.cpp:1222
+#, kde-format
+msgid "Storage volume %1 is not mounted"
+msgstr ""
+
+#: ktorrent/core.cpp:1224
+#, kde-format
+msgid "Storage volumes %1 are not mounted"
+msgstr ""
+
+#: ktorrent/core.cpp:1236
+#, kde-format
+msgid ""
+"Several data files of the torrent \"%1\" are missing. \n"
+"Do you want to recreate them, or do you want to not download them?"
+msgstr ""
+
+#: ktorrent/core.cpp:1245 ktorrent/core.cpp:1256 ktorrent/core.cpp:1269
+msgid "Data files are missing"
+msgstr ""
+
+#: ktorrent/core.cpp:1255
+#, kde-format
+msgid "Cannot deselect missing files: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1268
+#, kde-format
+msgid "Cannot recreate missing files: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1279
+#, kde-format
+msgid ""
+"The file where the data is saved of the torrent \"%1\" is missing.\n"
+"Do you want to recreate it?"
+msgstr ""
+
+#: ktorrent/core.cpp:1286 ktorrent/core.cpp:1296
+msgid "Data file is missing"
+msgstr ""
+
+#: ktorrent/core.cpp:1295
+#, kde-format
+msgid "Cannot recreate data file: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1383
+#, kde-format
+msgid ""
+"KTorrent has found a torrent from the KDE3 version of KTorrent, do you want "
+"to import it?"
+msgid_plural ""
+"KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
+"want to import them?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ktorrent/core.cpp:1405
+msgid "No torrents from the KDE3 version were found."
+msgstr ""
+
+#: ktorrent/core.cpp:1444
+#, kde-format
+msgid "Invalid magnet bittorrent link: %1"
+msgstr ""
+
+#: ktorrent/core.cpp:1449
+msgid ""
+"You are attempting to download a magnet link, and DHT is not enabled. For "
+"optimum results enable DHT."
 msgstr ""
 
 #: ktupnptest/main.cpp:40
