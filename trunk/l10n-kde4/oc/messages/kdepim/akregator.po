@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-17 05:51+0200\n"
+"POT-Creation-Date: 2012-06-20 05:43+0200\n"
 "PO-Revision-Date: 2008-08-06 00:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -260,13 +260,6 @@ msgid_plural "%1 unread articles"
 msgstr[0] " (pas cap d'article pas legit)"
 msgstr[1] " (pas cap d'article pas legit)"
 
-#: src/mainwindow.cpp:104
-#, kde-format
-msgid ""
-"Could not find the Akregator part; please check your installation.\n"
-"%1"
-msgstr ""
-
 #: src/tabwidget.cpp:113
 msgid "Close the current tab"
 msgstr "Tampar l'onglet actual"
@@ -390,138 +383,11 @@ msgstr "<qt>Sètz segur que volètz suprimir lo flus ?</qt>"
 msgid "Disable Introduction Page"
 msgstr ""
 
-#: src/akregator_part.cpp:125
-msgid "KDE Dot News"
-msgstr ""
-
-#: src/akregator_part.cpp:130
-msgid "Linux.com"
-msgstr ""
-
-#: src/akregator_part.cpp:135
-msgid "Planet KDE"
-msgstr "Planeta KDE"
-
-#: src/akregator_part.cpp:140
-#, fuzzy
-#| msgid "Planet KDE"
-msgid "Planet KDE PIM"
-msgstr "Planeta KDE"
-
-#: src/akregator_part.cpp:145
-msgid "KDE Apps"
-msgstr ""
-
-#: src/akregator_part.cpp:150
-msgid "KDE Look"
-msgstr ""
-
-#: src/akregator_part.cpp:156
-msgid "Hungarian feeds"
-msgstr ""
-
-#: src/akregator_part.cpp:160
-msgid "KDE.HU"
-msgstr ""
-
-#: src/akregator_part.cpp:166
-msgid "Spanish feeds"
-msgstr ""
-
-#: src/akregator_part.cpp:170
-#, fuzzy
-#| msgid "Planet KDE"
-msgid "Planet KDE España"
-msgstr "Planeta KDE"
-
-#: src/akregator_part.cpp:244
-#, kde-format
-msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
-msgstr ""
-
-#: src/akregator_part.cpp:244
-msgid "Plugin error"
-msgstr ""
-
-#: src/akregator_part.cpp:506
+#: src/mainwindow.cpp:104
 #, kde-format
 msgid ""
-"Access denied: Cannot save feed list to <b>%1</b>. Please check your "
-"permissions."
-msgstr ""
-
-#: src/akregator_part.cpp:507 src/akregator_part.cpp:566
-msgid "Write Error"
-msgstr "Error d'escritura"
-
-#: src/akregator_part.cpp:542
-#, kde-format
-msgid "Could not import the file %1 (no valid OPML)"
-msgstr "Impossible d'importar lo fichièr %1 (cap cap d'OPML valable)"
-
-#: src/akregator_part.cpp:542 src/loadfeedlistcommand.cpp:79
-msgid "OPML Parsing Error"
-msgstr ""
-
-#: src/akregator_part.cpp:545
-#, kde-format
-msgid ""
-"The file %1 could not be read, check if it exists or if it is readable for "
-"the current user."
-msgstr ""
-"Impossible de legir lo fichièr %1, verificatz s'existís o se l'usancièr "
-"actiu lo pòt legir."
-
-#: src/akregator_part.cpp:545 src/loadfeedlistcommand.cpp:148
-msgid "Read Error"
-msgstr "Error de lectura"
-
-#: src/akregator_part.cpp:559
-#, kde-format
-msgid "The file %1 already exists; do you want to overwrite it?"
-msgstr ""
-
-#: src/akregator_part.cpp:560
-msgid "Export"
-msgstr "Exportar"
-
-#: src/akregator_part.cpp:566
-#, kde-format
-msgid "Access denied: cannot write to file %1. Please check your permissions."
-msgstr ""
-
-#: src/akregator_part.cpp:589 src/akregator_part.cpp:599
-msgid "OPML Outlines (*.opml, *.xml)"
-msgstr ""
-
-#: src/akregator_part.cpp:590 src/akregator_part.cpp:600
-msgid "All Files"
-msgstr "Totes los fichièrs"
-
-#: src/akregator_part.cpp:746
-msgid "Imported Folder"
-msgstr "Repertòri importat"
-
-#: src/akregator_part.cpp:796
-msgid ""
-"Akregator did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr ""
-
-#: src/akregator_part.cpp:797
-msgid "Restore Session?"
-msgstr ""
-
-#: src/akregator_part.cpp:798
-msgid "Restore Session"
-msgstr ""
-
-#: src/akregator_part.cpp:799
-msgid "Do Not Restore"
-msgstr ""
-
-#: src/akregator_part.cpp:800
-msgid "Ask Me Later"
+"Could not find the Akregator part; please check your installation.\n"
+"%1"
 msgstr ""
 
 #: src/articlemodel.cpp:106
@@ -711,6 +577,10 @@ msgid ""
 "backup.</qt>"
 msgstr ""
 
+#: src/loadfeedlistcommand.cpp:79 src/akregator_part.cpp:535
+msgid "OPML Parsing Error"
+msgstr ""
+
 #: src/loadfeedlistcommand.cpp:127
 msgid "Opening Feed List..."
 msgstr ""
@@ -719,6 +589,10 @@ msgstr ""
 #, kde-format
 msgid "<qt>Could not open feed list (%1) for reading.</qt>"
 msgstr ""
+
+#: src/loadfeedlistcommand.cpp:148 src/akregator_part.cpp:538
+msgid "Read Error"
+msgstr "Error de lectura"
 
 #: src/loadfeedlistcommand.cpp:160
 msgctxt "error message window caption"
@@ -1001,6 +875,132 @@ msgstr "Pas legit"
 msgctxt "Feedlist's column header"
 msgid "Total"
 msgstr "Total"
+
+#: src/akregator_part.cpp:125
+msgid "KDE Dot News"
+msgstr ""
+
+#: src/akregator_part.cpp:130
+msgid "Linux.com"
+msgstr ""
+
+#: src/akregator_part.cpp:135
+msgid "Planet KDE"
+msgstr "Planeta KDE"
+
+#: src/akregator_part.cpp:140
+#, fuzzy
+#| msgid "Planet KDE"
+msgid "Planet KDE PIM"
+msgstr "Planeta KDE"
+
+#: src/akregator_part.cpp:145
+msgid "KDE Apps"
+msgstr ""
+
+#: src/akregator_part.cpp:150
+msgid "KDE Look"
+msgstr ""
+
+#: src/akregator_part.cpp:156
+msgid "Hungarian feeds"
+msgstr ""
+
+#: src/akregator_part.cpp:160
+msgid "KDE.HU"
+msgstr ""
+
+#: src/akregator_part.cpp:166
+msgid "Spanish feeds"
+msgstr ""
+
+#: src/akregator_part.cpp:170
+#, fuzzy
+#| msgid "Planet KDE"
+msgid "Planet KDE España"
+msgstr "Planeta KDE"
+
+#: src/akregator_part.cpp:244
+#, kde-format
+msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
+msgstr ""
+
+#: src/akregator_part.cpp:244
+msgid "Plugin error"
+msgstr ""
+
+#: src/akregator_part.cpp:499
+#, kde-format
+msgid ""
+"Access denied: Cannot save feed list to <b>%1</b>. Please check your "
+"permissions."
+msgstr ""
+
+#: src/akregator_part.cpp:500 src/akregator_part.cpp:559
+msgid "Write Error"
+msgstr "Error d'escritura"
+
+#: src/akregator_part.cpp:535
+#, kde-format
+msgid "Could not import the file %1 (no valid OPML)"
+msgstr "Impossible d'importar lo fichièr %1 (cap cap d'OPML valable)"
+
+#: src/akregator_part.cpp:538
+#, kde-format
+msgid ""
+"The file %1 could not be read, check if it exists or if it is readable for "
+"the current user."
+msgstr ""
+"Impossible de legir lo fichièr %1, verificatz s'existís o se l'usancièr "
+"actiu lo pòt legir."
+
+#: src/akregator_part.cpp:552
+#, kde-format
+msgid "The file %1 already exists; do you want to overwrite it?"
+msgstr ""
+
+#: src/akregator_part.cpp:553
+msgid "Export"
+msgstr "Exportar"
+
+#: src/akregator_part.cpp:559
+#, kde-format
+msgid "Access denied: cannot write to file %1. Please check your permissions."
+msgstr ""
+
+#: src/akregator_part.cpp:582 src/akregator_part.cpp:592
+msgid "OPML Outlines (*.opml, *.xml)"
+msgstr ""
+
+#: src/akregator_part.cpp:583 src/akregator_part.cpp:593
+msgid "All Files"
+msgstr "Totes los fichièrs"
+
+#: src/akregator_part.cpp:739
+msgid "Imported Folder"
+msgstr "Repertòri importat"
+
+#: src/akregator_part.cpp:789
+msgid ""
+"Akregator did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr ""
+
+#: src/akregator_part.cpp:790
+msgid "Restore Session?"
+msgstr ""
+
+#: src/akregator_part.cpp:791
+msgid "Restore Session"
+msgstr ""
+
+#: src/akregator_part.cpp:792
+msgid "Do Not Restore"
+msgstr ""
+
+#: src/akregator_part.cpp:793
+msgid "Ask Me Later"
+msgstr ""
 
 #: src/articlelistview.cpp:379
 msgid ""
