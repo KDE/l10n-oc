@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-10 08:59+0200\n"
+"POT-Creation-Date: 2012-08-07 21:49+0200\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -43,6 +43,70 @@ msgctxt "General configuration page"
 msgid "General"
 msgstr ""
 
+#: core/favoritesmodel.cpp:49 core/favoritesmodel.cpp:322
+#: simpleapplet/simpleapplet.cpp:193 ui/launcher.cpp:121 ui/launcher.cpp:191
+msgid "Favorites"
+msgstr "Marca-paginas"
+
+#: core/models.cpp:121
+msgid "Home Folder"
+msgstr "Repertòri personal"
+
+#: core/models.cpp:124
+msgid "Network Folders"
+msgstr ""
+
+#: core/recentlyusedmodel.cpp:109
+msgid "Documents"
+msgstr "Documents"
+
+#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:74
+#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:123 ui/launcher.cpp:236
+msgid "Applications"
+msgstr "Aplicacions"
+
+#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
+#: ui/launcher.cpp:124 ui/launcher.cpp:249
+msgid "Recently Used"
+msgstr "Utilizat recentament"
+
+#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
+#, fuzzy
+#| msgid "Recently Used"
+msgid "Recently Used Documents"
+msgstr "Utilizat recentament"
+
+#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
+#, fuzzy
+#| msgid "Applications"
+msgid "Recently Used Applications"
+msgstr "Totas las aplicacions"
+
+#: core/systemmodel.cpp:75
+msgid "Places"
+msgstr "Acorchis"
+
+#: core/systemmodel.cpp:76
+msgid "Removable Storage"
+msgstr ""
+
+#: core/systemmodel.cpp:77
+msgid "Storage"
+msgstr ""
+
+#: core/systemmodel.cpp:207 simpleapplet/simpleapplet.cpp:201
+msgid "Run Command..."
+msgstr ""
+
+#: core/systemmodel.cpp:211
+msgid "Run a command or a search query"
+msgstr ""
+
+#: core/systemmodel.cpp:319 simpleapplet/simpleapplet.cpp:196
+#: ui/launcher.cpp:123 ui/launcher.cpp:270
+msgid "Computer"
+msgstr "Ordenador"
+
 #: core/applicationmodel.cpp:334
 msgid "Games"
 msgstr ""
@@ -52,11 +116,6 @@ msgstr ""
 #| msgid "Applications"
 msgid "All Applications"
 msgstr "Totas las aplicacions"
-
-#: core/favoritesmodel.cpp:49 core/favoritesmodel.cpp:322
-#: simpleapplet/simpleapplet.cpp:193 ui/launcher.cpp:121 ui/launcher.cpp:191
-msgid "Favorites"
-msgstr "Marca-paginas"
 
 #: core/leavemodel.cpp:50 simpleapplet/simpleapplet.cpp:210
 #, fuzzy
@@ -163,65 +222,6 @@ msgstr "Sesilha"
 #: core/leavemodel.cpp:150
 msgid "System"
 msgstr "Sistèma"
-
-#: core/models.cpp:121
-msgid "Home Folder"
-msgstr "Repertòri personal"
-
-#: core/models.cpp:124
-msgid "Network Folders"
-msgstr ""
-
-#: core/recentlyusedmodel.cpp:109
-msgid "Documents"
-msgstr "Documents"
-
-#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:74
-#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:123 ui/launcher.cpp:236
-msgid "Applications"
-msgstr "Aplicacions"
-
-#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
-#: ui/launcher.cpp:124 ui/launcher.cpp:249
-msgid "Recently Used"
-msgstr "Utilizat recentament"
-
-#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
-#, fuzzy
-#| msgid "Recently Used"
-msgid "Recently Used Documents"
-msgstr "Utilizat recentament"
-
-#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
-#, fuzzy
-#| msgid "Applications"
-msgid "Recently Used Applications"
-msgstr "Totas las aplicacions"
-
-#: core/systemmodel.cpp:75
-msgid "Places"
-msgstr "Acorchis"
-
-#: core/systemmodel.cpp:76
-msgid "Removable Storage"
-msgstr ""
-
-#: core/systemmodel.cpp:77
-msgid "Storage"
-msgstr ""
-
-#: core/systemmodel.cpp:207 simpleapplet/simpleapplet.cpp:201
-msgid "Run Command..."
-msgstr ""
-
-#: core/systemmodel.cpp:211
-msgid "Run a command or a search query"
-msgstr ""
-
-#: core/systemmodel.cpp:319 simpleapplet/simpleapplet.cpp:196
-#: ui/launcher.cpp:123 ui/launcher.cpp:270
-msgid "Computer"
-msgstr "Ordenador"
 
 #: main.cpp:32
 msgid "Kickoff"
@@ -356,6 +356,13 @@ msgstr "Ejectar"
 msgid "Safely Remove"
 msgstr ""
 
+#: ui/searchbar.cpp:70
+#, fuzzy
+#| msgid "Search:"
+msgctxt "Label of the search bar textedit"
+msgid "Search:"
+msgstr "Recercar :"
+
 #: ui/launcher.cpp:194
 msgid "Sort Alphabetically (A to Z)"
 msgstr ""
@@ -383,13 +390,6 @@ msgstr ""
 msgctxt "full name, login name, hostname"
 msgid "<b>%1 (%2)</b> on <b>%3</b>"
 msgstr ""
-
-#: ui/searchbar.cpp:70
-#, fuzzy
-#| msgid "Search:"
-msgctxt "Label of the search bar textedit"
-msgid "Search:"
-msgstr "Recercar :"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

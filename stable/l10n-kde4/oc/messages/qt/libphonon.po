@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libphonon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-15 04:40+0200\n"
+"POT-Creation-Date: 2012-08-07 21:48+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -18,16 +18,30 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: factory.cpp:311
-msgid "Restart Application"
-msgstr ""
-
-#: factory.cpp:312
+#: audiooutput.cpp:489 audiooutput.cpp:527
 #, qt-format
 msgid ""
-"You changed the backend of the Phonon multimedia system.\n"
-"\n"
-"To apply this change you will need to restart '%1'."
+"<html>The audio playback device <b>%1</b> does not work.<br/>Falling back to "
+"<b>%2</b>.</html>"
+msgstr ""
+
+#: audiooutput.cpp:502
+#, qt-format
+msgid ""
+"<html>Switching to the audio playback device <b>%1</b><br/>which just became "
+"available and has higher preference.</html>"
+msgstr ""
+
+#: audiooutput.cpp:505 audiooutput.cpp:523
+#, qt-format
+msgid "Revert back to device '%1'"
+msgstr ""
+
+#: audiooutput.cpp:520
+#, qt-format
+msgid ""
+"<html>Switching to the audio playback device <b>%1</b><br/>which has higher "
+"preference or is specifically configured for this stream.</html>"
 msgstr ""
 
 #: mediacontroller.cpp:151
@@ -52,6 +66,11 @@ msgstr ""
 
 #: mediacontroller.cpp:161
 msgid "Angle Menu"
+msgstr ""
+
+#: mediaobject.cpp:406
+#, qt-format
+msgid "%0 by %1"
 msgstr ""
 
 #: pulsesupport.cpp:272 pulsesupport.cpp:283
@@ -115,35 +134,16 @@ msgctxt "Phonon::"
 msgid "Control"
 msgstr ""
 
-#: audiooutput.cpp:476 audiooutput.cpp:514
+#: factory.cpp:314
+msgid "Restart Application"
+msgstr ""
+
+#: factory.cpp:315
 #, qt-format
 msgid ""
-"<html>The audio playback device <b>%1</b> does not work.<br/>Falling back to "
-"<b>%2</b>.</html>"
-msgstr ""
-
-#: audiooutput.cpp:489
-#, qt-format
-msgid ""
-"<html>Switching to the audio playback device <b>%1</b><br/>which just became "
-"available and has higher preference.</html>"
-msgstr ""
-
-#: audiooutput.cpp:492 audiooutput.cpp:510
-#, qt-format
-msgid "Revert back to device '%1'"
-msgstr ""
-
-#: audiooutput.cpp:507
-#, qt-format
-msgid ""
-"<html>Switching to the audio playback device <b>%1</b><br/>which has higher "
-"preference or is specifically configured for this stream.</html>"
-msgstr ""
-
-#: mediaobject.cpp:425
-#, qt-format
-msgid "%0 by %1"
+"You changed the backend of the Phonon multimedia system.\n"
+"\n"
+"To apply this change you will need to restart '%1'."
 msgstr ""
 
 #, fuzzy

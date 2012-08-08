@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular_dvi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-16 04:41+0200\n"
+"POT-Creation-Date: 2012-08-07 21:42+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -263,6 +263,113 @@ msgstr ""
 msgid "Wrong command byte found in VF macro list: %1"
 msgstr ""
 
+#: fontpool.cpp:39
+msgid "Okular is currently generating bitmap fonts..."
+msgstr ""
+
+#: fontpool.cpp:40
+msgid "Aborts the font generation. Do not do this."
+msgstr ""
+
+#: fontpool.cpp:41
+msgid ""
+"Okular is currently generating bitmap fonts which are needed to display your "
+"document. For this, Okular uses a number of external programs, such as "
+"MetaFont. You can find the output of these programs later in the document "
+"info dialog."
+msgstr ""
+
+#: fontpool.cpp:44
+msgid "Okular is generating fonts. Please wait."
+msgstr ""
+
+#: fontpool.cpp:225
+msgid ""
+"<qt><p>Okular was not able to locate all the font files which are necessary "
+"to display the current DVI file. Your document might be unreadable.</p></qt>"
+msgstr ""
+
+#: fontpool.cpp:229
+msgid "Not All Font Files Found"
+msgstr ""
+
+#: fontpool.cpp:240
+msgid "Locating fonts..."
+msgstr ""
+
+#: fontpool.cpp:288
+msgid ""
+"<p>Okular relies on the <b>kpsewhich</b> program to locate font files on "
+"your hard disk and to generate PK fonts, if necessary.</p>"
+msgstr ""
+
+#: fontpool.cpp:296
+msgid ""
+"<p>There were problems running <b>kpsewhich</b>. As a result, some font "
+"files could not be located, and your document might be unreadable.</"
+"p><p><b>Possible reason:</b> The kpsewhich program is perhaps not installed "
+"on your system, or it cannot be found in the current search path.</"
+"p><p><b>What you can do:</b> The kpsewhich program is normally contained in "
+"distributions of the TeX typesetting system. If TeX is not installed on your "
+"system, you could install the TeX Live distribution (www.tug.org/texlive). "
+"If you are sure that TeX is installed, please try to use the kpsewhich "
+"program from the command line to check if it really works.</p>"
+msgstr ""
+
+#: fontpool.cpp:310
+msgid "Problem locating fonts"
+msgstr ""
+
+#: fontpool.cpp:329
+#, kde-format
+msgid ""
+"<qt><p>The font generation by <b>kpsewhich</b> was aborted (exit code %1, "
+"error %2). As a result, some font files could not be located, and your "
+"document might be unreadable.</p></qt>"
+msgstr ""
+
+#: fontpool.cpp:331
+msgid "Font generation aborted"
+msgstr ""
+
+#: fontpool.cpp:507
+#, kde-format
+msgid "Currently generating %1 at %2 dpi"
+msgstr ""
+
+#: dviRenderer_prescan.cpp:87
+#, kde-format
+msgid "Embedding %1"
+msgstr ""
+
+#: dviRenderer_prescan.cpp:102
+#, kde-format
+msgid ""
+"Page %1: The PDF file <strong>%2</strong> could not be converted to "
+"PostScript.<br>"
+msgstr ""
+
+#: dviRenderer_prescan.cpp:104
+#, kde-format
+msgid ""
+"Page %1: The PostScript file <strong>%2</strong> could not be found.<br>"
+msgstr ""
+
+#: dviRenderer_prescan.cpp:253
+#, kde-format
+msgid "The papersize data '%1' could not be parsed."
+msgstr ""
+
+#: dviRenderer.cpp:232
+msgid ""
+"<qt><strong>File corruption</strong> Okular could not interpret your DVI "
+"file. This is most commonly caused by a corrupted file.</qt>"
+msgstr ""
+
+#: dviRenderer.cpp:234
+msgid "DVI File Error"
+msgstr ""
+
 #: dviexport.cpp:74
 msgid "Please be patient"
 msgstr ""
@@ -383,113 +490,6 @@ msgid ""
 "reported an error. You might wish to look at the <strong>document info "
 "dialog</strong> which you will find in the File-Menu for a precise error "
 "report.</qt>"
-msgstr ""
-
-#: dviRenderer.cpp:232
-msgid ""
-"<qt><strong>File corruption</strong> Okular could not interpret your DVI "
-"file. This is most commonly caused by a corrupted file.</qt>"
-msgstr ""
-
-#: dviRenderer.cpp:234
-msgid "DVI File Error"
-msgstr ""
-
-#: fontpool.cpp:39
-msgid "Okular is currently generating bitmap fonts..."
-msgstr ""
-
-#: fontpool.cpp:40
-msgid "Aborts the font generation. Do not do this."
-msgstr ""
-
-#: fontpool.cpp:41
-msgid ""
-"Okular is currently generating bitmap fonts which are needed to display your "
-"document. For this, Okular uses a number of external programs, such as "
-"MetaFont. You can find the output of these programs later in the document "
-"info dialog."
-msgstr ""
-
-#: fontpool.cpp:44
-msgid "Okular is generating fonts. Please wait."
-msgstr ""
-
-#: fontpool.cpp:225
-msgid ""
-"<qt><p>Okular was not able to locate all the font files which are necessary "
-"to display the current DVI file. Your document might be unreadable.</p></qt>"
-msgstr ""
-
-#: fontpool.cpp:229
-msgid "Not All Font Files Found"
-msgstr ""
-
-#: fontpool.cpp:240
-msgid "Locating fonts..."
-msgstr ""
-
-#: fontpool.cpp:288
-msgid ""
-"<p>Okular relies on the <b>kpsewhich</b> program to locate font files on "
-"your hard disk and to generate PK fonts, if necessary.</p>"
-msgstr ""
-
-#: fontpool.cpp:296
-msgid ""
-"<p>There were problems running <b>kpsewhich</b>. As a result, some font "
-"files could not be located, and your document might be unreadable.</"
-"p><p><b>Possible reason:</b> The kpsewhich program is perhaps not installed "
-"on your system, or it cannot be found in the current search path.</"
-"p><p><b>What you can do:</b> The kpsewhich program is normally contained in "
-"distributions of the TeX typesetting system. If TeX is not installed on your "
-"system, you could install the TeX Live distribution (www.tug.org/texlive). "
-"If you are sure that TeX is installed, please try to use the kpsewhich "
-"program from the command line to check if it really works.</p>"
-msgstr ""
-
-#: fontpool.cpp:310
-msgid "Problem locating fonts"
-msgstr ""
-
-#: fontpool.cpp:329
-#, kde-format
-msgid ""
-"<qt><p>The font generation by <b>kpsewhich</b> was aborted (exit code %1, "
-"error %2). As a result, some font files could not be located, and your "
-"document might be unreadable.</p></qt>"
-msgstr ""
-
-#: fontpool.cpp:331
-msgid "Font generation aborted"
-msgstr ""
-
-#: fontpool.cpp:507
-#, kde-format
-msgid "Currently generating %1 at %2 dpi"
-msgstr ""
-
-#: dviRenderer_prescan.cpp:87
-#, kde-format
-msgid "Embedding %1"
-msgstr ""
-
-#: dviRenderer_prescan.cpp:102
-#, kde-format
-msgid ""
-"Page %1: The PDF file <strong>%2</strong> could not be converted to "
-"PostScript.<br>"
-msgstr ""
-
-#: dviRenderer_prescan.cpp:104
-#, kde-format
-msgid ""
-"Page %1: The PostScript file <strong>%2</strong> could not be found.<br>"
-msgstr ""
-
-#: dviRenderer_prescan.cpp:253
-#, kde-format
-msgid "The papersize data '%1' could not be parsed."
 msgstr ""
 
 #: generator_dvi.cpp:54
