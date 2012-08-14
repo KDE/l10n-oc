@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -53,41 +53,39 @@ msgid "Checking Data"
 msgstr ""
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr ""
 
-#: src/diskio/dndfile.cpp:89
-#, kde-format
-msgid "Cannot create file %1: %2"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
 msgstr ""
 
-#: src/diskio/dndfile.cpp:137
-#, kde-format
-msgid "Failed to write first chunk to DND file: %1"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#, fuzzy
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Apondre un repertòri"
+
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#, fuzzy
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Apondre un repertòri"
+
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
 msgstr ""
 
-#: src/diskio/dndfile.cpp:155
-#, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr ""
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-msgid "Failed to open %1: %2"
-msgstr "Descargat"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, fuzzy, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Descargat"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr ""
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -142,30 +140,33 @@ msgstr "Descargat"
 msgid "Cannot preallocate diskspace: %1"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1: %2"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-#, fuzzy
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Apondre un repertòri"
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-#, fuzzy
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Apondre un repertòri"
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, fuzzy, kde-format
+msgid "Failed to open %1: %2"
+msgstr "Descargat"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
 #: src/download/chunkdownload.cpp:383
@@ -179,20 +180,10 @@ msgstr[1] ""
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Pas connectat"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-#, fuzzy
-msgid "Connection closed"
-msgstr "Connexions"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -207,6 +198,11 @@ msgstr ""
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr ""
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+#, fuzzy
+msgid "Connection closed"
+msgstr "Connexions"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -245,6 +241,11 @@ msgstr ""
 
 #: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
+msgstr ""
+
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
@@ -291,39 +292,6 @@ msgstr "Important"
 #: src/torrent/torrent.cpp:165
 #, kde-format
 msgid "Unable to open torrent file %1: %2"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:554
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:584
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:595
-#, fuzzy, kde-format
-msgid "Unable to create %1: %2"
-msgstr "Descargat"
-
-#: src/torrent/torrentcontrol.cpp:610
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:615
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
 msgstr ""
 
 #: src/torrent/torrentstats.cpp:73
@@ -385,6 +353,39 @@ msgstr "En pausa"
 msgid "Superseeding"
 msgstr "Velocitat"
 
+#: src/torrent/torrentcontrol.cpp:302
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:548
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:578
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:589
+#, fuzzy, kde-format
+msgid "Unable to create %1: %2"
+msgstr "Descargat"
+
+#: src/torrent/torrentcontrol.cpp:604
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:609
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr ""
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
@@ -414,31 +415,6 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr ""
 
-#: src/util/logsystemmanager.cpp:33
-#, fuzzy
-msgid "General"
-msgstr "General :"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Connexions"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Tracker"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr ""
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr ""
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
 #: src/util/file.cpp:84
 #, kde-format
 msgid "Cannot write to %1: %2"
@@ -449,13 +425,17 @@ msgstr ""
 msgid "Cannot read from %1"
 msgstr ""
 
-#: src/util/signalcatcher.cpp:78
-msgid "Error when writing to disk"
-msgstr ""
+#: src/util/functions.cpp:234
+#, fuzzy, kde-format
+msgid "%1/s"
+msgstr "%1"
 
-#: src/util/signalcatcher.cpp:78
-msgid "Error when reading from disk"
-msgstr ""
+#: src/util/functions.cpp:245
+#, fuzzy, kde-format
+msgid "1 day "
+msgid_plural "%1 days "
+msgstr[0] " jorns"
+msgstr[1] " jorns"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -508,17 +488,38 @@ msgstr ""
 msgid "Cannot seek in file: %1"
 msgstr ""
 
-#: src/util/functions.cpp:234
-#, fuzzy, kde-format
-msgid "%1/s"
-msgstr "%1"
+#: src/util/logsystemmanager.cpp:33
+#, fuzzy
+msgid "General"
+msgstr "General :"
 
-#: src/util/functions.cpp:245
-#, fuzzy, kde-format
-msgid "1 day "
-msgid_plural "%1 days "
-msgstr[0] " jorns"
-msgstr[1] " jorns"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Connexions"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Tracker"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr ""
+
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr ""
+
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr ""
+
+#: src/util/signalcatcher.cpp:80
+msgid "Error when writing to disk"
+msgstr ""
+
+#: src/util/signalcatcher.cpp:80
+msgid "Error when reading from disk"
+msgstr ""
 
 #: src/upnp/httprequest.cpp:96
 #, fuzzy
