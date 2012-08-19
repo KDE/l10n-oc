@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:28+0200\n"
+"POT-Creation-Date: 2012-08-19 05:51+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -349,12 +349,11 @@ msgstr ""
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
-#: part/SCViewModeSlidesSorter.cpp:325 part/ui/SCCustomSlideShowsDialog.cpp:82
-#: part/ui/SCCustomSlideShowsDialog.cpp:239
-#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
-#, kde-format
-msgid "Slide %1"
-msgstr ""
+#. i18n: file: part/showcase.rc:91
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
+msgid "Edit"
+msgstr "Edicion"
 
 #: part/commands/SCAnimationCreateCommand.cpp:33
 msgid "Create shape animation"
@@ -372,12 +371,6 @@ msgstr ""
 msgid "Delete page effect"
 msgstr ""
 
-#. i18n: file: part/showcase.rc:91
-#. i18n: ectx: ToolBar (editToolBar)
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
-msgid "Edit"
-msgstr "Edicion"
-
 #: part/dockers/SCPageLayoutDocker.cpp:46
 #, fuzzy
 #| msgid "Next Slide"
@@ -390,6 +383,14 @@ msgstr "Fichièr de dobrir"
 
 #: part/pagelayout/SCPlaceholders.cpp:58 part/pagelayout/SCPlaceholders.cpp:59
 msgid "Set Layout"
+msgstr ""
+
+#: part/tools/SCAnimationToolFactory.cpp:32
+msgid "Animation tool"
+msgstr ""
+
+#: part/tools/SCPlaceholderToolFactory.cpp:28
+msgid "Layout Tool"
 msgstr ""
 
 #: part/tools/SCAnimationTool.cpp:69
@@ -408,9 +409,11 @@ msgstr ""
 msgid "Shape Animation"
 msgstr ""
 
-#: part/tools/SCAnimationToolFactory.cpp:32
-msgid "Animation tool"
-msgstr ""
+#: part/tools/SCPlaceholderTool.cpp:78
+#, fuzzy
+#| msgid "Shape"
+msgid "Edit Shape"
+msgstr "Forma"
 
 #: part/tools/SCPageEffectDocker.cpp:57
 msgid "No Effect"
@@ -418,16 +421,6 @@ msgstr "Pas d'efièch"
 
 #: part/tools/SCPageEffectDocker.cpp:80
 msgid " sec"
-msgstr ""
-
-#: part/tools/SCPlaceholderTool.cpp:78
-#, fuzzy
-#| msgid "Shape"
-msgid "Edit Shape"
-msgstr "Forma"
-
-#: part/tools/SCPlaceholderToolFactory.cpp:28
-msgid "Layout Tool"
 msgstr ""
 
 #: part/ui/SCConfigurePresenterViewDialog.cpp:42
@@ -457,6 +450,14 @@ msgstr ""
 msgid "Configure Slide Show"
 msgstr "Diaporama"
 
+#: part/ui/SCCustomSlideShowsDialog.cpp:82
+#: part/ui/SCCustomSlideShowsDialog.cpp:239
+#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
+#: part/SCViewModeSlidesSorter.cpp:325
+#, kde-format
+msgid "Slide %1"
+msgstr ""
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:96
 #: part/ui/SCCustomSlideShowsDialog.cpp:100
 #: part/ui/SCCustomSlideShowsDialog.cpp:102
@@ -465,14 +466,14 @@ msgstr "Diaporama"
 msgid "New Slide Show %1"
 msgstr ""
 
+#: part/ui/SCCustomSlideShowsDialog.cpp:133
+msgid "There cannot be two slideshows with the same name."
+msgstr ""
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:133 part/ui/SCHtmlExportDialog.cpp:158
 #: part/ui/SCHtmlExportDialog.cpp:211
 msgid "Error"
 msgstr "Error"
-
-#: part/ui/SCCustomSlideShowsDialog.cpp:133
-msgid "There cannot be two slideshows with the same name."
-msgstr ""
 
 #: part/ui/SCCustomSlideShowsDialog.cpp:148
 msgid "Are you sure you want to delete the selected slide show?"
@@ -515,15 +516,15 @@ msgid "Add Template"
 msgstr ""
 
 #: part/ui/SCHtmlExportDialog.cpp:322
-#, kde-format
-msgid "Are you sure you want to remove \"%1\"?"
-msgstr ""
-
-#: part/ui/SCHtmlExportDialog.cpp:322
 #, fuzzy
 #| msgid "Confirm action"
 msgid "Confirm remove"
 msgstr "Confirmar l'accion"
+
+#: part/ui/SCHtmlExportDialog.cpp:322
+#, kde-format
+msgid "Are you sure you want to remove \"%1\"?"
+msgstr ""
 
 #: plugins/eventactions/sound/SCSoundEventActionWidget.cpp:94
 msgid "Change sound action"
