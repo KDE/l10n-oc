@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 08:20+0200\n"
+"POT-Creation-Date: 2012-08-31 07:33+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -63,7 +63,7 @@ msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "Indefinit"
 
-#: contactfields.cpp:56
+#: contactfields.cpp:56 grantleecontactformatter.cpp:210
 msgid "Anniversary"
 msgstr "Aniversari"
 
@@ -93,15 +93,15 @@ msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "Adreça electronica"
 
-#: contactfields.cpp:155
+#: contactfields.cpp:155 grantleecontactformatter.cpp:253
 msgid "Blog Feed"
 msgstr ""
 
-#: contactfields.cpp:158
+#: contactfields.cpp:158 grantleecontactformatter.cpp:296
 msgid "Profession"
 msgstr "Mèstier"
 
-#: contactfields.cpp:161
+#: contactfields.cpp:161 grantleecontactformatter.cpp:300
 msgid "Office"
 msgstr "Burèu"
 
@@ -248,21 +248,67 @@ msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr ""
 
-#: grantleecontactformatter.cpp:214
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: grantleecontactformatter.cpp:199 printing/rbs_appearance.ui:99
+msgid "Birthday"
+msgstr "Aniversari"
+
+#: grantleecontactformatter.cpp:222
 #, fuzzy
 #| msgid "Email"
-msgctxt "a contact's email address"
-msgid "Email"
+msgid "Emails"
 msgstr "Adreça electronica"
 
-#: grantleecontactformatter.cpp:351
+#: grantleecontactformatter.cpp:245
+msgid "Website"
+msgstr ""
+
+#: grantleecontactformatter.cpp:261 mainwidget.cpp:564
+msgid "Address Book"
+msgstr "Quasernet d'adreças"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: grantleecontactformatter.cpp:275 printing/rbs_appearance.ui:112
+#, fuzzy
+#| msgid "Note:"
+msgid "Note"
+msgstr "Nòta :"
+
+#: grantleecontactformatter.cpp:289
+msgid "Department"
+msgstr "Departament"
+
+#: grantleecontactformatter.cpp:305
+#, fuzzy
+#| msgid "Myanmar"
+msgid "Manager's Name"
+msgstr "Panama"
+
+#: grantleecontactformatter.cpp:310
+#, fuzzy
+#| msgid "Afghanistan"
+msgid "Assistant's Name"
+msgstr "Afganistan"
+
+#: grantleecontactformatter.cpp:315
+msgid "Partner's Name"
+msgstr ""
+
+#: grantleecontactformatter.cpp:320
+#, fuzzy
+#| msgctxt "Instant messaging"
+#| msgid "Address"
+msgid "IM Address"
+msgstr "Adreça"
+
+#: grantleecontactformatter.cpp:367
 #, fuzzy
 #| msgid "Types"
 msgctxt "Boolean value"
 msgid "yes"
 msgstr "Tipes"
 
-#: grantleecontactformatter.cpp:353
+#: grantleecontactformatter.cpp:369
 msgctxt "Boolean value"
 msgid "no"
 msgstr ""
@@ -454,10 +500,6 @@ msgstr "Exportar..."
 #: mainwidget.cpp:557
 msgid "Export contacts to a GMX address book file."
 msgstr ""
-
-#: mainwidget.cpp:564
-msgid "Address Book"
-msgstr "Quasernet d'adreças"
 
 #: mainwidget.cpp:570 printing/printingwizard.cpp:56
 #, fuzzy
@@ -870,11 +912,6 @@ msgstr "Contactes"
 msgid "Check this box if you want contact birthdays to be printed."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
-#: printing/rbs_appearance.ui:99
-msgid "Birthday"
-msgstr "Aniversari"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: printing/rbs_appearance.ui:106
 #, fuzzy
@@ -886,13 +923,6 @@ msgstr "Contactes"
 #: printing/rbs_appearance.ui:109
 msgid "Check this box if you want contact notes to be printed."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
-#: printing/rbs_appearance.ui:112
-#, fuzzy
-#| msgid "Note:"
-msgid "Note"
-msgstr "Nòta :"
 
 #: printing/ringbinderstyle.cpp:150
 msgid "Ring Binder Printing Style - Appearance"
@@ -1782,9 +1812,6 @@ msgstr ""
 
 #~ msgid "City"
 #~ msgstr "Ciutat"
-
-#~ msgid "Department"
-#~ msgstr "Departament"
 
 #~ msgid "Zip Code"
 #~ msgstr "Còdi postal"
@@ -3059,13 +3086,6 @@ msgstr ""
 #~ msgctxt "@label:textbox primary email address of the contact"
 #~ msgid "Email"
 #~ msgstr "Adreça electronica"
-
-#, fuzzy
-#~| msgctxt "Instant messaging"
-#~| msgid "Address"
-#~ msgctxt "@label Displays an image"
-#~ msgid "Address"
-#~ msgstr "Adreça"
 
 #~ msgid "Address:"
 #~ msgstr "Adreça :"
