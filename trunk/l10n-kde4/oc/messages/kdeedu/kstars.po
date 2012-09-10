@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-04 06:16+0200\n"
+"POT-Creation-Date: 2012-09-10 04:32+0200\n"
 "PO-Revision-Date: 2008-08-05 23:45+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1240,7 +1240,7 @@ msgstr ""
 msgid "KStars Exported Sky Image"
 msgstr ""
 
-#: dialogs/exportimagedialog.cpp:177 main.cpp:95
+#: dialogs/exportimagedialog.cpp:177 main.cpp:96
 #: printing/foveditordialog.cpp:154
 #, kde-format
 msgid "Could not parse image format of %1; assuming PNG."
@@ -2658,53 +2658,49 @@ msgstr "dins"
 msgid "&Apply"
 msgstr "&Aplicar"
 
-#: fitsviewer/fitsimage.cpp:137
+#: fitsviewer/fitsimage.cpp:165
 msgid "Please hold while loading FITS file..."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:137 oal/oal.h:39
-msgid "Cancel"
-msgstr "Anullar"
-
-#: fitsviewer/fitsimage.cpp:138
+#: fitsviewer/fitsimage.cpp:166
 msgid "Loading FITS"
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:147
+#: fitsviewer/fitsimage.cpp:177
 #, fuzzy, kde-format
 #| msgid "Could not open file: %1"
 msgid "Could not open file %1 (fits_get_img_param). Error %2"
 msgstr "Impossible de dobrir lo fichièr : %1"
 
-#: fitsviewer/fitsimage.cpp:147 fitsviewer/fitsimage.cpp:162
-#: fitsviewer/fitsimage.cpp:168 fitsviewer/fitsimage.cpp:177
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:177 fitsviewer/fitsimage.cpp:194
+#: fitsviewer/fitsimage.cpp:200 fitsviewer/fitsimage.cpp:209
+#: fitsviewer/fitsimage.cpp:444
 msgid "FITS Open"
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:162
+#: fitsviewer/fitsimage.cpp:194
 #, kde-format
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:168
+#: fitsviewer/fitsimage.cpp:200
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:177
+#: fitsviewer/fitsimage.cpp:209
 #, kde-format
 msgid "FITS file open error (fits_get_img_type): %1"
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:444
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:339
+#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:345
 msgid "Save Changes to FITS?"
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:340
+#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:346
 msgid ""
 "The current FITS file has unsaved changes.  Would you like to save before "
 "closing it?"
@@ -2751,7 +2747,7 @@ msgstr ""
 msgid "Statistics"
 msgstr "Estadisticas"
 
-#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:457
+#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:463
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Maseru"
@@ -2762,18 +2758,24 @@ msgstr "Pero"
 msgid "KStars FITS Viewer"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:194
+#: fitsviewer/fitsviewer.cpp:196
 msgid "Focus"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:240 fitsviewer/fitsviewer.cpp:464
+#: fitsviewer/fitsviewer.cpp:200
+#, fuzzy
+#| msgid "Guides"
+msgid "Guide"
+msgstr "Guidas"
+
+#: fitsviewer/fitsviewer.cpp:246 fitsviewer/fitsviewer.cpp:470
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:462
+#: fitsviewer/fitsviewer.cpp:468
 msgid "Unmark Stars"
 msgstr ""
 
@@ -3101,6 +3103,15 @@ msgid ""
 "from the Device Manager in the devices menu."
 msgstr ""
 
+#: indi/indiccd.cpp:286 indi/servermanager.cpp:74
+msgid "Error making temporary filename."
+msgstr ""
+
+#: indi/indiccd.cpp:325
+#, kde-format
+msgid "FITS file saved to %1"
+msgstr ""
+
 #: indi/indielement.cpp:322
 msgid "INDI DATA STREAM"
 msgstr ""
@@ -3170,15 +3181,6 @@ msgstr ""
 #: indi/indistd.cpp:340
 #, kde-format
 msgid "%1 is online and ready."
-msgstr ""
-
-#: indi/indistd.cpp:966 indi/servermanager.cpp:74
-msgid "Error making temporary filename."
-msgstr ""
-
-#: indi/indistd.cpp:1005
-#, kde-format
-msgid "FITS file saved to %1"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, fitsLabel)
@@ -39359,7 +39361,7 @@ msgid "KStars"
 msgstr ""
 
 #: main.cpp:47
-msgid "(c) 2001-2009, The KStars Team"
+msgid "(c) 2001-2012, The KStars Team"
 msgstr ""
 
 #: main.cpp:48
@@ -39447,64 +39449,75 @@ msgid "Technical documentation on Astronomy and KStars"
 msgstr ""
 
 #: main.cpp:67
+#, fuzzy
+#| msgctxt "Country name (optional, but should be translated)"
+#| msgid "Algeria"
+msgid "Alexander Stepanenko"
+msgstr "Algeria"
+
+#: main.cpp:67
+msgid "Guiding code based on lin_guider"
+msgstr ""
+
+#: main.cpp:68
 msgid "Nuno Pinheiro"
 msgstr ""
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Artwork"
 msgstr ""
 
-#: main.cpp:71
+#: main.cpp:72
 msgid "Dump sky image to file"
 msgstr ""
 
-#: main.cpp:72
+#: main.cpp:73
 msgid "Script to execute"
 msgstr ""
 
-#: main.cpp:73
+#: main.cpp:74
 msgid "Width of sky image"
 msgstr ""
 
-#: main.cpp:74
+#: main.cpp:75
 msgid "Height of sky image"
 msgstr ""
 
-#: main.cpp:75
+#: main.cpp:76
 msgid "Filename for sky image"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, InputComboBatch)
-#: main.cpp:76 tools/modcalcjd.ui:120
+#: main.cpp:77 tools/modcalcjd.ui:120
 msgid "Date and time"
 msgstr "Data e ora"
 
-#: main.cpp:77
+#: main.cpp:78
 msgid "Start with clock paused"
 msgstr ""
 
-#: main.cpp:84
+#: main.cpp:85
 msgid "Dumping sky image"
 msgstr ""
 
-#: main.cpp:136 main.cpp:192
+#: main.cpp:137 main.cpp:193
 msgid "Using CPU date/time instead."
 msgstr ""
 
-#: main.cpp:165
+#: main.cpp:166
 msgid "Script executed."
 msgstr ""
 
-#: main.cpp:167
+#: main.cpp:168
 msgid "Could not execute script."
 msgstr ""
 
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgid "Unable to save image: %1 "
 msgstr ""
 
-#: main.cpp:177
+#: main.cpp:178
 #, kde-format
 msgid "Saved to file: %1"
 msgstr ""
@@ -39993,6 +40006,10 @@ msgstr "&Seguent"
 #| msgid "&Overwrite"
 msgid "Overwrite"
 msgstr "&Espotir"
+
+#: oal/oal.h:39
+msgid "Cancel"
+msgstr "Anullar"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ObserverAdd)
 #. i18n: ectx: property (text), widget (QPushButton, AddObserver)
