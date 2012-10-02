@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-25 06:02+0200\n"
+"POT-Creation-Date: 2012-10-02 05:59+0200\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1492,6 +1492,7 @@ msgstr "Pista"
 #. i18n: ectx: property (text), widget (QToolButton, moveDownButton)
 #. i18n: ectx: property (text), widget (QToolButton, zoomInButton)
 #. i18n: ectx: property (text), widget (QToolButton, zoomOutButton)
+#. i18n: ectx: property (text), widget (QToolButton, buttonRemoveDataSource)
 #: src/lib/CurrentLocationWidget.ui:80 src/lib/CurrentLocationWidget.ui:91
 #: src/lib/MapWizard.ui:231 src/lib/MapWizard.ui:481
 #: src/lib/MarbleNavigator.ui:68 src/lib/MarbleNavigator.ui:84
@@ -1511,6 +1512,7 @@ msgstr "Pista"
 #: src/plugins/render/navigation/navigation_small.ui:26
 #: src/plugins/render/navigation/navigation_small.ui:52
 #: src/plugins/render/navigation/navigation_small.ui:78
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:175
 msgid "..."
 msgstr "..."
 
@@ -2660,10 +2662,12 @@ msgstr ""
 
 #. i18n: ectx: property (shortcut), widget (QToolButton, zoomInButton)
 #. i18n: ectx: property (text), widget (QToolButton, zoomInButton)
+#. i18n: ectx: property (text), widget (QToolButton, buttonAddDataSource)
 #: src/lib/MarbleNavigator.ui:163 src/lib/NavigationWidget.ui:238
 #: src/plugins/render/navigation/navigation.ui:160
 #: src/plugins/render/navigation/navigation_small.ui:65
 #: src/plugins/render/routing/RoutingPlugin.ui:222
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:144
 msgid "+"
 msgstr "+"
 
@@ -2695,10 +2699,14 @@ msgstr ""
 
 #. i18n: ectx: property (shortcut), widget (QToolButton, zoomOutButton)
 #. i18n: ectx: property (text), widget (QToolButton, zoomOutButton)
+#. i18n: ectx: property (text), widget (QLabel, labelLastUpdated)
+#. i18n: ectx: property (text), widget (QToolButton, buttonOpenDataSource)
 #: src/lib/MarbleNavigator.ui:221 src/lib/NavigationWidget.ui:124
 #: src/plugins/render/navigation/navigation.ui:46
 #: src/plugins/render/navigation/navigation_small.ui:91
 #: src/plugins/render/routing/RoutingPlugin.ui:190
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:75
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:158
 msgid "-"
 msgstr "-"
 
@@ -4878,6 +4886,64 @@ msgstr ""
 #| msgid "not available"
 msgid "Satellites Configuration - Marble"
 msgstr "pas disponible"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabSatellites)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:24
+msgid "&Satellites"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabDataSources)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:41
+msgid "&Data Sources"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelLastUpdatedText)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:68
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Last update:</span></"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, buttonReloadDataSources)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:98
+msgid "&Reload All Data Sources"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelDataSources)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:121
+msgid "Satellite Data Sources:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonAddDataSource)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:141
+msgid "Add a new data source (URL)."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonOpenDataSource)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:155
+msgid "Open a new data source from disk."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonRemoveDataSource)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:172
+msgid "Remove selected data source."
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QListWidget, listDataSources)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:198
+msgid "(Built-in Data Sources for Earth Satellites)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/plugins/render/satellites/SatellitesConfigDialog.ui:226
+msgid ""
+"<html><head/><body><p>Supported formats: <a href=\"http://techbase.kde.org/"
+"Projects/Marble/SatelliteCatalogFormat\"><span style=\" text-decoration: "
+"underline; color:#0000ff;\">Marble Satellite Catalogue</span></a>, <a href="
+"\"http://en.wikipedia.org/wiki/Two-line_element_set\"><span style=\" text-"
+"decoration: underline; color:#0000ff;\">Two-Line-Element Set</span></a></p></"
+"body></html>"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, speedUnit)
 #: src/plugins/render/speedometer/Speedometer.ui:45
