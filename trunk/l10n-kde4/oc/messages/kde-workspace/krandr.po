@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:51+0100\n"
+"POT-Creation-Date: 2012-08-20 05:29+0200\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -144,6 +144,87 @@ msgid_plural "%1 seconds remaining:"
 msgstr[0] ""
 msgstr[1] ""
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:14
+#, fuzzy
+#| msgid "Screen Size"
+msgid "Screen Resize and Rotate Settings"
+msgstr "Talha d'ecran"
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:17
+msgid ""
+"If this option is enabled, options set by the system tray applet will be "
+"saved and loaded when KDE starts instead of being temporary."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, screenLabel)
+#: legacyrandrconfigbase.ui:25
+msgid "Settings for screen:"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, screenCombo)
+#: legacyrandrconfigbase.ui:38
+msgid ""
+"The screen whose settings you would like to change can be selected using "
+"this drop-down list."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
+#: legacyrandrconfigbase.ui:49
+#, fuzzy
+#| msgid "Screen Size"
+msgid "Screen size:"
+msgstr "Talha d'ecran"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, sizeCombo)
+#: legacyrandrconfigbase.ui:62
+msgid ""
+"The size, otherwise known as the resolution, of your screen can be selected "
+"from this drop-down list."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: legacyrandrconfigbase.ui:73
+#, fuzzy
+#| msgid "Refresh:"
+msgid "Refresh rate:"
+msgstr "Actualizar :"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, rateCombo)
+#: legacyrandrconfigbase.ui:83
+msgid ""
+"The refresh rate of your screen can be selected from this drop-down list."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:98
+msgid ""
+"The options in this section allow you to change the rotation of your screen."
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:101
+msgid "Orientation (degrees counterclockwise)"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:108
+msgid ""
+"If this option is enabled the size and orientation settings will be used "
+"when KDE starts."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:111
+msgid "Apply settings on KDE startup"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, syncTrayApp)
+#: legacyrandrconfigbase.ui:118
+msgid "Allow tray application to change startup settings"
+msgstr ""
+
 #: legacyrandrscreen.cpp:140
 #, kde-format
 msgid ""
@@ -272,6 +353,36 @@ msgctxt "Automatic refresh rate configuration"
 msgid "Auto"
 msgstr "Auto"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, OutputConfigBase)
+#: outputconfigbase.ui:26
+#, fuzzy
+#| msgid "Outputs"
+msgid "Output Config"
+msgstr "Sortida"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: outputconfigbase.ui:32
+msgid "Size:"
+msgstr "Talha :"
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: outputconfigbase.ui:48
+msgid "Refresh:"
+msgstr "Actualizar :"
+
+#. i18n: ectx: property (text), widget (QLabel, orientationLabel)
+#: outputconfigbase.ui:64
+msgid "Orientation:"
+msgstr "Orientacion :"
+
+#. i18n: ectx: property (text), widget (QLabel, positionLabel)
+#: outputconfigbase.ui:80
+#, fuzzy
+#| msgid "Position:"
+msgctxt "Position of the screen"
+msgid "Position:"
+msgstr "Posicion :"
+
 #: outputgraphicsitem.cpp:72
 #, kde-format
 msgctxt "Configuration options. Output name, width x height (refresh rate Hz)"
@@ -373,7 +484,8 @@ msgid ""
 "display will revert to your previous settings."
 msgstr ""
 
-#: randrconfig.cpp:61
+#. i18n: ectx: property (text), widget (QPushButton, saveAsDefaultButton)
+#: randrconfig.cpp:61 randrconfigbase.ui:81
 msgid "Save as Default"
 msgstr ""
 
@@ -417,37 +529,33 @@ msgstr ""
 msgid "Changing configuration failed. Please adjust your xorg.conf manually."
 msgstr ""
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, RandRConfigBase)
+#: randrconfigbase.ui:14
+msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, unifyOutputs)
+#: randrconfigbase.ui:27
+#, fuzzy
+#| msgid "Outputs"
+msgid "Unify outputs"
+msgstr "Sortida"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: randrconfigbase.ui:52
+#, fuzzy
+#| msgid "Outputs"
+msgid "Primary output:"
+msgstr "Sortida"
+
+#. i18n: ectx: property (text), widget (QPushButton, identifyOutputsButton)
+#: randrconfigbase.ui:74
+#, fuzzy
+#| msgid "Outputs"
+msgid "Identify Outputs"
+msgstr "Sortida"
+
 #: randrdisplay.cpp:49
 #, kde-format
 msgid "X Resize and Rotate extension version %1.%2"
 msgstr ""
-
-#~ msgid "Size:"
-#~ msgstr "Talha :"
-
-#~ msgid "Refresh:"
-#~ msgstr "Actualizar :"
-
-#~ msgid "Orientation:"
-#~ msgstr "Orientacion :"
-
-#, fuzzy
-#~| msgid "Position:"
-#~ msgctxt "Position of the screen"
-#~ msgid "Position:"
-#~ msgstr "Posicion :"
-
-#, fuzzy
-#~| msgid "Outputs"
-#~ msgid "Unify outputs"
-#~ msgstr "Sortida"
-
-#, fuzzy
-#~| msgid "Outputs"
-#~ msgid "Identify Outputs"
-#~ msgstr "Sortida"
-
-#, fuzzy
-#~| msgid "Screen Size"
-#~ msgid "Screen Settings"
-#~ msgstr "Talha d'ecran"
