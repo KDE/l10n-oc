@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-02 03:40+0100\n"
+"POT-Creation-Date: 2013-03-06 04:14+0100\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -53,6 +53,34 @@ msgstr ""
 #: configurewidget.cpp:41 configurewidget.cpp:123 viewer_p.cpp:1618
 msgid "Auto"
 msgstr "Auto"
+
+#: customheadersettingwidget.cpp:37 customheadersettingwidget.cpp:45
+#, fuzzy
+#| msgid "Sender"
+msgid "Header to show:"
+msgstr "Expeditor"
+
+#: customheadersettingwidget.cpp:44 customheadersettingwidget.cpp:51
+#, fuzzy
+#| msgid "Add..."
+msgid "A&dd..."
+msgstr "Apondre..."
+
+#: customheadersettingwidget.cpp:44 customheadersettingwidget.cpp:51
+#, fuzzy
+#| msgid "Remove"
+msgid "Remo&ve"
+msgstr "Suprimir"
+
+#: customheadersettingwidget.cpp:45 customheadersettingwidget.cpp:52
+msgid "&Modify..."
+msgstr "&Modificar..."
+
+#: customheadersettingwidget.cpp:48 customheadersettingwidget.cpp:52
+#, fuzzy
+#| msgid "Sender"
+msgid "Header to hide:"
+msgstr "Expeditor"
 
 #: editorwatcher.cpp:71
 msgid "Edit with:"
@@ -1245,61 +1273,54 @@ msgstr "Pas disponible"
 msgid "Viewer settings"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: settings.ui:37
-#, fuzzy
-#| msgid "General"
-msgid "General"
-msgstr "General"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: settings.ui:43
-msgid "Au&tomatic collapse level:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowExpandQuotesMark)
-#: settings.ui:53
-msgid "Show &expand/collapse quote marks"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowEmoticons)
-#: settings.ui:60
-msgid "Replace smileys &by emoticons"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShrinkQuotes)
-#: settings.ui:83
-msgid "Reduce font size for &quoted text"
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AccessKeyEnabled)
+#: settings.ui:40
+msgid "Enable Access Key"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_showColorBar)
-#: settings.ui:90
+#: settings.ui:47
 msgid "Show &HTML status bar"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSpamStatus)
-#: settings.ui:97
+#: settings.ui:54
 msgid "Show spam status &in fancy headers"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowEmoticons)
+#: settings.ui:61
+msgid "Replace smileys &by emoticons"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShrinkQuotes)
+#: settings.ui:68
+msgid "Reduce font size for &quoted text"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowExpandQuotesMark)
+#: settings.ui:75
+msgid "Show &expand/collapse quote marks"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: settings.ui:98
+msgid "Au&tomatic collapse level:"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: settings.ui:112
+#: settings.ui:142
 msgid "Fallback character e&ncoding:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: settings.ui:138
+#: settings.ui:168
 msgid "&Override character encoding:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: settings.ui:188
+#: settings.ui:192
 msgid "Minimum font size:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AccessKeyEnabled)
-#: settings.ui:207
-msgid "Enable Access Key"
 msgstr ""
 
 #: urlhandlermanager.cpp:520
@@ -1992,6 +2013,11 @@ msgid "Activate Caret Browsing"
 msgstr ""
 
 #, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "General"
+
+#, fuzzy
 #~| msgid ""
 #~| "A file named \"%1\" already exists. Are you sure you want to overwrite "
 #~| "it?"
@@ -2294,9 +2320,6 @@ msgstr ""
 #~ msgid "Remove Entry"
 #~ msgstr "Suprimir l'entrada"
 
-#~ msgid "Remove"
-#~ msgstr "Suprimir"
-
 #~ msgid "&New Folder..."
 #~ msgstr "Repertòri &nòu..."
 
@@ -2532,9 +2555,6 @@ msgstr ""
 #~ msgid "&Remove"
 #~ msgstr "&Suprimir "
 
-#~ msgid "Add..."
-#~ msgstr "Apondre..."
-
 #~ msgid "Modify..."
 #~ msgstr "Modificar..."
 
@@ -2650,11 +2670,6 @@ msgstr ""
 #~ msgstr "Partejat"
 
 #, fuzzy
-#~| msgid "Sender"
-#~ msgid "Headers"
-#~ msgstr "Expeditor"
-
-#, fuzzy
 #~| msgid "Attachment"
 #~ msgctxt "Config->Composer->Attachments"
 #~ msgid "Attachments"
@@ -2669,9 +2684,6 @@ msgstr ""
 #~| msgid "attachment"
 #~ msgid "As Attachment"
 #~ msgstr "fichièr junt"
-
-#~ msgid "&Modify..."
-#~ msgstr "&Modificar..."
 
 #, fuzzy
 #~| msgid "Name"
@@ -4782,11 +4794,6 @@ msgstr ""
 #~ msgctxt "@title:tab Advanced theme settings"
 #~ msgid "Advanced"
 #~ msgstr "&Avançat"
-
-#, fuzzy
-#~| msgid "Sender"
-#~ msgid "Header:"
-#~ msgstr "Expeditor"
 
 #, fuzzy
 #~| msgid "Size"
