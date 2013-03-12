@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-10 02:22+0100\n"
+"POT-Creation-Date: 2013-03-12 02:16+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -868,7 +868,7 @@ msgctxt "Category of brush engines"
 msgid "Stable"
 msgstr "Escalas"
 
-#: image/brushengine/kis_paintop_registry.cc:131
+#: image/brushengine/kis_paintop_registry.cc:129
 #, fuzzy
 #| msgid "Default"
 msgid "default"
@@ -1209,50 +1209,47 @@ msgstr ""
 msgid "Inherit Alpha"
 msgstr ""
 
-#: image/kis_selection_manager_p.h:110
+#: image/kis_selection_filters.cpp:120
 #, fuzzy
 #| msgid "Settings"
 msgid "Erode Selection"
 msgstr "Paramètres"
 
-#: image/kis_selection_manager_p.h:172
+#: image/kis_selection_filters.cpp:184
 #, fuzzy
 #| msgid "Selection"
 msgid "Dilate Selection"
 msgstr "Seleccion"
 
-#: image/kis_selection_manager_p.h:240
-#: plugins/extensions/modify_selection/dlg_border_selection.cc:31
-#: plugins/extensions/modify_selection/modify_selection.cc:111
+#: image/kis_selection_filters.cpp:254
+#: plugins/extensions/modify_selection/dlg_border_selection.cc:26
 msgid "Border Selection"
 msgstr ""
 
-#: image/kis_selection_manager_p.h:461
-#: plugins/extensions/modify_selection/dlg_feather_selection.cc:32
-#: plugins/extensions/modify_selection/modify_selection.cc:132
+#: image/kis_selection_filters.cpp:473
+#: plugins/extensions/modify_selection/dlg_feather_selection.cc:27
 #, fuzzy
 #| msgid "Selection"
 msgid "Feather Selection"
 msgstr "Seleccion"
 
-#: image/kis_selection_manager_p.h:510
+#: image/kis_selection_filters.cpp:521
 #: plugins/extensions/modify_selection/dlg_grow_selection.cc:27
 msgid "Grow Selection"
 msgstr ""
 
-#: image/kis_selection_manager_p.h:639
-#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:30
-#: plugins/extensions/modify_selection/modify_selection.cc:88
+#: image/kis_selection_filters.cpp:648
+#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:26
 msgid "Shrink Selection"
 msgstr ""
 
-#: image/kis_selection_manager_p.h:785
+#: image/kis_selection_filters.cpp:791
 #, fuzzy
 #| msgid "Selection"
 msgid "Smooth Selection"
 msgstr "Seleccion"
 
-#: image/kis_selection_manager_p.h:843
+#: image/kis_selection_filters.cpp:852
 #, fuzzy
 #| msgid "Selection"
 msgid "Invert Selection"
@@ -4476,27 +4473,31 @@ msgstr ""
 msgid "Grow Selection..."
 msgstr "Seleccion"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:50
+#: plugins/extensions/modify_selection/modify_selection.cc:51
 #, fuzzy
 #| msgid "Selection"
 msgid "Shrink Selection..."
 msgstr "Seleccion"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:56
+#: plugins/extensions/modify_selection/modify_selection.cc:60
 #, fuzzy
 #| msgid "Settings"
 msgid "Border Selection..."
 msgstr "Paramètres"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:62
+#: plugins/extensions/modify_selection/modify_selection.cc:69
 #, fuzzy
 #| msgid "Selection"
 msgid "Feather Selection..."
 msgstr "Seleccion"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:68
-msgid "Smooth..."
-msgstr ""
+#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
+#: plugins/extensions/modify_selection/modify_selection.cc:78
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
+#, fuzzy
+#| msgid "Random"
+msgid "Smooth"
+msgstr "Aleatòri"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/extensions/modify_selection/wdg_border_selection.ui:19
@@ -6892,13 +6893,6 @@ msgstr "Saturacion"
 #| msgid "Paper"
 msgid "Speed"
 msgstr "Papièr"
-
-#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
-#, fuzzy
-#| msgid "Random"
-msgid "Smooth"
-msgstr "Aleatòri"
 
 #. i18n: ectx: property (text), widget (QLabel, lblPostprocessing)
 #: plugins/paintops/experiment/wdgexperimentoptions.ui:89
@@ -9841,42 +9835,42 @@ msgstr "Seleccion"
 msgid "Work Recursively"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:141
+#: ui/actions/kis_selection_action_factories.cpp:94
 msgid "Select All"
 msgstr "Tot seleccionar"
 
-#: ui/actions/kis_selection_action_factories.cpp:204
-#: ui/kis_selection_manager.cc:199
+#: ui/actions/kis_selection_action_factories.cpp:157
+#: ui/kis_selection_manager.cc:201
 msgid "Fill with Pattern"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:209
-#: ui/kis_selection_manager.cc:192
+#: ui/actions/kis_selection_action_factories.cpp:162
+#: ui/kis_selection_manager.cc:194
 msgid "Fill with Background Color"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:214
-#: ui/kis_selection_manager.cc:185
+#: ui/actions/kis_selection_action_factories.cpp:167
+#: ui/kis_selection_manager.cc:187
 msgid "Fill with Foreground Color"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:375
+#: ui/actions/kis_selection_action_factories.cpp:270
 msgid "Cut"
 msgstr "Talhar"
 
-#: ui/actions/kis_selection_action_factories.cpp:375
+#: ui/actions/kis_selection_action_factories.cpp:270
 msgid "Copy"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:399
+#: ui/actions/kis_selection_action_factories.cpp:294
 msgid "Copy Merged"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:433
+#: ui/actions/kis_selection_action_factories.cpp:328
 msgid "(pasted)"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:474
+#: ui/actions/kis_selection_action_factories.cpp:369
 #, fuzzy
 #| msgid "Pattern"
 msgid "Pasted"
@@ -12207,35 +12201,35 @@ msgstr ""
 msgid "&Invert Selection"
 msgstr "Seleccion"
 
-#: ui/kis_selection_manager.cc:172
+#: ui/kis_selection_manager.cc:174
 msgid "Copy Selection to New Layer"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:178
+#: ui/kis_selection_manager.cc:180
 msgid "Cut Selection to New Layer"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:205
+#: ui/kis_selection_manager.cc:207
 msgid "Stroke selected shapes"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:210
+#: ui/kis_selection_manager.cc:212
 msgid "Display Selection"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:217
+#: ui/kis_selection_manager.cc:219
 #, fuzzy
 #| msgid "Selection"
 msgid "Size Canvas to Size of Selection"
 msgstr "Seleccion"
 
-#: ui/kis_selection_manager.cc:537
+#: ui/kis_selection_manager.cc:477
 #, fuzzy
 #| msgid "Custom"
 msgid "Stroked Shapes"
 msgstr "Personalizat"
 
-#: ui/kis_selection_manager.cc:539 ui/kis_selection_manager.cc:542
+#: ui/kis_selection_manager.cc:479 ui/kis_selection_manager.cc:482
 #, fuzzy
 #| msgid "Custom"
 msgid "Stroke Shapes"
