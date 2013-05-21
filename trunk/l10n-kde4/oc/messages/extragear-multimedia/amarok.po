@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-20 03:10+0200\n"
+"POT-Creation-Date: 2013-05-21 01:44+0000\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -236,11 +236,11 @@ msgstr ""
 msgid "Visit contributor's StackOverflow profile"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, m_textLabel)
-#. i18n: ectx: property (text), widget (QTreeWidget, requestDetails)
-#. i18n: ectx: property (text), widget (QTreeWidget, responseDetails)
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #. i18n: ectx: property (text), widget (QTableWidget, serverList)
+#. i18n: ectx: property (text), widget (QTreeWidget, requestDetails)
+#. i18n: ectx: property (text), widget (QTreeWidget, responseDetails)
+#. i18n: ectx: property (text), widget (QLabel, m_textLabel)
 #: aboutdialog/OcsPersonItem.ui:137 amarokurls/BookmarkModel.cpp:261
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:397
 #: network/NetworkRequests.ui:89 network/NetworkRequests.ui:103
@@ -1866,12 +1866,6 @@ msgid "Various Artists"
 msgstr "Mai d'un artista"
 
 #: browsers/CollectionTreeItemModelBase.cpp:966
-#, fuzzy
-#| msgid "Artist - Album"
-msgid "Year - Album"
-msgstr "Artista - Albom"
-
-#: browsers/CollectionTreeItemModelBase.cpp:966
 #: browsers/CollectionTreeView.cpp:218
 #: context/applets/albums/AlbumsView.cpp:256
 #: context/applets/wikipedia/WikipediaApplet.cpp:631
@@ -1881,6 +1875,12 @@ msgstr "Artista - Albom"
 #: services/magnatune/MagnatuneStore.cpp:224
 msgid "Album"
 msgstr "Album"
+
+#: browsers/CollectionTreeItemModelBase.cpp:966
+#, fuzzy
+#| msgid "Artist - Album"
+msgid "Year - Album"
+msgstr "Artista - Albom"
 
 #. i18n: ectx: property (text), widget (QLabel, artistLabel)
 #: browsers/CollectionTreeItemModelBase.cpp:967
@@ -2784,8 +2784,8 @@ msgstr "Pòrt"
 msgid "Enter the port number to access the server. Default is port 3306.\n"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_User)
 #. i18n: ectx: property (text), widget (QLabel, labelUsername)
+#. i18n: ectx: property (text), widget (QLabel, label_User)
 #: configdialog/dialogs/DatabaseConfig.ui:101
 #: services/gpodder/GpodderConfigWidget.ui:32
 #: services/lastfm/LastFmConfigWidget.ui:32
@@ -2797,8 +2797,8 @@ msgstr "&Nom d'usuari :"
 msgid "Enter the password for the default user.\n"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_Password)
 #. i18n: ectx: property (text), widget (QLabel, labelPassword)
+#. i18n: ectx: property (text), widget (QLabel, label_Password)
 #: configdialog/dialogs/DatabaseConfig.ui:134
 #: services/gpodder/GpodderConfigWidget.ui:45
 #: services/lastfm/LastFmConfigWidget.ui:45
@@ -3176,8 +3176,8 @@ msgstr ""
 msgid "Forever"
 msgstr "Jamai"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_FadeoutLength)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_OsdDuration)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_FadeoutLength)
 #: configdialog/dialogs/NotificationsConfig.ui:74
 #: configdialog/dialogs/PlaybackConfig.ui:80
 msgid " ms"
@@ -3558,17 +3558,17 @@ msgid "Recently Played Tracks"
 msgstr "&Suprimir"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:445
+#: playlist/PlaylistModel.cpp:940
+msgid "Play Count"
+msgstr ""
+
+#: context/applets/currenttrack/CurrentTrack.cpp:445
 #: playlist/ProgressiveSearchWidget.cpp:72
 #, fuzzy
 #| msgctxt "Items, as in music"
 #| msgid "&Tracks"
 msgid "Tracks"
 msgstr "&Pistas"
-
-#: context/applets/currenttrack/CurrentTrack.cpp:445
-#: playlist/PlaylistModel.cpp:940
-msgid "Play Count"
-msgstr ""
 
 #: context/applets/currenttrack/CurrentTrack.cpp:446
 #: playlist/PlaylistModel.cpp:938
@@ -3586,8 +3586,8 @@ msgstr "Artista"
 msgid "Last Played"
 msgstr ""
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, currentTrackSettings)
 #. i18n: ectx: property (windowTitle), widget (QWidget, TabsSettings)
+#. i18n: ectx: property (windowTitle), widget (QWidget, currentTrackSettings)
 #: context/applets/currenttrack/CurrentTrack.cpp:668
 #: context/applets/currenttrack/currentTrackSettings.ui:20
 #: context/applets/tabs/TabsSettings.ui:26
@@ -3859,15 +3859,15 @@ msgstr ""
 msgid "Replace downloaded label"
 msgstr "Telecargar"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, replaceLabel2)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: context/applets/labels/labelsReplacementSettings.ui:36
 #: dialogs/OrganizeCollectionOptions.ui:178
 msgid "with"
 msgstr "amb"
 
-#. i18n: ectx: property (text), widget (QPushButton, addPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
+#. i18n: ectx: property (text), widget (QPushButton, addPushButton)
 #: context/applets/labels/labelsReplacementSettings.ui:69
 #: dialogs/TagDialogBase.ui:1005
 msgid "Add"
@@ -4580,9 +4580,9 @@ msgstr "Nom :"
 msgid "City:"
 msgstr "Largor"
 
+#. i18n: ectx: property (text), widget (QLabel, UrlLabel)
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_urlLabel)
-#. i18n: ectx: property (text), widget (QLabel, UrlLabel)
 #: context/applets/upcomingevents/upcomingEventsVenueSettings.ui:223
 #: core-impl/podcasts/sql/PodcastSettingsBase.ui:52
 #: services/opmldirectory/AddOpmlWidget.ui:65
@@ -5455,8 +5455,8 @@ msgstr "Configurar"
 msgid "iPod name:"
 msgstr "Nom de fichièr"
 
-#. i18n: ectx: property (text), widget (QLabel, transcodeLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_transcodeLabel)
+#. i18n: ectx: property (text), widget (QLabel, transcodeLabel)
 #: core-impl/collections/ipodcollection/support/IpodConfiguration.ui:36
 #: core-impl/collections/umscollection/UmsConfiguration.ui:111
 #, fuzzy
@@ -7287,6 +7287,12 @@ msgctxt "h for hours"
 msgid "%1h"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, qLabel_collection)
+#. i18n: ectx: property (text), widget (QLabel, qLabel_length)
+#. i18n: ectx: property (text), widget (QLabel, qLabel_bitrate)
+#. i18n: ectx: property (text), widget (QLabel, qLabel_samplerate)
+#. i18n: ectx: property (text), widget (QLabel, qLabel_size)
+#. i18n: ectx: property (text), widget (QLabel, qLabel_playcount)
 #. i18n: ectx: property (text), widget (QLabel, eqPreampValue)
 #. i18n: ectx: property (text), widget (QLabel, eqBand0Value)
 #. i18n: ectx: property (text), widget (QLabel, eqBand1Value)
@@ -7298,12 +7304,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, eqBand7Value)
 #. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
 #. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
-#. i18n: ectx: property (text), widget (QLabel, qLabel_collection)
-#. i18n: ectx: property (text), widget (QLabel, qLabel_length)
-#. i18n: ectx: property (text), widget (QLabel, qLabel_bitrate)
-#. i18n: ectx: property (text), widget (QLabel, qLabel_samplerate)
-#. i18n: ectx: property (text), widget (QLabel, qLabel_size)
-#. i18n: ectx: property (text), widget (QLabel, qLabel_playcount)
 #: core/support/Amarok.cpp:135 dialogs/EqualizerDialog.ui:122
 #: dialogs/EqualizerDialog.ui:132 dialogs/EqualizerDialog.ui:142
 #: dialogs/EqualizerDialog.ui:152 dialogs/EqualizerDialog.ui:162
@@ -8867,8 +8867,8 @@ msgstr "Actualizar"
 msgid "Exit without saving"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #: dialogs/MusicBrainzTagger.ui:68 dialogs/TagDialogBase.ui:1146
 #: services/magnatune/MagnatuneRedownloadDialogBase.ui:36
 msgid "&Cancel"
@@ -9531,8 +9531,8 @@ msgstr ""
 msgid "Result Preview"
 msgstr "&Precedent"
 
-#. i18n: ectx: property (text), widget (QLabel, label_21)
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
+#. i18n: ectx: property (text), widget (QLabel, label_21)
 #: dialogs/TagGuessOptions.ui:101 services/opmldirectory/AddOpmlWidget.ui:78
 #, fuzzy
 #| msgid "Title"
@@ -12544,11 +12544,11 @@ msgid ""
 "specified time."
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label_Strictness)
 #. i18n: ectx: property (text), widget (QLabel, label_StrictnessInt)
 #. i18n: ectx: property (text), widget (QLabel, label_strictnessDate)
 #. i18n: ectx: property (text), widget (QLabel, label_StrictnessTime)
 #. i18n: ectx: property (text), widget (QLabel, label_StrictnessRating)
-#. i18n: ectx: property (text), widget (QLabel, label_Strictness)
 #: playlistgenerator/constraints/CheckpointEditWidget.ui:110
 #: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:97
 #: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:123
@@ -12562,12 +12562,12 @@ msgstr ""
 msgid "Match:"
 msgstr "Actualizar"
 
+#. i18n: ectx: property (text), widget (QLabel, label_Fuzzy)
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyInt)
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyDate)
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyTime)
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyRating)
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyPos)
-#. i18n: ectx: property (text), widget (QLabel, label_Fuzzy)
 #: playlistgenerator/constraints/CheckpointEditWidget.ui:122
 #: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:109
 #: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:135
@@ -12579,12 +12579,12 @@ msgstr "Actualizar"
 msgid "fuzzy"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label_Exact)
 #. i18n: ectx: property (text), widget (QLabel, label_ExactInt)
 #. i18n: ectx: property (text), widget (QLabel, label_ExactDate)
 #. i18n: ectx: property (text), widget (QLabel, label_ExactTime)
 #. i18n: ectx: property (text), widget (QLabel, label_ExactRating)
 #. i18n: ectx: property (text), widget (QLabel, label_ExactPos)
-#. i18n: ectx: property (text), widget (QLabel, label_Exact)
 #: playlistgenerator/constraints/CheckpointEditWidget.ui:154
 #: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:135
 #: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:161
@@ -12665,10 +12665,10 @@ msgstr ""
 msgid "shorter than"
 msgstr "mai grand que"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
 #: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:44
 #: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:44
 #: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:44
@@ -12741,8 +12741,8 @@ msgstr "Apondre a la tièra de lecturas"
 msgid "Total file size of playlist: unknown"
 msgstr "Apondre a la tièra de lecturas"
 
-#. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistLengthEditWidget)
 #. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistFileSizeEditWidget)
+#. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistLengthEditWidget)
 #: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:15
 #: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:15
 msgid ""
@@ -12766,10 +12766,10 @@ msgid ""
 "than, equal to, or more than the specified value."
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
 #: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:39
 #: playlistgenerator/constraints/TagMatch.cpp:339
 #: playlistgenerator/constraints/TagMatchEditWidget.ui:113
@@ -13615,7 +13615,7 @@ msgstr ""
 msgid "Synchronized on: %1"
 msgstr ""
 
-#: PluginManager.cpp:245
+#: PluginManager.cpp:250
 msgid ""
 "<p>Amarok could not find any collection plugins. It is possible that Amarok "
 "is installed under the wrong prefix, please fix your installation using:<pre>"
@@ -14861,8 +14861,8 @@ msgid ""
 "updates and download them automatically."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, autoUpdateDatabase)
 #. i18n: ectx: property (text), widget (QCheckBox, autoUpdate)
+#. i18n: ectx: property (text), widget (QCheckBox, autoUpdateDatabase)
 #: services/magnatune/MagnatuneConfigWidget.ui:33
 #: services/magnatune/MagnatuneNeedUpdateWidget.ui:32
 msgid "Update Magnatune database automatically"
