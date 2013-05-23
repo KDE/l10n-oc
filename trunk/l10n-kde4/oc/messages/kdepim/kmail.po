@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-20 03:43+0200\n"
+"POT-Creation-Date: 2013-05-23 01:32+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -4709,7 +4709,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr ""
 
-#: messageactions.cpp:83 searchwindow.cpp:297
+#: messageactions.cpp:83 searchwindow.cpp:236
 msgid "&Reply..."
 msgstr ""
 
@@ -4717,11 +4717,11 @@ msgstr ""
 msgid "Reply to A&uthor..."
 msgstr ""
 
-#: messageactions.cpp:97 searchwindow.cpp:301
+#: messageactions.cpp:97 searchwindow.cpp:240
 msgid "Reply to &All..."
 msgstr ""
 
-#: messageactions.cpp:104 searchwindow.cpp:305
+#: messageactions.cpp:104 searchwindow.cpp:244
 msgid "Reply to Mailing-&List..."
 msgstr ""
 
@@ -4766,7 +4766,7 @@ msgstr ""
 msgid "Add Note..."
 msgstr "Apondre..."
 
-#: messageactions.cpp:168 searchwindow.cpp:309
+#: messageactions.cpp:168 searchwindow.cpp:248
 msgctxt "Message->"
 msgid "&Forward"
 msgstr ""
@@ -4895,88 +4895,58 @@ msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Recercar"
 
-#: searchwindow.cpp:111
-#, fuzzy
-#| msgid "New Folder"
-msgid "Search in &all folders"
-msgstr "Repertòri novèl"
-
-#: searchwindow.cpp:115
-msgid "Search &only in:"
-msgstr ""
-
-#: searchwindow.cpp:122
-msgid "I&nclude sub-folders"
-msgstr ""
-
-#: searchwindow.cpp:218
-msgid "Search folder &name:"
-msgstr ""
-
-#: searchwindow.cpp:228 searchwindow.cpp:456
+#: searchwindow.cpp:188 searchwindow.cpp:395
 msgid "Last Search"
 msgstr ""
 
-#: searchwindow.cpp:238
-#, fuzzy
-#| msgid "Select Folder"
-msgid "Op&en Search Folder"
-msgstr "Seleccionar un repertòri"
-
-#: searchwindow.cpp:247
-#, fuzzy
-#| msgid "&Message"
-msgid "Open &Message"
-msgstr "Fusionar"
-
-#: searchwindow.cpp:258
+#: searchwindow.cpp:207
 msgid "AMiddleLengthText..."
 msgstr ""
 
-#: searchwindow.cpp:259
+#: searchwindow.cpp:208
 #, fuzzy
 #| msgid "Ready."
 msgctxt "@info:status finished searching."
 msgid "Ready."
 msgstr "Prèst."
 
-#: searchwindow.cpp:314
+#: searchwindow.cpp:253
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr ""
 
-#: searchwindow.cpp:319
+#: searchwindow.cpp:258
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr ""
 
-#: searchwindow.cpp:333
+#: searchwindow.cpp:272
 msgid "Save Attachments..."
 msgstr "Enregistrar los fichièrs junts..."
 
-#: searchwindow.cpp:339
+#: searchwindow.cpp:278
 msgid "Clear Selection"
 msgstr "Proteccion"
 
-#: searchwindow.cpp:423
+#: searchwindow.cpp:362
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] ""
 msgstr[1] ""
 
-#: searchwindow.cpp:524
+#: searchwindow.cpp:463
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr ""
 
-#: searchwindow.cpp:639
+#: searchwindow.cpp:578
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
 msgstr ""
 
-#: searchwindow.cpp:746
+#: searchwindow.cpp:685
 #, fuzzy, kde-format
 #| msgid "Moving messages"
 msgid "Copy Message"
@@ -4984,7 +4954,7 @@ msgid_plural "Copy %1 Messages"
 msgstr[0] "Desplaçament de messatges"
 msgstr[1] "Desplaçament de messatges"
 
-#: searchwindow.cpp:749
+#: searchwindow.cpp:688
 #, fuzzy, kde-format
 #| msgid "Current Message"
 msgid "Cut Message"
@@ -5459,6 +5429,44 @@ msgstr ""
 #: ui/miscpagemaintab.ui:187
 msgid "Print only selected text"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mChkbxAllFolders)
+#: ui/searchwindow.ui:17
+#, fuzzy
+#| msgid "New Folder"
+msgid "Search in &all folders"
+msgstr "Repertòri novèl"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mChkbxSpecificFolders)
+#: ui/searchwindow.ui:26
+msgid "Search &only in:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mChkSubFolders)
+#: ui/searchwindow.ui:39
+#, fuzzy
+#| msgid "New Folder"
+msgid "&Include sub-folders"
+msgstr "Repertòri novèl"
+
+#. i18n: ectx: property (text), widget (QLabel, mSearchFolderLbl)
+#: ui/searchwindow.ui:93
+msgid "Search folder &name:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, mSearchFolderOpenBtn)
+#: ui/searchwindow.ui:113
+#, fuzzy
+#| msgid "Select Folder"
+msgid "Open &Search Folder"
+msgstr "Seleccionar un repertòri"
+
+#. i18n: ectx: property (text), widget (KPushButton, mSearchResultOpenBtn)
+#: ui/searchwindow.ui:123
+#, fuzzy
+#| msgid "&Message"
+msgid "Open &Message"
+msgstr "Fusionar"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: ui/securitypagegeneraltab.ui:17
