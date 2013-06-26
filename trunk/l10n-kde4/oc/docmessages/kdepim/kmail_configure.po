@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail_configure\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-25 02:02+0000\n"
+"POT-Creation-Date: 2013-06-26 02:06+0000\n"
 "PO-Revision-Date: 2008-08-05 22:24+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2043,7 +2043,7 @@ msgstr ""
 #: configure.docbook:1288
 #, no-c-format
 msgid ""
-"Say you have a relative that can only recieve image files of a certain size "
+"Say you have a relative that can only receive image files of a certain size "
 "due to their email providers limits, you can use the <guilabel>Reduce image "
 "to maximum dimension:</guilabel> option to select a size to reduce the image "
 "to and enter their email into the filters on the <guilabel>Recipients</"
@@ -2163,7 +2163,7 @@ msgid ""
 "This tab is where you would specify recipients that need to have resized "
 "images. &eg; grandma@myfamily.net; boss@mywork.com. You need to decide if "
 "you need multiple or only one, and enter the email(s) into the text box "
-"using the <quote>;</quote> as a seperator when you have multiple. You can "
+"using the <quote>;</quote> as a separator when you have multiple. You can "
 "also specify if you do not want certain recipient(s) images to be resized. "
 "The default is no filtering."
 msgstr ""
@@ -2200,61 +2200,139 @@ msgid "Security Page"
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:1360
+#: configure.docbook:1357
 #, no-c-format
 msgid "Reading"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1364
+#: configure.docbook:1358
 #, no-c-format
 msgid ""
 "On this tab you can configure security-relevant options for reading messages."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1373
+#: configure.docbook:1362
 #, no-c-format
 msgid "Prefer HTML to plain text"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1376
+#: configure.docbook:1364
 #, no-c-format
 msgid ""
-"If checked, &kmail; will show &html; messages with their &html; formatting "
-"and layout. We strongly recommend to leave this option off, as security "
-"problems with &html; might show up. When this option is off, you can still "
-"read &html; messages, but only as plain text."
+"By default &kmail; will show &html; messages in plain text. If you prefer to "
+"view messages with &html; formatting and layout automatically, select this "
+"option. However, we recommend leaving this option off, as security problems "
+"with &html; might show up."
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1368
+#, no-c-format
+msgid ""
+"You can still easily view messages in &html; format per email by clicking "
+"the plain message/html message toggle bar on the left hand side of the "
+"message window. Please see <link linkend=\"configure-appearance-message-"
+"window\">Message Window</link> to enable this feature."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1388
+#: configure.docbook:1375
 #, no-c-format
 msgid "Allow messages to load external references from the Internet"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1391
+#: configure.docbook:1377
 #, no-c-format
 msgid ""
-"If checked, &kmail; can load external images, style sheets &etc; from the "
+"If checked, &kmail; can load external images, stylesheets &etc; from the "
 "Internet when you look at an &html; message. We strongly recommend to leave "
 "this option off (although it has no effect if you only view plain text "
-"messages). By adding external references to their messages, people sending "
-"spam can detect that and when you have looked at their message. Note that "
-"this option has no effect on &Java;, JavaScript and Plugins - these are "
-"disabled anyway and cannot be enabled at all."
+"messages)."
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1380
+#, no-c-format
+msgid ""
+"By adding external references to their messages, people sending spam can "
+"detect when you have looked at their message, your location, and alot of "
+"other information that gets logged on web servers. Note that this option has "
+"no effect on &Java;, JavaScript and Plugins as these are not supported in "
+"&kmail; at all, which is a good thing, as most viruses propagate through "
+"these."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1407
+#: configure.docbook:1386
+#, no-c-format
+msgid "Informs if message reading is a suspected email scam"
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1388
+#, no-c-format
+msgid ""
+"With the popularity of email, unfortunately comes the popularity of email "
+"scams. Email scams can include emails made to appear as though they come "
+"from legitimate companies, but they really link to malicious web sites "
+"requesting your personal information. This can lead to identity theft and "
+"worse. By default &kmail; analyzes messages for common scams, and will "
+"inform you if the email is a suspected scam. It is highly advised to keep "
+"this feature enabled. If you wish to disable this great feature, uncheck "
+"<guilabel>Informs if message reading is a suspected email scam</guilabel>."
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1392
+#, no-c-format
+msgid ""
+"If you have legitimate emails being flagged, &eg; from trusted friends, you "
+"can add their email to the <guilabel>Whitelist:</guilabel> by clicking the "
+"<guibutton>Add...</guibutton> and enter the email into the dialog that pops "
+"up. Please note that at this time, only individual emails are supported."
+msgstr ""
+
+#. Tag: guilabel
+#: configure.docbook:1397
+#, no-c-format
+msgid "Encrypted messages"
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1399
+#, no-c-format
+msgid ""
+"By default, &kmail; will automatically attempt to decrypt encrypted messages "
+"when you view them. If you prefer to do it manually, unselect this option."
+msgstr ""
+
+#. Tag: guilabel
+#: configure.docbook:1403
+#, no-c-format
+msgid "Certificate &amp; Key Bundle Attachments"
+msgstr ""
+
+#. Tag: para
+#: configure.docbook:1405
+#, no-c-format
+msgid ""
+"If you would like to have &kmail; to <guilabel>Automatically import keys and "
+"certificate</guilabel> from incoming messages for decryption, select this "
+"option."
+msgstr ""
+
+#. Tag: guilabel
+#: configure.docbook:1410
 #, no-c-format
 msgid "Message Disposition Notifications"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1410
+#: configure.docbook:1413
 #, no-c-format
 msgid ""
 "&mdn;s are a generalization of what is commonly called a <quote>read "
@@ -2266,7 +2344,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1420
+#: configure.docbook:1423
 #, no-c-format
 msgid ""
 "The following options (listed as <guilabel>Send policy</guilabel>) are "
@@ -2274,13 +2352,13 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: configure.docbook:1427
+#: configure.docbook:1430
 #, no-c-format
 msgid "<guilabel>Ignore</guilabel> (recommended)"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1431
+#: configure.docbook:1434
 #, no-c-format
 msgid ""
 "Ignores any request for disposition notifications. No &mdn; will ever be "
@@ -2288,13 +2366,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1440
+#: configure.docbook:1443
 #, no-c-format
 msgid "<guilabel>Ask</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1443
+#: configure.docbook:1446
 #, no-c-format
 msgid ""
 "Answers requests only after asking the user for permission. This way, you "
@@ -2303,13 +2381,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1453
+#: configure.docbook:1456
 #, no-c-format
 msgid "Deny"
 msgstr "Refusar"
 
 #. Tag: para
-#: configure.docbook:1456
+#: configure.docbook:1459
 #, no-c-format
 msgid ""
 "Always sends a <quote>denied</quote> notification. This is only "
@@ -2319,13 +2397,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1468
+#: configure.docbook:1471
 #, no-c-format
 msgid "Always send"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1471
+#: configure.docbook:1474
 #, no-c-format
 msgid ""
 "Always sends the requested disposition notification. That means that the "
@@ -2337,7 +2415,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1485
+#: configure.docbook:1488
 #, no-c-format
 msgid ""
 "If you are unsure, experiment a while with <guilabel>Ask</guilabel> and if "
@@ -2345,7 +2423,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1490
+#: configure.docbook:1493
 #, no-c-format
 msgid ""
 "The following options (listed as <guilabel>Quote original message</"
@@ -2354,13 +2432,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1499
+#: configure.docbook:1502
 #, no-c-format
 msgid "Nothing"
 msgstr "Res"
 
 #. Tag: para
-#: configure.docbook:1502
+#: configure.docbook:1505
 #, no-c-format
 msgid ""
 "No parts of the message other than the mandatory message-id and the original "
@@ -2370,13 +2448,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1514
+#: configure.docbook:1517
 #, no-c-format
 msgid "Full message"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1517
+#: configure.docbook:1520
 #, no-c-format
 msgid ""
 "Attaches the complete message to the disposition notification. Usually, this "
@@ -2387,13 +2465,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1530
+#: configure.docbook:1533
 #, no-c-format
 msgid "Only headers"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1533
+#: configure.docbook:1536
 #, no-c-format
 msgid ""
 "Attaches only the headers to the disposition notification. This is usually "
@@ -2402,19 +2480,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1543
+#: configure.docbook:1546
 #, no-c-format
 msgid "If unsure, leave the option at the default."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1551
+#: configure.docbook:1554
 #, no-c-format
 msgid "Do not send MDNs in response to encrypted messages"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1554
+#: configure.docbook:1557
 #, no-c-format
 msgid ""
 "This option suppresses the sending of &mdn;s if the message is encrypted "
@@ -2424,7 +2502,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1561
+#: configure.docbook:1564
 #, no-c-format
 msgid ""
 "Strictly speaking, this option is not needed, since &kmail; sends &mdn;s "
@@ -2435,19 +2513,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1570
+#: configure.docbook:1573
 #, no-c-format
 msgid "If unsure, leave the option checked."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1578
+#: configure.docbook:1581
 #, no-c-format
 msgid "Automatically import keys and certificates"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1581
+#: configure.docbook:1584
 #, no-c-format
 msgid ""
 "If checked, &kmail; automatically imports any attachments containing "
@@ -2456,7 +2534,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1588
+#: configure.docbook:1591
 #, no-c-format
 msgid ""
 "Verifying &smime; signatures always involves importing the contained "
@@ -2466,13 +2544,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:1602
+#: configure.docbook:1605
 #, no-c-format
 msgid "Composing"
 msgstr "Compression"
 
 #. Tag: para
-#: configure.docbook:1606
+#: configure.docbook:1609
 #, no-c-format
 msgid ""
 "On this tab you can configure security-relevant options for composing "
@@ -2480,13 +2558,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1615
+#: configure.docbook:1618
 #, no-c-format
 msgid "Automatically sign messages"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1618
+#: configure.docbook:1621
 #, no-c-format
 msgid ""
 "If checked, the <xref linkend=\"composer-options-sign-message\"/> option in "
@@ -2494,13 +2572,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1623
+#: configure.docbook:1626
 #, no-c-format
 msgid "However, you can still switch it on and off on a per-message basis."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1632
+#: configure.docbook:1635
 #, no-c-format
 msgid ""
 "When encrypting emails, always also encrypt to the certificate of my own "
@@ -2508,7 +2586,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1635
+#: configure.docbook:1638
 #, no-c-format
 msgid ""
 "If checked, any message that is encrypted to the recipients will "
@@ -2516,7 +2594,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1640
+#: configure.docbook:1643
 #, no-c-format
 msgid ""
 "If you uncheck this option, you may not be able to decrypt the messages "
@@ -2524,13 +2602,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1651
+#: configure.docbook:1654
 #, no-c-format
 msgid "Store sent messages encrypted"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1653
+#: configure.docbook:1656
 #, no-c-format
 msgid ""
 "This option enables a mode of using mail encryption that is sometimes "
@@ -2541,7 +2619,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1662
+#: configure.docbook:1665
 #, no-c-format
 msgid ""
 "&kmail; supports this mode half-heartedly, since such functionality should "
@@ -2552,7 +2630,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1673
+#: configure.docbook:1676
 #, no-c-format
 msgid ""
 "If checked, messages are stored in your <guilabel>sent-mail</guilabel> "
@@ -2561,7 +2639,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1679
+#: configure.docbook:1682
 #, no-c-format
 msgid ""
 "If unchecked, messages will <emphasis>always</emphasis> be stored "
@@ -2570,13 +2648,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1690
+#: configure.docbook:1693
 #, no-c-format
 msgid "Always show the encryption keys for approval"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1693
+#: configure.docbook:1696
 #, no-c-format
 msgid ""
 "If checked, every time you encrypt a message, a dialog will appear that "
@@ -2587,13 +2665,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1707
+#: configure.docbook:1710
 #, no-c-format
 msgid "Automatically encrypt messages whenever possible"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1710
+#: configure.docbook:1713
 #, no-c-format
 msgid ""
 "Also called <quote>opportunistic encryption</quote>. If checked, &kmail; "
@@ -2604,7 +2682,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1719
+#: configure.docbook:1722
 #, no-c-format
 msgid ""
 "It is highly recommended to turn this on, as it makes encrypting messages "
@@ -2612,13 +2690,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1728
+#: configure.docbook:1731
 #, no-c-format
 msgid "Never sign/encrypt when saving as draft"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1731
+#: configure.docbook:1734
 #, no-c-format
 msgid ""
 "If checked, &kmail; will not attempt to sign and/or encrypt messages that "
@@ -2629,25 +2707,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:1748
+#: configure.docbook:1751
 #, no-c-format
 msgid "Miscellaneous"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1752
+#: configure.docbook:1755
 #, no-c-format
 msgid "On this tab you can switch security-relevant warnings on and off."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1761
+#: configure.docbook:1764
 #, no-c-format
 msgid "Warn when trying to send unsigned messages"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1764
+#: configure.docbook:1767
 #, no-c-format
 msgid ""
 "If checked, &kmail; will show a warning if for whatever reason a message "
@@ -2655,13 +2733,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1774
+#: configure.docbook:1777
 #, no-c-format
 msgid "Warn when trying to send unencrypted messages"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1777
+#: configure.docbook:1780
 #, no-c-format
 msgid ""
 "If checked, &kmail; will show a warning if for whatever reason a message "
@@ -2669,7 +2747,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1782
+#: configure.docbook:1785
 #, no-c-format
 msgid ""
 "While it is common to sign all outgoing messages, encrypting them is not. So "
@@ -2681,13 +2759,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1799
+#: configure.docbook:1802
 #, no-c-format
 msgid "Warn if receiver's email address is not in certificate"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1802
+#: configure.docbook:1805
 #, no-c-format
 msgid ""
 "If checked, &kmail; will emit a warning if an &smime; certificate or "
@@ -2696,7 +2774,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1808
+#: configure.docbook:1811
 #, no-c-format
 msgid ""
 "Situations in which this warning will trigger include when configuring your "
@@ -2706,13 +2784,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1820
+#: configure.docbook:1823
 #, no-c-format
 msgid "Warn if certificates/keys expire soon"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1823
+#: configure.docbook:1826
 #, no-c-format
 msgid ""
 "If checked, &kmail; will warn when an &smime; certificate or &openpgp; key "
@@ -2720,7 +2798,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1827
+#: configure.docbook:1830
 #, no-c-format
 msgid ""
 "The period in which to warn before key/certificate expiration can then be "
@@ -2730,13 +2808,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1843
+#: configure.docbook:1846
 #, no-c-format
 msgid "Re-Enable All &quot;Don&apos;t Ask Again&quot; Warnings"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1846
+#: configure.docbook:1849
 #, no-c-format
 msgid ""
 "Apart from the main warnings described above, there are more warning and "
@@ -2746,7 +2824,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1853
+#: configure.docbook:1856
 #, no-c-format
 msgid ""
 "This will re-enable <emphasis>all</emphasis> such warnings for &kmail;. It "
@@ -2756,13 +2834,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:1872
+#: configure.docbook:1875
 #, no-c-format
 msgid "&smime; Validation"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1876
+#: configure.docbook:1879
 #, no-c-format
 msgid ""
 "This tab contains selected entries from &gpgsm;'s . Please refer to the "
@@ -2770,13 +2848,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1887
+#: configure.docbook:1890
 #, no-c-format
 msgid "Validate certificates using CRLs"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1890
+#: configure.docbook:1893
 #, no-c-format
 msgid ""
 "If checked, &smime; certificates are validated using Certificate Revocation "
@@ -2784,13 +2862,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1899
+#: configure.docbook:1902
 #, no-c-format
 msgid "Validate certificates online (OCSP)"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1902
+#: configure.docbook:1905
 #, no-c-format
 msgid ""
 "If this option is selected, &smime; certificates are validated using the "
@@ -2798,7 +2876,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1907
+#: configure.docbook:1910
 #, no-c-format
 msgid ""
 "Fill in the &URL; of the <acronym>OCSP</acronym> responder in the field "
@@ -2806,13 +2884,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1916
+#: configure.docbook:1919
 #, no-c-format
 msgid "OCSP responder &URL;"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1919
+#: configure.docbook:1922
 #, no-c-format
 msgid ""
 "Enter the address of the server for online validation of certificates. The "
@@ -2820,25 +2898,25 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1929
+#: configure.docbook:1932
 #, no-c-format
 msgid "OCSP responder signature"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1932
+#: configure.docbook:1935
 #, no-c-format
 msgid "Select or change and enter the &smime; key to use."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1940
+#: configure.docbook:1943
 #, no-c-format
 msgid "Ignore service &URL; of certificates"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1943
+#: configure.docbook:1946
 #, no-c-format
 msgid ""
 "Check this option to skip online validation using the OCSP. This Option "
@@ -2846,13 +2924,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1952
+#: configure.docbook:1955
 #, no-c-format
 msgid "Do not check certificate policies"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1955
+#: configure.docbook:1958
 #, no-c-format
 msgid ""
 "By default, <guilabel>GnuPG</guilabel> uses the file <emphasis>~/.gnupg/"
@@ -2861,13 +2939,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1966
+#: configure.docbook:1969
 #, no-c-format
 msgid "Never consult a CRLs"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1969
+#: configure.docbook:1972
 #, no-c-format
 msgid ""
 "If this option is checked, Certificate Revocation Lists are never used to "
@@ -2875,13 +2953,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1978
+#: configure.docbook:1981
 #, no-c-format
 msgid "Fetch missing issuer certificates"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1981
+#: configure.docbook:1984
 #, no-c-format
 msgid ""
 "Check this option if you want the missing issuer certificates to be fetched "
@@ -2890,25 +2968,25 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:1991
+#: configure.docbook:1994
 #, no-c-format
 msgid "Do not perform any &HTTP; requests"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:1994
+#: configure.docbook:1997
 #, no-c-format
 msgid "Entirely disables the use of &HTTP; for &smime;."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2003
+#: configure.docbook:2006
 #, no-c-format
 msgid "Ignore &HTTP; CRL Distribution Point of certificates"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2006
+#: configure.docbook:2009
 #, no-c-format
 msgid ""
 "When looking for the location of a CRL, the <quote>to-be-tested</quote> "
@@ -2920,13 +2998,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2022
+#: configure.docbook:2025
 #, no-c-format
 msgid "Use system &HTTP; proxy"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2025
+#: configure.docbook:2028
 #, no-c-format
 msgid ""
 "If this option is selected, the value of the &HTTP; proxy shown on the right "
@@ -2935,13 +3013,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2036
+#: configure.docbook:2039
 #, no-c-format
 msgid "Use this proxy for &HTTP; requests"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2039
+#: configure.docbook:2042
 #, no-c-format
 msgid ""
 "Enter here the location of your &HTTP; Proxy, which will be used for all "
@@ -2950,25 +3028,25 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2051
+#: configure.docbook:2054
 #, no-c-format
 msgid "Do not perform any LDAP requests"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2054
+#: configure.docbook:2057
 #, no-c-format
 msgid "Entirely disables the use of LDAP for &smime;."
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2063
+#: configure.docbook:2066
 #, no-c-format
 msgid "Ignore LDAP CRL Distribution Point of certificates"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2066
+#: configure.docbook:2069
 #, no-c-format
 msgid ""
 "When looking for the location of a <acronym>CRL</acronym>, the <quote>to-be-"
@@ -2981,13 +3059,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2082
+#: configure.docbook:2085
 #, no-c-format
 msgid "Primary host for LDAP requests"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2085
+#: configure.docbook:2088
 #, no-c-format
 msgid ""
 "Entering a <acronym>LDAP</acronym> server here will make all <acronym>LDAP</"
@@ -3002,25 +3080,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:2107
+#: configure.docbook:2110
 #, no-c-format
 msgid "Misc Page"
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:2110
+#: configure.docbook:2113
 #, no-c-format
 msgid "Folders"
 msgstr "Repertòris"
 
 #. Tag: guilabel
-#: configure.docbook:2115
+#: configure.docbook:2118
 #, no-c-format
 msgid "Ask for confirmation before moving all messages to trash"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2117
+#: configure.docbook:2120
 #, no-c-format
 msgid ""
 "Enable this option if you want to be asked for confirmation whenever you use "
@@ -3029,13 +3107,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2123
+#: configure.docbook:2126
 #, no-c-format
 msgid "Exclude important messages from expiry"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2125
+#: configure.docbook:2128
 #, no-c-format
 msgid ""
 "Enable this option if important messages should never be deleted during "
@@ -3043,13 +3121,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2132
+#: configure.docbook:2135
 #, no-c-format
 msgid "When trying to find unread messages"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2134
+#: configure.docbook:2137
 #, no-c-format
 msgid ""
 "This option controls what happens if you press one of the shortcuts to go to "
@@ -3069,19 +3147,19 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2162
+#: configure.docbook:2165
 #, no-c-format
 msgid "When entering a folder"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2164
+#: configure.docbook:2167
 #, no-c-format
 msgid "This option controls what happens if you open a folder."
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2167
+#: configure.docbook:2170
 #, no-c-format
 msgid ""
 "If <guilabel>Jump to First Unread Message</guilabel> is selected then "
@@ -3089,7 +3167,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2172
+#: configure.docbook:2175
 #, no-c-format
 msgid ""
 "If <guilabel>Jump to Last Selected Message</guilabel> is selected then "
@@ -3098,7 +3176,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2177
+#: configure.docbook:2180
 #, no-c-format
 msgid ""
 "If <guilabel>Jump to Newest Message</guilabel> is selected then &kmail; will "
@@ -3106,7 +3184,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2182
+#: configure.docbook:2185
 #, no-c-format
 msgid ""
 "If <guilabel>Jump to Oldest Message</guilabel> is selected then &kmail; will "
@@ -3114,13 +3192,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2193
+#: configure.docbook:2196
 #, no-c-format
 msgid "Mark selected message as read after..."
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2195
+#: configure.docbook:2198
 #, no-c-format
 msgid ""
 "When you select a <guilabel>new</guilabel> or <guilabel>unread</guilabel> "
@@ -3131,13 +3209,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2204
+#: configure.docbook:2207
 #, no-c-format
 msgid "Ask for action after dragging messages to another folder"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2206
+#: configure.docbook:2209
 #, no-c-format
 msgid ""
 "When you drag a message to a different folder, a small popup will ask you if "
@@ -3146,13 +3224,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2221
+#: configure.docbook:2224
 #, no-c-format
 msgid "Open this folder on startup"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2223
+#: configure.docbook:2226
 #, no-c-format
 msgid ""
 "Here you can set the folder that should be selected by default if you start "
@@ -3162,13 +3240,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2232
+#: configure.docbook:2235
 #, no-c-format
 msgid "Empty trash on program exit"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2234
+#: configure.docbook:2237
 #, no-c-format
 msgid ""
 "The trash folder is cleared of messages when you quit &kmail; if this option "
@@ -3176,20 +3254,20 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:2244
+#: configure.docbook:2247
 #, fuzzy, no-c-format
 #| msgid "Organization"
 msgid "Invitations"
 msgstr "Organizacion"
 
 #. Tag: guilabel
-#: configure.docbook:2249
+#: configure.docbook:2252
 #, no-c-format
 msgid "Mangle From:/To: headers in replies to invitations"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2251
+#: configure.docbook:2254
 #, no-c-format
 msgid ""
 "Enable this option to make <application>&Microsoft; Outlook</application> "
@@ -3197,13 +3275,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2255
+#: configure.docbook:2258
 #, no-c-format
 msgid "Send invitations in the mail body"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2257
+#: configure.docbook:2260
 #, no-c-format
 msgid ""
 "Invitations are usually sent as attachments to a mail. When this option is "
@@ -3213,13 +3291,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2261
+#: configure.docbook:2264
 #, no-c-format
 msgid "Exchange compatible invitations naming"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2263
+#: configure.docbook:2266
 #, no-c-format
 msgid ""
 "<application>&Microsoft; Outlook</application>, when used in combination "
@@ -3230,13 +3308,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2270
+#: configure.docbook:2273
 #, no-c-format
 msgid "Outlook compatible invitation reply comments"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2272
+#: configure.docbook:2275
 #, no-c-format
 msgid ""
 "When the user provides comments when responding to invitations, send the "
@@ -3246,13 +3324,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2276
+#: configure.docbook:2279
 #, no-c-format
 msgid "Show invitation update differences in the Outlook style"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2278
+#: configure.docbook:2281
 #, no-c-format
 msgid ""
 "When viewing updated invitations, this option enables the differences "
@@ -3264,13 +3342,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2286
+#: configure.docbook:2289
 #, no-c-format
 msgid "Automatic invitation sending"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2288
+#: configure.docbook:2291
 #, no-c-format
 msgid ""
 "When this is checked, you will not see the mail composer window. Instead, "
@@ -3281,13 +3359,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2296
+#: configure.docbook:2299
 #, no-c-format
 msgid "Delete invitation emails after the reply to them has been sent"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2298
+#: configure.docbook:2301
 #, no-c-format
 msgid ""
 "When this is checked, received invitation emails that have been replied to "
@@ -3295,13 +3373,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configure.docbook:2308
+#: configure.docbook:2311
 #, no-c-format
 msgid "Options without a user interface representation"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2309
+#: configure.docbook:2312
 #, no-c-format
 msgid ""
 "Apart from the options presented in the configuration dialog, some options "
@@ -3313,7 +3391,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2318
+#: configure.docbook:2321
 #, no-c-format
 msgid ""
 "The &kmail; configuration file is called <filename>kmailrc</filename> and "
@@ -3325,7 +3403,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2327
+#: configure.docbook:2330
 #, no-c-format
 msgid ""
 "Whenever changing these options, make sure to quit &kmail; first before "
@@ -3334,7 +3412,7 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2336
+#: configure.docbook:2339
 #, no-c-format
 msgid ""
 "Send Message Distribution Notifications with an empty sender string "
@@ -3342,7 +3420,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2338
+#: configure.docbook:2341
 #, no-c-format
 msgid ""
 "Send Message Disposition Notifications with an empty sender string. Some "
@@ -3358,7 +3436,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2352
+#: configure.docbook:2355
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
@@ -3367,13 +3445,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2359
+#: configure.docbook:2362
 #, no-c-format
 msgid "MaximumAttachmentSize"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2361
+#: configure.docbook:2364
 #, no-c-format
 msgid ""
 "This allows the maximum filesize allowed for attachments in the mail "
@@ -3382,13 +3460,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2367
+#: configure.docbook:2370
 #, no-c-format
 msgid "MaximumAttachmentSize=20"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2368
+#: configure.docbook:2371
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
@@ -3397,13 +3475,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2375
+#: configure.docbook:2378
 #, no-c-format
 msgid "CloseDespiteSystemTray"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2377
+#: configure.docbook:2380
 #, no-c-format
 msgid ""
 "This option allows you to configure the application to close fully, even if "
@@ -3413,13 +3491,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2383
+#: configure.docbook:2386
 #, no-c-format
 msgid "CloseDespiteSystemTray=true"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2384
+#: configure.docbook:2387
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
@@ -3428,13 +3506,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2392
+#: configure.docbook:2395
 #, no-c-format
 msgid "CheckOutOfOfficeOnStartup"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2394
+#: configure.docbook:2397
 #, no-c-format
 msgid ""
 "With this option enabled, &kmail; will check on every startup if there is an "
@@ -3443,13 +3521,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2400
+#: configure.docbook:2403
 #, no-c-format
 msgid "CheckOutOfOfficeOnStartup=false"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2401
+#: configure.docbook:2404
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
@@ -3458,13 +3536,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2409
+#: configure.docbook:2412
 #, no-c-format
 msgid "Allow out-of-office settings to be adjusted by the user."
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2411
+#: configure.docbook:2414
 #, no-c-format
 msgid ""
 "In case you don't want users to be able to upload their own out-of-office "
@@ -3472,13 +3550,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2415
+#: configure.docbook:2418
 #, no-c-format
 msgid "AllowOutOfOfficeSettings=false"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2415 configure.docbook:2429
+#: configure.docbook:2418 configure.docbook:2432
 #, no-c-format
 msgid ""
 "to the [OutOfOffice] section of the &kmail; configuration file. If there is "
@@ -3487,7 +3565,7 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2423
+#: configure.docbook:2426
 #, no-c-format
 msgid ""
 "Allow out-of-office scripts to be uploaded by the user, but no settings "
@@ -3495,7 +3573,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2425
+#: configure.docbook:2428
 #, no-c-format
 msgid ""
 "If you want to allow your users to upload their own out-of-office scripts "
@@ -3504,19 +3582,19 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2429
+#: configure.docbook:2432
 #, no-c-format
 msgid "AllowOutOfOfficeUploadButNoSettings=true"
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2437
+#: configure.docbook:2440
 #, no-c-format
 msgid "Default domain to limit out-of-office replies to."
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2439
+#: configure.docbook:2442
 #, no-c-format
 msgid ""
 "When editing vacation (out-of-office) scripts, the user can specify a domain "
@@ -3525,13 +3603,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2444
+#: configure.docbook:2447
 #, no-c-format
 msgid "OutOfOfficeDomain=myMailDomain.test"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2444
+#: configure.docbook:2447
 #, no-c-format
 msgid ""
 "to the [OutOfOffice] section of the &kmail; configuration file. If there is "
@@ -3542,13 +3620,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2455
+#: configure.docbook:2458
 #, no-c-format
 msgid "Enable sending of out-of-office replies to messages marked as SPAM."
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2457
+#: configure.docbook:2460
 #, no-c-format
 msgid ""
 "By default, out-of-office replies are not sent to messages marked as SPAM. "
@@ -3556,13 +3634,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2461
+#: configure.docbook:2464
 #, no-c-format
 msgid "OutOfOfficeReactToSpam=true"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2461
+#: configure.docbook:2464
 #, no-c-format
 msgid ""
 "to the [OutOfOffice] section of the &kmail; configuration file. If there is "
@@ -3573,13 +3651,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2472
+#: configure.docbook:2475
 #, no-c-format
 msgid "disregardUmask"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2474
+#: configure.docbook:2477
 #, no-c-format
 msgid ""
 "In versions prior to 1.9, &kmail; saved all attachments to disk with "
@@ -3591,13 +3669,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2483
+#: configure.docbook:2486
 #, no-c-format
 msgid "disregardUmask=true"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2484
+#: configure.docbook:2487
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
@@ -3606,13 +3684,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2491
+#: configure.docbook:2494
 #, no-c-format
 msgid "AutoLostFoundMove"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2492
+#: configure.docbook:2495
 #, no-c-format
 msgid ""
 "Activate this option to automate the handling of not yet uploaded messages "
@@ -3624,13 +3702,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configure.docbook:2501
+#: configure.docbook:2504
 #, no-c-format
 msgid "ShowUserAgent"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2503
+#: configure.docbook:2506
 #, no-c-format
 msgid ""
 "Starting in version 1.9, &kmail; can show the User-Agent or X-Mailer value "
@@ -3641,13 +3719,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: configure.docbook:2510
+#: configure.docbook:2513
 #, no-c-format
 msgid "ShowUserAgent=true"
 msgstr ""
 
 #. Tag: para
-#: configure.docbook:2511
+#: configure.docbook:2514
 #, no-c-format
 msgid ""
 "<prompt>&percnt;</prompt> <userinput><command>kwriteconfig</command> "
