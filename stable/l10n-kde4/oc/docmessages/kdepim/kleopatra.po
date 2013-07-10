@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-09 10:12+0000\n"
+"POT-Creation-Date: 2013-07-10 01:15+0000\n"
 "PO-Revision-Date: 2008-08-13 13:38+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -103,13 +103,13 @@ msgstr ""
 #. Tag: date
 #: index.docbook:93
 #, no-c-format
-msgid "2010-04-27"
+msgid "2013-07-04"
 msgstr ""
 
 #. Tag: releaseinfo
 #: index.docbook:94
 #, no-c-format
-msgid "2.0.14"
+msgid "2.1.1 (&kde; 4.11)"
 msgstr ""
 
 #. Tag: para
@@ -118,7 +118,7 @@ msgstr ""
 msgid ""
 "&kleopatra; is a tool for managing <ulink url=\"http://en.wikipedia.org/wiki/"
 "X.509\">&x509;</ulink> and <ulink url=\"http://en.wikipedia.org/wiki/"
-"Pretty_Good_Privacy#OpenPGP\">OpenPGP</ulink> certificates."
+"Pretty_Good_Privacy#OpenPGP\">&openpgp;</ulink> certificates."
 msgstr ""
 
 #. Tag: keyword
@@ -189,7 +189,7 @@ msgstr "Introduccion"
 msgid ""
 "&kleopatra; is the &kde; tool for managing <ulink url=\"http://en.wikipedia."
 "org/wiki/X.509\">&x509;</ulink> and <ulink url=\"http://en.wikipedia.org/"
-"wiki/Pretty_Good_Privacy#OpenPGP\">OpenPGP</ulink> certificates in the "
+"wiki/Pretty_Good_Privacy#OpenPGP\">&openpgp;</ulink> certificates in the "
 "<ulink url=\"http://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPGSM."
 "html\">&gpgsm;</ulink> and <ulink url=\"http://en.wikipedia.org/wiki/"
 "GNU_Privacy_Guard\">&gpg;</ulink> keyboxes and for retrieving certificates "
@@ -428,7 +428,7 @@ msgstr ""
 #: index.docbook:275
 #, no-c-format
 msgid ""
-"OpenPGP key pairs are created locally, and certified by your friends and "
+"&openpgp; key pairs are created locally, and certified by your friends and "
 "acquaintances. There is no central certification authority; instead, every "
 "individual creates a personal Web Of Trust by certifying other user's key "
 "pairs with his own certificate."
@@ -520,19 +520,59 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:348
+#: index.docbook:327
+#, no-c-format
+msgid "Revoking a key"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:329
+#, no-c-format
+msgid ""
+"A key pair that has expired can be brought back into an operational state as "
+"long as you have access to the private key and the passphrase. To reliably "
+"render a key unusable you need to revoke it. Revoking is done by adding a "
+"special revocation signature to the key."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:334
+#, no-c-format
+msgid ""
+"This revocation signature is stored in a separate file. This file can later "
+"be imported into the keyring and is then attached to the key rendering it "
+"unusable. Please note that to import this signature to the key no password "
+"is required. Therefore you should store this revocation signature in a safe "
+"place, usually one that is different from you key pair. It is a good advise "
+"to use a place that is detached from your computer, either copy it to an "
+"external storage device like an USB stick or print it out."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:342
+#, no-c-format
+msgid ""
+"&kleopatra; does not provide a function to create such a revocation "
+"signature at any time, but you can do that with the &kde; application &kgpg; "
+"by choosing <menuchoice><guimenu>Keys</guimenu> <guimenuitem>Revoke key</"
+"guimenuitem></menuchoice> and optionally importing the revocation signature "
+"to your keyring immediately."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:373
 #, no-c-format
 msgid "Menu Reference"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:350
+#: index.docbook:375
 #, no-c-format
 msgid "File Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:355
+#: index.docbook:380
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></"
@@ -541,7 +581,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:359
+#: index.docbook:384
 #, no-c-format
 msgid ""
 "<action>Creates a new key pair (public and private)</action> and allows to "
@@ -552,7 +592,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:366
+#: index.docbook:391
 #, no-c-format
 msgid ""
 "This mode of operation is called <quote>decentralized key generation</"
@@ -563,7 +603,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:376
+#: index.docbook:401
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;&Shift;<keycap>I</keycap></"
@@ -572,7 +612,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:382
+#: index.docbook:407
 #, no-c-format
 msgid ""
 "<action>Searches for, and imports, certificates from certificate servers "
@@ -581,7 +621,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:387
+#: index.docbook:412
 #, no-c-format
 msgid ""
 "You need to have key servers configured for this to work. See <xref linkend="
@@ -589,7 +629,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:398
+#: index.docbook:423
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>I</keycap></keycombo></"
@@ -598,7 +638,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:404
+#: index.docbook:429
 #, no-c-format
 msgid ""
 "<action>Imports certificates and/or secret keys from files into the local "
@@ -606,7 +646,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:409
+#: index.docbook:434
 #, no-c-format
 msgid ""
 "The format of the certificate file must be supported by &gpgsm;/&gpg;. "
@@ -615,7 +655,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:419
+#: index.docbook:444
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>E</keycap></keycombo></"
@@ -624,13 +664,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:426
+#: index.docbook:451
 #, no-c-format
 msgid "Exports the selected certificates to a file."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:429
+#: index.docbook:454
 #, no-c-format
 msgid ""
 "The filename extension you choose for the export file name determines the "
@@ -638,17 +678,17 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:435
+#: index.docbook:460
 #, no-c-format
 msgid ""
-"For OpenPGP certificates, <filename class=\"extension\">gpg</filename> and "
+"For &openpgp; certificates, <filename class=\"extension\">gpg</filename> and "
 "<filename class=\"extension\">pgp</filename> will result in a binary file, "
 "whereas <filename class=\"extension\">asc</filename> will result in an "
 "&ascii;-armored file."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:445
+#: index.docbook:470
 #, no-c-format
 msgid ""
 "For &smime; certificates, <filename class=\"extension\">der</filename> will "
@@ -657,7 +697,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:454
+#: index.docbook:479
 #, no-c-format
 msgid ""
 "Unless multiple certificates are selected, &kleopatra; will propose "
@@ -666,7 +706,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:460
+#: index.docbook:485
 #, no-c-format
 msgid ""
 "This function is only available when one or more certificates have been "
@@ -674,7 +714,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:465
+#: index.docbook:490
 #, no-c-format
 msgid ""
 "This function exports only the public keys, even if the secret key is "
@@ -684,19 +724,19 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:478
+#: index.docbook:503
 #, no-c-format
 msgid "<guimenu>File</guimenu><guimenuitem>Export Secret Keys...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:484
+#: index.docbook:509
 #, no-c-format
 msgid "Exports both the public and the secret key to a file."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:487
+#: index.docbook:512
 #, no-c-format
 msgid ""
 "In the dialog that opens, you can choose an <guilabel>Output file</guilabel> "
@@ -708,7 +748,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:498
+#: index.docbook:523
 #, no-c-format
 msgid ""
 "This function is only available when exactly one certificate has been "
@@ -716,7 +756,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:504
+#: index.docbook:529
 #, no-c-format
 msgid ""
 "It should rarely be necessary to use this function, and if it is, it should "
@@ -726,7 +766,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:518
+#: index.docbook:543
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;&Shift;<keycap>E</keycap></"
@@ -735,7 +775,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:524
+#: index.docbook:549
 #, no-c-format
 msgid ""
 "<action>Publish the selected certificates on a keyserver</action> (&openpgp; "
@@ -743,7 +783,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:528
+#: index.docbook:553
 #, no-c-format
 msgid ""
 "The certificate is sent to the certificate server configured for &openpgp; "
@@ -753,7 +793,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:535
+#: index.docbook:560
 #, no-c-format
 msgid ""
 "This function is only available if at least one &openpgp; (and no &smime;) "
@@ -761,17 +801,17 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:543
+#: index.docbook:568
 #, no-c-format
 msgid ""
-"When OpenPGP certificates have been exported to a public directory server, "
+"When &openpgp; certificates have been exported to a public directory server, "
 "it is nearly impossible to remove them again. Before exporting your "
 "certificate to a public directory server, make sure that you have created a "
 "revocation certificate so you can revoke the certificate if needed later."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:553
+#: index.docbook:578
 #, no-c-format
 msgid ""
 "Most public &openpgp; certificate servers synchronize certificates amongst "
@@ -779,7 +819,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:558
+#: index.docbook:583
 #, no-c-format
 msgid ""
 "It can happen that a search on a certificate server turns up no results even "
@@ -790,32 +830,32 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:573
+#: index.docbook:598
 #, no-c-format
 msgid ""
 "<guimenu>File</guimenu><guimenuitem>Decrypt/Verify Files...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:578
+#: index.docbook:603
 #, no-c-format
 msgid "<action>Decrypts files and/or verifies signatures</action> over files."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:592
+#: index.docbook:617
 #, no-c-format
 msgid "<guimenu>File</guimenu><guimenuitem>Sign/Encrypt Files...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:598
+#: index.docbook:623
 #, no-c-format
 msgid "Signs and/or encrypts files."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:613
+#: index.docbook:638
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>W</keycap></keycombo></"
@@ -823,7 +863,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:619
+#: index.docbook:644
 #, no-c-format
 msgid ""
 "<action>Closes &kleopatra;'s main window.</action> You can restore it from "
@@ -831,7 +871,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:627
+#: index.docbook:652
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo></"
@@ -839,19 +879,19 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:631
+#: index.docbook:656
 #, no-c-format
 msgid "Terminates &kleopatra;."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:641
+#: index.docbook:666
 #, no-c-format
 msgid "View Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:647
+#: index.docbook:672
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\"><keycap>F5</keycap></keycombo></"
@@ -859,13 +899,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:654
+#: index.docbook:679
 #, no-c-format
 msgid "Refreshes the certificate list."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:656
+#: index.docbook:681
 #, no-c-format
 msgid ""
 "Using this function is usually not necessary, as &kleopatra; monitors the "
@@ -874,7 +914,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:668
+#: index.docbook:693
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Esc;</keycombo></shortcut> "
@@ -882,7 +922,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:674
+#: index.docbook:699
 #, no-c-format
 msgid ""
 "<action>Stops (cancels) all pending operations,</action> &eg; a search, "
@@ -890,13 +930,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:678
+#: index.docbook:703
 #, no-c-format
 msgid "This function is only available if at least one operation is active."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:683
+#: index.docbook:708
 #, no-c-format
 msgid ""
 "Due to backend limitations, sometimes operations will hang in such a way "
@@ -904,7 +944,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:688
+#: index.docbook:713
 #, no-c-format
 msgid ""
 "In such cases, the only way to restore order is to kill &scdaemon;, "
@@ -914,25 +954,25 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:701
+#: index.docbook:726
 #, no-c-format
 msgid "<guimenu>View</guimenu><guimenuitem>Certificate Details</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:704
+#: index.docbook:729
 #, no-c-format
 msgid "Shows the details of the currently selected certificate."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:707
+#: index.docbook:732
 #, no-c-format
 msgid "This function is only available if exactly one certificate is selected."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:710
+#: index.docbook:735
 #, no-c-format
 msgid ""
 "This function is also available by double-clicking the corresponding item in "
@@ -940,7 +980,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:719
+#: index.docbook:744
 #, no-c-format
 msgid ""
 "<guimenu>View</guimenu><guimenuitem>Hierarchical Certificate List</"
@@ -948,13 +988,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:722
+#: index.docbook:747
 #, no-c-format
 msgid "Toggles between hierarchical and flat certificate list mode."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:725
+#: index.docbook:750
 #, no-c-format
 msgid ""
 "In hierarchical mode, certificates are arranged in issuer/subject relation, "
@@ -964,7 +1004,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:731
+#: index.docbook:756
 #, no-c-format
 msgid ""
 "In flat mode, all certificates are displayed in a flat list, sorted "
@@ -973,7 +1013,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:736
+#: index.docbook:761
 #, no-c-format
 msgid ""
 "This function toggles hierarchical mode per tab, &ie; each tab has its own "
@@ -982,7 +1022,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:744
+#: index.docbook:769
 #, no-c-format
 msgid ""
 "Hierarchical display is currently only implemented for &smime; certificates. "
@@ -992,7 +1032,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:759
+#: index.docbook:784
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>.</keycap> </keycombo></"
@@ -1000,7 +1040,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:763
+#: index.docbook:788
 #, no-c-format
 msgid ""
 "<action>Expands all list items in the certificate list view,</action> &ie; "
@@ -1008,20 +1048,20 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:766
+#: index.docbook:791
 #, no-c-format
 msgid "This is the default when entering hierarchical keylist mode."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:769 index.docbook:786
+#: index.docbook:794 index.docbook:811
 #, no-c-format
 msgid ""
 "You can still expand and collapse each individual item by itself, of course."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:772 index.docbook:789
+#: index.docbook:797 index.docbook:814
 #, no-c-format
 msgid ""
 "This function is only available when <xref linkend=\"view-hierarchical-key-"
@@ -1029,7 +1069,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:779
+#: index.docbook:804
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>,</keycap> </keycombo></"
@@ -1037,7 +1077,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:783
+#: index.docbook:808
 #, no-c-format
 msgid ""
 "<action>Collapses all list items in the certificate list view,</action> &ie; "
@@ -1045,13 +1085,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:798
+#: index.docbook:823
 #, no-c-format
 msgid "Certificates Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:804
+#: index.docbook:829
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Change Owner Trust...</"
@@ -1059,13 +1099,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:810
+#: index.docbook:835
 #, no-c-format
 msgid "Changes the Owner Trust of the selected &openpgp; certificate."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:816
+#: index.docbook:841
 #, no-c-format
 msgid ""
 "This function is only available when exactly one &openpgp; certificate is "
@@ -1073,7 +1113,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:825
+#: index.docbook:850
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Trust Root Certificate</"
@@ -1081,13 +1121,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:831
+#: index.docbook:856
 #, no-c-format
 msgid "Marks this (&smime;) root certificate as trusted."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:833
+#: index.docbook:858
 #, no-c-format
 msgid ""
 "In some ways, this is the equivalent of <xref linkend=\"certificates-change-"
@@ -1097,7 +1137,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:842
+#: index.docbook:867
 #, no-c-format
 msgid ""
 "The backend (by way of &gpgagent;) will ask at root certificate import time "
@@ -1109,11 +1149,11 @@ msgid ""
 "guimenuitem></menuchoice> or <link linkend=\"configuration-smime-validation-"
 "allow-mark-trusted\"><menuchoice><guimenu>S/MIME&nbsp;Validation</guimenu> "
 "<guimenuitem>Allow to mark root certificates as trusted</guimenuitem></"
-"menuchoice></link> under <xref linkend=\"settings-configure-kleopatra\"/>)."
+"menuchoice></link> under <xref linkend=\"configuration\"/>)."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:858
+#: index.docbook:883
 #, no-c-format
 msgid ""
 "Enabling that functionality in the backend can lead to popups from "
@@ -1124,7 +1164,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:869
+#: index.docbook:894
 #, no-c-format
 msgid ""
 "Due to lack of backend support for this function, &kleopatra; needs to work "
@@ -1134,7 +1174,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:879
+#: index.docbook:904
 #, no-c-format
 msgid ""
 "This function is only available when exactly one &smime; root certificate is "
@@ -1142,14 +1182,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:884
+#: index.docbook:909
 #, no-c-format
 msgid ""
 "Use <xref linkend=\"certificates-distrust-root\"/> to undo this function."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:893
+#: index.docbook:918
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Distrust Root Certificate</"
@@ -1157,13 +1197,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:899
+#: index.docbook:924
 #, no-c-format
 msgid "Marks this (&smime;) root certificate as not trusted."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:901
+#: index.docbook:926
 #, no-c-format
 msgid ""
 "This function is only available when exactly one &smime; root certificate is "
@@ -1171,7 +1211,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:906
+#: index.docbook:931
 #, no-c-format
 msgid ""
 "Used to undo <xref linkend=\"certificates-trust-root\"/>. See there for "
@@ -1179,7 +1219,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:916
+#: index.docbook:941
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Certify Certificate...</"
@@ -1187,13 +1227,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:922
+#: index.docbook:947
 #, no-c-format
 msgid "Allows you to certify another &openpgp; certificate."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:928
+#: index.docbook:953
 #, no-c-format
 msgid ""
 "This function is only available if exactly one &openpgp; certificate is "
@@ -1201,7 +1241,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:987
+#: index.docbook:1012
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Change Expiry Date...</"
@@ -1209,13 +1249,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:993
+#: index.docbook:1018
 #, no-c-format
 msgid "Allows to change the expiry date of your &openpgp; certificate."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:995
+#: index.docbook:1020
 #, no-c-format
 msgid ""
 "Use this function to extend the lifetime of your &openpgp; certificates as "
@@ -1224,7 +1264,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1001
+#: index.docbook:1026
 #, no-c-format
 msgid ""
 "This function is only available if exactly one &openpgp; certificate is "
@@ -1232,7 +1272,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1011
+#: index.docbook:1036
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Change Passphrase...</"
@@ -1240,13 +1280,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1017
+#: index.docbook:1042
 #, no-c-format
 msgid "Allows to change the passphrase of your secret key."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1019
+#: index.docbook:1044
 #, no-c-format
 msgid ""
 "This function is only available if exactly one certificate is selected, and "
@@ -1256,7 +1296,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1027
+#: index.docbook:1052
 #, no-c-format
 msgid ""
 "For security reasons, both the old as well as the new passphrase is asked "
@@ -1269,20 +1309,20 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1044
+#: index.docbook:1069
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Add User-ID...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1050
+#: index.docbook:1075
 #, no-c-format
 msgid "Allows to add a new User-ID to your &openpgp; certificate."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1052
+#: index.docbook:1077
 #, no-c-format
 msgid ""
 "Use this to add new identities to an existing certificate as an alternative "
@@ -1290,7 +1330,7 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:1057
+#: index.docbook:1082
 #, no-c-format
 msgid ""
 "<replaceable>Real&nbsp;Name</replaceable>&nbsp;<optional>"
@@ -1299,7 +1339,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1058
+#: index.docbook:1083
 #, no-c-format
 msgid ""
 "In the dialog that comes up when you select this function, &kleopatra; will "
@@ -1309,7 +1349,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1067
+#: index.docbook:1092
 #, no-c-format
 msgid ""
 "These parameters are subject to the same Administrator restrictions as in "
@@ -1318,7 +1358,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1075
+#: index.docbook:1100
 #, no-c-format
 msgid ""
 "This function is only available when exactly one &openpgp; certificate is "
@@ -1326,7 +1366,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1085
+#: index.docbook:1110
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\"><keycap>Del</keycap></keycombo></"
@@ -1334,14 +1374,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1091
+#: index.docbook:1116
 #, no-c-format
 msgid ""
 "<action>Deletes the selected certificates</action> from the local keyring."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1095
+#: index.docbook:1120
 #, no-c-format
 msgid ""
 "Use this function to remove unused keys from your local keybox. However, "
@@ -1354,7 +1394,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1108
+#: index.docbook:1133
 #, no-c-format
 msgid ""
 "There is one exception to the above: When you delete one of your own "
@@ -1364,13 +1404,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1115
+#: index.docbook:1140
 #, no-c-format
 msgid "&kleopatra; will warn you when you attempt to delete a secret key."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1120
+#: index.docbook:1145
 #, no-c-format
 msgid ""
 "Due to the hierarchical nature of &smime; certificates, if you delete an "
@@ -1378,7 +1418,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1123
+#: index.docbook:1148
 #, no-c-format
 msgid ""
 "This is the same as a filesystem: When you delete a folder, you delete all "
@@ -1386,7 +1426,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1127
+#: index.docbook:1152
 #, no-c-format
 msgid ""
 "Naturally, this function is only available if you selected at least one "
@@ -1394,14 +1434,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1136
+#: index.docbook:1161
 #, no-c-format
 msgid ""
 "<guimenu>Certificates</guimenu><guimenuitem>Dump Certificate</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1142
+#: index.docbook:1167
 #, no-c-format
 msgid ""
 "Shows all information that &gpgsm; has about the selected (&smime;) "
@@ -1409,7 +1449,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1145
+#: index.docbook:1170
 #, no-c-format
 msgid ""
 "See the discussion about <option>--dump-key&nbsp;<replaceable>key</"
@@ -1417,19 +1457,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1166
+#: index.docbook:1191
 #, no-c-format
 msgid "Tools Menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1172
+#: index.docbook:1197
 #, no-c-format
 msgid "<guimenu>Tools</guimenu><guimenuitem>GnuPG Log Viewer...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1177
+#: index.docbook:1202
 #, no-c-format
 msgid ""
 "<action>Starts <ulink url=\"help:/kwatchgnupg/index.html\">&kwatchgnupg;</"
@@ -1439,7 +1479,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1185
+#: index.docbook:1210
 #, no-c-format
 msgid ""
 "This function is not available on Windows, since the underlying mechanisms "
@@ -1447,7 +1487,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1195
+#: index.docbook:1220
 #, no-c-format
 msgid ""
 "<guimenu>Tools</guimenu><guimenuitem>Refresh OpenPGP Certificates</"
@@ -1455,7 +1495,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1200
+#: index.docbook:1225
 #, no-c-format
 msgid ""
 "<action>Refreshes all &openpgp; certificates</action> by executing "
@@ -1466,7 +1506,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1209
+#: index.docbook:1234
 #, no-c-format
 msgid ""
 "See note under <xref linkend=\"certificates-refresh-x509\"/> for some "
@@ -1474,14 +1514,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1218
+#: index.docbook:1243
 #, no-c-format
 msgid ""
 "<guimenu>Tools</guimenu><guimenuitem>Refresh X.509 Certificates</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1223
+#: index.docbook:1248
 #, no-c-format
 msgid ""
 "<action>Refreshes all &smime; certificates</action> by executing "
@@ -1497,7 +1537,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1233
+#: index.docbook:1258
 #, no-c-format
 msgid ""
 "Refreshing &x509; or &openpgp; certificates implies downloading all "
@@ -1506,7 +1546,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1238
+#: index.docbook:1263
 #, no-c-format
 msgid ""
 "This can put a severe strain on your own as well as other people's network "
@@ -1515,20 +1555,20 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1250
+#: index.docbook:1275
 #, no-c-format
 msgid ""
 "<guimenu>Tools</guimenu><guimenuitem>Import CRL From File...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1256
+#: index.docbook:1281
 #, no-c-format
 msgid "Lets you manually import &crl;s from files."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1259
+#: index.docbook:1284
 #, no-c-format
 msgid ""
 "Normally, Certificate Revocation Lists (&crl;s) are handled transparently by "
@@ -1537,7 +1577,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1266
+#: index.docbook:1291
 #, no-c-format
 msgid ""
 "For &crl; import to work, the &dirmngr; tool must be in the search "
@@ -1546,19 +1586,19 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1281
+#: index.docbook:1306
 #, no-c-format
 msgid "<guimenu>Tools</guimenu><guimenuitem>Clear CRL Cache</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1284
+#: index.docbook:1309
 #, no-c-format
 msgid "Clears the &gpgsm; CRL cache."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1286
+#: index.docbook:1311
 #, no-c-format
 msgid ""
 "You probably never need this. You can force a refresh of the CRL cache by "
@@ -1567,158 +1607,60 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1292
+#: index.docbook:1317
 #, no-c-format
 msgid "<guimenu>Tools</guimenu><guimenuitem>Dump CRL Cache</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1295
+#: index.docbook:1320
 #, no-c-format
 msgid "Shows the detailed contents of the &gpgsm; CRL cache."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1318
+#: index.docbook:1343
 #, no-c-format
 msgid "Settings Menu"
 msgstr ""
 
+#. Tag: para
+#: index.docbook:1345
+#, no-c-format
+msgid ""
+"&kleopatra; has a default &kde; <guimenu>Settings</guimenu> menu as "
+"described in the <ulink url=\"help:/fundamentals/ui.html#menus-settings"
+"\">&kde; Fundamentals</ulink> with one additional entry:"
+msgstr ""
+
 #. Tag: menuchoice
-#: index.docbook:1324
+#: index.docbook:1353
 #, no-c-format
 msgid "<guimenu>Settings</guimenu><guimenuitem>Perform Self-Test</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1330
+#: index.docbook:1359
 #, no-c-format
 msgid "Performs a set of self-tests and presents their result."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1332
+#: index.docbook:1361
 #, no-c-format
 msgid ""
 "This is the same set of tests that is run at startup by default. If you "
 "disabled startup-time self-tests, you can re-enable them here."
 msgstr ""
 
-#. Tag: menuchoice
-#: index.docbook:1347
-#, no-c-format
-msgid "<guimenu>Settings</guimenu><guisubmenu>Toolbars Shown</guisubmenu>"
-msgstr ""
-
-#. Tag: action
-#: index.docbook:1351
-#, no-c-format
-msgid "Shows/hides &kleopatra; toolbars."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:1353
-#, no-c-format
-msgid "&kleopatra; has two toolbars:"
-msgstr ""
-
-#. Tag: guilabel
-#: index.docbook:1358
-#, no-c-format
-msgid "Main Toolbar"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:1360
-#, no-c-format
-msgid ""
-"This toolbar carries a selection of common functions. You can configure "
-"which functions you would like to see here using <xref linkend=\"settings-"
-"configure-toolbars\"/>."
-msgstr ""
-
-#. Tag: guilabel
-#: index.docbook:1369
-#, no-c-format
-msgid "Search Toolbar"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:1371
-#, no-c-format
-msgid "This toolbar carries the search and filtering controls."
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:1382
-#, no-c-format
-msgid "<guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>"
-msgstr ""
-
-#. Tag: action
-#: index.docbook:1388
-#, no-c-format
-msgid "Toggles the visibility of the bottom status bar."
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:1396
-#, no-c-format
-msgid ""
-"<guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts...</guimenuitem>"
-msgstr ""
-
-#. Tag: action
-#: index.docbook:1402
-#, no-c-format
-msgid ""
-"Opens the standard &kde; shortcut configuration dialog, where you can assign "
-"and re-assign keyboard shortcuts for all menu items."
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:1411
-#, no-c-format
-msgid ""
-"<guimenu>Settings</guimenu><guimenuitem>Configure Toolbars...</guimenuitem>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:1416
-#, no-c-format
-msgid ""
-"<action>Opens the standard &kde; toolbar configuration dialog,</action> "
-"where you can choose which actions to include in &kleopatra;s toolbars."
-msgstr ""
-
-#. Tag: menuchoice
-#: index.docbook:1426
-#, no-c-format
-msgid ""
-"<guimenu>Settings</guimenu><guimenuitem>Configure &kleopatra;...</"
-"guimenuitem>"
-msgstr ""
-
-#. Tag: action
-#: index.docbook:1432
-#, no-c-format
-msgid "Opens &kleopatra;'s configure dialog."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:1434
-#, no-c-format
-msgid "See <xref linkend=\"configuration\"/> for details."
-msgstr ""
-
 #. Tag: title
-#: index.docbook:1444
+#: index.docbook:1378
 #, no-c-format
 msgid "Window Menu"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1445
+#: index.docbook:1379
 #, no-c-format
 msgid ""
 "The <guimenu>Window</guimenu> menu allows you to manage the tabs. Using the "
@@ -1728,7 +1670,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1448
+#: index.docbook:1382
 #, no-c-format
 msgid ""
 "By clicking with the &RMB; click on a tab you open a context menu, where you "
@@ -1736,31 +1678,28 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1451
+#: index.docbook:1385
 #, no-c-format
 msgid "Help Menu"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1453
+#: index.docbook:1387
 #, no-c-format
-msgid "The <guimenu>Help</guimenu> menu contains the standard &kde; help menu."
-msgstr ""
-
-#. Tag: sect1
-#: index.docbook:1454
-#, no-c-format
-msgid "&help.menu.documentation;"
+msgid ""
+"&kleopatra; has a default &kde; <guimenu>Help</guimenu> menu as described in "
+"the <ulink url=\"help:/fundamentals/ui.html#menus-help\">&kde; Fundamentals</"
+"ulink>."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1462
+#: index.docbook:1394
 #, no-c-format
 msgid "Command Line Options Reference"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1464
+#: index.docbook:1396
 #, no-c-format
 msgid ""
 "Only the options specific to &kleopatra; are listed here. As with all &kde; "
@@ -1768,50 +1707,62 @@ msgid ""
 "<userinput><command>kleopatra <option>--help</option></command></userinput>."
 msgstr ""
 
-#. Tag: option
-#: index.docbook:1472
+#. Tag: term
+#: index.docbook:1404
 #, no-c-format
-msgid "--external"
+msgid "<option>--uiserver-socket</option> <replaceable>argument</replaceable>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1474
+#: index.docbook:1406
+#, no-c-format
+msgid "Location of the socket the ui server is listening on"
+msgstr ""
+
+#. Tag: option
+#: index.docbook:1411
+#, no-c-format
+msgid "--daemon"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1413
 #, no-c-format
 msgid "Run UI server only, hide main window"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1479
+#: index.docbook:1418
 #, no-c-format
 msgid "<option>-p</option> <option>--openpgp</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1481
+#: index.docbook:1420
 #, no-c-format
-msgid "Use OpenPGP for the following operation"
+msgid "Use &openpgp; for the following operation"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1486
+#: index.docbook:1425
 #, no-c-format
 msgid "<option>-c</option> <option>--cms</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1488
+#: index.docbook:1427
 #, no-c-format
 msgid "Use CMS (X.509, S/MIME) for the following operation"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1493
+#: index.docbook:1432
 #, no-c-format
 msgid "<option>-i</option> <option>--import-certificate</option>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:1495
+#: index.docbook:1434
 #, no-c-format
 msgid ""
 "Specifies a file or &URL; from which to import certificates (or secret keys) "
@@ -1819,7 +1770,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1498
+#: index.docbook:1437
 #, no-c-format
 msgid ""
 "This is the command line equivalent of <xref linkend=\"file-import-"
@@ -1827,37 +1778,37 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1504
+#: index.docbook:1443
 #, no-c-format
 msgid "<option>-e</option> <option>--encrypt</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1506
+#: index.docbook:1445
 #, no-c-format
 msgid "Encrypt file(s)"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1511
+#: index.docbook:1450
 #, no-c-format
 msgid "<option>-s</option> <option>--sign</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1513
+#: index.docbook:1452
 #, no-c-format
 msgid "Sign file(s)"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1518
+#: index.docbook:1457
 #, no-c-format
 msgid "<option>-E</option> <option>--encrypt-sign</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1520
+#: index.docbook:1459
 #, no-c-format
 msgid ""
 "Encrypt and/or sign file(s). Same as <option>--sign-encrypt</option>, do not "
@@ -1865,69 +1816,70 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1525
+#: index.docbook:1464
 #, no-c-format
 msgid "<option>-d</option> <option>--decrypt</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1527
+#: index.docbook:1466
 #, no-c-format
 msgid "Decrypt file(s)"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1532
+#: index.docbook:1471
 #, no-c-format
 msgid "<option>-V</option> <option>--verify</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1534
+#: index.docbook:1473
 #, no-c-format
 msgid "Verify file/signature"
 msgstr ""
 
 #. Tag: term
-#: index.docbook:1539
+#: index.docbook:1478
 #, no-c-format
 msgid "<option>-D</option> <option>--decrypt-verify</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1541
+#: index.docbook:1480
 #, no-c-format
 msgid "Decrypt and/or verify file(s)"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1550
+#: index.docbook:1489
 #, no-c-format
 msgid "Configuring &kleopatra;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1552
+#: index.docbook:1491
 #, no-c-format
 msgid ""
-"&kleopatra;'s configure dialog can be accessed via <xref linkend=\"settings-"
-"configure-kleopatra\"/>."
+"&kleopatra;'s configure dialog can be accessed via "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure &kleopatra;..."
+"</guimenuitem></menuchoice>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1560
+#: index.docbook:1499
 #, no-c-format
 msgid "Each of its pages is described in the sections below."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1565
+#: index.docbook:1504
 #, no-c-format
 msgid "Configuring Directory Services"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1567
+#: index.docbook:1506
 #, no-c-format
 msgid ""
 "On this page, you can configure which &ldap; servers to use for &smime; "
@@ -1936,7 +1888,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1573
+#: index.docbook:1512
 #, no-c-format
 msgid ""
 "This is simply a more user-friendly version of the same settings you also "
@@ -1945,13 +1897,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1581
+#: index.docbook:1520
 #, no-c-format
 msgid "A Note On Proxy Settings"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1582
+#: index.docbook:1521
 #, no-c-format
 msgid ""
 "Proxy settings can be configured for &http; and &ldap; in <xref linkend="
@@ -1964,7 +1916,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1593
+#: index.docbook:1532
 #, no-c-format
 msgid ""
 "The <guilabel>Directory services</guilabel> table shows which servers are "
@@ -1973,19 +1925,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1598
+#: index.docbook:1537
 #, no-c-format
 msgid "The meaning of the columns in the table is as follows:"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1603
+#: index.docbook:1542
 #, no-c-format
 msgid "Scheme"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1605
+#: index.docbook:1544
 #, no-c-format
 msgid ""
 "Determines the network protocol which is used to access the server. Often-"
@@ -1998,7 +1950,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1616
+#: index.docbook:1555
 #, no-c-format
 msgid ""
 "Please refer to the &gpg; and &gpgsm; manuals for a list of supported "
@@ -2006,13 +1958,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1623
+#: index.docbook:1562
 #, no-c-format
 msgid "Server Name"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1625
+#: index.docbook:1564
 #, no-c-format
 msgid ""
 "The domain name of the server, &eg; <systemitem class=\"systemname\">keys."
@@ -2020,19 +1972,19 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1632
+#: index.docbook:1571
 #, no-c-format
 msgid "Server Port"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1634
+#: index.docbook:1573
 #, no-c-format
 msgid "The network port the server is listening on."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1637
+#: index.docbook:1576
 #, no-c-format
 msgid ""
 "This changes automatically to the default port when you change the <xref "
@@ -2045,13 +1997,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1653
+#: index.docbook:1592
 #, no-c-format
 msgid "Base DN"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1655
+#: index.docbook:1594
 #, no-c-format
 msgid ""
 "The Base-&dn; (only for &ldap; and &ldaps;), &ie; the root of the &ldap; "
@@ -2060,7 +2012,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1661
+#: index.docbook:1600
 #, no-c-format
 msgid ""
 "It usually looks like <userinput>c=de,o=Foo</userinput>, given as part of "
@@ -2068,19 +2020,19 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1668
+#: index.docbook:1607
 #, no-c-format
 msgid "User Name"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1670
+#: index.docbook:1609
 #, no-c-format
 msgid "The user name, if any, to use for logging into the server."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1674 index.docbook:1688
+#: index.docbook:1613 index.docbook:1627
 #, no-c-format
 msgid ""
 "This column is only shown if the option <guilabel>Show user and password "
@@ -2088,26 +2040,26 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1682
+#: index.docbook:1621
 #, no-c-format
 msgid "Password"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1684
+#: index.docbook:1623
 #, no-c-format
 msgid "The password, if any, to use for logging into the server."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1696
+#: index.docbook:1635
 #, fuzzy, no-c-format
 #| msgid "X509"
 msgid "X.509"
 msgstr "X509"
 
 #. Tag: para
-#: index.docbook:1698
+#: index.docbook:1637
 #, no-c-format
 msgid ""
 "Check this column if this entry should be used for &x509; (&smime;) "
@@ -2115,19 +2067,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1702
+#: index.docbook:1641
 #, no-c-format
 msgid "Only &ldap; (and &ldaps;) servers are supported for &smime;."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1709
+#: index.docbook:1648
 #, no-c-format
 msgid "<guilabel>OpenPGP</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1711
+#: index.docbook:1650
 #, no-c-format
 msgid ""
 "Check this column if this entry should be used for &openpgp; certificate "
@@ -2135,7 +2087,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1718
+#: index.docbook:1657
 #, no-c-format
 msgid ""
 "You can configure as many &smime; (&x509;) servers as you want, but only one "
@@ -2143,7 +2095,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1723
+#: index.docbook:1662
 #, no-c-format
 msgid ""
 "To add a new server, click on the <guibutton>New</guibutton> button. This "
@@ -2158,7 +2110,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1735
+#: index.docbook:1674
 #, no-c-format
 msgid ""
 "To directly insert an entry for &x509; certificates, use "
@@ -2168,7 +2120,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1743
+#: index.docbook:1682
 #, no-c-format
 msgid ""
 "To remove a server from the search list, select it in the list, then press "
@@ -2176,7 +2128,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1752
+#: index.docbook:1691
 #, no-c-format
 msgid ""
 "To set the &ldap; timeout, &ie; the maximum time the backend will wait for a "
@@ -2185,7 +2137,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1758
+#: index.docbook:1697
 #, no-c-format
 msgid ""
 "If one of your servers has a large database, so that even reasonable "
@@ -2197,7 +2149,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1768
+#: index.docbook:1707
 #, no-c-format
 msgid ""
 "Some servers may impose their own limits on the number of items returned "
@@ -2206,19 +2158,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1778
+#: index.docbook:1717
 #, no-c-format
 msgid "Configuring Appearance"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1781
+#: index.docbook:1720
 #, no-c-format
 msgid "Configuring <guilabel>Tooltips</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1783
+#: index.docbook:1722
 #, no-c-format
 msgid ""
 "In the main certificate list, &kleopatra; can show details about a "
@@ -2229,7 +2181,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1795
+#: index.docbook:1734
 #, no-c-format
 msgid ""
 "The <guilabel>Key-ID</guilabel> is <emphasis>always</emphasis> shown. This "
@@ -2239,19 +2191,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1803
+#: index.docbook:1742
 #, no-c-format
 msgid "You can independently enable or disable the following information sets:"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1809
+#: index.docbook:1748
 #, no-c-format
 msgid "Show validity"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1811
+#: index.docbook:1750
 #, no-c-format
 msgid ""
 "Shows information about the validity of a certificate: its current status, "
@@ -2260,13 +2212,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1816 index.docbook:1845
+#: index.docbook:1755 index.docbook:1784
 #, no-c-format
 msgid "Example:"
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:1818
+#: index.docbook:1757
 #, no-c-format
 msgid ""
 "<!--\n"
@@ -2281,13 +2233,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1823
+#: index.docbook:1762
 #, no-c-format
 msgid "Show owner information"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1825
+#: index.docbook:1764
 #, no-c-format
 msgid ""
 "Shows information about the owner of the certificate: subject-&dn; (&smime; "
@@ -2295,7 +2247,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1830
+#: index.docbook:1769
 #, no-c-format
 msgid ""
 "&openpgp; example: <programlisting><!--\n"
@@ -2307,7 +2259,7 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:1834
+#: index.docbook:1773
 #, no-c-format
 msgid ""
 "<!--\n"
@@ -2319,13 +2271,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:1839
+#: index.docbook:1778
 #, no-c-format
 msgid "Show technical details"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1841
+#: index.docbook:1780
 #, no-c-format
 msgid ""
 "Shows technical information about the certificate: serial number (&smime; "
@@ -2333,7 +2285,7 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:1847
+#: index.docbook:1786
 #, no-c-format
 msgid ""
 "<!--\n"
@@ -2348,13 +2300,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1856
+#: index.docbook:1795
 #, no-c-format
 msgid "Configuring <guilabel>Certificate Categories</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1858
+#: index.docbook:1797
 #, no-c-format
 msgid ""
 "&kleopatra; allows you to customize the appearance of certificates in the "
@@ -2363,7 +2315,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1864
+#: index.docbook:1803
 #, no-c-format
 msgid ""
 "Each certificate category in the list is assigned a set of colors, an icon "
@@ -2374,7 +2326,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1872
+#: index.docbook:1811
 #, no-c-format
 msgid ""
 "To set or change the icon of a category, select it in the list, and press "
@@ -2384,7 +2336,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1879
+#: index.docbook:1818
 #, no-c-format
 msgid ""
 "To remove an icon again, you need to press the <guibutton>Default "
@@ -2392,7 +2344,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1883
+#: index.docbook:1822
 #, no-c-format
 msgid ""
 "To change the text (&ie; foreground) color of a category, select it in the "
@@ -2402,7 +2354,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1890
+#: index.docbook:1829
 #, no-c-format
 msgid ""
 "Changing the background color is done in the same way, just press "
@@ -2410,25 +2362,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1894
+#: index.docbook:1833
 #, no-c-format
 msgid "To change the font, you basically have two options:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1899
+#: index.docbook:1838
 #, no-c-format
 msgid "Modify the standard font, used for all list views in &kde;."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1905
+#: index.docbook:1844
 #, no-c-format
 msgid "Use a custom font."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1910
+#: index.docbook:1849
 #, no-c-format
 msgid ""
 "The first option has the advantage that the font will follow whichever style "
@@ -2437,7 +2389,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1916
+#: index.docbook:1855
 #, no-c-format
 msgid ""
 "To use the modified standard font, select the category in the list, and "
@@ -2447,7 +2399,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1923
+#: index.docbook:1862
 #, no-c-format
 msgid ""
 "To use a custom font, press the <guibutton>Set Font...</guibutton> button. "
@@ -2456,7 +2408,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1930
+#: index.docbook:1869
 #, no-c-format
 msgid ""
 "You can still use the font modifiers to change the custom font, just as for "
@@ -2464,7 +2416,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1935
+#: index.docbook:1874
 #, no-c-format
 msgid ""
 "To switch back to the standard font, you need to press the "
@@ -2472,13 +2424,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1943
+#: index.docbook:1882
 #, no-c-format
 msgid "Configuring <guilabel>DN-Attribute Order</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1945
+#: index.docbook:1884
 #, no-c-format
 msgid ""
 "Although &dn;s are hierarchical, the order of the individual components "
@@ -2488,7 +2440,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1951
+#: index.docbook:1890
 #, no-c-format
 msgid ""
 "This setting does not only apply to &kleopatra;, but to all applications "
@@ -2497,7 +2449,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1956
+#: index.docbook:1895
 #, no-c-format
 msgid ""
 "This configuration page basically consists of two lists, one for the known "
@@ -2506,7 +2458,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1960
+#: index.docbook:1899
 #, no-c-format
 msgid ""
 "Both lists contain entries described by the short form of the attribute "
@@ -2515,7 +2467,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1964
+#: index.docbook:1903
 #, no-c-format
 msgid ""
 "The <guilabel>Available attributes</guilabel> list is always sorted "
@@ -2525,7 +2477,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1970
+#: index.docbook:1909
 #, no-c-format
 msgid ""
 "Only attributes explicitly listed in the <guilabel>Current attribute order</"
@@ -2533,7 +2485,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1974
+#: index.docbook:1913
 #, no-c-format
 msgid ""
 "However, if the placeholder entry <guilabel>_X_</guilabel> (<guilabel>All "
@@ -2543,25 +2495,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1980
+#: index.docbook:1919
 #, no-c-format
 msgid "A small example will help to make this more clear:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1983
+#: index.docbook:1922
 #, no-c-format
 msgid "Given the &dn;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1985
+#: index.docbook:1924
 #, no-c-format
 msgid "O=&kde;, C=US, CN=Dave Devel, X-BAR=foo, OU=&kleopatra;, X-FOO=bar,"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1989
+#: index.docbook:1928
 #, no-c-format
 msgid ""
 "the default attribute order of <quote>CN, L, _X_, OU, O, C</quote> will "
@@ -2569,25 +2521,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1992
+#: index.docbook:1931
 #, no-c-format
 msgid "CN=Dave Devel, X-BAR=foo, X-FOO=bar, OU=&kleopatra;, O=&kde;, C=US"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1996
+#: index.docbook:1935
 #, no-c-format
 msgid "while <quote>CN, L, OU, O, C</quote> will produce"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1998
+#: index.docbook:1937
 #, no-c-format
 msgid "CN=Dave Devel, OU=&kleopatra;, O=&kde;, C=US"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2004
+#: index.docbook:1943
 #, no-c-format
 msgid ""
 "To add an attribute to the display order list, select it in the "
@@ -2596,7 +2548,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2008
+#: index.docbook:1947
 #, no-c-format
 msgid ""
 "To remove an attribute from the display order list, select it in the "
@@ -2605,7 +2557,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2012
+#: index.docbook:1951
 #, no-c-format
 msgid ""
 "To move an attribute to the beginning (end), select it in the "
@@ -2615,7 +2567,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2017
+#: index.docbook:1956
 #, no-c-format
 msgid ""
 "To move an attribute up (down) one slot only, select it in the "
@@ -2624,19 +2576,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2027
+#: index.docbook:1966
 #, no-c-format
 msgid "Configuring Crypto Operations"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2030
+#: index.docbook:1969
 #, no-c-format
 msgid "Configuring <guilabel>EMail Operations</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2032
+#: index.docbook:1971
 #, no-c-format
 msgid ""
 "Here you can configure some aspects of the email operations of &kleopatra;'s "
@@ -2645,7 +2597,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2038
+#: index.docbook:1977
 #, no-c-format
 msgid ""
 "When <quote>Quick Mode</quote> is enabled, no dialog is shown when signing "
@@ -2654,13 +2606,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2047
+#: index.docbook:1986
 #, no-c-format
 msgid "Configuring <guilabel>File Operations</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2049
+#: index.docbook:1988
 #, no-c-format
 msgid ""
 "Here you can configure some aspects of the file operations of &kleopatra;'s "
@@ -2669,7 +2621,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2055
+#: index.docbook:1994
 #, no-c-format
 msgid ""
 "Use <guilabel>Checksum program to use</guilabel> to choose which of the "
@@ -2677,7 +2629,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2060
+#: index.docbook:1999
 #, no-c-format
 msgid ""
 "When verifying checksums, the program to use is automatically found, based "
@@ -2685,7 +2637,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2066
+#: index.docbook:2005
 #, no-c-format
 msgid ""
 "The administrator and power user can completely define which checksum "
@@ -2695,13 +2647,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2082
+#: index.docbook:2021
 #, no-c-format
 msgid "Configuring aspects of S/MIME Validation"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2084
+#: index.docbook:2023
 #, no-c-format
 msgid ""
 "On this page, you can configure certain aspects of the validation of &smime; "
@@ -2709,7 +2661,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2089
+#: index.docbook:2028
 #, no-c-format
 msgid ""
 "For the most part, this is simply a more user-friendly version of the same "
@@ -2720,25 +2672,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2099
+#: index.docbook:2038
 #, no-c-format
 msgid "The meaning of the options is as follows:"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2104
+#: index.docbook:2043
 #, no-c-format
 msgid "Configuring interval certificate checking"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2108
+#: index.docbook:2047
 #, no-c-format
 msgid "Check certificate validity every <replaceable>N</replaceable> hours"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2111
+#: index.docbook:2050
 #, no-c-format
 msgid ""
 "This option enables interval checking of certificate validity. You can also "
@@ -2749,7 +2701,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2121
+#: index.docbook:2060
 #, no-c-format
 msgid ""
 "Validation is performed implicitly whenever significant files in "
@@ -2759,19 +2711,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2136
+#: index.docbook:2075
 #, no-c-format
 msgid "Configuring validation method"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2140
+#: index.docbook:2079
 #, no-c-format
 msgid "Validate certificates using CRLs"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2142
+#: index.docbook:2081
 #, no-c-format
 msgid ""
 "If this option is selected, &smime; certificates are validated using "
@@ -2779,7 +2731,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2146
+#: index.docbook:2085
 #, no-c-format
 msgid ""
 "See <xref linkend=\"configuration-smime-validation-use-ocsp\"/> for "
@@ -2787,13 +2739,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2153
+#: index.docbook:2092
 #, no-c-format
 msgid "Validate certificates online (OCSP)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2155
+#: index.docbook:2094
 #, no-c-format
 msgid ""
 "If this option is selected, &smime; certificates are validated online using "
@@ -2801,7 +2753,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2161
+#: index.docbook:2100
 #, no-c-format
 msgid ""
 "When choosing this method, a request is sent to the server of the &ca; more "
@@ -2811,7 +2763,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2169
+#: index.docbook:2108
 #, no-c-format
 msgid ""
 "To use this method, you need to enter the &URL; of the &ocsp; responder into "
@@ -2819,7 +2771,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2173
+#: index.docbook:2112
 #, no-c-format
 msgid ""
 "See <xref linkend=\"configuration-smime-validation-use-ocsp\"/> for a more "
@@ -2828,13 +2780,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2182
+#: index.docbook:2121
 #, no-c-format
 msgid "OCSP responder URL"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2184
+#: index.docbook:2123
 #, no-c-format
 msgid ""
 "Enter here the address of the server for online validation of certificates "
@@ -2842,26 +2794,26 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2192
+#: index.docbook:2131
 #, no-c-format
 msgid "OCSP responder signature"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2194
+#: index.docbook:2133
 #, no-c-format
 msgid ""
 "Choose here the certificate with which the &ocsp; server signs its replies."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2201
+#: index.docbook:2140
 #, no-c-format
 msgid "Ignore service URL of certificates"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2203
+#: index.docbook:2142
 #, no-c-format
 msgid ""
 "Each &smime; certificate usually contains the &URL; of its issuer's &ocsp; "
@@ -2870,7 +2822,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2209
+#: index.docbook:2148
 #, no-c-format
 msgid ""
 "Checking this option makes &gpgsm; ignore those &URL;s and only use the one "
@@ -2878,25 +2830,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2213
+#: index.docbook:2152
 #, no-c-format
 msgid "Use this to &eg; enforce use of a company-wide &ocsp; proxy."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2225
+#: index.docbook:2164
 #, no-c-format
 msgid "Configuring validation options"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2229
+#: index.docbook:2168
 #, no-c-format
 msgid "Do not check certificate policies"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2231
+#: index.docbook:2170
 #, no-c-format
 msgid ""
 "By default, &gpgsm; uses the file <filename>~/.gnupg/policies.txt</filename> "
@@ -2905,13 +2857,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2240
+#: index.docbook:2179
 #, no-c-format
 msgid "Never consult a CRL"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2242
+#: index.docbook:2181
 #, no-c-format
 msgid ""
 "If this option is checked, Certificate Revocation Lists are never used to "
@@ -2919,13 +2871,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2249
+#: index.docbook:2188
 #, no-c-format
 msgid "Allow to mark root certificates as trusted"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2251
+#: index.docbook:2190
 #, no-c-format
 msgid ""
 "If this option is checked while a root &ca; certificate is being imported, "
@@ -2934,7 +2886,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2257
+#: index.docbook:2196
 #, no-c-format
 msgid ""
 "A root certificate needs to be trusted before the certificates it certified "
@@ -2943,7 +2895,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2264
+#: index.docbook:2203
 #, no-c-format
 msgid ""
 "Enabling this functionality in the backend can lead to popups from "
@@ -2956,19 +2908,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2275
+#: index.docbook:2214
 #, no-c-format
 msgid "This setting here does not influence the &kleopatra; function."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2283
+#: index.docbook:2222
 #, no-c-format
 msgid "Fetch missing issuer certificates"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2285
+#: index.docbook:2224
 #, no-c-format
 msgid ""
 "If this option is checked, missing issuer certificates are fetched when "
@@ -2976,31 +2928,31 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2297
+#: index.docbook:2236
 #, no-c-format
 msgid "Configuring &http; request options"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2301
+#: index.docbook:2240
 #, no-c-format
 msgid "Do not perform any HTTP requests"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2303
+#: index.docbook:2242
 #, no-c-format
 msgid "Entirely disables the use of &http; for &smime;."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2309
+#: index.docbook:2248
 #, no-c-format
 msgid "Ignore HTTP CRL distribution point of certificates"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2311
+#: index.docbook:2250
 #, no-c-format
 msgid ""
 "When looking for the location of a &crl;, the to-be-tested certificate "
@@ -3010,7 +2962,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2319
+#: index.docbook:2258
 #, no-c-format
 msgid ""
 "With this option, all entries using the &http; scheme are ignored when "
@@ -3018,13 +2970,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2327
+#: index.docbook:2266
 #, no-c-format
 msgid "Use system HTTP proxy"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2329
+#: index.docbook:2268
 #, no-c-format
 msgid ""
 "If this option is selected, the value of the &http; proxy shown on the right "
@@ -3033,13 +2985,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2338
+#: index.docbook:2277
 #, no-c-format
 msgid "Use this proxy for HTTP requests"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2340
+#: index.docbook:2279
 #, no-c-format
 msgid ""
 "If no system proxy is set, or you need to use a different proxy for &gpgsm;, "
@@ -3047,13 +2999,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2345
+#: index.docbook:2284
 #, no-c-format
 msgid "It will be used for all HTTP requests relating to S/MIME."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2349
+#: index.docbook:2288
 #, no-c-format
 msgid ""
 "The syntax is <userinput><replaceable>host</replaceable><literal>:</"
@@ -3062,31 +3014,31 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2361
+#: index.docbook:2300
 #, no-c-format
 msgid "Configuring &ldap; request options"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2365
+#: index.docbook:2304
 #, no-c-format
 msgid "Do not perform any LDAP requests"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2367
+#: index.docbook:2306
 #, no-c-format
 msgid "Entirely disables the use of &ldap; for &smime;."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2373
+#: index.docbook:2312
 #, no-c-format
 msgid "Ignore LDAP CRL distribution point of certificates"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2375
+#: index.docbook:2314
 #, no-c-format
 msgid ""
 "When looking for the location of a &crl;, the to-be-tested certificate "
@@ -3096,7 +3048,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2383
+#: index.docbook:2322
 #, no-c-format
 msgid ""
 "With this option, all entries using the &ldap; scheme are ignored when "
@@ -3104,13 +3056,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2391
+#: index.docbook:2330
 #, no-c-format
 msgid "Primary host for LDAP requests"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2393
+#: index.docbook:2332
 #, no-c-format
 msgid ""
 "Entering an &ldap; server here will make all &ldap; requests go to that "
@@ -3121,7 +3073,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2404
+#: index.docbook:2343
 #, no-c-format
 msgid ""
 "Other &ldap; servers will be used only if the connection to the "
@@ -3133,13 +3085,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2425
+#: index.docbook:2364
 #, no-c-format
 msgid "Configuring the GnuPG System"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2427
+#: index.docbook:2366
 #, no-c-format
 msgid ""
 "This part of the dialog is auto-generated from the output of "
@@ -3150,7 +3102,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2436
+#: index.docbook:2375
 #, no-c-format
 msgid ""
 "The most useful of these options have been duplicated as separate pages in "
@@ -3160,7 +3112,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2445
+#: index.docbook:2384
 #, no-c-format
 msgid ""
 "The exact content of this part of the dialog depends on the version of the "
@@ -3170,7 +3122,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2452
+#: index.docbook:2391
 #, no-c-format
 msgid ""
 "&gpgconf; returns configuration information for multiple components. Inside "
@@ -3178,7 +3130,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2457
+#: index.docbook:2396
 #, no-c-format
 msgid ""
 "&kleopatra; displays one tab per component reported by &gpgconf;; groups are "
@@ -3187,7 +3139,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2462
+#: index.docbook:2401
 #, no-c-format
 msgid ""
 "Each &gpgconf; option has a type. Except for certain well-known options "
@@ -3197,139 +3149,139 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2469
+#: index.docbook:2408
 #, no-c-format
 msgid "Mapping From &gpgconf; Types To &GUI; Controls"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2476
+#: index.docbook:2415
 #, no-c-format
 msgid "&gpgconf; type"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2477
+#: index.docbook:2416
 #, no-c-format
 msgid "&kleopatra; control"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2480
+#: index.docbook:2419
 #, no-c-format
 msgid "for lists"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2481
+#: index.docbook:2420
 #, no-c-format
 msgid "for non-lists"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2487
+#: index.docbook:2426
 #, no-c-format
 msgid "none"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2488
+#: index.docbook:2427
 #, no-c-format
 msgid "Spinbox (<quote>count</quote>-semantics)"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2489
+#: index.docbook:2428
 #, no-c-format
 msgid "Checkbox"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2492
+#: index.docbook:2431
 #, no-c-format
 msgid "string"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2493 index.docbook:2506 index.docbook:2512 index.docbook:2516
+#: index.docbook:2432 index.docbook:2445 index.docbook:2451 index.docbook:2455
 #, no-c-format
 msgid "&NA;"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2494
+#: index.docbook:2433
 #, no-c-format
 msgid "Lineedit"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2497
+#: index.docbook:2436
 #, no-c-format
 msgid "int32"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2498
+#: index.docbook:2437
 #, no-c-format
 msgid "Lineedit (unformatted)"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2499
+#: index.docbook:2438
 #, no-c-format
 msgid "Spinbox"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2502
+#: index.docbook:2441
 #, no-c-format
 msgid "uint32"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2505
+#: index.docbook:2444
 #, no-c-format
 msgid "pathname"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2507 index.docbook:2511
+#: index.docbook:2446 index.docbook:2450
 #, no-c-format
 msgid "specialised control"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2510
+#: index.docbook:2449
 #, no-c-format
 msgid "ldap server"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2515
+#: index.docbook:2454
 #, no-c-format
 msgid "key fingerprint"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2519
+#: index.docbook:2458
 #, no-c-format
 msgid "pub key"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2522
+#: index.docbook:2461
 #, no-c-format
 msgid "sec key"
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:2525
+#: index.docbook:2464
 #, no-c-format
 msgid "alias list"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2530
+#: index.docbook:2469
 #, no-c-format
 msgid ""
 "See the &gpgconf; manual for more information about what you can configure "
@@ -3337,13 +3289,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2539
+#: index.docbook:2478
 #, no-c-format
 msgid "Administrator's Guide"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2541
+#: index.docbook:2480
 #, no-c-format
 msgid ""
 "This Administrator's Guide describes ways to customize &kleopatra; that are "
@@ -3351,7 +3303,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2544
+#: index.docbook:2483
 #, no-c-format
 msgid ""
 "It is assumed that the reader is familiar with the technology used for &kde; "
@@ -3360,19 +3312,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2549
+#: index.docbook:2488
 #, no-c-format
 msgid "Customization of the Certificate-Creation Wizard"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2551
+#: index.docbook:2490
 #, no-c-format
 msgid "Customizing the DN fields"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2553
+#: index.docbook:2492
 #, no-c-format
 msgid ""
 "&kleopatra; allows you to customize the fields that the user is allowed to "
@@ -3380,7 +3332,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2556
+#: index.docbook:2495
 #, no-c-format
 msgid ""
 "Create a group called <literal>CertificateCreationWizard</literal> in the "
@@ -3395,7 +3347,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2568
+#: index.docbook:2507
 #, no-c-format
 msgid ""
 "Using the <acronym>KIOSK</acronym> mode modifier <varname>$e</varname> "
@@ -3407,7 +3359,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2576
+#: index.docbook:2515
 #, no-c-format
 msgid ""
 "Due to the nature of the &kde; <acronym>KIOSK</acronym> framework, using the "
@@ -3418,13 +3370,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2582
+#: index.docbook:2521
 #, no-c-format
 msgid "The following example outlines possible customizations:"
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:2585
+#: index.docbook:2524
 #, no-c-format
 msgid ""
 "[CertificateCreationWizard]\n"
@@ -3446,13 +3398,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2592
+#: index.docbook:2531
 #, no-c-format
 msgid "Restricting the Types of Keys a User is Allowed to Create"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2594
+#: index.docbook:2533
 #, no-c-format
 msgid ""
 "&kleopatra; also allows to restrict which type of certificates a user is "
@@ -3461,13 +3413,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2603
+#: index.docbook:2542
 #, no-c-format
 msgid "Public Key Algorithms"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2605
+#: index.docbook:2544
 #, no-c-format
 msgid ""
 "To restrict the public key algorithm to use, add the config key "
@@ -3478,7 +3430,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2615
+#: index.docbook:2554
 #, no-c-format
 msgid ""
 "The allowed values are <literal>RSA</literal> for <acronym>RSA</acronym> "
@@ -3488,7 +3440,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2623
+#: index.docbook:2562
 #, no-c-format
 msgid ""
 "The default is read from &gpgconf; or else <literal>RSA</literal> if "
@@ -3496,13 +3448,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2633
+#: index.docbook:2572
 #, no-c-format
 msgid "Public Key Size"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2635
+#: index.docbook:2574
 #, no-c-format
 msgid ""
 "To restrict the available keys sizes for a public algorithm, add the config "
@@ -3516,13 +3468,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:2650
+#: index.docbook:2589
 #, no-c-format
 msgid "RSAKeySizes = 1536,-2048,3072"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2654
+#: index.docbook:2593
 #, no-c-format
 msgid ""
 "The above would restrict allowed <acronym>RSA</acronym> key sizes to 1536, "
@@ -3530,7 +3482,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2659
+#: index.docbook:2598
 #, no-c-format
 msgid ""
 "In addition to the sizes themselves, you may also specify labels for each of "
@@ -3539,13 +3491,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:2667
+#: index.docbook:2606
 #, no-c-format
 msgid "RSAKeySizeLabels = weak,normal,strong"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2670
+#: index.docbook:2609
 #, no-c-format
 msgid ""
 "The above, in connection with the previous example, would print something "
@@ -3553,7 +3505,7 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:2673
+#: index.docbook:2612
 #, no-c-format
 msgid ""
 "weak (1536 bits)\n"
@@ -3562,13 +3514,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2676
+#: index.docbook:2615
 #, no-c-format
 msgid "The defaults are as if the following was in effect:"
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:2678
+#: index.docbook:2617
 #, no-c-format
 msgid ""
 "RSAKeySizes = 1536,-2048,3072,4096\n"
@@ -3579,13 +3531,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2689
+#: index.docbook:2628
 #, no-c-format
 msgid "Creating and Editing Key Categories"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2691
+#: index.docbook:2630
 #, no-c-format
 msgid ""
 "&kleopatra; allows the user to configure the <link linkend=\"configuration-"
@@ -3596,7 +3548,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2701
+#: index.docbook:2640
 #, no-c-format
 msgid ""
 "When trying to find the category a key belongs to, &kleopatra; tries to "
@@ -3607,7 +3559,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2709
+#: index.docbook:2648
 #, no-c-format
 msgid ""
 "Each key filter is defined in a config group named <literal>Key Filter "
@@ -3616,7 +3568,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2716
+#: index.docbook:2655
 #, no-c-format
 msgid ""
 "The only mandatory keys in a <literal>Key Filter #<replaceable>n</"
@@ -3628,7 +3580,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2727
+#: index.docbook:2666
 #, no-c-format
 msgid ""
 "lists all keys that define the display properties of keys belonging to that "
@@ -3639,43 +3591,43 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2737
+#: index.docbook:2676
 #, no-c-format
 msgid "Key-Filter Configuration Keys Defining Display Properties"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2743 index.docbook:2823
+#: index.docbook:2682 index.docbook:2762
 #, no-c-format
 msgid "Config Key"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2744 index.docbook:2824
+#: index.docbook:2683 index.docbook:2763
 #, no-c-format
 msgid "Type"
 msgstr "Tipe"
 
 #. Tag: entry
-#: index.docbook:2745
+#: index.docbook:2684
 #, no-c-format
 msgid "Description"
 msgstr "Descripcion"
 
 #. Tag: varname
-#: index.docbook:2751
+#: index.docbook:2690
 #, no-c-format
 msgid "background-color"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2752 index.docbook:2761
+#: index.docbook:2691 index.docbook:2700
 #, no-c-format
 msgid "color"
 msgstr "color"
 
 #. Tag: entry
-#: index.docbook:2753
+#: index.docbook:2692
 #, no-c-format
 msgid ""
 "The background color to use. If missing, defaults to whichever background "
@@ -3683,13 +3635,13 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2760
+#: index.docbook:2699
 #, no-c-format
 msgid "foreground-color"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2762
+#: index.docbook:2701
 #, no-c-format
 msgid ""
 "The foreground color to use. If missing, defaults to whichever foreground "
@@ -3697,19 +3649,19 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2769
+#: index.docbook:2708
 #, no-c-format
 msgid "<varname>font</varname>"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2770
+#: index.docbook:2709
 #, no-c-format
 msgid "<entry>font</entry>"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2771
+#: index.docbook:2710
 #, no-c-format
 msgid ""
 "The custom font to use. The font will be scaled to the size configured for "
@@ -3717,22 +3669,22 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2778
+#: index.docbook:2717
 #, no-c-format
 msgid "font-bold"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2779 index.docbook:2790 index.docbook:2798 index.docbook:2832
-#: index.docbook:2851 index.docbook:2856 index.docbook:2864 index.docbook:2872
-#: index.docbook:2879 index.docbook:2886 index.docbook:2894 index.docbook:2902
-#: index.docbook:2910 index.docbook:2918 index.docbook:2925 index.docbook:2933
+#: index.docbook:2718 index.docbook:2729 index.docbook:2737 index.docbook:2771
+#: index.docbook:2790 index.docbook:2795 index.docbook:2803 index.docbook:2811
+#: index.docbook:2818 index.docbook:2825 index.docbook:2833 index.docbook:2841
+#: index.docbook:2849 index.docbook:2857 index.docbook:2864 index.docbook:2872
 #, no-c-format
 msgid "boolean"
 msgstr "boolean"
 
 #. Tag: entry
-#: index.docbook:2780
+#: index.docbook:2719
 #, no-c-format
 msgid ""
 "If set to <literal>true</literal> and <varname>font</varname> is not set, "
@@ -3741,13 +3693,13 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2789
+#: index.docbook:2728
 #, no-c-format
 msgid "font-italic"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2791
+#: index.docbook:2730
 #, no-c-format
 msgid ""
 "Analogous to <varname>font-bold</varname>, but for italic font style instead "
@@ -3755,13 +3707,13 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2797
+#: index.docbook:2736
 #, no-c-format
 msgid "font-strikeout"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2799
+#: index.docbook:2738
 #, no-c-format
 msgid ""
 "If <literal>true</literal>, draws a centered line over the font. Applied "
@@ -3769,62 +3721,62 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2806
+#: index.docbook:2745
 #, no-c-format
 msgid "icon"
 msgstr "icòna"
 
 #. Tag: entry
-#: index.docbook:2807
+#: index.docbook:2746
 #, no-c-format
 msgid "text"
 msgstr "tèxt"
 
 #. Tag: entry
-#: index.docbook:2808
+#: index.docbook:2747
 #, no-c-format
 msgid "The name of an icon to show in the first column. Not yet implemented."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2818
+#: index.docbook:2757
 #, no-c-format
 msgid "Key-Filter Configuration Keys Defining Filter Criteria"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2825
+#: index.docbook:2764
 #, no-c-format
 msgid "If specified, filter matches when..."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2831
+#: index.docbook:2770
 #, no-c-format
 msgid "is-revoked"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2833
+#: index.docbook:2772
 #, no-c-format
 msgid "the key has been revoked."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2836
+#: index.docbook:2775
 #, no-c-format
 msgid "match-context"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2837
+#: index.docbook:2776
 #, fuzzy, no-c-format
 #| msgid "text"
 msgid "context"
 msgstr "tèxt"
 
 #. Tag: para
-#: index.docbook:2839
+#: index.docbook:2778
 #, no-c-format
 msgid ""
 "Context is an enumeration with the following allowed values: "
@@ -3833,31 +3785,31 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2847
+#: index.docbook:2786
 #, no-c-format
 msgid "the context in which this filter matches."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2850
+#: index.docbook:2789
 #, no-c-format
 msgid "is-expired"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2852
+#: index.docbook:2791
 #, no-c-format
 msgid "the key is expired."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2855
+#: index.docbook:2794
 #, no-c-format
 msgid "is-disabled"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2857
+#: index.docbook:2796
 #, no-c-format
 msgid ""
 "the key has been disabled (marked for not using) by the user. Ignored for "
@@ -3865,61 +3817,61 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2863
+#: index.docbook:2802
 #, no-c-format
 msgid "is-root-certificate"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2865
+#: index.docbook:2804
 #, no-c-format
-msgid "the key is a root certificate. Ignored for OpenPGP keys."
+msgid "the key is a root certificate. Ignored for &openpgp; keys."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2871
+#: index.docbook:2810
 #, no-c-format
 msgid "can-encrypt"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2873
+#: index.docbook:2812
 #, no-c-format
 msgid "the key can be used for encryption."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2878
+#: index.docbook:2817
 #, no-c-format
 msgid "can-sign"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2880
+#: index.docbook:2819
 #, no-c-format
 msgid "the key can be used for signing."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2885
+#: index.docbook:2824
 #, no-c-format
 msgid "can-certify"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2887
+#: index.docbook:2826
 #, no-c-format
 msgid "the key can be used for signing (certifying) other keys."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2893
+#: index.docbook:2832
 #, no-c-format
 msgid "can-authenticate"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2895
+#: index.docbook:2834
 #, no-c-format
 msgid ""
 "the key can be used for authentication (&eg; as an <acronym>TLS</acronym> "
@@ -3927,13 +3879,13 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2901
+#: index.docbook:2840
 #, no-c-format
 msgid "is-qualified"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2903
+#: index.docbook:2842
 #, no-c-format
 msgid ""
 "the key can be used to make Qualified Signatures (as defined by the German "
@@ -3941,69 +3893,69 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2909
+#: index.docbook:2848
 #, no-c-format
 msgid "is-cardkey"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2911
+#: index.docbook:2850
 #, no-c-format
 msgid "the key material is stored on a smartcard (instead of on the computer)."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2917
+#: index.docbook:2856
 #, no-c-format
 msgid "has-secret-key"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2919
+#: index.docbook:2858
 #, no-c-format
 msgid "the secret key for this key pair is available."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2924
+#: index.docbook:2863
 #, no-c-format
 msgid "is-openpgp-key"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2926
+#: index.docbook:2865
 #, no-c-format
 msgid ""
-"the key is an OpenPGP key (<literal>true</literal>), or an &smime; key "
+"the key is an &openpgp; key (<literal>true</literal>), or an &smime; key "
 "(<literal>false</literal>)."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2932
+#: index.docbook:2871
 #, no-c-format
 msgid "was-validated"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2934
+#: index.docbook:2873
 #, no-c-format
 msgid "the key has been validated."
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2939
+#: index.docbook:2878
 #, no-c-format
 msgid "<replaceable>prefix</replaceable>-ownertrust"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2940 index.docbook:2973
+#: index.docbook:2879 index.docbook:2912
 #, no-c-format
 msgid "validity"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2942
+#: index.docbook:2881
 #, no-c-format
 msgid ""
 "Validity is an (ordered) enumeration with the following allowed values: "
@@ -4014,7 +3966,7 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2954
+#: index.docbook:2893
 #, no-c-format
 msgid ""
 "the key has exactly (<replaceable>prefix</replaceable>&nbsp;=&nbsp;"
@@ -4029,13 +3981,13 @@ msgid ""
 msgstr ""
 
 #. Tag: varname
-#: index.docbook:2972
+#: index.docbook:2911
 #, no-c-format
 msgid "<replaceable>prefix</replaceable>-validity"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2974
+#: index.docbook:2913
 #, no-c-format
 msgid ""
 "Analogous to <varname><replaceable>prefix</replaceable>-ownertrust</"
@@ -4043,7 +3995,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2985
+#: index.docbook:2924
 #, no-c-format
 msgid ""
 "Some of the more interesting criteria, such as <varname>is-revoked</varname> "
@@ -4054,7 +4006,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2996
+#: index.docbook:2935
 #, no-c-format
 msgid ""
 "In addition to the config keys listed above, a key filter may also have an "
@@ -4062,7 +4014,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3002
+#: index.docbook:2941
 #, no-c-format
 msgid ""
 "Using the filter's <varname>id</varname>, which defaults to the filter's "
@@ -4073,7 +4025,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3012
+#: index.docbook:2951
 #, no-c-format
 msgid ""
 "The <varname>match-contexts</varname> limits the applicability of the "
@@ -4088,7 +4040,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3026
+#: index.docbook:2965
 #, no-c-format
 msgid ""
 "The format of the entry is a list of tokens, separated by non-word "
@@ -4103,7 +4055,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3040
+#: index.docbook:2979
 #, no-c-format
 msgid ""
 "In general, criteria not specified (&ie; the config entry is not set) are "
@@ -4112,7 +4064,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3047
+#: index.docbook:2986
 #, no-c-format
 msgid ""
 "Each filter has an implied <quote>specificity</quote> that is used to rank "
@@ -4123,13 +4075,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:3057
+#: index.docbook:2996
 #, no-c-format
 msgid "Examples of key filters"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3058
+#: index.docbook:2997
 #, no-c-format
 msgid ""
 "To check for all expired, but non-revoked root certificates, you would use a "
@@ -4137,7 +4089,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:3063
+#: index.docbook:3002
 #, no-c-format
 msgid ""
 "<!--\n"
@@ -4152,15 +4104,15 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3064
+#: index.docbook:3003
 #, no-c-format
 msgid ""
-"To check for all disabled OpenPGP keys (not yet supported by &kleopatra;) "
+"To check for all disabled &openpgp; keys (not yet supported by &kleopatra;) "
 "with ownertrust of at least <quote>marginal</quote>, you would use:"
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:3069
+#: index.docbook:3008
 #, no-c-format
 msgid ""
 "<!--\n"
@@ -4174,13 +4126,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:3076
+#: index.docbook:3015
 #, no-c-format
 msgid "Configuring Archivers for Use with Sign/Encrypt Files"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3078
+#: index.docbook:3017
 #, no-c-format
 msgid ""
 "&kleopatra; allows the administrator (and power-user) to configure the list "
@@ -4188,7 +4140,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3084
+#: index.docbook:3023
 #, no-c-format
 msgid ""
 "Each archiver is defined in <filename>libkleopatrarc</filename> as a "
@@ -4197,13 +4149,13 @@ msgid ""
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:3094
+#: index.docbook:3033
 #, no-c-format
 msgid "extensions"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3096
+#: index.docbook:3035
 #, no-c-format
 msgid ""
 "A comma-separated list of filename extensions that usually indicate this "
@@ -4211,13 +4163,13 @@ msgid ""
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:3104 index.docbook:3347
+#: index.docbook:3043 index.docbook:3286
 #, no-c-format
 msgid "<literal>id</literal>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3106
+#: index.docbook:3045
 #, no-c-format
 msgid ""
 "A unique ID used to identify this archiver internally. If in doubt, use the "
@@ -4225,13 +4177,13 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:3114 index.docbook:3357
+#: index.docbook:3053 index.docbook:3296
 #, no-c-format
 msgid "<literal>Name</literal> (translated)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3116
+#: index.docbook:3055
 #, no-c-format
 msgid ""
 "The user-visible name of this archiver, as shown in the corresponding drop-"
@@ -4239,13 +4191,13 @@ msgid ""
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:3125
+#: index.docbook:3064
 #, no-c-format
 msgid "pack-command"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3127
+#: index.docbook:3066
 #, no-c-format
 msgid ""
 "The actual command to archive files. You can use any command, as long as no "
@@ -4255,13 +4207,13 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:3134
+#: index.docbook:3073
 #, no-c-format
 msgid "pack-command=\"/opt/ZIP v2.32/bin/zip\" -r -"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3142
+#: index.docbook:3081
 #, no-c-format
 msgid ""
 "Since backslash (<literal>\\</literal>) is an escape character in KDE config "
@@ -4280,19 +4232,19 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:3163
+#: index.docbook:3102
 #, no-c-format
 msgid "pack-command=cmd.exe C:\\\\myarchivescript.bat"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:3169
+#: index.docbook:3108
 #, no-c-format
 msgid "Input Filename Passing for <literal>pack-command</literal>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3171
+#: index.docbook:3110
 #, no-c-format
 msgid ""
 "There are three ways to pass filenames to the pack command. For each of "
@@ -4300,13 +4252,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3180
+#: index.docbook:3119
 #, no-c-format
 msgid "As command-line arguments."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3181
+#: index.docbook:3120
 #, no-c-format
 msgid ""
 "Example (tar): <programlisting>pack-command=tar cf -</programlisting> "
@@ -4321,19 +4273,19 @@ msgid ""
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:3197
+#: index.docbook:3136
 #, no-c-format
 msgid "pack-command=zip -r -"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3202
+#: index.docbook:3141
 #, no-c-format
 msgid "Via standard-in, separated by newlines: prepend <literal>|</literal>."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3203
+#: index.docbook:3142
 #, no-c-format
 msgid ""
 "Example (GNU-tar): <programlisting>pack-command=|gtar cf - -T-</"
@@ -4345,7 +4297,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3216
+#: index.docbook:3155
 #, no-c-format
 msgid ""
 "&kleopatra; currently only supports <acronym>LF</acronym> as a newline "
@@ -4354,13 +4306,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3226
+#: index.docbook:3165
 #, no-c-format
 msgid "Via standard-in, separated by NUL-bytes: prepend <literal>0|</literal>."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3227
+#: index.docbook:3166
 #, no-c-format
 msgid ""
 "Example (GNU-tar): <programlisting>pack-command=0|gtar cf - -T- --null</"
@@ -4370,13 +4322,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:3245
+#: index.docbook:3184
 #, no-c-format
 msgid "Configuring Checksum Programs for Use with Create/Verify Checksums"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3247
+#: index.docbook:3186
 #, no-c-format
 msgid ""
 "&kleopatra; allows the administrator (and power-user) to configure the list "
@@ -4386,7 +4338,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3255
+#: index.docbook:3194
 #, no-c-format
 msgid ""
 "To be usable by &kleopatra;, output of checksum programs (both the written "
@@ -4396,7 +4348,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3264
+#: index.docbook:3203
 #, no-c-format
 msgid ""
 "Specifically, the checksum file needs to be line-based with each line having "
@@ -4412,7 +4364,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3282
+#: index.docbook:3221
 #, no-c-format
 msgid ""
 "Similarly, the output of <xref linkend=\"checksum-definition-verify-command"
@@ -4422,7 +4374,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3291
+#: index.docbook:3230
 #, no-c-format
 msgid ""
 "Yes, these programs were not written with graphical frontends in mind, and "
@@ -4431,7 +4383,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3301
+#: index.docbook:3240
 #, no-c-format
 msgid ""
 "Each checksum program is defined in <filename>libkleopatrarc</filename> as a "
@@ -4440,13 +4392,13 @@ msgid ""
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:3311
+#: index.docbook:3250
 #, no-c-format
 msgid "file-patterns"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3313
+#: index.docbook:3252
 #, no-c-format
 msgid ""
 "A list of regular expressions that describe which files should be considered "
@@ -4459,13 +4411,13 @@ msgid ""
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:3333
+#: index.docbook:3272
 #, no-c-format
 msgid "output-file"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3335
+#: index.docbook:3274
 #, no-c-format
 msgid ""
 "The typical output filename for this checksum program (should match one of "
@@ -4475,7 +4427,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3349
+#: index.docbook:3288
 #, no-c-format
 msgid ""
 "A unique ID used to identify this checksum program internally. If in doubt, "
@@ -4483,7 +4435,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3359
+#: index.docbook:3298
 #, no-c-format
 msgid ""
 "The user-visible name of this checksum program, as shown in the drop-down "
@@ -4491,13 +4443,13 @@ msgid ""
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:3367
+#: index.docbook:3306
 #, no-c-format
 msgid "create-command"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3369
+#: index.docbook:3308
 #, no-c-format
 msgid ""
 "The actual command with which to create checksum files. The syntax, "
@@ -4507,13 +4459,13 @@ msgid ""
 msgstr ""
 
 #. Tag: literal
-#: index.docbook:3380
+#: index.docbook:3319
 #, no-c-format
 msgid "verify-command"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3382
+#: index.docbook:3321
 #, no-c-format
 msgid ""
 "Same as <xref linkend=\"checksum-definition-create-command\"/>, but for "
@@ -4521,13 +4473,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3392
+#: index.docbook:3331
 #, no-c-format
 msgid "Here is a complete example:"
 msgstr ""
 
 #. Tag: programlisting
-#: index.docbook:3394
+#: index.docbook:3333
 #, no-c-format
 msgid ""
 "[Checksum Definition #1]\n"
@@ -4542,13 +4494,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:3402
+#: index.docbook:3341
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3404
+#: index.docbook:3343
 #, no-c-format
 msgid ""
 "&kleopatra; copyright 2002 &Steffen.Hansen;, &Matthias.Kalle.Dalheimer; and "
@@ -4557,7 +4509,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3407
+#: index.docbook:3346
 #, no-c-format
 msgid ""
 "Documentation copyright 2002 &Steffen.Hansen;, copyright 2004 &Daniel."
@@ -4565,56 +4517,56 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:3411
+#: index.docbook:3350
 #, no-c-format
 msgid "Contributors"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3413
+#: index.docbook:3352
 #, no-c-format
 msgid "&Marc.Mutz; &Marc.Mutz.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3416
+#: index.docbook:3355
 #, no-c-format
 msgid "&David.Faure; &David.Faure.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3419
+#: index.docbook:3358
 #, no-c-format
 msgid "&Steffen.Hansen; <email>hansen@kde.org</email>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3422
+#: index.docbook:3361
 #, no-c-format
 msgid "&Matthias.Kalle.Dalheimer; &Matthias.Kalle.Dalheimer.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3425
+#: index.docbook:3364
 #, no-c-format
 msgid "&Jesper.Pedersen; &Jesper.Pedersen.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:3428
+#: index.docbook:3367
 #, no-c-format
 msgid "&Daniel.Molkentin; &Daniel.Molkentin.mail;"
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:3432
+#: index.docbook:3371
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:3432
+#: index.docbook:3371
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr ""
