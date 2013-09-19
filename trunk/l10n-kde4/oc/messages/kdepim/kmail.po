@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-18 01:46+0000\n"
+"POT-Creation-Date: 2013-09-19 01:39+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2648,11 +2648,30 @@ msgstr ""
 msgid "Edit..."
 msgstr "Editar..."
 
-#: identity/identityeditvcarddialog.cpp:31
+#: identity/identityeditvcarddialog.cpp:32
 #, fuzzy
 #| msgid "Account Name"
 msgid "Edit own vCard"
 msgstr "Nom del compte"
+
+#: identity/identityeditvcarddialog.cpp:34
+msgid "Delete current vcard"
+msgstr ""
+
+#: identity/identityeditvcarddialog.cpp:54
+msgid "Are you sure to want to delete this vcard?"
+msgstr ""
+
+#: identity/identityeditvcarddialog.cpp:54
+#: identity/identityeditvcarddialog.cpp:66
+#, fuzzy
+#| msgid "Deleted"
+msgid "Delete vcard"
+msgstr "Suprimit"
+
+#: identity/identityeditvcarddialog.cpp:66
+msgid "We can not delete vcard file."
+msgstr ""
 
 #: identity/identitylistview.cpp:98
 #, fuzzy, kde-format
@@ -3500,14 +3519,14 @@ msgstr "Desplaçament de messatges"
 msgid "Jump to Folder"
 msgstr ""
 
-#: kmmainwidget.cpp:2396
+#: kmmainwidget.cpp:2396 vacationmanager.cpp:59
 msgid ""
 "KMail's Out of Office Reply functionality relies on server-side filtering. "
 "You have not yet configured an IMAP server for this.\n"
 "You can do this on the \"Filtering\" tab of the IMAP account configuration."
 msgstr ""
 
-#: kmmainwidget.cpp:2401
+#: kmmainwidget.cpp:2401 vacationmanager.cpp:64
 msgid "No Server-Side Filtering Configured"
 msgstr ""
 
@@ -4064,7 +4083,8 @@ msgid "Filter %1"
 msgstr ""
 
 #: kmmainwidget.cpp:4484
-msgid "Out of office reply active"
+#, kde-format
+msgid "Out of office reply active on server \"%1\""
 msgstr ""
 
 #: kmmainwidget.cpp:4589
@@ -4364,7 +4384,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr ""
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:236
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:240
 msgid "&Reply..."
 msgstr ""
 
@@ -4372,11 +4392,11 @@ msgstr ""
 msgid "Reply to A&uthor..."
 msgstr ""
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:240
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:244
 msgid "Reply to &All..."
 msgstr ""
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:244
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:248
 msgid "Reply to Mailing-&List..."
 msgstr ""
 
@@ -4421,7 +4441,7 @@ msgstr ""
 msgid "Add Note..."
 msgstr "Apondre..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:248
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:252
 msgctxt "Message->"
 msgid "&Forward"
 msgstr ""
@@ -4647,76 +4667,76 @@ msgstr ""
 msgid "Find Messages"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:107
+#: searchdialog/searchwindow.cpp:111
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Recercar"
 
-#: searchdialog/searchwindow.cpp:112
+#: searchdialog/searchwindow.cpp:116
 msgid "Debug query"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:198 searchdialog/searchwindow.cpp:391
+#: searchdialog/searchwindow.cpp:202 searchdialog/searchwindow.cpp:395
 msgid "Last Search"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:253
+#: searchdialog/searchwindow.cpp:257
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:258
+#: searchdialog/searchwindow.cpp:262
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:272
+#: searchdialog/searchwindow.cpp:276
 msgid "Save Attachments..."
 msgstr "Enregistrar los fichièrs junts..."
 
-#: searchdialog/searchwindow.cpp:278
+#: searchdialog/searchwindow.cpp:282
 msgid "Clear Selection"
 msgstr "Proteccion"
 
-#: searchdialog/searchwindow.cpp:362
+#: searchdialog/searchwindow.cpp:366
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] ""
 msgstr[1] ""
 
-#: searchdialog/searchwindow.cpp:415
+#: searchdialog/searchwindow.cpp:419
 msgid "You did not selected a valid folder."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:447
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:448
+#: searchdialog/searchwindow.cpp:452
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:454
+#: searchdialog/searchwindow.cpp:458
 #, fuzzy
 #| msgid "Moving messages"
 msgid "No message found."
 msgstr "Desplaçament de messatges"
 
-#: searchdialog/searchwindow.cpp:478
+#: searchdialog/searchwindow.cpp:482
 #, fuzzy
 #| msgid "Starting..."
 msgid "Searching..."
 msgstr "Aviada..."
 
-#: searchdialog/searchwindow.cpp:486
+#: searchdialog/searchwindow.cpp:490
 #, kde-format
 msgid "Cannot get search result. %1"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:600
+#: searchdialog/searchwindow.cpp:604
 #, kde-format
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
@@ -4724,7 +4744,7 @@ msgid ""
 "\"%1\"."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:706
+#: searchdialog/searchwindow.cpp:710
 #, fuzzy, kde-format
 #| msgid "Moving messages"
 msgid "Copy Message"
@@ -4732,7 +4752,7 @@ msgid_plural "Copy %1 Messages"
 msgstr[0] "Desplaçament de messatges"
 msgstr[1] "Desplaçament de messatges"
 
-#: searchdialog/searchwindow.cpp:709
+#: searchdialog/searchwindow.cpp:713
 #, fuzzy, kde-format
 #| msgid "Current Message"
 msgid "Cut Message"
@@ -6671,12 +6691,6 @@ msgstr ""
 #~ msgctxt "message status"
 #~ msgid "Read"
 #~ msgstr "Lectura"
-
-#, fuzzy
-#~| msgid "Deleted"
-#~ msgctxt "message status"
-#~ msgid "Deleted"
-#~ msgstr "Suprimit"
 
 #, fuzzy
 #~| msgid "Replace:"
