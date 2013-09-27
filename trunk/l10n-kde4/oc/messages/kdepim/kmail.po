@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-26 01:44+0000\n"
+"POT-Creation-Date: 2013-09-27 01:50+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -4380,7 +4380,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr ""
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:230
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:242
 msgid "&Reply..."
 msgstr ""
 
@@ -4388,11 +4388,11 @@ msgstr ""
 msgid "Reply to A&uthor..."
 msgstr ""
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:234
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:246
 msgid "Reply to &All..."
 msgstr ""
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:238
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:250
 msgid "Reply to Mailing-&List..."
 msgstr ""
 
@@ -4437,7 +4437,7 @@ msgstr ""
 msgid "Add Note..."
 msgstr "Apondre..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:242
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:254
 msgctxt "Message->"
 msgid "&Forward"
 msgstr ""
@@ -4590,7 +4590,7 @@ msgid "Search"
 msgstr "Recercar"
 
 #: searchdialog/debug/searchdebugwidget.cpp:124
-#: searchdialog/searchwindow.cpp:472
+#: searchdialog/searchwindow.cpp:499
 #, fuzzy
 #| msgid "Starting..."
 msgid "Searching..."
@@ -4672,79 +4672,83 @@ msgstr "Repertòri"
 msgid "Nepomuk cannot make search. Errors found: <ul><li>%1</li></ul>"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:84
+#: searchdialog/searchwindow.cpp:85
 msgid "Find Messages"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:106
+#: searchdialog/searchwindow.cpp:107
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Recercar"
 
-#: searchdialog/searchwindow.cpp:111
+#: searchdialog/searchwindow.cpp:112
 msgid "Debug query"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:192 searchdialog/searchwindow.cpp:385
+#: searchdialog/searchwindow.cpp:204 searchdialog/searchwindow.cpp:397
 msgid "Last Search"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:247
+#: searchdialog/searchwindow.cpp:259
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:252
+#: searchdialog/searchwindow.cpp:264
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:266
+#: searchdialog/searchwindow.cpp:278
 msgid "Save Attachments..."
 msgstr "Enregistrar los fichièrs junts..."
 
-#: searchdialog/searchwindow.cpp:272
+#: searchdialog/searchwindow.cpp:284
 msgid "Clear Selection"
 msgstr "Proteccion"
 
-#: searchdialog/searchwindow.cpp:356
+#: searchdialog/searchwindow.cpp:368
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] ""
 msgstr[1] ""
 
-#: searchdialog/searchwindow.cpp:409
+#: searchdialog/searchwindow.cpp:421
 msgid "You did not selected a valid folder."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:432
+#: searchdialog/searchwindow.cpp:439
+msgid "You forgot to select collections."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:459
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:437
+#: searchdialog/searchwindow.cpp:464
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:470
 #, fuzzy
 #| msgid "Moving messages"
 msgid "No message found."
 msgstr "Desplaçament de messatges"
 
-#: searchdialog/searchwindow.cpp:448
+#: searchdialog/searchwindow.cpp:475
 msgid ""
 "Contains condition cannot be used with a number of characters inferior to 4."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:480
+#: searchdialog/searchwindow.cpp:507
 #, kde-format
 msgid "Cannot get search result. %1"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:594
+#: searchdialog/searchwindow.cpp:628
 #, kde-format
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
@@ -4752,7 +4756,7 @@ msgid ""
 "\"%1\"."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:700
+#: searchdialog/searchwindow.cpp:734
 #, fuzzy, kde-format
 #| msgid "Moving messages"
 msgid "Copy Message"
@@ -4760,13 +4764,25 @@ msgid_plural "Copy %1 Messages"
 msgstr[0] "Desplaçament de messatges"
 msgstr[1] "Desplaçament de messatges"
 
-#: searchdialog/searchwindow.cpp:703
+#: searchdialog/searchwindow.cpp:737
 #, fuzzy, kde-format
 #| msgid "Current Message"
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "lo messatge actual"
 msgstr[1] "lo messatge actual"
+
+#: searchdialog/selectmulticollectiondialog.cpp:27
+#, fuzzy
+#| msgid "Delete Folder"
+msgid "Select Multiple Folders"
+msgstr "Suprimir lo repertòri"
+
+#: searchdialog/selectmulticollectionwidget.cpp:76
+#, fuzzy
+#| msgid "Starting..."
+msgid "Search..."
+msgstr "Aviada..."
 
 #: secondarywindow.cpp:88
 msgctxt "Document/application separator in titlebar"
@@ -5624,20 +5640,34 @@ msgstr ""
 msgid "&Include sub-folders"
 msgstr "Repertòri novèl"
 
+#. i18n: ectx: property (text), widget (QRadioButton, mChkMultiFolders)
+#: ui/searchwindow.ui:53
+#, fuzzy
+#| msgid "Select Folder"
+msgid "Select specific folders"
+msgstr "Seleccionar un repertòri"
+
+#. i18n: ectx: property (text), widget (QPushButton, selectMultipleFolders)
+#: ui/searchwindow.ui:60
+#, fuzzy
+#| msgid "Select Folder"
+msgid "Select folders..."
+msgstr "Seleccionar un repertòri"
+
 #. i18n: ectx: property (text), widget (QLabel, mSearchFolderLbl)
-#: ui/searchwindow.ui:82
+#: ui/searchwindow.ui:113
 msgid "Search folder &name:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, mSearchFolderOpenBtn)
-#: ui/searchwindow.ui:102
+#: ui/searchwindow.ui:133
 #, fuzzy
 #| msgid "Select Folder"
 msgid "Open &Search Folder"
 msgstr "Seleccionar un repertòri"
 
 #. i18n: ectx: property (text), widget (KPushButton, mSearchResultOpenBtn)
-#: ui/searchwindow.ui:112
+#: ui/searchwindow.ui:143
 #, fuzzy
 #| msgid "&Message"
 msgid "Open &Message"
@@ -6836,9 +6866,6 @@ msgstr ""
 #~ msgid "Important"
 #~ msgstr "Important"
 
-#~ msgid "Select Folder"
-#~ msgstr "Seleccionar un repertòri"
-
 #, fuzzy
 #~| msgid "New Folder"
 #~ msgctxt "@title:window"
@@ -7549,11 +7576,6 @@ msgstr ""
 #~| msgid "New Message"
 #~ msgid "Unread Messages"
 #~ msgstr "Messatge novèl"
-
-#, fuzzy
-#~| msgid "Delete Folder"
-#~ msgid "Multiple Folders"
-#~ msgstr "Suprimir lo repertòri"
 
 #~ msgid "C&ancel"
 #~ msgstr "&Anullar"

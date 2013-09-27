@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-26 01:44+0000\n"
+"POT-Creation-Date: 2013-09-27 01:50+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -18,8 +18,109 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
+#: adblock/adblockmanager.cpp:352
+#, fuzzy
+#| msgid "&Settings"
+msgctxt "@title:window"
+msgid "Ad Block Settings"
+msgstr "&Paramètres"
+
+#: adblock/adblocksettingwidget.cpp:53
+msgid ""
+"<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
+"\"filterhelp\">more information</a>):"
+msgstr ""
+
+#: adblock/adblocksettingwidget.cpp:69
+msgid " day"
+msgid_plural " days"
+msgstr[0] " jorn"
+msgstr[1] " jorn"
+
+#: adblock/adblocksettingwidget.cpp:86
+msgid ""
+"<qt><p>Enter an expression to filter. Filters can be defined as either:"
+"<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
+"the wildcards <tt>*?[]</tt> may be used</li><li>a full regular expression by "
+"surrounding the string with '<tt>/</tt>', e.g. <tt>/\\/(ad|banner)\\./</tt></"
+"li></ul><p>Any filter string can be preceded by '<tt>@@</tt>' to whitelist "
+"(allow) any matching URL, which takes priority over any blacklist (blocking) "
+"filter."
+msgstr ""
+
 #: adblock/networkaccessmanager.cpp:51
 msgid "Blocked by ad filter"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, BlockedLabel)
+#: adblock/ui/blocked_elements.ui:17
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Blocked elements</"
+"span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, HidedLabel)
+#: adblock/ui/blocked_elements.ui:101
+msgid "<b>Hidden elements</b>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/blocked_elements.ui:108
+msgid "TextLabel"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkEnableAdblock)
+#: adblock/ui/settings_adblock.ui:17
+msgid "&Enable Ad Block"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkHideAds)
+#: adblock/ui/settings_adblock.ui:24
+msgid "&Hide filtered elements"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: adblock/ui/settings_adblock.ui:38
+#, fuzzy
+#| msgid "Auto"
+msgid "Automatic Filters"
+msgstr "Auto"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: adblock/ui/settings_adblock.ui:49
+msgid "Update enabled automatic filters every:"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: adblock/ui/settings_adblock.ui:88
+#, fuzzy
+#| msgid "Mail"
+msgid "Manual Filters"
+msgstr "Corrièl"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/settings_adblock.ui:96
+#, fuzzy
+#| msgid "&Search:"
+msgid "Search:"
+msgstr "&Recèrcar :"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
+#: adblock/ui/settings_adblock.ui:123
+msgid "Add filter expression"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QToolButton, insertButton)
+#. i18n: ectx: property (text), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:126 adblock/ui/settings_adblock.ui:136
+#, fuzzy
+#| msgid "Add..."
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:133
+msgid "Remove filter expression"
 msgstr ""
 
 #: findbar/findbarbase.cpp:48 findbar/findbarbase.cpp:51
@@ -2968,11 +3069,6 @@ msgstr ""
 #~ msgid "Composing"
 #~ msgstr "Compression"
 
-#~ msgid " day"
-#~ msgid_plural " days"
-#~ msgstr[0] " jorn"
-#~ msgstr[1] " jorn"
-
 #, fuzzy
 #~| msgid "Group:"
 #~ msgid "Groupware"
@@ -3078,11 +3174,6 @@ msgstr ""
 #~| msgid "BCC"
 #~ msgid "BCC"
 #~ msgstr "BCC"
-
-#, fuzzy
-#~| msgid "Mail"
-#~ msgid "KMail Filter"
-#~ msgstr "Corrièl"
 
 #, fuzzy
 #~| msgid "Address book:"
@@ -3257,12 +3348,6 @@ msgstr ""
 #~ msgctxt "@title:column"
 #~ msgid "->"
 #~ msgstr "->"
-
-#, fuzzy
-#~| msgid "&Search:"
-#~ msgctxt "Search for recipient."
-#~ msgid "Search:"
-#~ msgstr "&Recèrcar :"
 
 #~ msgid "&Cancel"
 #~ msgstr "&Anullar"
@@ -3765,12 +3850,6 @@ msgstr ""
 #~ msgstr "Interval d'enregistrament automatic :"
 
 #, fuzzy
-#~| msgid "&Settings"
-#~ msgctxt "@title:tab"
-#~ msgid "IMAP Settings"
-#~ msgstr "&Paramètres"
-
-#, fuzzy
 #~| msgid "New Identity"
 #~ msgid "Use the default identity for this account"
 #~ msgstr "Identitat novèla"
@@ -3784,11 +3863,6 @@ msgstr ""
 #~| msgid "Replace:"
 #~ msgid "Namespaces:"
 #~ msgstr "Remplaçar :"
-
-#, fuzzy
-#~| msgid "Add..."
-#~ msgid "..."
-#~ msgstr "..."
 
 #, fuzzy
 #~| msgid "Personal"
@@ -4992,12 +5066,6 @@ msgstr ""
 #~ msgctxt "@action:inmenu Group header background color setting"
 #~ msgid "None"
 #~ msgstr "Pas cap"
-
-#, fuzzy
-#~| msgid "Auto"
-#~ msgctxt "@action:inmenu Group header background color setting"
-#~ msgid "Automatic"
-#~ msgstr "Auto"
 
 #, fuzzy
 #~| msgid "Properties"
