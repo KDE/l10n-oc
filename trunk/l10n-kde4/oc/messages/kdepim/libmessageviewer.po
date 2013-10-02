@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-01 01:40+0000\n"
+"POT-Creation-Date: 2013-10-02 01:44+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -34,37 +34,91 @@ msgstr "Seleccionar una poliça"
 msgid "Blockable Items"
 msgstr ""
 
-#: adblock/adblockblockableitemswidget.cpp:56 viewer/mimetreemodel.cpp:249
+#: adblock/adblockblockableitemswidget.cpp:57 viewer/mimetreemodel.cpp:249
 msgid "Type"
 msgstr "Tipe"
 
-#: adblock/adblockblockableitemswidget.cpp:56
+#: adblock/adblockblockableitemswidget.cpp:57
 #, fuzzy
 #| msgid "Mail"
 msgid "Filter"
 msgstr "Corrièl"
 
-#: adblock/adblockblockableitemswidget.cpp:56
+#: adblock/adblockblockableitemswidget.cpp:57
 #, fuzzy
 #| msgid "Address book:"
 msgid "Address"
 msgstr "Quasernet d'adreça&nbsp;:"
 
-#: adblock/adblockblockableitemswidget.cpp:90
+#: adblock/adblockblockableitemswidget.cpp:61
+#, fuzzy
+#| msgid "Search"
+msgid "Search..."
+msgstr "Recercar"
+
+#: adblock/adblockblockableitemswidget.cpp:88
 msgid "Image"
 msgstr ""
 
-#: adblock/adblockblockableitemswidget.cpp:107
+#: adblock/adblockblockableitemswidget.cpp:91
+msgid "Script"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:94
+msgid "Stylesheet"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:97
+#, fuzzy
+#| msgid "&Fonts"
+msgid "Font"
+msgstr "&Poliças"
+
+#: adblock/adblockblockableitemswidget.cpp:100
+msgid "Frame"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:103
+msgid "XML Request"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:106
+#, fuzzy
+#| msgid "Subject"
+msgid "Object"
+msgstr "Subjècte"
+
+#: adblock/adblockblockableitemswidget.cpp:110
+#, fuzzy
+#| msgctxt "Message->"
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: adblock/adblockblockableitemswidget.cpp:174
 #, fuzzy
 #| msgid "Copy"
 msgid "Copy url"
 msgstr "Copiar"
 
-#: adblock/adblockblockableitemswidget.cpp:108
+#: adblock/adblockblockableitemswidget.cpp:176
+#, fuzzy
+#| msgid "Remove Entry"
+msgid "Copy filter"
+msgstr "Suprimir l'entrada"
+
+#: adblock/adblockblockableitemswidget.cpp:177
 msgid "Block item..."
 msgstr ""
 
-#: adblock/adblockblockableitemswidget.cpp:111
+#: adblock/adblockblockableitemswidget.cpp:179
+#, fuzzy
+#| msgctxt "to open"
+#| msgid "Open"
+msgid "Open"
+msgstr "Dobrir"
+
+#: adblock/adblockblockableitemswidget.cpp:182
 #, fuzzy
 #| msgid "Remove Entry"
 msgid "Remove filter"
@@ -88,7 +142,7 @@ msgid_plural " days"
 msgstr[0] " jorn"
 msgstr[1] " jorn"
 
-#: adblock/adblocksettingwidget.cpp:103
+#: adblock/adblocksettingwidget.cpp:110
 msgid ""
 "<qt><p>Enter an expression to filter. Filters can be defined as either:"
 "<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
@@ -99,16 +153,16 @@ msgid ""
 "filter."
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:306
+#: adblock/adblocksettingwidget.cpp:324
 #, kde-format
 msgid "Do you want to delete list \"%1\"?"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:306
+#: adblock/adblocksettingwidget.cpp:324
 msgid "Delete current list"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:331 adblock/adblocksettingwidget.cpp:356
+#: adblock/adblocksettingwidget.cpp:349 adblock/adblocksettingwidget.cpp:374
 msgid "*|all files (*)"
 msgstr ""
 
@@ -151,20 +205,52 @@ msgstr ""
 msgid "Exception Filter"
 msgstr "Seleccionar un repertòri"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: adblock/ui/adblockcreatefilterwidget.ui:55
-msgid "Accept pattern only:"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: adblock/ui/adblockcreatefilterwidget.ui:53
+msgid "Accept pattern only"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, atTheBeginning)
-#: adblock/ui/adblockcreatefilterwidget.ui:66
+#: adblock/ui/adblockcreatefilterwidget.ui:59
 msgid "At the beginning of the address"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, atTheEnd)
-#: adblock/ui/adblockcreatefilterwidget.ui:73
+#: adblock/ui/adblockcreatefilterwidget.ui:66
 msgid "At the end of address"
 msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: adblock/ui/adblockcreatefilterwidget.ui:76 findbar/findbarbase.cpp:77
+#: ui/invitationsettings.ui:94
+#, fuzzy
+#| msgid "&Options"
+msgid "Options"
+msgstr "&Opcions"
+
+#. i18n: ectx: property (text), widget (QCheckBox, firstPartOnly)
+#: adblock/ui/adblockcreatefilterwidget.ui:82
+msgid "First-part only"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, matchCase)
+#: adblock/ui/adblockcreatefilterwidget.ui:89
+msgid "Match case"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, restrictToDomain)
+#: adblock/ui/adblockcreatefilterwidget.ui:98
+msgid "Restrict to domain"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: adblock/ui/adblockcreatefilterwidget.ui:113
+#, fuzzy
+#| msgctxt "Message->"
+#| msgid "Reply to All"
+msgid "Apply to:"
+msgstr "Respondre a totes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkEnableAdblock)
 #: adblock/ui/settings_adblock.ui:17
@@ -191,67 +277,67 @@ msgid "Add Filters subscriptions..."
 msgstr "Descripcion"
 
 #. i18n: ectx: property (text), widget (QPushButton, removeSubscription)
-#: adblock/ui/settings_adblock.ui:54
+#: adblock/ui/settings_adblock.ui:64
 #, fuzzy
 #| msgid "Description"
 msgid "Remove subscription"
 msgstr "Descripcion"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: adblock/ui/settings_adblock.ui:76
+#: adblock/ui/settings_adblock.ui:86
 msgid "Update enabled automatic filters every:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, showList)
-#: adblock/ui/settings_adblock.ui:114
+#: adblock/ui/settings_adblock.ui:124
 #, fuzzy
 #| msgid "Save As..."
 msgid "Show List..."
 msgstr "Enregistrar coma..."
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: adblock/ui/settings_adblock.ui:122
+#: adblock/ui/settings_adblock.ui:132
 #, fuzzy
 #| msgid "Mail"
 msgid "Manual Filters"
 msgstr "Corrièl"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: adblock/ui/settings_adblock.ui:130
+#: adblock/ui/settings_adblock.ui:140
 #, fuzzy
 #| msgid "&Search:"
 msgid "Search:"
 msgstr "&Recèrcar :"
 
 #. i18n: ectx: property (text), widget (QPushButton, exportFilters)
-#: adblock/ui/settings_adblock.ui:149
+#: adblock/ui/settings_adblock.ui:165
 #, fuzzy
 #| msgid "Important"
 msgid "Export filters..."
 msgstr "Important"
 
 #. i18n: ectx: property (text), widget (QPushButton, importFilters)
-#: adblock/ui/settings_adblock.ui:156
+#: adblock/ui/settings_adblock.ui:172
 #, fuzzy
 #| msgid "Important"
 msgid "Import Filters..."
 msgstr "Important"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
-#: adblock/ui/settings_adblock.ui:188
+#: adblock/ui/settings_adblock.ui:204
 msgid "Add filter expression"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QToolButton, insertButton)
 #. i18n: ectx: property (text), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:191 adblock/ui/settings_adblock.ui:201
+#: adblock/ui/settings_adblock.ui:207 adblock/ui/settings_adblock.ui:217
 #, fuzzy
 #| msgid "Add..."
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:198
+#: adblock/ui/settings_adblock.ui:214
 msgid "Remove filter expression"
 msgstr ""
 
@@ -293,13 +379,6 @@ msgstr "Precedent"
 #: findbar/findbarbase.cpp:72
 msgid "Jump to previous match"
 msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: findbar/findbarbase.cpp:77 ui/invitationsettings.ui:94
-#, fuzzy
-#| msgid "&Options"
-msgid "Options"
-msgstr "&Opcions"
 
 #: findbar/findbarbase.cpp:78
 msgid "Modify search behavior"
@@ -2843,12 +2922,6 @@ msgstr ""
 #~ msgstr "&Recercar"
 
 #, fuzzy
-#~| msgid "Subject"
-#~ msgctxt "@title:column Subject of the found message."
-#~ msgid "Subject"
-#~ msgstr "Subjècte"
-
-#, fuzzy
 #~| msgid "Receiver"
 #~ msgctxt "@title:column Sender of the found message."
 #~ msgid "Sender/Receiver"
@@ -2912,13 +2985,6 @@ msgstr ""
 #~| msgid "Folder"
 #~ msgid "Old Folders"
 #~ msgstr "Repertòri"
-
-#, fuzzy
-#~| msgid "Search"
-#~ msgctxt ""
-#~ "@info/plain Displayed grayed-out inside the textbox, verb to search"
-#~ msgid "Search"
-#~ msgstr "Recercar"
 
 #, fuzzy
 #~| msgid "Folder"
@@ -5166,11 +5232,6 @@ msgstr ""
 #~ msgctxt "@action:inmenu Font setting"
 #~ msgid "Default"
 #~ msgstr "Defaut"
-
-#, fuzzy
-#~| msgid "&Fonts"
-#~ msgid "Font"
-#~ msgstr "&Poliças"
 
 #, fuzzy
 #~| msgid "Default"
