@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-21 01:29+0000\n"
+"POT-Creation-Date: 2013-10-23 01:24+0000\n"
 "PO-Revision-Date: 2008-08-13 13:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -6521,44 +6521,44 @@ msgid ""
 "This can be changed for each channel individually."
 msgstr ""
 
-#: core/collections/CollectionLocation.cpp:386
+#: core/collections/CollectionLocation.cpp:380
 #, fuzzy
 #| msgid "Remove Playlist"
 msgid "Organize tracks"
 msgstr "Suprimir la tièra de lecturas"
 
-#: core/collections/CollectionLocation.cpp:388
+#: core/collections/CollectionLocation.cpp:382
 #, fuzzy
 #| msgid "Moving files to trash"
 msgid "Transcode and organize tracks"
 msgstr "Desplaçament de fichièrs dins l'escobilièr"
 
-#: core/collections/CollectionLocation.cpp:393
+#: core/collections/CollectionLocation.cpp:387
 #, fuzzy
 #| msgctxt "Items, as in music"
 #| msgid "&Tracks"
 msgid "Move tracks"
 msgstr "&Pistas"
 
-#: core/collections/CollectionLocation.cpp:395
+#: core/collections/CollectionLocation.cpp:389
 #, fuzzy
 #| msgid "Moving files to trash"
 msgid "Transcode and move tracks"
 msgstr "Desplaçament de fichièrs dins l'escobilièr"
 
-#: core/collections/CollectionLocation.cpp:400
+#: core/collections/CollectionLocation.cpp:394
 #, fuzzy
 #| msgid "Track"
 msgid "Copy tracks"
 msgstr "Pista"
 
-#: core/collections/CollectionLocation.cpp:402
+#: core/collections/CollectionLocation.cpp:396
 #, fuzzy
 #| msgid "Moving files to trash"
 msgid "Transcode and copy tracks"
 msgstr "Desplaçament de fichièrs dins l'escobilièr"
 
-#: core/collections/CollectionLocation.cpp:415
+#: core/collections/CollectionLocation.cpp:409
 #, fuzzy, kde-format
 #| msgid "Track"
 msgid "Organizing one track"
@@ -6566,7 +6566,7 @@ msgid_plural "Organizing %1 tracks"
 msgstr[0] "Pista"
 msgstr[1] "Pista"
 
-#: core/collections/CollectionLocation.cpp:418
+#: core/collections/CollectionLocation.cpp:412
 #, fuzzy, kde-format
 #| msgid "Moving files to trash"
 msgid "Transcoding and organizing one track"
@@ -6574,7 +6574,7 @@ msgid_plural "Transcoding and organizing %1 tracks"
 msgstr[0] "Desplaçament de fichièrs dins l'escobilièr"
 msgstr[1] "Desplaçament de fichièrs dins l'escobilièr"
 
-#: core/collections/CollectionLocation.cpp:424
+#: core/collections/CollectionLocation.cpp:418
 #, fuzzy, kde-format
 #| msgid "Track"
 msgid "Moving one track to %2"
@@ -6582,7 +6582,7 @@ msgid_plural "Moving %1 tracks to %2"
 msgstr[0] "Pista"
 msgstr[1] "Pista"
 
-#: core/collections/CollectionLocation.cpp:427
+#: core/collections/CollectionLocation.cpp:421
 #, fuzzy, kde-format
 #| msgid "Moving files to trash"
 msgid "Transcoding and moving one track to %2"
@@ -6590,7 +6590,7 @@ msgid_plural "Transcoding and moving %1 tracks to %2"
 msgstr[0] "Desplaçament de fichièrs dins l'escobilièr"
 msgstr[1] "Desplaçament de fichièrs dins l'escobilièr"
 
-#: core/collections/CollectionLocation.cpp:433
+#: core/collections/CollectionLocation.cpp:427
 #, fuzzy, kde-format
 #| msgid "Track"
 msgid "Copying one track to %2"
@@ -6598,7 +6598,7 @@ msgid_plural "Copying %1 tracks to %2"
 msgstr[0] "Pista"
 msgstr[1] "Pista"
 
-#: core/collections/CollectionLocation.cpp:436
+#: core/collections/CollectionLocation.cpp:430
 #, fuzzy, kde-format
 #| msgid "Moving files to trash"
 msgid "Transcoding and copying one track to %2"
@@ -15717,12 +15717,12 @@ msgstr "Largor"
 msgid "Just move the tracks without transcoding them."
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:140
+#: transcoding/TranscodingAssistantDialog.cpp:145
 msgctxt "Tooltip of a disabled transcoding encoder option"
 msgid "Not currently available on your system."
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:147
+#: transcoding/TranscodingAssistantDialog.cpp:152
 msgid "Target collection indicates this format would not be playable."
 msgstr ""
 
@@ -15773,8 +15773,18 @@ msgstr ""
 msgid "Transcode only when source and destination formats are different"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, rememberCheckBox)
+#. i18n: ectx: property (text), widget (QLabel, encoderNotFoundLabel)
 #: transcoding/TranscodingAssistantDialog.ui:265
+msgid ""
+"<b>Note:</b> No encoder is available. If you want to transcode tracks please "
+"install <i>ffmpeg</i> or <i>libav</i> package (with <i>ffmpeg</i> wrapper) "
+"with appropriate encoders. Otherwise you may check <i>Remember this choice "
+"for the next time</i> option in order to skip this dialog for future "
+"transfers."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, rememberCheckBox)
+#: transcoding/TranscodingAssistantDialog.ui:275
 msgid "Remember this choice for the next time"
 msgstr ""
 
