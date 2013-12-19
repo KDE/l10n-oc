@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-18 01:25+0000\n"
+"POT-Creation-Date: 2013-12-19 01:23+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2612,7 +2612,7 @@ msgstr "Saturacion"
 msgid "Reset to Default"
 msgstr "defaut"
 
-#: plugins/extensions/dockers/channeldocker/channeldocker_dock.cpp:36
+#: plugins/extensions/dockers/channeldocker/channeldocker_dock.cpp:37
 #, fuzzy
 #| msgid "Channel"
 msgid "Channels"
@@ -2794,7 +2794,7 @@ msgstr ""
 #: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:57
 #: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:76
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:104
-#: ui/forms/wdgcolorsettings.ui:367 ui/forms/wdgdlgfilelayer.ui:60
+#: ui/forms/wdgcolorsettings.ui:367 ui/forms/wdgdlgfilelayer.ui:57
 #: ui/forms/wdgnewimage.ui:199 ui/forms/wdgnewimage.ui:221
 #: ui/forms/wdgpaintactioneditor.ui:46 ui/forms/wdgpaintactioneditor.ui:69
 #: ui/forms/wdgselectionoptions.ui:40 ui/forms/wdgselectionoptions.ui:56
@@ -8126,7 +8126,7 @@ msgstr ""
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:242
-#: ui/kis_paintop_box.cc:244
+#: ui/kis_paintop_box.cc:249
 msgid "Mirror"
 msgstr ""
 
@@ -10161,7 +10161,7 @@ msgstr ""
 msgid "Cleanup resource files"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_file_layer.cpp:94
+#: ui/dialogs/kis_dlg_file_layer.cpp:103
 msgid "Select file to use as dynamic file layer."
 msgstr ""
 
@@ -10876,7 +10876,7 @@ msgid "Scaling Mode:"
 msgstr "Estampatge"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
-#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:248
+#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:253
 #, fuzzy
 #| msgid "Selection"
 msgid "Workspaces"
@@ -10935,24 +10935,45 @@ msgid "Brushes"
 msgstr "Paramètres"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/forms/wdgdlgfilelayer.ui:26 ui/forms/wdgdlggeneratorlayer.ui:19
+#: ui/forms/wdgdlgfilelayer.ui:23 ui/forms/wdgdlggeneratorlayer.ui:19
 #, fuzzy
 #| msgid "&Name:"
 msgid "&Layer Name:"
 msgstr "&Nom :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ui/forms/wdgdlgfilelayer.ui:42
+#: ui/forms/wdgdlgfilelayer.ui:39
 #, fuzzy
 #| msgid "Filter"
 msgid "File:"
 msgstr "Filtre"
 
-#. i18n: ectx: property (text), widget (QCheckBox, chkScaleToImageResolution)
-#: ui/forms/wdgdlgfilelayer.ui:69
+#. i18n: ectx: property (title), widget (QGroupBox, grpScalingOptions)
+#: ui/forms/wdgdlgfilelayer.ui:66
+#, fuzzy
+#| msgid "Options"
+msgid "Scaling Options"
+msgstr "Opcions"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioDontScale)
+#: ui/forms/wdgdlgfilelayer.ui:72
+#, fuzzy
+#| msgid "Random"
+msgid "No Scaling"
+msgstr "Aleatòri"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioScaleToImageSize)
+#: ui/forms/wdgdlgfilelayer.ui:82
+#, fuzzy
+#| msgid "Image"
+msgid "Scale to Image SIze"
+msgstr "Imatge"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioScalePPI)
+#: ui/forms/wdgdlgfilelayer.ui:89
 #, fuzzy
 #| msgid "Resolution:"
-msgid "Scale To Image Resolution"
+msgid "Adapt to Image Resolution (ppi)"
 msgstr "Resolucion :"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FilterDialog)
@@ -12415,7 +12436,7 @@ msgstr ""
 msgid "unnamed"
 msgstr "Sens nom"
 
-#: ui/kis_file_layer.cpp:89
+#: ui/kis_file_layer.cpp:83
 #, fuzzy
 #| msgid "Filter"
 msgid "File"
@@ -12821,21 +12842,27 @@ msgstr "Opcions"
 
 #: ui/kis_paintop_box.cc:220
 #, fuzzy
+#| msgid "Options"
+msgid "Brush option slider 3"
+msgstr "Opcions"
+
+#: ui/kis_paintop_box.cc:225
+#, fuzzy
 #| msgid "Filter"
 msgid "Next Favourite Preset"
 msgstr "Filtre"
 
-#: ui/kis_paintop_box.cc:225
+#: ui/kis_paintop_box.cc:230
 #, fuzzy
 #| msgid "Filter"
 msgid "Previous Favourite Preset"
 msgstr "Filtre"
 
-#: ui/kis_paintop_box.cc:230
+#: ui/kis_paintop_box.cc:235
 msgid "Switch to Previous Preset"
 msgstr ""
 
-#: ui/kis_paintop_box.cc:235
+#: ui/kis_paintop_box.cc:240
 #, fuzzy
 #| msgid "Filter"
 msgid "Select Favorite Presets..."
@@ -14241,11 +14268,6 @@ msgstr ""
 
 #~ msgid "&Size"
 #~ msgstr "&Talha"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgid "Scaling Options"
-#~ msgstr "Opcions"
 
 #, fuzzy
 #~| msgid "Rotation"
