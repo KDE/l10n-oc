@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontrol_mouse\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-19 05:29+0000\n"
+"POT-Creation-Date: 2013-12-25 05:17+0000\n"
 "PO-Revision-Date: 2008-08-13 13:37+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -48,13 +48,13 @@ msgstr ""
 #. Tag: date
 #: index.docbook:17
 #, no-c-format
-msgid "2010-10-05"
+msgid "2013-12-05"
 msgstr ""
 
 #. Tag: releaseinfo
 #: index.docbook:18
 #, no-c-format
-msgid "&kde; 4.6"
+msgid "&kde; 4.12"
 msgstr ""
 
 #. Tag: para
@@ -103,7 +103,7 @@ msgid ""
 "providing access to special features."
 msgstr ""
 
-#. Tag: guilabel
+#. Tag: title
 #: index.docbook:48
 #, no-c-format
 msgid "General"
@@ -230,7 +230,7 @@ msgid ""
 "effect."
 msgstr ""
 
-#. Tag: guilabel
+#. Tag: title
 #: index.docbook:127
 #, no-c-format
 msgid "Advanced"
@@ -366,7 +366,7 @@ msgid ""
 "text one <quote>step</quote> of the mouse wheel will scroll."
 msgstr ""
 
-#. Tag: guilabel
+#. Tag: title
 #: index.docbook:222
 #, no-c-format
 msgid "Mouse Navigation"
@@ -481,7 +481,7 @@ msgstr ""
 msgid "This is the slope of the acceleration curve for mouse key acceleration."
 msgstr ""
 
-#. Tag: guilabel
+#. Tag: title
 #: index.docbook:292
 #, no-c-format
 msgid "Logitech Support"
@@ -635,178 +635,4 @@ msgid ""
 "guilabel> and <guilabel>RF Channel</guilabel> widgets will be enabled. You "
 "can only change the <guilabel>RF Channel</guilabel> if your mouse has two "
 "channel support."
-msgstr ""
-
-#. Tag: title
-#: index.docbook:346
-#, no-c-format
-msgid "Fixing permission problems on Logitech mice"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:348
-#, no-c-format
-msgid ""
-"Because of the way USB devices work, the code that accesses the current "
-"status on Logitech mice needs to be able to write to the mouse. This should "
-"be handled by your distribution, but if not, you may need to do some "
-"configuration yourself."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:355
-#, no-c-format
-msgid ""
-"On a &Linux; system, you should use the hotplug system to change the "
-"ownership and permissions on the mouse entry in <filename>/proc/bus/usb</"
-"filename>. One way to do this is to create a short script (<filename>/etc/"
-"hotplug/usb/consoleUserPerms</filename>) that changes the ownership and "
-"permissions, as shown below:"
-msgstr ""
-
-#. Tag: programlisting
-#: index.docbook:364
-#, no-c-format
-msgid ""
-"<![CDATA[\n"
-"#!/bin/bash\n"
-"#\n"
-"# /etc/hotplug/usb/consoleUserPerms\n"
-"#\n"
-"# Sets up newly plugged in USB device so that the user who owns\n"
-"# the console according to pam_console can access it from user space\n"
-"#\n"
-"# Note that for this script to work, you'll need all of the following:\n"
-"# a) a line in the file /etc/hotplug/usb.usermap or another usermap file\n"
-"#    in /etc/hotplug/usb/ that corresponds to the device you are using.\n"
-"# b) a setup using pam_console creates the respective lock files\n"
-"#    containing the name of the respective user. You can check for that\n"
-"#    by executing \"echo `cat /var/{run,lock}/console.lock`\" and\n"
-"#    verifying the appropriate user is mentioned somewhere there.\n"
-"# c) a Linux kernel supporting hotplug and usbdevfs\n"
-"# d) the hotplug package (http://linux-hotplug.sourceforge.net/)\n"
-"#\n"
-"# In the usermap file, the first field \"usb module\" should be named\n"
-"# \"consoleUserPerms\" to invoke this script.\n"
-"#\n"
-"\n"
-"if [ \"${ACTION}\" = \"add\" ] && [ -f \"${DEVICE}\" ]\n"
-"then\n"
-"# New code, using lock files instead of copying /dev/console permissions\n"
-"# This also works with non-kdm logins (e.g. on a virtual terminal)\n"
-"# Idea and code from Nalin Dahyabhai <nalin@redhat.com>\n"
-"    if [ -f /var/run/console.lock ]\n"
-"    then\n"
-"        CONSOLEOWNER=`cat /var/run/console.lock`\n"
-"    elif [ -f /var/lock/console.lock ]\n"
-"    then\n"
-"        CONSOLEOWNER=`cat /var/lock/console.lock`\n"
-"    else\n"
-"        CONSOLEOWNER=\n"
-"    fi\n"
-"    if [ -n \"$CONSOLEOWNER\" ]\n"
-"    then\n"
-"        chmod 0000 \"${DEVICE}\"\n"
-"        chown \"$CONSOLEOWNER\" \"${DEVICE}\"\n"
-"        chmod 0600 \"${DEVICE}\"\n"
-"    fi\n"
-"fi\n"
-"]]>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:367
-#, no-c-format
-msgid ""
-"The usermap file that goes with this is <filename>/etc/hotplug/usb/"
-"logitechmouse.usermap</filename>, as shown below:"
-msgstr ""
-
-#. Tag: programlisting
-#: index.docbook:374
-#, no-c-format
-msgid ""
-"<![CDATA[\n"
-"# script           match_flags idVendor idProduct bcdDevice_lo bcdDevice_hi "
-"bDeviceClass bDeviceSubClass bDeviceProtocol bInterfaceClass "
-"bInterfaceSubClass bInterfaceProtocol driver_info\n"
-"# Wheel Mouse Optical\n"
-"consoleUserPerms     0x0003      0x046d   0xc00e    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MouseMan Traveler\n"
-"consoleUserPerms     0x0003      0x046d   0xc00f    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MouseMan Dual Optical\n"
-"consoleUserPerms     0x0003      0x046d   0xc012    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MX310 Optical Mouse\n"
-"consoleUserPerms     0x0003      0x046d   0xc01b    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MX510 Optical Mouse\n"
-"consoleUserPerms     0x0003      0x046d   0xc01d    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MX300 Optical Mouse\n"
-"consoleUserPerms     0x0003      0x046d   0xc024    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MX500 Optical Mouse\n"
-"consoleUserPerms     0x0003      0x046d   0xc025    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# iFeel Mouse\n"
-"consoleUserPerms     0x0003      0x046d   0xc031    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# Mouse Receiver\n"
-"consoleUserPerms     0x0003      0x046d   0xc501    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# Dual Receiver\n"
-"consoleUserPerms     0x0003      0x046d   0xc502    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# Cordless Freedom Optical\n"
-"consoleUserPerms     0x0003      0x046d   0xc504    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# Cordless Elite Duo\n"
-"consoleUserPerms     0x0003      0x046d   0xc505    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MX700 Optical Mouse\n"
-"consoleUserPerms     0x0003      0x046d   0xc506    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# Cordless Optical Trackman\n"
-"consoleUserPerms     0x0003      0x046d   0xc508    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# Cordless MX Duo Receiver\n"
-"consoleUserPerms     0x0003      0x046d   0xc50b    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# MX100 Laser Mouse\n"
-"consoleUserPerms     0x0003      0x046d   0xc50e    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"# Receiver for Cordless Presenter\n"
-"consoleUserPerms     0x0003      0x046d   0xc702    0x0000       0xffff      "
-"0x00         0x00            0x00            0x00            "
-"0x00               0x00               0x00000000\n"
-"]]>"
-msgstr ""
-
-#. Tag: para
-#: index.docbook:377
-#, no-c-format
-msgid ""
-"That should be all that is needed on &Linux; - just copy the files into "
-"<filename>/etc/hotplug/usb/</filename>, and when the mouse is plugged in, "
-"the ownership and permissions should be changed so that the user at the "
-"console can access the mouse."
 msgstr ""
