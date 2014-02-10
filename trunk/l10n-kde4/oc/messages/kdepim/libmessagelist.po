@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-07 01:44+0000\n"
+"POT-Creation-Date: 2014-02-10 01:38+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -558,48 +558,54 @@ msgstr ""
 
 #: core/quicksearchline.cpp:70
 #, fuzzy
+#| msgid "Mail"
+msgid "Quick Filter:"
+msgstr "Corrièl"
+
+#: core/quicksearchline.cpp:76
+#, fuzzy
 #| msgid "Search"
 msgctxt "Search for messages."
 msgid "Search"
 msgstr "Recercar"
 
-#: core/quicksearchline.cpp:91
+#: core/quicksearchline.cpp:96
 #, fuzzy
 #| msgid "Select Folder"
 msgid "Open Full Search"
 msgstr "Seleccionar un repertòri"
 
-#: core/quicksearchline.cpp:108
+#: core/quicksearchline.cpp:114
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Filter message by:"
 msgstr "Desplaçament de messatges"
 
-#: core/quicksearchline.cpp:111
+#: core/quicksearchline.cpp:117
 msgid "Body"
 msgstr ""
 
-#: core/quicksearchline.cpp:115
+#: core/quicksearchline.cpp:122
 #, fuzzy
 #| msgid "Subject"
 msgid "Subject"
 msgstr "Subjècte"
 
-#: core/quicksearchline.cpp:119 core/view.cpp:2400 core/view.cpp:2404
+#: core/quicksearchline.cpp:127 core/view.cpp:2400 core/view.cpp:2404
 msgid "From"
 msgstr ""
 
-#: core/quicksearchline.cpp:123
+#: core/quicksearchline.cpp:132
 msgid "Bcc"
 msgstr ""
 
-#: core/quicksearchline.cpp:221
+#: core/quicksearchline.cpp:225
 #, fuzzy
 #| msgid "Status"
 msgid "Any Status"
 msgstr "Estatut"
 
-#: core/quicksearchline.cpp:224
+#: core/quicksearchline.cpp:228 core/quicksearchline.cpp:315
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Unread"
@@ -607,14 +613,14 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Unread"
 msgstr "Pas legit"
 
-#: core/quicksearchline.cpp:228
+#: core/quicksearchline.cpp:232 core/quicksearchline.cpp:318
 #, fuzzy
 #| msgid "Replace:"
 msgctxt "@action:inmenu Status of a message"
 msgid "Replied"
 msgstr "Remplaçar :"
 
-#: core/quicksearchline.cpp:232
+#: core/quicksearchline.cpp:236 core/quicksearchline.cpp:322
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Forwarded"
@@ -622,7 +628,7 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Forwarded"
 msgstr "Trasmes"
 
-#: core/quicksearchline.cpp:236
+#: core/quicksearchline.cpp:240 core/quicksearchline.cpp:326
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Important"
@@ -630,14 +636,14 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Important"
 msgstr "Important"
 
-#: core/quicksearchline.cpp:240
+#: core/quicksearchline.cpp:244 core/quicksearchline.cpp:330
 #, fuzzy
 #| msgid "New Message"
 msgctxt "@action:inmenu Status of a message"
 msgid "Action Item"
 msgstr "Messatge novèl"
 
-#: core/quicksearchline.cpp:244
+#: core/quicksearchline.cpp:248 core/quicksearchline.cpp:334
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Ignored"
@@ -645,7 +651,7 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Watched"
 msgstr "Ignorat"
 
-#: core/quicksearchline.cpp:248
+#: core/quicksearchline.cpp:252 core/quicksearchline.cpp:338
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Ignored"
@@ -653,36 +659,36 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Ignored"
 msgstr "Ignorat"
 
-#: core/quicksearchline.cpp:252
+#: core/quicksearchline.cpp:256 core/quicksearchline.cpp:342
 #, fuzzy
 #| msgid "attachment"
 msgctxt "@action:inmenu Status of a message"
 msgid "Has Attachment"
 msgstr "fichièr junt"
 
-#: core/quicksearchline.cpp:256
+#: core/quicksearchline.cpp:260 core/quicksearchline.cpp:346
 #, fuzzy
 #| msgid "General Options"
 msgctxt "@action:inmenu Status of a message"
 msgid "Has Invitation"
 msgstr "Opcions generalas"
 
-#: core/quicksearchline.cpp:260
+#: core/quicksearchline.cpp:264 core/quicksearchline.cpp:350
 msgctxt "@action:inmenu Status of a message"
 msgid "Spam"
 msgstr ""
 
-#: core/quicksearchline.cpp:264
+#: core/quicksearchline.cpp:268 core/quicksearchline.cpp:354
 msgctxt "@action:inmenu Status of a message"
 msgid "Ham"
 msgstr ""
 
-#: core/quicksearchline.cpp:273
+#: core/quicksearchline.cpp:277
 msgctxt "@info:tooltip"
 msgid "Clear the quick search field when changing folders"
 msgstr ""
 
-#: core/quicksearchline.cpp:277
+#: core/quicksearchline.cpp:281
 msgctxt "@info:tooltip"
 msgid "Prevent the quick search field from being cleared when changing folders"
 msgstr ""
@@ -2658,11 +2664,6 @@ msgstr "&Anullar"
 #~| msgid "BCC"
 #~ msgid "BCC"
 #~ msgstr "BCC"
-
-#, fuzzy
-#~| msgid "Mail"
-#~ msgid "KMail Filter"
-#~ msgstr "Corrièl"
 
 #, fuzzy
 #~| msgid "Address book:"
