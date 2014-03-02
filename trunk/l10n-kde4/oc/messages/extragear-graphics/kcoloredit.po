@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcoloredit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-20 02:42+0200\n"
+"POT-Creation-Date: 2014-03-02 02:38+0000\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -81,12 +81,18 @@ msgstr ""
 msgid "Generate Color Names"
 msgstr ""
 
-#: src/app/kcoloredit.cpp:214 src/widgets/kcoloreditwidget.cpp:58
+#: src/app/kcoloredit.cpp:214
 msgid "Color builder"
 msgstr ""
 
 #: src/app/kcoloredit.cpp:229
-msgid "[modified]"
+#, kde-format
+msgid "%1 - KColorEdit [modified]"
+msgstr ""
+
+#: src/app/kcoloredit.cpp:239
+#, kde-format
+msgid "%1 - KColorEdit"
 msgstr ""
 
 #: src/app/kcoloredit.cpp:289
@@ -213,19 +219,19 @@ msgid "First position"
 msgstr ""
 
 #: src/itemviews/palettedetailview.cpp:49
-msgid "Prev position"
+msgid "Previous position"
 msgstr ""
 
 #: src/itemviews/palettedetailview.cpp:54
-msgid "Insert Color"
+msgid "Insert color"
 msgstr ""
 
 #: src/itemviews/palettedetailview.cpp:58
-msgid "Insert Comment"
+msgid "Insert comment"
 msgstr ""
 
 #: src/itemviews/palettedetailview.cpp:62
-msgid "Remove Item"
+msgid "Remove item"
 msgstr ""
 
 #: src/itemviews/palettedetailview.cpp:66
@@ -259,11 +265,28 @@ msgstr ""
 msgid "Edit description"
 msgstr "Descripcion"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/settings/builderconfiguration.ui:17
+msgid "Input Type"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_textInput)
+#: src/settings/builderconfiguration.ui:25
+msgid "Introduce color components through text"
+msgstr ""
+
+#. i18n: ectx: label, entry (textInput), group (Preferences)
+#: src/settings/kcoloredit_settings.kcfg:9
+msgid "Type of input to build a color"
+msgstr ""
+
 #: src/widgets/colorinfo/colorinfotext.cpp:52
 msgid "Copy color values to clipboard"
 msgstr ""
 
+#. i18n: ectx: attribute (title), widget (QWidget, rgbColorModelWidget)
 #: src/widgets/colorinfo/colorinfotext.cpp:105
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:33
 msgid "RGB"
 msgstr ""
 
@@ -284,7 +307,9 @@ msgstr "Vèrd"
 msgid "Blue"
 msgstr "Blau"
 
+#. i18n: ectx: attribute (title), widget (QWidget, hsvColorModelWidget)
 #: src/widgets/colorinfo/colorinfotext.cpp:124
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:143
 msgid "HSV"
 msgstr ""
 
@@ -306,7 +331,9 @@ msgstr "Saturacion"
 msgid "Value"
 msgstr "Valor"
 
+#. i18n: ectx: attribute (title), widget (QWidget, cmyColorModelWidget)
 #: src/widgets/colorinfo/colorinfotext.cpp:144
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:253
 msgid "CMY"
 msgstr ""
 
@@ -324,7 +351,9 @@ msgstr ""
 msgid "Yellow"
 msgstr "Rossèl"
 
+#. i18n: ectx: attribute (title), widget (QWidget, textualColorModelWidget)
 #: src/widgets/colorinfo/colorinfotext.cpp:164
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:363
 msgid "Textual"
 msgstr ""
 
@@ -345,7 +374,7 @@ msgid "Copy color hexadecimal value to clipboard"
 msgstr ""
 
 #: src/widgets/colorinfo/colorinfovisual.cpp:54
-msgid "Current color"
+msgid "Current Color"
 msgstr ""
 
 #: src/widgets/colorinfo/colorinfovisual.cpp:84
@@ -362,6 +391,66 @@ msgstr ""
 
 #: src/widgets/colorinfo/colorinfovisual.cpp:175
 msgid "Analogous"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_3)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:49
+msgid "R"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_7)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:82
+msgid "G"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_6)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:115
+msgid "B"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_4)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:159
+msgid "H"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_17)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:192
+msgid "S"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_18)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:225
+msgid "V"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_5)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:269
+msgid "C"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_19)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:302
+msgid "M"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, redLabel_20)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:335
+msgid "Y"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:371
+msgid "Text of color"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:402
+msgid "Select a input then type a color"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, buildColorKPushButton)
+#: src/widgets/colorselectors/builderselector/builderwidget.ui:479
+msgid "Build Color"
 msgstr ""
 
 #: src/widgets/colorselectors/gtkselector/gtkcolorselector.cpp:37
@@ -387,11 +476,11 @@ msgid "Restore original saturation"
 msgstr ""
 
 #: src/widgets/colortoolwidget.cpp:123
-msgid "Color selectors"
+msgid "Color Selectors"
 msgstr ""
 
 #: src/widgets/colortoolwidget.cpp:125
-msgid "Pick a color"
+msgid "Pick a Color"
 msgstr ""
 
 #: src/widgets/colortoolwidget.cpp:134
@@ -424,15 +513,19 @@ msgid "Tool:"
 msgstr ""
 
 #: src/widgets/kcoloreditwidget.cpp:46
-msgid "KDE selector"
+msgid "KDE Selector"
 msgstr ""
 
 #: src/widgets/kcoloreditwidget.cpp:50
-msgid "GTK selector"
+msgid "GTK Selector"
 msgstr ""
 
 #: src/widgets/kcoloreditwidget.cpp:54
-msgid "Gradient selector"
+msgid "Gradient Selector"
+msgstr ""
+
+#: src/widgets/kcoloreditwidget.cpp:58
+msgid "Color Builder"
 msgstr ""
 
 #: src/widgets/kcoloreditwidget.cpp:62
