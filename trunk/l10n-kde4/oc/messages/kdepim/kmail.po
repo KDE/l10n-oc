@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-01 01:57+0000\n"
+"POT-Creation-Date: 2014-04-02 01:49+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -111,7 +111,7 @@ msgid "Multiple encryption keys per address"
 msgstr ""
 
 #: aboutdata.cpp:240 collectionpage/collectionmailinglistpage.cpp:109
-#: editor/kmcomposewin.cpp:2179 kmsystemtray.cpp:71 kmsystemtray.cpp:116
+#: editor/kmcomposewin.cpp:2185 kmsystemtray.cpp:71 kmsystemtray.cpp:116
 msgid "KMail"
 msgstr "KMail"
 
@@ -489,25 +489,29 @@ msgstr[1] ""
 msgid "Quota"
 msgstr ""
 
-#: collectionpage/collectionquotapage_p.cpp:54
+#: collectionpage/collectionquotapage_p.cpp:55
 msgid "Usage:"
 msgstr "Sintaxi :"
 
-#: collectionpage/collectionquotapage_p.cpp:61
+#: collectionpage/collectionquotapage_p.cpp:62
 #, fuzzy
 #| msgid "Status"
 msgid "Status:"
 msgstr "Estatut"
 
-#: collectionpage/collectionquotapage_p.cpp:65
+#: collectionpage/collectionquotapage_p.cpp:66
 #, no-c-format
 msgid "%p% full"
 msgstr ""
 
-#: collectionpage/collectionquotapage_p.cpp:75
-#, kde-format
-msgid "%1 of %2 KiB used"
-msgstr ""
+#: collectionpage/collectionquotapage_p.cpp:76
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1: name; %2: number appended to it to make it unique among a list of "
+#| "names"
+#| msgid "%1 %2"
+msgid "%1 of %2 used"
+msgstr "%1 %2"
 
 #: collectionpage/collectionshortcutpage.cpp:42
 #, fuzzy
@@ -524,7 +528,7 @@ msgid ""
 msgstr ""
 
 #: collectionpage/collectiontemplatespage.cpp:39
-#: identity/identitydialog.cpp:544
+#: identity/identitydialog.cpp:574
 msgid "Templates"
 msgstr "Modèls"
 
@@ -533,7 +537,7 @@ msgid "&Use custom message templates in this folder"
 msgstr ""
 
 #: collectionpage/collectiontemplatespage.cpp:79
-#: identity/identitydialog.cpp:529
+#: identity/identitydialog.cpp:559
 msgid "&Copy Global Templates"
 msgstr ""
 
@@ -694,50 +698,40 @@ msgstr "Enviar ara"
 msgid "Send Later"
 msgstr "Enviar ara"
 
-#: configuredialog/configureaccountpage.cpp:149
+#: configuredialog/configureaccountpage.cpp:143
 msgid "Send &messages in outbox folder:"
 msgstr ""
 
-#: configuredialog/configureaccountpage.cpp:157
+#: configuredialog/configureaccountpage.cpp:151
 msgid "Defa&ult send method:"
 msgstr ""
 
-#: configuredialog/configureaccountpage.cpp:160
-msgid "Defaul&t domain:"
-msgstr ""
-
-#: configuredialog/configureaccountpage.cpp:165
-msgid ""
-"<qt><p>The default domain is used to complete email addresses that only "
-"consist of the user's name.</p></qt>"
-msgstr ""
-
-#: configuredialog/configureaccountpage.cpp:314
+#: configuredialog/configureaccountpage.cpp:290
 msgctxt "Label to a checkbox, so is either checked/unchecked"
 msgid "Include in Manual Mail Check"
 msgstr ""
 
-#: configuredialog/configureaccountpage.cpp:323
+#: configuredialog/configureaccountpage.cpp:299
 msgctxt "Label to a checkbox, so is either checked/unchecked"
 msgid "Switch offline on KMail Shutdown"
 msgstr ""
 
-#: configuredialog/configureaccountpage.cpp:332
+#: configuredialog/configureaccountpage.cpp:308
 msgid "Check mail on startup"
 msgstr ""
 
-#: configuredialog/configureaccountpage.cpp:431
+#: configuredialog/configureaccountpage.cpp:407
 #, kde-format
 msgid "Do you want to remove account '%1'?"
 msgstr ""
 
-#: configuredialog/configureaccountpage.cpp:432
+#: configuredialog/configureaccountpage.cpp:408
 #, fuzzy
 #| msgid "Remove Entry"
 msgid "Remove account?"
 msgstr "Suprimir l'entrada"
 
-#: configuredialog/configureaccountpage.cpp:450
+#: configuredialog/configureaccountpage.cpp:426
 msgid ""
 "New Mail Notifier Agent not registered. Please contact your administrator."
 msgstr ""
@@ -750,9 +744,9 @@ msgstr "Messatge novèl"
 
 #: configuredialog/configureagentswidget.cpp:52
 #, fuzzy
-#| msgid "Account Name"
-msgid "Agent Name"
-msgstr "Nom del compte"
+#| msgid "Name"
+msgid "Name"
+msgstr "Nom"
 
 #: configuredialog/configureagentswidget.cpp:64
 #, fuzzy
@@ -1104,8 +1098,13 @@ msgstr ""
 msgid "Ta&g Settings"
 msgstr ""
 
-#: configuredialog/configureappearancepage.cpp:1321
-#: configuredialog/configureappearancepage.cpp:1358
+#: configuredialog/configureappearancepage.cpp:1277
+#, kde-format
+msgid "Do you want to remove tag '%1'?"
+msgstr ""
+
+#: configuredialog/configureappearancepage.cpp:1322
+#: configuredialog/configureappearancepage.cpp:1359
 msgid "We cannot create tag. A tag with same name already exists."
 msgstr ""
 
@@ -1365,18 +1364,20 @@ msgstr ""
 #: configuredialog/configurecomposerpage.cpp:783
 #: configuredialog/configurecomposerpage.cpp:881
 #: configuredialog/configurecomposerpage.cpp:1276
-#: ui/accountspagereceivingtab.ui:36
+#: mailmerge/mailmergewidget.cpp:79 ui/accountspagereceivingtab.ui:36
 msgid "A&dd..."
 msgstr ""
 
 #: configuredialog/configurecomposerpage.cpp:783
 #: configuredialog/configurecomposerpage.cpp:1034
 #: configuredialog/configurecomposerpage.cpp:1276
+#: mailmerge/mailmergewidget.cpp:79
 msgid "Re&move"
 msgstr ""
 
 #: configuredialog/configurecomposerpage.cpp:784
 #: configuredialog/configurecomposerpage.cpp:1277
+#: mailmerge/mailmergewidget.cpp:80
 msgid "Mod&ify..."
 msgstr ""
 
@@ -1553,7 +1554,7 @@ msgstr ""
 #: configuredialog/configuremiscpage.cpp:51
 #, fuzzy
 #| msgid "&Settings"
-msgid "Agent Settings"
+msgid "Plugins Settings"
 msgstr "&Paramètres"
 
 #: configuredialog/configuremiscpage.cpp:54
@@ -1661,7 +1662,7 @@ msgctxt "@title:window for archiving a folder"
 msgid "Archive Folder"
 msgstr "Repertòri novèl"
 
-#: dialog/archivefolderdialog.cpp:60 kmmainwidget.cpp:3686
+#: dialog/archivefolderdialog.cpp:60 kmmainwidget.cpp:3687
 #, fuzzy
 #| msgid "Receiver"
 msgctxt "@action"
@@ -1870,7 +1871,7 @@ msgid "Send"
 msgstr "Segondas"
 
 #: editor/kmcomposewin.cpp:1138 editor/kmcomposewin.cpp:1147
-#: editor/kmcomposewin.cpp:2942
+#: editor/kmcomposewin.cpp:2954
 msgid "Send &Later"
 msgstr ""
 
@@ -1911,7 +1912,7 @@ msgstr ""
 msgid "Save email as text or html file"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1202 kmmainwidget.cpp:3537
+#: editor/kmcomposewin.cpp:1202 kmmainwidget.cpp:3538
 #, fuzzy
 #| msgid "Address book:"
 msgid "New AddressBook Contact..."
@@ -1925,7 +1926,7 @@ msgstr ""
 msgid "&Insert Recent Text File"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1221 kmmainwidget.cpp:3032
+#: editor/kmcomposewin.cpp:1221 kmmainwidget.cpp:3033
 msgid "&Address Book"
 msgstr ""
 
@@ -2054,126 +2055,130 @@ msgid "Uppercase"
 msgstr ""
 
 #: editor/kmcomposewin.cpp:1371
+msgid "Sentence case"
+msgstr ""
+
+#: editor/kmcomposewin.cpp:1376
 msgid "Lowercase"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1375
+#: editor/kmcomposewin.cpp:1380
 #, fuzzy
 #| msgid "Save As..."
 msgid "Change Case"
 msgstr "Enregistrar coma..."
 
-#: editor/kmcomposewin.cpp:1388
+#: editor/kmcomposewin.cpp:1394
 msgid "&Spellchecker..."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1389
+#: editor/kmcomposewin.cpp:1395
 msgid "Spellchecker"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1401 editor/kmcomposewin.cpp:1403
+#: editor/kmcomposewin.cpp:1407 editor/kmcomposewin.cpp:1409
 msgid "Encrypt Message with Chiasmus..."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1412
+#: editor/kmcomposewin.cpp:1418
 msgid "&Encrypt Message"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1413
+#: editor/kmcomposewin.cpp:1419
 msgid "Encrypt"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1415
+#: editor/kmcomposewin.cpp:1421
 msgid "&Sign Message"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1416
+#: editor/kmcomposewin.cpp:1422
 msgid "Sign"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1440
+#: editor/kmcomposewin.cpp:1446
 msgid "&Cryptographic Message Format"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1444
+#: editor/kmcomposewin.cpp:1450
 msgid "Select a cryptographic format for this message"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1459
+#: editor/kmcomposewin.cpp:1465
 msgid "Configure KMail..."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1495
+#: editor/kmcomposewin.cpp:1501
 #, kde-format
 msgid " Spellcheck: %1 "
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1496 editor/kmcomposewin.cpp:3315
+#: editor/kmcomposewin.cpp:1502 editor/kmcomposewin.cpp:3327
 #, kde-format
 msgid " Column: %1 "
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1498 editor/kmcomposewin.cpp:3313
+#: editor/kmcomposewin.cpp:1504 editor/kmcomposewin.cpp:3325
 #, kde-format
 msgctxt "Shows the linenumber of the cursor position."
 msgid " Line: %1 "
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1872
+#: editor/kmcomposewin.cpp:1878
 msgid "Re&save as Template"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1873
+#: editor/kmcomposewin.cpp:1879
 msgid "&Save as Draft"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1875
+#: editor/kmcomposewin.cpp:1881
 msgid ""
 "Resave this message in the Templates folder. It can then be used at a later "
 "time."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1877
+#: editor/kmcomposewin.cpp:1883
 msgid ""
 "Save this message in the Drafts folder. It can then be edited and sent at a "
 "later time."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1881
+#: editor/kmcomposewin.cpp:1887
 msgid "Do you want to save the message for later or discard it?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1882
+#: editor/kmcomposewin.cpp:1888
 msgid "Close Composer"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1953
+#: editor/kmcomposewin.cpp:1959
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Autosave Message Failed"
 msgstr "Desplaçament de messatges"
 
-#: editor/kmcomposewin.cpp:1953
+#: editor/kmcomposewin.cpp:1959
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Sending Message Failed"
 msgstr "Desplaçament de messatges"
 
-#: editor/kmcomposewin.cpp:2162
+#: editor/kmcomposewin.cpp:2168
 msgid "Add as &Inline Image"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2163
+#: editor/kmcomposewin.cpp:2169
 #, fuzzy
 #| msgid "attachment"
 msgid "Add as &Attachment"
 msgstr "fichièr junt"
 
-#: editor/kmcomposewin.cpp:2179 editor/kmcomposewin.cpp:2256
+#: editor/kmcomposewin.cpp:2185 editor/kmcomposewin.cpp:2262
 msgid "Name of the attachment:"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2216
+#: editor/kmcomposewin.cpp:2222
 #, fuzzy
 #| msgid "HTML Messages"
 msgid "Add URL into Message"
@@ -2181,7 +2186,7 @@ msgid_plural "Add URLs into Message"
 msgstr[0] "Messatges HTML"
 msgstr[1] "Messatges HTML"
 
-#: editor/kmcomposewin.cpp:2217
+#: editor/kmcomposewin.cpp:2223
 #, fuzzy
 #| msgid "attachment"
 msgid "Add File as &Attachment"
@@ -2189,15 +2194,15 @@ msgid_plural "Add Files as &Attachment"
 msgstr[0] "fichièr junt"
 msgstr[1] "fichièr junt"
 
-#: editor/kmcomposewin.cpp:2255
+#: editor/kmcomposewin.cpp:2261
 msgid "Insert clipboard text as attachment"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2461
+#: editor/kmcomposewin.cpp:2467
 msgid "unnamed"
 msgstr "sens nom"
 
-#: editor/kmcomposewin.cpp:2489
+#: editor/kmcomposewin.cpp:2495
 msgid ""
 "<qt><p>You have requested that messages be encrypted to yourself, but the "
 "currently selected identity does not define an (OpenPGP or S/MIME) "
@@ -2205,222 +2210,222 @@ msgid ""
 "identity configuration.</p></qt>"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2496
+#: editor/kmcomposewin.cpp:2502
 msgid "Undefined Encryption Key"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2542
+#: editor/kmcomposewin.cpp:2548
 msgid ""
 "<qt><p>In order to be able to sign this message you first have to define the "
 "(OpenPGP or S/MIME) signing key to use.</p><p>Please select the key to use "
 "in the identity configuration.</p></qt>"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2549
+#: editor/kmcomposewin.cpp:2555
 msgid "Undefined Signing Key"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2666
+#: editor/kmcomposewin.cpp:2672
 #, kde-format
 msgid "There is %1 file upload in progress."
 msgid_plural "There are %1 file uploads in progress."
 msgstr[0] ""
 msgstr[1] ""
 
-#: editor/kmcomposewin.cpp:2687
+#: editor/kmcomposewin.cpp:2693
 msgid ""
 "You must enter your email address in the From: field. You should also set "
 "your email address for all identities, so that you do not have to enter it "
 "for each message."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2696
+#: editor/kmcomposewin.cpp:2702
 msgid ""
 "You must specify at least one receiver, either in the To: field or as CC or "
 "as BCC."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2702
+#: editor/kmcomposewin.cpp:2708
 msgid "To: field is empty. Send message anyway?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2704
+#: editor/kmcomposewin.cpp:2710
 msgid "No To: specified"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2718
+#: editor/kmcomposewin.cpp:2724
 msgid "You did not specify a subject. Send message anyway?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2720
+#: editor/kmcomposewin.cpp:2726
 msgid "No Subject Specified"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2721
+#: editor/kmcomposewin.cpp:2727
 msgid "S&end as Is"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2722
+#: editor/kmcomposewin.cpp:2728
 msgid "&Specify the Subject"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2752
+#: editor/kmcomposewin.cpp:2764
 msgid ""
 "You must specify at least one receiver in order to be able to encrypt a "
 "draft."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2939
+#: editor/kmcomposewin.cpp:2951
 msgid "About to send email..."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2940
+#: editor/kmcomposewin.cpp:2952
 msgid "Send Confirmation"
 msgstr "Mandar una confirmacion"
 
-#: editor/kmcomposewin.cpp:2941
+#: editor/kmcomposewin.cpp:2953
 msgid "&Send Now"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2960
+#: editor/kmcomposewin.cpp:2972
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2961
+#: editor/kmcomposewin.cpp:2973
 msgid "Too many recipients"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2962
+#: editor/kmcomposewin.cpp:2974
 msgid "&Send as Is"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2963
+#: editor/kmcomposewin.cpp:2975
 msgid "&Edit Recipients"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3006
+#: editor/kmcomposewin.cpp:3018
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3008
+#: editor/kmcomposewin.cpp:3020
 msgid "Lose the formatting?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3008
+#: editor/kmcomposewin.cpp:3020
 msgid "Lose Formatting"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3008
+#: editor/kmcomposewin.cpp:3020
 msgid "Add Markup Plain Text"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3072
+#: editor/kmcomposewin.cpp:3084
 msgid "Spellcheck: on"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3074
+#: editor/kmcomposewin.cpp:3086
 msgid "Spellcheck: off"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3303
+#: editor/kmcomposewin.cpp:3315
 msgid "OVR"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3303
+#: editor/kmcomposewin.cpp:3315
 msgid "INS"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3360
+#: editor/kmcomposewin.cpp:3372
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
 "Security page."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3364
+#: editor/kmcomposewin.cpp:3376
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3367
+#: editor/kmcomposewin.cpp:3379
 msgid "No Chiasmus Backend Configured"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3373
+#: editor/kmcomposewin.cpp:3385
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3375 editor/kmcomposewin.cpp:3380
-#: editor/kmcomposewin.cpp:3389
+#: editor/kmcomposewin.cpp:3387 editor/kmcomposewin.cpp:3392
+#: editor/kmcomposewin.cpp:3401
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3386
+#: editor/kmcomposewin.cpp:3398
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3395
+#: editor/kmcomposewin.cpp:3407
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3398
+#: editor/kmcomposewin.cpp:3410
 msgid "No Chiasmus Keys Found"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3402
+#: editor/kmcomposewin.cpp:3414
 msgid "Chiasmus Encryption Key Selection"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3431
+#: editor/kmcomposewin.cpp:3443
 msgid "Message will be signed"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3432
+#: editor/kmcomposewin.cpp:3444
 msgid "Message will not be signed"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3434
+#: editor/kmcomposewin.cpp:3446
 msgid "Message will be encrypted"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3435
+#: editor/kmcomposewin.cpp:3447
 msgid "Message will not be encrypted"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3457
+#: editor/kmcomposewin.cpp:3469
 msgid "Insert Special Character"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3458
+#: editor/kmcomposewin.cpp:3470
 msgid "Insert"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3580
+#: editor/kmcomposewin.cpp:3598
 msgid "An error occurred while sending the file."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3580
+#: editor/kmcomposewin.cpp:3598
 msgid "Upload file"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3599
+#: editor/kmcomposewin.cpp:3617
 #, kde-format
 msgid "%1 return an error '%2'"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:3599
+#: editor/kmcomposewin.cpp:3617
 msgid "Error"
 msgstr "Error"
 
@@ -2515,44 +2520,44 @@ msgstr ""
 msgid "&Existing identities:"
 msgstr ""
 
-#: identity/identitydialog.cpp:113
+#: identity/identitydialog.cpp:119
 msgid "Edit Identity"
 msgstr ""
 
-#: identity/identitydialog.cpp:142
+#: identity/identitydialog.cpp:148
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab General identity settings."
 msgid "General"
 msgstr "General"
 
-#: identity/identitydialog.cpp:153
+#: identity/identitydialog.cpp:159
 msgid "&Your name:"
 msgstr ""
 
-#: identity/identitydialog.cpp:156
+#: identity/identitydialog.cpp:162
 msgid ""
 "<qt><h3>Your name</h3><p>This field should contain your name as you would "
 "like it to appear in the email header that is sent out;</p><p>if you leave "
 "this blank your real name will not appear, only the email address.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:168
+#: identity/identitydialog.cpp:174
 msgid "Organi&zation:"
 msgstr ""
 
-#: identity/identitydialog.cpp:171
+#: identity/identitydialog.cpp:177
 msgid ""
 "<qt><h3>Organization</h3><p>This field should have the name of your "
 "organization if you would like it to be shown in the email header that is "
 "sent out.</p><p>It is safe (and normal) to leave this blank.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:184
+#: identity/identitydialog.cpp:190
 msgid "&Email address:"
 msgstr ""
 
-#: identity/identitydialog.cpp:187
+#: identity/identitydialog.cpp:193
 msgid ""
 "<qt><h3>Email address</h3><p>This field should have your full email address."
 "</p><p>This address is the primary one, used for all outgoing mail. If you "
@@ -2561,11 +2566,11 @@ msgid ""
 "wrong, people will have trouble replying to you.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:204
+#: identity/identitydialog.cpp:210
 msgid "Email a&liases:"
 msgstr ""
 
-#: identity/identitydialog.cpp:207
+#: identity/identitydialog.cpp:213
 msgid ""
 "<qt><h3>Email aliases</h3><p>This field contains alias addresses that should "
 "also be considered as belonging to this identity (as opposed to representing "
@@ -2575,25 +2580,25 @@ msgid ""
 "alias address per line.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:225
+#: identity/identitydialog.cpp:231
 msgid "Cryptography"
 msgstr ""
 
-#: identity/identitydialog.cpp:234 identity/identitydialog.cpp:259
-#: identity/identitydialog.cpp:285 identity/identitydialog.cpp:312
+#: identity/identitydialog.cpp:240 identity/identitydialog.cpp:265
+#: identity/identitydialog.cpp:291 identity/identitydialog.cpp:318
 msgid "Chang&e..."
 msgstr ""
 
-#: identity/identitydialog.cpp:235
+#: identity/identitydialog.cpp:241
 msgid "Your OpenPGP Signature Key"
 msgstr ""
 
-#: identity/identitydialog.cpp:236
+#: identity/identitydialog.cpp:242
 msgid ""
 "Select the OpenPGP key which should be used to digitally sign your messages."
 msgstr ""
 
-#: identity/identitydialog.cpp:240
+#: identity/identitydialog.cpp:246
 msgid ""
 "<qt><p>The OpenPGP key you choose here will be used to digitally sign "
 "messages. You can also use GnuPG keys.</p><p>You can leave this blank, but "
@@ -2602,21 +2607,21 @@ msgid ""
 "<a>http://www.gnupg.org</a></p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:247
+#: identity/identitydialog.cpp:253
 msgid "OpenPGP signing key:"
 msgstr ""
 
-#: identity/identitydialog.cpp:260
+#: identity/identitydialog.cpp:266
 msgid "Your OpenPGP Encryption Key"
 msgstr ""
 
-#: identity/identitydialog.cpp:261
+#: identity/identitydialog.cpp:267
 msgid ""
 "Select the OpenPGP key which should be used when encrypting to yourself and "
 "for the \"Attach My Public Key\" feature in the composer."
 msgstr ""
 
-#: identity/identitydialog.cpp:266
+#: identity/identitydialog.cpp:272
 msgid ""
 "<qt><p>The OpenPGP key you choose here will be used to encrypt messages to "
 "yourself and for the \"Attach My Public Key\" feature in the composer. You "
@@ -2626,21 +2631,21 @@ msgid ""
 "at <a>http://www.gnupg.org</a></p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:273
+#: identity/identitydialog.cpp:279
 msgid "OpenPGP encryption key:"
 msgstr ""
 
-#: identity/identitydialog.cpp:286
+#: identity/identitydialog.cpp:292
 msgid "Your S/MIME Signature Certificate"
 msgstr ""
 
-#: identity/identitydialog.cpp:287
+#: identity/identitydialog.cpp:293
 msgid ""
 "Select the S/MIME certificate which should be used to digitally sign your "
 "messages."
 msgstr ""
 
-#: identity/identitydialog.cpp:291
+#: identity/identitydialog.cpp:297
 msgid ""
 "<qt><p>The S/MIME (X.509) certificate you choose here will be used to "
 "digitally sign messages.</p><p>You can leave this blank, but KMail will not "
@@ -2648,21 +2653,21 @@ msgid ""
 "not be affected.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:296
+#: identity/identitydialog.cpp:302
 msgid "S/MIME signing certificate:"
 msgstr ""
 
-#: identity/identitydialog.cpp:313
+#: identity/identitydialog.cpp:319
 msgid "Your S/MIME Encryption Certificate"
 msgstr ""
 
-#: identity/identitydialog.cpp:314
+#: identity/identitydialog.cpp:320
 msgid ""
 "Select the S/MIME certificate which should be used when encrypting to "
 "yourself and for the \"Attach My Certificate\" feature in the composer."
 msgstr ""
 
-#: identity/identitydialog.cpp:319
+#: identity/identitydialog.cpp:325
 msgid ""
 "<qt><p>The S/MIME certificate you choose here will be used to encrypt "
 "messages to yourself and for the \"Attach My Certificate\" feature in the "
@@ -2671,33 +2676,33 @@ msgid ""
 "functions will not be affected.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:325
+#: identity/identitydialog.cpp:331
 msgid "S/MIME encryption certificate:"
 msgstr ""
 
-#: identity/identitydialog.cpp:347
+#: identity/identitydialog.cpp:353
 msgctxt "preferred format of encrypted messages"
 msgid "Preferred format:"
 msgstr ""
 
-#: identity/identitydialog.cpp:355
+#: identity/identitydialog.cpp:361
 #, fuzzy
 #| msgid "HTML Messages"
 msgid "Automatically sign messages"
 msgstr "Messatges HTML"
 
-#: identity/identitydialog.cpp:366
+#: identity/identitydialog.cpp:372
 #, fuzzy
 #| msgid "&Advanced"
 msgctxt "@title:tab Advanced identity settings."
 msgid "Advanced"
 msgstr "&Avançat"
 
-#: identity/identitydialog.cpp:378
+#: identity/identitydialog.cpp:384
 msgid "&Reply-To address:"
 msgstr ""
 
-#: identity/identitydialog.cpp:381
+#: identity/identitydialog.cpp:387
 msgid ""
 "<qt><h3>Reply-To addresses</h3><p>This sets the <tt>Reply-to:</tt> header to "
 "contain a different email address to the normal <tt>From:</tt> address.</"
@@ -2707,11 +2712,11 @@ msgid ""
 "address.</p><p>If in doubt, leave this field blank.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:401
+#: identity/identitydialog.cpp:407
 msgid "&CC addresses:"
 msgstr ""
 
-#: identity/identitydialog.cpp:404
+#: identity/identitydialog.cpp:410
 msgid ""
 "<qt><h3>CC (Carbon Copy) addresses</h3><p>The addresses that you enter here "
 "will be added to each outgoing mail that is sent with this identity.</"
@@ -2721,11 +2726,11 @@ msgid ""
 "blank.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:421
+#: identity/identitydialog.cpp:427
 msgid "&BCC addresses:"
 msgstr ""
 
-#: identity/identitydialog.cpp:424
+#: identity/identitydialog.cpp:430
 msgid ""
 "<qt><h3>BCC (Blind Carbon Copy) addresses</h3><p>The addresses that you "
 "enter here will be added to each outgoing mail that is sent with this "
@@ -2735,67 +2740,81 @@ msgid ""
 "list of BCC recipients.</p><p>If in doubt, leave this field blank.</p></qt>"
 msgstr ""
 
-#: identity/identitydialog.cpp:440
+#: identity/identitydialog.cpp:446
 msgid "D&ictionary:"
 msgstr ""
 
-#: identity/identitydialog.cpp:449
+#: identity/identitydialog.cpp:455
 msgid "Sent-mail &folder:"
 msgstr ""
 
-#: identity/identitydialog.cpp:458
+#: identity/identitydialog.cpp:464
 msgid "&Drafts folder:"
 msgstr ""
 
-#: identity/identitydialog.cpp:467
+#: identity/identitydialog.cpp:473
 msgid "&Templates folder:"
 msgstr ""
 
-#: identity/identitydialog.cpp:473
+#: identity/identitydialog.cpp:479
 #, fuzzy
 #| msgid "Account:"
 msgid "Outgoing Account:"
 msgstr "Compte :"
 
-#: identity/identitydialog.cpp:482
+#: identity/identitydialog.cpp:488
 msgid "Attach my vCard to message"
 msgstr ""
 
-#: identity/identitydialog.cpp:484 identity/identitydialog.cpp:972
+#: identity/identitydialog.cpp:490 identity/identitydialog.cpp:1017
 #, fuzzy
 #| msgid "Rename..."
 msgid "Create..."
 msgstr "Renommar..."
 
-#: identity/identitydialog.cpp:492
+#: identity/identitydialog.cpp:498
 msgid "Autocorrection language:"
 msgstr ""
 
-#: identity/identitydialog.cpp:512
+#: identity/identitydialog.cpp:510
+msgid "Restore default domain name"
+msgstr ""
+
+#: identity/identitydialog.cpp:514
+msgid "Defaul&t domain:"
+msgstr ""
+
+#: identity/identitydialog.cpp:519
+msgid ""
+"<qt><p>The default domain is used to complete email addresses that only "
+"consist of the user's name.</p></qt>"
+msgstr ""
+
+#: identity/identitydialog.cpp:542
 msgid "&Use custom message templates for this identity"
 msgstr ""
 
-#: identity/identitydialog.cpp:552
+#: identity/identitydialog.cpp:582
 msgid "Signature"
 msgstr "Signatura"
 
-#: identity/identitydialog.cpp:561
+#: identity/identitydialog.cpp:591
 #, fuzzy
 #| msgid "Signature"
 msgid "Picture"
 msgstr "Signatura"
 
-#: identity/identitydialog.cpp:646
+#: identity/identitydialog.cpp:681
 #, kde-format
 msgid "Invalid Email Alias \"%1\""
 msgstr ""
 
-#: identity/identitydialog.cpp:655 job/addressvalidationjob.cpp:84
-#: job/addressvalidationjob.cpp:93
+#: identity/identitydialog.cpp:690 job/addressvalidationjob.cpp:85
+#: job/addressvalidationjob.cpp:94
 msgid "Invalid Email Address"
 msgstr ""
 
-#: identity/identitydialog.cpp:690
+#: identity/identitydialog.cpp:727
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -2804,14 +2823,14 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identity/identitydialog.cpp:698
+#: identity/identitydialog.cpp:735
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
 "with the configured email address for this identity (%1)."
 msgstr ""
 
-#: identity/identitydialog.cpp:704
+#: identity/identitydialog.cpp:741
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -2820,48 +2839,48 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identity/identitydialog.cpp:712
+#: identity/identitydialog.cpp:749
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
 "configured email address for this identity (%1)."
 msgstr ""
 
-#: identity/identitydialog.cpp:720
+#: identity/identitydialog.cpp:757
 msgid "Email Address Not Found in Key/Certificates"
 msgstr ""
 
-#: identity/identitydialog.cpp:735
+#: identity/identitydialog.cpp:772
 msgid "The signature file is not valid"
 msgstr ""
 
-#: identity/identitydialog.cpp:757
+#: identity/identitydialog.cpp:794
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr ""
 
-#: identity/identitydialog.cpp:791
+#: identity/identitydialog.cpp:828
 #, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
 "therefore, the default sent-mail folder will be used."
 msgstr ""
 
-#: identity/identitydialog.cpp:803
+#: identity/identitydialog.cpp:840
 #, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
 "therefore, the default drafts folder will be used."
 msgstr ""
 
-#: identity/identitydialog.cpp:815
+#: identity/identitydialog.cpp:852
 #, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
 "therefore, the default templates folder will be used."
 msgstr ""
 
-#: identity/identitydialog.cpp:974
+#: identity/identitydialog.cpp:1019
 msgid "Edit..."
 msgstr "Editar..."
 
@@ -3038,7 +3057,7 @@ msgstr ""
 msgid "Email added successfully."
 msgstr "Desplaçament de messatges"
 
-#: job/addressvalidationjob.cpp:81
+#: job/addressvalidationjob.cpp:82
 #, kde-format
 msgid "Distribution list %2 is empty, it cannot be used."
 msgid_plural "Distribution lists %2 are empty, they cannot be used."
@@ -3167,29 +3186,29 @@ msgid "&Forward"
 msgstr ""
 
 #. i18n: ectx: Menu (apply_filter_actions)
-#: kmail_part.rc:166 kmmainwidget.cpp:3361 kmmainwin.rc:166
+#: kmail_part.rc:166 kmmainwidget.cpp:3362 kmmainwin.rc:166
 msgid "A&pply Filter"
 msgstr ""
 
 #. i18n: ectx: Menu (tools)
-#: kmail_part.rc:176 kmmainwin.rc:176
+#: kmail_part.rc:177 kmmainwin.rc:177
 msgid "&Tools"
 msgstr "&Espleches"
 
 #. i18n: ectx: Menu (settings)
-#: kmail_part.rc:197 kmcomposerui.rc:101 kmmainwin.rc:197
-#: kmreadermainwin.rc:70
+#: kmail_part.rc:198 kmcomposerui.rc:101 kmmainwin.rc:198
+#: kmreadermainwin.rc:71
 msgid "&Settings"
 msgstr "&Paramètres"
 
 #. i18n: ectx: Menu (help)
-#: kmail_part.rc:212 kmmainwin.rc:212
+#: kmail_part.rc:213 kmmainwin.rc:213
 msgid "&Help"
 msgstr "&Ajuda"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmail_part.rc:289 kmcomposerui.rc:105 kmmainwin.rc:289
-#: kmreadermainwin.rc:79
+#: kmail_part.rc:291 kmcomposerui.rc:105 kmmainwin.rc:291
+#: kmreadermainwin.rc:80
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
@@ -3244,24 +3263,24 @@ msgstr ""
 msgid "Send Individually"
 msgstr ""
 
-#: kmcommands.cpp:1315
+#: kmcommands.cpp:1317
 msgid "Filtering messages"
 msgstr ""
 
-#: kmcommands.cpp:1322
+#: kmcommands.cpp:1324
 #, kde-format
 msgid "Filtering message %1 of %2"
 msgstr ""
 
-#: kmcommands.cpp:1474
+#: kmcommands.cpp:1476
 msgid "Moving messages"
 msgstr "Desplaçament de messatges"
 
-#: kmcommands.cpp:1474
+#: kmcommands.cpp:1476
 msgid "Deleting messages"
 msgstr ""
 
-#: kmcommands.cpp:1604
+#: kmcommands.cpp:1606
 msgid "Image"
 msgstr ""
 
@@ -3398,11 +3417,11 @@ msgstr ""
 msgid "Another mailer was found on system. Do you want to import data from it?"
 msgstr ""
 
-#: kmmainwidget.cpp:333 kmmainwidget.cpp:4343
+#: kmmainwidget.cpp:333 kmmainwidget.cpp:4351
 msgid "Could not start the import wizard. Please check your installation."
 msgstr ""
 
-#: kmmainwidget.cpp:335 kmmainwidget.cpp:4345
+#: kmmainwidget.cpp:335 kmmainwidget.cpp:4353
 msgid "Unable to start import wizard"
 msgstr ""
 
@@ -3685,598 +3704,607 @@ msgid ""
 "installation."
 msgstr ""
 
-#: kmmainwidget.cpp:2974
+#: kmmainwidget.cpp:2975
 msgid "Save &As..."
 msgstr "Enregistrar &jos..."
 
-#: kmmainwidget.cpp:2988
+#: kmmainwidget.cpp:2989
 msgid "&Expire All Folders"
 msgstr ""
 
-#: kmmainwidget.cpp:2993
+#: kmmainwidget.cpp:2994
 msgid "Check &Mail"
 msgstr ""
 
-#: kmmainwidget.cpp:2999
+#: kmmainwidget.cpp:3000
 msgid "Check Mail In"
 msgstr ""
 
-#: kmmainwidget.cpp:3000 kmmainwidget.cpp:3001
+#: kmmainwidget.cpp:3001 kmmainwidget.cpp:3002
 #, fuzzy
 #| msgid "Autosave interval:"
 msgid "Check Mail"
 msgstr "Interval d'enregistrament automatic :"
 
-#: kmmainwidget.cpp:3010
+#: kmmainwidget.cpp:3011
 msgid "&Send Queued Messages"
 msgstr ""
 
-#: kmmainwidget.cpp:3019
+#: kmmainwidget.cpp:3020
 msgid "Online status (unknown)"
 msgstr ""
 
-#: kmmainwidget.cpp:3022
+#: kmmainwidget.cpp:3023
 msgid "Send Queued Messages Via"
 msgstr ""
 
-#: kmmainwidget.cpp:3040
+#: kmmainwidget.cpp:3041
 msgid "Certificate Manager"
 msgstr ""
 
-#: kmmainwidget.cpp:3048
+#: kmmainwidget.cpp:3049
 msgid "GnuPG Log Viewer"
 msgstr ""
 
-#: kmmainwidget.cpp:3061
+#: kmmainwidget.cpp:3062
 #, fuzzy
 #| msgid "&Message"
 msgid "&Import Messages..."
 msgstr "&Messatge"
 
-#: kmmainwidget.cpp:3069
+#: kmmainwidget.cpp:3070
 msgid "&Debug Sieve..."
 msgstr ""
 
-#: kmmainwidget.cpp:3076
+#: kmmainwidget.cpp:3077
 msgid "Filter &Log Viewer..."
 msgstr ""
 
-#: kmmainwidget.cpp:3081
+#: kmmainwidget.cpp:3082
 msgid "&Anti-Spam Wizard..."
 msgstr ""
 
-#: kmmainwidget.cpp:3086
+#: kmmainwidget.cpp:3087
 msgid "&Anti-Virus Wizard..."
 msgstr ""
 
-#: kmmainwidget.cpp:3091
+#: kmmainwidget.cpp:3092
 #, fuzzy
 #| msgid "Account Name"
 msgid "&Account Wizard..."
 msgstr "Nom del compte"
 
-#: kmmainwidget.cpp:3096
+#: kmmainwidget.cpp:3097
 #, fuzzy
 #| msgid "Account Name"
 msgid "&Import Wizard..."
 msgstr "Nom del compte"
 
-#: kmmainwidget.cpp:3102
+#: kmmainwidget.cpp:3103
 msgid "Edit \"Out of Office\" Replies..."
 msgstr ""
 
-#: kmmainwidget.cpp:3108
+#: kmmainwidget.cpp:3109
 msgid "&Configure Automatic Archiving..."
 msgstr ""
 
-#: kmmainwidget.cpp:3114
+#: kmmainwidget.cpp:3115
 #, fuzzy
 #| msgid "Message Body"
 msgid "Message Delayed..."
 msgstr "Còs del messatge"
 
-#: kmmainwidget.cpp:3130 kmmainwidget.cpp:4138
+#: kmmainwidget.cpp:3131 kmmainwidget.cpp:4139
 #, fuzzy
 #| msgid "&Delete"
 msgctxt "@action Hard delete, bypassing trash"
 msgid "&Delete"
 msgstr "&Suprimir"
 
-#: kmmainwidget.cpp:3135 kmmainwidget.cpp:4140
+#: kmmainwidget.cpp:3136 kmmainwidget.cpp:4141
 msgid "M&ove Thread to Trash"
 msgstr ""
 
-#: kmmainwidget.cpp:3139
+#: kmmainwidget.cpp:3140
 msgid "Move thread to trashcan"
 msgstr ""
 
-#: kmmainwidget.cpp:3142 kmmainwidget.cpp:4140
+#: kmmainwidget.cpp:3143 kmmainwidget.cpp:4141
 msgid "Delete T&hread"
 msgstr ""
 
-#: kmmainwidget.cpp:3148
+#: kmmainwidget.cpp:3149
 msgid "&Find Messages..."
 msgstr ""
 
-#: kmmainwidget.cpp:3154
+#: kmmainwidget.cpp:3155
 msgid "Select &All Messages"
 msgstr ""
 
-#: kmmainwidget.cpp:3162
+#: kmmainwidget.cpp:3163
 msgid "&Mailing List Management..."
 msgstr ""
 
-#: kmmainwidget.cpp:3167
+#: kmmainwidget.cpp:3168
 msgid "&Assign Shortcut..."
 msgstr ""
 
-#: kmmainwidget.cpp:3184
+#: kmmainwidget.cpp:3185
 msgid "&Expiration Settings"
 msgstr ""
 
-#: kmmainwidget.cpp:3202
+#: kmmainwidget.cpp:3203
 #, fuzzy
 #| msgid "&New Folder..."
 msgid "&Archive Folder..."
 msgstr "Repertòri &nòu..."
 
-#: kmmainwidget.cpp:3206
+#: kmmainwidget.cpp:3207
 msgid "Prefer &HTML to Plain Text"
 msgstr ""
 
-#: kmmainwidget.cpp:3210
+#: kmmainwidget.cpp:3211
 msgid "Load E&xternal References"
 msgstr ""
 
-#: kmmainwidget.cpp:3233
+#: kmmainwidget.cpp:3234
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Copy Message To..."
 msgstr "Desplaçament de messatges"
 
-#: kmmainwidget.cpp:3235
+#: kmmainwidget.cpp:3236
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Move Message To..."
 msgstr "Desplaçament de messatges"
 
-#: kmmainwidget.cpp:3240
+#: kmmainwidget.cpp:3241
 msgid "&New Message..."
 msgstr ""
 
-#: kmmainwidget.cpp:3242
+#: kmmainwidget.cpp:3243
 #, fuzzy
 #| msgid "New"
 msgctxt "@action:intoolbar New Empty Message"
 msgid "New"
 msgstr "Novèl"
 
-#: kmmainwidget.cpp:3250
+#: kmmainwidget.cpp:3251
 msgid "Message From &Template"
 msgstr ""
 
-#: kmmainwidget.cpp:3260
+#: kmmainwidget.cpp:3261
 msgid "New Message t&o Mailing-List..."
 msgstr ""
 
-#: kmmainwidget.cpp:3267
+#: kmmainwidget.cpp:3268
 msgid "Send A&gain..."
 msgstr ""
 
-#: kmmainwidget.cpp:3272
+#: kmmainwidget.cpp:3273
 msgid "&Create Filter"
 msgstr ""
 
-#: kmmainwidget.cpp:3277
+#: kmmainwidget.cpp:3278
 msgid "Filter on &Subject..."
 msgstr ""
 
-#: kmmainwidget.cpp:3284
+#: kmmainwidget.cpp:3285
 msgid "Filter on &From..."
 msgstr ""
 
-#: kmmainwidget.cpp:3290
+#: kmmainwidget.cpp:3291
 msgid "Filter on &To..."
 msgstr ""
 
-#: kmmainwidget.cpp:3297
+#: kmmainwidget.cpp:3298
 msgid "New Message From &Template"
 msgstr ""
 
-#: kmmainwidget.cpp:3303
+#: kmmainwidget.cpp:3304
 msgid "Mark &Thread"
 msgstr ""
 
-#: kmmainwidget.cpp:3306
+#: kmmainwidget.cpp:3307
 msgid "Mark Thread as &Read"
 msgstr ""
 
-#: kmmainwidget.cpp:3309
+#: kmmainwidget.cpp:3310
 msgid "Mark all messages in the selected thread as read"
 msgstr ""
 
-#: kmmainwidget.cpp:3312
+#: kmmainwidget.cpp:3313
 msgid "Mark Thread as &Unread"
 msgstr ""
 
-#: kmmainwidget.cpp:3315
+#: kmmainwidget.cpp:3316
 msgid "Mark all messages in the selected thread as unread"
 msgstr ""
 
-#: kmmainwidget.cpp:3321
+#: kmmainwidget.cpp:3322
 msgid "Mark Thread as &Important"
 msgstr ""
 
-#: kmmainwidget.cpp:3324
+#: kmmainwidget.cpp:3325
 msgid "Remove &Important Thread Mark"
 msgstr ""
 
-#: kmmainwidget.cpp:3327
+#: kmmainwidget.cpp:3328
 msgid "Mark Thread as &Action Item"
 msgstr ""
 
-#: kmmainwidget.cpp:3330
+#: kmmainwidget.cpp:3331
 msgid "Remove &Action Item Thread Mark"
 msgstr ""
 
-#: kmmainwidget.cpp:3334
+#: kmmainwidget.cpp:3335
 msgid "&Watch Thread"
 msgstr ""
 
-#: kmmainwidget.cpp:3338
+#: kmmainwidget.cpp:3339
 msgid "&Ignore Thread"
 msgstr ""
 
-#: kmmainwidget.cpp:3346 kmreadermainwin.cpp:327
+#: kmmainwidget.cpp:3347 kmreadermainwin.cpp:327
 msgid "Save A&ttachments..."
 msgstr ""
 
-#: kmmainwidget.cpp:3355
+#: kmmainwidget.cpp:3356
 msgid "Appl&y All Filters"
 msgstr ""
 
-#: kmmainwidget.cpp:3365
+#: kmmainwidget.cpp:3366
 #, fuzzy
 #| msgid "Edit Group"
 msgctxt "View->"
 msgid "&Expand Thread / Group"
 msgstr "Modificar lo grop"
 
-#: kmmainwidget.cpp:3368
+#: kmmainwidget.cpp:3369
 #, fuzzy
 #| msgid "Edit Group"
 msgid "Expand the current thread or group"
 msgstr "Modificar lo grop"
 
-#: kmmainwidget.cpp:3372
+#: kmmainwidget.cpp:3373
 #, fuzzy
 #| msgid "Group:"
 msgctxt "View->"
 msgid "&Collapse Thread / Group"
 msgstr "Grop :"
 
-#: kmmainwidget.cpp:3375
+#: kmmainwidget.cpp:3376
 msgid "Collapse the current thread or group"
 msgstr ""
 
-#: kmmainwidget.cpp:3379
+#: kmmainwidget.cpp:3380
 msgctxt "View->"
 msgid "Ex&pand All Threads"
 msgstr ""
 
-#: kmmainwidget.cpp:3382
+#: kmmainwidget.cpp:3383
 msgid "Expand all threads in the current folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3386
+#: kmmainwidget.cpp:3387
 msgctxt "View->"
 msgid "C&ollapse All Threads"
 msgstr ""
 
-#: kmmainwidget.cpp:3389
+#: kmmainwidget.cpp:3390
 msgid "Collapse all threads in the current folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3394
+#: kmmainwidget.cpp:3395
 msgid "&Display Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3403
+#: kmmainwidget.cpp:3404
 msgid "&Next Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3406
+#: kmmainwidget.cpp:3407
 msgid "Go to the next message"
 msgstr ""
 
-#: kmmainwidget.cpp:3410
+#: kmmainwidget.cpp:3411
 msgid "Next &Unread Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3418
+#: kmmainwidget.cpp:3419
 #, fuzzy
 #| msgid "Next"
 msgctxt "@action:inmenu Goto next unread message"
 msgid "Next"
 msgstr "Seguent"
 
-#: kmmainwidget.cpp:3419
+#: kmmainwidget.cpp:3420
 msgid "Go to the next unread message"
 msgstr ""
 
-#: kmmainwidget.cpp:3423
+#: kmmainwidget.cpp:3424
 msgid "&Previous Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3425
+#: kmmainwidget.cpp:3426
 msgid "Go to the previous message"
 msgstr ""
 
-#: kmmainwidget.cpp:3430
+#: kmmainwidget.cpp:3431
 msgid "Previous Unread &Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3438
+#: kmmainwidget.cpp:3439
 #, fuzzy
 #| msgid "Previous"
 msgctxt "@action:inmenu Goto previous unread message."
 msgid "Previous"
 msgstr "Precedent"
 
-#: kmmainwidget.cpp:3439
+#: kmmainwidget.cpp:3440
 msgid "Go to the previous unread message"
 msgstr ""
 
-#: kmmainwidget.cpp:3443
+#: kmmainwidget.cpp:3444
 msgid "Next Unread &Folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3447
+#: kmmainwidget.cpp:3448
 msgid "Go to the next folder with unread messages"
 msgstr ""
 
-#: kmmainwidget.cpp:3450
+#: kmmainwidget.cpp:3451
 msgid "Previous Unread F&older"
 msgstr ""
 
-#: kmmainwidget.cpp:3453
+#: kmmainwidget.cpp:3454
 msgid "Go to the previous folder with unread messages"
 msgstr ""
 
-#: kmmainwidget.cpp:3457
+#: kmmainwidget.cpp:3458
 msgctxt "Go->"
 msgid "Next Unread &Text"
 msgstr ""
 
-#: kmmainwidget.cpp:3460
+#: kmmainwidget.cpp:3461
 msgid "Go to the next unread text"
 msgstr ""
 
-#: kmmainwidget.cpp:3461
+#: kmmainwidget.cpp:3462
 msgid ""
 "Scroll down current message. If at end of current message, go to next unread "
 "message."
 msgstr ""
 
-#: kmmainwidget.cpp:3469
+#: kmmainwidget.cpp:3470
 msgid "Configure &Filters..."
 msgstr ""
 
-#: kmmainwidget.cpp:3475
+#: kmmainwidget.cpp:3476
 msgid "Manage &Sieve Scripts..."
 msgstr ""
 
-#: kmmainwidget.cpp:3480
+#: kmmainwidget.cpp:3481
 msgid "KMail &Introduction"
 msgstr ""
 
-#: kmmainwidget.cpp:3482
+#: kmmainwidget.cpp:3483
 msgid "Display KMail's Welcome Page"
 msgstr ""
 
-#: kmmainwidget.cpp:3491
+#: kmmainwidget.cpp:3492
 msgid "Configure &Notifications..."
 msgstr ""
 
-#: kmmainwidget.cpp:3498
+#: kmmainwidget.cpp:3499
 msgid "&Configure KMail..."
 msgstr ""
 
-#: kmmainwidget.cpp:3504
+#: kmmainwidget.cpp:3505
 msgid "Expire..."
 msgstr ""
 
-#: kmmainwidget.cpp:3510
+#: kmmainwidget.cpp:3511
 #, fuzzy
 #| msgid "&New Folder..."
 msgid "Add Favorite Folder..."
 msgstr "Repertòri &nòu..."
 
-#: kmmainwidget.cpp:3516
+#: kmmainwidget.cpp:3517
 #, fuzzy
 #| msgid "Description"
 msgid "Serverside Subscription..."
 msgstr "Descripcion"
 
-#: kmmainwidget.cpp:3523
+#: kmmainwidget.cpp:3524
 msgid "Appl&y All Filters On Folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3531
+#: kmmainwidget.cpp:3532
 #, fuzzy
 #| msgid "Exit"
 msgid "&Export KMail Data..."
 msgstr "Exportar..."
 
-#: kmmainwidget.cpp:3562
+#: kmmainwidget.cpp:3563
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Copy Message to Folder"
 msgstr "Desplaçament de messatges"
 
-#: kmmainwidget.cpp:3569
+#: kmmainwidget.cpp:3570
 #, fuzzy
 #| msgid "&New Folder..."
 msgid "Jump to Folder..."
 msgstr "Repertòri &nòu..."
 
-#: kmmainwidget.cpp:3576
+#: kmmainwidget.cpp:3577
 msgid "Abort Current Operation"
 msgstr ""
 
-#: kmmainwidget.cpp:3583
+#: kmmainwidget.cpp:3584
 msgid "Focus on Next Folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3590
+#: kmmainwidget.cpp:3591
 msgid "Focus on Previous Folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3597
+#: kmmainwidget.cpp:3598
 msgid "Select Folder with Focus"
 msgstr ""
 
-#: kmmainwidget.cpp:3605
+#: kmmainwidget.cpp:3606
 #, fuzzy
 #| msgid "Select Folder"
 msgid "Focus on First Folder"
 msgstr "Seleccionar un repertòri"
 
-#: kmmainwidget.cpp:3612
+#: kmmainwidget.cpp:3613
 #, fuzzy
 #| msgid "Local Folders"
 msgid "Focus on Last Folder"
 msgstr "Repertòris locals"
 
-#: kmmainwidget.cpp:3619
+#: kmmainwidget.cpp:3620
 msgid "Focus on Next Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3626
+#: kmmainwidget.cpp:3627
 msgid "Focus on Previous Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3633
+#: kmmainwidget.cpp:3634
 #, fuzzy
 #| msgid "Select Folder"
 msgid "Select First Message"
 msgstr "Seleccionar un repertòri"
 
-#: kmmainwidget.cpp:3640
+#: kmmainwidget.cpp:3641
 #, fuzzy
 #| msgid "New Message"
 msgid "Select Last Message"
 msgstr "Messatge novèl"
 
-#: kmmainwidget.cpp:3647
+#: kmmainwidget.cpp:3648
 msgid "Select Message with Focus"
 msgstr ""
 
-#: kmmainwidget.cpp:3655
+#: kmmainwidget.cpp:3656
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: kmmainwidget.cpp:3664
+#: kmmainwidget.cpp:3665
 msgid "Extend Selection to Previous Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3671
+#: kmmainwidget.cpp:3672
 msgid "Extend Selection to Next Message"
 msgstr ""
 
-#: kmmainwidget.cpp:3679
+#: kmmainwidget.cpp:3680
 #, fuzzy
 #| msgid "Moving messages"
 msgid "Move Message to Folder"
 msgstr "Desplaçament de messatges"
 
-#: kmmainwidget.cpp:3699
+#: kmmainwidget.cpp:3700
 #, fuzzy
 #| msgid "New Folder"
 msgid "Add Favorite Folder"
 msgstr "Repertòri novèl"
 
-#: kmmainwidget.cpp:4032
+#: kmmainwidget.cpp:4033
 msgid "E&mpty Trash"
 msgstr ""
 
-#: kmmainwidget.cpp:4032
+#: kmmainwidget.cpp:4033
 msgid "&Move All Messages to Trash"
 msgstr ""
 
-#: kmmainwidget.cpp:4133
+#: kmmainwidget.cpp:4134
 msgid "&Delete Search"
 msgstr ""
 
-#: kmmainwidget.cpp:4138 kmreadermainwin.cpp:330
+#: kmmainwidget.cpp:4139 kmreadermainwin.cpp:330
 msgid "&Move to Trash"
 msgstr "Metre a la &banasta"
 
-#: kmmainwidget.cpp:4280
+#: kmmainwidget.cpp:4243
+msgid "&Undo"
+msgstr ""
+
+#: kmmainwidget.cpp:4245
+#, kde-format
+msgid "&Undo: \"%1\""
+msgstr ""
+
+#: kmmainwidget.cpp:4288
 #, kde-format
 msgid "Filter %1"
 msgstr ""
 
-#: kmmainwidget.cpp:4550
+#: kmmainwidget.cpp:4558
 msgid "Network is unconnected. Folder information cannot be updated."
 msgstr ""
 
-#: kmmainwidget.cpp:4558 kmmainwidget.cpp:4606
+#: kmmainwidget.cpp:4566 kmmainwidget.cpp:4614
 msgid "Retrieving folder properties"
 msgstr ""
 
-#: kmmainwidget.cpp:4637 kmmainwidget.cpp:4705
+#: kmmainwidget.cpp:4645 kmmainwidget.cpp:4713
 #, fuzzy
 #| msgid "Done"
 msgid "Done"
 msgstr "Terminat"
 
-#: kmmainwidget.cpp:4661
+#: kmmainwidget.cpp:4669
 #, fuzzy, kde-format
 #| msgid "Local Folders"
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "Repertòris locals"
 
-#: kmmainwidget.cpp:4673
+#: kmmainwidget.cpp:4681
 msgid "Removing duplicates"
 msgstr ""
 
-#: kmmainwidget.cpp:4699
+#: kmmainwidget.cpp:4707
 msgid "Error while removing duplicates"
 msgstr ""
 
-#: kmmainwidget.cpp:4757
+#: kmmainwidget.cpp:4765
 msgid ""
 "IMAP server not configured yet. Please configure the server in the IMAP "
 "account before setting up server-side subscription."
 msgstr ""
 
-#: kmmainwidget.cpp:4759
+#: kmmainwidget.cpp:4767
 msgid ""
 "Log in failed, please configure the IMAP account before setting up server-"
 "side subscription."
 msgstr ""
 
-#: kmmainwidget.cpp:4777
+#: kmmainwidget.cpp:4785
 msgid "Archive Mail Agent was not registered."
 msgstr ""
 
-#: kmmainwidget.cpp:4787
+#: kmmainwidget.cpp:4795
 msgid "Send Later Agent was not registered."
 msgstr ""
 
-#: kmmainwidget.cpp:4803
+#: kmmainwidget.cpp:4811
 msgid ""
 "Could not start \"PIM Setting Exporter\" program. Please check your "
 "installation."
 msgstr ""
 
-#: kmmainwidget.cpp:4805
+#: kmmainwidget.cpp:4813
 msgid "Unable to start \"PIM Setting Exporter\" program"
 msgstr ""
 
-#: kmmainwidget.cpp:4845
+#: kmmainwidget.cpp:4853
 #, fuzzy, kde-format
 #| msgid "Starting..."
 msgctxt "Show shortcut for focus quick search. Don't change it"
@@ -4516,12 +4544,56 @@ msgid_plural "%1 unread messages"
 msgstr[0] "Messatge novèl"
 msgstr[1] "Messatge novèl"
 
+#: mailmerge/attachmentlistwidget.cpp:66
+#, fuzzy
+#| msgid "Attachment"
+msgid "Attachment"
+msgstr "Fichièr junt"
+
+#: mailmerge/attachmentlistwidget.cpp:71
+#, fuzzy
+#| msgid "Save Attachments..."
+msgid "Select attachment:"
+msgstr "Enregistrar los fichièrs junts..."
+
+#: mailmerge/mailmergedialog.cpp:25
+#, fuzzy
+#| msgid "Mail"
+msgid "Mail Merge"
+msgstr "Corrièl"
+
+#: mailmerge/mailmergewidget.cpp:40
+msgid "Source:"
+msgstr ""
+
+#: mailmerge/mailmergewidget.cpp:45
+#, fuzzy
+#| msgid "Address book:"
+msgid "Address Book"
+msgstr "Quasernet d'adreça&nbsp;:"
+
+#: mailmerge/mailmergewidget.cpp:46
+msgid "CSV"
+msgstr ""
+
+#: mailmerge/mailmergewidget.cpp:66
+#, fuzzy
+#| msgid "Path"
+msgid "Path:"
+msgstr "Camin"
+
+#: mailmerge/mailmergewidget.cpp:73
+#, fuzzy
+#| msgid "Attachment"
+msgid "Attachment:"
+msgstr "Fichièr junt"
+
 #: messageactions.cpp:71
 msgctxt "Message->"
 msgid "&Reply"
 msgstr ""
 
-#: messageactions.cpp:76 searchdialog/searchwindow.cpp:233
+#: messageactions.cpp:76 searchdialog/searchwindow.cpp:231
 msgid "&Reply..."
 msgstr ""
 
@@ -4529,11 +4601,11 @@ msgstr ""
 msgid "Reply to A&uthor..."
 msgstr ""
 
-#: messageactions.cpp:90 searchdialog/searchwindow.cpp:237
+#: messageactions.cpp:90 searchdialog/searchwindow.cpp:235
 msgid "Reply to &All..."
 msgstr ""
 
-#: messageactions.cpp:97 searchdialog/searchwindow.cpp:241
+#: messageactions.cpp:97 searchdialog/searchwindow.cpp:239
 msgid "Reply to Mailing-&List..."
 msgstr ""
 
@@ -4559,7 +4631,7 @@ msgstr ""
 msgid "Add Note..."
 msgstr "Apondre..."
 
-#: messageactions.cpp:151 searchdialog/searchwindow.cpp:245
+#: messageactions.cpp:151 searchdialog/searchwindow.cpp:243
 msgctxt "Message->"
 msgid "&Forward"
 msgstr ""
@@ -4726,92 +4798,96 @@ msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Recercar"
 
-#: searchdialog/searchwindow.cpp:195 searchdialog/searchwindow.cpp:416
+#: searchdialog/searchwindow.cpp:193 searchdialog/searchwindow.cpp:419
 msgid "Last Search"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:250
+#: searchdialog/searchwindow.cpp:248
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:255
+#: searchdialog/searchwindow.cpp:253
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:269
+#: searchdialog/searchwindow.cpp:267
 msgid "Save Attachments..."
 msgstr "Enregistrar los fichièrs junts..."
 
-#: searchdialog/searchwindow.cpp:275
+#: searchdialog/searchwindow.cpp:273
 msgid "Clear Selection"
 msgstr "Proteccion"
 
-#: searchdialog/searchwindow.cpp:359
+#: searchdialog/searchwindow.cpp:277
+#, fuzzy
+#| msgid "&New Folder..."
+msgid "Jump to original folder"
+msgstr "Repertòri &nòu..."
+
+#: searchdialog/searchwindow.cpp:362
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] ""
 msgstr[1] ""
 
-#: searchdialog/searchwindow.cpp:441
+#: searchdialog/searchwindow.cpp:444
 msgid "You did not selected a valid folder."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:451 searchdialog/searchwindow.cpp:460
+#: searchdialog/searchwindow.cpp:454 searchdialog/searchwindow.cpp:463
 msgid "You forgot to select collections."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:478
+#: searchdialog/searchwindow.cpp:481
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:483
+#: searchdialog/searchwindow.cpp:486
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:489
-#, fuzzy
-#| msgid "Moving messages"
-msgid "No message found."
-msgstr "Desplaçament de messatges"
+#: searchdialog/searchwindow.cpp:492
+msgid "You forgot to add conditions."
+msgstr ""
 
-#: searchdialog/searchwindow.cpp:493
+#: searchdialog/searchwindow.cpp:496
 msgid ""
 "Contains condition cannot be used with a number of characters inferior to 4."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:525
+#: searchdialog/searchwindow.cpp:528
 #, fuzzy
 #| msgid "Starting..."
 msgid "Searching..."
 msgstr "Aviada..."
 
-#: searchdialog/searchwindow.cpp:535
+#: searchdialog/searchwindow.cpp:538
 #, kde-format
 msgid "Cannot get search result. %1"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:541
+#: searchdialog/searchwindow.cpp:544
 #, fuzzy
 #| msgid "Search"
 msgid "Search failed."
 msgstr "Recercar"
 
-#: searchdialog/searchwindow.cpp:581
+#: searchdialog/searchwindow.cpp:584
 #, fuzzy
 #| msgid "Search"
 msgid "Search complete."
 msgstr "Recercar"
 
-#: searchdialog/searchwindow.cpp:601
+#: searchdialog/searchwindow.cpp:604
 #, fuzzy
 #| msgid "Search"
 msgid "Search stopped."
 msgstr "Recercar"
 
-#: searchdialog/searchwindow.cpp:659
+#: searchdialog/searchwindow.cpp:662
 #, kde-format
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
@@ -4819,7 +4895,7 @@ msgid ""
 "\"%1\"."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:765
+#: searchdialog/searchwindow.cpp:762
 #, fuzzy, kde-format
 #| msgid "Moving messages"
 msgid "Copy Message"
@@ -4827,7 +4903,7 @@ msgid_plural "Copy %1 Messages"
 msgstr[0] "Desplaçament de messatges"
 msgstr[1] "Desplaçament de messatges"
 
-#: searchdialog/searchwindow.cpp:768
+#: searchdialog/searchwindow.cpp:765
 #, fuzzy, kde-format
 #| msgid "Current Message"
 msgid "Cut Message"
@@ -6309,11 +6385,25 @@ msgstr "&Paramètres"
 msgid "Re-enable All \"Do not Ask Again\" Warnings"
 msgstr ""
 
-#: undostack.cpp:101
+#: undostack.cpp:60
+#, fuzzy
+#| msgid "Move to Trash"
+msgid "Move To Trash"
+msgstr "Desplaçar dins la banasta"
+
+#: undostack.cpp:60
+#, fuzzy
+#| msgid "Moving messages"
+msgid "Move Message"
+msgid_plural "Move Messages"
+msgstr[0] "Desplaçament de messatges"
+msgstr[1] "Desplaçament de messatges"
+
+#: undostack.cpp:112
 msgid "There is nothing to undo."
 msgstr ""
 
-#: undostack.cpp:108
+#: undostack.cpp:119
 #, kde-format
 msgid "Cannot move message. %1"
 msgstr ""
@@ -6391,6 +6481,16 @@ msgid "Out of office reply active on server"
 msgid_plural "Out of office reply active on servers"
 msgstr[0] ""
 msgstr[1] ""
+
+#, fuzzy
+#~| msgid "Account Name"
+#~ msgid "Agent Name"
+#~ msgstr "Nom del compte"
+
+#, fuzzy
+#~| msgid "Moving messages"
+#~ msgid "No message found."
+#~ msgstr "Desplaçament de messatges"
 
 #, fuzzy
 #~| msgid "MB"
@@ -6572,11 +6672,6 @@ msgstr[1] ""
 #~| msgid "Message Body"
 #~ msgid "Message tag &icon:"
 #~ msgstr "Còs del messatge"
-
-#, fuzzy
-#~| msgid "Save Attachments..."
-#~ msgid "Show tree attachment"
-#~ msgstr "Enregistrar los fichièrs junts..."
 
 #~ msgid "New Message"
 #~ msgstr "Messatge novèl"
@@ -7011,11 +7106,6 @@ msgstr[1] ""
 #~ msgstr "BCC"
 
 #, fuzzy
-#~| msgid "Mail"
-#~ msgid "KMail Filter"
-#~ msgstr "Corrièl"
-
-#, fuzzy
 #~| msgid "Important"
 #~ msgid "Import Filters"
 #~ msgstr "Important"
@@ -7326,11 +7416,6 @@ msgstr[1] ""
 #~ msgid "All"
 #~ msgstr "Totes"
 
-#, fuzzy
-#~| msgid "Address book:"
-#~ msgid "Address Books"
-#~ msgstr "Quasernet d'adreça&nbsp;:"
-
 #~ msgid "Auto"
 #~ msgstr "Auto"
 
@@ -7598,9 +7683,6 @@ msgstr[1] ""
 #~ msgctxt "@title:column Folder in which the message is found."
 #~ msgid "Folder"
 #~ msgstr "Repertòri"
-
-#~ msgid "Path"
-#~ msgstr "Camin"
 
 #, fuzzy
 #~| msgid "Send Now"
@@ -8070,11 +8152,6 @@ msgstr[1] ""
 #~| msgid "Message Status"
 #~ msgid "Show Message Structure"
 #~ msgstr "Estat del messatge"
-
-#, fuzzy
-#~| msgid "Attachment"
-#~ msgid "Attachments:"
-#~ msgstr "Fichièr junt"
 
 #, fuzzy
 #~| msgid "Important"
@@ -9038,15 +9115,6 @@ msgstr[1] ""
 #~| msgid "Email Address"
 #~ msgid "Copy Email Address"
 #~ msgstr "Adreça electronica"
-
-#, fuzzy
-#~| msgctxt ""
-#~| "%1: name; %2: number appended to it to make it unique among a list of "
-#~| "names"
-#~| msgid "%1 %2"
-#~ msgctxt "@item {FOLDER} on {MAIL ACCOUNT}"
-#~ msgid "%1 on %2"
-#~ msgstr "%1 %2"
 
 #, fuzzy
 #~| msgid "Default"
