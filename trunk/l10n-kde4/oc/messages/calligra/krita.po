@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-02 01:33+0000\n"
+"POT-Creation-Date: 2014-04-04 01:47+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -27,7 +27,7 @@ msgid "Your emails"
 msgstr "yannig@marchegay.org"
 
 #: benchmarks/kis_floodfill_benchmark.cpp:86
-#: plugins/tools/defaulttools/kis_tool_fill.cc:125
+#: plugins/tools/defaulttools/kis_tool_fill.cc:128
 #: ui/actions/kis_selection_action_factories.cpp:171
 msgid "Flood Fill"
 msgstr ""
@@ -42,7 +42,7 @@ msgstr "Degradat"
 msgid "Krita Crash Reporter"
 msgstr ""
 
-#: crashreporter/main.cpp:55 ui/kis_aboutdata.h:60
+#: crashreporter/main.cpp:55 ui/kis_aboutdata.h:46
 msgid "Digital Painting for Artists"
 msgstr ""
 
@@ -50,11 +50,14 @@ msgstr ""
 msgid "(c) 2014 The Krita team.\n"
 msgstr ""
 
-#: crashreporter/main.cpp:62 ui/kis_aboutdata.h:71
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_2)
+#: crashreporter/main.cpp:62
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:688
+#: ui/kis_aboutdata.h:57
 msgid "Boudewijn Rempt"
 msgstr ""
 
-#: crashreporter/main.cpp:63 ui/kis_aboutdata.h:71
+#: crashreporter/main.cpp:63 ui/kis_aboutdata.h:57
 #, fuzzy
 #| msgid "Filter"
 msgid "Maintainer"
@@ -130,33 +133,134 @@ msgstr ""
 msgid "Open Document"
 msgstr ""
 
-#: gemini/main.cpp:55 gemini/MainWindow.cpp:226
+#. i18n: ectx: Menu (file)
+#: gemini/kritagemini.rc:6 krita.rc:6 sketch/kritasketch.rc:6
+#, fuzzy
+#| msgid "Filter"
+msgid "&File"
+msgstr "Filtre"
+
+#. i18n: ectx: Menu (Edit)
+#: gemini/kritagemini.rc:13 krita.rc:13
+#: plugins/paintops/resourcemanager/resourcemanager.rc:4
+#: sketch/kritasketch.rc:13
+msgid "&Edit"
+msgstr "&Edicion"
+
+#. i18n: ectx: Menu (Resources)
+#: gemini/kritagemini.rc:31 krita.rc:31
+#: plugins/paintops/resourcemanager/resourcemanager.rc:5
+#: sketch/kritasketch.rc:31
+#, fuzzy
+#| msgid "Source"
+msgid "&Resources"
+msgstr "Sorga"
+
+#. i18n: ectx: Menu (View)
+#: gemini/kritagemini.rc:40 krita.rc:40 sketch/kritasketch.rc:40
+msgid "&View"
+msgstr "Aficha&tge"
+
+#. i18n: ectx: Menu (view_fast_grid_config)
+#: gemini/kritagemini.rc:60 krita.rc:60 sketch/kritasketch.rc:60
+#, fuzzy
+#| msgid "Spacing"
+msgid "Grid Spacing"
+msgstr "Espaciament"
+
+#. i18n: ectx: Menu (Image)
+#: gemini/kritagemini.rc:80 krita.rc:80
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:4
+#: plugins/extensions/offsetimage/offsetimage.rc:5
+#: plugins/extensions/rotateimage/rotateimage.rc:4
+#: plugins/extensions/shearimage/shearimage.rc:4 sketch/kritasketch.rc:80
+#, fuzzy
+#| msgid "Image"
+msgid "&Image"
+msgstr "Imatge"
+
+#. i18n: ectx: Menu (Layer)
+#: gemini/kritagemini.rc:91 krita.rc:91
+#: plugins/extensions/histogram/histogram.rc:4 sketch/kritasketch.rc:91
+#, fuzzy
+#| msgid "Layer"
+msgid "&Layer"
+msgstr "Jaç"
+
+#. i18n: ectx: Menu (LayerNew)
+#: gemini/kritagemini.rc:92 krita.rc:92 sketch/kritasketch.rc:92
+msgid "New"
+msgstr "Novèl"
+
+#. i18n: ectx: Menu (LayerConvert)
+#: gemini/kritagemini.rc:101 krita.rc:101 sketch/kritasketch.rc:101
+#, fuzzy
+#| msgid "Invert"
+msgid "Convert"
+msgstr "Enversar"
+
+#. i18n: ectx: property (text), widget (QPushButton, bnSelect)
+#. i18n: ectx: Menu (Select)
+#: gemini/kritagemini.rc:126 krita.rc:126
+#: plugins/extensions/colorrange/wdg_colorrange.ui:131
+#: plugins/extensions/imagesize/imagesize.rc:12
+#: plugins/extensions/modify_selection/modify_selection.rc:4
+#: sketch/kritasketch.rc:126
+#, fuzzy
+#| msgid "Select"
+msgid "&Select"
+msgstr "Seleccionar"
+
+#. i18n: ectx: Menu (Filter)
+#: gemini/kritagemini.rc:139 krita.rc:139 sketch/kritasketch.rc:139
+#, fuzzy
+#| msgid "Filter"
+msgid "Filte&r"
+msgstr "Filtre"
+
+#. i18n: ectx: Menu (Tools)
+#: gemini/kritagemini.rc:156 krita.rc:156 sketch/kritasketch.rc:156
+msgid "&Tools"
+msgstr "&Espleches"
+
+#. i18n: ectx: Menu (settings)
+#: gemini/kritagemini.rc:159 krita.rc:159 sketch/kritasketch.rc:159
+msgid "Settings"
+msgstr "Paramètres"
+
+#. i18n: ectx: ToolBar (BrushesAndStuff)
+#: gemini/kritagemini.rc:172 krita.rc:172 sketch/kritasketch.rc:172
+msgid "Brushes and Stuff"
+msgstr ""
+
+#: gemini/main.cpp:70 gemini/MainWindow.cpp:229
 msgid "Krita Gemini"
 msgstr ""
 
-#: gemini/main.cpp:57
+#: gemini/main.cpp:72
 msgid "Krita Gemini: Painting at Home and on the Go for Artists"
 msgstr ""
 
-#: gemini/main.cpp:59 sketch/main.cpp:60
-msgid "(c) 1999-2012 The Krita team and KO GmbH.\n"
+#: gemini/main.cpp:74
+#, kde-format
+msgid "(c) 1999-%1 The Krita team and KO GmbH.\n"
 msgstr ""
 
-#: gemini/main.cpp:67 sketch/main.cpp:68
+#: gemini/main.cpp:82 sketch/main.cpp:69
 #, fuzzy
 #| msgid "Image Size"
 msgid "Images to open"
 msgstr "Talha d'imatge"
 
-#: gemini/main.cpp:68 sketch/main.cpp:69
-msgid "Don't use the virtual keyboard"
+#: gemini/main.cpp:83 sketch/main.cpp:70
+msgid "Use the virtual keyboard"
 msgstr ""
 
-#: gemini/MainWindow.cpp:536
+#: gemini/MainWindow.cpp:546
 msgid "Untitled"
 msgstr ""
 
-#: gemini/MainWindow.cpp:539
+#: gemini/MainWindow.cpp:549
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -164,802 +268,1012 @@ msgid ""
 msgstr ""
 
 #: i18ndata:1
+msgctxt "./data/gradients/BG-Krita2.ggr"
 msgid "BG-Krita2. Gradient background for brush preset icons."
 msgstr ""
 
 #: i18ndata:2
+msgctxt "./data/gradients/GPS-eye-_Blue_.ggr"
 msgid "GPS eye (Blue)"
 msgstr ""
 
 #: i18ndata:3
+msgctxt "./data/gradients/GPS-FG-Glare.ggr"
 msgid "GPS FG Glare"
 msgstr ""
 
 #: i18ndata:4
+msgctxt "./data/gradients/GPS-Fire-Blueish.ggr"
 msgid "GPS Fire Blueish"
 msgstr ""
 
 #: i18ndata:5
+msgctxt "./data/gradients/GPS-Fire-Burning-Cloud.ggr"
 msgid "GPS Fire Burning Cloud"
 msgstr ""
 
 #: i18ndata:6
+msgctxt "./data/gradients/GPS-Fire-Dust-Blended.ggr"
 msgid "GPS Fire Dust Blended"
 msgstr ""
 
 #: i18ndata:7
+msgctxt "./data/gradients/GPS-Fire-Dust.ggr"
 msgid "GPS Fire Dust"
 msgstr ""
 
 #: i18ndata:8
+msgctxt "./data/gradients/GPS-Fire-Incandescent.ggr"
 msgid "GPS Fire Incandescent"
 msgstr ""
 
 #: i18ndata:9
+msgctxt "./data/gradients/GPS-Fire-Life-Span.ggr"
 msgid "GPS Fire Life Span"
 msgstr ""
 
 #: i18ndata:10
+msgctxt "./data/gradients/GPS-Haze-and-Atmosphere.ggr"
 msgid "GPS Haze and Atmosphere"
 msgstr ""
 
 #: i18ndata:11
+msgctxt "./data/gradients/GPS-Light-Saber-_Use-FG-color_.ggr"
 msgid "GPS Light Saber (Use FG color)"
 msgstr ""
 
 #: i18ndata:12
+msgctxt "./data/gradients/GPS-Nature-browns-copy.ggr"
 msgid "GPS Nature browns copy"
 msgstr ""
 
 #: i18ndata:13
+msgctxt "./data/gradients/GPS-Nature-Pure-greens.ggr"
 msgid "GPS Nature Pure greens"
 msgstr ""
 
 #: i18ndata:14
+msgctxt "./data/gradients/GPS-Nature-random-greens.ggr"
 msgid "GPS Nature random greens"
 msgstr ""
 
 #: i18ndata:15
+#, fuzzy
+#| msgid "Saturation"
+msgctxt "./data/gradients/GPS-Nature_Grass.ggr"
 msgid "GPS Nature_Grass"
-msgstr ""
+msgstr "Saturacion"
 
 #: i18ndata:16
 #, fuzzy
 #| msgid "View"
+msgctxt "./data/gradients/GPS-Simple-Smoke.ggr"
 msgid "GPS Simple Smoke"
 msgstr "Visualizacion"
 
 #: i18ndata:17
+msgctxt "./data/gradients/GPS-Steel-Bars.ggr"
 msgid "GPS Steel Bars"
 msgstr ""
 
 #: i18ndata:18
+msgctxt "./data/brushes/3_eroded.gih"
 msgid "3_eroded"
 msgstr ""
 
 #: i18ndata:19
+#, fuzzy
+#| msgid "Level:"
+msgctxt "./data/brushes/A_bamboo-leaves.gih"
 msgid "A-4 Bamboo Leaves"
-msgstr ""
+msgstr "Nivèl :"
 
 #: i18ndata:20
+msgctxt "./data/brushes/A_bamboo.gih"
 msgid "A-4 Bamboo"
 msgstr ""
 
 #: i18ndata:21
+msgctxt "./data/brushes/A_dirty-brush.gih"
 msgid "A - 2 Dirty Brush2"
 msgstr ""
 
 #: i18ndata:22
+msgctxt "./data/brushes/A_distant-mountain.gih"
 msgid "A-4 distant-mountain"
 msgstr ""
 
 #: i18ndata:23
+msgctxt "./data/brushes/A_dynamic-brush.gih"
 msgid "A - 2 Dynamic Brush"
 msgstr ""
 
 #: i18ndata:24
+msgctxt "./data/brushes/A_dynamic-brush3.gih"
 msgid "A-2 Dynamic brush 2"
 msgstr ""
 
 #: i18ndata:25
+msgctxt "./data/brushes/A_eroded-brush2.gih"
 msgid "A -2 Eroded Brush 2"
 msgstr ""
 
 #: i18ndata:26
+msgctxt "./data/brushes/A_eroded-cercle-anim.gih"
 msgid "A -18 Round eroded anim"
 msgstr ""
 
 #: i18ndata:27
+msgctxt "./data/brushes/A_eroded-chinese-anim.gih"
 msgid "A -2 Chinese eroded anim"
 msgstr ""
 
 #: i18ndata:28
+msgctxt "./data/brushes/A_eroded-dirtybrush-anim.gih"
 msgid "A - 2 Dirty Brush"
 msgstr ""
 
 #: i18ndata:29
+msgctxt "./data/brushes/A_eroded-knife-anim.gih"
 msgid "A-17 Knife eroded anim"
 msgstr ""
 
 #: i18ndata:30
+msgctxt "./data/brushes/A_fairy-dust.gih"
 msgid "A-4 Fairy Dust"
 msgstr ""
 
 #: i18ndata:31
+msgctxt "./data/brushes/A_floor.gih"
 msgid "A-4 Floor"
 msgstr ""
 
 #: i18ndata:32
+msgctxt "./data/brushes/A_flowers.gih"
 msgid "A-4 Flower"
 msgstr ""
 
 #: i18ndata:33
+#, fuzzy
+#| msgid "Level:"
+msgctxt "./data/brushes/A_forest.gih"
 msgid "A-4 Forest"
-msgstr ""
+msgstr "Nivèl :"
 
 #: i18ndata:34
+msgctxt "./data/brushes/A_fur.gih"
 msgid "A-4 Fur"
 msgstr ""
 
 #: i18ndata:35
+msgctxt "./data/brushes/A_grass-floor.gih"
 msgid "A-4 Grass-Floor"
 msgstr ""
 
 #: i18ndata:36
+#, fuzzy
+#| msgid "Level:"
+msgctxt "./data/brushes/A_herbs.gih"
 msgid "A-4 herbs"
-msgstr ""
+msgstr "Nivèl :"
 
 #: i18ndata:37
 #, fuzzy
 #| msgid "Level:"
+msgctxt "./data/brushes/A_leaves-mapple.gih"
 msgid "A-4 Leaves Mapples"
 msgstr "Nivèl :"
 
 #: i18ndata:38
 #, fuzzy
 #| msgid "Level:"
+msgctxt "./data/brushes/A_leaves.gih"
 msgid "A-4 Leaves"
 msgstr "Nivèl :"
 
 #: i18ndata:39
+msgctxt "./data/brushes/A_mineral-cristal.gih"
 msgid "A-3 minerals"
 msgstr ""
 
 #: i18ndata:40
+msgctxt "./data/brushes/A_pin.gih"
 msgid "A-4 Pin"
 msgstr ""
 
 #: i18ndata:41
+msgctxt "./data/brushes/A_random-vegetal.gih"
 msgid "A-4 random vegetal"
 msgstr ""
 
 #: i18ndata:42
+msgctxt "./data/brushes/A_random-vegetal2.gih"
 msgid "A-4 random vegetal2"
 msgstr ""
 
 #: i18ndata:43
+msgctxt "./data/brushes/A_rocks-floor-neg.gih"
 msgid "A-4 rocksfloor neg"
 msgstr ""
 
 #: i18ndata:44
+msgctxt "./data/brushes/A_rocks.gih"
 msgid "A-3 Rocks"
 msgstr ""
 
 #: i18ndata:45
+msgctxt "./data/brushes/A_snow-pack.gih"
 msgid "A-4 SnowPack"
 msgstr ""
 
 #: i18ndata:46
+msgctxt "./data/brushes/A_splat2.gih"
 msgid "A-2 Splat"
 msgstr ""
 
 #: i18ndata:47
+msgctxt "./data/brushes/A_starfield.gih"
 msgid "A-4 starfield intense"
 msgstr ""
 
 #: i18ndata:48
+msgctxt "./data/brushes/A_wall-texture.gih"
 msgid "A-4 Wall"
 msgstr ""
 
 #: i18ndata:49
 #, fuzzy
 #| msgid "Partial"
+msgctxt "./data/brushes/D_Dust_Particles.gih"
 msgid "D_Dust Particles"
 msgstr "parcial"
 
 #: i18ndata:50
+msgctxt "./data/brushes/G_Sparks.gih"
 msgid "G_Sparks"
 msgstr ""
 
 #: i18ndata:51
+msgctxt "./data/brushes/L_Trees.gih"
 msgid "L_Trees"
 msgstr ""
 
 #: i18ndata:52
 #, fuzzy
 #| msgid "Settings"
+msgctxt "./data/brushes/LJF_smoke_c.gih"
 msgid "GIMP Brush Pipe"
 msgstr "Paramètres"
 
 #: i18ndata:53
 #, fuzzy
 #| msgid "Filter"
+msgctxt "./data/brushes/LJF_Water_Brush_02.gih"
 msgid "LJF Water Brush 2"
 msgstr "Filtre"
 
 #: i18ndata:54
 #, fuzzy
 #| msgid "Filter"
+msgctxt "./data/brushes/LJF_Water_Brush_03.gih"
 msgid "LJF Water Brush 3"
 msgstr "Filtre"
 
 #: i18ndata:55
+msgctxt "./data/brushes/N_Grass_1.gih"
 msgid "N_Grass 1"
 msgstr ""
 
 #: i18ndata:56
+msgctxt "./data/brushes/N_Grass_2.gih"
 msgid "N_Grass 2"
 msgstr ""
 
 #: i18ndata:57
+msgctxt "./data/brushes/P_2B_Pencil_Angled.gih"
 msgid "P_2B Pencil  Angled"
 msgstr ""
 
 #: i18ndata:58
+msgctxt "./data/brushes/P_6B_Pencil_Angled.gih"
 msgid "P_6B Pencil  Angled"
 msgstr ""
 
 #: i18ndata:59
+msgctxt "./data/brushes/P_Graphite_Black_Grass.gih"
 msgid "P_Graphite Black Grass"
 msgstr ""
 
 #: i18ndata:60
+msgctxt "./data/brushes/P_Graphite_Pencil.gih"
 msgid "P_Graphite Pencil"
 msgstr ""
 
 #: i18ndata:61
+msgctxt "./data/brushes/P_Graphite_Pencil_grain.gih"
 msgid "P_Graphite Pencil _grain"
 msgstr ""
 
 #: i18ndata:62
+msgctxt "./data/brushes/P_Graphite_Pencil_grainb.gih"
 msgid "P_Graphite Pencil _grainb"
 msgstr ""
 
 #: i18ndata:63
+msgctxt "./data/brushes/P_RealPencil10x10.gih"
 msgid "P_Real Pencil 10x10"
 msgstr ""
 
 #: i18ndata:64
+msgctxt "./data/brushes/P_RealPencil16x16.gih"
 msgid "P_Real Pencil 16x16"
 msgstr ""
 
 #: i18ndata:65
+msgctxt "./data/brushes/S_splats_02.gih"
 msgid "S_Splats 2"
 msgstr ""
 
 #: i18ndata:66
+#, fuzzy
+#| msgid "Selection"
+msgctxt "./data/brushes/Sc_Scratch.gih"
 msgid "Sc_Scratch"
-msgstr ""
+msgstr "Seleccion"
 
 #: i18ndata:67
 #, fuzzy
 #| msgid "Fibers"
+msgctxt "./data/brushes/T_Fibers_1.gih"
 msgid "T_Fibers 1"
 msgstr "Fibras"
 
 #: i18ndata:68
 #, fuzzy
 #| msgid "Fibers"
+msgctxt "./data/brushes/T_Fibers_2.gih"
 msgid "T_Fibers 2"
 msgstr "Fibras"
 
 #: i18ndata:69
 #, fuzzy
 #| msgid "Text"
+msgctxt "./data/brushes/T_Texture_2.gih"
 msgid "T_Texture 2"
 msgstr "Tèxt"
 
 #: i18ndata:70
 #, fuzzy
 #| msgid "Text"
+msgctxt "./data/brushes/T_Texture_3.gih"
 msgid "T_Texture 3"
 msgstr "Tèxt"
 
 #: i18ndata:71
 #, fuzzy
 #| msgid "Text"
+msgctxt "./data/brushes/T_Texture_4.gih"
 msgid "T_Texture 4"
 msgstr "Tèxt"
 
 #: i18ndata:72
 #, fuzzy
 #| msgid "Text"
+msgctxt "./data/brushes/T_Texture_5.gih"
 msgid "T_Texture 5"
 msgstr "Tèxt"
 
 #: i18ndata:73
 #, fuzzy
 #| msgid "Text"
+msgctxt "./data/brushes/T_Texture_6.gih"
 msgid "T_Texture 6"
 msgstr "Tèxt"
 
 #: i18ndata:74
 #, fuzzy
 #| msgid "Text"
+msgctxt "./data/brushes/T_Texture_7.gih"
 msgid "T_Texture 7"
 msgstr "Tèxt"
 
 #: i18ndata:75
+msgctxt "./data/brushes/Te_Techno_1.gih"
 msgid "Te_Techno 1"
 msgstr ""
 
 #: i18ndata:76
+msgctxt "./data/brushes/V_Vyle_Rock.gih"
 msgid "Vyle Rock"
 msgstr ""
 
 #: i18ndata:77
+msgctxt "./data/brushes/z_study_pencil_2H.gih"
 msgid "Z_study pencil 2H"
 msgstr ""
 
 #: i18ndata:78
+msgctxt "./data/brushes/z_study_pencil_2H_horiz.gih"
 msgid "Z_study pencil 2H_horiz"
 msgstr ""
 
 #: i18ndata:79
+msgctxt "./data/brushes/z_study_pencil_2Hb.gih"
 msgid "2B pencil Grain 2 b"
 msgstr ""
 
 #: i18ndata:80
+msgctxt "./data/brushes/z_study_pencil_H.gih"
 msgid "Z_study pencil H"
 msgstr ""
 
 #: i18ndata:81
+msgctxt "./data/brushes/z_study_pencil_H_h.gih"
 msgid "Z_study pencil H_horiz"
 msgstr ""
 
 #: i18ndata:82
 #, fuzzy
 #| msgid "Pressure"
+msgctxt "./data/brushes/Z_Test-pressure.gih"
 msgid "Z- Test pressure"
 msgstr "Pression"
 
 #: i18ndata:83
+msgctxt "./data/brushes/A_abstract-textured1.gbr"
 msgid "A_abstract-textured1"
 msgstr ""
 
 #: i18ndata:84
+msgctxt "./data/brushes/A_abstract-textured2.gbr"
 msgid "A_abstract-textured2"
 msgstr ""
 
 #: i18ndata:85
+#, fuzzy
+#| msgid "Regular"
+msgctxt "./data/brushes/A_Angular_church.gbr"
 msgid "A_Angular_church"
-msgstr ""
+msgstr "Regulièr"
 
 #: i18ndata:86
+msgctxt "./data/brushes/A_Angular_church_HR.gbr"
 msgid "A_Angular_church_HR"
 msgstr ""
 
 #: i18ndata:87
+msgctxt "./data/brushes/A_bokey.gbr"
 msgid "A -52 Bokey"
 msgstr ""
 
 #: i18ndata:88
+msgctxt "./data/brushes/A_Braids.gbr"
 msgid "A_Braids.gbr"
 msgstr ""
 
 #: i18ndata:89
+msgctxt "./data/brushes/A_Braids_b.gbr"
 msgid "A_Braids_b"
 msgstr ""
 
 #: i18ndata:90
+msgctxt "./data/brushes/A_Chain.gbr"
 msgid "A_Chain"
 msgstr ""
 
 #: i18ndata:91
+msgctxt "./data/brushes/A_cloudy.gbr"
 msgid "A_cloudy"
 msgstr ""
 
 #: i18ndata:92
+msgctxt "./data/brushes/A_concrete.gbr"
 msgid "A_concrete"
 msgstr ""
 
 #: i18ndata:93
+msgctxt "./data/brushes/A_crackled.gbr"
 msgid "A_crackled"
 msgstr ""
 
 #: i18ndata:94
+msgctxt "./data/brushes/A_craqules.gbr"
 msgid "A_craqules"
 msgstr ""
 
 #: i18ndata:95
+msgctxt "./data/brushes/A_crayon.gbr"
 msgid "A_crayon"
 msgstr ""
 
 #: i18ndata:96
+msgctxt "./data/brushes/A_dirty-spot.gbr"
 msgid "A_dirty-spot"
 msgstr ""
 
 #: i18ndata:97
+msgctxt "./data/brushes/A_eroded-cercle_2.gbr"
 msgid "A_eroded-cercle_2"
 msgstr ""
 
 #: i18ndata:98
+msgctxt "./data/brushes/A_lucky_star.gbr"
 msgid "A-5 Lucky-star"
 msgstr ""
 
 #: i18ndata:99
+msgctxt "./data/brushes/A_mountain-texture.gbr"
 msgid "A_mountain-texture"
 msgstr ""
 
 #: i18ndata:100
+msgctxt "./data/brushes/A_Nice_sketch.gbr"
 msgid "A_Nice Sketch"
 msgstr ""
 
 #: i18ndata:101
+msgctxt "./data/brushes/A_Nice_sketch2.gbr"
 msgid "A_Nice Sketch2"
 msgstr ""
 
 #: i18ndata:102
+msgctxt "./data/brushes/A_provencal.gbr"
 msgid "A_provencal"
 msgstr ""
 
 #: i18ndata:103
+msgctxt "./data/brushes/A_Rake.gbr"
 msgid "A_Rake"
 msgstr ""
 
 #: i18ndata:104
+msgctxt "./data/brushes/A_random-vegetal3.gbr"
 msgid "A_random-vegetal3"
 msgstr ""
 
 #: i18ndata:105
+msgctxt "./data/brushes/A_reptile-skin.gbr"
 msgid "A_reptile-skin"
 msgstr ""
 
 #: i18ndata:106
+msgctxt "./data/brushes/A_smoke.gbr"
 msgid "A_smoke"
 msgstr ""
 
 #: i18ndata:107
+msgctxt "./data/brushes/A_sparkle1.gbr"
 msgid "A -2 Sparkle 1"
 msgstr ""
 
 #: i18ndata:108
+msgctxt "./data/brushes/A_sparkle2.gbr"
 msgid "A -2 Sparkle 2"
 msgstr ""
 
 #: i18ndata:109
+msgctxt "./data/brushes/A_sparkle3.gbr"
 msgid "A -2 Sparkle 3"
 msgstr ""
 
 #: i18ndata:110
+msgctxt "./data/brushes/A_splat1.gbr"
 msgid "A_splat1"
 msgstr ""
 
 #: i18ndata:111
+msgctxt "./data/brushes/A_starfield2.gbr"
 msgid "A_starfield2"
 msgstr ""
 
 #: i18ndata:112
+msgctxt "./data/brushes/C_Cloud_1.gbr"
 msgid "C_Cloud_1"
 msgstr ""
 
 #: i18ndata:113
+msgctxt "./data/brushes/C_Dirty_Spot.gbr"
 msgid "C_Dirty_Spot"
 msgstr ""
 
 #: i18ndata:114
+msgctxt "./data/brushes/D_Dust_1.gbr"
 msgid "C_Dust_1"
 msgstr ""
 
 #: i18ndata:115
 #, fuzzy
 #| msgid "Normal"
+msgctxt "./data/brushes/D_Normal_dust.gbr"
 msgid "D_Normal dust"
 msgstr "Normal"
 
 #: i18ndata:116
+msgctxt "./data/brushes/F_Furr_fast.gbr"
 msgid "F_Furr fast"
 msgstr ""
 
 #: i18ndata:117
+msgctxt "./data/brushes/L_Coroballs.gbr"
 msgid "L_Coroballs"
 msgstr ""
 
 #: i18ndata:118
+msgctxt "./data/brushes/L_Foliage_1.gbr"
 msgid "L_Foliage_1"
 msgstr ""
 
 #: i18ndata:119
+msgctxt "./data/brushes/L_Leaf_2.gbr"
 msgid "L_Leaf_2"
 msgstr ""
 
 #: i18ndata:120
+msgctxt "./data/brushes/L_Leaf_3.gbr"
 msgid "L_Leaf_3"
 msgstr ""
 
 #: i18ndata:121
+msgctxt "./data/brushes/LJF_Foliage_Brush_01.gbr"
 msgid "LJF_Foliage_Brush_01"
 msgstr ""
 
 #: i18ndata:122
+msgctxt "./data/brushes/LJF_Foliage_Brush_02.gbr"
 msgid "LJF_Foliage_Brush_02"
 msgstr ""
 
 #: i18ndata:123
+msgctxt "./data/brushes/M_01.gbr"
 msgid "M_01"
 msgstr ""
 
 #: i18ndata:124
+msgctxt "./data/brushes/M_02.gbr"
 msgid "M_02"
 msgstr ""
 
 #: i18ndata:125
+msgctxt "./data/brushes/M_03.gbr"
 msgid "M_03"
 msgstr ""
 
 #: i18ndata:126
+msgctxt "./data/brushes/M_04.gbr"
 msgid "M_04"
 msgstr ""
 
 #: i18ndata:127
+msgctxt "./data/brushes/M_05.gbr"
 msgid "M_05"
 msgstr ""
 
 #: i18ndata:128
+msgctxt "./data/brushes/M_06.gbr"
 msgid "M_06"
 msgstr ""
 
-#: i18ndata:129 i18ndata:130
+#: i18ndata:129
+msgctxt "./data/brushes/M_07.gbr"
+msgid "M_07"
+msgstr ""
+
+#: i18ndata:130
+msgctxt "./data/brushes/M_08.gbr"
 msgid "M_07"
 msgstr ""
 
 #: i18ndata:131
+msgctxt "./data/brushes/M_09.gbr"
 msgid "M_09"
 msgstr ""
 
 #: i18ndata:132
 #, fuzzy
 #| msgid "Arrow"
+msgctxt "./data/brushes/M_Arrow.gbr"
 msgid "M_Arrow"
 msgstr "Flècha"
 
 #: i18ndata:133
+msgctxt "./data/brushes/M_Bulb.gbr"
 msgid "M_Bulb"
 msgstr ""
 
 #: i18ndata:134
+msgctxt "./data/brushes/M_Cage.gbr"
 msgid "M_Cage"
 msgstr ""
 
 #: i18ndata:135
+msgctxt "./data/brushes/M_Pipe_1.gbr"
 msgid "M_Pipe_1"
 msgstr ""
 
 #: i18ndata:136
+msgctxt "./data/brushes/M_Pipe_2.gbr"
 msgid "M_Pipe_2"
 msgstr ""
 
 #: i18ndata:137
+msgctxt "./data/brushes/M_Pipe_3.gbr"
 msgid "M_Pipe_3"
 msgstr ""
 
 #: i18ndata:138
+msgctxt "./data/brushes/MZ_leaves.gbr"
 msgid "MZ_leaves"
 msgstr ""
 
 #: i18ndata:139
+msgctxt "./data/brushes/O_Oil_Soft.gbr"
 msgid "O_Oil Soft"
 msgstr ""
 
 #: i18ndata:140
+msgctxt "./data/brushes/O_Oils_1.gbr"
 msgid "O_Oils 1"
 msgstr ""
 
 #: i18ndata:141
+msgctxt "./data/brushes/O_Oils_1_GP.gbr"
 msgid "O_Oils 1 GP"
 msgstr ""
 
 #: i18ndata:142
+msgctxt "./data/brushes/O_Oils_Softer.gbr"
 msgid "O_Oils Softer"
 msgstr ""
 
 #: i18ndata:143
+msgctxt "./data/brushes/R_Rake1.gbr"
 msgid "R_Rake1"
 msgstr ""
 
 #: i18ndata:144
+msgctxt "./data/brushes/R_Rake2.gbr"
 msgid "R_Rake2"
 msgstr ""
 
 #: i18ndata:145
+msgctxt "./data/brushes/R_Rake3.gbr"
 msgid "R_Rake3"
 msgstr ""
 
 #: i18ndata:146
+msgctxt "./data/brushes/R_Rake4.gbr"
 msgid "R_Rake4"
 msgstr ""
 
 #: i18ndata:147
+msgctxt "./data/brushes/R_Rake_small.gbr"
 msgid "R_Rake_small"
 msgstr ""
 
 #: i18ndata:148
+#, fuzzy
+#| msgid "Text"
+msgctxt "./data/brushes/rake_textured_01.gbr"
 msgid "Rake_textured_01"
-msgstr ""
+msgstr "Tèxt"
 
 #: i18ndata:149
+msgctxt "./data/brushes/rake_textured_02.gbr"
 msgid "Rake_textured_02"
 msgstr ""
 
 #: i18ndata:150
+msgctxt "./data/brushes/Real_oil_1.gbr"
 msgid "Real Oil 1"
 msgstr ""
 
 #: i18ndata:151
+msgctxt "./data/brushes/Real_Oil_2.gbr"
 msgid "Real_Oil_2"
 msgstr ""
 
 #: i18ndata:152
+#, fuzzy
+#| msgid "View"
+msgctxt "./data/brushes/S_Smudge_Cheese.gbr"
 msgid "S_Smudge Cheese"
-msgstr ""
+msgstr "Visualizacion"
 
 #: i18ndata:153
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/brushes/Sc_Scratches.gbr"
 msgid "Sc_Scratches"
 msgstr "Seleccion"
 
 #: i18ndata:154
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/brushes/Sc_Scratches_2.gbr"
 msgid "Sc_Scratches2"
 msgstr "Seleccion"
 
 #: i18ndata:155
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/brushes/Sc_Scratches_3.gbr"
 msgid "Sc_Scratches3"
 msgstr "Seleccion"
 
 #: i18ndata:156
 #, fuzzy
 #| msgid "Text"
+msgctxt "./data/brushes/T_Texture_1.gbr"
 msgid "T_Texture_1"
 msgstr "Tèxt"
 
 #: i18ndata:157
+msgctxt "./data/brushes/Te_Techno_Angular_Cross.gbr"
 msgid "Te_Techno_Angular_Cross"
 msgstr ""
 
 #: i18ndata:158
+msgctxt "./data/brushes/U_Circle_circuit.gbr"
 msgid "U_Circle circuit"
 msgstr ""
 
 #: i18ndata:159
+msgctxt "./data/brushes/U_Circle_shape_1.gbr"
 msgid "U Circle shape 1"
 msgstr ""
 
 #: i18ndata:160
+msgctxt "./data/brushes/U_Circle_shape_2.gbr"
 msgid "U Circle shape 2"
 msgstr ""
 
 #: i18ndata:161
+msgctxt "./data/brushes/U_Circle_shape_3.gbr"
 msgid "U Circle shape 3"
 msgstr ""
 
 #: i18ndata:162
+msgctxt "./data/brushes/U_Circle_shape_4.gbr"
 msgid "U Circle shape 4"
 msgstr ""
 
 #: i18ndata:163
+msgctxt "./data/brushes/U_Circle_shape_5.gbr"
 msgid "U Circle shape 5"
 msgstr ""
 
 #: i18ndata:164
+msgctxt "./data/brushes/U_Circle_shape_5b.gbr"
 msgid "U Circle shape 5b"
 msgstr ""
 
 #: i18ndata:165
+msgctxt "./data/brushes/U_Circle_shape_5c.gbr"
 msgid "U Circle shape 5c"
 msgstr ""
 
 #: i18ndata:166
+msgctxt "./data/brushes/Z_Chain_1.gbr"
 msgid "Z_Chain_1"
 msgstr ""
 
 #: i18ndata:167
 #, fuzzy
 #| msgid "pixels"
+msgctxt "./data/brushes/Z_Pixel_1.gbr"
 msgid "Z_Pixel 1"
 msgstr "pixels"
 
 #: i18ndata:168
+#, fuzzy
+#| msgid "pixels"
+msgctxt "./data/brushes/Z_Pixel_4x4_rounded.gbr"
 msgid "Z_Pixel 4x4 rounded"
-msgstr ""
+msgstr "pixels"
 
 #: i18ndata:169
+#, fuzzy
+#| msgid "pixels"
+msgctxt "./data/brushes/Z_Pixel__4_pix__45a.gbr"
 msgid "Z_Pixel 4pix _45a"
-msgstr ""
+msgstr "pixels"
 
 #: i18ndata:170
 #, fuzzy
 #| msgid "pixels"
+msgctxt "./data/brushes/Z_Pixel_Cross.gbr"
 msgid "Z_Pixel Cross"
 msgstr "pixels"
 
 #: i18ndata:171
 #, fuzzy
 #| msgid "Triangle"
+msgctxt "./data/brushes/Z_Triangle_shape_1.gbr"
 msgid "Z_Triangle_shape_1"
 msgstr "Triangle"
 
 #: i18ndata:172
 #, fuzzy
 #| msgid "Triangle"
+msgctxt "./data/brushes/Z_Triangle_shape_2.gbr"
 msgid "Z_Triangle_shape_2"
 msgstr "Triangle"
 
 #: i18ndata:173
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/patterns/Canvas_covered.pat"
 msgid "Canvas Covered"
 msgstr "Seleccion"
 
 #: i18ndata:174
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/patterns/Canvas_Hard.pat"
 msgid "Canvas 01"
 msgstr "Seleccion"
 
 #: i18ndata:175
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/patterns/Canvas_small_01.pat"
 msgid "Canvas 02"
 msgstr "Seleccion"
 
 #: i18ndata:176
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/patterns/Canvas_small_02.pat"
 msgid "Canvas 03"
 msgstr "Seleccion"
 
 #: i18ndata:177
 #, fuzzy
 #| msgid "Selection"
+msgctxt "./data/patterns/Crumpled_Paper.pat"
 msgid "Canvas 04"
 msgstr "Seleccion"
 
 #: i18ndata:178
 #, fuzzy
 #| msgid "Pattern"
+msgctxt "./data/patterns/fractal_pattern.pat"
 msgid "Fractal Pattern"
 msgstr "Motiu"
 
 #: i18ndata:179
+msgctxt "./data/patterns/generic_paper1.pat"
 msgid "Generic Paper 2"
 msgstr ""
 
 #: i18ndata:180
+msgctxt "./data/patterns/generic_paper2.pat"
 msgid "Generic Paper 3"
 msgstr ""
 
 #: i18ndata:181
+msgctxt "./data/patterns/granite.pat"
 msgid "Granite 1b"
 msgstr ""
 
 #: i18ndata:182
+msgctxt "./data/patterns/hexacolBW__2.pat"
 msgid "Hexacol BW By Tarkan"
 msgstr ""
 
 #: i18ndata:183
 #, fuzzy
 #| msgid "Filter"
+msgctxt "./data/patterns/HR_PastelPaper_02.pat"
 msgid "HR Pastel Paper 02"
 msgstr "Filtre"
 
 #: i18ndata:184
+#, fuzzy
+#| msgid "Filter"
+msgctxt "./data/patterns/HR_Wall_Paper.pat"
 msgid "HR Wall Paper"
-msgstr ""
+msgstr "Filtre"
 
 #: image/brushengine/kis_paintop_factory.cpp:66
 #, fuzzy
@@ -1141,9 +1455,11 @@ msgstr "Autre"
 msgid "Generator"
 msgstr "General"
 
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: image/kis_adjustment_layer.cc:127
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:50
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:123
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/recorder/kis_recorded_filter_action_creator.cpp:59
 msgid "Filter"
@@ -1155,8 +1471,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, defaultRadioButton)
 #: image/kis_base_mask_generator.h:32
-#: image/kis_bookmarked_configuration_manager.cc:34
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:968
+#: ui/kis_bookmarked_configurations_model.cc:66
 msgid "Default"
 msgstr "Defaut"
 
@@ -1180,10 +1496,6 @@ msgstr ""
 #: plugins/extensions/dockers/channeldocker/channelmodel.cpp:68
 #: ui/kis_node_model.cpp:421
 msgid "Locked"
-msgstr ""
-
-#: image/kis_bookmarked_configuration_manager.cc:35
-msgid "Last used"
 msgstr ""
 
 #: image/kis_clone_layer.cpp:264
@@ -1315,7 +1627,7 @@ msgstr "Filtre"
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:918 ui/kis_layer_manager.cc:710
+#: image/kis_image.cc:918 ui/kis_layer_manager.cc:716
 msgid "Flatten Image"
 msgstr ""
 
@@ -1352,12 +1664,12 @@ msgstr "%1%"
 msgid "Composite Mode"
 msgstr ""
 
-#: image/kis_paint_layer.cc:153 image/kis_paint_layer.cc:162
+#: image/kis_paint_layer.cc:151 image/kis_paint_layer.cc:160
 #: ui/kis_node_model.cpp:429
 msgid "Alpha Locked"
 msgstr ""
 
-#: image/kis_paint_layer.cc:154 image/kis_paint_layer.cc:165
+#: image/kis_paint_layer.cc:152 image/kis_paint_layer.cc:163
 msgid "Inherit Alpha"
 msgstr ""
 
@@ -1498,7 +1810,7 @@ msgid "Play macro"
 msgstr ""
 
 #: image/recorder/kis_macro_player.cc:81
-#: plugins/extensions/bigbrother/bigbrother.cc:134
+#: plugins/extensions/bigbrother/bigbrother.cc:124
 msgid "Playing back macro"
 msgstr ""
 
@@ -1541,97 +1853,34 @@ msgstr "Ellipsa"
 msgid "Rectangle"
 msgstr "Rectangle"
 
-#. i18n: ectx: Menu (file)
-#: krita.rc:6
-#, fuzzy
-#| msgid "Filter"
-msgid "&File"
-msgstr "Filtre"
+#: kis_splash_screen.cpp:55
+msgid ""
+"<html><head/><body><p align=\"center\"><b>Links</b></p><p><a href=\"http://"
+"krita.org/support-krita#general\"><span style=\" text-decoration: underline; "
+"color:#FFFFFF;\">Donations</span></a></p><p><a href=\"http://www.zazzle.com/"
+"kritashop\"><span style=\" text-decoration: underline; color:#FFFFFF;"
+"\">Merchandise</span></a></p><p><a href=\"http://krita.org/resources\"><span "
+"style=\" text-decoration: underline; color:#FFFFFF;\">Getting Started</"
+"span></a></p><p><a href=\"http://krita.org\"><span style=\" text-decoration: "
+"underline; color:#FFFFFF;\">Krita Website</span></a></p><p><a href=\"http://"
+"forum.kde.org/viewforum.php?f=136\"><span style=\" text-decoration: "
+"underline; color:#FFFFFF;\">User Community</span></a></p><p><a href="
+"\"https://projects.kde.org/projects/calligra\"><span style=\" text-"
+"decoration: underline; color:#FFFFFF;\">Source Code</span></a></p><p><a href="
+"\"http://kritastudio.com\"><span style=\" text-decoration: underline; color:"
+"#FFFFFF;\">Commercial Support</span></a></p><p><a href=\"http://store."
+"steampowered.com/app/280680/\"><span style=\" text-decoration: underline; "
+"color:#FFFFFF;\">Krita on Steam</span></a></p></body></html>"
+msgstr ""
 
-#. i18n: ectx: Menu (Edit)
-#: krita.rc:13
-msgid "&Edit"
-msgstr "&Edicion"
+#: kis_splash_screen.cpp:75
+#, fuzzy, kde-format
+#| msgid "Resolution:"
+msgid "Version: %1"
+msgstr "Resolucion :"
 
-#. i18n: ectx: Menu (Resources)
-#: krita.rc:31
-#, fuzzy
-#| msgid "Source"
-msgid "&Resources"
-msgstr "Sorga"
-
-#. i18n: ectx: Menu (View)
-#: krita.rc:40
-msgid "&View"
-msgstr "Aficha&tge"
-
-#. i18n: ectx: Menu (view_fast_grid_config)
-#: krita.rc:60
-#, fuzzy
-#| msgid "Spacing"
-msgid "Grid Spacing"
-msgstr "Espaciament"
-
-#. i18n: ectx: Menu (Image)
-#: krita.rc:80
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:4
-#: plugins/extensions/offsetimage/offsetimage.rc:5
-#: plugins/extensions/rotateimage/rotateimage.rc:4
-#: plugins/extensions/shearimage/shearimage.rc:4
-#, fuzzy
-#| msgid "Image"
-msgid "&Image"
-msgstr "Imatge"
-
-#. i18n: ectx: Menu (Layer)
-#: krita.rc:91 plugins/extensions/histogram/histogram.rc:4
-#, fuzzy
-#| msgid "Layer"
-msgid "&Layer"
-msgstr "Jaç"
-
-#. i18n: ectx: Menu (LayerNew)
-#: krita.rc:92
-msgid "New"
-msgstr "Novèl"
-
-#. i18n: ectx: Menu (LayerConvert)
-#: krita.rc:101
-#, fuzzy
-#| msgid "Invert"
-msgid "Convert"
-msgstr "Enversar"
-
-#. i18n: ectx: property (text), widget (QPushButton, bnSelect)
-#. i18n: ectx: Menu (Select)
-#: krita.rc:126 plugins/extensions/colorrange/wdg_colorrange.ui:131
-#: plugins/extensions/imagesize/imagesize.rc:12
-#: plugins/extensions/modify_selection/modify_selection.rc:4
-#, fuzzy
-#| msgid "Select"
-msgid "&Select"
-msgstr "Seleccionar"
-
-#. i18n: ectx: Menu (Filter)
-#: krita.rc:139
-#, fuzzy
-#| msgid "Filter"
-msgid "Filte&r"
-msgstr "Filtre"
-
-#. i18n: ectx: Menu (Tools)
-#: krita.rc:156
-msgid "&Tools"
-msgstr "&Espleches"
-
-#. i18n: ectx: Menu (settings)
-#: krita.rc:159
-msgid "Settings"
-msgstr "Paramètres"
-
-#. i18n: ectx: ToolBar (BrushesAndStuff)
-#: krita.rc:172
-msgid "Brushes and Stuff"
+#: kis_splash_screen.cpp:80
+msgid "<html><head/><body><p align=\"center\"><b>Recent Files</b></p>"
 msgstr ""
 
 #: main.cc:78
@@ -1669,15 +1918,21 @@ msgstr "OpenGL"
 msgid "Ellipse assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:493
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:443
+#, fuzzy
+#| msgid "Ellipse"
+msgid "Select an Assistant"
+msgstr "Ellipsa"
+
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:528
+msgid "Errors were encountered. Not all assistants were successfully loaded."
+msgstr ""
+
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:573
 #, fuzzy
 #| msgid "Ellipse"
 msgid "Save Assistant"
 msgstr "Ellipsa"
-
-#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:589
-msgid "Errors were encountered. Not all assistants were successfully loaded."
-msgstr ""
 
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:101
 msgid "Ruler assistant editor tool"
@@ -1713,45 +1968,6 @@ msgstr ""
 #| msgid "Sine"
 msgid "Spline"
 msgstr "Sinus"
-
-#: plugins/colorspaces/extensions/kis_burnhighlights_adjustment.cpp:98
-msgid "BurnHighlights Adjustment"
-msgstr ""
-
-#: plugins/colorspaces/extensions/kis_burnmidtones_adjustment.cpp:98
-msgid "BurnMidtones Adjustment"
-msgstr ""
-
-#: plugins/colorspaces/extensions/kis_burnshadows_adjustment.cpp:106
-msgid "BurnShadows Adjustment"
-msgstr ""
-
-#: plugins/colorspaces/extensions/kis_color_balance_adjustment.cpp:168
-msgid "ColorBalanceMidtones Adjustment"
-msgstr ""
-
-#: plugins/colorspaces/extensions/kis_desaturate_adjustment.cpp:152
-#, fuzzy
-#| msgid "Saturation"
-msgid "Desaturate Adjustment"
-msgstr "Saturacion"
-
-#: plugins/colorspaces/extensions/kis_dodgehighlights_adjustment.cpp:99
-msgid "DODGE Adjustment"
-msgstr ""
-
-#: plugins/colorspaces/extensions/kis_dodgemidtones_adjustment.cpp:101
-msgid "DodgeMidtones Adjustment"
-msgstr ""
-
-#: plugins/colorspaces/extensions/kis_dodgeshadows_adjustment.cpp:103
-msgid "DodgeShadows Adjustment"
-msgstr ""
-
-#: plugins/colorspaces/extensions/kis_hsv_adjustment.cpp:231
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.h:51
-msgid "HSV/HSL Adjustment"
-msgstr ""
 
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:109
 msgid "Failed to create an action."
@@ -1831,24 +2047,20 @@ msgid "Open and edit..."
 msgstr ""
 
 #: plugins/extensions/bigbrother/bigbrother.cc:99
-msgid "Save all actions"
-msgstr ""
-
-#: plugins/extensions/bigbrother/bigbrother.cc:104
 msgid "Start recording macro"
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:109
+#: plugins/extensions/bigbrother/bigbrother.cc:104
 msgid "Stop recording actions"
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:198
+#: plugins/extensions/bigbrother/bigbrother.cc:188
 #, fuzzy
 #| msgid "Macro"
 msgid "Open Macro"
 msgstr "Macrò"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:237
+#: plugins/extensions/bigbrother/bigbrother.cc:226
 #, fuzzy
 #| msgid "Macro"
 msgid "Save Macro"
@@ -1860,7 +2072,7 @@ msgid "Recording"
 msgstr ""
 
 #. i18n: ectx: Menu (Macros)
-#: plugins/extensions/bigbrother/bigbrother.rc:11
+#: plugins/extensions/bigbrother/bigbrother.rc:9
 #, fuzzy
 #| msgid "Macro"
 msgid "Macros"
@@ -2305,7 +2517,7 @@ msgstr "Cort"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:24
-#: ui/dialogs/kis_dlg_preferences.cc:617 ui/dialogs/kis_dlg_preferences.cc:618
+#: ui/dialogs/kis_dlg_preferences.cc:639 ui/dialogs/kis_dlg_preferences.cc:640
 msgid "General"
 msgstr "General"
 
@@ -2546,7 +2758,7 @@ msgstr "&Visualizacion"
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:693
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:214
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:97
-#: ui/forms/wdgdisplaysettings.ui:67 ui/kis_paintop_box.cc:152
+#: ui/forms/wdgdisplaysettings.ui:77 ui/kis_paintop_box.cc:152
 #, fuzzy
 #| msgid "Size"
 msgid "Size:"
@@ -2740,35 +2952,35 @@ msgstr "Canal"
 msgid "Enabled"
 msgstr "activat"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:48
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:49
 #, fuzzy
 #| msgid "Options"
 msgid "Compositions"
 msgstr "Opcions"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:59
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:60
 #, fuzzy
 #| msgid "Partial"
 msgid "Delete Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:60
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:61
 #, fuzzy
 #| msgid "Partial"
 msgid "New Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:61
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:62
 #, fuzzy
 #| msgid "Partial"
 msgid "Export Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:73
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:74
 msgid "Insert Name"
 msgstr ""
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:149
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:150
 #, fuzzy
 #| msgid "Select All"
 msgid "Select a Directory"
@@ -2822,18 +3034,20 @@ msgstr "Propietats..."
 msgid "&Select Opaque"
 msgstr "Seleccion"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:458
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:459
 #: ui/kis_layer_manager.cc:285
 msgid "&Merge with Layer Below"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:462
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:463
 #, fuzzy
 #| msgid "Invert"
 msgid "&Convert"
 msgstr "Enversar"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:38
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:68
 msgid "Palettes"
 msgstr "Paletas"
 
@@ -3051,13 +3265,13 @@ msgstr ""
 msgid "Save flipbook"
 msgstr ""
 
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:193
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:264
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:192
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:261
 #: ui/widgets/KisFlipbookSelector.cpp:50
 msgid "Select files to add to flipbook"
 msgstr ""
 
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:232
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:230
 msgid "Load flipbook"
 msgstr ""
 
@@ -3192,7 +3406,7 @@ msgid "All Channels"
 msgstr "Canal"
 
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:281
-#: ui/dialogs/kis_dlg_preferences.cc:353
+#: ui/dialogs/kis_dlg_preferences.cc:356
 #, fuzzy
 #| msgid "Saturation:"
 msgid "Select OpenColorIO Configuration"
@@ -3277,12 +3491,12 @@ msgstr "Visualizacion"
 msgid "Overview"
 msgstr "Resumit"
 
-#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:89
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:299
+#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:115
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:294
 msgid "Palette"
 msgstr "Paleta"
 
-#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:135
+#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:159
 #, fuzzy
 #| msgid "Filter"
 msgid "Choose palette"
@@ -3309,7 +3523,9 @@ msgstr "Color de fons"
 msgid "Add color"
 msgstr "Seleccion"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: plugins/extensions/dockers/patterndocker/patterndocker_dock.cpp:37
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:73
 #: ui/kis_control_frame.cpp:151
 #, fuzzy
 #| msgid "Pattern"
@@ -3435,7 +3651,7 @@ msgstr "Vertical :"
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:511
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:694
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:871
-#: ui/forms/wdgdisplaysettings.ui:32 ui/forms/wdgdisplaysettings.ui:103
+#: ui/forms/wdgdisplaysettings.ui:32 ui/forms/wdgdisplaysettings.ui:113
 msgid "Color:"
 msgstr "Color :"
 
@@ -3475,9 +3691,11 @@ msgstr ""
 msgid "Apply G'Mic Action..."
 msgstr ""
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSplash)
 #: plugins/extensions/gmic/kis_gmic_plugin.cpp:129
 #: plugins/extensions/gmic/kis_gmic_plugin.cpp:138
-#: ui/dialogs/kis_dlg_preferences.cc:789 ui/kis_aboutdata.h:58
+#: ui/dialogs/kis_dlg_preferences.cc:811 ui/kis_aboutdata.h:44
+#: wdgsplash.ui:300
 msgid "Krita"
 msgstr ""
 
@@ -3903,8 +4121,10 @@ msgstr "Visualizacion"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editExposureMode)
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
+#. i18n: ectx: property (text), widget (QCheckBox, autoPrecisionCheckBox)
 #: plugins/extensions/metadataeditor/editors/exif.ui:101
 #: plugins/extensions/metadataeditor/editors/exif.ui:919
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:88
 msgid "Auto"
 msgstr "Auto"
 
@@ -4087,7 +4307,7 @@ msgstr "Filtre"
 #: plugins/extensions/metadataeditor/editors/exif.ui:432
 #: plugins/generators/pattern/patterngenerator.h:53
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:59
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:122
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:136
 #: plugins/tools/tool_text/wdgtextoptions.ui:48
 #: ui/forms/wdgdlgblacklistcleanup.ui:83 ui/forms/wdgshapeoptions.ui:72
 msgid "Pattern"
@@ -4520,7 +4740,7 @@ msgid "Date"
 msgstr "Data :"
 
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:68
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:397
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:389
 msgid "Number"
 msgstr "Nombre"
 
@@ -4605,11 +4825,10 @@ msgstr "Paramètres"
 msgid "Feather Selection..."
 msgstr "Seleccion"
 
-#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
 #: plugins/extensions/modify_selection/modify_selection.cc:78
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
 #, fuzzy
 #| msgid "Random"
+msgctxt "Verb for a selection modification action"
 msgid "Smooth"
 msgstr "Aleatòri"
 
@@ -4792,7 +5011,7 @@ msgstr "Personalizat"
 msgid "Separate Image"
 msgstr ""
 
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:243
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:241
 msgid "Export Layer"
 msgstr ""
 
@@ -5135,7 +5354,7 @@ msgstr "Canal"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/colors/wdgcolortoalphabase.ui:64
-#: plugins/filters/unsharp/wdgunsharp.ui:61
+#: plugins/filters/unsharp/wdgunsharp.ui:103
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:139
 #, fuzzy
@@ -5195,7 +5414,11 @@ msgstr ""
 msgid "Lightness"
 msgstr "Luminositat"
 
-#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:445
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.h:51
+msgid "HSV/HSL Adjustment"
+msgstr ""
+
+#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:466
 msgid "&Color Adjustment curves..."
 msgstr ""
 
@@ -5253,8 +5476,10 @@ msgstr "Vèrd"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #. i18n: ectx: property (text), widget (QLabel, label_21)
+#. i18n: ectx: property (text), widget (QLabel, label_14)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:68
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:168
+#: plugins/filters/colorsfilters/wdg_color_balance.ui:268
 msgid "Yellow"
 msgstr ""
 
@@ -5276,8 +5501,10 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_17)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:99
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:151
+#: plugins/filters/colorsfilters/wdg_color_balance.ui:251
 msgid "Cyan"
 msgstr ""
 
@@ -5288,22 +5515,12 @@ msgstr ""
 msgid "Reset Midtones  "
 msgstr "Rotacion"
 
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: plugins/filters/colorsfilters/wdg_color_balance.ui:251
-msgid "     Cyan"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QPushButton, pushResetHighlights)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:261
 #, fuzzy
 #| msgid "Height:"
 msgid "Reset Highlights"
 msgstr "Nautor :"
-
-#. i18n: ectx: property (text), widget (QLabel, label_14)
-#: plugins/filters/colorsfilters/wdg_color_balance.ui:268
-msgid "    Yellow"
-msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkPreserveLuminosity)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:336
@@ -5363,10 +5580,12 @@ msgstr ""
 msgid "&Saturation:"
 msgstr "Saturacion :"
 
+#. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, lblType)
 #: plugins/filters/colorsfilters/wdg_hsv_adjustment.ui:109
 #: plugins/formats/ppm/kis_wdg_options_ppm.ui:17
+#: ui/forms/wdgimageproperties.ui:150
 #, fuzzy
 #| msgid "&Type"
 msgid "Type:"
@@ -5606,7 +5825,7 @@ msgstr ""
 msgid "Logarithmic"
 msgstr ""
 
-#: plugins/filters/noisefilter/noisefilter.cpp:68
+#: plugins/filters/noisefilter/noisefilter.cpp:69
 msgid "&Random Noise..."
 msgstr ""
 
@@ -5632,7 +5851,6 @@ msgstr ""
 #: plugins/paintops/gridbrush/kis_gridop_option.cpp:33
 #: plugins/paintops/particle/kis_particleop_option.cpp:36
 #: plugins/paintops/sketch/kis_sketchop_option.cpp:32
-#: plugins/paintops/spray/kis_sprayop_option.cpp:37
 msgid "Brush size"
 msgstr ""
 
@@ -5836,11 +6054,11 @@ msgstr ""
 msgid "&Raindrops..."
 msgstr ""
 
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:396
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:388
 msgid "Drop size"
 msgstr ""
 
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:398
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:390
 msgid "Fish eyes"
 msgstr ""
 
@@ -5913,24 +6131,35 @@ msgstr ""
 msgid "&Unsharp Mask..."
 msgstr ""
 
-#: plugins/filters/unsharp/kis_unsharp_filter.cpp:80
+#: plugins/filters/unsharp/kis_unsharp_filter.cpp:81
 #: plugins/filters/unsharp/kis_unsharp_filter.h:39
 msgid "Unsharp Mask"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/filters/unsharp/wdgunsharp.ui:29
+#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
+#. i18n: ectx: property (text), widget (QLabel, lbl_diameter)
+#: plugins/filters/unsharp/wdgunsharp.ui:23
+#: plugins/paintops/chalk/wdgchalkoptions.ui:40
+#: plugins/paintops/mypaint/wdgmypaintoptions.ui:29
 #, fuzzy
-#| msgid "Size"
-msgid "Half-Size:"
-msgstr "Talha"
+#| msgid "Partial"
+msgid "Radius:"
+msgstr "parcial"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/filters/unsharp/wdgunsharp.ui:80
+#: plugins/filters/unsharp/wdgunsharp.ui:68
 #, fuzzy
 #| msgid "Count"
 msgid "Amount:"
 msgstr "Comptar"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/filters/unsharp/wdgunsharp.ui:126
+#, fuzzy
+#| msgid "Brightness"
+msgid "Lightness Only:"
+msgstr "Luminositat"
 
 #: plugins/filters/wavefilter/wavefilter.cpp:103
 msgid "&Wave..."
@@ -6028,7 +6257,7 @@ msgstr "Opcions"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/formats/jp2/kis_wdg_options_jp2.ui:19
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:29
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:70
 #, fuzzy
 #| msgid "Properties:"
 msgid "Compression"
@@ -6036,7 +6265,7 @@ msgstr "Propietats :"
 
 #. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
 #: plugins/formats/jp2/kis_wdg_options_jp2.ui:26
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:36
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:77
 msgid ""
 "<html><head/><body><p>These settings determine how much information is lost "
 "during compression. Low: small files, bad quality. High: big files, good "
@@ -6057,7 +6286,7 @@ msgid ""
 "Will save as RGB."
 msgstr ""
 
-#: plugins/formats/jpeg/kis_jpeg_export.cc:81
+#: plugins/formats/jpeg/kis_jpeg_export.cc:83
 msgid "JPEG Export Options"
 msgstr ""
 
@@ -6067,7 +6296,7 @@ msgid "Basic"
 msgstr "Basic"
 
 #. i18n: ectx: property (text), widget (QCheckBox, progressive)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:82
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:40
 #, fuzzy
 #| msgid "Pressure"
 msgctxt "A progressive jpeg file can be displayed while loading."
@@ -6075,31 +6304,37 @@ msgid "Progressive"
 msgstr "Pression"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:91
-#: plugins/formats/png/kis_wdg_options_png.ui:178
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:49
+#: plugins/formats/png/kis_wdg_options_png.ui:156
 msgid "Transparent pixel fill color:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, bnTransparencyFillColor)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:101
-#: plugins/formats/png/kis_wdg_options_png.ui:188
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:59
+#: plugins/formats/png/kis_wdg_options_png.ui:166
 msgid ""
 "<html><head/><body><p>Background color to replace transparent pixels with.</"
 "p></body></html>"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QCheckBox, chkForceSRGB)
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:123
+#: plugins/formats/png/kis_wdg_options_png.ui:214
+msgid "Force convert to sRGB"
+msgstr ""
+
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:124
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:131
 msgid "Advanced quality"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, optimize)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:130
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:137
 msgid "Optimize"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:142
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:149
 #, fuzzy
 #| msgid "Random"
 msgctxt "the result will be artificially smoothed to hide jpeg artefacts"
@@ -6107,68 +6342,68 @@ msgid "Smooth:"
 msgstr "Aleatòri"
 
 #. i18n: ectx: property (text), widget (QCheckBox, baseLineJPEG)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:170
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:177
 msgid "Force baseline JPEG"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:182
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:189
 #, fuzzy
 #| msgid "Spacing"
 msgid "Subsampling:"
 msgstr "Espaciament"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:193
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:200
 msgid "2x2, 1x1, 1x1 (smallest file)"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:198
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:205
 msgid "2x1, 1x1, 1x1"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:203
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:210
 msgid "1x2, 1x1, 1x1"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:208
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:215
 msgid "1x1, 1x1, 1x1 (best quality)"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:219
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:226
 msgid "Metadata"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:225
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:232
 #, fuzzy
 #| msgid "Normal"
 msgid "Formats:"
 msgstr "Normal"
 
 #. i18n: ectx: property (text), widget (QCheckBox, exif)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:231
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:238
 #: ui/kisexiv2/kis_exif_io.h:35
 msgid "Exif"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, iptc)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:241
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:248
 msgid "IPTC"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, xmp)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:251
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:258
 #: ui/kisexiv2/kis_xmp_io.h:35
 msgid "XMP"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:277
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:284
 #, fuzzy
 #| msgid "Filter"
 msgid "Filters:"
@@ -6291,14 +6526,57 @@ msgstr ""
 msgid "PNG Options"
 msgstr "Opcions"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#: plugins/formats/png/kis_wdg_options_png.ui:20
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:158
+msgid "Disable to get smaller files if your image has no transparency"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
+#: plugins/formats/png/kis_wdg_options_png.ui:24
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:162
+msgid ""
+"<p>The Portable Network Graphics (PNG) file format allows transparency in "
+"your image to be stored by saving an alpha channel.\n"
+"You can uncheck the box if you are not using transparency and you want to "
+"make the resulting file smaller .<br>Always saving the alpha channel is "
+"recommended.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, alpha)
+#: plugins/formats/png/kis_wdg_options_png.ui:27
+msgid "Store alpha channel (transparency)"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
+#: plugins/formats/png/kis_wdg_options_png.ui:37
+msgid "Use interlacing when publishing on the Internet."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
+#: plugins/formats/png/kis_wdg_options_png.ui:41
+msgid ""
+"<p>Interlacing is useful if you intend to publish your image on the Internet."
+"<br>\n"
+"Enabling interlacing will cause the image to be displayed by the browser "
+"even while downloading.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
+#: plugins/formats/png/kis_wdg_options_png.ui:44
+#, fuzzy
+#| msgid "Resolution:"
+msgid "Interlacing"
+msgstr "Resolucion :"
+
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_4)
 #. i18n: ectx: property (toolTip), widget (QSlider, compressionLevelDeflate)
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_4_2)
 #. i18n: ectx: property (toolTip), widget (QSlider, compressionLevelPixarLog)
 #. i18n: ectx: property (toolTip), widget (QSlider, compressionLevel)
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1)
-#: plugins/formats/png/kis_wdg_options_png.ui:37
-#: plugins/formats/png/kis_wdg_options_png.ui:63
+#: plugins/formats/png/kis_wdg_options_png.ui:59
+#: plugins/formats/png/kis_wdg_options_png.ui:85
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:369
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:391
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:554
@@ -6318,12 +6596,12 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3)
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
-#: plugins/formats/png/kis_wdg_options_png.ui:41
-#: plugins/formats/png/kis_wdg_options_png.ui:67
-#: plugins/formats/png/kis_wdg_options_png.ui:81
-#: plugins/formats/png/kis_wdg_options_png.ui:95
-#: plugins/formats/png/kis_wdg_options_png.ui:106
-#: plugins/formats/png/kis_wdg_options_png.ui:120
+#: plugins/formats/png/kis_wdg_options_png.ui:63
+#: plugins/formats/png/kis_wdg_options_png.ui:89
+#: plugins/formats/png/kis_wdg_options_png.ui:103
+#: plugins/formats/png/kis_wdg_options_png.ui:117
+#: plugins/formats/png/kis_wdg_options_png.ui:128
+#: plugins/formats/png/kis_wdg_options_png.ui:142
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:373
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:395
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:423
@@ -6341,7 +6619,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/formats/png/kis_wdg_options_png.ui:70
+#: plugins/formats/png/kis_wdg_options_png.ui:92
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:376
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:561
 #, fuzzy
@@ -6350,7 +6628,7 @@ msgid "Compress:"
 msgstr "Propietats :"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
-#: plugins/formats/png/kis_wdg_options_png.ui:84
+#: plugins/formats/png/kis_wdg_options_png.ui:106
 #, fuzzy
 #| msgid "&Show"
 msgctxt "The compression will take a long time; saving the file will be slow."
@@ -6358,7 +6636,7 @@ msgid "Slow"
 msgstr "&Visualizacion"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/formats/png/kis_wdg_options_png.ui:98
+#: plugins/formats/png/kis_wdg_options_png.ui:120
 #, fuzzy
 #| msgid "Flash"
 msgctxt "The file will save fast but will not be compressed a lot"
@@ -6366,7 +6644,7 @@ msgid "Fast"
 msgstr "Clucatejar"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: plugins/formats/png/kis_wdg_options_png.ui:109
+#: plugins/formats/png/kis_wdg_options_png.ui:131
 #, fuzzy
 #| msgid "Smart"
 msgctxt "the file will be small"
@@ -6374,68 +6652,25 @@ msgid "Small"
 msgstr "Smart"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: plugins/formats/png/kis_wdg_options_png.ui:123
+#: plugins/formats/png/kis_wdg_options_png.ui:145
 msgctxt "the file will be big"
 msgid "Big"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
-#: plugins/formats/png/kis_wdg_options_png.ui:132
-msgid "Use interlacing when publishing on the Internet."
-msgstr ""
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
-#: plugins/formats/png/kis_wdg_options_png.ui:136
-msgid ""
-"<p>Interlacing is useful if you intend to publish your image on the Internet."
-"<br>\n"
-"Enabling interlacing will cause the image to be displayed by the browser "
-"even while downloading.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
-#: plugins/formats/png/kis_wdg_options_png.ui:139
-#, fuzzy
-#| msgid "Resolution:"
-msgid "Interlacing"
-msgstr "Resolucion :"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
-#: plugins/formats/png/kis_wdg_options_png.ui:146
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:158
-msgid "Disable to get smaller files if your image has no transparency"
-msgstr ""
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
-#: plugins/formats/png/kis_wdg_options_png.ui:150
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:162
-msgid ""
-"<p>The Portable Network Graphics (PNG) file format allows transparency in "
-"your image to be stored by saving an alpha channel.\n"
-"You can uncheck the box if you are not using transparency and you want to "
-"make the resulting file smaller .<br>Always saving the alpha channel is "
-"recommended.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/formats/png/kis_wdg_options_png.ui:153
-msgid "Store alpha channel (transparency)"
-msgstr ""
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/formats/png/kis_wdg_options_png.ui:163
+#: plugins/formats/png/kis_wdg_options_png.ui:191
 msgid ""
 "Indexed PNG images are smaller. If you enabled this option, your image will "
 "be analyzed to see whether it is possible to save as an indexed PNG."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/formats/png/kis_wdg_options_png.ui:166
+#: plugins/formats/png/kis_wdg_options_png.ui:194
 msgid "Save as indexed PNG, if possible"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkSRGB)
-#: plugins/formats/png/kis_wdg_options_png.ui:213
+#: plugins/formats/png/kis_wdg_options_png.ui:204
 msgid ""
 "<html><head/><body><p><span style=\" font-weight:600;\">PNG</span> files "
 "have <span style=\" font-style:italic;\">two</span> options to save <span "
@@ -6447,8 +6682,8 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkSRGB)
-#: plugins/formats/png/kis_wdg_options_png.ui:216
-msgid "save sRGB profile"
+#: plugins/formats/png/kis_wdg_options_png.ui:207
+msgid "Embed sRGB profile"
 msgstr ""
 
 #: plugins/formats/ppm/kis_ppm_export.cpp:155
@@ -6716,7 +6951,7 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpMode)
 #: plugins/generators/solid/colorgenerator.h:53
-#: ui/dialogs/kis_dlg_preferences.cc:634 ui/forms/wdgnewimage.ui:361
+#: ui/dialogs/kis_dlg_preferences.cc:656 ui/forms/wdgnewimage.ui:361
 #: ui/kis_paintop_option.cpp:31
 msgid "Color"
 msgstr "Color"
@@ -6726,15 +6961,6 @@ msgstr "Color"
 #| msgid "Custom"
 msgid "Chalk brush"
 msgstr "Personalizat"
-
-#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
-#. i18n: ectx: property (text), widget (QLabel, lbl_diameter)
-#: plugins/paintops/chalk/wdgchalkoptions.ui:40
-#: plugins/paintops/mypaint/wdgmypaintoptions.ui:29
-#, fuzzy
-#| msgid "Partial"
-msgid "Radius:"
-msgstr "parcial"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inkTab)
 #. i18n: ectx: property (text), widget (QCheckBox, inkDepletionCHBox)
@@ -6766,25 +6992,37 @@ msgstr "Saturacion"
 msgid "Color Smudge Brush"
 msgstr "Personalizat"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
 #| msgid "View"
 msgid "Smudge Length"
 msgstr "Visualizacion"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
 #| msgid "Length:"
 msgid "Length: "
 msgstr "Longor :"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#, fuzzy
+#| msgid "Vertical:"
+msgid "Smudge Radius"
+msgstr "Vertical :"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#, fuzzy
+#| msgid "Partial"
+msgid "Radius: "
+msgstr "parcial"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:54
 #, fuzzy
 #| msgid "Selection"
 msgid "Color Rate"
 msgstr "Seleccion"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:54
 #: plugins/paintops/libpaintop/kis_pressure_rate_option_widget.cpp:38
 #, fuzzy
 #| msgid "Date:"
@@ -7170,6 +7408,14 @@ msgstr "Saturacion"
 msgid "Speed"
 msgstr "Papièr"
 
+#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
+#, fuzzy
+#| msgid "Random"
+msgctxt "Noun for an experiment brush shape smoothness"
+msgid "Smooth"
+msgstr "Aleatòri"
+
 #. i18n: ectx: property (text), widget (QLabel, lblPostprocessing)
 #: plugins/paintops/experiment/wdgexperimentoptions.ui:89
 msgid "Post-processing"
@@ -7302,7 +7548,7 @@ msgstr ""
 #: plugins/paintops/gridbrush/wdggridoptions.ui:114
 #: plugins/paintops/hairy/wdgbristleoptions.ui:40
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:99
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:72
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:75
 #: plugins/paintops/spray/wdgsprayoptions.ui:166
 #, fuzzy
 #| msgid "Scales"
@@ -7748,8 +7994,41 @@ msgstr "Aleatòri"
 msgid "Spacing:"
 msgstr "Espaciament"
 
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:95
+msgid ""
+"Use to set the size from which the Automatic Precision Setting should begin. "
+"The Precision will remain 5 before this value."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:98
+msgid "Size to Start From"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:108
+msgid ""
+"This determines every interval after which the precision should change. For "
+"example : if the delta alue is set to be 15.00, after every 15 pts change in "
+"the size of brush, the precision will change"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:111
+#, fuzzy
+#| msgid "Value:"
+msgid "Delta Value :"
+msgstr "Valor :"
+
+#. i18n: ectx: property (text), widget (QLabel, lblPrecisionValue)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:121
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fade.cpp:31
+msgid "0"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, lblPrecision)
-#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:91
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:134
 #, fuzzy
 #| msgid "Saturation:"
 msgid "Precision:"
@@ -7788,7 +8067,9 @@ msgid "Save brush:"
 msgstr "Personalizat"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveBrush)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_12)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:121
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:827
 #: ui/widgets/kis_workspace_chooser.cpp:89
 #, fuzzy
 #| msgid "Scales"
@@ -8074,38 +8355,51 @@ msgstr ""
 msgid "Brush Tip"
 msgstr "Paramètres"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:57
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
 #, fuzzy
 #| msgid "Auto"
 msgid "Autobrush"
 msgstr "Auto"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:61
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:62
 msgid "Predefined Brushes"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:63
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:65
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 #, fuzzy
 #| msgid "Custom"
 msgid "Custom Brush"
 msgstr "Personalizat"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:67
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:69
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
 #, fuzzy
 #| msgid "Custom"
 msgid "Clipboard Brush"
 msgstr "Personalizat"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:71
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:73
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:72
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:74
 #, fuzzy
 #| msgid "Filter"
 msgid "Text Brush"
 msgstr "Filtre"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:235
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:98
+msgid ""
+"Use to set the size from which the Automatic Precision Setting should "
+"begin. \n"
+"The Precision will remain 5 before this value."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:99
+msgid ""
+"Use to set the interval at which the Automatic Precision will change. \n"
+"The Precision will decrease as brush size increases."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:252
 msgid ""
 "Precision Level 1 (fastest)\n"
 "Subpixel precision: disabled\n"
@@ -8114,7 +8408,7 @@ msgid ""
 "Optimal for very big brushes"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:243
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:260
 msgid ""
 "Precision Level 2\n"
 "Subpixel precision: disabled\n"
@@ -8123,14 +8417,14 @@ msgid ""
 "Optimal for big brushes"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:251
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:268
 msgid ""
 "Precision Level 3\n"
 "Subpixel precision: disabled\n"
 "Brush size precision: exact"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:257
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:274
 msgid ""
 "Precision Level 4 (optimal)\n"
 "Subpixel precision: 50%\n"
@@ -8139,7 +8433,7 @@ msgid ""
 "Gives up to 50% better performance in comparison to Level 5"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:265
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:282
 msgid ""
 "Precision Level 5 (best quality)\n"
 "Subpixel precision: exact\n"
@@ -8248,14 +8542,14 @@ msgstr "Escuresir"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:39
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:29
-#: ui/forms/wdgnewimage.ui:417
+#: ui/forms/wdgnewimage.ui:455
 msgid "Transparent"
 msgstr "Transparent"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:40
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:30
-#: ui/forms/wdgnewimage.ui:452
+#: ui/forms/wdgnewimage.ui:490
 msgid "Opaque"
 msgstr ""
 
@@ -8419,69 +8713,76 @@ msgstr ""
 msgid "Strong"
 msgstr "Estèla"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:76
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:81
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+#, fuzzy
+#| msgid "Random"
+msgid "Random Offset"
+msgstr "Aleatòri"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:84
 #, fuzzy
 #| msgid "Horizontal:"
 msgid "Horizontal Offset:"
 msgstr "Orizontal :"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:80
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:92
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Vertical Offset:"
 msgstr "Vertical :"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:85
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:97
 #, fuzzy
 #| msgid "Filter"
 msgid "Multiply"
 msgstr "Filtre"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:85
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:97
 msgid "Subtract"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:87
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:99
 #, fuzzy
 #| msgid "Printing"
 msgid "Texturing Mode:"
 msgstr "Estampatge"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:93
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 msgid "Cut Off Disabled"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:93
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 #, fuzzy
 #| msgid "Custom"
 msgid "Cut Off Brush"
 msgstr "Personalizat"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:93
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 #, fuzzy
 #| msgid "Pattern"
 msgid "Cut Off Pattern"
 msgstr "Motiu"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:95
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:107
 #, fuzzy
 #| msgid "Custom"
 msgid "Cutoff Policy:"
 msgstr "Personalizat"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:101
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:113
 msgid ""
 "When pattern texture values are outside the range specified by the slider, "
 "the cut-off policy will be applied."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:103
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:115
 #, fuzzy
 #| msgid "Custom"
 msgid "Cutoff:"
 msgstr "Personalizat"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:107
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:119
 #, fuzzy
 #| msgid "Text"
 msgid "Invert Texture:"
@@ -8504,10 +8805,6 @@ msgstr ""
 msgid "Fan Corners"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fade.cpp:31
-msgid "0"
-msgstr ""
-
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fade.cpp:66
 #, fuzzy, kde-format
 #| msgid "%1%"
@@ -8516,7 +8813,7 @@ msgstr "%1%"
 
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fuzzy.cpp:38
 msgid ""
-"Positve and\n"
+"Positive and\n"
 "Negative\n"
 "Rotation"
 msgstr ""
@@ -9159,6 +9456,291 @@ msgstr "Saturacion"
 msgid "Gravity:"
 msgstr "Escala de grises"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgResourceManager)
+#: plugins/paintops/resourcemanager/dlg_resourcemanager.cpp:32
+#: plugins/paintops/resourcemanager/wdg_resourcemanager.ui:14
+#, fuzzy
+#| msgid "Source"
+msgid "Manage Resources"
+msgstr "Sorga"
+
+#. i18n: ectx: property (windowTitle), widget (QMainWindow, KoResourceManagerWidget)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:14
+#, fuzzy
+#| msgid "Filter"
+msgid "MainWindow"
+msgstr "Filtre"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:43
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:956
+#: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:150
+msgid "All"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:48
+msgid "Bundles"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveBrushes)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:53
+#: ui/forms/wdgdlgblacklistcleanup.ui:113
+#, fuzzy
+#| msgid "Settings"
+msgid "Brushes"
+msgstr "Paramètres"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveGradients)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:58
+#: ui/forms/wdgdlgblacklistcleanup.ui:73 ui/kis_control_frame.cpp:87
+#: ui/kis_control_frame.cpp:88 ui/kis_control_frame.cpp:188
+#, fuzzy
+#| msgid "Gradient"
+msgid "Gradients"
+msgstr "Degradat"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:63
+#, fuzzy
+#| msgid "Palette"
+msgid "Pt. Presets"
+msgstr "Paleta"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:78
+#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:253
+#, fuzzy
+#| msgid "Selection"
+msgid "Workspaces"
+msgstr "Seleccion"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:159
+#, fuzzy
+#| msgid "Palette"
+msgid "Available"
+msgstr "Paleta"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:200
+msgid "Installed"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:238
+msgid "Blacklist"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:276
+msgid "Downloads"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:314
+#: ui/kis_composite_ops_model.cc:30
+#, fuzzy
+#| msgid "Filter"
+msgid "Favorites"
+msgstr "Filtre"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_2)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:393
+#, fuzzy
+#| msgid "Create"
+msgid "Create Set"
+msgstr "Crear"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:431
+#, fuzzy
+#| msgid "Saturation:"
+msgid "Configure"
+msgstr "Saturacion :"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_6)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:438
+#: ui/kis_palette_manager.cpp:126
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
+msgid "Details"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_7)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:458
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:908
+msgid "Install"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_8)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:465
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:913
+msgid "Uninstall"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonDelete)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_9)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:485
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:938
+#: ui/forms/wdgbookmarkedconfigurationseditor.ui:50
+msgid "Delete"
+msgstr "Suprimir"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:655
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:695
+#, fuzzy
+#| msgid "Create"
+msgid "Created"
+msgstr "Crear"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:702
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:988
+msgid "License"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:709
+msgid "Tags"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:716
+#, fuzzy
+#| msgid "Date:"
+msgid "Updated"
+msgstr "Taus"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:726
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:980
+#: ui/dialogs/kis_dlg_preferences.cc:701
+msgid "Author"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:749
+msgid "www.krita.fr"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_3)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:756
+msgid "LGPL"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:778
+#, fuzzy
+#| msgid "Layer"
+msgid "Add Tag"
+msgstr "Jaç"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_11)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:798
+#, fuzzy
+#| msgid "&Remove"
+msgid "Remove Tag"
+msgstr "&Suprimir "
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_3)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:845
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:903
+msgid "Quit"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QMenu, menuFile)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:862
+#: ui/kis_file_layer.cpp:83
+#, fuzzy
+#| msgid "Filter"
+msgid "File"
+msgstr "Filtre"
+
+#. i18n: ectx: property (title), widget (QMenu, menuEdit)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:873
+msgid "Edit"
+msgstr "Edicion"
+
+#. i18n: ectx: property (title), widget (QMenu, menu)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:887
+msgid "?"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:898
+#, fuzzy
+#| msgid "Source"
+msgid "Create Resources Set"
+msgstr "Sorga"
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:918
+msgid "About ResManager"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:923
+msgid "Import"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:928
+#, fuzzy
+#| msgid "Export"
+msgid "Export"
+msgstr "Exportar"
+
+#. i18n: ectx: property (text), widget (KPushButton, renameButton)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:933
+#: ui/input/config/kis_edit_profiles_dialog.ui:17
+#, fuzzy
+#| msgid "Filename"
+msgid "Rename"
+msgstr "Nom de fichièr"
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:943
+msgid "Undo"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:948
+msgid "Redo"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:964
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
+msgstr "Nom"
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:972
+msgid "Tag"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:37
+msgid "Resource Manager..."
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/paintops/sketch/kis_density_option.cpp:23
@@ -9240,6 +9822,12 @@ msgstr ""
 #, fuzzy
 #| msgid "Custom"
 msgid "Spray shape"
+msgstr "Personalizat"
+
+#: plugins/paintops/spray/kis_sprayop_option.cpp:37
+#, fuzzy
+#| msgid "Custom"
+msgid "Spray area"
 msgstr "Personalizat"
 
 #: plugins/paintops/spray/spray_paintop_plugin.cpp:41
@@ -9328,15 +9916,15 @@ msgstr ""
 msgid "Paint with brushes"
 msgstr "Filtre"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:253
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:248
 msgid "Cannot pick a color as no layer is active."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:258
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:253
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:299
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:294
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr ""
@@ -9349,50 +9937,66 @@ msgstr ""
 msgid "Draw an ellipse"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:154
+#: plugins/tools/defaulttools/kis_tool_fill.cc:158
+#, fuzzy
+#| msgid "Partial"
+msgid "Fast mode: "
+msgstr "parcial"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:161
+msgid ""
+"Fills area faster, but does not take composition mode into account. "
+"Selections and other extended features will also be disabled."
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:166
 msgid "Threshold: "
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:161
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:162
+#: plugins/tools/defaulttools/kis_tool_fill.cc:173
 #, fuzzy
 #| msgid "Selection"
-msgid "Grow/shrink selection: "
+msgid "Grow selection: "
 msgstr "Seleccion"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:169
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:177
+#: plugins/tools/defaulttools/kis_tool_fill.cc:181
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:178
 #, fuzzy
 #| msgid "Custom"
 msgid "Feathering radius: "
 msgstr "Personalizat"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:177
-msgid "Use pattern"
-msgstr ""
+#: plugins/tools/defaulttools/kis_tool_fill.cc:189
+#, fuzzy
+#| msgid "Pattern"
+msgid "Use pattern:"
+msgstr "Motiu"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:178
+#: plugins/tools/defaulttools/kis_tool_fill.cc:191
 msgid ""
 "When checked do not use the foreground color, but the gradient selected to "
 "fill with"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:181
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:191
-msgid "Limit to current layer"
-msgstr ""
+#: plugins/tools/defaulttools/kis_tool_fill.cc:194
+#, fuzzy
+#| msgid "Duplicate"
+msgid "Limit to current layer:"
+msgstr "Duplicar"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:184
-msgid "Fill entire selection"
-msgstr ""
+#: plugins/tools/defaulttools/kis_tool_fill.cc:198
+#, fuzzy
+#| msgid "Selection"
+msgid "Fill entire selection:"
+msgstr "Seleccion"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:185
+#: plugins/tools/defaulttools/kis_tool_fill.cc:200
 msgid ""
 "When checked do not look at the current layer colors, but just fill all of "
 "the selected area"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.h:84
+#: plugins/tools/defaulttools/kis_tool_fill.h:92
 msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr ""
 
@@ -9726,13 +10330,23 @@ msgid "Select by brush"
 msgstr "Personalizat"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:55
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:105
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:106
 msgid "Contiguous Area Selection"
 msgstr ""
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:147
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:148
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:139
 msgid "Fuzziness: "
+msgstr ""
+
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:163
+#, fuzzy
+#| msgid "Selection"
+msgid "Grow/shrink selection: "
+msgstr "Seleccion"
+
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:192
+msgid "Limit to current layer"
 msgstr ""
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:67
@@ -9798,11 +10412,6 @@ msgstr "Duplicar"
 #| msgid "Left:"
 msgid "Left"
 msgstr "Esquèrra:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
-#: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:150
-msgid "All"
-msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:155
@@ -10228,15 +10837,19 @@ msgstr "Seleccion"
 msgid "Work Recursively"
 msgstr ""
 
-#: sketch/main.cpp:56 sketch/MainWindow.cpp:81
+#: sketch/main.cpp:57 sketch/MainWindow.cpp:82
 msgid "Krita Sketch"
 msgstr ""
 
-#: sketch/main.cpp:58
+#: sketch/main.cpp:59
 msgid "Krita Sketch: Painting on the Go for Artists"
 msgstr ""
 
-#: sketch/main.cpp:70
+#: sketch/main.cpp:61
+msgid "(c) 1999-2014 The Krita team and KO GmbH.\n"
+msgstr ""
+
+#: sketch/main.cpp:71
 msgid "Open sketch in a window, otherwise defaults to full-screen"
 msgstr ""
 
@@ -10244,43 +10857,43 @@ msgstr ""
 msgid "Select All"
 msgstr "Tot seleccionar"
 
-#: ui/actions/kis_selection_action_factories.cpp:260
+#: ui/actions/kis_selection_action_factories.cpp:261
 msgid "Cut"
 msgstr "Talhar"
 
-#: ui/actions/kis_selection_action_factories.cpp:260
+#: ui/actions/kis_selection_action_factories.cpp:261
 msgid "Copy"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:284
+#: ui/actions/kis_selection_action_factories.cpp:285
 msgid "Copy Merged"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:294
+#: ui/actions/kis_selection_action_factories.cpp:295
 msgid "(pasted)"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:325
+#: ui/actions/kis_selection_action_factories.cpp:326
 #, fuzzy
 #| msgid "Pattern"
 msgid "Pasted"
 msgstr "Motiu"
 
-#: ui/actions/kis_selection_action_factories.cpp:372
+#: ui/actions/kis_selection_action_factories.cpp:373
 #: ui/kis_selection_manager.cc:222
 #, fuzzy
 #| msgid "Selection"
 msgid "Convert to Vector Selection"
 msgstr "Seleccion"
 
-#: ui/canvas/kis_canvas_controller.cpp:184
+#: ui/canvas/kis_canvas_controller.cpp:193
 msgid ""
 "You are activating wrap-around mode, but have not enabled OpenGL.\n"
 "To visualize wrap-around mode, enable OpenGL."
 msgstr ""
 
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:651
-#: ui/dialogs/kis_dlg_preferences.cc:652
+#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
+#: ui/dialogs/kis_dlg_preferences.cc:674
 msgid "Grid"
 msgstr "Grasilha"
 
@@ -10346,11 +10959,11 @@ msgstr ""
 msgid "Cleanup resource files"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_file_layer.cpp:99
+#: ui/dialogs/kis_dlg_file_layer.cpp:97
 msgid "Select file to use as dynamic file layer."
 msgstr ""
 
-#: ui/dialogs/kis_dlg_image_properties.cc:51
+#: ui/dialogs/kis_dlg_image_properties.cc:52
 msgid "Image Properties"
 msgstr "Propietats de l'imatge"
 
@@ -10396,95 +11009,111 @@ msgstr ""
 msgid "Brush Outline with Crosshair"
 msgstr "Paramètres"
 
-#: ui/dialogs/kis_dlg_preferences.cc:180
+#: ui/dialogs/kis_dlg_preferences.cc:100
+msgid "Triangle Righthanded"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_preferences.cc:101
+msgid "Triangle Lefthanded"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_preferences.cc:102
+#, fuzzy
+#| msgid "Settings"
+msgid "Brush Outline with Triangle Righthanded"
+msgstr "Paramètres"
+
+#: ui/dialogs/kis_dlg_preferences.cc:103
+#, fuzzy
+#| msgid "Settings"
+msgid "Brush Outline with Triangle Lefthanded"
+msgstr "Paramètres"
+
+#: ui/dialogs/kis_dlg_preferences.cc:184
 #: ui/widgets/kis_color_space_selector.cc:63
 #, fuzzy
 #| msgid "Options"
 msgid "Open Color Profile"
 msgstr "Opcions"
 
-#: ui/dialogs/kis_dlg_preferences.cc:232
+#: ui/dialogs/kis_dlg_preferences.cc:236
 #: ui/widgets/kis_color_space_selector.cc:181
 #, fuzzy
 #| msgid "Options"
 msgid "Install Color Profiles"
 msgstr "Opcions"
 
-#: ui/dialogs/kis_dlg_preferences.cc:273
+#: ui/dialogs/kis_dlg_preferences.cc:276
 msgid "Monitor profile: "
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:278
+#: ui/dialogs/kis_dlg_preferences.cc:281
 msgid "&Monitor profile: "
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:609
+#: ui/dialogs/kis_dlg_preferences.cc:631
 msgid "Preferences"
 msgstr "Preferéncias"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplayBlacklist)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
 #. i18n: ectx: property (title), widget (QGroupBox, grpDisplay)
-#: ui/dialogs/kis_dlg_preferences.cc:625 ui/dialogs/kis_dlg_preferences.cc:626
+#: ui/dialogs/kis_dlg_preferences.cc:647 ui/dialogs/kis_dlg_preferences.cc:648
 #: ui/forms/wdgcolorsettings.ui:53 ui/forms/wdgdisplaysettings.ui:20
 #: ui/forms/wdgdlgblacklistcleanup.ui:20
 msgid "Display"
 msgstr "Visualizar"
 
-#: ui/dialogs/kis_dlg_preferences.cc:633
+#: ui/dialogs/kis_dlg_preferences.cc:655
 msgid "Color Management"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:642 ui/dialogs/kis_dlg_preferences.cc:643
+#: ui/dialogs/kis_dlg_preferences.cc:664 ui/dialogs/kis_dlg_preferences.cc:665
 msgid "Performance"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:659
+#: ui/dialogs/kis_dlg_preferences.cc:681
 #, fuzzy
 #| msgid "Selection"
 msgid "Tablet settings"
 msgstr "Seleccion"
 
-#: ui/dialogs/kis_dlg_preferences.cc:660
+#: ui/dialogs/kis_dlg_preferences.cc:682
 #, fuzzy
 #| msgid "Palette"
 msgid "Tablet"
 msgstr "Paleta"
 
-#: ui/dialogs/kis_dlg_preferences.cc:668
+#: ui/dialogs/kis_dlg_preferences.cc:690
 #, fuzzy
 #| msgid "Selection"
 msgid "Canvas-only settings"
 msgstr "Seleccion"
 
-#: ui/dialogs/kis_dlg_preferences.cc:669
+#: ui/dialogs/kis_dlg_preferences.cc:691
 #, fuzzy
 #| msgid "Selection"
 msgid "Canvas-only"
 msgstr "Seleccion"
 
-#: ui/dialogs/kis_dlg_preferences.cc:678
+#: ui/dialogs/kis_dlg_preferences.cc:700
 msgctxt "@title:tab Author page"
 msgid "Author"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:679
-msgid "Author"
-msgstr ""
-
-#: ui/dialogs/kis_dlg_preferences.cc:683
+#: ui/dialogs/kis_dlg_preferences.cc:705
 #, fuzzy
 #| msgid "Selection"
 msgid "Canvas Input Settings"
 msgstr "Seleccion"
 
-#: ui/dialogs/kis_dlg_preferences.cc:684
+#: ui/dialogs/kis_dlg_preferences.cc:706
 #, fuzzy
 #| msgid "Selection"
 msgid "Canvas Input"
 msgstr "Seleccion"
 
-#: ui/dialogs/kis_dlg_preferences.cc:786
+#: ui/dialogs/kis_dlg_preferences.cc:808
 msgid ""
 "You are trying to enable OpenGL\n"
 "\n"
@@ -10741,11 +11370,6 @@ msgstr "Paleta"
 msgid "Bookmark current"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButtonDelete)
-#: ui/forms/wdgbookmarkedconfigurationseditor.ui:50
-msgid "Delete"
-msgstr "Suprimir"
-
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgColorSettings)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgTabletSettings)
 #: ui/forms/wdgcolorsettings.ui:14 ui/forms/wdgtabletsettings.ui:20
@@ -10984,52 +11608,103 @@ msgstr ""
 msgid "Canvas border"
 msgstr "Seleccion"
 
+#. i18n: ectx: property (text), widget (QCheckBox, hideScrollbars)
+#: ui/forms/wdgdisplaysettings.ui:58
+#, fuzzy
+#| msgid "&Tools"
+msgid "Hide Scrollbars"
+msgstr "&Espleches"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpCheckers)
-#: ui/forms/wdgdisplaysettings.ui:61
+#: ui/forms/wdgdisplaysettings.ui:71
 #, fuzzy
 #| msgid "Transparent"
 msgid "Transparency Checkboxes"
 msgstr "Transparent"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkMoving)
-#: ui/forms/wdgdisplaysettings.ui:132
+#: ui/forms/wdgdisplaysettings.ui:142
 msgid "If checked, the checkers will move when scrolling the canvas."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkMoving)
-#: ui/forms/wdgdisplaysettings.ui:135
+#: ui/forms/wdgdisplaysettings.ui:145
 msgid ""
 "Determines whether the checks will stay put or whether they will scroll "
 "together with the canvas"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkMoving)
-#: ui/forms/wdgdisplaysettings.ui:138
+#: ui/forms/wdgdisplaysettings.ui:148
 msgid "&Move checkers when scrolling"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/forms/wdgdisplaysettings.ui:151
+#: ui/forms/wdgdisplaysettings.ui:161
 msgid "Miscellaneous"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkChannelsAsColor)
-#: ui/forms/wdgdisplaysettings.ui:157
+#: ui/forms/wdgdisplaysettings.ui:167
 msgid "Color Channels in Color"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkCurveAntialiasing)
-#: ui/forms/wdgdisplaysettings.ui:167
+#: ui/forms/wdgdisplaysettings.ui:177
 msgid "Enable curve anti-aliasing"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QCheckBox, chkSelectionOutlineAntialiasing)
+#: ui/forms/wdgdisplaysettings.ui:184
+msgid "Enable selection outline anti-aliasing"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpOpenGL)
-#: ui/forms/wdgdisplaysettings.ui:190
+#: ui/forms/wdgdisplaysettings.ui:207
 msgid "OpenGL"
 msgstr "OpenGL"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkDisableDoubleBuffering)
+#: ui/forms/wdgdisplaysettings.ui:213
+msgid ""
+"<html><head/><body><p>Try to disable double buffering. This makes painting "
+"more responsive, but might cause crashes with some ATI GPU/driver "
+"combinations.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkDisableDoubleBuffering)
+#: ui/forms/wdgdisplaysettings.ui:216
+msgid "Disable double buffering (needs restart)"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:230
+msgid "Nearest Neighbour"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:235
+#, fuzzy
+#| msgid "Resolution:"
+msgid "Bilinear Filtering"
+msgstr "Resolucion :"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:240
+#, fuzzy
+#| msgid "Resolution:"
+msgid "Trilinear Filtering"
+msgstr "Resolucion :"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:245
+#, fuzzy
+#| msgid "Resolution:"
+msgid "High Quality Filtering"
+msgstr "Resolucion :"
+
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkUseTextureBuffer)
-#: ui/forms/wdgdisplaysettings.ui:196
+#: ui/forms/wdgdisplaysettings.ui:253
 msgid ""
 "<html><head/><body><p>Use Texture Buffering. This can be faster on some GPU/"
 "Driver combinations (like Intel) or broken on some others (like AMD/Radeon)."
@@ -11037,56 +11712,36 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkUseTextureBuffer)
-#: ui/forms/wdgdisplaysettings.ui:199
+#: ui/forms/wdgdisplaysettings.ui:256
 msgid "Use Texture Buffer"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbUseOpenGL)
-#: ui/forms/wdgdisplaysettings.ui:206
+#: ui/forms/wdgdisplaysettings.ui:263
 #, fuzzy
 #| msgid "OpenGL"
 msgid "Enable OpenGL"
 msgstr "OpenGL"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:220
-msgid "Nearest Neighbour"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:225
-#, fuzzy
-#| msgid "Resolution:"
-msgid "Bilinear Filtering"
-msgstr "Resolucion :"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:230
-#, fuzzy
-#| msgid "Resolution:"
-msgid "Trilinear Filtering"
-msgstr "Resolucion :"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:235
-#, fuzzy
-#| msgid "Resolution:"
-msgid "High Quality Filtering"
-msgstr "Resolucion :"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/forms/wdgdisplaysettings.ui:243
+#: ui/forms/wdgdisplaysettings.ui:273
 #, fuzzy
 #| msgid "Printing"
 msgid "Scaling Mode:"
 msgstr "Estampatge"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
-#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:253
-#, fuzzy
-#| msgid "Selection"
-msgid "Workspaces"
-msgstr "Seleccion"
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkDisableVsync)
+#: ui/forms/wdgdisplaysettings.ui:280
+msgid ""
+"<html><head/><body><p>Try to disable vsync for Krita. This makes painting "
+"more responsive. Uncheck only when experiencing crashes with some GPU/driver "
+"combinations.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkDisableVsync)
+#: ui/forms/wdgdisplaysettings.ui:283
+msgid "Disable vsync (needs restart)"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: ui/forms/wdgdlgblacklistcleanup.ui:55
@@ -11111,14 +11766,6 @@ msgid ""
 "performance."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveGradients)
-#: ui/forms/wdgdlgblacklistcleanup.ui:73 ui/kis_control_frame.cpp:87
-#: ui/kis_control_frame.cpp:88 ui/kis_control_frame.cpp:188
-#, fuzzy
-#| msgid "Gradient"
-msgid "Gradients"
-msgstr "Degradat"
-
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemovePresets)
 #: ui/forms/wdgdlgblacklistcleanup.ui:93
 #, fuzzy
@@ -11132,13 +11779,6 @@ msgstr "Paleta"
 #| msgid "Colors"
 msgid "Colorsets"
 msgstr "Colors"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveBrushes)
-#: ui/forms/wdgdlgblacklistcleanup.ui:113
-#, fuzzy
-#| msgid "Settings"
-msgid "Brushes"
-msgstr "Paramètres"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ui/forms/wdgdlgfilelayer.ui:23 ui/forms/wdgdlggeneratorlayer.ui:19
@@ -11172,7 +11812,7 @@ msgstr "Aleatòri"
 #: ui/forms/wdgdlgfilelayer.ui:82
 #, fuzzy
 #| msgid "Image"
-msgid "Scale to Image SIze"
+msgid "Scale to Image Size"
 msgstr "Imatge"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioScalePPI)
@@ -11396,6 +12036,21 @@ msgid ""
 "of the layers, use Convert Image Colorspace.</p></body></html>"
 msgstr ""
 
+#. i18n: ectx: property (title), widget (QGroupBox, grpAnnotations)
+#: ui/forms/wdgimageproperties.ui:139
+#, fuzzy
+#| msgid "Rotation"
+msgid "Annotations"
+msgstr "Rotacion"
+
+#. i18n: ectx: property (text), widget (QLabel, lblDescription)
+#. i18n: ectx: property (text), widget (QLabel, lblVersion)
+#: ui/forms/wdgimageproperties.ui:163 wdgsplash.ui:340
+#, fuzzy
+#| msgid "Text"
+msgid "TextLabel"
+msgstr "Tèxt"
+
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #: ui/forms/wdglayerproperties.ui:25 ui/forms/wdgnewimage.ui:22
@@ -11404,7 +12059,7 @@ msgstr "&Nom :"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: ectx: property (text), widget (QLabel, lblOpacity)
-#: ui/forms/wdglayerproperties.ui:41 ui/forms/wdgnewimage.ui:392
+#: ui/forms/wdglayerproperties.ui:41 ui/forms/wdgnewimage.ui:430
 #, fuzzy
 #| msgid "Opacity:"
 msgid "&Opacity:"
@@ -11598,29 +12253,36 @@ msgstr "Ensenhador"
 msgid "C&anvas color:"
 msgstr "Seleccion"
 
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: ui/forms/wdgnewimage.ui:410
+#, fuzzy
+#| msgid "Resolution:"
+msgid "Number of layers:"
+msgstr "Resolucion :"
+
 #. i18n: ectx: property (toolTip), widget (QSlider, sliderOpacity)
-#: ui/forms/wdgnewimage.ui:427
+#: ui/forms/wdgnewimage.ui:465
 #, fuzzy
 #| msgid "Background Color"
 msgid "Opacity of the background color"
 msgstr "Color de fons"
 
 #. i18n: ectx: property (whatsThis), widget (QSlider, sliderOpacity)
-#: ui/forms/wdgnewimage.ui:430
+#: ui/forms/wdgnewimage.ui:468
 #, fuzzy
 #| msgid "Background Color"
 msgid "Opacity of the background color."
 msgstr "Color de fons"
 
 #. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: ui/forms/wdgnewimage.ui:462
+#: ui/forms/wdgnewimage.ui:500
 #, fuzzy
 #| msgid "Description:"
 msgid "&Description:"
 msgstr "Descripcion :"
 
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: ui/forms/wdgnewimage.ui:520
+#: ui/forms/wdgnewimage.ui:551
 #, fuzzy
 #| msgid "Create"
 msgid "&Create"
@@ -11903,13 +12565,6 @@ msgstr ""
 #| msgid "Options"
 msgid "Reset All Profiles"
 msgstr "Opcions"
-
-#. i18n: ectx: property (text), widget (KPushButton, renameButton)
-#: ui/input/config/kis_edit_profiles_dialog.ui:17
-#, fuzzy
-#| msgid "Filename"
-msgid "Rename"
-msgstr "Nom de fichièr"
 
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
 #: ui/input/config/kis_edit_profiles_dialog.ui:30
@@ -12286,7 +12941,7 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
-#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:557
+#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:562
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -12326,213 +12981,214 @@ msgstr ""
 msgid "Fit to Width"
 msgstr "Largor :"
 
-#: ui/kis_aboutdata.h:62
-msgid "(c) 1999-2013 The Krita team.\n"
+#: ui/kis_aboutdata.h:48
+#, kde-format
+msgid "© 1999-%1, The Krita Team"
 msgstr ""
 
-#: ui/kis_aboutdata.h:67
+#: ui/kis_aboutdata.h:53
 msgid "Adrian Page"
 msgstr ""
 
-#: ui/kis_aboutdata.h:68
+#: ui/kis_aboutdata.h:54
 msgid "Adam Celarek"
 msgstr ""
 
-#: ui/kis_aboutdata.h:69
+#: ui/kis_aboutdata.h:55
 msgid "Alan Horkan"
 msgstr ""
 
-#: ui/kis_aboutdata.h:70
+#: ui/kis_aboutdata.h:56
 msgid "Bart Coppens"
 msgstr "Bart Coppens"
 
-#: ui/kis_aboutdata.h:72
+#: ui/kis_aboutdata.h:58
 msgid "David Revoy"
 msgstr ""
 
-#: ui/kis_aboutdata.h:72
+#: ui/kis_aboutdata.h:58
 msgid "Brush and palette set"
 msgstr ""
 
-#: ui/kis_aboutdata.h:73
+#: ui/kis_aboutdata.h:59
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
-#: ui/kis_aboutdata.h:74
+#: ui/kis_aboutdata.h:60
 msgid "C. Boemann"
 msgstr ""
 
-#: ui/kis_aboutdata.h:75
+#: ui/kis_aboutdata.h:61
 msgid "Clarence Dang"
 msgstr ""
 
-#: ui/kis_aboutdata.h:76
+#: ui/kis_aboutdata.h:62
 msgid "Cyrille Berger"
 msgstr ""
 
-#: ui/kis_aboutdata.h:77
+#: ui/kis_aboutdata.h:63
 msgid "Dirk Schoenberger"
 msgstr ""
 
-#: ui/kis_aboutdata.h:78
+#: ui/kis_aboutdata.h:64
 msgid "Danny Allen"
 msgstr ""
 
-#: ui/kis_aboutdata.h:79
+#: ui/kis_aboutdata.h:65
 msgid "Dmitry Kazakov"
 msgstr ""
 
-#: ui/kis_aboutdata.h:80
+#: ui/kis_aboutdata.h:66
 msgid "Edward Apap"
 msgstr ""
 
-#: ui/kis_aboutdata.h:81
+#: ui/kis_aboutdata.h:67
 msgid "Geoffry Song"
 msgstr ""
 
-#: ui/kis_aboutdata.h:82
+#: ui/kis_aboutdata.h:68
 msgid "Hanisch Elián"
 msgstr ""
 
-#: ui/kis_aboutdata.h:83
+#: ui/kis_aboutdata.h:69
 msgid "Emanuele Tamponi"
 msgstr ""
 
-#: ui/kis_aboutdata.h:84
+#: ui/kis_aboutdata.h:70
 msgid "Gábor Lehel"
 msgstr ""
 
-#: ui/kis_aboutdata.h:85
+#: ui/kis_aboutdata.h:71
 msgid "Ilya Portnov"
 msgstr ""
 
-#: ui/kis_aboutdata.h:85 ui/kis_aboutdata.h:92
+#: ui/kis_aboutdata.h:71 ui/kis_aboutdata.h:78
 msgid "MyPaint shade selector"
 msgstr ""
 
-#: ui/kis_aboutdata.h:86
+#: ui/kis_aboutdata.h:72
 msgid "John Califf"
 msgstr ""
 
-#: ui/kis_aboutdata.h:87
+#: ui/kis_aboutdata.h:73
 msgid "José Luis Vergara Toloza"
 msgstr ""
 
-#: ui/kis_aboutdata.h:88
+#: ui/kis_aboutdata.h:74
 msgid "Justin Noel"
 msgstr ""
 
-#: ui/kis_aboutdata.h:88
+#: ui/kis_aboutdata.h:74
 #, fuzzy
 #| msgid "Width:"
 msgid "Slider widget"
 msgstr "Largor :"
 
-#: ui/kis_aboutdata.h:89
+#: ui/kis_aboutdata.h:75
 msgid "Laurent Montel"
 msgstr ""
 
-#: ui/kis_aboutdata.h:90
+#: ui/kis_aboutdata.h:76
 msgid "Lukáš Tvrdý"
 msgstr ""
 
-#: ui/kis_aboutdata.h:91
+#: ui/kis_aboutdata.h:77
 msgid "Marc Pegon"
 msgstr ""
 
-#: ui/kis_aboutdata.h:92
+#: ui/kis_aboutdata.h:78
 msgid "Martin Renold"
 msgstr ""
 
-#: ui/kis_aboutdata.h:93
+#: ui/kis_aboutdata.h:79
 msgid "Matthias Elter"
 msgstr ""
 
-#: ui/kis_aboutdata.h:94
+#: ui/kis_aboutdata.h:80
 msgid "Matus Talcik"
 msgstr ""
 
-#: ui/kis_aboutdata.h:95
+#: ui/kis_aboutdata.h:81
 msgid "Melchior Franz"
 msgstr ""
 
-#: ui/kis_aboutdata.h:96
+#: ui/kis_aboutdata.h:82
 msgid "Michael Koch"
 msgstr ""
 
-#: ui/kis_aboutdata.h:97
+#: ui/kis_aboutdata.h:83
 msgid "Michael Thaler"
 msgstr ""
 
-#: ui/kis_aboutdata.h:98
+#: ui/kis_aboutdata.h:84
 msgid "Øyvind Kolås"
 msgstr ""
 
-#: ui/kis_aboutdata.h:98
+#: ui/kis_aboutdata.h:84
 msgid "Wiseguy"
 msgstr ""
 
-#: ui/kis_aboutdata.h:99
+#: ui/kis_aboutdata.h:85
 msgid "Patrick Julien"
 msgstr ""
 
-#: ui/kis_aboutdata.h:100
+#: ui/kis_aboutdata.h:86
 msgid "Peter Sikking"
 msgstr ""
 
-#: ui/kis_aboutdata.h:100
+#: ui/kis_aboutdata.h:86
 msgid "Vision master"
 msgstr ""
 
-#: ui/kis_aboutdata.h:101
+#: ui/kis_aboutdata.h:87
 msgid "Roger Larsson"
 msgstr ""
 
-#: ui/kis_aboutdata.h:102
+#: ui/kis_aboutdata.h:88
 msgid "Samy Lange"
 msgstr ""
 
-#: ui/kis_aboutdata.h:103
+#: ui/kis_aboutdata.h:89
 msgid "Silvio Heinrich"
 msgstr ""
 
-#: ui/kis_aboutdata.h:104
+#: ui/kis_aboutdata.h:90
 msgid "Sven Langkamp"
 msgstr ""
 
-#: ui/kis_aboutdata.h:105
+#: ui/kis_aboutdata.h:91
 msgid "Timothée Giet"
 msgstr ""
 
-#: ui/kis_aboutdata.h:105
+#: ui/kis_aboutdata.h:91
 msgid "BD Artist, brush presets and templates"
 msgstr ""
 
-#: ui/kis_aboutdata.h:106
+#: ui/kis_aboutdata.h:92
 msgid "Toshitaka Fujioka"
 msgstr ""
 
-#: ui/kis_aboutdata.h:107
+#: ui/kis_aboutdata.h:93
 msgid "Thomas Zander"
 msgstr ""
 
-#: ui/kis_aboutdata.h:108
+#: ui/kis_aboutdata.h:94
 msgid "Tom Burdick"
 msgstr ""
 
-#: ui/kis_aboutdata.h:109
+#: ui/kis_aboutdata.h:95
 msgid "Vera Lukman"
 msgstr ""
 
-#: ui/kis_aboutdata.h:110
+#: ui/kis_aboutdata.h:96
 msgid "Sander Koning"
 msgstr ""
 
-#: ui/kis_aboutdata.h:111
+#: ui/kis_aboutdata.h:97
 msgid "Andreas Lundin"
 msgstr ""
 
-#: ui/kis_aboutdata.h:112
+#: ui/kis_aboutdata.h:98
 msgid "Siddharth Sharma"
 msgstr ""
 
@@ -12540,6 +13196,12 @@ msgstr ""
 #, kde-format
 msgid "New configuration %1"
 msgstr ""
+
+#: ui/kis_bookmarked_configurations_model.cc:68
+#, fuzzy
+#| msgid "Named Colors"
+msgid "Last Used"
+msgstr "Colors nomenadas"
 
 #: ui/kis_canvas_controls_manager.cpp:47
 msgid "Make brush color lighter"
@@ -12586,12 +13248,6 @@ msgstr ""
 msgid "As on &Monitor"
 msgstr ""
 
-#: ui/kis_composite_ops_model.cc:30
-#, fuzzy
-#| msgid "Filter"
-msgid "Favorites"
-msgstr "Filtre"
-
 #: ui/kis_control_frame.cpp:79 ui/kis_control_frame.cpp:80
 #, fuzzy
 #| msgid "Pattern"
@@ -12626,7 +13282,7 @@ msgstr ""
 msgid "Custom Pattern"
 msgstr "Motiu"
 
-#: ui/kis_custom_pattern.cc:169
+#: ui/kis_custom_pattern.cc:168
 msgid ""
 "The current image is too big to create a pattern. The pattern will be scaled "
 "down."
@@ -12637,12 +13293,6 @@ msgstr ""
 #| msgid "Unnamed"
 msgid "unnamed"
 msgstr "Sens nom"
-
-#: ui/kis_file_layer.cpp:83
-#, fuzzy
-#| msgid "Filter"
-msgid "File"
-msgstr "Filtre"
 
 #: ui/kis_filter_manager.cc:86
 msgid "Apply Filter Again"
@@ -12692,73 +13342,79 @@ msgstr ""
 msgid "&Flatten Layer"
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:779
+#: ui/kis_layer_manager.cc:294
+#, fuzzy
+#| msgid "Duplicate"
+msgid "Rename current layer"
+msgstr "Duplicar"
+
+#: ui/kis_layer_manager.cc:300 ui/kis_layer_manager.cc:785
 #, fuzzy
 #| msgid "&Remove"
 msgid "Rasterize Layer"
 msgstr "&Suprimir "
 
-#: ui/kis_layer_manager.cc:300
+#: ui/kis_layer_manager.cc:306
 #, fuzzy
 #| msgid "Filter"
 msgid "Save Group Layers..."
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:304
+#: ui/kis_layer_manager.cc:310
 msgid "Size Canvas to Size of Current Layer"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:359
+#: ui/kis_layer_manager.cc:365
 #, fuzzy
 #| msgid "Image Properties"
 msgid "Filter Layer Properties"
 msgstr "Propietas de l'imatge"
 
-#: ui/kis_layer_manager.cc:404
+#: ui/kis_layer_manager.cc:410
 #, fuzzy
 #| msgid "Image Properties"
 msgid "Generator Layer Properties"
 msgstr "Propietas de l'imatge"
 
-#: ui/kis_layer_manager.cc:485
+#: ui/kis_layer_manager.cc:491
 #, fuzzy
 #| msgid "Filter"
 msgid "Convert to a Paint Layer"
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:564
+#: ui/kis_layer_manager.cc:570
 msgid "New Filter Layer"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:629
 msgid "Could not add layer to image."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:629
 msgid "Layer Error"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:709
+#: ui/kis_layer_manager.cc:715
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:711
+#: ui/kis_layer_manager.cc:717
 msgid "&Flatten Image"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:815
+#: ui/kis_layer_manager.cc:821
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:818
+#: ui/kis_layer_manager.cc:824
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:882
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:882
 msgid "No file specified"
 msgstr ""
 
@@ -13111,11 +13767,6 @@ msgstr "Filtre"
 msgid "Thumbnails"
 msgstr ""
 
-#: ui/kis_palette_manager.cpp:126
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
-msgid "Details"
-msgstr ""
-
 #: ui/kis_part2.cpp:109
 msgid ""
 "The Calligra LittleCMS color management plugin is not installed. Krita will "
@@ -13136,7 +13787,7 @@ msgstr ""
 msgid "Installation error"
 msgstr ""
 
-#: ui/kis_selection_decoration.cc:44
+#: ui/kis_selection_decoration.cc:45
 #, fuzzy
 #| msgid "Selection"
 msgid "Selection decoration"
@@ -13223,141 +13874,141 @@ msgstr ""
 msgid "No profile"
 msgstr ""
 
-#: ui/kis_view2.cpp:288
+#: ui/kis_view2.cpp:289
 msgid "Save Incremental &Version"
 msgstr ""
 
-#: ui/kis_view2.cpp:293
+#: ui/kis_view2.cpp:294
 msgid "Save Incremental Backup"
 msgstr ""
 
-#: ui/kis_view2.cpp:306
+#: ui/kis_view2.cpp:307
 msgid "Total Refresh"
 msgstr ""
 
-#: ui/kis_view2.cpp:312
+#: ui/kis_view2.cpp:313
 msgid "Toggle Tablet Debugger"
 msgstr ""
 
-#: ui/kis_view2.cpp:317
+#: ui/kis_view2.cpp:318
 msgid "&Create Template From Image..."
 msgstr ""
 
-#: ui/kis_view2.cpp:321
+#: ui/kis_view2.cpp:322
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Mirror View"
 msgstr "Vertical :"
 
-#: ui/kis_view2.cpp:327
+#: ui/kis_view2.cpp:328
 msgid "Open Resources Folder"
 msgstr ""
 
-#: ui/kis_view2.cpp:328 ui/kis_view2.cpp:329
+#: ui/kis_view2.cpp:329 ui/kis_view2.cpp:330
 msgid ""
 "Opens a file browser at the location Krita saves resources such as brushes "
 "to."
 msgstr ""
 
-#: ui/kis_view2.cpp:333
+#: ui/kis_view2.cpp:334
 msgid "Rotate Canvas Right"
 msgstr ""
 
-#: ui/kis_view2.cpp:338
+#: ui/kis_view2.cpp:339
 msgid "Rotate Canvas Left"
 msgstr ""
 
-#: ui/kis_view2.cpp:343
+#: ui/kis_view2.cpp:344
 #, fuzzy
 #| msgid "Selection"
 msgid "Reset Canvas Transformations"
 msgstr "Seleccion"
 
-#: ui/kis_view2.cpp:348
+#: ui/kis_view2.cpp:349
 msgid "Wrap Around Mode"
 msgstr ""
 
-#: ui/kis_view2.cpp:353
+#: ui/kis_view2.cpp:354
 msgid "Show Status Bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:354
+#: ui/kis_view2.cpp:355
 msgid "Hide Status Bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:356
+#: ui/kis_view2.cpp:357
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:360
+#: ui/kis_view2.cpp:361
 msgid "Show Canvas Only"
 msgstr ""
 
-#: ui/kis_view2.cpp:361
+#: ui/kis_view2.cpp:362
 msgid "Return to Window"
 msgstr ""
 
-#: ui/kis_view2.cpp:362
+#: ui/kis_view2.cpp:363
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:456
+#: ui/kis_view2.cpp:460
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Critical Error"
 msgstr "Vertical :"
 
-#: ui/kis_view2.cpp:456
+#: ui/kis_view2.cpp:460
 msgid ""
 "Krita cannot find any brush presets and will close now. Please check your "
 "installation."
 msgstr ""
 
-#: ui/kis_view2.cpp:549
+#: ui/kis_view2.cpp:554
 msgid "Insert as New Layer"
 msgstr ""
 
-#: ui/kis_view2.cpp:550
+#: ui/kis_view2.cpp:555
 #, fuzzy
 #| msgid "Scales"
 msgid "Insert Many Layers"
 msgstr "Escalas"
 
-#: ui/kis_view2.cpp:552
+#: ui/kis_view2.cpp:557
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:553
+#: ui/kis_view2.cpp:558
 msgid "Open Many Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:555
+#: ui/kis_view2.cpp:560
 msgid "Replace Current Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:940
+#: ui/kis_view2.cpp:945
 msgid "Cleanup removed files..."
 msgstr ""
 
-#: ui/kis_view2.cpp:1512
+#: ui/kis_view2.cpp:1511
 #, kde-format
 msgid ""
 "Going into Canvas-Only mode.\n"
 "Press %1 to go back."
 msgstr ""
 
-#: ui/kis_zoom_manager.cc:119
+#: ui/kis_zoom_manager.cc:120
 msgid "Show Rulers"
 msgstr ""
 
-#: ui/kis_zoom_manager.cc:121
+#: ui/kis_zoom_manager.cc:122
 msgid ""
 "The rulers show the horizontal and vertical positions of the mouse on the "
 "image and can be used to position your mouse at the right place on the "
 "canvas. <p>Uncheck this to hide the rulers.</p>"
 msgstr ""
 
-#: ui/kis_zoom_manager.cc:125
+#: ui/kis_zoom_manager.cc:131
 #, fuzzy
 #| msgid "Select"
 msgid "Reset zoom"
@@ -13367,7 +14018,7 @@ msgstr "Seleccionar"
 msgid "Iptc"
 msgstr ""
 
-#: ui/opengl/kis_opengl_canvas2.cpp:497 ui/opengl/kis_opengl_canvas2.cpp:534
+#: ui/opengl/kis_opengl_canvas2.cpp:498 ui/opengl/kis_opengl_canvas2.cpp:535
 #, kde-format
 msgid ""
 "Krita could not initialize the OpenGL canvas:\n"
@@ -13401,6 +14052,12 @@ msgid ""
 "<i>../1</i> represents the second layer from the bottom of the parent of the "
 "current layer<br/>\n"
 "<i>./0</i> represents the first child of the current layer"
+msgstr ""
+
+#: ui/tool/kis_selection_tool_helper.cpp:129
+msgid ""
+"Shape selection does not fully support wraparound mode. Please use pixel "
+"selection instead"
 msgstr ""
 
 #: ui/tool/kis_tool.cc:121
@@ -13556,6 +14213,42 @@ msgstr "Seleccion"
 msgid "Workspace %1"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, lblLinks)
+#: wdgsplash.ui:373
+msgid ""
+"<html><head/><body><p align=\"center\"><span style=\" font-weight:600;"
+"\">Links</span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lblRecent)
+#: wdgsplash.ui:389
+msgid ""
+"<html><head/><body><p align=\"center\"><span style=\" font-weight:600;"
+"\">Recent files</span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowAtStartup)
+#: wdgsplash.ui:437
+msgid "Hide after startup."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, bnClose)
+#: wdgsplash.ui:444
+#, fuzzy
+#| msgid "Close"
+msgid "&Close"
+msgstr "Tampar"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Desaturate Adjustment"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgid "Half-Size:"
+#~ msgstr "Talha"
+
 #, fuzzy
 #~| msgid "Profile:"
 #~ msgid "New Profile"
@@ -13641,11 +14334,6 @@ msgstr ""
 
 #, fuzzy
 #~| msgid "Selection"
-#~ msgid "Grow selection by"
-#~ msgstr "Seleccion"
-
-#, fuzzy
-#~| msgid "Selection"
 #~ msgid "Shrink selection by"
 #~ msgstr "Seleccion"
 
@@ -13678,11 +14366,6 @@ msgstr ""
 #~| msgid "Height:"
 #~ msgid "Print Height:"
 #~ msgstr "Nautor :"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgid "TextLabel"
-#~ msgstr "Tèxt"
 
 #~ msgid "&Resize"
 #~ msgstr "&Redimensionar"
@@ -13729,11 +14412,6 @@ msgstr ""
 #~| msgid "Selection"
 #~ msgid "Mask to Selection"
 #~ msgstr "Seleccion"
-
-#, fuzzy
-#~| msgid "Duplicate"
-#~ msgid "Delete current layer"
-#~ msgstr "Duplicar"
 
 #, fuzzy
 #~| msgid "Height:"
@@ -13824,11 +14502,6 @@ msgstr ""
 #~ msgstr "Escalas"
 
 #, fuzzy
-#~| msgid "Name:"
-#~ msgid "Name"
-#~ msgstr "Nom"
-
-#, fuzzy
 #~| msgid "&Show"
 #~ msgid "Flow"
 #~ msgstr "&Visualizacion"
@@ -13898,11 +14571,6 @@ msgstr ""
 #~ msgstr "Colors nomenadas"
 
 #, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Nature_stones"
-#~ msgstr "Saturacion"
-
-#, fuzzy
 #~| msgid "Palette"
 #~ msgid "Paletilla"
 #~ msgstr "Paleta"
@@ -13933,9 +14601,6 @@ msgstr ""
 #~ msgctxt "default theme name"
 #~ msgid "Default"
 #~ msgstr "Defaut"
-
-#~ msgid "Edit"
-#~ msgstr "Edicion"
 
 #~ msgid "Navigation"
 #~ msgstr "Navigacion"
@@ -13988,11 +14653,6 @@ msgstr ""
 #~| msgid "Custom..."
 #~ msgid "Cubism"
 #~ msgstr "Personalizat..."
-
-#, fuzzy
-#~| msgid "Resolution:"
-#~ msgid "Version:"
-#~ msgstr "Resolucion :"
 
 #~ msgid "Destination"
 #~ msgstr "Destinacion"
@@ -14274,11 +14934,6 @@ msgstr ""
 #~| msgid "Selection"
 #~ msgid "on foreground color selector change"
 #~ msgstr "Seleccion"
-
-#, fuzzy
-#~| msgid "Named Colors"
-#~ msgid "Last Used Colors"
-#~ msgstr "Colors nomenadas"
 
 #, fuzzy
 #~| msgid "Named Colors"
