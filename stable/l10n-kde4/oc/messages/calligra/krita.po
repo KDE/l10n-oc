@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-09 06:22+0000\n"
+"POT-Creation-Date: 2014-04-11 06:54+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1695,15 +1695,21 @@ msgstr "OpenGL"
 msgid "Ellipse assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:493
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:443
+#, fuzzy
+#| msgid "Ellipse"
+msgid "Select an Assistant"
+msgstr "Ellipsa"
+
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:528
+msgid "Errors were encountered. Not all assistants were successfully loaded."
+msgstr ""
+
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:573
 #, fuzzy
 #| msgid "Ellipse"
 msgid "Save Assistant"
 msgstr "Ellipsa"
-
-#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:589
-msgid "Errors were encountered. Not all assistants were successfully loaded."
-msgstr ""
 
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:101
 msgid "Ruler assistant editor tool"
@@ -1874,7 +1880,7 @@ msgstr ""
 msgid "Open Macro"
 msgstr "Macrò"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:237
+#: plugins/extensions/bigbrother/bigbrother.cc:236
 #, fuzzy
 #| msgid "Macro"
 msgid "Save Macro"
@@ -3077,13 +3083,13 @@ msgstr ""
 msgid "Save flipbook"
 msgstr ""
 
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:193
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:264
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:192
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:261
 #: ui/widgets/KisFlipbookSelector.cpp:50
 msgid "Select files to add to flipbook"
 msgstr ""
 
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:232
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:230
 msgid "Load flipbook"
 msgstr ""
 
@@ -3218,7 +3224,7 @@ msgid "All Channels"
 msgstr "Canal"
 
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:281
-#: ui/dialogs/kis_dlg_preferences.cc:353
+#: ui/dialogs/kis_dlg_preferences.cc:352
 #, fuzzy
 #| msgid "Saturation:"
 msgid "Select OpenColorIO Configuration"
@@ -4633,11 +4639,10 @@ msgstr "Paramètres"
 msgid "Feather Selection..."
 msgstr "Seleccion"
 
-#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
 #: plugins/extensions/modify_selection/modify_selection.cc:78
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
 #, fuzzy
 #| msgid "Random"
+msgctxt "Verb for a selection modification action"
 msgid "Smooth"
 msgstr "Aleatòri"
 
@@ -4820,7 +4825,7 @@ msgstr "Personalizat"
 msgid "Separate Image"
 msgstr ""
 
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:243
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:241
 msgid "Export Layer"
 msgstr ""
 
@@ -5281,8 +5286,10 @@ msgstr "Vèrd"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #. i18n: ectx: property (text), widget (QLabel, label_21)
+#. i18n: ectx: property (text), widget (QLabel, label_14)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:68
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:168
+#: plugins/filters/colorsfilters/wdg_color_balance.ui:268
 msgid "Yellow"
 msgstr ""
 
@@ -5304,8 +5311,10 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_17)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:99
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:151
+#: plugins/filters/colorsfilters/wdg_color_balance.ui:251
 msgid "Cyan"
 msgstr ""
 
@@ -5316,22 +5325,12 @@ msgstr ""
 msgid "Reset Midtones  "
 msgstr "Rotacion"
 
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: plugins/filters/colorsfilters/wdg_color_balance.ui:251
-msgid "     Cyan"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QPushButton, pushResetHighlights)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:261
 #, fuzzy
 #| msgid "Height:"
 msgid "Reset Highlights"
 msgstr "Nautor :"
-
-#. i18n: ectx: property (text), widget (QLabel, label_14)
-#: plugins/filters/colorsfilters/wdg_color_balance.ui:268
-msgid "    Yellow"
-msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkPreserveLuminosity)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:336
@@ -6476,7 +6475,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkSRGB)
 #: plugins/formats/png/kis_wdg_options_png.ui:216
-msgid "save sRGB profile"
+msgid "Embed sRGB profile"
 msgstr ""
 
 #: plugins/formats/ppm/kis_ppm_export.cpp:155
@@ -7197,6 +7196,14 @@ msgstr "Saturacion"
 #| msgid "Paper"
 msgid "Speed"
 msgstr "Papièr"
+
+#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
+#, fuzzy
+#| msgid "Random"
+msgctxt "Noun for an experiment brush shape smoothness"
+msgid "Smooth"
+msgstr "Aleatòri"
 
 #. i18n: ectx: property (text), widget (QLabel, lblPostprocessing)
 #: plugins/paintops/experiment/wdgexperimentoptions.ui:89
@@ -10374,7 +10381,7 @@ msgstr ""
 msgid "Cleanup resource files"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_file_layer.cpp:99
+#: ui/dialogs/kis_dlg_file_layer.cpp:97
 msgid "Select file to use as dynamic file layer."
 msgstr ""
 
@@ -10438,11 +10445,11 @@ msgstr "Opcions"
 msgid "Install Color Profiles"
 msgstr "Opcions"
 
-#: ui/dialogs/kis_dlg_preferences.cc:273
+#: ui/dialogs/kis_dlg_preferences.cc:272
 msgid "Monitor profile: "
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:278
+#: ui/dialogs/kis_dlg_preferences.cc:277
 msgid "&Monitor profile: "
 msgstr ""
 
@@ -13002,15 +13009,15 @@ msgstr ""
 msgid "Export Node"
 msgstr "Visualizacion"
 
-#: ui/kis_painting_assistants_manager.cc:41
+#: ui/kis_painting_assistants_decoration.cpp:41
 msgid "Painting assistants"
 msgstr ""
 
-#: ui/kis_painting_assistants_manager.cc:107
+#: ui/kis_painting_assistants_decoration.cpp:107
 msgid "Show Painting Assistants"
 msgstr ""
 
-#: ui/kis_painting_assistants_manager.cc:111
+#: ui/kis_painting_assistants_decoration.cpp:111
 msgid "Hide Painting Assistants"
 msgstr ""
 
