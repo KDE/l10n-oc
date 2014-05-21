@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-20 01:47+0000\n"
+"POT-Creation-Date: 2014-05-21 01:58+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -174,10 +174,11 @@ msgstr ""
 msgid "That is an invalid name."
 msgstr ""
 
-#: classifier.cpp:407 classifier.cpp:784 dialogs/diagrampropertiespage.cpp:76
-#: entity.cpp:125 entity.cpp:178 entity.cpp:228 entity.cpp:277 enum.cpp:107
-#: object_factory.cpp:212 package.cpp:175 umldoc.cpp:1289 umldoc.cpp:1360
-#: umldoc.cpp:1390 umldoc.cpp:1424
+#: classifier.cpp:407 classifier.cpp:784
+#: dialogs/pages/diagrampropertiespage.cpp:76 entity.cpp:125 entity.cpp:178
+#: entity.cpp:228 entity.cpp:277 enum.cpp:107 object_factory.cpp:212
+#: package.cpp:175 umldoc.cpp:1289 umldoc.cpp:1360 umldoc.cpp:1390
+#: umldoc.cpp:1424
 msgid "Invalid Name"
 msgstr "Lo nom es pas corrèct"
 
@@ -691,13 +692,17 @@ msgstr ""
 #: codegenerators/d/dcodegenerationformbase.ui:261
 #: codegenerators/java/javacodegenerationformbase.ui:261
 #: codegenerators/ruby/rubycodegenerationformbase.ui:52
-#: dialogs/activitydialog.cpp:200 dialogs/assocgenpage.cpp:78
-#: dialogs/assocrolepage.cpp:93 dialogs/assocrolepage.cpp:94
-#: dialogs/classgenpage.cpp:250 dialogs/classgenpage.cpp:342
-#: dialogs/classgenpage.cpp:406 dialogs/classifierlistpage.cpp:218
-#: dialogs/diagrampropertiespage.ui:257 dialogs/objectnodedialog.cpp:195
-#: dialogs/parmpropdlg.cpp:115 dialogs/statedialog.cpp:167
-#: dialogs/umlrolepropertiesbase.ui:140
+#: dialogs/activitydialog.cpp:200 dialogs/objectnodedialog.cpp:195
+#: dialogs/pages/associationgeneralpage.cpp:78
+#: dialogs/pages/associationrolepage.cpp:93
+#: dialogs/pages/associationrolepage.cpp:94
+#: dialogs/pages/classgeneralpage.cpp:250
+#: dialogs/pages/classgeneralpage.cpp:342
+#: dialogs/pages/classgeneralpage.cpp:406
+#: dialogs/pages/classifierlistpage.cpp:218
+#: dialogs/pages/diagrampropertiespage.ui:257
+#: dialogs/pages/umlrolepropertiesbase.ui:140 dialogs/parmpropdialog.cpp:115
+#: dialogs/statedialog.cpp:167
 msgid "Documentation"
 msgstr "Documentacion"
 
@@ -783,8 +788,9 @@ msgstr ""
 #: codegenerators/java/javacodegenerationformbase.ui:221
 #: codegenerators/ruby/rubycodegenerationformbase.ui:147
 #: codegenerators/ruby/rubycodegenerationformbase.ui:188
-#: dialogs/classoptionspage.cpp:269 dialogs/classoptionspage.cpp:277
-#: dialogs/umlrolepropertiesbase.ui:73
+#: dialogs/pages/classoptionspage.cpp:269
+#: dialogs/pages/classoptionspage.cpp:277
+#: dialogs/pages/umlrolepropertiesbase.ui:73
 msgid "Public"
 msgstr "Public"
 
@@ -797,8 +803,9 @@ msgstr "Public"
 #: codegenerators/java/javacodegenerationformbase.ui:226
 #: codegenerators/ruby/rubycodegenerationformbase.ui:152
 #: codegenerators/ruby/rubycodegenerationformbase.ui:193
-#: dialogs/classoptionspage.cpp:270 dialogs/classoptionspage.cpp:278
-#: dialogs/umlrolepropertiesbase.ui:83
+#: dialogs/pages/classoptionspage.cpp:270
+#: dialogs/pages/classoptionspage.cpp:278
+#: dialogs/pages/umlrolepropertiesbase.ui:83
 msgid "Private"
 msgstr "Privat"
 
@@ -811,8 +818,9 @@ msgstr "Privat"
 #: codegenerators/java/javacodegenerationformbase.ui:231
 #: codegenerators/ruby/rubycodegenerationformbase.ui:157
 #: codegenerators/ruby/rubycodegenerationformbase.ui:198
-#: dialogs/classoptionspage.cpp:271 dialogs/classoptionspage.cpp:279
-#: dialogs/umlrolepropertiesbase.ui:90
+#: dialogs/pages/classoptionspage.cpp:271
+#: dialogs/pages/classoptionspage.cpp:279
+#: dialogs/pages/umlrolepropertiesbase.ui:90
 msgid "Protected"
 msgstr "Protegit"
 
@@ -1478,8 +1486,8 @@ msgid "Class Name"
 msgstr "Classa"
 
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:146
-#: dialogs/assocgenpage.cpp:77 dialogs/classpropdlg.cpp:128
-#: dialogs/objectnodedialog.cpp:45 dialogs/parmpropdlg.cpp:71
+#: dialogs/classpropdialog.cpp:128 dialogs/objectnodedialog.cpp:45
+#: dialogs/pages/associationgeneralpage.cpp:77 dialogs/parmpropdialog.cpp:71
 #: dialogs/statedialog.cpp:44 dialogs/statedialog.cpp:119
 #: dialogs/umlviewdialog.cpp:41 listpopupmenu.cpp:633
 #: refactoring/refactoringassistant.cpp:460
@@ -1556,686 +1564,163 @@ msgstr ""
 msgid "&Parameter activity node"
 msgstr ""
 
-#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:190
-#: dialogs/statedialog.cpp:191
-msgid "Activities"
-msgstr ""
-
-#: dialogs/activitypage.cpp:80 dialogs/classifierlistpage.cpp:174
-msgid "Move selected item to the top"
-msgstr ""
-
-#: dialogs/activitypage.cpp:86 dialogs/classifierlistpage.cpp:180
-msgid "Move selected item up"
-msgstr ""
-
-#: dialogs/activitypage.cpp:92 dialogs/classifierlistpage.cpp:186
-msgid "Move selected item down"
-msgstr ""
-
-#: dialogs/activitypage.cpp:98 dialogs/classifierlistpage.cpp:192
-msgid "Move selected item to the bottom"
-msgstr ""
-
-#: dialogs/activitypage.cpp:102
-msgid "New Activity..."
-msgstr ""
-
-#: dialogs/activitypage.cpp:104 listpopupmenu.cpp:642
-#: refactoring/refactoringassistant.cpp:461
-msgid "Delete"
-msgstr "Suprimir"
-
-#: dialogs/activitypage.cpp:106 widgets/floatingtextwidget.cpp:405
-msgid "Rename"
-msgstr "Renommar"
-
-#: dialogs/activitypage.cpp:175
-msgid "New Activity"
-msgstr ""
-
-#: dialogs/activitypage.cpp:176 toolbarstateother.cpp:251 umlscene.cpp:3096
-#: widgets/activitywidget.cpp:364 widgets/statewidget.cpp:497
-msgid "Enter the name of the new activity:"
-msgstr ""
-
-#: dialogs/activitypage.cpp:176 toolbarstateother.cpp:251 umlscene.cpp:3097
-#: widgets/statewidget.cpp:498
-msgid "new activity"
-msgstr ""
-
-#: dialogs/activitypage.cpp:198
-msgid "Rename Activity"
-msgstr ""
-
-#: dialogs/activitypage.cpp:198
-msgid "Enter the new name of the activity:"
-msgstr ""
-
-#: dialogs/assocgenpage.cpp:89
-#, fuzzy
-#| msgid "Name:"
-msgctxt "name of association widget"
-msgid "Name:"
-msgstr "Nom :"
-
-#: dialogs/assocgenpage.cpp:102
-msgid "Type:"
-msgstr "Mena :"
-
-#: dialogs/assocpage.cpp:44 dialogs/classpropdlg.cpp:367
-msgid "Associations"
-msgstr ""
-
-#: dialogs/assocpropdlg.cpp:54
+#: dialogs/assocpropdialog.cpp:54
 msgid "Association Properties"
 msgstr ""
 
-#: dialogs/assocpropdlg.cpp:98 dialogs/classpropdlg.cpp:245
-#: dialogs/classpropdlg.cpp:379 dialogs/settingsdlg.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
-msgid "General Settings"
-msgstr "Paramètres generals"
-
-#: dialogs/assocpropdlg.cpp:98
+#: dialogs/assocpropdialog.cpp:98
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings"
 msgid "General"
 msgstr "General"
 
-#: dialogs/assocpropdlg.cpp:104
+#: dialogs/assocpropdialog.cpp:98 dialogs/classpropdialog.cpp:245
+#: dialogs/classpropdialog.cpp:379 dialogs/settingsdialog.cpp:179
+#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
+msgid "General Settings"
+msgstr "Paramètres generals"
+
+#: dialogs/assocpropdialog.cpp:104
 msgctxt "role page name"
 msgid "Roles"
 msgstr ""
 
-#: dialogs/assocpropdlg.cpp:104
+#: dialogs/assocpropdialog.cpp:104
 msgid "Role Settings"
 msgstr ""
 
-#: dialogs/assocpropdlg.cpp:110
+#: dialogs/assocpropdialog.cpp:110
 #, fuzzy
 #| msgid "State"
 msgctxt "style page name"
 msgid "Style"
 msgstr "Estat"
 
-#: dialogs/assocpropdlg.cpp:110
+#: dialogs/assocpropdialog.cpp:110
 #, fuzzy
 #| msgid "Comment"
 msgid "Role Style"
 msgstr "Comentari"
 
-#: dialogs/assocpropdlg.cpp:116 dialogs/classpropdlg.cpp:398
-#: dialogs/dialogbase.cpp:90 dialogs/settingsdlg.cpp:234
-#: dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr ""
-
-#: dialogs/assocpropdlg.cpp:116
+#: dialogs/assocpropdialog.cpp:116
 #, fuzzy
 #| msgid "Font"
 msgctxt "font page name"
 msgid "Font"
 msgstr "Poliça"
 
-#: dialogs/assocrolepage.cpp:67
-msgid "Role A Properties"
+#: dialogs/assocpropdialog.cpp:116 dialogs/classpropdialog.cpp:398
+#: dialogs/dialogbase.cpp:90 dialogs/settingsdialog.cpp:234
+#: dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
 msgstr ""
 
-#: dialogs/assocrolepage.cpp:68
-msgid "Role B Properties"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:85
-msgid "Role A Visibility"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:86
-msgid "Role B Visibility"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:87
-msgid "Role A Changeability"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:88
-msgid "Role B Changeability"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
-#: dialogs/assocrolepage.cpp:113 dialogs/assocrolepage.cpp:190
-#: dialogs/umlrolepropertiesbase.ui:36
-msgid "Rolename:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
-#: dialogs/assocrolepage.cpp:118 dialogs/assocrolepage.cpp:195
-#: dialogs/umlrolepropertiesbase.ui:49
-msgid "Multiplicity:"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:135
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for A is public"
-msgid "Public"
-msgstr "Public"
-
-#: dialogs/assocrolepage.cpp:138
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for A is private"
-msgid "Private"
-msgstr "Privat"
-
-#: dialogs/assocrolepage.cpp:141
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for A is protected"
-msgid "Protected"
-msgstr "Protegit"
-
-#: dialogs/assocrolepage.cpp:144
-#, fuzzy
-#| msgid "Documentation"
-msgctxt "scope for A is implementation"
-msgid "Implementation"
-msgstr "Documentacion"
-
-#: dialogs/assocrolepage.cpp:166
-msgctxt "changeability for A is changeable"
-msgid "Changeable"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:169
-#, fuzzy
-#| msgid "Font"
-msgctxt "changeability for A is frozen"
-msgid "Frozen"
-msgstr "Poliça"
-
-#: dialogs/assocrolepage.cpp:172
-msgctxt "changeability for A is add only"
-msgid "Add only"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:212
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for B is public"
-msgid "Public"
-msgstr "Public"
-
-#: dialogs/assocrolepage.cpp:215
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for B is private"
-msgid "Private"
-msgstr "Privat"
-
-#: dialogs/assocrolepage.cpp:218
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for B is protected"
-msgid "Protected"
-msgstr "Protegit"
-
-#: dialogs/assocrolepage.cpp:221
-#, fuzzy
-#| msgid "Documentation"
-msgctxt "scope for B is implementation"
-msgid "Implementation"
-msgstr "Documentacion"
-
-#: dialogs/assocrolepage.cpp:243
-msgctxt "changeability for B is changeable"
-msgid "Changeable"
-msgstr ""
-
-#: dialogs/assocrolepage.cpp:246
-#, fuzzy
-#| msgid "Font"
-msgctxt "changeability for B is frozen"
-msgid "Frozen"
-msgstr "Poliça"
-
-#: dialogs/assocrolepage.cpp:249
-msgctxt "changeability for B is add only"
-msgid "Add only"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/autolayoutoptionpage.ui:17
-msgid "Layout Generator"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoDotPath)
-#: dialogs/autolayoutoptionpage.ui:24
-msgid ""
-"<p>The auto layout feature depends on layout generators provided by the "
-"GraphViz package, which is normally installed aside Umbrello by a package "
-"manager.</p>\n"
-"<p>Umbrello has build in support for detecting the install location of  "
-"these layout generators. For cases where this dependency is not available or "
-"do not fit, a different installation path could be provided.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoDotPath)
-#: dialogs/autolayoutoptionpage.ui:27
-msgid "Auto detect layout generator"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: dialogs/autolayoutoptionpage.ui:37
-msgid "Generator executable path:"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, Other)
-#: dialogs/autolayoutoptionpage.ui:82
-#, fuzzy
-#| msgid "Miscellaneous"
-msgid "Miscellaneous"
-msgstr "Divèrs"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_showExportLayout)
-#: dialogs/autolayoutoptionpage.ui:88
-msgid ""
-"<p>Dot file export is performed by using the export layout.</p><p>With this "
-"option checked, the export layout is added to the list of available diagram "
-"layouts and enables a quick dot export preview.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_showExportLayout)
-#: dialogs/autolayoutoptionpage.ui:91
-msgid "Show export layout in diagram context menu"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:68
-msgid "Class &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:71
-msgid "Actor &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:74
-msgid "Package &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:77
-msgid "Use case &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:80
-msgid "Interface &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:83
-msgid "Component &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:86
-msgid "Node &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:89
-msgid "Artifact &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:92
-msgid "Enum &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:95
-msgid "Datatype &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:98
-msgid "Entity &name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:122 dialogs/umltemplatedialog.cpp:81
-msgid "&Stereotype name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:138
-msgid "Reference:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:146
-#, fuzzy
-#| msgid "Package"
-msgid "Package path:"
-msgstr "Paquetatge"
-
-#: dialogs/classgenpage.cpp:178
-msgid "A&bstract class"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:180
-msgid "A&bstract use case"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:189
-msgctxt "component is executable"
-msgid "&Executable"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:197
-msgid "Draw As"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:201
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "draw as default"
-msgid "&Default"
-msgstr "&Suprimir"
-
-#. i18n: ectx: Menu (file)
-#: dialogs/classgenpage.cpp:204 umbrelloui.rc:4
-msgid "&File"
-msgstr "&Fichièr"
-
-#: dialogs/classgenpage.cpp:207
-msgid "&Library"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:210
-msgid "&Table"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:228 dialogs/umlattributedialog.cpp:98
-#: dialogs/umloperationdialog.cpp:123 listpopupmenu.cpp:1084
-#: listpopupmenu.cpp:1129
-msgid "Visibility"
-msgstr "Visibilitat"
-
-#: dialogs/classgenpage.cpp:232 dialogs/umloperationdialog.cpp:128
-#, fuzzy
-#| msgid "Public"
-msgctxt "public visibility"
-msgid "P&ublic"
-msgstr "Public"
-
-#: dialogs/classgenpage.cpp:235 dialogs/umloperationdialog.cpp:131
-#, fuzzy
-#| msgid "Private"
-msgctxt "private visibility"
-msgid "P&rivate"
-msgstr "Privat"
-
-#: dialogs/classgenpage.cpp:238
-#, fuzzy
-#| msgid "Protected"
-msgctxt "protected visibility"
-msgid "Pro&tected"
-msgstr "Protegit"
-
-#: dialogs/classgenpage.cpp:242
-msgid "Imple&mentation"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:306
-msgid "Class name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:314 dialogs/classgenpage.cpp:394
-msgid "Instance name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:322
-msgid "Draw as actor"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:327
-msgid "Multiple instance"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:333
-msgid "Show destruction"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:372
-msgid "Component name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:374
-msgid "Node name:"
-msgstr "Nom :"
-
-#: dialogs/classgenpage.cpp:384 dialogs/parmpropdlg.cpp:93
-#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
-#: dialogs/umloperationdialog.cpp:108
-msgid "Stereotype name:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:481 dialogs/classgenpage.cpp:530
-#: dialogs/classgenpage.cpp:543
-msgid ""
-"The name you have chosen\n"
-"is already being used.\n"
-"The name has been reset."
-msgstr ""
-
-#: dialogs/classgenpage.cpp:482 dialogs/classgenpage.cpp:531
-#: dialogs/classgenpage.cpp:544
-msgid "Name is Not Unique"
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:115 dialogs/classpropdlg.cpp:283
-#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
-#: refactoring/refactoringassistant.cpp:666
-msgid "Attributes"
-msgstr "Atributs"
-
-#: dialogs/classifierlistpage.cpp:116
-msgid "N&ew Attribute..."
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:119 dialogs/classpropdlg.cpp:295
-#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
-#: refactoring/refactoringassistant.cpp:682
-msgid "Operations"
-msgstr "Operacions"
-
-#: dialogs/classifierlistpage.cpp:120
-msgid "N&ew Operation..."
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:123 dialogs/classpropdlg.cpp:307
-msgid "Templates"
-msgstr "Modèls"
-
-#: dialogs/classifierlistpage.cpp:124
-msgid "N&ew Template..."
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:127 dialogs/classpropdlg.cpp:319
-msgid "Enum Literals"
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:128
-msgid "N&ew Enum Literal..."
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:131 dialogs/classpropdlg.cpp:331
-msgid "Entity Attributes"
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:132
-msgid "N&ew Entity Attribute..."
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:135
-msgid "Constraints"
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:136
-msgid "N&ew Constraint..."
-msgstr ""
-
-#: dialogs/classifierlistpage.cpp:206
-#: dialogs/umlforeignkeyconstraintdialog.cpp:321
-#: dialogs/umloperationdialog.cpp:166
-#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
-msgid "&Delete"
-msgstr "&Suprimir"
-
-#: dialogs/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:168
-#: uml.cpp:499
-msgid "&Properties"
-msgstr "&Propietats"
-
-#: dialogs/classifierlistpage.cpp:226
-msgid "Comment"
-msgstr "Comentari"
-
-#: dialogs/classifierlistpage.cpp:227
-msgid "Source Code"
-msgstr "Còdi sorga"
-
-#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:191
-#: dialogs/classoptionspage.cpp:213 dialogs/codeeditor.cpp:791
-#: listpopupmenu.cpp:639 listpopupmenu.cpp:1073 listpopupmenu.cpp:1110
-#: listpopupmenu.cpp:1115 listpopupmenu.cpp:1123 listpopupmenu.cpp:1130
-#: listpopupmenu.cpp:1137 listpopupmenu.cpp:1143
-msgid "Show"
-msgstr "Visualizar"
-
-#: dialogs/classoptionspage.cpp:131 dialogs/classoptionspage.cpp:219
-msgid "Operatio&ns"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:135 dialogs/classoptionspage.cpp:236
-msgid "&Visibility"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:144 dialogs/classoptionspage.cpp:198
-#: dialogs/classoptionspage.cpp:223
-msgid "O&peration signature"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:148 dialogs/classoptionspage.cpp:240
-msgid "Pac&kage"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:155 dialogs/classoptionspage.cpp:228
-msgid "Att&ributes"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:159 dialogs/classoptionspage.cpp:244
-msgid "Stereot&ype"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:163 dialogs/classoptionspage.cpp:232
-msgid "Attr&ibute signature"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:172 dialogs/classoptionspage.cpp:252
-#, fuzzy
-#| msgid "Public"
-msgid "&Public Only"
-msgstr "Public"
-
-#: dialogs/classoptionspage.cpp:178
-msgid "Draw as circle"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:248
-msgid "&Attribute associations"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:257
-msgid "Starting Scope"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:262
-msgid "Default attribute scope:"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:265
-msgid "Default operation scope:"
-msgstr ""
-
-#: dialogs/classpropdlg.cpp:245
+#: dialogs/classpropdialog.cpp:245
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page name"
 msgid "General"
 msgstr "General"
 
-#: dialogs/classpropdlg.cpp:258
+#: dialogs/classpropdialog.cpp:258
 #, fuzzy
 #| msgid "State"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "Estat"
 
-#: dialogs/classpropdlg.cpp:258 dialogs/dialogbase.cpp:113
+#: dialogs/classpropdialog.cpp:258 dialogs/dialogbase.cpp:113
 #, fuzzy
 #| msgid "Comment"
 msgid "Widget Style"
 msgstr "Comentari"
 
-#: dialogs/classpropdlg.cpp:270
+#: dialogs/classpropdialog.cpp:270
 #, fuzzy
 #| msgid "Display"
 msgctxt "display option page name"
 msgid "Display"
 msgstr "Visualizar"
 
-#: dialogs/classpropdlg.cpp:270
+#: dialogs/classpropdialog.cpp:270
 msgid "Display Options"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:283
+#: dialogs/classpropdialog.cpp:283 dialogs/pages/classifierlistpage.cpp:115
+#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
+#: refactoring/refactoringassistant.cpp:666
+msgid "Attributes"
+msgstr "Atributs"
+
+#: dialogs/classpropdialog.cpp:283
 #, fuzzy
 #| msgid "Attributes"
 msgid "Attribute Settings"
 msgstr "Atributs"
 
-#: dialogs/classpropdlg.cpp:295
+#: dialogs/classpropdialog.cpp:295 dialogs/pages/classifierlistpage.cpp:119
+#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
+#: refactoring/refactoringassistant.cpp:682
+msgid "Operations"
+msgstr "Operacions"
+
+#: dialogs/classpropdialog.cpp:295
 msgid "Operation Settings"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:307
+#: dialogs/classpropdialog.cpp:307 dialogs/pages/classifierlistpage.cpp:123
+msgid "Templates"
+msgstr "Modèls"
+
+#: dialogs/classpropdialog.cpp:307
 msgid "Templates Settings"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:319
+#: dialogs/classpropdialog.cpp:319 dialogs/pages/classifierlistpage.cpp:127
+msgid "Enum Literals"
+msgstr ""
+
+#: dialogs/classpropdialog.cpp:319
 msgid "Enum Literals Settings"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:331
+#: dialogs/classpropdialog.cpp:331 dialogs/pages/classifierlistpage.cpp:131
+msgid "Entity Attributes"
+msgstr ""
+
+#: dialogs/classpropdialog.cpp:331
 msgid "Entity Attributes Settings"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:343
+#: dialogs/classpropdialog.cpp:343
 msgid "Entity Constraints"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:343
+#: dialogs/classpropdialog.cpp:343
 msgid "Entity Constraints Settings"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:355
+#: dialogs/classpropdialog.cpp:355
 #, fuzzy
 #| msgid "Contents"
 msgctxt "contents settings page name"
 msgid "Contents"
 msgstr "Ensenhador"
 
-#: dialogs/classpropdlg.cpp:355
+#: dialogs/classpropdialog.cpp:355
 msgid "Contents Settings"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:367
+#: dialogs/classpropdialog.cpp:367 dialogs/pages/classassociationspage.cpp:44
+msgid "Associations"
+msgstr ""
+
+#: dialogs/classpropdialog.cpp:367
 msgid "Class Associations"
 msgstr ""
 
-#: dialogs/classpropdlg.cpp:379
+#: dialogs/classpropdialog.cpp:379
 #, fuzzy
 #| msgid "General"
 msgctxt "instance general settings page name"
@@ -2244,9 +1729,9 @@ msgstr "General"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/classpropdlg.cpp:397 dialogs/dialogbase.cpp:90
-#: dialogs/settingsdlg.cpp:233 dialogs/umlviewdialog.cpp:153 umbrello.kcfg:160
-#: umbrello.kcfg:270
+#: dialogs/classpropdialog.cpp:397 dialogs/dialogbase.cpp:90
+#: dialogs/settingsdialog.cpp:233 dialogs/umlviewdialog.cpp:153
+#: umbrello.kcfg:160 umbrello.kcfg:270
 msgid "Font"
 msgstr "Poliça"
 
@@ -2287,6 +1772,15 @@ msgstr ""
 msgid "Hide"
 msgstr "Amagar"
 
+#: dialogs/codeeditor.cpp:791 dialogs/pages/classoptionspage.cpp:124
+#: dialogs/pages/classoptionspage.cpp:191
+#: dialogs/pages/classoptionspage.cpp:213 listpopupmenu.cpp:639
+#: listpopupmenu.cpp:1073 listpopupmenu.cpp:1110 listpopupmenu.cpp:1115
+#: listpopupmenu.cpp:1123 listpopupmenu.cpp:1130 listpopupmenu.cpp:1137
+#: listpopupmenu.cpp:1143
+msgid "Show"
+msgstr "Visualizar"
+
 #: dialogs/codeeditor.cpp:800
 msgid "Hide Comment"
 msgstr ""
@@ -2314,21 +1808,6 @@ msgstr "Pegar"
 #: dialogs/codeeditor.cpp:836 listpopupmenu.cpp:645
 msgid "Cut"
 msgstr "Talhar"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/codeimportoptionspage.ui:17
-msgid "C++- Import"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
-#: dialogs/codeimportoptionspage.ui:29
-msgid "For each imported file create an artifact in the component view"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, resolveDependenciesCheckBox)
-#: dialogs/codeimportoptionspage.ui:42
-msgid "Resolve dependencies (reduces import speed)"
-msgstr ""
 
 #: dialogs/codeviewerdialog.cpp:107
 #, kde-format
@@ -2388,139 +1867,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: dialogs/codevieweroptionsbase.ui:278
 msgid "<p align=\"right\">Editable text:</p>"
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:72 listpopupmenu.cpp:1417
-msgid "Unique Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1416
-msgid "Primary Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:80 listpopupmenu.cpp:1418
-msgid "Foreign Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:84 listpopupmenu.cpp:1419
-msgid "Check Constraint..."
-msgstr ""
-
-#: dialogs/defaultcodegenpolicypage.cpp:28
-msgid "<p align=\"center\">No Options Available.</p>"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:44
-msgid "&Diagrams"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:49
-msgid "Filter"
-msgstr "Filtre"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_CurrentDiagram)
-#: dialogs/diagramprintpage.cpp:56 dialogs/finddialog.ui:43
-msgid "&Current diagram"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_Diagrams)
-#: dialogs/diagramprintpage.cpp:60 dialogs/finddialog.ui:53
-msgid "&All diagrams"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:63
-msgid "&Select diagrams"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:66
-msgid "&Type of diagram"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:69
-#, fuzzy
-#| msgid "Selection"
-msgctxt "diagram selection for printing"
-msgid "Selection"
-msgstr "Seleccion"
-
-#: dialogs/diagramprintpage.cpp:160
-msgid "No diagrams selected."
-msgstr ""
-
-#: dialogs/diagrampropertiespage.cpp:75
-msgid "The name you have entered is invalid."
-msgstr ""
-
-#: dialogs/diagrampropertiespage.cpp:85
-msgid "The name you have entered is not unique."
-msgstr ""
-
-#: dialogs/diagrampropertiespage.cpp:86 umldoc.cpp:1430
-msgid "Name Not Unique"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
-#: dialogs/diagrampropertiespage.ui:17
-msgid "Diagram Properties"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
-#: dialogs/diagrampropertiespage.ui:31
-msgid "Name:"
-msgstr "Nom :"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
-#: dialogs/diagrampropertiespage.ui:56
-msgid "Zoom:"
-msgstr "Zoom :"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
-#: dialogs/diagrampropertiespage.ui:82
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: dialogs/diagrampropertiespage.ui:124
-msgid "Show &grid"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: dialogs/diagrampropertiespage.ui:131
-msgid "Snap &to grid"
-msgstr ""
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:139
-msgid ""
-"Snap the size of the components to be a multiple of the grid spacing.\n"
-"If 'Snap to Grid' is enabled a component will always be aligned with the "
-"grid on all 4 sides."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:142
-msgid "Snap component size"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: dialogs/diagrampropertiespage.ui:159
-msgid "Grid spacing:  "
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: dialogs/diagrampropertiespage.ui:182
-msgid "X"
-msgstr "X"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: dialogs/diagrampropertiespage.ui:218
-msgid "Y"
-msgstr "O"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_autoIncrementSequence)
-#: dialogs/diagrampropertiespage.ui:247
-msgid "Autoincrement Sequence "
 msgstr ""
 
 #: dialogs/dialogbase.cpp:113
@@ -2599,78 +1945,19 @@ msgstr "Filtre"
 msgid "Tree View"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QRadioButton, ui_CurrentDiagram)
+#: dialogs/finddialog.ui:43 dialogs/pages/diagramprintpage.cpp:56
+msgid "&Current diagram"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_Diagrams)
+#: dialogs/finddialog.ui:53 dialogs/pages/diagramprintpage.cpp:60
+msgid "&All diagrams"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: dialogs/finddialog.ui:69
 msgid "Search Term:"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:43
-#, fuzzy
-#| msgid "Miscellaneous"
-msgctxt "miscellaneous group box"
-msgid "Miscellaneous"
-msgstr "Divèrs"
-
-#: dialogs/generaloptionpage.cpp:49
-msgid "Enable undo"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:53
-msgid "Use tabbed diagrams"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:57
-msgid "Use new C++/Java/Ruby generators"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:61
-msgid "Use angular association lines"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:65
-msgid "Turn on footer and page numbers when printing"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:70
-msgid "Autosave"
-msgstr "Enregistrar automaticament"
-
-#: dialogs/generaloptionpage.cpp:76
-msgid "E&nable autosave"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:80
-msgid "Select auto-save time interval (mins):"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:89
-msgid "Set autosave suffix:"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:91
-msgid ""
-"<qt><p>The autosave file will be saved to ~/autosave.xmi if the autosaving "
-"occurs before you have manually saved the file.</p><p>If you have already "
-"saved it, the autosave file will be saved in the same folder as the file and "
-"will be named like the file's name, followed by the suffix specified.</"
-"p><p>If the suffix is equal to the suffix of the file you have saved, the "
-"autosave will overwrite your file automatically.</p></qt>"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:101
-msgid "Startup"
-msgstr "Aviada"
-
-#: dialogs/generaloptionpage.cpp:107
-msgid "&Load last project"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:111
-msgid "Start new project with:"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:129
-msgid "Default Language :"
 msgstr ""
 
 #: dialogs/objectnodedialog.cpp:134
@@ -2719,11 +2006,11 @@ msgstr ""
 msgid "&Object Flow"
 msgstr ""
 
-#: dialogs/overwritedialogue.cpp:32
+#: dialogs/overwritedialog.cpp:32
 msgid "Destination File Already Exists"
 msgstr ""
 
-#: dialogs/overwritedialogue.cpp:45
+#: dialogs/overwritedialog.cpp:45
 #, kde-format
 msgid ""
 "The file %1 already exists in %2.\n"
@@ -2732,195 +2019,1059 @@ msgid ""
 "file name or not generate this file."
 msgstr ""
 
-#: dialogs/overwritedialogue.cpp:48
+#: dialogs/overwritedialog.cpp:48
 msgid "&Apply to all remaining files"
 msgstr ""
 
-#: dialogs/overwritedialogue.cpp:52 umlviewimageexporter.cpp:106
+#: dialogs/overwritedialog.cpp:52 umlviewimageexporter.cpp:106
 msgid "&Overwrite"
 msgstr "&Espotir"
 
-#: dialogs/overwritedialogue.cpp:53
+#: dialogs/overwritedialog.cpp:53
 msgid "&Generate Similar File Name"
 msgstr ""
 
-#: dialogs/overwritedialogue.cpp:54
+#: dialogs/overwritedialog.cpp:54
 msgid "&Do Not Generate File"
 msgstr ""
 
-#: dialogs/parmpropdlg.cpp:47
+#: dialogs/pages/activitypage.cpp:58 dialogs/statedialog.cpp:190
+#: dialogs/statedialog.cpp:191
+msgid "Activities"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:80 dialogs/pages/classifierlistpage.cpp:174
+msgid "Move selected item to the top"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:86 dialogs/pages/classifierlistpage.cpp:180
+msgid "Move selected item up"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:92 dialogs/pages/classifierlistpage.cpp:186
+msgid "Move selected item down"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:98 dialogs/pages/classifierlistpage.cpp:192
+msgid "Move selected item to the bottom"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:102
+msgid "New Activity..."
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:104 listpopupmenu.cpp:642
+#: refactoring/refactoringassistant.cpp:461
+msgid "Delete"
+msgstr "Suprimir"
+
+#: dialogs/pages/activitypage.cpp:106 widgets/floatingtextwidget.cpp:405
+msgid "Rename"
+msgstr "Renommar"
+
+#: dialogs/pages/activitypage.cpp:175
+msgid "New Activity"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:176 toolbarstateother.cpp:251
+#: umlscene.cpp:3096 widgets/activitywidget.cpp:364
+#: widgets/statewidget.cpp:497
+msgid "Enter the name of the new activity:"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:176 toolbarstateother.cpp:251
+#: umlscene.cpp:3097 widgets/statewidget.cpp:498
+msgid "new activity"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:198
+msgid "Rename Activity"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:198
+msgid "Enter the new name of the activity:"
+msgstr ""
+
+#: dialogs/pages/associationgeneralpage.cpp:89
+#, fuzzy
+#| msgid "Name:"
+msgctxt "name of association widget"
+msgid "Name:"
+msgstr "Nom :"
+
+#: dialogs/pages/associationgeneralpage.cpp:102
+msgid "Type:"
+msgstr "Mena :"
+
+#: dialogs/pages/associationrolepage.cpp:67
+msgid "Role A Properties"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:68
+msgid "Role B Properties"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:85
+msgid "Role A Visibility"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:86
+msgid "Role B Visibility"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:87
+msgid "Role A Changeability"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:88
+msgid "Role B Changeability"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
+#: dialogs/pages/associationrolepage.cpp:113
+#: dialogs/pages/associationrolepage.cpp:190
+#: dialogs/pages/umlrolepropertiesbase.ui:36
+msgid "Rolename:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
+#: dialogs/pages/associationrolepage.cpp:118
+#: dialogs/pages/associationrolepage.cpp:195
+#: dialogs/pages/umlrolepropertiesbase.ui:49
+msgid "Multiplicity:"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:135
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for A is public"
+msgid "Public"
+msgstr "Public"
+
+#: dialogs/pages/associationrolepage.cpp:138
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for A is private"
+msgid "Private"
+msgstr "Privat"
+
+#: dialogs/pages/associationrolepage.cpp:141
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for A is protected"
+msgid "Protected"
+msgstr "Protegit"
+
+#: dialogs/pages/associationrolepage.cpp:144
+#, fuzzy
+#| msgid "Documentation"
+msgctxt "scope for A is implementation"
+msgid "Implementation"
+msgstr "Documentacion"
+
+#: dialogs/pages/associationrolepage.cpp:166
+msgctxt "changeability for A is changeable"
+msgid "Changeable"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:169
+#, fuzzy
+#| msgid "Font"
+msgctxt "changeability for A is frozen"
+msgid "Frozen"
+msgstr "Poliça"
+
+#: dialogs/pages/associationrolepage.cpp:172
+msgctxt "changeability for A is add only"
+msgid "Add only"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:212
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for B is public"
+msgid "Public"
+msgstr "Public"
+
+#: dialogs/pages/associationrolepage.cpp:215
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for B is private"
+msgid "Private"
+msgstr "Privat"
+
+#: dialogs/pages/associationrolepage.cpp:218
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for B is protected"
+msgid "Protected"
+msgstr "Protegit"
+
+#: dialogs/pages/associationrolepage.cpp:221
+#, fuzzy
+#| msgid "Documentation"
+msgctxt "scope for B is implementation"
+msgid "Implementation"
+msgstr "Documentacion"
+
+#: dialogs/pages/associationrolepage.cpp:243
+msgctxt "changeability for B is changeable"
+msgid "Changeable"
+msgstr ""
+
+#: dialogs/pages/associationrolepage.cpp:246
+#, fuzzy
+#| msgid "Font"
+msgctxt "changeability for B is frozen"
+msgid "Frozen"
+msgstr "Poliça"
+
+#: dialogs/pages/associationrolepage.cpp:249
+msgctxt "changeability for B is add only"
+msgid "Add only"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/pages/autolayoutoptionpage.ui:17
+msgid "Layout Generator"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoDotPath)
+#: dialogs/pages/autolayoutoptionpage.ui:24
+msgid ""
+"<p>The auto layout feature depends on layout generators provided by the "
+"GraphViz package, which is normally installed aside Umbrello by a package "
+"manager.</p>\n"
+"<p>Umbrello has build in support for detecting the install location of  "
+"these layout generators. For cases where this dependency is not available or "
+"do not fit, a different installation path could be provided.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoDotPath)
+#: dialogs/pages/autolayoutoptionpage.ui:27
+msgid "Auto detect layout generator"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/pages/autolayoutoptionpage.ui:37
+msgid "Generator executable path:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, Other)
+#: dialogs/pages/autolayoutoptionpage.ui:82
+#, fuzzy
+#| msgid "Miscellaneous"
+msgid "Miscellaneous"
+msgstr "Divèrs"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_showExportLayout)
+#: dialogs/pages/autolayoutoptionpage.ui:88
+msgid ""
+"<p>Dot file export is performed by using the export layout.</p><p>With this "
+"option checked, the export layout is added to the list of available diagram "
+"layouts and enables a quick dot export preview.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_showExportLayout)
+#: dialogs/pages/autolayoutoptionpage.ui:91
+msgid "Show export layout in diagram context menu"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:68
+msgid "Class &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:71
+msgid "Actor &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:74
+msgid "Package &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:77
+msgid "Use case &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:80
+msgid "Interface &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:83
+msgid "Component &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:86
+msgid "Node &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:89
+msgid "Artifact &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:92
+msgid "Enum &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:95
+msgid "Datatype &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:98
+msgid "Entity &name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:122 dialogs/umltemplatedialog.cpp:81
+msgid "&Stereotype name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:138
+msgid "Reference:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:146
+#, fuzzy
+#| msgid "Package"
+msgid "Package path:"
+msgstr "Paquetatge"
+
+#: dialogs/pages/classgeneralpage.cpp:178
+msgid "A&bstract class"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:180
+msgid "A&bstract use case"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:189
+msgctxt "component is executable"
+msgid "&Executable"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:197
+msgid "Draw As"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:201
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "draw as default"
+msgid "&Default"
+msgstr "&Suprimir"
+
+#. i18n: ectx: Menu (file)
+#: dialogs/pages/classgeneralpage.cpp:204 umbrelloui.rc:4
+msgid "&File"
+msgstr "&Fichièr"
+
+#: dialogs/pages/classgeneralpage.cpp:207
+msgid "&Library"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:210
+msgid "&Table"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:228 dialogs/umlattributedialog.cpp:98
+#: dialogs/umloperationdialog.cpp:123 listpopupmenu.cpp:1084
+#: listpopupmenu.cpp:1129
+msgid "Visibility"
+msgstr "Visibilitat"
+
+#: dialogs/pages/classgeneralpage.cpp:232 dialogs/umloperationdialog.cpp:128
+#, fuzzy
+#| msgid "Public"
+msgctxt "public visibility"
+msgid "P&ublic"
+msgstr "Public"
+
+#: dialogs/pages/classgeneralpage.cpp:235 dialogs/umloperationdialog.cpp:131
+#, fuzzy
+#| msgid "Private"
+msgctxt "private visibility"
+msgid "P&rivate"
+msgstr "Privat"
+
+#: dialogs/pages/classgeneralpage.cpp:238
+#, fuzzy
+#| msgid "Protected"
+msgctxt "protected visibility"
+msgid "Pro&tected"
+msgstr "Protegit"
+
+#: dialogs/pages/classgeneralpage.cpp:242
+msgid "Imple&mentation"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:306
+msgid "Class name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:314
+#: dialogs/pages/classgeneralpage.cpp:394
+msgid "Instance name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:322
+msgid "Draw as actor"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:327
+msgid "Multiple instance"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:333
+msgid "Show destruction"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:372
+msgid "Component name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:374
+msgid "Node name:"
+msgstr "Nom :"
+
+#: dialogs/pages/classgeneralpage.cpp:384 dialogs/parmpropdialog.cpp:93
+#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
+#: dialogs/umloperationdialog.cpp:108
+msgid "Stereotype name:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:481
+#: dialogs/pages/classgeneralpage.cpp:530
+#: dialogs/pages/classgeneralpage.cpp:543
+msgid ""
+"The name you have chosen\n"
+"is already being used.\n"
+"The name has been reset."
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:482
+#: dialogs/pages/classgeneralpage.cpp:531
+#: dialogs/pages/classgeneralpage.cpp:544
+msgid "Name is Not Unique"
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:116
+msgid "N&ew Attribute..."
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:120
+msgid "N&ew Operation..."
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:124
+msgid "N&ew Template..."
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:128
+msgid "N&ew Enum Literal..."
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:132
+msgid "N&ew Entity Attribute..."
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:135
+msgid "Constraints"
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:136
+msgid "N&ew Constraint..."
+msgstr ""
+
+#: dialogs/pages/classifierlistpage.cpp:206
+#: dialogs/umlforeignkeyconstraintdialog.cpp:321
+#: dialogs/umloperationdialog.cpp:166
+#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
+msgid "&Delete"
+msgstr "&Suprimir"
+
+#: dialogs/pages/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:168
+#: uml.cpp:499
+msgid "&Properties"
+msgstr "&Propietats"
+
+#: dialogs/pages/classifierlistpage.cpp:226
+msgid "Comment"
+msgstr "Comentari"
+
+#: dialogs/pages/classifierlistpage.cpp:227
+msgid "Source Code"
+msgstr "Còdi sorga"
+
+#: dialogs/pages/classoptionspage.cpp:131
+#: dialogs/pages/classoptionspage.cpp:219
+msgid "Operatio&ns"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:135
+#: dialogs/pages/classoptionspage.cpp:236
+msgid "&Visibility"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:144
+#: dialogs/pages/classoptionspage.cpp:198
+#: dialogs/pages/classoptionspage.cpp:223
+msgid "O&peration signature"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:148
+#: dialogs/pages/classoptionspage.cpp:240
+msgid "Pac&kage"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:155
+#: dialogs/pages/classoptionspage.cpp:228
+msgid "Att&ributes"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:159
+#: dialogs/pages/classoptionspage.cpp:244
+msgid "Stereot&ype"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:163
+#: dialogs/pages/classoptionspage.cpp:232
+msgid "Attr&ibute signature"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:172
+#: dialogs/pages/classoptionspage.cpp:252
+#, fuzzy
+#| msgid "Public"
+msgid "&Public Only"
+msgstr "Public"
+
+#: dialogs/pages/classoptionspage.cpp:178
+msgid "Draw as circle"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:248
+msgid "&Attribute associations"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:257
+msgid "Starting Scope"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:262
+msgid "Default attribute scope:"
+msgstr ""
+
+#: dialogs/pages/classoptionspage.cpp:265
+msgid "Default operation scope:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/pages/codeimportoptionspage.ui:17
+msgid "C++- Import"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
+#: dialogs/pages/codeimportoptionspage.ui:29
+msgid "For each imported file create an artifact in the component view"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, resolveDependenciesCheckBox)
+#: dialogs/pages/codeimportoptionspage.ui:42
+msgid "Resolve dependencies (reduces import speed)"
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:72 listpopupmenu.cpp:1417
+msgid "Unique Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:76 listpopupmenu.cpp:1416
+msgid "Primary Key Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:80 listpopupmenu.cpp:1418
+msgid "Foreign Key Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:84 listpopupmenu.cpp:1419
+msgid "Check Constraint..."
+msgstr ""
+
+#: dialogs/pages/defaultcodegenpolicypage.cpp:28
+msgid "<p align=\"center\">No Options Available.</p>"
+msgstr ""
+
+#: dialogs/pages/diagramprintpage.cpp:44
+msgid "&Diagrams"
+msgstr ""
+
+#: dialogs/pages/diagramprintpage.cpp:49
+msgid "Filter"
+msgstr "Filtre"
+
+#: dialogs/pages/diagramprintpage.cpp:63
+msgid "&Select diagrams"
+msgstr ""
+
+#: dialogs/pages/diagramprintpage.cpp:66
+msgid "&Type of diagram"
+msgstr ""
+
+#: dialogs/pages/diagramprintpage.cpp:69
+#, fuzzy
+#| msgid "Selection"
+msgctxt "diagram selection for printing"
+msgid "Selection"
+msgstr "Seleccion"
+
+#: dialogs/pages/diagramprintpage.cpp:160
+msgid "No diagrams selected."
+msgstr ""
+
+#: dialogs/pages/diagrampropertiespage.cpp:75
+msgid "The name you have entered is invalid."
+msgstr ""
+
+#: dialogs/pages/diagrampropertiespage.cpp:85
+msgid "The name you have entered is not unique."
+msgstr ""
+
+#: dialogs/pages/diagrampropertiespage.cpp:86 umldoc.cpp:1430
+msgid "Name Not Unique"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
+#: dialogs/pages/diagrampropertiespage.ui:17
+msgid "Diagram Properties"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
+#: dialogs/pages/diagrampropertiespage.ui:31
+msgid "Name:"
+msgstr "Nom :"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
+#: dialogs/pages/diagrampropertiespage.ui:56
+msgid "Zoom:"
+msgstr "Zoom :"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
+#: dialogs/pages/diagrampropertiespage.ui:82
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
+#: dialogs/pages/diagrampropertiespage.ui:124
+msgid "Show &grid"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:131
+msgid "Snap &to grid"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:139
+msgid ""
+"Snap the size of the components to be a multiple of the grid spacing.\n"
+"If 'Snap to Grid' is enabled a component will always be aligned with the "
+"grid on all 4 sides."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:142
+msgid "Snap component size"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
+#: dialogs/pages/diagrampropertiespage.ui:159
+msgid "Grid spacing:  "
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
+#: dialogs/pages/diagrampropertiespage.ui:182
+msgid "X"
+msgstr "X"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
+#: dialogs/pages/diagrampropertiespage.ui:218
+msgid "Y"
+msgstr "O"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_autoIncrementSequence)
+#: dialogs/pages/diagrampropertiespage.ui:247
+msgid "Autoincrement Sequence "
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:43
+#, fuzzy
+#| msgid "Miscellaneous"
+msgctxt "miscellaneous group box"
+msgid "Miscellaneous"
+msgstr "Divèrs"
+
+#: dialogs/pages/generaloptionpage.cpp:49
+msgid "Enable undo"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:53
+msgid "Use tabbed diagrams"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:57
+msgid "Use new C++/Java/Ruby generators"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:61
+msgid "Use angular association lines"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:65
+msgid "Turn on footer and page numbers when printing"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:70
+msgid "Autosave"
+msgstr "Enregistrar automaticament"
+
+#: dialogs/pages/generaloptionpage.cpp:76
+msgid "E&nable autosave"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:80
+msgid "Select auto-save time interval (mins):"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:89
+msgid "Set autosave suffix:"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:91
+msgid ""
+"<qt><p>The autosave file will be saved to ~/autosave.xmi if the autosaving "
+"occurs before you have manually saved the file.</p><p>If you have already "
+"saved it, the autosave file will be saved in the same folder as the file and "
+"will be named like the file's name, followed by the suffix specified.</"
+"p><p>If the suffix is equal to the suffix of the file you have saved, the "
+"autosave will overwrite your file automatically.</p></qt>"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:101
+msgid "Startup"
+msgstr "Aviada"
+
+#: dialogs/pages/generaloptionpage.cpp:107
+msgid "&Load last project"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:111
+msgid "Start new project with:"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:129
+msgid "Default Language :"
+msgstr ""
+
+#: dialogs/pages/pkgcontentspage.cpp:43
+msgid "Contained Items"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/pages/umlrolepropertiesbase.ui:16 dialogs/umlroledialog.cpp:24
+msgid "Role Properties"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
+#: dialogs/pages/umlrolepropertiesbase.ui:67
+msgid "Role Visibility"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:97
+msgid "Implementation"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
+#: dialogs/pages/umlrolepropertiesbase.ui:107
+msgid "Role Changeability"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:113
+msgid "Changeable"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:123
+msgid "Frozen"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:130
+msgid "Add only"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:86
+#, fuzzy
+#| msgid "Color"
+msgctxt "title of color group"
+msgid "Color"
+msgstr "Color"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:91
+msgctxt "text color"
+msgid "&Text:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:98
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "default text color button"
+msgid "Defaul&t"
+msgstr "&Suprimir"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:101
+#, fuzzy
+#| msgid "&Line:"
+msgctxt "line color"
+msgid "&Line:"
+msgstr "&Linhas&nbsp;:"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:108
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "default line color button"
+msgid "&Default"
+msgstr "&Suprimir"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:111
+msgid "&Fill:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:118
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "default fill color button"
+msgid "D&efault"
+msgstr "&Suprimir"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:121
+msgid "&Use fill"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:131
+msgctxt "background color"
+msgid "&Background:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:138
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "default background color button"
+msgid "De&fault"
+msgstr "&Suprimir"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:141
+msgctxt "grid dot color"
+msgid "&Grid dot:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:148
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "default grid dot color button"
+msgid "Def&ault"
+msgstr "&Suprimir"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:156
+#, fuzzy
+#| msgid "Width"
+msgctxt "title of width group"
+msgid "Width"
+msgstr "Largor"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:161
+#, fuzzy
+#| msgid "Width"
+msgctxt "line width"
+msgid "Line &width:"
+msgstr "Largor"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:167
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "default line width button"
+msgid "Defa&ult"
+msgstr "&Suprimir"
+
+#: dialogs/parmpropdialog.cpp:47
 msgid "Parameter Properties"
 msgstr ""
 
-#: dialogs/parmpropdlg.cpp:78 dialogs/umlattributedialog.cpp:73
+#: dialogs/parmpropdialog.cpp:78 dialogs/umlattributedialog.cpp:73
 #: dialogs/umlentityattributedialog.cpp:75 dialogs/umloperationdialog.cpp:101
 #: dialogs/umltemplatedialog.cpp:69
 msgid "&Type:"
 msgstr ""
 
-#: dialogs/parmpropdlg.cpp:86
+#: dialogs/parmpropdialog.cpp:86
 #, fuzzy
 #| msgid "Name:"
 msgctxt "property name"
 msgid "&Name:"
 msgstr "&Nom :"
 
-#: dialogs/parmpropdlg.cpp:90 dialogs/umlattributedialog.cpp:85
+#: dialogs/parmpropdialog.cpp:90 dialogs/umlattributedialog.cpp:85
 msgid "&Initial value:"
 msgstr ""
 
-#: dialogs/parmpropdlg.cpp:98
+#: dialogs/parmpropdialog.cpp:98
 msgid "Passing Direction"
 msgstr ""
 
-#: dialogs/parmpropdlg.cpp:99
+#: dialogs/parmpropdialog.cpp:99
 msgid ""
 "\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
 "\" is a parameter for reading and writing."
 msgstr ""
 
-#: dialogs/parmpropdlg.cpp:264
+#: dialogs/parmpropdialog.cpp:264
 msgid "You have entered an invalid parameter name."
 msgstr ""
 
-#: dialogs/parmpropdlg.cpp:265
+#: dialogs/parmpropdialog.cpp:265
 msgid "Parameter Name Invalid"
 msgstr ""
 
-#: dialogs/pkgcontentspage.cpp:43
-msgid "Contained Items"
-msgstr ""
-
-#: dialogs/selectopdlg.cpp:53 dialogs/selectopdlg.cpp:64
+#: dialogs/selectopdialog.cpp:53 dialogs/selectopdialog.cpp:64
 msgid "Select Operation"
 msgstr ""
 
-#: dialogs/selectopdlg.cpp:72
+#: dialogs/selectopdialog.cpp:72
 msgid "Sequence number:"
 msgstr ""
 
-#: dialogs/selectopdlg.cpp:75
+#: dialogs/selectopdialog.cpp:75
 msgid "Auto increment:"
 msgstr ""
 
-#: dialogs/selectopdlg.cpp:80
+#: dialogs/selectopdialog.cpp:80
 msgid "Class operation:"
 msgstr ""
 
-#: dialogs/selectopdlg.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
+#: dialogs/selectopdialog.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
 msgid "New Operation..."
 msgstr ""
 
-#: dialogs/selectopdlg.cpp:93
+#: dialogs/selectopdialog.cpp:93
 msgid "Custom operation:"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:39
+#: dialogs/settingsdialog.cpp:39
 msgid "Umbrello Setup"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:72
+#: dialogs/settingsdialog.cpp:72
 msgid "User Interface"
 msgstr "Interfaç utilizaire"
 
-#: dialogs/settingsdlg.cpp:73
+#: dialogs/settingsdialog.cpp:73
 msgid "User Interface Settings"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:77
+#: dialogs/settingsdialog.cpp:77
 #, fuzzy
 #| msgid "Color"
 msgctxt "color group box"
 msgid "Color"
 msgstr "Color"
 
-#: dialogs/settingsdlg.cpp:85
+#: dialogs/settingsdialog.cpp:85
 #, fuzzy
 #| msgid "Change Line Color"
 msgid "Custom text color:"
 msgstr "Modificar la color de las linhas"
 
-#: dialogs/settingsdlg.cpp:92
+#: dialogs/settingsdialog.cpp:92
 #, fuzzy
 #| msgid "Change Line Color"
 msgid "Custom line color:"
 msgstr "Modificar la color de las linhas"
 
-#: dialogs/settingsdlg.cpp:102
+#: dialogs/settingsdialog.cpp:102
 #, fuzzy
 #| msgid "Change Fill Color"
 msgid "Custom fill color:"
 msgstr "Cambiar la color d'emplenament"
 
-#: dialogs/settingsdlg.cpp:108
+#: dialogs/settingsdialog.cpp:108
 msgid "Custom grid color:"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:114
+#: dialogs/settingsdialog.cpp:114
 #, fuzzy
 #| msgid "Font Color"
 msgid "Custom background color:"
 msgstr "Color de poliça"
 
-#: dialogs/settingsdlg.cpp:120
+#: dialogs/settingsdialog.cpp:120
 msgid "Custom line width:"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:126
+#: dialogs/settingsdialog.cpp:126
 msgid "&Use fill color"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:178 dialogs/umlviewdialog.cpp:92
+#: dialogs/settingsdialog.cpp:178 dialogs/umlviewdialog.cpp:92
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "General"
 
-#: dialogs/settingsdlg.cpp:189
+#: dialogs/settingsdialog.cpp:189
 #, fuzzy
 #| msgid "Close"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "Classa"
 
-#: dialogs/settingsdlg.cpp:190
+#: dialogs/settingsdialog.cpp:190
 msgid "Class Settings"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:200
+#: dialogs/settingsdialog.cpp:200
 msgid "Code Importer"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:201
+#: dialogs/settingsdialog.cpp:201
 #, fuzzy
 #| msgid "State"
 msgid "Code Import Settings"
 msgstr "Estatut"
 
-#: dialogs/settingsdlg.cpp:211
+#: dialogs/settingsdialog.cpp:211
 msgid "Code Generation"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:212
+#: dialogs/settingsdialog.cpp:212
 msgid "Code Generation Settings"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:223
+#: dialogs/settingsdialog.cpp:223
 msgid "Code Viewer"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:224
+#: dialogs/settingsdialog.cpp:224
 msgid "Code Viewer Settings"
 msgstr ""
 
-#: dialogs/settingsdlg.cpp:244
+#: dialogs/settingsdialog.cpp:244
 #, fuzzy
 #| msgid "Auto Save"
 msgid "Auto Layout"
 msgstr "Enregistrament automatic"
 
-#: dialogs/settingsdlg.cpp:245
+#: dialogs/settingsdialog.cpp:245
 #, fuzzy
 #| msgid "Attributes"
 msgid "Auto Layout Settings"
@@ -3298,41 +3449,6 @@ msgstr ""
 msgid "Choose a different name or parameter list."
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:24 dialogs/umlrolepropertiesbase.ui:16
-msgid "Role Properties"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
-#: dialogs/umlrolepropertiesbase.ui:67
-msgid "Role Visibility"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
-#: dialogs/umlrolepropertiesbase.ui:97
-msgid "Implementation"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
-#: dialogs/umlrolepropertiesbase.ui:107
-msgid "Role Changeability"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
-#: dialogs/umlrolepropertiesbase.ui:113
-msgid "Changeable"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
-#: dialogs/umlrolepropertiesbase.ui:123
-msgid "Frozen"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
-#: dialogs/umlrolepropertiesbase.ui:130
-msgid "Add only"
-msgstr ""
-
 #: dialogs/umltemplatedialog.cpp:39
 msgid "Template Properties"
 msgstr ""
@@ -3399,99 +3515,6 @@ msgstr "Estat"
 #: dialogs/umlviewdialog.cpp:138
 msgid "Diagram Style"
 msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:86
-#, fuzzy
-#| msgid "Color"
-msgctxt "title of color group"
-msgid "Color"
-msgstr "Color"
-
-#: dialogs/umlwidgetstylepage.cpp:91
-msgctxt "text color"
-msgid "&Text:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:98
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "default text color button"
-msgid "Defaul&t"
-msgstr "&Suprimir"
-
-#: dialogs/umlwidgetstylepage.cpp:101
-#, fuzzy
-#| msgid "&Line:"
-msgctxt "line color"
-msgid "&Line:"
-msgstr "&Linhas&nbsp;:"
-
-#: dialogs/umlwidgetstylepage.cpp:108
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "default line color button"
-msgid "&Default"
-msgstr "&Suprimir"
-
-#: dialogs/umlwidgetstylepage.cpp:111
-msgid "&Fill:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:118
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "default fill color button"
-msgid "D&efault"
-msgstr "&Suprimir"
-
-#: dialogs/umlwidgetstylepage.cpp:121
-msgid "&Use fill"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:131
-msgctxt "background color"
-msgid "&Background:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:138
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "default background color button"
-msgid "De&fault"
-msgstr "&Suprimir"
-
-#: dialogs/umlwidgetstylepage.cpp:141
-msgctxt "grid dot color"
-msgid "&Grid dot:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:148
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "default grid dot color button"
-msgid "Def&ault"
-msgstr "&Suprimir"
-
-#: dialogs/umlwidgetstylepage.cpp:156
-#, fuzzy
-#| msgid "Width"
-msgctxt "title of width group"
-msgid "Width"
-msgstr "Largor"
-
-#: dialogs/umlwidgetstylepage.cpp:161
-#, fuzzy
-#| msgid "Width"
-msgctxt "line width"
-msgid "Line &width:"
-msgstr "Largor"
-
-#: dialogs/umlwidgetstylepage.cpp:167
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "default line width button"
-msgid "Defa&ult"
-msgstr "&Suprimir"
 
 #: docgenerators/docbook2xhtmlgeneratorjob.cpp:56
 msgid "Exporting to XHTML..."
