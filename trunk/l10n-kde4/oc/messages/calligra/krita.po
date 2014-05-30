@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-29 01:28+0000\n"
+"POT-Creation-Date: 2014-05-30 01:33+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1288,10 +1288,10 @@ msgstr "Filtre"
 
 #: image/brushengine/kis_paintop_factory.cpp:66
 #, fuzzy
-#| msgid "Scales"
+#| msgid "Settings"
 msgctxt "Category of brush engines"
-msgid "Stable"
-msgstr "Escalas"
+msgid "Brush engines"
+msgstr "Paramètres"
 
 #: image/brushengine/kis_paintop_registry.cc:135
 #, fuzzy
@@ -1635,7 +1635,7 @@ msgstr "Filtre"
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:918 ui/kis_layer_manager.cc:710
+#: image/kis_image.cc:918 ui/kis_layer_manager.cc:709
 msgid "Flatten Image"
 msgstr ""
 
@@ -2071,7 +2071,12 @@ msgstr ""
 msgid "Open Macro"
 msgstr "Macrò"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:226
+#: plugins/extensions/bigbrother/bigbrother.cc:190
+#: plugins/extensions/bigbrother/bigbrother.cc:229
+msgid "Recorded actions (*.krarec)"
+msgstr ""
+
+#: plugins/extensions/bigbrother/bigbrother.cc:227
 #, fuzzy
 #| msgid "Macro"
 msgid "Save Macro"
@@ -2962,59 +2967,60 @@ msgstr "Canal"
 msgid "Enabled"
 msgstr "activat"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:52
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:51
 #, fuzzy
 #| msgid "Options"
 msgid "Compositions"
 msgstr "Opcions"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:63
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:62
 #, fuzzy
 #| msgid "Partial"
 msgid "Delete Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:64
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:63
 #, fuzzy
 #| msgid "Partial"
 msgid "New Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:65
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:64
 #, fuzzy
 #| msgid "Partial"
 msgid "Export Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:81
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:80
 msgid "Insert Name"
 msgstr ""
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:84
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:83
 #, fuzzy
 #| msgid "Partial"
 msgid "Update Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:88
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:87
 #, fuzzy
 #| msgid "Partial"
 msgid "Rename Composition..."
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:178
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:175
+#: plugins/paintops/resourcemanager/KoResourceManagerControl.cpp:476
 #, fuzzy
 #| msgid "Select All"
 msgid "Select a Directory"
 msgstr "Tot seleccionar"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:284
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:277
 #, fuzzy
 #| msgid "Partial"
 msgid "Rename Composition"
 msgstr "parcial"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:285
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:278
 #, fuzzy
 #| msgid "Name:"
 msgid "New Name:"
@@ -3069,7 +3075,7 @@ msgid "&Select Opaque"
 msgstr "Seleccion"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:470
-#: ui/kis_layer_manager.cc:284
+#: ui/kis_layer_manager.cc:283
 msgid "&Merge with Layer Below"
 msgstr ""
 
@@ -3423,6 +3429,7 @@ msgid "Select custom configuration file."
 msgstr "Seleccion"
 
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:114
+#: plugins/extensions/dockers/lut/lutdocker_dock.cpp:482
 #, fuzzy
 #| msgid "Select All"
 msgid "Select LUT file"
@@ -3455,6 +3462,12 @@ msgstr ""
 #, fuzzy
 #| msgid "Saturation:"
 msgid "Select OpenColorIO Configuration"
+msgstr "Saturacion :"
+
+#: plugins/extensions/dockers/lut/lutdocker_dock.cpp:361
+#, fuzzy
+#| msgid "Saturation:"
+msgid "OpenColorIO configuration (*.ocio)"
 msgstr "Saturacion :"
 
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:429
@@ -5092,13 +5105,13 @@ msgid "&Custom:"
 msgstr "Personalizat"
 
 #: plugins/extensions/separate_channels/dlg_separate.cc:40
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:213
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:214
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:76
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:87
 msgid "Separate Image"
 msgstr ""
 
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:241
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:242
 msgid "Export Layer"
 msgstr ""
 
@@ -9723,11 +9736,19 @@ msgid "Select a directory to save the bundle"
 msgstr "Tot seleccionar"
 
 #: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:343
-#: ui/dialogs/kis_dlg_file_layer.cpp:97
+#: ui/dialogs/kis_dlg_file_layer.cpp:96
 msgid "Select file to use as dynamic file layer."
 msgstr ""
 
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:45
+#: plugins/paintops/resourcemanager/KoResourceManagerControl.cpp:510
+msgid "Import Bundle"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/KoResourceManagerControl.cpp:512
+msgid "Archive Files (*.bundle)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:47
 #, fuzzy
 #| msgid "Source"
 msgid "Manage Resources"
@@ -9735,23 +9756,27 @@ msgstr "Sorga"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:86
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:88
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:36
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:150
 msgid "All"
 msgstr ""
 
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:90
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:92
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "Nom"
 
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:94
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:96
 #, fuzzy
 #| msgid "Filename"
 msgid "Filename"
 msgstr "Nom de fichièr"
+
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:259
+msgid "Import Thumbnail"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:41
@@ -9914,11 +9939,101 @@ msgstr "Sorga"
 msgid "Add Resources"
 msgstr "Sorga"
 
-#: plugins/paintops/resourcemanager/resourcemanager.cpp:284
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:155
+#, fuzzy
+#| msgid "Settings"
+msgid "GIMP Brushes (*.gbr)"
+msgstr "Paramètres"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:156
+msgid "Imagepipe Brushes (*gih)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:157
+msgid "Photoshop Brushes (*.abr)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:158
+msgid "PNG Brushes (*png)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:159
+msgid "SVG Brushes (*svg)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:160
+#, fuzzy
+#| msgid "Palette"
+msgid "Brush Presets (*.kpp)"
+msgstr "Paleta"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:161
+msgid "GIMP Gradients (*.ggr)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:162
+#, fuzzy
+#| msgid "Gradient"
+msgid "SVG Gradients (*.svg)"
+msgstr "Degradat"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:163
+#, fuzzy
+#| msgid "Gradient"
+msgid "Karbon Gradients (*.kgr)"
+msgstr "Degradat"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:164
+#, fuzzy
+#| msgid "Source"
+msgid "Resource Bundles (*.bundle)"
+msgstr "Sorga"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:165
+msgid "GIMP Patterns (*.pat)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:166
+msgid "Jpeg Patterns (*.jpg)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:167
+#, fuzzy
+#| msgid "Pattern"
+msgid "Gif Patterns (*.gif)"
+msgstr "Motiu"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:168
+msgid "PNG Patterns (*.png)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:169
+msgid "Tiff Patterns (*.tif)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:170
+msgid "XPM Patterns (*.xpm)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:171
+msgid "BMP Patterns (*.bmp)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:172
+msgid "Palettes (*.gpl *.pal *.act *.aco *.colors)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:173
+#, fuzzy
+#| msgid "Selection"
+msgid "Workspaces (*.kts)"
+msgstr "Seleccion"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:305
 msgid "Could not create the new bundle."
 msgstr ""
 
-#: plugins/paintops/resourcemanager/resourcemanager.cpp:284
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:305
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Error"
@@ -13674,35 +13789,35 @@ msgid ""
 "down."
 msgstr ""
 
-#: ui/kis_doc2.cc:263 ui/kis_doc2.cc:271
+#: ui/kis_doc2.cc:262 ui/kis_doc2.cc:270
 msgid "Krita does not support the OpenDocument file format."
 msgstr ""
 
-#: ui/kis_doc2.cc:289
+#: ui/kis_doc2.cc:288
 msgid "The format is not supported or the file is corrupted"
 msgstr ""
 
-#: ui/kis_doc2.cc:295
+#: ui/kis_doc2.cc:294
 #, kde-format
 msgid "The file is too new for this version of Krita (%1)."
 msgstr ""
 
-#: ui/kis_doc2.cc:300
+#: ui/kis_doc2.cc:299
 msgid "The file has no layers."
 msgstr ""
 
-#: ui/kis_doc2.cc:314 ui/kis_doc2.cc:367
+#: ui/kis_doc2.cc:313 ui/kis_doc2.cc:366
 #, fuzzy
 #| msgid "Unknown"
 msgid "Unknown error."
 msgstr "Desconegut"
 
-#: ui/kis_doc2.cc:325
+#: ui/kis_doc2.cc:324
 msgid "The file does not contain an image."
 msgstr ""
 
-#: ui/kis_doc2.cc:442 ui/kis_part2.cpp:130 ui/kis_part2.cpp:145
-#: ui/widgets/kis_gradient_chooser.cc:130
+#: ui/kis_doc2.cc:441 ui/kis_part2.cpp:130 ui/kis_part2.cpp:145
+#: ui/widgets/kis_gradient_chooser.cc:129
 #, fuzzy
 #| msgid "Unnamed"
 msgid "unnamed"
@@ -13752,89 +13867,89 @@ msgstr "Propietats..."
 msgid "Import Image"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:279
+#: ui/kis_layer_manager.cc:278
 msgid "&Flatten image"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:289
+#: ui/kis_layer_manager.cc:288
 #, fuzzy
 #| msgid "Filter"
 msgid "&Flatten Layer"
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:293
+#: ui/kis_layer_manager.cc:292
 #, fuzzy
 #| msgid "Duplicate"
 msgid "Rename current layer"
 msgstr "Duplicar"
 
-#: ui/kis_layer_manager.cc:299 ui/kis_layer_manager.cc:779
+#: ui/kis_layer_manager.cc:298 ui/kis_layer_manager.cc:778
 #, fuzzy
 #| msgid "&Remove"
 msgid "Rasterize Layer"
 msgstr "&Suprimir "
 
-#: ui/kis_layer_manager.cc:305
+#: ui/kis_layer_manager.cc:304
 #, fuzzy
 #| msgid "Filter"
 msgid "Save Group Layers..."
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:309
+#: ui/kis_layer_manager.cc:308
 msgid "Size Canvas to Size of Current Layer"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:359
+#: ui/kis_layer_manager.cc:358
 #, fuzzy
 #| msgid "Image Properties"
 msgid "Filter Layer Properties"
 msgstr "Propietas de l'imatge"
 
-#: ui/kis_layer_manager.cc:404
+#: ui/kis_layer_manager.cc:403
 #, fuzzy
 #| msgid "Image Properties"
 msgid "Generator Layer Properties"
 msgstr "Propietas de l'imatge"
 
-#: ui/kis_layer_manager.cc:485
+#: ui/kis_layer_manager.cc:484
 #, fuzzy
 #| msgid "Filter"
 msgid "Convert to a Paint Layer"
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:564
+#: ui/kis_layer_manager.cc:563
 msgid "New Filter Layer"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:622
 msgid "Could not add layer to image."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:622
 msgid "Layer Error"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:709
+#: ui/kis_layer_manager.cc:708
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:711
+#: ui/kis_layer_manager.cc:710
 msgid "&Flatten Image"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:815
+#: ui/kis_layer_manager.cc:814
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:818
+#: ui/kis_layer_manager.cc:817
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:875
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:875
 msgid "No file specified"
 msgstr ""
 
@@ -13894,157 +14009,157 @@ msgstr "Propietas de l'imatge"
 msgid "Mirror Axis"
 msgstr "Vertical :"
 
-#: ui/kis_node_manager.cpp:193
+#: ui/kis_node_manager.cpp:194
 #, fuzzy
 #| msgid "Horizontal:"
 msgid "Mirror Layer Horizontally"
 msgstr "Orizontal :"
 
-#: ui/kis_node_manager.cpp:199
+#: ui/kis_node_manager.cpp:200
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Mirror Layer Vertically"
 msgstr "Vertical :"
 
-#: ui/kis_node_manager.cpp:205
+#: ui/kis_node_manager.cpp:206
 #, fuzzy
 #| msgid "Duplicate"
 msgid "Activate next layer"
 msgstr "Duplicar"
 
-#: ui/kis_node_manager.cpp:211
+#: ui/kis_node_manager.cpp:212
 msgid "Activate previous layer"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:217
+#: ui/kis_node_manager.cpp:218
 #, fuzzy
 #| msgid "Filter"
 msgid "Save Layer/Mask..."
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:222
+#: ui/kis_node_manager.cpp:223
 msgid "&Duplicate Layer or Mask"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:229
+#: ui/kis_node_manager.cpp:230
 #, fuzzy
 #| msgid "Filter"
 msgid "&Paint Layer"
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:233
+#: ui/kis_node_manager.cpp:234
 #, fuzzy
 #| msgid "Filter"
 msgid "&Group Layer"
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:236
+#: ui/kis_node_manager.cpp:237
 #, fuzzy
 #| msgid "Layer"
 msgid "&Clone Layer"
 msgstr "Jaç"
 
-#: ui/kis_node_manager.cpp:239
+#: ui/kis_node_manager.cpp:240
 #, fuzzy
 #| msgid "&Remove"
 msgid "&Vector Layer"
 msgstr "&Suprimir "
 
-#: ui/kis_node_manager.cpp:242
+#: ui/kis_node_manager.cpp:243
 #, fuzzy
 #| msgid "Filter"
 msgid "&Filter Layer..."
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:245
+#: ui/kis_node_manager.cpp:246
 #, fuzzy
 #| msgid "Filter"
 msgid "&Generated Layer..."
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:248
+#: ui/kis_node_manager.cpp:249
 #, fuzzy
 #| msgid "Filter"
 msgid "&File Layer"
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:251
+#: ui/kis_node_manager.cpp:252
 #, fuzzy
 #| msgid "Transparent"
 msgid "&Transparency Mask"
 msgstr "Transparent"
 
-#: ui/kis_node_manager.cpp:254
+#: ui/kis_node_manager.cpp:255
 #, fuzzy
 #| msgid "Filter"
 msgid "&Filter Mask..."
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:257
+#: ui/kis_node_manager.cpp:258
 #, fuzzy
 #| msgid "Selection"
 msgid "&Local Selection"
 msgstr "Seleccion"
 
-#: ui/kis_node_manager.cpp:263
+#: ui/kis_node_manager.cpp:264
 #, fuzzy
 #| msgid "Filter"
 msgid "to &Paint Layer"
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:266
+#: ui/kis_node_manager.cpp:267
 #, fuzzy
 #| msgid "Selection"
 msgid "to &Selection Mask"
 msgstr "Seleccion"
 
-#: ui/kis_node_manager.cpp:269
+#: ui/kis_node_manager.cpp:270
 #, fuzzy
 #| msgid "Filter"
 msgid "to &Filter Mask"
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:272
+#: ui/kis_node_manager.cpp:273
 #, fuzzy
 #| msgid "Transparent"
 msgid "to &Transparency Mask"
 msgstr "Transparent"
 
-#: ui/kis_node_manager.cpp:278
+#: ui/kis_node_manager.cpp:279
 #, fuzzy
 #| msgid "Filter"
 msgid "&Isolate Layer"
 msgstr "Filtre"
 
-#: ui/kis_node_manager.cpp:450
+#: ui/kis_node_manager.cpp:451
 #, fuzzy
 #| msgid "Selection"
 msgid "Convert to a Selection Mask"
 msgstr "Seleccion"
 
-#: ui/kis_node_manager.cpp:650
+#: ui/kis_node_manager.cpp:651
 #, fuzzy
 #| msgid "&Remove"
 msgid "Remove Last Layer"
 msgstr "&Suprimir "
 
-#: ui/kis_node_manager.cpp:669
+#: ui/kis_node_manager.cpp:670
 msgid "Mirror Layer X"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:671
+#: ui/kis_node_manager.cpp:672
 msgid "Mirror Mask X"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:682
+#: ui/kis_node_manager.cpp:683
 msgid "Mirror Layer Y"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:684
+#: ui/kis_node_manager.cpp:685
 msgid "Mirror Mask Y"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:805
+#: ui/kis_node_manager.cpp:806
 #, fuzzy
 #| msgid "View"
 msgid "Export Node"
@@ -14722,17 +14837,17 @@ msgstr ""
 msgid "No configuration option."
 msgstr ""
 
-#: ui/widgets/kis_gradient_chooser.cc:45 ui/widgets/kis_gradient_chooser.cc:50
+#: ui/widgets/kis_gradient_chooser.cc:44 ui/widgets/kis_gradient_chooser.cc:49
 msgid "Custom Gradient"
 msgstr ""
 
-#: ui/widgets/kis_gradient_chooser.cc:79
+#: ui/widgets/kis_gradient_chooser.cc:78
 #, fuzzy
 #| msgid "&Add..."
 msgid "Add..."
 msgstr "&Apondre..."
 
-#: ui/widgets/kis_gradient_chooser.cc:83
+#: ui/widgets/kis_gradient_chooser.cc:82
 #, fuzzy
 #| msgid "Edit"
 msgid "Edit..."
@@ -14840,6 +14955,12 @@ msgid "&Close"
 msgstr "Tampar"
 
 #, fuzzy
+#~| msgid "Scales"
+#~ msgctxt "Category of brush engines"
+#~ msgid "Stable"
+#~ msgstr "Escalas"
+
+#, fuzzy
 #~| msgid "Random"
 #~ msgid "No Smoothing"
 #~ msgstr "Aleatòri"
@@ -14858,11 +14979,6 @@ msgstr "Tampar"
 #~| msgid "Color"
 #~ msgid "OpenColorIO"
 #~ msgstr "Color"
-
-#, fuzzy
-#~| msgid "Saturation:"
-#~ msgid "OpenColorIO configuration path:"
-#~ msgstr "Saturacion :"
 
 #, fuzzy
 #~| msgid "Selection"
@@ -15605,11 +15721,6 @@ msgstr "Tampar"
 #~| msgid "Image Size"
 #~ msgid "imageSplit"
 #~ msgstr "Talha d'imatge"
-
-#, fuzzy
-#~| msgid "Settings"
-#~ msgid "Brush Engines"
-#~ msgstr "Paramètres"
 
 #, fuzzy
 #~| msgid "Settings"
