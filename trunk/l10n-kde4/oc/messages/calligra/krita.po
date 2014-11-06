@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-05 01:32+0000\n"
+"POT-Creation-Date: 2014-11-06 01:34+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -8023,11 +8023,18 @@ msgstr "Linha"
 msgid "Ascii"
 msgstr ""
 
-#: plugins/formats/psd/psd_export.cc:67
+#: plugins/formats/psd/psd_export.cc:90
 msgid ""
 "Unable to save to the Photoshop format.\n"
 "The Photoshop format only supports images that are smaller than 30000x3000 "
 "pixels."
+msgstr ""
+
+#: plugins/formats/psd/psd_export.cc:100
+msgid ""
+"Unable to save to the Photoshop format.\n"
+"The Photoshop format only supports images where all layers have the same "
+"colorspace as the image."
 msgstr ""
 
 #: plugins/formats/psd/psd_loader.cpp:156
@@ -14614,8 +14621,10 @@ msgid "Properties..."
 msgstr "Propietats..."
 
 #: ui/kis_image_manager.cc:59
-msgid "Image Background Colorc and Transparency..."
-msgstr ""
+#, fuzzy
+#| msgid "Background Color"
+msgid "Image Background Color and Transparency..."
+msgstr "Color de fons"
 
 #: ui/kis_image_manager.cc:84
 msgid "Import Image"
@@ -14672,50 +14681,50 @@ msgctxt "(qtundo-format)"
 msgid "Convert to a Paint Layer"
 msgstr "Filtre"
 
-#: ui/kis_layer_manager.cc:553
+#: ui/kis_layer_manager.cc:554
 msgid "New Filter Layer"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:612
+#: ui/kis_layer_manager.cc:613
 msgid "Could not add layer to image."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:612
+#: ui/kis_layer_manager.cc:613
 msgid "Layer Error"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:698
+#: ui/kis_layer_manager.cc:699
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:699
+#: ui/kis_layer_manager.cc:700
 msgid "Flatten Image"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:700
+#: ui/kis_layer_manager.cc:701
 msgid "&Flatten Image"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:766
+#: ui/kis_layer_manager.cc:767
 #, fuzzy
 #| msgid "&Remove"
 msgctxt "(qtundo-format)"
 msgid "Rasterize Layer"
 msgstr "&Suprimir "
 
-#: ui/kis_layer_manager.cc:802
+#: ui/kis_layer_manager.cc:803
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:805
+#: ui/kis_layer_manager.cc:806
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:862
+#: ui/kis_layer_manager.cc:863
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:862
+#: ui/kis_layer_manager.cc:863
 msgid "No file specified"
 msgstr ""
 
@@ -15571,36 +15580,36 @@ msgstr "Color de fons"
 msgid "Reset Foreground and Background Color"
 msgstr "Color de fons"
 
-#: ui/tool/kis_tool.cc:548
+#: ui/tool/kis_tool.cc:556
 #, fuzzy
 #| msgid "Clear"
 msgctxt "(qtundo-format)"
 msgid "Clear"
 msgstr "Netejar"
 
-#: ui/tool/kis_tool.cc:577
+#: ui/tool/kis_tool.cc:585
 #, fuzzy
 #| msgid "Options"
 msgid "No options"
 msgstr "Opcions"
 
-#: ui/tool/kis_tool.cc:725
+#: ui/tool/kis_tool.cc:733
 msgid "Layer is locked and invisible."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:727
+#: ui/tool/kis_tool.cc:735
 msgid "Layer is locked."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:729
+#: ui/tool/kis_tool.cc:737
 msgid "Layer is invisible."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:731
+#: ui/tool/kis_tool.cc:739
 msgid "Group not editable."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:746
+#: ui/tool/kis_tool.cc:754
 #, fuzzy
 #| msgid "Selection"
 msgid "Local selection is locked."
@@ -15795,7 +15804,7 @@ msgstr ""
 msgid "Share Color Profile"
 msgstr ""
 
-#: ui/widgets/kis_filter_selector_widget.cc:165
+#: ui/widgets/kis_filter_selector_widget.cc:179
 msgid "No configuration option."
 msgstr ""
 
