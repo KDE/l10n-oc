@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-05 05:45+0000\n"
+"POT-Creation-Date: 2014-12-06 05:24+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -407,7 +407,7 @@ msgid "Search:"
 msgstr "&Recèrcar :"
 
 #. i18n: ectx: property (text), widget (QPushButton, editFilter)
-#: adblock/ui/settings_adblock.ui:219 viewer/viewer_p.cpp:486
+#: adblock/ui/settings_adblock.ui:219 job/attachmenteditjob.cpp:47
 msgid "Edit"
 msgstr "Edicion"
 
@@ -726,6 +726,17 @@ msgstr ""
 
 #: header/mobileheaderstyle.cpp:137
 msgid "sent: "
+msgstr ""
+
+#: job/attachmenteditjob.cpp:46
+msgid ""
+"Modifying an attachment might invalidate any digital signature on this "
+"message."
+msgstr ""
+
+#: job/attachmenteditjob.cpp:47 viewer/viewer_p.cpp:629
+#: viewer/viewer_p.cpp:1877
+msgid "Edit Attachment"
 msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:94
@@ -1221,7 +1232,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: settings/messageviewer.kcfg.cmake:289 viewer/viewer_p.cpp:1684
+#: settings/messageviewer.kcfg.cmake:289 viewer/viewer_p.cpp:1661
 msgid "Use Fi&xed Font"
 msgstr ""
 
@@ -1541,21 +1552,21 @@ msgstr ""
 msgid "Additional arguments for chiasmus:"
 msgstr ""
 
-#: viewer/editorwatcher.cpp:72
+#: viewer/editorwatcher.cpp:79
 msgid "Edit with:"
 msgstr "Modificar amb :"
 
-#: viewer/editorwatcher.cpp:182
+#: viewer/editorwatcher.cpp:213
 msgid ""
 "KMail is unable to detect when the chosen editor is closed. To avoid data "
 "loss, editing the attachment will be aborted."
 msgstr ""
 
-#: viewer/editorwatcher.cpp:184
+#: viewer/editorwatcher.cpp:215
 msgid "Unable to edit attachment"
 msgstr ""
 
-#: viewer/mailsourceviewer.cpp:129 viewer/viewer_p.cpp:1783
+#: viewer/mailsourceviewer.cpp:129 viewer/viewer_p.cpp:1760
 msgid "Speak Text"
 msgstr ""
 
@@ -2054,7 +2065,7 @@ msgstr "Pas disponible"
 msgid "Turn on HTML rendering for this message."
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1780
+#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1757
 msgid "Load external references from the Internet for this message."
 msgstr ""
 
@@ -2156,7 +2167,7 @@ msgstr "Quasernet d'adreça&nbsp;:"
 msgid "&Copy Email Address"
 msgstr "Adreça electronica"
 
-#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2781
+#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2745
 msgid "Address copied to clipboard."
 msgstr ""
 
@@ -2212,433 +2223,423 @@ msgstr "Executar"
 msgid "Loading message..."
 msgstr "Desplaçament de messatges"
 
-#: viewer/viewer_p.cpp:414
+#: viewer/viewer_p.cpp:413
 msgid ""
 "Deleting an attachment from an encrypted or old-style mailman message is not "
 "supported."
 msgstr ""
 
-#: viewer/viewer_p.cpp:415 viewer/viewer_p.cpp:421 viewer/viewer_p.cpp:658
-#: viewer/viewer_p.cpp:1896
+#: viewer/viewer_p.cpp:414 viewer/viewer_p.cpp:420 viewer/viewer_p.cpp:635
+#: viewer/viewer_p.cpp:1873
 msgid "Delete Attachment"
 msgstr ""
 
-#: viewer/viewer_p.cpp:420
+#: viewer/viewer_p.cpp:419
 msgid ""
 "Deleting an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: viewer/viewer_p.cpp:485
-msgid ""
-"Modifying an attachment might invalidate any digital signature on this "
-"message."
-msgstr ""
-
-#: viewer/viewer_p.cpp:486 viewer/viewer_p.cpp:652 viewer/viewer_p.cpp:1900
-msgid "Edit Attachment"
-msgstr ""
-
-#: viewer/viewer_p.cpp:527
+#: viewer/viewer_p.cpp:504
 #, fuzzy
 #| msgid "&Open With..."
 msgctxt "@title:menu"
 msgid "&Open With"
 msgstr "&Dobrir amb..."
 
-#: viewer/viewer_p.cpp:545
+#: viewer/viewer_p.cpp:522
 msgctxt "@action:inmenu Open With"
 msgid "&Other..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:547 viewer/viewer_p.cpp:559
+#: viewer/viewer_p.cpp:524 viewer/viewer_p.cpp:536
 #, fuzzy
 #| msgid "&Open With..."
 msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "&Dobrir amb..."
 
-#: viewer/viewer_p.cpp:614 viewer/viewer_p.cpp:1873
+#: viewer/viewer_p.cpp:591 viewer/viewer_p.cpp:1850
 msgctxt "to open"
 msgid "Open"
 msgstr "Dobrir"
 
-#: viewer/viewer_p.cpp:622 viewer/viewer_p.cpp:1880
+#: viewer/viewer_p.cpp:599 viewer/viewer_p.cpp:1857
 msgctxt "to view something"
 msgid "View"
 msgstr "Visualizacion"
 
-#: viewer/viewer_p.cpp:630
+#: viewer/viewer_p.cpp:607
 msgid "Scroll To"
 msgstr ""
 
-#: viewer/viewer_p.cpp:635
+#: viewer/viewer_p.cpp:612
 msgid "Save As..."
 msgstr "Enregistrar coma..."
 
-#: viewer/viewer_p.cpp:640 viewer/viewer_p.cpp:1892
+#: viewer/viewer_p.cpp:617 viewer/viewer_p.cpp:1869
 msgid "Copy"
 msgstr "Copiar"
 
-#: viewer/viewer_p.cpp:665
+#: viewer/viewer_p.cpp:642
 msgid "Decrypt With Chiasmus..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:669 viewer/viewer_p.cpp:1905
+#: viewer/viewer_p.cpp:646 viewer/viewer_p.cpp:1882
 msgid "Properties"
 msgstr "Propietats"
 
-#: viewer/viewer_p.cpp:813
+#: viewer/viewer_p.cpp:790
 msgid "The KDE email client."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1390
+#: viewer/viewer_p.cpp:1367
 #, kde-format
 msgid "View Attachment: %1"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1544
+#: viewer/viewer_p.cpp:1521
 msgctxt "View->"
 msgid "&Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1546
+#: viewer/viewer_p.cpp:1523
 msgid "Choose display style of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1549
+#: viewer/viewer_p.cpp:1526
 msgctxt "View->headers->"
 msgid "&Enterprise Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1552
+#: viewer/viewer_p.cpp:1529
 msgid "Show the list of headers in Enterprise style"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1556
+#: viewer/viewer_p.cpp:1533
 msgctxt "View->headers->"
 msgid "&Fancy Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1559
+#: viewer/viewer_p.cpp:1536
 msgid "Show the list of headers in a fancy format"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1563
+#: viewer/viewer_p.cpp:1540
 msgctxt "View->headers->"
 msgid "&Brief Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1566
+#: viewer/viewer_p.cpp:1543
 msgid "Show brief list of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1570
+#: viewer/viewer_p.cpp:1547
 msgctxt "View->headers->"
 msgid "&Standard Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1573
+#: viewer/viewer_p.cpp:1550
 msgid "Show standard list of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1577
+#: viewer/viewer_p.cpp:1554
 msgctxt "View->headers->"
 msgid "&Long Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1580
+#: viewer/viewer_p.cpp:1557
 msgid "Show long list of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1584
+#: viewer/viewer_p.cpp:1561
 msgctxt "View->headers->"
 msgid "&All Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1587
+#: viewer/viewer_p.cpp:1564
 msgid "Show all message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1591
+#: viewer/viewer_p.cpp:1568
 #, fuzzy
 #| msgid "Templates"
 msgctxt "View->headers->"
 msgid "&Custom Headers"
 msgstr "Modèls"
 
-#: viewer/viewer_p.cpp:1594
+#: viewer/viewer_p.cpp:1571
 msgid "Show custom headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1602
+#: viewer/viewer_p.cpp:1579
 msgctxt "View->"
 msgid "&Attachments"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1604
+#: viewer/viewer_p.cpp:1581
 msgid "Choose display style of attachments"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1607
+#: viewer/viewer_p.cpp:1584
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1610
+#: viewer/viewer_p.cpp:1587
 msgid "Show all attachments as icons. Click to see them."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1614
+#: viewer/viewer_p.cpp:1591
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1617
+#: viewer/viewer_p.cpp:1594
 msgid "Show attachments as suggested by sender."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1621
+#: viewer/viewer_p.cpp:1598
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1624
+#: viewer/viewer_p.cpp:1601
 msgid "Show all attachments inline (if possible)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1628
+#: viewer/viewer_p.cpp:1605
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1631
+#: viewer/viewer_p.cpp:1608
 msgid "Do not show attachments in the message viewer"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1635
+#: viewer/viewer_p.cpp:1612
 msgctxt "View->attachments->"
 msgid "In Header Only"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1639
+#: viewer/viewer_p.cpp:1616
 msgid "Show Attachments only in the header of the mail"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1644
+#: viewer/viewer_p.cpp:1621
 msgid "&Set Encoding"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1650 widgets/configurewidget.cpp:44
+#: viewer/viewer_p.cpp:1627 widgets/configurewidget.cpp:44
 #: widgets/configurewidget.cpp:127
 msgid "Auto"
 msgstr "Auto"
 
-#: viewer/viewer_p.cpp:1667
+#: viewer/viewer_p.cpp:1644
 msgid "Select All Text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1674 viewer/viewer_p.cpp:2169
+#: viewer/viewer_p.cpp:1651 viewer/viewer_p.cpp:2146
 msgid "Copy Link Address"
 msgstr "Copiar l'adreça del ligam"
 
-#: viewer/viewer_p.cpp:1679
+#: viewer/viewer_p.cpp:1656
 msgid "Open URL"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1691
+#: viewer/viewer_p.cpp:1668
 msgid "Zoom Text Only"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1694
+#: viewer/viewer_p.cpp:1671
 msgid "&Zoom In"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1699
+#: viewer/viewer_p.cpp:1676
 msgid "Zoom &Out"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1704
+#: viewer/viewer_p.cpp:1681
 #, fuzzy
 #| msgid "Select Font"
 msgid "Reset"
 msgstr "Seleccionar una poliça"
 
-#: viewer/viewer_p.cpp:1711
+#: viewer/viewer_p.cpp:1688
 #, fuzzy
 #| msgid "Message Status"
 msgid "Show Message Structure"
 msgstr "Estat del messatge"
 
-#: viewer/viewer_p.cpp:1716
+#: viewer/viewer_p.cpp:1693
 msgid "&View Source"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1721
+#: viewer/viewer_p.cpp:1698
 #, fuzzy
 #| msgid "Moving messages"
 msgid "&Save message..."
 msgstr "Desplaçament de messatges"
 
-#: viewer/viewer_p.cpp:1727
+#: viewer/viewer_p.cpp:1704
 msgid "&Save Display Format"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1731
+#: viewer/viewer_p.cpp:1708
 msgid "&Reset Display Format"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1738
+#: viewer/viewer_p.cpp:1715
 msgid "Scroll Message Up"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1744
+#: viewer/viewer_p.cpp:1721
 msgid "Scroll Message Down"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1750
+#: viewer/viewer_p.cpp:1727
 msgid "Scroll Message Up (More)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1756
+#: viewer/viewer_p.cpp:1733
 msgid "Scroll Message Down (More)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1767
+#: viewer/viewer_p.cpp:1744
 msgid "Toggle HTML Display Mode"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1772
+#: viewer/viewer_p.cpp:1749
 msgid "Toggle display mode between HTML and plain text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1775
+#: viewer/viewer_p.cpp:1752
 msgid "Load external references"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1789
+#: viewer/viewer_p.cpp:1766
 #, fuzzy
 #| msgid "Location:"
 msgid "Copy Image Location"
 msgstr "Emplaçament :"
 
-#: viewer/viewer_p.cpp:1796
+#: viewer/viewer_p.cpp:1773
 msgid "Translate..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1803
+#: viewer/viewer_p.cpp:1780
 #, fuzzy
 #| msgid "Moving messages"
 msgid "&Find in Message..."
 msgstr "Desplaçament de messatges"
 
-#: viewer/viewer_p.cpp:1810
+#: viewer/viewer_p.cpp:1787
 msgid "Toggle Caret Browsing"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1817
+#: viewer/viewer_p.cpp:1794
 msgid "Block image"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1822
+#: viewer/viewer_p.cpp:1799
 msgid "Open Blockable Items..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1827
+#: viewer/viewer_p.cpp:1804
 #, fuzzy
 #| msgid "Important"
 msgid "Expand Short URL"
 msgstr "Important"
 
-#: viewer/viewer_p.cpp:1832
+#: viewer/viewer_p.cpp:1809
 msgid "Create Todo"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1833
+#: viewer/viewer_p.cpp:1810
 msgid "Create To-do"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1834
+#: viewer/viewer_p.cpp:1811
 msgid "Allows you to create a calendar to-do or reminder from this message"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1835
+#: viewer/viewer_p.cpp:1812
 msgid ""
 "This option starts the KOrganizer to-do editor with initial values taken "
 "from the currently selected message. Then you can edit the to-do to your "
 "liking before saving it to your calendar."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1840 viewer/viewer_p.cpp:1841
+#: viewer/viewer_p.cpp:1817 viewer/viewer_p.cpp:1818
 #, fuzzy
 #| msgid "New Identity"
 msgid "Create Event"
 msgstr "Identitat novèla"
 
-#: viewer/viewer_p.cpp:1842
+#: viewer/viewer_p.cpp:1819
 msgid "Allows you to create a calendar Event"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1869
+#: viewer/viewer_p.cpp:1846
 msgid "Save &As..."
 msgstr "Enregistrar &jos..."
 
-#: viewer/viewer_p.cpp:1879
+#: viewer/viewer_p.cpp:1856
 msgid "Open With..."
 msgstr "Dobrir amb..."
 
-#: viewer/viewer_p.cpp:1885
+#: viewer/viewer_p.cpp:1862
 msgid "Save All Attachments..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:2167
+#: viewer/viewer_p.cpp:2144
 #, fuzzy
 #| msgid "Email Address"
 msgid "Copy Email Address"
 msgstr "Adreça electronica"
 
-#: viewer/viewer_p.cpp:2236
+#: viewer/viewer_p.cpp:2213
 msgid "Message as Plain Text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2495
+#: viewer/viewer_p.cpp:2472
 #, fuzzy
 #| msgid "Attachment"
 msgid "Attachments:"
 msgstr "Fichièr junt"
 
-#: viewer/viewer_p.cpp:2786
+#: viewer/viewer_p.cpp:2750
 msgid "URL copied to clipboard."
 msgstr ""
 
-#: viewer/viewer_p.cpp:2954
+#: viewer/viewer_p.cpp:2918
 msgid "Hide full address list"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2958
+#: viewer/viewer_p.cpp:2922
 #, fuzzy
 #| msgctxt "EMAIL OF TRANSLATORS"
 #| msgid "Your emails"
 msgid "Show full address list"
 msgstr "Visualizar los detalhs"
 
-#: viewer/viewer_p.cpp:2981
+#: viewer/viewer_p.cpp:2945
 #, fuzzy, kde-format
 #| msgid "Moving messages"
 msgid "Message loading failed: %1."
 msgstr "Desplaçament de messatges"
 
-#: viewer/viewer_p.cpp:2986
+#: viewer/viewer_p.cpp:2950
 #, fuzzy
 #| msgid "Message Body"
 msgid "Message not found."
 msgstr "Còs del messatge"
 
-#: viewer/viewer_p.cpp:3110
+#: viewer/viewer_p.cpp:3074
 msgid "Caret Browsing will be activated. Switch off with F7 shortcut."
 msgstr ""
 
-#: viewer/viewer_p.cpp:3111
+#: viewer/viewer_p.cpp:3075
 msgid "Activate Caret Browsing"
 msgstr ""
 
