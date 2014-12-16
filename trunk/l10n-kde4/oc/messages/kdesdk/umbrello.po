@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 02:00+0000\n"
+"POT-Creation-Date: 2014-12-16 02:00+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -694,8 +694,8 @@ msgstr ""
 #: codegenerators/ruby/rubycodegenerationformbase.ui:52
 #: dialogs/activitydialog.cpp:200 dialogs/objectnodedialog.cpp:193
 #: dialogs/pages/associationgeneralpage.cpp:83
+#: dialogs/pages/associationrolepage.cpp:91
 #: dialogs/pages/associationrolepage.cpp:92
-#: dialogs/pages/associationrolepage.cpp:93
 #: dialogs/pages/classgeneralpage.cpp:186
 #: dialogs/pages/classgeneralpage.cpp:248
 #: dialogs/pages/classgeneralpage.cpp:301
@@ -1541,32 +1541,23 @@ msgstr ""
 msgid "&Parameter activity node"
 msgstr ""
 
-#: dialogs/associationpropertiesdialog.cpp:54
+#: dialogs/associationpropertiesdialog.cpp:53
 msgid "Association Properties"
 msgstr ""
 
-#: dialogs/associationpropertiesdialog.cpp:98
+#: dialogs/associationpropertiesdialog.cpp:91
 #: dialogs/classpropertiesdialog.cpp:241 dialogs/classpropertiesdialog.cpp:366
 #: dialogs/settingsdialog.cpp:173
 #: dialogs/umlforeignkeyconstraintdialog.cpp:202 dialogs/umlviewdialog.cpp:93
 msgid "General Settings"
 msgstr "Paramètres generals"
 
-#: dialogs/associationpropertiesdialog.cpp:98
+#: dialogs/associationpropertiesdialog.cpp:91
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings"
 msgid "General"
 msgstr "General"
-
-#: dialogs/associationpropertiesdialog.cpp:104
-msgctxt "role page name"
-msgid "Roles"
-msgstr ""
-
-#: dialogs/associationpropertiesdialog.cpp:104
-msgid "Role Settings"
-msgstr ""
 
 #: dialogs/classpropertiesdialog.cpp:241
 #, fuzzy
@@ -1670,7 +1661,7 @@ msgctxt "instance general settings page name"
 msgid "General"
 msgstr "General"
 
-#: dialogs/classwizard.cpp:44 model_utils.cpp:466
+#: dialogs/classwizard.cpp:44 model_utils.cpp:478
 msgid "new_class"
 msgstr ""
 
@@ -1806,41 +1797,50 @@ msgstr ""
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/dialogbase.cpp:98 dialogs/settingsdialog.cpp:227
+#: dialogs/dialogbase.cpp:100 dialogs/settingsdialog.cpp:227
 #: dialogs/umlviewdialog.cpp:153 umbrello.kcfg:165 umbrello.kcfg:275
 msgid "Font"
 msgstr "Poliça"
 
-#: dialogs/dialogbase.cpp:98 dialogs/settingsdialog.cpp:228
+#: dialogs/dialogbase.cpp:100 dialogs/settingsdialog.cpp:228
 #: dialogs/umlviewdialog.cpp:154
 msgid "Font Settings"
 msgstr ""
 
-#: dialogs/dialogbase.cpp:125
+#: dialogs/dialogbase.cpp:127
 #, fuzzy
 #| msgid "State"
 msgctxt "style page name"
 msgid "Style"
 msgstr "Estat"
 
-#: dialogs/dialogbase.cpp:125
+#: dialogs/dialogbase.cpp:127
 #, fuzzy
 #| msgid "Comment"
 msgid "Role Style"
 msgstr "Comentari"
 
-#: dialogs/dialogbase.cpp:127
+#: dialogs/dialogbase.cpp:129
 #, fuzzy
 #| msgid "State"
 msgctxt "widget style page"
 msgid "Style"
 msgstr "Estat"
 
-#: dialogs/dialogbase.cpp:127
+#: dialogs/dialogbase.cpp:129
 #, fuzzy
 #| msgid "Comment"
 msgid "Widget Style"
 msgstr "Comentari"
+
+#: dialogs/dialogbase.cpp:151
+msgctxt "role page name"
+msgid "Roles"
+msgstr ""
+
+#: dialogs/dialogbase.cpp:151
+msgid "Role Settings"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
 #: dialogs/exportallviewsdialog.cpp:73 dialogs/exportallviewsdialogbase.ui:52
@@ -2074,66 +2074,66 @@ msgstr ""
 msgid "Type:"
 msgstr "Mena :"
 
-#: dialogs/pages/associationrolepage.cpp:68
+#: dialogs/pages/associationrolepage.cpp:67
 msgid "Role A Properties"
 msgstr ""
 
-#: dialogs/pages/associationrolepage.cpp:69
+#: dialogs/pages/associationrolepage.cpp:68
 msgid "Role B Properties"
 msgstr ""
 
-#: dialogs/pages/associationrolepage.cpp:86
+#: dialogs/pages/associationrolepage.cpp:85
 msgid "Role A Changeability"
 msgstr ""
 
-#: dialogs/pages/associationrolepage.cpp:87
+#: dialogs/pages/associationrolepage.cpp:86
 msgid "Role B Changeability"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
-#: dialogs/pages/associationrolepage.cpp:116
-#: dialogs/pages/associationrolepage.cpp:165
+#: dialogs/pages/associationrolepage.cpp:115
+#: dialogs/pages/associationrolepage.cpp:164
 #: dialogs/pages/umlrolepropertiesbase.ui:36
 msgid "Rolename:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
-#: dialogs/pages/associationrolepage.cpp:121
-#: dialogs/pages/associationrolepage.cpp:170
+#: dialogs/pages/associationrolepage.cpp:120
+#: dialogs/pages/associationrolepage.cpp:169
 #: dialogs/pages/umlrolepropertiesbase.ui:49
 msgid "Multiplicity:"
 msgstr ""
 
-#: dialogs/pages/associationrolepage.cpp:141
+#: dialogs/pages/associationrolepage.cpp:140
 msgctxt "changeability for A is changeable"
 msgid "Changeable"
 msgstr ""
 
-#: dialogs/pages/associationrolepage.cpp:144
+#: dialogs/pages/associationrolepage.cpp:143
 #, fuzzy
 #| msgid "Font"
 msgctxt "changeability for A is frozen"
 msgid "Frozen"
 msgstr "Poliça"
 
-#: dialogs/pages/associationrolepage.cpp:147
+#: dialogs/pages/associationrolepage.cpp:146
 msgctxt "changeability for A is add only"
 msgid "Add only"
 msgstr ""
 
-#: dialogs/pages/associationrolepage.cpp:190
+#: dialogs/pages/associationrolepage.cpp:189
 msgctxt "changeability for B is changeable"
 msgid "Changeable"
 msgstr ""
 
-#: dialogs/pages/associationrolepage.cpp:193
+#: dialogs/pages/associationrolepage.cpp:192
 #, fuzzy
 #| msgid "Font"
 msgctxt "changeability for B is frozen"
 msgid "Frozen"
 msgstr "Poliça"
 
-#: dialogs/pages/associationrolepage.cpp:196
+#: dialogs/pages/associationrolepage.cpp:195
 msgctxt "changeability for B is add only"
 msgid "Add only"
 msgstr ""
@@ -4246,96 +4246,96 @@ msgid ""
 "target directory"
 msgstr ""
 
-#: model_utils.cpp:468
+#: model_utils.cpp:480
 msgid "new_actor"
 msgstr ""
 
-#: model_utils.cpp:470
+#: model_utils.cpp:482
 msgid "new_usecase"
 msgstr ""
 
-#: model_utils.cpp:472
+#: model_utils.cpp:484
 msgid "new_package"
 msgstr ""
 
-#: model_utils.cpp:474
+#: model_utils.cpp:486
 msgid "new_component"
 msgstr ""
 
-#: model_utils.cpp:476
+#: model_utils.cpp:488
 #, fuzzy
 #| msgid "new_folder"
 msgid "new_port"
 msgstr "novèl_repertòri"
 
-#: model_utils.cpp:478
+#: model_utils.cpp:490
 msgid "new_node"
 msgstr ""
 
-#: model_utils.cpp:480
+#: model_utils.cpp:492
 msgid "new_artifact"
 msgstr ""
 
-#: model_utils.cpp:482
+#: model_utils.cpp:494
 msgid "new_interface"
 msgstr ""
 
-#: model_utils.cpp:484
+#: model_utils.cpp:496
 msgid "new_datatype"
 msgstr ""
 
-#: model_utils.cpp:486
+#: model_utils.cpp:498
 msgid "new_enum"
 msgstr ""
 
-#: model_utils.cpp:488
+#: model_utils.cpp:500
 msgid "new_entity"
 msgstr ""
 
-#: model_utils.cpp:490
+#: model_utils.cpp:502
 msgid "new_folder"
 msgstr "novèl_repertòri"
 
-#: model_utils.cpp:492 umlcanvasobject.cpp:193
+#: model_utils.cpp:504 umlcanvasobject.cpp:193
 msgid "new_association"
 msgstr ""
 
-#: model_utils.cpp:494
+#: model_utils.cpp:506
 msgid "new_category"
 msgstr ""
 
-#: model_utils.cpp:496
+#: model_utils.cpp:508
 msgid "new_object"
 msgstr ""
 
-#: model_utils.cpp:909
+#: model_utils.cpp:921
 msgid "OK"
 msgstr "Validar"
 
-#: model_utils.cpp:909
+#: model_utils.cpp:921
 #, fuzzy
 #| msgid "Empty"
 msgctxt "parse status"
 msgid "Empty"
 msgstr "Void"
 
-#: model_utils.cpp:909
+#: model_utils.cpp:921
 msgid "Malformed argument"
 msgstr ""
 
-#: model_utils.cpp:910
+#: model_utils.cpp:922
 msgid "Unknown argument type"
 msgstr ""
 
-#: model_utils.cpp:910
+#: model_utils.cpp:922
 msgid "Illegal method name"
 msgstr ""
 
-#: model_utils.cpp:911
+#: model_utils.cpp:923
 msgid "Unknown return type"
 msgstr ""
 
-#: model_utils.cpp:911
+#: model_utils.cpp:923
 msgid "Unspecified error"
 msgstr "Error pas precisada"
 
