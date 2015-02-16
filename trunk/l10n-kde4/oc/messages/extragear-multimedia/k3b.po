@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-10 01:53+0000\n"
+"POT-Creation-Date: 2015-02-16 01:57+0000\n"
 "PO-Revision-Date: 2008-08-05 22:41+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -624,7 +624,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KComboBox, m_comboMode)
 #: ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui:166
 msgid ""
-"<p>Select the channel mode of the resulting Mp3 file:\n"
+"<p>Select the channel mode of the resulting MP3 file:\n"
 "<p><b>Stereo</b><br>\n"
 "In this mode, the encoder makes no use of potential correlations between the "
 "two input channels; it can, however, negotiate the bit demand between both "
@@ -990,7 +990,7 @@ msgid "Sound Blaster VOC"
 msgstr ""
 
 #: ../plugins/encoder/sox/k3bsoxencoder.cpp:316
-msgid "Wave (Sox)"
+msgid "Wave (SoX)"
 msgstr ""
 
 #: ../plugins/encoder/sox/k3bsoxencoder.cpp:318
@@ -1066,6 +1066,7 @@ msgid "Rename audio files based on their meta info."
 msgstr ""
 
 #: ../plugins/project/audioprojectcddb/k3baudioprojectcddbplugin.cpp:49
+#: ../plugins/project/audioprojectcddb/k3baudioprojectcddbplugin.cpp:76
 #, fuzzy
 #| msgid "Use CDDB"
 msgid "Query CDDB"
@@ -1085,12 +1086,8 @@ msgstr ""
 msgid "Audio Project"
 msgstr ""
 
-#: ../plugins/project/audioprojectcddb/k3baudioprojectcddbplugin.cpp:76
-msgid "Query Cddb"
-msgstr ""
-
 #: ../plugins/project/audioprojectcddb/k3baudioprojectcddbplugin.cpp:125
-msgid "Cddb error"
+msgid "CDDB error"
 msgstr ""
 
 #: k3b.cpp:231
@@ -1110,7 +1107,7 @@ msgid "Saves the current project"
 msgstr ""
 
 #: k3b.cpp:304
-msgid "Saves the current project to a new url"
+msgid "Saves the current project to a new URL"
 msgstr ""
 
 #: k3b.cpp:307
@@ -1236,7 +1233,7 @@ msgid "&Burn Image..."
 msgstr "Gravar l'imatge"
 
 #: k3b.cpp:406
-msgid "Write an Iso9660, cue/bin, or cdrecord clone image to an optical disc"
+msgid "Write an ISO 9660, cue/bin, or cdrecord clone image to an optical disc"
 msgstr ""
 
 #: k3b.cpp:411 k3bdevicemenu.cpp:77
@@ -1631,7 +1628,7 @@ msgstr "Mejan"
 #: k3bdiskinfoview.cpp:105
 #, fuzzy
 #| msgid "Filesystem"
-msgid "ISO9660 Filesystem Info"
+msgid "ISO 9660 Filesystem Info"
 msgstr "Sistèma de fichièrs"
 
 #: k3bdiskinfoview.cpp:110
@@ -2289,7 +2286,7 @@ msgstr ""
 msgid ""
 "K3b did not find an optical writing device in your system. Thus, you will "
 "not be able to burn CDs or DVDs. However, you can still use other K3b "
-"features such as audio track extraction, audio transcoding or ISO9660 image "
+"features such as audio track extraction, audio transcoding or ISO 9660 image "
 "creation."
 msgstr ""
 
@@ -2826,7 +2823,7 @@ msgstr ""
 msgid ""
 "Restricted Overwrite allows to use a DVD-RW just like a DVD-RAM or a DVD+RW. "
 "The media may just be overwritten. It is not possible to write multisession "
-"DVD-RWs in this mode but K3b uses growisofs to grow an ISO9660 filesystem "
+"DVD-RWs in this mode but K3b uses growisofs to grow an ISO 9660 filesystem "
 "within the first session, thus allowing new files to be added to an already "
 "burned disk."
 msgstr ""
@@ -3155,8 +3152,10 @@ msgid "Detected:"
 msgstr ""
 
 #: misc/k3bimagewritingdialog.cpp:169
-msgid "Iso9660 image"
-msgstr ""
+#, fuzzy
+#| msgid "Settings"
+msgid "ISO 9660 image"
+msgstr "Paramètres"
 
 #: misc/k3bimagewritingdialog.cpp:178 misc/k3bimagewritingdialog.cpp:255
 #: misc/k3bimagewritingdialog.cpp:284
@@ -3220,7 +3219,7 @@ msgid "*.iso *.toc *.ISO *.TOC *.cue *.CUE|Image Files"
 msgstr ""
 
 #: misc/k3bimagewritingdialog.cpp:454
-msgid "*.iso *.ISO|ISO9660 Image Files"
+msgid "*.iso *.ISO|ISO 9660 Image Files"
 msgstr ""
 
 #: misc/k3bimagewritingdialog.cpp:456
@@ -3312,7 +3311,7 @@ msgid "File not found"
 msgstr "Impossible de trobar lo fichièr"
 
 #: misc/k3bimagewritingdialog.cpp:1014
-msgid "Md5 Sum:"
+msgid "MD5 Sum:"
 msgstr ""
 
 #: misc/k3bimagewritingdialog.cpp:1054
@@ -3382,7 +3381,7 @@ msgid "Clone Copy"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab1)
-#: misc/k3bmediacopydialog.cpp:141 projects/base_k3baudiotrackwidget.ui:167
+#: misc/k3bmediacopydialog.cpp:141 projects/base_k3baudiotrackwidget.ui:164
 msgid "&Options"
 msgstr "&Opcions"
 
@@ -3434,7 +3433,7 @@ msgstr ""
 msgid ""
 "<p>If this option is checked K3b will search for CD-Text on the source CD. "
 "Disable it if your CD drive has problems with reading CD-Text or you want to "
-"stick to Cddb info."
+"stick to CDDB info."
 msgstr ""
 
 #: misc/k3bmediacopydialog.cpp:226
@@ -4036,7 +4035,7 @@ msgstr ""
 #: option/k3bdevicewidget.cpp:252
 msgid ""
 "<br/>The Permission helper that could do this for you was not enabled during "
-"build.<br/> Please rebuild the package with the Permission helper enabled or "
+"build.<br/>Please rebuild the package with the Permission helper enabled or "
 "contact your distribution."
 msgstr ""
 
@@ -4338,7 +4337,7 @@ msgstr "Suprimir"
 #: projects/base_k3badvanceddataimagesettings.ui:18
 #, fuzzy
 #| msgid "Filesystem"
-msgid "Set special ISO9660 Filesystem preferences."
+msgid "Set special ISO 9660 Filesystem preferences."
 msgstr "Sistèma de fichièrs"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
@@ -4352,7 +4351,7 @@ msgstr "Sistèma de fichièrs"
 #: projects/base_k3badvanceddataimagesettings.ui:34
 #, fuzzy
 #| msgid "Settings"
-msgid "ISO9660 Settings"
+msgid "ISO 9660 Settings"
 msgstr "Paramètres"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_checkAllowUntranslatedFilenames)
@@ -4362,76 +4361,76 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllowUntranslatedFilenames)
 #: projects/base_k3badvanceddataimagesettings.ui:46
-msgid "Allow untranslated ISO9660 filenames"
+msgid "Allow untranslated ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkOmitTrailingPeriod)
 #: projects/base_k3badvanceddataimagesettings.ui:53
-msgid "Omit trailing period in ISO9660 filenames"
+msgid "Omit trailing period in ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkOmitVersionNumbers)
 #: projects/base_k3badvanceddataimagesettings.ui:60
-msgid "Omit version numbers in ISO9660 filenames"
+msgid "Omit version numbers in ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllowBeginningPeriod)
 #: projects/base_k3badvanceddataimagesettings.ui:67
-msgid "Allow leading period in ISO9660 filenames"
+msgid "Allow leading period in ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllow31CharFilenames)
 #: projects/base_k3badvanceddataimagesettings.ui:74
-msgid "Allow 31 character ISO9660 filenames"
+msgid "Allow 31 character ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllowMultiDot)
 #: projects/base_k3badvanceddataimagesettings.ui:81
-msgid "Allow multiple dots in ISO9660 filenames"
+msgid "Allow multiple dots in ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllowLowercaseCharacters)
 #: projects/base_k3badvanceddataimagesettings.ui:88
-msgid "Allow lowercase characters in ISO9660 filenames"
+msgid "Allow lowercase characters in ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllowOther)
 #: projects/base_k3badvanceddataimagesettings.ui:95
-msgid "Allow ~ and # in ISO9660 filenames"
+msgid "Allow ~ and # in ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllowFullAscii)
 #: projects/base_k3badvanceddataimagesettings.ui:102
-msgid "Allow full ASCII charset for ISO9660 filenames"
+msgid "Allow full ASCII charset for ISO 9660 filenames"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkAllowMaxLengthFilenames)
 #: projects/base_k3badvanceddataimagesettings.ui:109
-msgid "Allow max length ISO9660 filenames (37 characters)"
+msgid "Allow max length ISO 9660 filenames (37 characters)"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, m_groupIsoLevel)
 #: projects/base_k3badvanceddataimagesettings.ui:125
 msgid ""
-"<p>Set the ISO-9660 conformance level.\n"
+"<p>Set the ISO 9660 conformance level.\n"
 "<ul>\n"
 "<li>Level 1: Files may only consist of one section and filenames are "
 "restricted to 8.3 characters.</li>\n"
 "<li>Level 2: Files may only consist of one section.</li>\n"
 "<li>Level 3: No restrictions.</li>\n"
 "</ul>\n"
-"<p>With all ISO-9660 levels, all filenames are restricted to upper case "
+"<p>With all ISO 9660 levels, all filenames are restricted to upper case "
 "letters, numbers and the underscore (_). The maximum filename length is 31 "
 "characters, the directory nesting level is restricted to 8 and the maximum "
 "path length is limited to 255 characters. (These restrictions may be "
-"violated with the additional ISO-9660 features K3b offers.)"
+"violated with the additional ISO 9660 features K3b offers.)"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupIsoLevel)
 #: projects/base_k3badvanceddataimagesettings.ui:128
 #, fuzzy
 #| msgid "Settings"
-msgid "ISO9660 Level"
+msgid "ISO 9660 Level"
 msgstr "Paramètres"
 
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioIsoLevel1)
@@ -4513,11 +4512,11 @@ msgid ""
 "<p>If this option is checked, K3b will generate the System Use Sharing "
 "Protocol records (SUSP) specified by the Rock Ridge Interchange Protocol "
 "(IEEE-P1282).\n"
-"<p>Rock Ridge extends the ISO-9660 filesystem by features equal to the UNIX "
+"<p>Rock Ridge extends the ISO 9660 filesystem by features equal to the UNIX "
 "filesystems (permissions, symbolic links, very long filenames, ...). It uses "
 "ISO-8859 or UTF-16 based characters and allows 255 octets.\n"
-"<p>Rock Ridge extensions are located at the end of each ISO-9660 directory "
-"record. This makes the Rock Ridge tree closely coupled to the ISO-9660 "
+"<p>Rock Ridge extensions are located at the end of each ISO 9660 directory "
+"record. This makes the Rock Ridge tree closely coupled to the ISO 9660 "
 "tree.\n"
 "<p><b>It is highly recommended to use Rock Ridge extensions on every data CD "
 "or DVD.</b>"
@@ -4537,9 +4536,9 @@ msgstr ""
 #: projects/base_k3badvanceddataimagesettings.ui:259
 msgid ""
 "<p>If this option is checked, K3b will add additional Joliet extensions to "
-"the ISO-9660 file system.\n"
-"<p>Joliet is not an accepted independent international standard like "
-"ISO-9660 or Rock Ridge. It is mainly used on Windows systems.\n"
+"the ISO 9660 file system.\n"
+"<p>Joliet is not an accepted independent international standard like ISO "
+"9660 or Rock Ridge. It is mainly used on Windows systems.\n"
 "<p>Joliet does not allow all characters, so the Joliet filenames are not "
 "identical to the filenames on disk (as compared to Rock Ridge). Joliet has a "
 "filename length limitation of 64 chars (independent from the character "
@@ -4565,7 +4564,7 @@ msgstr ""
 #: projects/base_k3badvanceddataimagesettings.ui:273
 msgid ""
 "<p>If this option is checked K3b will create UDF filesystem structures in "
-"addition to the ISO9660 filesystem.\n"
+"addition to the ISO 9660 filesystem.\n"
 "<p>The UDF (<em><b>U</b>niversal <b>D</b>isk <b>F</b>ormat</em>) is mainly "
 "used for DVDs."
 msgstr ""
@@ -4613,8 +4612,8 @@ msgstr "Messatge"
 #: projects/base_k3baudiocdtextallfieldswidget.ui:125
 #: projects/base_k3baudiocdtextallfieldswidget.ui:177
 #: projects/base_k3baudiocdtextallfieldswidget.ui:217
-#: projects/base_k3baudiocdtextwidget.ui:69
-#: projects/base_k3baudiocdtextwidget.ui:86
+#: projects/base_k3baudiocdtextwidget.ui:66
+#: projects/base_k3baudiocdtextwidget.ui:83
 msgid "Copy to all tracks"
 msgstr ""
 
@@ -4632,8 +4631,8 @@ msgstr ""
 #: projects/base_k3baudiocdtextallfieldswidget.ui:128
 #: projects/base_k3baudiocdtextallfieldswidget.ui:180
 #: projects/base_k3baudiocdtextallfieldswidget.ui:220
-#: projects/base_k3baudiocdtextwidget.ui:66
-#: projects/base_k3baudiocdtextwidget.ui:83
+#: projects/base_k3baudiocdtextwidget.ui:63
+#: projects/base_k3baudiocdtextwidget.ui:80
 #: projects/base_k3bdatavolumedescwidget.ui:247
 #: projects/base_k3bdatavolumedescwidget.ui:268
 #: projects/base_k3bdatavolumedescwidget.ui:289
@@ -4648,13 +4647,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
 #: projects/base_k3baudiocdtextallfieldswidget.ui:81
-#: projects/base_k3baudiotrackwidget.ui:29
+#: projects/base_k3baudiotrackwidget.ui:26
 msgid "So&ngwriter:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
 #: projects/base_k3baudiocdtextallfieldswidget.ui:94
-#: projects/base_k3baudiotrackwidget.ui:74
+#: projects/base_k3baudiotrackwidget.ui:71
 msgid "&Composer:"
 msgstr ""
 
@@ -4665,37 +4664,32 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: projects/base_k3baudiocdtextallfieldswidget.ui:137
-#: projects/base_k3baudiotrackwidget.ui:61
+#: projects/base_k3baudiotrackwidget.ui:58
 msgid "&Arranger:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: projects/base_k3baudiocdtextallfieldswidget.ui:159
-#: projects/base_k3baudiotrackwidget.ui:103
+#: projects/base_k3baudiotrackwidget.ui:100
 msgid "&Performer:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: projects/base_k3baudiocdtextallfieldswidget.ui:189
-#: projects/base_k3baudiocdtextwidget.ui:95
-#: projects/base_k3baudiotrackwidget.ui:129
+#: projects/base_k3baudiocdtextwidget.ui:92
+#: projects/base_k3baudiotrackwidget.ui:126
 #, fuzzy
 #| msgid "Title"
 msgid "&Title:"
 msgstr "Títol:"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, K3bAudioCDTextWidget)
-#: projects/base_k3baudiocdtextwidget.ui:8
-msgid "K3bAudioCDTextWidget"
-msgstr ""
-
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupCdText)
-#: projects/base_k3baudiocdtextwidget.ui:14
+#: projects/base_k3baudiocdtextwidget.ui:11
 msgid "Write CD-Text"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, m_groupCdText)
-#: projects/base_k3baudiocdtextwidget.ui:30
+#: projects/base_k3baudiocdtextwidget.ui:27
 msgid ""
 "<p><b>CD-Text</b>\n"
 "<p>If this option is checked K3b uses some otherwise unused space on the "
@@ -4710,48 +4704,43 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: projects/base_k3baudiocdtextwidget.ui:48
+#: projects/base_k3baudiocdtextwidget.ui:45
 msgid "Perf&ormer:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonMoreFields)
-#: projects/base_k3baudiocdtextwidget.ui:129
+#: projects/base_k3baudiocdtextwidget.ui:126
 #, fuzzy
 #| msgid "More..."
 msgid "More Fiel&ds..."
 msgstr "Mai..."
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, K3bAudioTrackWidget)
-#: projects/base_k3baudiotrackwidget.ui:8
-msgid "K3bAudioTrackWidget"
-msgstr ""
-
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: projects/base_k3baudiotrackwidget.ui:18
+#: projects/base_k3baudiotrackwidget.ui:15
 msgid "C&D-Text"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel8)
-#: projects/base_k3baudiotrackwidget.ui:87
+#: projects/base_k3baudiotrackwidget.ui:84
 #, fuzzy
 #| msgid "Message"
 msgid "&Message:"
 msgstr "Messatge"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: projects/base_k3baudiotrackwidget.ui:116
+#: projects/base_k3baudiotrackwidget.ui:113
 msgid "&ISRC:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkPreemphasis)
-#: projects/base_k3baudiotrackwidget.ui:173
+#: projects/base_k3baudiotrackwidget.ui:170
 #, fuzzy
 #| msgid "Emphasis"
 msgid "Preemph&asis"
 msgstr "Enfasi"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_checkPreemphasis)
-#: projects/base_k3baudiotrackwidget.ui:176
+#: projects/base_k3baudiotrackwidget.ui:173
 msgid ""
 "<p>Preemphasis is mainly used in audio processing. Higher frequencies in "
 "audio signals usually have lower amplitudes. This can lead to bad signal "
@@ -4762,22 +4751,22 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkCopyPermitted)
-#: projects/base_k3baudiotrackwidget.ui:183
+#: projects/base_k3baudiotrackwidget.ui:180
 msgid "&Copy permitted"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_labelPostGap)
-#: projects/base_k3baudiotrackwidget.ui:192
+#: projects/base_k3baudiotrackwidget.ui:189
 msgid "Post-Gap:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (K3b::MsfEdit, m_editPostGap)
-#: projects/base_k3baudiotrackwidget.ui:202
+#: projects/base_k3baudiotrackwidget.ui:199
 msgid "Set the length of the track's post-gap"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (K3b::MsfEdit, m_editPostGap)
-#: projects/base_k3baudiotrackwidget.ui:210
+#: projects/base_k3baudiotrackwidget.ui:207
 msgid ""
 "<p>On an audio CD each track (except for the last) can have a post-gap.\n"
 "This does not mean that K3b adds an additional gap of silence to the track. "
@@ -4955,7 +4944,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QComboBox, m_comboSymlinkHandling)
 #: projects/base_k3bdataimagesettings.ui:105
 msgid ""
-"<p>K3b can create ISO9660 filesystems that contain symlinks if the Rock "
+"<p>K3b can create ISO 9660 filesystems that contain symlinks if the Rock "
 "Ridge extensions are enabled (they are by default). You can change the way "
 "symlinks are handled in a K3b project.\n"
 "\n"
@@ -4976,7 +4965,7 @@ msgid ""
 "file it is pointing to. Thus, the resulting filesystem will not contain any "
 "symbolic links.<br>\n"
 "Be aware that in case Rock Ridge extensions are disabled (which is not "
-"recommended) symbolic links are always followed because ISO9660 does not "
+"recommended) symbolic links are always followed because ISO 9660 does not "
 "support symbolic links.\n"
 "\n"
 "<p><b>Caution:</b> Symbolic links require Rock Ridge extensions."
@@ -5870,7 +5859,7 @@ msgid "UDF"
 msgstr ""
 
 #: projects/k3bdataimagesettingswidget.cpp:228
-msgid "Custom (ISO9660 only)"
+msgid "Custom (ISO 9660 only)"
 msgstr ""
 
 #: projects/k3bdataimagesettingswidget.cpp:230
@@ -5894,7 +5883,7 @@ msgstr ""
 #: projects/k3bdataimagesettingswidget.cpp:259
 msgid ""
 "<p>Be aware that without the Joliet extensions Windows systems will not be "
-"able to display long filenames. You will only see the ISO9660 filenames."
+"able to display long filenames. You will only see the ISO 9660 filenames."
 "<p>If you do not intend to use the CD/DVD on a Windows system it is safe to "
 "disable Joliet."
 msgstr ""
@@ -5934,11 +5923,11 @@ msgid "Start Multisession"
 msgstr ""
 
 #: projects/k3bdatamultisessioncombobox.cpp:77
-msgid "Continue Multisession "
+msgid "Continue Multisession"
 msgstr ""
 
 #: projects/k3bdatamultisessioncombobox.cpp:78
-msgid "Finish Multisession "
+msgid "Finish Multisession"
 msgstr ""
 
 #: projects/k3bdatamultisessionimportdialog.cpp:98
@@ -5946,7 +5935,7 @@ msgid ""
 "<p>K3b found session containing Joliet information for long filenames but no "
 "Rock Ridge extensions.<p>The filenames in the imported session will be "
 "converted to a restricted character set in the new session. This character "
-"set is based on the ISO9660 settings in the K3b project. K3b is not able to "
+"set is based on the ISO 9660 settings in the K3b project. K3b is not able to "
 "display these converted filenames yet."
 msgstr ""
 
@@ -6055,7 +6044,7 @@ msgstr ""
 #: projects/k3bdatapropertiesdialog.cpp:165
 msgid ""
 "<p>If this option is checked, the file or folder (and its entire contents) "
-"will be hidden on the ISO9660 and RockRidge filesystem.</p><p>This is "
+"will be hidden on the ISO 9660 and RockRidge filesystem.</p><p>This is "
 "useful, for example, for having different README files for RockRidge and "
 "Joliet, which can be managed by hiding README.joliet on RockRidge and README."
 "rr on the Joliet filesystem.</p>"
@@ -6072,12 +6061,12 @@ msgstr ""
 
 #: projects/k3bdatapropertiesdialog.cpp:179
 msgid ""
-"<p>This value modifies the physical sort order of the files in the ISO9660 "
+"<p>This value modifies the physical sort order of the files in the ISO 9660 "
 "filesystem. A higher weighting means that the file will be located closer to "
 "the beginning of the image (and the disk).<p>This option is useful in order "
 "to optimize the data layout on a medium.<p><b>Caution:</b> This does not "
-"sort the order of the file names that appear in the ISO9660 folder. It sorts "
-"the order in which the file data is written to the image."
+"sort the order of the file names that appear in the ISO 9660 folder. It "
+"sorts the order in which the file data is written to the image."
 msgstr ""
 
 #: projects/k3bdatapropertiesdialog.cpp:207
@@ -6166,8 +6155,8 @@ msgstr ""
 
 #: projects/k3bdataurladdingdialog.cpp:197
 msgid ""
-"<p>The file you are about to add to the project is an ISO9660 image. As such "
-"it can be burned to a medium directly since it already contains a file "
+"<p>The file you are about to add to the project is an ISO 9660 image. As "
+"such it can be burned to a medium directly since it already contains a file "
 "system.<br>Are you sure you want to add this file to the project?"
 msgstr ""
 
@@ -6844,17 +6833,17 @@ msgstr ""
 #: projects/k3bvcdburndialog.cpp:131
 msgid ""
 "<p>This is the most basic <b>Video CD</b> specification dating back to 1993, "
-"which has the following characteristics:<ul><li>One mode2 mixed form "
-"ISO-9660 track containing file pointers to the information areas.</li><li>Up "
-"to 98 multiplex-ed MPEG-1 audio/video streams or CD-DA audio tracks.</"
-"li><li>Up to 500 MPEG sequence entry points used as chapter divisions.</li></"
-"ul><p>The Video CD specification requires the multiplex-ed MPEG-1 stream to "
-"have a CBR of less than 174300 bytes (1394400 bits) per second in order to "
-"accommodate single speed CD-ROM drives.<br>The specification allows for the "
-"following two resolutions:<ul><li>352 x 240 @ 29.97 Hz (NTSC SIF).</"
-"li><li>352 x 240 @ 23.976 Hz (FILM SIF).</li></ul><p>The CBR MPEG-1, layer "
-"II audio stream is fixed at 224 kbps with 1 stereo or 2 mono channels."
-"<p><b>It is recommended to keep the video bit-rate under 1151929.1 bps.</b>"
+"which has the following characteristics:<ul><li>One mode2 mixed form ISO "
+"9660 track containing file pointers to the information areas.</li><li>Up to "
+"98 multiplex-ed MPEG-1 audio/video streams or CD-DA audio tracks.</li><li>Up "
+"to 500 MPEG sequence entry points used as chapter divisions.</li></ul><p>The "
+"Video CD specification requires the multiplex-ed MPEG-1 stream to have a CBR "
+"of less than 174300 bytes (1394400 bits) per second in order to accommodate "
+"single speed CD-ROM drives.<br>The specification allows for the following "
+"two resolutions:<ul><li>352 x 240 @ 29.97 Hz (NTSC SIF).</li><li>352 x 240 @ "
+"23.976 Hz (FILM SIF).</li></ul><p>The CBR MPEG-1, layer II audio stream is "
+"fixed at 224 kbps with 1 stereo or 2 mono channels.<p><b>It is recommended "
+"to keep the video bit-rate under 1151929.1 bps.</b>"
 msgstr ""
 
 #: projects/k3bvcdburndialog.cpp:142
@@ -7882,7 +7871,7 @@ msgstr ""
 #: rip/k3baudiocdview.cpp:389
 #, fuzzy
 #| msgid "Album"
-msgid "Album Cddb"
+msgid "Album CDDB"
 msgstr "Albom"
 
 #: rip/k3baudiocdview.cpp:433
@@ -8359,7 +8348,7 @@ msgstr ""
 
 #: rip/k3bvideocdrippingdialog.cpp:134
 msgid ""
-"<p>Ignore extended PSD (located in the ISO-9660 filesystem under `/EXT/PSD_X."
+"<p>Ignore extended PSD (located in the ISO 9660 filesystem under `/EXT/PSD_X."
 "VCD') and use the <em>standard</em> PSD.</p>"
 msgstr ""
 
