@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-05 09:34+0000\n"
+"POT-Creation-Date: 2015-02-24 13:06+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -430,23 +430,23 @@ msgid "Practice"
 msgstr "Articles"
 
 #. i18n: ectx: property (text), widget (QLabel, recentLabel)
-#: src/dashboard/dashboard.cpp:273 src/dashboard/dashboard.ui:38
+#: src/dashboard/dashboard.cpp:272 src/dashboard/dashboard.ui:38
 #, fuzzy
 #| msgid "Articles"
 msgid "Active Collections"
 msgstr "Articles"
 
 #. i18n: ectx: property (text), widget (QLabel, completedLabel)
-#: src/dashboard/dashboard.cpp:278 src/dashboard/dashboard.ui:77
+#: src/dashboard/dashboard.cpp:277 src/dashboard/dashboard.ui:77
 msgid "Completed Collections"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, removeChoiceButton)
-#: src/dashboard/dashboard.cpp:326 src/editor/multiplechoicewidget.ui:28
+#: src/dashboard/dashboard.cpp:325 src/editor/multiplechoicewidget.ui:28
 msgid "Remove"
 msgstr "Suprimir"
 
-#: src/dashboard/dashboard.cpp:327
+#: src/dashboard/dashboard.cpp:326
 msgid "Are you sure you want to remove this collection?"
 msgstr ""
 
@@ -753,7 +753,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (text), widget (QLabel, synonymLabel)
 #: src/editor/editor.cpp:247 src/editor/synonymwidget.ui:16
-#: src/practice/configure/generalpracticeoptions.ui:139
+#: src/practice/configure/generalpracticeoptions.ui:152
 msgid "Synonyms"
 msgstr ""
 
@@ -779,7 +779,7 @@ msgstr "Resumit"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PracticeSoundEnabled)
 #: src/editor/editor.cpp:338
-#: src/practice/configure/generalpracticeoptions.ui:126
+#: src/practice/configure/generalpracticeoptions.ui:139
 msgid "Sound"
 msgstr "Son"
 
@@ -1024,11 +1024,11 @@ msgstr ""
 msgid "Collapse all units and subunits."
 msgstr ""
 
-#: src/editor/lessonview.cpp:194
+#: src/editor/lessonview.cpp:186
 msgid "The root lesson cannot be deleted."
 msgstr ""
 
-#: src/editor/lessonview.cpp:203
+#: src/editor/lessonview.cpp:195
 #, kde-format
 msgid "There is %1 word left in this unit. Do you want to delete it?"
 msgid_plural ""
@@ -1036,11 +1036,11 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/editor/lessonview.cpp:217
+#: src/editor/lessonview.cpp:209
 msgid "Entries per Unit"
 msgstr ""
 
-#: src/editor/lessonview.cpp:217
+#: src/editor/lessonview.cpp:209
 msgid ""
 "The unit will be split into smaller unit. How many entries in each unit do "
 "you want?"
@@ -1311,11 +1311,11 @@ msgstr ""
 msgid "This word type folder contains no word type with special meaning."
 msgstr ""
 
-#: src/editor/wordtypeview.cpp:231
+#: src/editor/wordtypeview.cpp:219
 msgid "The root word type cannot be deleted."
 msgstr ""
 
-#: src/editor/wordtypeview.cpp:240
+#: src/editor/wordtypeview.cpp:228
 #, kde-format
 msgid ""
 "There is a word left with this word type. It will lose its type. Continue?"
@@ -1346,7 +1346,7 @@ msgid "Export As"
 msgstr ""
 
 #: src/exportdialog.cpp:128 src/parleydocument.cpp:337
-#: src/parleymainwindow.cpp:159
+#: src/parleymainwindow.cpp:158
 msgid "Untitled"
 msgstr "Sens nom"
 
@@ -1751,7 +1751,7 @@ msgstr ""
 msgid "Could not save vocabulary collection \"%1\""
 msgstr ""
 
-#: src/parleymainwindow.cpp:157
+#: src/parleymainwindow.cpp:156
 #, kde-format
 msgctxt ""
 "Title and a modified status indicator.  [*] is exact and will be shown only "
@@ -1759,13 +1759,13 @@ msgctxt ""
 msgid "%1 [*]"
 msgstr ""
 
-#: src/parleymainwindow.cpp:197
+#: src/parleymainwindow.cpp:196
 msgid ""
 "You cannot start to practice when the known language is the same as the "
 "language to learn."
 msgstr ""
 
-#: src/parleymainwindow.cpp:198
+#: src/parleymainwindow.cpp:197
 #, fuzzy
 #| msgid "Languages"
 msgid "Select languages"
@@ -2138,81 +2138,79 @@ msgstr ""
 msgid "Ignore Capitalization"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowHints)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_IgnorePunctuationMistakes)
 #: src/practice/configure/generalpracticeoptions.ui:49
+msgid "Any punctuation mistake in the answer is counted as correct."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnorePunctuationMistakes)
+#: src/practice/configure/generalpracticeoptions.ui:52
+#, fuzzy
+#| msgid "Introduction"
+msgid "Ignore Punctuation"
+msgstr "Introduccion"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowHints)
+#: src/practice/configure/generalpracticeoptions.ui:62
 msgid ""
 "During the practice you can use the hint button to see parts of the solution."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowHints)
-#: src/practice/configure/generalpracticeoptions.ui:52
+#: src/practice/configure/generalpracticeoptions.ui:65
 #, fuzzy
 #| msgid "Enable Sound"
 msgid "Enable Hints"
 msgstr "Activar lo son"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AltLearn)
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AltLearn)
-#: src/practice/configure/generalpracticeoptions.ui:62
-#: src/practice/configure/generalpracticeoptions.ui:65
-msgid ""
-"Requires you to answer each question correctly 3 times in a row for it to be "
-"counted as correct."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AltLearn)
-#: src/practice/configure/generalpracticeoptions.ui:68
-msgid "Require 3 consecutive correct answers"
-msgstr ""
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: src/practice/configure/generalpracticeoptions.ui:78
+#: src/practice/configure/generalpracticeoptions.ui:91
 #, fuzzy
 #| msgid "Sound"
 msgid "Images and Sound"
 msgstr "Son"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_FlashcardsFrontImage)
-#: src/practice/configure/generalpracticeoptions.ui:84
+#: src/practice/configure/generalpracticeoptions.ui:97
 msgid "During the practice, images are shown for the question."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FlashcardsFrontImage)
-#: src/practice/configure/generalpracticeoptions.ui:87
+#: src/practice/configure/generalpracticeoptions.ui:100
 #, fuzzy
 #| msgid "Sound"
 msgid "Image for Question"
 msgstr "Son"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_FlashcardsBackImage)
-#: src/practice/configure/generalpracticeoptions.ui:97
+#: src/practice/configure/generalpracticeoptions.ui:110
 msgid "During the practice, images are shown for the solution."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FlashcardsBackImage)
-#: src/practice/configure/generalpracticeoptions.ui:100
+#: src/practice/configure/generalpracticeoptions.ui:113
 #, fuzzy
 #| msgid "Sound"
 msgid "Image for Solution"
 msgstr "Son"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AllowImageInsteadOfWord)
-#: src/practice/configure/generalpracticeoptions.ui:110
+#: src/practice/configure/generalpracticeoptions.ui:123
 msgid "Allow using images instead of words in flashcards."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowImageInsteadOfWord)
-#: src/practice/configure/generalpracticeoptions.ui:113
+#: src/practice/configure/generalpracticeoptions.ui:126
 msgid "Allow images instead of words"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_PracticeSoundEnabled)
-#: src/practice/configure/generalpracticeoptions.ui:123
+#: src/practice/configure/generalpracticeoptions.ui:136
 msgid "Enable playing of pronunciation sound files during the practice."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/practice/configure/generalpracticeoptions.ui:145
+#: src/practice/configure/generalpracticeoptions.ui:158
 msgid ""
 "By default you are asked to enter synonyms until you enter the one that is "
 "associated directly with the current word. With this option enabled any "
@@ -2220,24 +2218,24 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CountSynonymsAsCorrect)
-#: src/practice/configure/generalpracticeoptions.ui:155
+#: src/practice/configure/generalpracticeoptions.ui:168
 msgid "Accept any Synonym"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: src/practice/configure/generalpracticeoptions.ui:178
+#: src/practice/configure/generalpracticeoptions.ui:191
 #, fuzzy
 #| msgid "Expression"
 msgid "Sessions"
 msgstr "Expression"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: src/practice/configure/generalpracticeoptions.ui:189
+#: src/practice/configure/generalpracticeoptions.ui:202
 msgid "Max session size"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: src/practice/configure/generalpracticeoptions.ui:238
+#: src/practice/configure/generalpracticeoptions.ui:251
 msgid "Max number of new words"
 msgstr ""
 
@@ -2377,7 +2375,7 @@ msgid "LaTeX error."
 msgstr ""
 
 #: src/practice/multiplechoicebackendmode.cpp:113
-#: src/practice/writtenbackendmode.cpp:147
+#: src/practice/writtenbackendmode.cpp:155
 msgid "You revealed the answer by using too many hints."
 msgstr ""
 
@@ -2670,66 +2668,95 @@ msgid "Your answer was an already entered synonym."
 msgstr ""
 
 #: src/practice/writtenbackendmode.cpp:101
+#, fuzzy
+#| msgctxt "NAME OF TRANSLATORS"
+#| msgid "Your names"
+msgid "Your answer was a synonym and your punctuation was wrong."
+msgstr "Yannig Marchegay (Kokoyaya)"
+
+#: src/practice/writtenbackendmode.cpp:103
 msgid "Your answer was a synonym and your capitalization was wrong."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:103
+#: src/practice/writtenbackendmode.cpp:105
 msgid "Your answer was a synonym and accents were wrong."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:105
+#: src/practice/writtenbackendmode.cpp:107
 msgid "Your answer was a synonym."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:113
+#: src/practice/writtenbackendmode.cpp:115
+msgid ""
+"Your answer was wrong as punctuation mistakes are not accepted. Please try "
+"again."
+msgstr ""
+
+#: src/practice/writtenbackendmode.cpp:117
 msgid ""
 "Your answer was wrong as capitalization mistakes are not accepted. Please "
 "try again."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:115
+#: src/practice/writtenbackendmode.cpp:119
 msgid ""
 "Your answer was wrong as accent mistakes are not accepted. Please try again."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:117
+#: src/practice/writtenbackendmode.cpp:121
 msgid "Your answer was wrong. Please try again."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:124
+#: src/practice/writtenbackendmode.cpp:128
+#, fuzzy
+#| msgctxt "NAME OF TRANSLATORS"
+#| msgid "Your names"
+msgid "Your answer was right, but your punctuation was wrong."
+msgstr "Yannig Marchegay (Kokoyaya)"
+
+#: src/practice/writtenbackendmode.cpp:130
 msgid "Your answer was right, but your capitalization was wrong."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:126
+#: src/practice/writtenbackendmode.cpp:132
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
 msgid "Your answer was right, but accents were wrong."
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: src/practice/writtenbackendmode.cpp:128
+#: src/practice/writtenbackendmode.cpp:134
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
 msgid "Your answer was right."
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: src/practice/writtenbackendmode.cpp:132
+#: src/practice/writtenbackendmode.cpp:138
+#, fuzzy
+#| msgctxt "NAME OF TRANSLATORS"
+#| msgid "Your names"
+msgid ""
+"Your answer was right... but not on the first try and your punctuation was "
+"wrong."
+msgstr "Yannig Marchegay (Kokoyaya)"
+
+#: src/practice/writtenbackendmode.cpp:140
 msgid ""
 "Your answer was right... but not on the first try and your capitalization "
 "was wrong."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:134
+#: src/practice/writtenbackendmode.cpp:142
 msgid ""
 "Your answer was right... but not on the first try and accents were wrong."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:136
+#: src/practice/writtenbackendmode.cpp:144
 msgid "Your answer was right... but not on the first try."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:156
+#: src/practice/writtenbackendmode.cpp:164
 #, kde-format
 msgid "The solution starts with: %1"
 msgstr ""
@@ -3400,59 +3427,54 @@ msgid ""
 "time"
 msgstr ""
 
-#. i18n: ectx: label, entry (AltLearn), group (PracticeOptions)
-#: src/settings/parley.kcfg:73
-msgid "Use the Leitner learning method"
-msgstr ""
-
 #. i18n: ectx: label, entry (TestOrderLesson), group (PracticeOptions)
-#: src/settings/parley.kcfg:77
+#: src/settings/parley.kcfg:73
 msgid ""
 "Append new vocabulary in a collection in order of their units. Note that "
 "this will not be a hard transition, but a slow mix from one unit to the next."
 msgstr ""
 
 #. i18n: ectx: label, entry (TestNumberOfEntries), group (PracticeOptions)
-#: src/settings/parley.kcfg:81
+#: src/settings/parley.kcfg:77
 msgid ""
 "The number of entries that are practiced at the same time. If one of these "
 "is answered correctly another entry will be appended."
 msgstr ""
 
 #. i18n: ectx: label, entry (SwapDirection), group (PracticeOptions)
-#: src/settings/parley.kcfg:85
+#: src/settings/parley.kcfg:81
 msgid "Swap direction randomly"
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeTimeout), group (PracticeOptions)
-#: src/settings/parley.kcfg:90
+#: src/settings/parley.kcfg:86
 msgid "Limit the time for the user to answer in a test."
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeTimeoutMode), group (PracticeOptions)
-#: src/settings/parley.kcfg:94
+#: src/settings/parley.kcfg:90
 msgid ""
 "Show - show the solution after the given time; Continue - go to the next "
 "question after the given time."
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeTimeoutTimePerAnswer), group (PracticeOptions)
-#: src/settings/parley.kcfg:102
+#: src/settings/parley.kcfg:98
 msgid "Maximum time allowed to answer."
 msgstr ""
 
 #. i18n: ectx: label, entry (Suggestions), group (PracticeOptions)
-#: src/settings/parley.kcfg:107
+#: src/settings/parley.kcfg:103
 msgid "Enable suggestion lists in written practice."
 msgstr ""
 
 #. i18n: ectx: label, entry (ShowHints), group (PracticeOptions)
-#: src/settings/parley.kcfg:111
+#: src/settings/parley.kcfg:107
 msgid "Enable the showing of hints."
 msgstr ""
 
 #. i18n: ectx: label, entry (IgnoreAccentMistakes), group (PracticeOptions)
-#: src/settings/parley.kcfg:115
+#: src/settings/parley.kcfg:111
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
@@ -3460,9 +3482,17 @@ msgid "Count answers as right when only the accentuation is wrong."
 msgstr "Yannig Marchegay (Kokoyaya)"
 
 #. i18n: ectx: label, entry (IgnoreCapitalizationMistakes), group (PracticeOptions)
-#: src/settings/parley.kcfg:119
+#: src/settings/parley.kcfg:115
 msgid "Count answers as right when only the capitalization is wrong."
 msgstr ""
+
+#. i18n: ectx: label, entry (IgnorePunctuationMistakes), group (PracticeOptions)
+#: src/settings/parley.kcfg:119
+#, fuzzy
+#| msgctxt "NAME OF TRANSLATORS"
+#| msgid "Your names"
+msgid "Count answers as right when only the punctuation is wrong."
+msgstr "Yannig Marchegay (Kokoyaya)"
 
 #. i18n: ectx: label, entry (SplitTranslations), group (PracticeOptions)
 #: src/settings/parley.kcfg:124
@@ -4298,9 +4328,6 @@ msgstr ""
 
 #~ msgid "Welcome"
 #~ msgstr "Planvengut"
-
-#~ msgid "Introduction"
-#~ msgstr "Introduccion"
 
 #, fuzzy
 #~| msgid "General Settings"
