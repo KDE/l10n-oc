@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-11 01:56+0000\n"
+"POT-Creation-Date: 2015-03-12 02:01+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -201,7 +201,7 @@ msgid ""
 "item of the same name already exists.  Any other items have been pasted."
 msgstr ""
 
-#: clipboard/umlclipboard.cpp:792 uml.cpp:1573
+#: clipboard/umlclipboard.cpp:792 uml.cpp:1567
 msgid "Paste Error"
 msgstr ""
 
@@ -1212,8 +1212,9 @@ msgid "Status"
 msgstr "Estatut"
 
 #. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_categoryClass)
 #: codegenwizard/codegenstatuspage.ui:40 codeimpwizard/codeimpstatuspage.ui:54
-#: widgets/widgetbase.cpp:1028
+#: dialogs/finddialog.ui:89 widgets/widgetbase.cpp:1028
 #, fuzzy
 #| msgid "Close"
 msgid "Class"
@@ -1838,15 +1839,13 @@ msgstr ""
 msgid "Find"
 msgstr ""
 
-#: dialogs/finddialog.cpp:21
+#: dialogs/finddialog.cpp:22
 msgid "Search"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: dialogs/finddialog.ui:21
-#, fuzzy
-#| msgid "Filter"
-msgid "Filter:"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: dialogs/finddialog.ui:25 dialogs/pages/diagramprintpage.cpp:49
+msgid "Filter"
 msgstr "Filtre"
 
 #. i18n: ectx: property (text), widget (QRadioButton, ui_treeView)
@@ -1864,8 +1863,41 @@ msgstr ""
 msgid "&All diagrams"
 msgstr ""
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/finddialog.ui:74 listpopupmenu.cpp:801 widgets/widgetbase.cpp:1019
+#: worktoolbar.cpp:369
+msgid "Category"
+msgstr "Categoria"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_categoryAll)
+#: dialogs/finddialog.ui:82
+msgid "All"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_categoryPackage)
+#: dialogs/finddialog.ui:96 listpopupmenu.cpp:929 listpopupmenu.cpp:1138
+#: widgets/widgetbase.cpp:1064 worktoolbar.cpp:339
+msgid "Package"
+msgstr "Paquetatge"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_categoryInterface)
+#: dialogs/finddialog.ui:103 listpopupmenu.cpp:926 widgets/widgetbase.cpp:1046
+#: worktoolbar.cpp:343
+msgid "Interface"
+msgstr "Interfaç"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_categoryOperation)
+#: dialogs/finddialog.ui:110 listpopupmenu.cpp:1456 listpopupmenu.cpp:1460
+msgid "Operation"
+msgstr "Operacion"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_categoryAttribute)
+#: dialogs/finddialog.ui:117 listpopupmenu.cpp:1455
+msgid "Attribute"
+msgstr "Atribut"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: dialogs/finddialog.ui:69
+#: dialogs/finddialog.ui:131
 msgid "Search Term:"
 msgstr ""
 
@@ -2388,10 +2420,6 @@ msgstr ""
 #: dialogs/pages/diagramprintpage.cpp:44
 msgid "&Diagrams"
 msgstr ""
-
-#: dialogs/pages/diagramprintpage.cpp:49
-msgid "Filter"
-msgstr "Filtre"
 
 #: dialogs/pages/diagramprintpage.cpp:63
 msgid "&Select diagrams"
@@ -3739,10 +3767,6 @@ msgstr "Repertòri"
 msgid "Entity"
 msgstr ""
 
-#: listpopupmenu.cpp:801 widgets/widgetbase.cpp:1019 worktoolbar.cpp:369
-msgid "Category"
-msgstr "Categoria"
-
 #: listpopupmenu.cpp:804 widgets/widgetbase.cpp:1007 worktoolbar.cpp:322
 msgid "Actor"
 msgstr "Actor"
@@ -3769,10 +3793,6 @@ msgctxt "new class menu item"
 msgid "Class"
 msgstr "Classa"
 
-#: listpopupmenu.cpp:926 widgets/widgetbase.cpp:1046 worktoolbar.cpp:343
-msgid "Interface"
-msgstr "Interfaç"
-
 #: listpopupmenu.cpp:927 widgets/widgetbase.cpp:1031 worktoolbar.cpp:344
 msgid "Datatype"
 msgstr ""
@@ -3780,11 +3800,6 @@ msgstr ""
 #: listpopupmenu.cpp:928 widgets/widgetbase.cpp:1037 worktoolbar.cpp:345
 msgid "Enum"
 msgstr ""
-
-#: listpopupmenu.cpp:929 listpopupmenu.cpp:1138 widgets/widgetbase.cpp:1064
-#: worktoolbar.cpp:339
-msgid "Package"
-msgstr "Paquetatge"
 
 #: listpopupmenu.cpp:963
 msgid "Add Point"
@@ -4079,14 +4094,6 @@ msgstr ""
 #: listpopupmenu.cpp:1451
 msgid "Object..."
 msgstr "Objècte..."
-
-#: listpopupmenu.cpp:1455
-msgid "Attribute"
-msgstr "Atribut"
-
-#: listpopupmenu.cpp:1456 listpopupmenu.cpp:1460
-msgid "Operation"
-msgstr "Operacion"
 
 #: listpopupmenu.cpp:1457 listpopupmenu.cpp:1461
 msgid "Template"
@@ -5652,76 +5659,76 @@ msgstr ""
 msgid "No search term entered"
 msgstr ""
 
-#: uml.cpp:1364
+#: uml.cpp:1358
 #, kde-format
 msgid "'%1': %2 found"
 msgstr ""
 
-#: uml.cpp:1414
+#: uml.cpp:1408
 #, fuzzy
 #| msgid "Printing..."
 msgid "Print Preview..."
 msgstr "Estampatge..."
 
-#: uml.cpp:1441
+#: uml.cpp:1435
 msgid "Printing..."
 msgstr "Estampatge..."
 
-#: uml.cpp:1448
+#: uml.cpp:1442
 #, kde-format
 msgid "Print %1"
 msgstr "Estampar %1"
 
-#: uml.cpp:1468
+#: uml.cpp:1462
 msgid "Exiting..."
 msgstr "Sortir..."
 
-#: uml.cpp:1531
+#: uml.cpp:1525
 msgid "Cutting selection..."
 msgstr ""
 
-#: uml.cpp:1554
+#: uml.cpp:1548
 msgid "Copying selection to clipboard..."
 msgstr ""
 
-#: uml.cpp:1566
+#: uml.cpp:1560
 msgid "Inserting clipboard contents..."
 msgstr ""
 
-#: uml.cpp:1571
+#: uml.cpp:1565
 msgid ""
 "Umbrello could not paste the clipboard contents.  The objects in the "
 "clipboard may be of the wrong type to be pasted here."
 msgstr ""
 
-#: uml.cpp:1597 umlviewimageexporter.cpp:80 umlviewimageexporterall.cpp:84
+#: uml.cpp:1591 umlviewimageexporter.cpp:80 umlviewimageexporterall.cpp:84
 #, fuzzy
 #| msgid "Ready."
 msgctxt "reset status bar"
 msgid "Ready."
 msgstr "Prèst."
 
-#: uml.cpp:2205
+#: uml.cpp:2199
 msgid "Cannot view code until you generate some first."
 msgstr ""
 
-#: uml.cpp:2205 uml.cpp:2208
+#: uml.cpp:2199 uml.cpp:2202
 msgid "Cannot View Code"
 msgstr ""
 
-#: uml.cpp:2208
+#: uml.cpp:2202
 msgid "Cannot view code from simple code writer."
 msgstr ""
 
-#: uml.cpp:2657
+#: uml.cpp:2651
 msgid "Select file(s) to import:"
 msgstr ""
 
-#: uml.cpp:2686
+#: uml.cpp:2680
 msgid "Select directory to import:"
 msgstr ""
 
-#: uml.cpp:3208
+#: uml.cpp:3202
 msgid "XHTML Generation failed ."
 msgstr ""
 
@@ -6631,6 +6638,11 @@ msgstr ""
 #: worktoolbar.cpp:368
 msgid "Pre/Post condition"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Filter"
+#~ msgid "Filter:"
+#~ msgstr "Filtre"
 
 #, fuzzy
 #~| msgid "Change Font"
