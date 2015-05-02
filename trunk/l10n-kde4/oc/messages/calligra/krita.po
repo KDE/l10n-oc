@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-04-25 01:54+0000\n"
+"POT-Creation-Date: 2015-05-02 01:57+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -74,14 +74,14 @@ msgstr "Filtre"
 #: ui/dialogs/kis_dlg_preferences.cc:205 ui/input/kis_input_manager.cpp:545
 #: ui/kis_filter_manager.cc:217 ui/kis_filter_manager.cc:226
 #: ui/kis_layer_manager.cc:658 ui/kis_layer_manager.cc:909
-#: ui/KisApplication.cpp:400 ui/KisApplication.cpp:405
-#: ui/KisApplication.cpp:435 ui/KisDocument.cpp:746 ui/KisDocument.cpp:748
+#: ui/KisApplication.cpp:357 ui/KisApplication.cpp:362
+#: ui/KisApplication.cpp:392 ui/KisDocument.cpp:746 ui/KisDocument.cpp:748
 #: ui/KisDocument.cpp:1214 ui/KisDocument.cpp:1258 ui/KisDocument.cpp:1398
 #: ui/KisDocument.cpp:2028 ui/KisDocument.cpp:2031
 #: ui/KisImportExportManager.cpp:230 ui/KisImportExportManager.cpp:241
-#: ui/KisImportExportManager.cpp:531 ui/KisMainWindow.cpp:718
-#: ui/KisMainWindow.cpp:769 ui/KisMainWindow.cpp:783 ui/KisMainWindow.cpp:1451
-#: ui/KisMainWindow.cpp:1634 ui/KisMainWindow.cpp:1646
+#: ui/KisImportExportManager.cpp:531 ui/KisMainWindow.cpp:658
+#: ui/KisMainWindow.cpp:709 ui/KisMainWindow.cpp:723 ui/KisMainWindow.cpp:1391
+#: ui/KisMainWindow.cpp:1574 ui/KisMainWindow.cpp:1586
 #: ui/KisTemplateCreateDia.cpp:324 ui/KisView.cpp:792
 #: ui/opengl/kis_opengl.cpp:91 ui/opengl/kis_opengl_canvas2.cpp:504
 #: ui/thememanager.cpp:271 ui/widgets/kis_custom_image_widget.cc:245
@@ -1558,7 +1558,7 @@ msgstr ""
 msgid "Locked"
 msgstr ""
 
-#: image/kis_clone_layer.cpp:305
+#: image/kis_clone_layer.cpp:303
 msgid "Copy From"
 msgstr ""
 
@@ -1771,12 +1771,12 @@ msgstr "Opacitat"
 msgid "Composite Mode"
 msgstr ""
 
-#: image/kis_paint_layer.cc:151 image/kis_paint_layer.cc:160
+#: image/kis_paint_layer.cc:150 image/kis_paint_layer.cc:159
 #: ui/kis_node_model.cpp:476
 msgid "Alpha Locked"
 msgstr ""
 
-#: image/kis_paint_layer.cc:152 image/kis_paint_layer.cc:163
+#: image/kis_paint_layer.cc:151 image/kis_paint_layer.cc:162
 msgid "Inherit Alpha"
 msgstr ""
 
@@ -1788,7 +1788,7 @@ msgstr "Pression"
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
 #: image/kis_psd_layer_style.cpp:103 ui/forms/wdgcustompalette.ui:18
-#: ui/KisDocument.cpp:2480 ui/KisMainWindow.cpp:901 ui/KisPart.cpp:593
+#: ui/KisDocument.cpp:2480 ui/KisMainWindow.cpp:841 ui/KisPart.cpp:593
 #: ui/KisPart.cpp:609
 msgid "Unnamed"
 msgstr "Sens nom"
@@ -2075,35 +2075,35 @@ msgctxt "@title:window"
 msgid "Krita: Internal Error"
 msgstr "Resolucion :"
 
-#: main.cc:107
+#: main.cc:92
 msgid "Only print and exit"
 msgstr ""
 
-#: main.cc:108
+#: main.cc:93
 msgid "Open a new document with a template"
 msgstr ""
 
-#: main.cc:109
+#: main.cc:94
 msgid "Override display DPI"
 msgstr ""
 
-#: main.cc:110
+#: main.cc:95
 msgid "Only export to PDF and exit"
 msgstr ""
 
-#: main.cc:111
+#: main.cc:96
 msgid "Export to the given filename and exit"
 msgstr ""
 
-#: main.cc:112
+#: main.cc:97
 msgid "Filename for export/export-pdf"
 msgstr ""
 
-#: main.cc:113
+#: main.cc:98
 msgid "Filename to write profiling information into."
 msgstr ""
 
-#: main.cc:114
+#: main.cc:99
 msgid "File(s) or URL(s) to open"
 msgstr ""
 
@@ -3693,8 +3693,8 @@ msgstr ""
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:270
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:295
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:336
-#: plugins/extensions/dockers/lut/wdglut.ui:148
-#: plugins/extensions/dockers/lut/wdglut.ui:179
+#: plugins/extensions/dockers/lut/wdglut.ui:188
+#: plugins/extensions/dockers/lut/wdglut.ui:222
 #: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:52
 #: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:71
 #: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:90
@@ -3994,21 +3994,21 @@ msgid "All Channels"
 msgstr "Canal"
 
 #. i18n: ectx: property (title), widget (QGroupBox, m_chkUseOcio)
-#: plugins/extensions/dockers/lut/wdglut.ui:20
+#: plugins/extensions/dockers/lut/wdglut.ui:24
 #, fuzzy
 #| msgid "Color"
 msgid "Use OpenColorIO"
 msgstr "Color"
 
 #. i18n: ectx: property (text), widget (QLabel, m_lblDisplayDevice)
-#: plugins/extensions/dockers/lut/wdglut.ui:44
+#: plugins/extensions/dockers/lut/wdglut.ui:81
 #, fuzzy
 #| msgid "Display"
 msgid "Display Device:"
 msgstr "Visualizar"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: plugins/extensions/dockers/lut/wdglut.ui:57
+#: plugins/extensions/dockers/lut/wdglut.ui:94
 #, fuzzy
 #| msgid "Contents"
 msgid "Components:"
@@ -4016,7 +4016,7 @@ msgstr "Ensenhador"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/extensions/dockers/lut/wdglut.ui:90
+#: plugins/extensions/dockers/lut/wdglut.ui:127
 #: plugins/filters/dodgeburn/DodgeBurnConfigurationBaseWidget.ui:55
 #, fuzzy
 #| msgid "Export"
@@ -4024,21 +4024,21 @@ msgid "Exposure:"
 msgstr "Exportar"
 
 #. i18n: ectx: property (text), widget (QLabel, m_lblInputColorSpace)
-#: plugins/extensions/dockers/lut/wdglut.ui:103
+#: plugins/extensions/dockers/lut/wdglut.ui:140
 #, fuzzy
 #| msgid "Selection"
 msgid "Input ColorSpace:"
 msgstr "Seleccion"
 
 #. i18n: ectx: property (text), widget (QLabel, lblConfig)
-#: plugins/extensions/dockers/lut/wdglut.ui:126
+#: plugins/extensions/dockers/lut/wdglut.ui:163
 #, fuzzy
 #| msgid "Saturation:"
 msgid "Configuration:"
 msgstr "Saturacion :"
 
 #. i18n: ectx: property (text), widget (QLabel, m_lblLut)
-#: plugins/extensions/dockers/lut/wdglut.ui:157
+#: plugins/extensions/dockers/lut/wdglut.ui:197
 #, fuzzy
 #| msgid "Select All"
 msgid "LUT file:"
@@ -4046,19 +4046,19 @@ msgstr "Tot seleccionar"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearBgImageButton)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnClearLut)
-#: plugins/extensions/dockers/lut/wdglut.ui:186
+#: plugins/extensions/dockers/lut/wdglut.ui:229
 #: ui/forms/wdggeneralsettings.ui:230 ui/kis_selection_manager.cc:163
 msgid "Clear"
 msgstr "Netejar"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: plugins/extensions/dockers/lut/wdglut.ui:215
+#: plugins/extensions/dockers/lut/wdglut.ui:258
 msgid "Gamma:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_lblView)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/extensions/dockers/lut/wdglut.ui:228
+#: plugins/extensions/dockers/lut/wdglut.ui:271
 #: plugins/extensions/histogram/wdghistogram.ui:125
 #, fuzzy
 #| msgid "View"
@@ -4066,38 +4066,38 @@ msgid "View:"
 msgstr "Visualizacion"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/extensions/dockers/lut/wdglut.ui:241
+#: plugins/extensions/dockers/lut/wdglut.ui:284
 #, fuzzy
 #| msgid "Selection"
 msgid "Color Engine:"
 msgstr "Seleccion"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorManagement)
-#: plugins/extensions/dockers/lut/wdglut.ui:255
+#: plugins/extensions/dockers/lut/wdglut.ui:298
 #, fuzzy
 #| msgid "Resolution:"
 msgid "Internal"
 msgstr "Resolucion :"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorManagement)
-#: plugins/extensions/dockers/lut/wdglut.ui:260
+#: plugins/extensions/dockers/lut/wdglut.ui:303
 msgid "OCIO"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorManagement)
-#: plugins/extensions/dockers/lut/wdglut.ui:265
+#: plugins/extensions/dockers/lut/wdglut.ui:308
 msgid "OCIO (environment)"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, m_btnConvertCurrentColor)
-#: plugins/extensions/dockers/lut/wdglut.ui:283
+#: plugins/extensions/dockers/lut/wdglut.ui:342
 msgid ""
 "Lock current color to have the same visual representation when changing OCIO "
 "configuration"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, m_btmShowBWConfiguration)
-#: plugins/extensions/dockers/lut/wdglut.ui:302
+#: plugins/extensions/dockers/lut/wdglut.ui:361
 msgid "Configure black and white points of the view"
 msgstr ""
 
@@ -4107,7 +4107,7 @@ msgstr "Resumit"
 
 #: plugins/extensions/dockers/palettedocker/colorsetchooser.cpp:97
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
-#: ui/KisMainWindow.cpp:683 ui/widgets/kis_workspace_chooser.cpp:92
+#: ui/KisMainWindow.cpp:623 ui/widgets/kis_workspace_chooser.cpp:92
 #, fuzzy
 #| msgid "Scales"
 msgid "Save"
@@ -4187,13 +4187,13 @@ msgstr "Paleta"
 msgid "Small Color Selector"
 msgstr ""
 
-#: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:244
+#: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:243
 #, fuzzy
 #| msgid "Selection"
 msgid "Color name:"
 msgstr "Seleccion"
 
-#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:58
+#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:61
 #, fuzzy
 #| msgid "Selection"
 msgid "Show Colorspace Selector"
@@ -5170,7 +5170,7 @@ msgstr "Filtre"
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:59
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:138
 #: plugins/tools/tool_text/wdgtextoptions.ui:48
-#: ui/forms/wdgdlgblacklistcleanup.ui:83 ui/forms/wdggeometryoptions.ui:72
+#: ui/forms/wdgdlgblacklistcleanup.ui:83 ui/forms/wdggeometryoptions.ui:89
 #: ui/layerstyles/WdgPatternOverlay.ui:26 ui/layerstyles/WdgStroke.ui:147
 msgid "Pattern"
 msgstr "Motiu"
@@ -5519,7 +5519,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblColorSpaces)
 #. i18n: ectx: property (text), widget (QLabel, label_26)
 #: plugins/extensions/metadataeditor/editors/exif.ui:1009
-#: ui/forms/wdgcolorspaceselector.ui:23
+#: ui/forms/wdgcolorspaceselector.ui:24
 msgid "Model:"
 msgstr "Modèl :"
 
@@ -7458,7 +7458,7 @@ msgid "&Round Corners..."
 msgstr ""
 
 #: plugins/filters/roundcorners/kis_round_corners_filter.cpp:128
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:287
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:318
 msgid "Radius"
 msgstr ""
 
@@ -10196,7 +10196,7 @@ msgid "Lower value "
 msgstr ""
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:246
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:276
 #: ui/kis_paintop_box.cc:308
 msgid "Mirror"
 msgstr ""
@@ -10210,14 +10210,14 @@ msgid "Mirrored"
 msgstr ""
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:35
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:265
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:296
 #, fuzzy
 #| msgid "Horizontal:"
 msgid "Horizontally"
 msgstr "Orizontal :"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:37
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:267
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:298
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Vertically"
@@ -11091,37 +11091,41 @@ msgctxt "(qtundo-format)"
 msgid "Multibrush Stroke"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:226
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:256
 #, fuzzy
 #| msgid "Grid"
 msgid "Show Axes"
 msgstr "Grasilha"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:230
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:260
 msgid "Axes point"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:236
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:266
 msgid "Set axes angle (degrees)"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:242
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:272
 #, fuzzy
 #| msgid "Angle:"
 msgid "Axes Angle:"
 msgstr "Angle :"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:245
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:275
 msgid "Symmetry"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:247
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:277
 #, fuzzy
 #| msgid "Triangle"
 msgid "Translate"
 msgstr "Triangle"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:253
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:278
+msgid "Snowflake"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:284
 #, fuzzy
 #| msgid "Settings"
 msgid "Brush count"
@@ -11596,7 +11600,7 @@ msgstr "Opcions"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: plugins/tools/tool_text/wdgtextoptions.ui:38
-#: ui/forms/wdggeometryoptions.ui:62
+#: ui/forms/wdggeometryoptions.ui:79
 #, fuzzy
 #| msgid "Background Color"
 msgid "Foreground Color"
@@ -11605,7 +11609,7 @@ msgstr "Color de fons"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: plugins/tools/tool_text/wdgtextoptions.ui:43
-#: ui/forms/wdggeometryoptions.ui:67
+#: ui/forms/wdggeometryoptions.ui:84
 msgid "Background Color"
 msgstr "Color de fons"
 
@@ -12082,65 +12086,65 @@ msgctxt "@title:window"
 msgid "No QML found"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:136
+#: ui/actions/kis_selection_action_factories.cpp:132
 #, fuzzy
 #| msgid "Select All"
 msgctxt "(qtundo-format)"
 msgid "Select All"
 msgstr "Tot seleccionar"
 
-#: ui/actions/kis_selection_action_factories.cpp:210
+#: ui/actions/kis_selection_action_factories.cpp:206
 #, fuzzy
 #| msgid "Filter"
 msgctxt "(qtundo-format)"
 msgid "Flood Fill Layer"
 msgstr "Filtre"
 
-#: ui/actions/kis_selection_action_factories.cpp:286
+#: ui/actions/kis_selection_action_factories.cpp:282
 msgctxt "floating message when cannot copy from a node"
 msgid "Cannot copy pixels from this type of layer "
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:295
+#: ui/actions/kis_selection_action_factories.cpp:291
 msgctxt "floating message when copying empty selection"
 msgid "Selection is empty: no pixels were copied "
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:344
+#: ui/actions/kis_selection_action_factories.cpp:340
 #, fuzzy
 #| msgid "Cut"
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "Talhar"
 
-#: ui/actions/kis_selection_action_factories.cpp:345
+#: ui/actions/kis_selection_action_factories.cpp:341
 msgctxt "(qtundo-format)"
 msgid "Copy"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:371
+#: ui/actions/kis_selection_action_factories.cpp:367
 msgctxt "(qtundo-format)"
 msgid "Copy Merged"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:383
+#: ui/actions/kis_selection_action_factories.cpp:379
 msgid "(pasted)"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:414
+#: ui/actions/kis_selection_action_factories.cpp:410
 #, fuzzy
 #| msgid "Pattern"
 msgid "Pasted"
 msgstr "Motiu"
 
-#: ui/actions/kis_selection_action_factories.cpp:461
+#: ui/actions/kis_selection_action_factories.cpp:454
 #, fuzzy
 #| msgid "Selection"
 msgctxt "(qtundo-format)"
 msgid "Convert to Vector Selection"
 msgstr "Seleccion"
 
-#: ui/actions/kis_selection_action_factories.cpp:494
+#: ui/actions/kis_selection_action_factories.cpp:487
 #, fuzzy
 #| msgid "Selection"
 msgctxt "(qtundo-format)"
@@ -12435,7 +12439,7 @@ msgid ""
 "use as you like.</p><p>That means that Krita can be used commercially, for "
 "any purpose. There are no restrictions whatsoever.</p><p>Krita’s GNU GPL "
 "license guarantees you this freedom. Nobody is ever permitted to take it "
-"away, in contrastto trial or educational versions of commercial software "
+"away, in contrast to trial or educational versions of commercial software "
 "that will forbid your work in commercial situations.</p><br/><hr/><pre>"
 msgstr ""
 
@@ -12537,7 +12541,7 @@ msgstr ""
 msgid "Choke"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:1001
+#: ui/dialogs/kis_dlg_layer_style.cpp:1040
 msgctxt "layer styles parameter"
 msgid "Spread"
 msgstr ""
@@ -13065,28 +13069,28 @@ msgid "Use Blackpoint Compensation"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblColorModels)
-#: ui/forms/wdgcolorspaceselector.ui:52
+#: ui/forms/wdgcolorspaceselector.ui:44
 msgid "Depth:"
 msgstr "Prigondor :"
 
 #. i18n: ectx: property (text), widget (QLabel, lblProfiles)
-#: ui/forms/wdgcolorspaceselector.ui:81 ui/forms/wdglayerproperties.ui:111
+#: ui/forms/wdgcolorspaceselector.ui:64 ui/forms/wdglayerproperties.ui:111
 msgid "Profile:"
 msgstr "Perfil :"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnInstallProfile)
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnDownloadProfile)
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnUploadProfile)
-#: ui/forms/wdgcolorspaceselector.ui:106 ui/forms/wdgcolorspaceselector.ui:119
-#: ui/forms/wdgcolorspaceselector.ui:132
+#: ui/forms/wdgcolorspaceselector.ui:86 ui/forms/wdgcolorspaceselector.ui:99
+#: ui/forms/wdgcolorspaceselector.ui:112
 msgid "Install a new profile from a file"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, bnInstallProfile)
 #. i18n: ectx: property (whatsThis), widget (QPushButton, bnDownloadProfile)
 #. i18n: ectx: property (whatsThis), widget (QPushButton, bnUploadProfile)
-#: ui/forms/wdgcolorspaceselector.ui:109 ui/forms/wdgcolorspaceselector.ui:122
-#: ui/forms/wdgcolorspaceselector.ui:135
+#: ui/forms/wdgcolorspaceselector.ui:89 ui/forms/wdgcolorspaceselector.ui:102
+#: ui/forms/wdgcolorspaceselector.ui:115
 msgid "Install a new profile from a file."
 msgstr ""
 
@@ -13565,38 +13569,38 @@ msgid "Compress .kra files more (slows loading/saving)"
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgGeometryOptions)
-#: ui/forms/wdggeometryoptions.ui:14
+#: ui/forms/wdggeometryoptions.ui:6
 #, fuzzy
 #| msgid "Options"
 msgid "Geometry Options"
 msgstr "Opcions"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelOutline)
-#: ui/forms/wdggeometryoptions.ui:22
+#: ui/forms/wdggeometryoptions.ui:33
 msgid "Outline:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
-#: ui/forms/wdggeometryoptions.ui:33
+#: ui/forms/wdggeometryoptions.ui:47
 #, fuzzy
 #| msgid "Line"
 msgid "No Outline"
 msgstr "Linha"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
-#: ui/forms/wdggeometryoptions.ui:38
+#: ui/forms/wdggeometryoptions.ui:52
 msgid "Brush"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabelFill)
-#: ui/forms/wdggeometryoptions.ui:46
+#: ui/forms/wdggeometryoptions.ui:60
 #, fuzzy
 #| msgid "Fill"
 msgid "Fill:"
 msgstr "Emplenar"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
-#: ui/forms/wdggeometryoptions.ui:57
+#: ui/forms/wdggeometryoptions.ui:74
 msgid "Not Filled"
 msgstr ""
 
@@ -18135,36 +18139,36 @@ msgctxt "floating message about zoom"
 msgid "Zoom: %1 \\%"
 msgstr "Agrandir lo zoom"
 
-#: ui/KisApplication.cpp:225
+#: ui/KisApplication.cpp:205
 #, fuzzy
 #| msgid "Vertical:"
 msgctxt "@title:window"
 msgid "Krita: Critical Error"
 msgstr "Vertical :"
 
-#: ui/KisApplication.cpp:226
+#: ui/KisApplication.cpp:206
 msgid ""
 "You are running a 32 bits build on a 64 bits Windows.\n"
 "This is not recommended.\n"
 "Please download and install the x64 build instead."
 msgstr ""
 
-#: ui/KisApplication.cpp:400
+#: ui/KisApplication.cpp:357
 #, kde-format
 msgid "No template found for: %1"
 msgstr ""
 
-#: ui/KisApplication.cpp:405
+#: ui/KisApplication.cpp:362
 #, kde-format
 msgid "Too many templates found for: %1"
 msgstr ""
 
-#: ui/KisApplication.cpp:435
+#: ui/KisApplication.cpp:392
 #, kde-format
 msgid "Template %1 failed to load."
 msgstr ""
 
-#: ui/KisApplication.cpp:467
+#: ui/KisApplication.cpp:424
 msgid "Mimetype not found, try using the -mimetype option"
 msgstr ""
 
@@ -18196,6 +18200,10 @@ msgid ""
 "Could not save\n"
 "%1"
 msgstr "Seleccion"
+
+#: ui/KisDocument.cpp:746
+msgid "Most likely a layer is still processing effects."
+msgstr ""
 
 #: ui/KisDocument.cpp:748
 #, fuzzy, kde-format
@@ -18347,7 +18355,7 @@ msgid ""
 "Error message: %4"
 msgstr ""
 
-#: ui/KisDocument.cpp:1538 ui/KisMainWindow.cpp:718
+#: ui/KisDocument.cpp:1538 ui/KisMainWindow.cpp:658
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr ""
@@ -18485,215 +18493,215 @@ msgstr "Saturacion :"
 msgid "Choose Filter"
 msgstr "Filtre"
 
-#: ui/KisMainWindow.cpp:187
+#: ui/KisMainWindow.cpp:185
 #, fuzzy
 #| msgid "Palette"
 msgctxt "@action:inmenu"
 msgid "&Dockers"
 msgstr "Paleta"
 
-#: ui/KisMainWindow.cpp:188
+#: ui/KisMainWindow.cpp:186
 #, fuzzy
 #| msgid "Filter"
 msgctxt "@action:inmenu"
 msgid "&Window"
 msgstr "Filtre"
 
-#: ui/KisMainWindow.cpp:189
+#: ui/KisMainWindow.cpp:187
 #, fuzzy
 #| msgid "Image Size"
 msgctxt "@action:inmenu"
 msgid "New &View"
 msgstr "Talha d'imatge"
 
-#: ui/KisMainWindow.cpp:455
+#: ui/KisMainWindow.cpp:402
 #, fuzzy, kde-format
 #| msgid "Duplicate"
 msgid "Show %1 Toolbar"
 msgstr "Duplicar"
 
-#: ui/KisMainWindow.cpp:457
+#: ui/KisMainWindow.cpp:404
 #, fuzzy, kde-format
 #| msgid "&Tools"
 msgid "Hide %1 Toolbar"
 msgstr "&Espleches"
 
-#: ui/KisMainWindow.cpp:673
+#: ui/KisMainWindow.cpp:613
 msgid "(write protected)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:681
+#: ui/KisMainWindow.cpp:621
 #, fuzzy, kde-format
 #| msgid "Macro"
 msgid "Save as %1"
 msgstr "Macrò"
 
-#: ui/KisMainWindow.cpp:882
+#: ui/KisMainWindow.cpp:822
 msgid "untitled"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1191
+#: ui/KisMainWindow.cpp:1131
 #, fuzzy
 #| msgid "Image"
 msgid "Import Images"
 msgstr "Imatge"
 
-#: ui/KisMainWindow.cpp:1191
+#: ui/KisMainWindow.cpp:1131
 #, fuzzy
 #| msgid "Image"
 msgid "Open Images"
 msgstr "Imatge"
 
-#: ui/KisMainWindow.cpp:1409
+#: ui/KisMainWindow.cpp:1349
 msgid "Export as PDF"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1451
+#: ui/KisMainWindow.cpp:1391
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1604
+#: ui/KisMainWindow.cpp:1544
 msgid "Document"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1612
+#: ui/KisMainWindow.cpp:1552
 #, kde-format
 msgid "Document - %1"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1635
+#: ui/KisMainWindow.cpp:1575
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1646
+#: ui/KisMainWindow.cpp:1586
 #, fuzzy
 #| msgid "Selection"
 msgid "Error: Could not reload this document"
 msgstr "Seleccion"
 
-#: ui/KisMainWindow.cpp:1902
+#: ui/KisMainWindow.cpp:1842
 #, kde-format
 msgid "&%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1906
+#: ui/KisMainWindow.cpp:1846
 #, kde-format
 msgid "%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1992
+#: ui/KisMainWindow.cpp:1932
 msgid ""
 "The Calligra LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2000
+#: ui/KisMainWindow.cpp:1940
 msgid "Krita cannot find any brush presets! Krita will quit now."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2009
+#: ui/KisMainWindow.cpp:1949
 #, fuzzy
 #| msgid "Resolution:"
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "Resolucion :"
 
-#: ui/KisMainWindow.cpp:2068
+#: ui/KisMainWindow.cpp:2008
 #, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2104
+#: ui/KisMainWindow.cpp:2044
 #, fuzzy
 #| msgid "Filter"
 msgctxt "@action:inmenu"
 msgid "Export as PDF..."
 msgstr "Filtre"
 
-#: ui/KisMainWindow.cpp:2112
+#: ui/KisMainWindow.cpp:2052
 #, fuzzy
 #| msgid "Close"
 msgctxt "@action:inmenu"
 msgid "Close All"
 msgstr "Tampar"
 
-#: ui/KisMainWindow.cpp:2123
+#: ui/KisMainWindow.cpp:2063
 msgctxt "@action:inmenu"
 msgid "Open ex&isting Document as Untitled Document..."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2127
+#: ui/KisMainWindow.cpp:2067
 #, fuzzy
 #| msgid "Filter"
 msgctxt "@action:inmenu"
 msgid "E&xport..."
 msgstr "Filtre"
 
-#: ui/KisMainWindow.cpp:2134
+#: ui/KisMainWindow.cpp:2074
 #, fuzzy
 #| msgid "Saturation:"
 msgctxt "@action:inmenu"
 msgid "Document Information"
 msgstr "Saturacion :"
 
-#: ui/KisMainWindow.cpp:2142
+#: ui/KisMainWindow.cpp:2082
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2148
+#: ui/KisMainWindow.cpp:2088
 #, fuzzy
 #| msgid "Grid"
 msgctxt "@action:inmenu"
 msgid "Show Dockers"
 msgstr "Grasilha"
 
-#: ui/KisMainWindow.cpp:2154
+#: ui/KisMainWindow.cpp:2094
 #, fuzzy
 #| msgid "Grid"
 msgctxt "@action:inmenu"
 msgid "Show Docker Titlebars"
 msgstr "Grasilha"
 
-#: ui/KisMainWindow.cpp:2164
+#: ui/KisMainWindow.cpp:2104
 msgctxt "@action:inmenu"
 msgid "Cascade"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2169
+#: ui/KisMainWindow.cpp:2109
 msgctxt "@action:inmenu"
 msgid "Tile"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2174
+#: ui/KisMainWindow.cpp:2114
 msgctxt "@action:inmenu"
 msgid "Next"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2179
+#: ui/KisMainWindow.cpp:2119
 #, fuzzy
 #| msgid "Filter"
 msgctxt "@action:inmenu"
 msgid "Previous"
 msgstr "Filtre"
 
-#: ui/KisMainWindow.cpp:2184
+#: ui/KisMainWindow.cpp:2124
 #, fuzzy
 #| msgid "Filter"
 msgctxt "@action:inmenu"
 msgid "&New Window"
 msgstr "Filtre"
 
-#: ui/KisMainWindow.cpp:2188
+#: ui/KisMainWindow.cpp:2128
 #, fuzzy
 #| msgid "Close"
 msgctxt "@action:inmenu"
 msgid "Close"
 msgstr "Tampar"
 
-#: ui/KisMainWindow.cpp:2196
+#: ui/KisMainWindow.cpp:2136
 msgid "Expanding Spacer"
 msgstr ""
 
@@ -20022,48 +20030,48 @@ msgid ""
 "selection instead"
 msgstr ""
 
-#: ui/tool/kis_tool.cc:121
+#: ui/tool/kis_tool.cc:120
 #, fuzzy
 #| msgid "Background Color"
 msgid "Swap Foreground and Background Color"
 msgstr "Color de fons"
 
-#: ui/tool/kis_tool.cc:127
+#: ui/tool/kis_tool.cc:126
 #, fuzzy
 #| msgid "Background Color"
 msgid "Reset Foreground and Background Color"
 msgstr "Color de fons"
 
-#: ui/tool/kis_tool.cc:550
+#: ui/tool/kis_tool.cc:556
 #, fuzzy
 #| msgid "Clear"
 msgctxt "(qtundo-format)"
 msgid "Clear"
 msgstr "Netejar"
 
-#: ui/tool/kis_tool.cc:579
+#: ui/tool/kis_tool.cc:585
 #, fuzzy
 #| msgid "Options"
 msgid "No options"
 msgstr "Opcions"
 
-#: ui/tool/kis_tool.cc:730
+#: ui/tool/kis_tool.cc:736
 msgid "Layer is locked and invisible."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:732
+#: ui/tool/kis_tool.cc:738
 msgid "Layer is locked."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:734
+#: ui/tool/kis_tool.cc:740
 msgid "Layer is invisible."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:736
+#: ui/tool/kis_tool.cc:742
 msgid "Group not editable."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:751
+#: ui/tool/kis_tool.cc:757
 #, fuzzy
 #| msgid "Selection"
 msgid "Local selection is locked."
