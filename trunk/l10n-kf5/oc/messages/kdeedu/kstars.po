@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-21 07:56+0000\n"
+"POT-Creation-Date: 2015-09-22 10:02+0000\n"
 "PO-Revision-Date: 2008-08-05 23:45+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -355,7 +355,7 @@ msgstr "Impossible de dobrir lo fichièr : %1"
 msgid "KStars Exported Sky Image"
 msgstr ""
 
-#: auxiliary/imageexporter.cpp:84 main.cpp:116
+#: auxiliary/imageexporter.cpp:84 main.cpp:117
 #: printing/foveditordialog.cpp:164
 #, kde-format
 msgid "Could not parse image format of %1; assuming PNG."
@@ -3142,7 +3142,7 @@ msgid_plural "Solver aborted after %1 seconds"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ekos/align.cpp:808 ekos/capture.cpp:1352 ekos/ekosmanager.cpp:2162
+#: ekos/align.cpp:808 ekos/capture.cpp:1352 ekos/ekosmanager.cpp:2176
 #: ekos/focus.cpp:1492 ekos/guide.cpp:466 ekos/mount.cpp:314
 #: ekos/scheduler.cpp:139
 #, kde-format
@@ -3995,7 +3995,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
 #. i18n: ectx: property (title), widget (QGroupBox, ccdGroup)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/capture.ui:34 ekos/ekosmanager.cpp:2197 ekos/focus.ui:21
+#: ekos/capture.ui:34 ekos/ekosmanager.cpp:2211 ekos/focus.ui:21
 #: ekos/opsekos.ui:235
 msgid "CCD"
 msgstr ""
@@ -4470,7 +4470,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, processINDIB)
-#: ekos/ekosmanager.cpp:821 ekos/ekosmanager.cpp:1385 ekos/ekosmanager.ui:326
+#: ekos/ekosmanager.cpp:821 ekos/ekosmanager.cpp:1395 ekos/ekosmanager.ui:326
 #, fuzzy
 #| msgid "&Start"
 msgid "Start INDI"
@@ -4492,22 +4492,36 @@ msgstr ""
 msgid "INDI Server"
 msgstr "Servidor"
 
-#: ekos/ekosmanager.cpp:1073
+#: ekos/ekosmanager.cpp:1064
+#, fuzzy
+#| msgid "Select None"
+msgid "Starting INDI services..."
+msgstr "Seleccionar una estampaira"
+
+#: ekos/ekosmanager.cpp:1075
 msgid "INDI services started. Please connect devices."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1094
+#: ekos/ekosmanager.cpp:1085
 #, kde-format
-msgid "INDI services started. Connection to %1 at %2 is successful."
+msgid "Connecting to remote INDI server at %1 on port %2 ..."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1106
+#: ekos/ekosmanager.cpp:1092
+msgid "Failed to connect to remote INDI server!"
+msgstr ""
+
+#: ekos/ekosmanager.cpp:1104
+msgid "INDI services started. Connection to remote INDI server is successful."
+msgstr ""
+
+#: ekos/ekosmanager.cpp:1116
 #, fuzzy
 #| msgid "&Start"
 msgid "Stop INDI"
 msgstr "&Aviar"
 
-#: ekos/ekosmanager.cpp:1151
+#: ekos/ekosmanager.cpp:1161
 #, kde-format
 msgid ""
 "Unable to establish:\n"
@@ -4515,14 +4529,14 @@ msgid ""
 "Please ensure the device is connected and powered on."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1152 ekos/ekosmanager.cpp:1157
-#: ekos/ekosmanager.cpp:1191 ekos/ekosmanager.cpp:1196
+#: ekos/ekosmanager.cpp:1162 ekos/ekosmanager.cpp:1167
+#: ekos/ekosmanager.cpp:1201 ekos/ekosmanager.cpp:1206
 #, fuzzy
 #| msgid "Guides"
 msgid "Ekos startup error"
 msgstr "Guidas"
 
-#: ekos/ekosmanager.cpp:1156
+#: ekos/ekosmanager.cpp:1166
 #, kde-format
 msgid ""
 "Unable to establish the following devices:\n"
@@ -4530,7 +4544,7 @@ msgid ""
 "Please ensure each device is connected and powered on."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1190
+#: ekos/ekosmanager.cpp:1200
 #, kde-format
 msgid ""
 "Unable to establish remote device:\n"
@@ -4538,7 +4552,7 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1195
+#: ekos/ekosmanager.cpp:1205
 #, kde-format
 msgid ""
 "Unable to establish remote devices:\n"
@@ -4546,70 +4560,70 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1276
+#: ekos/ekosmanager.cpp:1286
 msgid "Connecting INDI devices..."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1348
+#: ekos/ekosmanager.cpp:1358
 msgid "Disconnecting INDI devices..."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1393
+#: ekos/ekosmanager.cpp:1403
 msgid "INDI services stopped."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1588
+#: ekos/ekosmanager.cpp:1602
 msgid "Remote devices established. Please connect devices."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1733 ekos/ekosmanager.cpp:1780
-#: ekos/ekosmanager.cpp:1891 ekos/ekosmanager.cpp:1902
-#: ekos/ekosmanager.cpp:1913 indi/indistd.cpp:438
+#: ekos/ekosmanager.cpp:1747 ekos/ekosmanager.cpp:1794
+#: ekos/ekosmanager.cpp:1905 ekos/ekosmanager.cpp:1916
+#: ekos/ekosmanager.cpp:1927 indi/indistd.cpp:447
 #, kde-format
 msgid "%1 is online."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1867
+#: ekos/ekosmanager.cpp:1881
 #, kde-format
 msgid "%1 filter is online."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1933
+#: ekos/ekosmanager.cpp:1947
 #, kde-format
 msgid "%1 is offline."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:2235
+#: ekos/ekosmanager.cpp:2249
 msgid "Alignment"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, focusModuleCheck)
-#: ekos/ekosmanager.cpp:2262 ekos/scheduler.ui:177
+#: ekos/ekosmanager.cpp:2276 ekos/scheduler.ui:177
 #: fitsviewer/fitsviewer.cpp:298
 msgid "Focus"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: ekos/ekosmanager.cpp:2295 ekos/opsekos.ui:225
+#: ekos/ekosmanager.cpp:2309 ekos/opsekos.ui:225
 #, fuzzy
 #| msgid "Country:"
 msgid "Mount"
 msgstr "Païs :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, guideModuleCheck)
-#: ekos/ekosmanager.cpp:2318 ekos/scheduler.ui:203
+#: ekos/ekosmanager.cpp:2332 ekos/scheduler.ui:203
 #: fitsviewer/fitsviewer.cpp:302
 #, fuzzy
 #| msgid "Guides"
 msgid "Guide"
 msgstr "Guidas"
 
-#: ekos/ekosmanager.cpp:2377
+#: ekos/ekosmanager.cpp:2391
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:2694
+#: ekos/ekosmanager.cpp:2708
 msgid "No active FITS Viewer windows to show/hide."
 msgstr ""
 
@@ -8212,7 +8226,7 @@ msgstr ""
 msgid "Upload"
 msgstr "Enviar"
 
-#: indi/indistd.cpp:382
+#: indi/indistd.cpp:391
 #, fuzzy, kde-format
 #| msgid "File name:"
 msgid "Data file saved to %1"
@@ -49405,60 +49419,71 @@ msgstr "Detalhs"
 msgid "Extensive testing and suggestions for Ekos/INDI."
 msgstr ""
 
-#: main.cpp:92
-msgid "Dump sky image to file"
+#: main.cpp:82
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Soria"
+msgid "Stephane Lucas"
+msgstr "Serbia"
+
+#: main.cpp:82
+msgid "Extensive testing and suggestions for Ekos Scheduler."
 msgstr ""
 
 #: main.cpp:93
-msgid "Script to execute"
+msgid "Dump sky image to file"
 msgstr ""
 
 #: main.cpp:94
-msgid "Width of sky image"
+msgid "Script to execute"
 msgstr ""
 
 #: main.cpp:95
-msgid "Height of sky image"
+msgid "Width of sky image"
 msgstr ""
 
 #: main.cpp:96
+msgid "Height of sky image"
+msgstr ""
+
+#: main.cpp:97
 msgid "Filename for sky image"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, InputComboBatch)
-#: main.cpp:97 tools/modcalcjd.ui:120
+#: main.cpp:98 tools/modcalcjd.ui:120
 msgid "Date and time"
 msgstr "Data e ora"
 
-#: main.cpp:98
+#: main.cpp:99
 msgid "Start with clock paused"
 msgstr ""
 
-#: main.cpp:105
+#: main.cpp:106
 msgid "Dumping sky image"
 msgstr ""
 
-#: main.cpp:159 main.cpp:209
+#: main.cpp:160 main.cpp:210
 msgid "Using CPU date/time instead."
 msgstr ""
 
-#: main.cpp:185
+#: main.cpp:186
 msgid "Script executed."
 msgstr ""
 
-#: main.cpp:187
+#: main.cpp:188
 #, fuzzy
 #| msgid "Center"
 msgid "Could not execute script."
 msgstr "Centre"
 
-#: main.cpp:196
+#: main.cpp:197
 #, fuzzy, kde-format
 #| msgid "Could not open file: %1"
 msgid "Unable to save image: %1 "
 msgstr "Impossible de dobrir lo fichièr : %1"
 
-#: main.cpp:197
+#: main.cpp:198
 #, fuzzy, kde-format
 #| msgid "Set Time..."
 msgid "Saved to file: %1"
