@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-29 06:49+0000\n"
+"POT-Creation-Date: 2015-12-20 06:37+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1885,7 +1885,8 @@ msgid "&New"
 msgstr "&Novèl "
 
 #. i18n: ectx: property (text), widget (QPushButton, bDelete)
-#: dialogs/StyleManager.ui:75 TextTool.cpp:2651
+#: dialogs/StyleManager.ui:75
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:277 TextTool.cpp:2651
 msgid "Delete"
 msgstr "Suprimir"
 
@@ -2094,6 +2095,447 @@ msgstr "Doble"
 msgid "Table Of Contents"
 msgstr ""
 
+#: kotext/commands/ChangeListCommand.cpp:41
+#: kotext/commands/ChangeListCommand.cpp:88
+#: kotext/commands/ChangeListCommand.cpp:101
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Change List"
+msgstr "Enregistrament"
+
+#: kotext/commands/ChangeStylesMacroCommand.cpp:37
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Change Styles"
+msgstr "Enregistrament"
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:77
+#: kotext/commands/DeleteCommand.cpp:68
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete"
+msgstr "Suprimir"
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:193 TextTool.cpp:2645
+msgid "Key Press"
+msgstr ""
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:332
+#: kotext/commands/DeleteCommand.cpp:517 kotext/KoTextEditor_undo.cpp:87
+#: kotext/KoTextEditor_undo.cpp:166 kotext/KoTextEditor_undo.cpp:201
+#: kotext/KoTextEditor_undo.cpp:218 kotext/KoTextEditor_undo.cpp:260
+#, fuzzy
+#| msgid "Text"
+msgctxt "(qtundo-format)"
+msgid "Text"
+msgstr "Tèxt"
+
+#: kotext/commands/DeleteTableColumnCommand.cpp:38
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete Column"
+msgstr "Suprimir"
+
+#: kotext/commands/DeleteTableRowCommand.cpp:38
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete Row"
+msgstr "Suprimir"
+
+#: kotext/commands/InsertNoteCommand.cpp:36
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Footnote"
+msgstr "Inserir"
+
+#: kotext/commands/InsertNoteCommand.cpp:38
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Endnote"
+msgstr "Inserir"
+
+#: kotext/commands/InsertTableColumnCommand.cpp:40
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Column Right"
+msgstr "Inserir"
+
+#: kotext/commands/InsertTableColumnCommand.cpp:42
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Column Left"
+msgstr "Inserir"
+
+#: kotext/commands/InsertTableRowCommand.cpp:40
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Row Below"
+msgstr "Inserir"
+
+#: kotext/commands/InsertTableRowCommand.cpp:42
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Row Above"
+msgstr "Inserir"
+
+#: kotext/commands/ListItemNumberingCommand.cpp:35
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Change List Numbering"
+msgstr "Enregistrament"
+
+#: kotext/commands/NewSectionCommand.cpp:37
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "New Section"
+msgstr "Suprimir"
+
+#: kotext/commands/ParagraphFormattingCommand.cpp:56
+#: kotext/KoTextEditor_format.cpp:510 kotext/KoTextEditor_format.cpp:531
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Formatting"
+msgstr "Enregistrament"
+
+#: kotext/commands/ParagraphFormattingCommand.cpp:93
+#, fuzzy
+#| msgid "Paragraph"
+msgctxt "(qtundo-format)"
+msgid "Direct Paragraph Formatting"
+msgstr "Paragraf"
+
+#: kotext/commands/RenameSectionCommand.cpp:35
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Rename Section"
+msgstr "Inserir"
+
+#: kotext/commands/ResizeTableCommand.cpp:45 TextTool.cpp:1402
+msgctxt "(qtundo-format)"
+msgid "Adjust Column Width"
+msgstr ""
+
+#: kotext/commands/ResizeTableCommand.cpp:47 TextTool.cpp:1447
+msgctxt "(qtundo-format)"
+msgid "Adjust Row Height"
+msgstr ""
+
+#: kotext/commands/SplitSectionsCommand.cpp:39
+#, fuzzy
+#| msgid "Paragraph"
+msgctxt "(qtundo-format)"
+msgid "Split sections startings"
+msgstr "Paragraf"
+
+#: kotext/commands/SplitSectionsCommand.cpp:41
+#, fuzzy
+#| msgid "Paragraph"
+msgctxt "(qtundo-format)"
+msgid "Split sections endings"
+msgstr "Paragraf"
+
+#: kotext/commands/TextPasteCommand.cpp:66
+msgctxt "(qtundo-format)"
+msgid "Paste As Text"
+msgstr ""
+
+#: kotext/commands/TextPasteCommand.cpp:68
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "Suprimir"
+
+#: kotext/InsertTextLocator.cpp:27
+msgid "Index Reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:35
+#: kotext/InsertTextReferenceAction.cpp:63
+msgid "Text Reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:44
+msgid "Please create an index to reference first."
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:53
+msgid "Select the index you want to reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:58
+#, kde-format
+msgid "%1 Options"
+msgstr ""
+
+#: kotext/KoSectionModel.cpp:87
+#, fuzzy, kde-format
+#| msgid "Insert"
+msgctxt "new numbered section name"
+msgid "New section %1"
+msgstr "Inserir"
+
+#: kotext/KoText.cpp:32
+#, fuzzy
+#| msgctxt "Inherit style"
+#| msgid "None"
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Pas cap"
+
+#: kotext/KoText.cpp:33
+#, fuzzy
+#| msgctxt "Line spacing value"
+#| msgid "Single"
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Simple"
+
+#: kotext/KoText.cpp:34
+#, fuzzy
+#| msgctxt "Line spacing value"
+#| msgid "Double"
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Doble"
+
+#: kotext/KoTextEditor.cpp:193 kotext/KoTextEditor.cpp:1559
+#: kotext/KoTextEditor.cpp:1561
+#, fuzzy
+#| msgid "Paragraph..."
+msgctxt "(qtundo-format)"
+msgid "New Paragraph"
+msgstr "Paragraf..."
+
+#: kotext/KoTextEditor.cpp:483
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Add Bookmark"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:502
+#, fuzzy
+#| msgid "Position"
+msgctxt "(qtundo-format)"
+msgid "Add Annotation"
+msgstr "Posicion"
+
+#: kotext/KoTextEditor.cpp:526
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Index"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:552
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Variable"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:619
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Break"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:940 kotext/KoTextEditor.cpp:942
+#: kotext/KoTextEditor.cpp:957
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Table"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:1097
+msgctxt "(qtundo-format)"
+msgid "Merge Cells"
+msgstr ""
+
+#: kotext/KoTextEditor.cpp:1114
+#, fuzzy
+#| msgid "Paragraph"
+msgctxt "(qtundo-format)"
+msgid "Split Cells"
+msgstr "Paragraf"
+
+#: kotext/KoTextEditor.cpp:1143
+msgctxt "(qtundo-format)"
+msgid "Adjust Table Width"
+msgstr ""
+
+#: kotext/KoTextEditor.cpp:1160 TextTool.cpp:911
+msgctxt "(qtundo-format)"
+msgid "Change Border Formatting"
+msgstr ""
+
+#: kotext/KoTextEditor.cpp:1207 kotext/KoTextEditor.cpp:1209
+#: kotext/KoTextEditor.cpp:1227
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Table Of Contents"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:1266
+msgctxt "(qtundo-format)"
+msgid "Modify Table Of Contents"
+msgstr ""
+
+#: kotext/KoTextEditor.cpp:1283 kotext/KoTextEditor.cpp:1285
+#: kotext/KoTextEditor.cpp:1304
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert Bibliography"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:1341 kotext/KoTextEditor.cpp:1343
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Add Citation"
+msgstr "Inserir"
+
+#: kotext/KoTextEditor.cpp:1370 kotext/KoTextEditor.cpp:1372
+#: kotext/KoTextEditor.cpp:1410
+msgctxt "(qtundo-format)"
+msgid "Typing"
+msgstr ""
+
+#: kotext/KoTextEditor_format.cpp:67
+#, fuzzy
+#| msgid "Bold"
+msgctxt "(qtundo-format)"
+msgid "Bold"
+msgstr "Gras"
+
+#: kotext/KoTextEditor_format.cpp:80
+#, fuzzy
+#| msgid "Italic"
+msgctxt "(qtundo-format)"
+msgid "Italic"
+msgstr "Italic"
+
+#: kotext/KoTextEditor_format.cpp:93
+#, fuzzy
+#| msgctxt "Text formatting"
+#| msgid "Underline"
+msgctxt "(qtundo-format)"
+msgid "Underline"
+msgstr "Soslinhat"
+
+#: kotext/KoTextEditor_format.cpp:112
+#, fuzzy
+#| msgid "Strikethrough"
+msgctxt "(qtundo-format)"
+msgid "Strike Out"
+msgstr "Barrat"
+
+#: kotext/KoTextEditor_format.cpp:145 kotext/KoTextEditor_format.cpp:146
+#, fuzzy
+#| msgid "Alignment"
+msgctxt "(qtundo-format)"
+msgid "Change Alignment"
+msgstr "Alinhament"
+
+#: kotext/KoTextEditor_format.cpp:163
+msgctxt "(qtundo-format)"
+msgid "Set Vertical Alignment"
+msgstr ""
+
+#: kotext/KoTextEditor_format.cpp:197 kotext/KoTextEditor_format.cpp:198
+#, fuzzy
+#| msgid "Decrease Indent"
+msgctxt "(qtundo-format)"
+msgid "Decrease Indent"
+msgstr "Reduire l'alinèa"
+
+#: kotext/KoTextEditor_format.cpp:233 kotext/KoTextEditor_format.cpp:234
+#, fuzzy
+#| msgid "Increase Indent"
+msgctxt "(qtundo-format)"
+msgid "Increase Indent"
+msgstr "Aumentar l'alinèa"
+
+#: kotext/KoTextEditor_format.cpp:269 kotext/KoTextEditor_format.cpp:271
+#, fuzzy
+#| msgid "Decrease Indent"
+msgctxt "(qtundo-format)"
+msgid "Decrease font size"
+msgstr "Reduire l'alinèa"
+
+#: kotext/KoTextEditor_format.cpp:282 kotext/KoTextEditor_format.cpp:284
+#, fuzzy
+#| msgid "Increase Indent"
+msgctxt "(qtundo-format)"
+msgid "Increase font size"
+msgstr "Aumentar l'alinèa"
+
+#: kotext/KoTextEditor_format.cpp:295
+#, fuzzy
+#| msgid "Select Font"
+msgctxt "(qtundo-format)"
+msgid "Set Font"
+msgstr "Seleccionar una poliça"
+
+#: kotext/KoTextEditor_format.cpp:308
+#, fuzzy
+#| msgid "Font Size"
+msgctxt "(qtundo-format)"
+msgid "Set Font Size"
+msgstr "Talha de poliça"
+
+#: kotext/KoTextEditor_format.cpp:321
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "(qtundo-format)"
+msgid "Set Background Color"
+msgstr "Color de fons"
+
+#: kotext/KoTextEditor_format.cpp:334
+#, fuzzy
+#| msgid "Colors"
+msgctxt "(qtundo-format)"
+msgid "Set Text Color"
+msgstr "Colors"
+
+#: kotext/KoTextEditor_format.cpp:362 kotext/KoTextEditor_format.cpp:401
+#, fuzzy
+#| msgid "Character"
+msgctxt "(qtundo-format)"
+msgid "Set Character Style"
+msgstr "Caractèr"
+
+#: kotext/KoTextEditor_format.cpp:468
+#, fuzzy
+#| msgid "Paragraph"
+msgctxt "(qtundo-format)"
+msgid "Set Paragraph Style"
+msgstr "Paragraf"
+
+#: kotext/styles/KoStyleManager.cpp:106 kotext/styles/KoStyleManager.cpp:111
+msgid "Default"
+msgstr ""
+
 #: ReferencesTool.cpp:143
 #, fuzzy
 #| msgid "Insert"
@@ -2173,6 +2615,129 @@ msgstr ""
 msgid "Review"
 msgstr "Ulhada"
 
+#: textlayout/ListItemsHelper.cpp:223
+msgctxt "Text list-style"
+msgid "None"
+msgstr "Pas cap"
+
+#: textlayout/ListItemsHelper.cpp:224
+msgid "Small Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:225
+msgid "Circle Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:226
+msgid "Square Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:227
+msgid "Rhombus Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:228
+msgid "Check Mark Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:229
+msgid "Rightwards Arrow Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:230
+msgid "Arabic"
+msgstr "Arab"
+
+#: textlayout/ListItemsHelper.cpp:231
+msgid "Lower Alphabetical"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:232
+msgid "Upper Alphabetical"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:233
+#, fuzzy
+#| msgid "Lowercase"
+msgid "Lower Roman"
+msgstr "Minusculas"
+
+#: textlayout/ListItemsHelper.cpp:234
+#, fuzzy
+#| msgid "Uppercase"
+msgid "Upper Roman"
+msgstr "Majusculas"
+
+#: textlayout/ListItemsHelper.cpp:241
+msgid "Large Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:242
+msgid "Ballot X Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:243
+msgid "Rightwards Arrow Head Bullet"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:244
+msgid "Bengali"
+msgstr "Bengalí"
+
+#: textlayout/ListItemsHelper.cpp:245
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: textlayout/ListItemsHelper.cpp:246
+msgid "Gurumukhi"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:247
+msgid "Kannada"
+msgstr "Kannadà"
+
+#: textlayout/ListItemsHelper.cpp:248
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: textlayout/ListItemsHelper.cpp:249
+msgid "Oriya"
+msgstr "Oriyà"
+
+#: textlayout/ListItemsHelper.cpp:250
+msgid "Tamil"
+msgstr "Tamil"
+
+#: textlayout/ListItemsHelper.cpp:251
+msgid "Telugu"
+msgstr "Telugu"
+
+#: textlayout/ListItemsHelper.cpp:252
+msgid "Tibetan"
+msgstr "Tibetan"
+
+#: textlayout/ListItemsHelper.cpp:253
+msgid "Thai"
+msgstr "Tailandés"
+
+#: textlayout/ListItemsHelper.cpp:254
+msgid "Abjad"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:255
+msgid "AbjadMinor"
+msgstr ""
+
+#: textlayout/ListItemsHelper.cpp:256
+#, fuzzy
+#| msgid "Arabic"
+msgid "ArabicAlphabet"
+msgstr "Arab"
+
+#: textlayout/ListItemsHelper.cpp:257
+msgid "Image"
+msgstr ""
+
 #: TextShapeFactory.cpp:44 TextShapeFactory.cpp:54
 msgid "Text"
 msgstr "Tèxt"
@@ -2238,27 +2803,12 @@ msgstr ""
 msgid "Press shift to not resize this"
 msgstr ""
 
-#: TextTool.cpp:911
-msgctxt "(qtundo-format)"
-msgid "Change Border Formatting"
-msgstr ""
-
 #: TextTool.cpp:1139
 #, fuzzy
 #| msgid "Custom"
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "Personalizat"
-
-#: TextTool.cpp:1402
-msgctxt "(qtundo-format)"
-msgid "Adjust Column Width"
-msgstr ""
-
-#: TextTool.cpp:1447
-msgctxt "(qtundo-format)"
-msgid "Adjust Row Height"
-msgstr ""
 
 #: TextTool.cpp:2239
 #, fuzzy
@@ -2268,10 +2818,6 @@ msgstr "Tamil"
 
 #: TextTool.cpp:2645 TextTool.cpp:2651
 msgid "Autocorrection"
-msgstr ""
-
-#: TextTool.cpp:2645
-msgid "Key Press"
 msgstr ""
 
 #: TextToolFactory.cpp:31
@@ -2307,11 +2853,6 @@ msgstr "Posicion"
 
 #, fuzzy
 #~| msgid "Insert"
-#~ msgid "Insert Custom Bibliography"
-#~ msgstr "Inserir"
-
-#, fuzzy
-#~| msgid "Insert"
 #~ msgid "Insert Link"
 #~ msgstr "Inserir"
 
@@ -2322,28 +2863,8 @@ msgstr "Posicion"
 
 #, fuzzy
 #~| msgid "Insert"
-#~ msgid "Insert new section"
-#~ msgstr "Inserir"
-
-#, fuzzy
-#~| msgid "Insert"
 #~ msgid "Insert paragraph between sections"
 #~ msgstr "Inserir"
-
-#~ msgid "Bold"
-#~ msgstr "Gras"
-
-#~ msgid "Italic"
-#~ msgstr "Italic"
-
-#~ msgctxt "Text formatting"
-#~ msgid "Underline"
-#~ msgstr "Soslinhat"
-
-#, fuzzy
-#~| msgid "Strikethrough"
-#~ msgid "Strikethrough"
-#~ msgstr "Barrat"
 
 #~ msgid "Align Left"
 #~ msgstr "Alinhar a esquèrra"
@@ -2351,21 +2872,10 @@ msgstr "Posicion"
 #~ msgid "Align Right"
 #~ msgstr "Alinhar a drecha"
 
-#~ msgid "Increase Indent"
-#~ msgstr "Aumentar l'alinèa"
-
-#~ msgid "Decrease Indent"
-#~ msgstr "Reduire l'alinèa"
-
 #, fuzzy
 #~| msgid "Insert"
 #~ msgid "Insert a page break"
 #~ msgstr "Inserir"
-
-#, fuzzy
-#~| msgid "Colors"
-#~ msgid "Text Color"
-#~ msgstr "Colors"
 
 #, fuzzy
 #~| msgid "Background color:"
@@ -2373,34 +2883,14 @@ msgstr "Posicion"
 #~ msgstr "Color de fons :"
 
 #, fuzzy
-#~| msgid "Insert"
-#~ msgid "Insert Row Above"
-#~ msgstr "Inserir"
-
-#, fuzzy
 #~| msgid "Align Left"
 #~ msgid "Column Left"
 #~ msgstr "Alinhar a esquèrra"
 
 #, fuzzy
-#~| msgid "Insert"
-#~ msgid "Insert Column Left"
-#~ msgstr "Inserir"
-
-#, fuzzy
 #~| msgid "Align Right"
 #~ msgid "Column Right"
 #~ msgstr "Alinhar a drecha"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "Delete Column"
-#~ msgstr "Suprimir"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "Delete Row"
-#~ msgstr "Suprimir"
 
 #~ msgid "Paragraph..."
 #~ msgstr "Paragraf..."
@@ -2414,11 +2904,6 @@ msgstr "Posicion"
 #~| msgid "Normal"
 #~ msgid "Form"
 #~ msgstr "Normal"
-
-#, fuzzy
-#~| msgid "Record"
-#~ msgid "Changes"
-#~ msgstr "Enregistrament"
 
 #, fuzzy
 #~| msgid "Paragraph"
@@ -2502,68 +2987,6 @@ msgstr "Posicion"
 #~| msgid "Text"
 #~ msgid "Label"
 #~ msgstr "Tèxt"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete"
-#~ msgstr "Suprimir"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Text"
-#~ msgstr "Tèxt"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste"
-#~ msgstr "Suprimir"
-
-#~ msgctxt "Text list-style"
-#~ msgid "None"
-#~ msgstr "Pas cap"
-
-#~ msgid "Arabic"
-#~ msgstr "Arab"
-
-#~ msgid "Bengali"
-#~ msgstr "Bengalí"
-
-#~ msgid "Gujarati"
-#~ msgstr "Gujarati"
-
-#~ msgid "Kannada"
-#~ msgstr "Kannadà"
-
-#~ msgid "Malayalam"
-#~ msgstr "Malayalam"
-
-#~ msgid "Oriya"
-#~ msgstr "Oriyà"
-
-#~ msgid "Tamil"
-#~ msgstr "Tamil"
-
-#~ msgid "Telugu"
-#~ msgstr "Telugu"
-
-#~ msgid "Tibetan"
-#~ msgstr "Tibetan"
-
-#~ msgid "Thai"
-#~ msgstr "Tailandés"
-
-#, fuzzy
-#~| msgid "Paragraph"
-#~ msgid "Edit Paragraph Style"
-#~ msgstr "Paragraf"
-
-#, fuzzy
-#~| msgid "Character"
-#~ msgid "Edit Character Style"
-#~ msgstr "Caractèr"
 
 #, fuzzy
 #~| msgid "Arabic"
