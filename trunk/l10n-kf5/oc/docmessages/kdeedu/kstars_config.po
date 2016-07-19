@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars_config\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-17 08:40+0000\n"
+"POT-Creation-Date: 2016-07-19 09:18+0000\n"
 "PO-Revision-Date: 2008-08-13 13:38+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -217,8 +217,8 @@ msgstr ""
 #. Tag: primary
 #: config.docbook:122 config.docbook:151 config.docbook:158 config.docbook:166
 #: config.docbook:172 config.docbook:178 config.docbook:186 config.docbook:203
-#: config.docbook:578 config.docbook:606 config.docbook:650 config.docbook:681
-#: config.docbook:708 config.docbook:797
+#: config.docbook:692 config.docbook:720 config.docbook:764 config.docbook:795
+#: config.docbook:822 config.docbook:911
 #, no-c-format
 msgid "Configure &kstars; window"
 msgstr ""
@@ -272,7 +272,7 @@ msgid ""
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:159 config.docbook:579
+#: config.docbook:159 config.docbook:693
 #, no-c-format
 msgid "Solar System page"
 msgstr ""
@@ -286,7 +286,7 @@ msgid ""
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:167 config.docbook:607
+#: config.docbook:167 config.docbook:721
 #, no-c-format
 msgid "Satellites page"
 msgstr ""
@@ -300,7 +300,7 @@ msgid ""
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:173 config.docbook:651
+#: config.docbook:173 config.docbook:765
 #, no-c-format
 msgid "Supernovae page"
 msgstr ""
@@ -314,7 +314,7 @@ msgid ""
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:179 config.docbook:682
+#: config.docbook:179 config.docbook:796
 #, no-c-format
 msgid "Guides page"
 msgstr ""
@@ -329,20 +329,20 @@ msgid ""
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:187 config.docbook:709
+#: config.docbook:187 config.docbook:823
 #, no-c-format
 msgid "Colors page"
 msgstr ""
 
 #. Tag: primary
-#: config.docbook:188 config.docbook:710 config.docbook:858
+#: config.docbook:188 config.docbook:824 config.docbook:972
 #, no-c-format
 msgid "Color Schemes"
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:189 config.docbook:711 config.docbook:866 config.docbook:873
-#: config.docbook:897
+#: config.docbook:189 config.docbook:825 config.docbook:980 config.docbook:987
+#: config.docbook:1011
 #, no-c-format
 msgid "Customizing"
 msgstr ""
@@ -356,7 +356,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: config.docbook:194 config.docbook:755
+#: config.docbook:194 config.docbook:869
 #, no-c-format
 msgid ""
 "For detailed explanation of the options on the <guilabel>INDI</guilabel> "
@@ -373,13 +373,13 @@ msgid ""
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:204 config.docbook:798
+#: config.docbook:204 config.docbook:912
 #, no-c-format
 msgid "Advanced page"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:204 config.docbook:798
+#: config.docbook:204 config.docbook:912
 #, no-c-format
 msgid ""
 "The <guilabel>Advanced</guilabel> page provides fine-grained control over "
@@ -816,13 +816,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: config.docbook:434
+#: config.docbook:434 config.docbook:575
 #, no-c-format
 msgid "For stars: type(0 for stars), RA, Dec, mag, SpType, name(optional)"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:435
+#: config.docbook:435 config.docbook:576
 #, no-c-format
 msgid ""
 "For other types: type(3-8), RA, Dec, mag (optional), flux(optional), name"
@@ -1072,26 +1072,184 @@ msgid ""
 "drawn irrespective of the faint limits set."
 msgstr ""
 
+#. Tag: para
+#: config.docbook:563
+#, no-c-format
+msgid ""
+"To summarize, I will provide a brief example on how to add new catalogues. "
+"Firstly, you need a catalog data file. For this example, I will use "
+"<quote>Lynds Catalog of Dark Nebulae</quote>. There are the steps:"
+msgstr ""
+
+#. Tag: para
+#: config.docbook:569
+#, no-c-format
+msgid ""
+"Download/write the raw catalog data file (the raw file is the file "
+"containing catalog's objects described by a set of parameters, like: ID "
+"Number, Right Ascension, Declination and so on). Note that each object "
+"should be written on a separate row and each line in the custom catalog file "
+"should contain the following space-separated fields:"
+msgstr ""
+
+#. Tag: para
+#: config.docbook:580
+#, no-c-format
+msgid ""
+"Open the <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure "
+"KStars...</guimenuitem></menuchoice> menu and choose <guilabel>Catalogs</"
+"guilabel> tab."
+msgstr ""
+
+#. Tag: para
+#: config.docbook:585
+#, no-c-format
+msgid ""
+"In the Deep-Sky objects section, press the <guibutton>Import Catalog...</"
+"guibutton> button. If the button is not available, check the <guibutton>Deep-"
+"Sky Catalogs</guibutton> checkbox. This will enable you to configure "
+"&kstars; deep-sky objects catalogs."
+msgstr ""
+
+#. Tag: para
+#: config.docbook:591
+#, no-c-format
+msgid ""
+"After you press the <guibutton>Import Catalog...</guibutton> button, "
+"<guilabel>Import Catalog</guilabel> window will pop up. At first, click on "
+"<guibutton>Open file dialog</guibutton> button in order to select the raw "
+"data file."
+msgstr ""
+
+#. Tag: screeninfo
+#: config.docbook:595
+#, no-c-format
+msgid "Import catalog"
+msgstr ""
+
+#. Tag: phrase
+#: config.docbook:601
+#, no-c-format
+msgid "Import new catalog"
+msgstr ""
+
+#. Tag: para
+#: config.docbook:607
+#, no-c-format
+msgid ""
+"In the dialog window, find your raw file, select it and then press "
+"<guibutton>Open</guibutton> button."
+msgstr ""
+
+#. Tag: screeninfo
+#: config.docbook:610
+#, no-c-format
+msgid "Open catalog"
+msgstr ""
+
+#. Tag: phrase
+#: config.docbook:616
+#, no-c-format
+msgid "Open Dark Nebulae catalog"
+msgstr ""
+
+#. Tag: para
+#: config.docbook:622
+#, no-c-format
+msgid ""
+"Now, you need to specify the correct order of the catalog fields within the "
+"raw data file. The fields must be added inside <guilabel>Catalog fields</"
+"guilabel> list. Note that you can drag fields in order to build the right "
+"order or you can use additional fields from <guilabel>Available fields</"
+"guilabel> fields. For example, if your raw data file contains a magnitude "
+"column, then you need to add Magnitude field to the <guilabel>Catalog "
+"fields</guilabel> list."
+msgstr ""
+
+#. Tag: screeninfo
+#: config.docbook:628
+#, no-c-format
+msgid "<screeninfo>Complete info for new catalog</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: config.docbook:634
+#, no-c-format
+msgid "<phrase>Complete info for new catalog</phrase>"
+msgstr ""
+
+#. Tag: para
+#: config.docbook:640
+#, no-c-format
+msgid ""
+"After you set the fields so that they match to your catalog raw file, you "
+"can move to next step: completing the remaining input fields: "
+"<guilabel>Coordinate epoch</guilabel>, <guilabel>Catalog name prefix</"
+"guilabel> , <guilabel>Catalog name</guilabel> and <guilabel>Save catalog as</"
+"guilabel>. You can also choose the <guilabel>Symbol color</guilabel> used "
+"for your catalog. There you can specify how the fields are splitted within "
+"the raw data file: CSV (Comma-separated values) or Space Delimited."
+msgstr ""
+
+#. Tag: para
+#: config.docbook:648
+#, no-c-format
+msgid ""
+"You can preview the output by pressing the <guibutton>Preview Output</"
+"guibutton> button. Pay attention to the header fields to have the same order "
+"as your catalog fields (&ie; ID RA Dc)"
+msgstr ""
+
+#. Tag: para
+#: config.docbook:653
+#, no-c-format
+msgid ""
+"Press <guibutton>OK</guibutton> button to close the <guilabel>Catalog "
+"Preview</guilabel> window. Then press <guibutton>OK</guibutton> button again "
+"to create and save your catalog."
+msgstr ""
+
+#. Tag: para
+#: config.docbook:658
+#, no-c-format
+msgid ""
+"After you successfully imported your catalog, it will be displayed in the "
+"catalogs list. You can choose to be displayed or not, by pressing on its "
+"checkbox."
+msgstr ""
+
+#. Tag: screeninfo
+#: config.docbook:662
+#, no-c-format
+msgid "Added Dark Nebulae by Lynds catalog"
+msgstr ""
+
+#. Tag: phrase
+#: config.docbook:668
+#, no-c-format
+msgid "Dark Nebulae by Lynds catalog"
+msgstr ""
+
 #. Tag: title
-#: config.docbook:565
+#: config.docbook:679
 #, no-c-format
 msgid "Solar System"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:567
+#: config.docbook:681
 #, no-c-format
 msgid "<screeninfo>Solar System Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:573
+#: config.docbook:687
 #, no-c-format
 msgid "<phrase>Solar System Window</phrase>"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:579
+#: config.docbook:693
 #, no-c-format
 msgid ""
 "In the <guilabel>Solar System</guilabel> page, you can specify whether the "
@@ -1105,25 +1263,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: config.docbook:593
+#: config.docbook:707
 #, no-c-format
 msgid "Satellites"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:595
+#: config.docbook:709
 #, no-c-format
 msgid "<screeninfo>Satellites Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:601
+#: config.docbook:715
 #, no-c-format
 msgid "<phrase>Satellites Window</phrase>"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:607
+#: config.docbook:721
 #, no-c-format
 msgid ""
 "The <guilabel>Satellites</guilabel> page allows you to set the satellites "
@@ -1164,25 +1322,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: config.docbook:637
+#: config.docbook:751
 #, no-c-format
 msgid "Supernovae"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:639
+#: config.docbook:753
 #, no-c-format
 msgid "<screeninfo>Supernovae Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:645
+#: config.docbook:759
 #, no-c-format
 msgid "<phrase>Supernovae Window</phrase>"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:651
+#: config.docbook:765
 #, no-c-format
 msgid ""
 "The <guilabel>Supernovae</guilabel> page allows you to decide if the "
@@ -1208,25 +1366,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: config.docbook:668
+#: config.docbook:782
 #, no-c-format
 msgid "Guides"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:670
+#: config.docbook:784
 #, no-c-format
 msgid "<screeninfo>Guides Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:676
+#: config.docbook:790
 #, no-c-format
 msgid "<phrase>Guides Window</phrase>"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:682
+#: config.docbook:796
 #, no-c-format
 msgid ""
 "The <guilabel>Guides</guilabel> page lets you toggle whether non-objects are "
@@ -1240,25 +1398,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: config.docbook:695
+#: config.docbook:809
 #, no-c-format
 msgid "Colors"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:697
+#: config.docbook:811
 #, no-c-format
 msgid "<screeninfo>Colors Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:703
+#: config.docbook:817
 #, no-c-format
 msgid "<phrase>Colors Window</phrase>"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:711
+#: config.docbook:825
 #, no-c-format
 msgid ""
 "The <guilabel>Colors</guilabel> page allows you to set the color scheme, and "
@@ -1266,7 +1424,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: config.docbook:715
+#: config.docbook:829
 #, no-c-format
 msgid ""
 "The left panel shows a list of all display items with adjustable colors. "
@@ -1281,7 +1439,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: config.docbook:726
+#: config.docbook:840
 #, no-c-format
 msgid ""
 "The right panel lists the defined color schemes. There are four predefined "
@@ -1298,43 +1456,43 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: config.docbook:743
+#: config.docbook:857
 #, no-c-format
 msgid "INDI"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:745
+#: config.docbook:859
 #, no-c-format
 msgid "<screeninfo>INDI Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:751
+#: config.docbook:865
 #, no-c-format
 msgid "<phrase>INDI Window</phrase>"
 msgstr ""
 
 #. Tag: title
-#: config.docbook:761
+#: config.docbook:875
 #, no-c-format
 msgid "Ekos"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:763
+#: config.docbook:877
 #, no-c-format
 msgid "<screeninfo>Ekos Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:769
+#: config.docbook:883
 #, no-c-format
 msgid "<phrase>Ekos Window</phrase>"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:773
+#: config.docbook:887
 #, no-c-format
 msgid ""
 "Ekos is an astrophotography suite, a complete astrophotography solution that "
@@ -1348,31 +1506,31 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: config.docbook:784
+#: config.docbook:898
 #, no-c-format
 msgid "Advanced"
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:786
+#: config.docbook:900
 #, no-c-format
 msgid "<screeninfo>Advanced Window</screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:792
+#: config.docbook:906
 #, no-c-format
 msgid "<phrase>Advanced Window</phrase>"
 msgstr ""
 
 #. Tag: primary
-#: config.docbook:802
+#: config.docbook:916
 #, no-c-format
 msgid "Atmospheric Refraction"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:802
+#: config.docbook:916
 #, no-c-format
 msgid ""
 "The <guilabel>Correct for atmospheric refraction</guilabel> checkbox "
@@ -1389,13 +1547,13 @@ msgid ""
 msgstr ""
 
 #. Tag: primary
-#: config.docbook:815
+#: config.docbook:929
 #, no-c-format
 msgid "Animated Slewing"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:815
+#: config.docbook:929
 #, no-c-format
 msgid ""
 "The <guilabel>Use animated slewing</guilabel> checkbox controls how the "
@@ -1406,25 +1564,25 @@ msgid ""
 msgstr ""
 
 #. Tag: primary
-#: config.docbook:822 config.docbook:833
+#: config.docbook:936 config.docbook:947
 #, no-c-format
 msgid "Objects in the Sky"
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:823
+#: config.docbook:937
 #, no-c-format
 msgid "Labeling"
 msgstr ""
 
 #. Tag: tertiary
-#: config.docbook:824
+#: config.docbook:938
 #, no-c-format
 msgid "Automatic"
 msgstr "Automatic"
 
 #. Tag: para
-#: config.docbook:825
+#: config.docbook:939
 #, no-c-format
 msgid ""
 "If the <guilabel>Attach label to centered object</guilabel> checkbox is "
@@ -1436,13 +1594,13 @@ msgid ""
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:834
+#: config.docbook:948
 #, no-c-format
 msgid "Hiding"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:834
+#: config.docbook:948
 #, no-c-format
 msgid ""
 "There are three situations when &kstars; must redraw the sky display very "
@@ -1461,25 +1619,25 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: config.docbook:852
+#: config.docbook:966
 #, no-c-format
 msgid "Customizing the Display"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:854
+#: config.docbook:968
 #, no-c-format
 msgid "There are several ways to modify the display to your liking."
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:858
+#: config.docbook:972
 #, no-c-format
 msgid "Selecting"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:858
+#: config.docbook:972
 #, no-c-format
 msgid ""
 "Select a different color scheme in the <menuchoice><guimenu>Settings</"
@@ -1489,13 +1647,13 @@ msgid ""
 msgstr ""
 
 #. Tag: primary
-#: config.docbook:865
+#: config.docbook:979
 #, no-c-format
 msgid "Toolbars"
 msgstr "Barras d'espleches"
 
 #. Tag: para
-#: config.docbook:866
+#: config.docbook:980
 #, no-c-format
 msgid ""
 "Toggle whether the Toolbars are drawn in the <menuchoice><guimenu>Settings</"
@@ -1506,19 +1664,19 @@ msgid ""
 msgstr ""
 
 #. Tag: primary
-#: config.docbook:873 config.docbook:874
+#: config.docbook:987 config.docbook:988
 #, no-c-format
 msgid "Info Boxes"
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:874
+#: config.docbook:988
 #, no-c-format
 msgid "Shading"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:874
+#: config.docbook:988
 #, no-c-format
 msgid ""
 "Toggle whether the Info Boxes are drawn in the "
@@ -1532,19 +1690,19 @@ msgid ""
 msgstr ""
 
 #. Tag: primary
-#: config.docbook:886 config.docbook:897 config.docbook:937
+#: config.docbook:1000 config.docbook:1011 config.docbook:1051
 #, no-c-format
 msgid "Field-of-View Symbols"
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:886
+#: config.docbook:1000
 #, no-c-format
 msgid "Description"
 msgstr "Descripcion"
 
 #. Tag: para
-#: config.docbook:886
+#: config.docbook:1000
 #, no-c-format
 msgid ""
 "Choose an <quote>FOV Symbol</quote> using the <menuchoice><guimenu>Settings</"
@@ -1559,7 +1717,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: config.docbook:897
+#: config.docbook:1011
 #, no-c-format
 msgid ""
 "You can define your own FOV symbols (or modify the existing symbols) using "
@@ -1568,19 +1726,19 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:902
+#: config.docbook:1016
 #, no-c-format
 msgid "Field-of-View Symbols Editor"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:908
+#: config.docbook:1022
 #, no-c-format
 msgid "FOV Symbol Editor"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:913
+#: config.docbook:1027
 #, no-c-format
 msgid ""
 "The list of defined FOV symbols is displayed on the left. On the right are "
@@ -1595,25 +1753,25 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: config.docbook:925
+#: config.docbook:1039
 #, no-c-format
 msgid "New Field-of-View Symbol"
 msgstr ""
 
 #. Tag: phrase
-#: config.docbook:931
+#: config.docbook:1045
 #, no-c-format
 msgid "New FOV Symbol"
 msgstr ""
 
 #. Tag: secondary
-#: config.docbook:937
+#: config.docbook:1051
 #, no-c-format
 msgid "Defining New"
 msgstr ""
 
 #. Tag: para
-#: config.docbook:937
+#: config.docbook:1051
 #, no-c-format
 msgid ""
 "This window lets you modify the four properties that define a FOV symbol: "
