@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-05 12:48+0000\n"
+"POT-Creation-Date: 2016-08-22 07:38+0000\n"
 "PO-Revision-Date: 2008-08-05 22:23+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -420,39 +420,44 @@ msgstr ""
 #: index.docbook:181
 #, no-c-format
 msgid ""
-"&kmenuedit; stores the menu hierarchy in <filename>$<envar>HOME</envar>/."
-"config/menus/applications-kmenuedit.menu</filename> and <filename class="
-"\"directory\">$<envar>HOME</envar>/.local/share/desktop-directories</"
-"filename> contains desktop files for submenus you created. In <filename "
-"class=\"directory\">$<envar>HOME</envar>/.local/share/applications/</"
-"filename> you find the desktop files for the custom items you created."
+"&kmenuedit; stores the menu hierarchy in <filename>menus/applications-"
+"kmenuedit.menu</filename> in the folder <filename class=\"directory\">"
+"$(qtpaths --paths GenericConfigLocation)</filename> and <filename class="
+"\"directory\">desktop-directories</filename> in the folder <filename class="
+"\"directory\">$(qtpaths --paths GenericDataLocation)</filename> contains "
+"desktop files for submenus you created. In <filename class=\"directory"
+"\">applications/</filename> in the folder <filename class=\"directory\">"
+"$(qtpaths --paths GenericDataLocation)</filename> you find the desktop files "
+"for the custom items you created."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:188
+#: index.docbook:189
 #, no-c-format
 msgid ""
-"The shortcuts for each application are stored in <filename>~/.kde/share/"
-"config/kglobalshortcutsrc</filename>, but export/import does not work "
-"because the UUIDs of the shortcuts do not match up between systems, even "
-"though the <filename class=\"extension\">.desktop</filename> files are the "
-"same. You have to assign all shortcuts manually again."
+"The shortcuts for each application are stored in "
+"<filename>kglobalshortcutsrc</filename> in the folder <filename class="
+"\"directory\">$(qtpaths --paths GenericConfigLocation)</filename>, but "
+"export/import does not work because the UUIDs of the shortcuts do not match "
+"up between systems, even though the <filename class=\"extension\">.desktop</"
+"filename> files are the same. You have to assign all shortcuts manually "
+"again."
 msgstr ""
 
 #. Tag: author
-#: index.docbook:201
+#: index.docbook:203
 #, no-c-format
 msgid "&Virgil.J.Nisly; &Virgil.J.Nisly.mail;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:204
+#: index.docbook:206
 #, no-c-format
 msgid "Adding a Menu Entry"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:206
+#: index.docbook:208
 #, no-c-format
 msgid ""
 "In this example, we will add &firefox; to the <guisubmenu>Internet</"
@@ -460,7 +465,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:207
+#: index.docbook:209
 #, no-c-format
 msgid ""
 "To start off, we need to open &kmenuedit;, so &RMB; on the application "
@@ -470,19 +475,19 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:211
+#: index.docbook:213
 #, no-c-format
 msgid "<screeninfo>Select <guisubmenu>Internet</guisubmenu></screeninfo>"
 msgstr ""
 
 #. Tag: phrase
-#: index.docbook:217
+#: index.docbook:219
 #, no-c-format
 msgid "<phrase>Select <guisubmenu>Internet</guisubmenu></phrase>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:221
+#: index.docbook:223
 #, no-c-format
 msgid ""
 "Once you have selected <guisubmenu>Internet</guisubmenu>, click on "
@@ -493,19 +498,19 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:224
+#: index.docbook:226
 #, no-c-format
 msgid "<guilabel>New Item</guilabel> dialog"
 msgstr ""
 
 #. Tag: phrase
-#: index.docbook:230
+#: index.docbook:232
 #, no-c-format
 msgid "The <guilabel>New Item</guilabel> dialog."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:235
+#: index.docbook:237
 #, no-c-format
 msgid ""
 "Press return, and you should see something like the picture below in the "
@@ -513,19 +518,19 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:238
+#: index.docbook:240
 #, no-c-format
 msgid "New Item"
 msgstr "Element novèl"
 
 #. Tag: phrase
-#: index.docbook:244
+#: index.docbook:246
 #, no-c-format
 msgid "The new item created."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:249
+#: index.docbook:251
 #, no-c-format
 msgid ""
 "Now lets fill in the <guilabel>Description:</guilabel>, in this case type "
@@ -538,7 +543,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:254
+#: index.docbook:256
 #, no-c-format
 msgid ""
 "The command has to be in your <envar>PATH</envar> variable or you have to "
@@ -549,7 +554,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:258
+#: index.docbook:260
 #, no-c-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -557,13 +562,13 @@ msgid ""
 msgstr ""
 
 #. Tag: member
-#: index.docbook:260
+#: index.docbook:262
 #, no-c-format
 msgid "%f - a single file name"
 msgstr ""
 
 #. Tag: member
-#: index.docbook:261
+#: index.docbook:263
 #, no-c-format
 msgid ""
 "%F - a list of files; use for applications that can open several local files "
@@ -571,49 +576,49 @@ msgid ""
 msgstr ""
 
 #. Tag: member
-#: index.docbook:262
+#: index.docbook:264
 #, no-c-format
 msgid "%u - a single &URL;"
 msgstr ""
 
 #. Tag: member
-#: index.docbook:263
+#: index.docbook:265
 #, no-c-format
 msgid "%U - a list of &URL;s"
 msgstr ""
 
 #. Tag: member
-#: index.docbook:264
+#: index.docbook:266
 #, no-c-format
 msgid "%d - the folder of a file to open"
 msgstr ""
 
 #. Tag: member
-#: index.docbook:265
+#: index.docbook:267
 #, no-c-format
 msgid "%D - a list of folders"
 msgstr ""
 
 #. Tag: member
-#: index.docbook:266
+#: index.docbook:268
 #, no-c-format
 msgid "%i - the icon"
 msgstr ""
 
 #. Tag: member
-#: index.docbook:267
+#: index.docbook:269
 #, no-c-format
 msgid "%m - the mini icon"
 msgstr ""
 
 #. Tag: member
-#: index.docbook:268
+#: index.docbook:270
 #, no-c-format
 msgid "%c - the caption"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:270
+#: index.docbook:272
 #, no-c-format
 msgid ""
 "For example: if you want to firefox to start your web browsing at www.kde."
@@ -622,7 +627,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:271
+#: index.docbook:273
 #, no-c-format
 msgid ""
 "Most applications accept additional options &eg; the name of a defined "
@@ -632,7 +637,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:273
+#: index.docbook:275
 #, no-c-format
 msgid ""
 "We would like to have a more creative icon, so we will click the generic "
@@ -643,19 +648,19 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:275
+#: index.docbook:277
 #, no-c-format
 msgid "<guilabel>Select Icon</guilabel> dialog"
 msgstr ""
 
 #. Tag: phrase
-#: index.docbook:281
+#: index.docbook:283
 #, no-c-format
 msgid "The <guilabel>Select Icon</guilabel> dialog."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:286
+#: index.docbook:288
 #, no-c-format
 msgid ""
 "We choose the firefox icon from the list, and press &Enter;. Your finished "
@@ -663,19 +668,19 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:288
+#: index.docbook:290
 #, no-c-format
 msgid "Done screenshot"
 msgstr ""
 
 #. Tag: phrase
-#: index.docbook:294
+#: index.docbook:296
 #, no-c-format
 msgid "This is what the completed menu item should looks like."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:299
+#: index.docbook:301
 #, no-c-format
 msgid ""
 "The place of the new menu item can now be changed using <guibutton>Move Up</"
@@ -684,7 +689,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:300
+#: index.docbook:302
 #, no-c-format
 msgid ""
 "The submenu items can be sorted using <guibutton>Sort</guibutton> button on "
@@ -693,7 +698,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:302
+#: index.docbook:304
 #, no-c-format
 msgid ""
 "Click <menuchoice><guimenu>File</guimenu><guimenuitem>Save</guimenuitem></"
@@ -703,13 +708,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:307
+#: index.docbook:309
 #, no-c-format
 msgid "Using &kmenuedit;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:309
+#: index.docbook:311
 #, no-c-format
 msgid ""
 "The left application panel shows the application launcher structure. When "
@@ -718,19 +723,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:314
+#: index.docbook:316
 #, no-c-format
 msgid "General tab"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:318
+#: index.docbook:320
 #, no-c-format
 msgid "Name:"
 msgstr "Nom :"
 
 #. Tag: para
-#: index.docbook:319
+#: index.docbook:321
 #, no-c-format
 msgid ""
 "This is the name of your program as it appears in the application launcher "
@@ -740,13 +745,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:325
+#: index.docbook:327
 #, no-c-format
 msgid "Description:"
 msgstr "Descripcion :"
 
 #. Tag: para
-#: index.docbook:326
+#: index.docbook:328
 #, no-c-format
 msgid ""
 "The description will be displayed together with the name in the application "
@@ -754,13 +759,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:329
+#: index.docbook:331
 #, no-c-format
 msgid "Comment:"
 msgstr "Comentari :"
 
 #. Tag: para
-#: index.docbook:330
+#: index.docbook:332
 #, no-c-format
 msgid ""
 "Describe the program in greater detail in this field. This is entirely "
@@ -768,13 +773,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:334
+#: index.docbook:336
 #, no-c-format
 msgid "Command:"
 msgstr "Comanda :"
 
 #. Tag: para
-#: index.docbook:335
+#: index.docbook:337
 #, no-c-format
 msgid ""
 "This is the name of the executable program. Make sure that you have "
@@ -782,13 +787,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:339
+#: index.docbook:341
 #, no-c-format
 msgid "Enable launch feedback"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:340
+#: index.docbook:342
 #, no-c-format
 msgid ""
 "If this box is checked, this will display feedback when an application is "
@@ -796,13 +801,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:344
+#: index.docbook:346
 #, no-c-format
 msgid "Place in system tray"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:345
+#: index.docbook:347
 #, no-c-format
 msgid ""
 "When checked, the application's icon will show up in the panel system tray. "
@@ -812,13 +817,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:352
+#: index.docbook:354
 #, no-c-format
 msgid "Only show in &kde;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:353
+#: index.docbook:355
 #, no-c-format
 msgid ""
 "When checked, the application entry will only be visible in all &kde; "
@@ -826,31 +831,31 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:357
+#: index.docbook:359
 #, no-c-format
 msgid "Hidden entry"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:358
+#: index.docbook:360
 #, no-c-format
 msgid "Remove an entry from the menu view in the application launcher."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:364
+#: index.docbook:366
 #, no-c-format
 msgid "Advanced tab"
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:368
+#: index.docbook:370
 #, no-c-format
 msgid "Work path:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:369
+#: index.docbook:371
 #, no-c-format
 msgid ""
 "Specify the work path of the program. This will be the current path when the "
@@ -858,13 +863,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:374
+#: index.docbook:376
 #, no-c-format
 msgid "Run in terminal"
 msgstr "Exécuter dans un terminal"
 
 #. Tag: para
-#: index.docbook:375
+#: index.docbook:377
 #, no-c-format
 msgid ""
 "You must check this if your program requires terminal emulator in order to "
@@ -873,25 +878,25 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:381
+#: index.docbook:383
 #, no-c-format
 msgid "Terminal options:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:382
+#: index.docbook:384
 #, no-c-format
 msgid "Put all terminal options in this field."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:385
+#: index.docbook:387
 #, no-c-format
 msgid "Run as a different user"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:386
+#: index.docbook:388
 #, no-c-format
 msgid ""
 "If you want to run this program as a different user (not you), check this "
@@ -900,19 +905,19 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:392
+#: index.docbook:394
 #, no-c-format
 msgid "Current shortcut key:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:393
+#: index.docbook:395
 #, no-c-format
 msgid "You can assign a special keyboard shortcut to launch your program."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:395
+#: index.docbook:397
 #, no-c-format
 msgid ""
 "Click the <guibutton>None</guibutton> button to the right of the "
@@ -920,7 +925,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:398
+#: index.docbook:400
 #, no-c-format
 msgid ""
 "The button text will change to <guilabel>Input...</guilabel> and you can "
@@ -929,7 +934,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:401
+#: index.docbook:403
 #, no-c-format
 msgid ""
 "You can reset the shortcut to <guilabel>None</guilabel> by using this "
@@ -938,7 +943,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:405
+#: index.docbook:407
 #, no-c-format
 msgid ""
 "Don't forget to save your setting by clicking the toolbar <guiicon>Save</"
@@ -947,13 +952,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:417
+#: index.docbook:419
 #, no-c-format
 msgid "Menu Reference"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:419
+#: index.docbook:421
 #, no-c-format
 msgid ""
 "Most actions in the menubar are also available in the context menu opened "
@@ -961,7 +966,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:424
+#: index.docbook:426
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></"
@@ -969,25 +974,25 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:428
+#: index.docbook:430
 #, no-c-format
 msgid "Adds new menu item."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:433
+#: index.docbook:435
 #, no-c-format
 msgid "<guimenu>File</guimenu> <guimenuitem>New Submenu...</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:437
+#: index.docbook:439
 #, no-c-format
 msgid "Adds new submenu."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:441
+#: index.docbook:443
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></"
@@ -995,13 +1000,13 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:447
+#: index.docbook:449
 #, no-c-format
 msgid "Saves the menu"
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:452
+#: index.docbook:454
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
@@ -1009,37 +1014,37 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:459
+#: index.docbook:461
 #, no-c-format
 msgid "<action>Quits</action> &kmenuedit;."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:463
+#: index.docbook:465
 #, no-c-format
 msgid "<guimenu>Edit</guimenu> <guimenuitem>Move Up</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:467
+#: index.docbook:469
 #, no-c-format
 msgid "<action>Moves</action> the selected item up in its submenu."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:471
+#: index.docbook:473
 #, no-c-format
 msgid "<guimenu>Edit</guimenu> <guimenuitem>Move Down</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:475
+#: index.docbook:477
 #, no-c-format
 msgid "<action>Moves</action> the selected item down in its submenu."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:480
+#: index.docbook:482
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>X</keycap></keycombo> </"
@@ -1047,7 +1052,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:487
+#: index.docbook:489
 #, no-c-format
 msgid ""
 "<action>Cuts the current menu item to the clipboard.</action> If you want to "
@@ -1057,7 +1062,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:495
+#: index.docbook:497
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
@@ -1065,7 +1070,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:502
+#: index.docbook:504
 #, no-c-format
 msgid ""
 "<action>Copies the current menu item to the clipboard</action>. You can "
@@ -1075,7 +1080,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:509
+#: index.docbook:511
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>V</keycap></keycombo> </"
@@ -1083,7 +1088,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:515
+#: index.docbook:517
 #, no-c-format
 msgid ""
 "<action>Paste menu item from the clipboard</action> to currently selected "
@@ -1093,7 +1098,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:522
+#: index.docbook:524
 #, no-c-format
 msgid ""
 "<shortcut><keycap>Del</keycap></shortcut> <guimenu>Edit</guimenu> "
@@ -1101,19 +1106,19 @@ msgid ""
 msgstr ""
 
 #. Tag: action
-#: index.docbook:526
+#: index.docbook:528
 #, no-c-format
 msgid "Deletes currently selected menu item."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:531
+#: index.docbook:533
 #, no-c-format
 msgid "<guimenu>Edit</guimenu> <guisubmenu>Sort</guisubmenu>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:535
+#: index.docbook:537
 #, no-c-format
 msgid ""
 "<action>Opens</action> submenu to sort selected submenu or all menu tree. "
@@ -1122,14 +1127,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:539
+#: index.docbook:541
 #, no-c-format
 msgid ""
 "<guimenu>Edit</guimenu> <guimenuitem>Restore to System Menu</guimenuitem>"
 msgstr ""
 
 #. Tag: action
-#: index.docbook:542
+#: index.docbook:544
 #, no-c-format
 msgid ""
 "This will restore the application launcher as it was as default and remove "
@@ -1138,7 +1143,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:547
+#: index.docbook:549
 #, no-c-format
 msgid ""
 "&kmenuedit; has the common &kde; <guimenu>Settings</guimenu> and "
@@ -1149,98 +1154,98 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:557
+#: index.docbook:559
 #, no-c-format
 msgid "Credits and License"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:559
+#: index.docbook:561
 #, no-c-format
 msgid "&kmenuedit;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:562
+#: index.docbook:564
 #, no-c-format
 msgid "Program copyright &copy; 2002, &Raffaele.Sandrini;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:564
+#: index.docbook:566
 #, no-c-format
 msgid "Contributors:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:566
+#: index.docbook:568
 #, no-c-format
 msgid "&Matthias.Elter; &Matthias.Elter.mail; - Original Author"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:569
+#: index.docbook:571
 #, no-c-format
 msgid "&Matthias.Ettrich; &Matthias.Ettrich.mail;"
 msgstr "&Matthias.Ettrich; &Matthias.Ettrich.mail;"
 
 #. Tag: para
-#: index.docbook:571
+#: index.docbook:573
 #, no-c-format
 msgid "&Daniel.M.Duley; &Daniel.M.Duley.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:573
+#: index.docbook:575
 #, no-c-format
 msgid "&Preston.Brown; &Preston.Brown.mail;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:577
+#: index.docbook:579
 #, no-c-format
 msgid "Documentation copyright &copy; 2000 &Milos.Prudek;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:578
+#: index.docbook:580
 #, no-c-format
 msgid "Documentation copyright &copy; 2008 &Anne-Marie.Mahfouf;"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:579
+#: index.docbook:581
 #, no-c-format
 msgid "Updated for &kde; 3.0 by &Lauri.Watts; &Lauri.Watts.mail; 2002"
 msgstr ""
 
 #. Tag: trans_comment
-#: index.docbook:582
+#: index.docbook:584
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
 "<para>Yannig Marchegay (Kokoyaya)<email>yannig@marchegay.org</email></para>"
 
 #. Tag: chapter
-#: index.docbook:582
+#: index.docbook:584
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr ""
 
 #. Tag: title
-#: index.docbook:590
+#: index.docbook:592
 #, no-c-format
 msgid "Glossary"
 msgstr "Glossari"
 
 #. Tag: glossterm
-#: index.docbook:593
+#: index.docbook:595
 #, no-c-format
 msgid "Console Application"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:596
+#: index.docbook:598
 #, no-c-format
 msgid ""
 "Application originally written for non-graphic, text oriented environment. "
@@ -1251,7 +1256,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:603
+#: index.docbook:605
 #, no-c-format
 msgid ""
 "Console applications support copying and pasting from &kde;-compliant "
