@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-03 07:23+0000\n"
+"POT-Creation-Date: 2016-11-04 07:13+0000\n"
 "PO-Revision-Date: 2008-08-05 23:45+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -199,7 +199,7 @@ msgid "Visible Satellites"
 msgstr "Serbia"
 
 #: auxiliary/colorscheme.cpp:89 dialogs/finddialog.cpp:52
-#: kstarsactions.cpp:667 kstarslite/dialogs/finddialoglite.cpp:53
+#: kstarsactions.cpp:727 kstarslite/dialogs/finddialoglite.cpp:53
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Sevilla"
@@ -214,7 +214,7 @@ msgid "Satellites Labels"
 msgstr "Serbia"
 
 #: auxiliary/colorscheme.cpp:91 dialogs/finddialog.cpp:51
-#: kstarsactions.cpp:670 kstarslite/dialogs/finddialoglite.cpp:52
+#: kstarsactions.cpp:730 kstarslite/dialogs/finddialoglite.cpp:52
 #, fuzzy
 #| msgid "Version"
 msgid "Supernovae"
@@ -289,7 +289,7 @@ msgstr ""
 #: ekos/scheduler/scheduler.cpp:3169 ekos/scheduler/scheduler.cpp:3468
 #: ekos/scheduler/scheduler.cpp:3869 ekos/scheduler/scheduler.cpp:4594
 #: ekos/scheduler/scheduler.cpp:4623 ekos/scheduler/scheduler.cpp:4665
-#: indi/drivermanager.cpp:1465 indi/indidriver.cpp:946 kstarsactions.cpp:965
+#: indi/drivermanager.cpp:1465 indi/indidriver.cpp:946 kstarsactions.cpp:1025
 #: oal/execute.cpp:317 options/opscolors.cpp:212 tools/modcalcangdist.cpp:134
 #: tools/modcalcapcoord.cpp:151 tools/modcalcdaylength.cpp:247
 #: tools/modcalcgalcoord.cpp:192 tools/modcalcgeodcoord.cpp:230
@@ -320,6 +320,19 @@ msgstr ""
 #| msgid "Invalid URL"
 msgid "Invalid Filename"
 msgstr "URL invalida"
+
+#: auxiliary/filedownloader.cpp:96
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Colon"
+msgid "Downloading"
+msgstr "Dos punts"
+
+#: auxiliary/filedownloader.cpp:101
+#, fuzzy
+#| msgid "Select None"
+msgid "Downloading Data..."
+msgstr "Seleccionar una estampaira"
 
 #: auxiliary/fov.cpp:51 kstarslite/skyitems/fovitem.cpp:25
 msgctxt "use field-of-view for binoculars"
@@ -451,7 +464,7 @@ msgstr "Espandida"
 
 #: auxiliary/imageviewer.cpp:333 dialogs/addcatdialog.cpp:212
 #: ekos/capture/capture.cpp:2463 ekos/scheduler/scheduler.cpp:3435
-#: fitsviewer/fitstab.cpp:275 kstarsactions.cpp:838 printing/pwizprint.cpp:88
+#: fitsviewer/fitstab.cpp:275 kstarsactions.cpp:898 printing/pwizprint.cpp:88
 #: tools/scriptbuilder.cpp:839
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
@@ -459,7 +472,7 @@ msgstr ""
 
 #: auxiliary/imageviewer.cpp:335 dialogs/addcatdialog.cpp:214
 #: ekos/capture/capture.cpp:2465 ekos/scheduler/scheduler.cpp:3437
-#: fitsviewer/fitstab.cpp:277 kstarsactions.cpp:839 printing/pwizprint.cpp:89
+#: fitsviewer/fitstab.cpp:277 kstarsactions.cpp:899 printing/pwizprint.cpp:89
 #: tools/scriptbuilder.cpp:841
 msgid "Overwrite File?"
 msgstr "Remplaçar lo fichièr ?"
@@ -1382,7 +1395,7 @@ msgstr ""
 msgid "Could not Open File"
 msgstr "Impossible de dobrir lo fichièr : %1"
 
-#: dialogs/detaildialog.cpp:664 kstarsactions.cpp:700
+#: dialogs/detaildialog.cpp:664 kstarsactions.cpp:760
 msgid "Advanced"
 msgstr "A_vançat"
 
@@ -1975,7 +1988,7 @@ msgstr "Totes"
 msgid "Stars"
 msgstr ""
 
-#: dialogs/finddialog.cpp:42 kstarsactions.cpp:664 kstarsinit.cpp:444
+#: dialogs/finddialog.cpp:42 kstarsactions.cpp:724 kstarsinit.cpp:444
 #: kstarslite/dialogs/finddialoglite.cpp:43 tools/astrocalc.cpp:181
 #: tools/conjunctions.cpp:78
 msgid "Solar System"
@@ -4919,7 +4932,7 @@ msgid "Count"
 msgstr "Païs :"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewB)
-#: ekos/capture/capture.ui:388 fitsviewer/fitsviewer.cpp:468
+#: ekos/capture/capture.ui:388 fitsviewer/fitsviewer.cpp:473
 #: indi/indiccd.cpp:1315
 #, fuzzy
 #| msgctxt "Advanced URLs: description or category"
@@ -5778,7 +5791,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
 #: ekos/ekosmanager.cpp:1436 ekos/scheduler/scheduler.ui:184
-#: fitsviewer/fitsviewer.cpp:380
+#: fitsviewer/fitsviewer.cpp:385
 #, fuzzy
 #| msgctxt "Advanced URLs: description or category"
 #| msgid "Other"
@@ -5789,7 +5802,7 @@ msgstr "Autre"
 #. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
 #: ekos/ekosmanager.cpp:1463 ekos/ekosmanager.ui:926
-#: ekos/scheduler/scheduler.ui:168 fitsviewer/fitsviewer.cpp:372
+#: ekos/scheduler/scheduler.ui:168 fitsviewer/fitsviewer.cpp:377
 #: options/opsadvanced.ui:361
 msgid "Focus"
 msgstr ""
@@ -5806,7 +5819,7 @@ msgstr "Païs :"
 #. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GuideLogging)
 #: ekos/ekosmanager.cpp:1547 ekos/ekosmanager.ui:1598 ekos/guide/guide.ui:115
-#: ekos/scheduler/scheduler.ui:200 fitsviewer/fitsviewer.cpp:376
+#: ekos/scheduler/scheduler.ui:200 fitsviewer/fitsviewer.cpp:381
 #: options/opsadvanced.ui:374
 #, fuzzy
 #| msgid "Guides"
@@ -5839,7 +5852,7 @@ msgid "Failed to update site location to %1. City not found."
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EkosManager)
-#: ekos/ekosmanager.ui:26 kstarsactions.cpp:686 kstarsinit.cpp:430
+#: ekos/ekosmanager.ui:26 kstarsactions.cpp:746 kstarsinit.cpp:430
 msgid "Ekos"
 msgstr ""
 
@@ -6862,7 +6875,7 @@ msgid "Control"
 msgstr "Senegal"
 
 #. i18n: ectx: property (text), widget (QPushButton, calibrateB)
-#: ekos/guide/guide.ui:78 fitsviewer/fitsviewer.cpp:368
+#: ekos/guide/guide.ui:78 fitsviewer/fitsviewer.cpp:373
 #, fuzzy
 #| msgid "Client"
 msgid "Calibrate"
@@ -7923,11 +7936,11 @@ msgstr "minutas"
 msgid "Internal or External Plate Solver."
 msgstr ""
 
-#: ekos/opsekos.cpp:39
+#: ekos/opsekos.cpp:43
 msgid "Internal or External Astrometry.cfg."
 msgstr ""
 
-#: ekos/opsekos.cpp:42
+#: ekos/opsekos.cpp:50
 msgid "Internal or External WCS Info."
 msgstr ""
 
@@ -8118,7 +8131,7 @@ msgid "Always apply auto stretch to captured images in FITS Viewer"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoStretch)
-#: ekos/opsekos.ui:332 fitsviewer/fitsviewer.cpp:65
+#: ekos/opsekos.ui:332 fitsviewer/fitsviewer.cpp:68
 msgid "Auto Stretch"
 msgstr ""
 
@@ -10039,76 +10052,76 @@ msgstr "Posicion"
 msgid "Repositioning complete"
 msgstr "Client"
 
-#: fitsviewer/fitsdata.cpp:149 fitsviewer/fitsdatalite.cpp:137
+#: fitsviewer/fitsdata.cpp:147 fitsviewer/fitsdatalite.cpp:137
 #, fuzzy, kde-format
 #| msgid "Could not open file: %1"
 msgid "Could not open file %1. Error %2"
 msgstr "Impossible de dobrir lo fichièr : %1"
 
-#: fitsviewer/fitsdata.cpp:151 fitsviewer/fitsdata.cpp:163
-#: fitsviewer/fitsdata.cpp:173 fitsviewer/fitsdata.cpp:201
-#: fitsviewer/fitsdata.cpp:215 fitsviewer/fitsdata.cpp:248
+#: fitsviewer/fitsdata.cpp:149 fitsviewer/fitsdata.cpp:161
+#: fitsviewer/fitsdata.cpp:171 fitsviewer/fitsdata.cpp:199
+#: fitsviewer/fitsdata.cpp:213 fitsviewer/fitsdata.cpp:246
 #, fuzzy
 #| msgid "Save"
 msgid "FITS Open"
 msgstr "Enregistrar"
 
-#: fitsviewer/fitsdata.cpp:161 fitsviewer/fitsdatalite.cpp:148
+#: fitsviewer/fitsdata.cpp:159 fitsviewer/fitsdatalite.cpp:148
 #, fuzzy, kde-format
 #| msgid "Could not open file: %1"
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "Impossible de dobrir lo fichièr : %1"
 
-#: fitsviewer/fitsdata.cpp:171 fitsviewer/fitsdatalite.cpp:157
+#: fitsviewer/fitsdata.cpp:169 fitsviewer/fitsdatalite.cpp:157
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:199 fitsviewer/fitsdatalite.cpp:184
+#: fitsviewer/fitsdata.cpp:197 fitsviewer/fitsdatalite.cpp:184
 #, kde-format
 msgid "Bit depth %1 is not supported."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:213 fitsviewer/fitsdatalite.cpp:197
+#: fitsviewer/fitsdata.cpp:211 fitsviewer/fitsdatalite.cpp:197
 #, kde-format
 msgid "Image has invalid dimensions %1x%2"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:246 fitsviewer/fitsdatalite.cpp:229
+#: fitsviewer/fitsdata.cpp:244 fitsviewer/fitsdatalite.cpp:229
 #, fuzzy, kde-format
 #| msgid "Could not open file: %1"
 msgid "Error reading image: %1"
 msgstr "Impossible de dobrir lo fichièr : %1"
 
-#: fitsviewer/fitsdata.cpp:2491
+#: fitsviewer/fitsdata.cpp:2493
 msgid "Only 8 and 16 bits bayered images supported."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2491 fitsviewer/fitsdata.cpp:2558
+#: fitsviewer/fitsdata.cpp:2493 fitsviewer/fitsdata.cpp:2560
 msgid "Debayer error"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2516
+#: fitsviewer/fitsdata.cpp:2518
 msgid "Unable to allocate memory for bayer buffer."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2516 kstarsactions.cpp:804
+#: fitsviewer/fitsdata.cpp:2518 kstarsactions.cpp:864
 msgid "Open FITS"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2551
+#: fitsviewer/fitsdata.cpp:2553
 msgid "Unable to allocate memory for temporary bayer buffer."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2551 fitsviewer/fitsdata.cpp:2576
+#: fitsviewer/fitsdata.cpp:2553 fitsviewer/fitsdata.cpp:2578
 msgid "Debayer Error"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2558
+#: fitsviewer/fitsdata.cpp:2560
 #, kde-format
 msgid "Debayer failed (%1)"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2576
+#: fitsviewer/fitsdata.cpp:2578
 msgid "Unable to allocate memory for debayerd buffer."
 msgstr ""
 
@@ -10198,8 +10211,8 @@ msgid "Y Offset:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, statusEdit)
-#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:413
-#: fitsviewer/fitsviewer.cpp:974
+#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:418
+#: fitsviewer/fitsviewer.cpp:979
 #, fuzzy
 #| msgctxt "Advanced URLs: description or category"
 #| msgid "Radio"
@@ -10208,7 +10221,7 @@ msgstr "Radio"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, fitsHeaderDialog)
 #: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:202
-#: fitsviewer/fitsviewer.cpp:159
+#: fitsviewer/fitsviewer.cpp:164
 msgid "FITS Header"
 msgstr ""
 
@@ -10266,7 +10279,7 @@ msgid "Square Root Scale"
 msgstr "Carrat"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FITSHistogramUI)
-#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:141
+#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:146
 msgid "Histogram"
 msgstr ""
 
@@ -10284,7 +10297,7 @@ msgstr "Max."
 
 #. i18n: ectx: property (text), widget (QLabel, maxLabel_2)
 #. i18n: ectx: property (text), widget (QLabel, meanLabel_2)
-#: fitsviewer/fitshistogramui.ui:120 fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitshistogramui.ui:120 fitsviewer/fitsviewer.cpp:69
 #: fitsviewer/statform.ui:121
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
@@ -10331,7 +10344,7 @@ msgstr ""
 msgid "&Apply"
 msgstr "&Aplicar"
 
-#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:700
+#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:705
 #, fuzzy
 #| msgid "Remove Label"
 msgid "Save Changes to FITS?"
@@ -10412,122 +10425,122 @@ msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:65
+#: fitsviewer/fitsviewer.cpp:68
 #, fuzzy
 #| msgid "Connect"
 msgid "High Contrast"
 msgstr "Croacia"
 
-#: fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitsviewer.cpp:69
 msgid "Equalize"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitsviewer.cpp:69
 #, fuzzy
 #| msgid "Time"
 msgid "High Pass"
 msgstr "Ora"
 
-#: fitsviewer/fitsviewer.cpp:67 fitsviewer/fitsviewer.cpp:125
+#: fitsviewer/fitsviewer.cpp:70 fitsviewer/fitsviewer.cpp:130
 msgid "Rotate Right"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:67 fitsviewer/fitsviewer.cpp:129
+#: fitsviewer/fitsviewer.cpp:70 fitsviewer/fitsviewer.cpp:134
 #, fuzzy
 #| msgid "Edit Link"
 msgid "Rotate Left"
 msgstr "Modificar lo ligam"
 
-#: fitsviewer/fitsviewer.cpp:68 fitsviewer/fitsviewer.cpp:133
+#: fitsviewer/fitsviewer.cpp:71 fitsviewer/fitsviewer.cpp:138
 #, fuzzy
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
 #| msgid "Arizona"
 msgid "Flip Horizontal"
 msgstr "Argentina"
 
-#: fitsviewer/fitsviewer.cpp:68 fitsviewer/fitsviewer.cpp:137
+#: fitsviewer/fitsviewer.cpp:71 fitsviewer/fitsviewer.cpp:142
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Macao"
 msgid "Flip Vertical"
 msgstr "Kanu"
 
-#: fitsviewer/fitsviewer.cpp:165
+#: fitsviewer/fitsviewer.cpp:170
 msgid "Debayer..."
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:169
+#: fitsviewer/fitsviewer.cpp:174
 msgid "Auto stretch"
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, statForm)
-#: fitsviewer/fitsviewer.cpp:200 fitsviewer/statform.ui:14
+#: fitsviewer/fitsviewer.cpp:205 fitsviewer/statform.ui:14
 msgid "Statistics"
 msgstr "Estadisticas"
 
-#: fitsviewer/fitsviewer.cpp:205
+#: fitsviewer/fitsviewer.cpp:210
 msgid "Show Cross Hairs"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:211
+#: fitsviewer/fitsviewer.cpp:216
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
 msgid "Show Pixel Gridlines"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: fitsviewer/fitsviewer.cpp:217 fitsviewer/fitsviewer.cpp:869
+#: fitsviewer/fitsviewer.cpp:222 fitsviewer/fitsviewer.cpp:874
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Equatorial Guinea"
 msgid "Show Equatorial Gridlines"
 msgstr "Guinèa Eqüatoriala"
 
-#: fitsviewer/fitsviewer.cpp:224 fitsviewer/fitsviewer.cpp:871
+#: fitsviewer/fitsviewer.cpp:229 fitsviewer/fitsviewer.cpp:876
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
 msgid "Show Objects in Image"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: fitsviewer/fitsviewer.cpp:231 fitsviewer/fitsviewer.cpp:879
+#: fitsviewer/fitsviewer.cpp:236 fitsviewer/fitsviewer.cpp:884
 msgid ""
 "Center Telescope\n"
 "*No Telescopes Detected*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:238
+#: fitsviewer/fitsviewer.cpp:243
 msgid "Zoom To Fit"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:242 fitsviewer/fitsviewer.cpp:945
+#: fitsviewer/fitsviewer.cpp:247 fitsviewer/fitsviewer.cpp:950
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Maseru"
 msgid "Mark Stars"
 msgstr "Pero"
 
-#: fitsviewer/fitsviewer.cpp:265
+#: fitsviewer/fitsviewer.cpp:270
 msgid "KStars FITS Viewer"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:503
+#: fitsviewer/fitsviewer.cpp:508
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:570
+#: fitsviewer/fitsviewer.cpp:575
 msgid "Open FITS Image"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:701
+#: fitsviewer/fitsviewer.cpp:706
 #, kde-format
 msgid "%1 has unsaved changes.  Would you like to save before closing it?"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:875
+#: fitsviewer/fitsviewer.cpp:880
 #, fuzzy
 #| msgid "Center"
 msgid ""
@@ -10535,13 +10548,13 @@ msgid ""
 "*Ready*"
 msgstr "Centre"
 
-#: fitsviewer/fitsviewer.cpp:884
+#: fitsviewer/fitsviewer.cpp:889
 msgid ""
 "Show Equatorial Gridlines\n"
 "*No WCS Info*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:886
+#: fitsviewer/fitsviewer.cpp:891
 #, fuzzy
 #| msgid "Center"
 msgid ""
@@ -10549,20 +10562,20 @@ msgid ""
 "*No WCS Info*"
 msgstr "Centre"
 
-#: fitsviewer/fitsviewer.cpp:888
+#: fitsviewer/fitsviewer.cpp:893
 msgid ""
 "Show Objects in Image\n"
 "*No WCS Info*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:950
+#: fitsviewer/fitsviewer.cpp:955
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Maseru"
 msgid "Unmark Stars"
 msgstr "Pero"
 
-#: fitsviewer/fitsviewer.cpp:968
+#: fitsviewer/fitsviewer.cpp:973
 #, kde-format
 msgid "Processing %1..."
 msgstr ""
@@ -10972,11 +10985,11 @@ msgstr ""
 msgid "Internal or External INDI Drivers."
 msgstr ""
 
-#: indi/opsindi.cpp:90
+#: indi/opsindi.cpp:100
 msgid "FITS Default Directory"
 msgstr ""
 
-#: indi/opsindi.cpp:98
+#: indi/opsindi.cpp:108
 #, fuzzy
 #| msgid "Server"
 msgid "INDI Drivers Directory"
@@ -11572,15 +11585,15 @@ msgstr ""
 msgid "KStars"
 msgstr "Estèla"
 
-#: kstars.cpp:222 kstarsactions.cpp:1118 skymap.cpp:381
+#: kstars.cpp:222 kstarsactions.cpp:1178 skymap.cpp:381
 msgid "Stop &Tracking"
 msgstr ""
 
-#: kstars.cpp:227 kstarsactions.cpp:1233 kstarsinit.cpp:259
+#: kstars.cpp:227 kstarsactions.cpp:1293 kstarsinit.cpp:259
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr ""
 
-#: kstars.cpp:227 kstarsactions.cpp:1239 kstarsinit.cpp:259
+#: kstars.cpp:227 kstarsactions.cpp:1299 kstarsinit.cpp:259
 msgid "Switch to star globe view (Equatorial &Coordinates)"
 msgstr ""
 
@@ -48406,70 +48419,70 @@ msgstr ""
 msgid "Equipment Settings - Equipment Type and Parameters"
 msgstr ""
 
-#: kstarsactions.cpp:534 kstarsactions.cpp:551 kstarsactions.cpp:565
-#: kstarsactions.cpp:585
+#: kstarsactions.cpp:548 kstarsactions.cpp:580 kstarsactions.cpp:609
+#: kstarsactions.cpp:644
 msgid ""
 "Unable to find INDI server. Please make sure the package that provides the "
 "'indiserver' binary is installed."
 msgstr ""
 
-#: kstarsactions.cpp:661
+#: kstarsactions.cpp:721
 #, fuzzy
 #| msgid "&Start"
 msgid "Catalogs"
 msgstr "&Aviar"
 
-#: kstarsactions.cpp:673
+#: kstarsactions.cpp:733
 msgid "Guides"
 msgstr "Guidas"
 
-#: kstarsactions.cpp:676
+#: kstarsactions.cpp:736
 msgid "Colors"
 msgstr "Colors"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDILogging)
-#: kstarsactions.cpp:681 options/opsadvanced.ui:312
+#: kstarsactions.cpp:741 options/opsadvanced.ui:312
 #, fuzzy
 #| msgid "Mode"
 msgid "INDI"
 msgstr "Mòde"
 
-#: kstarsactions.cpp:696
+#: kstarsactions.cpp:756
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Parent"
 msgid "Xplanet"
 msgstr "Parent"
 
-#: kstarsactions.cpp:786
+#: kstarsactions.cpp:846
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr ""
 
-#: kstarsactions.cpp:827
+#: kstarsactions.cpp:887
 #, fuzzy
 #| msgid "Center"
 msgid "Export Image"
 msgstr "Centre"
 
-#: kstarsactions.cpp:864 tools/scriptbuilder.cpp:764
+#: kstarsactions.cpp:924 tools/scriptbuilder.cpp:764
 #: tools/scriptbuilder.cpp:826
 msgctxt "Filter by file type: KStars Scripts."
 msgid "KStars Scripts (*.kstars)"
 msgstr ""
 
-#: kstarsactions.cpp:873
+#: kstarsactions.cpp:933
 #, fuzzy
 #| msgid "Country:"
 msgid "Executing remote scripts is not supported."
 msgstr "Païs :"
 
-#: kstarsactions.cpp:964 oal/execute.cpp:316 tools/observinglist.cpp:842
+#: kstarsactions.cpp:1024 oal/execute.cpp:316 tools/observinglist.cpp:842
 #, fuzzy, kde-format
 #| msgid "Could not open file: %1"
 msgid "Could not open file %1"
 msgstr "Impossible de dobrir lo fichièr : %1"
 
-#: kstarsactions.cpp:990
+#: kstarsactions.cpp:1050
 msgid ""
 "The selected script contains unrecognized elements, indicating that it was "
 "not created using the KStars script builder. This script may not function "
@@ -48477,82 +48490,82 @@ msgid ""
 "it anyway?"
 msgstr ""
 
-#: kstarsactions.cpp:994
+#: kstarsactions.cpp:1054
 msgid "Script Validation Failed"
 msgstr ""
 
-#: kstarsactions.cpp:994
+#: kstarsactions.cpp:1054
 msgid "Run Nevertheless"
 msgstr ""
 
-#: kstarsactions.cpp:999
+#: kstarsactions.cpp:1059
 #, kde-format
 msgid "Running script: %1"
 msgstr ""
 
-#: kstarsactions.cpp:1013
+#: kstarsactions.cpp:1073
 msgid "Script finished."
 msgstr ""
 
-#: kstarsactions.cpp:1022
+#: kstarsactions.cpp:1082
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
 "uses a white background. Would you like to temporarily switch to the Star "
 "Chart color scheme for printing?"
 msgstr ""
 
-#: kstarsactions.cpp:1027
+#: kstarsactions.cpp:1087
 msgid "Switch to Star Chart Colors?"
 msgstr ""
 
-#: kstarsactions.cpp:1028
+#: kstarsactions.cpp:1088
 msgid "Switch Color Scheme"
 msgstr ""
 
-#: kstarsactions.cpp:1028
+#: kstarsactions.cpp:1088
 msgid "Do Not Switch"
 msgstr ""
 
-#: kstarsactions.cpp:1100 kstarsinit.cpp:230
+#: kstarsactions.cpp:1160 kstarsinit.cpp:230
 msgid "Engage &Tracking"
 msgstr ""
 
-#: kstarsactions.cpp:1191
+#: kstarsactions.cpp:1251
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 degrees"
 msgstr ""
 
-#: kstarsactions.cpp:1194
+#: kstarsactions.cpp:1254
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcminutes"
 msgstr ""
 
-#: kstarsactions.cpp:1198
+#: kstarsactions.cpp:1258
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcseconds"
 msgstr ""
 
-#: kstarsactions.cpp:1212
+#: kstarsactions.cpp:1272
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr ""
 
-#: kstarsactions.cpp:1213
+#: kstarsactions.cpp:1273
 msgid "Enter a field-of-view angle in degrees: "
 msgstr ""
 
-#: kstarsactions.cpp:1345
+#: kstarsactions.cpp:1405
 msgid "Attempt to determine from image"
 msgstr ""
 
-#: kstarsactions.cpp:1346
+#: kstarsactions.cpp:1406
 msgid "Eyepiece View: Choose a field-of-view"
 msgstr ""
 
-#: kstarsactions.cpp:1346
+#: kstarsactions.cpp:1406
 msgid "FOV to render eyepiece view for:"
 msgstr ""
 
