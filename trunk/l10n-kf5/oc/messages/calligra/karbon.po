@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:48+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,6 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:917
+msgctxt "(qtundo-format)"
+msgid "Boolean Operation"
+msgstr ""
 
 #. i18n: ectx: Menu (object_order)
 #: data/karbon.rc:16 data/karbon.rc:77
@@ -135,6 +140,18 @@ msgstr "Propietats"
 msgid "Flatness:"
 msgstr ""
 
+#: plugins/flattenpath/KarbonPathFlattenCommand.cpp:163
+#, fuzzy
+#| msgid "Pattern"
+msgctxt "(qtundo-format)"
+msgid "Flatten path"
+msgstr "Motiu"
+
+#: plugins/refinepath/KarbonPathRefineCommand.cpp:41
+msgctxt "(qtundo-format)"
+msgid "Refine path"
+msgstr ""
+
 #: plugins/refinepath/RefinePathPlugin.cpp:64
 #, kde-format
 msgid "&Refine Path..."
@@ -148,6 +165,12 @@ msgstr ""
 #: plugins/refinepath/RefinePathPlugin.cpp:112
 #, kde-format
 msgid "Subdivisions:"
+msgstr ""
+
+#: plugins/roundcorners/RoundCornersCommand.cpp:41
+#: plugins/roundcorners/RoundCornersPlugin.cpp:95
+msgctxt "(qtundo-format)"
+msgid "Round Corners"
 msgstr ""
 
 #: plugins/roundcorners/RoundCornersPlugin.cpp:66
@@ -164,6 +187,11 @@ msgstr ""
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:146
 #, kde-format
 msgid "Radius:"
+msgstr ""
+
+#: plugins/whirlpinch/KarbonWhirlPinchCommand.cpp:108
+msgctxt "(qtundo-format)"
+msgid "Whirl & pinch"
 msgstr ""
 
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:68
@@ -197,6 +225,22 @@ msgstr "Angle :"
 #, kde-format
 msgid "Pinch:"
 msgstr ""
+
+#: ui/commands/KarbonLayerReorderCommand.cpp:37
+#: ui/commands/KarbonLayerReorderCommand.cpp:46
+#, fuzzy
+#| msgid "Layer"
+msgctxt "(qtundo-format)"
+msgid "Raise Layer"
+msgstr "Jaç"
+
+#: ui/commands/KarbonLayerReorderCommand.cpp:39
+#: ui/commands/KarbonLayerReorderCommand.cpp:48
+#, fuzzy
+#| msgid "Layer"
+msgctxt "(qtundo-format)"
+msgid "Lower Layer"
+msgstr "Jaç"
 
 #: ui/dialogs/KarbonConfigureDialog.cpp:45
 #, kde-format
@@ -305,6 +349,20 @@ msgstr ""
 msgid "New layer"
 msgstr ""
 
+#: ui/dockers/KarbonLayerDocker.cpp:293
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Create Layer"
+msgstr "Suprimir"
+
+#: ui/dockers/KarbonLayerDocker.cpp:317
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
+msgstr "Suprimir"
+
 #: ui/dockers/KarbonLayerDocker.cpp:319
 #, kde-format
 msgid "Could not delete all layers. At least one layer is required."
@@ -364,15 +422,20 @@ msgstr ""
 
 #: ui/dockers/KarbonLayerModel.cpp:263
 #, fuzzy, kde-format
+#| msgid "Info"
+msgid "no"
+msgstr "Info"
+
+#: ui/dockers/KarbonLayerModel.cpp:263
+#, fuzzy, kde-format
 #| msgid "Style:"
 msgid "yes"
 msgstr "Estils"
 
-#: ui/dockers/KarbonLayerModel.cpp:263
-#, fuzzy, kde-format
-#| msgid "Info"
-msgid "no"
-msgstr "Info"
+#: ui/dockers/KarbonLayerModel.cpp:464
+msgctxt "(qtundo-format)"
+msgid "Reparent shapes"
+msgstr ""
 
 #: ui/KarbonAboutData.h:35
 #, kde-format
@@ -495,6 +558,11 @@ msgstr ""
 msgid "Master Page"
 msgstr ""
 
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:560
+msgctxt "(qtundo-format)"
+msgid "Insert graphics"
+msgstr ""
+
 #: ui/KarbonView.cpp:491
 #, kde-format
 msgid "Choose Graphic to Add"
@@ -513,6 +581,26 @@ msgstr ""
 #: ui/KarbonView.cpp:536 ui/KarbonView.cpp:543
 #, kde-format
 msgid "Could not create image shape."
+msgstr ""
+
+#: ui/KarbonView.cpp:791
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally"
+msgstr ""
+
+#: ui/KarbonView.cpp:793
+msgctxt "(qtundo-format)"
+msgid "Mirror Vertically"
+msgstr ""
+
+#: ui/KarbonView.cpp:795
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally and Vertically"
+msgstr ""
+
+#: ui/KarbonView.cpp:850
+msgctxt "(qtundo-format)"
+msgid "Separate paths"
 msgstr ""
 
 #: ui/KarbonView.cpp:1028
@@ -859,12 +947,6 @@ msgstr "Emplenar"
 #~ msgstr "Visualizacion"
 
 #, fuzzy
-#~| msgid "Pattern"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Flatten Path"
-#~ msgstr "Motiu"
-
-#, fuzzy
 #~| msgid "Properties"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Properties"
@@ -881,18 +963,6 @@ msgstr "Emplenar"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Angle:"
 #~ msgstr "Angle :"
-
-#, fuzzy
-#~| msgid "Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Raise Layer"
-#~ msgstr "Jaç"
-
-#, fuzzy
-#~| msgid "Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Lower Layer"
-#~ msgstr "Jaç"
 
 #, fuzzy
 #~| msgid "Configure"
@@ -949,18 +1019,6 @@ msgstr "Emplenar"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "New layer"
 #~ msgstr "Jaç"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Layer"
-#~ msgstr "Suprimir"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Layer"
-#~ msgstr "Suprimir"
 
 #, fuzzy
 #~| msgid "Layer"

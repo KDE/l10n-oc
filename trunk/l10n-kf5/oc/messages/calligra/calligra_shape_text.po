@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -34,11 +34,12 @@ msgstr ""
 msgid "Annotation Shape"
 msgstr ""
 
-#: commands/AutoResizeCommand.cpp:36
-#, kde-format
-msgctxt "Enable Shrink To Fit"
-msgid "Enable"
-msgstr ""
+#: commands/AcceptChangeCommand.cpp:45
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Accept change"
+msgstr "Enregistrament"
 
 #: commands/AutoResizeCommand.cpp:36
 #, fuzzy, kde-format
@@ -47,6 +48,58 @@ msgstr ""
 msgctxt "Disable Shrink To Fit"
 msgid "Disable"
 msgstr "Doble"
+
+#: commands/AutoResizeCommand.cpp:36
+#, kde-format
+msgctxt "Enable Shrink To Fit"
+msgid "Enable"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:39
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Width"
+msgid "%1 Grow To Fit Width"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:42
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Height"
+msgid "%1 Grow To Fit Height"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:45
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Shrink To Fit"
+msgid "%1 Shrink To Fit"
+msgstr ""
+
+#: commands/ChangeListLevelCommand.cpp:42
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Change List Level"
+msgstr "Enregistrament"
+
+#: commands/RejectChangeCommand.cpp:47
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Reject change"
+msgstr "Enregistrament"
+
+#: commands/ShowChangesCommand.cpp:53
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Show Changes"
+msgstr "Enregistrament"
+
+#: commands/ShowChangesCommand.cpp:55
+#, fuzzy
+#| msgid "Record"
+msgctxt "(qtundo-format)"
+msgid "Hide Changes"
+msgstr "Enregistrament"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, AcceptRejectChangeDialog)
 #. i18n: ectx: property (windowTitle), widget (QDialog, TableOfContentsConfigure)
@@ -539,16 +592,16 @@ msgstr "Posicion"
 msgid "Select"
 msgstr "Seleccionar una poliça"
 
-#: dialogs/CitationInsertionDialog.cpp:52 dialogs/StyleManager.cpp:440
-#, kde-format
-msgid "Warning"
-msgstr ""
-
 #: dialogs/CitationInsertionDialog.cpp:52
 #, kde-format
 msgid ""
 "The document already contains the bibliography entry with different data.\n"
 "Do you want to adjust existing entries?"
+msgstr ""
+
+#: dialogs/CitationInsertionDialog.cpp:52 dialogs/StyleManager.cpp:440
+#, kde-format
+msgid "Warning"
 msgstr ""
 
 #: dialogs/CitationInsertionDialog.cpp:67
@@ -992,6 +1045,13 @@ msgstr ""
 #, kde-format
 msgid "Select Font"
 msgstr "Seleccionar una poliça"
+
+#: dialogs/FontDia.cpp:81
+#, fuzzy
+#| msgid "Font"
+msgctxt "(qtundo-format)"
+msgid "Font"
+msgstr "Poliça"
 
 #. i18n: ectx: property (text), widget (FormattingButton, addBibliography)
 #. i18n: ectx: property (windowTitle), widget (QDialog, InsertBibliographyDialog)
@@ -3006,20 +3066,46 @@ msgstr ""
 msgid "Press shift to not resize this"
 msgstr ""
 
+#: TextTool.cpp:950
+#, fuzzy
+#| msgid "Paragraph"
+msgctxt "(qtundo-format)"
+msgid "Change Border Formatting"
+msgstr "Paragraf"
+
+#: TextTool.cpp:1169
+#, fuzzy
+#| msgid "Custom"
+msgctxt "(qtundo-format)"
+msgid "Cut"
+msgstr "Personalizat"
+
+#: TextTool.cpp:1429
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Adjust Column Width"
+msgstr "Inserir"
+
+#: TextTool.cpp:1472
+msgctxt "(qtundo-format)"
+msgid "Adjust Row Height"
+msgstr ""
+
 #: TextTool.cpp:2245
 #, fuzzy, kde-format
 #| msgid "Tamil"
 msgid "Table"
 msgstr "Tamil"
 
-#: TextTool.cpp:2604
-#, kde-format
-msgid "Key Press"
-msgstr ""
-
 #: TextTool.cpp:2604 TextTool.cpp:2609
 #, kde-format
 msgid "Autocorrection"
+msgstr ""
+
+#: TextTool.cpp:2604
+#, kde-format
+msgid "Key Press"
 msgstr ""
 
 #: TextTool.cpp:2894
@@ -3706,12 +3792,6 @@ msgstr "Posicion"
 #~ msgstr "Posicion"
 
 #, fuzzy
-#~| msgid "Record"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Accept change"
-#~ msgstr "Enregistrament"
-
-#, fuzzy
 #~| msgctxt "Line spacing value"
 #~| msgid "Double"
 #~ msgctxt "(qtundo-format) Disable Shrink To Fit"
@@ -3725,34 +3805,10 @@ msgstr "Posicion"
 #~ msgstr "Tamil"
 
 #, fuzzy
-#~| msgid "Record"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reject change"
-#~ msgstr "Enregistrament"
-
-#, fuzzy
-#~| msgid "Record"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Show Changes"
-#~ msgstr "Enregistrament"
-
-#, fuzzy
-#~| msgid "Record"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Hide Changes"
-#~ msgstr "Enregistrament"
-
-#, fuzzy
 #~| msgid "Paragraph"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Bibliography"
 #~ msgstr "Paragraf"
-
-#, fuzzy
-#~| msgid "Font"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Font"
-#~ msgstr "Poliça"
 
 #, fuzzy
 #~| msgid "Normal"
@@ -3970,12 +4026,6 @@ msgstr "Posicion"
 #~| msgid "Paragraph"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Configure sections"
-#~ msgstr "Paragraf"
-
-#, fuzzy
-#~| msgid "Paragraph"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change font format"
 #~ msgstr "Paragraf"
 
 #, fuzzy
@@ -4434,12 +4484,6 @@ msgstr "Posicion"
 #~ msgstr "Alinhar a drecha"
 
 #, fuzzy
-#~| msgid "Insert"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Column Right"
-#~ msgstr "Inserir"
-
-#, fuzzy
 #~| msgid "Align Left"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Column"
@@ -4500,12 +4544,6 @@ msgstr "Posicion"
 #~ msgstr "Normal"
 
 #, fuzzy
-#~| msgid "Custom"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Cut"
-#~ msgstr "Personalizat"
-
-#, fuzzy
 #~| msgid "Character style"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Character"
@@ -4534,11 +4572,6 @@ msgstr "Posicion"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Text editing"
 #~ msgstr "Posicion"
-
-#, fuzzy
-#~| msgid "Record"
-#~ msgid "Change List Level"
-#~ msgstr "Enregistrament"
 
 #, fuzzy
 #~| msgid "Normal"

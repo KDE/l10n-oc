@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -434,16 +434,16 @@ msgid ""
 "Opening it in Plan may lose information."
 msgstr ""
 
-#: KPlatoXmlLoader.cpp:70
-#, kde-format
-msgid "File-Format Error"
-msgstr ""
-
 #: KPlatoXmlLoader.cpp:70 KPlatoXmlLoader.cpp:82 KPlatoXmlLoader.cpp:124
 #: kptmaindocument.cpp:209 kptmaindocument.cpp:496
 #, kde-format
 msgid "Continue"
 msgstr "Contunhar"
+
+#: KPlatoXmlLoader.cpp:70
+#, kde-format
+msgid "File-Format Error"
+msgstr ""
 
 #: KPlatoXmlLoader.cpp:79
 #, kde-format
@@ -963,6 +963,13 @@ msgstr ""
 msgid "Internal error, failed to insert file."
 msgstr ""
 
+#: kptmaindocument.cpp:988
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert project"
+msgstr "Inserir"
+
 #: kptschedulesdocker.cpp:38
 #, kde-format
 msgid "Schedule Selector"
@@ -1315,6 +1322,13 @@ msgstr "Durada"
 msgid "Reports"
 msgstr "Ressorgas"
 
+#: kptview.cpp:1682
+#, fuzzy, kde-format
+#| msgid "Duration"
+msgctxt "(qtundo-format) @info:status 1=schedule name"
+msgid "Calculate %1"
+msgstr "Durada"
+
 #: kptview.cpp:1701
 #, kde-format
 msgid "Cannot baseline. The project is already baselined."
@@ -1324,6 +1338,51 @@ msgstr ""
 #, kde-format
 msgid "This schedule is baselined. Do you want to remove the baseline?"
 msgstr ""
+
+#: kptview.cpp:1710
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Reset baseline %1"
+msgstr ""
+
+#: kptview.cpp:1712
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Baseline %1"
+msgstr ""
+
+#: kptview.cpp:1723
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Add schedule %1"
+msgstr ""
+
+#: kptview.cpp:1732
+#, fuzzy, kde-format
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Delete schedule %1"
+msgstr "Suprimir de prètzfaches"
+
+#: kptview.cpp:1741
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move schedule %1"
+msgstr ""
+
+#: kptview.cpp:1810
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Add milestone"
+msgstr "Nom del projècte :"
+
+#: kptview.cpp:1836
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Add sub-milestone"
+msgstr "Nom del projècte :"
 
 #: kptview.cpp:1877
 #, kde-format
@@ -1348,10 +1407,77 @@ msgid ""
 "schedule."
 msgstr ""
 
+#: kptview.cpp:2210 kptview.cpp:2214 kptview.cpp:2230 kptview.cpp:2254
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Delete task"
+msgid_plural "Delete tasks"
+msgstr[0] "Suprimir de prètzfaches"
+msgstr[1] "Suprimir de prètzfaches"
+
 #: kptview.cpp:2249
 #, kde-format
 msgid "This task has been scheduled. This will invalidate the schedule."
 msgstr ""
+
+#: kptview.cpp:2273
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Indent task"
+msgstr "Suprimir de prètzfaches"
+
+#: kptview.cpp:2287
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Unindent task"
+msgstr "Suprimir de prètzfaches"
+
+#: kptview.cpp:2309
+msgctxt "(qtundo-format)"
+msgid "Move task up"
+msgstr ""
+
+#: kptview.cpp:2330
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Move task down"
+msgstr "Nom del projècte :"
+
+#: kptview.cpp:2368
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Add task dependency"
+msgstr "Suprimir de prètzfaches"
+
+#: kptview.cpp:2431
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Delete task dependency"
+msgstr "Suprimir de prètzfaches"
+
+#: kptview.cpp:2470 kptview.cpp:2531
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Delete resource"
+msgid_plural "Delete resources"
+msgstr[0] "Suprimir de prètzfaches"
+msgstr[1] "Suprimir de prètzfaches"
+
+#: kptview.cpp:2475 kptview.cpp:2533
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Delete resourcegroup"
+msgid_plural "Delete resourcegroups"
+msgstr[0] "Suprimir de prètzfaches"
+msgstr[1] "Suprimir de prètzfaches"
 
 #: kptview.cpp:2484 kptview.cpp:2492
 #, kde-format
@@ -1360,11 +1486,53 @@ msgid ""
 "schedule."
 msgstr ""
 
+#: kptview.cpp:2529
+#, fuzzy
+#| msgid "Delete Tasks"
+msgctxt "(qtundo-format)"
+msgid "Delete resourcegroups and resources"
+msgstr "Suprimir de prètzfaches"
+
 #: kptview.cpp:2701
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Cannot open file:<br/><filename>%1</filename>"
 msgstr ""
+
+#: kptview.cpp:2810
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Modify name"
+msgstr "Nom del projècte :"
+
+#: kptview.cpp:2812
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Modify task name"
+msgstr "Nom del projècte :"
+
+#: kptview.cpp:2813
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Modify milestone name"
+msgstr "Nom del projècte :"
+
+#: kptview.cpp:2814
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Modify summarytask name"
+msgstr "Nom del projècte :"
+
+#: kptview.cpp:2815
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Modify project name"
+msgstr "Nom del projècte :"
 
 #: kptview.cpp:2901
 #, kde-kuit-format
@@ -2026,12 +2194,6 @@ msgstr ""
 #, fuzzy
 #~| msgid "Insert"
 #~ msgctxt "(qtundo-format)"
-#~ msgid "Insert project"
-#~ msgstr "Inserir"
-
-#, fuzzy
-#~| msgid "Insert"
-#~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Project File..."
 #~ msgstr "Inserir"
 
@@ -2069,12 +2231,6 @@ msgstr ""
 #~| msgid "Delete Tasks"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Indent Task"
-#~ msgstr "Suprimir de prètzfaches"
-
-#, fuzzy
-#~| msgid "Delete Tasks"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Unindent Task"
 #~ msgstr "Suprimir de prètzfaches"
 
 #, fuzzy
@@ -2192,86 +2348,10 @@ msgstr ""
 #~ msgstr "Ressorgas"
 
 #, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add milestone"
-#~ msgstr "Nom del projècte :"
-
-#, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add sub-milestone"
-#~ msgstr "Nom del projècte :"
-
-#, fuzzy
 #~| msgid "Tasks"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Task Colors"
 #~ msgstr "Prètzfaches"
-
-#, fuzzy
-#~| msgid "Delete Tasks"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete task"
-#~ msgid_plural "Delete tasks"
-#~ msgstr[0] "Suprimir de prètzfaches"
-#~ msgstr[1] "Suprimir de prètzfaches"
-
-#, fuzzy
-#~| msgid "Delete Tasks"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Indent task"
-#~ msgstr "Suprimir de prètzfaches"
-
-#, fuzzy
-#~| msgid "Delete Tasks"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete task dependency"
-#~ msgstr "Suprimir de prètzfaches"
-
-#, fuzzy
-#~| msgid "Delete Tasks"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resource"
-#~ msgid_plural "Delete resources"
-#~ msgstr[0] "Suprimir de prètzfaches"
-#~ msgstr[1] "Suprimir de prètzfaches"
-
-#, fuzzy
-#~| msgid "Delete Tasks"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resourcegroups and resources"
-#~ msgstr "Suprimir de prètzfaches"
-
-#, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify name"
-#~ msgstr "Nom del projècte :"
-
-#, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify task name"
-#~ msgstr "Nom del projècte :"
-
-#, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify milestone name"
-#~ msgstr "Nom del projècte :"
-
-#, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify summarytask name"
-#~ msgstr "Nom del projècte :"
-
-#, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify project name"
-#~ msgstr "Nom del projècte :"
 
 #, fuzzy
 #~| msgid "Failed to open temporary file"
