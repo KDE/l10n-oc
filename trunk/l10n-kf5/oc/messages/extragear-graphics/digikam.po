@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-05-07 02:48+0200\n"
+"POT-Creation-Date: 2017-05-08 02:50+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -12480,7 +12480,7 @@ msgid "Raw information about the ICC profile manufacturer"
 msgstr ""
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:498
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:467
 #: utilities/setup/camera/setupcamera.cpp:300
 #, kde-format
 msgid "Model"
@@ -13247,7 +13247,7 @@ msgid "Developer (2004)"
 msgstr ""
 
 #: libs/widgets/mainview/ditemtooltip.cpp:55
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:226
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:226
 #, kde-format
 msgid "unavailable"
 msgstr ""
@@ -18609,288 +18609,283 @@ msgid ""
 "risk.</p></qt>"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:117
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:110
+#, kde-format
+msgid "Error loading RAW image '%1'"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:120
+#, kde-format
+msgid "Could not read image '%1'"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:128
+#, kde-format
+msgid "Format of image '%1' is unknown"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:136
+#, kde-format
+msgid "Error loading image '%1'"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:184
+#, kde-format
+msgid "Could not save image '%1' to '%2'"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:215
+#, kde-format
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:449
+#, kde-format
+msgid "Could not open file '%1' for writing"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/galleryelementfunctor.cpp:455
+#, kde-format
+msgid "Could not save image to file '%1'"
+msgstr ""
+
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:109
 #, kde-format
 msgid "Could not find theme in '%1'"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:129
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:121
 #, kde-format
 msgid "Create directories"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:133
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:125
 #, kde-format
 msgid "Could not create folder '%1'"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:142
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:134
 #, kde-format
 msgid "Copying theme"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:159
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:151
 #, kde-format
 msgid "Could not copy theme"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:168
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:160
 #, kde-format
 msgid "Generate images and XML files"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:179
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:171
 #, kde-format
 msgid "Could not create gallery.xml"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:195
-#, fuzzy, kde-format
-#| msgid "images"
-msgid "Selected Images"
-msgstr "imatges"
-
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:304
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:273
 #, kde-format
 msgid "Generating files for \"%1\""
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:338
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:307
 #, kde-format
 msgid "Generating HTML files"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:346
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:315
 #, kde-format
 msgid "Could not load XSL file '%1'"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:355
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:324
 #, kde-format
 msgid "Could not load XML file '%1'"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:391
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:360
 #, kde-format
 msgid "Error processing XML file"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:401
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:409
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:370
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:378
 #, kde-format
 msgid "Could not open '%1' for writing"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:440
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:409
 #, kde-format
 msgid "Downloading remote files for \"%1\""
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:457
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:426
 #, kde-format
 msgid "Could not open temporary file"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:472
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:441
 #, kde-format
 msgid "Could not download %1"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:491
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:460
 #, fuzzy, kde-format
 #| msgid "Interface"
 msgid "Previous"
 msgstr "Interfaç"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_nextButton)
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:492
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:461
 #: utilities/presentation/audio/presentationaudiowidget.ui:50
 #: utilities/presentation/widgets/presentationctrlwidget.ui:51
 #, kde-format
 msgid "Next"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:493
-#, kde-format
-msgid "Collection List"
-msgstr ""
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:462
+#, fuzzy, kde-format
+#| msgid "images"
+msgid "Album List"
+msgstr "imatges"
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:494
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:463
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Original Image"
 msgstr "imatges"
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:495
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:464
 #, kde-format
 msgid "Go Up"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:497
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:466
 #, kde-format
 msgid "Make"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:499
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:468
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Image Orientation"
 msgstr "imatges"
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:500
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:469
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Image X Resolution"
 msgstr "imatges"
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:501
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:470
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Image Y Resolution"
 msgstr "imatges"
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:502
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:471
 #, kde-format
 msgid "Image Resolution Unit"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:503
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:472
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Image Date Time"
 msgstr "imatges"
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:504
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:473
 #, kde-format
 msgid "YCBCR Positioning"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:505
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:474
 #, kde-format
 msgid "Exposure Time"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:506
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:475
 #, kde-format
 msgid "F Number"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:507
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:476
 #, kde-format
 msgid "Exposure Index"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:508
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:477
 #, kde-format
 msgid "ISO Speed Ratings"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:509
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:478
 #, kde-format
 msgid "Shutter Speed Value"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:510
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:479
 #, kde-format
 msgid "Aperture Value"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:511
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:480
 #, kde-format
 msgid "Focal Length"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:512
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:481
 #, kde-format
 msgid "GPS Altitude"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:513
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:482
 #, kde-format
 msgid "GPS Latitude"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:514
+#: utilities/assistants/htmlgallery/generator/gallerygenerator.cpp:483
 #, kde-format
 msgid "GPS Longitude"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:110
-#, kde-format
-msgid "Error loading RAW image '%1'"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:120
-#, kde-format
-msgid "Could not read image '%1'"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:128
-#, kde-format
-msgid "Format of image '%1' is unknown"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:136
-#, kde-format
-msgid "Error loading image '%1'"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:184
-#, kde-format
-msgid "Could not save image '%1' to '%2'"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:215
-#, kde-format
-msgid "Could not save thumbnail for image '%1' to '%2'"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:449
-#, kde-format
-msgid "Could not open file '%1' for writing"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/generator/imagegenerationfunctor.cpp:455
-#, kde-format
-msgid "Could not save image to file '%1'"
-msgstr ""
-
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:108
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:107
 #, kde-format
 msgid "Internal Error"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:119
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:121
 #, kde-format
 msgid "Starting to generate gallery..."
 msgstr ""
 
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:124
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:129
 #, kde-format
 msgid "%1 albums to process:"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:138
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:140
 #, kde-format
 msgid "%1 items to process"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:142
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:144
 #, kde-format
 msgid "Output directory: %1"
 msgstr ""
 
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:156
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:158
 #, kde-format
 msgid "Gallery is completed, but some warnings occurred."
 msgstr ""
 
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:161
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:163
 #, kde-format
 msgid "Gallery completed."
 msgstr ""
 
-#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:170
+#: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:172
 #, kde-format
 msgid "Opening gallery in browser..."
 msgstr ""
@@ -36261,6 +36256,11 @@ msgstr ""
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "images"
+#~ msgid "Selected Images"
+#~ msgstr "imatges"
 
 #, fuzzy
 #~| msgid "Interface"
