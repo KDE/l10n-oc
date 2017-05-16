@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-05-15 03:13+0200\n"
+"POT-Creation-Date: 2017-05-16 02:54+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -723,6 +723,7 @@ msgid "N&ew..."
 msgstr ""
 
 #: app/main/digikamapp.cpp:874 app/utils/editablesearchtreeview.cpp:67
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:299
 #: utilities/setup/metadata/advancedmetadatatab.cpp:355
 #, fuzzy, kde-format
 #| msgid "&Delete"
@@ -2861,6 +2862,7 @@ msgstr ""
 #: app/views/tableview/tableview_column_digikam.cpp:78
 #: app/views/tableview/tableview_column_digikam.cpp:96
 #: libs/template/templatelist.cpp:83
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:217
 #: utilities/queuemanager/views/workflowlist.cpp:98
 #: utilities/searchwindow/searchfields.cpp:557
 #: utilities/setup/camera/setupcamera.cpp:299
@@ -5322,7 +5324,7 @@ msgid "Scanning images in individual albums..."
 msgstr ""
 
 #: libs/database/utils/scancontroller.cpp:929 libs/tags/tageditdlg.cpp:535
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:964
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:937
 #: utilities/presentation/audio/presentationaudiolist.cpp:166
 #: utilities/presentation/dialogs/presentation_mainpage.cpp:330
 #, kde-format
@@ -10086,6 +10088,7 @@ msgid "Used Filters"
 msgstr ""
 
 #: libs/imageproperties/imagepropertiesversionstab.cpp:161
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:295
 #, kde-format
 msgid "Open"
 msgstr ""
@@ -20103,13 +20106,148 @@ msgid ""
 "Fuzzy search"
 msgstr ""
 
-#: utilities/geolocation/editor/bookmark/gpsbookmarkmodelhelper.cpp:221
+#: utilities/geolocation/editor/bookmark/bookmarknode.cpp:154
+#, kde-format
+msgid "The file is not an XBEL version 1.0 file."
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarknode.cpp:239
+#, kde-format
+msgid "Unknown title"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:62
+msgid "Add Bookmark"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:71
+msgid "Type a name for the bookmark, and choose where to keep it."
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:193
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:142
+#: utilities/geolocation/editor/searches/searchwidget.cpp:228
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:194
+#: utilities/setup/album/setupcategory.cpp:107
+#: utilities/setup/camera/setupcamera.cpp:318
+#: utilities/setup/camera/setupcamera.cpp:434
+#: utilities/setup/setuptemplate.cpp:125
+#, kde-format
+msgid "&Remove"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:195
+msgid "Add Folder"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:327
+#, kde-format
+msgid "New Folder"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:57
+#, kde-format
+msgid "Remove Bookmark"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:94
+#, fuzzy, kde-format
+#| msgid "Colors"
+msgid "Insert Bookmark"
+msgstr "Colors"
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:111
+#, kde-format
+msgid "Name Change"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:116
+#, kde-format
+msgid "Address Change"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:218
+#, kde-format
+msgid "Address"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:518
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:707
+#, kde-format
+msgid ""
+"Error when loading bookmarks on line %1, column %2:\n"
+"%3"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:533
+#, kde-format
+msgid "Toolbar Bookmarks"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:544
+#, kde-format
+msgid "Menu"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:697
+#, fuzzy, kde-format
+#| msgid "&Delete"
+msgid "Open File"
+msgstr "&Suprimir"
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:699
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:720
+#, kde-format
+msgid "XBEL (*.xbel *.xml)"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:712
+#, kde-format
+msgid "Imported %1"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:718
+#, fuzzy, kde-format
+#| msgid "images"
+msgid "Save File"
+msgstr "imatges"
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:719
+#, kde-format
+msgid "%1 Bookmarks.xbel"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:726
+#, kde-format
+msgid "Export error"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:726
+#, kde-format
+msgid "error saving bookmarks"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/gpsbookmarkmodelhelper.cpp:242
 #: utilities/geolocation/editor/searches/searchresultmodelhelper.cpp:158
 #, kde-format
 msgid "1 image snapped to '%2'"
 msgid_plural "%1 images snapped to '%2'"
 msgstr[0] ""
 msgstr[1] ""
+
+#: utilities/geolocation/editor/bookmark/gpsbookmarkowner.cpp:156
+#, kde-format
+msgid "Show All Bookmarks"
+msgstr ""
+
+#: utilities/geolocation/editor/bookmark/gpsbookmarkowner.cpp:162
+#, kde-format
+msgid "Add Bookmark..."
+msgstr ""
 
 #: utilities/geolocation/editor/correlator/gpscorrelatorwidget.cpp:154
 #, kde-format
@@ -20248,113 +20386,113 @@ msgstr[1] ""
 msgid "#points"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:271
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:493
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:264
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:479
 #, kde-format
 msgid "Geolocation Editor"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:312
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:295
 #, kde-format
 msgid "Display bookmarked positions on the map."
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:331
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:313
 #, kde-format
 msgid "Layout:"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:333
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:315
 #, kde-format
 msgid "One map"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:334
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:316
 #, kde-format
 msgid "Two maps - horizontal"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:335
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:317
 #, kde-format
 msgid "Two maps - vertical"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:368
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:350
 #: utilities/geolocation/geomapwrapper/gpsimageinfosorter.cpp:188
 #, kde-format
 msgid "Sorting"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:375
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:357
 #: utilities/geolocation/geomapwrapper/gpsimageinfosorter.cpp:195
 #, kde-format
 msgid "Show oldest first"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:379
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:361
 #: utilities/geolocation/geomapwrapper/gpsimageinfosorter.cpp:199
 #, kde-format
 msgid "Show youngest first"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:419
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:397
 #, kde-format
 msgid "Details"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:420
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:398
 #, kde-format
 msgid "GPS Correlator"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:421
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:399
 #, kde-format
 msgid "Undo/Redo"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:422
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:400
 #, kde-format
 msgid "Reverse Geocoding"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:423
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:401
 #, kde-format
 msgid "Search"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:616
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:592
 #, kde-format
 msgid "Loading metadata -"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:804
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:775
 #, kde-format
 msgid "You have 1 modified image."
 msgid_plural "You have %1 modified images."
 msgstr[0] ""
 msgstr[1] ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:811
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:782
 #, kde-format
 msgid "Unsaved changes"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:812
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:783
 #, kde-format
 msgid "%1 Would you like to save the changes you made to them?"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:915
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:888
 #, kde-format
 msgid "Saving changes -"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:965
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:938
 #, kde-format
 msgid "Failed to save some information:"
 msgstr ""
 
-#: utilities/geolocation/editor/dialog/geolocationedit.cpp:994
+#: utilities/geolocation/editor/dialog/geolocationedit.cpp:967
 #, kde-format
 msgid "Edit Geolocation"
 msgstr ""
@@ -20497,105 +20635,99 @@ msgstr ""
 msgid "Unable to save changes to file"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:119
-#: utilities/geolocation/editor/searches/searchwidget.cpp:210
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:108
+#: utilities/geolocation/editor/searches/searchwidget.cpp:196
 #, kde-format
 msgid "Copy coordinates"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:121
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:110
 #, kde-format
 msgid "Paste coordinates"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:123
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:112
 #, kde-format
 msgid "Remove coordinates"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:124
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:113
 #, kde-format
 msgid "Remove altitude"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:125
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:114
 #, kde-format
 msgid "Remove uncertainty"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:126
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:663
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:115
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:646
 #, kde-format
 msgid "Remove speed"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:127
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:116
 #, kde-format
 msgid "Look up missing altitude values"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:154
-#: utilities/geolocation/editor/searches/searchwidget.cpp:243
-#, kde-format
-msgid "Bookmarks"
-msgstr ""
-
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:434
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:767
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:420
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:750
 #, kde-format
 msgid "GPS Sync"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:434
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:420
 #, kde-format
 msgid ""
 "Found more than one point on the clipboard - can only assign one point at a "
 "time."
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:493
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:479
 #, kde-format
 msgid "Could not find any coordinates on the clipboard."
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:497
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:483
 #, kde-format
 msgid "Coordinates pasted"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:529
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:515
 #, kde-format
 msgid "Bookmark selected"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:642
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:625
 #, kde-format
 msgid "Remove coordinates information"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:647
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:630
 #, kde-format
 msgid "Remove altitude information"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:653
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:636
 #, kde-format
 msgid "Remove uncertainty information"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:715
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:698
 #, kde-format
 msgid "Looking up altitudes"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:766
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:749
 #, kde-format
 msgid ""
 "Altitude lookup failed:\n"
 "%1"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:773
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:756
 #, kde-format
 msgid "Altitude looked up"
 msgstr ""
@@ -20826,55 +20958,55 @@ msgstr ""
 msgid "OSM"
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:184
+#: utilities/geolocation/editor/searches/searchwidget.cpp:170
 #, kde-format
 msgctxt "Start the search"
 msgid "Search"
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:191
+#: utilities/geolocation/editor/searches/searchwidget.cpp:177
 #, kde-format
 msgid "Clear the search results."
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:199
+#: utilities/geolocation/editor/searches/searchwidget.cpp:185
 #, kde-format
 msgid "Keep the results of old searches when doing a new search."
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:206
+#: utilities/geolocation/editor/searches/searchwidget.cpp:192
 #, kde-format
 msgid "Toggle the visibility of the search results on the map."
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:213
+#: utilities/geolocation/editor/searches/searchwidget.cpp:199
 #, kde-format
 msgid "Move selected images to this position"
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:215
+#: utilities/geolocation/editor/searches/searchwidget.cpp:201
 #, kde-format
 msgid "Remove from results list"
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:219
+#: utilities/geolocation/editor/searches/searchwidget.cpp:205
 #, kde-format
 msgid "Select which service you would like to use."
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:297
+#: utilities/geolocation/editor/searches/searchwidget.cpp:281
 #, kde-format
 msgid "Search failed"
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:297
+#: utilities/geolocation/editor/searches/searchwidget.cpp:281
 #, kde-format
 msgid ""
 "Your search failed:\n"
 "%1"
 msgstr ""
 
-#: utilities/geolocation/editor/searches/searchwidget.cpp:482
+#: utilities/geolocation/editor/searches/searchwidget.cpp:463
 #, kde-format
 msgid "1 image moved to '%2'"
 msgid_plural "%1 images moved to '%2'"
@@ -33275,14 +33407,6 @@ msgstr ""
 #, kde-format
 msgid "&Add..."
 msgstr "&Apondre..."
-
-#: utilities/setup/album/setupcategory.cpp:107
-#: utilities/setup/camera/setupcamera.cpp:318
-#: utilities/setup/camera/setupcamera.cpp:434
-#: utilities/setup/setuptemplate.cpp:125
-#, kde-format
-msgid "&Remove"
-msgstr ""
 
 #: utilities/setup/album/setupmime.cpp:93
 #, kde-format
