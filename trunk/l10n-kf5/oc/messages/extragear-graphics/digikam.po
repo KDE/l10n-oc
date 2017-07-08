@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-07 03:06+0200\n"
+"POT-Creation-Date: 2017-07-08 03:02+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2624,7 +2624,8 @@ msgstr ""
 #: libs/album/albumselectors.cpp:131 libs/album/albumselecttabs.cpp:186
 #: libs/database/utils/dbstatdlg.cpp:70 libs/models/albummodel.cpp:50
 #: utilities/assistants/htmlgallery/wizard/htmlintropage.cpp:96
-#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:112
+#: utilities/assistants/printcreator/wizard/advprintintropage.cpp:96
+#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:111
 #: utilities/assistants/videoslideshow/wizard/vidslideintropage.cpp:97
 #: utilities/kdesupport/kipi/kipiimagecollection.cpp:213
 #, kde-format
@@ -5255,7 +5256,8 @@ msgstr ""
 
 #: libs/database/utils/dbstatdlg.cpp:58
 #: utilities/assistants/htmlgallery/wizard/htmlintropage.cpp:97
-#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:113
+#: utilities/assistants/printcreator/wizard/advprintintropage.cpp:97
+#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:112
 #: utilities/assistants/videoslideshow/wizard/vidslideintropage.cpp:98
 #, fuzzy, kde-format
 #| msgid "images"
@@ -16223,7 +16225,7 @@ msgstr ""
 
 #: libs/widgets/metadata/metadatawidget.cpp:139
 #: utilities/advancedrename/parser/options/dateoption.cpp:61
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:81
+#: utilities/assistants/printcreator/tools/advprintsettings.h:48
 #: utilities/queuemanager/tools/transform/rotate.cpp:103
 #, fuzzy, kde-format
 #| msgid "Custom"
@@ -19400,7 +19402,8 @@ msgid ""
 msgstr ""
 
 #: utilities/assistants/htmlgallery/wizard/htmlintropage.cpp:94
-#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:110
+#: utilities/assistants/printcreator/wizard/advprintintropage.cpp:94
+#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:109
 #: utilities/assistants/videoslideshow/wizard/vidslideintropage.cpp:95
 #, kde-format
 msgid "&Choose image selection method:"
@@ -19983,6 +19986,28 @@ msgctxt "@title:window"
 msgid "Panorama Creator Wizard"
 msgstr ""
 
+#: utilities/assistants/printcreator/tools/advprintsettings.h:44
+#, kde-format
+msgid "Welcome to Print Creator"
+msgstr ""
+
+#: utilities/assistants/printcreator/tools/advprintsettings.h:45
+#, fuzzy, kde-format
+#| msgid "images"
+msgid "Select page layout"
+msgstr "imatges"
+
+#: utilities/assistants/printcreator/tools/advprintsettings.h:46
+#, fuzzy, kde-format
+#| msgid "Slideshow"
+msgid "Caption settings"
+msgstr "Diaporamà"
+
+#: utilities/assistants/printcreator/tools/advprintsettings.h:47
+#, kde-format
+msgid "Crop and rotate photos"
+msgstr ""
+
 #: utilities/assistants/printcreator/tools/advprintutils.cpp:79
 #, kde-format
 msgid ""
@@ -20004,10 +20029,10 @@ msgstr "እንደገና አስጀምሩ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_captions)
 #: utilities/assistants/printcreator/ui/advprintcaptionpage.ui:68
-#: utilities/assistants/printcreator/wizard/advprintcaptionpage.cpp:235
+#: utilities/assistants/printcreator/wizard/advprintcaptionpage.cpp:219
 #, fuzzy, kde-format
 #| msgid "images"
-msgid "No captions"
+msgid "No caption"
 msgstr "imatges"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_captions)
@@ -20032,6 +20057,7 @@ msgstr "Personalizat"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_captions)
 #: utilities/assistants/printcreator/ui/advprintcaptionpage.ui:88
+#: utilities/assistants/printcreator/wizard/advprintcaptionpage.cpp:224
 #, fuzzy, kde-format
 #| msgid "Custom"
 msgid "Custom format"
@@ -20200,7 +20226,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, CustomLayout)
 #: utilities/assistants/printcreator/ui/advprintcustomlayout.ui:26
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:571
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:553
 #, fuzzy, kde-format
 #| msgid "Custom"
 msgid "Custom layout"
@@ -20250,7 +20276,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_photoUnits)
 #: utilities/assistants/printcreator/ui/advprintcustomlayout.ui:309
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1867
+#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:792
 #, kde-format
 msgid "cm"
 msgstr ""
@@ -20263,7 +20289,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_photoUnits)
 #: utilities/assistants/printcreator/ui/advprintcustomlayout.ui:319
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1862
+#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:787
 #, kde-format
 msgid "inches"
 msgstr ""
@@ -20312,28 +20338,28 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_printer_choice)
 #: utilities/assistants/printcreator/ui/advprintphotopage.ui:185
-#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:196
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2077
+#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:230
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1223
 #, kde-format
 msgid "Print to PDF"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_printer_choice)
 #: utilities/assistants/printcreator/ui/advprintphotopage.ui:190
-#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:197
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2106
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2308
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2409
+#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:231
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1252
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1455
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1556
 #, kde-format
 msgid "Print to JPG"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_printer_choice)
 #: utilities/assistants/printcreator/ui/advprintphotopage.ui:195
-#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:198
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2069
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2309
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2378
+#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:232
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1215
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1456
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1525
 #, kde-format
 msgid "Print with Gimp"
 msgstr ""
@@ -20378,25 +20404,20 @@ msgstr ""
 msgid ">"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintcaptionpage.cpp:107
+#: utilities/assistants/printcreator/wizard/advprintcaptionpage.cpp:116
 #, fuzzy, kde-format
 #| msgid "Rotate"
 msgctxt "@title:column"
 msgid "Caption"
 msgstr "እንደገና አስጀምሩ"
 
-#: utilities/assistants/printcreator/wizard/advprintcaptionpage.cpp:240
-#, kde-format
-msgid "Free"
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintcroppage.cpp:85
+#: utilities/assistants/printcreator/wizard/advprintcroppage.cpp:95
 #, fuzzy, kde-format
 #| msgid "Slideshow"
 msgid "Select Output Path"
 msgstr "Diaporamà"
 
-#: utilities/assistants/printcreator/wizard/advprintcroppage.cpp:87
+#: utilities/assistants/printcreator/wizard/advprintcroppage.cpp:97
 #, fuzzy, kde-format
 #| msgid "Slideshow"
 msgid "Output Destination Path"
@@ -20459,7 +20480,7 @@ msgstr ""
 msgid "Auto rotate photo"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintintropage.cpp:70
+#: utilities/assistants/printcreator/wizard/advprintintropage.cpp:82
 #, kde-format
 msgid ""
 "<qt><p><h1><b>Welcome to Print Creator</b></h1></p><p>This assistant will "
@@ -20468,99 +20489,84 @@ msgid ""
 "collection page layout can be also used, based on Atkins algorithm.</p></qt>"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintintropage.cpp:82
+#: utilities/assistants/printcreator/wizard/advprintintropage.cpp:105
 #, kde-format
 msgctxt "@title:group"
 msgid "Optional Gimp Binaries"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:78
-#, fuzzy, kde-format
-#| msgid "images"
-msgid "Select page layout"
-msgstr "imatges"
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:79
-#, fuzzy, kde-format
-#| msgid "Slideshow"
-msgid "Caption settings"
-msgstr "Diaporamà"
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:80
-#, kde-format
-msgid "Crop and rotate photos"
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:130
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2334
-#, kde-format
-msgid "Print Creator"
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:133
-#, kde-format
-msgid "Welcome to Print Creator"
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:538
-#, kde-format
-msgid "Unsupported Paper Size"
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1051
-#, kde-format
-msgid "Photo %1 of %2"
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1141
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1148
-#, kde-format
-msgid "Page %1 of %2"
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1372
+#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:388
 #, kde-format
 msgid "Add again"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1386
+#: utilities/assistants/printcreator/wizard/advprintphotopage.cpp:402
 #: utilities/facemanagement/assignnamewidget.cpp:261
 #: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:359
 #, kde-format
 msgid "Remove"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2205
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:108
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1481
+#, kde-format
+msgid "Print Creator"
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:113
+#: utilities/assistants/sendbymail/wizard/mailwizard.cpp:93
+#: utilities/assistants/videoslideshow/wizard/vidslidewizard.cpp:96
+#, kde-format
+msgid "Albums Selection"
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:520
+#, kde-format
+msgid "Unsupported Paper Size"
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:928
+#, kde-format
+msgid "Photo %1 of %2"
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1017
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1026
+#, kde-format
+msgid "Page %1 of %2"
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1351
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgid "Overwrite File"
 msgstr "&Suprimir"
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2206
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1352
 #, kde-format
 msgid ""
 "The following file will be overwritten. Are you sure you want to overwrite "
 "it?"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2236
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1382
 #, kde-format
 msgid "Could not save file, please check your output entry."
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2262
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1409
 #, kde-format
 msgid "Could not remove the GIMP's temporary files."
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2404
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1551
 #, kde-format
 msgid ""
 "There was an error launching the external Gimp program. Please make sure it "
 "is properly installed."
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:2416
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:1563
 #, kde-format
 msgid "Empty output path."
 msgstr ""
@@ -20785,7 +20791,7 @@ msgstr ""
 
 #: utilities/assistants/sendbymail/tools/thunderbirdbinary.h:44
 #, kde-format
-msgid "Mozilla Fundation Mail Client."
+msgid "Mozilla Foundation Mail Client."
 msgstr ""
 
 #: utilities/assistants/sendbymail/wizard/mailfinalpage.cpp:127
@@ -20803,7 +20809,7 @@ msgstr ""
 msgid "<p>This view list all items to export by mail.</p>"
 msgstr ""
 
-#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:99
+#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:98
 #, kde-format
 msgid ""
 "<qt><p><h1><b>Welcome to Email Tool</b></h1></p><p>This assistant will guide "
@@ -20812,7 +20818,7 @@ msgid ""
 "accordingly with your mail service capabilities.</p></qt>"
 msgstr ""
 
-#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:121
+#: utilities/assistants/sendbymail/wizard/mailintropage.cpp:120
 #, kde-format
 msgctxt "@title:group"
 msgid "Mail client application Binaries"
@@ -20948,12 +20954,6 @@ msgstr ""
 #: utilities/assistants/sendbymail/wizard/mailwizard.cpp:92
 #, kde-format
 msgid "Welcome to Email Tool"
-msgstr ""
-
-#: utilities/assistants/sendbymail/wizard/mailwizard.cpp:93
-#: utilities/assistants/videoslideshow/wizard/vidslidewizard.cpp:96
-#, kde-format
-msgid "Albums Selection"
 msgstr ""
 
 #: utilities/assistants/sendbymail/wizard/mailwizard.cpp:94
