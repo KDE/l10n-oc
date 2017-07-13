@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-12 06:47+0200\n"
+"POT-Creation-Date: 2017-07-13 03:09+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -19282,6 +19282,7 @@ msgid "GPS Longitude"
 msgstr ""
 
 #: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:108
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:128
 #: utilities/assistants/sendbymail/wizard/mailfinalpage.cpp:119
 #: utilities/assistants/videoslideshow/wizard/vidslidefinalpage.cpp:122
 #, kde-format
@@ -19299,7 +19300,7 @@ msgid "%1 albums to process:"
 msgstr ""
 
 #: utilities/assistants/htmlgallery/wizard/htmlfinalpage.cpp:141
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:126
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:139
 #, kde-format
 msgid "%1 items to process"
 msgstr ""
@@ -19989,68 +19990,62 @@ msgctxt "@title:window"
 msgid "Panorama Creator Wizard"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprintsettings.cpp:126
+#: utilities/assistants/printcreator/manager/advprintsettings.cpp:134
 #, fuzzy, kde-format
 #| msgid "images"
 msgctxt "Output: PDF"
 msgid "Print to PDF"
 msgstr "imatges"
 
-#: utilities/assistants/printcreator/manager/advprintsettings.cpp:127
+#: utilities/assistants/printcreator/manager/advprintsettings.cpp:135
 #, fuzzy, kde-format
 #| msgid "images"
 msgctxt "Output: FILE"
 msgid "Print to Image File"
 msgstr "imatges"
 
-#: utilities/assistants/printcreator/manager/advprintsettings.cpp:128
+#: utilities/assistants/printcreator/manager/advprintsettings.cpp:136
 #, kde-format
 msgctxt "Output: GIMP"
 msgid "Print with Gimp"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprintsettings.cpp:147
+#: utilities/assistants/printcreator/manager/advprintsettings.cpp:159
 #, kde-format
 msgctxt "Image format: JPEG"
 msgid "JPEG"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprintsettings.cpp:148
+#: utilities/assistants/printcreator/manager/advprintsettings.cpp:160
 #, kde-format
 msgctxt "Image format: PNG"
 msgid "PNG"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprintsettings.cpp:149
+#: utilities/assistants/printcreator/manager/advprintsettings.cpp:161
 #, kde-format
 msgctxt "Image format: TIFF"
 msgid "TIFF"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprinttask.cpp:103
-#: utilities/assistants/printcreator/manager/advprinttask.cpp:174
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:162
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:244
+#: utilities/assistants/printcreator/manager/advprinttask.cpp:117
+#: utilities/assistants/printcreator/manager/advprinttask.cpp:192
 #, kde-format
 msgid "Processing page %1"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprinttask.cpp:122
-#: utilities/assistants/printcreator/manager/advprinttask.cpp:199
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:183
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:273
+#: utilities/assistants/printcreator/manager/advprinttask.cpp:136
+#: utilities/assistants/printcreator/manager/advprinttask.cpp:217
 #, kde-format
 msgid "Printing canceled"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprinttask.cpp:185
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:256
+#: utilities/assistants/printcreator/manager/advprinttask.cpp:203
 #, kde-format
 msgid "Could not save file %1"
 msgstr ""
 
-#: utilities/assistants/printcreator/manager/advprinttask.cpp:191
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:263
+#: utilities/assistants/printcreator/manager/advprinttask.cpp:209
 #, kde-format
 msgid "Page %1 saved as %2"
 msgstr ""
@@ -20480,12 +20475,40 @@ msgstr ""
 msgid "Auto rotate photo"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:123
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:136
 #, kde-format
 msgid "Starting to render printing..."
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:677
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:147
+#, kde-format
+msgid "Printing process aborted..."
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:190
+#, fuzzy, kde-format
+#| msgid "Slide Show"
+msgid "Printing process is not completed"
+msgstr "Diaporama"
+
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:195
+#, kde-format
+msgid "Printing process completed."
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:203
+#, kde-format
+msgid "Open destination directory in file-browser."
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:225
+#, kde-format
+msgid ""
+"There was an error to launch the external Gimp program. Please make sure it "
+"is properly installed."
+msgstr ""
+
+#: utilities/assistants/printcreator/wizard/advprintfinalpage.cpp:254
 #, kde-format
 msgid "Could not remove the GIMP's temporary files."
 msgstr ""
@@ -20557,71 +20580,64 @@ msgstr ""
 msgid "Unsupported Paper Size"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:109
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:428
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:110
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:414
 #, kde-format
 msgid "Print Creator"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:118
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:119
 #, kde-format
 msgid "Welcome to Print Creator"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:119
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:120
 #: utilities/assistants/sendbymail/wizard/mailwizard.cpp:93
 #: utilities/assistants/videoslideshow/wizard/vidslidewizard.cpp:96
 #, kde-format
 msgid "Albums Selection"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:120
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:121
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Select Page Layout"
 msgstr "imatges"
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:121
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:122
 #, fuzzy, kde-format
 #| msgid "Slideshow"
 msgid "Caption Settings"
 msgstr "Diaporamà"
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:122
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:123
 #, kde-format
 msgid "Crop and Rotate Photos"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:123
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:124
 #, fuzzy, kde-format
 #| msgid "Slideshow"
 msgid "Images Output Settings"
 msgstr "Diaporamà"
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:124
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:125
 #, kde-format
 msgid "Render Printing"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:249
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:247
 #, kde-format
 msgid "Photo %1 of %2"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:346
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:354
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:344
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:352
 #, kde-format
 msgid "Page %1 of %2"
 msgstr ""
 
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:501
-#, kde-format
-msgid ""
-"There was an error to launch the external Gimp program. Please make sure it "
-"is properly installed."
-msgstr ""
-
-#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:530
+#: utilities/assistants/printcreator/wizard/advprintwizard.cpp:496
 #, kde-format
 msgid ""
 "Unable to create a temporary folder. Please make sure you have proper "
