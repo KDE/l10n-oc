@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-11-24 02:55+0100\n"
+"POT-Creation-Date: 2017-11-25 02:54+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -9626,7 +9626,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
 #. i18n: ectx: property (title), widget (QGroupBox, otherBox)
-#: libs/image/filter/kis_filter.cc:80
+#: libs/image/filter/kis_filter.cc:80 libs/widgets/KoConfigAuthorPage.cpp:101
 #: plugins/extensions/metadataeditor/editors/exif.ui:442
 #: plugins/filters/indexcolors/kiswdgindexcolors.ui:290
 #, kde-format
@@ -10031,7 +10031,7 @@ msgid "Processing"
 msgstr "Pression"
 
 #: libs/image/kis_psd_layer_style.cpp:99
-#: libs/ui/KisApplicationArguments.cpp:335 libs/ui/KisDocument.cpp:1518
+#: libs/ui/KisApplicationArguments.cpp:335 libs/ui/KisDocument.cpp:1531
 #: libs/ui/KisMainWindow.cpp:1082 libs/ui/KisMainWindow.cpp:1373
 #: libs/ui/KisMainWindow.cpp:1392 plugins/impex/libkra/kis_kra_saver.cpp:83
 #, kde-format
@@ -10611,7 +10611,7 @@ msgstr "Saturacion :"
 #. i18n: ectx: property (text), item, widget (QComboBox, editSubjectDistanceRange)
 #. i18n: ectx: property (text), item, widget (QComboBox, editFlashMode)
 #. i18n: ectx: property (text), item, widget (QComboBox, editLightSource)
-#: libs/odf/KoDocumentInfo.cpp:56 libs/ui/kis_paintop_options_model.cpp:49
+#: libs/odf/KoDocumentInfo.cpp:54 libs/ui/kis_paintop_options_model.cpp:49
 #: plugins/extensions/metadataeditor/editors/exif.ui:407
 #: plugins/extensions/metadataeditor/editors/exif.ui:464
 #: plugins/extensions/metadataeditor/editors/exif.ui:569
@@ -12487,9 +12487,9 @@ msgstr ""
 #: libs/ui/kis_layer_manager.cc:906 libs/ui/KisApplication.cpp:733
 #: libs/ui/KisApplication.cpp:736 libs/ui/KisApplication.cpp:758
 #: libs/ui/KisApplication.cpp:784 libs/ui/KisApplication.cpp:805
-#: libs/ui/KisDocument.cpp:605 libs/ui/KisDocument.cpp:980
-#: libs/ui/KisDocument.cpp:1062 libs/ui/KisDocument.cpp:1102
-#: libs/ui/KisDocument.cpp:1110 libs/ui/KisMainWindow.cpp:814
+#: libs/ui/KisDocument.cpp:605 libs/ui/KisDocument.cpp:993
+#: libs/ui/KisDocument.cpp:1075 libs/ui/KisDocument.cpp:1115
+#: libs/ui/KisDocument.cpp:1123 libs/ui/KisMainWindow.cpp:814
 #: libs/ui/KisMainWindow.cpp:900 libs/ui/KisMainWindow.cpp:913
 #: libs/ui/KisMainWindow.cpp:963 libs/ui/KisMainWindow.cpp:1692
 #: libs/ui/KisMainWindow.cpp:1722 libs/ui/KisMainWindow.cpp:1799
@@ -12690,6 +12690,7 @@ msgstr "Autor"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libs/ui/dialogs/kis_dlg_preferences.cc:1099
+#: libs/widgets/KoConfigAuthorPage.cpp:93
 #: libs/widgets/KoDocumentInfoDlg.cpp:120
 #: plugins/flake/textshape/dialogs/AcceptRejectChangeDialog.ui:109
 #, kde-format
@@ -13018,15 +13019,12 @@ msgstr ""
 msgid "Absolute colorimetric"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: ectx: property (text), widget (QLabel, brushNameLbl)
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #: libs/ui/forms/wdgautogradient.ui:25
 #: libs/ui/forms/wdgstopgradienteditor.ui:19 libs/ui/KisColorsetChooser.cpp:113
-#: libs/widgets/KoConfigAuthorPage.ui:89
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:20
 #: plugins/dockers/tasksetdocker/tasksetdocker_dock.cpp:189
 #: plugins/extensions/pykrita/plugin/info.ui:213
 #: plugins/impex/brush/wdg_export_gih.ui:37
@@ -14625,7 +14623,7 @@ msgstr "Camin"
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #. i18n: ectx: attribute (title), widget (QWidget, textureOptionsTab)
 #: libs/ui/forms/wdgpaintactioneditor.ui:24
-#: libs/ui/KisImportExportManager.cpp:505
+#: libs/ui/KisImportExportManager.cpp:510
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:59
 #, kde-format
 msgid "Options"
@@ -17174,69 +17172,69 @@ msgstr "Seleccion"
 msgid "Finished saving %1"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:750
+#: libs/ui/KisDocument.cpp:756
 #, fuzzy, kde-format
 msgid "Autosaving... %1"
 msgstr "Espaciament"
 
-#: libs/ui/KisDocument.cpp:753
+#: libs/ui/KisDocument.cpp:759
 #, kde-format
 msgid "Autosaving..."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:776
+#: libs/ui/KisDocument.cpp:782
 #, kde-format
 msgctxt "%1 --- failing file name, %2 --- error mesage"
 msgid "Error during autosaving %1: %2"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:789
+#: libs/ui/KisDocument.cpp:795
 #, kde-format
 msgid "Finished autosaving %1"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:965
+#: libs/ui/KisDocument.cpp:978
 #, kde-format
 msgid ""
 "Malformed URL\n"
 "%1"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:981
+#: libs/ui/KisDocument.cpp:994
 #, kde-format
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open the autosaved file instead?"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1062
+#: libs/ui/KisDocument.cpp:1075
 #, kde-format
 msgid "File %1 does not exist."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1092
+#: libs/ui/KisDocument.cpp:1105
 #, fuzzy, kde-format
 msgid "Opening document"
 msgstr "Enregistrar lo document"
 
-#: libs/ui/KisDocument.cpp:1103
+#: libs/ui/KisDocument.cpp:1116
 #, fuzzy, kde-format
 msgid ""
 "Could not open %2.\n"
 "Reason: %1."
 msgstr "Seleccion"
 
-#: libs/ui/KisDocument.cpp:1111
+#: libs/ui/KisDocument.cpp:1124
 #, kde-format
 msgid "There were problems opening %1."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1228
+#: libs/ui/KisDocument.cpp:1241
 #, fuzzy, kde-format
 msgid "Not Saved"
 msgstr "Indefinit"
 
-#: libs/ui/KisDocument.cpp:1574
+#: libs/ui/KisDocument.cpp:1587
 #, kde-format
 msgctxt ""
 "progress dialog message when the user closes the document that is being saved"
@@ -17365,35 +17363,35 @@ msgid ""
 "layers will be skipped."
 msgstr ""
 
-#: libs/ui/KisImportExportManager.cpp:267
+#: libs/ui/KisImportExportManager.cpp:272
 #, fuzzy, kde-format
 msgctxt "@titile:window"
 msgid "Open Audio"
 msgstr "Paleta"
 
-#: libs/ui/KisImportExportManager.cpp:346
+#: libs/ui/KisImportExportManager.cpp:351
 #, fuzzy, kde-format
 msgid "Opening document..."
 msgstr "Enregistrar lo document"
 
-#: libs/ui/KisImportExportManager.cpp:373
+#: libs/ui/KisImportExportManager.cpp:378
 #, fuzzy, kde-format
 msgid "Saving document..."
 msgstr "Enregistrar lo document"
 
-#: libs/ui/KisImportExportManager.cpp:432
+#: libs/ui/KisImportExportManager.cpp:437
 #, kde-format
 msgctxt "image conversion warning"
 msgid "The image contains <b>assistants</b>. The assistants will not be saved."
 msgstr ""
 
-#: libs/ui/KisImportExportManager.cpp:435
+#: libs/ui/KisImportExportManager.cpp:440
 #, kde-format
 msgctxt "image conversion warning"
 msgid "The image contains <b>guides</b>. The guides will not be saved."
 msgstr ""
 
-#: libs/ui/KisImportExportManager.cpp:438
+#: libs/ui/KisImportExportManager.cpp:443
 #, kde-format
 msgctxt "image conversion warning"
 msgid ""
@@ -17401,29 +17399,29 @@ msgid ""
 "will not be saved."
 msgstr ""
 
-#: libs/ui/KisImportExportManager.cpp:443
+#: libs/ui/KisImportExportManager.cpp:448
 #, kde-format
 msgid "Error: cannot save this image as a %1."
 msgstr ""
 
-#: libs/ui/KisImportExportManager.cpp:452
+#: libs/ui/KisImportExportManager.cpp:457
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Krita: Export Error"
 msgstr "Vertical :"
 
-#: libs/ui/KisImportExportManager.cpp:475
+#: libs/ui/KisImportExportManager.cpp:480
 #, kde-format
 msgctxt "Keep the extra space at the end of the sentence, please"
 msgid "Warning: saving as %1 will lose information from your image.    "
 msgstr ""
 
-#: libs/ui/KisImportExportManager.cpp:486
+#: libs/ui/KisImportExportManager.cpp:491
 #, kde-format
 msgid "You will lose information when saving this image as a %1."
 msgstr ""
 
-#: libs/ui/KisImportExportManager.cpp:514
+#: libs/ui/KisImportExportManager.cpp:519
 #, kde-format
 msgid "Also save your image as a Krita file."
 msgstr ""
@@ -17908,7 +17906,7 @@ msgctxt "choice for author profile"
 msgid "Anonymous"
 msgstr ""
 
-#: libs/ui/KisViewManager.cpp:1354 libs/widgets/KoConfigAuthorPage.cpp:82
+#: libs/ui/KisViewManager.cpp:1354 libs/widgets/KoConfigAuthorPage.cpp:111
 #, fuzzy, kde-format
 msgid "Default Author Profile"
 msgstr "Defaut"
@@ -20165,38 +20163,238 @@ msgstr "Dobrir un document"
 msgid "Add / Remove Colors..."
 msgstr "Colors"
 
-#: libs/widgets/KoConfigAuthorPage.cpp:64
+#: libs/widgets/KoConfigAuthorPage.cpp:78
 #, kde-format
 msgid "Add new author profile (starts out as a copy of current)"
 msgstr ""
 
-#: libs/widgets/KoConfigAuthorPage.cpp:68
+#: libs/widgets/KoConfigAuthorPage.cpp:82
 #, fuzzy, kde-format
 msgid "Delete the author profile"
 msgstr "Defaut"
 
-#: libs/widgets/KoConfigAuthorPage.cpp:142
+#: libs/widgets/KoConfigAuthorPage.cpp:92
+#, kde-format
+msgid "Adapter"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:92
+#, fuzzy, kde-format
+msgid "Animator"
+msgstr "Rotacion"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:92
+#, fuzzy, kde-format
+msgid "Artist"
+msgstr "Tèxt"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:93
+#, fuzzy, kde-format
+msgid "Art Director"
+msgstr "Tot seleccionar"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:93
+#, fuzzy, kde-format
+msgid "Assistant Editor"
+msgstr "Ellipsa"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:94
+#, fuzzy, kde-format
+msgid "Background Artist"
+msgstr "Color de fons"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:94
+#, kde-format
+msgid "Cartoonist"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:94
+#, fuzzy, kde-format
+#| msgid "Colors"
+msgid "Colorist"
+msgstr "Colors"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:95
+#, kde-format
+msgid "Concept Artist"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:95
+#, fuzzy, kde-format
+msgid "Corrector"
+msgstr "Seleccion"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:95
+#, kde-format
+msgid "Cover Artist"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:96
+#, fuzzy, kde-format
+msgid "Creator"
+msgstr "Crear"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:96
+#, fuzzy, kde-format
+msgid "Designer"
+msgstr "Ellipsa"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:96
+#, fuzzy, kde-format
+msgid "Editor"
+msgstr "Posicion"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:97
+#, kde-format
+msgid "Inker"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:97
+#, fuzzy, kde-format
+msgid "Letterer"
+msgstr "Motiu"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:97
+#, fuzzy, kde-format
+msgid "Matte Painter"
+msgstr "Filtre"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:98
+#, fuzzy, kde-format
+msgid "Painter"
+msgstr "Filtre"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:98
+#, fuzzy, kde-format
+msgid "Penciller"
+msgstr "Ellipsa"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:98
+#, kde-format
+msgid "Proofreader"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:99
+#, fuzzy, kde-format
+msgid "Pixel Artist"
+msgstr "Largor :"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:99
+#, fuzzy, kde-format
+msgid "Redliner"
+msgstr "Linha"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:99
+#, kde-format
+msgid "Sprite Artist"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:100
+#, fuzzy, kde-format
+msgid "Texture Artist"
+msgstr "Propietats"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:100
+#, fuzzy, kde-format
+msgid "Translator"
+msgstr "Triangle"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:100
+#, kde-format
+msgid "Typographer"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:101
+#, kde-format
+msgid "Writer"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, sourceType)
+#. i18n: ectx: property (text), item, widget (QListWidget, bibTypes)
+#: libs/widgets/KoConfigAuthorPage.cpp:104
+#: plugins/flake/textshape/dialogs/CitationInsertionDialog.ui:80
+#: plugins/flake/textshape/dialogs/InsertBibliographyDialog.ui:81
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email"
+msgstr "Adreça electronica :"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:104
+#, fuzzy, kde-format
+#| msgid "Fax:"
+msgid "Fax"
+msgstr "Fax :"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:104
+#, fuzzy, kde-format
+msgid "Homepage"
+msgstr "Pagina"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:104
+#, fuzzy, kde-format
+msgid "Post Address"
+msgstr "Pression"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:104
+#, kde-format
+msgid "Telephone"
+msgstr ""
+
+#: libs/widgets/KoConfigAuthorPage.cpp:107
+#, fuzzy, kde-format
+#| msgid "Country:"
+msgid "Entry"
+msgstr "Païs :"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: libs/widgets/KoConfigAuthorPage.cpp:107
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:106
+#: plugins/flake/textshape/dialogs/AcceptRejectChangeDialog.ui:135
+#, fuzzy, kde-format
+msgid "Type"
+msgstr "&Tipe"
+
+#: libs/widgets/KoConfigAuthorPage.cpp:295
 #, kde-format
 msgid "Name (not duplicate or blank name):"
 msgstr ""
 
-#: libs/widgets/KoConfigAuthorPage.cpp:142
+#: libs/widgets/KoConfigAuthorPage.cpp:295
 #, fuzzy, kde-format
 msgid "Name of Profile"
 msgstr "Perfil :"
 
-#. i18n: ectx: property (text), widget (QLabel, lblPhoneWork)
-#: libs/widgets/KoConfigAuthorPage.ui:22
+#: libs/widgets/KoConfigAuthorPage.cpp:348
+#, kde-format
+msgid "New Contact Info"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lblInitialsDesc)
+#: libs/widgets/KoConfigAuthorPage.ui:48
+#: libs/widgets/koDocumentInfoAuthorWidget.ui:27
 #, fuzzy, kde-format
-msgid "Wor&k Number:"
-msgstr "Nombre"
+msgid "Initials:"
+msgstr "Sens nom"
+
+#. i18n: ectx: property (text), widget (QLabel, lblPositionDesc)
+#: libs/widgets/KoConfigAuthorPage.ui:61
+#: libs/widgets/koDocumentInfoAuthorWidget.ui:67
+#, kde-format
+msgid "Position:"
+msgstr "Posicion :"
+
+#. i18n: ectx: property (text), widget (QLabel, lblFirst)
+#: libs/widgets/KoConfigAuthorPage.ui:80
+#, fuzzy, kde-format
+msgid "Given Name:"
+msgstr "Nom :"
 
 #. i18n: ectx: property (text), widget (QLabel, lblTitleDesc)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
-#: libs/widgets/KoConfigAuthorPage.ui:35
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:60
+#: libs/widgets/KoConfigAuthorPage.ui:103
+#: libs/widgets/koDocumentInfoAuthorWidget.ui:50
 #: plugins/extensions/metadataeditor/editors/dublincore.ui:83
 #: plugins/extensions/pykrita/plugin/info.ui:174
 #: plugins/flake/textshape/dialogs/CitationInsertionDialog.ui:183
@@ -20205,73 +20403,44 @@ msgstr "Nombre"
 msgid "Title:"
 msgstr "Títol:"
 
-#. i18n: ectx: property (text), widget (QLabel, lblPostalDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:57
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:154
+#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
+#: libs/widgets/KoConfigAuthorPage.ui:119
+#: libs/widgets/koDocumentInfoAuthorWidget.ui:114
 #, fuzzy, kde-format
-msgid "Postal code:"
-msgstr "parcial"
-
-#. i18n: ectx: property (text), widget (QLabel, lblCountryDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:76
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:174
-#, kde-format
-msgid "Country:"
-msgstr "Païs :"
+#| msgid "Name:"
+msgid "Nickname:"
+msgstr "Nom :"
 
 #. i18n: ectx: property (text), widget (QLabel, lblCompanyDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:122
+#: libs/widgets/KoConfigAuthorPage.ui:129
 #, fuzzy, kde-format
 msgid "Co&mpany:"
 msgstr "Ensenhador"
 
-#. i18n: ectx: property (text), widget (QLabel, lblStreetDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:135
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:144
-#, kde-format
-msgid "Street:"
-msgstr "Carrièra :"
-
-#. i18n: ectx: property (text), widget (QLabel, lblPhoneHome)
-#: libs/widgets/KoConfigAuthorPage.ui:148
+#. i18n: ectx: property (text), widget (QLabel, LabelFamily)
+#: libs/widgets/KoConfigAuthorPage.ui:142
 #, fuzzy, kde-format
-#| msgid "Number"
-msgid "Home Number:"
-msgstr "Nombre"
+msgid "Family Name:"
+msgstr "&Nom :"
 
-#. i18n: ectx: property (text), widget (QLabel, lblInitialsDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:164
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:37
+#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
+#: libs/widgets/KoConfigAuthorPage.ui:152
 #, fuzzy, kde-format
-msgid "Initials:"
-msgstr "Sens nom"
-
-#. i18n: ectx: property (text), widget (QLabel, lblPositionDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:180
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:77
-#, kde-format
-msgid "Position:"
+msgid "Add contact info"
 msgstr "Posicion :"
 
-#. i18n: ectx: property (text), widget (QLabel, lblEmailDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:196
+#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
+#: libs/widgets/KoConfigAuthorPage.ui:159
 #, fuzzy, kde-format
-#| msgid "Email:"
-msgid "E&mail:"
-msgstr "Adreça electronica :"
+msgid "Remove contact info"
+msgstr "&Suprimir "
 
-#. i18n: ectx: property (text), widget (QLabel, lblCityDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:209
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: libs/widgets/KoConfigAuthorPage.ui:166
 #, fuzzy, kde-format
-#| msgid "Opacity:"
-msgid "Cit&y:"
-msgstr "Opacitat :"
-
-#. i18n: ectx: property (text), widget (QLabel, lblFaxDesc)
-#: libs/widgets/KoConfigAuthorPage.ui:225
-#, fuzzy, kde-format
-msgid "Fa&x Number:"
-msgstr "Nombre"
+#| msgid "Contrast:"
+msgid "Contact:"
+msgstr "Contrast :"
 
 #: libs/widgets/KoDialog.cpp:264
 #, kde-format
@@ -20393,44 +20562,22 @@ msgid "Language:"
 msgstr "Suprimir pagina"
 
 #. i18n: ectx: property (text), widget (QLabel, lblCompanyDesc)
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:94
+#: libs/widgets/koDocumentInfoAuthorWidget.ui:84
 #, fuzzy, kde-format
 msgid "Company:"
 msgstr "Ensenhador"
 
-#. i18n: ectx: property (text), widget (QLabel, lblEmailDesc)
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:104
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:460
-#: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:276
-#, kde-format
-msgid "Email:"
-msgstr "Adreça electronica :"
+#. i18n: ectx: property (text), widget (QLabel, lblLastName)
+#: libs/widgets/koDocumentInfoAuthorWidget.ui:127
+#, fuzzy, kde-format
+msgid "Last Name:"
+msgstr "Colors nomenadas"
 
-#. i18n: ectx: property (text), widget (QLabel, lblPhoneHome)
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:114
-#, kde-format
-msgid "Telephone (home):"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, lblPhoneWork)
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:124
-#, kde-format
-msgid "Telephone (work):"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, lblFaxDesc)
+#. i18n: ectx: property (text), widget (QLabel, lblfirstname)
 #: libs/widgets/koDocumentInfoAuthorWidget.ui:134
-#, kde-format
-msgid "Fax:"
-msgstr "Fax :"
-
-#. i18n: ectx: property (text), widget (QLabel, lblCityDesc)
-#: libs/widgets/koDocumentInfoAuthorWidget.ui:164
-#, kde-format
-msgid "City:"
-msgstr "Ciutat :"
+#, fuzzy, kde-format
+msgid "First Name:"
+msgstr "Filtre"
 
 #: libs/widgets/KoDocumentInfoDlg.cpp:85
 #, kde-format
@@ -21552,7 +21699,7 @@ msgstr "parcial"
 msgid "seconds (s)"
 msgstr ""
 
-#: libs/widgetutils/KoFileDialog.cpp:398
+#: libs/widgetutils/KoFileDialog.cpp:399
 #, kde-format
 msgid "All supported formats"
 msgstr ""
@@ -25982,13 +26129,6 @@ msgstr "Rotacion"
 msgid "Key"
 msgstr "Clau :"
 
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:106
-#: plugins/flake/textshape/dialogs/AcceptRejectChangeDialog.ui:135
-#, fuzzy, kde-format
-msgid "Type"
-msgstr "&Tipe"
-
 #: plugins/extensions/modify_selection/dlg_border_selection.cc:31
 #, fuzzy, kde-format
 msgid "Border Selection"
@@ -26783,6 +26923,14 @@ msgstr "Auto"
 #, kde-format
 msgid "License:"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:460
+#: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:276
+#, kde-format
+msgid "Email:"
+msgstr "Adreça electronica :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:467
@@ -29397,15 +29545,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Conference"
 msgstr "Preferéncias"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, sourceType)
-#. i18n: ectx: property (text), item, widget (QListWidget, bibTypes)
-#: plugins/flake/textshape/dialogs/CitationInsertionDialog.ui:80
-#: plugins/flake/textshape/dialogs/InsertBibliographyDialog.ui:81
-#, fuzzy, kde-format
-#| msgid "Email:"
-msgid "Email"
-msgstr "Adreça electronica :"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, sourceType)
 #: plugins/flake/textshape/dialogs/CitationInsertionDialog.ui:85
@@ -38881,6 +39020,39 @@ msgid "Work Recursively"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Wor&k Number:"
+#~ msgstr "Nombre"
+
+#, fuzzy
+#~ msgid "Postal code:"
+#~ msgstr "parcial"
+
+#~ msgid "Street:"
+#~ msgstr "Carrièra :"
+
+#, fuzzy
+#~| msgid "Number"
+#~ msgid "Home Number:"
+#~ msgstr "Nombre"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgid "E&mail:"
+#~ msgstr "Adreça electronica :"
+
+#, fuzzy
+#~| msgid "Opacity:"
+#~ msgid "Cit&y:"
+#~ msgstr "Opacitat :"
+
+#, fuzzy
+#~ msgid "Fa&x Number:"
+#~ msgstr "Nombre"
+
+#~ msgid "City:"
+#~ msgstr "Ciutat :"
+
+#, fuzzy
 #~ msgid "Chalk"
 #~ msgstr "Personalizat"
 
@@ -45401,11 +45573,6 @@ msgstr ""
 #~ msgstr "Perfil"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format) action"
-#~ msgid "Artistic"
-#~ msgstr "Tèxt"
-
-#, fuzzy
 #~| msgid "Colors"
 #~ msgctxt "(qtundo-format) action"
 #~ msgid "Colors"
@@ -47779,11 +47946,6 @@ msgstr ""
 #~ msgstr "Aleatòri"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Pencil"
-#~ msgstr "Ellipsa"
-
-#, fuzzy
 #~| msgid "Standard"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Standard"
@@ -48341,11 +48503,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Could not find %1"
 #~ msgstr "Seleccion"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format) Page size"
-#~ msgid "US Letter"
-#~ msgstr "Motiu"
 
 #, fuzzy
 #~| msgid "Screen"
@@ -55275,10 +55432,6 @@ msgstr ""
 #~ msgctxt "@title:window"
 #~ msgid "Fatal Error"
 #~ msgstr "Vertical :"
-
-#, fuzzy
-#~ msgid "Maintainer"
-#~ msgstr "Filtre"
 
 #~ msgid "Printing"
 #~ msgstr "Estampatge"
