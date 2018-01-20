@@ -19,42 +19,84 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Qt-Contexts: true\n"
 
-#: common/KReportDesign.cpp:76
+#: common/KReportDesign.cpp:151
 #, fuzzy
 #| msgid "Save Document"
 msgctxt "KReportDesign|"
 msgid "Could not parse XML document."
 msgstr "Enregistrar lo document"
 
-#: common/KReportItemBase.cpp:28
+#: common/KReportDesign.cpp:160
+#, fuzzy
+#| msgid "Save Document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Enregistrar lo document"
+
+#: common/KReportItemBase.cpp:75
 #, fuzzy
 #| msgid "Name:"
 msgctxt "KReportItemBase|"
 msgid "Name"
 msgstr "Nom"
 
-#: common/KReportItemBase.cpp:28
+#: common/KReportItemBase.cpp:75
 #, fuzzy
 #| msgid "Object"
 msgctxt "KReportItemBase|"
 msgid "Object Name"
 msgstr "Objècte"
 
-#: common/KReportItemLine.cpp:75
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position:"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Posicion :"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Time:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Talha :"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Suprimir"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "Position:"
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Posicion :"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position:"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Posicion :"
+
+#: common/KReportItemLine.cpp:83
 #, fuzzy
 #| msgid "Lighten"
 msgctxt "KReportItemLine|"
 msgid "Line Weight"
 msgstr "Esclarzir"
 
-#: common/KReportItemLine.cpp:78
+#: common/KReportItemLine.cpp:85
 #, fuzzy
 #| msgid "Color"
 msgctxt "KReportItemLine|"
 msgid "Line Color"
 msgstr "Color"
 
-#: common/KReportItemLine.cpp:79
+#: common/KReportItemLine.cpp:86
 #, fuzzy
 #| msgid "Insert Break"
 msgctxt "KReportItemLine|"
@@ -89,123 +131,293 @@ msgstr ""
 
 #: common/KReportPageSize.cpp:40
 #, fuzzy
-#| msgid "Screen"
+#| msgid "Custom"
 msgctxt "KReportPageFormat|"
-msgid "Screen"
-msgstr "Ecran"
+msgid "Custom"
+msgstr "Personalizat"
 
-#: common/KReportPosition.cpp:29
+#: common/KReportPageSize.cpp:41
 #, fuzzy
-#| msgid "Position:"
-msgctxt "KReportPosition|"
-msgid "Position"
-msgstr "Posicion :"
+#| msgid "B"
+msgctxt "KReportPageFormat|"
+msgid "B6"
+msgstr "B"
 
-#: common/KReportSection.cpp:103
+#: common/KReportPageSize.cpp:42
 #, fuzzy
-#| msgid "Height:"
-msgctxt "KReportSection|"
-msgid "Height"
-msgstr "Nautor"
+#| msgid "B"
+msgctxt "KReportPageFormat|"
+msgid "B5"
+msgstr "B"
 
-#: common/KReportSection.cpp:104
+#: common/KReportPageSize.cpp:43
 #, fuzzy
-#| msgid "&Background color:"
-msgctxt "KReportSection|"
-msgid "Background Color"
-msgstr "Color de &fons :"
+#| msgid "B"
+msgctxt "KReportPageFormat|"
+msgid "B4"
+msgstr "B"
 
-#: common/KReportSectionData.cpp:103
+#: common/KReportPageSize.cpp:44
+msgctxt "KReportPageFormat|"
+msgid "Executive"
+msgstr ""
+
+#: common/KReportPageSize.cpp:45
+msgctxt "KReportPageFormat|"
+msgid "A0"
+msgstr ""
+
+#: common/KReportPageSize.cpp:46
+msgctxt "KReportPageFormat|"
+msgid "A1"
+msgstr ""
+
+#: common/KReportPageSize.cpp:47
+msgctxt "KReportPageFormat|"
+msgid "A2"
+msgstr ""
+
+#: common/KReportPageSize.cpp:48
+msgctxt "KReportPageFormat|"
+msgid "A6"
+msgstr ""
+
+#: common/KReportPageSize.cpp:49
+msgctxt "KReportPageFormat|"
+msgid "A7"
+msgstr ""
+
+#: common/KReportPageSize.cpp:50
+msgctxt "KReportPageFormat|"
+msgid "A8"
+msgstr ""
+
+#: common/KReportPageSize.cpp:51
+msgctxt "KReportPageFormat|"
+msgid "A9"
+msgstr ""
+
+#: common/KReportPageSize.cpp:52
+#, fuzzy
+#| msgid "B"
+msgctxt "KReportPageFormat|"
+msgid "B0"
+msgstr "B"
+
+#: common/KReportPageSize.cpp:53
+#, fuzzy
+#| msgid "B"
+msgctxt "KReportPageFormat|"
+msgid "B1"
+msgstr "B"
+
+#: common/KReportPageSize.cpp:54
+msgctxt "KReportPageFormat|"
+msgid "B10"
+msgstr ""
+
+#: common/KReportPageSize.cpp:55
+#, fuzzy
+#| msgid "B"
+msgctxt "KReportPageFormat|"
+msgid "B2"
+msgstr "B"
+
+#: common/KReportPageSize.cpp:56
+#, fuzzy
+#| msgid "B"
+msgctxt "KReportPageFormat|"
+msgid "B3"
+msgstr "B"
+
+#: common/KReportPageSize.cpp:57
+msgctxt "KReportPageFormat|"
+msgid "C5E"
+msgstr ""
+
+#: common/KReportPageSize.cpp:58
+#, fuzzy
+#| msgid "Comma"
+msgctxt "KReportPageFormat|"
+msgid "Comm10"
+msgstr "Virgula"
+
+#: common/KReportPageSize.cpp:59
+msgctxt "KReportPageFormat|"
+msgid "ISO DL"
+msgstr ""
+
+#: common/KReportPageSize.cpp:60
+msgctxt "KReportPageFormat|"
+msgid "US Folio"
+msgstr ""
+
+#: common/KReportPageSize.cpp:61
+msgctxt "KReportPageFormat|"
+msgid "US Ledger"
+msgstr ""
+
+#: common/KReportPageSize.cpp:62
+msgctxt "KReportPageFormat|"
+msgid "US Tabloid"
+msgstr ""
+
+#: common/KReportPageSize.cpp:63
+msgctxt "KReportPageFormat|"
+msgid "DL Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:64
+msgctxt "KReportPageFormat|"
+msgid "C6 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:65
+msgctxt "KReportPageFormat|"
+msgid "C6/5 Envolope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:66
+msgctxt "KReportPageFormat|"
+msgid "C5 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:67
+msgctxt "KReportPageFormat|"
+msgid "C4 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:68
+msgctxt "KReportPageFormat|"
+msgid "Monarch Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:69
+msgctxt "KReportPageFormat|"
+msgid "Personal Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:70
+msgctxt "KReportPageFormat|"
+msgid "9 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:71
+msgctxt "KReportPageFormat|"
+msgid "10 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:72
+msgctxt "KReportPageFormat|"
+msgid "11 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:73
+msgctxt "KReportPageFormat|"
+msgid "12 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:74
+msgctxt "KReportPageFormat|"
+msgid "Postcard"
+msgstr ""
+
+#: common/KReportPageSize.cpp:75
+msgctxt "KReportPageFormat|"
+msgid "Double Postcard"
+msgstr ""
+
+#: common/KReportSectionData.cpp:164
 #, fuzzy
 #| msgid "Actions"
 msgctxt "KReportSectionData|Report section"
 msgid "Section"
 msgstr "Accions"
 
-#: common/KReportSectionData.cpp:105
+#: common/KReportSectionData.cpp:166
 #, fuzzy
 #| msgid "Height:"
 msgctxt "KReportSectionData|"
 msgid "Height"
 msgstr "Nautor"
 
-#: common/KReportSectionData.cpp:106
+#: common/KReportSectionData.cpp:170
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportSectionData|"
 msgid "Background Color"
 msgstr "Color de &fons :"
 
-#: common/KReportSize.cpp:28
+#: common/KReportUnit.cpp:136
 #, fuzzy
-#| msgid "Time:"
-msgctxt "KReportSize|"
-msgid "Size"
-msgstr "Talha :"
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Apondre un grop"
 
-#: common/KReportUnit.cpp:47
+#: common/KReportUnit.cpp:138
 msgctxt "KReportUnit|"
 msgid "Millimeters (mm)"
 msgstr ""
 
-#: common/KReportUnit.cpp:49
+#: common/KReportUnit.cpp:140
 msgctxt "KReportUnit|"
 msgid "Centimeters (cm)"
 msgstr ""
 
-#: common/KReportUnit.cpp:51
+#: common/KReportUnit.cpp:142
 msgctxt "KReportUnit|"
 msgid "Decimeters (dm)"
 msgstr ""
 
-#: common/KReportUnit.cpp:53
+#: common/KReportUnit.cpp:144
 msgctxt "KReportUnit|"
 msgid "Inches (in)"
 msgstr ""
 
-#: common/KReportUnit.cpp:55
+#: common/KReportUnit.cpp:146
 msgctxt "KReportUnit|"
 msgid "Pica (pi)"
 msgstr ""
 
-#: common/KReportUnit.cpp:57
+#: common/KReportUnit.cpp:148
 msgctxt "KReportUnit|"
 msgid "Cicero (cc)"
 msgstr ""
 
-#: common/KReportUnit.cpp:59
+#: common/KReportUnit.cpp:150
 msgctxt "KReportUnit|"
 msgid "Points (pt)"
 msgstr ""
 
-#: common/KReportUnit.cpp:61
+#: common/KReportUnit.cpp:152
 msgctxt "KReportUnit|"
 msgid "Pixels (px)"
 msgstr ""
 
-#: common/KReportUnit.cpp:63
+#: common/KReportUnit.cpp:154
 msgctxt "KReportUnit|"
 msgid "Unsupported unit"
 msgstr ""
 
-#: items/check/KReportItemCheck.cpp:81
+#: items/check/KReportItemCheck.cpp:79
 #, fuzzy
 #| msgid "Close"
 msgctxt "KReportItemCheckBox|"
 msgid "Cross"
 msgstr "Crotz"
 
-#: items/check/KReportItemCheck.cpp:81
+#: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Tick"
 msgstr ""
 
-#: items/check/KReportItemCheck.cpp:81
+#: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Dot"
 msgstr ""
 
-#: items/check/KReportItemCheck.cpp:82
+#: items/check/KReportItemCheck.cpp:80
 #, fuzzy
 #| msgid "Styles"
 msgctxt "KReportItemCheckBox|"
@@ -214,453 +426,436 @@ msgstr "Estils"
 
 #: items/check/KReportItemCheck.cpp:84
 #, fuzzy
-#| msgid "Delete"
-msgctxt "KReportItemCheckBox|"
-msgid "Data Source"
-msgstr "Suprimir"
-
-#: items/check/KReportItemCheck.cpp:87
-#, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemCheckBox|"
 msgid "Foreground Color"
 msgstr "Color de &fons :"
 
-#: items/check/KReportItemCheck.cpp:89
+#: items/check/KReportItemCheck.cpp:86
 #, fuzzy
 #| msgid "Lighten"
 msgctxt "KReportItemCheckBox|"
 msgid "Line Weight"
 msgstr "Esclarzir"
 
-#: items/check/KReportItemCheck.cpp:91
+#: items/check/KReportItemCheck.cpp:88
 #, fuzzy
 #| msgid "Color"
 msgctxt "KReportItemCheckBox|"
 msgid "Line Color"
 msgstr "Color"
 
-#: items/check/KReportItemCheck.cpp:92
+#: items/check/KReportItemCheck.cpp:89
 #, fuzzy
 #| msgid "Insert Break"
 msgctxt "KReportItemCheckBox|"
 msgid "Line Style"
 msgstr "Inserir un saut"
 
-#: items/check/KReportItemCheck.cpp:93
+#: items/check/KReportItemCheck.cpp:90
 #, fuzzy
 #| msgid "Value"
 msgctxt "KReportItemCheckBox|"
 msgid "Value"
 msgstr "Valor"
 
-#: items/check/KReportItemCheck.cpp:93
+#: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/field/KReportItemField.cpp:93
-#, fuzzy
-#| msgid "Delete"
-msgctxt "KReportItemField|"
-msgid "Data Source"
-msgstr "Suprimir"
-
-#: items/field/KReportItemField.cpp:96
+#: items/field/KReportItemField.cpp:91
 #, fuzzy
 #| msgid "Value"
 msgctxt "KReportItemField|"
 msgid "Value"
 msgstr "Valor"
 
-#: items/field/KReportItemField.cpp:96
+#: items/field/KReportItemField.cpp:91
 msgctxt "KReportItemField|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/field/KReportItemField.cpp:99
+#: items/field/KReportItemField.cpp:95
 #, fuzzy
 #| msgid "Left:"
 msgctxt "KReportItemField|"
 msgid "Left"
 msgstr "Esquèrra:"
 
-#: items/field/KReportItemField.cpp:99 items/field/KReportItemField.cpp:105
+#: items/field/KReportItemField.cpp:95 items/field/KReportItemField.cpp:101
 #, fuzzy
 #| msgid "Comment"
 msgctxt "KReportItemField|"
 msgid "Center"
 msgstr "Comentari"
 
-#: items/field/KReportItemField.cpp:99
+#: items/field/KReportItemField.cpp:95
 #, fuzzy
 #| msgid "Right:"
 msgctxt "KReportItemField|"
 msgid "Right"
 msgstr "Drecha:"
 
-#: items/field/KReportItemField.cpp:100
+#: items/field/KReportItemField.cpp:97
 #, fuzzy
 #| msgid "Horizontal"
 msgctxt "KReportItemField|"
 msgid "Horizontal Alignment"
 msgstr "Orizontal"
 
-#: items/field/KReportItemField.cpp:105
+#: items/field/KReportItemField.cpp:101
 #, fuzzy
 #| msgid "Top:"
 msgctxt "KReportItemField|"
 msgid "Top"
 msgstr "Amont:"
 
-#: items/field/KReportItemField.cpp:105
+#: items/field/KReportItemField.cpp:101
 #, fuzzy
 #| msgid "Bottom:"
 msgctxt "KReportItemField|"
 msgid "Bottom"
 msgstr "Aval:"
 
-#: items/field/KReportItemField.cpp:106
+#: items/field/KReportItemField.cpp:103
 #, fuzzy
 #| msgid "Horizontal"
 msgctxt "KReportItemField|"
 msgid "Vertical Alignment"
 msgstr "Orizontal"
 
-#: items/field/KReportItemField.cpp:108
+#: items/field/KReportItemField.cpp:105
 #, fuzzy
 #| msgid "Format"
 msgctxt "KReportItemField|"
 msgid "Font"
 msgstr "Format"
 
-#: items/field/KReportItemField.cpp:110
+#: items/field/KReportItemField.cpp:107
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemField|"
 msgid "Background Color"
 msgstr "Color de &fons :"
 
-#: items/field/KReportItemField.cpp:111
+#: items/field/KReportItemField.cpp:108
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemField|"
 msgid "Foreground Color"
 msgstr "Color de &fons :"
 
-#: items/field/KReportItemField.cpp:113
+#: items/field/KReportItemField.cpp:110
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemField|"
 msgid "Background Opacity"
 msgstr "Color de &fons :"
 
-#: items/field/KReportItemField.cpp:118
+#: items/field/KReportItemField.cpp:115
 #, fuzzy
 #| msgid "Lighten"
 msgctxt "KReportItemField|"
 msgid "Line Weight"
 msgstr "Esclarzir"
 
-#: items/field/KReportItemField.cpp:120
+#: items/field/KReportItemField.cpp:117
 #, fuzzy
 #| msgid "Color"
 msgctxt "KReportItemField|"
 msgid "Line Color"
 msgstr "Color"
 
-#: items/field/KReportItemField.cpp:121
+#: items/field/KReportItemField.cpp:118
 #, fuzzy
 #| msgid "Insert Break"
 msgctxt "KReportItemField|"
 msgid "Line Style"
 msgstr "Inserir un saut"
 
-#: items/field/KReportItemField.cpp:123
+#: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
 msgid "Word Wrap"
 msgstr ""
 
-#: items/field/KReportItemField.cpp:124
+#: items/field/KReportItemField.cpp:121
 msgctxt "KReportItemField|"
 msgid "Can Grow"
 msgstr ""
 
-#: items/image/KReportItemImage.cpp:118
-#, fuzzy
-#| msgid "Delete"
-msgctxt "KReportItemImage|"
-msgid "Data Source"
-msgstr "Suprimir"
-
-#: items/image/KReportItemImage.cpp:122
+#: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
 msgid "Clip"
 msgstr ""
 
-#: items/image/KReportItemImage.cpp:122
+#: items/image/KReportItemImage.cpp:119
 #, fuzzy
 #| msgid "Street:"
 msgctxt "KReportItemImage|"
 msgid "Stretch"
 msgstr "Carrièra :"
 
-#: items/image/KReportItemImage.cpp:123
+#: items/image/KReportItemImage.cpp:120
 #, fuzzy
 #| msgid "Resize"
 msgctxt "KReportItemImage|"
 msgid "Resize Mode"
 msgstr "Redimensionar"
 
-#: items/image/KReportItemImage.cpp:125
+#: items/image/KReportItemImage.cpp:121
 #, fuzzy
 #| msgid "Value"
 msgctxt "KReportItemImage|"
 msgid "Value"
 msgstr "Valor"
 
-#: items/image/KReportItemImage.cpp:125
+#: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/label/KReportItemLabel.cpp:93
+#: items/label/KReportItemLabel.cpp:91
 #, fuzzy
 #| msgid "Collection"
 msgctxt "KReportItemLabel|"
 msgid "Caption"
 msgstr "Colleccion"
 
-#: items/label/KReportItemLabel.cpp:97
+#: items/label/KReportItemLabel.cpp:94
 #, fuzzy
 #| msgid "Left:"
 msgctxt "KReportItemLabel|"
 msgid "Left"
 msgstr "Esquèrra:"
 
-#: items/label/KReportItemLabel.cpp:97 items/label/KReportItemLabel.cpp:103
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
 #, fuzzy
 #| msgid "Comment"
 msgctxt "KReportItemLabel|"
 msgid "Center"
 msgstr "Comentari"
 
-#: items/label/KReportItemLabel.cpp:97
+#: items/label/KReportItemLabel.cpp:94
 #, fuzzy
 #| msgid "Right:"
 msgctxt "KReportItemLabel|"
 msgid "Right"
 msgstr "Drecha:"
 
-#: items/label/KReportItemLabel.cpp:98
+#: items/label/KReportItemLabel.cpp:96
 #, fuzzy
 #| msgid "Horizontal"
 msgctxt "KReportItemLabel|"
 msgid "Horizontal Alignment"
 msgstr "Orizontal"
 
-#: items/label/KReportItemLabel.cpp:103
+#: items/label/KReportItemLabel.cpp:100
 #, fuzzy
 #| msgid "Top:"
 msgctxt "KReportItemLabel|"
 msgid "Top"
 msgstr "Amont:"
 
-#: items/label/KReportItemLabel.cpp:103
+#: items/label/KReportItemLabel.cpp:100
 #, fuzzy
 #| msgid "Bottom:"
 msgctxt "KReportItemLabel|"
 msgid "Bottom"
 msgstr "Aval:"
 
-#: items/label/KReportItemLabel.cpp:104
+#: items/label/KReportItemLabel.cpp:102
 #, fuzzy
 #| msgid "Horizontal"
 msgctxt "KReportItemLabel|"
 msgid "Vertical Alignment"
 msgstr "Orizontal"
 
-#: items/label/KReportItemLabel.cpp:106
+#: items/label/KReportItemLabel.cpp:104
 #, fuzzy
 #| msgid "Format"
 msgctxt "KReportItemLabel|"
 msgid "Font"
 msgstr "Format"
 
-#: items/label/KReportItemLabel.cpp:108
+#: items/label/KReportItemLabel.cpp:106
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemLabel|"
 msgid "Background Color"
+msgstr "Color de &fons :"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
 msgstr "Color de &fons :"
 
 #: items/label/KReportItemLabel.cpp:109
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemLabel|"
-msgid "Foreground Color"
-msgstr "Color de &fons :"
-
-#: items/label/KReportItemLabel.cpp:111
-#, fuzzy
-#| msgid "&Background color:"
-msgctxt "KReportItemLabel|"
 msgid "Background Opacity"
 msgstr "Color de &fons :"
 
-#: items/label/KReportItemLabel.cpp:116
+#: items/label/KReportItemLabel.cpp:114
 #, fuzzy
 #| msgid "Lighten"
 msgctxt "KReportItemLabel|"
 msgid "Line Weight"
 msgstr "Esclarzir"
 
-#: items/label/KReportItemLabel.cpp:118
+#: items/label/KReportItemLabel.cpp:116
 #, fuzzy
 #| msgid "Color"
 msgctxt "KReportItemLabel|"
 msgid "Line Color"
 msgstr "Color"
 
-#: items/label/KReportItemLabel.cpp:119
+#: items/label/KReportItemLabel.cpp:117
 #, fuzzy
 #| msgid "Insert Break"
 msgctxt "KReportItemLabel|"
 msgid "Line Style"
 msgstr "Inserir un saut"
 
-#: items/text/KReportItemText.cpp:117
-#, fuzzy
-#| msgid "Delete"
-msgctxt "KReportItemText|"
-msgid "Data Source"
-msgstr "Suprimir"
-
-#: items/text/KReportItemText.cpp:119
+#: items/text/KReportItemText.cpp:113
 #, fuzzy
 #| msgid "Value"
 msgctxt "KReportItemText|"
 msgid "Value"
 msgstr "Valor"
 
-#: items/text/KReportItemText.cpp:119
+#: items/text/KReportItemText.cpp:113
 msgctxt "KReportItemText|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/text/KReportItemText.cpp:122
+#: items/text/KReportItemText.cpp:117
 #, fuzzy
 #| msgid "Left:"
 msgctxt "KReportItemText|"
 msgid "Left"
 msgstr "Esquèrra:"
 
-#: items/text/KReportItemText.cpp:122 items/text/KReportItemText.cpp:128
+#: items/text/KReportItemText.cpp:117 items/text/KReportItemText.cpp:123
 #, fuzzy
 #| msgid "Comment"
 msgctxt "KReportItemText|"
 msgid "Center"
 msgstr "Comentari"
 
-#: items/text/KReportItemText.cpp:122
+#: items/text/KReportItemText.cpp:117
 #, fuzzy
 #| msgid "Right:"
 msgctxt "KReportItemText|"
 msgid "Right"
 msgstr "Drecha:"
 
-#: items/text/KReportItemText.cpp:123
+#: items/text/KReportItemText.cpp:119
 #, fuzzy
 #| msgid "Horizontal"
 msgctxt "KReportItemText|"
 msgid "Horizontal Alignment"
 msgstr "Orizontal"
 
-#: items/text/KReportItemText.cpp:128
+#: items/text/KReportItemText.cpp:123
 #, fuzzy
 #| msgid "Top:"
 msgctxt "KReportItemText|"
 msgid "Top"
 msgstr "Amont:"
 
-#: items/text/KReportItemText.cpp:128
+#: items/text/KReportItemText.cpp:123
 #, fuzzy
 #| msgid "Bottom:"
 msgctxt "KReportItemText|"
 msgid "Bottom"
 msgstr "Aval:"
 
-#: items/text/KReportItemText.cpp:129
+#: items/text/KReportItemText.cpp:125
 #, fuzzy
 #| msgid "Horizontal"
 msgctxt "KReportItemText|"
 msgid "Vertical Alignment"
 msgstr "Orizontal"
 
-#: items/text/KReportItemText.cpp:131
+#: items/text/KReportItemText.cpp:127
 #, fuzzy
 #| msgid "Format"
 msgctxt "KReportItemText|"
 msgid "Font"
 msgstr "Format"
 
-#: items/text/KReportItemText.cpp:133
+#: items/text/KReportItemText.cpp:129
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemText|"
 msgid "Background Color"
 msgstr "Color de &fons :"
 
-#: items/text/KReportItemText.cpp:134
+#: items/text/KReportItemText.cpp:130
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemText|"
 msgid "Foreground Color"
 msgstr "Color de &fons :"
 
-#: items/text/KReportItemText.cpp:136
+#: items/text/KReportItemText.cpp:132
 #, fuzzy
 #| msgid "Lighten"
 msgctxt "KReportItemText|"
 msgid "Line Weight"
 msgstr "Esclarzir"
 
-#: items/text/KReportItemText.cpp:138
+#: items/text/KReportItemText.cpp:134
 #, fuzzy
 #| msgid "Color"
 msgctxt "KReportItemText|"
 msgid "Line Color"
 msgstr "Color"
 
-#: items/text/KReportItemText.cpp:139
+#: items/text/KReportItemText.cpp:135
 #, fuzzy
 #| msgid "Insert Break"
 msgctxt "KReportItemText|"
 msgid "Line Style"
 msgstr "Inserir un saut"
 
-#: items/text/KReportItemText.cpp:140
+#: items/text/KReportItemText.cpp:136
 #, fuzzy
 #| msgid "&Background color:"
 msgctxt "KReportItemText|"
 msgid "Background Opacity"
 msgstr "Color de &fons :"
 
-#: items/text/KReportScriptText.cpp:192
+#: renderer/scripting/KReportScriptHandler.cpp:170
 #, qt-format
-msgctxt "Scripting::Text|"
-msgid "$Unable to read %1"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
 msgstr ""
 
-#: renderer/scripting/KReportScriptHandler.cpp:147
-#: renderer/scripting/KReportScriptHandler.cpp:156
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
 #, fuzzy
 #| msgid "Internal error"
 msgctxt "KReportScriptHandler|"
 msgid "Script Error"
 msgstr "Error intèrna"
 
-#: wrtembed/KReportDesigner.cpp:303
+#: wrtembed/KReportDesigner.cpp:310
 #, qt-format
 msgctxt "KReportDesigner|"
 msgid ""
@@ -669,299 +864,306 @@ msgid ""
 "and content will not be changed unless you change these scripts."
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:308
+#: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
 msgid "Unsupported Script Type"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:598
+#: wrtembed/KReportDesigner.cpp:675
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Any)"
 msgstr "Previsualizacion"
 
-#: wrtembed/KReportDesigner.cpp:602
+#: wrtembed/KReportDesigner.cpp:679
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Even)"
 msgstr "Previsualizacion"
 
-#: wrtembed/KReportDesigner.cpp:606
+#: wrtembed/KReportDesigner.cpp:683
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Odd)"
 msgstr "Previsualizacion"
 
-#: wrtembed/KReportDesigner.cpp:610
+#: wrtembed/KReportDesigner.cpp:687
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (First)"
 msgstr "Previsualizacion"
 
-#: wrtembed/KReportDesigner.cpp:614
+#: wrtembed/KReportDesigner.cpp:691
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Last)"
 msgstr "Previsualizacion"
 
-#: wrtembed/KReportDesigner.cpp:618
+#: wrtembed/KReportDesigner.cpp:695
 #, fuzzy
 #| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Any)"
 msgstr "Pè"
 
-#: wrtembed/KReportDesigner.cpp:622
+#: wrtembed/KReportDesigner.cpp:699
 #, fuzzy
 #| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Even)"
 msgstr "Pè"
 
-#: wrtembed/KReportDesigner.cpp:626
+#: wrtembed/KReportDesigner.cpp:703
 #, fuzzy
 #| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Odd)"
 msgstr "Pè"
 
-#: wrtembed/KReportDesigner.cpp:630
+#: wrtembed/KReportDesigner.cpp:707
 #, fuzzy
 #| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (First)"
 msgstr "Pè"
 
-#: wrtembed/KReportDesigner.cpp:634
+#: wrtembed/KReportDesigner.cpp:711
 #, fuzzy
 #| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Last)"
 msgstr "Pè"
 
-#: wrtembed/KReportDesigner.cpp:638
+#: wrtembed/KReportDesigner.cpp:715
 #, fuzzy
 #| msgid "Header"
 msgctxt "KReportDesigner|"
 msgid "Report Header"
 msgstr "Encap"
 
-#: wrtembed/KReportDesigner.cpp:642
+#: wrtembed/KReportDesigner.cpp:719
 #, fuzzy
 #| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
 msgstr "Pè"
 
-#: wrtembed/KReportDesigner.cpp:732
+#: wrtembed/KReportDesigner.cpp:807
 #, fuzzy
 #| msgid "Export"
 msgctxt "KReportDesigner|Main report element"
 msgid "Report"
 msgstr "Exportar"
 
-#: wrtembed/KReportDesigner.cpp:737
+#: wrtembed/KReportDesigner.cpp:812
 #, fuzzy
 #| msgid "Title:"
 msgctxt "KReportDesigner|"
 msgid "Title"
 msgstr "Títol:"
 
-#: wrtembed/KReportDesigner.cpp:737
+#: wrtembed/KReportDesigner.cpp:812
 #, fuzzy
 #| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Report Title"
 msgstr "Pè"
 
-#: wrtembed/KReportDesigner.cpp:743
+#: wrtembed/KReportDesigner.cpp:817
 #, fuzzy
 #| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Page Size"
 msgstr "Talha de la pagina"
 
-#: wrtembed/KReportDesigner.cpp:747
+#: wrtembed/KReportDesigner.cpp:820
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Talha de la pagina"
+
+#: wrtembed/KReportDesigner.cpp:824
 #, fuzzy
 #| msgid "Portrait"
 msgctxt "KReportDesigner|"
 msgid "Portrait"
 msgstr "Contrast"
 
-#: wrtembed/KReportDesigner.cpp:747
+#: wrtembed/KReportDesigner.cpp:824
 #, fuzzy
 #| msgid "Landscape"
 msgctxt "KReportDesigner|"
 msgid "Landscape"
 msgstr "Païsatge"
 
-#: wrtembed/KReportDesigner.cpp:748
+#: wrtembed/KReportDesigner.cpp:826
 #, fuzzy
 #| msgid "Orientation"
 msgctxt "KReportDesigner|"
 msgid "Page Orientation"
 msgstr "Orientacion"
 
-#: wrtembed/KReportDesigner.cpp:759
+#: wrtembed/KReportDesigner.cpp:831
 #, fuzzy
 #| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Page Unit"
 msgstr "Talha de la pagina"
 
-#: wrtembed/KReportDesigner.cpp:761
+#: wrtembed/KReportDesigner.cpp:832
 #, fuzzy
 #| msgid "Snap to Grid"
 msgctxt "KReportDesigner|"
 msgid "Show Grid"
 msgstr "Alinhar s~us la gresilha"
 
-#: wrtembed/KReportDesigner.cpp:762
+#: wrtembed/KReportDesigner.cpp:833
 #, fuzzy
 #| msgid "Snap to Grid"
 msgctxt "KReportDesigner|"
 msgid "Snap to Grid"
 msgstr "Alinhar s~us la gresilha"
 
-#: wrtembed/KReportDesigner.cpp:763
+#: wrtembed/KReportDesigner.cpp:834
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:766
+#: wrtembed/KReportDesigner.cpp:840
 #, fuzzy
 #| msgid "Margins"
 msgctxt "KReportDesigner|"
 msgid "Left Margin"
 msgstr "Marges"
 
-#: wrtembed/KReportDesigner.cpp:768
+#: wrtembed/KReportDesigner.cpp:842
 #, fuzzy
 #| msgid "Margins"
 msgctxt "KReportDesigner|"
 msgid "Right Margin"
 msgstr "Marges"
 
-#: wrtembed/KReportDesigner.cpp:770
+#: wrtembed/KReportDesigner.cpp:844
 #, fuzzy
 #| msgid "Margins"
 msgctxt "KReportDesigner|"
 msgid "Top Margin"
 msgstr "Marges"
 
-#: wrtembed/KReportDesigner.cpp:772
+#: wrtembed/KReportDesigner.cpp:846
 #, fuzzy
 #| msgid "Margins"
 msgctxt "KReportDesigner|"
 msgid "Bottom Margin"
 msgstr "Marges"
 
-#: wrtembed/KReportDesigner.cpp:791
+#: wrtembed/KReportDesigner.cpp:868
 #, fuzzy
 #| msgid "Object"
 msgctxt "KReportDesigner|"
 msgid "Object Script"
 msgstr "Objècte"
 
-#: wrtembed/KReportDesigner.cpp:945
+#: wrtembed/KReportDesigner.cpp:1066
 #, fuzzy
 #| msgid "Custom"
 msgctxt "KReportDesigner|"
 msgid "Cut"
 msgstr "Personalizat"
 
-#: wrtembed/KReportDesigner.cpp:949
+#: wrtembed/KReportDesigner.cpp:1070
 #, fuzzy
 #| msgid "Blue"
 msgctxt "KReportDesigner|"
 msgid "Copy"
 msgstr "Blau"
 
-#: wrtembed/KReportDesigner.cpp:954
+#: wrtembed/KReportDesigner.cpp:1075
 #, fuzzy
 #| msgid "Date"
 msgctxt "KReportDesigner|"
 msgid "Paste"
 msgstr "Data"
 
-#: wrtembed/KReportDesigner.cpp:965
+#: wrtembed/KReportDesigner.cpp:1086
 #, fuzzy
 #| msgid "Delete"
 msgctxt "KReportDesigner|"
 msgid "Delete"
 msgstr "Suprimir"
 
-#: wrtembed/KReportDesigner.cpp:1007
+#: wrtembed/KReportDesigner.cpp:1128
 #, fuzzy
 #| msgid "Lines"
 msgctxt "KReportDesigner|Report line element"
 msgid "Line"
 msgstr "Linhas"
 
-#: wrtembed/KReportDesigner.cpp:1349
+#: wrtembed/KReportDesigner.cpp:1475
 #, fuzzy
 #| msgid "Lines"
 msgctxt "KReportDesigner|"
 msgid "Line"
 msgstr "Linhas"
 
-#: wrtembed/KReportDesigner.cpp:1392
+#: wrtembed/KReportDesigner.cpp:1518
 msgctxt "KReportDesigner|"
 msgid "Cu&t"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:1394
+#: wrtembed/KReportDesigner.cpp:1520
 msgctxt "KReportDesigner|"
 msgid "Cut selection to clipboard"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:1398
+#: wrtembed/KReportDesigner.cpp:1524
 #, fuzzy
 #| msgid "Blue"
 msgctxt "KReportDesigner|"
 msgid "&Copy"
 msgstr "Blau"
 
-#: wrtembed/KReportDesigner.cpp:1400
+#: wrtembed/KReportDesigner.cpp:1526
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:1404
+#: wrtembed/KReportDesigner.cpp:1530
 #, fuzzy
 #| msgid "Date"
 msgctxt "KReportDesigner|"
 msgid "&Paste"
 msgstr "Data"
 
-#: wrtembed/KReportDesigner.cpp:1406
+#: wrtembed/KReportDesigner.cpp:1532
 msgctxt "KReportDesigner|"
 msgid "Paste clipboard content"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:1417
+#: wrtembed/KReportDesigner.cpp:1543
 #, fuzzy
 #| msgid "Collection"
 msgctxt "KReportDesigner|"
 msgid "Edit Sections"
 msgstr "Colleccion"
 
-#: wrtembed/KReportDesigner.cpp:1420
+#: wrtembed/KReportDesigner.cpp:1546
 msgctxt "KReportDesigner|"
 msgid "Raise"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:1422
+#: wrtembed/KReportDesigner.cpp:1548
 msgctxt "KReportDesigner|"
 msgid "Lower"
 msgstr ""
 
-#: wrtembed/KReportDesignerSection.cpp:124
+#: wrtembed/KReportDesignerSection.cpp:126
 #, fuzzy
 #| msgid "Make Default"
 msgctxt "KReportDesignerSection|"
@@ -1020,21 +1222,21 @@ msgid ""
 "properties to be seen."
 msgstr ""
 
-#: wrtembed/KReportRuler.cpp:1267
+#: wrtembed/KReportRuler_p.cpp:1473
 #, fuzzy
 #| msgid "First line indent"
 msgctxt "KReportRuler|"
 msgid "First line indent"
 msgstr "Retirament de primièra linha"
 
-#: wrtembed/KReportRuler.cpp:1268
+#: wrtembed/KReportRuler_p.cpp:1474
 #, fuzzy
 #| msgid "Left:"
 msgctxt "KReportRuler|"
 msgid "Left indent"
 msgstr "Esquèrra:"
 
-#: wrtembed/KReportRuler.cpp:1269
+#: wrtembed/KReportRuler_p.cpp:1475
 #, fuzzy
 #| msgid "Right:"
 msgctxt "KReportRuler|"
@@ -1154,33 +1356,33 @@ msgctxt "SectionEditor|"
 msgid "Group Sections"
 msgstr "Accions"
 
-#: wrtembed/KReportZoomMode.cpp:27
+#: wrtembed/KReportZoomMode_p.cpp:28
 #, fuzzy, qt-format
 #| msgid "%1%"
 msgctxt "KReportZoomMode|"
 msgid "%1%"
 msgstr "%1%"
 
-#: wrtembed/KReportZoomMode.cpp:28
+#: wrtembed/KReportZoomMode_p.cpp:29
 #, fuzzy
 #| msgid "Insert Break"
 msgctxt "KReportZoomMode|"
 msgid "Fit Page Width"
 msgstr "Inserir un saut"
 
-#: wrtembed/KReportZoomMode.cpp:29
+#: wrtembed/KReportZoomMode_p.cpp:30
 #, fuzzy
 #| msgid "Page"
 msgctxt "KReportZoomMode|"
 msgid "Fit Page"
 msgstr "Pagina"
 
-#: wrtembed/KReportZoomMode.cpp:31
+#: wrtembed/KReportZoomMode_p.cpp:32
 msgctxt "KReportZoomMode|"
 msgid "Actual Pixels"
 msgstr ""
 
-#: wrtembed/KReportZoomMode.cpp:35
+#: wrtembed/KReportZoomMode_p.cpp:36
 #, fuzzy
 #| msgid "Insert Break"
 msgctxt "KReportZoomMode|"
@@ -1188,46 +1390,52 @@ msgid "Fit Text Width"
 msgstr "Inserir un saut"
 
 #, fuzzy
-#~| msgid "Save Document"
-#~ msgctxt "KReportDesign|"
-#~ msgid "Error in XML document."
-#~ msgstr "Enregistrar lo document"
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ecran"
 
 #, fuzzy
 #~| msgid "Position:"
-#~ msgctxt "ItemPosition|"
+#~ msgctxt "KReportPosition|"
 #~ msgid "Position"
 #~ msgstr "Posicion :"
 
 #, fuzzy
+#~| msgid "Height:"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Nautor"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
 #~| msgid "Time:"
-#~ msgctxt "ItemSize|"
+#~ msgctxt "KReportSize|"
 #~ msgid "Size"
 #~ msgstr "Talha :"
 
 #, fuzzy
-#~| msgid "Position:"
-#~ msgctxt "StartPosition|"
-#~ msgid "Start Position"
-#~ msgstr "Posicion :"
+#~| msgid "Delete"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
 
 #, fuzzy
-#~| msgid "Position:"
-#~ msgctxt "EndPosition|"
-#~ msgid "End Position"
-#~ msgstr "Posicion :"
+#~| msgid "Delete"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
 
 #, fuzzy
-#~| msgid "Add Group"
-#~ msgctxt "KReportUnit|"
-#~ msgid "Invalid"
-#~ msgstr "Apondre un grop"
-
-#, fuzzy
-#~| msgid "Custom"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "Custom"
-#~ msgstr "Personalizat"
+#~| msgid "Delete"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
 
 #, fuzzy
 #~| msgid "Height:"
@@ -3027,9 +3235,6 @@ msgstr "Inserir un saut"
 #~ msgid "G"
 #~ msgstr "G"
 
-#~ msgid "B"
-#~ msgstr "B"
-
 #~ msgid "Grayscale"
 #~ msgstr "Escala de grises"
 
@@ -3176,9 +3381,6 @@ msgstr "Inserir un saut"
 
 #~ msgid "Format"
 #~ msgstr "Format"
-
-#~ msgid "Comma"
-#~ msgstr "Virgula"
 
 #~ msgid "Semicolon"
 #~ msgstr "Punt virgula"
