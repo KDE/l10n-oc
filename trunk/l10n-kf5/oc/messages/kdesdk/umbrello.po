@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-11-06 03:54+0100\n"
+"POT-Creation-Date: 2018-11-08 03:57+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1708,7 +1708,7 @@ msgstr "General"
 
 #: dialogs/classpropertiesdialog.cpp:250 dialogs/classpropertiesdialog.cpp:362
 #: dialogs/multipagedialogbase.cpp:372 dialogs/multipagedialogbase.cpp:386
-#: dialogs/multipagedialogbase.cpp:396 dialogs/settingsdialog.cpp:243
+#: dialogs/multipagedialogbase.cpp:396 dialogs/settingsdialog.cpp:121
 #: dialogs/umlforeignkeyconstraintdialog.cpp:205 dialogs/umlviewdialog.cpp:91
 #, kde-format
 msgid "General Settings"
@@ -3078,6 +3078,69 @@ msgstr ""
 msgid "Custom operation:"
 msgstr ""
 
+#: dialogs/pages/uioptionspage.cpp:63
+#, fuzzy, kde-format
+#| msgid "General"
+msgctxt "General options"
+msgid "General"
+msgstr "General"
+
+#. i18n: ectx: label, entry (rightToLeftUI), group (UI Options)
+#: dialogs/pages/uioptionspage.cpp:69 umbrello.kcfg:179
+#, kde-format
+msgid "Right to left user interface"
+msgstr ""
+
+#: dialogs/pages/uioptionspage.cpp:73
+#, fuzzy, kde-format
+#| msgid "Color"
+msgctxt "color group box"
+msgid "Color"
+msgstr "Color"
+
+#: dialogs/pages/uioptionspage.cpp:81
+#, fuzzy, kde-format
+#| msgid "Change Line Color"
+msgid "Custom text color"
+msgstr "Modificar la color de las linhas"
+
+#: dialogs/pages/uioptionspage.cpp:88
+#, fuzzy, kde-format
+#| msgid "Change Line Color"
+msgid "Custom line color"
+msgstr "Modificar la color de las linhas"
+
+#. i18n("D&efault Color"), m_colorGB);
+#. colorLayout->addWidget(m_lineDefaultB, 0, 2);
+#: dialogs/pages/uioptionspage.cpp:98
+#, fuzzy, kde-format
+#| msgid "Change Fill Color"
+msgid "Custom fill color"
+msgstr "Cambiar la color d'emplenament"
+
+#: dialogs/pages/uioptionspage.cpp:104
+#, fuzzy, kde-format
+#| msgid "Change Line Color"
+msgid "Custom grid color"
+msgstr "Modificar la color de las linhas"
+
+#: dialogs/pages/uioptionspage.cpp:110
+#, fuzzy, kde-format
+#| msgid "Font Color"
+msgid "Custom background color"
+msgstr "Color de poliça"
+
+#: dialogs/pages/uioptionspage.cpp:116
+#, fuzzy, kde-format
+#| msgid "Change Line Color"
+msgid "Custom line width"
+msgstr "Modificar la color de las linhas"
+
+#: dialogs/pages/uioptionspage.cpp:130
+#, kde-format
+msgid "&Use fill color"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
 #: dialogs/pages/umlrolepropertiesbase.ui:16 dialogs/umlroledialog.cpp:24
 #, kde-format
@@ -3257,139 +3320,78 @@ msgstr ""
 msgid "Parameter Name Invalid"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:54
+#: dialogs/settingsdialog.cpp:49
 #, kde-format
 msgid "Umbrello Setup"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:123 umllistview.cpp:1440
+#: dialogs/settingsdialog.cpp:114 umllistview.cpp:1440
 #, kde-format
 msgid "User Interface"
 msgstr "Interfaç utilizaire"
 
-#: dialogs/settingsdialog.cpp:123
+#: dialogs/settingsdialog.cpp:114
 #, kde-format
 msgid "User Interface Settings"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:126
-#, fuzzy, kde-format
-#| msgid "General"
-msgctxt "General options"
-msgid "General"
-msgstr "General"
-
-#. i18n: ectx: label, entry (rightToLeftUI), group (UI Options)
-#: dialogs/settingsdialog.cpp:131 umbrello.kcfg:179
-#, kde-format
-msgid "Right to left user interface"
-msgstr ""
-
-#: dialogs/settingsdialog.cpp:135
-#, fuzzy, kde-format
-#| msgid "Color"
-msgctxt "color group box"
-msgid "Color"
-msgstr "Color"
-
-#: dialogs/settingsdialog.cpp:143
-#, fuzzy, kde-format
-#| msgid "Change Line Color"
-msgid "Custom text color:"
-msgstr "Modificar la color de las linhas"
-
-#: dialogs/settingsdialog.cpp:150
-#, fuzzy, kde-format
-#| msgid "Change Line Color"
-msgid "Custom line color:"
-msgstr "Modificar la color de las linhas"
-
-#. i18n("D&efault Color"), m_UiWidgets.colorGB);
-#. colorLayout->addWidget(m_UiWidgets.lineDefaultB, 0, 2);
-#: dialogs/settingsdialog.cpp:160
-#, fuzzy, kde-format
-#| msgid "Change Fill Color"
-msgid "Custom fill color:"
-msgstr "Cambiar la color d'emplenament"
-
-#: dialogs/settingsdialog.cpp:166
-#, kde-format
-msgid "Custom grid color:"
-msgstr ""
-
-#: dialogs/settingsdialog.cpp:172
-#, fuzzy, kde-format
-#| msgid "Font Color"
-msgid "Custom background color:"
-msgstr "Color de poliça"
-
-#: dialogs/settingsdialog.cpp:178
-#, kde-format
-msgid "Custom line width:"
-msgstr ""
-
-#: dialogs/settingsdialog.cpp:192
-#, kde-format
-msgid "&Use fill color"
-msgstr ""
-
-#: dialogs/settingsdialog.cpp:243 dialogs/umlviewdialog.cpp:91
+#: dialogs/settingsdialog.cpp:121 dialogs/umlviewdialog.cpp:91
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "General"
 
-#: dialogs/settingsdialog.cpp:252
+#: dialogs/settingsdialog.cpp:130
 #, fuzzy, kde-format
 #| msgid "Close"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "Classa"
 
-#: dialogs/settingsdialog.cpp:252
+#: dialogs/settingsdialog.cpp:130
 #, kde-format
 msgid "Class Settings"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:259 umllistview.cpp:1435
+#: dialogs/settingsdialog.cpp:137 umllistview.cpp:1435
 #, kde-format
 msgid "Code Importer"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:259
+#: dialogs/settingsdialog.cpp:137
 #, fuzzy, kde-format
 #| msgid "State"
 msgid "Code Import Settings"
 msgstr "Estatut"
 
-#: dialogs/settingsdialog.cpp:268 umllistview.cpp:1436
+#: dialogs/settingsdialog.cpp:146 umllistview.cpp:1436
 #, kde-format
 msgid "Code Generation"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:268
+#: dialogs/settingsdialog.cpp:146
 #, kde-format
 msgid "Code Generation Settings"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:276 umllistview.cpp:1437
+#: dialogs/settingsdialog.cpp:154 umllistview.cpp:1437
 #, kde-format
 msgid "Code Viewer"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:276
+#: dialogs/settingsdialog.cpp:154
 #, kde-format
 msgid "Code Viewer Settings"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:283 umllistview.cpp:1433
+#: dialogs/settingsdialog.cpp:161 umllistview.cpp:1433
 #, fuzzy, kde-format
 #| msgid "Auto Save"
 msgid "Auto Layout"
 msgstr "Enregistrament automatic"
 
-#: dialogs/settingsdialog.cpp:283
+#: dialogs/settingsdialog.cpp:161
 #, fuzzy, kde-format
 #| msgid "Attributes"
 msgid "Auto Layout Settings"
