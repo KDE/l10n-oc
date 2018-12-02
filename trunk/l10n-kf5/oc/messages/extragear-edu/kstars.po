@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-12-01 02:56+0100\n"
+"POT-Creation-Date: 2018-12-02 02:54+0100\n"
 "PO-Revision-Date: 2008-08-05 23:45+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -5162,7 +5162,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: ekos/align/align.cpp:3325 ekos/capture/capture.cpp:1968
-#: ekos/focus/focus.cpp:2308 ekos/guide/guide.cpp:1504 ekos/manager.cpp:1809
+#: ekos/focus/focus.cpp:2308 ekos/guide/guide.cpp:1504 ekos/manager.cpp:1820
 #: ekos/mount/mount.cpp:575 ekos/scheduler/scheduler.cpp:293
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
@@ -5620,7 +5620,7 @@ msgstr ""
 #: ekos/guide/guide.ui:170 ekos/guide/internalguide/guider.cpp:219
 #: ekos/guide/internalguide/guider.cpp:237
 #: ekos/guide/internalguide/guider.cpp:309
-#: ekos/guide/internalguide/rcalibration.cpp:377 ekos/manager.cpp:794
+#: ekos/guide/internalguide/rcalibration.cpp:377 ekos/manager.cpp:798
 #: kstarslite/qml/indi/INDIControlPanel.qml:144
 #: kstarslite/qml/indi/modules/MotionControl.qml:153
 #, kde-format, kde-kuit-format
@@ -8527,7 +8527,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, guideGroup)
 #. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
 #: ekos/auxiliary/opslogs.ui:87 ekos/guide/guide.cpp:458
-#: ekos/guide/guide.ui:154 ekos/manager.cpp:2090 ekos/manager.ui:1333
+#: ekos/guide/guide.ui:154 ekos/manager.cpp:2101 ekos/manager.ui:1333
 #: ekos/scheduler/scheduler.ui:215 fitsviewer/fitsviewer.cpp:390
 #, fuzzy, kde-format
 #| msgid "Guides"
@@ -8577,7 +8577,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MountLogging)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDIMountLogging)
 #: ekos/auxiliary/opslogs.ui:133 ekos/auxiliary/opslogs.ui:219
-#: ekos/manager.cpp:2026
+#: ekos/manager.cpp:2037
 #, fuzzy, kde-format
 #| msgid "Country:"
 msgid "Mount"
@@ -8742,7 +8742,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
 #. i18n: ectx: property (title), widget (QGroupBox, focusGroup)
 #. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
-#: ekos/auxiliary/opslogs.ui:331 ekos/manager.cpp:1956 ekos/manager.ui:1136
+#: ekos/auxiliary/opslogs.ui:331 ekos/manager.cpp:1967 ekos/manager.ui:1136
 #: ekos/scheduler/scheduler.ui:183 fitsviewer/fitsviewer.cpp:386
 #, kde-format
 msgid "Focus"
@@ -8841,6 +8841,96 @@ msgstr ""
 #| msgid "Connection"
 msgid "Open Logs Directory"
 msgstr "Connexion"
+
+#: ekos/auxiliary/serialportassistant.cpp:54
+#, kde-format
+msgid ""
+"To assign a permenant designation to the device, you need to unplug the "
+"device from stellarmate then replug it after 1 second. Click on the <b>Start "
+"Scan</b> to begin this procedure."
+msgstr ""
+
+#: ekos/auxiliary/serialportassistant.cpp:60
+#, fuzzy, kde-format
+#| msgid "Center"
+msgid "Start Scan"
+msgstr "Centre"
+
+#: ekos/auxiliary/serialportassistant.cpp:61
+#, fuzzy, kde-format
+#| msgid "Device"
+msgid "Skip Device"
+msgstr "Periferic"
+
+#: ekos/auxiliary/serialportassistant.cpp:62
+#, kde-format
+msgid "Phsical Port Mapping"
+msgstr ""
+
+#: ekos/auxiliary/serialportassistant.cpp:63
+#, kde-format
+msgid ""
+"Assign the permenant name based on which physical port the device is plugged "
+"to in StellarMate. This is useful to distinguish between two identifical USB "
+"adapters. The device must <b>always</b> be plugged into the same port for "
+"this to work."
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, SerialPortAssistant)
+#: ekos/auxiliary/serialportassistant.ui:14
+#, fuzzy, kde-format
+#| msgctxt "Advanced URLs: description or category"
+#| msgid "Other"
+msgid "Serial Port Assistant"
+msgstr "Autre"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ekos/auxiliary/serialportassistant.ui:60
+#, kde-format
+msgid ""
+"<html><head/><body><p>Welcome to StellarMate <span style=\" font-weight:600;"
+"\">Serial Port Assistant</span> tool.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ekos/auxiliary/serialportassistant.ui:80
+#, kde-format
+msgid ""
+"<html><head/><body><p>This tool shall assign <span style=\" font-style:"
+"italic;\">permenant</span> names  to your <span style=\" font-weight:600;"
+"\">Serial to USB</span> devices so that they are easier to connect to in the "
+"future.</p><p><br/></p><p>Click <span style=\" font-weight:600;\">Next</"
+"span> to continue.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ekos/auxiliary/serialportassistant.ui:120
+#, fuzzy, kde-format
+#| msgctxt "Country name (optional, but should be translated)"
+#| msgid "Equatorial Guinea"
+msgid "All devices are succesfully mapped."
+msgstr "Guinèa Eqüatoriala"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: ekos/auxiliary/serialportassistant.ui:127
+#, kde-format
+msgid "You can now connect to your equipment."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#. i18n: ectx: property (text), widget (QPushButton, closeB)
+#: ekos/auxiliary/serialportassistant.ui:147
+#: ekos/ekoslive/ekoslivedialog.ui:213 indi/guimanager.cpp:68
+#: kstarslite/qml/modules/tutorial/TutorialPopup.qml:68
+#, kde-format, kde-kuit-format
+msgid "Close"
+msgstr "Tampar"
+
+#. i18n: ectx: property (text), widget (QPushButton, nextB)
+#: ekos/auxiliary/serialportassistant.ui:191 indi/telescopewizard.ui:97
+#, kde-format
+msgid "&Next"
+msgstr "&Seguent"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, calibrationOptions)
 #: ekos/capture/calibrationoptions.ui:14
@@ -10420,7 +10510,7 @@ msgid "Count"
 msgstr "Païs :"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewB)
-#: ekos/capture/capture.ui:1691 ekos/manager.cpp:2503
+#: ekos/capture/capture.ui:1691 ekos/manager.cpp:2514
 #: fitsviewer/fitsviewer.cpp:476 indi/indiccd.cpp:1457
 #, fuzzy, kde-format
 #| msgctxt "Advanced URLs: description or category"
@@ -11067,13 +11157,6 @@ msgstr ""
 #, kde-format
 msgid "Remember Credentials"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, closeB)
-#: ekos/ekoslive/ekoslivedialog.ui:213 indi/guimanager.cpp:68
-#: kstarslite/qml/modules/tutorial/TutorialPopup.qml:68
-#, kde-format, kde-kuit-format
-msgid "Close"
-msgstr "Tampar"
 
 #: ekos/focus/focus.cpp:150
 #, fuzzy, kde-format
@@ -13690,99 +13773,99 @@ msgid "Logging"
 msgstr "Serbia"
 
 #. i18n: ectx: property (text), widget (QLabel, sequenceLabel)
-#: ekos/manager.cpp:421 ekos/manager.cpp:2468 ekos/manager.ui:756
+#: ekos/manager.cpp:421 ekos/manager.cpp:2479 ekos/manager.ui:756
 #, fuzzy, kde-format
 #| msgid "Center"
 msgid "Sequence"
 msgstr "Centre"
 
-#: ekos/manager.cpp:616 ekos/manager.cpp:640
+#: ekos/manager.cpp:618 ekos/manager.cpp:642
 #, kde-format
 msgid "Ekos requires at least one CCD or Guider to operate."
 msgstr ""
 
-#: ekos/manager.cpp:668
+#: ekos/manager.cpp:670
 #, kde-format
 msgid ""
 "Ekos detected that PTP Camera is running and may prevent a Canon or Nikon "
 "camera from connecting to Ekos. Do you want to quit PTP Camera now?"
 msgstr ""
 
-#: ekos/manager.cpp:669
+#: ekos/manager.cpp:671
 #, fuzzy, kde-format
 #| msgid "Camera"
 msgid "PTP Camera"
 msgstr "Aparelh de fotografiar"
 
-#: ekos/manager.cpp:686
+#: ekos/manager.cpp:688
 #, kde-format
 msgid ""
 "Ekos detected an instance of INDI server running. Do you wish to shut down "
 "the existing instance before starting a new one?"
 msgstr ""
 
-#: ekos/manager.cpp:688
+#: ekos/manager.cpp:690
 #, fuzzy, kde-format
 #| msgid "Server"
 msgid "INDI Server"
 msgstr "Servidor"
 
-#: ekos/manager.cpp:699
+#: ekos/manager.cpp:701
 #, fuzzy, kde-format
 #| msgid "Select None"
 msgid "Starting INDI services..."
 msgstr "Seleccionar una estampaira"
 
-#: ekos/manager.cpp:718
+#: ekos/manager.cpp:720
 #, fuzzy, kde-format
 #| msgid "Server"
 msgid "INDI services started on port %1."
 msgstr "Servidor"
 
-#: ekos/manager.cpp:721
+#: ekos/manager.cpp:723
 #, kde-format
 msgid "INDI services started on port %1. Please connect devices."
 msgstr ""
 
-#: ekos/manager.cpp:730
+#: ekos/manager.cpp:732
 #, kde-format
 msgid "Establishing communication with remote INDI Web Manager..."
 msgstr ""
 
-#: ekos/manager.cpp:742
+#: ekos/manager.cpp:746
 #, kde-format
 msgid "Failed to start profile on remote INDI Web Manager."
 msgstr ""
 
-#: ekos/manager.cpp:746
+#: ekos/manager.cpp:750
 #, kde-format
 msgid "Starting profile on remote INDI Web Manager..."
 msgstr ""
 
-#: ekos/manager.cpp:751
+#: ekos/manager.cpp:755
 #, kde-format
 msgid "Warning: INDI Web Manager is not online."
 msgstr ""
 
-#: ekos/manager.cpp:755
+#: ekos/manager.cpp:759
 #, kde-format
 msgid "Connecting to remote INDI server at %1 on port %2 ..."
 msgstr ""
 
-#: ekos/manager.cpp:762
+#: ekos/manager.cpp:766
 #, fuzzy, kde-format
 #| msgid "Connect"
 msgid "Failed to connect to remote INDI server."
 msgstr "Se connectar"
 
-#: ekos/manager.cpp:780
+#: ekos/manager.cpp:784
 #, kde-format
 msgid ""
 "INDI services started. Connection to remote INDI server is successful. "
 "Waiting for devices..."
 msgstr ""
 
-#: ekos/manager.cpp:824
+#: ekos/manager.cpp:828
 #, kde-format
 msgid ""
 "Unable to establish:\n"
@@ -13790,14 +13873,14 @@ msgid ""
 "Please ensure the device is connected and powered on."
 msgstr ""
 
-#: ekos/manager.cpp:826 ekos/manager.cpp:833 ekos/manager.cpp:862
-#: ekos/manager.cpp:869
+#: ekos/manager.cpp:830 ekos/manager.cpp:837 ekos/manager.cpp:866
+#: ekos/manager.cpp:873
 #, fuzzy, kde-format
 #| msgid "Guides"
 msgid "Ekos startup error"
 msgstr "Guidas"
 
-#: ekos/manager.cpp:830
+#: ekos/manager.cpp:834
 #, kde-format
 msgid ""
 "Unable to establish the following devices:\n"
@@ -13805,7 +13888,7 @@ msgid ""
 "Please ensure each device is connected and powered on."
 msgstr ""
 
-#: ekos/manager.cpp:859
+#: ekos/manager.cpp:863
 #, kde-format
 msgid ""
 "Unable to establish remote device:\n"
@@ -13813,7 +13896,7 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/manager.cpp:866
+#: ekos/manager.cpp:870
 #, kde-format
 msgid ""
 "Unable to establish remote devices:\n"
@@ -13821,68 +13904,68 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/manager.cpp:908
+#: ekos/manager.cpp:912
 #, kde-format
 msgid "Connecting INDI devices..."
 msgstr ""
 
-#: ekos/manager.cpp:919
+#: ekos/manager.cpp:923
 #, kde-format
 msgid "Disconnecting INDI devices..."
 msgstr ""
 
-#: ekos/manager.cpp:963
+#: ekos/manager.cpp:967
 #, kde-format
 msgid "INDI services stopped."
 msgstr ""
 
-#: ekos/manager.cpp:1006
+#: ekos/manager.cpp:1017
 #, fuzzy, kde-format
 #| msgid "Server"
 msgid "Remote devices established."
 msgstr "Servidor"
 
-#: ekos/manager.cpp:1008
+#: ekos/manager.cpp:1019
 #, kde-format
 msgid "Remote devices established. Please connect devices."
 msgstr ""
 
-#: ekos/manager.cpp:1119
+#: ekos/manager.cpp:1130
 #, fuzzy, kde-format
 #| msgid "Disconnect"
 msgid "%1 is disconnected."
 msgstr "Desconnectar"
 
-#: ekos/manager.cpp:1163 ekos/manager.cpp:1261 ekos/manager.cpp:1338
-#: ekos/manager.cpp:1349 ekos/manager.cpp:1362 indi/indistd.cpp:486
+#: ekos/manager.cpp:1174 ekos/manager.cpp:1272 ekos/manager.cpp:1349
+#: ekos/manager.cpp:1360 ekos/manager.cpp:1373 indi/indistd.cpp:504
 #, kde-format
 msgid "%1 is online."
 msgstr ""
 
-#: ekos/manager.cpp:1280
+#: ekos/manager.cpp:1291
 #, kde-format
 msgid "%1 filter is online."
 msgstr ""
 
-#: ekos/manager.cpp:1318
+#: ekos/manager.cpp:1329
 #, fuzzy, kde-format
 #| msgid "Country:"
 msgid "%1 focuser is online."
 msgstr "Païs :"
 
-#: ekos/manager.cpp:1405
+#: ekos/manager.cpp:1416
 #, kde-format
 msgid "%1 is offline."
 msgstr ""
 
-#: ekos/manager.cpp:1850
+#: ekos/manager.cpp:1861
 #, kde-format
 msgctxt "Charge-Coupled Device"
 msgid "CCD"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
-#: ekos/manager.cpp:1920 ekos/scheduler/scheduler.ui:199
+#: ekos/manager.cpp:1931 ekos/scheduler/scheduler.ui:199
 #: fitsviewer/fitsviewer.cpp:394
 #, fuzzy, kde-format
 #| msgctxt "Advanced URLs: description or category"
@@ -13890,48 +13973,48 @@ msgstr ""
 msgid "Align"
 msgstr "Autre"
 
-#: ekos/manager.cpp:2180
+#: ekos/manager.cpp:2191
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr ""
 
-#: ekos/manager.cpp:2306
+#: ekos/manager.cpp:2317
 #, kde-format
 msgid "Are you sure you want to delete the profile?"
 msgstr ""
 
-#: ekos/manager.cpp:2307
+#: ekos/manager.cpp:2318
 #, fuzzy, kde-format
 #| msgid "Error opening file"
 msgid "Confirm Delete"
 msgstr "Error al moment de dobrir lo fichièr"
 
-#: ekos/manager.cpp:2367
+#: ekos/manager.cpp:2378
 #, kde-format
 msgid "Site location updated to %1."
 msgstr ""
 
-#: ekos/manager.cpp:2369
+#: ekos/manager.cpp:2380
 #, kde-format
 msgid "Failed to update site location to %1. City not found."
 msgstr ""
 
-#: ekos/manager.cpp:2765
+#: ekos/manager.cpp:2776
 #, kde-format
 msgid "Enabling debug logging for %1..."
 msgstr ""
 
-#: ekos/manager.cpp:2773
+#: ekos/manager.cpp:2784
 #, kde-format
 msgid "Disabling debug logging for %1..."
 msgstr ""
 
-#: ekos/manager.cpp:2799
+#: ekos/manager.cpp:2810
 #, kde-format
 msgid "Re-enabling debug logging for %1..."
 msgstr ""
 
-#: ekos/manager.cpp:2810
+#: ekos/manager.cpp:2821
 #, kde-format
 msgid "Re-disabling debug logging for %1..."
 msgstr ""
@@ -19536,19 +19619,19 @@ msgstr ""
 msgid "Upload"
 msgstr "Enviar"
 
-#: indi/indistd.cpp:245
+#: indi/indistd.cpp:263
 #, fuzzy, kde-format
 #| msgid "Location:"
 msgid "GPS Location"
 msgstr "Emplaçament :"
 
-#: indi/indistd.cpp:247
+#: indi/indistd.cpp:265
 #, fuzzy, kde-format
 #| msgid "Location:"
 msgid "Mount Location"
 msgstr "Emplaçament :"
 
-#: indi/indistd.cpp:432
+#: indi/indistd.cpp:450
 #, fuzzy, kde-format
 #| msgid "File name:"
 msgid "Data file saved to %1"
@@ -19652,7 +19735,7 @@ msgstr "Congò"
 msgid "Moving %1"
 msgstr "Reglar l'ora..."
 
-#: indi/indiwebmanager.cpp:200
+#: indi/indiwebmanager.cpp:218
 #, kde-format
 msgid "Driver %1 failed to start on the remote INDI server."
 msgstr ""
@@ -20088,12 +20171,6 @@ msgstr "&Anullar"
 #, kde-format
 msgid "&Back"
 msgstr "&Precedent"
-
-#. i18n: ectx: property (text), widget (QPushButton, nextB)
-#: indi/telescopewizard.ui:97
-#, kde-format
-msgid "&Next"
-msgstr "&Seguent"
 
 #. i18n: ectx: property (text), widget (QLabel, intoPageLabel)
 #: indi/telescopewizard.ui:163
