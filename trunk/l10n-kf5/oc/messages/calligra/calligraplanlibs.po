@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-02-28 02:53+0100\n"
+"POT-Creation-Date: 2019-03-01 03:02+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1522,7 +1522,7 @@ msgstr ""
 
 #: main/KoPrintingDialog.cpp:147 ui/kptaccountseditor.cpp:72
 #: ui/kptaccountsviewconfigdialog.cpp:89 ui/kptdependencyeditor.cpp:1980
-#: ui/kptganttview.cpp:149 ui/kptganttview.cpp:984 ui/kptganttview.cpp:1274
+#: ui/kptganttview.cpp:178 ui/kptganttview.cpp:1040 ui/kptganttview.cpp:1330
 #: ui/kptitemviewsettup.cpp:201 ui/kptitemviewsettup.cpp:285
 #: ui/kptresourceappointmentsview.cpp:105
 #: ui/performance/ProjectStatusView.cpp:148
@@ -5614,8 +5614,8 @@ msgid "Settings"
 msgstr "Paramètres"
 
 #: ui/kptaccountseditor.cpp:73 ui/kptaccountsviewconfigdialog.cpp:90
-#: ui/kptdependencyeditor.cpp:1981 ui/kptganttview.cpp:149
-#: ui/kptganttview.cpp:984 ui/kptganttview.cpp:1274
+#: ui/kptdependencyeditor.cpp:1981 ui/kptganttview.cpp:178
+#: ui/kptganttview.cpp:1040 ui/kptganttview.cpp:1330
 #: ui/kptitemviewsettup.cpp:201 ui/kptitemviewsettup.cpp:285
 #: ui/kptresourceappointmentsview.cpp:106
 #: ui/performance/ProjectStatusView.cpp:149
@@ -6075,87 +6075,175 @@ msgstr "Suprimir"
 msgid "Open"
 msgstr "Dobrir"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: ui/kptganttchartdisplayoptions.ui:20
+#, fuzzy, kde-format
+#| msgid "Timezone"
+msgid "Timeline"
+msgstr "Fus orari"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, ui_timeLineHide)
+#: ui/kptganttchartdisplayoptions.ui:28
+#, kde-format
+msgid "Do not show the timeline"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_timeLineHide)
+#: ui/kptganttchartdisplayoptions.ui:31
+#, kde-format
+msgid "Hide"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, ui_timeLineForeground)
+#: ui/kptganttchartdisplayoptions.ui:38
+#, kde-format
+msgid "Show timeline in the foreground"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_timeLineForeground)
+#: ui/kptganttchartdisplayoptions.ui:41
+#, kde-format
+msgid "Foreground"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, ui_timeLineBackground)
+#: ui/kptganttchartdisplayoptions.ui:48
+#, kde-format
+msgid "Show timeline in the background"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_timeLineBackground)
+#: ui/kptganttchartdisplayoptions.ui:51
+#, fuzzy, kde-format
+#| msgid "Backwards"
+msgid "Background"
+msgstr "Marcha enarrièr"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_3)
+#: ui/kptganttchartdisplayoptions.ui:60
+#, kde-format
+msgid "Update interval in minutes, 0 disables update"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ui/kptganttchartdisplayoptions.ui:63
+#, kde-format
+msgid "Interval:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_timeLineUseCustom)
+#: ui/kptganttchartdisplayoptions.ui:93
+#, kde-format
+msgid "Use custom line"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: ui/kptganttchartdisplayoptions.ui:102
+#, fuzzy, kde-format
+#| msgid "Clear"
+msgid "Line width"
+msgstr "Chart (Diagrama)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/kptganttchartdisplayoptions.ui:105
+#, kde-format
+msgid "Stroke:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: ui/kptganttchartdisplayoptions.ui:126
+#, fuzzy, kde-format
+#| msgid "Clear"
+msgid "Line color"
+msgstr "Chart (Diagrama)"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptganttchartdisplayoptions.ui:129
+#, kde-format
+msgid "Color:"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/kptganttchartdisplayoptions.ui:23
+#: ui/kptganttchartdisplayoptions.ui:153
 #, kde-format
 msgid "Additional text information"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showTaskName)
-#: ui/kptganttchartdisplayoptions.ui:29
+#: ui/kptganttchartdisplayoptions.ui:159
 #, fuzzy, kde-format
 #| msgid "Tasks"
 msgid "Task name"
 msgstr "Prètzfaches"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showResourceNames)
-#: ui/kptganttchartdisplayoptions.ui:36
+#: ui/kptganttchartdisplayoptions.ui:166
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgid "Resource names"
 msgstr "Ressorga"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: ui/kptganttchartdisplayoptions.ui:46
+#: ui/kptganttchartdisplayoptions.ui:176
 #, kde-format
 msgid "Additional graphics information"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showDependencies)
-#: ui/kptganttchartdisplayoptions.ui:55
+#: ui/kptganttchartdisplayoptions.ui:185
 #, fuzzy, kde-format
 #| msgid "Description"
 msgid "Task dependencies"
 msgstr "Descripcion"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showCompletion)
-#: ui/kptganttchartdisplayoptions.ui:62
+#: ui/kptganttchartdisplayoptions.ui:192
 #, fuzzy, kde-format
 #| msgid "Description"
 msgid "Task completion"
 msgstr "Descripcion"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showTimeConstraint)
-#: ui/kptganttchartdisplayoptions.ui:69
+#: ui/kptganttchartdisplayoptions.ui:199
 #, fuzzy, kde-format
 #| msgid "Contacts:"
 msgid "Time constraints"
 msgstr "Contactes :"
 
-#. i18n: ectx: property (text), widget (QCheckBox, ui_showSchedulingError)
-#: ui/kptganttchartdisplayoptions.ui:89
-#, fuzzy, kde-format
-#| msgid "Description"
-msgid "Scheduling errors"
-msgstr "Descripcion"
-
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showPositiveFloat)
-#: ui/kptganttchartdisplayoptions.ui:96
+#: ui/kptganttchartdisplayoptions.ui:219
 #, fuzzy, kde-format
 #| msgid "Project"
 msgid "Positive float"
 msgstr "Projècte"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showNegativeFloat)
-#: ui/kptganttchartdisplayoptions.ui:103
+#: ui/kptganttchartdisplayoptions.ui:226
 #, fuzzy, kde-format
 #| msgid "Float"
 msgid "Negative float"
 msgstr "Flotar"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalPath)
-#: ui/kptganttchartdisplayoptions.ui:110
+#: ui/kptganttchartdisplayoptions.ui:233
 #, fuzzy, kde-format
 #| msgid "Critical"
 msgid "Critical path"
 msgstr "Critic"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalTasks)
-#: ui/kptganttchartdisplayoptions.ui:117
+#: ui/kptganttchartdisplayoptions.ui:240
 #, fuzzy, kde-format
 #| msgid "Critical"
 msgid "Critical tasks"
 msgstr "Critic"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showSchedulingError)
+#: ui/kptganttchartdisplayoptions.ui:247
+#, fuzzy, kde-format
+#| msgid "Description"
+msgid "Scheduling errors"
+msgstr "Descripcion"
 
 #: ui/kptganttitemdelegate.cpp:90
 #, kde-kuit-format
@@ -6223,27 +6311,27 @@ msgstr ""
 msgid "Divide chart on multiple pages"
 msgstr ""
 
-#: ui/kptganttview.cpp:139 ui/performance/PerformanceStatusView.cpp:319
+#: ui/kptganttview.cpp:168 ui/performance/PerformanceStatusView.cpp:319
 #: ui/performance/ProjectStatusView.cpp:133
 #, fuzzy, kde-format
 #| msgid "Clear"
 msgid "Chart"
 msgstr "Chart (Diagrama)"
 
-#: ui/kptganttview.cpp:139
+#: ui/kptganttview.cpp:168
 #, fuzzy, kde-format
 #| msgid "Project Settings"
 msgid "Gantt Chart Settings"
 msgstr "Paramètres de projècte"
 
-#: ui/kptganttview.cpp:195
+#: ui/kptganttview.cpp:224
 #, fuzzy, kde-kuit-format
 #| msgid "Clear"
 msgctxt "@title:tab"
 msgid "Chart"
 msgstr "Chart (Diagrama)"
 
-#: ui/kptganttview.cpp:756
+#: ui/kptganttview.cpp:812
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6255,13 +6343,13 @@ msgid ""
 "><link url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/kptganttview.cpp:782 ui/kpttaskeditor.cpp:860 ui/kpttaskeditor.cpp:1328
+#: ui/kptganttview.cpp:838 ui/kpttaskeditor.cpp:860 ui/kpttaskeditor.cpp:1328
 #, fuzzy, kde-format
 #| msgid "Project"
 msgid "Show Project"
 msgstr "Projècte"
 
-#: ui/kptganttview.cpp:1050
+#: ui/kptganttview.cpp:1106
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6273,7 +6361,7 @@ msgid ""
 "url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/kptganttview.cpp:1336
+#: ui/kptganttview.cpp:1392
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
