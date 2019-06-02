@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-31 02:44+0200\n"
+"POT-Creation-Date: 2019-06-02 02:44+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -11192,26 +11192,39 @@ msgid ""
 "%1"
 msgstr "Ulhada"
 
-#: libs/ui/canvas/kis_change_guides_command.cpp:38
+#: libs/ui/canvas/kis_change_guides_command.cpp:59
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add Guide"
+msgstr "Paleta"
+
+#: libs/ui/canvas/kis_change_guides_command.cpp:61
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Remove Guide"
+msgstr "Linha"
+
+#: libs/ui/canvas/kis_change_guides_command.cpp:64
+#: libs/ui/canvas/kis_change_guides_command.cpp:116
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Edit Guides"
 msgstr "Paleta"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:751
+#: libs/ui/canvas/kis_guides_manager.cpp:770
 #, fuzzy, kde-format
 msgid "Snap to:"
 msgstr "Alinhar s~us la gresilha"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: libs/ui/canvas/kis_guides_manager.cpp:752
+#: libs/ui/canvas/kis_guides_manager.cpp:771
 #: plugins/dockers/griddocker/grid_config_widget.ui:39
 #, kde-format
 msgid "Grid"
 msgstr "Grasilha"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: libs/ui/canvas/kis_guides_manager.cpp:753
+#: libs/ui/canvas/kis_guides_manager.cpp:772
 #: plugins/dockers/griddocker/grid_config_widget.ui:564
 #, fuzzy, kde-format
 msgid "Guides"
@@ -11219,44 +11232,44 @@ msgstr "Alinhar s~us la gresilha"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#: libs/ui/canvas/kis_guides_manager.cpp:754
+#: libs/ui/canvas/kis_guides_manager.cpp:773
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:52
 #: plugins/paintops/spray/wdgsprayshapeoptions.ui:81
 #, fuzzy, kde-format
 msgid "Pixel"
 msgstr "pixels"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:755
+#: libs/ui/canvas/kis_guides_manager.cpp:774
 #, fuzzy, kde-format
 msgid "Orthogonal"
 msgstr "Alinhar s~us la gresilha"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:757
+#: libs/ui/canvas/kis_guides_manager.cpp:776
 #, fuzzy, kde-format
 msgid "Node"
 msgstr "Pas cap"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:758
+#: libs/ui/canvas/kis_guides_manager.cpp:777
 #, fuzzy, kde-format
 msgid "Extension"
 msgstr "Accion :"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:759
+#: libs/ui/canvas/kis_guides_manager.cpp:778
 #, fuzzy, kde-format
 msgid "Intersection"
 msgstr "Descripcion :"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:761
+#: libs/ui/canvas/kis_guides_manager.cpp:780
 #, fuzzy, kde-format
 msgid "Bounding Box"
 msgstr "Estampatge"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:762
+#: libs/ui/canvas/kis_guides_manager.cpp:781
 #, fuzzy, kde-format
 msgid "Image Bounds"
 msgstr "Imatge"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:763
+#: libs/ui/canvas/kis_guides_manager.cpp:782
 #, fuzzy, kde-format
 msgid "Image Center"
 msgstr "Comentari"
@@ -11731,8 +11744,8 @@ msgstr "Tot seleccionar"
 #: libs/ui/KisView.cpp:747 libs/ui/opengl/kis_opengl_canvas2.cpp:377
 #: libs/ui/opengl/kis_opengl_image_textures.cpp:576
 #: libs/ui/widgets/kis_custom_image_widget.cc:277
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:822
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:825
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:854
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:857
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:299
 #: plugins/extensions/animationrenderer/AnimationRenderer.cpp:141
 #: plugins/extensions/animationrenderer/AnimationRenderer.cpp:190
@@ -16962,8 +16975,8 @@ msgid "No profile"
 msgstr "Opcions"
 
 #: libs/ui/kis_stopgradient_editor.cpp:44
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:955
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:961
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:987
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:993
 #: plugins/tools/defaulttool/defaulttool/DefaultToolGeometryWidget.cpp:122
 #: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImagesWidget.cpp:54
 #, fuzzy, kde-format
@@ -22972,10 +22985,28 @@ msgstr "Ellipsa"
 msgid "Concentric Ellipse assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/ConcentricEllipseAssistant.cc:189
+#: plugins/assistants/Assistants/ConcentricEllipseAssistant.cc:201
 #, fuzzy, kde-format
 msgid "Concentric Ellipse"
 msgstr "Tot seleccionar"
+
+#: plugins/assistants/Assistants/EditAssistantsCommand.cpp:31
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Edit Assistants"
+msgstr "Ellipsa"
+
+#: plugins/assistants/Assistants/EditAssistantsCommand.cpp:42
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add Assistant"
+msgstr "Ellipsa"
+
+#: plugins/assistants/Assistants/EditAssistantsCommand.cpp:42
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Remove Assistant"
+msgstr "Ellipsa"
 
 #: plugins/assistants/Assistants/EllipseAssistant.cc:34
 #, fuzzy, kde-format
@@ -22984,7 +23015,7 @@ msgstr "Ellipsa"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#: plugins/assistants/Assistants/EllipseAssistant.cc:163
+#: plugins/assistants/Assistants/EllipseAssistant.cc:174
 #: plugins/flake/pathshapes/ellipse/EllipseShapeFactory.cpp:35
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:37
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:232
@@ -22998,7 +23029,7 @@ msgstr "Ellipsa"
 msgid "Fish Eye Point assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/FisheyePointAssistant.cc:221
+#: plugins/assistants/Assistants/FisheyePointAssistant.cc:233
 #, fuzzy, kde-format
 msgid "Fish Eye Point"
 msgstr "Opcions"
@@ -23008,32 +23039,32 @@ msgstr "Opcions"
 msgid "Infinite Ruler assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/InfiniteRulerAssistant.cc:156
+#: plugins/assistants/Assistants/InfiniteRulerAssistant.cc:166
 #, fuzzy, kde-format
 msgid "Infinite Ruler"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:703
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:735
 #, fuzzy, kde-format
 msgid "Select an Assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:825
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:857
 #, kde-format
 msgid "Errors were encountered. Not all assistants were successfully loaded."
 msgstr ""
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:888
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:920
 #, fuzzy, kde-format
 msgid "Save Assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:968
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1000
 #, fuzzy, kde-format
 msgid "Density: "
 msgstr "Descripcion :"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.h:157
+#: plugins/assistants/Assistants/kis_assistant_tool.h:163
 #, fuzzy, kde-format
 msgid "Assistant Tool"
 msgstr "Ellipsa"
@@ -23043,7 +23074,7 @@ msgstr "Ellipsa"
 msgid "Parallel Ruler assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/ParallelRulerAssistant.cc:163
+#: plugins/assistants/Assistants/ParallelRulerAssistant.cc:173
 #, fuzzy, kde-format
 msgid "Parallel Ruler"
 msgstr "Ellipsa"
@@ -23056,7 +23087,7 @@ msgstr "Propietats :"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, perspectiveTransformButton)
 #. i18n: ectx: property (text), widget (QToolButton, perspectiveTransformButton)
-#: plugins/assistants/Assistants/PerspectiveAssistant.cc:457
+#: plugins/assistants/Assistants/PerspectiveAssistant.cc:474
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:62
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:128
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:112
@@ -23070,7 +23101,7 @@ msgstr "Propietats :"
 msgid "Ruler assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/RulerAssistant.cc:160
+#: plugins/assistants/Assistants/RulerAssistant.cc:170
 #, fuzzy, kde-format
 msgid "Ruler"
 msgstr "Regulièr"
@@ -23080,7 +23111,7 @@ msgstr "Regulièr"
 msgid "Spline assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/SplineAssistant.cc:221
+#: plugins/assistants/Assistants/SplineAssistant.cc:232
 #, fuzzy, kde-format
 msgid "Spline"
 msgstr "Sinus"
@@ -23090,7 +23121,7 @@ msgstr "Sinus"
 msgid "Vanishing Point assistant"
 msgstr "Ellipsa"
 
-#: plugins/assistants/Assistants/VanishingPointAssistant.cc:301
+#: plugins/assistants/Assistants/VanishingPointAssistant.cc:313
 #, fuzzy, kde-format
 msgid "Vanishing Point"
 msgstr "Opcions"
@@ -58454,11 +58485,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Scalable Distance"
 #~ msgstr "Largor :"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Assistant:"
-#~ msgstr "Ellipsa"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
