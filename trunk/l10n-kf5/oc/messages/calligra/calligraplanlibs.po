@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-09 02:28+0200\n"
+"POT-Creation-Date: 2019-10-12 02:34+0200\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -566,7 +566,7 @@ msgstr "Descripcion"
 msgid "Finished scheduling backward: %1 ms"
 msgstr "Terminat"
 
-#: kernel/kptproject.cpp:2647
+#: kernel/kptproject.cpp:2652
 #, fuzzy, kde-format
 #| msgid "Finish"
 msgid "Plan"
@@ -3569,7 +3569,7 @@ msgctxt "@info:tooltip"
 msgid "Latest work package received: %1"
 msgstr "Prètzfaches"
 
-#: models/kptnodeitemmodel.cpp:2286 ui/RelationEditorDialog.cpp:255
+#: models/kptnodeitemmodel.cpp:2286 ui/RelationEditorDialog.cpp:256
 #, fuzzy, kde-kuit-format
 #| msgid "Type"
 msgctxt "@title:column"
@@ -4883,14 +4883,14 @@ msgid "Modify schedule name"
 msgstr "Descripcion"
 
 #: models/kptschedulemodel.cpp:443
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@info:tooltip"
 msgid "The schedule is in Manual Mode, calculation must be initiated manually"
 msgstr "Descripcion"
 
 #: models/kptschedulemodel.cpp:445
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@info:tooltip"
 msgid "The schedule is in Auto Mode, it will be calculated automatically"
@@ -5737,22 +5737,23 @@ msgid ""
 msgstr ""
 
 #: ui/kptaccountseditor.cpp:291
-#, kde-format
+#, fuzzy, kde-kuit-format
+#| msgid "Add Account"
+msgctxt "@action:inmenu"
 msgid "Add Account"
 msgstr "Apondre un compte"
 
 #: ui/kptaccountseditor.cpp:296
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "Add Account"
+msgctxt "@action:inmenu"
 msgid "Add Subaccount"
 msgstr "Apondre un compte"
 
-#: ui/kptaccountseditor.cpp:301 ui/kptcalendareditor.cpp:656
-#: ui/kptdependencyeditor.cpp:2357 ui/kptresourceeditor.cpp:304
-#: ui/kptscheduleeditor.cpp:318 ui/kpttaskeditor.cpp:854
-#, fuzzy, kde-format, kde-kuit-format
+#: ui/kptaccountseditor.cpp:301
+#, fuzzy, kde-kuit-format
 #| msgid "Delete"
-msgctxt "@action"
+msgctxt "@action:inmenu"
 msgid "Delete"
 msgstr "Suprimir"
 
@@ -5940,6 +5941,15 @@ msgstr "Calendièr"
 msgid "Add Subcalendar"
 msgstr "Calendièr"
 
+#: ui/kptcalendareditor.cpp:656 ui/kptdependencyeditor.cpp:2357
+#: ui/kptresourceeditor.cpp:304 ui/kptscheduleeditor.cpp:318
+#: ui/kpttaskeditor.cpp:887
+#, fuzzy, kde-kuit-format
+#| msgid "Delete"
+msgctxt "@action"
+msgid "Delete"
+msgstr "Suprimir"
+
 #: ui/kptcalendareditor.cpp:815 ui/kptcalendareditor.cpp:849
 #, fuzzy
 #| msgid "Description"
@@ -6018,8 +6028,8 @@ msgid ""
 "printing using the context menu.<nl/><link url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/kptdependencyeditor.cpp:2328 ui/kpttaskeditor.cpp:825
-#: ui/kpttaskeditor.cpp:829
+#: ui/kptdependencyeditor.cpp:2328 ui/kpttaskeditor.cpp:858
+#: ui/kpttaskeditor.cpp:862
 #, fuzzy, kde-format
 #| msgid "Task"
 msgid "Add Task"
@@ -6037,8 +6047,8 @@ msgstr "Prètzfach (Task)"
 msgid "Add Milestone..."
 msgstr "Descripcion"
 
-#: ui/kptdependencyeditor.cpp:2343 ui/kpttaskeditor.cpp:840
-#: ui/kpttaskeditor.cpp:844
+#: ui/kptdependencyeditor.cpp:2343 ui/kpttaskeditor.cpp:873
+#: ui/kpttaskeditor.cpp:877
 #, fuzzy, kde-format
 #| msgid "Task"
 msgid "Add Sub-Task"
@@ -6056,7 +6066,7 @@ msgstr "Prètzfach (Task)"
 msgid "Add Sub-Milestone..."
 msgstr "Descripcion"
 
-#: ui/kptdependencyeditor.cpp:2362 ui/kpttaskeditor.cpp:859
+#: ui/kptdependencyeditor.cpp:2362 ui/kpttaskeditor.cpp:892
 #, fuzzy, kde-kuit-format
 #| msgid "Open"
 msgctxt "@action"
@@ -6492,7 +6502,7 @@ msgid ""
 "><link url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/kptganttview.cpp:991 ui/kpttaskeditor.cpp:881 ui/kpttaskeditor.cpp:1389
+#: ui/kptganttview.cpp:991 ui/kpttaskeditor.cpp:914 ui/kpttaskeditor.cpp:1434
 #, fuzzy, kde-format
 #| msgid "Project"
 msgid "Show Project"
@@ -7117,7 +7127,7 @@ msgctxt "(qtundo-format)"
 msgid "Add task dependency"
 msgstr "Descripcion"
 
-#: ui/kptrelationdialog.cpp:146 ui/RelationEditorDialog.cpp:246
+#: ui/kptrelationdialog.cpp:146 ui/RelationEditorDialog.cpp:247
 #, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@title:window"
@@ -7630,40 +7640,58 @@ msgid ""
 "the project"
 msgstr ""
 
-#: ui/kpttaskeditor.cpp:834
+#: ui/kpttaskeditor.cpp:867
 #, fuzzy, kde-format
 #| msgid "Description"
 msgid "Add Milestone"
 msgstr "Descripcion"
 
-#: ui/kpttaskeditor.cpp:849
+#: ui/kpttaskeditor.cpp:882
 #, fuzzy, kde-format
 #| msgid "Description"
 msgid "Add Sub-Milestone"
 msgstr "Descripcion"
 
-#: ui/kpttaskeditor.cpp:864
+#: ui/kpttaskeditor.cpp:897
 #, fuzzy, kde-format
 #| msgid "Task"
 msgid "Indent Task"
 msgstr "Prètzfach (Task)"
 
-#: ui/kpttaskeditor.cpp:868
+#: ui/kpttaskeditor.cpp:901
 #, kde-format
 msgid "Unindent Task"
 msgstr ""
 
-#: ui/kpttaskeditor.cpp:872
+#: ui/kpttaskeditor.cpp:905
 #, kde-format
 msgid "Move Up"
 msgstr "Montar"
 
-#: ui/kpttaskeditor.cpp:876
+#: ui/kpttaskeditor.cpp:909
 #, kde-format
 msgid "Move Down"
 msgstr "Davalar"
 
-#: ui/kpttaskeditor.cpp:1221
+#: ui/kpttaskeditor.cpp:1093
+#, fuzzy, kde-format
+#| msgid "Task"
+msgctxt "(qtundo-format)"
+msgid "Indent task"
+msgid_plural "Indent %1 tasks"
+msgstr[0] "Prètzfach (Task)"
+msgstr[1] "Prètzfach (Task)"
+
+#: ui/kpttaskeditor.cpp:1112
+#, fuzzy, kde-format
+#| msgid "Task"
+msgctxt "(qtundo-format)"
+msgid "Unindent task"
+msgid_plural "Unindent %1 tasks"
+msgstr[0] "Prètzfach (Task)"
+msgstr[1] "Prètzfach (Task)"
+
+#: ui/kpttaskeditor.cpp:1266
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -7674,18 +7702,18 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, ui_publish)
-#: ui/kpttaskeditor.cpp:1712 ui/kptworkpackagesendpanel.ui:45
+#: ui/kpttaskeditor.cpp:1757 ui/kptworkpackagesendpanel.ui:45
 #, kde-format
 msgid "Publish..."
 msgstr ""
 
-#: ui/kpttaskeditor.cpp:1716
+#: ui/kpttaskeditor.cpp:1761
 #, fuzzy, kde-format
 #| msgid "Tasks"
 msgid "Work Packages..."
 msgstr "Prètzfaches"
 
-#: ui/kpttaskeditor.cpp:1734
+#: ui/kpttaskeditor.cpp:1779
 #, fuzzy
 #| msgid "Tasks"
 msgctxt "(qtundo-format)"
@@ -8627,32 +8655,44 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: ui/RelationEditorDialog.cpp:242 ui/RelationEditorDialog.cpp:311
+#: ui/RelationEditorDialog.cpp:243 ui/RelationEditorDialog.cpp:322
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "Delete"
 msgstr "Suprimir"
 
-#: ui/RelationEditorDialog.cpp:254
+#: ui/RelationEditorDialog.cpp:255
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Predecessor"
 msgstr ""
 
-#: ui/RelationEditorDialog.cpp:256
+#: ui/RelationEditorDialog.cpp:257
 #, fuzzy, kde-kuit-format
 #| msgid "Name:"
 msgctxt "@title:column"
 msgid "Lag"
 msgstr "Nom :"
 
-#: ui/RelationEditorDialog.cpp:308
+#: ui/RelationEditorDialog.cpp:303
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Task Dependency Dialog</title><para>The task dependency dialog "
+"enables you to easily add a predecessor to the selected task.<nl/>When "
+"opened, it presents the previous task as the default predecessor. This is "
+"often the desired predecessor, and can be added by just pressing "
+"<interface>OK</interface>.<nl/>The dropdown list of possible predecessors is "
+"sorted with the most likely tasks first.</para>"
+msgstr ""
+
+#: ui/RelationEditorDialog.cpp:319
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "Un-Delete"
 msgstr "Suprimir"
 
-#: ui/RelationEditorDialog.cpp:386
+#: ui/RelationEditorDialog.cpp:397
 #, fuzzy
 #| msgid "Description"
 msgctxt "(qtundo-format)"
@@ -9234,14 +9274,14 @@ msgid "Failed to create report"
 msgstr ""
 
 #: ui/reportsgenerator/ReportsGeneratorView.cpp:472
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "No description available"
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Report Generation"
 msgstr "Pas cap de descripcion es disponibla"
 
 #: ui/reportsgenerator/ReportsGeneratorView.cpp:472
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "No description available"
 msgctxt "@info"
 msgid "Report file generated:<nl/><filename>%1</filename>"
@@ -10144,6 +10184,12 @@ msgstr ""
 #, kde-format
 msgid "All supported formats"
 msgstr ""
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title"
+#~ msgid "Report Generation"
+#~ msgstr "Pas cap de descripcion es disponibla"
 
 #, fuzzy
 #~| msgid "New"
