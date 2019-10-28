@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-21 02:26+0200\n"
+"POT-Creation-Date: 2019-10-28 02:27+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -2201,13 +2201,13 @@ msgid ""
 "Size of icons in the Places Panel (-1 means \"use the style's small size\")"
 msgstr ""
 
-#: panels/places/placesitemmodel.cpp:201
+#: panels/places/placesitemmodel.cpp:203
 #, kde-format
 msgctxt "@item"
 msgid "Eject"
 msgstr ""
 
-#: panels/places/placesitemmodel.cpp:236
+#: panels/places/placesitemmodel.cpp:238
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu View"
 #| msgid "Reload"
@@ -2215,7 +2215,7 @@ msgctxt "@item"
 msgid "Release"
 msgstr "Tornar cargar"
 
-#: panels/places/placesitemmodel.cpp:238
+#: panels/places/placesitemmodel.cpp:240
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu View"
 #| msgid "Reload"
@@ -2223,7 +2223,7 @@ msgctxt "@item"
 msgid "Safely Remove"
 msgstr "Tornar cargar"
 
-#: panels/places/placesitemmodel.cpp:241
+#: panels/places/placesitemmodel.cpp:243
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu View"
 #| msgid "Reload"
@@ -2231,19 +2231,41 @@ msgctxt "@item"
 msgid "Unmount"
 msgstr "Tornar cargar"
 
-#: panels/places/placesitemmodel.cpp:263
+#: panels/places/placesitemmodel.cpp:265
 #, kde-format
 msgctxt "@info"
 msgid "The device '%1' is not a disk and cannot be ejected."
 msgstr ""
 
-#: panels/places/placesitemmodel.cpp:498
+#: panels/places/placesitemmodel.cpp:485
+#, kde-format
+msgid "One or more files on this device are open within an application."
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:492
+#, kde-kuit-format
+msgid ""
+"One or more files on this device are opened in application <application>"
+"\"%2\"</application>."
+msgid_plural ""
+"One or more files on this device are opened in following applications: "
+"<application>%2</application>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: panels/places/placesitemmodel.cpp:494
+#, kde-format
+msgctxt "separator in list of apps blocking device unmount"
+msgid ", "
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:522
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr ""
 
-#: panels/places/placesitemmodel.cpp:502
+#: panels/places/placesitemmodel.cpp:526
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1'"
@@ -2371,123 +2393,129 @@ msgstr ""
 msgid "Show facets widget"
 msgstr "Visualizar los fichièrs amagats"
 
-#: search/dolphinfacetswidget.cpp:52
-#, kde-format
-msgctxt "@option:check"
-msgid "Any"
-msgstr ""
+#: search/dolphinfacetswidget.cpp:38
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Sort"
+#| msgid "By Type"
+msgctxt "@item:inlistbox"
+msgid "Any Type"
+msgstr "Per tipe"
 
-#: search/dolphinfacetswidget.cpp:53
+#: search/dolphinfacetswidget.cpp:39
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Folders"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Folders"
 msgstr "Repertòris"
 
-#: search/dolphinfacetswidget.cpp:54
+#: search/dolphinfacetswidget.cpp:40
 #, fuzzy, kde-format
 #| msgctxt "@info:credit"
 #| msgid "Documentation"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Documents"
 msgstr "Documentacion"
 
-#: search/dolphinfacetswidget.cpp:55
+#: search/dolphinfacetswidget.cpp:41
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox Sort"
 #| msgid "By Size"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Images"
 msgstr "Per talha"
 
-#: search/dolphinfacetswidget.cpp:56
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Show hidden files"
+msgctxt "@item:inlistbox"
 msgid "Audio Files"
-msgstr ""
+msgstr "Visualizar los fichièrs amagats"
 
-#: search/dolphinfacetswidget.cpp:57
+#: search/dolphinfacetswidget.cpp:43
 #, kde-format
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Videos"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:70
-#, kde-format
-msgctxt "@option:option"
-msgid "Anytime"
-msgstr ""
+#: search/dolphinfacetswidget.cpp:49
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Sort"
+#| msgid "By Date"
+msgctxt "@item:inlistbox"
+msgid "Any Date"
+msgstr "Per data"
 
-#: search/dolphinfacetswidget.cpp:71
+#: search/dolphinfacetswidget.cpp:50
 #, fuzzy, kde-format
 #| msgctxt "@title:group Date"
 #| msgid "Today"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Today"
 msgstr "Uèi"
 
-#: search/dolphinfacetswidget.cpp:72
+#: search/dolphinfacetswidget.cpp:51
 #, fuzzy, kde-format
 #| msgctxt "@title:group Date"
 #| msgid "Yesterday"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Yesterday"
 msgstr "Ièr"
 
-#: search/dolphinfacetswidget.cpp:73
+#: search/dolphinfacetswidget.cpp:52
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "This Week"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:74
+#: search/dolphinfacetswidget.cpp:53
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "This Month"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:75
+#: search/dolphinfacetswidget.cpp:54
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "This Year"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:88
+#: search/dolphinfacetswidget.cpp:58
 #, fuzzy, kde-format
 #| msgctxt "@label:textbox"
 #| msgid "Location:"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Any Rating"
 msgstr "Emplaçament :"
 
-#: search/dolphinfacetswidget.cpp:89
+#: search/dolphinfacetswidget.cpp:59
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "1 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:90
+#: search/dolphinfacetswidget.cpp:60
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "2 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:91
+#: search/dolphinfacetswidget.cpp:61
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "3 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:92
+#: search/dolphinfacetswidget.cpp:62
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "4 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:93
+#: search/dolphinfacetswidget.cpp:63
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Highest Rating"
 msgstr ""
 
@@ -4459,6 +4487,27 @@ msgid "Updating version information..."
 msgstr "Entresenha adicionalas"
 
 #, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Folders"
+#~ msgctxt "@option:check"
+#~ msgid "Folders"
+#~ msgstr "Repertòris"
+
+#, fuzzy
+#~| msgctxt "@title:group Date"
+#~| msgid "Today"
+#~ msgctxt "@option:option"
+#~ msgid "Today"
+#~ msgstr "Uèi"
+
+#, fuzzy
+#~| msgctxt "@title:group Date"
+#~| msgid "Yesterday"
+#~ msgctxt "@option:option"
+#~ msgid "Yesterday"
+#~ msgstr "Ièr"
+
+#, fuzzy
 #~| msgctxt "@label:textbox"
 #~| msgid "Location:"
 #~ msgctxt "@action:inmenu"
@@ -4485,13 +4534,6 @@ msgstr "Entresenha adicionalas"
 #~ msgctxt "@action:intoolbar"
 #~ msgid "Preview"
 #~ msgstr "Ulhada"
-
-#, fuzzy
-#~| msgctxt "@label"
-#~| msgid "Show hidden files"
-#~ msgctxt "@action:inmenu View"
-#~ msgid "Hidden Files"
-#~ msgstr "Visualizar los fichièrs amagats"
 
 #, fuzzy
 #~| msgctxt "@action:inmenu View"
@@ -4862,14 +4904,6 @@ msgstr "Entresenha adicionalas"
 #~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Size"
 #~ msgstr "Per talha"
-
-#~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Date"
-#~ msgstr "Per data"
-
-#~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Type"
-#~ msgstr "Per tipe"
 
 #, fuzzy
 #~| msgctxt "@info:credit"
