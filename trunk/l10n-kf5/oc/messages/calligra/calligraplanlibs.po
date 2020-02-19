@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-23 02:42+0100\n"
+"POT-Creation-Date: 2020-02-19 02:34+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -566,7 +566,7 @@ msgstr "Descripcion"
 msgid "Finished scheduling backward: %1 ms"
 msgstr "Terminat"
 
-#: kernel/kptproject.cpp:3139
+#: kernel/kptproject.cpp:3174
 #, fuzzy, kde-format
 #| msgid "Finish"
 msgid "Plan"
@@ -878,13 +878,13 @@ msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "Pas cap de descripcion es disponibla"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/ResourceGroup.cpp:134 ui/resourcedialogbase.ui:175
+#: kernel/ResourceGroup.cpp:141 ui/resourcedialogbase.ui:175
 #, kde-format
 msgid "Work"
 msgstr "Professional"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/ResourceGroup.cpp:135 ui/resourcedialogbase.ui:180
+#: kernel/ResourceGroup.cpp:142 ui/resourcedialogbase.ui:180
 #, kde-format
 msgid "Material"
 msgstr "Material"
@@ -2880,7 +2880,7 @@ msgstr "Segondas"
 msgid "Status"
 msgstr "Estatut"
 
-#: models/kptflatproxymodel.cpp:295 models/kptrelationmodel.cpp:136
+#: models/kptflatproxymodel.cpp:61 models/kptrelationmodel.cpp:136
 #, kde-format
 msgid "Parent"
 msgstr "Parent"
@@ -5166,21 +5166,21 @@ msgctxt "@info"
 msgid "Missing namespace declarations:<nl/><filename>%1</filename>"
 msgstr ""
 
-#: models/ResourceGroupItemModel.cpp:334
+#: models/ResourceGroupItemModel.cpp:349
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup name"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:375
+#: models/ResourceGroupItemModel.cpp:390
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup type"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:574 models/ResourceItemModel.cpp:804
+#: models/ResourceGroupItemModel.cpp:597 models/ResourceItemModel.cpp:804
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
@@ -5189,7 +5189,7 @@ msgid_plural "Add %1 resources from address book"
 msgstr[0] "Ressorga"
 msgstr[1] "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:635 models/ResourceItemModel.cpp:866
+#: models/ResourceGroupItemModel.cpp:658 models/ResourceItemModel.cpp:866
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
@@ -5198,7 +5198,7 @@ msgid_plural "Move %1 resources"
 msgstr[0] "Ressorga"
 msgstr[1] "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:654 models/ResourceItemModel.cpp:885
+#: models/ResourceGroupItemModel.cpp:677 models/ResourceItemModel.cpp:885
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
@@ -5207,28 +5207,28 @@ msgid_plural "Copy %1 resources"
 msgstr[0] "Ressorga"
 msgstr[1] "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:754
+#: models/ResourceGroupItemModel.cpp:778 models/ResourceGroupItemModel.cpp:782
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Add resource group"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:765 models/ResourceItemModel.cpp:983
+#: models/ResourceGroupItemModel.cpp:789 models/ResourceItemModel.cpp:983
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Add resource"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:826
+#: models/ResourceGroupItemModel.cpp:850
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Add parent group"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:828
+#: models/ResourceGroupItemModel.cpp:852
 #, fuzzy
 #| msgid "Remove Entry"
 msgctxt "(qtundo-format)"
@@ -6038,7 +6038,7 @@ msgstr "Calendièr"
 
 #: ui/kptcalendareditor.cpp:656 ui/kptdependencyeditor.cpp:2357
 #: ui/kptresourceeditor.cpp:304 ui/kptscheduleeditor.cpp:318
-#: ui/kpttaskeditor.cpp:896 ui/ResourceGroupEditor.cpp:299
+#: ui/kpttaskeditor.cpp:896 ui/ResourceGroupEditor.cpp:305
 #, fuzzy, kde-kuit-format
 #| msgid "Delete"
 msgctxt "@action"
@@ -9525,10 +9525,16 @@ msgstr "mes passat"
 msgid "Overtime rate:"
 msgstr ""
 
-#: ui/ResourceGroupEditor.cpp:294
+#: ui/ResourceGroupEditor.cpp:295
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgid "Add Resource Group"
+msgstr "Ressorga"
+
+#: ui/ResourceGroupEditor.cpp:300
+#, fuzzy, kde-format
+#| msgid "Resource"
+msgid "Add Child Resource Group"
 msgstr "Ressorga"
 
 #: ui/RichTextWidget.cpp:39 ui/RichTextWidget.cpp:52
