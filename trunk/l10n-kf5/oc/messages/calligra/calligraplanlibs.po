@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-27 02:37+0100\n"
+"POT-Creation-Date: 2020-03-04 02:39+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -847,47 +847,35 @@ msgctxt "@item:inlistbox resource type"
 msgid "Team"
 msgstr ""
 
-#: kernel/Resource.cpp:649
+#: kernel/Resource.cpp:653
 #, fuzzy, kde-format
 #| msgid "No description available"
 msgid "Make appointments: Invalid time"
 msgstr "Pas cap de descripcion es disponibla"
 
-#: kernel/Resource.cpp:654 kernel/Resource.cpp:712 kernel/Resource.cpp:952
-#: kernel/Resource.cpp:1025
+#: kernel/Resource.cpp:658 kernel/Resource.cpp:716 kernel/Resource.cpp:956
+#: kernel/Resource.cpp:1029
 #, kde-format
 msgid "Resource %1 has no calendar defined"
 msgstr ""
 
-#: kernel/Resource.cpp:676
+#: kernel/Resource.cpp:680
 #, fuzzy, kde-format
 #| msgid "No description available"
 msgid "Make appointments: Node start time is not valid"
 msgstr "Pas cap de descripcion es disponibla"
 
-#: kernel/Resource.cpp:680
+#: kernel/Resource.cpp:684
 #, fuzzy, kde-format
 #| msgid "No description available"
 msgid "Make appointments: Node end time is not valid"
 msgstr "Pas cap de descripcion es disponibla"
 
-#: kernel/Resource.cpp:726 kernel/Resource.cpp:742
+#: kernel/Resource.cpp:730 kernel/Resource.cpp:746
 #, fuzzy, kde-format
 #| msgid "No description available"
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "Pas cap de descripcion es disponibla"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/ResourceGroup.cpp:141 ui/resourcedialogbase.ui:186
-#, kde-format
-msgid "Work"
-msgstr "Professional"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/ResourceGroup.cpp:142 ui/resourcedialogbase.ui:191
-#, kde-format
-msgid "Material"
-msgstr "Material"
 
 #: kundo2/kundo2group.cpp:360 kundo2/kundo2stack.cpp:1083
 #, kde-format
@@ -1590,18 +1578,18 @@ msgstr "Tampar"
 msgid "Stopped"
 msgstr ""
 
-#: main/KoView.cpp:350
+#: main/KoView.cpp:341
 #, kde-format
 msgid "Active Author Profile"
 msgstr ""
 
-#: main/KoView.cpp:362 main/KoView.cpp:416
+#: main/KoView.cpp:353 main/KoView.cpp:407
 #, kde-format
 msgctxt "choice for author profile"
 msgid "Anonymous"
 msgstr ""
 
-#: main/KoView.cpp:415
+#: main/KoView.cpp:406
 #, kde-format
 msgid "Default Author Profile"
 msgstr ""
@@ -1647,7 +1635,7 @@ msgstr[1] "Ressorga"
 #: models/kptresourceappointmentsmodel.cpp:1245 models/kptschedulemodel.cpp:990
 #: models/kptschedulemodel.cpp:1313
 #: models/reportgenerator/ReportGeneratorOdt.cpp:191
-#: models/ResourceGroupModel.cpp:206 models/ResourceModel.cpp:410
+#: models/ResourceGroupModel.cpp:203 models/ResourceModel.cpp:410
 #: ui/projectview/ProjectView.cpp:53
 #: ui/reportsgenerator/ReportsGeneratorView.cpp:225
 #, kde-format
@@ -1657,7 +1645,7 @@ msgstr "Nom"
 #: models/GroupAllocationItemModel.cpp:185 models/kptdocumentmodel.cpp:201
 #: models/kptrelationmodel.cpp:138 models/kptresourceallocationmodel.cpp:247
 #: models/kptresourceappointmentsmodel.cpp:1246
-#: models/ResourceGroupModel.cpp:208 models/ResourceModel.cpp:412
+#: models/ResourceGroupModel.cpp:205 models/ResourceModel.cpp:412
 #, kde-format
 msgid "Type"
 msgstr "Tipe"
@@ -1968,7 +1956,7 @@ msgstr "Nom"
 #: models/kptcalendarmodel.cpp:543
 #, kde-kuit-format
 msgctxt "@title:column"
-msgid "Scope"
+msgid "Origin"
 msgstr ""
 
 #: models/kptcalendarmodel.cpp:544
@@ -2580,22 +2568,22 @@ msgstr ""
 #, fuzzy, kde-kuit-format
 #| msgid "Resource"
 msgctxt "@info:tooltip"
-msgid "The name of the resource or resource group"
+msgid "The name of the resource"
 msgstr "Ressorga"
 
 #: models/kptcommonstrings.cpp:115
 #, fuzzy, kde-kuit-format
 #| msgid "Resource"
 msgctxt "@info:tooltip"
-msgid "The origin of the resource or resource group"
+msgid "The origin of the resource"
 msgstr "Ressorga"
 
 #: models/kptcommonstrings.cpp:116
 #, fuzzy, kde-kuit-format
-#| msgid "Documents"
+#| msgid "Resource"
 msgctxt "@info:tooltip"
-msgid "The type of the resource or resource group"
-msgstr "Documents"
+msgid "The type of the resource"
+msgstr "Ressorga"
 
 #: models/kptcommonstrings.cpp:117
 #, fuzzy, kde-kuit-format
@@ -2658,37 +2646,72 @@ msgstr ""
 #, fuzzy, kde-kuit-format
 #| msgid "Resource"
 msgctxt "@info:tooltip"
-msgid "The name of the account"
+msgid "The name of the resource group"
 msgstr "Ressorga"
 
 #: models/kptcommonstrings.cpp:129
+#, fuzzy, kde-kuit-format
+#| msgid "Resource"
+msgctxt "@info:tooltip"
+msgid "The origin of the resource group"
+msgstr "Ressorga"
+
+#: models/kptcommonstrings.cpp:130
+#, fuzzy, kde-kuit-format
+#| msgid "Documents"
+msgctxt "@info:tooltip"
+msgid "The type of the resource group"
+msgstr "Documents"
+
+#: models/kptcommonstrings.cpp:131
+#, fuzzy, kde-kuit-format
+#| msgid "Resource"
+msgctxt "@info:tooltip"
+msgid "The aggregated units for the resources in the resource group"
+msgstr "Ressorga"
+
+#: models/kptcommonstrings.cpp:132
+#, fuzzy, kde-kuit-format
+#| msgid "Resource"
+msgctxt "@info:tooltip"
+msgid "The coordinator of the resource group"
+msgstr "Ressorga"
+
+#: models/kptcommonstrings.cpp:134
+#, fuzzy, kde-kuit-format
+#| msgid "Resource"
+msgctxt "@info:tooltip"
+msgid "The name of the account"
+msgstr "Ressorga"
+
+#: models/kptcommonstrings.cpp:135
 #, fuzzy, kde-kuit-format
 #| msgid "Documents"
 msgctxt "@info:tooltip"
 msgid "The description of the account"
 msgstr "Documents"
 
-#: models/kptcommonstrings.cpp:131
+#: models/kptcommonstrings.cpp:137
 #, fuzzy, kde-kuit-format
 #| msgid "Delete Selection"
 msgctxt "@info:tooltip"
 msgid "The name and scheduling mode of the schedule"
 msgstr "Suprimir la seleccion"
 
-#: models/kptcommonstrings.cpp:132
+#: models/kptcommonstrings.cpp:138
 #, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@info:tooltip"
 msgid "The schedules state"
 msgstr "Descripcion"
 
-#: models/kptcommonstrings.cpp:134
+#: models/kptcommonstrings.cpp:140
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Controls resource overbooking when scheduling"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:136
+#: models/kptcommonstrings.cpp:142
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2701,13 +2724,13 @@ msgid ""
 "</para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:142
+#: models/kptcommonstrings.cpp:148
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The distribution to be used during scheduling"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:144
+#: models/kptcommonstrings.cpp:150
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2718,34 +2741,34 @@ msgid ""
 "estimate. The formula used for this is (O + 4 * M + P) / 6.</para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:150
+#: models/kptcommonstrings.cpp:156
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Defines the schedules to be calculated"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:151
+#: models/kptcommonstrings.cpp:157
 #, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@info:tooltip"
 msgid "The scheduled start time"
 msgstr "Descripcion"
 
-#: models/kptcommonstrings.cpp:152
+#: models/kptcommonstrings.cpp:158
 #, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@info:tooltip"
 msgid "The scheduled finish time"
 msgstr "Descripcion"
 
-#: models/kptcommonstrings.cpp:153
+#: models/kptcommonstrings.cpp:159
 #, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@info:tooltip"
 msgid "The scheduling direction"
 msgstr "Descripcion"
 
-#: models/kptcommonstrings.cpp:155
+#: models/kptcommonstrings.cpp:161
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2756,13 +2779,13 @@ msgid ""
 "in the main project dialog.</para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:161
+#: models/kptcommonstrings.cpp:167
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The scheduler used for calculating the project schedule"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:163
+#: models/kptcommonstrings.cpp:169
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2773,13 +2796,13 @@ msgid ""
 "project scheduler.</para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:170
+#: models/kptcommonstrings.cpp:176
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The granularity used when calculating the project schedule"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:172
+#: models/kptcommonstrings.cpp:178
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -2788,77 +2811,77 @@ msgid ""
 "emphasis> Calculation is initiated automatically.</item></list></para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:180
+#: models/kptcommonstrings.cpp:186
 #, fuzzy, kde-kuit-format
 #| msgid "Documents"
 msgctxt "@info:tooltip"
 msgid "The url of the document"
 msgstr "Documents"
 
-#: models/kptcommonstrings.cpp:181
+#: models/kptcommonstrings.cpp:187
 #, fuzzy, kde-kuit-format
 #| msgid "Documents"
 msgctxt "@info:tooltip"
 msgid "The type of the document"
 msgstr "Documents"
 
-#: models/kptcommonstrings.cpp:182
+#: models/kptcommonstrings.cpp:188
 #, fuzzy, kde-kuit-format
 #| msgid "Documents"
 msgctxt "@info:tooltip"
 msgid "The status of the document"
 msgstr "Documents"
 
-#: models/kptcommonstrings.cpp:183
+#: models/kptcommonstrings.cpp:189
 #, fuzzy, kde-kuit-format
 #| msgid "% Completed"
 msgctxt "@info:tooltip"
 msgid "Defines how this document is sent"
 msgstr "% acabat"
 
-#: models/kptcommonstrings.cpp:185
+#: models/kptcommonstrings.cpp:191
 #, fuzzy, kde-kuit-format
 #| msgid "Delete Selection"
 msgctxt "@info:tooltip"
 msgid "The name of the calendar"
 msgstr "Suprimir la seleccion"
 
-#: models/kptcommonstrings.cpp:186
+#: models/kptcommonstrings.cpp:192
 #, fuzzy, kde-kuit-format
 #| msgid "Delete Selection"
 msgctxt "@info:tooltip"
 msgid "The timezone of the calendar"
 msgstr "Suprimir la seleccion"
 
-#: models/kptcommonstrings.cpp:188
+#: models/kptcommonstrings.cpp:194
 #, fuzzy, kde-kuit-format
 #| msgid "Resource"
 msgctxt "@info:tooltip"
 msgid "The name of the required task"
 msgstr "Ressorga"
 
-#: models/kptcommonstrings.cpp:189
+#: models/kptcommonstrings.cpp:195
 #, fuzzy, kde-kuit-format
 #| msgid "Resource"
 msgctxt "@info:tooltip"
 msgid "The name of the dependent task"
 msgstr "Ressorga"
 
-#: models/kptcommonstrings.cpp:190
+#: models/kptcommonstrings.cpp:196
 #, fuzzy, kde-kuit-format
 #| msgid "Documents"
 msgctxt "@info:tooltip"
 msgid "The type of relation"
 msgstr "Documents"
 
-#: models/kptcommonstrings.cpp:191
+#: models/kptcommonstrings.cpp:197
 #, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@info:tooltip"
 msgid "The relations time lag"
 msgstr "Descripcion"
 
-#: models/kptcommonstrings.cpp:195 ui/kptdocumentspanel.cpp:221
+#: models/kptcommonstrings.cpp:201 ui/kptdocumentspanel.cpp:221
 #, fuzzy
 #| msgid "Documents"
 msgctxt "(qtundo-format)"
@@ -5167,21 +5190,28 @@ msgctxt "@info"
 msgid "Missing namespace declarations:<nl/><filename>%1</filename>"
 msgstr ""
 
-#: models/ResourceGroupItemModel.cpp:363
+#: models/ResourceGroupItemModel.cpp:365
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup name"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:404
+#: models/ResourceGroupItemModel.cpp:391
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup type"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:611 models/ResourceItemModel.cpp:859
+#: models/ResourceGroupItemModel.cpp:407
+#, fuzzy
+#| msgid "Resource"
+msgctxt "(qtundo-format)"
+msgid "Modify resourcegroup coordinator"
+msgstr "Ressorga"
+
+#: models/ResourceGroupItemModel.cpp:610 models/ResourceItemModel.cpp:859
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
@@ -5190,7 +5220,7 @@ msgid_plural "Add %1 resources from address book"
 msgstr[0] "Ressorga"
 msgstr[1] "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:672 models/ResourceItemModel.cpp:921
+#: models/ResourceGroupItemModel.cpp:671 models/ResourceItemModel.cpp:921
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
@@ -5199,7 +5229,7 @@ msgid_plural "Move %1 resources"
 msgstr[0] "Ressorga"
 msgstr[1] "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:691 models/ResourceItemModel.cpp:940
+#: models/ResourceGroupItemModel.cpp:690 models/ResourceItemModel.cpp:940
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
@@ -5208,28 +5238,28 @@ msgid_plural "Copy %1 resources"
 msgstr[0] "Ressorga"
 msgstr[1] "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:792 models/ResourceGroupItemModel.cpp:796
+#: models/ResourceGroupItemModel.cpp:791 models/ResourceGroupItemModel.cpp:795
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Add resource group"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:803 models/ResourceItemModel.cpp:1038
+#: models/ResourceGroupItemModel.cpp:802 models/ResourceItemModel.cpp:1038
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Add resource"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:865 ui/ResourceGroupDocker.cpp:165
+#: models/ResourceGroupItemModel.cpp:864 ui/ResourceGroupDocker.cpp:165
 #, fuzzy
 #| msgid "Resource"
 msgctxt "(qtundo-format)"
 msgid "Add parent group"
 msgstr "Ressorga"
 
-#: models/ResourceGroupItemModel.cpp:867 ui/ResourceGroupDocker.cpp:168
+#: models/ResourceGroupItemModel.cpp:866 ui/ResourceGroupDocker.cpp:168
 #, fuzzy
 #| msgid "Remove Entry"
 msgctxt "(qtundo-format)"
@@ -5252,24 +5282,19 @@ msgid ""
 "this project"
 msgstr ""
 
-#: models/ResourceGroupModel.cpp:207 models/ResourceModel.cpp:411
+#: models/ResourceGroupModel.cpp:204 models/ResourceModel.cpp:411
 #, kde-format
 msgid "Origin"
 msgstr ""
 
-#: models/ResourceGroupModel.cpp:209
+#: models/ResourceGroupModel.cpp:206
 #, kde-format
 msgid "Units"
 msgstr ""
 
-#: models/ResourceGroupModel.cpp:210
+#: models/ResourceGroupModel.cpp:207
 #, kde-format
 msgid "Coordinator"
-msgstr ""
-
-#: models/ResourceGroupModel.cpp:226
-#, kde-format
-msgid "TODO"
 msgstr ""
 
 #: models/ResourceItemModel.cpp:416
@@ -6039,7 +6064,7 @@ msgstr "Calendièr"
 
 #: ui/kptcalendareditor.cpp:656 ui/kptdependencyeditor.cpp:2357
 #: ui/kptresourceeditor.cpp:317 ui/kptscheduleeditor.cpp:318
-#: ui/kpttaskeditor.cpp:896 ui/ResourceGroupEditor.cpp:305
+#: ui/kpttaskeditor.cpp:896 ui/ResourceGroupEditor.cpp:304
 #, fuzzy, kde-kuit-format
 #| msgid "Delete"
 msgctxt "@action"
@@ -7723,7 +7748,7 @@ msgctxt "@title resource allocations"
 msgid "Allocations"
 msgstr "Projècte"
 
-#: ui/kpttaskeditor.cpp:462 ui/ResourceGroupEditor.cpp:400
+#: ui/kpttaskeditor.cpp:462 ui/ResourceGroupEditor.cpp:399
 #, fuzzy, kde-kuit-format
 #| msgid "Resources"
 msgctxt "@title"
@@ -8045,14 +8070,14 @@ msgctxt "(qtundo-format)"
 msgid "Modify task completion"
 msgstr "% acabat"
 
-#: ui/kpttaskprogresspanel.cpp:412 ui/kpttaskprogresspanel.cpp:427
+#: ui/kpttaskprogresspanel.cpp:411 ui/kpttaskprogresspanel.cpp:426
 #, fuzzy, kde-format
 #| msgid "Week %1"
 msgctxt "Week number (year)"
 msgid "Week %1 (%2)"
 msgstr "Setmana %1"
 
-#: ui/kpttaskprogresspanel.cpp:418 ui/kpttaskprogresspanel.cpp:425
+#: ui/kpttaskprogresspanel.cpp:417 ui/kpttaskprogresspanel.cpp:424
 #, kde-format
 msgctxt "Week number"
 msgid "Week %1"
@@ -9466,6 +9491,18 @@ msgid "Resource type:"
 msgstr "Ressorga"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: ui/resourcedialogbase.ui:186
+#, kde-format
+msgid "Work"
+msgstr "Professional"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: ui/resourcedialogbase.ui:191
+#, kde-format
+msgid "Material"
+msgstr "Material"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
 #: ui/resourcedialogbase.ui:196
 #, kde-format
 msgid "Team"
@@ -9529,13 +9566,13 @@ msgid ""
 "link></para>"
 msgstr ""
 
-#: ui/ResourceGroupEditor.cpp:295
+#: ui/ResourceGroupEditor.cpp:294
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgid "Add Resource Group"
 msgstr "Ressorga"
 
-#: ui/ResourceGroupEditor.cpp:300
+#: ui/ResourceGroupEditor.cpp:299
 #, fuzzy, kde-format
 #| msgid "Resource"
 msgid "Add Child Resource Group"
