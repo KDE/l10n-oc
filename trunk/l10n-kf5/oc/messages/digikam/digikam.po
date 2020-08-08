@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-07 02:11+0200\n"
+"POT-Creation-Date: 2020-08-08 02:09+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -3806,7 +3806,6 @@ msgstr ""
 
 #: core/dplugins/bqm/colors/autocorrection/autocorrection.cpp:69
 #: core/dplugins/bqm/enhance/restoration/restoration.cpp:66
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:116
 #: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:95
 #, kde-format
 msgid "Filter:"
@@ -4700,6 +4699,24 @@ msgstr "imatges"
 #: core/dplugins/bqm/enhance/blur/blurplugin.cpp:74
 #, kde-format
 msgid "<p>This Batch Queue Manager tool can blur images.</p>"
+msgstr ""
+
+#: core/dplugins/bqm/enhance/hotpixels/hotpixelsplugin.cpp:54
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:80
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstoolplugin.cpp:52
+#, kde-format
+msgid "Hot Pixels"
+msgstr ""
+
+#: core/dplugins/bqm/enhance/hotpixels/hotpixelsplugin.cpp:69
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstoolplugin.cpp:67
+#, kde-format
+msgid "A tool to fix hot pixels"
+msgstr ""
+
+#: core/dplugins/bqm/enhance/hotpixels/hotpixelsplugin.cpp:74
+#, kde-format
+msgid "<p>This Batch Queue Manager tool can fix hot pixels in images.</p>"
 msgstr ""
 
 #: core/dplugins/bqm/enhance/lensautofix/lensautofix.cpp:71
@@ -6498,74 +6515,9 @@ msgid ""
 "This filter can be used to clone a part in a photo to erase unwanted region."
 msgstr ""
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:103
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstoolplugin.cpp:52
-#, kde-format
-msgid "Hot Pixels"
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:118
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:97
-#, kde-format
-msgctxt "average filter mode"
-msgid "Average"
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:119
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:98
-#, kde-format
-msgctxt "linear filter mode"
-msgid "Linear"
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:120
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:99
-#, kde-format
-msgctxt "quadratic filter mode"
-msgid "Quadratic"
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:121
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:100
-#, fuzzy, kde-format
-#| msgid "Custom"
-msgctxt "cubic filter mode"
-msgid "Cubic"
-msgstr "Personalizat"
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:124
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:103
-#, kde-format
-msgid "Black Frame..."
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:126
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:105
-#, kde-format
-msgid ""
-"Use this button to add a new black frame file which will be used by the hot "
-"pixels removal filter."
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:185
-#, kde-format
-msgid "Loading: "
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:229
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:209
-#, kde-format
-msgid "Select Black Frame Image"
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:288
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:176
 #, kde-format
 msgid "Hot Pixels Correction"
-msgstr ""
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstoolplugin.cpp:67
-#, kde-format
-msgid "A tool to fix hot pixels"
 msgstr ""
 
 #: core/dplugins/editor/enhance/hotpixels/hotpixelstoolplugin.cpp:72
@@ -25189,6 +25141,48 @@ msgstr ""
 #: core/libs/dimg/filters/hotpixels/hotpixelfixer.cpp:90
 #, kde-format
 msgid "Hot Pixels Tool"
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:97
+#, kde-format
+msgctxt "average filter mode"
+msgid "Average"
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:98
+#, kde-format
+msgctxt "linear filter mode"
+msgid "Linear"
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:99
+#, kde-format
+msgctxt "quadratic filter mode"
+msgid "Quadratic"
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:100
+#, fuzzy, kde-format
+#| msgid "Custom"
+msgctxt "cubic filter mode"
+msgid "Cubic"
+msgstr "Personalizat"
+
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:103
+#, kde-format
+msgid "Black Frame..."
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:105
+#, kde-format
+msgid ""
+"Use this button to add a new black frame file which will be used by the hot "
+"pixels removal filter."
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:211
+#, kde-format
+msgid "Select Black Frame Image"
 msgstr ""
 
 #: core/libs/dimg/filters/hsl/hslfilter.cpp:94
