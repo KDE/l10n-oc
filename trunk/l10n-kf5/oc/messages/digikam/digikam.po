@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-19 02:14+0200\n"
+"POT-Creation-Date: 2020-08-20 02:10+0200\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -3345,7 +3345,7 @@ msgstr ""
 
 #: core/app/views/tableview/tableview_column_file.cpp:65
 #: core/app/views/tableview/tableview_column_file.cpp:98
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:183
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:58
 #: core/libs/widgets/fonts/dfontproperties.cpp:332
 #, kde-format
 msgid "Size"
@@ -3817,7 +3817,7 @@ msgstr ""
 
 #: core/dplugins/bqm/colors/autocorrection/autocorrection.cpp:69
 #: core/dplugins/bqm/enhance/restoration/restoration.cpp:66
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:93
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:94
 #, kde-format
 msgid "Filter:"
 msgstr ""
@@ -12680,7 +12680,7 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, previewGroupBox)
 #: core/dplugins/generic/tools/calendar/ui/caltemplate.ui:26
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:182
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:57
 #, kde-format
 msgid "Preview"
 msgstr ""
@@ -25160,28 +25160,7 @@ msgstr ""
 msgid "Enable fast approximation when rendering images."
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:76
-#, fuzzy, kde-format
-#| msgid "images"
-msgid "Loading Frame"
-msgstr "imatges"
-
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:144
-#, kde-format
-msgid "<p>File Name: %1</p>"
-msgstr ""
-
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:145
-#, kde-format
-msgid "<p>Make/Model: %1/%2</p>"
-msgstr ""
-
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:155
-#, kde-format
-msgid "<p>Hot Pixels: %1</p>"
-msgstr ""
-
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:185
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:60
 #, kde-format
 msgctxt ""
 "This is a column which will contain the amount of HotPixels found in the "
@@ -25189,42 +25168,63 @@ msgctxt ""
 msgid "Hot Pixels"
 msgstr ""
 
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:77
+#, fuzzy, kde-format
+#| msgid "images"
+msgid "Loading Frame"
+msgstr "imatges"
+
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:145
+#, kde-format
+msgid "<p>File Name: %1</p>"
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:146
+#, kde-format
+msgid "<p>Make/Model: %1/%2</p>"
+msgstr ""
+
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:156
+#, kde-format
+msgid "<p>Hot Pixels: %1</p>"
+msgstr ""
+
 #: core/libs/dimg/filters/hotpixels/hotpixelfixer.cpp:87
 #, kde-format
 msgid "Hot Pixels Tool"
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:95
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:96
 #, kde-format
 msgctxt "average filter mode"
 msgid "Average"
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:96
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:97
 #, kde-format
 msgctxt "linear filter mode"
 msgid "Linear"
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:97
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:98
 #, kde-format
 msgctxt "quadratic filter mode"
 msgid "Quadratic"
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:98
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:99
 #, fuzzy, kde-format
 #| msgid "Custom"
 msgctxt "cubic filter mode"
 msgid "Cubic"
 msgstr "Personalizat"
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:101
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:102
 #, kde-format
 msgid "Black Frame..."
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:103
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:104
 #, kde-format
 msgid ""
 "<p>Use this button to add a new black frame file which will be used by the "
@@ -25240,17 +25240,17 @@ msgid ""
 "eliminate wrong colors in these pixels.</p>"
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:217
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:218
 #, kde-format
 msgid "Select Black Frame Image"
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:223
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:224
 #, kde-format
 msgid "Black Frame Parser"
 msgstr ""
 
-#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:224
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:225
 #, kde-format
 msgid "This black frame image is already present in the list of parsed items."
 msgstr ""
@@ -32769,7 +32769,7 @@ msgstr ""
 #: core/libs/widgets/itemview/itemviewdelegate.cpp:428
 #: core/showfoto/main/showfoto.cpp:531
 #: core/showfoto/thumbbar/itemviewshowfotodelegate.cpp:315
-#: core/utilities/import/items/itemviewimportdelegate.cpp:363
+#: core/utilities/import/items/itemviewimportdelegate.cpp:368
 #, kde-format
 msgctxt "%1 width, %2 height, %3 mpixels"
 msgid "%1x%2 (%3Mpx)"
@@ -32778,7 +32778,7 @@ msgstr ""
 #: core/libs/widgets/itemview/itemviewdelegate.cpp:433
 #: core/libs/widgets/itemview/itemviewdelegate.cpp:453
 #: core/showfoto/thumbbar/itemviewshowfotodelegate.cpp:320
-#: core/utilities/import/items/itemviewimportdelegate.cpp:368
+#: core/utilities/import/items/itemviewimportdelegate.cpp:373
 #, kde-format
 msgctxt "unknown image resolution"
 msgid "Unknown"
@@ -36614,7 +36614,7 @@ msgid ""
 msgstr ""
 
 #: core/showfoto/thumbbar/itemviewshowfotodelegate.cpp:257
-#: core/utilities/import/items/itemviewimportdelegate.cpp:316
+#: core/utilities/import/items/itemviewimportdelegate.cpp:321
 #, kde-format
 msgctxt "date of image creation"
 msgid "created: %1"
