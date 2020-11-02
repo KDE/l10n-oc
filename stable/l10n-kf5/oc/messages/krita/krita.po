@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-30 08:30+0100\n"
+"POT-Creation-Date: 2020-11-02 08:06+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -22168,7 +22168,7 @@ msgstr "Pas cap"
 #. i18n: ectx: property (prefix), widget (QStackedWidget, alphaModeStackedWidget)
 #. i18n: ectx: property (prefix), widget (QStackedWidget, colorModeStackedWidget)
 #: libs/ui/widgets/KisDitherWidget.ui:74
-#: plugins/filters/gradientmap/wdg_gradientmap.ui:80
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:128
 #: plugins/filters/palettize/palettize.ui:207
 #, fuzzy, kde-format
 msgid "Amount:  "
@@ -22346,7 +22346,7 @@ msgstr ""
 #: plugins/filters/asccdl/wdg_asccdl.ui:17
 #: plugins/filters/asccdl/wdg_asccdl.ui:24
 #: plugins/filters/asccdl/wdg_asccdl.ui:45
-#: plugins/filters/gradientmap/wdg_gradientmap.ui:26
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:64
 #: plugins/flake/textshape/dialogs/TableOfContentsConfigure.ui:85
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:198
 #, kde-format
@@ -30671,35 +30671,35 @@ msgstr "Personalizat"
 msgid "Gaussian High Pass"
 msgstr "Pression"
 
-#: plugins/filters/gradientmap/krita_filter_gradient_map.cpp:41
-#, fuzzy, kde-format
-msgid "&Gradient Map..."
-msgstr "Degradat"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgGradientMap)
-#: plugins/filters/gradientmap/krita_filter_gradient_map.h:44
-#: plugins/filters/gradientmap/wdg_gradientmap.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, GradientMapConfigWidget)
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:14
+#: plugins/filters/gradientmap/KisGradientMapFilter.h:55
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:201
 #: plugins/paintops/libpaintop/kis_texture_chooser.cpp:55
 #, fuzzy, kde-format
 msgid "Gradient Map"
 msgstr "Degradat"
 
-#. i18n: ectx: property (text), widget (QLabel, colorModeLabel)
-#: plugins/filters/gradientmap/wdg_gradientmap.ui:39
-#: plugins/filters/palettize/palettize.ui:105
+#. i18n: ectx: property (text), widget (QLabel, gradientLabel)
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:46
 #, fuzzy, kde-format
-msgid "Color Mode"
+msgid "Gradient:"
+msgstr "Degradat"
+
+#. i18n: ectx: property (text), widget (QLabel, colorModeLabel)
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:82
+#, fuzzy, kde-format
+msgid "Color Mode:"
 msgstr "Color"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, colorModeComboBox)
-#: plugins/filters/gradientmap/wdg_gradientmap.ui:50
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:98
 #, fuzzy, kde-format
 msgid "Blend"
 msgstr "Mosaïc"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, colorModeComboBox)
-#: plugins/filters/gradientmap/wdg_gradientmap.ui:55
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:103
 #, fuzzy, kde-format
 msgid "Nearest"
 msgstr "Estèla"
@@ -30707,13 +30707,18 @@ msgstr "Estèla"
 #. i18n: ectx: property (title), widget (QGroupBox, ditherGroupBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, alphaModeComboBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, colorModeComboBox)
-#: plugins/filters/gradientmap/wdg_gradientmap.ui:60
+#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:108
 #: plugins/filters/palettize/palettize.ui:76
 #: plugins/filters/palettize/palettize.ui:187
 #, fuzzy, kde-format
 #| msgid "Other"
 msgid "Dither"
 msgstr "Autre"
+
+#: plugins/filters/gradientmap/KisGradientMapFilter.cpp:56
+#, fuzzy, kde-format
+msgid "&Gradient Map..."
+msgstr "Degradat"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tabScreenGenerator)
 #: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:45
@@ -31014,6 +31019,12 @@ msgstr "Cambiar"
 #| msgid "Named Colors"
 msgid "Nearest Colors"
 msgstr "Colors nomenadas"
+
+#. i18n: ectx: property (text), widget (QLabel, colorModeLabel)
+#: plugins/filters/palettize/palettize.ui:105
+#, fuzzy, kde-format
+msgid "Color Mode"
+msgstr "Color"
 
 #. i18n: ectx: property (text), widget (QLabel, alphaModeLabel)
 #: plugins/filters/palettize/palettize.ui:166
