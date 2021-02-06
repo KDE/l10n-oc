@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-03 02:46+0100\n"
+"POT-Creation-Date: 2021-02-06 02:22+0100\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -509,7 +509,7 @@ msgstr ""
 msgid "Get Hot New Stuff!"
 msgstr ""
 
-#: downloadwidget.cpp:263 qtquick/qml/Page.qml:199
+#: downloadwidget.cpp:263
 #, kde-format
 msgid "Icons view mode"
 msgstr ""
@@ -541,7 +541,7 @@ msgstr "Servicis"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
 #. i18n: ectx: property (text), widget (QLabel, mCategoryLabel)
-#: downloadwidget.ui:71 uploaddialog.ui:304
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:347 uploaddialog.ui:304
 #, fuzzy, kde-format
 #| msgid "Pause"
 msgid "Category:"
@@ -563,14 +563,14 @@ msgid "Newest"
 msgstr "Novèl"
 
 #. i18n: ectx: property (text), widget (QRadioButton, ratingRadio)
-#: downloadwidget.ui:110
+#: downloadwidget.ui:110 qtquick/qml/Page.qml:274
 #, fuzzy, kde-format
 #| msgid "Launching %1"
 msgid "Rating"
 msgstr "Aviada de %1"
 
 #. i18n: ectx: property (text), widget (QRadioButton, installedRadio)
-#: downloadwidget.ui:117
+#: downloadwidget.ui:117 qtquick/qml/Page.qml:223
 #, fuzzy, kde-format
 #| msgid "Install"
 msgid "Installed"
@@ -590,7 +590,7 @@ msgid "Search:"
 msgstr "R&ecercar :"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, m_searchEdit)
-#: downloadwidget.ui:217 qtquick/qml/Page.qml:213
+#: downloadwidget.ui:217 qtquick/qml/Page.qml:327 qtquick/qml/Page.qml:332
 #, fuzzy, kde-format
 #| msgid "Search"
 msgid "Search..."
@@ -982,7 +982,7 @@ msgctxt "List option which will set the filter to show everything"
 msgid "Show Everything"
 msgstr ""
 
-#: qtquick/qml/NewStuffList.qml:69 qtquick/qml/Page.qml:253
+#: qtquick/qml/NewStuffList.qml:69
 #, fuzzy, kde-format
 #| msgid "Install"
 msgctxt ""
@@ -990,7 +990,7 @@ msgctxt ""
 msgid "Installed Only"
 msgstr "Installar"
 
-#: qtquick/qml/NewStuffList.qml:70 qtquick/qml/Page.qml:254
+#: qtquick/qml/NewStuffList.qml:70
 #, kde-format
 msgctxt ""
 "List option which will set the filter so only installed items with updates "
@@ -1038,61 +1038,123 @@ msgid ""
 "not be found."
 msgstr ""
 
-#: qtquick/qml/Page.qml:190
+#: qtquick/qml/Page.qml:176
+#, fuzzy, kde-format
+#| msgid "File"
+msgid "Tiles"
+msgstr "Fichièr"
+
+#: qtquick/qml/Page.qml:178
 #, kde-format
-msgid "Tiles view mode"
+msgid "Icons"
+msgstr "Icònas"
+
+#: qtquick/qml/Page.qml:180
+#, fuzzy, kde-format
+#| msgid "Print Preview"
+msgid "Preview"
+msgstr "Previsualizacion de l'estampatge"
+
+#: qtquick/qml/Page.qml:195
+#, kde-format
+msgid "Detailed Tiles View Mode"
 msgstr ""
 
-#: qtquick/qml/Page.qml:208
+#: qtquick/qml/Page.qml:203
+#, fuzzy, kde-format
+#| msgid "Icons Only"
+msgid "Icons Only View Mode"
+msgstr "Sonque icònas"
+
+#: qtquick/qml/Page.qml:211
 #, fuzzy, kde-format
 #| msgid "Preview URL:"
-msgid "Preview view mode"
+msgid "Large Preview View Mode"
 msgstr "URL de l'apercebut :"
 
-#: qtquick/qml/Page.qml:234
-#, fuzzy, kde-format
-#| msgid "Show %1"
-msgid "Show:"
-msgstr "Mostrar %1"
-
-#: qtquick/qml/Page.qml:252
+#: qtquick/qml/Page.qml:221
 #, kde-format
-msgctxt "List option which will set the filter to show everything"
 msgid "Everything"
 msgstr ""
 
-#: qtquick/qml/Page.qml:266
+#: qtquick/qml/Page.qml:225
+#, fuzzy, kde-format
+#| msgid "Update"
+msgid "Updateable"
+msgstr "Actualizar"
+
+#: qtquick/qml/Page.qml:244
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgctxt "List option which will set the filter to show everything"
+msgid "Show All Entries"
+msgstr "Paginas"
+
+#: qtquick/qml/Page.qml:252
 #, kde-format
+msgctxt ""
+"List option which will set the filter so only installed items are shown"
+msgid "Show Only Installed Entries"
+msgstr ""
+
+#: qtquick/qml/Page.qml:260
+#, kde-format
+msgctxt ""
+"List option which will set the filter so only installed items with updates "
+"available are shown"
+msgid "Show Only Updateable Entries"
+msgstr ""
+
+#: qtquick/qml/Page.qml:270
+#, fuzzy, kde-format
+#| msgid "Open &Recent"
+msgid "Recent"
+msgstr "Dobert(s) &Recentament"
+
+#: qtquick/qml/Page.qml:272
+#, kde-format
+msgid "Alphabetical"
+msgstr ""
+
+#: qtquick/qml/Page.qml:276
+#, fuzzy, kde-format
+#| msgid "Download"
+msgid "Downloads"
+msgstr "Telecargar"
+
+#: qtquick/qml/Page.qml:295
+#, fuzzy, kde-format
+#| msgid "Most Downloads"
 msgctxt ""
 "List option which will set the sort order to based on when items were most "
 "recently updated"
-msgid "Most recent first"
-msgstr ""
+msgid "Show Most Recent First"
+msgstr "Los mai telecargats"
 
-#: qtquick/qml/Page.qml:267
+#: qtquick/qml/Page.qml:303
 #, kde-format
 msgctxt ""
 "List option which will set the sort order to be alphabetical based on the "
 "name"
-msgid "A-Z"
+msgid "Sort Alphabetically By Name"
 msgstr ""
 
-#: qtquick/qml/Page.qml:268
+#: qtquick/qml/Page.qml:311
 #, fuzzy, kde-format
 #| msgid "Highest Rated"
 msgctxt "List option which will set the sort order to based on user ratings"
-msgid "Highest rated first"
+msgid "Show Highest Rated First"
 msgstr "Los mièlhs notats"
 
-#: qtquick/qml/Page.qml:269
+#: qtquick/qml/Page.qml:319
 #, fuzzy, kde-format
 #| msgid "Most Downloads"
 msgctxt ""
 "List option which will set the sort order to based on number of downloads"
-msgid "Most downloaded first"
+msgid "Show Most Downloaded First"
 msgstr "Los mai telecargats"
 
-#: qtquick/qml/Page.qml:344
+#: qtquick/qml/Page.qml:426
 #, fuzzy, kde-format
 #| msgid "Print Preview"
 msgctxt ""
@@ -1100,7 +1162,7 @@ msgctxt ""
 msgid "Loading more..."
 msgstr "Previsualizacion de l'estampatge"
 
-#: qtquick/qml/Page.qml:355
+#: qtquick/qml/Page.qml:437
 #, kde-format
 msgctxt ""
 "A message shown when there are no entries in the list, and when it is not "
@@ -1707,6 +1769,18 @@ msgid "Start Upload"
 msgstr "Aviar lo remplaçament"
 
 #, fuzzy
+#~| msgid "Show %1"
+#~ msgid "Show:"
+#~ msgstr "Mostrar %1"
+
+#, fuzzy
+#~| msgid "Most Downloads"
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on number of downloads"
+#~ msgid "Most downloaded first"
+#~ msgstr "Los mai telecargats"
+
+#, fuzzy
 #~| msgid "Launching %1"
 #~ msgid "Using %1"
 #~ msgstr "Aviada de %1"
@@ -1716,13 +1790,6 @@ msgstr "Aviar lo remplaçament"
 #~ msgctxt "Show a page with details for this item"
 #~ msgid "Details..."
 #~ msgstr "Detalhs"
-
-#, fuzzy
-#~| msgid "Pause"
-#~ msgctxt ""
-#~ "The first entry in the category selection list (also the default value)"
-#~ msgid "Show All Categories"
-#~ msgstr "Paginas"
 
 #, fuzzy
 #~| msgid "Internet Search"
@@ -2330,9 +2397,6 @@ msgstr "Aviar lo remplaçament"
 
 #~ msgid "HTML documentation"
 #~ msgstr "Documentacion HTML"
-
-#~ msgid "Icons"
-#~ msgstr "Icònas"
 
 #~ msgid "Libraries"
 #~ msgstr "Librariás"
@@ -5013,12 +5077,6 @@ msgstr "Aviar lo remplaçament"
 #~ msgstr "Autocomplètament de tèxt"
 
 #, fuzzy
-#~| msgid "Open &Recent"
-#~ msgctxt "@action"
-#~ msgid "Open Recent"
-#~ msgstr "Dobert(s) &Recentament"
-
-#, fuzzy
 #~| msgid "Save As"
 #~ msgctxt "@action"
 #~ msgid "Save As"
@@ -6035,9 +6093,6 @@ msgstr "Aviar lo remplaçament"
 #~ msgid "Text Position"
 #~ msgstr "Posicion del tèxt"
 
-#~ msgid "Icons Only"
-#~ msgstr "Sonque icònas"
-
 #~ msgid "Text Only"
 #~ msgstr "Sonque tèxt"
 
@@ -6326,9 +6381,6 @@ msgstr "Aviar lo remplaçament"
 
 #~ msgid "Missing Plugin"
 #~ msgstr "Modul extèrn mancant"
-
-#~ msgid "Download"
-#~ msgstr "Telecargar"
 
 #~ msgid "Do Not Download"
 #~ msgstr "Telecargar pas"
@@ -7654,12 +7706,6 @@ msgstr "Aviar lo remplaçament"
 #~ msgstr "Prètzfach (Task)"
 
 #, fuzzy
-#~| msgid "File"
-#~ msgctxt "@option:check Do filter on type - show only files"
-#~ msgid "Files"
-#~ msgstr "Fichièr"
-
-#, fuzzy
 #~| msgctxt "@item Text character set"
 #~| msgid "Other"
 #~ msgctxt "@option:check Do filter on type - show everything but files"
@@ -7816,11 +7862,6 @@ msgstr "Aviar lo remplaçament"
 #~| msgid "Comment"
 #~ msgid "Community"
 #~ msgstr "Comentari"
-
-#, fuzzy
-#~| msgid "Print Preview"
-#~ msgid "Preview"
-#~ msgstr "Previsualizacion de l'estampatge"
 
 #, fuzzy
 #~| msgid "BSD"
