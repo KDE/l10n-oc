@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-27 02:26+0100\n"
+"POT-Creation-Date: 2021-03-01 02:39+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -7561,6 +7561,11 @@ msgstr[0] "Suprimir pagina"
 msgstr[1] "Suprimir pagina"
 
 #: libs/flake/commands/KoShapeDeleteCommand.cpp:43
+#, fuzzy
+msgctxt "(qtundo-format) Delete one shape"
+msgid "Delete shape"
+msgstr "Suprimir pagina"
+
 #: libs/flake/commands/KoShapeDeleteCommand.cpp:56
 #, fuzzy
 msgctxt "(qtundo-format)"
@@ -18845,13 +18850,19 @@ msgid ""
 "the image?"
 msgstr ""
 
-#: libs/ui/kis_layer_manager.cc:759 libs/ui/kis_layer_manager.cc:780
+#: libs/ui/kis_layer_manager.cc:759
 #, fuzzy, kde-format
 msgctxt "floating message in layer manager"
-msgid "Layer is locked "
+msgid "Layer is locked"
 msgid_plural "Layers are locked"
 msgstr[0] "Seleccion"
 msgstr[1] "Seleccion"
+
+#: libs/ui/kis_layer_manager.cc:780
+#, fuzzy, kde-format
+msgctxt "floating message in layer manager when previous layer is locked"
+msgid "Layer is locked"
+msgstr "Seleccion"
 
 #: libs/ui/kis_layer_manager.cc:838
 #, kde-format
@@ -25269,13 +25280,13 @@ msgstr ""
 msgid "Lock Toolbar Positions"
 msgstr "&Paramètres"
 
-#: libs/widgetutils/xmlgui/ktoolbar.cpp:1256
+#: libs/widgetutils/xmlgui/ktoolbar.cpp:1261
 #, fuzzy, kde-format
 msgctxt "@action:intoolbar Text label of toolbar button"
 msgid "%1"
 msgstr "%1%"
 
-#: libs/widgetutils/xmlgui/ktoolbar.cpp:1257
+#: libs/widgetutils/xmlgui/ktoolbar.cpp:1262
 #, fuzzy, kde-format
 msgctxt "@info:tooltip Tooltip of toolbar button"
 msgid "%1"
@@ -26632,13 +26643,10 @@ msgid "Remove transform keyframe"
 msgstr "Escalas"
 
 #: plugins/dockers/animation/KisAnimUtils.cpp:37
-#: plugins/dockers/animation/KisAnimUtils.cpp:286
-#, fuzzy, kde-format
+#, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Copy Keyframe"
-msgid_plural "Copy %1 Keyframes"
-msgstr[0] "Escalas"
-msgstr[1] "Escalas"
+msgstr "Escalas"
 
 #: plugins/dockers/animation/KisAnimUtils.cpp:38
 #, fuzzy
@@ -26662,7 +26670,15 @@ msgid_plural "Move %1 Keyframes"
 msgstr[0] "Escalas"
 msgstr[1] "Escalas"
 
-#: plugins/dockers/animation/KisAnimUtils.cpp:359
+#: plugins/dockers/animation/KisAnimUtils.cpp:287
+#, fuzzy, kde-format
+msgctxt "(qtundo-format) Copy one or several keyframes"
+msgid "Copy Keyframe"
+msgid_plural "Copy %1 Keyframes"
+msgstr[0] "Escalas"
+msgstr[1] "Escalas"
+
+#: plugins/dockers/animation/KisAnimUtils.cpp:360
 #, fuzzy, kde-format
 msgctxt "(qtundo-format)"
 msgid "Clone Keyframe"
@@ -26670,7 +26686,7 @@ msgid_plural "Clone %1 Keyframes"
 msgstr[0] "Escalas"
 msgstr[1] "Escalas"
 
-#: plugins/dockers/animation/KisAnimUtils.cpp:389
+#: plugins/dockers/animation/KisAnimUtils.cpp:390
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Make clones Unique"
@@ -44613,6 +44629,13 @@ msgstr ""
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "floating message in layer manager"
+#~ msgid "Layer is locked "
+#~ msgid_plural "Layers are locked"
+#~ msgstr[0] "Seleccion"
+#~ msgstr[1] "Seleccion"
 
 #, fuzzy
 #~ msgctxt "action"
