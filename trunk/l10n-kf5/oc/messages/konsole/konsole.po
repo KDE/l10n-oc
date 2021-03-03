@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-24 02:50+0100\n"
+"POT-Creation-Date: 2021-03-03 03:37+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -1096,7 +1096,7 @@ msgctxt "@item"
 msgid "Activate Menu"
 msgstr ""
 
-#: MainWindow.cpp:607 MainWindow.cpp:626
+#: MainWindow.cpp:612 MainWindow.cpp:631
 #, kde-format
 msgctxt "@info"
 msgid "There is a process running in this window. Do you still want to quit?"
@@ -1105,59 +1105,59 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: MainWindow.cpp:613 MainWindow.cpp:632 MainWindow.cpp:650
+#: MainWindow.cpp:618 MainWindow.cpp:637 MainWindow.cpp:655
 #, kde-format
 msgctxt "@title"
 msgid "Confirm Close"
 msgstr ""
 
-#: MainWindow.cpp:615 MainWindow.cpp:634 MainWindow.cpp:651
+#: MainWindow.cpp:620 MainWindow.cpp:639 MainWindow.cpp:656
 #, fuzzy, kde-format
 #| msgid "Konsole"
 msgctxt "@action:button"
 msgid "Close &Window"
 msgstr "Konsole"
 
-#: MainWindow.cpp:637 MainWindow.cpp:654
+#: MainWindow.cpp:642 MainWindow.cpp:659
 #, fuzzy, kde-format
 #| msgid "&Close Tab"
 msgctxt "@action:button"
 msgid "Close Current &Tab"
 msgstr "&Barrar l'onglet"
 
-#: MainWindow.cpp:647
+#: MainWindow.cpp:652
 #, kde-format
 msgctxt "@info"
 msgid "There are %1 open terminals in this window. Do you still want to quit?"
 msgstr ""
 
-#: MainWindow.cpp:769
+#: MainWindow.cpp:774
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "@title Preferences page name"
 msgid "General"
 msgstr "General"
 
-#: MainWindow.cpp:774 Part.cpp:313
+#: MainWindow.cpp:779 Part.cpp:313
 #, fuzzy, kde-format
 #| msgid "New Profile"
 msgctxt "@title Preferences page name"
 msgid "Profiles"
 msgstr "Perfil novèl"
 
-#: MainWindow.cpp:779
+#: MainWindow.cpp:784
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Tab Bar / Splitters"
 msgstr ""
 
-#: MainWindow.cpp:784
+#: MainWindow.cpp:789
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Temporary Files"
 msgstr ""
 
-#: MainWindow.cpp:789
+#: MainWindow.cpp:794
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Thumbnails"
@@ -1231,13 +1231,21 @@ msgid "Shortcut"
 msgstr "Acorchi"
 
 #: profile/ProfileModel.cpp:82
+#, kde-format
+msgctxt ""
+"@label:textbox added to the name of the Default/fallback profile, to point "
+"out it's read-only/hardcoded"
+msgid " [Read-only]"
+msgstr ""
+
+#: profile/ProfileModel.cpp:86
 #, fuzzy, kde-format
 #| msgid "Delete Profile"
-msgctxt "@label:textbox Name of the current default profile"
-msgid " (Default)"
+msgctxt "@label:textbox added to the name of the current default profile"
+msgid " (default)"
 msgstr "Suprimir lo perfil"
 
-#: profile/ProfileModel.cpp:100
+#: profile/ProfileModel.cpp:111
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Double click to change shortcut"
@@ -2067,7 +2075,7 @@ msgid ""
 "a change to how these are handled.</body></html>"
 msgstr ""
 
-#: settings/ProfileSettings.cpp:142
+#: settings/ProfileSettings.cpp:138
 #, fuzzy, kde-format
 #| msgid "New Profile"
 msgctxt "@item This will be used as part of the file name"
@@ -2078,7 +2086,7 @@ msgstr "Perfil novèl"
 #: settings/ProfileSettings.ui:39
 #, fuzzy, kde-format
 #| msgid "Edit the selected profile"
-msgid "Create a new profile based upon the selected profile"
+msgid "Create a new profile based on the selected profile"
 msgstr "Modificar lo perfil seleccionat"
 
 #. i18n: ectx: property (text), widget (QPushButton, newProfileButton)
@@ -2092,7 +2100,8 @@ msgstr "Novèl..."
 #: settings/ProfileSettings.ui:52
 #, fuzzy, kde-format
 #| msgid "Edit the selected profile"
-msgid "Edit the selected profile(s)"
+msgid ""
+"Edit the selected profile (this button is disabled for read-only profiles)"
 msgstr "Modificar lo perfil seleccionat"
 
 #. i18n: ectx: property (text), widget (QPushButton, editProfileButton)
@@ -2106,7 +2115,7 @@ msgstr "Editar..."
 #: settings/ProfileSettings.ui:65
 #, fuzzy, kde-format
 #| msgid "Edit the selected profile"
-msgid "Delete the selected profile(s)"
+msgid "Delete the selected profile"
 msgstr "Modificar lo perfil seleccionat"
 
 #. i18n: ectx: property (text), widget (QPushButton, deleteProfileButton)
@@ -4191,6 +4200,17 @@ msgid "Close Tab"
 msgstr "&Barrar l'onglet"
 
 #, fuzzy
+#~| msgid "Delete Profile"
+#~ msgctxt "@label:textbox Name of the current default profile"
+#~ msgid " (Default)"
+#~ msgstr "Suprimir lo perfil"
+
+#, fuzzy
+#~| msgid "Edit the selected profile"
+#~ msgid "Edit the selected profile(s)"
+#~ msgstr "Modificar lo perfil seleccionat"
+
+#, fuzzy
 #~| msgid "Edit the selected profile"
 #~ msgid "Color from theme"
 #~ msgstr "Modificar lo perfil seleccionat"
@@ -4208,12 +4228,6 @@ msgstr "&Barrar l'onglet"
 #~ "menu"
 #~ msgid "Show profile in menu"
 #~ msgstr "Perfil novèl"
-
-#, fuzzy
-#~| msgid "Delete Profile"
-#~ msgctxt "@item:intable Default list item's name suffix (with separator)"
-#~ msgid " (default)"
-#~ msgstr "Suprimir lo perfil"
 
 #, fuzzy
 #~| msgid "Open Link"
