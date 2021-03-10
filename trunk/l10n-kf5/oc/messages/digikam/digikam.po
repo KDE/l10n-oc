@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-09 02:49+0100\n"
+"POT-Creation-Date: 2021-03-10 02:54+0100\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -14456,7 +14456,6 @@ msgid "Server is not running"
 msgstr ""
 
 #: core/dplugins/generic/tools/mediaserver/dmediaserverdlg.cpp:284
-#: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:90
 #, kde-format
 msgid "Start"
 msgstr ""
@@ -16875,6 +16874,12 @@ msgstr ""
 msgid "Disable &cross-fade"
 msgstr "Personalizat"
 
+#. i18n: ectx: property (text), widget (QCheckBox, m_enableKenBurnsSameSpeed)
+#: core/dplugins/generic/view/presentation/dialogs/presentation_advpage.ui:130
+#, kde-format
+msgid "Use &same speed for visual effects"
+msgstr ""
+
 #: core/dplugins/generic/view/presentation/dialogs/presentation_captionpage.cpp:46
 #, kde-format
 msgid "This is a comment sample..."
@@ -16933,7 +16938,7 @@ msgid "Image #%1"
 msgstr ""
 
 #: core/dplugins/generic/view/presentation/dialogs/presentation_mainpage.cpp:456
-#: core/dplugins/generic/view/presentation/opengl/presentationkb.cpp:678
+#: core/dplugins/generic/view/presentation/opengl/presentationkb.cpp:688
 #, kde-format
 msgid "Ken Burns"
 msgstr ""
@@ -17041,8 +17046,16 @@ msgstr ""
 
 #: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:83
 #: core/dplugins/generic/view/presentation/presentationplugin.cpp:56
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Slideshow"
+msgctxt "@title"
 msgid "Presentation"
+msgstr "Diaporamà"
+
+#: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:90
+#, kde-format
+msgctxt "@action: play presentation"
+msgid "Start"
 msgstr ""
 
 #: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:91
@@ -17053,23 +17066,29 @@ msgid "Start Presentation"
 msgstr "imatges"
 
 #: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:102
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Slideshow"
+msgctxt "@title: main settings for the presentation"
 msgid "Main Settings"
-msgstr ""
+msgstr "Diaporamà"
 
 #: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:107
-#, kde-format
-msgctxt "captions for the slideshow"
+#, fuzzy, kde-format
+#| msgid "Rotate"
+msgctxt "@title: caption settings for the presentation"
 msgid "Caption"
-msgstr ""
+msgstr "እንደገና አስጀምሩ"
 
 #: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:114
 #, kde-format
+msgctxt "@title: soundtrack settings for the presentation"
 msgid "Soundtrack"
 msgstr ""
 
 #: core/dplugins/generic/view/presentation/dialogs/presentationdlg.cpp:121
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Advanced"
+msgctxt "@title: avanced presentation settings"
 msgid "Advanced"
 msgstr "A_vançat"
 
@@ -17147,13 +17166,13 @@ msgid "Slideshow Completed"
 msgstr ""
 
 #: core/dplugins/generic/view/presentation/opengl/presentationgl.cpp:886
-#: core/dplugins/generic/view/presentation/opengl/presentationkb.cpp:631
+#: core/dplugins/generic/view/presentation/opengl/presentationkb.cpp:641
 #: core/dplugins/generic/view/presentation/widgets/presentationwidget.cpp:879
 #, kde-format
 msgid "Click to Exit..."
 msgstr ""
 
-#: core/dplugins/generic/view/presentation/opengl/presentationkb.cpp:630
+#: core/dplugins/generic/view/presentation/opengl/presentationkb.cpp:640
 #, fuzzy, kde-format
 #| msgid "Slide Show"
 msgid "SlideShow Completed"
@@ -17171,16 +17190,18 @@ msgstr ""
 
 #: core/dplugins/generic/view/presentation/presentationplugin.cpp:71
 #, kde-format
+msgctxt "@info"
 msgid "A tool to render presentation"
 msgstr ""
 
 #: core/dplugins/generic/view/presentation/presentationplugin.cpp:76
 #, kde-format
+msgctxt "@info"
 msgid ""
-"<p>This tool render a series of items as an advanced slide-show.</"
-"p><p>Plenty of transition effects are available are ones based on OpenGL and "
-"the famous Ken Burns effect.</p><p>You can add a sound-track in background "
-"while your presentation.</p>"
+"This tool render a series of items as an advanced slide-show.\n"
+"Plenty of transition effects are available are ones based on OpenGL and the "
+"famous Ken Burns effect.\n"
+"You can add a sound-track in background while your presentation."
 msgstr ""
 
 #: core/dplugins/generic/view/presentation/presentationplugin.cpp:106
@@ -39298,39 +39319,39 @@ msgid "Set this option to indicate if image has geolocation information."
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:168
-#: core/utilities/setup/setupmisc.cpp:189
+#: core/utilities/setup/setupmisc.cpp:190
 #, kde-format
 msgid "Scroll current item to center of thumbbar"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:177
-#: core/utilities/setup/setupmisc.cpp:210
+#: core/utilities/setup/setupmisc.cpp:211
 #, fuzzy, kde-format
 #| msgid "Rotate"
 msgid "Updates"
 msgstr "እንደገና አስጀምሩ"
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:181
-#: core/utilities/setup/setupmisc.cpp:214
+#: core/utilities/setup/setupmisc.cpp:215
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Check for new version:"
 msgstr "imatges"
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:183
-#: core/utilities/setup/setupmisc.cpp:216
+#: core/utilities/setup/setupmisc.cpp:217
 #, kde-format
 msgid "Only For Stable Releases"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:184
-#: core/utilities/setup/setupmisc.cpp:217
+#: core/utilities/setup/setupmisc.cpp:218
 #, kde-format
 msgid "Weekly Pre-Releases"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:185
-#: core/utilities/setup/setupmisc.cpp:218
+#: core/utilities/setup/setupmisc.cpp:219
 #, kde-format
 msgid ""
 "Set this option to configure which kind of new versions must be check for "
@@ -39341,13 +39362,13 @@ msgid ""
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:190
-#: core/utilities/setup/setupmisc.cpp:223
+#: core/utilities/setup/setupmisc.cpp:224
 #, kde-format
 msgid "Use Version With Debug Symbols"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:191
-#: core/utilities/setup/setupmisc.cpp:224
+#: core/utilities/setup/setupmisc.cpp:225
 #, kde-format
 msgid ""
 "If this option is enabled, a version including debug symbols will be used "
@@ -39357,26 +39378,26 @@ msgid ""
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:196
-#: core/utilities/setup/setupmisc.cpp:229
+#: core/utilities/setup/setupmisc.cpp:230
 #, kde-format
 msgid "Last check: %1"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:197
-#: core/utilities/setup/setupmisc.cpp:230
+#: core/utilities/setup/setupmisc.cpp:231
 #, kde-format
 msgid "Check now..."
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:225
-#: core/utilities/setup/setupmisc.cpp:273
+#: core/utilities/setup/setupmisc.cpp:274
 #, kde-format
 msgctxt "@title:tab"
 msgid "Behaviour"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:232
-#: core/utilities/setup/setupmisc.cpp:280
+#: core/utilities/setup/setupmisc.cpp:281
 #, kde-format
 msgid "&Show splash screen at startup"
 msgstr ""
@@ -39387,19 +39408,19 @@ msgid "Use native file dialogs from the system"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:236
-#: core/utilities/setup/setupmisc.cpp:285
+#: core/utilities/setup/setupmisc.cpp:286
 #, kde-format
 msgid "Sidebar tab title:"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:238
-#: core/utilities/setup/setupmisc.cpp:287
+#: core/utilities/setup/setupmisc.cpp:288
 #, kde-format
 msgid "Only For Active Tab"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:239
-#: core/utilities/setup/setupmisc.cpp:288
+#: core/utilities/setup/setupmisc.cpp:289
 #, kde-format
 msgid "For All Tabs"
 msgstr ""
@@ -39410,59 +39431,59 @@ msgid "Set this option to configure how sidebars tab title are visible."
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:243
-#: core/utilities/setup/setupmisc.cpp:293
+#: core/utilities/setup/setupmisc.cpp:294
 #, kde-format
 msgid "Widget style:"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:245
-#: core/utilities/setup/setupmisc.cpp:295
+#: core/utilities/setup/setupmisc.cpp:296
 #, kde-format
 msgid "Set this option to choose the default window decoration and looks."
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:262
-#: core/utilities/setup/setupmisc.cpp:312
+#: core/utilities/setup/setupmisc.cpp:313
 #, kde-format
 msgid "Icon theme (changes after restart):"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:264
-#: core/utilities/setup/setupmisc.cpp:314
+#: core/utilities/setup/setupmisc.cpp:315
 #, kde-format
 msgid "Set this option to choose the default icon theme."
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:268
-#: core/utilities/setup/setupmisc.cpp:318
+#: core/utilities/setup/setupmisc.cpp:319
 #, kde-format
 msgctxt "icon theme"
 msgid "Adwaita"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:269
-#: core/utilities/setup/setupmisc.cpp:319
+#: core/utilities/setup/setupmisc.cpp:320
 #, kde-format
 msgctxt "icon theme"
 msgid "Breeze"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:270
-#: core/utilities/setup/setupmisc.cpp:320
+#: core/utilities/setup/setupmisc.cpp:321
 #, kde-format
 msgctxt "icon theme"
 msgid "Breeze Dark"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:271
-#: core/utilities/setup/setupmisc.cpp:321
+#: core/utilities/setup/setupmisc.cpp:322
 #, kde-format
 msgctxt "icon theme"
 msgid "Faenza"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:272
-#: core/utilities/setup/setupmisc.cpp:322
+#: core/utilities/setup/setupmisc.cpp:323
 #, fuzzy, kde-format
 #| msgid "Advanced"
 msgctxt "icon theme"
@@ -39470,53 +39491,53 @@ msgid "Ambiance"
 msgstr "A_vançat"
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:273
-#: core/utilities/setup/setupmisc.cpp:323
+#: core/utilities/setup/setupmisc.cpp:324
 #, kde-format
 msgctxt "icon theme"
 msgid "Humanity"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:274
-#: core/utilities/setup/setupmisc.cpp:324
+#: core/utilities/setup/setupmisc.cpp:325
 #, kde-format
 msgctxt "icon theme"
 msgid "Oxygen"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:297
-#: core/utilities/setup/setupmisc.cpp:347
+#: core/utilities/setup/setupmisc.cpp:348
 #, kde-format
 msgid "Use Icon Theme From System"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:304
-#: core/utilities/setup/setupmisc.cpp:354
+#: core/utilities/setup/setupmisc.cpp:355
 #, kde-format
 msgid "Application font:"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:305
-#: core/utilities/setup/setupmisc.cpp:355
+#: core/utilities/setup/setupmisc.cpp:356
 #, kde-format
 msgid "Select here the font used to display text in whole application."
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:319
-#: core/utilities/setup/setupmisc.cpp:370
+#: core/utilities/setup/setupmisc.cpp:371
 #, kde-format
 msgctxt "@title:tab"
 msgid "Appearance"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:325
-#: core/utilities/setup/setupmisc.cpp:439
+#: core/utilities/setup/setupmisc.cpp:440
 #, kde-format
 msgctxt "@title:tab"
 msgid "System"
 msgstr ""
 
 #: core/showfoto/setup/showfotosetupmisc.cpp:347
-#: core/utilities/setup/setupmisc.cpp:462
+#: core/utilities/setup/setupmisc.cpp:463
 #, kde-format
 msgid ""
 "Check for new version option will verify the pre-releases.\n"
@@ -50408,24 +50429,24 @@ msgid ""
 "or unset it to preserve the images currently on the light table."
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:154
+#: core/utilities/setup/setupmisc.cpp:155
 #, kde-format
 msgid "String comparison type:"
-msgstr ""
-
-#: core/utilities/setup/setupmisc.cpp:156
-#, kde-format
-msgctxt "method to compare strings"
-msgid "Natural"
 msgstr ""
 
 #: core/utilities/setup/setupmisc.cpp:157
 #, kde-format
 msgctxt "method to compare strings"
-msgid "Normal"
+msgid "Natural"
 msgstr ""
 
 #: core/utilities/setup/setupmisc.cpp:158
+#, kde-format
+msgctxt "method to compare strings"
+msgid "Normal"
+msgstr ""
+
+#: core/utilities/setup/setupmisc.cpp:159
 #, kde-format
 msgid ""
 "<qt>Sets the way in which strings are compared inside digiKam. This eg. "
@@ -50437,27 +50458,27 @@ msgid ""
 "albums should be sorted according to these dates.</qt>"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:168
+#: core/utilities/setup/setupmisc.cpp:169
 #, kde-format
 msgid "Confirm when moving items to the &trash"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:169
+#: core/utilities/setup/setupmisc.cpp:170
 #, kde-format
 msgid "Confirm when permanently deleting items"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:170
+#: core/utilities/setup/setupmisc.cpp:171
 #, kde-format
 msgid "Do not confirm when applying changes in the &right sidebar"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:171
+#: core/utilities/setup/setupmisc.cpp:172
 #, kde-format
 msgid "&Scan for new items at startup (makes startup slower)"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:172
+#: core/utilities/setup/setupmisc.cpp:173
 #, kde-format
 msgid ""
 "Set this option to force digiKam to scan all collections for new items to\n"
@@ -50474,12 +50495,12 @@ msgid ""
 "a manual scan through the maintenance tool at the right moment."
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:181
+#: core/utilities/setup/setupmisc.cpp:182
 #, kde-format
 msgid "Remove obsolete core database objects (makes startup slower)"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:182
+#: core/utilities/setup/setupmisc.cpp:183
 #, kde-format
 msgid ""
 "Set this option to force digiKam to clean up the core database from obsolete "
@@ -50492,22 +50513,22 @@ msgid ""
 "For clean up routines for other databases, please use the maintenance."
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:188
+#: core/utilities/setup/setupmisc.cpp:189
 #, kde-format
 msgid "Expand current tree item with a single mouse click"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:190
+#: core/utilities/setup/setupmisc.cpp:191
 #, kde-format
 msgid "Show only face tags for assigning names in people sidebar"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:195
+#: core/utilities/setup/setupmisc.cpp:196
 #, kde-format
 msgid "Lower bound for minimum similarity:"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:201
+#: core/utilities/setup/setupmisc.cpp:202
 #, kde-format
 msgid ""
 "Select here the lower bound of the minimum similarity threshold for fuzzy "
@@ -50515,17 +50536,17 @@ msgid ""
 "than 40 can make the search <b>really</b> slow."
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:281
+#: core/utilities/setup/setupmisc.cpp:282
 #, kde-format
 msgid "Use native file dialogs from system"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:282
+#: core/utilities/setup/setupmisc.cpp:283
 #, kde-format
 msgid "Draw frames around grouped items"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:289
+#: core/utilities/setup/setupmisc.cpp:290
 #, kde-format
 msgid ""
 "Set this option to configure how sidebar tab titles are visible. Use \"Only "
@@ -50533,12 +50554,12 @@ msgid ""
 "laptop computer."
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:379
+#: core/utilities/setup/setupmisc.cpp:380
 #, kde-format
 msgid "Perform the following operations on all group members:"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:380
+#: core/utilities/setup/setupmisc.cpp:381
 #, kde-format
 msgid ""
 "When images are grouped the following operations<br/>are performed only on "
@@ -50547,26 +50568,26 @@ msgid ""
 "operation is executed."
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:386
+#: core/utilities/setup/setupmisc.cpp:387
 #, fuzzy, kde-format
 #| msgid "None"
 msgctxt "@label: grouped image ops"
 msgid "No"
 msgstr "Pas cap"
 
-#: core/utilities/setup/setupmisc.cpp:387
+#: core/utilities/setup/setupmisc.cpp:388
 #, kde-format
 msgctxt "@label: grouped image ops"
 msgid "Yes"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:388
+#: core/utilities/setup/setupmisc.cpp:389
 #, kde-format
 msgctxt "@label: grouped image ops"
 msgid "Ask"
 msgstr ""
 
-#: core/utilities/setup/setupmisc.cpp:433
+#: core/utilities/setup/setupmisc.cpp:434
 #, kde-format
 msgctxt "@title:tab"
 msgid "Grouping"
