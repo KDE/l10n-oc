@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-14 19:35+0000\n"
+"POT-Creation-Date: 2021-03-15 02:57+0100\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,6 +17,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Yannig Marchegay (Kokoyaya)"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yannig@marchegay.org"
 
 #: core/app/date/ddateedit.cpp:508
 #, kde-format
@@ -6281,11 +6291,13 @@ msgstr "Interfaç"
 
 #: core/dplugins/editor/colors/convert16to8/convert16to8toolplugin.cpp:107
 #, kde-format
+msgctxt "@info"
 msgid "This image is already using a depth of 8 bits / color / pixel."
 msgstr ""
 
 #: core/dplugins/editor/colors/convert16to8/convert16to8toolplugin.cpp:115
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Performing this operation will reduce image color quality. Do you want to "
 "continue?"
@@ -6319,6 +6331,7 @@ msgstr ""
 
 #: core/dplugins/editor/colors/convert8to16/convert8to16toolplugin.cpp:105
 #, kde-format
+msgctxt "@info"
 msgid "This image is already using a depth of 16 bits / color / pixel."
 msgstr ""
 
@@ -6495,9 +6508,11 @@ msgid "Invert"
 msgstr "Colors"
 
 #: core/dplugins/editor/colors/invert/inverttoolplugin.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Colors"
+msgctxt "@title"
 msgid "Invert"
-msgstr ""
+msgstr "Colors"
 
 #: core/dplugins/editor/colors/profileconversion/profileconversiontool.cpp:127
 #: core/libs/dimg/filters/icc/iccprofilesettings.cpp:81
@@ -14437,21 +14452,38 @@ msgstr ""
 #: core/dplugins/generic/tools/expoblending/wizard/expoblendingitemspage.cpp:64
 #, fuzzy, kde-format
 #| msgid "images"
-msgctxt "@title: window"
-msgid "<b>Set Bracketed Images</b>"
+msgctxt "@title:window"
+msgid "Set Bracketed Images"
 msgstr "imatges"
 
-#: core/dplugins/generic/tools/expoblending/wizard/expoblendingitemspage.cpp:73
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingitemspage.cpp:79
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<qt><p>Set here the list of your bracketed images to fuse. Please follow "
-"these conditions:</p><ul><li>At least 2 images from the same subject must be "
-"added to the stack.</li><li>Do not mix images with different color depth.</"
-"li><li>All images must have the same dimensions.</li></ul></qt>"
+"Set here the list of your bracketed images to fuse. Please follow these "
+"conditions"
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingitemspage.cpp:80
+#, kde-format
+msgctxt "@info"
+msgid "At least 2 images from the same subject must be added to the stack."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingitemspage.cpp:81
+#: core/dplugins/generic/tools/panorama/wizard/panoitemspage.cpp:81
+#, kde-format
+msgctxt "@info"
+msgid "Do not mix images with different color depth."
 msgstr ""
 
 #: core/dplugins/generic/tools/expoblending/wizard/expoblendingitemspage.cpp:82
+#, kde-format
+msgctxt "@info"
+msgid "All images must have the same dimensions."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingitemspage.cpp:86
 #, fuzzy, kde-format
 #| msgid "images"
 msgctxt "@title: column"
@@ -14461,26 +14493,41 @@ msgstr "imatges"
 #: core/dplugins/generic/tools/expoblending/wizard/expoblendinglastpage.cpp:59
 #, fuzzy, kde-format
 #| msgid "Slide Show"
-msgctxt "@title: window"
+msgctxt "@title:window"
 msgid "Pre-Processing is Complete"
 msgstr "Diaporama"
 
-#: core/dplugins/generic/tools/expoblending/wizard/expoblendinglastpage.cpp:68
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendinglastpage.cpp:73
+#, fuzzy, kde-format
+#| msgid "Slide Show"
+msgctxt "@info"
+msgid "Bracketed Images Pre-Processing is Done"
+msgstr "Diaporama"
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendinglastpage.cpp:74
 #, kde-format
 msgctxt "@info"
-msgid ""
-"<qt><p><h1><b>Bracketed Images Pre-Processing is Done</b></h1></"
-"p><p>Congratulations. Your images are ready to be fused. </p><p>To perform "
-"this operation, <b>%1</b> program from <a href='%2'>Enblend</a> project will "
-"be used.</p><p>Press \"Finish\" button to fuse your items and make a pseudo "
-"HDR image.</p></qt>"
+msgid "Congratulations. Your images are ready to be fused."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendinglastpage.cpp:75
+#, kde-format
+msgctxt "@info"
+msgid "To perform this operation, Emblend program from will be used."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendinglastpage.cpp:76
+#, kde-format
+msgctxt "@info"
+msgid "Press \"Finish\" button to fuse your items and make a pseudo HDR image."
 msgstr ""
 
 #: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:89
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Slide Show"
 msgctxt "@title: window"
-msgid "<b>Pre-Processing Bracketed Images</b>"
-msgstr ""
+msgid "Pre-Processing Bracketed Images"
+msgstr "Diaporama"
 
 #: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:102
 #, fuzzy, kde-format
@@ -14489,33 +14536,72 @@ msgctxt "@option: check"
 msgid "Align bracketed images"
 msgstr "imatges"
 
-#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:144
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:149
+#, kde-format
+msgctxt "@info"
+msgid "Now, we will pre-process bracketed images before fusing them."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:150
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<qt><p>Now, we will pre-process bracketed images before fusing them.</"
-"p><p>To perform auto-alignment, the <b>%1</b> program from the <a href='%2'>"
-"%3</a> project will be used. Alignment must be performed if you have not "
-"used a tripod to take bracketed images. Alignment operations can take a "
-"while.</p><p>Pre-processing operations include Raw demosaicing. Raw images "
-"will be converted to 16-bit sRGB images with auto-gamma.</p><p>Press \"Next"
-"\" to start pre-processing.</p></qt>"
+"Alignment must be performed if you have not used a tripod to take bracketed "
+"images. Alignment operations can take a while."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:151
+#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:208
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Pre-processing operations include Raw demosaicing. Raw images will be "
+"converted to 16-bit sRGB images with auto-gamma."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:152
+#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:213
+#, kde-format
+msgctxt "@info"
+msgid "Press the \"Next\" button to start pre-processing."
 msgstr ""
 
 #: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:164
+#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:165
+#, fuzzy, kde-format
+#| msgid "Slide Show"
+msgctxt "@info"
+msgid "Pre-processing is in progress, please wait."
+msgstr "Diaporama"
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:165
+#: core/dplugins/generic/tools/panorama/wizard/panooptimizepage.cpp:196
+#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:166
 #, kde-format
 msgctxt "@info"
-msgid ""
-"<qt><p>Pre-processing is under progress, please wait.</p><p>This can take a "
-"while...</p></qt>"
+msgid "This can take a while..."
 msgstr ""
 
-#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:222
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:224
+#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:309
+#, fuzzy, kde-format
+#| msgid "Slide Show"
+msgctxt "@info"
+msgid "Pre-processing has failed."
+msgstr "Diaporama"
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:225
 #, kde-format
 msgctxt "@info"
-msgid ""
-"<qt><p>Pre-processing has failed.</p><p>Please check your bracketed images "
-"stack...</p><p>See processing messages below.</p></qt>"
+msgid "Please check your bracketed images stack..."
+msgstr ""
+
+#: core/dplugins/generic/tools/expoblending/wizard/expoblendingpreprocesspage.cpp:226
+#: core/dplugins/generic/tools/panorama/wizard/panooptimizepage.cpp:336
+#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:310
+#, kde-format
+msgctxt "@info"
+msgid "See processing messages below."
 msgstr ""
 
 #: core/dplugins/generic/tools/expoblending/wizard/expoblendingwizard.cpp:70
@@ -15605,12 +15691,6 @@ msgctxt "@info"
 msgid "Images are taken with the same camera (and lens)."
 msgstr ""
 
-#: core/dplugins/generic/tools/panorama/wizard/panoitemspage.cpp:81
-#, kde-format
-msgctxt "@info"
-msgid "Do not mix images with different color depth."
-msgstr ""
-
 #: core/dplugins/generic/tools/panorama/wizard/panoitemspage.cpp:82
 #, kde-format
 msgctxt "@info"
@@ -15771,13 +15851,6 @@ msgctxt "@info"
 msgid "Optimization is in progress, please wait."
 msgstr ""
 
-#: core/dplugins/generic/tools/panorama/wizard/panooptimizepage.cpp:196
-#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:166
-#, kde-format
-msgctxt "@info"
-msgid "This can take a while..."
-msgstr ""
-
 #: core/dplugins/generic/tools/panorama/wizard/panooptimizepage.cpp:229
 #, kde-format
 msgctxt "@info"
@@ -15811,13 +15884,6 @@ msgctxt "@info"
 msgid "Optimization has failed."
 msgstr ""
 
-#: core/dplugins/generic/tools/panorama/wizard/panooptimizepage.cpp:336
-#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:310
-#, kde-format
-msgctxt "@info"
-msgid "See processing messages below."
-msgstr ""
-
 #: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:104
 #, fuzzy, kde-format
 #| msgid "Slide Show"
@@ -15849,25 +15915,10 @@ msgid ""
 "matching process."
 msgstr ""
 
-#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:165
-#, fuzzy, kde-format
-#| msgid "Slide Show"
-msgctxt "@info"
-msgid "Pre-processing is in progress, please wait."
-msgstr "Diaporama"
-
 #: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:207
 #, kde-format
 msgctxt "@info"
 msgid "Now, we will pre-process images before stitching them."
-msgstr ""
-
-#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:208
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Pre-processing operations include Raw demosaicing. Raw images will be "
-"converted to 16-bit sRGB images with auto-gamma."
 msgstr ""
 
 #: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:210
@@ -15877,19 +15928,6 @@ msgid ""
 "Pre-processing also include a calculation of some control points to match "
 "overlaps between images. For that purpose, the \"%1\" program will be used."
 msgstr ""
-
-#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:213
-#, kde-format
-msgctxt "@info"
-msgid "Press the \"Next\" button to start pre-processing."
-msgstr ""
-
-#: core/dplugins/generic/tools/panorama/wizard/panopreprocesspage.cpp:309
-#, fuzzy, kde-format
-#| msgid "Slide Show"
-msgctxt "@info"
-msgid "Pre-processing has failed."
-msgstr "Diaporama"
 
 #: core/dplugins/generic/tools/panorama/wizard/panopreviewpage.cpp:100
 #, kde-format
@@ -52574,14 +52612,6 @@ msgid ""
 "<b>Note: All changes to these settings only take effect after the restart. "
 "Some settings are hardware dependent and may have no effect.</b>"
 msgstr ""
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Yannig Marchegay (Kokoyaya)"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "yannig@marchegay.org"
 
 #, fuzzy
 #~| msgid "Rotate"
