@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-25 02:15+0100\n"
+"POT-Creation-Date: 2021-03-26 02:14+0100\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -6778,14 +6778,18 @@ msgid "Active Author Profile"
 msgstr "Opcions"
 
 #. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#: krita/kritamenu.action:1695 krita/kritamenu.action:1697
+#: krita/kritamenu.action:1695
 #, fuzzy, kde-format
 msgctxt "action"
-msgid "Reset Krita Configurations"
-msgstr "Seleccion"
+msgid "Reset All Settings"
+msgstr "Tot seleccionar"
+
+#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
+#: krita/kritamenu.action:1697
+#, fuzzy, kde-format
+msgctxt "action"
+msgid "Reset All Settings to Default"
+msgstr "defaut"
 
 #. i18n: context: Action (options_configure_keybinding), Actions (Settings), ActionCollection (Menu)
 #: krita/kritamenu.action:1705
@@ -9652,7 +9656,7 @@ msgid "Behind"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpCopy2.h:32
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:73
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:74
 #: plugins/generators/seexpr/kis_wdg_seexpr_presets_save.cpp:67
 #, fuzzy, kde-format
 msgid "Copy"
@@ -11476,8 +11480,8 @@ msgstr "Sorga"
 #: plugins/extensions/qmic/QMic.cpp:52 plugins/extensions/qmic/QMic.cpp:78
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:182
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:187
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:238
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:243
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:270
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:275
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:286
 #: plugins/extensions/resourcemanager/resourcemanager.cpp:221
 #: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:393
@@ -11514,54 +11518,54 @@ msgstr "Seleccion"
 msgid "2. The resource location at %1 is not writable."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:468
+#: libs/resources/KisResourceLocator.cpp:471
 #, fuzzy, kde-format
 msgid "Could not add %1 to the database"
 msgstr "Seleccion"
 
-#: libs/resources/KisResourceLocator.cpp:484
+#: libs/resources/KisResourceLocator.cpp:487
 #, fuzzy, kde-format
 msgid "Could not remove storage %1 from the database"
 msgstr "Seleccion"
 
-#: libs/resources/KisResourceLocator.cpp:499
+#: libs/resources/KisResourceLocator.cpp:502
 #, kde-format
 msgid ""
 "Krita is running for the first time. Initialization will take some time."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:506
+#: libs/resources/KisResourceLocator.cpp:509
 #, fuzzy, kde-format
 msgid "3. Could not create the resource location at %1."
 msgstr "Seleccion"
 
-#: libs/resources/KisResourceLocator.cpp:519
-#: libs/resources/KisResourceLocator.cpp:535
+#: libs/resources/KisResourceLocator.cpp:522
+#: libs/resources/KisResourceLocator.cpp:538
 #, fuzzy, kde-format
 msgid "Could not copy resource %1 to %2"
 msgstr "Seleccion"
 
-#: libs/resources/KisResourceLocator.cpp:531
+#: libs/resources/KisResourceLocator.cpp:534
 #, fuzzy, kde-format
 msgid "Installing the resources from bundle %1."
 msgstr "Saturacion :"
 
-#: libs/resources/KisResourceLocator.cpp:553
+#: libs/resources/KisResourceLocator.cpp:556
 #, fuzzy, kde-format
 msgid "Initializing the resources."
 msgstr "Sorga"
 
-#: libs/resources/KisResourceLocator.cpp:567
+#: libs/resources/KisResourceLocator.cpp:570
 #, kde-format
 msgid "Could not add storage %1 to the cache database"
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:588
+#: libs/resources/KisResourceLocator.cpp:591
 #, fuzzy, kde-format
 msgid "Temporary Resources"
 msgstr "Importar un document"
 
-#: libs/resources/KisResourceLocator.cpp:700
+#: libs/resources/KisResourceLocator.cpp:703
 #, fuzzy, kde-format
 msgid "Could not synchronize %1 with the database"
 msgstr "Seleccion"
@@ -11811,7 +11815,7 @@ msgstr "Opcions"
 #. i18n: ectx: property (text), widget (QRadioButton, btnAllView)
 #. i18n: ectx: property (text), widget (QPushButton, deleteAllAssistantsButton)
 #. i18n: ectx: property (text), widget (QPushButton, bnDelete)
-#: libs/resources/KisTagModel.cpp:93 libs/resources/KisTagModel.cpp:255
+#: libs/resources/KisTagModel.cpp:100 libs/resources/KisTagModel.cpp:262
 #: libs/ui/widgets/kis_paintop_presets_popup.cpp:616
 #: plugins/assistants/Assistants/AssistantsToolOptions.ui:225
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:70
@@ -11820,17 +11824,17 @@ msgstr "Opcions"
 msgid "All"
 msgstr ""
 
-#: libs/resources/KisTagModel.cpp:120 libs/resources/KisTagModel.cpp:265
+#: libs/resources/KisTagModel.cpp:127 libs/resources/KisTagModel.cpp:272
 #, fuzzy, kde-format
 msgid "All Untagged"
 msgstr "Imatge"
 
-#: libs/resources/KisTagModel.cpp:258
+#: libs/resources/KisTagModel.cpp:265
 #, fuzzy, kde-format
 msgid "All Resources"
 msgstr "Sorga"
 
-#: libs/resources/KisTagModel.cpp:268
+#: libs/resources/KisTagModel.cpp:275
 #, fuzzy, kde-format
 msgid "All Untagged Resources"
 msgstr "Sorga"
@@ -12074,8 +12078,8 @@ msgid "<qt>Show the tag box options.</qt>"
 msgstr ""
 
 #: libs/resourcewidgets/KisTagToolButton.cpp:63
-#: libs/resourcewidgets/TagActions.cpp:140
-#: libs/resourcewidgets/TagActions.cpp:159
+#: libs/resourcewidgets/TagActions.cpp:139
+#: libs/resourcewidgets/TagActions.cpp:158
 #, fuzzy, kde-format
 msgid "New tag"
 msgstr "Imatge"
@@ -14484,6 +14488,23 @@ msgstr "Color de fons"
 #, fuzzy, kde-format
 msgid "Row count"
 msgstr "Color de fons"
+
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:65
+#, fuzzy, kde-format
+msgid "Save New Brush Preset"
+msgstr "Paleta"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSaveBrushPreset)
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:80
+#: libs/ui/forms/wdgsavebrushpreset.ui:24
+#, fuzzy, kde-format
+msgid "Save Brush Preset"
+msgstr "Paleta"
+
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:128
+#, kde-format
+msgid "Preset Icon Library"
+msgstr ""
 
 #: libs/ui/dialogs/KisRecoverNamedAutosaveDialog.cpp:32
 #, kde-format
@@ -17652,13 +17673,6 @@ msgstr "Colors"
 msgid "Vertical radius of rectangle corners"
 msgstr ""
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSaveBrushPreset)
-#: libs/ui/forms/wdgsavebrushpreset.ui:24
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:79
-#, fuzzy, kde-format
-msgid "Save Brush Preset"
-msgstr "Paleta"
-
 #. i18n: ectx: property (text), widget (QLabel, newBrushNameLabel)
 #: libs/ui/forms/wdgsavebrushpreset.ui:35
 #, fuzzy, kde-format
@@ -20620,7 +20634,7 @@ msgstr "Filtre"
 
 #: libs/ui/KisMainWindow.cpp:1841
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:177
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:231
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:263
 #, fuzzy, kde-format
 msgid "You don't have any resource bundles enabled."
 msgstr "Seleccion"
@@ -20635,7 +20649,7 @@ msgstr ""
 
 #: libs/ui/KisMainWindow.cpp:1855
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:187
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:243
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:275
 #, kde-format
 msgid ""
 "\n"
@@ -23184,16 +23198,6 @@ msgctxt "%1 is the name of a brush engine"
 msgid "%1 Engine"
 msgstr "Seleccion"
 
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:64
-#, fuzzy, kde-format
-msgid "Save New Brush Preset"
-msgstr "Paleta"
-
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:127
-#, kde-format
-msgid "Preset Icon Library"
-msgstr ""
-
 #: libs/ui/widgets/kis_preset_live_preview_view.cpp:170
 #, kde-format
 msgid "No Preview for this engine"
@@ -23581,7 +23585,7 @@ msgstr "Papièr"
 #: plugins/filters/asccdl/wdg_asccdl.ui:21
 #: plugins/filters/asccdl/wdg_asccdl.ui:28
 #: plugins/filters/asccdl/wdg_asccdl.ui:49
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:190
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:189
 #, fuzzy, kde-format
 #| msgid "Pressure"
 msgid "PushButton"
@@ -28110,7 +28114,7 @@ msgstr "Paleta"
 #, kde-format
 msgctxt "@tooltip"
 msgid ""
-"Save palette explicitely, will also happen automatically on exiting Krita."
+"Save palette explicitly, will also happen automatically on exiting Krita."
 msgstr ""
 
 #: plugins/dockers/palettedocker/palettedocker_dock.cpp:368
@@ -31052,7 +31056,7 @@ msgid "Create"
 msgstr "Crear"
 
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:147
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:287
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:319
 #, fuzzy, kde-format
 msgctxt ""
 "In bundle manager; press button to deactivate the bundle (remove resources "
@@ -31061,7 +31065,7 @@ msgid "Deactivate"
 msgstr "Actiu"
 
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:181
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:237
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:269
 #, kde-format
 msgid ""
 "\n"
@@ -31080,25 +31084,25 @@ msgstr ""
 msgid "Select the bundle"
 msgstr "Seleccionar"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:291
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:217
+#, kde-format
+msgid "New name for the bundle"
+msgstr ""
+
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:217
+#, kde-format
+msgid ""
+"The old filename %1 is taken.\n"
+"New name:"
+msgstr ""
+
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:323
 #, fuzzy, kde-format
 msgctxt ""
 "In bundle manager; press button to activate the bundle (add resources from "
 "the bundle to the available resources)"
 msgid "Activate"
 msgstr "Actiu"
-
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:340
-#, kde-format
-msgid "New name for the bundle"
-msgstr ""
-
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:340
-#, kde-format
-msgid ""
-"The old filename %1 is taken.\n"
-"New name:"
-msgstr ""
 
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:60
 #, fuzzy, kde-format
@@ -37835,7 +37839,7 @@ msgstr "Carrat"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkInvert)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, btnAntialiasing)
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:109
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:238
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:235
 #, kde-format
 msgid "The border of the brush will be smoothed to avoid aliasing"
 msgstr ""
@@ -38241,39 +38245,39 @@ msgid "Texturing Mode:"
 msgstr "Estampatge"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSpacing_2)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:180
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:179
 #, fuzzy, kde-format
 msgid "Cutoff"
 msgstr "Personalizat"
 
 #. i18n: ectx: property (text), widget (QLabel, lblNeutralPoint)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:201
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:199
 #, fuzzy, kde-format
 msgid "Neutral Point"
 msgstr "Cibla :"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSpikes)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:225
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:222
 #, fuzzy, kde-format
 msgid "Horizontal Offset:"
 msgstr "Orizontal :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkInvert)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:241
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:238
 #, fuzzy, kde-format
 msgid "Invert Pattern"
 msgstr "Saturacion"
 
 #. i18n: ectx: property (text), widget (QCheckBox, randomOffsetY)
 #. i18n: ectx: property (text), widget (QCheckBox, randomOffsetX)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:251
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:280
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:248
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:277
 #, fuzzy, kde-format
 msgid "Random Offset"
 msgstr "Aleatòri"
 
 #. i18n: ectx: property (text), widget (QLabel, lblRandomness)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:264
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:261
 #, fuzzy, kde-format
 msgid "Vertical Offset:"
 msgstr "Vertical :"
@@ -45577,6 +45581,11 @@ msgid "Reference Images Tool"
 msgstr "Preferéncias"
 
 #, fuzzy
+#~ msgctxt "action"
+#~ msgid "Reset Krita Configurations"
+#~ msgstr "Seleccion"
+
+#, fuzzy
 #~ msgid "Resource Folder"
 #~ msgstr "Sorga"
 
@@ -48304,10 +48313,6 @@ msgstr "Preferéncias"
 #, fuzzy
 #~ msgid "Subtract (Shortcut S)"
 #~ msgstr "Cort"
-
-#, fuzzy
-#~ msgid "Reset All Rings"
-#~ msgstr "Tot seleccionar"
 
 #, fuzzy
 #~ msgid "Reset Selected Ring"
@@ -53211,11 +53216,6 @@ msgstr "Preferéncias"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Invert Saturation"
 #~ msgstr "Saturacion"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reset to Default"
-#~ msgstr "defaut"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
