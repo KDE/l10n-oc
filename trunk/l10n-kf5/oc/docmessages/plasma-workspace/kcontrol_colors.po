@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontrol_colors\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-28 16:22+0000\n"
+"POT-Creation-Date: 2021-04-09 00:30+0000\n"
 "PO-Revision-Date: 2008-08-13 13:38+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Tag: title
-#: index.docbook:11 index.docbook:29 index.docbook:115
+#: index.docbook:11 index.docbook:29 index.docbook:116
 #, no-c-format
 msgid "Colors"
 msgstr "Colors"
@@ -42,13 +42,13 @@ msgstr ""
 #. Tag: date
 #: index.docbook:17
 #, no-c-format
-msgid "2018-03-30"
+msgid "2021-04-08"
 msgstr ""
 
 #. Tag: releaseinfo
 #: index.docbook:18
 #, no-c-format
-msgid "Plasma 5.12"
+msgid "Plasma 5.20"
 msgstr ""
 
 #. Tag: keyword
@@ -89,12 +89,23 @@ msgid ""
 "This module lets you manage the color schemes on your machine. It shows a "
 "list of color schemes shipped with &plasma; and a preview at the top. Only "
 "one scheme is active at once, but you may edit schemes. You can remove "
-"schemes using <guibutton>Remove Scheme</guibutton>. Note that system schemes "
-"cannot be removed; the button for this action is disabled."
+"schemes using the <guibutton>Remove Scheme</guibutton> button that is shown "
+"when you hover the mouse pointer over an item in the grid. Note that system "
+"schemes cannot be removed; the button for this action is disabled."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:41
+#: index.docbook:42
+#, no-c-format
+msgid ""
+"It is possible to filter the scheme list using the <guilabel>Search...</"
+"guilabel> field above the grid. Moreover, you can use the combo box next to "
+"this field to show only the <guimenuitem>Light Schemes</guimenuitem> or the "
+"<guimenuitem>Dark Schemes</guimenuitem>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:48
 #, no-c-format
 msgid ""
 "If you have an Internet connection, you can also browse and retrieve user-"
@@ -102,7 +113,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:45
+#: index.docbook:52
 #, no-c-format
 msgid ""
 "You can also install schemes from a file that you have downloaded or "
@@ -111,55 +122,43 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:49
+#: index.docbook:57
 #, no-c-format
 msgid ""
-"If <guilabel>Apply colors to non-Qt applications</guilabel> is checked, "
-"Plasma will attempt to export its color scheme so that non-Qt applications "
-"will use the same colors. Most applications will honor the exported scheme "
-"to varying degrees, though some may have bugs or otherwise not honor the "
-"exported scheme."
-msgstr ""
-
-#. Tag: para
-#: index.docbook:56
-#, no-c-format
-msgid ""
-"Note: This documentation will sometimes refer to the &quot;current&quot; "
-"scheme, or the &quot;active&quot; scheme. The &quot;current&quot; scheme is "
-"the set of colors and color scheme options that was most recently applied, "
-"&ie; what you would get if you choose <guibutton>Cancel</guibutton>. The "
-"&quot;active&quot; scheme is the set of colors as has been most recently "
-"edited by you, &ie; what you would get if you choose <guibutton>Apply</"
-"guibutton>."
+"This documentation will sometimes refer to the &quot;current&quot; scheme, "
+"or the &quot;active&quot; scheme. The &quot;current&quot; scheme is the set "
+"of colors and color scheme options that was most recently applied, &ie; what "
+"you would get if you choose <guibutton>Cancel</guibutton>. The &quot;"
+"active&quot; scheme is the set of colors as has been most recently edited by "
+"you, &ie; what you would get if you choose <guibutton>Apply</guibutton>."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:66
+#: index.docbook:68
 #, no-c-format
 msgid "Edit or Create Schemes"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:67
+#: index.docbook:69
 #, no-c-format
 msgid ""
 "To edit or create new schemes select a scheme from the list and press the "
 "<guibutton>Edit Scheme</guibutton> button to open a dialog with three tabs "
-"<guilabel>Options</guilabel>, <guilabel>Colors</guilabel>, "
-"<guilabel>Disabled</guilabel> and <guilabel>Inactive</guilabel>. When you "
-"have created a scheme you like, you can upload it, reset it or save it under "
-"a different name or overwrite the active scheme."
+"<guilabel>Options</guilabel>, <guilabel>Colors</guilabel>, and "
+"<guilabel>Disabled</guilabel>. When you have created a scheme you like, you "
+"can upload it, reset it or save it under a different name or overwrite the "
+"active scheme."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:76
+#: index.docbook:77
 #, no-c-format
 msgid "Color Scheme Options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:78
+#: index.docbook:79
 #, no-c-format
 msgid ""
 "The <guilabel>Options</guilabel> tab allows you to change some properties "
@@ -168,21 +167,21 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:84
+#: index.docbook:85
 #, no-c-format
 msgid ""
 "<guilabel>Apply effects to inactive windows</guilabel> &mdash; If checked, "
-"state effects (see below) will be applied to inactive windows. This can help "
-"visually identify active versus inactive windows, and may have aesthetic "
-"value, depending on your taste. However, some users feel that it causes "
-"distracting &quot;flickering&quot; since windows must be repainted when they "
-"become inactive. Unlike desktop effects, color state effects do not require "
-"compositing support and will work on all systems, however they will only "
-"work on &kde; applications."
+"state effects (see <link linkend=\"color-effects\">below</link>) will be "
+"applied to inactive windows. This can help visually identify active versus "
+"inactive windows, and may have aesthetic value, depending on your taste. "
+"However, some users feel that it causes distracting &quot;flickering&quot; "
+"since windows must be repainted when they become inactive. Unlike desktop "
+"effects, color state effects do not require compositing support and will "
+"work on all systems, however they will only work on &kde; applications."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:93
+#: index.docbook:94
 #, no-c-format
 msgid ""
 "<guilabel>Use different colors for inactive selections</guilabel> &mdash; If "
@@ -193,7 +192,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:99
+#: index.docbook:100
 #, no-c-format
 msgid ""
 "<guilabel>Shade sorted column in lists</guilabel> &mdash; If checked, multi-"
@@ -202,7 +201,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:104
+#: index.docbook:105
 #, no-c-format
 msgid ""
 "<guilabel>Contrast</guilabel> &mdash; This slider controls the contrast of "
@@ -212,7 +211,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:117
+#: index.docbook:118
 #, no-c-format
 msgid ""
 "The <guilabel>Colors</guilabel> tab allows you to change the colors in the "
@@ -220,7 +219,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:120
+#: index.docbook:121
 #, no-c-format
 msgid ""
 "Creating or changing a scheme is a simple matter of clicking on the swatch "
@@ -229,7 +228,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:125
+#: index.docbook:126
 #, no-c-format
 msgid ""
 "The <guilabel>Common Colors</guilabel> set, which is displayed initially, is "
@@ -241,7 +240,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:132
+#: index.docbook:133
 #, no-c-format
 msgid ""
 "Note that <guilabel>Common Colors</guilabel> makes available roles from all "
@@ -256,14 +255,14 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:144
+#: index.docbook:145
 #, fuzzy, no-c-format
 #| msgid "Colors"
 msgid "Color Sets"
 msgstr "Colors"
 
 #. Tag: para
-#: index.docbook:146
+#: index.docbook:147
 #, no-c-format
 msgid ""
 "Plasma breaks the color scheme into several sets based on the type of user "
@@ -271,7 +270,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:149
+#: index.docbook:150
 #, no-c-format
 msgid ""
 "<guilabel>View</guilabel> &mdash; information presentation elements, such as "
@@ -279,7 +278,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:152
+#: index.docbook:153
 #, no-c-format
 msgid ""
 "<guilabel>Window</guilabel> &mdash; window elements that are not buttons or "
@@ -287,19 +286,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:155
+#: index.docbook:156
 #, no-c-format
 msgid "<guilabel>Button</guilabel> &mdash; buttons and similar elements."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:158
+#: index.docbook:159
 #, no-c-format
 msgid "<guilabel>Selection</guilabel> &mdash; selected text and items."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:161
+#: index.docbook:162
 #, no-c-format
 msgid ""
 "<guilabel>Tooltip</guilabel> &mdash; tool tips, &quot;What's This&quot; "
@@ -307,7 +306,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:164
+#: index.docbook:165
 #, no-c-format
 msgid ""
 "<guilabel>Complementary</guilabel> &mdash; Areas of applications with an "
@@ -317,7 +316,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:169
+#: index.docbook:170
 #, no-c-format
 msgid ""
 "Each set contains a number of color roles. Each set has the same roles. All "
@@ -325,14 +324,14 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:175
+#: index.docbook:176
 #, fuzzy, no-c-format
 #| msgid "Colors"
 msgid "Color Roles"
 msgstr "Colors"
 
 #. Tag: para
-#: index.docbook:177
+#: index.docbook:178
 #, no-c-format
 msgid ""
 "Each color set is made up of a number of roles which are available in all "
@@ -341,7 +340,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:182
+#: index.docbook:183
 #, no-c-format
 msgid ""
 "Alternate Background &mdash; used when there is a need to subtly change the "
@@ -351,7 +350,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:188
+#: index.docbook:189
 #, no-c-format
 msgid ""
 "Link Text &mdash; used for hyperlinks or to otherwise indicate &quot;"
@@ -359,7 +358,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:192
+#: index.docbook:193
 #, no-c-format
 msgid ""
 "Visited Text &mdash; used for &quot;something (&eg; a hyperlink) that has "
@@ -367,7 +366,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:196
+#: index.docbook:197
 #, no-c-format
 msgid ""
 "Active Text &mdash; used to indicate an active element or attract attention, "
@@ -375,7 +374,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:200
+#: index.docbook:201
 #, no-c-format
 msgid ""
 "Inactive Text &mdash; used for text which should be unobtrusive, &eg; "
@@ -383,7 +382,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:204
+#: index.docbook:205
 #, no-c-format
 msgid ""
 "Negative Text &mdash; used for errors, failure notices, notifications that "
@@ -391,7 +390,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:208
+#: index.docbook:209
 #, no-c-format
 msgid ""
 "Neutral Text &mdash; used to draw attention when another role is not "
@@ -399,7 +398,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:212
+#: index.docbook:213
 #, no-c-format
 msgid ""
 "Positive Text &mdash; used for success notices, to indicate trusted content, "
@@ -407,7 +406,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:217
+#: index.docbook:218
 #, no-c-format
 msgid ""
 "As well as the text roles, there are a few additional &quot;decoration&quot; "
@@ -418,7 +417,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:224
+#: index.docbook:225
 #, no-c-format
 msgid ""
 "Focus Decoration &mdash; used to indicate the item which has active input "
@@ -426,7 +425,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:227
+#: index.docbook:228
 #, no-c-format
 msgid ""
 "Hover Decoration &mdash; used for mouse-over effects, &eg; the \"illumination"
@@ -434,7 +433,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:233
+#: index.docbook:234
 #, no-c-format
 msgid ""
 "In addition, except for Inactive Text, there is a corresponding background "
@@ -446,7 +445,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:240
+#: index.docbook:241
 #, no-c-format
 msgid ""
 "The choice of color role is left to the developer; the above are guidelines "
@@ -454,13 +453,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:245
+#: index.docbook:246
 #, no-c-format
 msgid "Window Manager Colors"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:247
+#: index.docbook:248
 #, no-c-format
 msgid ""
 "As previously stated, the Window Manager set has its own roles, independent "
@@ -469,7 +468,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:252
+#: index.docbook:253
 #, no-c-format
 msgid ""
 "Active Titlebar &mdash; used to draw the title bar background, borders, and/"
@@ -479,7 +478,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:258
+#: index.docbook:259
 #, no-c-format
 msgid ""
 "Active Titlebar Text &mdash; used to draw the title bar text when Active "
@@ -488,7 +487,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:265
+#: index.docbook:266
 #, no-c-format
 msgid ""
 "The Inactive Titlebar [Text] roles are the same as the above, but for "
@@ -496,42 +495,43 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:272
+#: index.docbook:273
 #, no-c-format
-msgid "Color State Effects"
+msgid "Disabled"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:274
+#: index.docbook:275
 #, no-c-format
 msgid ""
-"Color state effects are applied to interface elements in the inactive "
-"(windows that do not have focus; only if <guilabel>Apply inactive window "
-"color effects</guilabel> is enabled) or disabled states. By changing the "
-"effects, the appearance of elements in these states can be changed. Usually, "
-"inactive elements will have reduced contrast (text fades slightly into the "
-"background) and may have slightly reduced intensity, while disabled elements "
-"will have strongly reduced contrast and are often notably darker or lighter."
+"Color state effects from this tab are applied to interface elements in the "
+"inactive (windows that do not have focus; only if <guilabel>Apply inactive "
+"window color effects</guilabel> is enabled) or disabled states. By changing "
+"the effects, the appearance of elements in these states can be changed. "
+"Usually, inactive elements will have reduced contrast (text fades slightly "
+"into the background) and may have slightly reduced intensity, while disabled "
+"elements will have strongly reduced contrast and are often notably darker or "
+"lighter."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:283
+#: index.docbook:284
 #, no-c-format
 msgid ""
-"Three types of effect may be applied to each state (with the effects of the "
+"Three types of effects may be applied to each state (with the effects of the "
 "two states being independent). These are Intensity, Color and Contrast. The "
 "first two (Intensity, Color) control the overall color, while the last "
 "(Contrast) deals with the foreground colors relative to the background."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:290
+#: index.docbook:291
 #, no-c-format
 msgid "Intensity"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:292
+#: index.docbook:293
 #, no-c-format
 msgid ""
 "Intensity allows the overall color to be lightened or darkened. Setting the "
@@ -539,7 +539,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:297
+#: index.docbook:298
 #, no-c-format
 msgid ""
 "Shade &mdash; makes everything lighter or darker in a controlled manner. "
@@ -548,7 +548,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:302
+#: index.docbook:303
 #, no-c-format
 msgid ""
 "Darken &mdash; changes the intensity to a percentage of the initial value. A "
@@ -558,7 +558,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:308
+#: index.docbook:309
 #, no-c-format
 msgid ""
 "Lighten &mdash; conceptually the opposite of darken; lighten can be thought "
@@ -569,14 +569,14 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:320
+#: index.docbook:321
 #, fuzzy, no-c-format
 #| msgid "Colors"
 msgid "Color"
 msgstr "Colors"
 
 #. Tag: para
-#: index.docbook:322
+#: index.docbook:323
 #, no-c-format
 msgid ""
 "Color also changes the overall color, but is not limited to intensity. The "
@@ -584,7 +584,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:326
+#: index.docbook:327
 #, no-c-format
 msgid ""
 "Desaturate &mdash; changes the relative chroma. The middle setting produces "
@@ -594,16 +594,16 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:332
+#: index.docbook:333
 #, no-c-format
 msgid ""
 "Fade &mdash; smoothly blends the original color into a reference color. The "
-"minimum setting on the slider produces no change; maximum gives the "
+"minimum setting on the slider produces no change; the maximum gives the "
 "reference color."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:337
+#: index.docbook:338
 #, no-c-format
 msgid ""
 "Tint &mdash; similar to Fade, except that the color (hue and chroma) changes "
@@ -612,13 +612,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:346
+#: index.docbook:347
 #, no-c-format
 msgid "Contrast"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:348
+#: index.docbook:349
 #, no-c-format
 msgid ""
 "The contrast effects are similar to the color effects, except they apply to "
