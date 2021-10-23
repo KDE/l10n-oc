@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-22 00:15+0000\n"
+"POT-Creation-Date: 2021-10-23 00:16+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17769,7 +17769,7 @@ msgid "Local Resources"
 msgstr "Sorga"
 
 #: libs/resources/KisResourceCacheDb.cpp:136
-#: libs/resourcewidgets/KisStorageChooserWidget.cpp:144
+#: libs/resourcewidgets/KisStorageChooserWidget.cpp:167
 #: libs/ui/animation/KisAnimationRender.cpp:49
 #: libs/ui/animation/KisAnimationRender.cpp:101
 #: libs/ui/animation/KisDlgAnimationRenderer.cpp:524
@@ -17796,14 +17796,14 @@ msgstr "Sorga"
 #: libs/ui/KisApplication.cpp:872 libs/ui/KisApplication.cpp:875
 #: libs/ui/KisApplication.cpp:891 libs/ui/KisApplication.cpp:923
 #: libs/ui/KisApplication.cpp:937 libs/ui/KisApplication.cpp:965
-#: libs/ui/KisDocument.cpp:881 libs/ui/KisDocument.cpp:884
+#: libs/ui/KisDocument.cpp:882 libs/ui/KisDocument.cpp:885
 #: libs/ui/KisDocument.cpp:1708 libs/ui/KisDocument.cpp:1751
 #: libs/ui/KisDocument.cpp:1759 libs/ui/KisMainWindow.cpp:1078
 #: libs/ui/KisMainWindow.cpp:1205 libs/ui/KisMainWindow.cpp:1303
 #: libs/ui/KisMainWindow.cpp:1904 libs/ui/KisMainWindow.cpp:1913
 #: libs/ui/KisMainWindow.cpp:2052 libs/ui/KisMainWindow.cpp:2111
-#: libs/ui/KisMainWindow.cpp:2135 libs/ui/KisPart.cpp:556
-#: libs/ui/KisPart.cpp:559 libs/ui/KisReferenceImage.cpp:178
+#: libs/ui/KisMainWindow.cpp:2135 libs/ui/KisPart.cpp:558
+#: libs/ui/KisPart.cpp:561 libs/ui/KisReferenceImage.cpp:178
 #: libs/ui/KisRemoteFileFetcher.cpp:42 libs/ui/KisTemplateCreateDia.cpp:284
 #: libs/ui/KisTemplateCreateDia.cpp:390 libs/ui/KisView.cpp:669
 #: libs/ui/KisWelcomePageWidget.cpp:702
@@ -18466,17 +18466,17 @@ msgid ""
 "If you cancel, your changes won't be saved."
 msgstr ""
 
-#: libs/resourcewidgets/KisStorageChooserWidget.cpp:137
+#: libs/resourcewidgets/KisStorageChooserWidget.cpp:156
 #, kde-format
 msgid "All bundles have been deactivated."
 msgstr ""
 
-#: libs/resourcewidgets/KisStorageChooserWidget.cpp:143
+#: libs/resourcewidgets/KisStorageChooserWidget.cpp:162
 #, kde-format
 msgid ""
 "\n"
-"There are no brush presets available. Please re-enable a bundle that "
-"provides brush presets."
+"There are no resources of type %1 available. Please enable at least one "
+"bundle."
 msgstr ""
 
 #: libs/resourcewidgets/KisTagChooserWidget.cpp:66
@@ -20853,7 +20853,7 @@ msgctxt "@title:window"
 msgid "Enter new style name"
 msgstr "Degradat"
 
-#: libs/ui/dialogs/kis_dlg_layer_style.cpp:270
+#: libs/ui/dialogs/kis_dlg_layer_style.cpp:270 libs/ui/KisMainWindow.cpp:2559
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:375
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
@@ -27365,55 +27365,55 @@ msgctxt "(qtundo-format)"
 msgid "Clone Document"
 msgstr "Motiu"
 
-#: libs/ui/KisDocument.cpp:699
+#: libs/ui/KisDocument.cpp:700
 #, kde-format
 msgid "%1 cannot be written to. Please save under a different name."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:761
+#: libs/ui/KisDocument.cpp:762
 #, fuzzy, kde-format
 msgid "Exporting Document..."
 msgstr "Enregistrar lo document"
 
-#: libs/ui/KisDocument.cpp:762
+#: libs/ui/KisDocument.cpp:763
 #, fuzzy, kde-format
 msgid "Saving Document..."
 msgstr "Enregistrar lo document"
 
-#: libs/ui/KisDocument.cpp:874
+#: libs/ui/KisDocument.cpp:875
 #, kde-format
 msgctxt "%1 --- failing file name, %2 --- error message"
 msgid "Error during saving %1: %2"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:881
+#: libs/ui/KisDocument.cpp:882
 #, fuzzy, kde-format
 msgid "Could not save %1"
 msgstr "Seleccion"
 
-#: libs/ui/KisDocument.cpp:884 plugins/extensions/imagesplit/imagesplit.cpp:76
+#: libs/ui/KisDocument.cpp:885 plugins/extensions/imagesplit/imagesplit.cpp:76
 #, fuzzy, kde-format
 msgid ""
 "Could not save %1\n"
 "Reason: %2"
 msgstr "Seleccion"
 
-#: libs/ui/KisDocument.cpp:919
+#: libs/ui/KisDocument.cpp:920
 #, fuzzy, kde-format
 msgid "Finished saving %1"
 msgstr "Filtre"
 
-#: libs/ui/KisDocument.cpp:1247
+#: libs/ui/KisDocument.cpp:1248
 #, fuzzy, kde-format
 msgid "Autosaving... %1"
 msgstr "Espaciament"
 
-#: libs/ui/KisDocument.cpp:1255
+#: libs/ui/KisDocument.cpp:1256
 #, fuzzy, kde-format
 msgid "Autosaving..."
 msgstr "Espaciament"
 
-#: libs/ui/KisDocument.cpp:1261
+#: libs/ui/KisDocument.cpp:1262
 #, kde-format
 msgid "Autosaving postponed: document is busy..."
 msgstr ""
@@ -27958,36 +27958,42 @@ msgctxt "@action:inmenu"
 msgid "&New Workspace..."
 msgstr "Seleccion"
 
-#: libs/ui/KisMainWindow.cpp:2598
+#: libs/ui/KisMainWindow.cpp:2558
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "New Workspace..."
+msgstr "Seleccion"
+
+#: libs/ui/KisMainWindow.cpp:2602
 #, fuzzy, kde-format
 msgid "&%1 %2"
 msgstr "%1 %"
 
-#: libs/ui/KisMainWindow.cpp:2601
+#: libs/ui/KisMainWindow.cpp:2605
 #, fuzzy, kde-format
 msgid "%1 %2"
 msgstr "%1 %"
 
-#: libs/ui/KisMainWindow.cpp:2762
+#: libs/ui/KisMainWindow.cpp:2766
 #, kde-format
 msgid ""
 "The Krita LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2778
+#: libs/ui/KisMainWindow.cpp:2782
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "Resolucion :"
 
-#: libs/ui/KisMainWindow.cpp:2890
+#: libs/ui/KisMainWindow.cpp:2894
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2944
+#: libs/ui/KisMainWindow.cpp:2948
 #, kde-format
 msgid "Expanding Spacer"
 msgstr ""
@@ -28110,14 +28116,14 @@ msgctxt "Default new group name"
 msgid "New Group %1"
 msgstr "Accions"
 
-#: libs/ui/KisPart.cpp:556
+#: libs/ui/KisPart.cpp:558
 #, fuzzy, kde-format
 msgid ""
 "Could not create document from template\n"
 "%1"
 msgstr "Seleccion"
 
-#: libs/ui/KisPart.cpp:559
+#: libs/ui/KisPart.cpp:561
 #, fuzzy, kde-format
 msgid ""
 "Could not create document from template\n"
@@ -55139,11 +55145,6 @@ msgstr "Preferéncias"
 #~ msgctxt "Warning about not being able to rename a session"
 #~ msgid "Renaming the session failed."
 #~ msgstr "Suprimir pagina"
-
-#, fuzzy
-#~ msgctxt "@title:window"
-#~ msgid "New Workspace..."
-#~ msgstr "Seleccion"
 
 #, fuzzy
 #~ msgid "Clean Up"
