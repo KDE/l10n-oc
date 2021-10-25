@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-24 00:15+0000\n"
+"POT-Creation-Date: 2021-10-25 00:16+0000\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -546,7 +546,7 @@ msgstr "&Suprimir"
 #: core/app/items/utils/contextmenuhelper.cpp:282
 #: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:144
 #: core/showfoto/folderview/showfotofolderviewlist.cpp:171
-#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:152
+#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:153
 #: core/showfoto/stackview/showfotostackviewlist.cpp:416
 #, fuzzy, kde-format
 #| msgid "&Delete"
@@ -34320,7 +34320,7 @@ msgid "Map"
 msgstr ""
 
 #: core/libs/properties/itempropertiessidebar.cpp:254
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:474
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:482
 #: core/showfoto/stackview/showfotostackviewitem.cpp:80
 #, fuzzy, kde-format
 #| msgid "images"
@@ -42970,14 +42970,14 @@ msgid "The bookmark title which must be unique and not empty"
 msgstr ""
 
 #: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:137
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:179
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:183
 #, kde-format
 msgctxt "@label"
 msgid "&Icon:"
 msgstr ""
 
 #: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:145
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:187
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:191
 #, kde-format
 msgctxt "@action:button"
 msgid "Reset"
@@ -43010,7 +43010,7 @@ msgid "Bookmarks"
 msgstr "Colors"
 
 #: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:137
-#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:145
+#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:146
 #, fuzzy, kde-format
 #| msgid "Comments"
 msgctxt "@action: context menu"
@@ -43950,98 +43950,204 @@ msgid ""
 "the image."
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:127
-#, kde-format
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:102
+#, fuzzy, kde-format
+#| msgid "Colors"
 msgctxt "@title"
-msgid "New Favorite"
-msgstr ""
+msgid "New Favorite Folder"
+msgstr "Colors"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:131
-#, kde-format
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:106
+#, fuzzy, kde-format
+#| msgid "images"
 msgctxt "@title"
-msgid "Edit Favorite"
-msgstr ""
+msgid "Edit Favorite Folder"
+msgstr "imatges"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:140
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:115
 #, kde-format
-msgctxt "@label: favorite title properties"
+msgctxt "@label: favorite folder title properties"
 msgid "&Name:"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:143
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:119
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgctxt "@info"
-msgid "Enter favorite name here..."
+msgid "Enter favorite folder name here..."
 msgstr "Colors"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:144
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:120
 #, kde-format
 msgctxt "@info"
-msgid "The favorite name which must be unique and not empty"
+msgid "The favorite folder name which must be unique and not empty"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:150
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:126
 #, fuzzy, kde-format
 #| msgid "Slideshow"
-msgctxt "@label: favorite hierarchy properties"
-msgid "&Hierarchy:"
+msgctxt "@label: favorite folder hierarchy properties"
+msgid "Hierarchy:"
 msgstr "Diaporamà"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:153
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:129
 #, kde-format
 msgctxt "@info"
-msgid "The favorite hierarchy which must be unique in tree-view"
+msgid "The favorite folder hierarchy which must be unique in tree-view"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:158
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:198
+#, kde-format
+msgctxt "@label"
+msgid "Note: name cannot be empty!"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoritefolderdlg.cpp:202
+#, kde-format
+msgctxt "@label"
+msgid "Note: name already exists in favorites list!"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:102
+#, kde-format
+msgctxt "@title"
+msgid "My Favorites"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:207
+#, fuzzy, kde-format
+#| msgid "images"
+msgctxt "@title"
+msgid "Favorite Properties"
+msgstr "imatges"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:209
+#, kde-format
+msgctxt "@info: item title property"
+msgid "Name:"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:212
+#, kde-format
+msgctxt "@info: item date property"
+msgid "Created:"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:215
+#, fuzzy, kde-format
+#| msgid "Slideshow"
+msgctxt "@info: item hierarchy property"
+msgid "Hierarchy:"
+msgstr "Diaporamà"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:218
+#, fuzzy, kde-format
+#| msgid "images"
+msgctxt "@info; item count elements property"
+msgid "Items:"
+msgstr "imatges"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:221
 #, fuzzy, kde-format
 #| msgid "Rotate"
-msgctxt "@label: favorite caption properties"
+msgctxt "@info: item caption property"
+msgid "Description:"
+msgstr "እንደገና አስጀምሩ"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:129
+#, fuzzy, kde-format
+#| msgid "Colors"
+msgctxt "@title"
+msgid "New Favorite Item"
+msgstr "Colors"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:133
+#, fuzzy, kde-format
+#| msgid "images"
+msgctxt "@title"
+msgid "Edit Favorite Item"
+msgstr "imatges"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:142
+#, kde-format
+msgctxt "@label: favorite item title properties"
+msgid "&Name:"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:146
+#, fuzzy, kde-format
+#| msgid "Colors"
+msgctxt "@info"
+msgid "Enter favorite item name here..."
+msgstr "Colors"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:147
+#, kde-format
+msgctxt "@info"
+msgid "The favorite item name which must be unique and not empty"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:153
+#, fuzzy, kde-format
+#| msgid "Slideshow"
+msgctxt "@label: favorite item hierarchy properties"
+msgid "Hierarchy:"
+msgstr "Diaporamà"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:156
+#, kde-format
+msgctxt "@info"
+msgid "The favorite item hierarchy which must be unique in tree-view"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:161
+#, fuzzy, kde-format
+#| msgid "Rotate"
+msgctxt "@label: favorite item caption properties"
 msgid "&Description:"
 msgstr "እንደገና አስጀምሩ"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:161
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:165
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgctxt "@info"
-msgid "Enter favorite description here..."
+msgid "Enter favorite item description here..."
 msgstr "Colors"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:167
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:171
 #, kde-format
-msgctxt "@label: favorite date properties"
+msgctxt "@label: favorite item date properties"
 msgid "&Created:"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:200
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:204
 #, fuzzy, kde-format
 #| msgid "images"
-msgctxt "@label: favorites properties"
+msgctxt "@label: favorites item file properties"
 msgid "&Items:"
 msgstr "imatges"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:214
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:218
 #, kde-format
 msgctxt "@title"
 msgid "Name"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:215
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:219
 #, fuzzy, kde-format
 #| msgid "images"
 msgctxt "@title"
 msgid "Size"
 msgstr "imatges"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:216
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:220
 #, fuzzy, kde-format
 #| msgid "Slide"
 msgctxt "@title"
 msgid "Type"
 msgstr "Diàpo"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:217
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:221
 #, fuzzy, kde-format
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
@@ -44049,94 +44155,48 @@ msgctxt "@title"
 msgid "Date"
 msgstr "Yannig Marchegay (Kokoyaya)"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:218
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:222
 #, kde-format
 msgctxt "@title"
 msgid "Path"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:220
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:224
 #, kde-format
 msgctxt "@info"
 msgid ""
-"This is the list of items hosted by this favorite.\n"
-"The current selected item from this list will be automatically\n"
+"This is the list of files hosted by this favorite item.\n"
+"The current selected file from this list will be automatically\n"
 "shown in editor when favorite is open. If none is selected,\n"
 "first one from the list will be displayed."
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:305
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:320
 #, kde-format
 msgctxt "@label"
-msgid "Note: name cannot be empty!"
+msgid "Note: item name cannot be empty!"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:309
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:324
 #, kde-format
 msgctxt "@label"
-msgid "Note: items list cannot be empty!"
+msgid "Note: files list cannot be empty!"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:313
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:328
 #, kde-format
 msgctxt "@label"
-msgid "Note: name already exists in favorites list!"
+msgid "Note: item name already exists in favorites list!"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:337
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:344
 #, fuzzy, kde-format
-#| msgid "images"
+#| msgid "&Delete"
 msgctxt "@info"
-msgid "%1 image"
-msgid_plural "%1 images"
-msgstr[0] "imatges"
-msgstr[1] "imatges"
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:103
-#, kde-format
-msgctxt "@title"
-msgid "My Favorites"
-msgstr ""
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:218
-#, fuzzy, kde-format
-#| msgid "images"
-msgctxt "@title"
-msgid "Favorite Properties"
-msgstr "imatges"
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:220
-#, kde-format
-msgctxt "@info: item title property"
-msgid "Name:"
-msgstr ""
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:223
-#, kde-format
-msgctxt "@info: item date property"
-msgid "Created:"
-msgstr ""
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:226
-#, fuzzy, kde-format
-#| msgid "Slideshow"
-msgctxt "@info: item hierarchy property"
-msgid "Hierarchy:"
-msgstr "Diaporamà"
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:229
-#, fuzzy, kde-format
-#| msgid "images"
-msgctxt "@info; item count elements property"
-msgid "Items:"
-msgstr "imatges"
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:232
-#, fuzzy, kde-format
-#| msgid "Rotate"
-msgctxt "@info: item caption property"
-msgid "Description:"
-msgstr "እንደገና አስጀምሩ"
+msgid "%1 file"
+msgid_plural "%1 files"
+msgstr[0] "&Suprimir"
+msgstr[1] "&Suprimir"
 
 #: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:74
 #, kde-format
@@ -44144,7 +44204,7 @@ msgctxt "@info"
 msgid "You can add or remove favorite stacks here."
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:123
+#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:124
 #: core/showfoto/stackview/showfotostackviewfavorites.cpp:98
 #, kde-format
 msgctxt "@title"
@@ -44196,28 +44256,14 @@ msgctxt "@info"
 msgid "Edit current item from the list"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:250
-#, kde-format
-msgctxt "@title"
-msgid "New Sub-Folder"
-msgstr ""
-
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:251
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:377
-#, fuzzy, kde-format
-#| msgid "Author"
-msgctxt "@label"
-msgid "Sub-Folder Name:"
-msgstr "Autor"
-
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:316
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:309
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title: window"
 msgid "Confirm Item Deletion"
 msgstr "&Suprimir"
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:317
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:310
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -44225,13 +44271,7 @@ msgid ""
 "and all nested items if any?"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:376
-#, kde-format
-msgctxt "@title"
-msgid "Edit Sub-Folder"
-msgstr ""
-
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:669
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:657
 #, kde-format
 msgctxt "@title"
 msgid "Unnamed"
@@ -55697,6 +55737,26 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~| msgid "Slideshow"
+#~ msgctxt "@label: favorite hierarchy properties"
+#~ msgid "&Hierarchy:"
+#~ msgstr "Diaporamà"
+
+#, fuzzy
+#~| msgid "images"
+#~ msgctxt "@info"
+#~ msgid "%1 image"
+#~ msgid_plural "%1 images"
+#~ msgstr[0] "imatges"
+#~ msgstr[1] "imatges"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@label"
+#~ msgid "Sub-Folder Name:"
+#~ msgstr "Autor"
+
+#, fuzzy
 #~| msgid "&Delete"
 #~ msgctxt "@title: window"
 #~ msgid "Confirm Favorite Deletion"
@@ -55742,12 +55802,6 @@ msgstr ""
 #~| msgid "Colors"
 #~ msgctxt "@title"
 #~ msgid "Bookmarked"
-#~ msgstr "Colors"
-
-#, fuzzy
-#~| msgid "Colors"
-#~ msgctxt "@title: window"
-#~ msgid "Add New Favorite"
 #~ msgstr "Colors"
 
 #, fuzzy
