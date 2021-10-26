@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-25 00:16+0000\n"
+"POT-Creation-Date: 2021-10-26 00:15+0000\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -546,7 +546,7 @@ msgstr "&Suprimir"
 #: core/app/items/utils/contextmenuhelper.cpp:282
 #: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:144
 #: core/showfoto/folderview/showfotofolderviewlist.cpp:171
-#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:153
+#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:155
 #: core/showfoto/stackview/showfotostackviewlist.cpp:416
 #, fuzzy, kde-format
 #| msgid "&Delete"
@@ -43010,7 +43010,7 @@ msgid "Bookmarks"
 msgstr "Colors"
 
 #: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:137
-#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:146
+#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:148
 #, fuzzy, kde-format
 #| msgid "Comments"
 msgctxt "@action: context menu"
@@ -44014,43 +44014,63 @@ msgctxt "@title"
 msgid "My Favorites"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:207
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:132
 #, fuzzy, kde-format
 #| msgid "images"
 msgctxt "@title"
-msgid "Favorite Properties"
+msgid "Favorite Folder Properties"
 msgstr "imatges"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:209
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:134
 #, kde-format
-msgctxt "@info: item title property"
+msgctxt "@info: favorite folder title property"
 msgid "Name:"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:212
-#, kde-format
-msgctxt "@info: item date property"
-msgid "Created:"
-msgstr ""
-
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:215
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:137
 #, fuzzy, kde-format
 #| msgid "Slideshow"
-msgctxt "@info: item hierarchy property"
+msgctxt "@info: favorite folder hierarchy property"
 msgid "Hierarchy:"
 msgstr "Diaporamà"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:218
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:231
 #, fuzzy, kde-format
 #| msgid "images"
-msgctxt "@info; item count elements property"
+msgctxt "@title"
+msgid "Favorite Item Properties"
+msgstr "imatges"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:233
+#, kde-format
+msgctxt "@info: favorite item title property"
+msgid "Name:"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:236
+#, kde-format
+msgctxt "@info: favorite item date property"
+msgid "Created:"
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:239
+#, fuzzy, kde-format
+#| msgid "Slideshow"
+msgctxt "@info: favorite item hierarchy property"
+msgid "Hierarchy:"
+msgstr "Diaporamà"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:242
+#, fuzzy, kde-format
+#| msgid "images"
+msgctxt "@info; favorite item count elements property"
 msgid "Items:"
 msgstr "imatges"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:221
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:245
 #, fuzzy, kde-format
 #| msgid "Rotate"
-msgctxt "@info: item caption property"
+msgctxt "@info: favorite item caption property"
 msgid "Description:"
 msgstr "እንደገና አስጀምሩ"
 
@@ -44198,13 +44218,13 @@ msgid_plural "%1 files"
 msgstr[0] "&Suprimir"
 msgstr[1] "&Suprimir"
 
-#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:74
+#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:75
 #, kde-format
 msgctxt "@info"
 msgid "You can add or remove favorite stacks here."
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:124
+#: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:126
 #: core/showfoto/stackview/showfotostackviewfavorites.cpp:98
 #, kde-format
 msgctxt "@title"
@@ -50944,10 +50964,11 @@ msgid "Original"
 msgstr "imatges"
 
 #: core/utilities/queuemanager/views/queuelist.cpp:319
-#, kde-format
-msgctxt "@title: targey item name"
+#, fuzzy, kde-format
+#| msgid "images"
+msgctxt "@title: target item name"
 msgid "Target"
-msgstr ""
+msgstr "imatges"
 
 #: core/utilities/queuemanager/views/queuepool.cpp:432
 #, kde-format
@@ -55735,6 +55756,18 @@ msgid ""
 "<b>Note: All changes to these settings only take effect after the restart. "
 "Some settings are hardware dependent and may have no effect.</b>"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Slideshow"
+#~ msgctxt "@info: item hierarchy property"
+#~ msgid "Hierarchy:"
+#~ msgstr "Diaporamà"
+
+#, fuzzy
+#~| msgid "Rotate"
+#~ msgctxt "@info: item caption property"
+#~ msgid "Description:"
+#~ msgstr "እንደገና አስጀምሩ"
 
 #, fuzzy
 #~| msgid "Slideshow"
