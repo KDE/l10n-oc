@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-25 00:14+0000\n"
+"POT-Creation-Date: 2021-10-30 00:13+0000\n"
 "PO-Revision-Date: 2008-08-05 22:27+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -148,16 +148,15 @@ msgstr ""
 msgid "Enable the antonym view to edit antonyms."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: src/collection/vocabularymodel.cpp:281 src/editor/summarywordwidget.ui:55
-#, kde-format
-msgid "Pronunciation"
-msgstr "Prononciacion"
-
 #: src/collection/vocabularymodel.cpp:281
 #, fuzzy, kde-format
 #| msgid "Pronunciation"
 msgid "Pronunciation (%1)"
+msgstr "Prononciacion"
+
+#: src/collection/vocabularymodel.cpp:281
+#, kde-format
+msgid "Pronunciation"
 msgstr "Prononciacion"
 
 #: src/collection/vocabularymodel.cpp:283
@@ -191,23 +190,16 @@ msgstr ""
 msgid "Antonym"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: src/collection/vocabularymodel.cpp:289 src/editor/summarywordwidget.ui:71
-#, kde-format
-msgid "Example"
-msgstr "Exemple"
-
 #: src/collection/vocabularymodel.cpp:289
 #, fuzzy, kde-format
 #| msgid "Example"
 msgid "Example (%1)"
 msgstr "Exemple"
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: src/collection/vocabularymodel.cpp:291 src/editor/summarywordwidget.ui:103
+#: src/collection/vocabularymodel.cpp:289
 #, kde-format
-msgid "Comment"
-msgstr "Comentari"
+msgid "Example"
+msgstr "Exemple"
 
 #: src/collection/vocabularymodel.cpp:291
 #, fuzzy, kde-format
@@ -215,15 +207,19 @@ msgstr "Comentari"
 msgid "Comment (%1)"
 msgstr "Comentari"
 
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: src/collection/vocabularymodel.cpp:293 src/editor/summarywordwidget.ui:87
+#: src/collection/vocabularymodel.cpp:291
 #, kde-format
-msgid "Paraphrase"
-msgstr ""
+msgid "Comment"
+msgstr "Comentari"
 
 #: src/collection/vocabularymodel.cpp:293
 #, kde-format
 msgid "Paraphrase (%1)"
+msgstr ""
+
+#: src/collection/vocabularymodel.cpp:293
+#, kde-format
+msgid "Paraphrase"
 msgstr ""
 
 #: src/collection/vocabularymodel.cpp:312
@@ -582,7 +578,7 @@ msgstr "Contacte :"
 #| msgctxt "state of a row"
 #| msgid "Inactive"
 msgctxt "one of the seven cases (grammatical)"
-msgid "Nominative"
+msgid "Nominative:"
 msgstr "Inactiu"
 
 #. i18n: ectx: property (text), widget (QLabel, genitivLabel)
@@ -591,7 +587,7 @@ msgstr "Inactiu"
 #| msgctxt "state of a row"
 #| msgid "Inactive"
 msgctxt "one of the seven cases (grammatical)"
-msgid "Genitive"
+msgid "Genitive:"
 msgstr "Inactiu"
 
 #. i18n: ectx: property (text), widget (QLabel, dativLabel)
@@ -600,7 +596,7 @@ msgstr "Inactiu"
 #| msgctxt "state of a row"
 #| msgid "Inactive"
 msgctxt "one of the seven cases (grammatical)"
-msgid "Dative"
+msgid "Dative:"
 msgstr "Inactiu"
 
 #. i18n: ectx: property (text), widget (QLabel, accusativeLabel)
@@ -609,7 +605,7 @@ msgstr "Inactiu"
 #| msgctxt "state of a row"
 #| msgid "Active"
 msgctxt "one of the seven cases (grammatical)"
-msgid "Accusative"
+msgid "Accusative:"
 msgstr "Actiu"
 
 #. i18n: ectx: property (text), widget (QLabel, ablativLabel)
@@ -618,7 +614,7 @@ msgstr "Actiu"
 #| msgctxt "state of a row"
 #| msgid "Active"
 msgctxt "one of the seven cases (grammatical)"
-msgid "Ablative"
+msgid "Ablative:"
 msgstr "Actiu"
 
 #. i18n: ectx: property (text), widget (QLabel, locativeLabel)
@@ -627,7 +623,7 @@ msgstr "Actiu"
 #| msgctxt "state of a row"
 #| msgid "Active"
 msgctxt "one of the seven cases (grammatical)"
-msgid "Locative"
+msgid "Locative:"
 msgstr "Actiu"
 
 #. i18n: ectx: property (text), widget (QLabel, vocativeLabel)
@@ -636,7 +632,7 @@ msgstr "Actiu"
 #| msgctxt "state of a row"
 #| msgid "Active"
 msgctxt "one of the seven cases (grammatical)"
-msgid "Vocative"
+msgid "Vocative:"
 msgstr "Actiu"
 
 #. i18n: ectx: property (text), widget (QLabel, numberLabel)
@@ -914,7 +910,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, texLabel)
 #: src/editor/latexwidget.ui:17
 #, kde-format
-msgid "LaTeX code"
+msgid "LaTeX code:"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -1071,8 +1067,35 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: src/editor/summarywordwidget.ui:42
 #, kde-format
-msgid "Word type"
+msgid "Word type:"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/editor/summarywordwidget.ui:55
+#, fuzzy, kde-format
+#| msgid "Pronunciation"
+msgid "Pronunciation:"
+msgstr "Prononciacion"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: src/editor/summarywordwidget.ui:71
+#, fuzzy, kde-format
+#| msgid "Example"
+msgid "Example:"
+msgstr "Exemple"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: src/editor/summarywordwidget.ui:87
+#, kde-format
+msgid "Paraphrase:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: src/editor/summarywordwidget.ui:103
+#, fuzzy, kde-format
+#| msgid "&Comment:"
+msgid "Comment:"
+msgstr "&Comentari :"
 
 #: src/editor/synonymwidget.cpp:61
 #, kde-format
