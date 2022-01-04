@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-03 00:41+0000\n"
+"POT-Creation-Date: 2022-01-04 00:42+0000\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -20617,7 +20617,6 @@ msgstr ""
 #: core/dplugins/generic/webservices/pinterest/pwindow.cpp:264
 #: core/dplugins/generic/webservices/smugmug/smugwindow.cpp:683
 #: core/dplugins/generic/webservices/twitter/twitterwindow.cpp:268
-#: core/libs/database/utils/ifaces/dio.cpp:363
 #: core/libs/dialogs/dmessagebox.cpp:164
 #, fuzzy, kde-format
 #| msgid "Comments"
@@ -24264,7 +24263,7 @@ msgid ""
 msgstr ""
 
 #: core/libs/album/engine/album.cpp:378
-#: core/libs/database/utils/ifaces/dio.cpp:711
+#: core/libs/database/utils/ifaces/dio.cpp:714
 #, kde-format
 msgid "Trash"
 msgstr ""
@@ -26012,58 +26011,70 @@ msgstr ""
 msgid ""
 "Files or folders with the same name already exist in the target folder.\n"
 "\n"
-"What action is applied in the event of a file conflict?"
+"What action is applied in the event of a file conflict?\n"
+"\n"
+"Available options are:\n"
+"Rename automatically: conflicting files will be renamed.\n"
+"Overwrite automatically: conflicting files will be overwritten.\n"
+"Skip automatically: conflicting files will be skipped."
 msgstr ""
 
-#: core/libs/database/utils/ifaces/dio.cpp:359
+#: core/libs/database/utils/ifaces/dio.cpp:362
 #, kde-format
 msgid "Rename automatically"
 msgstr ""
 
-#: core/libs/database/utils/ifaces/dio.cpp:361
+#: core/libs/database/utils/ifaces/dio.cpp:364
 #: core/libs/widgets/files/filesaveconflictbox.cpp:78
 #: core/utilities/setup/camera/setupcamera.cpp:384
 #, kde-format
 msgid "Overwrite automatically"
 msgstr ""
 
-#: core/libs/database/utils/ifaces/dio.cpp:675
+#: core/libs/database/utils/ifaces/dio.cpp:366
+#: core/libs/widgets/files/filesaveconflictbox.cpp:79
+#: core/utilities/setup/camera/setupcamera.cpp:385
+#, kde-format
+msgid "Skip automatically"
+msgstr ""
+
+#: core/libs/database/utils/ifaces/dio.cpp:678
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Copy Album"
 msgstr "imatges"
 
-#: core/libs/database/utils/ifaces/dio.cpp:680
+#: core/libs/database/utils/ifaces/dio.cpp:683
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Copy Images"
 msgstr "imatges"
 
-#: core/libs/database/utils/ifaces/dio.cpp:686
+#: core/libs/database/utils/ifaces/dio.cpp:689
 #, fuzzy, kde-format
 #| msgid "Slide"
 msgid "Copy Files"
 msgstr "Diàpo"
 
-#: core/libs/database/utils/ifaces/dio.cpp:691
+#: core/libs/database/utils/ifaces/dio.cpp:694
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Move Album"
 msgstr "imatges"
 
-#: core/libs/database/utils/ifaces/dio.cpp:696
+#: core/libs/database/utils/ifaces/dio.cpp:699
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Move Images"
 msgstr "imatges"
 
-#: core/libs/database/utils/ifaces/dio.cpp:701
+#: core/libs/database/utils/ifaces/dio.cpp:704
 #, fuzzy, kde-format
 #| msgid "images"
 msgid "Move Files"
 msgstr "imatges"
 
-#: core/libs/database/utils/ifaces/dio.cpp:706
+#: core/libs/database/utils/ifaces/dio.cpp:709
 #: core/utilities/searchwindow/editablesearchtreeview.cpp:72
 #: core/utilities/setup/metadata/advancedmetadatatab.cpp:371
 #, fuzzy, kde-format
@@ -26071,12 +26082,12 @@ msgstr "imatges"
 msgid "Delete"
 msgstr "&Suprimir"
 
-#: core/libs/database/utils/ifaces/dio.cpp:716
+#: core/libs/database/utils/ifaces/dio.cpp:719
 #, kde-format
 msgid "Restore Trash"
 msgstr ""
 
-#: core/libs/database/utils/ifaces/dio.cpp:721
+#: core/libs/database/utils/ifaces/dio.cpp:724
 #, kde-format
 msgid "Empty Trash"
 msgstr ""
@@ -37595,12 +37606,6 @@ msgstr ""
 #: core/utilities/setup/camera/setupcamera.cpp:383
 #, kde-format
 msgid "Store as a different name"
-msgstr ""
-
-#: core/libs/widgets/files/filesaveconflictbox.cpp:79
-#: core/utilities/setup/camera/setupcamera.cpp:385
-#, kde-format
-msgid "Skip automatically"
 msgstr ""
 
 #: core/libs/widgets/files/filesaveoptionsbox.cpp:129
