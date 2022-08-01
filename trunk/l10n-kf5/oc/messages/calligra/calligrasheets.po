@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-25 00:46+0000\n"
+"POT-Creation-Date: 2022-08-01 00:44+0000\n"
 "PO-Revision-Date: 2008-08-05 22:28+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -3351,7 +3351,7 @@ msgstr ""
 msgid "Invalid document. Sheet name is empty."
 msgstr ""
 
-#: core/Map.cpp:242 engine/MapBase.cpp:186
+#: core/Map.cpp:242 engine/MapBase.cpp:187
 #, fuzzy, kde-format
 #| msgid "Sheet"
 msgid "Sheet%1"
@@ -3519,15 +3519,15 @@ msgstr "Exemples"
 msgid "Related Functions"
 msgstr "Foncion"
 
-#: engine/Localization.cpp:237
-#, kde-format
-msgid "false"
-msgstr "fals"
-
-#: engine/Localization.cpp:237
+#: engine/Localization.cpp:413
 #, kde-format
 msgid "true"
 msgstr "verai"
+
+#: engine/Localization.cpp:414
+#, kde-format
+msgid "false"
+msgstr "fals"
 
 #: engine/SheetBase.cpp:343
 #, kde-format
@@ -17915,10 +17915,9 @@ msgstr ""
 msgid "All Borders"
 msgstr "Totas las bordaduras"
 
-#: ui/CellToolBase.cpp:319 ui/CellToolBase.cpp:546
-#: ui/dialogs/FormulaDialog.cpp:84 ui/dialogs/FormulaDialog.cpp:190
-#: ui/dialogs/FormulaDialog.cpp:722 ui/dialogs/ValidityDialog.cpp:64
-#: ui/FilterPopup.cpp:55
+#: ui/CellToolBase.cpp:319 ui/dialogs/FormulaDialog.cpp:84
+#: ui/dialogs/FormulaDialog.cpp:190 ui/dialogs/FormulaDialog.cpp:722
+#: ui/dialogs/ValidityDialog.cpp:64 ui/FilterPopup.cpp:55
 #, kde-format
 msgid "All"
 msgstr "Totes"
@@ -18405,7 +18404,7 @@ msgstr "Tot suprimir"
 msgid "Removes the cells from the spreadsheet"
 msgstr "Tornar nomenar lo fuèlh"
 
-#: ui/CellToolBase.cpp:547
+#: ui/CellToolBase.cpp:546 ui/CellToolBase.cpp:547
 #, kde-format
 msgid "Clear All"
 msgstr "Tot voidar"
@@ -18810,7 +18809,7 @@ msgstr "Proteccion"
 msgid "Insert a function"
 msgstr "Foncion"
 
-#: ui/CellToolBase.cpp:730 ui/CellToolBase.cpp:2931
+#: ui/CellToolBase.cpp:730 ui/CellToolBase.cpp:2930
 #, fuzzy, kde-format
 #| msgid "Series"
 msgid "Others..."
@@ -19088,21 +19087,21 @@ msgstr "Inserir un ligam"
 msgid "Edit Link"
 msgstr "Modificar lo ligam"
 
-#: ui/CellToolBase.cpp:2573 ui/CellToolBase.cpp:2585 ui/CellToolBase.cpp:2607
-#: ui/CellToolBase.cpp:2894 ui/CellToolBase.cpp:2906
+#: ui/CellToolBase.cpp:2572 ui/CellToolBase.cpp:2584 ui/CellToolBase.cpp:2606
+#: ui/CellToolBase.cpp:2893 ui/CellToolBase.cpp:2905
 #, fuzzy, kde-format
 #| msgid "Insert Columns"
 msgid "You must select multiple cells."
 msgstr "Suprimir de colomnas"
 
-#: ui/CellToolBase.cpp:2812
+#: ui/CellToolBase.cpp:2811
 #, kde-format
 msgid ""
 "No database drivers available. To use this feature you need to install the "
 "necessary Qt database drivers."
 msgstr ""
 
-#: ui/CellToolBase.cpp:3395
+#: ui/CellToolBase.cpp:3394
 #, fuzzy
 #| msgid "Replacement"
 msgctxt "(qtundo-format)"
@@ -19534,7 +19533,7 @@ msgctxt "(qtundo-format)"
 msgid "Remove Cells"
 msgstr "Tot suprimir"
 
-#: ui/commands/DeleteCommand.cpp:20
+#: ui/commands/DeleteCommand.cpp:22
 #, fuzzy
 #| msgid "Delete"
 msgctxt "(qtundo-format)"
@@ -19555,14 +19554,14 @@ msgctxt "(qtundo-format)"
 msgid "Decrease Indentation"
 msgstr "Reduire l'alinèa"
 
-#: ui/commands/LinkCommand.cpp:25
+#: ui/commands/LinkCommand.cpp:23
 #, fuzzy
 #| msgid "Remove List"
 msgctxt "(qtundo-format)"
 msgid "Remove Link"
 msgstr "Suprimir la tièra"
 
-#: ui/commands/LinkCommand.cpp:25
+#: ui/commands/LinkCommand.cpp:23
 #, fuzzy
 #| msgid "Insert Link"
 msgctxt "(qtundo-format)"
@@ -21472,29 +21471,6 @@ msgstr "Inserir una cellula"
 msgid "Cell or Named Area:"
 msgstr "Remplaçament"
 
-#: ui/dialogs/LinkDialog.cpp:288
-#, fuzzy, kde-format
-#| msgid "Internet"
-msgid "Internet address is empty"
-msgstr "Internet"
-
-#: ui/dialogs/LinkDialog.cpp:290
-#, fuzzy, kde-format
-#| msgid "Email:"
-msgid "Mail address is empty"
-msgstr "Adreça electronica :"
-
-#: ui/dialogs/LinkDialog.cpp:292
-#, fuzzy, kde-format
-#| msgid "Email:"
-msgid "File name is empty"
-msgstr "Adreça electronica :"
-
-#: ui/dialogs/LinkDialog.cpp:294
-#, kde-format
-msgid "Destination cell is empty"
-msgstr ""
-
 #: ui/dialogs/ListDialog.cpp:47
 #, fuzzy, kde-format
 #| msgid "Custom Styles"
@@ -22823,6 +22799,21 @@ msgstr ""
 #| msgid "Insert Link"
 msgid "Open Link?"
 msgstr "Inserir un ligam"
+
+#, fuzzy
+#~| msgid "Internet"
+#~ msgid "Internet address is empty"
+#~ msgstr "Internet"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgid "Mail address is empty"
+#~ msgstr "Adreça electronica :"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgid "File name is empty"
+#~ msgstr "Adreça electronica :"
 
 #, fuzzy
 #~| msgid "Cut"
