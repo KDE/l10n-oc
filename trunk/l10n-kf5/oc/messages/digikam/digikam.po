@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-22 00:42+0000\n"
+"POT-Creation-Date: 2022-09-23 00:42+0000\n"
 "PO-Revision-Date: 2008-08-05 22:25+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -6657,6 +6657,29 @@ msgctxt "@info"
 msgid ""
 "<para>This Batch Queue Manager tool can apply metadata template over images."
 "</para>"
+msgstr "imatges"
+
+#: core/dplugins/bqm/metadata/qualitysort/qualitysortplugin.cpp:46
+#, fuzzy, kde-format
+#| msgid "images"
+msgctxt "@title"
+msgid "Image Quality Sort"
+msgstr "imatges"
+
+#: core/dplugins/bqm/metadata/qualitysort/qualitysortplugin.cpp:61
+#, fuzzy, kde-format
+#| msgid "images"
+msgctxt "@info"
+msgid "A tool to assign pick label metadata by image quality"
+msgstr "imatges"
+
+#: core/dplugins/bqm/metadata/qualitysort/qualitysortplugin.cpp:66
+#, fuzzy, kde-kuit-format
+#| msgid "images"
+msgctxt "@info"
+msgid ""
+"<para>This Batch Queue Manager tool will assign a pick label metadata value "
+"by parsing image and estimate the quality.</para>"
 msgstr "imatges"
 
 #: core/dplugins/bqm/metadata/removemetadata/removemetadata.cpp:103
@@ -21465,7 +21488,7 @@ msgstr ""
 msgid "Slideshow"
 msgstr "Diaporama"
 
-#: core/dplugins/generic/view/slideshow/common/slideshowloader.cpp:664
+#: core/dplugins/generic/view/slideshow/common/slideshowloader.cpp:665
 #, fuzzy, kde-format
 #| msgid "Slideshow"
 msgctxt ""
@@ -33834,10 +33857,13 @@ msgid "Detect the amount of blur in the images passed to it"
 msgstr ""
 
 #: core/libs/imgqsort/imagequalitysettings.cpp:208
-#, kde-format
+#: core/libs/imgqsort/imagequalitysettings.cpp:218
+#: core/libs/imgqsort/imagequalitysettings.cpp:228
+#, fuzzy, kde-format
+#| msgid "Noise"
 msgctxt "@label"
-msgid "Blur Weight:"
-msgstr ""
+msgid "Weight:"
+msgstr "Bruch"
 
 #: core/libs/imgqsort/imagequalitysettings.cpp:213
 #, kde-format
@@ -33858,13 +33884,6 @@ msgctxt "@info:tooltip"
 msgid "Detect the amount of noise in the images passed to it"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:218
-#, fuzzy, kde-format
-#| msgid "Noise"
-msgctxt "@label"
-msgid "Noise Weight:"
-msgstr "Bruch"
-
 #: core/libs/imgqsort/imagequalitysettings.cpp:223
 #, kde-format
 msgctxt "@info:tooltip"
@@ -33881,12 +33900,6 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Detect the amount of compression in the images passed to it"
-msgstr ""
-
-#: core/libs/imgqsort/imagequalitysettings.cpp:228
-#, kde-format
-msgctxt "@label"
-msgid "Compression Weight:"
 msgstr ""
 
 #: core/libs/imgqsort/imagequalitysettings.cpp:233
@@ -60877,18 +60890,18 @@ msgstr ""
 msgctxt "@label"
 msgid ""
 "These settings determines the quality of an image and convert it into a "
-"score, stored in database. This property can be evaluated by two ways: using "
-"four basic factors sabotaging the images (blur, noise, exposure, and "
-"compression), or using a deep learning neural network engine. The first one "
-"helps to determine whether images are distorted by the basic factors, "
-"however it demands some drawbacks as fine-tuning from the user’s side and it "
-"cannot work along the aesthetic image processing. The second one uses an IA "
-"approach based on %1 model to predict the score. As deep learning is an end-"
-"to-end solution, it doesn’t require hyper-parameter settings, and make this "
-"feature easier to use."
+"score, stored in database as Pick Label property. This information can be "
+"evaluated by two ways: using four basic factors sabotaging the images (blur, "
+"noise, exposure, and compression), or using a deep learning neural network "
+"engine. The first one helps to determine whether images are distorted by the "
+"basic factors, however it demands some drawbacks as fine-tuning from the "
+"user’s side and it cannot work along the aesthetic image processing. The "
+"second one uses an IA approach based on %1 model to predict the score. As "
+"deep learning is an end-to-end solution, it doesn’t require hyper-parameter "
+"settings, and make this feature easier to use."
 msgstr ""
 
-#: core/utilities/setup/setupimagequalitysorter.cpp:63
+#: core/utilities/setup/setupimagequalitysorter.cpp:64
 #, fuzzy, kde-format
 #| msgid "images"
 msgctxt "@label"
