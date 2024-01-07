@@ -20,90 +20,104 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Tag: title
-#: index.docbook:100
+#: building-specific-modules.docbook:2
 #, no-c-format
-msgid "&kdesrc-build; Script Manual"
-msgstr ""
-
-#. Tag: author
-#: index.docbook:103
-#, no-c-format
-msgid "&Michael.Pyne; &Michael.Pyne.mail;"
-msgstr ""
-
-#. Tag: author
-#: index.docbook:104
-#, no-c-format
-msgid ""
-"<personname><firstname>Carlos</firstname><surname>Woelz</surname></"
-"personname> <email>carloswoelz@imap-mail.com</email>"
-msgstr ""
-
-#. Tag: trans_comment
-#: index.docbook:109
-#, no-c-format
-msgid "ROLES_OF_TRANSLATORS"
-msgstr ""
-"<othercredit role=\"translator\"><firstname></firstname><surname></"
-"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
-"affiliation><contrib></contrib></othercredit>"
-
-#. Tag: holder
-#: index.docbook:128
-#, no-c-format
-msgid "Michael Pyne"
-msgstr ""
-
-#. Tag: holder
-#: index.docbook:133
-#, no-c-format
-msgid "Carlos Woelz"
-msgstr ""
-
-#. Tag: date
-#: index.docbook:138
-#, no-c-format
-msgid "2018-01-20"
-msgstr ""
-
-#. Tag: releaseinfo
-#: index.docbook:139
-#, no-c-format
-msgid "&kdesrc-build; 17.12"
+msgid "Building specific modules"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:142
+#: building-specific-modules.docbook:4
 #, no-c-format
 msgid ""
-"&kdesrc-build; is a script which builds and installs &kde; software directly "
-"from the &kde; project's source code repositories."
+"Rather than building every module all the time, you may only want to build a "
+"single module, or other small subset. Rather than editing your configuration "
+"file, you can simply pass the names of modules or module sets to build to "
+"the command line."
 msgstr ""
 
-#. Tag: keyword
-#: index.docbook:147
+#. Tag: title
+#: building-specific-modules.docbook:9
 #, no-c-format
-msgid "<keyword>KDE</keyword>"
-msgstr "<keyword>KDE</keyword>"
-
-#. Tag: keyword
-#: index.docbook:148
-#, no-c-format
-msgid "kdesdk"
+msgid "Example output of a kdesrc-build specific module build"
 msgstr ""
 
-#. Tag: keyword
-#: index.docbook:149
-#, fuzzy, no-c-format
-#| msgid "<keyword>KDE</keyword>"
-msgid "<keyword>git</keyword>"
-msgstr "<keyword>KDE</keyword>"
-
-#. Tag: keyword
-#: index.docbook:150
+#. Tag: screen
+#: building-specific-modules.docbook:10
 #, no-c-format
-msgid "KDE development"
+msgid ""
+"<prompt>&percnt;</prompt> <userinput><command>kdesrc-build</command> "
+"<option>--include-dependencies</option> <replaceable>dolphin</replaceable></"
+"userinput>\n"
+"Updating kde-build-metadata (to branch master)\n"
+"Updating sysadmin-repo-metadata (to branch master)\n"
+"\n"
+"Building extra-cmake-modules from frameworks-set (1/79)\n"
+"        Updating extra-cmake-modules (to branch master)\n"
+"        No changes to extra-cmake-modules source, proceeding to build.\n"
+"        Running cmake...\n"
+"        Compiling... succeeded (after 0 seconds)\n"
+"        Installing.. succeeded (after 0 seconds)\n"
+"\n"
+"Building phonon from phonon (2/79)\n"
+"        Updating phonon (to branch master)\n"
+"        No changes to phonon source, proceeding to build.\n"
+"        Compiling... succeeded (after 0 seconds)\n"
+"        Installing.. succeeded (after 0 seconds)\n"
+"\n"
+"Building attica from frameworks-set (3/79)\n"
+"        Updating attica (to branch master)\n"
+"        No changes to attica source, proceeding to build.\n"
+"        Compiling... succeeded (after 0 seconds)\n"
+"        Installing.. succeeded (after 0 seconds)\n"
+"\n"
+"        ...\n"
+"\n"
+"Building dolphin from base-apps (79/79)\n"
+"        Updating dolphin (to branch master)\n"
+"        No changes to dolphin source, proceeding to build.\n"
+"        Compiling... succeeded (after 0 seconds)\n"
+"        Installing.. succeeded (after 0 seconds)\n"
+"\n"
+"&lt;&lt;&lt;  PACKAGES SUCCESSFULLY BUILT  &gt;&gt;&gt;\n"
+"Built 79 modules\n"
+"\n"
+"Your logs are saved in /home/kde-src/kdesrc/log/2018-01-20-07"
 msgstr ""
+
+#. Tag: para
+#: building-specific-modules.docbook:13
+#, no-c-format
+msgid ""
+"In this case, although only the <replaceable>dolphin</replaceable> "
+"application was specified, the <option>--include-dependencies</option> flag "
+"caused &kdesrc-build; to include the dependencies listed for "
+"<replaceable>dolphin</replaceable> (by setting the <link linkend=\"conf-"
+"include-dependencies\">include-dependencies</link> option)."
+msgstr ""
+
+#. Tag: para
+#: building-specific-modules.docbook:20
+#, no-c-format
+msgid ""
+"The dependency resolution worked in this case only because "
+"<replaceable>dolphin</replaceable> happened to be specified in a "
+"<literal>kde-projects</literal>-based module set (in this example, named "
+"<literal>base-apps</literal>). See <xref linkend=\"module-sets-kde\"/>."
+msgstr ""
+
+#~ msgid "ROLES_OF_TRANSLATORS"
+#~ msgstr ""
+#~ "<othercredit role=\"translator\"><firstname></firstname><surname></"
+#~ "surname><affiliation><address><email>yannig@marchegay.org</email></"
+#~ "address></affiliation><contrib></contrib></othercredit>"
+
+#~ msgid "<keyword>KDE</keyword>"
+#~ msgstr "<keyword>KDE</keyword>"
+
+#, fuzzy
+#~| msgid "<keyword>KDE</keyword>"
+#~ msgid "<keyword>git</keyword>"
+#~ msgstr "<keyword>KDE</keyword>"
 
 #~ msgid "Introduction"
 #~ msgstr "Introduccion"

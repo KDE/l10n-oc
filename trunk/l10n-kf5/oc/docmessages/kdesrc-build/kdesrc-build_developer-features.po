@@ -20,90 +20,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Tag: title
-#: index.docbook:100
+#: developer-features.docbook:2
 #, no-c-format
-msgid "&kdesrc-build; Script Manual"
+msgid "Features for &kde; developers"
 msgstr ""
 
-#. Tag: author
-#: index.docbook:103
+#. Tag: title
+#: developer-features.docbook:5
 #, no-c-format
-msgid "&Michael.Pyne; &Michael.Pyne.mail;"
-msgstr ""
-
-#. Tag: author
-#: index.docbook:104
-#, no-c-format
-msgid ""
-"<personname><firstname>Carlos</firstname><surname>Woelz</surname></"
-"personname> <email>carloswoelz@imap-mail.com</email>"
-msgstr ""
-
-#. Tag: trans_comment
-#: index.docbook:109
-#, no-c-format
-msgid "ROLES_OF_TRANSLATORS"
-msgstr ""
-"<othercredit role=\"translator\"><firstname></firstname><surname></"
-"surname><affiliation><address><email>yannig@marchegay.org</email></address></"
-"affiliation><contrib></contrib></othercredit>"
-
-#. Tag: holder
-#: index.docbook:128
-#, no-c-format
-msgid "Michael Pyne"
-msgstr ""
-
-#. Tag: holder
-#: index.docbook:133
-#, no-c-format
-msgid "Carlos Woelz"
-msgstr ""
-
-#. Tag: date
-#: index.docbook:138
-#, no-c-format
-msgid "2018-01-20"
-msgstr ""
-
-#. Tag: releaseinfo
-#: index.docbook:139
-#, no-c-format
-msgid "&kdesrc-build; 17.12"
+msgid "&ssh; Agent checks"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:142
+#: developer-features.docbook:6
 #, no-c-format
 msgid ""
-"&kdesrc-build; is a script which builds and installs &kde; software directly "
-"from the &kde; project's source code repositories."
+"&kdesrc-build; can ensure that &kde; developers that use &ssh; to access the "
+"&kde; source repository do not accidentally forget to leave the &ssh; Agent "
+"tool enabled. This can cause &kdesrc-build; to hang indefinitely waiting for "
+"the developer to type in their &ssh; password, so by default &kdesrc-build; "
+"will check if the Agent is running before performing source updates."
 msgstr ""
 
-#. Tag: keyword
-#: index.docbook:147
+#. Tag: para
+#: developer-features.docbook:14
 #, no-c-format
-msgid "<keyword>KDE</keyword>"
-msgstr "<keyword>KDE</keyword>"
-
-#. Tag: keyword
-#: index.docbook:148
-#, no-c-format
-msgid "kdesdk"
+msgid "This is only done for &kde; developers using &ssh;."
 msgstr ""
 
-#. Tag: keyword
-#: index.docbook:149
-#, fuzzy, no-c-format
-#| msgid "<keyword>KDE</keyword>"
-msgid "<keyword>git</keyword>"
-msgstr "<keyword>KDE</keyword>"
-
-#. Tag: keyword
-#: index.docbook:150
+#. Tag: para
+#: developer-features.docbook:17
 #, no-c-format
-msgid "KDE development"
+msgid ""
+"You may wish to disable the &ssh; Agent check, in case of situations where "
+"&kdesrc-build; is mis-detecting the presence of an agent. To disable the "
+"agent check, set the <option>disable-agent-check</option> option to "
+"<userinput>true</userinput>."
 msgstr ""
+
+#. Tag: para
+#: developer-features.docbook:23
+#, no-c-format
+msgid "Disabling the &ssh; agent check:"
+msgstr ""
+
+#. Tag: screen
+#: developer-features.docbook:24
+#, no-c-format
+msgid ""
+"global\n"
+"  disable-agent-check true\n"
+"end global"
+msgstr ""
+
+#~ msgid "ROLES_OF_TRANSLATORS"
+#~ msgstr ""
+#~ "<othercredit role=\"translator\"><firstname></firstname><surname></"
+#~ "surname><affiliation><address><email>yannig@marchegay.org</email></"
+#~ "address></affiliation><contrib></contrib></othercredit>"
+
+#~ msgid "<keyword>KDE</keyword>"
+#~ msgstr "<keyword>KDE</keyword>"
+
+#, fuzzy
+#~| msgid "<keyword>KDE</keyword>"
+#~ msgid "<keyword>git</keyword>"
+#~ msgstr "<keyword>KDE</keyword>"
 
 #~ msgid "Introduction"
 #~ msgstr "Introduccion"
