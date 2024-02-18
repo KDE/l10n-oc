@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: scripts_kdesvn-build\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-16 01:47+0000\n"
+"POT-Creation-Date: 2024-02-18 01:48+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -143,7 +143,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-run\">--run</link></option> (or <option>--"
-"start-program</option>) <parameter>program [parameters ...]</parameter>"
+"start-program</option>) [-e|--exec name] [-f|--fork] <parameter>program "
+"[parameters ...]</parameter>"
 msgstr ""
 
 #. Tag: para
@@ -152,44 +153,12 @@ msgstr ""
 msgid ""
 "This option interprets the next item on the command line as a program to "
 "run, and &kdesrc-build; will then finish reading the configuration file, "
-"update the environment as normal, and then execute the given program."
-msgstr ""
-
-#. Tag: para
-#: supported-cmdline-params.docbook:68
-#, no-c-format
-msgid ""
-"This will not work to start a shell with the &kdesrc-build; environment in "
-"most cases however, since interactive shells typically reset at least part "
-"of the environment variables (such as <envar>PATH</envar> and ${install-"
-"dir}) in the startup sequence."
-msgstr ""
-
-#. Tag: para
-#: supported-cmdline-params.docbook:74
-#, no-c-format
-msgid ""
-"If you want to see the environment used by &kdesrc-build;, you can run the "
-"<command>printenv</command> command:"
-msgstr ""
-
-#. Tag: screen
-#: supported-cmdline-params.docbook:77
-#, no-c-format
-msgid ""
-"$ <command>kdesrc-build</command> <parameter>--run</parameter> "
-"<parameter>printenv</parameter>\n"
-"KDE_SESSION_VERSION=4\n"
-"SDL_AUDIODRIVER=alsa\n"
-"LANGUAGE=\n"
-"XCURSOR_THEME=Oxygen_Blue\n"
-"LESS=-R -M --shift 5\n"
-"QMAIL_CONTROLDIR=/var/qmail/control\n"
-"... etc."
+"source the prefix.sh to apply environment variables, and then execute the "
+"given program."
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:83
+#: supported-cmdline-params.docbook:71
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-revision\">--revision</link></option> "
@@ -197,7 +166,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:84
+#: supported-cmdline-params.docbook:72
 #, no-c-format
 msgid ""
 "This option causes &kdesrc-build; to checkout a specific numbered revision "
@@ -207,7 +176,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:90
+#: supported-cmdline-params.docbook:78
 #, no-c-format
 msgid ""
 "This option is likely not a good idea, and is only supported for "
@@ -215,7 +184,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:96
+#: supported-cmdline-params.docbook:84
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-delete-my-patches\">--delete-my-patches</"
@@ -223,7 +192,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:97
+#: supported-cmdline-params.docbook:85
 #, no-c-format
 msgid ""
 "This option is used to let &kdesrc-build; delete source directories that may "
@@ -233,7 +202,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:103
+#: supported-cmdline-params.docbook:91
 #, no-c-format
 msgid ""
 "You should not use this option normally, &kdesrc-build; will prompt to be re-"
@@ -241,7 +210,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:109
+#: supported-cmdline-params.docbook:97
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-delete-my-settings\">--delete-my-settings</"
@@ -249,7 +218,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:110
+#: supported-cmdline-params.docbook:98
 #, no-c-format
 msgid ""
 "This option is used to let &kdesrc-build; overwrite existing files which may "
@@ -257,7 +226,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:114
+#: supported-cmdline-params.docbook:102
 #, no-c-format
 msgid ""
 "This is currently only used for xsession setup for the login manager. You "
@@ -266,7 +235,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:121
+#: supported-cmdline-params.docbook:109
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-option-name\">--<replaceable>&lt;option-"
@@ -274,7 +243,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:122
+#: supported-cmdline-params.docbook:110
 #, no-c-format
 msgid ""
 "You can use this option to override an option in your <link linkend="
@@ -286,7 +255,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:129
+#: supported-cmdline-params.docbook:117
 #, no-c-format
 msgid ""
 "This feature can only be used for option names already recognized by &kdesrc-"
@@ -298,7 +267,7 @@ msgid ""
 msgstr ""
 
 #. Tag: option
-#: supported-cmdline-params.docbook:141
+#: supported-cmdline-params.docbook:129
 #, no-c-format
 msgid ""
 "<link linkend=\"cmdline-set-module-option-value\">--set-module-option-value</"
@@ -307,7 +276,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:142
+#: supported-cmdline-params.docbook:130
 #, no-c-format
 msgid ""
 "You can use this option to override an option in your <link linkend="
@@ -315,13 +284,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:152
+#: supported-cmdline-params.docbook:140
 #, no-c-format
 msgid "Resuming and stopping"
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:156
+#: supported-cmdline-params.docbook:144
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-resume-from\">--resume-from</link></option> "
@@ -330,7 +299,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:157
+#: supported-cmdline-params.docbook:145
 #, no-c-format
 msgid ""
 "This option is used to resume the build starting from the given module. You "
@@ -338,7 +307,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:161
+#: supported-cmdline-params.docbook:149
 #, no-c-format
 msgid ""
 "If you want to avoid source updates when resuming, simply pass <option>--no-"
@@ -346,7 +315,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:166
+#: supported-cmdline-params.docbook:154
 #, no-c-format
 msgid ""
 "See also: <link linkend=\"cmdline-resume-after\">--resume-after</link> and "
@@ -356,7 +325,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:173
+#: supported-cmdline-params.docbook:161
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-resume-after\">--resume-after</link></"
@@ -365,7 +334,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:174
+#: supported-cmdline-params.docbook:162
 #, no-c-format
 msgid ""
 "This option is used to resume the build starting after the given module. You "
@@ -373,7 +342,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:179
+#: supported-cmdline-params.docbook:167
 #, no-c-format
 msgid ""
 "If you want to avoid source updates when resuming, simply pass "
@@ -382,7 +351,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:184
+#: supported-cmdline-params.docbook:172
 #, no-c-format
 msgid ""
 "See also: <link linkend=\"cmdline-resume-from\">--resume-from</link> and "
@@ -393,13 +362,13 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:192
+#: supported-cmdline-params.docbook:180
 #, no-c-format
 msgid "--resume"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:193
+#: supported-cmdline-params.docbook:181
 #, no-c-format
 msgid ""
 "This option can be used to run &kdesrc-build; after it has had a build "
@@ -407,7 +376,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:196
+#: supported-cmdline-params.docbook:184
 #, no-c-format
 msgid ""
 "It resumes the build from the module that failed, using the list of modules "
@@ -421,7 +390,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:208
+#: supported-cmdline-params.docbook:196
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-stop-before\">--stop-before</link></option> "
@@ -429,7 +398,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:209
+#: supported-cmdline-params.docbook:197
 #, no-c-format
 msgid ""
 "This option is used to stop the normal build process just <emphasis>before</"
@@ -437,7 +406,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:212
+#: supported-cmdline-params.docbook:200
 #, no-c-format
 msgid ""
 "For example, if the normal build list was <simplelist type=\"inline\"> "
@@ -447,7 +416,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:221
+#: supported-cmdline-params.docbook:209
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-stop-after\">--stop-after</link></option> "
@@ -455,7 +424,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:222
+#: supported-cmdline-params.docbook:210
 #, no-c-format
 msgid ""
 "This option is used to stop the normal build process just <emphasis>after</"
@@ -463,7 +432,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:225
+#: supported-cmdline-params.docbook:213
 #, no-c-format
 msgid ""
 "For example, if the normal build list was <simplelist type=\"inline\"> "
@@ -474,7 +443,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:234
+#: supported-cmdline-params.docbook:222
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-stop-on-failure\">--stop-on-failure</link></"
@@ -482,7 +451,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:235
+#: supported-cmdline-params.docbook:223
 #, no-c-format
 msgid ""
 "This option controls if the build will be aborted as soon as a failure "
@@ -492,7 +461,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:239
+#: supported-cmdline-params.docbook:227
 #, no-c-format
 msgid ""
 "See also the <link linkend=\"conf-stop-on-failure\">stop-on-failure</link> "
@@ -500,13 +469,13 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:245
+#: supported-cmdline-params.docbook:233
 #, no-c-format
 msgid "--rebuild-failures"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:246
+#: supported-cmdline-params.docbook:234
 #, no-c-format
 msgid ""
 "Use this option to build only those modules which failed to build on a "
@@ -517,7 +486,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:252
+#: supported-cmdline-params.docbook:240
 #, no-c-format
 msgid ""
 "Note that the list of <quote>previously-failed modules</quote> is reset "
@@ -527,13 +496,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:264
+#: supported-cmdline-params.docbook:252
 #, no-c-format
 msgid "Modules information"
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:268
+#: supported-cmdline-params.docbook:256
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-query\">--query</link></option> "
@@ -541,7 +510,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:269
+#: supported-cmdline-params.docbook:257
 #, no-c-format
 msgid ""
 "This command causes &kdesrc-build; to query a parameter of the modules in "
@@ -550,7 +519,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:274
+#: supported-cmdline-params.docbook:262
 #, no-c-format
 msgid ""
 "This option must be provided with a <quote>mode</quote>, which may be one of "
@@ -558,7 +527,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:277
+#: supported-cmdline-params.docbook:265
 #, no-c-format
 msgid ""
 "<parameter>source-dir</parameter>, which causes &kdesrc-build; to output the "
@@ -566,7 +535,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:280
+#: supported-cmdline-params.docbook:268
 #, no-c-format
 msgid ""
 "<parameter>build-dir</parameter>, which causes &kdesrc-build; to output the "
@@ -574,7 +543,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:283
+#: supported-cmdline-params.docbook:271
 #, no-c-format
 msgid ""
 "<parameter>install-dir</parameter>, which causes &kdesrc-build; to output "
@@ -582,7 +551,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:286
+#: supported-cmdline-params.docbook:274
 #, no-c-format
 msgid ""
 "<parameter>project-path</parameter>, which causes &kdesrc-build; to output "
@@ -592,7 +561,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:291
+#: supported-cmdline-params.docbook:279
 #, no-c-format
 msgid ""
 "<parameter>branch</parameter>, which causes &kdesrc-build; to output the "
@@ -603,7 +572,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:297
+#: supported-cmdline-params.docbook:285
 #, no-c-format
 msgid ""
 "<parameter>module-set</parameter>, which causes &kdesrc-build; to output the "
@@ -612,7 +581,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:301
+#: supported-cmdline-params.docbook:289
 #, no-c-format
 msgid ""
 "<parameter>build-system</parameter>, which causes &kdesrc-build; to output "
@@ -622,7 +591,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:305
+#: supported-cmdline-params.docbook:293
 #, no-c-format
 msgid ""
 "Any option name that is valid for modules in the <link linkend=\"conf-"
@@ -630,7 +599,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:311
+#: supported-cmdline-params.docbook:299
 #, no-c-format
 msgid ""
 "For example, the command <userinput><command>kdesrc-build</command> "
@@ -640,7 +609,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: supported-cmdline-params.docbook:314
+#: supported-cmdline-params.docbook:302
 #, no-c-format
 msgid ""
 "kactivities: master\n"
@@ -648,13 +617,13 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:320
+#: supported-cmdline-params.docbook:308
 #, no-c-format
 msgid "--dependency-tree"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:322
+#: supported-cmdline-params.docbook:310
 #, no-c-format
 msgid ""
 "Prints out dependency information on the modules that would be built using a "
@@ -665,13 +634,13 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:332
+#: supported-cmdline-params.docbook:320
 #, no-c-format
 msgid "--dependency-tree-fullpath"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:334
+#: supported-cmdline-params.docbook:322
 #, no-c-format
 msgid ""
 "Prints out dependency information on the modules that would be built using a "
@@ -679,14 +648,28 @@ msgid ""
 "become quite large for applications with many dependencies."
 msgstr ""
 
+#. Tag: link
+#: supported-cmdline-params.docbook:331
+#, no-c-format
+msgid "--list-installed"
+msgstr ""
+
+#. Tag: para
+#: supported-cmdline-params.docbook:333
+#, no-c-format
+msgid ""
+"Print installed modules and exit. This can be used to generate "
+"autocompletion for the --run option."
+msgstr ""
+
 #. Tag: title
-#: supported-cmdline-params.docbook:346
+#: supported-cmdline-params.docbook:343
 #, no-c-format
 msgid "Exclude specific action"
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:350
+#: supported-cmdline-params.docbook:347
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-no-metadata\">--no-metadata</link></option> "
@@ -694,7 +677,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:351
+#: supported-cmdline-params.docbook:348
 #, no-c-format
 msgid ""
 "Do not automatically download the extra metadata needed for &kde; git "
@@ -703,7 +686,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:355
+#: supported-cmdline-params.docbook:352
 #, no-c-format
 msgid ""
 "This can be useful if you are frequently re-running &kdesrc-build; since the "
@@ -714,7 +697,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:365
+#: supported-cmdline-params.docbook:362
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-no-src\">--no-src</link></option> (or "
@@ -722,49 +705,49 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:366
+#: supported-cmdline-params.docbook:363
 #, no-c-format
 msgid "Skip contacting the &git; server."
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:372
+#: supported-cmdline-params.docbook:369
 #, no-c-format
 msgid "--no-build"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:373
+#: supported-cmdline-params.docbook:370
 #, no-c-format
 msgid "Skip the build process."
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:379
+#: supported-cmdline-params.docbook:376
 #, no-c-format
 msgid "--no-install"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:380
+#: supported-cmdline-params.docbook:377
 #, no-c-format
 msgid "Do not automatically install packages after they are built."
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:389
+#: supported-cmdline-params.docbook:386
 #, no-c-format
 msgid "Only specific action"
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:393
+#: supported-cmdline-params.docbook:390
 #, no-c-format
 msgid "--metadata-only"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:394
+#: supported-cmdline-params.docbook:391
 #, no-c-format
 msgid ""
 "Only perform the metadata download process. &kdesrc-build; normally handles "
@@ -774,7 +757,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:402
+#: supported-cmdline-params.docbook:399
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-src-only\">--src-only</link></option> (or "
@@ -782,31 +765,31 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:403
+#: supported-cmdline-params.docbook:400
 #, no-c-format
 msgid "Only perform the source update."
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:409
+#: supported-cmdline-params.docbook:406
 #, no-c-format
 msgid "--build-only"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:410
+#: supported-cmdline-params.docbook:407
 #, no-c-format
 msgid "Only perform the build process."
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:416
+#: supported-cmdline-params.docbook:413
 #, no-c-format
 msgid "--install-only"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:417
+#: supported-cmdline-params.docbook:414
 #, no-c-format
 msgid ""
 "If this is the only command-line option, it tries to install all the modules "
@@ -816,13 +799,13 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:427
+#: supported-cmdline-params.docbook:424
 #, no-c-format
 msgid "--build-system-only"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:428
+#: supported-cmdline-params.docbook:425
 #, no-c-format
 msgid ""
 "This option causes &kdesrc-build; to abort building a module just before the "
@@ -832,13 +815,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:440
+#: supported-cmdline-params.docbook:437
 #, no-c-format
 msgid "Build behavior"
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:444
+#: supported-cmdline-params.docbook:441
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-build-when-unchanged\">--build-when-"
@@ -847,7 +830,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:445
+#: supported-cmdline-params.docbook:442
 #, no-c-format
 msgid ""
 "Enabling this option explicitly disables skipping the build process (an "
@@ -858,7 +841,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:455
+#: supported-cmdline-params.docbook:452
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-refresh-build\">--refresh-build</link></"
@@ -866,19 +849,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:456
+#: supported-cmdline-params.docbook:453
 #, no-c-format
 msgid "Recreate the build system and make from scratch."
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:462
+#: supported-cmdline-params.docbook:459
 #, no-c-format
 msgid "--reconfigure"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:463
+#: supported-cmdline-params.docbook:460
 #, no-c-format
 msgid ""
 "Run <command>cmake</command> (for &kde; modules) or <command>configure</"
@@ -890,7 +873,7 @@ msgid ""
 msgstr ""
 
 #. Tag: option
-#: supported-cmdline-params.docbook:474
+#: supported-cmdline-params.docbook:471
 #, no-c-format
 msgid ""
 "<link linkend=\"cmdline-install-dir\">--install-dir</link> "
@@ -898,7 +881,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:475
+#: supported-cmdline-params.docbook:472
 #, no-c-format
 msgid ""
 "This allows you to change the directory where modules will be installed to. "
@@ -908,7 +891,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:484
+#: supported-cmdline-params.docbook:481
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-generate-vscode-project-config\">--generate-"
@@ -917,7 +900,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:485
+#: supported-cmdline-params.docbook:482
 #, no-c-format
 msgid ""
 "Generate a <filename>.vscode</filename> directory with configurations for "
@@ -926,13 +909,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:495
+#: supported-cmdline-params.docbook:492
 #, no-c-format
 msgid "Script runtime"
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:499
+#: supported-cmdline-params.docbook:496
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-async\">--async</link></option>, <option>--"
@@ -940,7 +923,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:500
+#: supported-cmdline-params.docbook:497
 #, no-c-format
 msgid ""
 "Enables or disables the <link linkend=\"conf-async\">asynchronous mode</"
@@ -953,7 +936,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:511
+#: supported-cmdline-params.docbook:508
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-color\">--color</link></option> (or "
@@ -962,7 +945,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:512
+#: supported-cmdline-params.docbook:509
 #, no-c-format
 msgid ""
 "Enable or disable colorful output. By default, this option is enabled for "
@@ -970,7 +953,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:518
+#: supported-cmdline-params.docbook:515
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-nice\">--nice</link></option> (or <option>--"
@@ -978,7 +961,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:519
+#: supported-cmdline-params.docbook:516
 #, no-c-format
 msgid ""
 "This value adjusts the computer CPU priority requested by &kdesrc-build;, "
@@ -988,7 +971,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:527
+#: supported-cmdline-params.docbook:524
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-rc-file\">--rc-file</link></option> "
@@ -996,7 +979,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:528
+#: supported-cmdline-params.docbook:525
 #, no-c-format
 msgid ""
 "The file to read the configuration options from. The default value for this "
@@ -1008,19 +991,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:542
+#: supported-cmdline-params.docbook:539
 #, no-c-format
 msgid "Setup"
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:546
+#: supported-cmdline-params.docbook:543
 #, no-c-format
 msgid "--initial-setup"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:547
+#: supported-cmdline-params.docbook:544
 #, no-c-format
 msgid ""
 "Has &kdesrc-build; perform the one-time initial setup necessary to prepare "
@@ -1029,25 +1012,25 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:552
+#: supported-cmdline-params.docbook:549
 #, no-c-format
 msgid "This includes:"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:554
+#: supported-cmdline-params.docbook:551
 #, no-c-format
 msgid "Installing known dependencies (on supported &Linux; distributions)"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:555
+#: supported-cmdline-params.docbook:552
 #, no-c-format
 msgid "Adding required environment variables to <literal>~/.bashrc</literal>"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:557
+#: supported-cmdline-params.docbook:554
 #, no-c-format
 msgid ""
 "This option is exactly equivalent to using <option><link linkend=\"cmdline-"
@@ -1057,13 +1040,13 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:566
+#: supported-cmdline-params.docbook:563
 #, no-c-format
 msgid "--install-distro-packages"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:567
+#: supported-cmdline-params.docbook:564
 #, no-c-format
 msgid ""
 "Installs distro packages (on supported &Linux; distributions) necessary to "
@@ -1072,7 +1055,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:571 supported-cmdline-params.docbook:580
+#: supported-cmdline-params.docbook:568 supported-cmdline-params.docbook:577
 #, no-c-format
 msgid ""
 "See also <option><link linkend=\"cmdline-initial-setup\">--initial-setup</"
@@ -1080,31 +1063,31 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:576
+#: supported-cmdline-params.docbook:573
 #, no-c-format
 msgid "--generate-config"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:577
+#: supported-cmdline-params.docbook:574
 #, no-c-format
 msgid "Generate the &kdesrc-build; configuration file."
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:588
+#: supported-cmdline-params.docbook:585
 #, no-c-format
 msgid "Verbosity level"
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:595
+#: supported-cmdline-params.docbook:592
 #, no-c-format
 msgid "--debug"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:596
+#: supported-cmdline-params.docbook:593
 #, no-c-format
 msgid ""
 "Enables debug mode for the script. Currently, this means that all output "
@@ -1114,7 +1097,7 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:605
+#: supported-cmdline-params.docbook:602
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-quiet\">--quiet</link></option> (or "
@@ -1122,7 +1105,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:606
+#: supported-cmdline-params.docbook:603
 #, no-c-format
 msgid ""
 "Do not be as noisy with the output. With this switch only the basics are "
@@ -1130,39 +1113,39 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:613
+#: supported-cmdline-params.docbook:610
 #, no-c-format
 msgid "--really-quiet"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:614
+#: supported-cmdline-params.docbook:611
 #, no-c-format
 msgid "Only output warnings and errors."
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:620
+#: supported-cmdline-params.docbook:617
 #, fuzzy, no-c-format
 #| msgid "--version"
 msgid "--verbose"
 msgstr "--version"
 
 #. Tag: para
-#: supported-cmdline-params.docbook:621
+#: supported-cmdline-params.docbook:618
 #, no-c-format
 msgid ""
 "Be very descriptive about what is going on, and what &kdesrc-build; is doing."
 msgstr ""
 
 #. Tag: title
-#: supported-cmdline-params.docbook:630
+#: supported-cmdline-params.docbook:627
 #, no-c-format
 msgid "Script information"
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:634
+#: supported-cmdline-params.docbook:631
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-version\">--version</link></option> (or "
@@ -1170,13 +1153,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:635
+#: supported-cmdline-params.docbook:632
 #, no-c-format
 msgid "Display the program version."
 msgstr ""
 
 #. Tag: term
-#: supported-cmdline-params.docbook:641
+#: supported-cmdline-params.docbook:638
 #, no-c-format
 msgid ""
 "<option><link linkend=\"cmdline-help\">--help</link></option> (or <option>-"
@@ -1184,19 +1167,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:642
+#: supported-cmdline-params.docbook:639
 #, no-c-format
 msgid "Only display simple help on this script."
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:648
+#: supported-cmdline-params.docbook:645
 #, no-c-format
 msgid "--show-info"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:649
+#: supported-cmdline-params.docbook:646
 #, no-c-format
 msgid ""
 "Displays information about &kdesrc-build; and the operating system, that may "
@@ -1205,13 +1188,13 @@ msgid ""
 msgstr ""
 
 #. Tag: link
-#: supported-cmdline-params.docbook:657
+#: supported-cmdline-params.docbook:654
 #, no-c-format
 msgid "--show-options-specifiers"
 msgstr ""
 
 #. Tag: para
-#: supported-cmdline-params.docbook:658
+#: supported-cmdline-params.docbook:655
 #, no-c-format
 msgid ""
 "Print the specifier lines (in the format that GetOpts::Long accepts) for all "
