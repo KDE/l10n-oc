@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: scripts_kdesvn-build\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-06 00:49+0000\n"
+"POT-Creation-Date: 2024-02-25 01:51+0000\n"
 "PO-Revision-Date: 2008-08-13 13:39+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -39,50 +39,147 @@ msgid ""
 "script generates. In any case, errors will always be output."
 msgstr ""
 
-#. Tag: para
+#. Tag: title
 #: other-features.docbook:10
 #, no-c-format
-msgid ""
-"The <option>--quiet</option> option (short form is <option>-q</option>) "
-"causes &kdesrc-build; to be mostly silent. Only important messages, "
-"warnings, or errors will be shown. When available, build progress "
-"information is still shown."
+msgid "Table of debug levels"
 msgstr ""
 
-#. Tag: para
+#. Tag: entry
 #: other-features.docbook:15
 #, no-c-format
-msgid ""
-"The <option>--really-quiet</option> option (no short form) causes &kdesrc-"
-"build; to only display important warnings or errors while it is running."
+msgid "Debug level"
 msgstr ""
 
-#. Tag: para
-#: other-features.docbook:19
+#. Tag: entry
+#: other-features.docbook:16
 #, no-c-format
-msgid ""
-"The <option>--verbose</option> option (short form is <option>-v</option>) "
-"causes &kdesrc-build; to be very detailed in its output."
+msgid "Level name"
 msgstr ""
 
-#. Tag: para
+#. Tag: entry
+#: other-features.docbook:17
+#, no-c-format
+msgid "Command line option"
+msgstr ""
+
+#. Tag: entry
 #: other-features.docbook:23
 #, no-c-format
-msgid ""
-"The <option>--debug</option> option is for debugging purposes only, it "
-"causes &kdesrc-build; to act as if <option>--verbose</option> was turned on, "
-"causes commands to also output to the terminal, and will display debugging "
-"information for many functions."
+msgid "<entry>0</entry>"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:24
+#, no-c-format
+msgid "DEBUG"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:25
+#, no-c-format
+msgid "--debug"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:29
+#, no-c-format
+msgid "<entry>1</entry>"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:30
+#, no-c-format
+msgid "WHISPER"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:31
+#, fuzzy, no-c-format
+#| msgid "--version"
+msgid "--verbose"
+msgstr "--version"
+
+#. Tag: entry
+#: other-features.docbook:35
+#, no-c-format
+msgid "<entry>2</entry>"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:36
+#, no-c-format
+msgid "INFO"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:37
+#, no-c-format
+msgid "Selected by default"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:41
+#, no-c-format
+msgid "<entry>3</entry>"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:42
+#, no-c-format
+msgid "NOTE"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:43
+#, no-c-format
+msgid "--quiet"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:47
+#, no-c-format
+msgid "<entry>4</entry>"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:48
+#, no-c-format
+msgid "WARNING"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:49
+#, no-c-format
+msgid "--really-quiet"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:53
+#, no-c-format
+msgid "<entry>5</entry>"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:54
+#, no-c-format
+msgid "ERROR"
+msgstr ""
+
+#. Tag: entry
+#: other-features.docbook:55
+#, no-c-format
+msgid "No way to select"
 msgstr ""
 
 #. Tag: title
-#: other-features.docbook:32
+#: other-features.docbook:65
 #, no-c-format
 msgid "Color output"
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:33
+#: other-features.docbook:66
 #, no-c-format
 msgid ""
 "When being run from &konsole; or a different terminal, &kdesrc-build; will "
@@ -90,7 +187,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:36
+#: other-features.docbook:69
 #, no-c-format
 msgid ""
 "You can disable this by using the <option>--no-color</option> on the command "
@@ -99,13 +196,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:42
+#: other-features.docbook:75
 #, no-c-format
 msgid "Disabling color output in the configuration file:"
 msgstr ""
 
 #. Tag: screen
-#: other-features.docbook:43
+#: other-features.docbook:76
 #, no-c-format
 msgid ""
 "global\n"
@@ -114,13 +211,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: other-features.docbook:49
+#: other-features.docbook:82
 #, no-c-format
 msgid "Removing unneeded directories after a build"
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:50
+#: other-features.docbook:83
 #, no-c-format
 msgid ""
 "Are you short on disk space but still want to run a bleeding-edge &kde; "
@@ -129,7 +226,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:54
+#: other-features.docbook:87
 #, no-c-format
 msgid ""
 "Be aware that building &kde; does take a lot of space. There are several "
@@ -137,7 +234,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:58
+#: other-features.docbook:91
 #, no-c-format
 msgid ""
 "The actual source checkout can take up a fair amount of space. The default "
@@ -152,7 +249,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:68
+#: other-features.docbook:101
 #, no-c-format
 msgid ""
 "Also, if you already have a &Qt; installed by your distribution (and the "
@@ -161,7 +258,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:75
+#: other-features.docbook:108
 #, no-c-format
 msgid ""
 "&kdesrc-build; will create a separate build directory to build the source "
@@ -174,7 +271,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:83
+#: other-features.docbook:116
 #, no-c-format
 msgid ""
 "Luckily, the build directory is not required after a module has successfully "
@@ -185,7 +282,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:90
+#: other-features.docbook:123
 #, no-c-format
 msgid ""
 "Finally, there is disk space required for the actual installation of &kde;, "
@@ -194,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:97
+#: other-features.docbook:130
 #, no-c-format
 msgid ""
 "How do you reduce the space requirements of &kde;? One way is to use the "
@@ -204,7 +301,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:103
+#: other-features.docbook:136
 #, no-c-format
 msgid ""
 "You should be very sure you know what you are doing before deciding to "
@@ -218,7 +315,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:115
+#: other-features.docbook:148
 #, no-c-format
 msgid ""
 "Removing the build directory after installation of a module. The source "
@@ -226,7 +323,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: other-features.docbook:118
+#: other-features.docbook:151
 #, no-c-format
 msgid ""
 "global\n"
@@ -237,7 +334,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: other-features.docbook:120
+#: other-features.docbook:153
 #, no-c-format
 msgid ""
 "Removing the build directory after installation, without debugging "
@@ -245,7 +342,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: other-features.docbook:123
+#: other-features.docbook:156
 #, no-c-format
 msgid ""
 "global\n"
@@ -290,11 +387,6 @@ msgstr ""
 #~| msgid "<keyword>KDE</keyword>"
 #~ msgid "<term>KDE</term>"
 #~ msgstr "<keyword>KDE</keyword>"
-
-#, fuzzy
-#~| msgid "--version"
-#~ msgid "--verbose"
-#~ msgstr "--version"
 
 #, fuzzy
 #~| msgid "Introduction to &cmake;"
